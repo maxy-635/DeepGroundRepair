@@ -1,0 +1,295 @@
+{
+  "LAYER_TYPE_MAP": {
+    "Conv1D": "conv",
+    "Conv2D": "conv",
+    "Conv3D": "conv",
+    "Convolution2D": "conv",
+    "Convolution3D": "conv",
+    "SeparableConv1D": "conv",
+    "SeparableConv2D": "conv",
+    "DepthwiseConv1D": "conv",
+    "DepthwiseConv2D": "conv",
+    "Conv1DTranspose": "conv",
+    "Conv2DTranspose": "conv",
+    "Conv3DTranspose": "conv",
+    "Conv1d": "conv",
+    "Conv2d": "conv",
+    "Conv3d": "conv",
+    "ConvTranspose1d": "conv",
+    "ConvTranspose2d": "conv",
+    "ConvTranspose3d": "conv",
+    "LazyConv1d": "conv",
+    "LazyConv2d": "conv",
+    "LazyConv3d": "conv",
+    "LazyConvTranspose1d": "conv",
+    "LazyConvTranspose2d": "conv",
+    "LazyConvTranspose3d": "conv",
+    "MaxPool1D": "pool",
+    "MaxPool2D": "pool",
+    "MaxPool3D": "pool",
+    "MaxPooling1D": "pool",
+    "MaxPooling2D": "pool",
+    "MaxPooling3D": "pool",
+    "AveragePooling1D": "pool",
+    "AveragePooling2D": "pool",
+    "AveragePooling3D": "pool",
+    "GlobalMaxPool1D": "pool",
+    "GlobalMaxPool2D": "pool",
+    "GlobalMaxPool3D": "pool",
+    "GlobalAvgPool1D": "pool",
+    "GlobalAvgPool2D": "pool",
+    "GlobalAvgPool3D": "pool",
+    "GlobalAveragePooling1D": "pool",
+    "GlobalAveragePooling2D": "pool",
+    "GlobalAveragePooling3D": "pool",
+    "GlobalMaxPooling1D": "pool",
+    "GlobalMaxPooling2D": "pool",
+    "GlobalMaxPooling3D": "pool",
+    "MaxPool1d": "pool",
+    "MaxPool2d": "pool",
+    "MaxPool3d": "pool",
+    "AvgPool1d": "pool",
+    "AvgPool2d": "pool",
+    "AvgPool3d": "pool",
+    "AdaptiveAvgPool1d": "pool",
+    "AdaptiveAvgPool2d": "pool",
+    "AdaptiveAvgPool3d": "pool",
+    "AdaptiveMaxPool1d": "pool",
+    "AdaptiveMaxPool2d": "pool",
+    "AdaptiveMaxPool3d": "pool",
+    "conv1d": "conv",
+    "conv2d": "conv",
+    "conv3d": "conv",
+    "conv1d_transpose": "conv",
+    "conv2d_transpose": "conv",
+    "conv3d_transpose": "conv",
+    "max_pool1d": "pool",
+    "max_pool2d": "pool",
+    "max_pool3d": "pool",
+    "avg_pool1d": "pool",
+    "avg_pool2d": "pool",
+    "avg_pool3d": "pool",
+    "adaptive_avg_pool1d": "pool",
+    "adaptive_avg_pool2d": "pool",
+    "adaptive_avg_pool3d": "pool",
+    "adaptive_max_pool1d": "pool",
+    "adaptive_max_pool2d": "pool",
+    "adaptive_max_pool3d": "pool",
+    "linear": "dense",
+    "interpolate": "upsample",
+    "AvgPool1D": "pool",
+    "AvgPool2D": "pool",
+    "AvgPool3D": "pool",
+    "AdaptiveAvgPool1D": "pool",
+    "AdaptiveAvgPool2D": "pool",
+    "AdaptiveAvgPool3D": "pool",
+    "AdaptiveMaxPool1D": "pool",
+    "AdaptiveMaxPool2D": "pool",
+    "AdaptiveMaxPool3D": "pool",
+    "Dense": "dense",
+    "LazyLinear": "dense",
+    "Linear": "dense",
+    "UpSampling1D": "upsample",
+    "UpSampling2D": "upsample",
+    "UpSampling3D": "upsample",
+    "Upsample": "upsample",
+    "UpsamplingNearest2d": "upsample",
+    "UpsamplingBilinear2d": "upsample",
+    "UpsamplingNearest2D": "upsample",
+    "UpsamplingBilinear2D": "upsample",
+    "tf.keras.layers.Conv1D": "conv",
+    "tf.keras.layers.Conv2D": "conv",
+    "tf.keras.layers.Conv3D": "conv",
+    "tf.keras.layers.Conv1DTranspose": "conv",
+    "tf.keras.layers.Conv2DTranspose": "conv",
+    "tf.keras.layers.Conv3DTranspose": "conv",
+    "tf.keras.layers.MaxPooling1D": "pool",
+    "tf.keras.layers.MaxPooling2D": "pool",
+    "tf.keras.layers.MaxPooling3D": "pool",
+    "tf.keras.layers.AveragePooling1D": "pool",
+    "tf.keras.layers.AveragePooling2D": "pool",
+    "tf.keras.layers.AveragePooling3D": "pool",
+    "tf.keras.layers.GlobalAveragePooling1D": "pool",
+    "tf.keras.layers.GlobalAveragePooling2D": "pool",
+    "tf.keras.layers.GlobalAveragePooling3D": "pool",
+    "tf.keras.layers.GlobalMaxPooling1D": "pool",
+    "tf.keras.layers.GlobalMaxPooling2D": "pool",
+    "tf.keras.layers.GlobalMaxPooling3D": "pool",
+    "tf.keras.layers.Dense": "dense",
+    "tf.keras.layers.UpSampling1D": "upsample",
+    "tf.keras.layers.UpSampling2D": "upsample",
+    "tf.keras.layers.UpSampling3D": "upsample",
+    "torch.nn.Conv1d": "conv",
+    "torch.nn.Conv2d": "conv",
+    "torch.nn.Conv3d": "conv",
+    "torch.nn.ConvTranspose1d": "conv",
+    "torch.nn.ConvTranspose2d": "conv",
+    "torch.nn.ConvTranspose3d": "conv",
+    "torch.nn.MaxPool1d": "pool",
+    "torch.nn.MaxPool2d": "pool",
+    "torch.nn.MaxPool3d": "pool",
+    "torch.nn.AvgPool1d": "pool",
+    "torch.nn.AvgPool2d": "pool",
+    "torch.nn.AvgPool3d": "pool",
+    "torch.nn.AdaptiveAvgPool1d": "pool",
+    "torch.nn.AdaptiveAvgPool2d": "pool",
+    "torch.nn.AdaptiveAvgPool3d": "pool",
+    "torch.nn.AdaptiveMaxPool1d": "pool",
+    "torch.nn.AdaptiveMaxPool2d": "pool",
+    "torch.nn.AdaptiveMaxPool3d": "pool",
+    "torch.nn.Linear": "dense",
+    "torch.nn.Upsample": "upsample",
+    "paddle.nn.Conv1D": "conv",
+    "paddle.nn.Conv2D": "conv",
+    "paddle.nn.Conv3D": "conv",
+    "paddle.nn.Conv1DTranspose": "conv",
+    "paddle.nn.Conv2DTranspose": "conv",
+    "paddle.nn.Conv3DTranspose": "conv",
+    "paddle.nn.MaxPool1D": "pool",
+    "paddle.nn.MaxPool2D": "pool",
+    "paddle.nn.MaxPool3D": "pool",
+    "paddle.nn.AvgPool1D": "pool",
+    "paddle.nn.AvgPool2D": "pool",
+    "paddle.nn.AvgPool3D": "pool",
+    "paddle.nn.AdaptiveAvgPool1D": "pool",
+    "paddle.nn.AdaptiveAvgPool2D": "pool",
+    "paddle.nn.AdaptiveAvgPool3D": "pool",
+    "paddle.nn.AdaptiveMaxPool1D": "pool",
+    "paddle.nn.AdaptiveMaxPool2D": "pool",
+    "paddle.nn.AdaptiveMaxPool3D": "pool",
+    "paddle.nn.Linear": "dense",
+    "paddle.nn.Upsample": "upsample",
+    "paddle.nn.UpsamplingNearest2D": "upsample",
+    "paddle.nn.UpsamplingBilinear2D": "upsample"
+  },
+  "API_AXIS_SEMANTICS": {
+    "conv": {
+      "preserve_axes": [
+        "batch"
+      ],
+      "change_axes": [
+        "channel",
+        "spatial"
+      ]
+    },
+    "pool": {
+      "preserve_axes": [
+        "batch",
+        "channel"
+      ],
+      "change_axes": [
+        "spatial"
+      ]
+    },
+    "upsample": {
+      "preserve_axes": [
+        "batch",
+        "channel"
+      ],
+      "change_axes": [
+        "spatial"
+      ]
+    },
+    "dense": {
+      "preserve_axes": [
+        "batch"
+      ],
+      "change_axes": [
+        "feature"
+      ]
+    }
+  },
+  "API_PARAMETER_MAP": {
+    "pytorch": {
+      "spatial": {
+        "conv": {
+          "param_names": [
+            "kernel_size",
+            "stride",
+            "padding"
+          ]
+        },
+        "pool": {
+          "param_names": [
+            "kernel_size",
+            "stride",
+            "padding"
+          ]
+        }
+      },
+      "channel": {
+        "conv": {
+          "param_names": [
+            "out_channels"
+          ]
+        },
+        "dense": {
+          "param_names": [
+            "out_features"
+          ]
+        }
+      }
+    },
+    "tensorflow": {
+      "spatial": {
+        "conv": {
+          "param_names": [
+            "kernel_size",
+            "strides",
+            "padding"
+          ]
+        },
+        "pool": {
+          "param_names": [
+            "pool_size",
+            "ksize",
+            "strides",
+            "padding"
+          ]
+        }
+      },
+      "channel": {
+        "conv": {
+          "param_names": [
+            "filters"
+          ]
+        },
+        "dense": {
+          "param_names": [
+            "units"
+          ]
+        }
+      }
+    },
+    "paddle": {
+      "spatial": {
+        "conv": {
+          "param_names": [
+            "kernel_size",
+            "stride",
+            "padding"
+          ]
+        },
+        "pool": {
+          "param_names": [
+            "kernel_size",
+            "stride",
+            "padding"
+          ]
+        }
+      },
+      "channel": {
+        "conv": {
+          "param_names": [
+            "out_channels"
+          ]
+        },
+        "dense": {
+          "param_names": [
+            "out_features"
+          ]
+        }
+      }
+    }
+  }
+}
