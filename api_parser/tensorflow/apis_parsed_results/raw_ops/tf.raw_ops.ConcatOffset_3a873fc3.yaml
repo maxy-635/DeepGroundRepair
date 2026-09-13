@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ConcatOffset
+3 api_description: Computes the starting offsets for each concat input within the
+  concatenated output tensor, mainly for use in gradient calculations.
+4 api_signature: tf.raw_ops.ConcatOffset(concat_dim,shape)
+5 api_details: ''
+6 api_parameters:
+- concat_dim: Specifies the dimension along which the tensors are concatenated.
+- shape: Provides the shapes of the input tensors so their concat offsets can be computed.
+7 api_usage_example:
+- x = [2, 2, 7]
+- y = [2, 3, 7]
+- z = [2, 9, 7]
+- offsets = concat_offset(1, [x, y, z])
+- '[list(off.numpy()) for off in offsets]'
+8 api_shape: ''

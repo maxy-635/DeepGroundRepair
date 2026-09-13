@@ -1,0 +1,12 @@
+2 api_name: tensorflow.data.experimental.from_list
+3 api_description: Creates a Dataset that yields each element from a given Python
+  list one by one, preserving element structure.
+4 api_signature: tf.data.experimental.from_list(elements)
+5 api_details: ''
+6 api_parameters:
+- elements: A list of elements to build the dataset from, where each element shares
+    the same nested structure.
+7 api_usage_example:
+- dataset = tf.data.experimental.from_list([[1], [2, 3]])
+- list(dataset.as_numpy_iterator())
+8 api_shape: ''

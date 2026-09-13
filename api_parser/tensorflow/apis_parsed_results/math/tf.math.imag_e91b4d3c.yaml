@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.imag
+3 api_description: Returns the imaginary part of each element in a tensor, or zeros
+  if the input is real.
+4 api_signature: tf.math.imag(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose imaginary part is returned; real-valued tensors yield zeros
+    and complex tensors yield their imaginary components.
+7 api_usage_example: null
+8 api_shape: ''

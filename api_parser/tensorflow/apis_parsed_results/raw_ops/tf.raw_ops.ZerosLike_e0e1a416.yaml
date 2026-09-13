@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ZerosLike
+3 api_description: Returns a tensor of zeros matching the shape and data type of the
+  input tensor.
+4 api_signature: tf.raw_ops.ZerosLike(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose shape is used to create a new tensor filled with zeros
+    and matching its type.
+7 api_usage_example: null
+8 api_shape: ''

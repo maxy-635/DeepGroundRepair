@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesSparseAggregateStats
+3 api_description: Aggregates accumulated batch statistics for boosted trees, summarizing
+  gradients and hessians by node, bucket, and dimension.
+4 api_signature: tf.raw_ops.BoostedTreesSparseAggregateStats(node_ids,gradients,hessians,feature_indices,feature_values,feature_shape,max_splits,num_buckets)
+5 api_details: ''
+6 api_parameters:
+- node_ids: Identifies the tree node assigned to each example in the batch.
+- gradients: Provides the per-example gradient values used to compute split statistics.
+- hessians: Provides the per-example hessian values used to compute split statistics.
+- feature_indices: Specifies the batch and feature positions of each sparse feature
+    entry.
+- feature_values: Contains the sparse feature values corresponding to the listed indices.
+- feature_shape: Gives the dense shape of the sparse feature tensor as batch size
+    by feature dimension.
+- max_splits: Sets the maximum number of splits allowed in the tree.
+- num_buckets: Sets the number of feature buckets, defined as the maximum bucket value
+    plus one.
+7 api_usage_example: null
+8 api_shape: ''

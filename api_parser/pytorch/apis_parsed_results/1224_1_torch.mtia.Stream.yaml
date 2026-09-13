@@ -1,0 +1,17 @@
+2 api_name: torch.mtia.Stream
+3 api_description: An asynchronous FIFO task queue that sequences work in order, can
+  synchronize other streams or block the host thread, and supports use as a context
+  manager to run operations on a specific stream.
+4 api_signature: torch.mtia.Stream(device,priority)
+5 api_details: ''
+6 api_parameters:
+- device: Selects the device the stream runs on, defaulting to the current accelerator
+    if omitted.
+- priority: Sets the stream priority, where 0 is default and more negative values
+    indicate higher priority.
+7 api_usage_example:
+- ' with torch.Stream(device=''cuda'') as s_cuda:'
+- '     a = torch.randn(10, 5, device=''cuda'')'
+- '     b = torch.randn(5, 10, device=''cuda'')'
+- '     c = torch.mm(a, b)'
+8 api_shape: null

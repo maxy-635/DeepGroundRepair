@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.split
+3 api_description: Split a tensor into multiple chunks along a specified axis, either
+  into equal parts or according to provided sizes.
+4 api_signature: tf.keras.ops.split(x,indices_or_sections)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to split.
+- indices_or_sections: Either the number of equal parts to split the tensor into,
+    or the sorted split indices along the specified axis.
+7 api_usage_example: null
+8 api_shape: ''

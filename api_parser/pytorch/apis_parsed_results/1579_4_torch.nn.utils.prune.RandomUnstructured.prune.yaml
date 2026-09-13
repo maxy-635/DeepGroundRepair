@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.prune.RandomUnstructured.prune
+3 api_description: Randomly prunes a specified fraction of tensor elements by setting
+  them to zero and returns the pruned tensor.
+4 api_signature: prune(t,importance_scores)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor to prune, which must match the shape of the default mask.
+- importance_scores: Optional tensor of importance values, used to decide which elements
+    of `t` are pruned; if omitted, `t` itself is used.
+7 api_usage_example: null
+8 api_shape: null

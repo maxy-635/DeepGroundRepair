@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.All
+3 api_description: Returns the logical AND of tensor elements across the specified
+  axes, optionally keeping reduced dimensions with size 1.
+4 api_signature: tf.raw_ops.All(input,axis)
+5 api_details: ''
+6 api_parameters:
+- input: Boolean tensor whose values are reduced by the operation.
+- axis: Integer tensor specifying which dimensions of `input` to reduce over.
+7 api_usage_example: null
+8 api_shape: ''

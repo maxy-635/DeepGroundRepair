@@ -1,0 +1,18 @@
+2 api_name: tensorflow.lite.Interpreter
+3 api_description: Loads and runs TensorFlow Lite models in Python, letting you allocate
+  tensors, set inputs, invoke inference, and read outputs from models converted with
+  TfLiteConverter.
+4 api_signature: tf.lite.Interpreter(model_path,model_content,num_threads)
+5 api_details: ''
+6 api_parameters:
+- model_path: Specifies the path to the TensorFlow Lite flatbuffer model file.
+- model_content: Provides the model data directly as in-memory content.
+- num_threads: Controls how many CPU threads the interpreter uses for supported kernels.
+7 api_usage_example:
+- 'output = interpreter.get_output_details()[0]  # Model has single output.'
+- 'input = interpreter.get_input_details()[0]  # Model has single input.'
+- input_data = tf.constant(1., shape=[1, 1])
+- interpreter.set_tensor(input['index'], input_data)
+- interpreter.invoke()
+- interpreter.get_tensor(output['index']).shape
+8 api_shape: ''

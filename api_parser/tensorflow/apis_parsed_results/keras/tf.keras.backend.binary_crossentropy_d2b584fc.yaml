@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.binary_crossentropy
+3 api_description: Computes binary crossentropy loss between target labels and predicted
+  probabilities, element-wise or reduced along the last axis.
+4 api_signature: tf.keras.backend.binary_crossentropy(target,output)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

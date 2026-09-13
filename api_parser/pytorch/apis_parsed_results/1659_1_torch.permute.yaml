@@ -1,0 +1,13 @@
+2 api_name: torch.permute
+3 api_description: Returns a view of a tensor with its dimensions rearranged in the
+  specified order.
+4 api_signature: torch.permute(input,dims)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be rearranged.
+- dims: The new order in which to permute the tensor’s dimensions.
+7 api_usage_example:
+- ' x = torch.randn(2, 3, 5)'
+- ' x.size()'
+- ' torch.permute(x, (2, 0, 1)).size()'
+8 api_shape: null

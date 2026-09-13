@@ -1,0 +1,20 @@
+2 api_name: paddle.multiplex
+3 api_description: Selects a row from each input tensor at the given index and combines
+  the selected rows into the output tensor.
+4 api_signature: paddle.multiplex(inputs,index)
+5 api_details: ''
+6 api_parameters:
+- inputs: Provides a list of same-shaped N-D input tensors to be multiplexed together.
+- index: Specifies which rows to select from the inputs to build the output tensor.
+7 api_usage_example:
+- import paddle
+- img1 = paddle.to_tensor([[1, 2], [3, 4]], dtype=paddle.float32)
+- img2 = paddle.to_tensor([[5, 6], [7, 8]], dtype=paddle.float32)
+- inputs = [img1, img2]
+- index = paddle.to_tensor([[1], [0]], dtype=paddle.int32)
+- res = paddle.multiplex(inputs, index)
+- print(res)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[5., 6.],'
+- '[3., 4.]])'
+8 api_shape: {}

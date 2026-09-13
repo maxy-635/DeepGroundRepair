@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.DimConstraints.prettify_results
+3 api_description: Formats symbolic shape constraint results into a readable error
+  message for constraint violation reporting.
+4 api_signature: prettify_results(original_signature,dynamic_shapes,constraint_violation_error)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,21 @@
+2 api_name: torch.linalg.cholesky
+3 api_description: Computes the Cholesky factorization of a real symmetric or complex
+  Hermitian positive-definite matrix, returning a triangular factor whose product
+  reconstructs the original matrix.
+4 api_signature: torch.linalg.cholesky(A)
+5 api_details: ''
+6 api_parameters:
+- A: The symmetric or Hermitian positive-definite input matrix or batch of matrices
+    to factorize with Cholesky decomposition.
+7 api_usage_example:
+- ' A = torch.randn(2, 2, dtype=torch.complex128)'
+- ' A = A @ A.T.conj() + torch.eye(2) # creates a Hermitian positive-definite matrix'
+- ' A'
+- ' L = torch.linalg.cholesky(A)'
+- ' L'
+- ' torch.dist(L @ L.T.conj(), A)'
+- ' A = torch.randn(3, 2, 2, dtype=torch.float64)'
+- ' A = A @ A.mT + torch.eye(2)  # batch of symmetric positive-definite matrices'
+- ' L = torch.linalg.cholesky(A)'
+- ' torch.dist(L @ L.mT, A)'
+8 api_shape: null

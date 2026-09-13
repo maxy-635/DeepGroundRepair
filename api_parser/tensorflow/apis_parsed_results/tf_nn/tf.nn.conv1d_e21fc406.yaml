@@ -1,0 +1,25 @@
+2 api_name: tensorflow.nn.conv1d
+3 api_description: The tensorflow.nn.conv1d API performs a 1-D convolution on a 3-D
+  input tensor, reshaping it to use tf.nn.conv2d internally. It supports input formats
+  'NWC' and 'NCW', adjusting the input and filter shapes accordingly. The result is
+  a reshaped output tensor of shape batch_shape + [out_width, out_channels], determined
+  by stride and padding.
+4 api_signature: tf.nn.conv1d(input,filters,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor for the convolution operation, with a minimum rank of 3
+    and a data type of float16, float32, or float64.
+- filters: The filter tensor used in the convolution, which must have the same rank
+    and data type as the input tensor.
+- stride: The step size for moving the filter across the input, specified as an integer
+    or a list of integers of length 1 or 3.
+- padding: The padding algorithm to use, either 'SAME' for output size matching input
+    or 'VALID' for no padding.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Length_in, Channel_in)
+  output tensor shape: (N, Length_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filter
+    tensor length: If padding = "VALID", Length_out = floor((Length_in - filter_width) / stride + 1); 
+                  If padding = "SAME", Length_out = floor((Length_in - 1) / stride + 1)

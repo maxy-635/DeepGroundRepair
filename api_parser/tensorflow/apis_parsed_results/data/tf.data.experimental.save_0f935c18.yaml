@@ -1,0 +1,20 @@
+2 api_name: tensorflow.data.experimental.save
+3 api_description: Saves a `tf.data.Dataset` to disk in multiple shard files, with
+  optional custom sharding via `shard_func`.
+4 api_signature: tf.data.experimental.save(dataset,path,compression)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset that will be written out to disk.
+- path: The directory where the dataset will be saved.
+- compression: The optional compression algorithm used when saving the data, such
+    as GZIP or NONE.
+7 api_usage_example:
+- import tempfile
+- path = os.path.join(tempfile.gettempdir(), "saved_data")
+- '# Save a dataset'
+- dataset = tf.data.Dataset.range(2)
+- tf.data.experimental.save(dataset, path)
+- new_dataset = tf.data.experimental.load(path)
+- 'for elem in new_dataset:'
+- '  print(elem)'
+8 api_shape: ''

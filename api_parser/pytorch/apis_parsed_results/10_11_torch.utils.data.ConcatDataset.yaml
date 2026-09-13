@@ -1,0 +1,9 @@
+2 api_name: torch.utils.data.ConcatDataset
+3 api_description: A dataset wrapper that combines multiple datasets into one sequence,
+  exposing them end-to-end as a single dataset.
+4 api_signature: '"class torch.utils.data.ConcatDataset(datasets)"'
+5 api_details: ''
+6 api_parameters:
+- datasets: The datasets to combine end-to-end into a single concatenated dataset.
+7 api_usage_example: null
+8 api_shape: null

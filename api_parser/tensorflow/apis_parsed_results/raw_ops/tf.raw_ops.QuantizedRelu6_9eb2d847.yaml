@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.QuantizedRelu6
+3 api_description: Applies Quantized ReLU6 to a quantized tensor by clamping values
+  to the range [0, 6].
+4 api_signature: tf.raw_ops.QuantizedRelu6(features,out_type,name)
+5 api_details: ''
+6 api_parameters:
+- features: The quantized input tensor to which the ReLU6 activation is applied.
+- out_type: The desired quantized output data type for the result tensor.
+- name: An optional name used to label the operation in the graph.
+7 api_usage_example: null
+8 api_shape: ''

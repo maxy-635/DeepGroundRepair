@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.transforms.Transform
+3 api_description: Abstract base for invertible transforms that map tensors between
+  spaces, provide forward and inverse operations, and compute log absolute determinant
+  Jacobians for use in transformed distributions.
+4 api_signature: '"Transform(cache_size)"'
+5 api_details: ''
+6 api_parameters:
+- cache_size: Controls whether the transform caches recent values for reuse, with
+    0 disabling caching and 1 caching only the latest value.
+7 api_usage_example:
+- y = t(x)
+- 't.log_abs_det_jacobian(x, y).backward()  # x will receive gradients.'
+8 api_shape: null

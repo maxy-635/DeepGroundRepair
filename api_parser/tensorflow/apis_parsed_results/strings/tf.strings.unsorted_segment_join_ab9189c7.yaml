@@ -1,0 +1,17 @@
+2 api_name: tensorflow.strings.unsorted_segment_join
+3 api_description: Joins string elements of `inputs` within each segment specified
+  by `segment_ids`, producing one concatenated string per segment.
+4 api_signature: tf.strings.unsorted_segment_join(inputs,segment_ids,num_segments,separator)
+5 api_details: ''
+6 api_parameters:
+- inputs: The string tensors to be grouped and joined by segment.
+- segment_ids: Integer IDs that assign each input element to a segment to join.
+- num_segments: The total number of output segments to produce.
+- separator: The string placed between joined values within each segment.
+7 api_usage_example:
+- inputs = [['Y', 'q', 'c'], ['Y', '6', '6'], ['p', 'G', 'a']]
+- segment_ids = [1, 0, 1]
+- num_segments = 2
+- tf.strings.unsorted_segment_join(inputs, segment_ids, num_segments,
+- '                                 separator='':'').numpy()'
+8 api_shape: ''

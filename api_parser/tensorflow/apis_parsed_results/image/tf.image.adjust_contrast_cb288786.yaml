@@ -1,0 +1,17 @@
+2 api_name: tensorflow.image.adjust_contrast
+3 api_description: Adjusts the contrast of RGB or grayscale images by scaling each
+  channel around its mean, while preserving the input data type when possible.
+4 api_signature: tf.image.adjust_contrast(images,contrast_factor)
+5 api_details: ''
+6 api_parameters:
+- images: The input images whose contrast will be adjusted; they must have at least
+    3 dimensions.
+- contrast_factor: The float multiplier that controls how strongly the image contrast
+    is increased or decreased.
+7 api_usage_example:
+- x = [[[1.0, 2.0, 3.0],
+- '      [4.0, 5.0, 6.0]],'
+- '    [[7.0, 8.0, 9.0],'
+- '      [10.0, 11.0, 12.0]]]'
+- tf.image.adjust_contrast(x, 2.)
+8 api_shape: ''

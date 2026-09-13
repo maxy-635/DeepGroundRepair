@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesQuantileStreamResourceFlush
+3 api_description: Flushes and writes out the accumulated summaries for a quantile
+  stream resource.
+4 api_signature: tf.raw_ops.BoostedTreesQuantileStreamResourceFlush(quantile_stream_resource_handle,num_buckets,generate_quantiles)
+5 api_details: ''
+6 api_parameters:
+- quantile_stream_resource_handle: Identifies the QuantileStreamResource to flush
+    and extract quantile data from.
+- num_buckets: Specifies the approximate number of histogram buckets to use, unless
+    quantiles are being generated directly.
+- generate_quantiles: Controls whether the flush returns approximate quantiles instead
+    of histogram bucket points.
+7 api_usage_example: null
+8 api_shape: ''

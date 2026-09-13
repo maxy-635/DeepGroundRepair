@@ -1,0 +1,7 @@
+2 api_name: torch.sinc
+3 api_description: Computes the normalized sinc function, equivalent to torch.special.sinc().
+4 api_signature: torch.sinc(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

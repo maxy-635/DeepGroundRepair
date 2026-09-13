@@ -1,0 +1,11 @@
+2 api_name: torch.special.log_ndtr
+3 api_description: Computes the elementwise log CDF of the standard normal distribution,
+  i.e. the log of the area under its density from negative infinity to each input
+  value.
+4 api_signature: torch.special.log_ndtr(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose log normal CDF is computed.
+7 api_usage_example:
+- ' torch.special.log_ndtr(torch.tensor([-3., -2, -1, 0, 1, 2, 3]))'
+8 api_shape: null

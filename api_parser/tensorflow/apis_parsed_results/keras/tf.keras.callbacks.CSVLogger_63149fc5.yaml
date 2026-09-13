@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.callbacks.CSVLogger
+3 api_description: Streams epoch-level training results to a CSV file, preserving
+  values that can be stringified including 1D iterables.
+4 api_signature: tf.keras.callbacks.CSVLogger(filename)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the path to the CSV file where training logs will be written.
+7 api_usage_example: null
+8 api_shape: ''

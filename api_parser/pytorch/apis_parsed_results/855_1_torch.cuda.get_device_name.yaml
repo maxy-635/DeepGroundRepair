@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.get_device_name
+3 api_description: Returns the name of a specified CUDA device.
+4 api_signature: torch.cuda.get_device_name(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which device name to return; if `None`, it uses the current device,
+    and if negative, the function does nothing.
+7 api_usage_example: null
+8 api_shape: null

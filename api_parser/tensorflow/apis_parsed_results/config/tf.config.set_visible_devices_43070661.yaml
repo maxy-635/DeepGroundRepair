@@ -1,0 +1,20 @@
+2 api_name: tensorflow.config.set_visible_devices
+3 api_description: Controls which physical devices TensorFlow can see and use, limiting
+  memory allocation and operation placement to the selected devices.
+4 api_signature: tf.config.set_visible_devices(devices)
+5 api_details: ''
+6 api_parameters:
+- devices: Specifies which physical devices TensorFlow should expose and make available
+    for use.
+7 api_usage_example:
+- physical_devices = tf.config.list_physical_devices('GPU')
+- 'try:'
+- '  # Disable first GPU'
+- '  tf.config.set_visible_devices(physical_devices[1:], ''GPU'')'
+- '  logical_devices = tf.config.list_logical_devices(''GPU'')'
+- '  # Logical device was not created for first GPU'
+- '  assert len(logical_devices) == len(physical_devices) - 1'
+- 'except:'
+- '  # Invalid device or cannot modify virtual devices once initialized.'
+- '  pass'
+8 api_shape: ''

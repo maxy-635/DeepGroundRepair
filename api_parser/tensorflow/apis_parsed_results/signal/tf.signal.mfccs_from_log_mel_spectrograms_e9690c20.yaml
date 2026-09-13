@@ -1,0 +1,10 @@
+2 api_name: tensorflow.signal.mfccs_from_log_mel_spectrograms
+3 api_description: Computes MFCCs from log mel spectrograms by applying an HTK-style
+  DCT-II, returning all mel-bin coefficients with GPU support and gradients.
+4 api_signature: tf.signal.mfccs_from_log_mel_spectrograms(log_mel_spectrograms)
+5 api_details: ''
+6 api_parameters:
+- log_mel_spectrograms: Input tensor containing log-magnitude mel-scale spectrograms
+    with shape [..., num_mel_bins].
+7 api_usage_example: null
+8 api_shape: ''

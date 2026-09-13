@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.utils.split_dataset
+3 api_description: Splits a dataset into two subsets, returning left and right portions
+  for uses like training and testing.
+4 api_signature: tf.keras.utils.split_dataset(dataset,left_size,right_size)
+5 api_details: ''
+6 api_parameters:
+- dataset: The input data to split into two subsets.
+- left_size: Specifies how much data goes into the left subset, either as a fraction
+    or a sample count.
+- right_size: Specifies how much data goes into the right subset, either as a fraction
+    or a sample count.
+7 api_usage_example:
+- data = np.random.random(size=(1000, 4))
+- left_ds, right_ds = keras.utils.split_dataset(data, left_size=0.8)
+- int(left_ds.cardinality())
+- int(right_ds.cardinality())
+8 api_shape: ''

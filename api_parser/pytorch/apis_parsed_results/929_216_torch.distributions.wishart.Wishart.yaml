@@ -1,0 +1,20 @@
+2 api_name: torch.distributions.wishart.Wishart
+3 api_description: Multivariate distribution over symmetric positive-definite matrices,
+  parameterized by a scale matrix and degrees of freedom; supports sampling, log-probability
+  evaluation, entropy-like statistics, and related distribution methods.
+4 api_signature: '"Wishart(df,covariance_matrix,precision_matrix,scale_tril)"'
+5 api_details: ''
+6 api_parameters:
+- df: Sets the degrees of freedom, controlling how spread out the Wishart distribution
+    is and must be greater than dimension minus one.
+- covariance_matrix: Specifies the positive-definite covariance matrix that defines
+    the scale of the distribution.
+- precision_matrix: Specifies the positive-definite precision matrix, which is the
+    inverse of the covariance matrix.
+- scale_tril: Provides the lower-triangular Cholesky factor of the covariance matrix
+    with a positive diagonal for efficient parameterization.
+7 api_usage_example:
+- ' m = Wishart(torch.Tensor([2]), covariance_matrix=torch.eye(2))'
+- ' m.sample()  # Wishart distributed with mean=`df * I` and'
+- ' # variance(x_ij)=`df` for i != j and variance(x_ij)=`2 * df` for i == j'
+8 api_shape: null

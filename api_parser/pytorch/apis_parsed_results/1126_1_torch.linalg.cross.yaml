@@ -1,0 +1,18 @@
+2 api_name: torch.linalg.cross
+3 api_description: Computes the 3D cross product of two vectors.
+4 api_signature: torch.linalg.cross(input,other,dim)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the first tensor used in the cross product.
+- other: Specifies the second tensor used in the cross product.
+- dim: Specifies the dimension along which the cross product is computed.
+7 api_usage_example:
+- ' a = torch.randn(4, 3)'
+- ' a'
+- ' b = torch.randn(4, 3)'
+- ' b'
+- ' torch.linalg.cross(a, b)'
+- ' a = torch.randn(1, 3)  # a is broadcast to match shape of b'
+- ' a'
+- ' torch.linalg.cross(a, b)'
+8 api_shape: null

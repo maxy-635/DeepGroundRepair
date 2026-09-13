@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ResourceScatterUpdate
+3 api_description: Updates specific indices of a resource variable by scattering sparse
+  values into it.
+4 api_signature: tf.raw_ops.ResourceScatterUpdate(resource,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- resource: The variable resource to update in place.
+- indices: The int32 or int64 indices selecting rows in the first dimension to be
+    updated.
+- updates: The values to write into the selected positions of the resource.
+7 api_usage_example: null
+8 api_shape: ''

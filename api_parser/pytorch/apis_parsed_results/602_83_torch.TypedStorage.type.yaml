@@ -1,0 +1,11 @@
+2 api_name: torch.TypedStorage.type
+3 api_description: Returns the storage type when no dtype is given; otherwise casts
+  the storage to the specified type.
+4 api_signature: type(dtype,non_blocking)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the target data type to convert to.
+- non_blocking: Enables asynchronous copying when transferring between pinned memory
+    and GPU memory.
+7 api_usage_example: null
+8 api_shape: null

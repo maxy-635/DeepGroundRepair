@@ -1,0 +1,10 @@
+2 api_name: torch.special.bessel_y1
+3 api_description: Computes the Bessel function of the second kind, order 1, for a
+  given input.
+4 api_signature: torch.special.bessel_y1(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose values are used to compute the Bessel function of
+    the second kind of order 1.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,22 @@
+2 api_name: paddle.binomial
+3 api_description: Generates an int64 tensor of random values sampled from a binomial
+  distribution, with support for broadcasted tensor shapes.
+4 api_signature: paddle.binomial(count,prob)
+5 api_details: ''
+6 api_parameters:
+- count: Specifies the number of trials (or sample size) for each binomial distribution
+    element.
+- prob: Specifies the success probability used for each binomial distribution element.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- paddle.seed(100)
+- n = paddle.to_tensor([10.0, 50.0])
+- p = paddle.to_tensor([0.2, 0.6])
+- out = paddle.binomial(n, p)
+- print(out)
+- '>>>'
+- Tensor(shape=[2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[1 , 31])'
+- '>>>'
+8 api_shape: {}

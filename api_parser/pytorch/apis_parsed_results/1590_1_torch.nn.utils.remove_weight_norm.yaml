@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.remove_weight_norm
+3 api_description: Removes weight normalization from a module, restoring its original
+  unnormalized parameters.
+4 api_signature: torch.nn.utils.remove_weight_norm(module)
+5 api_details: ''
+6 api_parameters:
+- module: The module instance from which weight normalization should be removed.
+7 api_usage_example:
+- ' m = weight_norm(nn.Linear(20, 40))'
+- ' remove_weight_norm(m)'
+8 api_shape: null

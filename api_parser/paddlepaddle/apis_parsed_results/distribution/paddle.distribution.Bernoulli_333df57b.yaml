@@ -1,0 +1,23 @@
+2 api_name: paddle.distribution.Bernoulli
+3 api_description: Represents a Bernoulli distribution parameterized by `probs`, the
+  probability of sampling value 1.
+4 api_signature: paddle.distribution.Bernoulli(probs)
+5 api_details: ''
+6 api_parameters:
+- probs: Specifies the probability of sampling 1 in the Bernoulli distribution, with
+    values between 0 and 1.
+7 api_usage_example:
+- import paddle
+- from paddle.distribution import Bernoulli
+- '# init `probs` with a float'
+- rv = Bernoulli(probs=0.3)
+- print(rv.mean)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.30000001)
+- print(rv.variance)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.21000001)
+- print(rv.entropy())
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.61086434)
+8 api_shape: {}

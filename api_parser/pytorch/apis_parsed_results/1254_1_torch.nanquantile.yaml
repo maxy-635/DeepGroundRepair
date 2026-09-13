@@ -1,0 +1,19 @@
+2 api_name: torch.nanquantile
+3 api_description: Computes quantiles while ignoring NaN values in the input; if all
+  values in a reduced slice are NaN, the result is NaN.
+4 api_signature: torch.nanquantile(input,q,dim,keepdim,*,interpolation,out)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used to compute the quantiles.
+- q: The quantile value or values to calculate, each between 0 and 1.
+- dim: The dimension to reduce when computing the quantile, or all dimensions if `None`.
+- keepdim: Whether to keep the reduced dimension(s) in the output tensor.
+7 api_usage_example:
+- ' t = torch.tensor([float(''nan''), 1, 2])'
+- ' t.quantile(0.5)'
+- ' t.nanquantile(0.5)'
+- ' t = torch.tensor([[float(''nan''), float(''nan'')], [1, 2]])'
+- ' t'
+- ' t.nanquantile(0.5, dim=0)'
+- ' t.nanquantile(0.5, dim=1)'
+8 api_shape: null

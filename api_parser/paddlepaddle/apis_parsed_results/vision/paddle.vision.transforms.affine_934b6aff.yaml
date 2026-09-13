@@ -1,0 +1,18 @@
+2 api_name: paddle.vision.transforms.affine
+3 api_description: Applies an affine transformation to an image, allowing geometric
+  adjustments such as rotation, scaling, translation, and shearing.
+4 api_signature: paddle.vision.transforms.affine(img,angle,translate,scale,shear,interpolation,fill,center)
+5 api_details: ''
+6 api_parameters:
+- img: The image to apply the affine transform to.
+- angle: Sets the clockwise rotation angle for the transform.
+- translate: Limits horizontal and vertical translation as fractions of the image
+    size.
+- scale: Controls the positive scaling factor applied to the image.
+- shear: Sets the clockwise shear angles along the x-axis and y-axis.
+- interpolation: Chooses the resampling method used when transforming the image.
+- fill: Specifies the pixel value used to fill areas outside the transformed image.
+- center: Optionally sets the rotation center point, with the image origin at the
+    upper left.
+7 api_usage_example: []
+8 api_shape: {}

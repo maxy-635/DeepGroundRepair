@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.studentT.StudentT
+3 api_description: StudentT represents a Student’s t-distribution, supporting sampling,
+  log probability evaluation, and access to its shape parameters (df, loc, scale)
+  for modeling heavy-tailed continuous data.
+4 api_signature: '"StudentT(df,loc,scale)"'
+5 api_details: ''
+6 api_parameters:
+- df: Controls the degrees of freedom, which determine the heaviness of the tails
+    and how closely the distribution resembles a normal distribution.
+- loc: Sets the central location or mean shift of the distribution.
+- scale: Sets the spread or dispersion of the distribution.
+7 api_usage_example:
+- ' m = StudentT(torch.tensor([2.0]))'
+- ' m.sample()  # Student''s t-distributed with degrees of freedom=2'
+8 api_shape: null

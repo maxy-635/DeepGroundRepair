@@ -1,0 +1,17 @@
+2 api_name: paddle.geometric.segment_max
+3 api_description: Computes the maximum value for each segment in a segmented tensor
+  operation.
+4 api_signature: paddle.geometric.segment_max(data,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are reduced by segment.
+- segment_ids: A 1-D integer tensor that assigns each row in `data` to a segment.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([[1, 2, 3], [3, 2, 1], [4, 5, 6]], dtype='float32')
+- segment_ids = paddle.to_tensor([0, 0, 1], dtype='int32')
+- out = paddle.geometric.segment_max(data, segment_ids)
+- print(out.numpy())
+- '[[3. 2. 3.]'
+- '[4. 5. 6.]]'
+8 api_shape: {}

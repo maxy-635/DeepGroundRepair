@@ -1,0 +1,14 @@
+2 api_name: paddle.incubate.asp.calculate_density
+3 api_description: Computes and returns the density of the input tensor.
+4 api_signature: paddle.incubate.asp.calculate_density(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- x = np.array([[0, 1, 3, 0],
+- '            [1, 1, 0, 1]])'
+- out = paddle.incubate.asp.calculate_density(x)
+- print(out)
+- '0.625'
+8 api_shape: {}

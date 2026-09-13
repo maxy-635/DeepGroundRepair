@@ -1,0 +1,17 @@
+2 api_name: paddle.sparse.nn.functional.subm_conv2d
+3 api_description: Performs a sparse 2D submanifold convolution on SparseCooTensor
+  inputs with shape [N, H, W, C], using the given filter, stride, padding, dilation,
+  and groups settings, and optionally adds a bias to the output.
+4 api_signature: paddle.sparse.nn.functional.subm_conv2d(x,weight,bias,stride,padding,dilation,groups)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the 4-D sparse input tensor to be convolved, with shape [N, H, W, C].
+- weight: Specifies the convolution kernel tensor, with shape [kH, kW, C/g, M].
+- bias: Specifies the optional bias tensor added to each output channel, with shape
+    [M].
+- stride: Sets the convolution step size along height and width.
+- padding: Sets the amount or mode of zero-padding applied to the input before convolution.
+- dilation: Sets the spacing between kernel elements during convolution.
+- groups: Sets the number of channel groups used for grouped convolution.
+7 api_usage_example: []
+8 api_shape: {}

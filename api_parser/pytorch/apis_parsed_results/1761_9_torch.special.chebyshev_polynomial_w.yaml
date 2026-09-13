@@ -1,0 +1,11 @@
+2 api_name: torch.special.chebyshev_polynomial_w
+3 api_description: Computes the Chebyshev polynomial of the fourth kind W_n^*(input)
+  for a given input and order n.
+4 api_signature: torch.special.chebyshev_polynomial_w(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose values are used to evaluate the Chebyshev polynomial
+    of the first kind.
+- n: The degree of the Chebyshev polynomial to compute.
+7 api_usage_example: null
+8 api_shape: null

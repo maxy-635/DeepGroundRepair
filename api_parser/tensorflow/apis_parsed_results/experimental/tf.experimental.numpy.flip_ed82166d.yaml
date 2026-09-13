@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.flip
+3 api_description: Reverses the order of elements in an array along one or more specified
+  axes.
+4 api_signature: tf.experimental.numpy.flip(m)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

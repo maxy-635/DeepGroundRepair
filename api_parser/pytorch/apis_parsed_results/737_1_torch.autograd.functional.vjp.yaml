@@ -1,0 +1,18 @@
+2 api_name: torch.autograd.functional.vjp
+3 api_description: Computes the vector-Jacobian product of a function at given inputs,
+  returning the dot product of a vector v with the function’s Jacobian.
+4 api_signature: torch.autograd.functional.vjp(func,inputs,v)
+5 api_details: ''
+6 api_parameters:
+- func: The Python function whose outputs are used to compute the vector-Jacobian
+    product.
+- inputs: The Tensor inputs passed to `func`.
+- v: The vector used to weight the output when computing the vector-Jacobian product;
+    defaults to 1 for single-element outputs.
+7 api_usage_example:
+- ' def exp_reducer(x):'
+- '...     return x.exp().sum(dim=1)'
+- ' inputs = torch.rand(4, 4)'
+- ' v = torch.ones(4)'
+- ' vjp(exp_reducer, inputs, v)'
+8 api_shape: null

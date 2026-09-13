@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.FractionalAvgPool
+3 api_description: Applies fractional average pooling by dividing the input into uneven
+  pooling regions and replacing each region with its mean.
+4 api_signature: tf.raw_ops.FractionalAvgPool(value,pooling_ratio,overlapping,name)
+5 api_details: ''
+6 api_parameters:
+- value: The 4-D input tensor to average-pool over height and width.
+- pooling_ratio: Specifies the pooling downsampling ratios for each dimension, with
+    batch and channels fixed at 1.0.
+- overlapping: Controls whether adjacent pooling regions share boundary values.
+- name: An optional operation name used to label the op.
+7 api_usage_example: null
+8 api_shape: ''

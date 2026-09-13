@@ -1,0 +1,10 @@
+2 api_name: torch.special.bessel_j0
+3 api_description: Computes the Bessel function of the first kind of order 0 for each
+  input element.
+4 api_signature: torch.special.bessel_j0(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used as the input values for the Bessel J0
+    function.
+7 api_usage_example: null
+8 api_shape: null

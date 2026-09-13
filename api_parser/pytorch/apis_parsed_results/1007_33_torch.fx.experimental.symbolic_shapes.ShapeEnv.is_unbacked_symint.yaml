@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.is_unbacked_symint
+3 api_description: Returns whether a sympy symbol follows the naming convention used
+  for unbacked symbolic integers.
+4 api_signature: is_unbacked_symint(symbol)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

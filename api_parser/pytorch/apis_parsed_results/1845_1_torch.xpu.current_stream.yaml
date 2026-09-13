@@ -1,0 +1,9 @@
+2 api_name: torch.xpu.current_stream
+3 api_description: Returns the currently selected stream for the specified XPU device.
+4 api_signature: torch.xpu.current_stream(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which device’s current stream to return; defaults to the currently
+    selected device when `None`.
+7 api_usage_example: null
+8 api_shape: null

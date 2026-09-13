@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.create_unbacked_symbool
+3 api_description: Creates an unbacked symbolic boolean with no concrete hint value
+  for use in symbolic shape reasoning.
+4 api_signature: create_unbacked_symbool()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

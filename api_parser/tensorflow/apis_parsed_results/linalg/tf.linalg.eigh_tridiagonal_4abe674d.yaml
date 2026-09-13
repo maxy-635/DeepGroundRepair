@@ -1,0 +1,12 @@
+2 api_name: tensorflow.linalg.eigh_tridiagonal
+3 api_description: Computes the eigenvalues, and optionally eigenvectors, of a Hermitian
+  tridiagonal matrix.
+4 api_signature: tf.linalg.eigh_tridiagonal(alpha,beta)
+5 api_details: ''
+6 api_parameters:
+- alpha: Specifies the matrix diagonal values, using only the real part if the tensor
+    is complex so the matrix remains Hermitian.
+- beta: Specifies the first super-diagonal values, with the corresponding sub-diagonal
+    taken as its complex conjugate when needed to keep the matrix Hermitian.
+7 api_usage_example: null
+8 api_shape: ''

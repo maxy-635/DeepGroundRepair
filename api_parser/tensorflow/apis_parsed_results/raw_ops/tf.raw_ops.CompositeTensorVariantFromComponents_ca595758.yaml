@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.CompositeTensorVariantFromComponents
+3 api_description: Encodes an ExtensionType into a scalar variant Tensor by packing
+  its tensor components and TypeSpec into a single CompositeTensorVariant.
+4 api_signature: tf.raw_ops.CompositeTensorVariantFromComponents(components,metadata)
+5 api_details: ''
+6 api_parameters:
+- components: Supplies the Tensor components that make up the extension type value.
+- metadata: Provides the serialized TypeSpec string used to describe the value's type
+    information.
+7 api_usage_example: null
+8 api_shape: ''

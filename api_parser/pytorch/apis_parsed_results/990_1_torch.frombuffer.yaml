@@ -1,0 +1,21 @@
+2 api_name: torch.frombuffer
+3 api_description: Creates a 1D tensor that shares memory with any Python buffer-protocol
+  object.
+4 api_signature: torch.frombuffer(buffer,*,dtype,count,offset)
+5 api_details: ''
+6 api_parameters:
+- buffer: Provides the buffer object whose raw memory is used to create the tensor.
+7 api_usage_example:
+- ' import array'
+- ' a = array.array(''i'', [1, 2, 3])'
+- ' t = torch.frombuffer(a, dtype=torch.int32)'
+- ' t'
+- ' t[0] = -1'
+- ' a'
+- ' # Interprets the signed char bytes as 32-bit integers.'
+- ' # Each 4 signed char elements will be interpreted as'
+- ' # 1 signed 32-bit integer.'
+- ' import array'
+- ' a = array.array(''b'', [-1, 0, 0, 0])'
+- ' torch.frombuffer(a, dtype=torch.int32)'
+8 api_shape: null

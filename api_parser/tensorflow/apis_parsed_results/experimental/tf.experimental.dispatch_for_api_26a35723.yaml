@@ -1,0 +1,16 @@
+2 api_name: tensorflow.experimental.dispatch_for_api
+3 api_description: Registers a decorator-based override for a TensorFlow API so a
+  custom function runs when the call’s arguments match a specified type signature.
+4 api_signature: tf.experimental.dispatch_for_api(api,*signatures)
+5 api_details: ''
+6 api_parameters:
+- api: The TensorFlow API to override.
+- '*signatures': One or more dispatch signatures that specify parameter type conditions
+    for when the target should be called; if omitted, the target's type annotations
+    are used.
+7 api_usage_example:
+- '@dispatch_for_api(tf.concat, {''values'': typing.List[MaskedTensor]})'
+- 'def masked_concat(values, axis):'
+- '  return MaskedTensor(tf.concat([v.values for v in values], axis),'
+- '                      tf.concat([v.mask for v in values], axis))'
+8 api_shape: ''

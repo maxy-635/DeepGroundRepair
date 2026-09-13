@@ -1,0 +1,12 @@
+2 api_name: torch.mm
+3 api_description: Multiplies two matrices and returns their matrix product.
+4 api_signature: torch.mm(input,mat2,*,out)
+5 api_details: ''
+6 api_parameters:
+- input: The first matrix to multiply.
+- mat2: The second matrix to multiply with the first.
+7 api_usage_example:
+- ' mat1 = torch.randn(2, 3)'
+- ' mat2 = torch.randn(3, 3)'
+- ' torch.mm(mat1, mat2)'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.distribute.experimental.rpc.Client
+3 api_description: Client for sending RPC requests to a remote server and invoking
+  remote methods.
+4 api_signature: call(method_name:str,args,output_specs,timeout_in_ms)
+5 api_details: ''
+6 api_parameters:
+- name: Identifies the RPC client so multiple clients can connect to the same server
+    and be distinguished by different names.
+- timeout_in_ms: Sets the default timeout for outgoing RPCs in milliseconds; 0 means
+    no timeout, and exceeding it raises `DeadlineExceeded`.
+7 api_usage_example:
+- value = client.addition_blocking(a, b)
+8 api_shape: ''

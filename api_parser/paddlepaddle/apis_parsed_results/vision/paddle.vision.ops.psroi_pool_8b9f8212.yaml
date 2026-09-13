@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.ops.psroi_pool
+3 api_description: Performs position-sensitive average pooling over each input region
+  of interest to produce fixed-size feature maps from variable-sized regions.
+4 api_signature: paddle.vision.ops.psroi_pool(x,boxes,output_size)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the input feature map tensor to pool from.
+- boxes: Specifies the ROI bounding boxes to pool over.
+7 api_usage_example: []
+8 api_shape: {}

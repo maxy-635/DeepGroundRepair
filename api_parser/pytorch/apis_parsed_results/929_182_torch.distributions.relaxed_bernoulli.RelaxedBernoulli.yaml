@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.relaxed_bernoulli.RelaxedBernoulli
+3 api_description: A continuous relaxation of a Bernoulli distribution that supports
+  differentiable sampling and reparameterized gradients via a temperature-controlled
+  sigmoid transform.
+4 api_signature: '"RelaxedBernoulli(temperature,probs,logits)"'
+5 api_details: ''
+6 api_parameters:
+- temperature: Controls how smooth or discrete the Bernoulli relaxation is when sampling.
+- probs: Sets the probability that the relaxed Bernoulli sample will be 1.
+- logits: Sets the log-odds used to determine the probability of sampling 1.
+7 api_usage_example:
+- ' m = RelaxedBernoulli(torch.tensor([2.2]),'
+- '...                      torch.tensor([0.1, 0.2, 0.3, 0.99]))'
+- ' m.sample()'
+8 api_shape: null

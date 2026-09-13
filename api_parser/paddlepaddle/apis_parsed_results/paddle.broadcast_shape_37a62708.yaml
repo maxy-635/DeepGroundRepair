@@ -1,0 +1,16 @@
+2 api_name: paddle.broadcast_shape
+3 api_description: Computes the broadcasted output shape for two input tensor shapes,
+  following broadcasting rules.
+4 api_signature: paddle.broadcast_shape(x_shape,y_shape)
+5 api_details: ''
+6 api_parameters:
+- x_shape: Specifies the shape of the first tensor to be broadcast.
+- y_shape: Specifies the shape of the second tensor to be broadcast.
+7 api_usage_example:
+- import paddle
+- shape = paddle.broadcast_shape([2, 1, 3], [1, 3, 1])
+- shape
+- '[2, 3, 3]'
+- '# shape = paddle.broadcast_shape([2, 1, 3], [3, 3, 1])'
+- '# ValueError (terminated with error message).'
+8 api_shape: {}

@@ -1,0 +1,31 @@
+2 api_name: paddle.log10
+3 api_description: Computes the base-10 logarithm of each element in the input tensor.
+4 api_signature: paddle.log10(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose base-10 logarithm is computed, with supported numeric
+    and complex data types.
+7 api_usage_example:
+- import paddle
+- '# example 1: x is a float'
+- x_i = paddle.to_tensor([[1.0], [10.0]])
+- res = paddle.log10(x_i)
+- res
+- Tensor(shape=[2, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.],'
+- '[1.]])'
+- '# example 2: x is float32'
+- x_i = paddle.full(shape=[1], fill_value=10, dtype='float32')
+- paddle.to_tensor(x_i)
+- res = paddle.log10(x_i)
+- res
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.])'
+- '# example 3: x is float64'
+- x_i = paddle.full(shape=[1], fill_value=10, dtype='float64')
+- paddle.to_tensor(x_i)
+- res = paddle.log10(x_i)
+- res
+- Tensor(shape=[1], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[1.])'
+8 api_shape: {}

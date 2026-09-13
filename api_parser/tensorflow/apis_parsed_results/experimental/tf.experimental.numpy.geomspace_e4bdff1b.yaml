@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.geomspace
+3 api_description: Returns numbers spaced evenly on a logarithmic scale between two
+  endpoints, matching NumPy geomspace behavior.
+4 api_signature: tf.experimental.numpy.geomspace(start,stop,num)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.image.convert_image_dtype
+3 api_description: Converts an image tensor to a new dtype, scaling pixel values as
+  needed to preserve the expected numeric range.
+4 api_signature: tf.image.convert_image_dtype(image,dtype)
+5 api_details: ''
+6 api_parameters:
+- image: The input image to be converted.
+- dtype: The target data type for the converted image.
+7 api_usage_example:
+- d = [[[1000], [2000]], [[3000], [4000]]]
+- d_int16 = tf.convert_to_tensor(d, dtype=tf.int16)
+- d_uint8 = tf.image.convert_image_dtype(d_int16, dtype=tf.uint8)
+- d_int16_back = tf.image.convert_image_dtype(d_uint8, dtype=tf.int16)
+- print(d_int16_back)
+8 api_shape: ''

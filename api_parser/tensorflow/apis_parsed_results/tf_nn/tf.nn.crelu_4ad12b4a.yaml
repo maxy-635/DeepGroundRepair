@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nn.crelu
+3 api_description: tensorflow.nn.crelu computes the Concatenated ReLU, which combines
+  the positive and negative parts of an activation to double its depth.
+4 api_signature: tf.nn.crelu(features,axis)
+5 api_details: ''
+6 api_parameters:
+- features: Specifies the input tensor containing the data to be processed by the
+    CReLU activation function.
+- axis: Determines the axis along which the positive and negative activations are
+    concatenated in the output tensor, with a default value of -1 indicating the last
+    axis.
+7 api_usage_example: null
+8 api_shape: ''

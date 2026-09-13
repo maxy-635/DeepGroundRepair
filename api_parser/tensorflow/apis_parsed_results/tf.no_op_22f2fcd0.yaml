@@ -1,0 +1,9 @@
+2 api_name: tensorflow.no_op
+3 api_description: A placeholder operation that performs no computation and is mainly
+  used to create control dependencies.
+4 api_signature: tf.no_op(name)
+5 api_details: ''
+6 api_parameters:
+- name: An optional name used to label the no-op operation in the graph.
+7 api_usage_example: null
+8 api_shape: ''

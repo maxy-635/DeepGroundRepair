@@ -1,0 +1,19 @@
+2 api_name: torch.distributed.rpc.rpc_sync
+3 api_description: Synchronously runs a function on a remote worker and blocks until
+  the result is returned; RPC communication happens in parallel with Python execution
+  and the call is thread-safe.
+4 api_signature: torch.distributed.rpc.rpc_sync(to,func,args,kwargs)
+5 api_details: ''
+6 api_parameters:
+- to: Specifies the destination worker to run the remote call on.
+- func: Identifies the callable to execute remotely.
+- args: Supplies the positional arguments for the callable.
+- kwargs: Supplies the keyword arguments for the callable.
+7 api_usage_example:
+- ' # On worker 0:'
+- ' import torch'
+- ' import torch.distributed.rpc as rpc'
+- ' rpc.init_rpc("worker0", rank=0, world_size=2)'
+- ' ret = rpc.rpc_sync("worker1", torch.add, args=(torch.ones(2), 3))'
+- ' rpc.shutdown()'
+8 api_shape: null

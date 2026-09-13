@@ -1,0 +1,19 @@
+2 api_name: torch.distributions.multivariate_normal.MultivariateNormal
+3 api_description: Represents a multivariate normal (Gaussian) distribution parameterized
+  by a mean vector and positive-definite covariance, precision, or scale-tril matrix,
+  and provides sampling, log probability evaluation, entropy, and related distribution
+  utilities.
+4 api_signature: torch.distributions.multivariate_normal.MultivariateNormal(loc,covariance_matrix,precision_matrix,scale_tril)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the mean vector of the multivariate normal distribution.
+- covariance_matrix: Provides the positive-definite covariance matrix that defines
+    the distribution's spread and correlations.
+- precision_matrix: Provides the positive-definite precision matrix, which is the
+    inverse of the covariance matrix.
+- scale_tril: Provides a lower-triangular Cholesky factor of the covariance matrix
+    with a positive diagonal.
+7 api_usage_example:
+- ' m = MultivariateNormal(torch.zeros(2), torch.eye(2))'
+- ' m.sample()  # normally distributed with mean=`[0,0]` and covariance_matrix=`I`'
+8 api_shape: null

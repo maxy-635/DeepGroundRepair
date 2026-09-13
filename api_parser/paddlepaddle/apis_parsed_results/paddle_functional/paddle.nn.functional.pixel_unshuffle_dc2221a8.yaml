@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.functional.pixel_unshuffle
+3 api_description: The paddle.nn.functional.pixel_unshuffle API rearranges elements
+  in a tensor from spatial dimensions to depth, reversing the pixel shuffle operation
+  to increase the number of channels while reducing spatial resolution.
+4 api_signature: paddle.nn.functional.pixel_unshuffle(x,downscale_factor)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input 4-D tensor with data type float32 or float64.
+- downscale_factor: Specifies the factor by which the spatial resolution of the input
+    tensor is decreased.
+7 api_usage_example: []
+8 api_shape: null

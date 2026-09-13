@@ -1,0 +1,15 @@
+2 api_name: torch.autograd.functional.hessian
+3 api_description: Computes the Hessian matrix of a scalar-valued function with respect
+  to its inputs using autograd.
+4 api_signature: torch.autograd.functional.hessian(func,inputs)
+5 api_details: ''
+6 api_parameters:
+- func: The Python function whose Hessian is being computed from Tensor inputs and
+    a single-element Tensor output.
+- inputs: The Tensor inputs passed to `func` when computing the Hessian.
+7 api_usage_example:
+- ' def pow_reducer(x):'
+- '...     return x.pow(3).sum()'
+- ' inputs = torch.rand(2, 2)'
+- ' hessian(pow_reducer, inputs)'
+8 api_shape: null

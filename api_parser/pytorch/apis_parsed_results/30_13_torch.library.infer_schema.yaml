@@ -1,0 +1,14 @@
+2 api_name: torch.library.infer_schema
+3 api_description: Infers an operator schema from a function’s type hints so it can
+  be used to define a new PyTorch operator.
+4 api_signature: torch.library.infer_schema(prototype_function,*,op_name)
+5 api_details: ''
+6 api_parameters:
+- prototype_function: The function whose type annotations are used to infer the schema.
+- op_name: The operator name to include in the inferred schema, or omit if `None`.
+7 api_usage_example:
+- ' def foo_impl(x: torch.Tensor) -> torch.Tensor:'
+- '     return x.sin()'
+- ' infer_schema(foo_impl, op_name="foo", mutates_args={})'
+- ' infer_schema(foo_impl, mutates_args={})'
+8 api_shape: null

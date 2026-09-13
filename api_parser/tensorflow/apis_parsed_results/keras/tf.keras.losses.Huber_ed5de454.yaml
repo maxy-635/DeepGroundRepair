@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.losses.Huber
+3 api_description: Computes the Huber loss between true and predicted values, combining
+  squared error for small differences and absolute error for large differences.
+4 api_signature: tf.keras.losses.Huber(delta)
+5 api_details: ''
+6 api_parameters:
+- delta: Sets the error threshold where the Huber loss switches from squared to linear
+    behavior.
+7 api_usage_example: null
+8 api_shape: ''

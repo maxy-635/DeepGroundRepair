@@ -1,0 +1,12 @@
+2 api_name: torch.nn.LazyBatchNorm1d
+3 api_description: torch.nn.LazyBatchNorm1d is a Batch Normalization layer for 1D
+  inputs that initializes its parameters lazily, allowing it to adapt to the input
+  shape dynamically at runtime.
+4 api_signature: torch.nn.LazyBatchNorm1d(eps,affine,track_running_stats)
+5 api_details: ''
+6 api_parameters:
+- eps: Used for numerical stability by preventing division by zero.
+- affine: Determines whether the module has learnable parameters for scaling and shifting.
+- track_running_stats: Controls whether to track running mean and variance for normalization.
+7 api_usage_example: null
+8 api_shape: null

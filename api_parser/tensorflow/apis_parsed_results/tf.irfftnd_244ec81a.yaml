@@ -1,0 +1,12 @@
+2 api_name: tensorflow.irfftnd
+3 api_description: Computes the n-dimensional inverse real FFT over the specified
+  axes, reconstructing a real-valued signal from its half-spectrum input, with optional
+  zero-padding or default output shape based on `fft_length`.
+4 api_signature: tf.irfftnd(input,fft_length,axes)
+5 api_details: ''
+6 api_parameters:
+- input: The complex-valued tensor to be transformed by the inverse real FFT.
+- fft_length: The output length to use for each transformed dimension.
+- axes: The dimensions of the input tensor along which to apply the transform.
+7 api_usage_example: null
+8 api_shape: ''

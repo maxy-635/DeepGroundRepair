@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.batch_get_value
+3 api_description: Returns the current values of a list of backend variables or tensors
+  as NumPy arrays, fetching them in a single call.
+4 api_signature: tf.keras.backend.batch_get_value(tensors)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

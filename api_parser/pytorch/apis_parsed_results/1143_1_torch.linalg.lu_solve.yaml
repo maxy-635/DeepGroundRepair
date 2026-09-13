@@ -1,0 +1,27 @@
+2 api_name: torch.linalg.lu_solve
+3 api_description: Solves a square linear system with a unique solution using a precomputed
+  LU decomposition.
+4 api_signature: torch.linalg.lu_solve(LU,pivots,B,*,left,adjoint)
+5 api_details: ''
+6 api_parameters:
+- LU: The LU factorization of the coefficient matrix, containing the combined lower-
+    and upper-triangular factors from `lu_factor()`.
+- pivots: The pivot indices from `lu_factor()` that record the row permutations used
+    during factorization.
+- B: The right-hand side tensor containing the values to solve the linear system against.
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' LU, pivots = torch.linalg.lu_factor(A)'
+- ' B = torch.randn(3, 2)'
+- ' X = torch.linalg.lu_solve(LU, pivots, B)'
+- ' torch.allclose(A @ X, B)'
+- ' B = torch.randn(3, 3, 2)   # Broadcasting rules apply: A is broadcasted'
+- ' X = torch.linalg.lu_solve(LU, pivots, B)'
+- ' torch.allclose(A @ X, B)'
+- ' B = torch.randn(3, 5, 3)'
+- ' X = torch.linalg.lu_solve(LU, pivots, B, left=False)'
+- ' torch.allclose(X @ A, B)'
+- ' B = torch.randn(3, 3, 4)   # Now solve for A^T'
+- ' X = torch.linalg.lu_solve(LU, pivots, B, adjoint=True)'
+- ' torch.allclose(A.mT @ X, B)'
+8 api_shape: null

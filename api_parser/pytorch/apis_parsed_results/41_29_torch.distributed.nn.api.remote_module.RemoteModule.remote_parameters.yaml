@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.nn.api.remote_module.RemoteModule.remote_parameters
+3 api_description: Returns RRefs for all parameters of the remote module.
+4 api_signature: remote_parameters(recurse)
+5 api_details: ''
+6 api_parameters:
+- recurse: Controls whether to return only the remote module's direct parameters or
+    include parameters from all nested submodules as well.
+7 api_usage_example: null
+8 api_shape: null

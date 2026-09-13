@@ -1,0 +1,36 @@
+2 api_name: torch.optim.Adamax
+3 api_description: Implements the Adamax optimization algorithm, an Adam variant that
+  uses the infinity norm for adaptive learning rate updates.
+4 api_signature: torch.optim.Adamax(params,lr,betas,eps,weight_decay)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies the parameters to optimize, either as an iterable of tensors,
+    named parameters, or parameter-group dictionaries.
+- lr: Sets the step size used to update the parameters during optimization.
+- betas: Controls the exponential decay rates for the running averages of gradients
+    and their squared values.
+- eps: Adds a small constant to the denominator for numerical stability.
+- weight_decay: Applies L2 regularization to discourage large parameter values.
+7 api_usage_example:
+- ' model = torch.nn.Linear(10, 10)'
+- ' optim = torch.optim.SGD(model.parameters(), lr=3e-4)'
+- ' scheduler1 = torch.optim.lr_scheduler.LinearLR('
+- '...     optim,'
+- '...     start_factor=0.1,'
+- '...     end_factor=1,'
+- '...     total_iters=20,'
+- '... )'
+- ' scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR('
+- '...     optim,'
+- '...     T_max=80,'
+- '...     eta_min=3e-5,'
+- '... )'
+- ' lr = torch.optim.lr_scheduler.SequentialLR('
+- '...     optim,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' lr.load_state_dict(torch.load("./save_seq.pt"))'
+- ' # now load the optimizer checkpoint after loading the LRScheduler'
+- ' optim.load_state_dict(torch.load("./save_optim.pt"))'
+8 api_shape: null

@@ -1,0 +1,31 @@
+2 api_name: paddle.io.random_split
+3 api_description: Randomly split a dataset into non-overlapping subsets of specified
+  lengths, optionally using a fixed generator for reproducible splits.
+4 api_signature: paddle.io.random_split(dataset,lengths)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset to divide into separate subsets.
+- lengths: The sizes or fractional proportions of each resulting split.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- 'a_list = paddle.io.random_split(range(10), [3, 7])  # type: ignore[arg-type, var-annotated]'
+- print(len(a_list))
+- '2'
+- '# output of the first subset'
+- 'for idx, v in enumerate(a_list[0]):'
+- '    print(idx, v)'
+- 0 7
+- 1 6
+- 2 5
+- '# output of the second subset'
+- 'for idx, v in enumerate(a_list[1]):'
+- '    print(idx, v)'
+- 0 1
+- 1 9
+- 2 4
+- 3 2
+- 4 0
+- 5 3
+- 6 8
+8 api_shape: {}

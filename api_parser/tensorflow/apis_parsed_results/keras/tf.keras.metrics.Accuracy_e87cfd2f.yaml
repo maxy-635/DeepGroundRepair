@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.metrics.Accuracy
+3 api_description: Computes accuracy by counting how often predictions match labels,
+  optionally weighted by sample weights, and returns the total match rate.
+4 api_signature: tf.keras.metrics.Accuracy(dtype)
+5 api_details: ''
+6 api_parameters:
+- dtype: Sets the data type used for the metric's computed result.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([[1], [2], [3], [4]], [[0], [2], [3], [4]],
+- '               sample_weight=[1, 1, 0, 0])'
+- m.result()
+8 api_shape: ''

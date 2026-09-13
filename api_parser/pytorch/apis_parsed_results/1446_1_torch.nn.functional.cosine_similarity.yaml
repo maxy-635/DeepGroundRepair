@@ -1,0 +1,16 @@
+2 api_name: torch.nn.functional.cosine_similarity
+3 api_description: Computes the cosine similarity between two tensors x1 and x2 along
+  a specified dimension, requiring them to be broadcastable to a common shape, and
+  reduces the output by one dimension.
+4 api_signature: torch.nn.functional.cosine_similarity(x1,x2,dim)
+5 api_details: ''
+6 api_parameters:
+- x1: Represents the first input tensor for computing cosine similarity.
+- x2: Represents the second input tensor for computing cosine similarity.
+- dim: Specifies the dimension along which the cosine similarity should be computed.
+7 api_usage_example:
+- ' input1 = torch.randn(100, 128)'
+- ' input2 = torch.randn(100, 128)'
+- ' output = F.cosine_similarity(input1, input2)'
+- ' print(output)'
+8 api_shape: null

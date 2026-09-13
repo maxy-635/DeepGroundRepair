@@ -1,0 +1,9 @@
+2 api_name: torch.utils.benchmark.Compare
+3 api_description: Formats and displays multiple benchmark measurements in a clear
+  table for side-by-side comparison.
+4 api_signature: '"torch.utils.benchmark.Compare(results)"'
+5 api_details: ''
+6 api_parameters:
+- results: A list of Measurement objects to compare and display.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.metrics.CategoricalCrossentropy
+3 api_description: Computes the crossentropy between one-hot encoded labels and predicted
+  class probabilities for multi-class classification.
+4 api_signature: tf.keras.metrics.CategoricalCrossentropy(from_logits,label_smoothing)
+5 api_details: ''
+6 api_parameters:
+- from_logits: Specifies whether the model outputs raw logits instead of normalized
+    probabilities.
+- label_smoothing: Reduces the target label confidence by blending labels toward a
+    uniform distribution.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([[0, 1, 0], [0, 0, 1]],
+- '               [[0.05, 0.95, 0], [0.1, 0.8, 0.1]],'
+- '               sample_weight=np.array([0.3, 0.7]))'
+- m.result()
+8 api_shape: ''

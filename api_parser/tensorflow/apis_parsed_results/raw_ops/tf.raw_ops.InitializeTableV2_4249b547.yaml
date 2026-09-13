@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.InitializeTableV2
+3 api_description: Initializes a lookup table using separate key and value tensors.
+4 api_signature: tf.raw_ops.InitializeTableV2(table_handle,keys,values)
+5 api_details: ''
+6 api_parameters:
+- table_handle: Resource handle identifying the table to initialize.
+- keys: Tensor containing the keys to insert into the table.
+- values: Tensor containing the values associated with each key.
+7 api_usage_example: null
+8 api_shape: ''

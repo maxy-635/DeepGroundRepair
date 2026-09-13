@@ -1,0 +1,13 @@
+2 api_name: tensorflow.feature_column.categorical_column_with_hash_bucket
+3 api_description: Hashes string or integer sparse feature values into a fixed number
+  of buckets, converting integers to strings first and dropping missing values such
+  as -1 or '' in dictionary inputs.
+4 api_signature: tf.feature_column.categorical_column_with_hash_bucket(key,hash_bucket_size)
+5 api_details: ''
+6 api_parameters:
+- key: The feature name used to identify the input, including as the column name and
+    dictionary key during feature parsing.
+- hash_bucket_size: The number of hash buckets to use, which must be greater than
+    1.
+7 api_usage_example: null
+8 api_shape: ''

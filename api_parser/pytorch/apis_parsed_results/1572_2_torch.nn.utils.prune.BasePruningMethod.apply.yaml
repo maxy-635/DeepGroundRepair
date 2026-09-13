@@ -1,0 +1,14 @@
+2 api_name: torch.nn.utils.prune.BasePruningMethod.apply
+3 api_description: Applies a pruning method to a tensor by reparameterizing it so
+  pruning can be added dynamically on the fly.
+4 api_signature: '"apply(module,name,*args,importance_scores,**kwargs)"'
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the parameter to be pruned.
+- name: The name of the parameter within the module to prune.
+- args: Positional arguments forwarded to the pruning method subclass.
+- importance_scores: Optional tensor of importance values used to build the pruning
+    mask, defaulting to the parameter itself if not provided.
+- kwargs: Keyword arguments forwarded to the pruning method subclass.
+7 api_usage_example: null
+8 api_shape: null

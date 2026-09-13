@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.algorithms.Joinable
+3 api_description: Abstract base class for distributed objects that can participate
+  in a join context, exposing hooks for tracking readiness, synchronizing with peers,
+  and handling completion when some ranks finish early.
+4 api_signature: class torch.distributed.algorithms.Joinable
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.quant.weight_only_linear
+3 api_description: The paddle.nn.quant.weight_only_linear API performs matrix multiplication
+  on two tensors with optional bias addition, requiring CUDA version >= 11.2.
+4 api_signature: paddle.nn.quant.weight_only_linear(x,weight,bias,weight_scale,weight_dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor for multiplication, supporting float16 or bfloat16 data types.
+- weight: The second tensor for multiplication, which must be a 2D tensor.
+- bias: An optional bias tensor added to the result of the multiplication, if provided.
+- weight_scale: A scale tensor used for dequantizing the weight, which must be 1D.
+- weight_dtype: Specifies the data type of the weight tensor, either 'int8' or 'int4',
+    with 'int8' as the default.
+7 api_usage_example: []
+8 api_shape: null

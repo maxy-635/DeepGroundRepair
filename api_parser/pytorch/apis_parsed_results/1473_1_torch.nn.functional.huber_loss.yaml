@@ -1,0 +1,15 @@
+2 api_name: torch.nn.functional.huber_loss
+3 api_description: The torch.nn.functional.huber_loss computes the Huber loss between
+  input and target tensors, optionally applying element-wise weighting.
+4 api_signature: torch.nn.functional.huber_loss(input,target,delta)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the model's predicted output values for comparison against the
+    actual values.
+- target: Contains the actual ground truth values that the model's predictions are
+    compared against.
+- delta: Defines the point at which the loss calculation transitions from L2 loss
+    for smaller errors to L1 loss for larger errors, controlling the sensitivity to
+    outliers.
+7 api_usage_example: null
+8 api_shape: null

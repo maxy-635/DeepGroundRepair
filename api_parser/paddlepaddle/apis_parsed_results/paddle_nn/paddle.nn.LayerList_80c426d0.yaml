@@ -1,0 +1,21 @@
+2 api_name: paddle.nn.LayerList
+3 api_description: LayerList is a container for sublayers in PaddlePaddle, allowing
+  them to be indexed and managed like a regular Python list, with automatic registration
+  of the contained sublayers.
+4 api_signature: paddle.nn.LayerList(sublayers)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- 'MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self.linears = paddle.nn.LayerList('
+- '            [paddle.nn.Linear(10, 10) for i in range(10)])'
+- '...'
+- '    def forward(self, x):'
+- '        # LayerList can act as an iterable, or be indexed using ints'
+- '        for i, l in enumerate(self.linears):'
+- '            x = self.linears[i // 2](x) + l(x)'
+- '        return x'
+8 api_shape: null

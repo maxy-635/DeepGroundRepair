@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.DataFormatDimMap
+3 api_description: Maps a dimension index from one data format to the corresponding
+  index in another format.
+4 api_signature: tf.raw_ops.DataFormatDimMap(x,src_format,dst_format)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input dimension indices to map from the source data format.
+- src_format: Sets the source data format used as the basis for interpreting `x`.
+- dst_format: Sets the destination data format to which the dimension indices are
+    mapped.
+7 api_usage_example: null
+8 api_shape: ''

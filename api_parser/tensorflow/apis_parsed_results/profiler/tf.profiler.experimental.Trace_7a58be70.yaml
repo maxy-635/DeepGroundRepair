@@ -1,0 +1,9 @@
+2 api_name: tensorflow.profiler.experimental.Trace
+3 api_description: Context manager that records a profiler trace event from entry
+  to exit and saves it when profiling is enabled.
+4 api_signature: tf.profiler.experimental.Trace(name)
+5 api_details: ''
+6 api_parameters:
+- name: Names the trace event being recorded.
+7 api_usage_example: null
+8 api_shape: ''

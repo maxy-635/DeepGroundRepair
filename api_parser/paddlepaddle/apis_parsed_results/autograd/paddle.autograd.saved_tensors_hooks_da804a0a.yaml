@@ -1,0 +1,28 @@
+2 api_name: paddle.autograd.saved_tensors_hooks
+3 api_description: Registers pack and unpack hooks for tensors saved during autograd,
+  allowing custom handling of saved tensors in dynamic computation graphs.
+4 api_signature: paddle.autograd.saved_tensors_hooks(pack_hook,unpack_hook)
+5 api_details: ''
+6 api_parameters:
+- pack_hook: Called when forward-saved tensors need to be stored for backward, letting
+    you transform and save the tensor data elsewhere instead of keeping the original
+    tensor.
+- unpack_hook: Called when backward needs a saved tensor, letting you restore and
+    return the original tensor content from the information produced by `pack_hook`.
+7 api_usage_example:
+- '# Example1'
+- import paddle
+- 'def pack_hook(x):'
+- '    print("Packing", x)'
+- '    return x.numpy()'
+- 'def unpack_hook(x):'
+- '    print("UnPacking", x)'
+- '    return paddle.to_tensor(x)'
+- a = paddle.ones([3,3])
+- b = paddle.ones([3,3]) * 2
+- a.stop_gradient = False
+- b.stop_gradient = False
+- 'with paddle.autograd.saved_tensors_hooks(pack_hook, unpack_hook):'
+- '    y = paddle.multiply(a, b)'
+- y.sum().backward()
+8 api_shape: {}

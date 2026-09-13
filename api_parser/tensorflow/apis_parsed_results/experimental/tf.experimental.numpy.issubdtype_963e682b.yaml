@@ -1,0 +1,10 @@
+2 api_name: tensorflow.experimental.numpy.issubdtype
+3 api_description: Checks whether one dtype is a subclass of, or compatible with,
+  another dtype in the type hierarchy.
+4 api_signature: '"tf.experimental.numpy.issubdtype(arg1,arg2)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- np.issubdtype('S1', np.string_)
+- np.issubdtype('i4', np.signedinteger)
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ExperimentalBytesProducedStatsDataset
+3 api_description: Records the byte size of each element from an input dataset into
+  a StatsAggregator.
+4 api_signature: tf.raw_ops.ExperimentalBytesProducedStatsDataset(input_dataset,tag)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset variant to which bytes-produced statistics are
+    attached or collected.
+- tag: A string label used to identify or tag the produced-bytes statistics for this
+    dataset.
+7 api_usage_example: null
+8 api_shape: ''

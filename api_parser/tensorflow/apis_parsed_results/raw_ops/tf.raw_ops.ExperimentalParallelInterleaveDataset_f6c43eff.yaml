@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ExperimentalParallelInterleaveDataset
+3 api_description: Builds a non-deterministic dataset that interleaves outputs from
+  input_dataset by applying f, skipping any source that would block so training can
+  continue when some data is available.
+4 api_signature: tf.raw_ops.ExperimentalParallelInterleaveDataset(input_dataset,cycle_length,block_length,sloppy,f)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The source dataset to read from and interleave.
+- cycle_length: The number of input datasets to process in parallel at once.
+- block_length: The number of consecutive elements to take from each dataset before
+    switching.
+- sloppy: Whether to allow non-deterministic, potentially faster interleaving order.
+- f: The function that maps each input element to a dataset to be interleaved.
+7 api_usage_example: null
+8 api_shape: ''

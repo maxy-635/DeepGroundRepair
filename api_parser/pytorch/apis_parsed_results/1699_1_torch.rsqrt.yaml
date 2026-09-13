@@ -1,0 +1,12 @@
+2 api_name: torch.rsqrt
+3 api_description: Computes the reciprocal square root of each tensor element and
+  returns the result as a new tensor.
+4 api_signature: torch.rsqrt(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used to compute the reciprocal square root.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.rsqrt(a)'
+8 api_shape: null

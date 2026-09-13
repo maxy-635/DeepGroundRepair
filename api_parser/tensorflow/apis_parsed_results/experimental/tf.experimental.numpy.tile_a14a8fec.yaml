@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.tile
+3 api_description: Repeats an array to build a larger tiled array by duplicating it
+  along each specified dimension, matching NumPy tile behavior.
+4 api_signature: tf.experimental.numpy.tile(a,reps)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

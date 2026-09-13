@@ -1,0 +1,9 @@
+2 api_name: tensorflow.feature_column.make_parse_example_spec
+3 api_description: Builds a parse spec dict from feature columns for use with `tf.io.parse_example`.
+4 api_signature: tf.feature_column.make_parse_example_spec(feature_columns)
+5 api_details: ''
+6 api_parameters:
+- feature_columns: Defines the feature columns to include when building the parse-example
+    specification.
+7 api_usage_example: null
+8 api_shape: ''

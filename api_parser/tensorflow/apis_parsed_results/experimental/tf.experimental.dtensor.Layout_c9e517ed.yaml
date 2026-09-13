@@ -1,0 +1,11 @@
+2 api_name: tensorflow.experimental.dtensor.Layout
+3 api_description: Describes how a DTensor is partitioned or replicated across a device
+  mesh by mapping each tensor axis to a mesh sharding spec.
+4 api_signature: tf.experimental.dtensor.Layout(sharding_specs,mesh)
+5 api_details: ''
+6 api_parameters:
+- sharding_specs: Describes how each tensor axis is partitioned across mesh dimensions
+    or left unsharded.
+- mesh: Specifies the device mesh used to distribute the tensor.
+7 api_usage_example: null
+8 api_shape: ''

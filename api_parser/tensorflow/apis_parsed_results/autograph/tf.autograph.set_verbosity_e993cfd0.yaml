@@ -1,0 +1,10 @@
+2 api_name: tensorflow.autograph.set_verbosity
+3 api_description: Sets AutoGraph logging verbosity to control debug and detailed
+  output for troubleshooting and bug reports.
+4 api_signature: tf.autograph.set_verbosity(level)
+5 api_details: ''
+6 api_parameters:
+- level: Controls how much Autograph logs, with higher values producing more detailed
+    output and 0 disabling logging.
+7 api_usage_example: null
+8 api_shape: ''

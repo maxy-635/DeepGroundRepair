@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.FixedUnigramCandidateSampler
+3 api_description: Samples a fixed set of candidate labels from a learned unigram
+  distribution, optionally distorted by a power, for each batch.
+4 api_signature: tf.raw_ops.FixedUnigramCandidateSampler(true_classes,num_true,num_sampled,unique,range_max,unigrams)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Provides the batch of true label IDs for each example, organized as
+    a batch_size by num_true matrix.
+- num_true: Specifies how many true labels are associated with each context/example.
+- num_sampled: Sets how many candidate classes to randomly draw as negative samples.
+- unique: Controls whether sampled candidates must be unique within each batch.
+- range_max: Defines the exclusive upper bound for sampled integer IDs, from 0 up
+    to range_max - 1.
+- unigrams: Supplies optional unigram counts or probabilities used to weight the sampling
+    distribution by class ID.
+7 api_usage_example: null
+8 api_shape: ''

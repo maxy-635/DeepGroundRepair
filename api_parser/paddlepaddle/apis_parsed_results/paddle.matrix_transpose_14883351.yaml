@@ -1,0 +1,9 @@
+2 api_name: paddle.matrix_transpose
+3 api_description: Transpose the last two dimensions of the input tensor.
+4 api_signature: paddle.matrix_transpose(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor to transpose, which must have at least two dimensions and can be
+    of any Paddle-supported data type.
+7 api_usage_example: []
+8 api_shape: {}

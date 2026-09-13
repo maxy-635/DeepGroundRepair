@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.vdot
+3 api_description: Computes the dot product of two arrays after flattening and conjugating
+  the first argument, matching NumPy’s vdot behavior.
+4 api_signature: '"tf.experimental.numpy.vdot(a,b)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

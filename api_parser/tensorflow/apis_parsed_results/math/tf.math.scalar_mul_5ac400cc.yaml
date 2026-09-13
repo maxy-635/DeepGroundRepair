@@ -1,0 +1,15 @@
+2 api_name: tensorflow.math.scalar_mul
+3 api_description: Multiplies a scalar by a Tensor or IndexedSlices, with efficient
+  handling for IndexedSlices.
+4 api_signature: tf.math.scalar_mul(scalar,x)
+5 api_details: ''
+6 api_parameters:
+- scalar: The 0-D scalar value used to multiply the input tensor.
+- x: The tensor or IndexedSlices to be scaled by the scalar.
+7 api_usage_example:
+- x = tf.reshape(tf.range(30, dtype=tf.float32), [10, 3])
+- 'with tf.GradientTape() as g:'
+- '  g.watch(x)'
+- '  y = tf.gather(x, [1, 2])  # IndexedSlices'
+- '  z = tf.math.scalar_mul(10.0, y)'
+8 api_shape: ''

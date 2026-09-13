@@ -1,0 +1,16 @@
+2 api_name: torch.nn.TransformerDecoder
+3 api_description: A stack of decoder layers that processes target sequences using
+  self-attention and encoder context to produce decoded representations.
+4 api_signature: torch.nn.TransformerDecoder(decoder_layer,num_layers)
+5 api_details: ''
+6 api_parameters:
+- decoder_layer: Provides the base Transformer decoder layer that will be cloned to
+    build each sub-layer in the decoder.
+- num_layers: Specifies how many decoder sub-layers are stacked to form the full decoder.
+7 api_usage_example:
+- ' decoder_layer = nn.TransformerDecoderLayer(d_model=512, nhead=8)'
+- ' transformer_decoder = nn.TransformerDecoder(decoder_layer, num_layers=6)'
+- ' memory = torch.rand(10, 32, 512)'
+- ' tgt = torch.rand(20, 32, 512)'
+- ' out = transformer_decoder(tgt, memory)'
+8 api_shape: null

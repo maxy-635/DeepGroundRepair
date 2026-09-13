@@ -1,0 +1,16 @@
+2 api_name: torch.nn.functional.gelu
+3 api_description: The torch.nn.functional.gelu function applies the Gaussian Error
+  Linear Unit (GELU) activation, computed as GELU(x) = x * Φ(x), where Φ(x) is the
+  cumulative distribution function of the standard normal distribution, to each element
+  of the input tensor.
+4 api_signature: torch.nn.functional.gelu(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the GELU activation function is applied.
+- approximate: A boolean that indicates whether to use the approximate version of
+    GELU for faster computation.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

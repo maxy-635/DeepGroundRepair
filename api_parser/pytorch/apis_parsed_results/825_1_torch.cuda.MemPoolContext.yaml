@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.MemPoolContext
+3 api_description: Context manager that activates a CUDA memory pool and restores
+  the previous pool when it exits or is deleted.
+4 api_signature: torch.cuda.MemPoolContext()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

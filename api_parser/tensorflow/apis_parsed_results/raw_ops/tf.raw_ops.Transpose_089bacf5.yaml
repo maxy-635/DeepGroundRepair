@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Transpose
+3 api_description: Reorders the dimensions of a tensor according to a given permutation,
+  producing an output with the same rank and matching permuted shape.
+4 api_signature: tf.raw_ops.Transpose(x,perm)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose dimensions will be reordered.
+- perm: A 1-D integer tensor specifying the new order of the input tensor’s dimensions.
+7 api_usage_example: null
+8 api_shape: ''

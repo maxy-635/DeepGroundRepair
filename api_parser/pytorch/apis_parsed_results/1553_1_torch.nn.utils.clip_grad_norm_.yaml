@@ -1,0 +1,12 @@
+2 api_name: torch.nn.utils.clip_grad_norm_
+3 api_description: Clips the gradients of a set of parameters so their total norm
+  does not exceed a specified maximum.
+4 api_signature: torch.nn.utils.clip_grad_norm_(parameters,max_norm,norm_type)
+5 api_details: ''
+6 api_parameters:
+- parameters: The tensor or iterable of tensors whose gradients will be clipped/normalized.
+- max_norm: The maximum allowed norm for the gradients before scaling is applied.
+- norm_type: The p-norm used to compute the gradient norm, including `inf` for infinity
+    norm.
+7 api_usage_example: null
+8 api_shape: null

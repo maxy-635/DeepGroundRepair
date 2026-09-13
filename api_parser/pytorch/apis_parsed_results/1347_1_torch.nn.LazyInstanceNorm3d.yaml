@@ -1,0 +1,17 @@
+2 api_name: torch.nn.LazyInstanceNorm3d
+3 api_description: torch.nn.LazyInstanceNorm3d is a 3D instance normalization layer
+  that initializes its num_features parameter lazily, allowing for dynamic input shapes
+  during model construction.
+4 api_signature: torch.nn.LazyInstanceNorm3d(eps,affine,track_running_stats)
+5 api_details: ''
+6 api_parameters:
+- eps: A small value added to the denominator for numerical stability during normalization.
+- affine: Determines whether the module includes learnable affine parameters like
+    scale and shift.
+- track_running_stats: Controls whether the module tracks running mean and variance
+    or uses batch statistics.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth, Height, Width)
+  output tensor shape: (N, Channel_out, Depth, Height, Width)
+  tensor shape transform formulas: {}

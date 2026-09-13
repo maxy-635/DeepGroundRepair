@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.ParseSequenceExampleV2
+3 api_description: Parses a vector of `tf.io.SequenceExample` protos into typed sparse,
+  dense, and context tensors for downstream TensorFlow processing.
+4 api_signature: tf.raw_ops.ParseSequenceExampleV2(serialized,context_sparse_keys,context_dense_keys,feature_list_sparse_keys,feature_list_dense_keys,feature_list_dense_missing_assumed_empty,context_dense_defaults,context_sparse_types,feature_list_dense_types,feature_list_sparse_types,feature_list_dense_shapes)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

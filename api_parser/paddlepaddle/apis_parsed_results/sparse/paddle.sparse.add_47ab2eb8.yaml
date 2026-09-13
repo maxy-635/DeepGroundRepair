@@ -1,0 +1,12 @@
+2 api_name: paddle.sparse.add
+3 api_description: Element-wise adds two sparse tensors of the same shape and sparse
+  type, preserving COO sparse dimensions when applicable.
+4 api_signature: paddle.sparse.add(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to be added, supporting float32, float64, int32, int64,
+    complex64, and complex128.
+- y: The second input tensor to be added, supporting float32, float64, int32, int64,
+    complex64, and complex128.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,11 @@
+2 api_name: paddle.text.UCIHousing
+3 api_description: Loads and provides access to the UCI Housing dataset for use in
+  Paddle-based workflows.
+4 api_signature: paddle.text.UCIHousing(data_file,mode)
+5 api_details: ''
+6 api_parameters:
+- data_file: Specifies the path to the housing dataset file, or can be left as `None`
+    when `download` is `True`.
+- mode: Selects whether to load the training or test split, defaulting to `train`.
+7 api_usage_example: []
+8 api_shape: {}

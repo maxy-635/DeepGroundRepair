@@ -1,0 +1,21 @@
+2 api_name: tensorflow.nn.sampled_softmax_loss
+3 api_description: The tensorflow.nn.sampled_softmax_loss function computes an approximate
+  softmax loss for training classifiers with a large number of classes, offering faster
+  training by sampling a subset of classes, and is typically used only during training.
+4 api_signature: tf.nn.sampled_softmax_loss(weights,biases,labels,inputs,num_sampled,num_classes)
+5 api_details: ''
+6 api_parameters:
+- weights: Represents the class embeddings with a shape of [num_classes, dim], used
+    for calculating the sampled softmax loss.
+- biases: Contains the class biases with a shape of [num_classes], used in the computation
+    of the sampled softmax loss.
+- labels: Specifies the target classes with a shape of [batch_size, num_true], which
+    are the ground truth labels for the input data.
+- inputs: Represents the forward activations of the input network with a shape of
+    [batch_size, dim], used as input to the loss function.
+- num_sampled: Indicates the number of classes to randomly sample per batch for the
+    computation of the loss.
+- num_classes: Defines the total number of possible classes in the classification
+    task.
+7 api_usage_example: null
+8 api_shape: ''

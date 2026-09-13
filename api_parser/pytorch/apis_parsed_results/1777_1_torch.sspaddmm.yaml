@@ -1,0 +1,10 @@
+2 api_name: torch.sspaddmm
+3 api_description: Multiplies a sparse tensor by a dense tensor, then adds a sparse
+  input tensor to the result.
+4 api_signature: torch.sspaddmm(mat1,mat2)
+5 api_details: ''
+6 api_parameters:
+- mat1: The sparse matrix input that is multiplied as part of the operation.
+- mat2: The dense matrix input that is multiplied as part of the operation.
+7 api_usage_example: null
+8 api_shape: null

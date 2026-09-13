@@ -1,0 +1,15 @@
+2 api_name: torch.utils.benchmark.CallgrindStats
+3 api_description: Top-level container for Timer-collected Callgrind results, providing
+  access to benchmark profiling data.
+4 api_signature: torch.utils.benchmark.CallgrindStats(task_spec,stmt_inclusive_stats,stmt_exclusive_stats)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 23234231 /tmp/first_build_dir/thing.c:foo(...)
+- ' 9823794 /tmp/first_build_dir/thing.c:bar(...)'
+- '  ...'
+- '   53453 .../aten/src/Aten/...:function_that_actually_changed(...)'
+- '  ...'
+- ' -9823794 /tmp/second_build_dir/thing.c:bar(...)'
+- -23234231 /tmp/second_build_dir/thing.c:foo(...)
+8 api_shape: null

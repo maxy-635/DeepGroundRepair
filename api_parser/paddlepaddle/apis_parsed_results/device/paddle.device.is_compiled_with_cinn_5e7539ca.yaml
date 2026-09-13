@@ -1,0 +1,10 @@
+2 api_name: paddle.device.is_compiled_with_cinn
+3 api_description: Checks whether the installed PaddlePaddle wheel was built with
+  CINN support for running models on CINN.
+4 api_signature: paddle.device.is_compiled_with_cinn()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- support_cinn = paddle.device.is_compiled_with_cinn()
+8 api_shape: {}

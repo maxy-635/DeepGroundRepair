@@ -1,0 +1,10 @@
+2 api_name: tensorflow.io.encode_base64
+3 api_description: Encodes strings into web-safe base64, using - and _ instead of
+  + and /, with optional '=' padding to make the output length a multiple of 4.
+4 api_signature: tf.io.encode_base64(input,pad)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor containing values to be Base64-encoded.
+- pad: A boolean flag that controls whether padding is added to the encoded output.
+7 api_usage_example: null
+8 api_shape: ''

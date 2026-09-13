@@ -1,0 +1,24 @@
+2 api_name: torch.autograd.functional.vhp
+3 api_description: Computes the vector-Hessian product of a scalar-valued function
+  at a given point, returning the dot product between an input vector v and the function’s
+  Hessian.
+4 api_signature: torch.autograd.functional.vhp(func,inputs,v)
+5 api_details: ''
+6 api_parameters:
+- func: The function whose scalar output is used to compute the vector-Hessian product.
+- inputs: The tensor inputs passed to `func` for evaluation.
+- v: The vector used in the Hessian-vector product calculation, defaulting to 1 for
+    single-element inputs if omitted.
+7 api_usage_example:
+- ' def pow_reducer(x):'
+- '...     return x.pow(3).sum()'
+- ' inputs = torch.rand(2, 2)'
+- ' v = torch.ones(2, 2)'
+- ' vhp(pow_reducer, inputs, v)'
+- ' vhp(pow_reducer, inputs, v, create_graph=True)'
+- ' def pow_adder_reducer(x, y):'
+- '...     return (2 * x.pow(2) + 3 * y.pow(2)).sum()'
+- ' inputs = (torch.rand(2), torch.rand(2))'
+- ' v = (torch.zeros(2), torch.ones(2))'
+- ' vhp(pow_adder_reducer, inputs, v)'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.VGG
+3 api_description: A configurable VGG image classification model that stacks deep
+  convolution and pooling blocks followed by fully connected layers to extract hierarchical
+  visual features and predict class labels.
+4 api_signature: paddle.vision.models.VGG(features,num_class es)
+5 api_details: ''
+6 api_parameters:
+- features: The feature-extraction layers of the VGG network, built by `make_layers`.
+7 api_usage_example: []
+8 api_shape: {}

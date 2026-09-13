@@ -1,0 +1,12 @@
+2 api_name: paddle.Tensor.create_tensor
+3 api_description: Creates a variable tensor with the specified dtype to hold tensor
+  data.
+4 api_signature: paddle.Tensor.create_tensor(dtype,persistable)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the data type of the Tensor to create.
+- persistable: Sets whether the created Tensor is persistable, defaulting to False.
+7 api_usage_example:
+- import paddle
+- tensor = paddle.tensor.create_tensor(dtype='float32')
+8 api_shape: {}

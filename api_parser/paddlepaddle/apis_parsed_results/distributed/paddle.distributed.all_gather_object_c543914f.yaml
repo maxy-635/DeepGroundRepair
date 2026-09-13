@@ -1,0 +1,23 @@
+2 api_name: paddle.distributed.all_gather_object
+3 api_description: Gathers picklable Python objects from all distributed participants
+  and returns the collected objects to every participant.
+4 api_signature: paddle.distributed.all_gather_object(obj,group)
+5 api_details: ''
+6 api_parameters:
+- obj: The picklable object that will be gathered from each process and sent to all
+    ranks.
+- group: The communication group to use, or `None` to use the global default group.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'object_list = [] # type: ignore'
+- 'if dist.get_rank() == 0:'
+- '    obj = {"foo": [1, 2, 3]}'
+- 'else:'
+- '    obj = {"bar": [4, 5, 6]}'
+- dist.all_gather_object(object_list, obj)
+- print(object_list)
+- '# [{''foo'': [1, 2, 3]}, {''bar'': [4, 5, 6]}] (2 GPUs)'
+8 api_shape: {}

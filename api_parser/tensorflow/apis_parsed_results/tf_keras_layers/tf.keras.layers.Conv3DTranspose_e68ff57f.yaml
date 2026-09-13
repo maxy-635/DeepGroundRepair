@@ -1,0 +1,31 @@
+2 api_name: tensorflow.keras.layers.Conv3DTranspose
+3 api_description: The tf.keras.layers.Conv3DTranspose layer performs 3D transposed
+  convolution, enabling the transformation of feature maps back to a higher-dimensional
+  space, effectively reversing the operation of a standard 3D convolution while preserving
+  the connectivity pattern.
+4 api_signature: tf.keras.layers.Conv3DTranspose(filters, kernel_size, strides, padding,
+  activation)
+5 api_details: ''
+6 api_parameters:
+- filters: Defines the number of output channels produced by the transposed convolution.
+- kernel_size: Specifies the dimensions of the filter used in the transposed convolution.
+- strides: Determines the step size at which the filter moves across the input.
+- padding: Controls the amount of padding applied to the input, affecting the output
+    size.
+- activation: Specifies the activation function to be applied to the output, or None
+    for no activation.
+7 api_usage_example:
+- x = np.random.rand(4, 10, 8, 12, 128)
+- y = keras.layers.Conv3DTranspose(32, 2, 2, activation='relu')(x)
+- print(y.shape)
+8 api_shape:
+  input tensor shape: (N, Depth_in, Height_in, Width_in, Channel_in)
+  output tensor shape: (N, Depth_out, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filter_output_channels
+    tensor depth: If padding = "valid", Depth_out = (Depth_in - 1) * stride_depth + filter_depth; 
+                  If padding = "same", Depth_out = Depth_in * stride_depth
+    tensor height: If padding = "valid", Height_out = (Height_in - 1) * strides_height + filter_height; 
+                  If padding = "same", Height_out = Height_in * strides_height
+    tensor width: If padding = "valid", Width_out = (Width_in - 1) * strides_width + filter_width; 
+                  If padding = "same", Width_out = Width_in * strides_width

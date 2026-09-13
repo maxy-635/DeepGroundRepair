@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.uint8
+3 api_description: 8-bit unsigned integer scalar type for values from 0 to 255, compatible
+  with C unsigned char and providing standard NumPy scalar/array attributes.
+4 api_signature: tf.experimental.numpy.uint8(*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

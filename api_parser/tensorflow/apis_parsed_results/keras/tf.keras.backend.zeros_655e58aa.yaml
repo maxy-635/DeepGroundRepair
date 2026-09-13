@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.zeros
+3 api_description: Returns a tensor of all zeros with the requested shape and dtype,
+  using the current Keras backend.
+4 api_signature: tf.keras.backend.zeros(shape,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

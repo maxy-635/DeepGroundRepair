@@ -1,0 +1,14 @@
+2 api_name: tensorflow.test.is_built_with_cuda
+3 api_description: Returns whether TensorFlow was built with CUDA GPU support, typically
+  to skip GPU-only tests.
+4 api_signature: tf.test.is_built_with_cuda()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'class MyTest(tf.test.TestCase):'
+- '  def test_add_on_gpu(self):'
+- '    if not tf.test.is_built_with_cuda():'
+- '      self.skipTest("test is only applicable on GPU")'
+- '    with tf.device("GPU:0"):'
+- '      self.assertEqual(tf.math.add(1.0, 2.0), 3.0)'
+8 api_shape: ''

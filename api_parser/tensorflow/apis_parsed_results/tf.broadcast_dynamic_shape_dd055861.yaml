@@ -1,0 +1,13 @@
+2 api_name: tensorflow.broadcast_dynamic_shape
+3 api_description: Computes the broadcasted output shape for two symbolic shape tensors,
+  helping validate broadcasting when tensor shapes are not known statically.
+4 api_signature: tf.broadcast_dynamic_shape(shape_x,shape_y)
+5 api_details: ''
+6 api_parameters:
+- shape_x: Specifies the shape of x as a rank-1 integer tensor.
+- shape_y: Specifies the shape of y as a rank-1 integer tensor.
+7 api_usage_example:
+- shape_x = (1, 2, 3)
+- shape_y = (5, 1, 3)
+- tf.broadcast_dynamic_shape(shape_x, shape_y)
+8 api_shape: ''

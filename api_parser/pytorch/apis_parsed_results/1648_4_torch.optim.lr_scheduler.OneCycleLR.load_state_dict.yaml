@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.OneCycleLR.load_state_dict
+3 api_description: Loads a OneCycleLR scheduler state from a saved state_dict, restoring
+  its internal progress and settings so training can resume consistently.
+4 api_signature: load_state_dict(state_dict)
+5 api_details: ''
+6 api_parameters:
+- state_dict: Provides the saved scheduler state to restore from a previous `state_dict()`
+    call.
+7 api_usage_example: null
+8 api_shape: null

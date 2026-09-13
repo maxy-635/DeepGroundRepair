@@ -1,0 +1,17 @@
+2 api_name: tensorflow.linalg.tensor_diag_part
+3 api_description: Extracts the diagonal elements from a tensor whose first half of
+  dimensions match the second half, returning a lower-rank tensor containing entries
+  where corresponding indices are equal.
+4 api_signature: tf.linalg.tensor_diag_part(input)
+5 api_details: ''
+6 api_parameters:
+- input: The rank-2k tensor whose diagonal part is extracted.
+7 api_usage_example:
+- x = [[[[1111,1112],[1121,1122]],
+- '      [[1211,1212],[1221,1222]]],'
+- '     [[[2111, 2112], [2121, 2122]],'
+- '      [[2211, 2212], [2221, 2222]]]'
+- '     ]'
+- tf.linalg.tensor_diag_part(x)
+- tf.linalg.diag_part(x).shape
+8 api_shape: ''

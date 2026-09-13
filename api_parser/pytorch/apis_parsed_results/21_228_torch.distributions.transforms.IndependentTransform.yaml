@@ -1,0 +1,12 @@
+2 api_name: torch.distributions.transforms.IndependentTransform
+3 api_description: Wraps another transform so the specified number of rightmost batch
+  dimensions are treated as dependent, leaving forward and inverse unchanged but summing
+  those dimensions in the log absolute determinant Jacobian.
+4 api_signature: torch.distributions.transforms.IndependentTransform(base_transform,reinterpreted_batch_ndims)
+5 api_details: ''
+6 api_parameters:
+- base_transform: The underlying transform to wrap and apply.
+- reinterpreted_batch_ndims: The number of rightmost batch dimensions to reinterpret
+    as dependent.
+7 api_usage_example: null
+8 api_shape: null

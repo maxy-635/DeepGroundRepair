@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.functional.hardsigmoid
+3 api_description: The paddle.nn.functional.hardsigmoid API computes a fast, piecewise
+  linear approximation of the sigmoid function for input x.
+4 api_signature: paddle.nn.functional.hardsigmoid(x)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input tensor for which the hard sigmoid activation function is
+    to be applied, and it must be of data type float32 or float64.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([-4., 5., 1.])
+- out = F.hardsigmoid(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 1.        , 0.66666669])'
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: paddle.sparse.nn.functional.leaky_relu
+3 api_description: Applies the leaky ReLU activation to a sparse COO or CSR tensor,
+  preserving sparsity while using a small negative slope for values below zero.
+4 api_signature: paddle.sparse.nn.functional.leaky_relu(x,negative_slope)
+5 api_details: ''
+6 api_parameters:
+- x: Supplies the input sparse tensor to apply the leaky ReLU activation to.
+- negative_slope: Sets the slope used for negative input values when `x < 0`; defaults
+    to `0.01`.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2., 0., 5.])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.nn.functional.leaky_relu(sparse_x, 0.5)
+8 api_shape: {}

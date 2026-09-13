@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RightShift
+3 api_description: Elementwise shifts x right by y bits, using logical shifts for
+  unsigned types and arithmetic shifts for signed types; results are implementation-defined
+  when y is negative or at least the bit width of x.
+4 api_signature: tf.raw_ops.RightShift(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The integer tensor whose bits are shifted right.
+- y: The integer tensor specifying how many bit positions to shift x right; must match
+    x’s type.
+7 api_usage_example: null
+8 api_shape: ''

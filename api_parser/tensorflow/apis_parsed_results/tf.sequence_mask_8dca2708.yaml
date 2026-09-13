@@ -1,0 +1,12 @@
+2 api_name: tensorflow.sequence_mask
+3 api_description: Creates a boolean or typed mask that marks the first `lengths`
+  positions as True for each entry, with an added last dimension of size `maxlen`.
+4 api_signature: tf.sequence_mask(lengths,maxlen)
+5 api_details: ''
+6 api_parameters:
+- lengths: Specifies the valid sequence lengths for each row in the mask, with values
+    no greater than `maxlen`.
+- maxlen: Sets the mask width (last dimension) by defining the maximum sequence length
+    to include; if omitted, it defaults to the largest value in `lengths`.
+7 api_usage_example: null
+8 api_shape: ''

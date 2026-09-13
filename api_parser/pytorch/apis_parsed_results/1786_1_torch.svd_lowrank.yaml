@@ -1,0 +1,11 @@
+2 api_name: torch.svd_lowrank
+3 api_description: Computes a low-rank singular value decomposition of a matrix, batched
+  matrices, or sparse matrix, optionally centering by M, to approximate A as U diag(S)
+  Vᴴ.
+4 api_signature: torch.svd_lowrank(A,q,niter,M)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

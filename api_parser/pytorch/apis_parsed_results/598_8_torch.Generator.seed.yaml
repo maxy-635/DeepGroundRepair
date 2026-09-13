@@ -1,0 +1,11 @@
+2 api_name: torch.Generator.seed
+3 api_description: Seeds the generator with a non-deterministic random value from
+  std::random_device or the current time.
+4 api_signature: seed()
+5 api_details: ''
+6 api_parameters:
+- self: The generator instance whose seed is being set to a new random seed.
+7 api_usage_example:
+- ' g_cpu = torch.Generator()'
+- ' g_cpu.seed()'
+8 api_shape: null

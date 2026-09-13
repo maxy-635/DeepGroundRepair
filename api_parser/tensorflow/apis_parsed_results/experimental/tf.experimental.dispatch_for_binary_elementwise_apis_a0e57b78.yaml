@@ -1,0 +1,23 @@
+2 api_name: tensorflow.experimental.dispatch_for_binary_elementwise_apis
+3 api_description: Registers a custom handler that overrides TensorFlow binary elementwise
+  ops when the first two arguments match given types, letting you define shared behavior
+  for operations like add or multiply.
+4 api_signature: tf.experimental.dispatch_for_binary_elementwise_apis(x_type,y_type)
+5 api_details: ''
+6 api_parameters:
+- x_type: Specifies the type annotation that determines when the binary elementwise
+    API handler is invoked for the first argument.
+- y_type: Specifies the type annotation that determines when the binary elementwise
+    API handler is invoked for the second argument.
+7 api_usage_example:
+- 'class MaskedTensor(tf.experimental.ExtensionType):'
+- '  values: tf.Tensor'
+- '  mask: tf.Tensor'
+- '@dispatch_for_binary_elementwise_apis(MaskedTensor, MaskedTensor)'
+- 'def binary_elementwise_api_handler(api_func, x, y):'
+- '  return MaskedTensor(api_func(x.values, y.values), x.mask & y.mask)'
+- a = MaskedTensor([1, 2, 3, 4, 5], [True, True, True, True, False])
+- b = MaskedTensor([2, 4, 6, 8, 0], [True, True, True, False, True])
+- c = tf.add(a, b)
+- print(f"values={c.values.numpy()}, mask={c.mask.numpy()}")
+8 api_shape: ''

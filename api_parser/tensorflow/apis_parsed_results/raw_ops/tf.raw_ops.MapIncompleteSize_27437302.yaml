@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.MapIncompleteSize
+3 api_description: Returns the count of incomplete elements in the underlying container.
+4 api_signature: tf.raw_ops.MapIncompleteSize(capacity,memory_limit,name)
+5 api_details: ''
+6 api_parameters:
+- capacity: Sets the map's maximum entry capacity, with 0 as the default.
+- memory_limit: Sets an optional memory limit for the map, with 0 as the default.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

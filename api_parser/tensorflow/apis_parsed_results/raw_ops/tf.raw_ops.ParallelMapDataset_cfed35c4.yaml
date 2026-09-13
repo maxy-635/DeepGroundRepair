@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ParallelMapDataset
+3 api_description: Creates a dataset that maps a function over input elements in parallel,
+  running up to num_parallel_calls instances of the function concurrently.
+4 api_signature: tf.raw_ops.ParallelMapDataset(input_dataset,num_parallel_calls,f,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Specifies the input dataset whose elements will be processed in parallel.
+- num_parallel_calls: Sets how many calls to `f` may run concurrently on elements
+    from the input dataset.
+- f: Provides the function applied to each dataset element to produce output values.
+- output_types: Defines the data types of the tensors produced by `f`.
+- output_shapes: Defines the shapes of the tensors produced by `f`.
+7 api_usage_example: null
+8 api_shape: ''

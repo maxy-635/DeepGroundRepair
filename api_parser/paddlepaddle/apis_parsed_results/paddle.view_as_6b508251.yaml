@@ -1,0 +1,10 @@
+2 api_name: paddle.view_as
+3 api_description: Reshapes a tensor to match another tensor’s shape without changing
+  its underlying data.
+4 api_signature: paddle.view_as(x,other)
+5 api_details: ''
+6 api_parameters:
+- x: Input N-D tensor whose values are viewed or reshaped to match the size of `other`.
+- other: Reference tensor that determines the shape of the output tensor.
+7 api_usage_example: []
+8 api_shape: {}

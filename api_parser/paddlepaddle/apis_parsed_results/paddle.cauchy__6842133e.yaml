@@ -1,0 +1,21 @@
+2 api_name: paddle.cauchy_
+3 api_description: Fills a tensor with random values sampled from the Cauchy distribution.
+4 api_signature: paddle.cauchy_(x,loc,scale)
+5 api_details: ''
+6 api_parameters:
+- x: The output tensor to fill with samples, using float32 or float64 values.
+- loc: The center or peak location of the Cauchy distribution, using float32 or float64
+    values.
+- scale: The positive half-width at half-maximum that controls the distribution’s
+    spread.
+7 api_usage_example:
+- import paddle
+- x = paddle.randn([3, 4])
+- x.cauchy_(1, 2)
+- '>>>'
+- print(x)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 3.80087137,  2.25415039,  2.77960515,  7.64125967],'
+- '[ 0.76541221,  2.74023032,  1.99383152, -0.12685823],'
+- '[ 1.45228469,  1.76275957, -4.30458832, 34.74880219]])'
+8 api_shape: {}

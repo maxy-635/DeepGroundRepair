@@ -1,0 +1,8 @@
+2 api_name: torch.nn.RNNBase
+3 api_description: Base class for RNN modules that implements stacked recurrent layers
+  for sequence processing, supporting RNN, LSTM, and GRU variants.
+4 api_signature: torch.nn.RNNBase(input_size,hidden_size,num_layers,bidirectional)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

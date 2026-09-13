@@ -1,0 +1,13 @@
+2 api_name: torch.nn.Sequential.extend
+3 api_description: Appends layers from another `Sequential` container to the end of
+  the current one.
+4 api_signature: extend(sequential)
+5 api_details: ''
+6 api_parameters:
+- sequential: A `Sequential` container whose layers are appended to the current container.
+7 api_usage_example:
+- ' import torch.nn as nn'
+- ' n = nn.Sequential(nn.Linear(1, 2), nn.Linear(2, 3))'
+- ' other = nn.Sequential(nn.Linear(3, 4), nn.Linear(4, 5))'
+- ' n.extend(other) # or `n + other`'
+8 api_shape: null

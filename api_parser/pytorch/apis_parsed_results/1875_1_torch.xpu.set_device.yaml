@@ -1,0 +1,9 @@
+2 api_name: torch.xpu.set_device
+3 api_description: Sets the active XPU device for subsequent torch operations.
+4 api_signature: torch.xpu.set_device(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects the target XPU device to make current; if the value is negative,
+    the call does nothing.
+7 api_usage_example: null
+8 api_shape: null

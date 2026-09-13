@@ -1,0 +1,10 @@
+2 api_name: tensorflow.tpu.experimental.embedding.TPUEmbeddingV0
+3 api_description: A TPUStrategy-created TPU embedding API for running embedding lookups
+  and updates on TPU without an embedding accelerator.
+4 api_signature: tf.tpu.experimental.embedding.TPUEmbeddingV0(feature_config,optimizer)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: ''

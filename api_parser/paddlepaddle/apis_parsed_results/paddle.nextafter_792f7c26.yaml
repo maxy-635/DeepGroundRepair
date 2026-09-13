@@ -1,0 +1,17 @@
+2 api_name: paddle.nextafter
+3 api_description: Returns the next floating-point value after each input element
+  toward the corresponding other value, using broadcastable shapes.
+4 api_signature: paddle.nextafter(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The starting tensor whose values are used as the basis for computing the next
+    representable floating-point values toward `y`.
+- y: The target tensor that determines the direction toward which `x` is moved to
+    find the next representable floating-point values.
+7 api_usage_example:
+- import paddle
+- out = paddle.nextafter(paddle.to_tensor([1.0,2.0]),paddle.to_tensor([2.0,1.0]))
+- out
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.00000012, 1.99999988])'
+8 api_shape: {}

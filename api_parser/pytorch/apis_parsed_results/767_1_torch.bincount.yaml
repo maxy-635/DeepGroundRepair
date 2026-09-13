@@ -1,0 +1,16 @@
+2 api_name: torch.bincount
+3 api_description: Counts how often each non-negative integer appears in an input
+  array and returns those frequencies.
+4 api_signature: torch.bincount(input,weights)
+5 api_details: ''
+6 api_parameters:
+- input: A 1-D integer tensor whose values are counted.
+- weights: An optional tensor of the same size as `input` that supplies a weight for
+    each counted value.
+7 api_usage_example:
+- ' input = torch.randint(0, 8, (5,), dtype=torch.int64)'
+- ' weights = torch.linspace(0, 1, steps=5)'
+- ' input, weights'
+- ' torch.bincount(input)'
+- ' input.bincount(weights)'
+8 api_shape: null

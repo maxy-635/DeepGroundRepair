@@ -1,0 +1,7 @@
+2 api_name: torch.UntypedStorage.byteswap
+3 api_description: Swaps the byte order of the storage’s underlying data in place.
+4 api_signature: byteswap(dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

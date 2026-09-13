@@ -1,0 +1,13 @@
+2 api_name: tensorflow.xla.experimental.jit_scope
+3 api_description: Context manager that hints TensorFlow XLA to JIT-compile ops inside
+  a scope on a best-effort basis, allowing compilation to be enabled or disabled for
+  selected operations.
+4 api_signature: tf.xla.experimental.jit_scope(compile_ops,separate_compiled_gradients)
+5 api_details: ''
+6 api_parameters:
+- compile_ops: Controls whether ops inside the scope are compiled, using either a
+    fixed boolean or a callable that decides per node.
+- separate_compiled_gradients: Compiles each gradient subgraph in its own separate
+    scope so gradients can be controlled and optimized independently.
+7 api_usage_example: null
+8 api_shape: ''

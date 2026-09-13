@@ -1,0 +1,12 @@
+2 api_name: torch.distributed.tensor.placement_types._StridedShard
+3 api_description: Represents a strided sharding placement for tensors that shards
+  across the tensor-parallel mesh first and then the FSDP mesh, enabling right-to-left
+  sharding for 2D FSDP2 + TP layouts.
+4 api_signature: class torch.distributed.tensor.placement_types._StridedShard
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'tensor shape: [8, 8]'
+- 'mesh: [[0, 1], [2, 3]], names=("dp", "tp")'
+- 'placements: [Shard(0), Shard(0)]'
+8 api_shape: null

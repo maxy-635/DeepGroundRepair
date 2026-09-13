@@ -1,0 +1,14 @@
+2 api_name: torch.outer
+3 api_description: Computes the outer product of two vectors, producing a matrix where
+  each element is the product of one element from the first vector and one from the
+  second.
+4 api_signature: torch.outer(input,vec2)
+5 api_details: ''
+6 api_parameters:
+- input: The first 1-D vector used to compute the outer product.
+- vec2: The second 1-D vector used to compute the outer product.
+7 api_usage_example:
+- ' v1 = torch.arange(1., 5.)'
+- ' v2 = torch.arange(1., 4.)'
+- ' torch.outer(v1, v2)'
+8 api_shape: null

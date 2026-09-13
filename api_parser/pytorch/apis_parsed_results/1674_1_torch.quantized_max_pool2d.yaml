@@ -1,0 +1,14 @@
+2 api_name: torch.quantized_max_pool2d
+3 api_description: Performs 2D max pooling on a quantized input tensor, reducing each
+  spatial window to its maximum value across input channels.
+4 api_signature: torch.quantized_max_pool2d(input,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- input: the quantized tensor to pool over
+- kernel_size: the sliding window size used for max pooling
+- stride: the step size the sliding window moves each time
+- padding: the amount of zero-padding added to both sides of the input
+7 api_usage_example:
+- ' qx = torch.quantize_per_tensor(torch.rand(2, 2, 2, 2), 1.5, 3, torch.quint8)'
+- ' torch.quantized_max_pool2d(qx, [2,2])'
+8 api_shape: null

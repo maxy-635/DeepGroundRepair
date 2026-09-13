@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.ceil
+3 api_description: Returns the smallest integer greater than or equal to each input
+  element.
+4 api_signature: tf.math.ceil(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are rounded up to the smallest integer greater
+    than or equal to each value.
+7 api_usage_example:
+- tf.math.ceil([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
+8 api_shape: ''

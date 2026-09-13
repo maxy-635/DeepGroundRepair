@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.losses.Dice
+3 api_description: Computes the Dice loss between true and predicted tensors, measuring
+  overlap for segmentation-style comparison.
+4 api_signature: tf.keras.losses.Dice()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

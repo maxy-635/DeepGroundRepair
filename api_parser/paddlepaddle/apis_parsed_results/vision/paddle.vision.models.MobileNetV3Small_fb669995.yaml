@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.models.MobileNetV3Small
+3 api_description: A lightweight MobileNetV3 Small image classification model that
+  provides an efficient, mobile-friendly backbone/feature extractor from the MobileNetV3
+  architecture.
+4 api_signature: paddle.vision.models.MobileNetV3Small(scale,num_class es)
+5 api_details: ''
+6 api_parameters:
+- scale: Controls the width of the network by scaling the number of channels in each
+    layer.
+7 api_usage_example: []
+8 api_shape: {}

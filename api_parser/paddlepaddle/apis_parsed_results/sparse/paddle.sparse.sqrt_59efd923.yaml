@@ -1,0 +1,16 @@
+2 api_name: paddle.sparse.sqrt
+3 api_description: Computes the elementwise square root of a SparseCooTensor or SparseCsrTensor.
+4 api_signature: paddle.sparse.sqrt(x)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse tensor whose elementwise square root is computed.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2., 0., 1.])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.sqrt(sparse_x)
+- out
+- Tensor(shape=[3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 2]],
+- values=[nan, 1. ])
+8 api_shape: {}

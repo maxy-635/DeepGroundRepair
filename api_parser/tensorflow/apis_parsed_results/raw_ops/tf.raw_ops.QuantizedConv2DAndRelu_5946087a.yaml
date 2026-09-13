@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.QuantizedConv2DAndRelu
+3 api_description: Performs a quantized 2D convolution followed by ReLU activation
+  on quantized input, filter, and min/max tensors, returning the activated quantized
+  output with updated range information.
+4 api_signature: tf.raw_ops.QuantizedConv2DAndRelu(input,filter,strides,padding,out_type,dilations,name)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized input tensor to be convolved and passed through ReLU.
+- filter: The quantized convolution kernel used to process the input tensor.
+- strides: The stride values that control how far the convolution window moves across
+    the input.
+- padding: The padding mode that determines how the convolution handles border regions.
+- out_type: The quantized data type of the output tensor.
+- dilations: The dilation factors that control spacing between kernel elements during
+    convolution.
+- name: An optional name used to label the operation.
+7 api_usage_example: null
+8 api_shape: ''

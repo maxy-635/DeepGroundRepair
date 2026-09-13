@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.add_var_to_val
+3 api_description: Deprecated helper that records a symbolic variable’s concrete value
+  in the shape environment; use add_backed_var_to_val instead.
+4 api_signature: add_var_to_val(expr,val)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

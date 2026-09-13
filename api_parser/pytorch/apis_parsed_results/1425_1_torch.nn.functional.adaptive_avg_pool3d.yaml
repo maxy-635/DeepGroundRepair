@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.adaptive_avg_pool3d
+3 api_description: The torch.nn.functional.adaptive_avg_pool3d function applies 3D
+  adaptive average pooling to an input with multiple input planes, adjusting the pooling
+  kernel size dynamically to achieve a specified output size.
+4 api_signature: torch.nn.functional.adaptive_avg_pool3d(input,output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the target output size for the 3D adaptive average pooling
+    operation, either as a single integer or a tuple of three integers.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, S_0, S_1, S_2)
+  tensor shape transform formulas: {}

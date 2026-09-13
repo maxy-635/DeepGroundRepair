@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.half_cauchy.HalfCauchy.log_prob
+3 api_description: Computes the log probability density of a value under a Half-Cauchy
+  distribution.
+4 api_signature: '"log_prob(value)"'
+5 api_details: ''
+6 api_parameters:
+- value: The sample or tensor of values whose log probability under the HalfCauchy
+    distribution is computed.
+7 api_usage_example: null
+8 api_shape: null

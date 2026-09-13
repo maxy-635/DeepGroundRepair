@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Softplus
+3 api_description: Computes the softplus activation, returning log(1 + exp(x)) for
+  each input element in a numerically stable way.
+4 api_signature: tf.raw_ops.Softplus(features)
+5 api_details: ''
+6 api_parameters:
+- features: Input tensor whose values are transformed by the Softplus activation function.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.package.PackageExporter.externed_modules
+3 api_description: Returns the set of modules currently marked to be excluded from
+  packaging and treated as external dependencies.
+4 api_signature: '"externed_modules()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

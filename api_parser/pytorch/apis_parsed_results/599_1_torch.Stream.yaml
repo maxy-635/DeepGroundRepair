@@ -1,0 +1,17 @@
+2 api_name: torch.Stream
+3 api_description: A FIFO asynchronous execution queue that sequences tasks, coordinates
+  other streams, and can block the host thread to enforce correct ordering; also usable
+  as a context manager for running operations on the stream.
+4 api_signature: torch.Stream(device,*,priority)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the device on which to create the stream; defaults to the current
+    accelerator if omitted.
+- priority: Sets the stream priority, where 0 is default and negative values indicate
+    higher priority.
+7 api_usage_example:
+- ' with torch.Stream(device=''cuda'') as s_cuda:'
+- '     a = torch.randn(10, 5, device=''cuda'')'
+- '     b = torch.randn(5, 10, device=''cuda'')'
+- '     c = torch.mm(a, b)'
+8 api_shape: null

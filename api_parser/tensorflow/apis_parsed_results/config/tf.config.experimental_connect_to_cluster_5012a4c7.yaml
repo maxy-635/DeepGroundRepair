@@ -1,0 +1,12 @@
+2 api_name: tensorflow.config.experimental_connect_to_cluster
+3 api_description: Connects TensorFlow to a cluster so its devices become available
+  locally, optionally adding the local job and applying device filters to restrict
+  which remote devices each task can see.
+4 api_signature: tf.config.experimental_connect_to_cluster(cluster_spec_or_resolver,job_name,task_index)
+5 api_details: ''
+6 api_parameters:
+- cluster_spec_or_resolver: Describes the TensorFlow cluster to connect to.
+- job_name: Specifies the name of the local job.
+- task_index: Specifies the local task index within the job.
+7 api_usage_example: null
+8 api_shape: ''

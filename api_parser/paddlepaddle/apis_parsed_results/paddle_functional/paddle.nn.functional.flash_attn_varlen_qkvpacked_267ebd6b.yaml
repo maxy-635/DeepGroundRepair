@@ -1,0 +1,31 @@
+2 api_name: paddle.nn.functional.flash_attn_varlen_qkvpacked
+3 api_description: The paddle.nn.functional.flash_attn_varlen_qkvpacked API performs
+  efficient attention computation for variable-length sequences using packed queries,
+  keys, and values.
+4 api_signature: paddle.nn.functional.flash_attn_varlen_qkvpacked(qkv,cu_seqlens_q,cu_seqlens_k,scale,dropout,causal,training)
+5 api_details: ''
+6 api_parameters:
+- qkv: A 4-D tensor representing the padded query/key/value packed tensor in the Attention
+    module, with padding excluded from computation.
+- cu_seqlens_q: An array indicating cumulative sequence lengths for indexing queries
+    in the batch.
+- cu_seqlens_k: An array indicating cumulative sequence lengths for indexing keys
+    and values in the batch.
+- scale: A factor applied to the QK^T matrix before the softmax operation.
+- dropout: The ratio of dropout applied to the attention weights.
+- causal: A boolean indicating whether causal mode is enabled, affecting the attention
+    computation.
+- training: A boolean indicating whether the function is being executed in the training
+    phase.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.seed(2023)
+- q = paddle.rand((2, 128, 8, 16), dtype='float16')
+- cu = paddle.arange(0, 384, 128, dtype='int32')
+- qq = paddle.reshape(q, [256, 8, 16])
+- qkv = paddle.stack([qq, qq, qq], axis=2)
+- output = paddle.nn.functional.flash_attn_varlen_qkvpacked(qkv, cu, cu, 128, 128,
+  0.25, 0.0, False, False)
+- '>>>'
+8 api_shape: null

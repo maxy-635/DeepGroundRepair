@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.BesselI0
+3 api_description: Computes the modified Bessel function of the first kind, order
+  0, elementwise for the input tensor.
+4 api_signature: tf.raw_ops.BesselI0(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the modified Bessel function of
+    the first kind of order zero.
+7 api_usage_example: null
+8 api_shape: ''

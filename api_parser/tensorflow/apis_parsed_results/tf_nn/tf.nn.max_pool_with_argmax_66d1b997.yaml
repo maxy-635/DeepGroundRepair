@@ -1,0 +1,19 @@
+2 api_name: tensorflow.nn.max_pool_with_argmax
+3 api_description: tensorflow.nn.max_pool_with_argmax performs max pooling on input
+  data, returning both max values and their flattened indices. The indices are calculated
+  based on whether batch index inclusion is enabled, with specific formulas for flattening.
+  Indices are constrained within the input dimensions before flattening, even if padding
+  affects the result.
+4 api_signature: tf.nn.max_pool_with_argmax(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor to be pooled, which should be a 4-D tensor with
+    a specific data type and shape.
+- ksize: Defines the size of the pooling window for each dimension of the input tensor,
+    which can be specified as an int or a list of ints.
+- strides: Indicates the stride of the sliding window for each dimension of the input
+    tensor, which can be specified as an int or a list of ints.
+- padding: Determines the type of padding algorithm used, either 'SAME' or 'VALID',
+    affecting the output size.
+7 api_usage_example: null
+8 api_shape: ''

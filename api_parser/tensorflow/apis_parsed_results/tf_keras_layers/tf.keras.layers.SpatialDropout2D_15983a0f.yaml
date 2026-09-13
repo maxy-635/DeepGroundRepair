@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.layers.SpatialDropout2D
+3 api_description: SpatialDropout2D drops entire 2D feature maps instead of individual
+  elements, promoting independence between feature maps and improving regularization
+  in convolutional layers.
+4 api_signature: tf.keras.layers.SpatialDropout2D(rate)
+5 api_details: ''
+6 api_parameters:
+- rate: Specifies the fraction of input units to drop during training to prevent overfitting.
+7 api_usage_example: null
+8 api_shape: null

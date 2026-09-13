@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Reverse
+3 api_description: Reverses a tensor along the dimensions marked True in a boolean
+  dims mask, with one mask value per tensor dimension.
+4 api_signature: tf.raw_ops.Reverse(tensor,dims)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor whose specified dimensions will be reversed.
+- dims: A 1-D boolean tensor indicating which dimensions of `tensor` to reverse.
+7 api_usage_example: null
+8 api_shape: ''

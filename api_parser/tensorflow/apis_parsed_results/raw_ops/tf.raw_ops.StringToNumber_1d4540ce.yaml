@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.StringToNumber
+3 api_description: Converts each input string tensor element to the requested numeric
+  type, raising an error on int32 overflow and rounding float overflow.
+4 api_signature: tf.raw_ops.StringToNumber(string_tensor,out_type)
+5 api_details: ''
+6 api_parameters:
+- string_tensor: The input string tensor containing the values to convert into numbers.
+- out_type: The numeric data type to parse each string as, such as float32, float64,
+    int32, or int64.
+7 api_usage_example:
+- strings = ["5.0", "3.0", "7.0"]
+- tf.strings.to_number(strings)
+8 api_shape: ''

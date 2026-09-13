@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.DebugGradientIdentity
+3 api_description: Passes through a non-reference tensor unchanged while marking gradient
+  tensors for debugging.
+4 api_signature: tf.raw_ops.DebugGradientIdentity(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to pass through unchanged while preserving gradient identity.
+7 api_usage_example: null
+8 api_shape: ''

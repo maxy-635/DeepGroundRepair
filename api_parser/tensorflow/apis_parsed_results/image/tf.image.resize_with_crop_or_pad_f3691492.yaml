@@ -1,0 +1,16 @@
+2 api_name: tensorflow.image.resize_with_crop_or_pad
+3 api_description: Centrally crops or evenly zero-pads an image to the specified width
+  and height.
+4 api_signature: tf.image.resize_with_crop_or_pad(image,target_height,target_width)
+5 api_details: ''
+6 api_parameters:
+- image: The input image tensor to be cropped or padded.
+- target_height: The desired output height after cropping or padding.
+- target_width: The desired output width after cropping or padding.
+7 api_usage_example:
+- 'image = np.arange(1, 28).reshape(3, 3, 3)  # create 3-D image input'
+- 'image[:,:,0]  # print first channel just for demo purposes'
+- 'image = tf.image.resize_with_crop_or_pad(image, 5, 5)  # pad'
+- '# print first channel for demo purposes; we should see 0 paddings'
+- image[:,:,0]
+8 api_shape: ''

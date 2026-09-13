@@ -1,0 +1,23 @@
+2 api_name: paddle.unbind
+3 api_description: Removes a specified tensor dimension and splits the tensor into
+  multiple sub-tensors.
+4 api_signature: paddle.unbind(input,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to split into multiple tensors along the specified axis.
+- axis: The dimension index along which to unbind the input tensor, with negative
+    values counted from the end.
+7 api_usage_example:
+- import paddle
+- '# input is a Tensor which shape is [3, 4, 5]'
+- input = paddle.rand([3, 4, 5])
+- '[x0, x1, x2] = paddle.unbind(input, axis=0)'
+- '# x0.shape [4, 5]'
+- '# x1.shape [4, 5]'
+- '# x2.shape [4, 5]'
+- '[x0, x1, x2, x3] = paddle.unbind(input, axis=1)'
+- '# x0.shape [3, 5]'
+- '# x1.shape [3, 5]'
+- '# x2.shape [3, 5]'
+- '# x3.shape [3, 5]'
+8 api_shape: {}

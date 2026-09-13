@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.applications.MobileNetV3Small
+3 api_description: Instantiates the MobileNetV3Small image classification architecture,
+  providing a lightweight neural network model optimized for efficient inference with
+  low compute cost (MACs).
+4 api_signature: tf.keras.applications.MobileNetV3Small(input_shape,include_top,weights,classes)
+5 api_details: ''
+6 api_parameters:
+- input_shape: Specifies the input image dimensions and channels when you want a non-default
+    input size.
+- include_top: Controls whether to include the model's final fully connected classification
+    layer.
+- weights: Chooses the source of the model weights, such as random initialization,
+    ImageNet pretraining, or a custom file.
+- classes: Sets the number of output classes for classification when using the top
+    layer without pretrained weights.
+7 api_usage_example: null
+8 api_shape: ''

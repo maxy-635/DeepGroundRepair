@@ -1,0 +1,8 @@
+2 api_name: torch.CharStorage
+3 api_description: Legacy Torch storage type for holding character data in a contiguous
+  byte buffer, with indexed access and storage-level operations.
+4 api_signature: class torch.CharStorage(*args,dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,22 @@
+2 api_name: paddle.distributed.broadcast
+3 api_description: Broadcasts a tensor from the source process to all other processes,
+  copying the source value to every rank.
+4 api_signature: paddle.distributed.broadcast(tensor,src)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor whose values are broadcast from the source rank to all other
+    ranks.
+- src: The global rank that supplies the tensor data to broadcast.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- dist.broadcast(data, src=1)
+- print(data)
+- '# [[1, 2, 3], [1, 2, 3]] (2 GPUs)'
+8 api_shape: {}

@@ -1,0 +1,11 @@
+2 api_name: torch.autograd.function.InplaceFunction.forward
+3 api_description: Defines the forward pass for a custom autograd Function, computing
+  and returning outputs from inputs while handling any in-place behavior.
+4 api_signature: staticforward(*args,**kwargs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '@staticmethod'
+- 'def forward(ctx: Any, *args: Any, **kwargs: Any) -> Any:'
+- '    pass'
+8 api_shape: null

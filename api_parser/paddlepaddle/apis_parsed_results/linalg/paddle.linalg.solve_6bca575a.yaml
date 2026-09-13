@@ -1,0 +1,21 @@
+2 api_name: paddle.linalg.solve
+3 api_description: Solves a square linear system X @ A = Y or A @ X = Y for a unique
+  solution, supporting vectors, matrices, and batched inputs.
+4 api_signature: paddle.linalg.solve(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The square coefficient matrix (or batch of matrices) to solve against.
+- y: The right-hand side vector, matrix, or batch of them to compute the solution
+    for.
+7 api_usage_example:
+- '# a square system of linear equations:'
+- '# 3*X0 + X1 = 9'
+- '# X0 + 2*X1 = 8'
+- import paddle
+- x = paddle.to_tensor([[3, 1],[1, 2]], dtype="float64")
+- y = paddle.to_tensor([9, 8], dtype="float64")
+- out = paddle.linalg.solve(x, y)
+- print(out)
+- Tensor(shape=[2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[2., 3.])'
+8 api_shape: {}

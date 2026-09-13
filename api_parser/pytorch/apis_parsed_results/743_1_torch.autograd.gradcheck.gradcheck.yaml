@@ -1,0 +1,18 @@
+2 api_name: torch.autograd.gradcheck.gradcheck
+3 api_description: Verifies autograd gradients by comparing analytical gradients to
+  finite-difference approximations for floating-point or complex input tensors with
+  requires_grad=True.
+4 api_signature: torch.autograd.gradcheck.gradcheck(func,inputs,eps,atol,rtol,raise_exception,fast_mode)
+5 api_details: ''
+6 api_parameters:
+- func: The function to test for correct gradients, taking Tensor inputs and returning
+    a Tensor or tuple of Tensors.
+- inputs: The Tensor inputs passed to `func` for gradient checking.
+- eps: The small perturbation used to estimate numerical gradients with finite differences.
+- atol: The maximum allowed absolute difference between analytical and numerical gradients.
+- rtol: The maximum allowed relative difference between analytical and numerical gradients.
+- raise_exception: Whether to raise a detailed exception when the gradient check fails.
+- fast_mode: Whether to use a faster gradcheck implementation for real-to-real functions
+    when possible.
+7 api_usage_example: null
+8 api_shape: null

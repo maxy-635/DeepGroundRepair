@@ -1,0 +1,8 @@
+2 api_name: torch.nn.Softmax2d.forward
+3 api_description: Applies softmax over each channel of a 4D input tensor for every
+  spatial location.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.SegmentMinV2
+3 api_description: Computes the minimum value for each segment ID in a tensor, returning
+  the largest representable value when a segment has no elements.
+4 api_signature: tf.raw_ops.SegmentMinV2(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose first dimension is segmented and reduced by minimum.
+- segment_ids: A sorted 1-D tensor of segment labels, one per first-dimension entry
+    in `data`, allowing repeated values and requiring each value to be less than `num_segments`.
+- num_segments: The total number of output segments to compute, including any empty
+    segments.
+7 api_usage_example:
+- '@tf.function(jit_compile=True)'
+- 'def test(c):'
+- '  return tf.raw_ops.SegmentMinV2(data=c, segment_ids=tf.constant([0, 0, 1]), num_segments=2)'
+- c = tf.constant([[1,2,3,4], [4, 3, 2, 1], [5,6,7,8]])
+- test(c).numpy()
+8 api_shape: ''

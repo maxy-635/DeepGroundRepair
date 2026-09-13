@@ -1,0 +1,17 @@
+2 api_name: paddle.sparse.nn.functional.subm_conv3d
+3 api_description: Performs sparse 3D submanifold convolution on SparseCooTensor input
+  and filter data, using stride, padding, dilation, and groups settings to produce
+  a SparseCooTensor output, with optional bias added to the result.
+4 api_signature: paddle.sparse.nn.functional.subm_conv3d(x,weight,bias,stride,padding,dilation,groups)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse 5-D input tensor to be convolved.
+- weight: The 3D convolution kernel that produces the output channels.
+- bias: An optional bias vector added to each output channel.
+- stride: The step size used to slide the convolution window.
+- padding: The zero-padding applied around the input to control output size.
+- dilation: The spacing between kernel elements during convolution.
+- groups: The number of channel groups used for grouped convolution, currently only
+    1.
+7 api_usage_example: []
+8 api_shape: {}

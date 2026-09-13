@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Equal
+3 api_description: Compares two tensors element-wise and returns a boolean tensor
+  indicating where x and y are equal.
+4 api_signature: tf.raw_ops.Equal(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to compare elementwise.
+- y: The second input tensor to compare elementwise; it must have the same type as
+    `x`.
+7 api_usage_example: null
+8 api_shape: ''

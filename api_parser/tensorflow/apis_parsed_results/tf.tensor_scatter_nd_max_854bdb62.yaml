@@ -1,0 +1,16 @@
+2 api_name: tensorflow.tensor_scatter_nd_max
+3 api_description: Returns a new tensor with the specified elements updated to the
+  element-wise maximum of the original values and the provided updates at the given
+  indices.
+4 api_signature: tf.tensor_scatter_nd_max(tensor,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to be updated.
+- indices: The integer index tensor that specifies where to apply the updates.
+- updates: The values to scatter into the tensor at the given indices.
+7 api_usage_example:
+- tensor = [0, 0, 0, 0, 0, 0, 0, 0]
+- indices = [[1], [4], [5]]
+- updates = [1, -1, 1]
+- tf.tensor_scatter_nd_max(tensor, indices, updates).numpy()
+8 api_shape: ''

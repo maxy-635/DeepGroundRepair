@@ -1,0 +1,12 @@
+2 api_name: torch.cos
+3 api_description: Returns a new tensor containing the cosine of each input element,
+  interpreted as radians.
+4 api_signature: torch.cos(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used to compute the cosine.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.cos(a)'
+8 api_shape: null

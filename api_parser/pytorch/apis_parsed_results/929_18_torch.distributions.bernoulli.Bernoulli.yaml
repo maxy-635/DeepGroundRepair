@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.bernoulli.Bernoulli
+3 api_description: A Bernoulli distribution over binary outcomes {0, 1} parameterized
+  by probabilities or logits, supporting sampling, log probability evaluation, entropy,
+  mean/variance, and basic distribution properties.
+4 api_signature: torch.distributions.bernoulli.Bernoulli(probs,logits)
+5 api_details: ''
+6 api_parameters:
+- probs: Sets the probability of sampling 1.
+- logits: Sets the log-odds of sampling 1.
+7 api_usage_example:
+- ' m = Bernoulli(torch.tensor([0.3]))'
+- ' m.sample()  # 30% chance 1; 70% chance 0'
+8 api_shape: null

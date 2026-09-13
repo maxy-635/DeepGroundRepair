@@ -1,0 +1,25 @@
+2 api_name: paddle.nn.functional.binary_cross_entropy_with_logits
+3 api_description: Combines a sigmoid activation and binary cross-entropy loss in
+  one step for binary classification tasks.
+4 api_signature: paddle.nn.functional.binary_cross_entropy_with_logits(logit,label,weight,reduction,pos_weight)
+5 api_details: ''
+6 api_parameters:
+- logit: The input predictions tensor, typically the output of a Linear layer, with
+    shape [N, *] where N is batch size.
+- label: The target labels tensor with the same shape as logit, containing values
+    between 0 and 1.
+- weight: An optional 1D tensor for rescaling the loss of each batch element, with
+    size [N].
+- reduction: 'Specifies how to aggregate the loss across the batch: ''none'', ''mean'',
+    or ''sum'', with ''mean'' as default.'
+- pos_weight: An optional vector to weight positive examples, with length equal to
+    the number of classes.
+7 api_usage_example:
+- import paddle
+- logit = paddle.to_tensor([5.0, 1.0, 3.0])
+- label = paddle.to_tensor([1.0, 0.0, 1.0])
+- output = paddle.nn.functional.binary_cross_entropy_with_logits(logit, label)
+- print(output)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.45618808)
+8 api_shape: null

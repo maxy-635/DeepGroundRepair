@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.sigmoid
+3 api_description: Applies the sigmoid activation function, converting each input
+  value into a number between 0 and 1.
+4 api_signature: tf.keras.backend.sigmoid(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

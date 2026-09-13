@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.NextIteration
+3 api_description: Outputs a value so it can be used in the next loop iteration.
+4 api_signature: tf.raw_ops.NextIteration(data)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor value that is passed forward and made available in the next iteration.
+7 api_usage_example: null
+8 api_shape: ''

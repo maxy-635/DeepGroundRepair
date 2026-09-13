@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.Tile
+3 api_description: Replicates an input tensor along each dimension according to `multiples`,
+  producing a larger tensor with repeated values.
+4 api_signature: tf.raw_ops.Tile(input,multiples)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be tiled, repeated across its dimensions.
+- multiples: A 1-D integer tensor specifying how many times to repeat `input` along
+    each dimension.
+7 api_usage_example:
+- a = tf.constant([[1,2,3],[4,5,6]], tf.int32)
+- b = tf.constant([1,2], tf.int32)
+- tf.tile(a, b)
+- c = tf.constant([2,1], tf.int32)
+- tf.tile(a, c)
+- d = tf.constant([2,2], tf.int32)
+- tf.tile(a, d)
+8 api_shape: ''

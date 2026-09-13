@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.UniformQuantizedAdd
+3 api_description: Adds two quantized tensors element-wise using NumPy broadcasting
+  rules and produces a quantized output.
+4 api_signature: tf.raw_ops.UniformQuantizedAdd(lhs,rhs,output_scales,output_zero_points,name)
+5 api_details: ''
+6 api_parameters:
+- lhs: The left-hand quantized input tensor to be added.
+- rhs: The right-hand quantized input tensor to be added, matching `lhs`'s type.
+- output_scales: The float32 scale factor(s) used to quantize the addition result.
+- output_zero_points: The int32 zero-point value(s) paired with `output_scales` for
+    the quantized output.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

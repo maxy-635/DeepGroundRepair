@@ -1,0 +1,10 @@
+2 api_name: tensorflow.init_scope
+3 api_description: Context manager that temporarily clears control dependencies, lifts
+  created ops out of control-flow and function-building scopes into the outermost
+  non-function graph or eager context, and pauses gradient tape; inside tf.function
+  tracing, code runs eagerly.
+4 api_signature: tf.init_scope()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

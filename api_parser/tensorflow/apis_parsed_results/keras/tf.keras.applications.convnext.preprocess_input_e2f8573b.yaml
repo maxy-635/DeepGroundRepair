@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.convnext.preprocess_input
+3 api_description: Deprecated no-op placeholder kept for API compatibility; ConvNeXt
+  now handles input preprocessing internally.
+4 api_signature: tf.keras.applications.convnext.preprocess_input(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input image data as a floating-point NumPy array or tensor to be preprocessed
+    for ConvNeXt.
+7 api_usage_example: null
+8 api_shape: ''

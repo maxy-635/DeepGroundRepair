@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.constraints.MinMaxNorm
+3 api_description: Constrains each unit’s incoming weights so their norm stays within
+  a specified lower and upper bound.
+4 api_signature: tf.keras.constraints.MinMaxNorm(min_value,max_value)
+5 api_details: ''
+6 api_parameters:
+- min_value: Sets the lower bound for the incoming weights’ norm.
+- max_value: Sets the upper bound for the incoming weights’ norm.
+7 api_usage_example: null
+8 api_shape: ''

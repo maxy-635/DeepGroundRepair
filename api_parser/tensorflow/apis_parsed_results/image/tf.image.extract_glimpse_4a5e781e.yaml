@@ -1,0 +1,23 @@
+2 api_name: tensorflow.image.extract_glimpse
+3 api_description: Extracts fixed-size glimpses from an input image batch at given
+  offsets, returning a 4-D tensor of windows and filling any out-of-bounds areas with
+  random noise.
+4 api_signature: tf.image.extract_glimpse(input,size,offsets)
+5 api_details: ''
+6 api_parameters:
+- input: The input image tensor from which glimpses are extracted.
+- size: The height and width of each glimpse to extract.
+- offsets: The center coordinates for each glimpse window in each batch item.
+7 api_usage_example:
+- x = [[[[0.0],
+- '          [1.0],'
+- '          [2.0]],'
+- '         [[3.0],'
+- '          [4.0],'
+- '          [5.0]],'
+- '         [[6.0],'
+- '          [7.0],'
+- '          [8.0]]]]'
+- tf.image.extract_glimpse(x, size=(2, 2), offsets=[[1, 1]],
+- '                        centered=False, normalized=False)'
+8 api_shape: ''

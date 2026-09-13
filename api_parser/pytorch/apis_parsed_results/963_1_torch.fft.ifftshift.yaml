@@ -1,0 +1,12 @@
+2 api_name: torch.fft.ifftshift
+3 api_description: Undo fftshift by moving the zero-frequency component back to its
+  original position.
+4 api_signature: torch.fft.ifftshift(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor arranged in FFT order that will be shifted so the zero-frequency
+    component is moved back to its original position.
+7 api_usage_example:
+- ' f = torch.fft.fftfreq(5)'
+- ' f'
+8 api_shape: null

@@ -1,0 +1,7 @@
+2 api_name: torch.distributed.rpc.PyRRef.owner_name
+3 api_description: Returns the name of the worker that owns the referenced RRef.
+4 api_signature: owner_name(self)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

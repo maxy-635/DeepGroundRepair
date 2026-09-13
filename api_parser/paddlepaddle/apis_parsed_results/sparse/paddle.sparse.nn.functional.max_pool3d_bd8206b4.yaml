@@ -1,0 +1,12 @@
+2 api_name: paddle.sparse.nn.functional.max_pool3d
+3 api_description: Performs 3D max pooling on sparse input tensors, reducing spatial
+  dimensions by taking the maximum value within each pooling window.
+4 api_signature: paddle.sparse.nn.functional.max_pool3d(x,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: Input sparse 5-D tensor in NDHWC format to be pooled.
+- kernel_size: Sets the 3D pooling window size.
+- stride: Sets how far the pooling window moves each step.
+- padding: Specifies how much zero-padding to add around the input.
+7 api_usage_example: []
+8 api_shape: {}

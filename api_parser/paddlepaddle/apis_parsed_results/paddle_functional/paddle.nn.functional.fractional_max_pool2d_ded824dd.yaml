@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.functional.fractional_max_pool2d
+3 api_description: Applies 2D fractional max pooling to an input tensor, allowing
+  for pooling regions to have fractional sizes, as described in the related research
+  paper.
+4 api_signature: paddle.nn.functional.fractional_max_pool2d(x,output_size,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor for the fractional max pool2d operation, which should
+    be a 4-D tensor with data types float16, bfloat16, float32, or float64.
+- output_size: Defines the desired output size as a tuple or list with two elements
+    (H, W), where each can be an int or None to retain the input size.
+- kernel_size: Sets the pool kernel size as a tuple or list with two integers (kernel_size_Height,
+    kernel_size_Width) or as an int for a square kernel; defaults to None for non-overlapping
+    mode.
+7 api_usage_example: []
+8 api_shape: null

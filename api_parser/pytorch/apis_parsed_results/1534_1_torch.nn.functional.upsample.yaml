@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.upsample
+3 api_description: The torch.nn.functional.upsample function increases the spatial
+  resolution of an input tensor by interpolating values between existing data points.
+4 api_signature: torch.nn.functional.upsample(input,size,scale_factor,mode)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor to be upsampled.
+- size: Defines the desired output spatial dimensions for the upsampled tensor.
+- scale_factor: Determines the multiplier to adjust the spatial dimensions of the
+    input tensor, requiring a tuple if multiple dimensions are scaled.
+- mode: Selects the interpolation algorithm for the upsampling process, such as nearest,
+    linear, bilinear, bicubic, or trilinear.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.image.image_gradients
+3 api_description: Computes per-channel image gradients in the y and x directions
+  for a 4D batch of images, returning dy and dx tensors with the same shape as the
+  input and zero padding on the last row and last column.
+4 api_signature: tf.image.image_gradients(image)
+5 api_details: ''
+6 api_parameters:
+- image: The input image tensor whose horizontal and vertical gradients are computed.
+7 api_usage_example: null
+8 api_shape: ''

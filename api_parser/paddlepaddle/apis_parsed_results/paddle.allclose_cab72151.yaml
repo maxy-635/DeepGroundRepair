@@ -1,0 +1,33 @@
+2 api_name: paddle.allclose
+3 api_description: Returns True if all elements of x and y are elementwise close within
+  the specified tolerances.
+4 api_signature: paddle.allclose(x,y,rtol,atol)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to compare against `y` for approximate equality.
+- y: The tensor to compare against `x` for approximate equality.
+- rtol: Sets how much relative difference is allowed between `x` and `y`.
+- atol: Sets the maximum allowed absolute difference between `x` and `y`.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([10000., 1e-07])
+- y = paddle.to_tensor([10000.1, 1e-08])
+- result1 = paddle.allclose(x, y, rtol=1e-05, atol=1e-08, equal_nan=False, name="ignore_nan")
+- print(result1)
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- False)
+- result2 = paddle.allclose(x, y, rtol=1e-05, atol=1e-08, equal_nan=True, name="equal_nan")
+- print(result2)
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- False)
+- x = paddle.to_tensor([1.0, float('nan')])
+- y = paddle.to_tensor([1.0, float('nan')])
+- result1 = paddle.allclose(x, y, rtol=1e-05, atol=1e-08, equal_nan=False, name="ignore_nan")
+- print(result1)
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- False)
+- result2 = paddle.allclose(x, y, rtol=1e-05, atol=1e-08, equal_nan=True, name="equal_nan")
+- print(result2)
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- True)
+8 api_shape: {}

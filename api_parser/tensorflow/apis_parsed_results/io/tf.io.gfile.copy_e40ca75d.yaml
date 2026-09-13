@@ -1,0 +1,15 @@
+2 api_name: tensorflow.io.gfile.copy
+3 api_description: Copies data from a source path to a destination path, optionally
+  using URI schemes to choose the filesystem.
+4 api_signature: tf.io.gfile.copy(src,dst)
+5 api_details: ''
+6 api_parameters:
+- src: Specifies the source file whose contents will be copied.
+- dst: Specifies the destination file where the contents will be written.
+7 api_usage_example:
+- 'with open("/tmp/x", "w") as f:'
+- '  f.write("asdf")'
+- tf.io.gfile.copy("/tmp/x", "file:///tmp/y")
+- tf.io.gfile.copy("/tmp/x", "file:///tmp/y", overwrite=True)
+- tf.io.gfile.remove("/tmp/y")
+8 api_shape: ''

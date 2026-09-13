@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.PartitionedCall
+3 api_description: Executes a TensorFlow function on the given inputs, optionally
+  partitioning its graph across multiple devices within a single process.
+4 api_signature: tf.raw_ops.PartitionedCall(args,Tout,f)
+5 api_details: ''
+6 api_parameters:
+- args: The input tensors passed to the function.
+- Tout: The data types of the tensors the function returns.
+- f: The partitioned function to execute on the provided inputs and produce outputs.
+7 api_usage_example: null
+8 api_shape: ''

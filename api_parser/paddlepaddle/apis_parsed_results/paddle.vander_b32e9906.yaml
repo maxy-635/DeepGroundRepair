@@ -1,0 +1,42 @@
+2 api_name: paddle.vander
+3 api_description: Generate a Vandermonde matrix from input values, where each row
+  contains successive powers of the corresponding element, with an option to control
+  whether powers increase or decrease across columns.
+4 api_signature: paddle.vander(x,n,increasing)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the 1-D input tensor whose values form the base of the Vandermonde matrix.
+- n: Sets how many columns the output matrix has, defaulting to a square matrix when
+    omitted.
+- increasing: Controls whether powers increase from left to right or decrease from
+    left to right.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1., 2., 3.], dtype="float32")
+- out = paddle.vander(x)
+- out
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 1., 1.],'
+- '[4., 2., 1.],'
+- '[9., 3., 1.]])'
+- out1 = paddle.vander(x,2)
+- out1
+- Tensor(shape=[3, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 1.],'
+- '[2., 1.],'
+- '[3., 1.]])'
+- out2 = paddle.vander(x, increasing = True)
+- out2
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 1., 1.],'
+- '[1., 2., 4.],'
+- '[1., 3., 9.]])'
+- real = paddle.to_tensor([2., 4.])
+- imag = paddle.to_tensor([1., 3.])
+- complex = paddle.complex(real, imag)
+- out3 = paddle.vander(complex)
+- out3
+- Tensor(shape=[2, 2], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[[(2+1j), (1+0j)],'
+- '[(4+3j), (1+0j)]])'
+8 api_shape: {}

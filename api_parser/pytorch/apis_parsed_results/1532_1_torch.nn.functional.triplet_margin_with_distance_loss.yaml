@@ -1,0 +1,18 @@
+2 api_name: torch.nn.functional.triplet_margin_with_distance_loss
+3 api_description: Computes triplet margin loss using a custom distance function to
+  measure dissimilarity between anchor, positive, and negative input tensors.
+4 api_signature: torch.nn.functional.triplet_margin_with_distance_loss(anchor,positive,negative,*,distance_function,margin)
+5 api_details: ''
+6 api_parameters:
+- distance_function: A function used to compute the distance between input embeddings.
+- margin: A non-negative margin value for the triplet loss to ensure positive and
+    negative pairs are separated by this margin.
+- swap: A boolean indicating whether to swap the anchor and positive embeddings for
+    more efficient learning.
+- size_average: Deprecated (see reduction); if True, the losses are averaged over
+    each loss element in the batch.
+- reduce: Deprecated (see reduction); if True, the losses are summed for each minibatch.
+- reduction: 'Specifies the reduction method to apply to the output: ''none'', ''mean'',
+    or ''sum''.'
+7 api_usage_example: null
+8 api_shape: null

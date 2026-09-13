@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.hardsigmoid
+3 api_description: Applies the Hardsigmoid function element-wise, which is a piecewise
+  linear approximation of the sigmoid function, improving computational efficiency.
+4 api_signature: torch.nn.functional.hardsigmoid(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the hard sigmoid function is applied.
+- inplace: A boolean flag indicating whether to perform the operation in-place, modifying
+    the input tensor directly.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

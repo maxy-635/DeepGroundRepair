@@ -1,0 +1,12 @@
+2 api_name: tensorflow.signal.ifftshift
+3 api_description: Reverses `fftshift` by moving the zero-frequency component back
+  to its original position; for odd-length inputs, it differs from `fftshift` by one
+  sample.
+4 api_signature: tf.signal.ifftshift(x,axes)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose zero-frequency components are shifted back to their original
+    positions.
+- axes: The axes along which to apply the inverse FFT shift, or all axes if not specified.
+7 api_usage_example: null
+8 api_shape: ''

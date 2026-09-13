@@ -1,0 +1,14 @@
+2 api_name: torch.bitwise_xor
+3 api_description: Computes the element-wise bitwise XOR of two tensors; for boolean
+  tensors, it performs logical XOR.
+4 api_signature: torch.bitwise_xor(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor whose values are bitwise XORed with the second tensor.
+- other: The second tensor used as the bitwise XOR operand.
+7 api_usage_example:
+- ' torch.bitwise_xor(torch.tensor([-1, -2, 3], dtype=torch.int8), torch.tensor([1,
+  0, 3], dtype=torch.int8))'
+- ' torch.bitwise_xor(torch.tensor([True, True, False]), torch.tensor([False, True,
+  False]))'
+8 api_shape: null

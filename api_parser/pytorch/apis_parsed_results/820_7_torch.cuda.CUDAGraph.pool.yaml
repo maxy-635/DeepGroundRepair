@@ -1,0 +1,7 @@
+2 api_name: torch.cuda.CUDAGraph.pool
+3 api_description: Returns an opaque token identifying the CUDA graph’s memory pool.
+4 api_signature: '"pool()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

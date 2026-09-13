@@ -1,0 +1,13 @@
+2 api_name: torch.nn.DataParallel
+3 api_description: torch.nn.DataParallel enables parallel processing of input data
+  across multiple GPUs, distributing the input batches and aggregating results to
+  accelerate model training and inference.
+4 api_signature: torch.nn.DataParallel(module,device_ids)
+5 api_details: ''
+6 api_parameters:
+- module: The neural network model that will be distributed across multiple devices.
+- device_ids: A list of CUDA device IDs where the model will be replicated and executed.
+7 api_usage_example:
+- ' net = torch.nn.DataParallel(model, device_ids=[0, 1, 2])'
+- ' output = net(input_var)  # input_var can be on any device, including CPU'
+8 api_shape: null

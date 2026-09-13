@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.subtract
+3 api_description: Subtracts two inputs element-wise and returns their difference.
+4 api_signature: tf.keras.ops.subtract(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first tensor to subtract from.
+- x2: The second tensor to subtract from `x1`.
+7 api_usage_example: null
+8 api_shape: ''

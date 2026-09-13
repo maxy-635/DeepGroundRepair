@@ -1,0 +1,9 @@
+2 api_name: tensorflow.data.experimental.get_next_as_optional
+3 api_description: Returns the next iterator element as a tf.experimental.Optional,
+  or an empty Optional when the iterator is exhausted.
+4 api_signature: tf.data.experimental.get_next_as_optional(iterator)
+5 api_details: ''
+6 api_parameters:
+- iterator: The `tf.data.Iterator` to read the next element from as an optional value.
+7 api_usage_example: null
+8 api_shape: ''

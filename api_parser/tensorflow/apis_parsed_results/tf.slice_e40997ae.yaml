@@ -1,0 +1,11 @@
+2 api_name: tensorflow.slice
+3 api_description: Returns a contiguous slice of a tensor starting at `begin` with
+  the given `size`, using `-1` to include all remaining elements in a dimension.
+4 api_signature: tf.slice(input_,begin,size)
+5 api_details: ''
+6 api_parameters:
+- input_: The tensor to slice.
+- begin: A tensor specifying the starting indices for the slice in each dimension.
+- size: A tensor specifying the size of the slice in each dimension.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.losses.tversky
+3 api_description: Computes Tversky loss between `y_true` and `y_pred`, using `alpha`
+  and `beta` to weight false positives and false negatives; with `alpha=0.5` and `beta=0.5`,
+  it is equivalent to Dice loss.
+4 api_signature: tf.keras.losses.tversky(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: Contains the ground-truth labels or targets used to compute the Tversky
+    loss.
+- y_pred: Contains the model’s predicted values compared against the true targets.
+7 api_usage_example: null
+8 api_shape: ''

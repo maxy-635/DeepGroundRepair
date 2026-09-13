@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.applications.DenseNet121
+3 api_description: Builds the DenseNet121 image classification model and can optionally
+  load ImageNet-pretrained weights, using the Keras data format configured in your
+  environment.
+4 api_signature: tf.keras.applications.DenseNet121(weights,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- weights: Chooses whether to use random initialization, pretrained ImageNet weights,
+    or a custom weights file.
+- input_shape: Sets the expected input tensor shape when `include_top` is False, with
+    3 channels and minimum spatial dimensions of 32.
+- classes: Specifies how many image classes the model should predict when `include_top`
+    is True and no pretrained weights are used.
+7 api_usage_example: null
+8 api_shape: ''

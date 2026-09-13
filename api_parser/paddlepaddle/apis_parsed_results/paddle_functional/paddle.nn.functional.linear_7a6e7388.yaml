@@ -1,0 +1,38 @@
+2 api_name: paddle.nn.functional.linear
+3 api_description: Performs a fully-connected linear transformation on the input tensor
+  using the equation Y = XW^T + b, where X is the input, W is the weight matrix, and
+  b is the optional bias.
+4 api_signature: paddle.nn.functional.linear(x,weight,bias)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor for the linear transformation, supporting data types bfloat16,
+    float16, float32, or float64.
+- weight: The weight tensor used in the linear transformation, supporting data types
+    float16, float32, or float64.
+- bias: The optional bias tensor added to the output units, supporting data types
+    float16, float32, or float64; if None, no bias is added.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- x = paddle.randn((3, 2), dtype="float32")
+- print(x)
+- Tensor(shape=[3, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.06132207,  1.11349595],'
+- '[ 0.41906244, -0.24858207],'
+- '[-1.85169315, -1.50370061]])'
+- weight = paddle.full(shape=[2, 4], fill_value=0.5, dtype="float32", name="weight")
+- print(weight)
+- Tensor(shape=[2, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.50000000, 0.50000000, 0.50000000, 0.50000000],'
+- '[0.50000000, 0.50000000, 0.50000000, 0.50000000]])'
+- bias = paddle.ones(shape=[4], dtype="float32", name="bias")
+- print(bias)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1., 1., 1., 1.])'
+- y = paddle.nn.functional.linear(x, weight, bias)
+- print(y)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 1.58740902,  1.58740902,  1.58740902,  1.58740902],'
+- '[ 1.08524013,  1.08524013,  1.08524013,  1.08524013],'
+- '[-0.67769694, -0.67769694, -0.67769694, -0.67769694]])'
+8 api_shape: null

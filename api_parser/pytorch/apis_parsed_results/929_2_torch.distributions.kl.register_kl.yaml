@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.kl.register_kl
+3 api_description: Registers a pairwise KL-divergence implementation for specific
+  distribution types so `kl_divergence()` can dispatch to it.
+4 api_signature: '"torch.distributions.kl.register_kl(type_p,type_q)"'
+5 api_details: ''
+6 api_parameters:
+- type_p: The first distribution class in the KL-divergence registration pair.
+- type_q: The second distribution class in the KL-divergence registration pair.
+7 api_usage_example:
+- '@register_kl(Normal, Normal)'
+- 'def kl_normal_normal(p, q):'
+- '    # insert implementation here'
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.optimizers.Lion
+3 api_description: Lion is a memory-efficient optimizer that updates parameters using
+  the sign of momentum-based gradients, keeping only momentum state. It is typically
+  used with a smaller learning rate and proportionally larger weight decay than AdamW.
+4 api_signature: tf.keras.optimizers.Lion(learning_rate,beta_1,beta_2,weight_decay,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Controls the step size used to update model weights.
+- beta_1: Controls how much of the current gradient is mixed into the first moment
+    estimate.
+- beta_2: Controls the decay rate used for the first moment estimate’s running average.
+- name: Sets the name used for the optimizer’s internal momentum accumulator weights.
+- weight_decay: Applies a decay penalty to model weights when enabled.
+7 api_usage_example: null
+8 api_shape: ''

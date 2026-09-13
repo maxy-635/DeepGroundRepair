@@ -1,0 +1,15 @@
+2 api_name: torch.nn.LeakyReLU
+3 api_description: LeakyReLU applies the Leaky Rectified Linear Unit activation function
+  element-wise, allowing a small, non-zero gradient when the input is negative.
+4 api_signature: torch.nn.LeakyReLU(negative_slope)
+5 api_details: ''
+6 api_parameters:
+- negative_slope: Controls the angle of the negative slope.
+7 api_usage_example:
+- ' m = nn.LeakyReLU(0.1)'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*) where * means, any number of additional dimensions
+  output tensor shape: (*), same shape as the input
+  tensor shape transform formulas: {}

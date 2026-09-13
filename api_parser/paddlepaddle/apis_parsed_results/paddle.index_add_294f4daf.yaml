@@ -1,0 +1,28 @@
+2 api_name: paddle.index_add
+3 api_description: Adds values from the input tensor into the target tensor at the
+  specified indices, accumulating contributions in the order given.
+4 api_signature: paddle.index_add(x,index,axis,value,out)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the destination tensor that will be updated in place by adding values
+    at the indexed positions.
+- index: Specifies the 1-D integer indices selecting which entries along the chosen
+    axis will be updated.
+- axis: Indicates the dimension of `x` along which the indexed addition is performed.
+- value: Provides the source tensor whose elements are added into `x` at the locations
+    selected by `index`.
+- out: Receives the resulting tensor after the indexed addition operation.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- input_tensor = paddle.to_tensor(paddle.ones((3, 3)), dtype="float32")
+- index = paddle.to_tensor([0, 2], dtype="int32")
+- value = paddle.to_tensor([[1, 1, 1], [1, 1, 1]], dtype="float32")
+- outplace_res = paddle.index_add(input_tensor, index, 0, value)
+- print(outplace_res)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[2., 2., 2.],'
+- '[1., 1., 1.],'
+- '[2., 2., 2.]])'
+8 api_shape: {}

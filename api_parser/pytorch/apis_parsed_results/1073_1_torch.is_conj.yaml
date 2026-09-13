@@ -1,0 +1,9 @@
+2 api_name: torch.is_conj
+3 api_description: Returns True when a tensor’s conjugate bit is set, indicating it
+  is a conjugated tensor.
+4 api_signature: torch.is_conj(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to check for a conjugate bit.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.LoadTPUEmbeddingCenteredRMSPropParameters
+3 api_description: Loads centered RMSProp embedding optimizer parameters into TPU
+  HBM after host configuration, typically to restore checkpointed embedding state
+  before training.
+4 api_signature: tf.raw_ops.LoadTPUEmbeddingCenteredRMSPropParameters(parameters,ms,mom,mg,num_shards,shard_id,table_id)
+5 api_details: ''
+6 api_parameters:
+- parameters: Stores the centered RMSProp learning-rate and decay hyperparameters
+    to be loaded for TPU embedding.
+- ms: Stores the running mean-square accumulator used by centered RMSProp.
+- mom: Stores the momentum accumulator used by centered RMSProp.
+- mg: Stores the running mean-gradient accumulator used by centered RMSProp.
+- num_shards: Specifies the total number of parameter shards participating in the
+    load operation.
+- shard_id: Identifies which shard this operation is loading for.
+- table_id: Optionally specifies the embedding table to load; defaults to `-1` when
+    not provided.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ResourceSparseApplyKerasMomentum
+3 api_description: Applies Keras momentum updates to sparse rows of `var` and `accum`
+  using the provided gradients, learning rate, and momentum, with optional Nesterov
+  momentum.
+4 api_signature: tf.raw_ops.ResourceSparseApplyKerasMomentum(var,accum,grad,indices,momentum)
+5 api_details: ''
+6 api_parameters:
+- var: The resource variable being updated in place by the optimizer.
+- accum: The resource variable that stores the momentum accumulator for `var`.
+- grad: The gradient values used to compute the sparse momentum update.
+- indices: The indices of the rows in `var` and `accum` that should be updated.
+- momentum: The scalar momentum coefficient that controls how much past updates are
+    retained.
+7 api_usage_example: null
+8 api_shape: ''

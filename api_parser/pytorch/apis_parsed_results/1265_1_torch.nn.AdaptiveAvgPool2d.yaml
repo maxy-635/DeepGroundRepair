@@ -1,0 +1,27 @@
+2 api_name: torch.nn.AdaptiveAvgPool2d
+3 api_description: Applies adaptive average pooling to reduce the spatial dimensions
+  of a 2D input tensor to a specified output size, preserving the number of input
+  channels.
+4 api_signature: torch.nn.AdaptiveAvgPool2d(output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the desired output dimensions for the pooled image, which
+    can be a single integer for a square output or a tuple for rectangular output,
+    with the option to maintain the original size by using None.
+7 api_usage_example:
+- ' # target output size of 5x7'
+- ' m = nn.AdaptiveAvgPool2d((5, 7))'
+- ' input = torch.randn(1, 64, 8, 9)'
+- ' output = m(input)'
+- ' # target output size of 7x7 (square)'
+- ' m = nn.AdaptiveAvgPool2d(7)'
+- ' input = torch.randn(1, 64, 10, 9)'
+- ' output = m(input)'
+- ' # target output size of 10x7'
+- ' m = nn.AdaptiveAvgPool2d((None, 7))'
+- ' input = torch.randn(1, 64, 10, 9)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, S_0, S_1)
+  tensor shape transform formulas: {}

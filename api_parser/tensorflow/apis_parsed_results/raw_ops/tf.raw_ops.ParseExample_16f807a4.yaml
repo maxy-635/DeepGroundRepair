@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ParseExample
+3 api_description: Parses a batch of serialized Example protos into typed tensors
+  according to provided feature schemas.
+4 api_signature: tf.raw_ops.ParseExample(serialized,sparse_keys,dense_keys,sparse_types,dense_shapes)
+5 api_details: ''
+6 api_parameters:
+- serialized: A batch of serialized Example protos to parse.
+- sparse_keys: The string feature keys to extract as sparse values.
+- dense_keys: The string feature keys to extract as dense values.
+- sparse_types: The data types expected for each sparse feature.
+- dense_shapes: The expected shapes for each dense feature, used to shape and pad
+    the outputs.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Pow
+3 api_description: Computes element-wise powers by raising each value in x to the
+  corresponding power in y.
+4 api_signature: tf.raw_ops.Pow(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The base tensor whose values will be raised to a power.
+- y: The exponent tensor applied elementwise to `x`, with the same data type as `x`.
+7 api_usage_example: null
+8 api_shape: ''

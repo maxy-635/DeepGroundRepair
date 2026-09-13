@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesQuantileStreamResourceDeserialize
+3 api_description: Restores a QuantileAccumulator’s bucket boundaries and readiness
+  state from a serialized input.
+4 api_signature: tf.raw_ops.BoostedTreesQuantileStreamResourceDeserialize(quantile_stream_resource_handle,bucket_boundaries)
+5 api_details: ''
+6 api_parameters:
+- quantile_stream_resource_handle: Identifies the QuantileStreamResource to deserialize
+    into.
+- bucket_boundaries: Provides the rank-1 float tensors containing bucket boundary
+    values for each feature.
+7 api_usage_example: null
+8 api_shape: ''

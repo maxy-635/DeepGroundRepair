@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.spatial_3d_padding
+3 api_description: Pads the depth, height, and width dimensions of a 5D tensor with
+  zeros or a constant value, according to the specified padding pattern.
+4 api_signature: tf.keras.backend.spatial_3d_padding(x,padding,data_format)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

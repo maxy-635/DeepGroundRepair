@@ -1,0 +1,14 @@
+2 api_name: tensorflow.strings.regex_replace
+3 api_description: Replaces substrings in each input element that match a regex pattern
+  with a specified replacement string.
+4 api_signature: tf.strings.regex_replace(input,pattern,rewrite)
+5 api_details: ''
+6 api_parameters:
+- input: The strings to search and transform.
+- pattern: The regular expression that matches the text to replace.
+- rewrite: The replacement text to insert for each match, optionally using capture-group
+    backreferences like \1 to \9.
+7 api_usage_example:
+- tf.strings.regex_replace("Text with tags.<br /><b>contains html</b>",
+- '                         "<[^>]+>", " ")'
+8 api_shape: ''

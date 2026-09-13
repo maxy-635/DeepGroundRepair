@@ -1,0 +1,12 @@
+2 api_name: torch.distributed.tensor.distribute_module
+3 api_description: Distributes a module’s parameters, inputs, and outputs across devices
+  using DTensor placement rules.
+4 api_signature: torch.distributed.tensor.distribute_module(module,device_mesh,partition_fn)
+5 api_details: ''
+6 api_parameters:
+- module: The user module to partition and distribute.
+- device_mesh: The device mesh that determines where the module is placed.
+- partition_fn: An optional function that partitions parameters across the device
+    mesh; if omitted, all parameters are replicated by default.
+7 api_usage_example: null
+8 api_shape: null

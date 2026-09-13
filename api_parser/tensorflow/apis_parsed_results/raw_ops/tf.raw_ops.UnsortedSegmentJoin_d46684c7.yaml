@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.UnsortedSegmentJoin
+3 api_description: Joins values into segments by unsorted segment IDs, combining entries
+  that share the same segment into a single result per segment.
+4 api_signature: tf.raw_ops.UnsortedSegmentJoin(inputs,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- inputs: String tensor containing the values to be joined by segment.
+- segment_ids: Integer tensor assigning each input element to a segment.
+- num_segments: Integer tensor specifying the total number of output segments.
+7 api_usage_example: null
+8 api_shape: ''

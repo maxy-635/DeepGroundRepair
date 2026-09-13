@@ -1,0 +1,9 @@
+2 api_name: torch.autograd.function.InplaceFunction.setup_context
+3 api_description: Defines how an autograd.Function saves inputs, outputs, and other
+  state during forward so backward can use them for gradient computation, especially
+  when supporting in-place behavior.
+4 api_signature: setup_context(ctx,inputs,output)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

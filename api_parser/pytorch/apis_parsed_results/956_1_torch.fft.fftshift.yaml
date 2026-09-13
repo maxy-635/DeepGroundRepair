@@ -1,0 +1,12 @@
+2 api_name: torch.fft.fftshift
+3 api_description: Shifts n-dimensional FFT output so negative-frequency components
+  appear first.
+4 api_signature: torch.fft.fftshift(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose frequency components are arranged in FFT order and will
+    be shifted.
+7 api_usage_example:
+- ' f = torch.fft.fftfreq(4)'
+- ' f'
+8 api_shape: null

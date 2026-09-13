@@ -1,0 +1,23 @@
+2 api_name: torch.linalg.qr
+3 api_description: Computes the QR decomposition of a matrix, returning an orthonormal
+  Q factor and an upper-triangular R factor.
+4 api_signature: torch.linalg.qr(A,mode)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor to factorize, with shape `(*, m, n)` and optional batch dimensions.
+- mode: Specifies the QR output shape by choosing reduced, complete, or r mode.
+7 api_usage_example:
+- ' A = torch.tensor([[12., -51, 4], [6, 167, -68], [-4, 24, -41]])'
+- ' Q, R = torch.linalg.qr(A)'
+- ' Q'
+- ' R'
+- ' (Q @ R).round()'
+- ' (Q.T @ Q).round()'
+- ' Q2, R2 = torch.linalg.qr(A, mode=''r'')'
+- ' Q2'
+- ' torch.equal(R, R2)'
+- ' A = torch.randn(3, 4, 5)'
+- ' Q, R = torch.linalg.qr(A, mode=''complete'')'
+- ' torch.dist(Q @ R, A)'
+- ' torch.dist(Q.mT @ Q, torch.eye(4))'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.BatchMatrixDeterminant
+3 api_description: Computes the determinant of each square matrix in a batch and returns
+  a tensor of determinant values.
+4 api_signature: tf.raw_ops.BatchMatrixDeterminant(input)
+5 api_details: ''
+6 api_parameters:
+- input: A batch of square matrices whose determinant is computed for each matrix
+    in the batch.
+7 api_usage_example: null
+8 api_shape: ''

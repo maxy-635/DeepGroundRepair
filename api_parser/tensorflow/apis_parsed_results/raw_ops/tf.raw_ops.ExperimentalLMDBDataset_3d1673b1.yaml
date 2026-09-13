@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ExperimentalLMDBDataset
+3 api_description: Reads key-value records from an LMDB database as a TensorFlow dataset,
+  yielding serialized entries from one or more database files.
+4 api_signature: tf.raw_ops.ExperimentalLMDBDataset(filenames,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies the LMDB file paths to read from.
+- output_types: Defines the data types of the tensors produced by each dataset element.
+- output_shapes: Defines the shape of each tensor produced by each dataset element.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

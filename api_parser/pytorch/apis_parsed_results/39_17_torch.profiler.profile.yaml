@@ -1,0 +1,36 @@
+2 api_name: torch.profiler.profile
+3 api_description: Context manager for collecting and analyzing PyTorch performance
+  traces, with support for recording CPU/GPU activity, scheduling profiling steps,
+  and exporting trace or table-based results.
+4 api_signature: torch.profiler.profile(*,activities,schedule,on_trace_ready,record_shapes,profile_memory,with_stack,with_flops,with_modules,experimental_config,execution_trace_observer,acc_events,use_cuda,custom_trace_id_callback,post_processing_timeout_s)
+5 api_details: ''
+6 api_parameters:
+- activities: Selects which device activity groups to profile, such as CPU, CUDA,
+    or XPU.
+- schedule: Defines the profiling action to take at each step based on the step number.
+- on_trace_ready: Runs a callback when the schedule requests trace recording and saving.
+- record_shapes: Records the input shapes of operators.
+- profile_memory: Tracks tensor memory allocations and deallocations.
+- with_stack: Captures source file and line information for operations.
+- with_flops: Estimates FLOPs for supported operators such as matrix multiplication
+    and 2D convolution.
+- with_modules: Records the module hierarchy associated with each operation's call
+    stack in TorchScript models.
+- experimental_config: Supplies experimental Kineto options, without guaranteeing
+    backward compatibility.
+- execution_trace_observer: Attaches an execution trace observer that starts and stops
+    with the profiler's time window.
+- acc_events: Accumulates FunctionEvents across multiple profiling cycles.
+- post_processing_timeout_s: Sets a timeout for profiler post-processing and may return
+    partial results if exceeded.
+- use_cuda: Deprecated option for CUDA profiling; use `activities` instead.
+7 api_usage_example:
+- with torch.profiler.profile(
+- '    activities=['
+- '        torch.profiler.ProfilerActivity.CPU,'
+- '        torch.profiler.ProfilerActivity.CUDA,'
+- '    ]'
+- ') as p:'
+- '    code_to_profile()'
+- print(p.key_averages().table(sort_by="self_cuda_time_total", row_limit=-1))
+8 api_shape: null

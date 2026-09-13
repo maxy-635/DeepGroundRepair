@@ -1,0 +1,24 @@
+2 api_name: paddle.nn.functional.multi_margin_loss
+3 api_description: The paddle.nn.functional.multi_margin_loss API calculates the multi-class
+  hinge loss for classification tasks, comparing predicted scores with true labels.
+4 api_signature: paddle.nn.functional.multi_margin_loss(input,label,p,margin)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor containing the scores for each class, with shape (N, C)
+    and data type float32 or float64.
+- label: The tensor containing the true class labels for each sample, with shape (N,)
+    and data type int32 or int64.
+- p: The exponent used in the loss calculation, determining the power applied to the
+    margin.
+- margin: The margin value used in the loss calculation to enforce a separation between
+    classes.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- input = paddle.to_tensor([[1, 5, 3], [0, 3, 2], [1, 4, 1]], dtype=paddle.float32)
+- label = paddle.to_tensor([1, 2, 1], dtype=paddle.int32)
+- loss = F.multi_margin_loss(input, label, margin=1.0, reduction='none')
+- print(loss)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 0.66666663, 0.        ])'
+8 api_shape: null

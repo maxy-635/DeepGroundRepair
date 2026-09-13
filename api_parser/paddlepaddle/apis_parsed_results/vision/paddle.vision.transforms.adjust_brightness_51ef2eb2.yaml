@@ -1,0 +1,26 @@
+2 api_name: paddle.vision.transforms.adjust_brightness
+3 api_description: Adjusts an image’s brightness by increasing or decreasing its pixel
+  intensity.
+4 api_signature: paddle.vision.transforms.adjust_brightness(img,brightness_factor)
+5 api_details: ''
+6 api_parameters:
+- img: The image to adjust.
+- brightness_factor: The non-negative factor used to change brightness, where 0 makes
+    the image black, 1 leaves it unchanged, and values above 1 increase brightness.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import functional as F
+- np.random.seed(2023)
+- fake_img = (np.random.rand(256, 300, 3) * 255.).astype('uint8')
+- fake_img = Image.fromarray(fake_img)
+- print(fake_img.size)
+- (300, 256)
+- 'print(fake_img.load()[1, 1]) # type: ignore[index]'
+- (61, 155, 171)
+- converted_img = F.adjust_brightness(fake_img, 0.5)
+- print(converted_img.size)
+- (300, 256)
+- print(converted_img.load()[1, 1])
+- (30, 77, 85)
+8 api_shape: {}

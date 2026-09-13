@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.select
+3 api_description: Selects elements from a list of choices according to corresponding
+  conditions, returning values where each condition is true.
+4 api_signature: tf.keras.ops.select(condlist,choicelist,default)
+5 api_details: ''
+6 api_parameters:
+- condlist: Boolean condition tensors that select which choices contribute to the
+    output, using the first matching condition when several are true.
+- choicelist: Tensors supplying the possible output values, matched one-to-one with
+    `condlist`.
+7 api_usage_example: null
+8 api_shape: ''

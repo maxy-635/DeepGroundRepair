@@ -1,0 +1,13 @@
+2 api_name: tensorflow.linalg.LinearOperatorCirculant3D
+3 api_description: Represents a batchable linear operator for 3D nested block-circulant
+  matrices, enabling efficient matrix-vector operations without materializing the
+  full dense matrix.
+4 api_signature: tf.linalg.LinearOperatorCirculant3D(spectrum,input_output_dtype,name)
+5 api_details: ''
+6 api_parameters:
+- spectrum: The frequency-domain representation of the circulant 3D operator, with
+    leading batch dimensions and 3D spatial dimensions.
+- input_output_dtype: The data type used for the operator’s inputs and outputs.
+- name: A name prefix for the TensorFlow operations created by this operator class.
+7 api_usage_example: null
+8 api_shape: ''

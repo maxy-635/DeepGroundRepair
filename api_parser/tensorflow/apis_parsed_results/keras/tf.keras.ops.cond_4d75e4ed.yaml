@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.cond
+3 api_description: Selects and executes `true_fn` or `false_fn` based on a boolean
+  condition, then returns the result.
+4 api_signature: tf.keras.ops.cond(pred,true_fn,false_fn)
+5 api_details: ''
+6 api_parameters:
+- pred: A boolean scalar that selects which branch to execute.
+- true_fn: A callable that returns the result when `pred` is `True`.
+- false_fn: A callable that returns the result when `pred` is `False`.
+7 api_usage_example: null
+8 api_shape: ''

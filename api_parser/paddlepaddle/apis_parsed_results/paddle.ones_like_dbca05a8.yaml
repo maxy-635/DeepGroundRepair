@@ -1,0 +1,21 @@
+2 api_name: paddle.ones_like
+3 api_description: Creates a tensor of ones matching the shape of `x`, and uses `x`'s
+  data type unless `dtype` is specified.
+4 api_signature: paddle.ones_like(x,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the input tensor whose shape and dtype are used to create the output
+    tensor.
+- dtype: Specifies the output tensor's data type, or uses `x`'s dtype when set to
+    `None`.
+- name: Optionally sets the operation name; typically no configuration is needed.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1,2,3])
+- out1 = paddle.ones_like(x)
+- print(out1.numpy())
+- '[1 1 1]'
+- out2 = paddle.ones_like(x, dtype='int32')
+- print(out2.numpy())
+- '[1 1 1]'
+8 api_shape: {}

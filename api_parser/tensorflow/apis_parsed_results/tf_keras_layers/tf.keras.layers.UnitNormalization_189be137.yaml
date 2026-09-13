@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.UnitNormalization
+3 api_description: Normalizes each input in a batch to have an L2 norm of 1 along
+  specified axes.
+4 api_signature: tf.keras.layers.UnitNormalization(axis)
+5 api_details: ''
+6 api_parameters:
+- axis: Specifies the axis or axes to normalize across, typically the features axis,
+    while excluding the batch axis.
+7 api_usage_example:
+- data = np.arange(6).reshape(2, 3)
+- normalized_data = keras.layers.UnitNormalization()(data)
+- print(np.sum(normalized_data[0, :] ** 2)
+8 api_shape: null

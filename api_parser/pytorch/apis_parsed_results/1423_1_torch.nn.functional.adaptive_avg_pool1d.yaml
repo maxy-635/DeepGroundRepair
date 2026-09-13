@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.adaptive_avg_pool1d
+3 api_description: Performs 1D adaptive average pooling on input data, adjusting the
+  output size to a specified target dimension.
+4 api_signature: torch.nn.functional.adaptive_avg_pool1d(input,output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the desired size of the output after applying adaptive average
+    pooling on a 1D input.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, L_in)
+  output tensor shape: (N, Channel_out, L_out)
+  tensor shape transform formulas: {}

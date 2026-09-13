@@ -1,0 +1,23 @@
+2 api_name: tensorflow.config.experimental.reset_memory_stats
+3 api_description: Resets the selected device’s tracked memory peak to its current
+  usage so you can measure peak memory for a specific code section.
+4 api_signature: tf.config.experimental.reset_memory_stats(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which device's memory statistics to reset, such as a GPU or TPU.
+7 api_usage_example:
+- 'if tf.config.list_physical_devices(''GPU''):'
+- '  # Sets the peak memory to the current memory.'
+- '  tf.config.experimental.reset_memory_stats(''GPU:0'')'
+- '  # Creates the first peak memory usage.'
+- '  x1 = tf.ones(1000 * 1000, dtype=tf.float64)'
+- '  del x1 # Frees the memory referenced by `x1`.'
+- '  peak1 = tf.config.experimental.get_memory_info(''GPU:0'')[''peak'']'
+- '  # Sets the peak memory to the current memory again.'
+- '  tf.config.experimental.reset_memory_stats(''GPU:0'')'
+- '  # Creates the second peak memory usage.'
+- '  x2 = tf.ones(1000 * 1000, dtype=tf.float32)'
+- '  del x2'
+- '  peak2 = tf.config.experimental.get_memory_info(''GPU:0'')[''peak'']'
+- '  assert peak2 < peak1  # tf.float32 consumes less memory than tf.float64.'
+8 api_shape: ''

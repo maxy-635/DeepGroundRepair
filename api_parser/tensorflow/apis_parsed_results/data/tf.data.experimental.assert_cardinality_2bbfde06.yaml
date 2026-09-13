@@ -1,0 +1,15 @@
+2 api_name: tensorflow.data.experimental.assert_cardinality
+3 api_description: Asserts that a dataset has a specified number of elements, raising
+  an error if the actual cardinality differs.
+4 api_signature: tf.data.experimental.assert_cardinality(expected_cardinality)
+5 api_details: ''
+6 api_parameters:
+- expected_cardinality: Specifies how many elements the input dataset is expected
+    to contain.
+7 api_usage_example:
+- dataset = tf.data.TFRecordDataset("examples.tfrecord")
+- cardinality = tf.data.experimental.cardinality(dataset)
+- print((cardinality == tf.data.experimental.UNKNOWN_CARDINALITY).numpy())
+- dataset = dataset.apply(tf.data.experimental.assert_cardinality(42))
+- print(tf.data.experimental.cardinality(dataset).numpy())
+8 api_shape: ''

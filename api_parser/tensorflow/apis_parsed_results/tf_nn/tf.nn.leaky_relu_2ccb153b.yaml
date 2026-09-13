@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nn.leaky_relu
+3 api_description: The tensorflow.nn.leaky_relu function computes the Leaky ReLU activation,
+  which allows a small, non-zero gradient when the unit is not active, improving model
+  learning by addressing the 'dying ReLU' problem.
+4 api_signature: tf.nn.leaky_relu(features,alpha)
+5 api_details: ''
+6 api_parameters:
+- features: Represents the input tensor containing preactivation values for the leaky
+    ReLU function.
+- alpha: Defines the slope of the leaky ReLU activation function for input values
+    less than zero.
+7 api_usage_example: null
+8 api_shape: ''

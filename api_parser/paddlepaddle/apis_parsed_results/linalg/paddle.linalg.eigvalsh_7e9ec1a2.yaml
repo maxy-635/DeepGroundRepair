@@ -1,0 +1,17 @@
+2 api_name: paddle.linalg.eigvalsh
+3 api_description: Computes the eigenvalues of a real symmetric or complex Hermitian
+  matrix.
+4 api_signature: paddle.linalg.eigvalsh(x,UPLO)
+5 api_details: ''
+6 api_parameters:
+- x: The input batch of square matrices whose eigenvalues are computed.
+- UPLO: Selects whether to use the lower ('L') or upper ('U') triangular part of each
+    matrix.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1, -2j], [2j, 5]])
+- out_value = paddle.eigvalsh(x, UPLO='L')
+- print(out_value)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.17157286, 5.82842731])'
+8 api_shape: {}

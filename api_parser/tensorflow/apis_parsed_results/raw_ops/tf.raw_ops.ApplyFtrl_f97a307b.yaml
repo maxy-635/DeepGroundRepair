@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.ApplyFtrl
+3 api_description: Updates a variable using the FTRL-proximal optimization rule, adjusting
+  accumulated gradient state and applying L1/L2 regularization to compute the new
+  parameter value.
+4 api_signature: tf.raw_ops.ApplyFtrl(var,accum,linear,grad,lr,l1,l2,lr_power)
+5 api_details: ''
+6 api_parameters:
+- var: The model variable to be updated in place by the FTRL optimizer.
+- accum: Accumulator variable that tracks the adaptive learning-rate state for `var`.
+- linear: Linear accumulator variable used by FTRL to compute the update step for
+    `var`.
+- grad: The gradient tensor used to update `var`, `accum`, and `linear`.
+- lr: Scalar learning-rate scaling factor controlling the update size.
+- l1: Scalar L1 regularization strength applied to encourage sparsity.
+- l2: Scalar L2 regularization strength applied to penalize large weights.
+- lr_power: Scalar exponent that shapes how the learning rate adapts over time.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,24 @@
+2 api_name: paddle.audio.load
+3 api_description: Load audio from a file starting at a given frame offset and returning
+  up to a specified number of frames.
+4 api_signature: paddle.audio.load(filepath,num_frames,normalize)
+5 api_details: ''
+6 api_parameters:
+- num_frames: Specifies how many audio frames to read, with -1 meaning read all remaining
+    frames.
+- normalize: Controls whether the audio is returned as float32 values normalized to
+    the range [-1, 1] or as raw int16 data.
+7 api_usage_example:
+- import os
+- import paddle
+- sample_rate = 16000
+- wav_duration = 0.5
+- num_channels = 1
+- num_frames = sample_rate * wav_duration
+- wav_data = paddle.linspace(-1.0, 1.0, int(num_frames)) * 0.1
+- waveform = wav_data.tile([num_channels, 1])
+- base_dir = os.getcwd()
+- filepath = os.path.join(base_dir, "test.wav")
+- paddle.audio.save(filepath, waveform, sample_rate)
+- wav_data_read, sr = paddle.audio.load(filepath)
+8 api_shape: {}

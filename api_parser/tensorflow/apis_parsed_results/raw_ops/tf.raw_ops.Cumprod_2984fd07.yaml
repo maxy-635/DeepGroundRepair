@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Cumprod
+3 api_description: Computes the cumulative product of a tensor along a specified axis,
+  producing an inclusive running product by default.
+4 api_signature: tf.raw_ops.Cumprod(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose cumulative product is computed along the specified axis.
+- axis: The dimension index along which to perform the cumulative product.
+7 api_usage_example: null
+8 api_shape: ''

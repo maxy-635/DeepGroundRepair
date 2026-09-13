@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.ops.roi_pool
+3 api_description: Performs RoI pooling by dividing each region of interest into a
+  fixed grid and max-pooling each bin to produce a fixed-size feature map.
+4 api_signature: paddle.vision.ops.roi_pool(x,boxes,output_size)
+5 api_details: ''
+6 api_parameters:
+- x: The input feature map to pool over, shaped [N, C, H, W].
+- boxes: The regions of interest specified as bounding boxes to pool from.
+- output_size: The target pooled height and width for each ROI output.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.StatelessIf
+3 api_description: StatelessIf selects and runs either then_branch or else_branch
+  based on a boolean condition, returning the chosen branch’s output deterministically
+  from the given inputs.
+4 api_signature: tf.raw_ops.StatelessIf(cond,input,Tout,then_branch,else_branch)
+5 api_details: ''
+6 api_parameters:
+- cond: Boolean-like predicate tensor that decides which branch to execute.
+- input: List of tensors passed as inputs to the selected branch function.
+- Tout: List of data types for the tensors returned by the branch functions.
+- then_branch: Function executed when `cond` is true, returning tensors matching `Tout`.
+- else_branch: Function executed when `cond` is false, returning tensors matching
+    `Tout`.
+7 api_usage_example: null
+8 api_shape: ''

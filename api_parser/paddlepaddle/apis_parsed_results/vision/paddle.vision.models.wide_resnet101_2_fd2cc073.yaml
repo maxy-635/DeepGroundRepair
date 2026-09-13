@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.wide_resnet101_2
+3 api_description: A Wide ResNet-101-2 image classification model that extracts visual
+  features with a deep residual CNN architecture and outputs predictions for image
+  recognition tasks.
+4 api_signature: paddle.vision.models.wide_resnet101_2(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Loads ImageNet pre-trained weights for the model when set to True.
+7 api_usage_example: []
+8 api_shape: {}

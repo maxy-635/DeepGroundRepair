@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.ReLU6
+3 api_description: ReLU6 is an activation function that outputs the input value if
+  it's between 0 and 6, otherwise it outputs 0 for negative inputs and 6 for inputs
+  greater than 6.
+4 api_signature: paddle.nn.ReLU6()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-1., 0.3, 6.5])
+- m = paddle.nn.ReLU6()
+- out = m(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 0.30000000, 6.        ])'
+8 api_shape: null

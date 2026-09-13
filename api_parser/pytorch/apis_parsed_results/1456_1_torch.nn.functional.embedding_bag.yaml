@@ -1,0 +1,27 @@
+2 api_name: torch.nn.functional.embedding_bag
+3 api_description: torch.nn.functional.embedding_bag computes aggregated values (sum,
+  mean, or max) of embeddings for each bag, efficiently handling variable-length sequences.
+4 api_signature: torch.nn.functional.embedding_bag(input,weight,offsets,mode,include_last_offset)
+5 api_details: ''
+6 api_parameters:
+- input: Tensor containing indices for embedding lookup, organized in bags.
+- weight: Embedding matrix where rows correspond to indices and columns to embedding
+    dimensions.
+- offsets: Defines the start index of each bag in a 1D input tensor.
+- mode: 'Determines the reduction method for combining embeddings: ''sum'', ''mean'',
+    or ''max''.'
+- include_last_offset: When True, includes the end index of the last bag in offsets,
+    applicable only for 1D input.
+7 api_usage_example:
+- ' # an Embedding module containing 10 tensors of size 3'
+- ' embedding_matrix = torch.rand(10, 3)'
+- ' # a batch of 2 samples of 4 indices each'
+- ' input = torch.tensor([1, 2, 4, 5, 4, 3, 2, 9])'
+- ' offsets = torch.tensor([0, 4])'
+- ' F.embedding_bag(input, embedding_matrix, offsets)'
+- ' # example with padding_idx'
+- ' embedding_matrix = torch.rand(10, 3)'
+- ' input = torch.tensor([2, 2, 2, 2, 4, 3, 2, 9])'
+- ' offsets = torch.tensor([0, 4])'
+- ' F.embedding_bag(input, embedding_matrix, offsets, padding_idx=2, mode=''sum'')'
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: torch.nn.MarginRankingLoss.forward
+3 api_description: Computes the margin ranking loss between two input tensors and
+  target labels, encouraging the first input to be ranked higher than the second by
+  at least the specified margin.
+4 api_signature: forward(input1,target)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

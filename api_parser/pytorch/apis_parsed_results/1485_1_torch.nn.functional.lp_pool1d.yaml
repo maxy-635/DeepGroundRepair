@@ -1,0 +1,25 @@
+2 api_name: torch.nn.functional.lp_pool1d
+3 api_description: Applies 1D power-average pooling on input data across multiple
+  input planes.
+4 api_signature: torch.nn.functional.lp_pool1d(input,norm_type,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be pooled, typically a 3D tensor with shape (N, C, L)
+    where N is the batch size, C is the number of channels, and L is the length of
+    the sequence.
+- norm_type: The p-norm to be applied, which determines the type of pooling operation;
+    common values include 1 or 2 for L1 or L2 pooling.
+- kernel_size: The size of the window over which to compute the p-norm, determining
+    the down-sampling factor.
+- stride: The stride of the window, which determines the step size for moving the
+    pooling window across the input tensor; defaults to the kernel size if not specified.
+- ceil_mode: A boolean that, if set to True, will use ceil instead of floor to compute
+    the output shape, ensuring that every part of the input is covered by the pooling
+    window.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, L_in)
+  output tensor shape: (N, Channel_out, L_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    L_out: L_out = floor((L_in - kernel_size) / stride + 1)

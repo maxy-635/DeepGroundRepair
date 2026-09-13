@@ -1,0 +1,10 @@
+2 api_name: torch.optim.Adam.register_step_pre_hook
+3 api_description: Registers a callback that runs before `optimizer.step()` to inspect
+  or modify the step arguments or optimizer state.
+4 api_signature: register_step_pre_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: Registers a user-defined callback that runs before each optimizer step.
+7 api_usage_example:
+- hook(optimizer, args, kwargs) -> None or modified args and kwargs
+8 api_shape: null

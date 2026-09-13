@@ -1,0 +1,24 @@
+2 api_name: tensorflow.raw_ops.CudnnRNNBackpropV2
+3 api_description: Computes the backward pass for a CuDNN RNN, producing gradients
+  for the input, initial hidden/cell states, and opaque weights using the forward
+  outputs, reserve space, and host reservation data.
+4 api_signature: tf.raw_ops.CudnnRNNBackpropV2(input,input_h,input_c,params,output_backprop,output_h_backprop,output_c_backprop,reserve_space,rnn_mode,direction)
+5 api_details: ''
+6 api_parameters:
+- input: The input sequence tensor for the RNN backpropagation computation.
+- input_h: The final hidden state tensor from the forward pass.
+- input_c: The final cell state tensor from the forward pass.
+- params: The packed RNN weights and biases used by the cuDNN kernel.
+- output: The forward-pass output tensor used to compute gradients.
+- output_h: The forward-pass final hidden-state output tensor used for backpropagation.
+- output_c: The forward-pass final cell-state output tensor used for backpropagation.
+- output_backprop: The gradient of the loss with respect to the RNN outputs.
+- output_h_backprop: The gradient of the loss with respect to the final hidden state
+    output.
+- output_c_backprop: The gradient of the loss with respect to the final cell state
+    output.
+- reserve_space: Auxiliary workspace saved from the forward pass for use during backpropagation.
+- rnn_mode: Selects the recurrent cell type used by the operation.
+- direction: Specifies whether the RNN runs in one direction or both directions.
+7 api_usage_example: null
+8 api_shape: ''

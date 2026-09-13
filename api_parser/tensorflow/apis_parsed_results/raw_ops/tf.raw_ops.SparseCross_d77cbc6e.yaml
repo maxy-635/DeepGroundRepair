@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.SparseCross
+3 api_description: Generates batchwise sparse feature crosses from lists of 2D sparse
+  tensors and 2D dense tensors, returning a 2D SparseTensor of the combined crosses.
+4 api_signature: tf.raw_ops.SparseCross(dense_inputs,hashed_output,num_buckets,hash_key,out_type)
+5 api_details: ''
+6 api_parameters:
+- dense_inputs: Provides the 2-D dense input tensors whose columns are crossed together.
+- hashed_output: Chooses whether to return hashed cross values instead of string representations.
+- num_buckets: Sets the hash bucket range used to mod the hashed output when hashing
+    is enabled.
+- hash_key: Supplies the key used to combine fingerprints when computing the cross
+    hash.
+- out_type: Specifies the output data type, either `tf.int64` or `tf.string`.
+7 api_usage_example: null
+8 api_shape: ''

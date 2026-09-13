@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.distribution.distribute_tensor
+3 api_description: Changes a Tensor’s layout during jit function execution according
+  to the specified distribution.
+4 api_signature: tf.keras.distribution.distribute_tensor(tensor,layout)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor whose layout will be changed.
+- layout: The TensorLayout to apply to the tensor value.
+7 api_usage_example: null
+8 api_shape: ''

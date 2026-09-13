@@ -1,0 +1,9 @@
+2 api_name: tensorflow.mlir.experimental.tflite_to_tosa_bytecode
+3 api_description: Converts a TFLite flatbuffer into TOSA dialect MLIR bytecode.
+4 api_signature: tf.mlir.experimental.tflite_to_tosa_bytecode(flatbuffer,bytecode)
+5 api_details: ''
+6 api_parameters:
+- flatbuffer: Specifies the input path to the TFLite flatbuffer file to convert.
+- bytecode: Specifies the output path where the generated TOSA bytecode will be written.
+7 api_usage_example: null
+8 api_shape: ''

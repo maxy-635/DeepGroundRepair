@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.rnn.pack_padded_sequence
+3 api_description: Packs padded variable-length sequences into a compact representation
+  for efficient RNN processing, using sequence lengths to ignore padding.
+4 api_signature: torch.nn.utils.rnn.pack_padded_sequence(input,lengths)
+5 api_details: ''
+6 api_parameters:
+- input: The padded batch of variable-length sequences to be packed.
+- lengths: The sequence lengths for each batch element, which must be on the CPU if
+    passed as a tensor.
+7 api_usage_example: null
+8 api_shape: null

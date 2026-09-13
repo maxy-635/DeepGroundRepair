@@ -1,0 +1,10 @@
+2 api_name: torch.special.expm1
+3 api_description: Computes exp(input) - 1 elementwise, providing an accurate exponential-minus-one
+  operation.
+4 api_signature: torch.special.expm1(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used to compute `exp(x) - 1` elementwise.
+7 api_usage_example:
+- ' torch.special.expm1(torch.tensor([0, math.log(2.)]))'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ExperimentalAssertNextDataset
+3 api_description: Verifies that a dataset pipeline is transformed by the expected
+  next operations, helping validate input pipeline optimizations and execution order.
+4 api_signature: tf.raw_ops.ExperimentalAssertNextDataset(input_dataset,transformations)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset variant tensor to which the assertion about upcoming
+    transformations is applied.
+- transformations: A string tensor listing the expected next dataset transformations
+    in order.
+7 api_usage_example: null
+8 api_shape: ''

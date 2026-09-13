@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TensorListPopBack
+3 api_description: Removes and returns the last element of a tensor list, along with
+  the remaining list; fails if the list is empty.
+4 api_signature: tf.raw_ops.TensorListPopBack(input_handle)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The variant tensor that identifies the TensorList to pop the last
+    element from.
+7 api_usage_example: null
+8 api_shape: ''

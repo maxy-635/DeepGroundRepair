@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.tensor.debug.CommDebugMode.generate_comm_debug_tracing_table
+3 api_description: Generates a module-level table of distributed tensor operations
+  and collective tracing details, with the amount of information controlled by `noise_level`.
+4 api_signature: generate_comm_debug_tracing_table()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

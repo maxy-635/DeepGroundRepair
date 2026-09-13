@@ -1,0 +1,13 @@
+2 api_name: tensorflow.linalg.LinearOperatorIdentity
+3 api_description: Represents a batch of square identity matrices without materializing
+  them, efficiently passing inputs through unchanged and supporting optional batch
+  shapes, broadcasting, and dtype control.
+4 api_signature: tf.linalg.LinearOperatorIdentity(num_rows,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- num_rows: Specifies the size of the identity matrix by setting its number of rows
+    and columns.
+- dtype: Sets the numeric data type used for the matrix elements.
+- name: Assigns an optional name used to identify this linear operator.
+7 api_usage_example: null
+8 api_shape: ''

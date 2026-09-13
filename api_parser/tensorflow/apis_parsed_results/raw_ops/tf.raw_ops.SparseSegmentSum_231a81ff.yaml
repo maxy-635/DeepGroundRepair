@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SparseSegmentSum
+3 api_description: Computes sums over sparse segments of a tensor by selecting rows
+  with indices and grouping them by segment_ids.
+4 api_signature: tf.raw_ops.SparseSegmentSum(data,indices,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor containing the values to be summed for each sparse segment.
+- indices: The 1-D tensor of row indices in `data` that map entries to segments.
+- segment_ids: The sorted 1-D tensor of segment IDs that group `indices` into segments,
+    allowing repeated values.
+7 api_usage_example: null
+8 api_shape: ''

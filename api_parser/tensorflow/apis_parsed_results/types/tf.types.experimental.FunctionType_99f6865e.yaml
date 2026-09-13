@@ -1,0 +1,8 @@
+2 api_name: tensorflow.types.experimental.FunctionType
+3 api_description: Represents the input and output contract of a TensorFlow callable,
+  combining Python signature structure with TensorFlow type tracing for `tf.function`.
+4 api_signature: tf.types.experimental.FunctionType(parameters,*,return_annotation)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

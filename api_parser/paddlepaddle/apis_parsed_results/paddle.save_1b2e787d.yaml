@@ -1,0 +1,29 @@
+2 api_name: paddle.save
+3 api_description: Saves a Python object to the specified file path for later loading
+  and reuse.
+4 api_signature: paddle.save(obj,path,**configs)
+5 api_details: ''
+6 api_parameters:
+- obj: The object that will be saved.
+- path: The file path or buffer used to save the object, and the filename is taken
+    from the path when saving in the current directory.
+- '**configs': Optional keyword arguments that control save behavior, including whether
+    a single static graph variable is stored in C++ binary format or pickle format.
+7 api_usage_example:
+- '# example 1: dynamic graph'
+- import paddle
+- emb = paddle.nn.Embedding(10, 10)
+- layer_state_dict = emb.state_dict()
+- '# save state_dict of emb'
+- paddle.save(layer_state_dict, "emb.pdparams")
+- scheduler = paddle.optimizer.lr.NoamDecay(
+- '    d_model=100, warmup_steps=100, verbose=True)'
+- adam = paddle.optimizer.Adam(
+- '    learning_rate=scheduler,'
+- '    parameters=emb.parameters())'
+- opt_state_dict = adam.state_dict()
+- '# save state_dict of optimizer'
+- paddle.save(opt_state_dict, "adam.pdopt")
+- '# save weight of emb'
+- paddle.save(emb.weight, "emb.weight.pdtensor")
+8 api_shape: {}

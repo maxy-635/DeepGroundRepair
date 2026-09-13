@@ -1,0 +1,12 @@
+2 api_name: torch.mv
+3 api_description: Computes the matrix-vector product of a matrix and a vector.
+4 api_signature: torch.mv(input,vec)
+5 api_details: ''
+6 api_parameters:
+- input: The matrix that will be multiplied by the vector.
+- vec: The vector that will be multiplied with the matrix.
+7 api_usage_example:
+- ' mat = torch.randn(2, 3)'
+- ' vec = torch.randn(3)'
+- ' torch.mv(mat, vec)'
+8 api_shape: null

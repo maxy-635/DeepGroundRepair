@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.callbacks.ProgbarLogger
+3 api_description: Keras callback that logs training progress and metrics to stdout
+  using a progress bar.
+4 api_signature: tf.keras.callbacks.ProgbarLogger()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

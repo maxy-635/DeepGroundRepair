@@ -1,0 +1,19 @@
+2 api_name: tensorflow.image.generate_bounding_box_proposals
+3 api_description: Generates bounding box proposals from encoded boxes, returning
+  candidate regions likely to contain objects.
+4 api_signature: tf.image.generate_bounding_box_proposals(scores,bbox_deltas,image_info,anchors,nms_threshold,pre_nms_topn,min_size,post_nms_topn)
+5 api_details: ''
+6 api_parameters:
+- scores: Provides the per-anchor confidence scores used to rank candidate boxes.
+- bbox_deltas: Provides the predicted box adjustments that transform anchors into
+    proposed boxes.
+- image_info: Provides each image's original height, width, and scale for mapping
+    proposals correctly.
+- anchors: Provides the base anchor boxes that the deltas are applied to.
+- nms_threshold: Sets the IoU threshold used to suppress overlapping proposals during
+    non-max suppression.
+- pre_nms_topn: Limits how many highest-scoring boxes are kept before non-max suppression.
+- min_size: Sets the smallest allowed box size; smaller boxes are discarded.
+- post_nms_topn: Sets the maximum number of proposals returned after non-max suppression.
+7 api_usage_example: null
+8 api_shape: ''

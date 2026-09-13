@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.tensor_diag
+3 api_description: Creates a zero-filled tensor with the input values placed on its
+  diagonal, expanding the output to rank 2k for a k-dimensional input.
+4 api_signature: tf.linalg.tensor_diag(diagonal)
+5 api_details: ''
+6 api_parameters:
+- diagonal: Specifies the values to place on the output tensor’s diagonal; it must
+    be a rank-0 or rank-1 tensor of an allowed numeric or complex type.
+7 api_usage_example: null
+8 api_shape: ''

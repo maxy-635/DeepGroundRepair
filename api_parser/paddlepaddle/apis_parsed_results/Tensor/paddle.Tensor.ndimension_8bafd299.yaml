@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.ndimension
+3 api_description: Returns the number of dimensions (rank) of a Paddle tensor as an
+  integer.
+4 api_signature: '"paddle.Tensor.ndimension()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

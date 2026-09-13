@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.gds.GdsFile.register_handle
+3 api_description: Registers a file descriptor with the cuFile driver for GPU direct
+  storage operations.
+4 api_signature: register_handle()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

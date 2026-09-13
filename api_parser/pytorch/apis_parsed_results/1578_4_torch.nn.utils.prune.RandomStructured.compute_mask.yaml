@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.prune.RandomStructured.compute_mask
+3 api_description: Computes a structured pruning mask for a tensor by randomly selecting
+  entire channels or rows to zero out while preserving the tensor’s shape.
+4 api_signature: compute_mask(t)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor whose entries are evaluated and structured-pruned to produce the pruning
+    mask.
+7 api_usage_example: null
+8 api_shape: null

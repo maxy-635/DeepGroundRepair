@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.pad
+3 api_description: Pads an array with values added to its edges, using TensorFlow’s
+  NumPy-compatible implementation with support for constant, reflect, and symmetric
+  modes.
+4 api_signature: tf.experimental.numpy.pad(array,pad_width,mode)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

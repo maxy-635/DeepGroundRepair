@@ -1,0 +1,13 @@
+2 api_name: torch.adjoint
+3 api_description: Returns a conjugated view of the tensor with the last two dimensions
+  swapped.
+4 api_signature: torch.adjoint(input:Tensor)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' x = torch.arange(4, dtype=torch.float)'
+- ' A = torch.complex(x, x).reshape(2, 2)'
+- ' A'
+- ' A.adjoint()'
+- ' (A.adjoint() == A.mH).all()'
+8 api_shape: null

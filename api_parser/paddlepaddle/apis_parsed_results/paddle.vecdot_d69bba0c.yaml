@@ -1,0 +1,19 @@
+2 api_name: paddle.vecdot
+3 api_description: Computes the dot product of two tensors along a specified axis.
+4 api_signature: paddle.vecdot(x,y,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor used as one operand in the vector dot product.
+- y: The second input tensor, which must match `x` in dtype and be broadcastable along
+    the chosen axis.
+- axis: The axis along which to compute the dot product, with `-1` meaning the last
+    axis.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1, 2, 3], [4, 5, 6]], dtype='float32')
+- y = paddle.to_tensor([[1, 2, 3], [4, 5, 6]], dtype='float32')
+- result = paddle.linalg.vecdot(x, y, axis=1)
+- print(result)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[14.0, 77.0])'
+8 api_shape: {}

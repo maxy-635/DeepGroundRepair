@@ -1,0 +1,18 @@
+2 api_name: tensorflow.distribute.cluster_resolver.SlurmClusterResolver
+3 api_description: Resolves TensorFlow cluster settings from Slurm environment variables,
+  builds the worker/task layout across allocated nodes and GPUs, and returns a ClusterResolver
+  for distributed training.
+4 api_signature: tf.distribute.cluster_resolver.SlurmClusterResolver(jobs,port_base,gpus_per_node,gpus_per_task,tasks_per_node)
+5 api_details: ''
+6 api_parameters:
+- jobs: Specifies the job names and how many tasks each job should have, defaulting
+    to worker tasks matching the number of Slurm tasks.
+- port_base: Sets the starting port number used for processes on each node.
+- gpus_per_node: Sets how many GPUs are available on each node, defaulting to the
+    count reported by `nvidia-smi`.
+- gpus_per_task: Sets how many GPUs each task should use, defaulting to an even split
+    of GPUs across tasks per node.
+- tasks_per_node: Sets how many tasks run on each node, either as a single constant
+    or as a hostname-to-task-count mapping, otherwise inferred from Slurm.
+7 api_usage_example: null
+8 api_shape: ''

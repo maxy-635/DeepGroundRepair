@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.LogSigmoid
+3 api_description: The paddle.nn.LogSigmoid API applies the LogSigmoid activation
+  function, computing the element-wise log of the sigmoid of the input tensor.
+4 api_signature: paddle.nn.LogSigmoid()
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to which the LogSigmoid function will be applied.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1.0, 2.0, 3.0, 4.0])
+- m = paddle.nn.LogSigmoid()
+- out = m(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.31326166, -0.12692805, -0.04858733, -0.01814996])'
+8 api_shape: null

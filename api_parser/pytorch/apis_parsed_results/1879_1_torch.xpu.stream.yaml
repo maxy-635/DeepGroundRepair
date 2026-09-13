@@ -1,0 +1,10 @@
+2 api_name: torch.xpu.stream
+3 api_description: Context manager that selects and temporarily switches to a specified
+  XPU stream.
+4 api_signature: torch.xpu.stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: The selected stream to use as the context manager; if `None`, the manager
+    does nothing.
+7 api_usage_example: null
+8 api_shape: null

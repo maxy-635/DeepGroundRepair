@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SelfAdjointEigV2
+3 api_description: Computes eigenvalues, and optionally eigenvectors, of square self-adjoint
+  matrices with eigenvalues returned in non-decreasing order.
+4 api_signature: tf.raw_ops.SelfAdjointEigV2(input,compute_v)
+5 api_details: ''
+6 api_parameters:
+- A: The square input tensor whose self-adjoint eigenvalues, and optionally eigenvectors,
+    are computed.
+- compute_v: Controls whether the eigenvectors are also computed and returned, or
+    only the eigenvalues are produced.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.data.experimental.scan
+3 api_description: Applies a stateful function across a dataset, mapping each element
+  while carrying and updating one or more accumulated state values initialized from
+  initial_state.
+4 api_signature: tf.data.experimental.scan(initial_state,scan_func)
+5 api_details: ''
+6 api_parameters:
+- initial_state: Sets the accumulator’s starting state as a nested structure of tensors.
+- scan_func: Defines how to update the state and produce each output from the current
+    state and input element.
+7 api_usage_example: null
+8 api_shape: ''

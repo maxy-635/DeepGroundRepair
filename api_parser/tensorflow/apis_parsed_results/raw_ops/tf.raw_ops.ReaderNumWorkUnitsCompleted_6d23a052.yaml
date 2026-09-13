@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.ReaderNumWorkUnitsCompleted
+3 api_description: Returns how many work units the Reader has completed processing.
+4 api_signature: tf.raw_ops.ReaderNumWorkUnitsCompleted(reader_handle)
+5 api_details: ''
+6 api_parameters:
+- reader_handle: Mutable string tensor identifying the Reader whose completed work
+    units are being queried.
+7 api_usage_example: null
+8 api_shape: ''

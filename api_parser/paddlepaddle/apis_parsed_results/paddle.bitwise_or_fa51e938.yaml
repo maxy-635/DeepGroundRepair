@@ -1,0 +1,18 @@
+2 api_name: paddle.bitwise_or
+3 api_description: Computes the element-wise bitwise OR of two tensors, `X` and `Y`.
+4 api_signature: paddle.bitwise_or(x,y,out)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor containing values to be combined with bitwise OR.
+- y: The second input tensor containing values to be combined with bitwise OR.
+- out: The output tensor that stores the bitwise OR result with the same data type
+    as the input tensor.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-5, -1, 1])
+- y = paddle.to_tensor([4,  2, -3])
+- res = paddle.bitwise_or(x, y)
+- print(res)
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[-1, -1, -3])'
+8 api_shape: {}

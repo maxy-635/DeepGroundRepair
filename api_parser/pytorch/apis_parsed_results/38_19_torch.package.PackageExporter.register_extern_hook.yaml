@@ -1,0 +1,9 @@
+2 api_name: torch.package.PackageExporter.register_extern_hook
+3 api_description: Registers a callback that lets you customize how the exporter marks
+  dependencies as external during packaging.
+4 api_signature: register_extern_hook(hook)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'hook(exporter: PackageExporter, module_name: str) -> None'
+8 api_shape: null

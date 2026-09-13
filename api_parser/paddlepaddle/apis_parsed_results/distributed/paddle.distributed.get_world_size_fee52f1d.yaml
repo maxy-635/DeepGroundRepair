@@ -1,0 +1,15 @@
+2 api_name: paddle.distributed.get_world_size
+3 api_description: Returns the number of participating processes in a distributed
+  group, using the global group by default.
+4 api_signature: paddle.distributed.get_world_size(group)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- '# Execute this script using distributed launch with one card configs.'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- print("The world_size is %d" % dist.get_world_size())
+- The world_size is 1
+8 api_shape: {}

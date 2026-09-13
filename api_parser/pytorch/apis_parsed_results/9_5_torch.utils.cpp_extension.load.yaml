@@ -1,0 +1,22 @@
+2 api_name: torch.utils.cpp_extension.load
+3 api_description: Dynamically builds, loads, and returns a PyTorch C++ extension
+  just-in-time from source code.
+4 api_signature: torch.utils.cpp_extension.load(name,sources,with_cuda,with_sycl,is_python_module,is_standalone)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the extension’s build name and must match the pybind11 module name.
+- sources: Specifies the C++ source files to compile into the extension.
+- with_cuda: Controls whether CUDA headers and libraries are included in the build.
+- with_sycl: Controls whether SYCL headers and libraries are included in the build.
+- is_python_module: Determines whether the built shared library is imported as a Python
+    module.
+- is_standalone: Determines whether the build produces a plain dynamic library or
+    a standalone executable.
+7 api_usage_example:
+- ' from torch.utils.cpp_extension import load'
+- ' module = load('
+- '...     name=''extension'','
+- '...     sources=[''extension.cpp'', ''extension_kernel.cu''],'
+- '...     extra_cflags=[''-O2''],'
+- '...     verbose=True)'
+8 api_shape: null

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.ops.image.resize
+3 api_description: Resizes images to a target size using a specified interpolation
+  method.
+4 api_signature: tf.keras.ops.image.resize(image,size,interpolation,antialias)
+5 api_details: ''
+6 api_parameters:
+- image: The input image or batch of images to resize, provided as a 3D or 4D tensor.
+- size: The target output dimensions as a (height, width) pair.
+- interpolation: The resizing method to use, such as nearest, bilinear, or bicubic,
+    with bilinear as the default.
+- antialias: Controls whether to apply an antialiasing filter when downsampling, and
+    defaults to False.
+7 api_usage_example:
+- 'x = np.random.random((2, 3, 4, 4)) # batch of 2 RGB images'
+- y = keras.ops.image.resize(x, (2, 2),
+- '    data_format="channels_first")'
+- y.shape
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.roll
+3 api_description: Shifts tensor elements along a specified axis, wrapping elements
+  that move past the end back to the beginning.
+4 api_signature: tf.keras.ops.roll(x,shift,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to roll.
+- shift: The number of positions to shift the elements by.
+- axis: The axis to roll along; if omitted, the tensor is flattened first and then
+    reshaped back.
+7 api_usage_example: null
+8 api_shape: ''

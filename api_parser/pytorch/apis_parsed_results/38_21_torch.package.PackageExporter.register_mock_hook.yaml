@@ -1,0 +1,9 @@
+2 api_name: torch.package.PackageExporter.register_mock_hook
+3 api_description: Registers a hook that can provide mock replacements during package
+  export.
+4 api_signature: register_mock_hook(hook)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'hook(exporter: PackageExporter, module_name: str) -> None'
+8 api_shape: null

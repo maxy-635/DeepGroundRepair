@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.BatchFFT
+3 api_description: Computes the 1D FFT for each input in a batch of complex-valued
+  tensors.
+4 api_signature: tf.raw_ops.BatchFFT(input)
+5 api_details: ''
+6 api_parameters:
+- input: Complex-valued input tensor to be transformed by the batched FFT.
+7 api_usage_example: null
+8 api_shape: ''

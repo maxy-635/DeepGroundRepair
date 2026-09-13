@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.VariableV2
+3 api_description: Creates a persistent tensor variable that holds state across steps
+  and returns a reference for reading or modifying that state.
+4 api_signature: tf.raw_ops.VariableV2(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the dimensions of the variable tensor to be created.
+- dtype: Specifies the data type of the variable’s elements.
+7 api_usage_example: null
+8 api_shape: ''

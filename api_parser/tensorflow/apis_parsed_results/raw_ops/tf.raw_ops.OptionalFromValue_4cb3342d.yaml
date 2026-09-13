@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.OptionalFromValue
+3 api_description: Creates an Optional variant that wraps one or more tensors into
+  a single optional value.
+4 api_signature: tf.raw_ops.OptionalFromValue(components)
+5 api_details: ''
+6 api_parameters:
+- components: The Tensor objects to pack into the optional value.
+7 api_usage_example: null
+8 api_shape: ''

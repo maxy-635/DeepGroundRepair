@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ScatterNdMax
+3 api_description: Computes an element-wise maximum update by scattering values into
+  a tensor at specified indices, keeping the largest value for each location.
+4 api_signature: tf.raw_ops.ScatterNdMax(indices,updates)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the positions in the output tensor that will be updated.
+- updates: Provides the values used to update those positions by taking the maximum
+    with existing values.
+7 api_usage_example: null
+8 api_shape: ''

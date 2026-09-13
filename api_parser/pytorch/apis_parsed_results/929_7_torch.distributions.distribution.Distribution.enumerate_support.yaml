@@ -1,0 +1,11 @@
+2 api_name: torch.distributions.distribution.Distribution.enumerate_support
+3 api_description: Returns a tensor of all values in a discrete distribution’s support,
+  with the support enumerated along dimension 0 and shaped as (cardinality,) + batch_shape
+  + event_shape.
+4 api_signature: enumerate_support(expand)
+5 api_details: ''
+6 api_parameters:
+- expand: Expands the support across the batch dimensions so it matches the distribution’s
+    `batch_shape`.
+7 api_usage_example: null
+8 api_shape: null

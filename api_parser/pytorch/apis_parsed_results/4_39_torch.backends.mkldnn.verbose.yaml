@@ -1,0 +1,14 @@
+2 api_name: torch.backends.mkldnn.verbose
+3 api_description: Enables on-demand verbose logging for oneDNN operations through
+  PyTorch’s MKLDNN backend.
+4 api_signature: torch.backends.mkldnn.verbose(level)
+5 api_details: ''
+6 api_parameters:
+- level: 'Controls how much oneDNN/MKLDNN verbose logging is emitted: off, on, or
+    on with kernel-creation messages.'
+7 api_usage_example:
+- import torch
+- model(data)
+- 'with torch.backends.mkldnn.verbose(torch.backends.mkldnn.VERBOSE_ON):'
+- '    model(data)'
+8 api_shape: null

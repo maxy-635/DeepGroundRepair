@@ -1,0 +1,14 @@
+2 api_name: paddle.stanh
+3 api_description: Applies the inverse hyperbolic tangent elementwise to a tensor.
+4 api_signature: paddle.stanh(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the data to which the hardtanh activation is applied.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1.0, 2.0, 3.0, 4.0])
+- out = paddle.stanh(x, scale_a=0.67, scale_b=1.72)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.00616539, 1.49927628, 1.65933096, 1.70390463])'
+8 api_shape: {}

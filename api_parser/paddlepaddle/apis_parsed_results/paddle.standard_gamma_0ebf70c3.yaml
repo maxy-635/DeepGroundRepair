@@ -1,0 +1,21 @@
+2 api_name: paddle.standard_gamma
+3 api_description: Generates a tensor of random values sampled from a standard gamma
+  distribution.
+4 api_signature: paddle.standard_gamma(x)
+5 api_details: ''
+6 api_parameters:
+- x: Tensor of rate parameters used to define the standard gamma distribution; its
+    values must be bfloat16, float16, float32, or float64.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- paddle.seed(100)
+- x = paddle.uniform([2,3], min=1.0, max=5.0)
+- out = paddle.standard_gamma(x)
+- print(out)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[3.35393834, 0.80538225, 0.36511323],'
+- '[6.10344696, 4.28612375, 6.37196636]])'
+- '>>>'
+8 api_shape: {}

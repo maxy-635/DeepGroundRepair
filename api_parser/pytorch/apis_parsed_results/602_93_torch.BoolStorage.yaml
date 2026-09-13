@@ -1,0 +1,8 @@
+2 api_name: torch.BoolStorage
+3 api_description: A legacy boolean storage type for holding raw bool values in a
+  compact, indexable storage container, primarily for low-level tensor internals.
+4 api_signature: torch.BoolStorage(*args,wrap_storage,dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

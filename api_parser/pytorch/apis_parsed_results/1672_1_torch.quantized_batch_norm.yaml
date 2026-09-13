@@ -1,0 +1,15 @@
+2 api_name: torch.quantized_batch_norm
+3 api_description: Applies batch normalization to a 4D quantized tensor in NCHW format.
+4 api_signature: torch.quantized_batch_norm(input,weight,bias,mean,var)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized input tensor to be batch-normalized.
+- weight: The floating-point scale parameter gamma for each channel.
+- bias: The floating-point shift parameter beta for each channel.
+- mean: The per-channel floating-point mean used for normalization.
+- var: The per-channel floating-point variance used for normalization.
+7 api_usage_example:
+- ' qx = torch.quantize_per_tensor(torch.rand(2, 2, 2, 2), 1.5, 3, torch.quint8)'
+- ' torch.quantized_batch_norm(qx, torch.ones(2), torch.zeros(2), torch.rand(2), torch.rand(2),
+  0.00001, 0.2, 2)'
+8 api_shape: null

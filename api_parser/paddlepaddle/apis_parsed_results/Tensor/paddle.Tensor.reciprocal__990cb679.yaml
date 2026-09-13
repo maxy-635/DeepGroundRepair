@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.reciprocal_
+3 api_description: In-place replaces the tensor with the elementwise reciprocal of
+  its values.
+4 api_signature: paddle.Tensor.reciprocal_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

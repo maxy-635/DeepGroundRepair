@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.StatefulUniformInt
+3 api_description: Generates stateful random integers uniformly in the half-open range
+  [minval, maxval), with a small bias unless the range size is a power of two.
+4 api_signature: tf.raw_ops.StatefulUniformInt(resource,shape,minval,maxval)
+5 api_details: ''
+6 api_parameters:
+- resource: Identifies the RNG state resource variable used to generate random values.
+- shape: Specifies the dimensions of the random output tensor to produce.
+- minval: Sets the inclusive lower bound for generated integers.
+- maxval: Sets the exclusive upper bound for generated integers and must match `minval`'s
+    type.
+7 api_usage_example: null
+8 api_shape: ''

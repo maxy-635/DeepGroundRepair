@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.ops.argmin
+3 api_description: Returns the indices of the minimum values along a specified axis.
+4 api_signature: tf.keras.ops.argmin(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose minimum-value index is computed.
+- axis: The axis along which to find the index of the minimum value, or `None` to
+    flatten the tensor first.
+7 api_usage_example:
+- x = keras.ops.arange(6).reshape(2, 3) + 10
+- x
+- keras.ops.argmin(x)
+- keras.ops.argmin(x, axis=0)
+- keras.ops.argmin(x, axis=1)
+8 api_shape: ''

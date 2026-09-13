@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorArrayScatter
+3 api_description: Scatters values from a tensor into a TensorArray at the specified
+  indices.
+4 api_signature: tf.raw_ops.TensorArrayScatter(handle,indices,value)
+5 api_details: ''
+6 api_parameters:
+- handle: The TensorArray resource to write into.
+- indices: The int32 positions in the TensorArray where values will be scattered.
+- value: The tensor containing the values to assign at the specified indices.
+7 api_usage_example: null
+8 api_shape: ''

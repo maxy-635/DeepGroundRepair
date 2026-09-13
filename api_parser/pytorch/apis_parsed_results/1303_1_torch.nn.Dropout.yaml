@@ -1,0 +1,16 @@
+2 api_name: torch.nn.Dropout
+3 api_description: torch.nn.Dropout randomly sets a fraction 'p' of input tensor elements
+  to zero during training to prevent overfitting.
+4 api_signature: torch.nn.Dropout(p)
+5 api_details: ''
+6 api_parameters:
+- p: The probability of an element to be set to zero during training, which helps
+    prevent overfitting.
+7 api_usage_example:
+- ' m = nn.Dropout(p=0.2)'
+- ' input = torch.randn(20, 16)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*). Input can be of any shape
+  output tensor shape: (*). Output is of the same shape as input
+  tensor shape transform formulas: {}

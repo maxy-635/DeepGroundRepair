@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.functional.adaptive_avg_pool2d
+3 api_description: The paddle.nn.functional.adaptive_avg_pool2d API performs 2D adaptive
+  average pooling on an input tensor, adjusting the output tensor's height and width
+  to match the specified output_size.
+4 api_signature: paddle.nn.functional.adaptive_avg_pool2d(x,output_size)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be pooled.
+- output_size: Specifies the desired output size of the pooled tensor, either as an
+    integer or a tuple (H, W), where each can be an integer or None to match input
+    size.
+7 api_usage_example: []
+8 api_shape: null

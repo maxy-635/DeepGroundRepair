@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.tri
+3 api_description: Returns a triangular 2D tensor with ones at and below the k-th
+  diagonal and zeros elsewhere, matching NumPy tri behavior in TensorFlow.
+4 api_signature: tf.experimental.numpy.tri(N,M,k,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

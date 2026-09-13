@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.TensorArraySizeV2
+3 api_description: Returns the number of elements currently stored in a TensorArray.
+4 api_signature: tf.raw_ops.TensorArraySizeV2(handle,flow_in)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource whose size is being queried.
+- flow_in: Carries the incoming control dependency to ensure correct execution order.
+7 api_usage_example: null
+8 api_shape: ''

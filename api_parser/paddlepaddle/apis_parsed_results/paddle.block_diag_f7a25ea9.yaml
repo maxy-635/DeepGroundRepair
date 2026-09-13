@@ -1,0 +1,28 @@
+2 api_name: paddle.block_diag
+3 api_description: Creates a block diagonal matrix by placing the given tensors along
+  the diagonal and filling the off-diagonal regions with zeros.
+4 api_signature: paddle.block_diag(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A tensor list or tuple containing one or more 0D, 1D, or 2D tensors to be
+    assembled into a block diagonal tensor.
+7 api_usage_example:
+- import paddle
+- A = paddle.to_tensor([[4], [3], [2]])
+- B = paddle.to_tensor([7, 6, 5])
+- C = paddle.to_tensor(1)
+- D = paddle.to_tensor([[5, 4, 3], [2, 1, 0]])
+- E = paddle.to_tensor([[8, 7], [7, 8]])
+- out = paddle.block_diag([A, B, C, D, E])
+- print(out)
+- Tensor(shape=[9, 10], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[[4, 0, 0, 0, 0, 0, 0, 0, 0, 0],'
+- '[3, 0, 0, 0, 0, 0, 0, 0, 0, 0],'
+- '[2, 0, 0, 0, 0, 0, 0, 0, 0, 0],'
+- '[0, 7, 6, 5, 0, 0, 0, 0, 0, 0],'
+- '[0, 0, 0, 0, 1, 0, 0, 0, 0, 0],'
+- '[0, 0, 0, 0, 0, 5, 4, 3, 0, 0],'
+- '[0, 0, 0, 0, 0, 2, 1, 0, 0, 0],'
+- '[0, 0, 0, 0, 0, 0, 0, 0, 8, 7],'
+- '[0, 0, 0, 0, 0, 0, 0, 0, 7, 8]])'
+8 api_shape: {}

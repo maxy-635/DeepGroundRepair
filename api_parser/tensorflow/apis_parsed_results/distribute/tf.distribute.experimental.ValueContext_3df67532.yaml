@@ -1,0 +1,19 @@
+2 api_name: tensorflow.distribute.experimental.ValueContext
+3 api_description: Context object passed to distribute value functions that exposes
+  replica-specific information, such as the replica ID and total replicas in sync,
+  so values can be customized per compute replica.
+4 api_signature: tf.distribute.experimental.ValueContext(replica_id_in_sync_group)
+5 api_details: ''
+6 api_parameters:
+- replica_id_in_sync_group: Identifies the current replica within the synchronized
+    replica group.
+7 api_usage_example:
+- strategy = tf.distribute.MirroredStrategy(["GPU:0", "GPU:1"])
+- 'def value_fn(value_context):'
+- '  return value_context.num_replicas_in_sync'
+- distributed_values = (
+- '     strategy.experimental_distribute_values_from_function('
+- '       value_fn))'
+- local_result = strategy.experimental_local_results(distributed_values)
+- local_result
+8 api_shape: ''

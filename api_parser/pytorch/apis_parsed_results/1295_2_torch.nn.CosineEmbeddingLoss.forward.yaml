@@ -1,0 +1,19 @@
+2 api_name: torch.nn.CosineEmbeddingLoss.forward
+3 api_description: Computes the cosine embedding loss between two input tensors, using
+  target labels to encourage similar pairs to be close in cosine similarity and dissimilar
+  pairs to be separated by a margin.
+4 api_signature: forward(input1,target)
+5 api_details: ''
+6 api_parameters:
+- input1: The first input tensor containing feature vectors to compare.
+- input2: The second input tensor containing feature vectors to compare against the
+    first.
+- target: A label tensor indicating whether each pair should be treated as similar
+    or dissimilar.
+- weight: An optional tensor that scales the loss contribution of each sample.
+- size_average: Deprecated; controls whether the loss is averaged over the batch.
+- reduce: Deprecated; controls whether the loss is reduced to a scalar.
+- reduction: Specifies how to reduce the per-sample losses, such as `none`, `mean`,
+    or `sum`.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.CompositeTensorVariantToComponents
+3 api_description: Decodes a variant scalar Tensor into an ExtensionType and returns
+  its component Tensors, raising an error if the provided TypeSpec proto does not
+  match the encoded value.
+4 api_signature: tf.raw_ops.CompositeTensorVariantToComponents(encoded,metadata,Tcomponents)
+5 api_details: ''
+6 api_parameters:
+- encoded: Holds the scalar variant tensor that contains the encoded ExtensionType
+    value to be decoded.
+- metadata: Provides the TypeSpec serialization string needed to interpret the encoded
+    value correctly.
+- Tcomponents: Specifies the expected dtypes for the decoded component tensors.
+7 api_usage_example: null
+8 api_shape: ''

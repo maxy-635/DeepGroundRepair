@@ -1,0 +1,16 @@
+2 api_name: torch.optim.lr_scheduler.CosineAnnealingLR
+3 api_description: Adjusts each parameter group's learning rate following a cosine
+  annealing schedule over a specified number of epochs.
+4 api_signature: torch.optim.lr_scheduler.CosineAnnealingLR(optimizer,T_max)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be updated by the scheduler.
+- T_max: The maximum number of iterations before the cosine schedule reaches its minimum.
+7 api_usage_example:
+- ' num_epochs = 100'
+- ' scheduler = CosineAnnealingLR(optimizer, T_max=num_epochs)'
+- ' for epoch in range(num_epochs):'
+- '     train(...)'
+- '     validate(...)'
+- '     scheduler.step()'
+8 api_shape: null

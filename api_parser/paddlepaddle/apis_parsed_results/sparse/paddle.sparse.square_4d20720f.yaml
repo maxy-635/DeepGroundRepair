@@ -1,0 +1,17 @@
+2 api_name: paddle.sparse.square
+3 api_description: Computes the elementwise square of a sparse tensor, supporting
+  SparseCooTensor and SparseCsrTensor inputs.
+4 api_signature: paddle.sparse.square(x)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse tensor whose elements are squared elementwise.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2., 0., 1.])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.square(sparse_x)
+- out
+- Tensor(shape=[3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 2]],
+- values=[4., 1.])
+8 api_shape: {}

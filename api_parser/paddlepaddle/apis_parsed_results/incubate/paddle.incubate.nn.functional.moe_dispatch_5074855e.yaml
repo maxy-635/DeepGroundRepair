@@ -1,0 +1,30 @@
+2 api_name: paddle.incubate.nn.functional.moe_dispatch
+3 api_description: Routes input tokens to selected experts using gating probabilities
+  for mixture-of-experts execution.
+4 api_signature: paddle.incubate.nn.functional.moe_dispatch(x,gating_output,moe_topk)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the input token embeddings to be dispatched to experts.
+- gating_output: Provides expert selection probabilities used to route each token.
+- moe_topk: Sets how many top experts are chosen for each token.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- from paddle.incubate.nn.functional import moe_dispatch
+- 'x = paddle.randn([1280, 768]) # 1280 = bs * 128'
+- gating_output = paddle.rand([1280, 48])
+- group_moe = False
+- topk_only_mode = True
+- moe_topk = 6
+- (
+- '    permute_input,'
+- '    token_nums_per_expert,'
+- '    permute_indices_per_token,'
+- '    expert_scales_float,'
+- '    top_k_indices'
+- ) = moe_dispatch(x, gating_output, moe_topk, group_moe, topk_only_mode)
+- print(permute_input.shape)
+- '[7680, 768]'
+- print(token_nums_per_expert.shape)
+- '[48]'
+8 api_shape: {}

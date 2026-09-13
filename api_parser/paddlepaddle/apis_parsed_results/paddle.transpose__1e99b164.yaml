@@ -1,0 +1,8 @@
+2 api_name: paddle.transpose_
+3 api_description: In-place transposes a tensor, replacing the output with the input
+  tensor `x`.
+4 api_signature: paddle.transpose_(x,perm)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

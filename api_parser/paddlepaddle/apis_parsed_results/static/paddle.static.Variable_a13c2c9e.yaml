@@ -1,0 +1,15 @@
+2 api_name: paddle.static.Variable
+3 api_description: Represents a static-graph variable in Paddle, used to define and
+  manage persistent tensors such as parameters, inputs, and intermediate states with
+  specified shape, dtype, and persistence behavior.
+4 api_signature: paddle.static.Variable(block,name,shape,dtype,persistable,stop_gradient,**kwargs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle.base as base
+- cur_program = base.Program()
+- cur_block = cur_program.current_block()
+- new_variable = cur_block.create_var(name="X",
+- '                                    shape=[-1, 23, 48],'
+- '                                    dtype=''float32'')'
+8 api_shape: {}

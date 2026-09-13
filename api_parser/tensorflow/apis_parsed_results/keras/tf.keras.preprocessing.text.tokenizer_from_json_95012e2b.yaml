@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.preprocessing.text.tokenizer_from_json
+3 api_description: Reconstructs a Keras Tokenizer from a JSON string, restoring its
+  configuration and vocabulary so it can be used to tokenize text again.
+4 api_signature: tf.keras.preprocessing.text.tokenizer_from_json(json_string)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

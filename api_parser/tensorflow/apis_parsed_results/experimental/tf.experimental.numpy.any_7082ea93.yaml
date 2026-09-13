@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.any
+3 api_description: Returns True if any element of an array evaluates to True along
+  the specified axis, matching NumPy's any behavior in TensorFlow.
+4 api_signature: tf.experimental.numpy.any(a,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

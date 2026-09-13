@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.NonDeterministicInts
+3 api_description: Generates integers using a non-deterministic source, producing
+  different results on each execution.
+4 api_signature: tf.raw_ops.NonDeterministicInts(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the shape of the output tensor to generate.
+- dtype: Specifies the data type of the output tensor, defaulting to `tf.int64`.
+7 api_usage_example: null
+8 api_shape: ''

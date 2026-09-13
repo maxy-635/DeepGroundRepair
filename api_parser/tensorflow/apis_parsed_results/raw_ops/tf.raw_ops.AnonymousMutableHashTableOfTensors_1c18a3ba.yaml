@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.AnonymousMutableHashTableOfTensors
+3 api_description: Creates a new anonymous mutable hash table resource for vector
+  values with specified key and value dtypes, returning its handle for later inserts
+  and lookups.
+4 api_signature: tf.raw_ops.AnonymousMutableHashTableOfTensors(key_dtype,value_dtype,value_shape)
+5 api_details: ''
+6 api_parameters:
+- key_dtype: Specifies the data type used for the hash table keys.
+- value_dtype: Specifies the data type used for the hash table values.
+- value_shape: Specifies the shape of each table value, defaulting to a scalar shape
+    when omitted.
+7 api_usage_example: null
+8 api_shape: ''

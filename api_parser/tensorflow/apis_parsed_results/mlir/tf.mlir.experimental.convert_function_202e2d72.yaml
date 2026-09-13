@@ -1,0 +1,14 @@
+2 api_name: tensorflow.mlir.experimental.convert_function
+3 api_description: Converts a TensorFlow ConcreteFunction into a textual MLIR module
+  for debugging and inspecting TensorFlow internals.
+4 api_signature: tf.mlir.experimental.convert_function(concrete_function,pass_pipeline)
+5 api_details: ''
+6 api_parameters:
+- concrete_function: Specifies the TensorFlow ConcreteFunction to convert into MLIR.
+- pass_pipeline: Specifies the MLIR pass pipeline text to run on the converted module.
+7 api_usage_example:
+- concrete_function = add.get_concrete_function(
+- '    tf.TensorSpec(None, tf.dtypes.float32),'
+- '    tf.TensorSpec(None, tf.dtypes.float32))'
+- tf.mlir.experimental.convert_function(concrete_function)
+8 api_shape: ''

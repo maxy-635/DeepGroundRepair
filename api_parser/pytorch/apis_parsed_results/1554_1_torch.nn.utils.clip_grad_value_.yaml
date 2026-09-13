@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.clip_grad_value_
+3 api_description: Clips each parameter gradient in an iterable to lie within the
+  specified value range.
+4 api_signature: torch.nn.utils.clip_grad_value_(parameters,clip_value)
+5 api_details: ''
+6 api_parameters:
+- parameters: The tensor or tensors whose gradients will be clipped in place.
+- clip_value: The maximum absolute gradient value allowed; gradients are limited to
+    the range [-clip_value, clip_value].
+7 api_usage_example: null
+8 api_shape: null

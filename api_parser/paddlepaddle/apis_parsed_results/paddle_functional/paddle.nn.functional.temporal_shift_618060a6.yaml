@@ -1,0 +1,19 @@
+2 api_name: paddle.nn.functional.temporal_shift
+3 api_description: The paddle.nn.functional.temporal_shift API implements the Temporal
+  Shift Operator, which shifts input feature maps along the temporal dimension to
+  enable efficient temporal modeling in video data processing.
+4 api_signature: paddle.nn.functional.temporal_shift(x,seg_num,shift_ratio)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be shifted temporally, typically representing a sequence
+    of frames or segments.
+- seg_num: The number of segments into which the input tensor is divided, determining
+    the granularity of temporal shifts.
+- shift_ratio: The proportion of elements within each segment to be shifted, controlling
+    the extent of temporal reordering.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- input = paddle.randn([6, 4, 2, 2])
+- out = F.temporal_shift(x=input, seg_num=2, shift_ratio=0.2)
+8 api_shape: null

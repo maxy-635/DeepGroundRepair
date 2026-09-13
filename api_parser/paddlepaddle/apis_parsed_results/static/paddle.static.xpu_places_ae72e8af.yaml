@@ -1,0 +1,15 @@
+2 api_name: paddle.static.xpu_places
+3 api_description: Returns a list of paddle.XPUPlace objects for the specified XPU
+  device IDs, or uses FLAGS_selected_xpus (if set) to determine the visible XPU devices
+  when device_ids is None.
+4 api_signature: paddle.static.xpu_places(device_ids)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.static as static
+- paddle.device.set_device('xpu')
+- paddle.enable_static()
+- xpu_places = static.xpu_places()
+8 api_shape: {}

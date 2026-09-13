@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.logspace
+3 api_description: Creates numbers spaced evenly on a logarithmic scale between powers
+  of a base, with optional start/stop exponents and endpoint control.
+4 api_signature: tf.experimental.numpy.logspace(start,stop,num,base,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

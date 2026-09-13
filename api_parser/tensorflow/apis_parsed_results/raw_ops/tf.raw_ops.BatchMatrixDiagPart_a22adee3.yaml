@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.BatchMatrixDiagPart
+3 api_description: Extracts the diagonal elements from each matrix in a batch of matrices
+  and returns them as a batch of vectors.
+4 api_signature: tf.raw_ops.BatchMatrixDiagPart(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose batch matrix diagonals are extracted.
+7 api_usage_example: null
+8 api_shape: ''

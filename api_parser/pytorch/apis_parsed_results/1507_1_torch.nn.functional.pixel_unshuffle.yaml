@@ -1,0 +1,21 @@
+2 api_name: torch.nn.functional.pixel_unshuffle
+3 api_description: torch.nn.functional.pixel_unshuffle rearranges elements in a tensor
+  from shape (*, C, H*r, W*r) to (*, C*r^2, H, W), effectively reversing the PixelShuffle
+  operation using the specified downscale_factor r.
+4 api_signature: torch.nn.functional.pixel_unshuffle(input,downscale_factor)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor that will be processed by the pixel_unshuffle operation.
+- downscale_factor: The factor by which the spatial resolution of the input tensor
+    is increased.
+7 api_usage_example:
+- ' input = torch.randn(1, 1, 12, 12)'
+- ' output = torch.nn.functional.pixel_unshuffle(input, 3)'
+- ' print(output.size())'
+8 api_shape:
+  input tensor shape: (*, Channel_in, Height_in, Width_in), where * is zero
+  output tensor shape: (*, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in * downscale_factor^2
+    tensor height: Height_out = Height_in \div downscale_factor
+    tensor width: Width_out = Width_in \div downscale_factor

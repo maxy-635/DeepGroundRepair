@@ -1,0 +1,21 @@
+2 api_name: paddle.distributed.fleet.utils.HDFSClient
+3 api_description: Provides a utility client for interacting with HDFS, enabling common
+  file system operations on distributed storage.
+4 api_signature: paddle.distributed.fleet.utils.HDFSClient(hadoop_home,configs)
+5 api_details: ''
+6 api_parameters:
+- hadoop_home: Specifies the Hadoop installation directory used by the HDFS client.
+- configs: Provides the Hadoop configuration dictionary, including required connection
+    and user credentials keys.
+7 api_usage_example:
+- '>>>'
+- from paddle.distributed.fleet.utils import HDFSClient
+- hadoop_home = "/home/client/hadoop-client/hadoop/"
+- configs = {
+- '    "fs.default.name": "hdfs://xxx.hadoop.com:54310",'
+- '    "hadoop.job.ugi": "hello,hello123"'
+- '}'
+- client = HDFSClient(hadoop_home, configs)
+- client.ls_dir("hdfs:/test_hdfs_client")
+- ([], [])
+8 api_shape: {}

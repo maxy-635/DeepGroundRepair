@@ -1,0 +1,10 @@
+2 api_name: torch.profiler._KinetoProfile.export_stacks
+3 api_description: Exports recorded profiler stack traces to a file for later analysis.
+4 api_signature: export_stacks(path,metric)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the file path where the exported stack traces will be saved.
+- metric: Chooses which timing metric to use for the exported stacks, either self
+    CPU time or self CUDA time.
+7 api_usage_example: null
+8 api_shape: null

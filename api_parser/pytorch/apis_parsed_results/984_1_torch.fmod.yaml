@@ -1,0 +1,11 @@
+2 api_name: torch.fmod
+3 api_description: Computes the elementwise floating-point remainder of division,
+  keeping the dividend’s sign and a magnitude smaller than the divisor.
+4 api_signature: torch.fmod(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor or value whose elements are divided by the divisor.
+- other: The tensor or value used to divide the dividend and compute the remainder.
+7 api_usage_example:
+- torch.fmod(a, b) == a - a.div(b, rounding_mode="trunc") * b
+8 api_shape: null

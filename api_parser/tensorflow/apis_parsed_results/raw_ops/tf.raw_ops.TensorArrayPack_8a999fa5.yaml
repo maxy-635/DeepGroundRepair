@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorArrayPack
+3 api_description: Packs the values stored in a TensorArray into a single tensor by
+  stacking them along a new first dimension.
+4 api_signature: tf.raw_ops.TensorArrayPack(handle,flow_in,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource to read from.
+- flow_in: Carries the control-dependency state for TensorArray operations.
+- dtype: Specifies the data type of the packed tensor output.
+7 api_usage_example: null
+8 api_shape: ''

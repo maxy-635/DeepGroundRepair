@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ExpandDims
+3 api_description: Inserts a size-1 dimension into a tensor’s shape at the specified
+  axis, including negative indices counted from the end.
+4 api_signature: tf.raw_ops.ExpandDims(input,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose shape will be expanded by inserting a new dimension.
+- axis: A scalar int32 or int64 tensor that specifies where to insert the new dimension.
+7 api_usage_example: null
+8 api_shape: ''

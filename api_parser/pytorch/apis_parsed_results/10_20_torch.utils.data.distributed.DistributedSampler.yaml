@@ -1,0 +1,19 @@
+2 api_name: torch.utils.data.distributed.DistributedSampler
+3 api_description: Restricts data loading to a dataset subset for distributed training,
+  splitting samples across replicas and optionally shuffling them each epoch.
+4 api_signature: torch.utils.data.distributed.DistributedSampler(dataset,num_replicas,rank,shuffle)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset to draw samples from.
+- num_replicas: The total number of distributed processes sharing the sampling workload.
+- rank: The current process's index among all distributed processes.
+- shuffle: Whether to randomize the sample order before distributing indices.
+7 api_usage_example:
+- ' sampler = DistributedSampler(dataset) if is_distributed else None'
+- ' loader = DataLoader(dataset, shuffle=(sampler is None),'
+- '...                     sampler=sampler)'
+- ' for epoch in range(start_epoch, n_epochs):'
+- '...     if is_distributed:'
+- '...         sampler.set_epoch(epoch)'
+- '...     train(loader)'
+8 api_shape: null

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.GetMinibatchesInCsrWithPhysicalReplica
+3 api_description: Splits a CSR-format input into minibatches for a physical replica
+  setup, producing minibatch data and associated indices for distributed processing.
+4 api_signature: tf.raw_ops.GetMinibatchesInCsrWithPhysicalReplica(program_key,row_ids,col_ids,gains,splits,sample_count,num_replica,table_name)
+5 api_details: ''
+6 api_parameters:
+- program_key: Identifies which program or model configuration the minibatch data
+    belongs to.
+- row_ids: Provides the row indices for the CSR-formatted sparse entries.
+- col_ids: Provides the column indices for the CSR-formatted sparse entries.
+- gains: Supplies the floating-point gain values associated with the sparse entries.
+- splits: Specifies the CSR row split boundaries used to group entries into rows.
+- sample_count: Sets how many samples to take per minibatch, with a minimum of 1.
+- num_replica: Sets the number of physical replicas participating in the operation,
+    with a minimum of 1.
+- table_name: Names the target table or lookup structure used by the operation.
+- name: Optionally assigns a name to the operation for graph identification.
+7 api_usage_example: null
+8 api_shape: ''

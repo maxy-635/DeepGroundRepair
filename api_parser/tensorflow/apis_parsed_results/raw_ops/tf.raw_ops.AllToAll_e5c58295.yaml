@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.AllToAll
+3 api_description: Splits each replica’s input into blocks along one dimension, exchanges
+  the blocks across TPU replicas per the group assignment, and concatenates the received
+  blocks along another dimension to produce each replica’s output.
+4 api_signature: tf.raw_ops.AllToAll(input,group_assignment,concat_dimension,split_dimension)
+5 api_details: ''
+6 api_parameters:
+- input: The local tensor whose values are exchanged across replicas.
+- group_assignment: Specifies which replica IDs belong to each subgroup participating
+    in the all-to-all exchange.
+- concat_dimension: The dimension along which received chunks are concatenated.
+- split_dimension: The dimension along which the input tensor is split before exchange.
+7 api_usage_example: null
+8 api_shape: ''

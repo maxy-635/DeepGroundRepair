@@ -1,0 +1,15 @@
+2 api_name: tensorflow.random.learned_unigram_candidate_sampler
+3 api_description: Samples candidate class IDs from a learned unigram distribution
+  over [0, range_max), returning sampled classes plus expected counts for true and
+  sampled classes to support candidate-sampling methods.
+4 api_signature: tf.random.learned_unigram_candidate_sampler(true_classes,num_true,num_sampled,unique,range_max)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Specifies the target class IDs for each example in the batch.
+- num_true: Indicates how many true target classes are associated with each training
+    example.
+- num_sampled: Sets how many negative classes to randomly draw.
+- unique: Controls whether sampled classes must be distinct within a batch.
+- range_max: Defines the total number of possible class IDs to sample from.
+7 api_usage_example: null
+8 api_shape: ''

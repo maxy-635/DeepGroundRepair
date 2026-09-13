@@ -1,0 +1,16 @@
+2 api_name: torch.nn.functional.rrelu_
+3 api_description: torch.nn.functional.rrelu_ applies the randomized leaky ReLU activation
+  function in-place, modifying the input tensor directly.
+4 api_signature: torch.nn.functional.rrelu_(input,lower,upper)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to which the randomized leaky ReLU activation will be applied.
+- lower: The lower bound of the uniform distribution from which the random slope is
+    sampled.
+- upper: The upper bound of the uniform distribution from which the random slope is
+    sampled.
+- training: A boolean indicating whether the operation is being performed in training
+    mode, affecting the randomness of the slope.
+- generator: An optional random number generator to use for sampling the random slope.
+7 api_usage_example: null
+8 api_shape: null

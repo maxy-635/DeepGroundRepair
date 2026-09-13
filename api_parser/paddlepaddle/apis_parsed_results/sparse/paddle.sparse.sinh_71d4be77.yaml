@@ -1,0 +1,17 @@
+2 api_name: paddle.sparse.sinh
+3 api_description: Computes the elementwise hyperbolic sine of a sparse tensor input,
+  accepting only SparseCooTensor or SparseCsrTensor.
+4 api_signature: paddle.sparse.sinh(x)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse tensor to which the hyperbolic sine function is applied elementwise.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2., 0., 1.])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.sinh(sparse_x)
+- out
+- Tensor(shape=[3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 2]],
+- values=[-3.62686038,  1.17520118])
+8 api_shape: {}

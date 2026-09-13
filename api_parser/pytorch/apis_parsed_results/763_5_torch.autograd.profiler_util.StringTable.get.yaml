@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.profiler_util.StringTable.get
+3 api_description: Returns the value for a key if present in the string table, otherwise
+  returns the provided default.
+4 api_signature: get(key,default)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

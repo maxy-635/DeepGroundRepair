@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.initializers.GlorotUniform
+3 api_description: Initializes weights with values drawn uniformly from [-limit, limit],
+  where limit is sqrt(6 / (fan_in + fan_out)) to help keep activations balanced.
+4 api_signature: tf.keras.initializers.GlorotUniform(seed)
+5 api_details: ''
+6 api_parameters:
+- seed: Controls the random seed used by the initializer to make its output deterministic.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = GlorotUniform()
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

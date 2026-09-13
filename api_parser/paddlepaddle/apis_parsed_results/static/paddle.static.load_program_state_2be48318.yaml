@@ -1,0 +1,22 @@
+2 api_name: paddle.static.load_program_state
+3 api_description: Loads and restores a program’s saved state from a local file.
+4 api_signature: paddle.static.load_program_state(model_path,var_list)
+5 api_details: ''
+6 api_parameters:
+- model_path: Specifies the file prefix where the saved program state is stored.
+- var_list: Specifies the tensor list or tuple to load from the saved variables or
+    parameters.
+7 api_usage_example:
+- import paddle
+- import paddle.static as static
+- paddle.enable_static()
+- x = static.data(name="x", shape=[10, 10], dtype='float32')
+- y = static.nn.fc(x, 10)
+- z = static.nn.fc(y, 10)
+- place = paddle.CPUPlace()
+- exe = static.Executor(place)
+- exe.run(static.default_startup_program())
+- prog = static.default_main_program()
+- static.save(prog, "./temp")
+- program_state = static.load_program_state("./temp")
+8 api_shape: {}

@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.transforms.PowerTransform
+3 api_description: Applies an elementwise power transformation, mapping x to x**exponent
+  for use in probability distributions.
+4 api_signature: torch.distributions.transforms.PowerTransform(exponent)
+5 api_details: ''
+6 api_parameters:
+- exponent: The power applied to inputs and outputs of the transform.
+7 api_usage_example: null
+8 api_shape: null

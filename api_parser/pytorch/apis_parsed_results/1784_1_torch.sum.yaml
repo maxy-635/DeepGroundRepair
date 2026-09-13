@@ -1,0 +1,11 @@
+2 api_name: torch.sum
+3 api_description: Returns the total sum of all elements in a tensor.
+4 api_signature: torch.sum(input,*,dtype)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are summed.
+7 api_usage_example:
+- ' a = torch.randn(1, 3)'
+- ' a'
+- ' torch.sum(a)'
+8 api_shape: null

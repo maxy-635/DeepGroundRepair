@@ -1,0 +1,26 @@
+2 api_name: paddle.profiler.Profiler
+3 api_description: 'Context manager for managing profiling: start and stop profiling,
+  export profiling data, and print a summary table.'
+4 api_signature: '"paddle.profiler.Profiler(*,targets,scheduler,record_shapes,profile_memory,emit_nvtx,with_flops)"'
+5 api_details: ''
+6 api_parameters:
+- targets: Selects which device types to profile, defaulting to all supported devices.
+- scheduler: Controls when profiling starts and stops by mapping steps to profiler
+    states or a profiling range.
+- record_shapes: Records the input shapes of operations when enabled.
+- profile_memory: Tracks tensor memory allocation and deallocation when enabled.
+- with_flops: Calculates the FLOPs for operations when enabled.
+7 api_usage_example:
+- '>>>'
+- import paddle.profiler as profiler
+- import paddle
+- paddle.device.set_device('gpu')
+- with profiler.Profiler(
+- '    targets=[profiler.ProfilerTarget.CPU, profiler.ProfilerTarget.GPU],'
+- '    scheduler = (2, 5),'
+- '    on_trace_ready = profiler.export_chrome_tracing(''./log'')'
+- ') as p:'
+- '    for iter in range(10):'
+- '        # train()'
+- '        p.step()'
+8 api_shape: {}

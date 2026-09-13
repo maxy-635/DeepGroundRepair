@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.hypot
+3 api_description: Computes the elementwise hypotenuse of two arrays, returning sqrt(x1**2
+  + x2**2) with TensorFlow behavior.
+4 api_signature: tf.experimental.numpy.hypot(x1,x2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

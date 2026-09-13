@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.QuantizedMatMul
+3 api_description: Performs quantized 2D matrix multiplication between a and b, with
+  optional transposition of either input before multiplying matching inner dimensions.
+4 api_signature: tf.raw_ops.QuantizedMatMul(a,b,Toutput,transpose_a,transpose_b)
+5 api_details: ''
+6 api_parameters:
+- a: The first 2D quantized input matrix to multiply.
+- b: The second 2D quantized input matrix to multiply with `a`.
+- Toutput: The quantized data type of the output matrix.
+- transpose_a: Whether to transpose `a` before performing the multiplication.
+- transpose_b: Whether to transpose `b` before performing the multiplication.
+7 api_usage_example: null
+8 api_shape: ''

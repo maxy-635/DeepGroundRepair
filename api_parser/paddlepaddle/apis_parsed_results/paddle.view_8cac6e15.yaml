@@ -1,0 +1,11 @@
+2 api_name: paddle.view
+3 api_description: Creates a view of a tensor with the requested shape or dtype without
+  copying data.
+4 api_signature: paddle.view(x,shape_or_dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be viewed or reshaped.
+- shape_or_dtype: Specifies the target shape when given as integers, or the target
+    dtype when given as a dtype-like value.
+7 api_usage_example: []
+8 api_shape: {}

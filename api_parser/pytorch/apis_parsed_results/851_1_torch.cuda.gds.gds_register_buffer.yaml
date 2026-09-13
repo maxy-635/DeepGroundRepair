@@ -1,0 +1,12 @@
+2 api_name: torch.cuda.gds.gds_register_buffer
+3 api_description: Registers a CUDA device storage as a cuFile buffer for GPU Direct
+  Storage access.
+4 api_signature: torch.cuda.gds.gds_register_buffer(s)
+5 api_details: ''
+6 api_parameters:
+- s: The buffer to register with GDS.
+7 api_usage_example:
+- ' src = torch.randn(1024, device="cuda")'
+- ' s = src.untyped_storage()'
+- ' gds_register_buffer(s)'
+8 api_shape: null

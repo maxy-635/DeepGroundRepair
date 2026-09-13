@@ -1,0 +1,31 @@
+2 api_name: paddle.audio.datasets.TESS
+3 api_description: Loads the TESS speech emotion dataset of 2,800 recordings of 200
+  spoken target words by two actresses across seven emotions.
+4 api_signature: paddle.audio.datasets.TESS(mode,n_folds,split,feat_type,archive,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- mode: Selects whether to use the training or development split of the dataset.
+- n_folds: Sets how many folds to divide the dataset into for train/dev splitting.
+- split: Chooses which fold is used as the development set.
+- feat_type: Specifies the type of audio feature to extract from each file.
+- archive: Provides the download location for the audio archive.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- mode = 'dev'
+- 'tess_dataset = paddle.audio.datasets.TESS(mode=mode,  # type: ignore[arg-type]'
+- '                                        feat_type=''raw'')'
+- 'for idx in range(5):'
+- '    audio, label = tess_dataset[idx]'
+- '    # do something with audio, label'
+- '    print(audio.shape, label)'
+- '    # [audio_data_length] , label_id'
+- 'tess_dataset = paddle.audio.datasets.TESS(mode=mode,  # type: ignore[arg-type]'
+- '                                        feat_type=''mfcc'','
+- '                                        n_mfcc=40)'
+- 'for idx in range(5):'
+- '    audio, label = tess_dataset[idx]'
+- '    # do something with mfcc feature, label'
+- '    print(audio.shape, label)'
+- '    # [feature_dim, num_frames] , label_id'
+8 api_shape: {}

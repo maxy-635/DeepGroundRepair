@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SelectV2
+3 api_description: Returns elements chosen from `t` and `e` according to the boolean
+  `condition`, selecting from `t` where true and from `e` where false.
+4 api_signature: tf.raw_ops.SelectV2(condition,t,e)
+5 api_details: ''
+6 api_parameters:
+- condition: Boolean tensor that selects where to take values from `t` versus `e`.
+- t: Tensor providing the values used when `condition` is true.
+- e: Tensor providing the values used when `condition` is false, with the same type
+    as `t`.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: paddle.addmm_
+3 api_description: Performs an in-place matrix multiplication and addition, updating
+  the input tensor with the `addmm` result.
+4 api_signature: paddle.addmm_(input,x,y,beta,alpha)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

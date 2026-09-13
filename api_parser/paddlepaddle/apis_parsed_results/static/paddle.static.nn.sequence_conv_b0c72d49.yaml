@@ -1,0 +1,25 @@
+2 api_name: paddle.static.nn.sequence_conv
+3 api_description: Applies 1D convolution over a sequence input in static graph mode,
+  using a sliding window and optional activation to extract local contextual features.
+4 api_signature: paddle.static.nn.sequence_conv(input,num_filters,filter_size,act)
+5 api_details: ''
+6 api_parameters:
+- input: The input sequence tensor to be convolved, shaped `(M, K)` with LoD level
+    1 and float32/float64 data.
+- num_filters: Sets how many convolution filters the layer uses to produce output
+    features.
+- filter_size: Specifies the vertical filter height; the filter width is fixed to
+    the input hidden size.
+- act: Applies the chosen activation function to the layer output.
+7 api_usage_example:
+- '>>>'
+- '# set env var before import paddle to disable pir mode, following example code
+  use os module.'
+- import os
+- os.environ['FLAGS_enable_pir_api'] = '0'
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data(name='x', shape=[-1, 10], dtype='float32', lod_level=1)
+- x_conved = paddle.static.nn.sequence_conv(input=x, num_filters=2, filter_size=3,
+  padding_start=-1)
+8 api_shape: {}

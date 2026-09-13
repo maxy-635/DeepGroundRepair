@@ -1,0 +1,14 @@
+2 api_name: tensorflow.strings.regex_full_match
+3 api_description: Returns a boolean tensor indicating whether each string input fully
+  matches the given RE2 regex pattern.
+4 api_signature: tf.strings.regex_full_match(input,pattern)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor whose elements are checked for a full regular-expression
+    match.
+- pattern: The scalar regular-expression string used to test whether each input element
+    matches completely.
+7 api_usage_example:
+- tf.strings.regex_full_match(["TF lib", "lib TF"], ".*lib$")
+- tf.strings.regex_full_match(["TF lib", "lib TF"], ".*TF$")
+8 api_shape: ''

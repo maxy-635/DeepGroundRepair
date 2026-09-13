@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.to_indicator
+3 api_description: Converts a sparse tensor of IDs into a dense boolean indicator
+  tensor, replacing the last sparse dimension with a vocab-size dimension.
+4 api_signature: tf.sparse.to_indicator(sp_input,vocab_size)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The sparse tensor whose integer values are converted into indicator positions.
+- vocab_size: The size of the output indicator dimension, requiring all sparse values
+    to be within `0` and `vocab_size - 1`.
+7 api_usage_example: null
+8 api_shape: ''

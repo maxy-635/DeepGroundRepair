@@ -1,0 +1,29 @@
+2 api_name: paddle.incubate.autograd.Jacobian
+3 api_description: Computes the Jacobian matrix of a function by measuring how each
+  output changes with respect to each input.
+4 api_signature: paddle.incubate.autograd.Jacobian(func,xs)
+5 api_details: ''
+6 api_parameters:
+- func: The function to differentiate, which takes batched tensor inputs and returns
+    a tensor or sequence of tensors.
+- xs: The input tensor or sequence of tensors passed to `func`.
+7 api_usage_example:
+- import paddle
+- 'def func(x, y):'
+- '    return paddle.matmul(x, y)'
+- '...'
+- x = paddle.to_tensor([[1., 2.], [3., 4.]])
+- J = paddle.incubate.autograd.Jacobian(func, [x, x])
+- print(J[:, :])
+- Tensor(shape=[4, 8], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[1., 3., 0., 0., 1., 0., 2., 0.],'
+- '[2., 4., 0., 0., 0., 1., 0., 2.],'
+- '[0., 0., 1., 3., 3., 0., 4., 0.],'
+- '[0., 0., 2., 4., 0., 3., 0., 4.]])'
+- print(J[0, :])
+- Tensor(shape=[8], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[1., 3., 0., 0., 1., 0., 2., 0.])'
+- print(J[:, 0])
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[1., 2., 0., 0.])'
+8 api_shape: {}

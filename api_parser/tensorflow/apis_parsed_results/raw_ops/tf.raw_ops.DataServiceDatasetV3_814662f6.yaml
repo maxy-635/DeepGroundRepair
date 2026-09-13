@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.DataServiceDatasetV3
+3 api_description: Creates a tf.data dataset that reads distributed data from the
+  tf.data service.
+4 api_signature: tf.raw_ops.DataServiceDatasetV3(dataset_id,processing_mode,address,job_name,consumer_index,num_consumers,output_types,output_shapes,target_workers,name)
+5 api_details: ''
+6 api_parameters:
+- dataset_id: Identifies the dataset to read from the data service.
+- processing_mode: Specifies how the data service should process the dataset.
+- address: Provides the address of the data service to connect to.
+- job_name: Names the data service job associated with this dataset stream.
+- consumer_index: Indicates which consumer instance is reading from the service.
+- num_consumers: Specifies the total number of consumers sharing the dataset.
+- output_types: Defines the data types of the tensors produced by the dataset.
+- output_shapes: Defines the shapes of the tensors produced by the dataset.
+- target_workers: Selects which workers should be used to serve the dataset, defaulting
+    to automatic selection.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

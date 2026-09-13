@@ -1,0 +1,24 @@
+2 api_name: paddle.std
+3 api_description: Computes the standard deviation of x along a specified axis.
+4 api_signature: paddle.std(x,axis,unbiased,keepdim)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the standard deviation.
+- axis: The dimension or dimensions along which to calculate the standard deviation,
+    or all elements if `None`.
+- unbiased: Controls whether to use the unbiased estimator with divisor `N - 1` instead
+    of `N`.
+- keepdim: Controls whether the reduced dimensions are kept as size 1 in the output.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1.0, 2.0, 3.0], [1.0, 4.0, 5.0]])
+- out1 = paddle.std(x)
+- print(out1.numpy())
+- '1.6329932'
+- out2 = paddle.std(x, unbiased=False)
+- print(out2.numpy())
+- '1.490712'
+- out3 = paddle.std(x, axis=1)
+- print(out3.numpy())
+- '[1.       2.081666]'
+8 api_shape: {}

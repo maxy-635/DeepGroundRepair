@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.multi_hot
+3 api_description: Converts integer labels into multi-hot binary vectors, marking
+  each label’s presence with 1 in the output encoding.
+4 api_signature: tf.keras.ops.multi_hot(inputs,num_classes)
+5 api_details: ''
+6 api_parameters:
+- inputs: Provides the integer labels that will be converted into multi-hot vectors.
+- num_classes: Specifies the total number of possible classes in the output vector.
+7 api_usage_example:
+- data = keras.ops.convert_to_tensor([0, 4])
+- keras.ops.multi_hot(data, num_classes=5)
+8 api_shape: ''

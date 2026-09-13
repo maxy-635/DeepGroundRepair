@@ -1,0 +1,12 @@
+2 api_name: torch.nn.functional.silu
+3 api_description: Applies the Sigmoid Linear Unit (SiLU) activation function element-wise
+  to input tensors.
+4 api_signature: torch.nn.functional.silu(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the SiLU (Sigmoid Linear Unit) activation function
+    is applied.
+- inplace: A boolean flag that, if set to True, modifies the input tensor in-place,
+    saving memory.
+7 api_usage_example: null
+8 api_shape: null

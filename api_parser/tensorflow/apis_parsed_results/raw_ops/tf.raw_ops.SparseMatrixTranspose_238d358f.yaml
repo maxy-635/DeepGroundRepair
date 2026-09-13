@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixTranspose
+3 api_description: Transposes the matrix dimensions of a sparse matrix in CSR form
+  and can optionally conjugate its values.
+4 api_signature: tf.raw_ops.SparseMatrixTranspose(input,type,conjugate)
+5 api_details: ''
+6 api_parameters:
+- input: The CSRSparseMatrix tensor to transpose.
+- type: The data type of the sparse matrix values.
+- conjugate: Whether to conjugate the input values during transposition.
+7 api_usage_example: null
+8 api_shape: ''

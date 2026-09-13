@@ -1,0 +1,18 @@
+2 api_name: torch.sparse.sampled_addmm
+3 api_description: Computes a dense matrix product at the positions indicated by a
+  sparse input pattern, then adds the input values to form the final sparse result.
+4 api_signature: torch.sparse.sampled_addmm(input,mat1,mat2)
+5 api_details: ''
+6 api_parameters:
+- input: Sparse CSR matrix that supplies the output sparsity pattern and is added
+    to the sampled matrix product.
+- mat1: Dense left-hand matrix used in the multiplication, with shape (m, k).
+- mat2: Dense right-hand matrix used in the multiplication, with shape (k, n).
+7 api_usage_example:
+- ' input = torch.eye(3, device=''cuda'').to_sparse_csr()'
+- ' mat1 = torch.randn(3, 5, device=''cuda'')'
+- ' mat2 = torch.randn(5, 3, device=''cuda'')'
+- ' torch.sparse.sampled_addmm(input, mat1, mat2)'
+- ' torch.sparse.sampled_addmm(input, mat1, mat2).to_dense()'
+- ' torch.sparse.sampled_addmm(input, mat1, mat2, beta=0.5, alpha=0.5)'
+8 api_shape: null

@@ -1,0 +1,18 @@
+2 api_name: torch.signal.windows.nuttall
+3 api_description: Returns a Nuttall minimum 4-term Blackman-Harris window for signal
+  processing.
+4 api_signature: torch.signal.windows.nuttall(M,*,sym,dtype,device)
+5 api_details: ''
+6 api_parameters:
+- M: Specifies the window length, i.e. the number of points in the returned Nuttall
+    window.
+7 api_usage_example:
+- '- A. Nuttall, "Some windows with very good sidelobe behavior,"'
+- '  IEEE Transactions on Acoustics, Speech, and Signal Processing, vol. 29, no. 1,
+  pp. 84-91,'
+- '  Feb 1981. https://doi.org/10.1109/TASSP.1981.1163506'
+- '- Heinzel G. et al., "Spectrum and spectral density estimation by the Discrete
+  Fourier transform (DFT),'
+- '  including a comprehensive list of window functions and some new flat-top windows",'
+- '  February 15, 2002 https://holometer.fnal.gov/GH_FFT.pdf'
+8 api_shape: null

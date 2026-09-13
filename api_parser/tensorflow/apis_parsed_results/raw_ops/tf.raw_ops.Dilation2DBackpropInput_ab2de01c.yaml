@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.Dilation2DBackpropInput
+3 api_description: Computes the gradient of 2-D morphological dilation with respect
+  to the input tensor.
+4 api_signature: tf.raw_ops.Dilation2DBackpropInput(input,filter,out_backprop,strides,rates,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The original 4-D input tensor whose gradient with respect to the dilation
+    operation is being computed.
+- filter: The 3-D dilation filter tensor used to determine how gradients are distributed.
+- out_backprop: The upstream gradient tensor from the dilation output, passed back
+    for input gradient computation.
+- strides: The sliding-window strides that control how the dilation kernel moves across
+    the input.
+- rates: The atrous dilation rates that specify spacing within the filter application.
+- padding: The padding mode, either `SAME` or `VALID`, that determines how borders
+    are handled.
+7 api_usage_example: null
+8 api_shape: ''

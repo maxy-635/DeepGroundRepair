@@ -1,0 +1,18 @@
+2 api_name: tensorflow.experimental.RowPartition
+3 api_description: Represents how a sequence of values is split into contiguous rows
+  for ragged tensors, storing the partition structure (not the values) and supporting
+  several ways to define that row layout.
+4 api_signature: tf.experimental.RowPartition(row_splits,row_lengths,value_rowids,nrows,uniform_row_length)
+5 api_details: ''
+6 api_parameters:
+- row_splits: Defines the cumulative start and end offsets of each row in the flattened
+    values tensor.
+- row_lengths: Specifies how many values belong to each row.
+- value_rowids: Indicates which row each value belongs to.
+- nrows: Sets the total number of rows in the partition.
+- uniform_row_length: Sets a fixed length that applies to every row equally.
+7 api_usage_example:
+- print(RowPartition.from_value_rowids(
+- '    value_rowids=[0, 0, 0, 0, 2, 2, 2, 3],'
+- '    nrows=4))'
+8 api_shape: ''

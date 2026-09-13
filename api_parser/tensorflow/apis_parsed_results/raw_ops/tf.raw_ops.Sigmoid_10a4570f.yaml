@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Sigmoid
+3 api_description: Computes the element-wise sigmoid of x, mapping each value to 1
+  / (1 + exp(-x)).
+4 api_signature: tf.raw_ops.Sigmoid(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the sigmoid activation elementwise.
+7 api_usage_example: null
+8 api_shape: ''

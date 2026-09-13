@@ -1,0 +1,42 @@
+2 api_name: paddle.linalg.vector_norm
+3 api_description: Computes the p-order vector norm of a tensor along a specified
+  dimension, including 1-norm, 2-norm, and general p-norms.
+4 api_signature: paddle.linalg.vector_norm(x,p,axis,keepdim,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose vector norm is computed.
+- p: The order of the norm to compute; defaults to 2 when `None`.
+- axis: The dimension or dimensions along which to compute the vector norm; defaults
+    to the last dimension when `None`.
+- keepdim: Controls whether the reduced dimensions are retained in the output.
+- dtype: Specifies the computation dtype to use for better precision or performance.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- x = paddle.arange(24, dtype="float32").reshape([2, 3, 4]) - 12
+- print(x)
+- Tensor(shape=[2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[-12., -11., -10., -9. ],'
+- '[-8. , -7. , -6. , -5. ],'
+- '[-4. , -3. , -2. , -1. ]],'
+- '[[ 0. ,  1. ,  2. ,  3. ],'
+- '[ 4. ,  5. ,  6. ,  7. ],'
+- '[ 8. ,  9. ,  10.,  11.]]])'
+- out_vector_norm = paddle.linalg.vector_norm(x=x,p=2,axis=None,keepdim=False)
+- print(out_vector_norm)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 34.)
+- out_vector_norm = paddle.linalg.vector_norm(x=x,p=0,axis=[0,1],keepdim=False)
+- print(out_vector_norm)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[5., 6., 6., 6.])'
+- out_vector_norm = paddle.linalg.vector_norm(x=x,p=float("inf"),axis=[1,2],keepdim=False)
+- print(out_vector_norm)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[12., 11.])'
+- out_vector_norm = paddle.linalg.vector_norm(x=x,p=1,axis=1,keepdim=False)
+- print(out_vector_norm)
+- Tensor(shape=[2, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[24., 21., 18., 15.],'
+- '[12., 15., 18., 21.]])'
+8 api_shape: {}

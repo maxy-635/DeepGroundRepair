@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.models.resnet18
+3 api_description: ResNet-18 image classification model from Deep Residual Learning
+  for Image Recognition, providing a pretrained 18-layer residual network for feature
+  extraction and prediction.
+4 api_signature: paddle.vision.models.resnet18(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model is initialized with ImageNet pre-trained
+    weights.
+7 api_usage_example: []
+8 api_shape: {}

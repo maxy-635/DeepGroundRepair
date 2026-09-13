@@ -1,0 +1,12 @@
+2 api_name: tensorflow.dtypes.complex
+3 api_description: Builds a complex tensor elementwise from matching real and imaginary
+  tensors.
+4 api_signature: tf.dtypes.complex(real,imag)
+5 api_details: ''
+6 api_parameters:
+- real: Specifies the tensor containing the real part of the complex value, and it
+    must be `float32` or `float64`.
+- imag: Specifies the tensor containing the imaginary part of the complex value, and
+    it must have the same type as `real`.
+7 api_usage_example: null
+8 api_shape: ''

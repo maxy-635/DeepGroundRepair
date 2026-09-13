@@ -1,0 +1,12 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.register_comm_hook
+3 api_description: Registers a custom communication hook that FSDP uses during gradient
+  all-reduce operations to modify or override how sharded gradients are communicated.
+4 api_signature: register_comm_hook(state,hook)
+5 api_details: ''
+6 api_parameters:
+- state: Holds per-worker hook state shared across that worker’s gradients during
+    training.
+- hook: Defines the custom gradient-communication logic to run on FSDP gradients,
+    with support for both unsharded and sharded cases.
+7 api_usage_example: null
+8 api_shape: null

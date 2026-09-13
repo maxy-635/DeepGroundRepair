@@ -1,0 +1,16 @@
+2 api_name: paddle.logical_not
+3 api_description: Computes the element-wise logical NOT of x and returns an N-dimensional
+  boolean tensor.
+4 api_signature: paddle.logical_not(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are logically negated; it must have a supported
+    boolean, integer, floating-point, or complex type.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([True, False, True, False])
+- res = paddle.logical_not(x)
+- print(res)
+- Tensor(shape=[4], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, True , False, True ])'
+8 api_shape: {}

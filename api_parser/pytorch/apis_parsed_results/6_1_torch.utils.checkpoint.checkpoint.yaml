@@ -1,0 +1,11 @@
+2 api_name: torch.utils.checkpoint.checkpoint
+3 api_description: Recomputes selected forward activations during backward pass to
+  reduce memory usage, at the cost of extra compute.
+4 api_signature: torch.utils.checkpoint.checkpoint(function,*args,use_reentrant,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- function: Defines the forward computation to run and must correctly unpack and use
+    the input tuple.
+- args: Provides the tuple of inputs passed to the function.
+7 api_usage_example: null
+8 api_shape: null

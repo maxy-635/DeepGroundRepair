@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ModelDataset
+3 api_description: Creates a dataset that applies an identity transformation, mainly
+  used to model or measure input pipeline performance.
+4 api_signature: tf.raw_ops.ModelDataset(input_dataset,output_types,output_shapes,algorithm,cpu_budget,ram_budget)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Supplies the input dataset to be optimized by the model dataset operation.
+- output_types: Specifies the data types of elements produced by the output dataset.
+- output_shapes: Specifies the shapes of elements produced by the output dataset.
+- algorithm: Chooses the optimization algorithm used by the model dataset operation.
+- cpu_budget: Sets the CPU budget available for the optimization algorithm.
+- ram_budget: Sets the RAM budget available for the optimization algorithm.
+7 api_usage_example: null
+8 api_shape: ''

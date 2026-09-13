@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ReaderReadUpTo
+3 api_description: Reads up to num_records key-value pairs from a Reader, dequeuing
+  new input as needed, and may return fewer than requested even before the final batch.
+4 api_signature: tf.raw_ops.ReaderReadUpTo(reader_handle,queue_handle,num_records)
+5 api_details: ''
+6 api_parameters:
+- reader_handle: Identifies the reader resource to read records from.
+- queue_handle: Identifies the queue resource that supplies string work items.
+- num_records: Specifies how many records to read from the reader.
+7 api_usage_example: null
+8 api_shape: ''

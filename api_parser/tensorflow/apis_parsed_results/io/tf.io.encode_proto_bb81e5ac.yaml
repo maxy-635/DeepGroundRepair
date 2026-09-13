@@ -1,0 +1,15 @@
+2 api_name: tensorflow.io.encode_proto
+3 api_description: Serializes protobuf messages from input tensors according to a
+  specified message type, field names, and sizes, using the tensors’ shared batch
+  shape and matching protobuf field schemas.
+4 api_signature: tf.io.encode_proto(values,field_names,message_type)
+5 api_details: ''
+6 api_parameters:
+- values: Supplies the tensor values that will be encoded into the corresponding proto
+    fields.
+- field_names: Specifies the names of the proto fields that each input tensor maps
+    to.
+- message_type: Indicates the proto message type to encode the values into.
+- name: Optionally sets the operation name for this encode_proto call.
+7 api_usage_example: null
+8 api_shape: ''

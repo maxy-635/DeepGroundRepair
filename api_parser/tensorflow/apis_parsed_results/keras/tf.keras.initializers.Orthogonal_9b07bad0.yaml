@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.initializers.Orthogonal
+3 api_description: Initializes a tensor with an orthogonal matrix (or reshaped orthogonal
+  matrix for higher dimensions) derived from a random normal matrix via QR decomposition,
+  producing orthogonal rows or columns depending on shape.
+4 api_signature: tf.keras.initializers.Orthogonal(gain,seed)
+5 api_details: ''
+6 api_parameters:
+- gain: Scales the orthogonal matrix by a multiplicative factor.
+- seed: Sets a Python integer seed to make the initializer deterministic.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = keras.initializers.Orthogonal()
+- layer = keras.layers.Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.saved_model.experimental.read_fingerprint
+3 api_description: Reads a SavedModel fingerprint from `export_dir` and returns a
+  `Fingerprint` object with the persisted fingerprint values.
+4 api_signature: tf.saved_model.experimental.read_fingerprint(export_dir)
+5 api_details: ''
+6 api_parameters:
+- export_dir: Specifies the directory containing the SavedModel to read its fingerprint
+    from.
+7 api_usage_example: null
+8 api_shape: ''

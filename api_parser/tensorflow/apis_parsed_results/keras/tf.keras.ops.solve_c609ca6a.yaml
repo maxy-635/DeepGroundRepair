@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.solve
+3 api_description: Solves the linear system a x = b for x.
+4 api_signature: tf.keras.ops.solve(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: Coefficient matrix tensor with shape (..., M, M) used to define the linear system.
+- b: Right-hand side tensor with shape (..., M) or (..., M, N) containing the dependent
+    values to solve for.
+7 api_usage_example: null
+8 api_shape: ''

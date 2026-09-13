@@ -1,0 +1,15 @@
+2 api_name: torch.diag
+3 api_description: Creates a 2D square tensor by placing a 1D input tensor’s elements
+  along the main diagonal.
+4 api_signature: torch.diag(input,diagonal)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor whose diagonal values are used or whose elements are
+    placed on the diagonal.
+- diagonal: Selects which diagonal offset to read from or write to.
+7 api_usage_example:
+- ' a = torch.randn(3)'
+- ' a'
+- ' torch.diag(a)'
+- ' torch.diag(a, 1)'
+8 api_shape: null

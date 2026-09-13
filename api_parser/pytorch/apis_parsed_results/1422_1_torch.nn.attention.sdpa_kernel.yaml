@@ -1,0 +1,22 @@
+2 api_name: torch.nn.attention.sdpa_kernel
+3 api_description: Context manager that temporarily selects the backend(s) used for
+  scaled dot product attention.
+4 api_signature: torch.nn.attention.sdpa_kernel(backends)
+5 api_details: ''
+6 api_parameters:
+- backends: Selects the scaled dot product attention backend or backends to use.
+7 api_usage_example:
+- from torch.nn.functional import scaled_dot_product_attention
+- from torch.nn.attention import SDPBackend, sdpa_kernel
+- '# Only enable flash attention backend'
+- 'with sdpa_kernel(SDPBackend.FLASH_ATTENTION):'
+- '    scaled_dot_product_attention(...)'
+- '# Enable the Math or Efficient attention backends'
+- 'with sdpa_kernel([SDPBackend.MATH, SDPBackend.EFFICIENT_ATTENTION]):'
+- '    scaled_dot_product_attention(...)'
+- '# Enable the cuDNN or flash attention backends, and in that order'
+- with sdpa_kernel(
+- '    [SDPBackend.CUDNN_ATTENTION, SDPBackend.FLASH_ATTENTION], set_priority=True'
+- '):'
+- '    scaled_dot_product_attention(...)'
+8 api_shape: null

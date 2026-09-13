@@ -1,0 +1,12 @@
+2 api_name: torch.zeros_like
+3 api_description: Creates a new tensor of zeros with the same size, dtype, layout,
+  and device as the input tensor.
+4 api_signature: torch.zeros_like(input,*,dtype,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- input: Defines the shape of the returned tensor, matching the size of the given
+    input tensor.
+7 api_usage_example:
+- ' input = torch.empty(2, 3)'
+- ' torch.zeros_like(input)'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.BesselI1e
+3 api_description: Computes the exponentially scaled modified Bessel function of the
+  first kind of order 1, I1(x) * exp(-|x|), element-wise.
+4 api_signature: tf.raw_ops.BesselI1e(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the exponentially scaled modified
+    Bessel function of the first kind, order 1.
+7 api_usage_example: null
+8 api_shape: ''

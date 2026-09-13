@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.SparseApplyMomentum
+3 api_description: 'Updates selected rows of `var` and `accum` using momentum-based
+  optimization: `accum` is decayed by `momentum` and added to the gradient, then `var`
+  is updated by subtracting the learning-rate-scaled accumulator, with optional Nesterov
+  momentum.'
+4 api_signature: tf.raw_ops.SparseApplyMomentum(var,accum,lr,grad,indices,momentum)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated in place by the sparse momentum rule.
+- accum: The accumulator tensor that stores the momentum state for `var` and is updated
+    in place.
+- lr: The scalar learning rate that controls the size of the update step.
+- grad: The gradient tensor providing the sparse update values.
+- indices: The 1-D index tensor identifying which rows of `var` and `accum` to update.
+- momentum: The scalar momentum coefficient that determines how much past accumulated
+    update is retained.
+7 api_usage_example: null
+8 api_shape: ''

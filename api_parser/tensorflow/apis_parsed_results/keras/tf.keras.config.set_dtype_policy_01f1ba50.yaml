@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.config.set_dtype_policy
+3 api_description: Sets the global default dtype policy used by Keras layers and operations.
+4 api_signature: tf.keras.config.set_dtype_policy(policy)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- keras.config.set_dtype_policy("mixed_float16")
+8 api_shape: ''

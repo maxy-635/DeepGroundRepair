@@ -1,0 +1,16 @@
+2 api_name: torch.nn.functional.local_response_norm
+3 api_description: Applies local response normalization to the input signal to enhance
+  generalization by normalizing over local input regions.
+4 api_signature: torch.nn.functional.local_response_norm(input,size,alpha,beta)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which local response normalization will be applied.
+- size: The number of adjacent channels to normalize over.
+- alpha: A scaling factor applied to the normalized value, default is 0.0001.
+- beta: An exponent applied to the normalized value, default is 0.75.
+- k: An additive constant, default is 1.0, used to prevent division by zero.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, *)
+  output tensor shape: (N, Channel_out, *) (same shape as input)
+  tensor shape transform formulas: {}

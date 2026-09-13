@@ -1,0 +1,17 @@
+2 api_name: paddle.utils.run_check
+3 api_description: Verifies that PaddlePaddle is correctly installed and can run successfully
+  on the current system.
+4 api_signature: paddle.utils.run_check()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- '>>>'
+- paddle.utils.run_check()
+- Running verify PaddlePaddle program ...
+- I0818 15:35:08.335391 30540 program_interpreter.cc:173] New Executor is Running.
+- I0818 15:35:08.398319 30540 interpreter_util.cc:529] Standalone Executor is Used.
+- PaddlePaddle works well on 1 CPU.
+- PaddlePaddle is installed successfully! Let's start deep learning with PaddlePaddle
+  now.
+8 api_shape: {}

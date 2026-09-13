@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseTensorToCSRSparseMatrix
+3 api_description: Converts a `SparseTensor` into a CSR sparse matrix representation,
+  optionally supporting batched inputs.
+4 api_signature: tf.raw_ops.SparseTensorToCSRSparseMatrix(indices,values,dense_shape)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the coordinates of the nonzero elements in the sparse tensor.
+- values: Provides the values corresponding to each sparse tensor index.
+- dense_shape: Defines the full shape of the sparse tensor being converted.
+7 api_usage_example: null
+8 api_shape: ''

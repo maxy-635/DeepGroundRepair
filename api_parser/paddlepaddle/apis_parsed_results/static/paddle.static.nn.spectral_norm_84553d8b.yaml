@@ -1,0 +1,15 @@
+2 api_name: paddle.static.nn.spectral_norm
+3 api_description: Applies spectral normalization to a static-graph layer or parameter
+  by constraining its weight’s spectral norm, helping stabilize training and control
+  weight magnitude.
+4 api_signature: paddle.static.nn.spectral_norm(weight)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- weight = paddle.static.data(name='weight', shape=[2, 8, 32, 32], dtype='float32')
+- x = paddle.static.nn.spectral_norm(weight=weight, dim=1, power_iters=2)
+- print(x.shape)
+- (2, 8, 32, 32)
+8 api_shape: {}

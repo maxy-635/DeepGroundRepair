@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.SparseSegmentSumGradV2
+3 api_description: Computes gradients for SparseSegmentSum by aggregating grad values
+  for each unique index in indices, returning the gradient output and the corresponding
+  sorted unique indices.
+4 api_signature: tf.raw_ops.SparseSegmentSumGradV2(grad,indices,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- grad: The upstream gradient tensor to propagate back through the corresponding `SparseSegmentSum`
+    operation.
+- indices: The indices tensor originally passed to the matching `SparseSegmentSum`
+    operation.
+- segment_ids: The segment ID tensor originally passed to the matching `SparseSegmentSum`
+    operation.
+7 api_usage_example: null
+8 api_shape: ''

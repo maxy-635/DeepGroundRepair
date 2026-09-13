@@ -1,0 +1,10 @@
+2 api_name: torch.UntypedStorage.is_pinned
+3 api_description: Checks whether a CPU storage is already pinned in host memory for
+  faster device transfers.
+4 api_signature: is_pinned(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the device used to pin memory, defaulting to CUDA, though this
+    argument is discouraged and may be deprecated.
+7 api_usage_example: null
+8 api_shape: null

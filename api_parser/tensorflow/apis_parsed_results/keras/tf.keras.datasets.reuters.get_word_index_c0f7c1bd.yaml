@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.datasets.reuters.get_word_index
+3 api_description: Returns a word-to-index mapping for the Reuters dataset, where
+  actual dataset indices are offset by 3 to reserve 0 for padding, 1 for start, and
+  2 for out-of-vocabulary tokens.
+4 api_signature: tf.keras.datasets.reuters.get_word_index(path)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies where the Reuters word index file should be cached, relative to
+    `~/.keras/dataset`.
+7 api_usage_example: null
+8 api_shape: ''

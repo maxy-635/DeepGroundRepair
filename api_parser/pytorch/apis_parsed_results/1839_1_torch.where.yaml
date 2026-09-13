@@ -1,0 +1,20 @@
+2 api_name: torch.where
+3 api_description: Select elements from `input` or `other` based on `condition`, returning
+  a tensor with values chosen elementwise.
+4 api_signature: torch.where(condition,input,other)
+5 api_details: ''
+6 api_parameters:
+- condition: 'Controls which values are chosen: `input` where true, `other` where
+    false.'
+- input: Supplies the value or tensor used wherever `condition` is true.
+- other: Supplies the value or tensor used wherever `condition` is false.
+7 api_usage_example:
+- ' x = torch.randn(3, 2)'
+- ' y = torch.ones(3, 2)'
+- ' x'
+- ' torch.where(x > 0, 1.0, 0.0)'
+- ' torch.where(x > 0, x, y)'
+- ' x = torch.randn(2, 2, dtype=torch.double)'
+- ' x'
+- ' torch.where(x > 0, x, 0.)'
+8 api_shape: null

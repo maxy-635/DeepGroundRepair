@@ -1,0 +1,11 @@
+2 api_name: tensorflow.config.experimental.get_memory_usage
+3 api_description: Returns the current memory usage in bytes for a specified device.
+4 api_signature: tf.config.experimental.get_memory_usage(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the device whose current memory usage, in bytes, should be returned.
+7 api_usage_example:
+- gpu_devices = tf.config.list_physical_devices('GPU')
+- 'if gpu_devices:'
+- '  tf.config.experimental.get_memory_usage(''GPU:0'')'
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.transforms.Transform.inverse_shape
+3 api_description: Infer the input shape required for the inverse transform from an
+  output shape, typically assuming the inverse preserves shape.
+4 api_signature: inverse_shape(shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

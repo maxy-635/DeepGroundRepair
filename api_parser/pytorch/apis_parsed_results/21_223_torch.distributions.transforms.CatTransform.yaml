@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.transforms.CatTransform
+3 api_description: Applies a list of transforms to contiguous chunks of a tensor along
+  a chosen dimension, then concatenates the transformed chunks back together in a
+  way that matches torch.cat().
+4 api_signature: torch.distributions.transforms.CatTransform(tseq,dim)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- x0 = torch.cat([torch.range(1, 10), torch.range(1, 10)], dim=0)
+- x = torch.cat([x0, x0], dim=0)
+- t0 = CatTransform([ExpTransform(), identity_transform], dim=0, lengths=[10, 10])
+- t = CatTransform([t0, t0], dim=0, lengths=[20, 20])
+- y = t(x)
+8 api_shape: null

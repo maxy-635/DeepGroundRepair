@@ -1,0 +1,32 @@
+2 api_name: paddle.incubate.asp.reset_excluded_layers
+3 api_description: Resets the excluded layers configuration for the main program,
+  or clears all excluded-layers settings if no main program is provided.
+4 api_signature: paddle.incubate.asp.reset_excluded_layers(main_program)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '# Example1: Usage of Dynamic Graph'
+- import paddle
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self.conv1 = paddle.nn.Conv2D('
+- '            in_channels=3, out_channels=4, kernel_size=3, padding=2)'
+- '        self.linear1 = paddle.nn.Linear(4624, 100)'
+- '...'
+- '    def forward(self, img):'
+- '        hidden = self.conv1(img)'
+- '        hidden = paddle.flatten(hidden, start_axis=1)'
+- '        prediction = self.linear1(hidden)'
+- '        return prediction'
+- my_layer = MyLayer()
+- optimizer = paddle.optimizer.SGD(
+- '    learning_rate=0.01, parameters=my_layer.parameters())'
+- '# Need to set excluded layers before calling decorate'
+- paddle.incubate.asp.set_excluded_layers([my_layer.linear1.full_name()])
+- '# Reset excluded_layers, all supported layers would be included into Automatic
+  SParsity''s workflow.'
+- '# Please note, reset_excluded_layers also must be called before calling asp.decorate().'
+- paddle.incubate.asp.reset_excluded_layers()
+- optimizer = paddle.incubate.asp.decorate(optimizer)
+8 api_shape: {}

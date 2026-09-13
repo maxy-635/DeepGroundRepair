@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.bind_symbols
+3 api_description: Binds symbolic shape variables from placeholder fake tensors to
+  the real sizes of matching concrete tensor arguments, returning a symbol-to-value
+  map for symbols that actually appear in the placeholders and are not already replaced.
+4 api_signature: bind_symbols(placeholders,args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

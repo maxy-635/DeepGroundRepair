@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TPUReplicatedInput
+3 api_description: Holds an N-way replicated input for a TPU computation, connecting
+  matching-shape, matching-type inputs to each replica.
+4 api_signature: tf.raw_ops.TPUReplicatedInput(inputs,name)
+5 api_details: ''
+6 api_parameters:
+- inputs: Supplies one or more tensors of the same type to be replicated as the operation’s
+    input.
+- name: Optionally sets the name used to identify the operation.
+7 api_usage_example: null
+8 api_shape: ''

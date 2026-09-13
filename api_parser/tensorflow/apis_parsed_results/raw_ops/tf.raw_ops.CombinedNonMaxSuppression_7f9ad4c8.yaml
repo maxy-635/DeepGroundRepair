@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.CombinedNonMaxSuppression
+3 api_description: Selects the highest-scoring bounding boxes per batch across all
+  classes, removing boxes with excessive IoU overlap and returning the final boxes,
+  scores, and class IDs.
+4 api_signature: tf.raw_ops.CombinedNonMaxSuppression(boxes,scores,max_output_size_per_class,max_total_size)
+5 api_details: ''
+6 api_parameters:
+- boxes: Provides the candidate bounding boxes, either shared across classes or class-specific
+    depending on the q dimension.
+- scores: Provides the confidence scores for each box and class used to rank detections.
+- max_output_size_per_class: Sets the maximum number of boxes to keep for each class
+    after non-max suppression.
+- max_total_size: Sets the overall maximum number of boxes to retain across all classes.
+7 api_usage_example: null
+8 api_shape: ''

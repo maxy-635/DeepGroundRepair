@@ -1,0 +1,34 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel
+3 api_description: Wraps a PyTorch module to shard its parameters across data-parallel
+  workers, reducing memory use while enabling distributed training.
+4 api_signature: torch.distributed.fsdp.FullyShardedDataParallel(module,process_group,sharding_strategy,cpu_offload,auto_wrap_policy,mixed_precision,device_id,sync_module_states,use_orig_params,device_mesh)
+5 api_details: ''
+6 api_parameters:
+- module: The module to wrap with FSDP.
+- process_group: The process group used for sharding and FSDP collectives, or a tuple
+    of groups for hybrid sharding.
+- sharding_strategy: The sharding strategy that balances memory savings against communication
+    overhead.
+- cpu_offload: The CPU offload configuration, which disables offloading when set to
+    None.
+- auto_wrap_policy: The policy that determines which submodules FSDP should wrap automatically.
+- mixed_precision: The mixed-precision configuration for parameters, buffers, and
+    gradient reduction.
+- device_id: The CUDA device to use for FSDP initialization, module setup, and sharding.
+- sync_module_states: Whether to broadcast parameters and buffers from rank 0 so modules
+    start replicated across ranks.
+- use_orig_params: Whether to expose and train the module's original parameters instead
+    of FSDP's FlatParameters.
+- device_mesh: The DeviceMesh to use instead of process_group for FSDP collective
+    communication.
+7 api_usage_example:
+- ' import torch'
+- ' from torch.distributed.fsdp import FullyShardedDataParallel as FSDP'
+- ' torch.cuda.set_device(device_id)'
+- ' sharded_module = FSDP(my_module)'
+- ' optim = torch.optim.Adam(sharded_module.parameters(), lr=0.0001)'
+- ' x = sharded_module(x, y=3, z=torch.Tensor([1]))'
+- ' loss = x.sum()'
+- ' loss.backward()'
+- ' optim.step()'
+8 api_shape: null

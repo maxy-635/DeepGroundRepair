@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SigmoidGrad
+3 api_description: Computes the gradient of sigmoid with respect to its input by multiplying
+  the upstream gradient by y * (1 - y), where y is sigmoid(x).
+4 api_signature: tf.raw_ops.SigmoidGrad(y,dy)
+5 api_details: ''
+6 api_parameters:
+- y: The sigmoid output tensor used to compute the gradient.
+- dy: The upstream gradient tensor from the next operation, with the same type as
+    `y`.
+7 api_usage_example: null
+8 api_shape: ''

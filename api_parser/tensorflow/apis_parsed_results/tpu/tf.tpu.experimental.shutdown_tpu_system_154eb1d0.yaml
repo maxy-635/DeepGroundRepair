@@ -1,0 +1,10 @@
+2 api_name: tensorflow.tpu.experimental.shutdown_tpu_system
+3 api_description: Shuts down TPU devices and clears all TPU-related caches, including
+  persistent compilation caches.
+4 api_signature: tf.tpu.experimental.shutdown_tpu_system(cluster_resolver)
+5 api_details: ''
+6 api_parameters:
+- cluster_resolver: Provides the TPU cluster information used to identify and manage
+    the TPU system being shut down.
+7 api_usage_example: null
+8 api_shape: ''

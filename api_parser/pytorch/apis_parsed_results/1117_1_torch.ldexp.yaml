@@ -1,0 +1,12 @@
+2 api_name: torch.ldexp
+3 api_description: Returns input scaled by 2 to the power of other.
+4 api_signature: torch.ldexp(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be scaled by powers of two.
+- other: A tensor of exponents that determines the power-of-two scaling for each input
+    element.
+7 api_usage_example:
+- ' torch.ldexp(torch.tensor([1.]), torch.tensor([1]))'
+- ' torch.ldexp(torch.tensor([1.0]), torch.tensor([1, 2, 3, 4]))'
+8 api_shape: null

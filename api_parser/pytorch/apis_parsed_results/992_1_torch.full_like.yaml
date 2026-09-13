@@ -1,0 +1,16 @@
+2 api_name: torch.full_like
+3 api_description: Creates a tensor matching the input’s shape and properties, filled
+  with the specified value.
+4 api_signature: torch.full_like(input,fill_value)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the reference tensor whose shape determines the output tensor size.
+- fill_value: Specifies the value used to fill every element of the output tensor.
+7 api_usage_example:
+- ' x = torch.ones(2, 3)'
+- ' torch.full_like(x, 3.141592)'
+- ' torch.full_like(x, 7)'
+- ' torch.full_like(x, 0.5, dtype=torch.int32)'
+- ' y = torch.randn(3, 4, dtype=torch.float64)'
+- ' torch.full_like(y, -1.0)'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.PyFuncStateless
+3 api_description: Runs a stateless Python callback from TensorFlow, taking input
+  tensors and returning output tensors without relying on or affecting mutable state.
+4 api_signature: tf.raw_ops.PyFuncStateless(input,Tout)
+5 api_details: ''
+6 api_parameters:
+- input: The tensors to pass into the stateless Python function.
+- Tout: The data types of the tensors returned by the function.
+7 api_usage_example: null
+8 api_shape: ''

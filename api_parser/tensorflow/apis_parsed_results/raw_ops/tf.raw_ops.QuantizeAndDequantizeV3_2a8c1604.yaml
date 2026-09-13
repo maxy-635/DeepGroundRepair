@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.QuantizeAndDequantizeV3
+3 api_description: Quantizes a tensor to a specified bit width and then dequantizes
+  it back, with the bit width provided as a tensor so it can change during training.
+4 api_signature: tf.raw_ops.QuantizeAndDequantizeV3(input,input_min,input_max,num_bits,signed_input,range_given,narrow_range,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be quantized and then dequantized.
+- input_min: The lower bound of the quantization range.
+- input_max: The upper bound of the quantization range.
+- num_bits: The number of bits to use for quantization.
+- signed_input: Indicates whether the input is treated as signed.
+- range_given: Indicates whether the min and max range is explicitly provided.
+- narrow_range: Indicates whether to use a narrowed quantization range that excludes
+    the smallest value.
+- axis: Specifies the axis along which per-channel quantization is applied.
+7 api_usage_example: null
+8 api_shape: ''

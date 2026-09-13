@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.functional.lp_pool1d
+3 api_description: paddle.nn.functional.lp_pool1d performs 1D power-average pooling,
+  applying an Lp-norm over input data to reduce its dimensionality.
+4 api_signature: paddle.nn.functional.lp_pool1d(x,norm_type,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the 3-D input tensor for the pooling operation, with dimensions corresponding
+    to batch size, number of channels, and feature length.
+- norm_type: Specifies the exponent used in the power operation for the pooling function.
+- kernel_size: Defines the size of the pooling window, either as a single integer
+    or a tuple of two integers for height and width.
+7 api_usage_example: []
+8 api_shape: null

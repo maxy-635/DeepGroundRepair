@@ -1,0 +1,10 @@
+2 api_name: tensorflow.experimental.dtensor.enable_save_as_bf16
+3 api_description: Enables DTensor DVariables with float32 values to be saved and
+  restored as bfloat16 while leaving non-DTensor variables and tensors unchanged.
+4 api_signature: tf.experimental.dtensor.enable_save_as_bf16(variables)
+5 api_details: ''
+6 api_parameters:
+- variables: Lists the `tf.Variable` objects whose DTensor-backed save and restore
+    behavior should use `bfloat16`.
+7 api_usage_example: null
+8 api_shape: ''

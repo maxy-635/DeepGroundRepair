@@ -1,0 +1,15 @@
+2 api_name: paddle.gammaln
+3 api_description: Computes the elementwise logarithm of the absolute gamma function.
+4 api_signature: paddle.gammaln(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elementwise logarithm of the gamma function is computed.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(1.5, 4.5, 0.5)
+- out = paddle.gammaln(x)
+- print(out)
+- Tensor(shape=[6], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.12078224,  0.        ,  0.28468287,  0.69314718,  1.20097363,'
+- 1.79175949])
+8 api_shape: {}

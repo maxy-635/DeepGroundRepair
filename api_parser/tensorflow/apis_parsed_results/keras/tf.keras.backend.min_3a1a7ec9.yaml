@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.min
+3 api_description: Computes the minimum value of a tensor or the minimum of two tensors
+  elementwise, depending on the input.
+4 api_signature: tf.keras.backend.min(x,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

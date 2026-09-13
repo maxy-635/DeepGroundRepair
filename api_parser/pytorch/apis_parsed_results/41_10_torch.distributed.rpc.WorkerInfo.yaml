@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.rpc.WorkerInfo
+3 api_description: Represents a distributed worker by name and ID, typically obtained
+  from get_worker_info() and passed to RPC calls to avoid repeatedly copying the worker
+  name.
+4 api_signature: class torch.distributed.rpc.WorkerInfo#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

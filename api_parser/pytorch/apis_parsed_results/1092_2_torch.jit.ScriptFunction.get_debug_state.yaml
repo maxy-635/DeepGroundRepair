@@ -1,0 +1,8 @@
+2 api_name: torch.jit.ScriptFunction.get_debug_state
+3 api_description: Returns the debug state for a ScriptFunction, exposing JIT compilation
+  and execution diagnostics.
+4 api_signature: get_debug_state()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

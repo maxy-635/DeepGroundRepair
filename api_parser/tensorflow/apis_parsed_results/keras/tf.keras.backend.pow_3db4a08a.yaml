@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.pow
+3 api_description: Raises each element of a tensor to the power of the corresponding
+  element in another tensor or a scalar, returning the element-wise exponentiation
+  result.
+4 api_signature: tf.keras.backend.pow(x,a)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

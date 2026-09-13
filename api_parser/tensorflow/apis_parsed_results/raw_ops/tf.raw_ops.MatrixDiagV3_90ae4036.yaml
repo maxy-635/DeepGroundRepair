@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.MatrixDiagV3
+3 api_description: Builds a batched matrix with one or more specified diagonals filled
+  from the input tensor and all other entries padded, inferring missing dimensions
+  when needed.
+4 api_signature: tf.raw_ops.MatrixDiagV3(diagonal,k,num_rows,num_cols,padding_value)
+5 api_details: ''
+6 api_parameters:
+- diagonal: Contains the values to place on the specified diagonal or diagonal band.
+- k: Specifies which diagonal or band of diagonals to fill, using a single offset
+    or a low/high offset pair.
+- num_rows: Sets the number of rows in the output matrix, or is inferred if omitted.
+- num_cols: Sets the number of columns in the output matrix, or is inferred if omitted.
+- padding_value: Fills all entries outside the specified diagonal band.
+7 api_usage_example: null
+8 api_shape: ''

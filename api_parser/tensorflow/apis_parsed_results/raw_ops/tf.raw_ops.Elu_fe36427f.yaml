@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Elu
+3 api_description: Applies the ELU activation, returning `x` for positive values and
+  `exp(x) - 1` for negative values.
+4 api_signature: tf.raw_ops.Elu(features)
+5 api_details: ''
+6 api_parameters:
+- features: The input tensor whose values are transformed by the ELU activation function.
+7 api_usage_example:
+- tf.nn.elu(1.0)
+- tf.nn.elu(0.0)
+- tf.nn.elu(-1000.0)
+8 api_shape: ''

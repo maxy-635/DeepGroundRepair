@@ -1,0 +1,42 @@
+2 api_name: torch.optim.AdamW
+3 api_description: AdamW is an optimizer that updates model parameters using Adam
+  with decoupled weight decay, so weight decay is applied separately from momentum
+  and variance estimates.
+4 api_signature: torch.optim.AdamW(params,lr,weight_decay,amsgrad,*,maximize,foreach,capturable,differentiable,fused)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies the model parameters or parameter groups to optimize.
+- lr: Sets the optimizer's learning rate.
+- weight_decay: Applies L2-style weight decay regularization to the parameters.
+- amsgrad: Enables the AMSGrad variant of AdamW for a more stable update rule.
+- maximize: Updates parameters to maximize the objective instead of minimizing it.
+- foreach: Chooses the foreach-based implementation, which is usually faster on CUDA
+    but uses more peak memory.
+- capturable: Makes the optimizer safe to use in CUDA graphs or torch.compile capture
+    contexts.
+- differentiable: Allows gradients to flow through optimizer steps for higher-order
+    differentiation.
+- fused: Uses the fused optimizer implementation for supported tensor types and devices.
+7 api_usage_example:
+- ' model = torch.nn.Linear(10, 10)'
+- ' optim = torch.optim.SGD(model.parameters(), lr=3e-4)'
+- ' scheduler1 = torch.optim.lr_scheduler.LinearLR('
+- '...     optim,'
+- '...     start_factor=0.1,'
+- '...     end_factor=1,'
+- '...     total_iters=20,'
+- '... )'
+- ' scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR('
+- '...     optim,'
+- '...     T_max=80,'
+- '...     eta_min=3e-5,'
+- '... )'
+- ' lr = torch.optim.lr_scheduler.SequentialLR('
+- '...     optim,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' lr.load_state_dict(torch.load("./save_seq.pt"))'
+- ' # now load the optimizer checkpoint after loading the LRScheduler'
+- ' optim.load_state_dict(torch.load("./save_optim.pt"))'
+8 api_shape: null

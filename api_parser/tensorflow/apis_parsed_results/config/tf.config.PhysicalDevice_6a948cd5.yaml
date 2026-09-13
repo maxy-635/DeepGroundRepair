@@ -1,0 +1,8 @@
+2 api_name: tensorflow.config.PhysicalDevice
+3 api_description: Represents a local physical compute device (such as a CPU or GPU)
+  whose visibility and logical device configuration can be customized before initialization.
+4 api_signature: tf.config.PhysicalDevice(name,device_type)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

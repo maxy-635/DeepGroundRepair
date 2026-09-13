@@ -1,0 +1,32 @@
+2 api_name: torch.utils.checkpoint.create_selective_checkpoint_contexts
+3 api_description: Creates checkpoint contexts that selectively save specified ops
+  during activation checkpointing to reduce recomputation in backward passes.
+4 api_signature: torch.utils.checkpoint.create_selective_checkpoint_contexts(policy_fn_or_list)
+5 api_details: ''
+6 api_parameters:
+- policy_fn_or_list: Controls which operations are saved versus recomputed during
+    selective checkpointing, either by supplying a policy function or by listing operations
+    to always save.
+7 api_usage_example:
+- ' import functools'
+- ' x = torch.rand(10, 10, requires_grad=True)'
+- ' y = torch.rand(10, 10, requires_grad=True)'
+- ' ops_to_save = ['
+- '    torch.ops.aten.mm.default,'
+- ' ]'
+- ' def policy_fn(ctx, op, *args, **kwargs):'
+- '    if op in ops_to_save:'
+- '        return CheckpointPolicy.MUST_SAVE'
+- '    else:'
+- '        return CheckpointPolicy.PREFER_RECOMPUTE'
+- ' context_fn = functools.partial(create_selective_checkpoint_contexts, policy_fn)'
+- ' # or equivalently'
+- ' context_fn = functools.partial(create_selective_checkpoint_contexts, ops_to_save)'
+- ' def fn(x, y):'
+- '     return torch.sigmoid(torch.matmul(torch.matmul(x, y), y)) * y'
+- ' out = torch.utils.checkpoint.checkpoint('
+- '     fn, x, y,'
+- '     use_reentrant=False,'
+- '     context_fn=context_fn,'
+- ' )'
+8 api_shape: null

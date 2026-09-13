@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.betainc
+3 api_description: Computes the regularized incomplete beta integral I_x(a, b), i.e.
+  the incomplete beta function B(x; a, b) normalized by the complete beta function
+  B(a, b).
+4 api_signature: tf.math.betainc(a,b,x)
+5 api_details: ''
+6 api_parameters:
+- a: Shape parameter of the first beta distribution term.
+- b: Shape parameter of the second beta distribution term.
+- x: Value at which to evaluate the regularized incomplete beta function.
+7 api_usage_example: null
+8 api_shape: ''

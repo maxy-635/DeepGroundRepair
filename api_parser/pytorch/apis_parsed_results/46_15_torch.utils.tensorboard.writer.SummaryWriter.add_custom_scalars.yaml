@@ -1,0 +1,15 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_custom_scalars
+3 api_description: Creates custom TensorBoard dashboards by grouping existing scalar
+  charts under user-defined layouts.
+4 api_signature: add_custom_scalars(layout)
+5 api_details: ''
+6 api_parameters:
+- layout: Defines the custom scalar dashboard structure as a nested dictionary of
+    categories and charts, where each chart specifies its type and the scalar tags
+    to group into it.
+7 api_usage_example:
+- layout = {'Taiwan':{'twse':['Multiline',['twse/0050', 'twse/2330']]},
+- '             ''USA'':{ ''dow'':[''Margin'',   [''dow/aaa'', ''dow/bbb'', ''dow/ccc'']],'
+- '                  ''nasdaq'':[''Margin'',   [''nasdaq/aaa'', ''nasdaq/bbb'', ''nasdaq/ccc'']]}}'
+- writer.add_custom_scalars(layout)
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.strings.upper
+3 api_description: Converts lowercase characters in a string to their uppercase equivalents.
+4 api_signature: tf.strings.upper(input,encoding)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor to convert to uppercase.
+- encoding: The character encoding to use for the input, with `''` meaning ASCII and
+    `utf-8` also allowed.
+7 api_usage_example:
+- tf.strings.upper("CamelCase string and ALL CAPS")
+8 api_shape: ''

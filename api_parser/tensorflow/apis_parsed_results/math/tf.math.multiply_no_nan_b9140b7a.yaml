@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.multiply_no_nan
+3 api_description: Multiplies x and y, but returns 0 when y is zero; if x is 0 and
+  y is NaN or infinite, the result is NaN.
+4 api_signature: tf.math.multiply_no_nan(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor operand to be multiplied.
+- y: The second tensor operand, required to have a dtype compatible with `x`.
+7 api_usage_example: null
+8 api_shape: ''

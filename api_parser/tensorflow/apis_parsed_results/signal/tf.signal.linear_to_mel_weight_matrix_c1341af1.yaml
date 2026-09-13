@@ -1,0 +1,13 @@
+2 api_name: tensorflow.signal.linear_to_mel_weight_matrix
+3 api_description: Creates a mel weight matrix that converts linearly sampled spectrogram
+  frequencies into mel-scale bins over a specified frequency range.
+4 api_signature: tf.signal.linear_to_mel_weight_matrix(num_mel_bins,num_spectrogram_bins,sample_rate,lower_edge_hertz,upper_edge_hertz)
+5 api_details: ''
+6 api_parameters:
+- num_mel_bins: Sets the number of mel frequency bands to generate.
+- num_spectrogram_bins: Specifies how many frequency bins are in the input spectrogram.
+- sample_rate: Provides the sampling rate used to map spectrogram bins to frequencies.
+- lower_edge_hertz: Defines the lowest frequency included in the mel filter bank.
+- upper_edge_hertz: Defines the highest frequency included in the mel filter bank.
+7 api_usage_example: null
+8 api_shape: ''

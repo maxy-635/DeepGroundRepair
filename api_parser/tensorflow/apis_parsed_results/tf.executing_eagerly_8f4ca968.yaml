@@ -1,0 +1,12 @@
+2 api_name: tensorflow.executing_eagerly
+3 api_description: Returns whether eager execution is enabled for the current thread.
+4 api_signature: tf.executing_eagerly()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'def data_fn(x):'
+- '  print(tf.executing_eagerly())'
+- '  return x'
+- dataset = tf.data.Dataset.range(100)
+- dataset = dataset.map(data_fn)
+8 api_shape: ''

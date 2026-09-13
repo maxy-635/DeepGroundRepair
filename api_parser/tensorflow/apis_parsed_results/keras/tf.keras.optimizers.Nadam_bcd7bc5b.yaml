@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.optimizers.Nadam
+3 api_description: Adaptive optimizer that combines Adam with Nesterov momentum to
+  update model weights efficiently during training.
+4 api_signature: tf.keras.optimizers.Nadam(learning_rate,beta_1,beta_2,epsilon,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update model weights during optimization.
+- beta_1: Controls the decay rate of the first-moment momentum estimate.
+- beta_2: Controls the decay rate of the second-moment squared-gradient estimate.
+- epsilon: Adds a small value for numerical stability when computing updates.
+- name: Sets the optimizer's name for its internal momentum accumulator weights.
+7 api_usage_example: null
+8 api_shape: ''

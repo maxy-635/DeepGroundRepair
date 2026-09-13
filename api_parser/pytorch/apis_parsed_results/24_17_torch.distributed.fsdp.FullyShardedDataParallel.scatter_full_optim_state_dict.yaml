@@ -1,0 +1,21 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.scatter_full_optim_state_dict
+3 api_description: Broadcasts the full optimizer state dict from rank 0 to all ranks
+  so each process can receive its portion for FSDP training.
+4 api_signature: '"staticscatter_full_optim_state_dict(full_optim_state_dict,model,optim,group)"'
+5 api_details: ''
+6 api_parameters:
+- full_optim_state_dict: The complete, unsharded optimizer state dict on rank 0, ignored
+    on other ranks.
+- model: The root model whose parameters match the optimizer state being scattered.
+- optim: The optimizer that will load the returned sharded state dict.
+- group: The process group to use for the model, or `None` to use the default group.
+7 api_usage_example:
+- ' from torch.distributed.fsdp import FullyShardedDataParallel as FSDP'
+- ' model, optim = ...'
+- ' full_osd = FSDP.full_optim_state_dict(model, optim)  # only non-empty on rank
+  0'
+- ' # Define new model with possibly different world size'
+- ' new_model, new_optim, new_group = ...'
+- ' sharded_osd = FSDP.scatter_full_optim_state_dict(full_osd, new_model, group=new_group)'
+- ' new_optim.load_state_dict(sharded_osd)'
+8 api_shape: null

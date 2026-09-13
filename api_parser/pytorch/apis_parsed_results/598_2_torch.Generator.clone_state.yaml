@@ -1,0 +1,10 @@
+2 api_name: torch.Generator.clone_state
+3 api_description: Clones a generator’s current state into a new generator so the
+  state can be saved and restored later.
+4 api_signature: '"clone_state()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' g_cuda = torch.Generator(device=''cuda'')'
+- ' cloned_state = g_cuda.clone_state()'
+8 api_shape: null

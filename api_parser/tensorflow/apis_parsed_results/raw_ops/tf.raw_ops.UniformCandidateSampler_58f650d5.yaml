@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.UniformCandidateSampler
+3 api_description: Samples a batch-wide set of candidate labels from a uniform distribution
+  for candidate sampling.
+4 api_signature: tf.raw_ops.UniformCandidateSampler(true_classes,num_true,num_sampled,unique,range_max)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Provides the true class IDs for each example in the batch.
+- num_true: Specifies how many true labels are associated with each context.
+- num_sampled: Sets how many candidate classes to sample randomly.
+- unique: Controls whether sampled candidates must be unique within a batch.
+- range_max: Defines the exclusive upper bound for sampled integer class IDs.
+7 api_usage_example: null
+8 api_shape: ''

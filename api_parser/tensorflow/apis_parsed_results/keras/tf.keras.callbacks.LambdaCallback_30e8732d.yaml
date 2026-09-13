@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.callbacks.LambdaCallback
+3 api_description: A callback wrapper that lets you define simple custom Keras callback
+  behavior on the fly by supplying functions for training events.
+4 api_signature: tf.keras.callbacks.LambdaCallback(on_epoch_begin,on_epoch_end,on_train_begin,on_train_end)
+5 api_details: ''
+6 api_parameters:
+- epoch: The zero-based index of the current epoch.
+- epoch: The zero-based index of the current epoch.
+7 api_usage_example: null
+8 api_shape: ''

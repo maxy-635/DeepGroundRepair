@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.TensorScatterMax
+3 api_description: Updates a tensor at specified indices by taking the element-wise
+  maximum between the existing values and the provided updates, returning a new tensor.
+4 api_signature: tf.raw_ops.TensorScatterMax(tensor,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to be updated.
+- indices: The integer indices that specify where to apply each update.
+- updates: The values to scatter into the tensor at the given indices.
+7 api_usage_example:
+- tensor = [0, 0, 0, 0, 0, 0, 0, 0]
+- indices = [[1], [4], [5]]
+- updates = [1, -1, 1]
+- tf.tensor_scatter_nd_max(tensor, indices, updates).numpy()
+8 api_shape: ''

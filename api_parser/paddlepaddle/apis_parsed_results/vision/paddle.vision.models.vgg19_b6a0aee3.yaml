@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.vgg19
+3 api_description: Creates the VGG-19 convolutional neural network for image classification,
+  using a deep stack of 19 layers to extract features and produce predictions.
+4 api_signature: paddle.vision.models.vgg19(pretrained,batch_norm)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Loads ImageNet pre-trained weights when set to True.
+- batch_norm: Adds batch normalization layers to the model when set to True.
+7 api_usage_example: []
+8 api_shape: {}

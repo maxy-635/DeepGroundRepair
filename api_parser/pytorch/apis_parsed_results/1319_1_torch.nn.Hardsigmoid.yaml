@@ -1,0 +1,16 @@
+2 api_name: torch.nn.Hardsigmoid
+3 api_description: Applies the Hardsigmoid activation function element-wise to input
+  tensors, effectively scaling values to a range between 0 and 1.
+4 api_signature: torch.nn.Hardsigmoid(inplace)
+5 api_details: ''
+6 api_parameters:
+- inplace: If set to True, the operation will modify the input tensor directly instead
+    of creating a new tensor.
+7 api_usage_example:
+- ' m = nn.Hardsigmoid()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

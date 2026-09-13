@@ -1,0 +1,9 @@
+2 api_name: torch.Tensor
+3 api_description: Core PyTorch tensor type for storing and manipulating multi-dimensional
+  data; supports creation from data or shape, device/dtype specification, indexing,
+  slicing, arithmetic, broadcasting, reshaping, and automatic differentiation.
+4 api_signature: class torch.Tensor#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

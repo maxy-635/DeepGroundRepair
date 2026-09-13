@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.BiRNN
+3 api_description: The paddle.nn.BiRNN API constructs a bidirectional RNN using specified
+  forward and backward RNN cells, executing them separately and concatenating their
+  outputs along the last axis.
+4 api_signature: paddle.nn.BiRNN(cell_fw,cell_bw)
+5 api_details: ''
+6 api_parameters:
+- cell_fw: Defines the RNN cell used for processing the input sequence in the forward
+    direction.
+- cell_bw: Defines the RNN cell used for processing the input sequence in the backward
+    direction.
+7 api_usage_example: []
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.StepLR.step
+3 api_description: Update the learning rate by decaying each optimizer parameter group
+  by gamma every step_size epochs.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Deprecated; if provided, sets `last_epoch` to `epoch` and uses `get_closed_form_lr()`
+    when available, but `step()` without arguments is preferred.
+7 api_usage_example: null
+8 api_shape: null

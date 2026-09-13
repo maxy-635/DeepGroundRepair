@@ -1,0 +1,8 @@
+2 api_name: torch.__future__.get_overwrite_module_params_on_conversion
+3 api_description: Returns whether module conversion should replace parameters with
+  new tensors instead of updating existing parameters in place.
+4 api_signature: torch.__future__.get_overwrite_module_params_on_conversion()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

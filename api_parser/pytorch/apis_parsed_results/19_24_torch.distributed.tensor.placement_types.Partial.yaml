@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.tensor.placement_types.Partial
+3 api_description: Represents a DTensor with values partially reduced across a mesh
+  dimension, which can later be redistributed to replicated or sharded placements
+  via collective communication.
+4 api_signature: class torch.distributed.tensor.placement_types.Partial
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

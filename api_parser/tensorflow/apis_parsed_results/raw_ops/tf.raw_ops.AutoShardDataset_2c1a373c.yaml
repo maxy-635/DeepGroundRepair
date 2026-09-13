@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.AutoShardDataset
+3 api_description: Automatically shards an input dataset into num_workers partitions
+  and returns the subset for the specified worker, inserting sharding before reader
+  inputs when possible.
+4 api_signature: tf.raw_ops.AutoShardDataset(input_dataset,num_workers,index,auto_shard_policy)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be auto-sharded.
+- num_workers: The total number of workers among which the dataset is split.
+- index: The zero-based index of the current worker used to select its shard.
+- auto_shard_policy: The policy value that controls how auto-sharding is applied.
+7 api_usage_example: null
+8 api_shape: ''

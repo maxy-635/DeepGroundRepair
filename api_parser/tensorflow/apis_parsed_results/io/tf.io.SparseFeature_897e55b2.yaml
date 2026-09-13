@@ -1,0 +1,9 @@
+2 api_name: tensorflow.io.SparseFeature
+3 api_description: Configures how to parse a sparse feature from a tf.Example, defining
+  index and value keys plus a dense shape so the parsed data can be assembled into
+  a SparseTensor.
+4 api_signature: tf.io.SparseFeature(index_key,value_key,dtype,size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

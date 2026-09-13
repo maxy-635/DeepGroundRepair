@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.SerializeTensor
+3 api_description: Serializes a Tensor into a TensorProto encoded representation.
+4 api_signature: tf.raw_ops.SerializeTensor(tensor)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to serialize into a binary string representation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,37 @@
+2 api_name: paddle.nn.initializer.Normal
+3 api_description: The paddle.nn.initializer.Normal API initializes tensor values
+  using a random normal distribution specified by mean and standard deviation.
+4 api_signature: paddle.nn.initializer.Normal(mean,std)
+5 api_details: ''
+6 api_parameters:
+- mean: Specifies the mean value for the normal distribution used in initialization,
+    with a default of 0.0.
+- std: Defines the standard deviation for the normal distribution used in initialization,
+    with a default of 1.0.
+7 api_usage_example:
+- import paddle
+- data = paddle.ones(shape=[3, 1, 2], dtype='float32')
+- weight_attr = paddle.framework.ParamAttr(
+- '    name="linear_weight",'
+- '    initializer=paddle.nn.initializer.Normal(mean=0.0, std=2.0))'
+- bias_attr = paddle.framework.ParamAttr(
+- '    name="linear_bias",'
+- '    initializer=paddle.nn.initializer.Normal(mean=0.0, std=2.0))'
+- '>>>'
+- linear = paddle.nn.Linear(2, 2, weight_attr=weight_attr, bias_attr=bias_attr)
+- print(linear.weight)
+- 'Parameter containing:'
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[ 2.1973135 -2.2697184],'
+- '[-1.9104223 -1.0541488]])'
+- print(linear.bias)
+- 'Parameter containing:'
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[ 0.7885926  -0.74719954])'
+- res = linear(data)
+- print(res)
+- Tensor(shape=[3, 1, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[ 1.0754838 -4.071067 ]],'
+- '[[ 1.0754838 -4.071067 ]],'
+- '[[ 1.0754838 -4.071067 ]]])'
+8 api_shape: null

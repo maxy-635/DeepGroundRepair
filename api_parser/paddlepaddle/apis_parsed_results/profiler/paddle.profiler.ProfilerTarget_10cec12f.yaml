@@ -1,0 +1,8 @@
+2 api_name: paddle.profiler.ProfilerTarget
+3 api_description: Specifies the device target for the profiler; currently supports
+  CPU, GPU, and XPU.
+4 api_signature: paddle.profiler.ProfilerTarget(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

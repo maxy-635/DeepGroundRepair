@@ -1,0 +1,21 @@
+2 api_name: tensorflow.keras.optimizers.RMSprop
+3 api_description: Optimizer that uses RMSprop to adapt learning rates by dividing
+  gradients by a moving average of recent squared gradients.
+4 api_signature: tf.keras.optimizers.RMSprop(learning_rate,rho,momentum,epsilon,centered,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update model weights during optimization.
+- rho: Controls how much past squared gradients are retained in the running average.
+- momentum: Determines how much previous updates influence the current update direction.
+- epsilon: Adds a small value for numerical stability to prevent division by zero.
+- centered: Chooses whether to normalize gradients using variance instead of only
+    the second moment.
+- name: Specifies the name used for the optimizer’s internal momentum accumulator
+    weights.
+7 api_usage_example:
+- opt = keras.optimizers.RMSprop(learning_rate=0.1)
+- var1 = keras.backend.Variable(10.0)
+- 'loss = lambda: (var1 ** 2) / 2.0  # d(loss) / d(var1) = var1'
+- opt.minimize(loss, [var1])
+- var1
+8 api_shape: ''

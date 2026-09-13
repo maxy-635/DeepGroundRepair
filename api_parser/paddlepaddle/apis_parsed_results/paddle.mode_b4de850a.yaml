@@ -1,0 +1,21 @@
+2 api_name: paddle.mode
+3 api_description: Returns the most frequent value(s) and their corresponding indices
+  along an optional axis.
+4 api_signature: paddle.mode(x,axis,keepdim)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the mode.
+- axis: The dimension along which to compute the mode and indices.
+- keepdim: Controls whether the reduced axis is kept as a size-one dimension in the
+    output.
+7 api_usage_example:
+- import paddle
+- tensor = paddle.to_tensor([[[1,2,2],[2,3,3]],[[0,5,5],[9,9,0]]], dtype=paddle.float32)
+- res = paddle.mode(tensor, 2)
+- print(res)
+- (Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[2., 3.],'
+- '[5., 9.]]), Tensor(shape=[2, 2], dtype=int64, place=Place(cpu), stop_gradient=True,'
+- '[[2, 2],'
+- '[2, 1]]))'
+8 api_shape: {}

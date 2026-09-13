@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.swapaxes
+3 api_description: Returns a tensor with two axes swapped, reordering dimensions without
+  changing the data.
+4 api_signature: tf.experimental.numpy.swapaxes(a,axis1,axis2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

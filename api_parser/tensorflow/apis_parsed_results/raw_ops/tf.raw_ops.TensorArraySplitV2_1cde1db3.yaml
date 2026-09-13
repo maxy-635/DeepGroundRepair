@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorArraySplitV2
+3 api_description: Splits a tensor into elements and writes them into a TensorArray,
+  using a given sequence length as the split size.
+4 api_signature: tf.raw_ops.TensorArraySplitV2(handle,value,lengths)
+5 api_details: ''
+6 api_parameters:
+- handle: The string tensor identifying the TensorArray to split into elements.
+- value: The tensor containing the concatenated values to distribute into the TensorArray.
+- lengths: The int64 tensor specifying how many values go into each TensorArray element.
+7 api_usage_example: null
+8 api_shape: ''

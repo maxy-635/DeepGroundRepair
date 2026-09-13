@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.layers.GlobalMaxPool2D
+3 api_description: GlobalMaxPool2D performs down-sampling by taking the maximum value
+  from each feature map, reducing the spatial dimensions while preserving the most
+  significant features in 2D data.
+4 api_signature: tf.keras.layers.GlobalMaxPool2D(keepdims)
+5 api_details: ''
+6 api_parameters:
+- keepdims: Specifies whether to retain the spatial dimensions with length 1 (True)
+    or reduce the rank of the tensor by removing these dimensions (False, default).
+7 api_usage_example:
+- x = np.random.rand(2, 4, 5, 3)
+- y = keras.layers.GlobalMaxPooling2D()(x)
+- y.shape
+8 api_shape: null

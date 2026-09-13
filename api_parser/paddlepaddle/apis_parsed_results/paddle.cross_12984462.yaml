@@ -1,0 +1,32 @@
+2 api_name: paddle.cross
+3 api_description: Computes the cross product of two tensors along a specified axis.
+4 api_signature: paddle.cross(x,y,axis)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the first input tensor whose values are used to compute the cross product.
+- y: Provides the second input tensor to combine with `x` when computing the cross
+    product.
+- axis: Specifies which axis to use for the cross product, defaulting to the first
+    axis of length 3.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1.0, 1.0, 1.0],
+- '                        [2.0, 2.0, 2.0],'
+- '                        [3.0, 3.0, 3.0]])'
+- y = paddle.to_tensor([[1.0, 1.0, 1.0],
+- '                        [1.0, 1.0, 1.0],'
+- '                        [1.0, 1.0, 1.0]])'
+- '...'
+- z1 = paddle.cross(x, y)
+- print(z1)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-1., -1., -1.],'
+- '[ 2.,  2.,  2.],'
+- '[-1., -1., -1.]])'
+- z2 = paddle.cross(x, y, axis=1)
+- print(z2)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 0., 0.],'
+- '[0., 0., 0.],'
+- '[0., 0., 0.]])'
+8 api_shape: {}

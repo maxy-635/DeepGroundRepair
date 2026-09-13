@@ -1,0 +1,29 @@
+2 api_name: tensorflow.nn.depthwise_conv2d
+3 api_description: tensorflow.nn.depthwise_conv2d performs depthwise 2-D convolution
+  by applying distinct filters to each input channel, expanding each channel by a
+  specified channel multiplier, and concatenating the results, resulting in an output
+  with increased channel depth.
+4 api_signature: tf.nn.depthwise_conv2d(input,filter,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: A 4-D tensor representing the input image or batch of images, with shape
+    determined by the specified data_format.
+- filter: A 4-D tensor representing the convolutional filter, with dimensions [filter_height,
+    filter_width, in_channels, channel_multiplier].
+- strides: A 1-D tensor of size 4 specifying the stride of the sliding window for
+    each dimension of the input.
+- padding: Specifies the type of padding algorithm ('SAME' or 'VALID') or explicit
+    padding dimensions to apply to the input image before convolution.
+7 api_usage_example:
+- tf.nn.depthwise_conv2d(x, kernel, strides=[1, 1, 1, 1],
+- '                       padding=[[0, 0], [1, 0], [1, 0], [0, 0]]).numpy()'
+8 api_shape:
+  input tensor shape: (N, Height_in, Width_in, Channel_in)
+  filter tensor shape: (filter_height, filter_width, Channel_in, channel_multiplier)
+  output tensor shape: (N, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in * channel_multiplier
+    tensor height: If padding = "VALID", Height_out = floor((Height_in - filter_height) / strides_height + 1); 
+                  If padding = "SAME", Height_out = floor((Height_in - 1) / strides_height + 1)
+    tensor width: If padding = "VALID", Width_out = floor((Width_in - filter_width) / strides_width + 1); 
+                  If padding = "SAME", Width_out = floor((Width_in - 1) / strides_width + 1)

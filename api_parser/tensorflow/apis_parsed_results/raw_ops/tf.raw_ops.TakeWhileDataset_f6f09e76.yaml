@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TakeWhileDataset
+3 api_description: Creates a dataset that yields elements until a predicate returns
+  false, then stops iteration.
+4 api_signature: tf.raw_ops.TakeWhileDataset(input_dataset,predicate,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to iterate over and apply the take-while condition to.
+- predicate: A scalar-boolean function that determines whether to continue taking
+    elements from the dataset.
+- output_types: The data types of the tensors produced by the dataset elements.
+- output_shapes: The shapes of the tensors produced by the dataset elements.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,7 @@
+2 api_name: torch.package.PackageImporter.python_version
+3 api_description: Returns the Python version used to create the package.
+4 api_signature: python_version()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

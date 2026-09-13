@@ -1,0 +1,34 @@
+2 api_name: torch.nn.functional.cross_entropy
+3 api_description: Computes the cross entropy loss between predicted logits and true
+  class indices, measuring the difference between the predicted probabilities and
+  actual classes.
+4 api_signature: torch.nn.functional.cross_entropy(input,target,weight,reduction,ignore_index,label_smoothing)
+5 api_details: ''
+6 api_parameters:
+- input: Predicted unnormalized logits used to compute the loss.
+- target: Ground truth values used for computing the loss, either as class indices
+    or probabilities.
+- weight: Tensor providing rescaling weights for each class in the loss computation.
+- ignore_index: Specifies a target index to be ignored in the loss calculation, affecting
+    gradient computation.
+- reduction: 'Determines how the computed loss is aggregated: no reduction, mean,
+    or sum.'
+- label_smoothing: Amount of smoothing applied to the target distribution, blending
+    it with a uniform distribution.
+7 api_usage_example:
+- ' # Example of target with class indices'
+- ' input = torch.randn(3, 5, requires_grad=True)'
+- ' target = torch.randint(5, (3,), dtype=torch.int64)'
+- ' loss = F.cross_entropy(input, target)'
+- ' loss.backward()'
+- ' # Example of target with class probabilities'
+- ' input = torch.randn(3, 5, requires_grad=True)'
+- ' target = torch.randn(3, 5).softmax(dim=1)'
+- ' loss = F.cross_entropy(input, target)'
+- ' loss.backward()'
+8 api_shape:
+  input tensor shape: Shape (Channel_in), (N, Channel_in)
+  output tensor shape: null
+  tensor shape transform formulas:
+    \begin{aligned} Channel: \begin{aligned} Channel ={} & number of classes \\ N
+      ={} & batch size \\ \end{aligned}

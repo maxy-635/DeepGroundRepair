@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.prune.PruningContainer.compute_mask
+3 api_description: Computes the latest pruning mask, merges it with the existing default
+  mask, and returns the combined partial mask.
+4 api_signature: compute_mask(t)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor to be pruned, used to compute the updated mask and matching the default
+    mask’s shape.
+7 api_usage_example: null
+8 api_shape: null

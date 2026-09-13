@@ -1,0 +1,36 @@
+2 api_name: paddle.distribution.Gamma
+3 api_description: Represents a Gamma distribution parameterized by concentration
+  (alpha) and rate (beta), providing probability calculations and sampling for positive
+  continuous values.
+4 api_signature: '"paddle.distribution.Gamma(concentration,rate)"'
+5 api_details: ''
+6 api_parameters:
+- concentration: Shapes the Gamma distribution and must be positive, with broadcasting
+    support for batched independent distributions.
+- rate: Controls the Gamma distribution’s inverse scale and must be positive, with
+    broadcasting support for batched independent distributions.
+7 api_usage_example:
+- import paddle
+- '# scale input'
+- gamma = paddle.distribution.Gamma(0.5, 0.5)
+- print(gamma.mean)
+- Tensor(shape=[], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- 1.)
+- print(gamma.variance)
+- Tensor(shape=[], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- 2.)
+- print(gamma.entropy())
+- Tensor(shape=[], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- 0.78375685)
+- '# tensor input with broadcast'
+- gamma = paddle.distribution.Gamma(paddle.to_tensor([0.2, 0.4]), paddle.to_tensor(0.6))
+- print(gamma.mean)
+- Tensor(shape=[2], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[0.33333331, 0.66666663])'
+- print(gamma.variance)
+- Tensor(shape=[2], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[0.55555552, 1.11111104])'
+- print(gamma.entropy())
+- Tensor(shape=[2], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[-1.99634242,  0.17067254])'
+8 api_shape: {}

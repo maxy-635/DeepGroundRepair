@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.StateDictConfig
+3 api_description: Base configuration class for FSDP state_dict settings; users instantiate
+  a specific subclass to control how a particular state_dict type is produced.
+4 api_signature: torch.distributed.fsdp.StateDictConfig(offload_to_cpu)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

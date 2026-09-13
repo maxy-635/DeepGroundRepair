@@ -1,0 +1,8 @@
+2 api_name: paddle.isclose
+3 api_description: Returns whether corresponding values in x and y are close within
+  the given tolerances.
+4 api_signature: paddle.isclose(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

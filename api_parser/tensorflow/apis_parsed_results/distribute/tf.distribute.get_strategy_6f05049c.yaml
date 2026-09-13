@@ -1,0 +1,8 @@
+2 api_name: tensorflow.distribute.get_strategy
+3 api_description: Returns the current tf.distribute.Strategy, typically for use in
+  cross-replica context.
+4 api_signature: tf.distribute.get_strategy()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

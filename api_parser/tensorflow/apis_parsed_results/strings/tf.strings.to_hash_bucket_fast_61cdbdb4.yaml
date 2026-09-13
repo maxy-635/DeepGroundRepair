@@ -1,0 +1,12 @@
+2 api_name: tensorflow.strings.to_hash_bucket_fast
+3 api_description: Hashes each input string into a deterministic bucket index modulo
+  the specified number of buckets; fast but not cryptographically secure.
+4 api_signature: tf.strings.to_hash_bucket_fast(input,num_buckets)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor whose values are hashed into buckets.
+- num_buckets: The number of hash buckets to map the strings into, must be at least
+    1.
+7 api_usage_example:
+- tf.strings.to_hash_bucket_fast(["Hello", "TensorFlow", "2.x"], 3).numpy()
+8 api_shape: ''

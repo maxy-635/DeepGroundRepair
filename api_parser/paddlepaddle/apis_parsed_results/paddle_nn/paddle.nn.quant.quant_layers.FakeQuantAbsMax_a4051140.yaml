@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.quant.quant_layers.FakeQuantAbsMax
+3 api_description: The FakeQuantAbsMax layer performs absolute maximum-based fake
+  quantization and dequantization on input data.
+4 api_signature: paddle.nn.quant.quant_layers.FakeQuantAbsMax(quant_bits,quant_on_weight)
+5 api_details: ''
+6 api_parameters:
+- bit_length: Specifies the bit width used for quantization, determining the range
+    of representable values.
+- dtype: Defines the data type of the quantized output, such as float32 or int8.
+- quant_on_weight: Indicates whether the quantization is applied to weights (True)
+    or activations (False).
+- quant_on_activation: Indicates whether the quantization is applied to activations
+    (True) or weights (False).
+- moving_rate: Sets the rate at which the moving average updates during training for
+    dynamic quantization.
+- name: Provides a custom name for the layer, useful for identifying the layer in
+    a model.
+- quant_on: Specifies the target (e.g., weight, activation) for applying quantization.
+7 api_usage_example: []
+8 api_shape: null

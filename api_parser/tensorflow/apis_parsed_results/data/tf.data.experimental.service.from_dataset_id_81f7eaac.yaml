@@ -1,0 +1,29 @@
+2 api_name: tensorflow.data.experimental.service.from_dataset_id
+3 api_description: Creates a dataset that reads from a previously registered tf.data
+  service dataset by dataset ID, using an explicitly provided element spec that matches
+  the registered dataset.
+4 api_signature: tf.data.experimental.service.from_dataset_id(processing_mode,service,dataset_id,element_spec)
+5 api_details: ''
+6 api_parameters:
+- processing_mode: Controls how the dataset is sharded across tf.data workers.
+- service: Specifies the tf.data service dispatcher address and optional protocol
+    to connect to.
+- dataset_id: Identifies the registered dataset to read from the tf.data service.
+- element_spec: Describes the structure and types of dataset elements, required inside
+    `tf.function`.
+7 api_usage_example:
+- dispatcher = tf.data.experimental.service.DispatchServer()
+- dispatcher_address = dispatcher.target.split("://")[1]
+- worker = tf.data.experimental.service.WorkerServer(
+- '    tf.data.experimental.service.WorkerConfig('
+- '        dispatcher_address=dispatcher_address))'
+- dataset = tf.data.Dataset.range(10)
+- dataset_id = tf.data.experimental.service.register_dataset(
+- '    dispatcher.target, dataset)'
+- dataset = tf.data.experimental.service.from_dataset_id(
+- '    processing_mode="parallel_epochs",'
+- '    service=dispatcher.target,'
+- '    dataset_id=dataset_id,'
+- '    element_spec=dataset.element_spec)'
+- print(list(dataset.as_numpy_iterator()))
+8 api_shape: ''

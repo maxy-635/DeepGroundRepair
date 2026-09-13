@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.Sub
+3 api_description: Element-wise subtraction of y from x, supporting array and scalar
+  inputs, and returning x - y with values in the range (-inf, inf).
+4 api_signature: tf.raw_ops.Sub(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor, which provides the value to subtract from.
+- y: The second input tensor, which is subtracted from `x` and must have the same
+    type.
+7 api_usage_example:
+- x = np.ones(6).reshape(2, 3, 1)
+- y = np.ones(6).reshape(1, 6)
+- tf.subtract(x, y)
+8 api_shape: ''

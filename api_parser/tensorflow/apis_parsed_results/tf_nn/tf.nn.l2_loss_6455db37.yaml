@@ -1,0 +1,10 @@
+2 api_name: tensorflow.nn.l2_loss
+3 api_description: Computes half of the sum of squares of a tensor's elements, used
+  for L2 regularization.
+4 api_signature: tf.nn.l2_loss(t)
+5 api_details: ''
+6 api_parameters:
+- t: Represents the input tensor for which the L2 loss (sum of squares divided by
+    2) is computed.
+7 api_usage_example: null
+8 api_shape: ''

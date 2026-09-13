@@ -1,0 +1,8 @@
+2 api_name: torch.mps.event.Event.query
+3 api_description: Checks whether all work recorded by the MPS event has finished
+  executing.
+4 api_signature: '"query()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: torch.nn.GLU
+3 api_description: Applies the Gated Linear Unit (GLU) function, which combines linear
+  transformations with gating mechanisms to control the flow of information.
+4 api_signature: torch.nn.GLU(dim)
+5 api_details: ''
+6 api_parameters:
+- dim: Specifies the dimension along which the input tensor will be split into two
+    halves for the purpose of applying the Gated Linear Unit operation.
+7 api_usage_example:
+- ' m = nn.GLU()'
+- ' input = torch.randn(4, 2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (\ast_1, N, \ast_2) where * means, any number of additional
+    dimensions
+  output tensor shape: (\ast_1, M, \ast_2) where M=N/2
+  tensor shape transform formulas: {}

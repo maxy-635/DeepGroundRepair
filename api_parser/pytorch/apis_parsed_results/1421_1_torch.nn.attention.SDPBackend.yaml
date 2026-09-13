@@ -1,0 +1,8 @@
+2 api_name: torch.nn.attention.SDPBackend
+3 api_description: Enum-like set of scaled dot product attention backends used to
+  select the implementation PyTorch uses for attention computation.
+4 api_signature: class torch.nn.attention.SDPBackend#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

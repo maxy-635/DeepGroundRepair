@@ -1,0 +1,13 @@
+2 api_name: torch.isclose
+3 api_description: Compares two tensors elementwise and returns a boolean tensor indicating
+  where values are close within given tolerances.
+4 api_signature: torch.isclose(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor whose values are compared against the second tensor.
+- other: The second tensor to compare with the first tensor.
+7 api_usage_example:
+- ' torch.isclose(torch.tensor((1., 2, 3)), torch.tensor((1 + 1e-10, 3, 4)))'
+- ' torch.isclose(torch.tensor((float(''inf''), 4)), torch.tensor((float(''inf''),
+  6)), rtol=.5)'
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.nonzero
+3 api_description: Returns the indices of nonzero elements in the input array, matching
+  NumPy nonzero behavior.
+4 api_signature: tf.experimental.numpy.nonzero(a)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

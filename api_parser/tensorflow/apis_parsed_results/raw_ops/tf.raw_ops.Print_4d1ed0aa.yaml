@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Print
+3 api_description: Prints tensors during evaluation while passing the input through
+  unchanged.
+4 api_signature: tf.raw_ops.Print(input,data,message)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose value is passed through and printed.
+- data: A list of tensors whose values are printed when the op runs.
+- message: An optional prefix string added to the printed output or error message.
+7 api_usage_example: null
+8 api_shape: ''

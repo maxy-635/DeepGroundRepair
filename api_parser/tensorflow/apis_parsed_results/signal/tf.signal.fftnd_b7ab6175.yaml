@@ -1,0 +1,12 @@
+2 api_name: tensorflow.signal.fftnd
+3 api_description: Computes the n-dimensional discrete Fourier transform over selected
+  axes of the input, zero-padding when needed to match `fft_length` and using all
+  axes by default.
+4 api_signature: tf.signal.fftnd(input_tensor,fft_length,axes)
+5 api_details: ''
+6 api_parameters:
+- input: The complex tensor to be transformed.
+- fft_length: The FFT size to use for each transformed dimension.
+- axes: The axes along which to compute the FFT, matching the shape of `fft_length`.
+7 api_usage_example: null
+8 api_shape: ''

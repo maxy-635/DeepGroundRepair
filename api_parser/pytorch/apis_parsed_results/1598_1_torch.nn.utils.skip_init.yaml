@@ -1,0 +1,15 @@
+2 api_name: torch.nn.utils.skip_init
+3 api_description: Instantiates a module from a class and arguments without initializing
+  its parameters or buffers.
+4 api_signature: torch.nn.utils.skip_init(module_cls)
+5 api_details: ''
+6 api_parameters:
+- module_cls: The `torch.nn.Module` subclass to instantiate without running its parameter
+    initialization.
+7 api_usage_example:
+- ' import torch'
+- ' m = torch.nn.utils.skip_init(torch.nn.Linear, 5, 1)'
+- ' m.weight'
+- ' m2 = torch.nn.utils.skip_init(torch.nn.Linear, in_features=6, out_features=1)'
+- ' m2.weight'
+8 api_shape: null

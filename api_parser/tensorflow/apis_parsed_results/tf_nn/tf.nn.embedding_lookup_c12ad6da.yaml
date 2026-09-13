@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nn.embedding_lookup
+3 api_description: tensorflow.nn.embedding_lookup performs parallel lookups on a list
+  of tensors, treating them as partitions of a large embedding tensor. It assigns
+  ids to partitions contiguously and returns a dense tensor with the shape of ids
+  plus the shape of params excluding the first dimension.
+4 api_signature: tf.nn.embedding_lookup(params,ids)
+5 api_details: ''
+6 api_parameters:
+- params: Represents the full embedding tensor or a list of sharded tensors for lookup.
+- ids: Specifies the tensor of integer IDs to be used for retrieving embeddings from
+    params.
+7 api_usage_example: null
+8 api_shape: ''

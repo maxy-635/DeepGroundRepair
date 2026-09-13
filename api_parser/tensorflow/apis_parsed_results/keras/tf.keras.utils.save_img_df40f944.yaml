@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.utils.save_img
+3 api_description: Saves a NumPy image array to a file path or file object.
+4 api_signature: tf.keras.utils.save_img(path,x)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the destination path or file-like object where the image will be
+    saved.
+- x: Provides the NumPy array containing the image data to write.
+7 api_usage_example: null
+8 api_shape: ''

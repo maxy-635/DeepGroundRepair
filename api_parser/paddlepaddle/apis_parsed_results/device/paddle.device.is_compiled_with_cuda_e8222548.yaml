@@ -1,0 +1,10 @@
+2 api_name: paddle.device.is_compiled_with_cuda
+3 api_description: Returns whether the installed Paddle wheel was built with CUDA
+  support, indicating GPU execution is available.
+4 api_signature: paddle.device.is_compiled_with_cuda()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- support_gpu = paddle.device.is_compiled_with_cuda()
+8 api_shape: {}

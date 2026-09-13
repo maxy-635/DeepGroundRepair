@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.parametrize.ParametrizationList
+3 api_description: Sequential container that stores and manages a module’s original
+  parameters or buffers while applying registered parametrizations.
+4 api_signature: torch.nn.utils.parametrize.ParametrizationList(modules,original)
+5 api_details: ''
+6 api_parameters:
+- modules: The sequence of parametrization modules applied to the original tensor.
+- original: The underlying parameter or buffer being transformed by the parametrizations.
+7 api_usage_example: null
+8 api_shape: null

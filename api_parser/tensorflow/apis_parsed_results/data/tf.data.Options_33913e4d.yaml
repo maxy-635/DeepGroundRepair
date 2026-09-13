@@ -1,0 +1,14 @@
+2 api_name: tensorflow.data.Options
+3 api_description: Configures tf.data.Dataset-wide execution and optimization settings,
+  including static pipeline optimizations and dynamic tuning of transformation parallelism,
+  and carries those settings through dataset transformations.
+4 api_signature: tf.data.Options()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- dataset = tf.data.Dataset.range(42)
+- options = tf.data.Options()
+- options.deterministic = False
+- dataset = dataset.with_options(options)
+- print(dataset.options().deterministic)
+8 api_shape: ''

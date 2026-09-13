@@ -1,0 +1,8 @@
+2 api_name: torch.utils.benchmark.Measurement.merge
+3 api_description: Combines multiple benchmark measurements from repeated runs into
+  a single merged measurement.
+4 api_signature: staticmerge(measurements)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

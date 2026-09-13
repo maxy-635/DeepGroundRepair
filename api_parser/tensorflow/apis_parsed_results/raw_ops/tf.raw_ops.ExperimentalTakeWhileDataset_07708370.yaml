@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ExperimentalTakeWhileDataset
+3 api_description: Creates a dataset that yields elements until the predicate returns
+  false, stopping iteration at that point.
+4 api_signature: tf.raw_ops.ExperimentalTakeWhileDataset(input_dataset,predicate)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to which the take-while predicate is applied.
+- predicate: A boolean-returning function that decides whether to continue taking
+    elements from the dataset.
+7 api_usage_example: null
+8 api_shape: ''

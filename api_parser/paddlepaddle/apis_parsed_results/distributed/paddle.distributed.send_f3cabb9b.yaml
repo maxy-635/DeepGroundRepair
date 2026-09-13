@@ -1,0 +1,22 @@
+2 api_name: paddle.distributed.send
+3 api_description: Sends a tensor asynchronously to a specified receiver in distributed
+  training.
+4 api_signature: paddle.distributed.send(tensor,dst)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor containing the data to be sent.
+- dst: The rank ID of the target destination process.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data = paddle.to_tensor([7, 8, 9])'
+- '    dist.send(data, dst=1)'
+- 'else:'
+- '    data = paddle.to_tensor([1, 2, 3])'
+- '    dist.recv(data, src=0)'
+- print(data)
+- '# [7, 8, 9] (2 GPUs)'
+8 api_shape: {}

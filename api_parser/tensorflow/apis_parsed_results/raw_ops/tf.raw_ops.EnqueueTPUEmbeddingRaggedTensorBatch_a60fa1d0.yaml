@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.EnqueueTPUEmbeddingRaggedTensorBatch
+3 api_description: Enqueues a ragged batch of TPU embedding inputs, mapping each feature’s
+  table ID, sample splits, embedding indices, and aggregation weights to the corresponding
+  embedding table for lookup.
+4 api_signature: tf.raw_ops.EnqueueTPUEmbeddingRaggedTensorBatch(sample_splits,embedding_indices,table_ids,device_ordinal,name)
+5 api_details: ''
+6 api_parameters:
+- sample_splits: Provides row-split boundaries that divide the ragged batch into per-sample
+    segments.
+- embedding_indices: Provides the flattened embedding IDs to look up for each ragged
+    sample.
+- table_ids: Specifies which embedding table each input tensor is associated with.
+- device_ordinal: Selects the TPU device ordinal to target, or uses the default when
+    set to -1.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

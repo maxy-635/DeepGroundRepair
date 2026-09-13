@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.ops.PSRoIPool
+3 api_description: Builds a callable PSRoIPool operator that performs position-sensitive
+  ROI pooling on feature maps for object detection tasks.
+4 api_signature: paddle.vision.ops.PSRoIPool(output_size,spatial_scale)
+5 api_details: ''
+6 api_parameters:
+- spatial_scale: Scales ROI coordinates from the input feature-map space to the scale
+    used by the pooling operation.
+7 api_usage_example: []
+8 api_shape: {}

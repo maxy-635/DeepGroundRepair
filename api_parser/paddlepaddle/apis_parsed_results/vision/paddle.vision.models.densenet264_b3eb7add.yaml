@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.densenet264
+3 api_description: DenseNet-264 is a deep densely connected convolutional neural network
+  for image classification, designed to improve feature reuse and gradient flow through
+  direct connections between layers.
+4 api_signature: paddle.vision.models.densenet264(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet-pretrained weights.
+7 api_usage_example: []
+8 api_shape: {}

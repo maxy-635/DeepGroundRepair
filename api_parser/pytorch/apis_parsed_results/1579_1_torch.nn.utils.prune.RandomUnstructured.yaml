@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.prune.RandomUnstructured
+3 api_description: Randomly removes a specified fraction of unpruned tensor elements
+  by masking them out.
+4 api_signature: torch.nn.utils.prune.RandomUnstructured(amount)
+5 api_details: ''
+6 api_parameters:
+- amount: Specifies how many parameters to prune, either as a fraction of the total
+    when given as a float between 0.0 and 1.0, or as an absolute count when given
+    as an int.
+7 api_usage_example: null
+8 api_shape: null

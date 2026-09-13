@@ -1,0 +1,8 @@
+2 api_name: tensorflow.debugging.experimental.disable_dump_debug_info
+3 api_description: Disables TensorFlow debug info dumping enabled by `enable_dump_debug_info()`,
+  and does nothing if dumping was never enabled; repeated calls are safe and idempotent.
+4 api_signature: tf.debugging.experimental.disable_dump_debug_info()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

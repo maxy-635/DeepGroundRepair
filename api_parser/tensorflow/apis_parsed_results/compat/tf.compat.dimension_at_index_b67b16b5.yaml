@@ -1,0 +1,10 @@
+2 api_name: tensorflow.compat.dimension_at_index
+3 api_description: Returns the `Dimension` object at a specified index in a `TensorShape`,
+  providing compatibility between TensorFlow 1.x and 2.x shape behavior.
+4 api_signature: tf.compat.dimension_at_index(shape,index)
+5 api_details: ''
+6 api_parameters:
+- shape: The TensorShape whose dimension is being queried.
+- index: The integer position of the dimension to return.
+7 api_usage_example: null
+8 api_shape: ''

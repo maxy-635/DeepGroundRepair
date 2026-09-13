@@ -1,0 +1,29 @@
+2 api_name: torch.nn.EmbeddingBag
+3 api_description: torch.nn.EmbeddingBag computes aggregated sums or means of embeddings
+  for variable-length input sequences, optimizing memory usage by avoiding the creation
+  of intermediate embeddings.
+4 api_signature: torch.nn.EmbeddingBag(num_embeddings,embedding_dim,padding_idx,mode)
+5 api_details: ''
+6 api_parameters:
+- num_embeddings: Defines the total number of unique embeddings available.
+- embedding_dim: Specifies the dimensionality of each individual embedding vector.
+- mode: Determines the method of aggregating the embeddings in the bag, either by
+    sum, mean, or max.
+- padding_idx: Identifies a specific index whose corresponding embedding is fixed
+    and does not contribute to gradient updates.
+7 api_usage_example:
+- ' # an EmbeddingBag module containing 10 tensors of size 3'
+- ' embedding_sum = nn.EmbeddingBag(10, 3, mode=''sum'')'
+- ' # a batch of 2 samples of 4 indices each'
+- ' input = torch.tensor([1, 2, 4, 5, 4, 3, 2, 9], dtype=torch.long)'
+- ' offsets = torch.tensor([0, 4], dtype=torch.long)'
+- ' embedding_sum(input, offsets)'
+- ' # Example with padding_idx'
+- ' embedding_sum = nn.EmbeddingBag(10, 3, mode=''sum'', padding_idx=2)'
+- ' input = torch.tensor([2, 2, 2, 2, 4, 3, 2, 9], dtype=torch.long)'
+- ' offsets = torch.tensor([0, 4], dtype=torch.long)'
+- ' embedding_sum(input, offsets)'
+- ' # An EmbeddingBag can be loaded from an Embedding like so'
+- ' embedding = nn.Embedding(10, 3, padding_idx=2)'
+- ' embedding_sum = nn.EmbeddingBag.from_pretrained('
+8 api_shape: null

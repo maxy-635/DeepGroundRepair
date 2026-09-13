@@ -1,0 +1,11 @@
+2 api_name: tensorflow.config.threading.set_intra_op_parallelism_threads
+3 api_description: Sets how many threads TensorFlow uses to parallelize work within
+  a single operation, such as matrix multiplies and reductions; `0` lets TensorFlow
+  choose automatically.
+4 api_signature: tf.config.threading.set_intra_op_parallelism_threads(num_threads)
+5 api_details: ''
+6 api_parameters:
+- num_threads: Sets how many threads TensorFlow uses to run individual operations
+    in parallel.
+7 api_usage_example: null
+8 api_shape: ''

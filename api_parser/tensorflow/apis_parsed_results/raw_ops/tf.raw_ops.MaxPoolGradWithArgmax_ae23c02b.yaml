@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.MaxPoolGradWithArgmax
+3 api_description: Computes the gradient of max pooling using the original input,
+  pooled output, upstream gradients, and argmax indices to route each gradient to
+  the max-selected input positions.
+4 api_signature: tf.raw_ops.MaxPoolGradWithArgmax(input,grad,argmax,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the original input tensor whose pooled values are being differentiated.
+- grad: Supplies the gradient tensor from the max-pool output to backpropagate.
+- argmax: Gives the indices of the selected maximum values for each pooled output.
+- ksize: Specifies the pooling window size for each input dimension.
+- strides: Specifies the step size of the sliding pooling window for each input dimension.
+- padding: Chooses whether pooling uses `SAME` or `VALID` padding.
+7 api_usage_example: null
+8 api_shape: ''

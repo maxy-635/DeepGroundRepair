@@ -1,0 +1,15 @@
+2 api_name: torch.nn.utils.fuse_linear_bn_weights
+3 api_description: Combines a Linear layer’s weights and bias with BatchNorm parameters
+  to produce equivalent fused Linear parameters for inference.
+4 api_signature: torch.nn.utils.fuse_linear_bn_weights(linear_w,bn_rm,bn_rv,bn_eps,bn_w,bn_b)
+5 api_details: ''
+6 api_parameters:
+- linear_w: The weight tensor of the linear layer to be fused with BatchNorm.
+- linear_b: The bias tensor of the linear layer to be fused with BatchNorm.
+- bn_rm: The running mean stored by BatchNorm for normalization.
+- bn_rv: The running variance stored by BatchNorm for normalization.
+- bn_eps: A small constant added to the variance for numerical stability.
+- bn_w: The affine scale parameter of BatchNorm.
+- bn_b: The affine shift parameter of BatchNorm.
+7 api_usage_example: null
+8 api_shape: null

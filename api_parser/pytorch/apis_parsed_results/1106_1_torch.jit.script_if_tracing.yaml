@@ -1,0 +1,9 @@
+2 api_name: torch.jit.script_if_tracing
+3 api_description: Compiles the function on its first call during tracing, then uses
+  the scripted version.
+4 api_signature: torch.jit.script_if_tracing(fn)
+5 api_details: ''
+6 api_parameters:
+- fn: The function to compile when tracing is active.
+7 api_usage_example: null
+8 api_shape: null

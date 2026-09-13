@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.conv3d
+3 api_description: Computes a 3D convolution on a 5D input tensor using a 5D kernel,
+  with configurable strides, padding, data format, dilation, and optional groups.
+4 api_signature: tf.keras.backend.conv3d(x,kernel,strides,padding)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

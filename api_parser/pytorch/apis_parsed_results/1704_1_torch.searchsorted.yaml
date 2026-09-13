@@ -1,0 +1,20 @@
+2 api_name: torch.searchsorted
+3 api_description: Returns insertion indices for each value in a sorted sequence,
+  preserving sorted order in the innermost dimension.
+4 api_signature: torch.searchsorted(sorted_sequence,values,right,side)
+5 api_details: ''
+6 api_parameters:
+- sorted_sequence: The sorted sequence to search within, with values ordered along
+    the innermost dimension unless a sorter is provided.
+- values: The value or values to locate in the sorted sequence.
+7 api_usage_example:
+- ' sorted_sequence = torch.tensor([[1, 3, 5, 7, 9], [2, 4, 6, 8, 10]])'
+- ' sorted_sequence'
+- ' values = torch.tensor([[3, 6, 9], [3, 6, 9]])'
+- ' values'
+- ' torch.searchsorted(sorted_sequence, values)'
+- ' torch.searchsorted(sorted_sequence, values, side=''right'')'
+- ' sorted_sequence_1d = torch.tensor([1, 3, 5, 7, 9])'
+- ' sorted_sequence_1d'
+- ' torch.searchsorted(sorted_sequence_1d, values)'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.MultiDeviceIteratorFromStringHandle
+3 api_description: Recreates a MultiDeviceIterator resource from a provided string
+  handle so it can be used to continue or resume multi-device iteration.
+4 api_signature: tf.raw_ops.MultiDeviceIteratorFromStringHandle(string_handle,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- string_handle: Provides the string resource handle used to identify the multi-device
+    iterator.
+- output_types: Specifies the data types of the tensors returned by the iterator.
+- output_shapes: Specifies the shapes of the tensors returned by the iterator.
+7 api_usage_example: null
+8 api_shape: ''

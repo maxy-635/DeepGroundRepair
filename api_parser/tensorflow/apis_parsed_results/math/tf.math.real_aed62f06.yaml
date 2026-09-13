@@ -1,0 +1,9 @@
+2 api_name: tensorflow.math.real
+3 api_description: Returns the real-valued part of each element in a tensor, converting
+  complex inputs to their real component and leaving real inputs unchanged.
+4 api_signature: tf.math.real(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose real-valued component is returned.
+7 api_usage_example: null
+8 api_shape: ''

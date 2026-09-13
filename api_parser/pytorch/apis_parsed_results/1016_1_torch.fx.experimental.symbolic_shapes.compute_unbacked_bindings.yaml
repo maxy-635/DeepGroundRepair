@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.compute_unbacked_bindings
+3 api_description: Traverses a fake-tensor `example_value` to find newly created unbacked
+  symbolic integers, records where they appear for later binding, and errors if any
+  allocated unbacked `SymInt` cannot be found in the output structure.
+4 api_signature: torch.fx.experimental.symbolic_shapes.compute_unbacked_bindings(shape_env,example_value,old_example_value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

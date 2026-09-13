@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.RefExit
+3 api_description: Exits the current frame and passes its input data to the parent
+  frame.
+4 api_signature: tf.raw_ops.RefExit(data)
+5 api_details: ''
+6 api_parameters:
+- data: The mutable tensor to pass out of the current frame and make available to
+    the parent frame.
+7 api_usage_example: null
+8 api_shape: ''

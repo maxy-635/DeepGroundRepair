@@ -1,0 +1,13 @@
+2 api_name: torch.fft.fftfreq
+3 api_description: Returns the discrete Fourier Transform sample frequencies for a
+  signal of length n.
+4 api_signature: torch.fft.fftfreq(n,d)
+5 api_details: ''
+6 api_parameters:
+- n: Specifies the number of points in the FFT and thus the length of the frequency
+    output.
+- d: Sets the sample spacing, which determines the frequency scale of the returned
+    values.
+7 api_usage_example:
+- f = [0, 1, ..., (n - 1) // 2, -(n // 2), ..., -1] / (d * n)
+8 api_shape: null

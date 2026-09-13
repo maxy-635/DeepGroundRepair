@@ -1,0 +1,13 @@
+2 api_name: torch.linalg.tensorinv
+3 api_description: Computes the inverse of a tensor contraction, returning a tensor
+  that undoes torch.tensordot when the input is reshaped appropriately.
+4 api_signature: torch.linalg.tensorinv(A,ind)
+5 api_details: ''
+6 api_parameters:
+- A: The tensor to invert, whose shape must be such that the product of dimensions
+    before `ind` equals the product of dimensions from `ind` onward.
+- ind: The axis index that splits the tensor into two parts for computing the inverse
+    of `torch.tensordot()`.
+7 api_usage_example:
+- X.shape == A.shape[ind:] + A.shape[:ind]
+8 api_shape: null

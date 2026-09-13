@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.MultiMarginLoss
+3 api_description: The paddle.nn.MultiMarginLoss API computes a multi-hinge
+  loss for classification tasks, optimizing the margin between predicted and true
+  labels.
+4 api_signature: paddle.nn.MultiMarginLoss(p,margin)
+5 api_details: ''
+6 api_parameters:
+- p: Specifies the norm degree to be used for calculating the pairwise distance between
+    inputs.
+- margin: Defines the minimum distance margin that should be maintained between the
+    correct and the others.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- input = paddle.to_tensor([[1, -2, 3], [0, -1, 2], [1, 0, 1]], dtype=paddle.float32)
+- label = paddle.to_tensor([0, 1, 2], dtype=paddle.int32)
+- multi_margin_loss = nn.MultiMarginLoss(reduction='mean')
+- loss = multi_margin_loss(input, label)
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.11111104)
+8 api_shape: null

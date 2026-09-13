@@ -1,0 +1,9 @@
+2 api_name: torch.hub.set_dir
+3 api_description: Sets the Torch Hub cache directory used to store downloaded models
+  and weights.
+4 api_signature: torch.hub.set_dir(dir)
+5 api_details: ''
+6 api_parameters:
+- d: Specifies the local folder path where downloaded models and weights will be saved.
+7 api_usage_example: null
+8 api_shape: null

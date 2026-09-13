@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.functional.embedding
+3 api_description: The paddle.nn.functional.embedding API retrieves embedding vectors
+  for given input IDs.
+4 api_signature: paddle.nn.functional.embedding(x,weight)
+5 api_details: ''
+6 api_parameters:
+- x: A tensor containing integer IDs used to index into the embedding table, with
+    values ranging from 0 to the first dimension of the weight tensor minus one.
+- weight: A tensor representing the embedding lookup table, where the first dimension
+    is the size of the dictionary of embeddings and the second dimension is the size
+    of each embedding vector.
+7 api_usage_example: []
+8 api_shape: null

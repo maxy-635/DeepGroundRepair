@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.StackedRNNCells
+3 api_description: The StackedRNNCells API in tf.keras allows multiple RNN cells to
+  be combined into a single cell, enabling efficient implementation of stacked RNN
+  architectures.
+4 api_signature: tf.keras.layers.StackedRNNCells(cells)
+5 api_details: ''
+6 api_parameters:
+- cells: A list of RNN cell instances that will be stacked to create a multi-layer
+    RNN architecture.
+7 api_usage_example: null
+8 api_shape: null

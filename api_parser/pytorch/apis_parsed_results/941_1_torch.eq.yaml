@@ -1,0 +1,11 @@
+2 api_name: torch.eq
+3 api_description: Returns a boolean tensor indicating where corresponding elements
+  in the input tensors are equal.
+4 api_signature: torch.eq(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor whose elements will be compared.
+- other: Specifies the tensor or scalar value to compare against.
+7 api_usage_example:
+- ' torch.eq(torch.tensor([[1, 2], [3, 4]]), torch.tensor([[1, 1], [4, 4]]))'
+8 api_shape: null

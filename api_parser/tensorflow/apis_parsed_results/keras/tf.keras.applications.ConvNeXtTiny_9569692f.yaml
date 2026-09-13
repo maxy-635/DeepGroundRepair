@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.applications.ConvNeXtTiny
+3 api_description: Builds the ConvNeXtTiny image classification model in Keras, providing
+  a pre-trained or configurable backbone for classification, transfer learning, and
+  fine-tuning.
+4 api_signature: tf.keras.applications.ConvNeXtTiny(weights,include_top,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Controls whether the model includes the final classification layer.
+- weights: Selects the weight initialization source, such as random, ImageNet-pretrained,
+    or a custom weight file.
+- input_shape: Sets the input tensor shape when excluding the top layer, with exactly
+    3 channels.
+- classes: Specifies the number of output classes when using the top layer without
+    preloaded weights.
+7 api_usage_example: null
+8 api_shape: ''

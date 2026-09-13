@@ -1,0 +1,9 @@
+2 api_name: torch.mtia.stream
+3 api_description: Context manager that selects and restores the active MTIA stream
+  for the current scope.
+4 api_signature: torch.mtia.stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: Specifies the selected stream; if it is `None`, the manager does nothing.
+7 api_usage_example: null
+8 api_shape: null

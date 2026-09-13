@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.dot
+3 api_description: The tf.keras.layers.dot API provides a layer that computes the
+  dot product between two input tensors, enabling efficient integration of linear
+  algebra operations within a Keras model.
+4 api_signature: tf.keras.layers.dot(inputs, axes)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of at least two input tensors that will be used for the dot product
+    operation.
+- axes: Specifies the axis or axes along which the dot product will be computed, either
+    as an integer or a tuple of integers.
+7 api_usage_example: null
+8 api_shape: null

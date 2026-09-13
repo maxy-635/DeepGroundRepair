@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.layers.TimeDistributed
+3 api_description: The tf.keras.layers.TimeDistributed API allows the application
+  of a layer to each temporal slice of a multi-dimensional input, enabling independent
+  processing of sequences, such as applying Conv2D to each frame of a video.
+4 api_signature: tf.keras.layers.TimeDistributed(layer)
+5 api_details: ''
+6 api_parameters:
+- layer: A Keras layer instance that will be applied to each time step of the input
+    independently.
+7 api_usage_example:
+- inputs = layers.Input(shape=(10, 128, 128, 3), batch_size=32)
+- conv_2d_layer = layers.Conv2D(64, (3, 3))
+- outputs = layers.TimeDistributed(conv_2d_layer)(inputs)
+- outputs.shape
+8 api_shape: null

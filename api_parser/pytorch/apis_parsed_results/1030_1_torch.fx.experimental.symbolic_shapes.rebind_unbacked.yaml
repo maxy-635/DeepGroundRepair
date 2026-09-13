@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.rebind_unbacked
+3 api_description: Records that newly re-propagated unbacked SymInts from a retraced
+  FX result correspond to the original unbacked SymInts bound to a given old FX Node,
+  so the shape environment can treat them as equivalent.
+4 api_signature: torch.fx.experimental.symbolic_shapes.rebind_unbacked(shape_env,result)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

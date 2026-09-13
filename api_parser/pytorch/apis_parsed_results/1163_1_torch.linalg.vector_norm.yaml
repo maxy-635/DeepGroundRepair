@@ -1,0 +1,19 @@
+2 api_name: torch.linalg.vector_norm
+3 api_description: Computes the vector norm of a tensor along the specified dimensions,
+  returning its magnitude according to the chosen order.
+4 api_signature: torch.linalg.vector_norm(x,ord,dim)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to compute the norm of, flattened by default unless `dim` is
+    specified.
+- ord: The norm order that determines which vector norm is computed.
+- dim: The dimension or dimensions over which to compute the norm.
+7 api_usage_example:
+- ' from torch import linalg as LA'
+- ' a = torch.arange(9, dtype=torch.float) - 4'
+- ' a'
+- ' B = a.reshape((3, 3))'
+- ' B'
+- ' LA.vector_norm(a, ord=3.5)'
+- ' LA.vector_norm(B, ord=3.5)'
+8 api_shape: null

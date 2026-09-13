@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.layers.UpSampling1D
+3 api_description: Upsamples 1D input by repeating each temporal step a specified
+  number of times along the time axis.
+4 api_signature: tf.keras.layers.UpSampling1D(size)
+5 api_details: ''
+6 api_parameters:
+- size: The integer value that specifies the factor by which to upsample the input.
+7 api_usage_example:
+- input_shape = (2, 2, 3)
+- x = np.arange(np.prod(input_shape)).reshape(input_shape)
+- x
+- y = keras.layers.UpSampling1D(size=2)(x)
+- y
+8 api_shape: null

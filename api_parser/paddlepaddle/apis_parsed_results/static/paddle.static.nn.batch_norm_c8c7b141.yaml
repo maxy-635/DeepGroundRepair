@@ -1,0 +1,28 @@
+2 api_name: paddle.static.nn.batch_norm
+3 api_description: Applies batch normalization to a static graph tensor, normalizing
+  features using batch statistics during training and stored moving statistics during
+  inference to improve stability and convergence.
+4 api_signature: paddle.static.nn.batch_norm(input,is_test,momentum,epsilon,data_layout,name,use_global_stats)
+5 api_details: ''
+6 api_parameters:
+- input: Input tensor to normalize, with rank 2, 3, 4, or 5 and dtype float16, float32,
+    or float64.
+- is_test: Indicates whether batch norm runs in test/inference mode.
+- momentum: Controls the exponential moving average update rate for moving mean and
+    variance.
+- epsilon: Adds a small constant to the denominator for numerical stability.
+- data_layout: Specifies the input/output data format, either `NCHW` or `NHWC`.
+- name: Optional name for the operation.
+- use_global_stats: Determines whether to use global mean and variance instead of
+    batch statistics.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data(name='x', shape=[3, 7, 3, 7], dtype='float32')
+- hidden1 = paddle.static.nn.fc(x=x, size=200)
+- print(hidden1.shape)
+- (3, 200)
+- hidden2 = paddle.static.nn.batch_norm(input=hidden1)
+- print(hidden2.shape)
+- (3, 200)
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: paddle.CPUPlace
+3 api_description: Describes a CPU device for allocating tensors and running models
+  on the CPU.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- cpu_place = paddle.CPUPlace()
+8 api_shape: {}

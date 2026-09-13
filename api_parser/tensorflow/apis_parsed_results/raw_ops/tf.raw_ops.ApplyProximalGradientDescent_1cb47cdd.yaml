@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.ApplyProximalGradientDescent
+3 api_description: Updates a variable using proximal gradient descent with a fixed
+  learning rate, applying L1/L2 regularization via the FOBOS rule.
+4 api_signature: tf.raw_ops.ApplyProximalGradientDescent(var,alpha,l1,l2,delta)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated in place by the proximal gradient descent
+    step.
+- alpha: The scalar step size that controls how large the update is.
+- l1: The scalar coefficient for L1 regularization, encouraging sparsity in the updated
+    variable.
+- l2: The scalar coefficient for L2 regularization, controlling weight decay in the
+    updated variable.
+- delta: The gradient-like change used to compute the proximal update.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: torch.special.log_ndtr
+3 api_description: Computes the elementwise logarithm of the standard normal cumulative
+  distribution function up to each input value.
+4 api_signature: torch.special.log_ndtr(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used as inputs to compute the logarithm of
+    the standard normal cumulative distribution function.
+7 api_usage_example:
+- ' torch.special.log_ndtr(torch.tensor([-3., -2, -1, 0, 1, 2, 3]))'
+8 api_shape: null

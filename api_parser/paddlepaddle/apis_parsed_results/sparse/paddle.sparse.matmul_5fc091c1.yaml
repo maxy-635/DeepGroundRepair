@@ -1,0 +1,46 @@
+2 api_name: paddle.sparse.matmul
+3 api_description: Performs matrix multiplication between two tensors, supporting
+  sparse inputs through Paddle's sparse matmul API.
+4 api_signature: paddle.sparse.matmul(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The left-hand input sparse tensor to be multiplied.
+- y: The right-hand input tensor, which may be sparse or dense, to multiply with `x`.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- '# csr @ dense -> dense'
+- crows = [0, 1, 2, 3]
+- cols = [1, 2, 0]
+- values = [1., 2., 3.]
+- csr = paddle.sparse.sparse_csr_tensor(crows, cols, values, [3, 3])
+- print(csr)
+- Tensor(shape=[3, 3], dtype=paddle.float32, place=Place(gpu:0), stop_gradient=True,
+- crows=[0, 1, 2, 3],
+- cols=[1, 2, 0],
+- values=[1., 2., 3.])
+- dense = paddle.ones([3, 2])
+- out = paddle.sparse.matmul(csr, dense)
+- print(out)
+- Tensor(shape=[3, 2], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[1., 1.],'
+- '[2., 2.],'
+- '[3., 3.]])'
+- '# coo @ dense -> dense'
+- indices = [[0, 1, 2], [1, 2, 0]]
+- values = [1., 2., 3.]
+- coo = paddle.sparse.sparse_coo_tensor(indices, values, [3, 3])
+- print(coo)
+- Tensor(shape=[3, 3], dtype=paddle.float32, place=Place(gpu:0), stop_gradient=True,
+- indices=[[0, 1, 2],
+- '[1, 2, 0]],'
+- values=[1., 2., 3.])
+- dense = paddle.ones([3, 2])
+- out = paddle.sparse.matmul(coo, dense)
+- print(out)
+- Tensor(shape=[3, 2], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[1., 1.],'
+- '[2., 2.],'
+- '[3., 3.]])'
+8 api_shape: {}

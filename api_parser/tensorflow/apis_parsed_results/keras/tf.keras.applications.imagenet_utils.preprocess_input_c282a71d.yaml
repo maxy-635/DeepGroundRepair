@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.applications.imagenet_utils.preprocess_input
+3 api_description: Preprocesses image batches for Keras applications by converting
+  tensors or NumPy arrays into the model-specific input format expected by ImageNet-pretrained
+  networks.
+4 api_signature: tf.keras.applications.imagenet_utils.preprocess_input(x,mode)
+5 api_details: ''
+6 api_parameters:
+- mode: 'Selects which ImageNet preprocessing convention to apply: Caffe, TensorFlow,
+    or PyTorch.'
+7 api_usage_example: null
+8 api_shape: ''

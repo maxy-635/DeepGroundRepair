@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.EncodeJpegVariableQuality
+3 api_description: Encodes a 3-D uint8 image tensor as JPEG using a specified compression
+  quality from 0 to 100.
+4 api_signature: tf.raw_ops.EncodeJpegVariableQuality(images,quality)
+5 api_details: ''
+6 api_parameters:
+- images: Provides the uint8 image tensor to be JPEG-encoded, with at least 3 dimensions.
+- quality: Specifies the JPEG encoding quality as an int32 value.
+7 api_usage_example: null
+8 api_shape: ''

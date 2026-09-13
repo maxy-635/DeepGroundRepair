@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.metrics.SparseCategoricalCrossentropy
+3 api_description: Computes sparse categorical crossentropy between integer labels
+  and predicted class probabilities for two or more classes.
+4 api_signature: tf.keras.metrics.SparseCategoricalCrossentropy(name,from_logits)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the metric instance’s display name.
+- from_logits: Indicates whether the model outputs raw logits instead of probability
+    values.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([1, 2],
+- '               [[0.05, 0.95, 0], [0.1, 0.8, 0.1]],'
+- '               sample_weight=np.array([0.3, 0.7]))'
+- m.result()
+8 api_shape: ''

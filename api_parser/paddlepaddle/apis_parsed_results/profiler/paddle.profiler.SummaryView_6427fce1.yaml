@@ -1,0 +1,8 @@
+2 api_name: paddle.profiler.SummaryView
+3 api_description: Provides a summary view for profiling results, organizing and presenting
+  different collected contents in a concise overview.
+4 api_signature: class paddle.profiler.SummaryView(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

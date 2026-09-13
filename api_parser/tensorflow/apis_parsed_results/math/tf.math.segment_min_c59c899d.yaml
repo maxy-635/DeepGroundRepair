@@ -1,0 +1,14 @@
+2 api_name: tensorflow.math.segment_min
+3 api_description: Computes the minimum value for each segment in a tensor, returning
+  0 for any segment with no elements.
+4 api_signature: tf.math.segment_min(data,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are reduced by segment to compute the minimum
+    for each group.
+- segment_ids: A 1-D sorted tensor of segment labels, matching the first dimension
+    of `data`, that determines which rows are grouped together.
+7 api_usage_example:
+- c = tf.constant([[1,2,3,4], [4, 3, 2, 1], [5,6,7,8]])
+- tf.math.segment_min(c, tf.constant([0, 0, 1])).numpy()
+8 api_shape: ''

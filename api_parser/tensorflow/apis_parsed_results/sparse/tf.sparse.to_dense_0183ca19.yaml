@@ -1,0 +1,12 @@
+2 api_name: tensorflow.sparse.to_dense
+3 api_description: Converts a SparseTensor to a dense tensor, filling empty positions
+  with a default value.
+4 api_signature: tf.sparse.to_dense(sp_input,default_value)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The SparseTensor to convert into a dense tensor.
+- default_value: The scalar value used to fill entries not present in the SparseTensor,
+    defaulting to zero.
+7 api_usage_example:
+- tf.sparse.to_dense(sp_input).numpy()
+8 api_shape: ''

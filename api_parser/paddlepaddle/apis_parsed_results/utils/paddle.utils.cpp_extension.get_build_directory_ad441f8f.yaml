@@ -1,0 +1,8 @@
+2 api_name: paddle.utils.cpp_extension.get_build_directory
+3 api_description: Returns the directory used to store Paddle extension shared libraries,
+  using PADDLE_EXTENSION_DIR if set, otherwise defaulting to ~/.cache/paddle_extension.
+4 api_signature: paddle.utils.cpp_extension.get_build_directory(verbose)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

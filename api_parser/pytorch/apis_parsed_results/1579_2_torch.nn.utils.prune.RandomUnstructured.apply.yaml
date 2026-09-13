@@ -1,0 +1,12 @@
+2 api_name: torch.nn.utils.prune.RandomUnstructured.apply
+3 api_description: Randomly removes the specified fraction of a tensor’s individual
+  elements, applies the pruning mask immediately, and reparameterizes the parameter
+  so the original weights are preserved separately from the pruned version.
+4 api_signature: apply(name,amount)
+5 api_details: ''
+6 api_parameters:
+- name: Specifies which module parameter tensor will be pruned.
+- amount: Sets how many parameters to remove, either as a fraction or an absolute
+    count.
+7 api_usage_example: null
+8 api_shape: null

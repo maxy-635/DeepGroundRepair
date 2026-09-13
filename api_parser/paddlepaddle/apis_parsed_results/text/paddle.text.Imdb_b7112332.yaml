@@ -1,0 +1,13 @@
+2 api_name: paddle.text.Imdb
+3 api_description: Loads and provides access to the IMDB sentiment analysis dataset,
+  including text samples and labels for training, validation, and testing.
+4 api_signature: paddle.text.Imdb(mode,cutoff,download)
+5 api_details: ''
+6 api_parameters:
+- mode: Selects whether to load the training or test split, with `train` as the default.
+- cutoff: Sets the minimum word frequency required to include a word in the dictionary,
+    defaulting to 150.
+- download: Controls whether the dataset is automatically downloaded when `data_file`
+    is not provided, defaulting to `True`.
+7 api_usage_example: []
+8 api_shape: {}

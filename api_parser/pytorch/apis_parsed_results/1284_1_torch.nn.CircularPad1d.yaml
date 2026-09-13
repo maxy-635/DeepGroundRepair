@@ -1,0 +1,21 @@
+2 api_name: torch.nn.CircularPad1d
+3 api_description: torch.nn.CircularPad1d applies circular padding to a 1D input tensor,
+  wrapping the edges around to pad the boundaries.
+4 api_signature: torch.nn.CircularPad1d(padding)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the size of the circular padding, where a single integer applies
+    the same padding to all boundaries and a 2-tuple allows for different padding
+    sizes on each side.
+7 api_usage_example:
+- ' m = nn.CircularPad1d(2)'
+- ' input = torch.arange(8, dtype=torch.float).reshape(1, 2, 4)'
+- ' input'
+- ' m(input)'
+- ' # using different paddings for different sides'
+- ' m = nn.CircularPad1d((3, 1))'
+- ' m(input)'
+8 api_shape:
+  input tensor shape: (Channel_in, Width_in)
+  output tensor shape: (Channel_out, Width_out)
+  tensor shape transform formulas: {}

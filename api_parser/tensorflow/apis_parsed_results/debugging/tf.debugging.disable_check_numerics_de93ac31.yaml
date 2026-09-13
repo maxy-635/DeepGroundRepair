@@ -1,0 +1,8 @@
+2 api_name: tensorflow.debugging.disable_check_numerics
+3 api_description: Disables TensorFlow’s eager and graph numerics checking for NaN
+  and infinity detection on the current thread.
+4 api_signature: tf.debugging.disable_check_numerics()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.split
+3 api_description: Split a tensor into multiple view chunks along a specified dimension.
+4 api_signature: torch.split(tensor,split_size_or_sections)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to split into smaller pieces.
+7 api_usage_example:
+- ' a = torch.arange(10).reshape(5, 2)'
+- ' a'
+- ' torch.split(a, 2)'
+- ' torch.split(a, [1, 4])'
+8 api_shape: null

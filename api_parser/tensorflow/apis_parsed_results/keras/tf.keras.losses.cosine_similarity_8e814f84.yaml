@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.losses.cosine_similarity
+3 api_description: Computes cosine similarity between labels and predictions, returning
+  a value from -1 to 1 that can be used as a loss to maximize alignment between vectors.
+4 api_signature: tf.keras.losses.cosine_similarity(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: The ground-truth target tensor used as the reference for computing cosine
+    similarity.
+- y_pred: The predicted target tensor whose cosine similarity to `y_true` is calculated.
+7 api_usage_example:
+- y_true = [[0., 1.], [1., 1.], [1., 1.]]
+- y_pred = [[1., 0.], [1., 1.], [-1., -1.]]
+- loss = keras.losses.cosine_similarity(y_true, y_pred, axis=-1)
+8 api_shape: ''

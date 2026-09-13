@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.vgg19.preprocess_input
+3 api_description: Prepares a batch of images for VGG19 by converting inputs to the
+  format expected by the model.
+4 api_signature: tf.keras.applications.vgg19.preprocess_input(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input image data to be converted into VGG19-preprocessed form by scaling and
+    channel-wise normalization.
+7 api_usage_example: null
+8 api_shape: ''

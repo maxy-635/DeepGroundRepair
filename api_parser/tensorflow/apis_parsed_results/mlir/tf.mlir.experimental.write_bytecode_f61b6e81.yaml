@@ -1,0 +1,9 @@
+2 api_name: tensorflow.mlir.experimental.write_bytecode
+3 api_description: Writes an MLIR module to bytecode format.
+4 api_signature: tf.mlir.experimental.write_bytecode(filename,mlir_txt)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the output file path where the bytecode will be written.
+- mlir_txt: Provides the MLIR module text that will be converted to bytecode and written.
+7 api_usage_example: null
+8 api_shape: ''

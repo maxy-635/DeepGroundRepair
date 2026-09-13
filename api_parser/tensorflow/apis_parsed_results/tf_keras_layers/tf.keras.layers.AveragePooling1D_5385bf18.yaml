@@ -1,0 +1,25 @@
+2 api_name: tensorflow.keras.layers.AveragePooling1D
+3 api_description: AveragePooling1D downsamples temporal data by averaging values
+  within a defined window (pool_size) and shifting it by strides, with options for
+  'valid' or 'same' padding affecting the output shape.
+4 api_signature: tf.keras.layers.AveragePooling1D(pool_size, strides, padding)
+5 api_details: ''
+6 api_parameters:
+- pool_size: Defines the size of the window used for averaging the input.
+- strides: Specifies the step size for moving the pooling window; defaults to pool_size
+    if None.
+- padding: Determines the padding method, with 'valid' meaning no padding and 'same'
+    ensuring the output dimensions match the input.
+7 api_usage_example:
+- x = np.array([1., 2., 3., 4., 5.])
+- x = np.reshape(x, [1, 5, 1])
+- avg_pool_1d = keras.layers.AveragePooling1D(pool_size=2,
+- '   strides=1, padding="same")'
+- avg_pool_1d(x)
+8 api_shape:
+  input tensor shape: (N, Length_in, Channel_in)
+  output tensor shape: (N, Length_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor length: If padding = "valid", Length_out = floor((Length_in - pool_size) / strides + 1); 
+                  If padding = "same", Length_out = floor((Length_in - 1) / strides + 1)

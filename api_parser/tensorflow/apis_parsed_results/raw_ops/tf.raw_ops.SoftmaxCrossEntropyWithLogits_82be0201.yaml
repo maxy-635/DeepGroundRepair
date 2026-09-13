@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SoftmaxCrossEntropyWithLogits
+3 api_description: Computes softmax cross entropy loss from logits and returns the
+  loss plus gradients for backpropagation.
+4 api_signature: tf.raw_ops.SoftmaxCrossEntropyWithLogits(features,labels)
+5 api_details: ''
+6 api_parameters:
+- features: Provides the model's predicted logits for each class in each batch example.
+- labels: Provides the target probability distribution for each batch example, used
+    to compute the cross-entropy loss.
+7 api_usage_example: null
+8 api_shape: ''

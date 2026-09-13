@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.CollectivePermute
+3 api_description: Permutes tensors across replicated TPU instances by sending each
+  instance’s input to a specified target instance and receiving data from a specified
+  source.
+4 api_signature: tf.raw_ops.CollectivePermute(input,source_target_pairs)
+5 api_details: ''
+6 api_parameters:
+- input: The local input tensor whose values are sent to and received from other devices
+    according to the permutation.
+- source_target_pairs: A `[num_pairs, 2]` int32 tensor listing source and target device
+    pairs that define how inputs are permuted.
+7 api_usage_example: null
+8 api_shape: ''

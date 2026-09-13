@@ -1,0 +1,12 @@
+2 api_name: torch.Generator.manual_seed
+3 api_description: Sets the generator’s random seed and returns the Generator for
+  reproducible random number generation.
+4 api_signature: '"manual_seed(seed)"'
+5 api_details: ''
+6 api_parameters:
+- seed: Sets the generator's seed; must be within the allowed 64-bit range, and negative
+    values are remapped to a positive equivalent before seeding.
+7 api_usage_example:
+- ' g_cpu = torch.Generator()'
+- ' g_cpu.manual_seed(2147483647)'
+8 api_shape: null

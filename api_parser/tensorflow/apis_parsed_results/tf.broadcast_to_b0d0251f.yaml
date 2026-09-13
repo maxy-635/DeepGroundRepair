@@ -1,0 +1,12 @@
+2 api_name: tensorflow.broadcast_to
+3 api_description: Broadcasts an array to a target shape by expanding dimensions of
+  size 1 so it becomes compatible for arithmetic operations.
+4 api_signature: tf.broadcast_to(input,shape)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to expand by broadcasting.
+- shape: The target 1-D integer shape specifying the desired broadcasted output size.
+7 api_usage_example:
+- 'x = tf.constant([1, 2, 3])   # Shape (3,)'
+- y = tf.broadcast_to(x, [2, 3])
+8 api_shape: ''

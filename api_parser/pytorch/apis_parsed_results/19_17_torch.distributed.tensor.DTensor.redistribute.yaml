@@ -1,0 +1,13 @@
+2 api_name: torch.distributed.tensor.DTensor.redistribute
+3 api_description: Redistribute a DTensor to new placements or a new DeviceMesh by
+  performing the required collective communication, such as converting sharded dimensions
+  to replicated ones.
+4 api_signature: redistribute(device_mesh,placements,*,async_op)
+5 api_details: ''
+6 api_parameters:
+- device_mesh: Specifies the DeviceMesh to place the DTensor on, or uses the current
+    DTensor's DeviceMesh if omitted.
+- placements: Defines the new placement scheme for the DTensor across the DeviceMesh,
+    with one placement per mesh dimension, defaulting to replication on all dimensions.
+7 api_usage_example: null
+8 api_shape: null

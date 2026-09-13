@@ -1,0 +1,9 @@
+2 api_name: torch.optim.Adadelta.register_step_post_hook
+3 api_description: Registers a callback that runs after each Adadelta optimizer step.
+4 api_signature: register_step_post_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: A user-defined callback that runs after each optimizer step is completed.
+7 api_usage_example:
+- hook(optimizer, args, kwargs) -> None
+8 api_shape: null

@@ -1,0 +1,28 @@
+2 api_name: tensorflow.while_loop
+3 api_description: Repeatedly executes a body function while a condition remains true,
+  using loop variables that preserve shape and type constraints across iterations,
+  with optional support for TensorArray, sparse structures, parallel execution, and
+  GPU-to-CPU memory swapping.
+4 api_signature: tf.while_loop(cond,body,loop_vars)
+5 api_details: ''
+6 api_parameters:
+- cond: Defines the condition that determines whether the loop continues or stops.
+- body: Defines the computations performed on each loop iteration.
+- loop_vars: Provides the initial values and state carried through the loop.
+7 api_usage_example:
+- 'with tf.compat.v1.Session() as sess:'
+- '  n = 10'
+- '  c = lambda i, x: i < n'
+- '  b = lambda i, x: ('
+- '      tf.compat.v1.Print(i + 1, [i], "Updating i based on i == "),'
+- '      # Let x depend on i'
+- '      tf.compat.v1.Print(x + i, [i], "Updating x based on i == "))'
+- '  # Make x to be a big matrix so its updating thread would run slowly'
+- '  x = tf.zeros([1000, 100], dtype=tf.int32)'
+- '  counter = tf.constant(0)'
+- '  counter_out, x_out = tf.while_loop(c, b, (counter, x))'
+- '  # The following line may increment the counter and x in parallel.'
+- '  # The counter thread may get ahead of the x thread, but not the'
+- '  # other way around. For example, the log may contain these messages:'
+- '  #'
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.random.experimental.index_shuffle
+3 api_description: Deterministically maps each index to its shuffled position in a
+  pseudorandom permutation of 0..max_index, using a stateless seed and supporting
+  optional batch broadcasting without materializing the full permutation.
+4 api_signature: tf.random.experimental.index_shuffle(index,seed,max_index)
+5 api_details: ''
+6 api_parameters:
+- index: Specifies the value or position to be shuffled within the range [0, max_index].
+- seed: Provides the random seed used to generate the shuffle deterministically.
+- max_index: Sets the inclusive upper limit of the index range to shuffle.
+7 api_usage_example:
+- seed = [5, 9]
+- idx0 = tf.random.experimental.index_shuffle(0, seed, 3)
+- idx1 = tf.random.experimental.index_shuffle(1, seed, 3)
+- idx2 = tf.random.experimental.index_shuffle(2, seed, 3)
+- idx3 = tf.random.experimental.index_shuffle(3, seed, 3)
+- shuffled_vector = tf.gather(vector, [idx0, idx1, idx2, idx3])
+- print(shuffled_vector)
+8 api_shape: ''

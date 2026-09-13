@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.cumprod
+3 api_description: Computes the cumulative product of a tensor along a given axis,
+  with the default inclusive behavior preserving the first input element in the output.
+4 api_signature: tf.math.cumprod(x,axis,exclusive,reverse)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are multiplied cumulatively.
+- axis: The dimension along which to compute the cumulative product.
+- exclusive: If True, each output element excludes the current input element from
+    the product.
+- reverse: If True, computes the cumulative product in reverse along the chosen axis.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: torch.nn.Softmin
+3 api_description: The torch.nn.Softmin function applies the softmin operation to
+  an n-dimensional input Tensor, transforming it into a probability distribution where
+  smaller input values receive higher probabilities.
+4 api_signature: torch.nn.Softmin(dim)
+5 api_details: ''
+6 api_parameters:
+- dim: Specifies the dimension of the input tensor along which the Softmin operation
+    will be applied.
+7 api_usage_example:
+- ' m = nn.Softmin(dim=1)'
+- ' input = torch.randn(2, 3)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*) where * means, any number of additional dimensions
+  output tensor shape: (*), same shape as the input
+  tensor shape transform formulas: {}

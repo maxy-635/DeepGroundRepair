@@ -1,0 +1,16 @@
+2 api_name: torch.logspace
+3 api_description: Creates a 1D tensor of evenly spaced values on a logarithmic scale
+  from base**start to base**end, inclusive.
+4 api_signature: torch.logspace(start,end,steps,base)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the first value in the log-spaced sequence.
+- end: Sets the last value in the log-spaced sequence.
+- steps: Specifies how many points to generate in the tensor.
+- base: Sets the logarithmic base used to space the values.
+7 api_usage_example:
+- ' torch.logspace(start=-10, end=10, steps=5)'
+- ' torch.logspace(start=0.1, end=1.0, steps=5)'
+- ' torch.logspace(start=0.1, end=1.0, steps=1)'
+- ' torch.logspace(start=2, end=2, steps=1, base=2)'
+8 api_shape: null

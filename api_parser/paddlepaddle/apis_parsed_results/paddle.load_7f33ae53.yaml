@@ -1,0 +1,10 @@
+2 api_name: paddle.load
+3 api_description: Loads a saved object from a specified path so it can be used in
+  Paddle.
+4 api_signature: paddle.load(path)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the file path, file prefix, directory, or buffer used to load the
+    target object.
+7 api_usage_example: []
+8 api_shape: {}

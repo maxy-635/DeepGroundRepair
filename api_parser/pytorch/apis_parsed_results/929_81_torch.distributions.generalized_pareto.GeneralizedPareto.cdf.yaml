@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.generalized_pareto.GeneralizedPareto.cdf
+3 api_description: Computes the cumulative distribution function of a generalized
+  Pareto distribution for the given values.
+4 api_signature: '"cdf(value)"'
+5 api_details: ''
+6 api_parameters:
+- value: The input value(s) at which to evaluate the cumulative distribution function.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.PixelUnshuffle
+3 api_description: The paddle.nn.PixelUnshuffle API rearranges elements in a tensor
+  from shape [N, C, H, W] to [N, r^2C, H/r, W/r] or from [N, H, W, C] to [N, H/r,
+  W/r, r^2C], effectively reversing the PixelShuffle operation by downscaling spatial
+  dimensions and increasing channel dimensions using a specified factor r.
+4 api_signature: paddle.nn.PixelUnshuffle(downscale_factor)
+5 api_details: ''
+6 api_parameters:
+- downscale_factor: Specifies the factor by which the spatial resolution of the input
+    tensor is decreased.
+7 api_usage_example: []
+8 api_shape: null

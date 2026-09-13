@@ -1,0 +1,32 @@
+2 api_name: paddle.optimizer.Adam
+3 api_description: Adam is an optimizer that adaptively updates each parameter’s learning
+  rate using running estimates of the first and second moments of gradients.
+4 api_signature: paddle.optimizer.Adam(learning_rate,parameters,weight_decay,grad_clip,multi_precision,amsgrad)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update parameters, either as a fixed float
+    or a learning-rate scheduler.
+- parameters: Specifies the tensors or parameter groups that Adam will optimize, including
+    optional per-group settings like learning rate and weight decay.
+- weight_decay: Applies L1 or L2 regularization to parameters unless a parameter already
+    defines its own regularizer.
+- grad_clip: Controls gradient clipping to limit gradients by norm, global norm, or
+    value before updates are applied.
+- multi_precision: Enables higher-precision parameter updates to improve numerical
+    stability during training.
+- amsgrad: Turns on the AMSGrad Adam variant, which uses a modified second-moment
+    estimate for improved convergence behavior.
+7 api_usage_example:
+- import paddle
+- linear = paddle.nn.Linear(10, 10)
+- inp = paddle.rand([10,10], dtype="float32")
+- out = linear(inp)
+- loss = paddle.mean(out)
+- adam = paddle.optimizer.Adam(
+- '    learning_rate=0.1,'
+- '    parameters=linear.parameters()'
+- )
+- loss.backward()
+- adam.step()
+- adam.clear_grad()
+8 api_shape: {}

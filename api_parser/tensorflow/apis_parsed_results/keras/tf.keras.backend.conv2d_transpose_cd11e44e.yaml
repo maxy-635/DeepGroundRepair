@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.conv2d_transpose
+3 api_description: Performs a transposed 2D convolution on a 4D tensor, typically
+  used for upsampling by reversing the spatial effect of `conv2d`; this backend API
+  is deprecated.
+4 api_signature: tf.keras.backend.conv2d_transpose(x,kernel,output_shape,strides,padding)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

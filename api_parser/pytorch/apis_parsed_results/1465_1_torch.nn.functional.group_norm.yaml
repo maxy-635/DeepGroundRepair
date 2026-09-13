@@ -1,0 +1,18 @@
+2 api_name: torch.nn.functional.group_norm
+3 api_description: Applies Group Normalization to the specified number of trailing
+  dimensions of a tensor, normalizing the input across groups of channels for improved
+  convergence and stability.
+4 api_signature: torch.nn.functional.group_norm(input,num_groups,eps)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be normalized.
+- num_groups: The number of groups to divide the channels into for normalization.
+- weight: Optional learnable per-channel affine transform parameter, default is None.
+- bias: Optional learnable per-channel bias, default is None.
+- eps: A small value added to the denominator for numerical stability, default is
+    1e-5.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, *) where Channel_in=\text{num_channels}
+  output tensor shape: (N, Channel_out, *) (same shape as input)
+  tensor shape transform formulas: {}

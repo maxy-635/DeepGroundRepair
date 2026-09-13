@@ -1,0 +1,12 @@
+2 api_name: paddle.static.cpu_places
+3 api_description: Create and return a list of paddle.CPUPlace objects for the available
+  CPU places.
+4 api_signature: paddle.static.cpu_places(device_count)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import paddle.static as static
+- paddle.enable_static()
+- cpu_places = static.cpu_places()
+8 api_shape: {}

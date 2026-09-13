@@ -1,0 +1,16 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.state_dict_type
+3 api_description: Set the state-dict format used by a module’s descendant FSDP wrappers
+  when saving or loading state.
+4 api_signature: staticstate_dict_type(module,state_dict_type)
+5 api_details: ''
+6 api_parameters:
+- module: The root module whose state-dict behavior is being configured.
+- state_dict_type: The state-dict format to use for the module.
+7 api_usage_example:
+- ' model = DDP(FSDP(...))'
+- ' with FSDP.state_dict_type('
+- '     model,'
+- '     StateDictType.SHARDED_STATE_DICT,'
+- ' ):'
+- '     checkpoint = model.state_dict()'
+8 api_shape: null

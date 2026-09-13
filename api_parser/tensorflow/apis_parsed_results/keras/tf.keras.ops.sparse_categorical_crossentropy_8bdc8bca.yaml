@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.ops.sparse_categorical_crossentropy
+3 api_description: Computes sparse categorical cross-entropy loss for integer class
+  labels, comparing targets to predicted probabilities or logits.
+4 api_signature: tf.keras.ops.sparse_categorical_crossentropy(target,output)
+5 api_details: ''
+6 api_parameters:
+- target: True class labels as integer tensor values, shaped like the output tensor
+    except for the last dimension.
+- output: Predicted probabilities or logits tensor values, shaped like the target
+    tensor except for the last dimension.
+7 api_usage_example:
+- target = keras.ops.convert_to_tensor([0, 1, 2], dtype=int32)
+- output = keras.ops.convert_to_tensor(
+- '[[0.9, 0.05, 0.05],'
+- ' [0.1, 0.8, 0.1],'
+- ' [0.2, 0.3, 0.5]])'
+- sparse_categorical_crossentropy(target, output)
+8 api_shape: ''

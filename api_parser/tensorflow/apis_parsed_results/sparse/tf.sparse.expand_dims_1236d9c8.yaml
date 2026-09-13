@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.expand_dims
+3 api_description: Insert a length-1 dimension at the specified axis of a sparse tensor.
+4 api_signature: tf.sparse.expand_dims(sp_input,axis)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The sparse tensor whose shape will be expanded.
+- axis: The scalar dimension index where the new size-1 axis is inserted.
+7 api_usage_example:
+- sp.shape.as_list()
+- tf.sparse.expand_dims(sp).shape.as_list()
+8 api_shape: ''

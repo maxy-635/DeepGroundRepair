@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.PyFunc
+3 api_description: Calls a Python function from a TensorFlow graph to compute outputs
+  from inputs, and is treated as a stateful operation.
+4 api_signature: tf.raw_ops.PyFunc(input,token,Tout)
+5 api_details: ''
+6 api_parameters:
+- input: Supplies the input tensors that the operation passes to the registered Python
+    function.
+- token: Identifies which registered Python function to invoke in the current address
+    space.
+- Tout: Specifies the output data types and how many outputs the operation will produce.
+7 api_usage_example: null
+8 api_shape: ''

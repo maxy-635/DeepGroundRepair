@@ -1,0 +1,16 @@
+2 api_name: tensorflow.einsum
+3 api_description: Computes tensor contractions, outer products, and other element-wise
+  tensor operations using Einstein summation notation.
+4 api_signature: tf.einsum(equation,*inputs)
+5 api_details: ''
+6 api_parameters:
+- equation: Specifies the Einstein summation expression that defines how tensor dimensions
+    are labeled and contracted.
+- '*inputs': Provides the tensor operands whose shapes must match the equation and
+    that will be combined according to it.
+7 api_usage_example:
+- s = tf.random.normal(shape=[11, 1, 5, 3])
+- t = tf.random.normal(shape=[1, 7, 3, 2])
+- e =  tf.einsum('...ij,...jk->...ik', s, t)
+- print(e.shape)
+8 api_shape: ''

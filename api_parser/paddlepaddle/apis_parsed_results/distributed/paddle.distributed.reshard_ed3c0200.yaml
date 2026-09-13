@@ -1,0 +1,22 @@
+2 api_name: paddle.distributed.reshard
+3 api_description: Reshards a distributed Paddle tensor to new distribution attributes,
+  changing how the tensor is partitioned or replicated across devices.
+4 api_signature: paddle.distributed.reshard(dist_tensor,mesh,placements)
+5 api_details: ''
+6 api_parameters:
+- dist_tensor: The distributed tensor that will be reshaped across processes.
+- mesh: The process mesh that defines the participating process topology.
+- placements: The target placement strategy for the tensor on the mesh, such as shard,
+    replicate, or partial.
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- mesh = dist.ProcessMesh([0, 1], dim_names=["x"])
+- '# dense tensor'
+- a = paddle.ones([10, 20])
+- '>>>'
+- '# distributed tensor'
+- d_tensor = dist.shard_tensor(a, mesh, [dist.Partial()])
+- out_d_tensor = dist.reshard(d_tensor, mesh, [dist.Replicate()])
+- print(out_d_tensor)
+8 api_shape: {}

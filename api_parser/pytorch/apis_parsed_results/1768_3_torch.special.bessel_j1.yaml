@@ -1,0 +1,10 @@
+2 api_name: torch.special.bessel_j1
+3 api_description: Computes the Bessel function of the first kind for order 1, returning
+  the value of J1(x) for the input.
+4 api_signature: torch.special.bessel_j1(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose values are used to compute the order-1 Bessel function
+    of the first kind.
+7 api_usage_example: null
+8 api_shape: null

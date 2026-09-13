@@ -1,0 +1,29 @@
+2 api_name: paddle.text.viterbi_decode
+3 api_description: Decodes the highest-scoring tag sequence by combining transition
+  scores and potentials, returning the Viterbi path.
+4 api_signature: paddle.text.viterbi_decode(potentials,transition_params,lengths)
+5 api_details: ''
+6 api_parameters:
+- potentials: Represents the unary emission scores for each tag at each position in
+    each sequence.
+- transition_params: Represents the tag-to-tag transition score matrix used during
+    decoding.
+- lengths: Specifies the valid length of each sequence in the batch so padding is
+    ignored.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- batch_size, seq_len, num_tags = 2, 4, 3
+- emission = paddle.rand((batch_size, seq_len, num_tags), dtype='float32')
+- length = paddle.randint(1, seq_len + 1, [batch_size])
+- tags = paddle.randint(0, num_tags, [batch_size, seq_len])
+- transition = paddle.rand((num_tags, num_tags), dtype='float32')
+- scores, path = paddle.text.viterbi_decode(emission, transition, length, False)
+- print(scores)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[2.57385254, 2.04533720])'
+- print(path)
+- Tensor(shape=[2, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 0],'
+- '[1, 1]])'
+8 api_shape: {}

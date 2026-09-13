@@ -1,0 +1,31 @@
+2 api_name: paddle.log2
+3 api_description: Computes the base-2 logarithm of each element in the input tensor.
+4 api_signature: paddle.log2(x,out)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose base-2 logarithm is computed.
+- out: Optional output tensor that receives the result in place.
+7 api_usage_example:
+- import paddle
+- '# example 1: x is a float'
+- x_i = paddle.to_tensor([[1.0], [2.0]])
+- res = paddle.log2(x_i)
+- res
+- Tensor(shape=[2, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.],'
+- '[1.]])'
+- '# example 2: x is float32'
+- x_i = paddle.full(shape=[1], fill_value=2, dtype='float32')
+- paddle.to_tensor(x_i)
+- res = paddle.log2(x_i)
+- res
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.])'
+- '# example 3: x is float64'
+- x_i = paddle.full(shape=[1], fill_value=2, dtype='float64')
+- paddle.to_tensor(x_i)
+- res = paddle.log2(x_i)
+- res
+- Tensor(shape=[1], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[1.])'
+8 api_shape: {}

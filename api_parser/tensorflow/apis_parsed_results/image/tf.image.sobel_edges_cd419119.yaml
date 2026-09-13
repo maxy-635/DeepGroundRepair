@@ -1,0 +1,15 @@
+2 api_name: tensorflow.image.sobel_edges
+3 api_description: Computes Sobel edge maps for each image in a batch, returning horizontal
+  and vertical gradients that highlight edges.
+4 api_signature: tf.image.sobel_edges(image)
+5 api_details: ''
+6 api_parameters:
+- image: Input image tensor in 4D `[batch_size, h, w, d]` format, containing float32
+    or float64 values, with each image at least 2x2 pixels.
+7 api_usage_example:
+- image = tf.random.uniform(
+- '  maxval=255, shape=[1, 28, 28, 3], dtype=tf.float32)'
+- sobel = tf.image.sobel_edges(image)
+- 'sobel_y = np.asarray(sobel[0, :, :, :, 0]) # sobel in y-direction'
+- 'sobel_x = np.asarray(sobel[0, :, :, :, 1]) # sobel in x-direction'
+8 api_shape: ''

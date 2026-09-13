@@ -1,0 +1,8 @@
+2 api_name: tensorflow.io.RaggedFeature.UniformRowLength
+3 api_description: Specifies a fixed number of values per ragged row by setting a
+  uniform row length.
+4 api_signature: tf.io.RaggedFeature.UniformRowLength(length)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

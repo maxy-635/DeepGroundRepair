@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.concatenate
+3 api_description: The tf.keras.layers.concatenate API provides a functional interface
+  to merge multiple input tensors along a specified axis, enabling the combination
+  of features from different layers in a neural network.
+4 api_signature: tf.keras.layers.concatenate(inputs, axis)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of input tensors that will be concatenated along the specified axis.
+- axis: The axis along which the input tensors will be concatenated.
+7 api_usage_example: null
+8 api_shape: null

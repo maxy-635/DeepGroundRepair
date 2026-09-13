@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.multiply
+3 api_description: Element-wise multiplies two arguments and returns the product.
+4 api_signature: tf.keras.ops.multiply(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first tensor to be multiplied elementwise.
+- x2: The second tensor to be multiplied elementwise.
+7 api_usage_example: null
+8 api_shape: ''

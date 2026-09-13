@@ -1,0 +1,23 @@
+2 api_name: paddle.nn.functional.smooth_l1_loss
+3 api_description: The paddle.nn.functional.smooth_l1_loss API computes the Huber
+  loss, using a squared term for errors below 1 and an L1 term otherwise, to prevent
+  exploding gradients and reduce sensitivity to outliers.
+4 api_signature: paddle.nn.functional.smooth_l1_loss(input,label,delta)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor containing predicted values with data type float32 or float64,
+    shaped as (N, C) or (N, C, D1, D2,…, Dk) for k >= 1.
+- label: The label tensor containing true values, matching the shape and data type
+    of the input tensor.
+- delta: A hyperparameter \(\delta\) that defines the threshold for switching between
+    L2 and L1 loss, with a default value of 1.0, ignored for non-positive values.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- input = paddle.rand([3, 3]).astype('float32')
+- label = paddle.rand([3, 3]).astype('float32')
+- output = paddle.nn.functional.smooth_l1_loss(input, label)
+- print(output)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.08307374)
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.quantization.fake_quant_with_min_max_args_gradient
+3 api_description: Computes the gradients of a FakeQuantWithMinMaxArgs operation,
+  propagating errors through fake quantization while respecting the specified min
+  and max quantization range.
+4 api_signature: tf.quantization.fake_quant_with_min_max_args_gradient(gradients,inputs,min,max)
+5 api_details: ''
+6 api_parameters:
+- gradients: The upstream float32 gradients to propagate back through the fake-quantization
+    operation.
+- inputs: The float32 input values that were originally passed into FakeQuantWithMinMaxArgs.
+- min: The lower clipping bound used by the fake-quantization operation, defaulting
+    to -6.
+- max: The upper clipping bound used by the fake-quantization operation, defaulting
+    to 6.
+7 api_usage_example: null
+8 api_shape: ''

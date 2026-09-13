@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.IFFT
+3 api_description: Computes the inverse 1D discrete Fourier transform along the innermost
+  dimension of the input.
+4 api_signature: tf.raw_ops.IFFT(input)
+5 api_details: ''
+6 api_parameters:
+- input: The complex input tensor to be transformed by the inverse fast Fourier transform.
+7 api_usage_example: null
+8 api_shape: ''

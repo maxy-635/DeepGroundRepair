@@ -1,0 +1,57 @@
+2 api_name: paddle.randn
+3 api_description: Creates a tensor with the specified shape and dtype, filled with
+  random values from a standard normal distribution (mean 0, standard deviation 1).
+4 api_signature: paddle.randn(shape,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor dimensions, either as integers, a list/tuple,
+    or a 1-D Tensor.
+- dtype: Sets the data type of the generated tensor, or uses the default dtype if
+    not provided.
+- name: Optionally assigns a name to the operation for identification and debugging.
+7 api_usage_example:
+- import paddle
+- '# example 1: attr shape is a list which doesn''t contain Tensor.'
+- out1 = paddle.randn(shape=[2, 3])
+- print(out1)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.29270014, -0.02925120, -1.07807338],'
+- '[ 1.19966674, -0.46673676, -0.18050613]])'
+- '>>>'
+- '# example 2: attr shape is a list which contains Tensor.'
+- dim1 = paddle.to_tensor(2, 'int64')
+- dim2 = paddle.to_tensor(3, 'int32')
+- out2 = paddle.randn(shape=[dim1, dim2, 2])
+- print(out2)
+- '>>>'
+- Tensor(shape=[2, 3, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[-0.26019713,  0.54994684],'
+- '[ 0.46403214, -1.41178775],'
+- '[-0.15682915, -0.26639181]],'
+- '[[ 0.01364388, -2.81676364],'
+- '[ 0.86996621,  0.07524570],'
+- '[ 0.21443737,  0.90938759]]])'
+- '>>>'
+- '# example 3: attr shape is a Tensor, the data type must be int64 or int32.'
+- shape_tensor = paddle.to_tensor([2, 3])
+- out3 = paddle.randn(shape_tensor)
+- print(out3)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.57575506, -1.60349274, -0.27124876],'
+- '[ 1.08381045,  0.81270242, -0.26763600]])'
+- '>>>'
+- '# example 4: attr dtype is complex64.'
+- paddle.seed(200)
+- shape_tensor = paddle.to_tensor([2, 3])
+- out4 = paddle.randn(shape_tensor, dtype='complex64')
+- print(out4)
+- Tensor(shape=[2, 3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[[ (0.1375531256198883+0.0932074561715126j) ,'
+- (0.7955012917518616-0.41801896691322327j),
+- (-0.6730020642280579-0.09163688868284225j)],
+- '[ (0.17453041672706604-0.9002832770347595j),'
+- (0.16270922124385834-1.3086302280426025j),
+- (0.9428746104240417+0.06869460642337799j)]])
+8 api_shape: {}

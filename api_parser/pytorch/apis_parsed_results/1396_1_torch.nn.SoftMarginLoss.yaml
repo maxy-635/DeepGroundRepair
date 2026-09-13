@@ -1,0 +1,13 @@
+2 api_name: torch.nn.SoftMarginLoss
+3 api_description: Computes the logistic loss for binary classification, comparing
+  predictions with target labels of 1 or -1.
+4 api_signature: torch.nn.SoftMarginLoss(reduction)
+5 api_details: ''
+6 api_parameters:
+- reduction: 'Specifies how to aggregate the loss output: ''none'' for no aggregation,
+    ''mean'' for averaging the output, and ''sum'' for summing the output.'
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: scalar. If reduction is 'none', then (*), same shape as input.
+  tensor shape transform formulas: {}

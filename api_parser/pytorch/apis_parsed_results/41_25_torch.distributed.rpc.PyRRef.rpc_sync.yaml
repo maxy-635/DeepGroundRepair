@@ -1,0 +1,14 @@
+2 api_name: torch.distributed.rpc.PyRRef.rpc_sync
+3 api_description: Returns a proxy that runs methods on the RRef’s owner via rpc_sync,
+  letting you call rref.rpc_sync().method(*args, **kwargs) to execute against the
+  referenced object.
+4 api_signature: rpc_sync(self,timeout)
+5 api_details: ''
+6 api_parameters:
+- timeout: Sets how long to wait for `rref.rpc_sync()` to finish before raising a
+    timeout exception; if omitted, the default RPC timeout is used.
+7 api_usage_example:
+- ' def run(rref, func_name, args, kwargs):'
+- '   return getattr(rref.local_value(), func_name)(*args, **kwargs)'
+- ' rpc.rpc_sync(rref.owner(), run, args=(rref, func_name, args, kwargs))'
+8 api_shape: null

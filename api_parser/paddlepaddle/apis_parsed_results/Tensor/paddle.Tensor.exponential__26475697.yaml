@@ -1,0 +1,22 @@
+2 api_name: paddle.Tensor.exponential_
+3 api_description: In-place fills the tensor with random values sampled from an exponential
+  distribution.
+4 api_signature: paddle.Tensor.exponential_(x,lam)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are replaced in-place with samples from an exponential
+    distribution; it must be float32 or float64.
+- lam: The rate parameter λ of the exponential distribution, with a default value
+    of 1.0 (also available as `lambd`).
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- paddle.seed(100)
+- x = paddle.empty([2,3])
+- x.exponential_()
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.80643415, 0.23211166, 0.01169797],'
+- '[0.72520679, 0.45208144, 0.30234432]])'
+- '>>>'
+8 api_shape: {}

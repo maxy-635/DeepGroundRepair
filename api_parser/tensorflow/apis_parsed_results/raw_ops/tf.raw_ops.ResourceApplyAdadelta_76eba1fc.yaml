@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyAdadelta
+3 api_description: Applies the Adadelta optimization update to a variable using the
+  gradient, maintaining running accumulators for squared gradients and squared updates
+  to adjust the variable adaptively.
+4 api_signature: ResourceApplyAdadelta(var,accum,accum_update,lr,rho,epsilon,grad)
+5 api_details: ''
+6 api_parameters:
+- var: The variable to be updated by the Adadelta optimizer.
+- accum: The accumulator that tracks running gradients for `var`.
+- accum_update: The accumulator that tracks running updates for `var`.
+- lr: The scalar learning-rate scaling factor.
+- rho: The scalar decay factor used to compute running averages.
+- epsilon: The scalar constant added for numerical stability.
+- grad: The gradient tensor used to update the variable.
+7 api_usage_example: null
+8 api_shape: ''

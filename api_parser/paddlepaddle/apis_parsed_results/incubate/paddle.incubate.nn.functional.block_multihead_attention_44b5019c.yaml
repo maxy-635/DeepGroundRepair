@@ -1,0 +1,20 @@
+2 api_name: paddle.incubate.nn.functional.block_multihead_attention
+3 api_description: Computes block-wise multi-head attention for text summarization,
+  enabling efficient attention over segmented input sequences.
+4 api_signature: paddle.incubate.nn.functional.block_multihead_attention(qkv,key_cache,value_cache,seq_lens_encoder,seq_lens_decoder,block_tables,max_seq_len,block_size,use_neox_style,compute_dtype)
+5 api_details: ''
+6 api_parameters:
+- qkv: Provides the combined query, key, and value tensor used as the attention input.
+- key_cache: Stores cached key blocks for fast attention over prior tokens.
+- value_cache: Stores cached value blocks corresponding to the cached keys.
+- seq_lens_encoder: Specifies the encoder sequence length for each sequence in the
+    batch.
+- seq_lens_decoder: Specifies the decoder sequence length for each sequence in the
+    batch.
+- block_tables: Maps each sequence to the cache blocks that contain its stored tokens.
+- max_seq_len: Sets the maximum sequence length expected for the input.
+- block_size: Sets the number of tokens stored in each cache block.
+- use_neox_style: Indicates whether to apply NeoX-style RoPE positional encoding.
+- compute_dtype: Sets the compute precision used when processing the input data.
+7 api_usage_example: []
+8 api_shape: {}

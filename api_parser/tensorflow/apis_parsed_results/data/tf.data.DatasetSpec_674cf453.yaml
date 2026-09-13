@@ -1,0 +1,10 @@
+2 api_name: tensorflow.data.DatasetSpec
+3 api_description: TypeSpec for tf.data.Dataset objects, describing the structure
+  and element types of dataset values for TensorFlow APIs.
+4 api_signature: tf.data.DatasetSpec(element_spec)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- dataset = tf.data.Dataset.range(3)
+- tf.data.DatasetSpec.from_value(dataset)
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: paddle.static.program_guard
+3 api_description: Context manager that sets the main and startup static programs
+  for Paddle, so operators and variables created inside the block are added to those
+  programs.
+4 api_signature: paddle.static.program_guard(main_program,startup_program)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- main_program = paddle.static.Program()
+- startup_program = paddle.static.Program()
+- 'with paddle.static.program_guard(main_program, startup_program):'
+- '    data = paddle.static.data(name=''image'', shape=[None, 784, 784], dtype=''float32'')'
+- '    hidden = paddle.static.nn.fc(x=data, size=10, activation=''relu'')'
+8 api_shape: {}

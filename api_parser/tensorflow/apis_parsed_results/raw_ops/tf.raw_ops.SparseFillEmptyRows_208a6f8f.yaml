@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.SparseFillEmptyRows
+3 api_description: Fills each empty row of a 2-D SparseTensor by inserting one default
+  value at column 0, returning updated sparse indices, values, and an indicator of
+  which rows were empty.
+4 api_signature: tf.raw_ops.SparseFillEmptyRows(indices,values,dense_shape,default_value)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the row and column positions of the non-empty entries in the
+    sparse tensor.
+- values: Contains the values associated with each sparse index.
+- dense_shape: Gives the overall shape of the sparse tensor being processed.
+- default_value: Provides the value used to fill in missing rows at position `[row,
+    0, ..., 0]`.
+7 api_usage_example: null
+8 api_shape: ''

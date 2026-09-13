@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.lbeta
+3 api_description: Computes the logarithm of the absolute value of the multivariate
+  beta function along the last dimension of the input tensor.
+4 api_signature: tf.math.lbeta(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are used to compute the multivariate log beta
+    function.
+7 api_usage_example: null
+8 api_shape: ''

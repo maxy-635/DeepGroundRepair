@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Diag
+3 api_description: Creates a rank-2k tensor from an input diagonal tensor, placing
+  the input values on the matching diagonal and filling all other positions with zeros.
+4 api_signature: tf.raw_ops.Diag(diagonal)
+5 api_details: ''
+6 api_parameters:
+- diagonal: Specifies the values to place on the diagonal of the output tensor; it
+    must be a rank-1 tensor (or scalar) of an allowed numeric or complex type.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.functional.bilinear
+3 api_description: The paddle.nn.functional.bilinear API computes a bilinear transformation
+  on two input tensors, combining them into a single output tensor based on a learnable
+  parameter matrix.
+4 api_signature: paddle.nn.functional.bilinear(x1,x2,weight)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input tensor with data type float32 or float64.
+- x2: The second input tensor with data type float32 or float64.
+- weight: The learnable weights with shape [out_features, in1_features, in2_features].
+7 api_usage_example: []
+8 api_shape: null

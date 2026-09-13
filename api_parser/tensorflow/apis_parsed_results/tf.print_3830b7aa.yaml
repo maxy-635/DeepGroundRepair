@@ -1,0 +1,11 @@
+2 api_name: tensorflow.print
+3 api_description: Prints specified tensors and Python objects to an output stream
+  or logging level, recursively summarizing tensor contents by showing the first and
+  last elements of each dimension.
+4 api_signature: tf.print(*inputs)
+5 api_details: ''
+6 api_parameters:
+- '*inputs': Values to print; they are separated by spaces and can include primitives,
+    tensors, nested data structures, and printable Python objects.
+7 api_usage_example: null
+8 api_shape: ''

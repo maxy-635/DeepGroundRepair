@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.count_nonzero
+3 api_description: Counts the nonzero elements in a tensor, optionally reducing over
+  specified axes and keeping reduced dimensions with length 1.
+4 api_signature: tf.math.count_nonzero(input,axis,keepdims)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor whose nonzero elements will be counted.
+- axis: Selects which dimensions to reduce when counting nonzero elements.
+- keepdims: Controls whether reduced dimensions are kept as size 1 in the output.
+7 api_usage_example: null
+8 api_shape: ''

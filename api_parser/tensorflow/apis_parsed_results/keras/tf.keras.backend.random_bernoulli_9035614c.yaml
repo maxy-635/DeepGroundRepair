@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.random_bernoulli
+3 api_description: Deprecated backend function that returns Bernoulli-random values,
+  sampling 0/1 outputs from a given probability or logits input.
+4 api_signature: tf.keras.backend.random_bernoulli(shape,p,seed)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

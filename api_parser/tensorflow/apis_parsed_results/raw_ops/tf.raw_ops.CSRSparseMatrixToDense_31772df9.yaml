@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.CSRSparseMatrixToDense
+3 api_description: Converts a CSR sparse matrix, optionally batched, into its dense
+  tensor representation.
+4 api_signature: tf.raw_ops.CSRSparseMatrixToDense(sparse_input,type)
+5 api_details: ''
+6 api_parameters:
+- sparse_input: Provides the batched CSR sparse matrix to be converted into a dense
+    tensor.
+- type: Specifies the data type of the output dense tensor values.
+7 api_usage_example: null
+8 api_shape: ''

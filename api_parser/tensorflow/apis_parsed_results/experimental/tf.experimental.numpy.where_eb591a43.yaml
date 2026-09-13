@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.where
+3 api_description: Returns elements chosen from x or y based on a condition, like
+  NumPy where; raises ValueError if only one of x or y is provided.
+4 api_signature: tf.experimental.numpy.where(condition,x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

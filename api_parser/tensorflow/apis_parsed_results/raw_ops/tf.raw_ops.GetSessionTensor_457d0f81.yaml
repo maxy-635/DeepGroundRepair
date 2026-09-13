@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.GetSessionTensor
+3 api_description: Retrieves the value of a tensor from a session using its handle.
+4 api_signature: tf.raw_ops.GetSessionTensor(handle,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the session-stored tensor to retrieve.
+- dtype: Specifies the data type of the returned tensor value.
+7 api_usage_example: null
+8 api_shape: ''

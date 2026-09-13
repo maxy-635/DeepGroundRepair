@@ -1,0 +1,19 @@
+2 api_name: paddle.incubate.nn.functional.blha_get_max_len
+3 api_description: Computes the maximum sequence length needed for fused block multi-head
+  attention preprocessing.
+4 api_signature: paddle.incubate.nn.functional.blha_get_max_len(seq_lens_encoder,seq_lens_decoder)
+5 api_details: ''
+6 api_parameters:
+- seq_lens_encoder: Specifies the length of each encoder sentence sequence.
+- seq_lens_decoder: Specifies the length of each decoder sentence sequence.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- seq_lens_encoder = paddle.cast(paddle.randn(shape=[10]), dtype=paddle.int32)
+- seq_lens_decoder = paddle.cast(paddle.randn(shape=[10]), dtype=paddle.int32)
+- bsz = 10
+- batch_size = paddle.ones(shape=[bsz])
+- max_enc_len_this_time, max_dec_len_this_time = paddle.incubate.nn.functional.blha_get_max_len(seq_lens_encoder,
+  seq_lens_decoder, batch_size)
+8 api_shape: {}

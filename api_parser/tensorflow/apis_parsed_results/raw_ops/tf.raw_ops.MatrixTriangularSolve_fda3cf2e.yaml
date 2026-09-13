@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.MatrixTriangularSolve
+3 api_description: Solves batched linear systems with triangular square matrices by
+  back substitution, optionally using the adjoint of the matrix and either the upper
+  or lower triangle.
+4 api_signature: tf.raw_ops.MatrixTriangularSolve(matrix,rhs,lower)
+5 api_details: ''
+6 api_parameters:
+- matrix: The square triangular coefficient matrix `A` used to define the linear system
+    to solve.
+- rhs: The right-hand-side tensor `B` containing the vectors or matrices to be solved
+    against `A`.
+- lower: A flag that selects whether `matrix` is treated as lower triangular (`True`)
+    or upper triangular (`False`).
+7 api_usage_example: null
+8 api_shape: ''

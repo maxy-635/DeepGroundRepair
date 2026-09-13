@@ -1,0 +1,11 @@
+2 api_name: torch.hann_window
+3 api_description: Returns a Hann window tensor of a given size, optionally periodic
+  and normalized, for signal processing applications.
+4 api_signature: torch.hann_window(window_length,periodic)
+5 api_details: ''
+6 api_parameters:
+- window_length: Sets the number of samples in the returned window.
+- periodic: Chooses whether to generate a periodic window for spectral analysis or
+    a symmetric window for general use.
+7 api_usage_example: null
+8 api_shape: null

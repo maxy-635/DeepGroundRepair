@@ -1,0 +1,27 @@
+2 api_name: paddle.nn.functional.layer_norm
+3 api_description: The paddle.nn.functional.layer_norm function applies layer normalization
+  to the input, normalizing across the last certain number of dimensions as specified,
+  to stabilize the learning process and improve convergence.
+4 api_signature: paddle.nn.functional.layer_norm(x,normalized_shape)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be normalized, with data types including bfloat16, float16,
+    float32, or float64.
+- normalized_shape: Specifies the shape over which normalization is applied, inferred
+    from the expected input size.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- x = paddle.rand((2, 2, 2, 3))
+- layer_norm_out = paddle.nn.functional.layer_norm(x, x.shape[1:])
+- print(layer_norm_out)
+- Tensor(shape=[2, 2, 2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[ 0.87799639, -0.32706568, -1.23529339],'
+- '[ 1.01540327, -0.66222906, -0.72354043]],'
+- '[[ 1.24183702,  0.45458138, -0.33506915],'
+- '[ 0.41468468,  1.26852870, -1.98983312]]],'
+- '[[[ 0.02837803,  1.27684665, -0.90110683],'
+- '[-0.94709367, -0.15110941, -1.16546965]],'
+- '[[-0.82010198,  0.11218392, -0.86506516],'
+- '[ 1.09489357,  0.19107464,  2.14656854]]]])'
+8 api_shape: null

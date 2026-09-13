@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.utils.register_keras_serializable
+3 api_description: Registers a custom class or function with Keras so it can be saved
+  and restored by a stable `package>name` key without manually supplying custom objects;
+  classes must define `get_config()`.
+4 api_signature: tf.keras.utils.register_keras_serializable(package,name)
+5 api_details: ''
+6 api_parameters:
+- package: Specifies the namespace used to register and identify the class as `package>name`.
+- name: Specifies the serialization name for the class within the package, defaulting
+    to the class name if omitted.
+7 api_usage_example: null
+8 api_shape: ''

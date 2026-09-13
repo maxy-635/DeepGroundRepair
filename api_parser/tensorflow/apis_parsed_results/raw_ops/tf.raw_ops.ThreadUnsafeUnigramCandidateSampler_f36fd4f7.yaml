@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ThreadUnsafeUnigramCandidateSampler
+3 api_description: Samples a shared set of negative candidate labels for each batch
+  from a learned unigram distribution, enabling efficient candidate sampling for training.
+4 api_signature: tf.raw_ops.ThreadUnsafeUnigramCandidateSampler(true_classes,num_true,num_sampled,range_max)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Provides the target class IDs for each example in the batch, arranged
+    as a `batch_size x num_true` matrix.
+- num_true: Specifies how many true labels are associated with each context example.
+- num_sampled: Sets how many candidate classes to randomly draw for sampling.
+- range_max: Defines the exclusive upper bound of the integer range `[0, range_max)`
+    used for sampling.
+7 api_usage_example: null
+8 api_shape: ''

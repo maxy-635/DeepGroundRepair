@@ -1,0 +1,9 @@
+2 api_name: tensorflow.distribute.experimental.PreemptionWatcher
+3 api_description: Watches for TPU preemption signals in the background, stores any
+  preemption message from the coordination service, and lets training detect preemption
+  reliably to recover without a full restart.
+4 api_signature: tf.distribute.experimental.PreemptionWatcher()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

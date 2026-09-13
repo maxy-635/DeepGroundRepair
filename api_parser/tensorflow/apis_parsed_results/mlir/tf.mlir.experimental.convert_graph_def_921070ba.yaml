@@ -1,0 +1,11 @@
+2 api_name: tensorflow.mlir.experimental.convert_graph_def
+3 api_description: Converts a TensorFlow GraphDef into a textual MLIR module for internal
+  inspection and debugging.
+4 api_signature: tf.mlir.experimental.convert_graph_def(graph_def,pass_pipeline)
+5 api_details: ''
+6 api_parameters:
+- graph_def: Supplies the TensorFlow GraphDef to convert, either as a `GraphDef` object
+    or as its textual proto form.
+- pass_pipeline: Specifies the MLIR pass pipeline text to run on the converted module.
+7 api_usage_example: null
+8 api_shape: ''

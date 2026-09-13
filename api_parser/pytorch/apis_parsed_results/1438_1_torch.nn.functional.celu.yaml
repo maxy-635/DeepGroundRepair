@@ -1,0 +1,17 @@
+2 api_name: torch.nn.functional.celu
+3 api_description: The torch.nn.functional.celu function applies the Continuously
+  Differentiable Exponential Linear Unit (CELU) activation, which combines ReLU for
+  positive inputs and a scaled exponential function for negative inputs, controlled
+  by a parameter alpha.
+4 api_signature: torch.nn.functional.celu(input,alpha)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to apply the CELU activation function to.
+- alpha: The scaling factor for the negative region, default is 1.0.
+- inplace: A boolean that, if True, modifies the input tensor in-place, default is
+    False.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

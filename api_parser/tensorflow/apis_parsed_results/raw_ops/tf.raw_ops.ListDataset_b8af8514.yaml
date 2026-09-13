@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ListDataset
+3 api_description: Creates a dataset that yields each input tensor exactly once as
+  elements.
+4 api_signature: tf.raw_ops.ListDataset(tensors,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- tensors: Supplies the input tensors that will be wrapped into the dataset.
+- output_types: Defines the data types of the dataset elements that the op will produce.
+- output_shapes: Defines the shapes of the dataset elements that the op will produce.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseSegmentSqrtNWithNumSegments
+3 api_description: Computes sparse segment sums normalized by the square root of each
+  segment’s size, with optional zero-filled outputs for missing segment ids.
+4 api_signature: tf.raw_ops.SparseSegmentSqrtNWithNumSegments(data,indices,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The input values to be aggregated by segment.
+- indices: The indices that map each value in `data` to a segment.
+- segment_ids: A sorted 1-D list of segment labels, with repeats allowed, matching
+    `indices` in length.
+- num_segments: The total number of output segments to produce.
+7 api_usage_example: null
+8 api_shape: ''

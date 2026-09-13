@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ResourceScatterMin
+3 api_description: Applies sparse updates to a resource variable by taking the elementwise
+  minimum at the specified indices.
+4 api_signature: tf.raw_ops.ResourceScatterMin(resource,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- resource: The variable resource to be updated in place.
+- indices: The index tensor selecting which first-dimension entries to update.
+- updates: The values to compare with and scatter into the selected positions using
+    elementwise minimum.
+7 api_usage_example: null
+8 api_shape: ''

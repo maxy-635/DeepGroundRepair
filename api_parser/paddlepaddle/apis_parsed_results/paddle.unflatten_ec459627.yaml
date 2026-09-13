@@ -1,0 +1,30 @@
+2 api_name: paddle.unflatten
+3 api_description: Expands one specified dimension of a tensor into a target shape,
+  effectively unflattening that dimension into multiple dimensions.
+4 api_signature: paddle.unflatten(x,shape)
+5 api_details: ''
+6 api_parameters:
+- x: The input N-D tensor to be unflattened along the specified axis.
+- shape: The target unflattened sizes for the chosen axis, with at most one `-1` and
+    a product that matches that axis length when `-1` is absent.
+7 api_usage_example:
+- import paddle
+- x = paddle.randn(shape=[4, 6, 8])
+- shape = [2, 3]
+- axis = 1
+- res = paddle.unflatten(x, axis, shape)
+- print(res.shape)
+- paddle.Size([4, 2, 3, 8])
+- x = paddle.randn(shape=[4, 6, 8])
+- shape = (-1, 2)
+- axis = -1
+- res = paddle.unflatten(x, axis, shape)
+- print(res.shape)
+- paddle.Size([4, 6, 4, 2])
+- x = paddle.randn(shape=[4, 6, 8])
+- shape = paddle.to_tensor([2, 2])
+- axis = 0
+- res = paddle.unflatten(x, axis, shape)
+- print(res.shape)
+- paddle.Size([2, 2, 6, 8])
+8 api_shape: {}

@@ -1,0 +1,18 @@
+2 api_name: torch.fft.irfft2
+3 api_description: Computes the inverse real 2D FFT, reconstructing a real-valued
+  signal from an rfft2 spectrum by inverse-transforming the last two dimensions.
+4 api_signature: torch.fft.irfft2(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the half-Hermitian compressed frequency-domain data
+    to be transformed.
+- s: The target signal size in the transformed dimensions, used to pad or trim before
+    computing the inverse real FFT.
+- dim: The dimensions over which to perform the inverse transform, with the last one
+    required to be the compressed dimension.
+- norm: The normalization mode that controls scaling of the inverse transform and
+    its relationship to the matching forward transform.
+7 api_usage_example:
+- ' t = torch.rand(10, 9)'
+- ' T = torch.fft.rfft2(t)'
+8 api_shape: null

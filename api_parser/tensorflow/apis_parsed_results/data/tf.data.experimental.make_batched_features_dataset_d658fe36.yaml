@@ -1,0 +1,14 @@
+2 api_name: tensorflow.data.experimental.make_batched_features_dataset
+3 api_description: Builds a batched Dataset from TF Example protos, yielding feature
+  dictionaries and optionally labels when label_key is provided.
+4 api_signature: tf.data.experimental.make_batched_features_dataset(file_pattern,batch_size,features,reader,label_key)
+5 api_details: ''
+6 api_parameters:
+- file_pattern: Specifies the file path or glob pattern for input Example records.
+- batch_size: Sets how many records are grouped together into each batch.
+- features: Defines the feature schema used to parse each Example record.
+- reader: Provides the dataset reader used to load records from the matching files.
+- label_key: Optionally names the feature key to extract as labels, and must match
+    one of the provided feature keys.
+7 api_usage_example: null
+8 api_shape: ''

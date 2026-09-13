@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.one_hot
+3 api_description: Converts integer inputs into one-hot encoded vectors of length
+  num_classes, with 1 at each input index and 0 elsewhere.
+4 api_signature: tf.keras.ops.one_hot(x,num_classes)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the integer tensor to encode into one-hot vectors.
+- num_classes: Sets the total number of classes, which determines the one-hot vector
+    length.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([1, 3, 2, 0])
+- one_hot(x, num_classes=4)
+8 api_shape: ''

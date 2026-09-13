@@ -1,0 +1,38 @@
+2 api_name: paddle.io.RandomSampler
+3 api_description: Randomly iterates dataset indices, returning a shuffled order of
+  the full dataset when replacement is False, or drawing num_samples random indices
+  with replacement when replacement is True.
+4 api_signature: paddle.io.RandomSampler(data_source,replacement,num_samples)
+5 api_details: ''
+6 api_parameters:
+- data_source: The dataset or iterable to sample from, used to determine the range
+    of indices when it has a length.
+- replacement: Controls whether samples are drawn with replacement; if False, the
+    full dataset is sampled, and if True, sampling uses `num_samples`.
+- num_samples: Specifies how many samples to draw, defaulting to the length of `data_source`
+    when not provided.
+7 api_usage_example:
+- import numpy as np
+- from paddle.io import Dataset, RandomSampler
+- np.random.seed(2023)
+- 'class RandomDataset(Dataset):  # type: ignore[type-arg]'
+- '    def __init__(self, num_samples):'
+- '        self.num_samples = num_samples'
+- '...'
+- '    def __getitem__(self, idx):'
+- '        image = np.random.random([784]).astype(''float32'')'
+- '        label = np.random.randint(0, 9, (1, )).astype(''int64'')'
+- '        return image, label'
+- '...'
+- '    def __len__(self):'
+- '        return self.num_samples'
+- '...'
+- sampler = RandomSampler(data_source=RandomDataset(100))
+- 'for index in sampler:'
+- '    print(index)'
+- '56'
+- '12'
+- '68'
+- '...'
+- '87'
+8 api_shape: {}

@@ -1,0 +1,23 @@
+2 api_name: paddle.bincount
+3 api_description: Counts how often each integer value appears in the input tensor
+  and returns the frequency for each bin.
+4 api_signature: paddle.bincount(x,weights,minlength)
+5 api_details: ''
+6 api_parameters:
+- x: 1-D tensor of non-negative integers to count.
+- weights: Optional tensor of the same shape as `x` that assigns a weight to each
+    counted value.
+- minlength: Optional non-negative minimum number of bins to include in the output.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, 2, 1, 4, 5])
+- result1 = paddle.bincount(x)
+- print(result1)
+- Tensor(shape=[6], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 2, 1, 0, 1, 1])'
+- w = paddle.to_tensor([2.1, 0.4, 0.1, 0.5, 0.5])
+- result2 = paddle.bincount(x, weights=w)
+- print(result2)
+- Tensor(shape=[6], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 2.19999981, 0.40000001, 0.        , 0.50000000, 0.50000000])'
+8 api_shape: {}

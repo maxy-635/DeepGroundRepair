@@ -1,0 +1,9 @@
+2 api_name: tensorflow.math.cos
+3 api_description: Computes the element-wise cosine of a tensor, returning values
+  in the range [-1, 1].
+4 api_signature: tf.math.cos(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose element-wise cosine is computed.
+7 api_usage_example: null
+8 api_shape: ''

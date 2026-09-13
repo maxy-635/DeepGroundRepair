@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SendTPUEmbeddingGradients
+3 api_description: Updates TPU embedding tables by sending computed gradients for
+  embedding variables.
+4 api_signature: tf.raw_ops.SendTPUEmbeddingGradients(inputs,config)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of float32 gradient tensors matching the shapes and length of `RecvTPUEmbeddingActivations`,
+    used to update TPU embedding tables.
+- config: A serialized `TPUEmbeddingConfiguration` proto that specifies how the embedding
+    updates are applied.
+7 api_usage_example: null
+8 api_shape: ''

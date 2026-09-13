@@ -1,0 +1,20 @@
+2 api_name: torch.quantize_per_channel
+3 api_description: Converts a float tensor into a per-channel quantized tensor using
+  specified per-channel scales, zero points, axis, and quantization dtype.
+4 api_signature: torch.quantize_per_channel(input,scales,zero_points,axis,dtype)
+5 api_details: ''
+6 api_parameters:
+- input: The floating-point tensor whose values will be quantized.
+- scales: A 1D tensor of scale factors, one per channel along the specified axis.
+- zero_points: A 1D tensor of integer zero-point offsets, one per channel along the
+    specified axis.
+- axis: The dimension along which per-channel quantization is applied.
+- dtype: The quantized output data type to produce, such as `torch.quint8`, `torch.qint8`,
+    or `torch.qint32`.
+7 api_usage_example:
+- ' x = torch.tensor([[-1.0, 0.0], [1.0, 2.0]])'
+- ' torch.quantize_per_channel(x, torch.tensor([0.1, 0.01]), torch.tensor([10, 0]),
+  0, torch.quint8)'
+- ' torch.quantize_per_channel(x, torch.tensor([0.1, 0.01]), torch.tensor([10, 0]),
+  0, torch.quint8).int_repr()'
+8 api_shape: null

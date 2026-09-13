@@ -1,0 +1,14 @@
+2 api_name: torch.autograd.forward_ad.unpack_dual
+3 api_description: Returns a dual tensor’s primal value and its associated forward-mode
+  autodiff gradient.
+4 api_signature: torch.autograd.forward_ad.unpack_dual(tensor,*,level)
+5 api_details: ''
+6 api_parameters:
+- dual_tensor: The dual tensor to unpack into its primal tensor and tangent.
+7 api_usage_example:
+- ' with dual_level():'
+- '...     inp = make_dual(x, x_t)'
+- '...     out = f(inp)'
+- '...     y, jvp = unpack_dual(out)'
+- '...     jvp = unpack_dual(out).tangent'
+8 api_shape: null

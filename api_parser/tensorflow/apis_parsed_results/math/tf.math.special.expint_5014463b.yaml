@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.special.expint
+3 api_description: Computes the exponential integral element-wise for positive real
+  inputs.
+4 api_signature: tf.math.special.expint(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor of floating-point values for which the exponential integral is computed.
+7 api_usage_example:
+- tf.math.special.expint([1., 1.1, 2.1, 4.1]).numpy()
+8 api_shape: ''

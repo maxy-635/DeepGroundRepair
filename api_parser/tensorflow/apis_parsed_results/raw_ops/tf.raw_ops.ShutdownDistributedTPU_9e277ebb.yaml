@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.ShutdownDistributedTPU
+3 api_description: Shuts down a running distributed TPU system and returns an error
+  if no system is active.
+4 api_signature: tf.raw_ops.ShutdownDistributedTPU()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

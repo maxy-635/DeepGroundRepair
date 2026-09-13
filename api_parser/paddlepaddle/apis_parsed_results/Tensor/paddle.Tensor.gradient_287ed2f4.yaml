@@ -1,0 +1,14 @@
+2 api_name: paddle.Tensor.gradient
+3 api_description: Returns the gradient of a tensor with respect to the graph, supporting
+  automatic differentiation for backpropagation.
+4 api_signature: paddle.Tensor.gradient(self)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor(5., stop_gradient=False)
+- y = paddle.pow(x, 4.0)
+- y.backward()
+- 'print("grad of x: {}".format(x.gradient()))'
+- 'grad of x: 500.0'
+8 api_shape: {}

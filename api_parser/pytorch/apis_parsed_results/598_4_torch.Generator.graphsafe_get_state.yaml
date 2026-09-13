@@ -1,0 +1,10 @@
+2 api_name: torch.Generator.graphsafe_get_state
+3 api_description: Returns a CUDA graph-safe snapshot of the generator’s current state
+  for capture and replay.
+4 api_signature: graphsafe_get_state()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' g_cuda = torch.Generator(device=''cuda'')'
+- ' current_state = g_cuda.graphsafe_get_state()'
+8 api_shape: null

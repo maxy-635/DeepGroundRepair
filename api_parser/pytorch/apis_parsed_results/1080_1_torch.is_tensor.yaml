@@ -1,0 +1,11 @@
+2 api_name: torch.is_tensor
+3 api_description: Checks whether an object is a PyTorch tensor and returns True or
+  False.
+4 api_signature: '"torch.is_tensor(obj)"'
+5 api_details: ''
+6 api_parameters:
+- obj: The object to check for whether it is a PyTorch tensor.
+7 api_usage_example:
+- ' x = torch.tensor([1, 2, 3])'
+- ' torch.is_tensor(x)'
+8 api_shape: null

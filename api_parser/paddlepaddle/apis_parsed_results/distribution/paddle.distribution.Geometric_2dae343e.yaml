@@ -1,0 +1,20 @@
+2 api_name: paddle.distribution.Geometric
+3 api_description: Represents a geometric distribution parameterized by probability,
+  used to model the number of Bernoulli trials needed to get the first success.
+4 api_signature: paddle.distribution.Geometric(probs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- from paddle.distribution import Geometric
+- geom = Geometric(0.5)
+- print(geom.mean)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.)
+- print(geom.variance)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 2.)
+- print(geom.stddev)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.41421354)
+8 api_shape: {}

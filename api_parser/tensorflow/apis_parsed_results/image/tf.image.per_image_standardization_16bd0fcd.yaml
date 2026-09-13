@@ -1,0 +1,14 @@
+2 api_name: tensorflow.image.per_image_standardization
+3 api_description: Standardizes each image by subtracting its mean and dividing by
+  an adjusted standard deviation so the result has zero mean and unit variance.
+4 api_signature: tf.image.per_image_standardization(image)
+5 api_details: ''
+6 api_parameters:
+- image: The input image tensor to be standardized per image, with the last three
+    dimensions representing each image.
+7 api_usage_example:
+- image = tf.constant(np.arange(1, 13, dtype=np.int32), shape=[2, 2, 3])
+- 'image # 3-D tensor'
+- new_image = tf.image.per_image_standardization(image)
+- 'new_image # 3-D tensor with mean ~= 0 and variance ~= 1'
+8 api_shape: ''

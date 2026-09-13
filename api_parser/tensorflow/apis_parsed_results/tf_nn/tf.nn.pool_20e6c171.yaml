@@ -1,0 +1,19 @@
+2 api_name: tensorflow.nn.pool
+3 api_description: tensorflow.nn.pool performs an N-dimensional pooling operation
+  on input data, supporting various pooling types and configurations, with output
+  dimensions determined by the input shape, kernel size, strides, padding, and data
+  format.
+4 api_signature: tf.nn.pool(input,window_shape,pooling_type,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor's shape and format, indicating where pooling will
+    be applied.
+- window_shape: Defines the size of the pooling window with a sequence of N integers.
+- pooling_type: Determines the type of pooling operation, either 'AVG' for average
+    pooling or 'MAX' for max pooling.
+- strides: Sets the step size for sliding the pooling window, with optional sequence
+    of N integers.
+- padding: Specifies the padding method, either 'SAME' for zero-padding or 'VALID'
+    for no padding, affecting the output size.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.LoadTPUEmbeddingMDLAdagradLightParameters
+3 api_description: Loads MDL Adagrad Light embedding optimizer parameters into HBM
+  for TPU embedding use, after configuration, typically from a checkpoint before training.
+4 api_signature: tf.raw_ops.LoadTPUEmbeddingMDLAdagradLightParameters(parameters,accumulators,weights,benefits,num_shards,shard_id,table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- parameters: The optimizer parameter values to load for the TPU embedding table.
+- accumulators: The accumulator values to load for the TPU embedding table.
+- weights: The weight values to load for the TPU embedding table.
+- benefits: The benefit values to load for the TPU embedding table.
+- num_shards: The total number of shards the embedding table is divided into.
+- shard_id: The index of the shard being loaded.
+- table_id: The numeric identifier of the embedding table, if provided.
+- table_name: The name of the embedding table, if provided.
+- config: Additional configuration information for the load operation, if provided.
+- name: An optional name used to identify the operation.
+7 api_usage_example: null
+8 api_shape: ''

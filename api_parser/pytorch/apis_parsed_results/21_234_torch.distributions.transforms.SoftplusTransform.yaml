@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.transforms.SoftplusTransform
+3 api_description: Applies the softplus transform, mapping real inputs to positive
+  outputs with a numerically stable linear fallback for large values.
+4 api_signature: torch.distributions.transforms.SoftplusTransform(cache_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

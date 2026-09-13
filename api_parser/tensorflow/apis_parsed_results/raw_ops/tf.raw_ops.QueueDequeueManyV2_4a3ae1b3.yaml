@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.QueueDequeueManyV2
+3 api_description: Dequeues `n` tuples from a queue, concatenating each component
+  along the first dimension into `k` output tensors of size `n`, and blocks until
+  enough elements are available unless the queue closes or times out.
+4 api_signature: tf.raw_ops.QueueDequeueManyV2(handle,n,component_types)
+5 api_details: ''
+6 api_parameters:
+- handle: Resource handle identifying the queue to dequeue from.
+- n: Number of tuples to dequeue from the queue.
+- component_types: Data types of the components in each dequeued tuple.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.summary.SummaryWriter
+3 api_description: Stateful writer for recording TensorFlow summaries, providing a
+  context manager to enable summary writing and optionally setting a default step
+  for summary ops.
+4 api_signature: as_default()
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: ''

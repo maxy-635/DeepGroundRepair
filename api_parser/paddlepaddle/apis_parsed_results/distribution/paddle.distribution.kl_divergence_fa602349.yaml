@@ -1,0 +1,17 @@
+2 api_name: paddle.distribution.kl_divergence
+3 api_description: Computes the Kullback-Leibler divergence between two probability
+  distributions, measuring how one distribution differs from another.
+4 api_signature: '"paddle.distribution.kl_divergence(p,q)"'
+5 api_details: ''
+6 api_parameters:
+- p: The first distribution used as the reference distribution in the KL divergence
+    calculation.
+- q: The second distribution compared against `p` to measure the divergence.
+7 api_usage_example:
+- import paddle
+- p = paddle.distribution.Beta(alpha=0.5, beta=0.5)
+- q = paddle.distribution.Beta(alpha=0.3, beta=0.7)
+- print(paddle.distribution.kl_divergence(p, q))
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.21193528)
+8 api_shape: {}

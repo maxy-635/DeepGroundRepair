@@ -1,0 +1,10 @@
+2 api_name: tensorflow.io.parse_single_example
+3 api_description: Parses a single Example proto into dense tensors and SparseTensors,
+  returning outputs without a batch dimension.
+4 api_signature: tf.io.parse_single_example(serialized,features)
+5 api_details: ''
+6 api_parameters:
+- serialized: Contains one serialized Example record to parse.
+- features: Defines the feature schema used to decode each key from the Example.
+7 api_usage_example: null
+8 api_shape: ''

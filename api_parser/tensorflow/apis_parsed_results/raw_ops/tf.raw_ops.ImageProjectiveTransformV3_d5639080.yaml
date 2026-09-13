@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ImageProjectiveTransformV3
+3 api_description: Applies a projective transform to each image, mapping output pixels
+  to input coordinates and filling any pixels that sample outside the input with a
+  specified fill value.
+4 api_signature: tf.raw_ops.ImageProjectiveTransformV3(images,transforms,output_shape,interpolation,fill_mode)
+5 api_details: ''
+6 api_parameters:
+- images: Input batch of images to be transformed.
+- transforms: Projective transform matrices that define how each image is warped.
+- output_shape: Desired height and width of the transformed output images.
+- interpolation: Interpolation method used to sample pixels when resizing or warping.
+- fill_mode: Strategy for filling pixels that fall outside the input image boundaries.
+7 api_usage_example: null
+8 api_shape: ''

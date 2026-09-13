@@ -1,0 +1,8 @@
+2 api_name: torch.profiler.tensorboard_trace_handler
+3 api_description: Saves profiler trace files to a specified directory for TensorBoard,
+  using a unique worker name by default in distributed runs.
+4 api_signature: torch.profiler.tensorboard_trace_handler(dir_name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

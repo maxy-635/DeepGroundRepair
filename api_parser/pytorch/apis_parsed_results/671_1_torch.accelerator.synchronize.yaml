@@ -1,0 +1,19 @@
+2 api_name: torch.accelerator.synchronize
+3 api_description: Blocks until all kernels across all streams on the specified device
+  have finished executing.
+4 api_signature: torch.accelerator.synchronize(device)
+5 api_details: ''
+6 api_parameters:
+- device: The accelerator device to synchronize; if omitted, the current accelerator
+    device index is used.
+7 api_usage_example:
+- ' assert torch.accelerator.is_available() "No available accelerators detected."'
+- ' start_event = torch.Event(enable_timing=True)'
+- ' end_event = torch.Event(enable_timing=True)'
+- ' start_event.record()'
+- ' tensor = torch.randn(100, device=torch.accelerator.current_accelerator())'
+- ' sum = torch.sum(tensor)'
+- ' end_event.record()'
+- ' torch.accelerator.synchronize()'
+- ' elapsed_time_ms = start_event.elapsed_time(end_event)'
+8 api_shape: null

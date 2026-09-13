@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.amax
+3 api_description: Returns the maximum value of an array along a specified axis, using
+  TensorFlow's NumPy-compatible behavior.
+4 api_signature: tf.experimental.numpy.amax(a,axis,keepdims)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

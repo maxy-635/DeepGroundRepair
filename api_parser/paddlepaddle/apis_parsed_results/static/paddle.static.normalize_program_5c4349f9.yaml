@@ -1,0 +1,24 @@
+2 api_name: paddle.static.normalize_program
+3 api_description: Normalizes and optimizes a static program based on the specified
+  feed and fetch variables.
+4 api_signature: paddle.static.normalize_program(program,feed_vars,fetch_vars)
+5 api_details: ''
+6 api_parameters:
+- program: The program to be optimized or normalized.
+- feed_vars: The input variables required for inference.
+- fetch_vars: The output variables to return from inference.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- path_prefix = "./infer_model"
+- '# User defined network, here a softmax regression example'
+- image = paddle.static.data(name='img', shape=[None, 28, 28], dtype='float32')
+- label = paddle.static.data(name='label', shape=[None, 1], dtype='int64')
+- predict = paddle.static.nn.fc(image, 10, activation='softmax')
+- loss = paddle.nn.functional.cross_entropy(predict, label)
+- exe = paddle.static.Executor(paddle.CPUPlace())
+- exe.run(paddle.static.default_startup_program())
+- '# normalize main program.'
+- program = paddle.static.default_main_program()
+- normalized_program = paddle.static.normalize_program(program, [image], [predict])
+8 api_shape: {}

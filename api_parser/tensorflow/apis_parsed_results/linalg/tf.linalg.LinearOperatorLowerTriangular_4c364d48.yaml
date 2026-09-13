@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.LinearOperatorLowerTriangular
+3 api_description: Represents a batched square lower triangular matrix operator that
+  uses only the lower triangle of the last two dimensions and ignores the upper triangle.
+4 api_signature: tf.linalg.LinearOperatorLowerTriangular(tril,name)
+5 api_details: ''
+6 api_parameters:
+- tril: Provides the lower-triangular matrix data that defines the operator; the upper-triangular
+    entries are ignored.
+- name: Specifies an optional name for the LinearOperator instance.
+7 api_usage_example: null
+8 api_shape: ''

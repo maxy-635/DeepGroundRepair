@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.algorithms.Join.notify_join_context
+3 api_description: Signals the join context that this process is still active and
+  has not finished joining.
+4 api_signature: staticnotify_join_context(joinable)
+5 api_details: ''
+6 api_parameters:
+- joinable: The `Joinable` object that is invoking `notify_join_context`.
+7 api_usage_example: null
+8 api_shape: null

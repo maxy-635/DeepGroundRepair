@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseAccumulatorTakeGradient
+3 api_description: Blocks until enough sparse gradients are accumulated, then returns
+  their average, increments the accumulator’s global step, and resets the stored aggregate.
+4 api_signature: tf.raw_ops.SparseAccumulatorTakeGradient(handle,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the SparseConditionalAccumulator instance to read accumulated
+    gradients from.
+- dtype: Specifies the data type of the gradient values to take from the accumulator.
+7 api_usage_example: null
+8 api_shape: ''

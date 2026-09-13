@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.Variable
+3 api_description: A backend-agnostic Keras state container that holds a tensor value
+  and can be updated, supporting mutable model state and functionalization on JAX.
+4 api_signature: tf.keras.Variable(initializer,shape,dtype,trainable,name)
+5 api_details: ''
+6 api_parameters:
+- initializer: Sets the variable's initial value, either directly or via a callable
+    that receives `shape` and `dtype`.
+- shape: Specifies the variable's shape and is required when `initializer` is callable.
+- dtype: Sets the variable's data type, defaulting to the global float dtype (`float32`
+    if unset).
+- trainable: Controls whether the variable is included in training updates, defaulting
+    to `True`.
+- name: Assigns an optional unique name to the variable, or auto-generates one if
+    omitted.
+- name: Provides the variable's name as a string.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: torch.Tensor.align_to
+3 api_description: Reorders a named tensor’s dimensions to match the given names,
+  inserting size-1 dimensions for any names that are missing.
+4 api_signature: align_to(*names)
+5 api_details: ''
+6 api_parameters:
+- names: Specifies the target dimension order for the output tensor, optionally using
+    one `Ellipsis` to automatically include any dimensions not explicitly named.
+7 api_usage_example:
+- ' tensor = torch.randn(2, 2, 2, 2, 2, 2)'
+- ' named_tensor = tensor.refine_names(''A'', ''B'', ''C'', ''D'', ''E'', ''F'')'
+- ' named_tensor.align_to(''F'', ''E'', ...)'
+8 api_shape: null

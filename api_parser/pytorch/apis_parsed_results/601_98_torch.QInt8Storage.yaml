@@ -1,0 +1,8 @@
+2 api_name: torch.QInt8Storage
+3 api_description: Provides storage for 8-bit signed quantized integers, enabling
+  low-level tensor data storage and access.
+4 api_signature: '"class torch.QInt8Storage(wrap_storage,dtype,device)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

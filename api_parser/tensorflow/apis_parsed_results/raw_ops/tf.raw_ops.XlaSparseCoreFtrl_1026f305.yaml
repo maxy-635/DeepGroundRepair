@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.XlaSparseCoreFtrl
+3 api_description: Applies the FTRL optimization update to sparse variables using
+  XLA sparse core support, adjusting parameters such as learning rate, L1/L2 regularization,
+  and accumulator values for selected sparse indices.
+4 api_signature: tf.raw_ops.XlaSparseCoreFtrl(embedding_table,accumulator,linear,learning_rate,indices,gradient)
+5 api_details: ''
+6 api_parameters:
+- embedding_table: The embedding table to be updated by the optimizer.
+- accumulator: The per-embedding accumulator state used by FTRL for adaptive updates.
+- linear: The per-embedding linear state used by FTRL to compute the update step.
+- learning_rate: The scalar or tensor learning rate that controls update magnitude.
+- indices: The int32 indices identifying which embedding rows to update.
+- gradient: The gradient values corresponding to the selected embedding rows.
+7 api_usage_example: null
+8 api_shape: ''

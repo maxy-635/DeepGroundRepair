@@ -1,0 +1,33 @@
+2 api_name: paddle.nn.functional.rrelu
+3 api_description: The paddle.nn.functional.rrelu API implements the randomized leaky
+  ReLU (RReLU) activation function, which introduces randomness in the negative slope
+  to improve model generalization.
+4 api_signature: paddle.nn.functional.rrelu(x,lower,upper)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input tensor on which the RReLU activation function is applied,
+    with data types supported being float16, float32, or float64.
+- lower: Defines the lower bound of the uniform distribution used in the RReLU activation
+    function.
+- upper: Specifies the upper bound of the uniform distribution used in the RReLU activation
+    function.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- paddle.seed(1)
+- input_tensor = paddle.to_tensor([[[[-2.0,  3.0, -4.0,  5.0],
+- '                                   [ 3.0, -4.0,  5.0, -6.0],'
+- '                                   [-7.0, -8.0,  8.0,  9.0]],'
+- '                                  [[ 1.0, -2.0, -3.0,  4.0],'
+- '                                   [-5.0,  6.0,  7.0, -8.0],'
+- '                                   [ 6.0,  7.0,  8.0,  9.0]]]], dtype=''float32'')'
+- out = F.rrelu(input_tensor, 0.1, 0.3)
+- print(out)
+- Tensor(shape=[1, 2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[-0.20715050,  3.        , -1.01193857,  5.        ],'
+- '[ 3.        , -0.94084597,  5.        , -0.65544695],'
+- '[-1.24268556, -2.34339547,  8.        ,  9.        ]],'
+- '[[ 1.        , -0.44942653, -0.68969047,  4.        ],'
+- '[-1.03736508,  6.        ,  7.        , -0.95799232],'
+- '[ 6.        ,  7.        ,  8.        ,  9.        ]]]])'
+8 api_shape: null

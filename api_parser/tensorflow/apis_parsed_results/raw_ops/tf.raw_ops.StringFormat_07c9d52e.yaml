@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.StringFormat
+3 api_description: Formats a string template with tensor values, pretty-printing tensor
+  summaries.
+4 api_signature: tf.raw_ops.StringFormat(inputs,template,placeholder)
+5 api_details: ''
+6 api_parameters:
+- inputs: The tensors to be formatted and inserted into the output string.
+- template: The overall string pattern used to arrange the tensor summaries.
+- placeholder: The token in the template that gets replaced by each tensor summary
+    in order.
+7 api_usage_example: null
+8 api_shape: ''

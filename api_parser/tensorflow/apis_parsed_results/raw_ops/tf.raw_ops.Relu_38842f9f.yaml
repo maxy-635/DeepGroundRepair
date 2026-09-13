@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Relu
+3 api_description: Applies the rectified linear activation by returning max(features,
+  0) for each element.
+4 api_signature: tf.raw_ops.Relu(features)
+5 api_details: ''
+6 api_parameters:
+- features: The input tensor whose values are passed through the ReLU activation,
+    returning zero for negative values and the original value for non-negative values.
+7 api_usage_example: null
+8 api_shape: ''

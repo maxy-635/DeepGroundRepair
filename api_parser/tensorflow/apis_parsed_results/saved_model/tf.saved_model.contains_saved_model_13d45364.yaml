@@ -1,0 +1,9 @@
+2 api_name: tensorflow.saved_model.contains_saved_model
+3 api_description: Checks whether an export directory could contain a SavedModel without
+  loading it, returning false only when it definitely does not and true when it may.
+4 api_signature: tf.saved_model.contains_saved_model(export_dir)
+5 api_details: ''
+6 api_parameters:
+- export_dir: Specifies the absolute path to the directory that may contain a SavedModel.
+7 api_usage_example: null
+8 api_shape: ''

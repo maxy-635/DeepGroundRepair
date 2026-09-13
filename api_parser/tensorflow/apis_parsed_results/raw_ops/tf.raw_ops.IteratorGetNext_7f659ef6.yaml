@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.IteratorGetNext
+3 api_description: Returns the next set of values from an iterator, advancing it to
+  the next element.
+4 api_signature: tf.raw_ops.IteratorGetNext(iterator,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- iterator: The resource handle for the dataset iterator to read the next element
+    from.
+- output_types: The data types expected for each component returned by the iterator.
+- output_shapes: The shapes expected for each component returned by the iterator.
+7 api_usage_example: null
+8 api_shape: ''

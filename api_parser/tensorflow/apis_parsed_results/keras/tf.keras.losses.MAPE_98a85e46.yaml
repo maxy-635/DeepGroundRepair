@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.losses.MAPE
+3 api_description: Computes the mean absolute percentage error between true and predicted
+  values, using a small epsilon to avoid division by zero.
+4 api_signature: '"tf.keras.losses.MAPE(y_true,y_pred)"'
+5 api_details: ''
+6 api_parameters:
+- y_true: Contains the ground truth values used as the reference for computing the
+    mean absolute percentage error.
+- y_pred: Contains the model’s predicted values that are compared against the ground
+    truth to compute the error.
+7 api_usage_example:
+- y_true = np.random.random(size=(2, 3))
+- y_pred = np.random.random(size=(2, 3))
+- loss = keras.losses.mean_absolute_percentage_error(y_true, y_pred)
+8 api_shape: ''

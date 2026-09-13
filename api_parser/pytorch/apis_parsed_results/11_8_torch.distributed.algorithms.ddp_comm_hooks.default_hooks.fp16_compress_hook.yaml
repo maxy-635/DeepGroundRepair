@@ -1,0 +1,12 @@
+2 api_name: torch.distributed.algorithms.ddp_comm_hooks.default_hooks.fp16_compress_hook
+3 api_description: Compresses each gradient bucket by casting it to `torch.float16`
+  and scaling it by the process group size before communication.
+4 api_signature: fp16_compress_hook(bucket)
+5 api_details: ''
+6 api_parameters:
+- state: Unused hook state object passed through the communication hook API.
+- bucket: A DDP gradient bucket containing tensors to be compressed, transmitted,
+    and then restored.
+7 api_usage_example:
+- ' ddp_model.register_comm_hook(process_group, fp16_compress_hook)'
+8 api_shape: null

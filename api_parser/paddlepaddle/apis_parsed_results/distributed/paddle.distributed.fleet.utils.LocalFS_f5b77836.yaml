@@ -1,0 +1,13 @@
+2 api_name: paddle.distributed.fleet.utils.LocalFS
+3 api_description: Provides a simple local filesystem interface for checking paths,
+  reading and writing files, listing directories, and creating or removing local files
+  and folders.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- from paddle.distributed.fleet.utils import LocalFS
+- client = LocalFS()
+- subdirs, files = client.ls_dir("./")
+8 api_shape: {}

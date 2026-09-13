@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SparseSparseMinimum
+3 api_description: Computes the element-wise minimum of two SparseTensors with the
+  same shape, without broadcasting.
+4 api_signature: tf.raw_ops.SparseSparseMinimum(a_indices,a_values,b_indices,b_values)
+5 api_details: ''
+6 api_parameters:
+- a_indices: Specifies the row-major indices of the non-empty elements in the first
+    sparse tensor.
+- a_values: Provides the non-empty values for the first sparse tensor, aligned with
+    `a_indices`.
+- b_indices: Specifies the row-major indices of the non-empty elements in the second
+    sparse tensor.
+- b_values: Provides the non-empty values for the second sparse tensor, aligned with
+    `b_indices` and matching the dtype of `a_values`.
+7 api_usage_example: null
+8 api_shape: ''

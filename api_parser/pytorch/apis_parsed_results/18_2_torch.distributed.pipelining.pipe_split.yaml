@@ -1,0 +1,15 @@
+2 api_name: torch.distributed.pipelining.pipe_split
+3 api_description: Marks a boundary between pipeline stages in a module, enabling
+  the module to be split into stages for pipelined execution while remaining a no-op
+  during eager runs.
+4 api_signature: torch.distributed.pipelining.pipe_split()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' def forward(self, x):'
+- '     x = torch.mm(x, self.mm_param)'
+- '     x = torch.relu(x)'
+- '     pipe_split()'
+- '     x = self.lin(x)'
+- '     return x'
+8 api_shape: null

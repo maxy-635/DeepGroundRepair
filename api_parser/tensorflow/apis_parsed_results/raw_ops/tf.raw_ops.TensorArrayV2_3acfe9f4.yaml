@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TensorArrayV2
+3 api_description: Creates a TensorArray resource for storing and reading a sequence
+  of tensors, supporting dynamic accumulation and later access; deprecated in favor
+  of TensorArrayV3.
+4 api_signature: tf.raw_ops.TensorArrayV2(size,dtype,element_shape,dynamic_size)
+5 api_details: ''
+6 api_parameters:
+- size: Sets the initial number of elements the TensorArray can hold.
+- dtype: Specifies the data type of the TensorArray elements.
+- element_shape: Defines the expected shape of each element, if known.
+- dynamic_size: Controls whether the TensorArray can grow beyond its initial size.
+7 api_usage_example: null
+8 api_shape: ''

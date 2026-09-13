@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Pack
+3 api_description: Stacks N tensors of the same shape into one tensor with one extra
+  rank, inserting the new dimension at the specified axis.
+4 api_signature: tf.raw_ops.Pack(values,axis)
+5 api_details: ''
+6 api_parameters:
+- values: The tensors to stack together; they must all have the same shape and type.
+- axis: The dimension along which to pack the tensors, with negative values counted
+    from the end.
+7 api_usage_example: null
+8 api_shape: ''

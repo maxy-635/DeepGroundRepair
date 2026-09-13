@@ -1,0 +1,13 @@
+2 api_name: torch.conj
+3 api_description: Returns a view of the input with the conjugate bit flipped; for
+  non-complex tensors, returns the input unchanged.
+4 api_signature: torch.conj(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to return the complex conjugate of.
+7 api_usage_example:
+- ' x = torch.tensor([-1 + 1j, -2 + 2j, 3 - 3j])'
+- ' x.is_conj()'
+- ' y = torch.conj(x)'
+- ' y.is_conj()'
+8 api_shape: null

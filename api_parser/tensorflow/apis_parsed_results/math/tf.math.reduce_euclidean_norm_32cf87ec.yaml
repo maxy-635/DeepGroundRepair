@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.reduce_euclidean_norm
+3 api_description: Computes the Euclidean norm (L2 length) of a tensor by reducing
+  values across the specified axis or all dimensions.
+4 api_signature: tf.math.reduce_euclidean_norm(input_tensor,axis)
+5 api_details: ''
+6 api_parameters:
+- input_tensor: Specifies the numeric tensor whose Euclidean norm will be computed.
+- axis: Specifies which dimensions to reduce when computing the norm, or all dimensions
+    if `None`.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: paddle.cast_
+3 api_description: In-place casts tensor `x` to the target data type, replacing the
+  output tensor with `x`.
+4 api_signature: paddle.cast_(x,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

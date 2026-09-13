@@ -1,0 +1,11 @@
+2 api_name: torch.package.PackageExporter.save_text
+3 api_description: Saves a text string into a package under a specified internal file
+  path, storing it as packaged text data.
+4 api_signature: save_text(package,resource,text)
+5 api_details: ''
+6 api_parameters:
+- package: Specifies which module package the text resource belongs to.
+- resource: Names the resource uniquely so it can be loaded later.
+- text: Provides the text content to save as the resource.
+7 api_usage_example: null
+8 api_shape: null

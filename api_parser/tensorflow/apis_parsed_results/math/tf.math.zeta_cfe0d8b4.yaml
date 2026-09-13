@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.zeta
+3 api_description: Computes the Hurwitz zeta function ζ(x, q), summing (q + n)^(-x)
+  from n = 0 to infinity for given x and q.
+4 api_signature: tf.math.zeta(x,q)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor of real values at which to compute the zeta function.
+- q: Input tensor specifying the second argument of the zeta function, with the same
+    dtype as `x`.
+7 api_usage_example: null
+8 api_shape: ''

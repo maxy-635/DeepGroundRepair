@@ -1,0 +1,12 @@
+2 api_name: tensorflow.sparse.map_values
+3 api_description: Applies an operation to the values of one or more SparseTensors,
+  preserving their indices and dense shape in the returned SparseTensor.
+4 api_signature: tf.sparse.map_values(op,*args)
+5 api_details: ''
+6 api_parameters:
+- op: Defines the operation to apply to each SparseTensor value, typically an element-wise
+    shape-preserving function.
+- '*args': Supplies any additional arguments needed by the operation.
+7 api_usage_example:
+- tf.sparse.to_dense(tf.sparse.map_values(tf.add, s, 5)).numpy()
+8 api_shape: ''

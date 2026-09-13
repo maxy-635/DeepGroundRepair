@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TFRecordReader
+3 api_description: Reads records sequentially from a TensorFlow Records file and outputs
+  each record for use in TensorFlow pipelines.
+4 api_signature: tf.raw_ops.TFRecordReader(compression_type,name)
+5 api_details: ''
+6 api_parameters:
+- compression_type: Specifies the compression format used to read TFRecord files,
+    or leaves them uncompressed when set to an empty string.
+- name: Sets an optional name for the operation, mainly for graph readability and
+    debugging.
+7 api_usage_example: null
+8 api_shape: ''

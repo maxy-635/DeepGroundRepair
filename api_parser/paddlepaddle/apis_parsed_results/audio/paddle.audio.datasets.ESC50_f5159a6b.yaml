@@ -1,0 +1,40 @@
+2 api_name: paddle.audio.datasets.ESC50
+3 api_description: Loads the ESC-50 environmental audio dataset of 5-second clips
+  across 50 classes for benchmarking sound classification.
+4 api_signature: paddle.audio.datasets.ESC50(mode,split,feat_type,archive,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- mode: Selects whether to load the training set or the development set.
+- split: Chooses which fold of the development set to use.
+- feat_type: Specifies the audio feature type to extract.
+- archive: Sets the download location for the audio archive.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- mode = 'dev'
+- 'esc50_dataset = paddle.audio.datasets.ESC50(mode=mode,  # type: ignore[arg-type]'
+- '                                        feat_type=''raw'')'
+- 'for idx in range(5):'
+- '    audio, label = esc50_dataset[idx]'
+- '    # do something with audio, label'
+- '    print(audio.shape, label)'
+- '    # [audio_data_length] , label_id'
+- '[220500] 0'
+- '[220500] 14'
+- '[220500] 36'
+- '[220500] 36'
+- '[220500] 19'
+- 'esc50_dataset = paddle.audio.datasets.ESC50(mode=mode,  # type: ignore[arg-type]'
+- '                                        feat_type=''mfcc'','
+- '                                        n_mfcc=40)'
+- 'for idx in range(5):'
+- '    audio, label = esc50_dataset[idx]'
+- '    # do something with mfcc feature, label'
+- '    print(audio.shape, label)'
+- '    # [feature_dim, length] , label_id'
+- '[40, 1723] 0'
+- '[40, 1723] 14'
+- '[40, 1723] 36'
+- '[40, 1723] 36'
+- '[40, 1723] 19'
+8 api_shape: {}

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.FFTND
+3 api_description: Computes the n-dimensional discrete Fourier transform of an input
+  tensor over the specified axes, using zero-padding or default input shape when needed.
+4 api_signature: tf.raw_ops.FFTND(input,fft_length,axes)
+5 api_details: ''
+6 api_parameters:
+- input: The complex input tensor to transform.
+- fft_length: The FFT size to use for each transformed dimension.
+- axes: The axes along which to perform the FFT, matching the shape of `fft_length`.
+7 api_usage_example: null
+8 api_shape: ''

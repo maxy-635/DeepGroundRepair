@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ExperimentalPrivateThreadPoolDataset
+3 api_description: Creates a dataset that processes an input dataset using a custom
+  private thread pool.
+4 api_signature: tf.raw_ops.ExperimentalPrivateThreadPoolDataset(input_dataset,num_threads)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be processed using a private thread pool.
+- num_threads: The number of threads to allocate to the private thread pool.
+7 api_usage_example: null
+8 api_shape: ''

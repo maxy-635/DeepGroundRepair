@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.metrics.MeanAbsolutePercentageError
+3 api_description: Computes the mean absolute percentage error between true and predicted
+  values as a metric.
+4 api_signature: tf.keras.metrics.MeanAbsolutePercentageError(name,dtype)
+5 api_details: ''
+6 api_parameters:
+- name: Sets an optional display name for the metric instance.
+- dtype: Controls the data type used for the metric’s output value.
+7 api_usage_example:
+- m = keras.metrics.MeanAbsolutePercentageError()
+- m.update_state([[0, 1], [0, 0]], [[1, 1], [0, 0]])
+- m.result()
+- m.reset_state()
+- m.update_state([[0, 1], [0, 0]], [[1, 1], [0, 0]],
+- '               sample_weight=[1, 0])'
+- m.result()
+8 api_shape: ''

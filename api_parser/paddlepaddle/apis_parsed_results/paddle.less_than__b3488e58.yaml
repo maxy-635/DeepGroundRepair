@@ -1,0 +1,8 @@
+2 api_name: paddle.less_than_
+3 api_description: Computes an elementwise less-than comparison in place, replacing
+  the output tensor with input x.
+4 api_signature: paddle.less_than_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

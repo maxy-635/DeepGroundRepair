@@ -1,0 +1,38 @@
+2 api_name: paddle.sparse.nn.MaxPool3D
+3 api_description: Applies 3D max pooling to sparse input features using the specified
+  kernel size, stride, and padding, producing NDHWC-formatted output.
+4 api_signature: paddle.sparse.nn.MaxPool3D(kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Sets the 3D pooling window size, using one value for all dimensions
+    or three values for depth, height, and width.
+- stride: Sets the step size of the pooling window, defaulting to the kernel size
+    when not provided.
+- padding: Adds zero-padding around the input, either uniformly, per dimension, per
+    side, or using valid/same padding modes.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(1, 1)'
+- '        w_tmp = self.create_parameter([1,1])'
+- '        self.add_parameter("w_tmp", w_tmp)'
+- '...'
+- '    def forward(self, input):'
+- '        return self._linear(input)'
+- '...'
+- mylayer = MyLayer()
+- 'for name, param in mylayer.named_parameters():'
+- '    print(name, param)'
+- 'w_tmp Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.01448846]])'
+- '_linear.weight Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0.18551230]])'
+- '_linear.bias Parameter containing:'
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[0.])'
+8 api_shape: {}

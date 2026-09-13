@@ -1,0 +1,29 @@
+2 api_name: paddle.nn.CrossEntropyLoss
+3 api_description: paddle.nn.CrossEntropyLoss combines softmax and cross entropy loss
+  for stable computation.
+4 api_signature: paddle.nn.CrossEntropyLoss(reduction,soft_label,axis)
+5 api_details: ''
+6 api_parameters:
+- reduction: Determines how the loss is averaged or summed over the batch, with options
+    'none', 'mean', or 'sum', defaulting to 'mean'.
+- soft_label: Specifies whether the labels are soft (True) or hard (False), with the
+    default being hard (False).
+- axis: Indicates the dimension index for performing softmax calculations, with a
+    default value of -1.
+7 api_usage_example:
+- '# hard labels'
+- import paddle
+- paddle.seed(2023)
+- N=100
+- C=200
+- reduction='mean'
+- input =  paddle.rand([N, C], dtype='float64')
+- label =  paddle.randint(0, C, shape=[N], dtype='int64')
+- weight = paddle.rand([C], dtype='float64')
+- cross_entropy_loss = paddle.nn.loss.CrossEntropyLoss(
+- '    weight=weight, reduction=reduction)'
+- dy_ret = cross_entropy_loss(input, label)
+- print(dy_ret)
+- Tensor(shape=[], dtype=float64, place=Place(cpu), stop_gradient=True,
+- 5.33697682)
+8 api_shape: null

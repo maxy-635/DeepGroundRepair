@@ -1,0 +1,12 @@
+2 api_name: tensorflow.image.psnr
+3 api_description: Computes the peak signal-to-noise ratio between two images or signals,
+  returning one PSNR value per batch item.
+4 api_signature: tf.image.psnr(a,b,max_val)
+5 api_details: ''
+6 api_parameters:
+- a: The first batch of images to compare.
+- b: The second batch of images to compare against the first.
+- max_val: The maximum possible image value, used to define the dynamic range for
+    PSNR calculation.
+7 api_usage_example: null
+8 api_shape: ''

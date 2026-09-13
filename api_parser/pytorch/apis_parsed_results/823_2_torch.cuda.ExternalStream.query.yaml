@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.ExternalStream.query
+3 api_description: Checks whether all work previously submitted to the CUDA external
+  stream has finished executing.
+4 api_signature: query()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

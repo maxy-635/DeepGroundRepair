@@ -1,0 +1,11 @@
+2 api_name: torch.package.PackageExporter.save_source_string
+3 api_description: Saves a source code string as the implementation for a named module
+  inside the exported package.
+4 api_signature: save_source_string(module_name,src)
+5 api_details: ''
+6 api_parameters:
+- module_name: Names the module or package whose source code will be saved into the
+    package.
+- src: Provides the Python source code content to store for that module or package.
+7 api_usage_example: null
+8 api_shape: null

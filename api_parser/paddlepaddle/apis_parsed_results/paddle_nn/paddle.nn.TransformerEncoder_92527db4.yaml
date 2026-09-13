@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.TransformerEncoder
+3 api_description: TransformerEncoder is a module that consists of multiple encoder
+  layers stacked together, which processes input sequences to generate context-aware
+  representations using self-attention and feedforward neural networks.
+4 api_signature: paddle.nn.TransformerEncoder(encoder_layer,num_layers)
+5 api_details: ''
+6 api_parameters:
+- encoder_layer: Specifies the base TransformerEncoderLayer instance to configure
+    the initial layer and guide the creation of subsequent layers.
+- num_layers: Determines how many encoder layers will be stacked in the TransformerEncoder.
+7 api_usage_example: []
+8 api_shape: null

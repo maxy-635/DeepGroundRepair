@@ -1,0 +1,12 @@
+2 api_name: tensorflow.feature_column.sequence_numeric_column
+3 api_description: Creates a deprecated sequence feature column for numeric data in
+  time-ordered feature tensors.
+4 api_signature: tf.feature_column.sequence_numeric_column(key,shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- key: Identifies which input feature the sequence numeric column represents.
+- shape: Specifies the per-sequence-item input shape and how many values are expected
+    for each sequence length.
+- dtype: Sets the data type of the numeric values in the sequence feature.
+7 api_usage_example: null
+8 api_shape: ''

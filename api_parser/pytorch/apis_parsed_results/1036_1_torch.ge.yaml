@@ -1,0 +1,11 @@
+2 api_name: torch.ge
+3 api_description: Returns a boolean tensor indicating where each element of input
+  is greater than or equal to the corresponding element in other.
+4 api_signature: torch.ge(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are compared against `other`.
+- other: The tensor or scalar value used as the comparison target.
+7 api_usage_example:
+- ' torch.ge(torch.tensor([[1, 2], [3, 4]]), torch.tensor([[1, 1], [4, 4]]))'
+8 api_shape: null

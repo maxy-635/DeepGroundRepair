@@ -1,0 +1,13 @@
+2 api_name: tensorflow.queue.PriorityQueue
+3 api_description: A queue that stores elements with priorities and dequeues them
+  in priority order.
+4 api_signature: tf.queue.PriorityQueue(capacity,types,shapes)
+5 api_details: ''
+6 api_parameters:
+- capacity: Sets the maximum number of elements the priority queue can hold.
+- types: Specifies the data types of the queued tensors, with the first tensor reserved
+    for an int64 priority value.
+- shapes: Optionally defines the fully specified shapes for each queued tensor, matching
+    the `types` list length.
+7 api_usage_example: null
+8 api_shape: ''

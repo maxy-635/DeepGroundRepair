@@ -1,0 +1,17 @@
+2 api_name: torch.nn.parallel.DistributedDataParallel.register_comm_hook
+3 api_description: Registers a custom communication hook to control how DistributedDataParallel
+  aggregates and reduces gradients across workers during backpropagation.
+4 api_signature: register_comm_hook(state,hook)
+5 api_details: ''
+6 api_parameters:
+- state: Holds per-worker state shared across all gradient buckets during training,
+    such as compression feedback or peer communication data.
+- hook: Processes each ready gradient bucket and returns a Future containing the updated
+    tensor values, optionally performing async communication.
+7 api_usage_example:
+- ' def noop(state: object, bucket: dist.GradBucket) -> torch.futures.Future[torch.Tensor]:'
+- '     fut = torch.futures.Future()'
+- '     fut.set_result(bucket.buffer())'
+- '     return fut'
+- ' ddp.register_comm_hook(state=None, hook=noop)'
+8 api_shape: null

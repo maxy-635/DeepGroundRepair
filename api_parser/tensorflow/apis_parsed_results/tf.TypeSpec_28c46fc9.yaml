@@ -1,0 +1,14 @@
+2 api_name: tensorflow.TypeSpec
+3 api_description: Represents a TensorFlow value type and provides a proto serialization
+  of the TypeSpec instance for TensorFlow values.
+4 api_signature: experimental_as_proto()
+5 api_details: ''
+6 api_parameters:
+- proto: A serialized TypeSpec proto produced by `experimental_as_proto`.
+7 api_usage_example:
+- spec = tf.TensorSpec(shape=[None, None], dtype=tf.int32)
+- '@tf.function(input_signature=[spec])'
+- 'def double(x):'
+- '  return x * 2'
+- double(tf.constant([[1, 2], [3, 4]]))
+8 api_shape: ''

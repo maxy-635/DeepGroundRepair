@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.sin
+3 api_description: Computes the element-wise sine of an input tensor and returns a
+  tensor with the same shape.
+4 api_signature: tf.keras.ops.sin(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

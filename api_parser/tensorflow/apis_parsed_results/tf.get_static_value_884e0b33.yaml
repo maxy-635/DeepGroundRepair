@@ -1,0 +1,12 @@
+2 api_name: tensorflow.get_static_value
+3 api_description: Attempts to statically evaluate a tensor and return its constant
+  value as a NumPy array when it can be computed efficiently.
+4 api_signature: tf.get_static_value(tensor)
+5 api_details: ''
+6 api_parameters:
+- tensor: Specifies the Tensor whose value should be statically evaluated if possible.
+7 api_usage_example:
+- '# `tf.Variable` is not supported.'
+- c = tf.Variable(30)
+- print(tf.get_static_value(c))
+8 api_shape: ''

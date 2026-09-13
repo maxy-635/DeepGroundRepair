@@ -1,0 +1,11 @@
+2 api_name: torch.onnx.register_custom_op_symbolic
+3 api_description: Registers a symbolic function that tells ONNX export how to map
+  a custom operator to ONNX graph nodes.
+4 api_signature: torch.onnx.register_custom_op_symbolic(symbolic_name,symbolic_fn)
+5 api_details: ''
+6 api_parameters:
+- symbolic_name: Specifies the custom operator name in `<domain>::<op>` format.
+- symbolic_fn: Defines the function that maps the operator to ONNX graph nodes using
+    the graph and current inputs.
+7 api_usage_example: null
+8 api_shape: null

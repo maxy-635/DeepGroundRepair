@@ -1,0 +1,22 @@
+2 api_name: tensorflow.py_function
+3 api_description: Wraps a Python function as a TensorFlow op that runs eagerly inside
+  graphs, enabling Python-side logic in tf.function while sacrificing graph portability
+  and some optimizations.
+4 api_signature: tf.py_function(func,inp,Tout)
+5 api_details: ''
+6 api_parameters:
+- func: Defines the Python callable to execute, which receives the input arguments
+    and returns values matching `Tout`.
+- inp: Provides the tensor or composite-tensor inputs that will be passed to `func`.
+- Tout: Specifies the expected output type or types produced by `func`.
+7 api_usage_example:
+- '# No decorator'
+- 'def log_huber(x, m):'
+- '  if tf.abs(x) <= m:'
+- '    return x**2'
+- '  else:'
+- '    return m**2 * (1 - 2 * tf.math.log(m) + tf.math.log(x**2))'
+- x = tf.constant(1.0)
+- m = tf.constant(2.0)
+- tf.py_function(func=log_huber, inp=[x, m], Tout=tf.float32).numpy()
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.beta.Beta
+3 api_description: Beta distribution over values in [0, 1] with learnable concentration
+  parameters, supporting sampling, log probability evaluation, entropy, mean/variance,
+  and other standard distribution operations.
+4 api_signature: torch.distributions.beta.Beta(concentration1,concentration0)
+5 api_details: ''
+6 api_parameters:
+- concentration1: Sets the Beta distribution's first shape parameter, controlling
+    the distribution's mass near 1.
+- concentration0: Sets the Beta distribution's second shape parameter, controlling
+    the distribution's mass near 0.
+7 api_usage_example:
+- ' m = Beta(torch.tensor([0.5]), torch.tensor([0.5]))'
+- ' m.sample()  # Beta distributed with concentration concentration1 and concentration0'
+8 api_shape: null

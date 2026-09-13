@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.finfo
+3 api_description: Returns machine limits and floating-point information for a given
+  dtype, currently by forwarding to NumPy’s `finfo`.
+4 api_signature: '"tf.experimental.numpy.finfo(dtype)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

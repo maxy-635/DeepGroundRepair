@@ -1,0 +1,23 @@
+2 api_name: torch.utils.data.WeightedRandomSampler
+3 api_description: Samples indices from 0 to len(weights)-1 with probability proportional
+  to the provided weights.
+4 api_signature: torch.utils.data.WeightedRandomSampler(weights,num_samples,replacement)
+5 api_details: ''
+6 api_parameters:
+- weights: Specifies the relative sampling weights for each item, not required to
+    sum to 1.
+- num_samples: Sets how many samples the sampler should draw in total.
+- replacement: Controls whether samples can be drawn more than once; if False, each
+    drawn index cannot be selected again.
+7 api_usage_example:
+- ' list('
+- '...     WeightedRandomSampler('
+- '...         [0.1, 0.9, 0.4, 0.7, 3.0, 0.6], 5, replacement=True'
+- '...     )'
+- '... )'
+- ' list('
+- '...     WeightedRandomSampler('
+- '...         [0.9, 0.4, 0.05, 0.2, 0.3, 0.1], 5, replacement=False'
+- '...     )'
+- '... )'
+8 api_shape: null

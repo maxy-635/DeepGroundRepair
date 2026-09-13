@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.algorithms.ddp_comm_hooks.powerSGD_hook.PowerSGDState
+3 api_description: Holds PowerSGD compression settings and per-training state needed
+  to apply the gradient communication hook across iterations.
+4 api_signature: torch.distributed.algorithms.ddp_comm_hooks.powerSGD_hook.PowerSGDState(process_group,matrix_approximation_rank,start_powerSGD_iter,use_error_feedback,warm_start,random_seed)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

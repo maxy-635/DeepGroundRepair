@@ -1,0 +1,18 @@
+2 api_name: paddle.frexp
+3 api_description: Decomposes a floating-point value into a normalized mantissa and
+  an exponent such that the original number equals mantissa × 2^exponent.
+4 api_signature: paddle.frexp(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose floating-point values are decomposed into mantissa and exponent.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1, 2, 3, 4]], dtype="float32")
+- mantissa, exponent = paddle.tensor.math.frexp(x)
+- mantissa
+- Tensor(shape=[1, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.50000000, 0.50000000, 0.75000000, 0.50000000]])'
+- exponent
+- Tensor(shape=[1, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 2., 2., 3.]])'
+8 api_shape: {}

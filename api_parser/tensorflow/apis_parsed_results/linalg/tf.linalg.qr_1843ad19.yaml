@@ -1,0 +1,12 @@
+2 api_name: tensorflow.linalg.qr
+3 api_description: Computes the QR decomposition of each matrix in a tensor, returning
+  Q and R factors such that the original matrix equals Q @ R; supports batched inputs
+  and has a well-defined gradient when the first min(M, N) columns are linearly independent.
+4 api_signature: tf.linalg.qr(input,full_matrices)
+5 api_details: ''
+6 api_parameters:
+- input: The matrix or batch of matrices to decompose into QR form.
+- full_matrices: Controls whether to return full-sized Q and R matrices or only the
+    leading P columns of Q.
+7 api_usage_example: null
+8 api_shape: ''

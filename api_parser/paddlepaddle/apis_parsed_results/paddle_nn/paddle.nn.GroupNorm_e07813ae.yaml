@@ -1,0 +1,43 @@
+2 api_name: paddle.nn.GroupNorm
+3 api_description: paddle.nn.GroupNorm is used to create a Group Normalization Layer,
+  which normalizes input data across groups of channels to stabilize and accelerate
+  training in neural networks.
+4 api_signature: paddle.nn.GroupNorm(num_groups,num_channels,epsilon)
+5 api_details: ''
+6 api_parameters:
+- num_groups: Specifies how many groups the channels are divided into for normalization.
+- num_channels: Indicates the total number of input channels to be normalized.
+- epsilon: A small constant added to variance to avoid division by zero during normalization.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- x = paddle.arange(48, dtype="float32").reshape((2, 6, 2, 2))
+- group_norm = paddle.nn.GroupNorm(num_channels=6, num_groups=6)
+- group_norm_out = group_norm(x)
+- print(group_norm_out)
+- Tensor(shape=[2, 6, 2, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]]],'
+- '[[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]],'
+- '[[-1.34163547, -0.44721183],'
+- '[ 0.44721183,  1.34163547]]]])'
+8 api_shape: null

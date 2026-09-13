@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.Hardtanh
+3 api_description: The paddle.nn.Hardtanh API implements the Hardtanh activation function,
+  which clamps input values within a specified range, typically between -1 and 1,
+  to introduce non-linearity in neural networks.
+4 api_signature: paddle.nn.Hardtanh(min,max)
+5 api_details: ''
+6 api_parameters:
+- min: Sets the lower bound for the Hardtanh activation function, with a default value
+    of -1.
+- max: Sets the upper bound for the Hardtanh activation function, with a default value
+    of 1.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-1.5, 0.3, 2.5])
+- m = paddle.nn.Hardtanh()
+- out = m(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-1.       , 0.30000001,  1.       ])'
+8 api_shape: null

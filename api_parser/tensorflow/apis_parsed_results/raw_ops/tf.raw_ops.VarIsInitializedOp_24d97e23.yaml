@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.VarIsInitializedOp
+3 api_description: Returns whether a resource handle-based variable has been initialized.
+4 api_signature: tf.raw_ops.VarIsInitializedOp(resource)
+5 api_details: ''
+6 api_parameters:
+- resource: The resource handle to check for initialization.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.eye
+3 api_description: Creates a 2D sparse tensor with ones on the diagonal and zeros
+  elsewhere.
+4 api_signature: tf.sparse.eye(num_rows,num_columns)
+5 api_details: ''
+6 api_parameters:
+- num_rows: Specifies the number of rows in the sparse identity matrix.
+- num_columns: Optionally specifies the number of columns in the sparse identity matrix;
+    if omitted, it matches `num_rows`.
+7 api_usage_example: null
+8 api_shape: ''

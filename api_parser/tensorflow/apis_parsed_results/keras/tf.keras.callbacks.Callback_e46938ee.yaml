@@ -1,0 +1,19 @@
+2 api_name: tensorflow.keras.callbacks.Callback
+3 api_description: Base class for creating custom Keras callbacks that hook into training,
+  evaluation, and prediction lifecycle events by overriding stage-specific methods.
+4 api_signature: tf.keras.callbacks.Callback()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- training_finished = False
+- 'class MyCallback(Callback):'
+- '  def on_train_end(self, logs=None):'
+- '    global training_finished'
+- '    training_finished = True'
+- model = Sequential([
+- '    layers.Dense(1, input_shape=(1,))])'
+- model.compile(loss='mean_squared_error')
+- model.fit(np.array([[1.0]]), np.array([[1.0]]),
+- '          callbacks=[MyCallback()])'
+- assert training_finished == True
+8 api_shape: ''

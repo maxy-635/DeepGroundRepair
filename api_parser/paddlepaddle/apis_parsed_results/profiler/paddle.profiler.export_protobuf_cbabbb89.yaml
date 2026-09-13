@@ -1,0 +1,21 @@
+2 api_name: paddle.profiler.export_protobuf
+3 api_description: Returns a callable that exports tracing data to a protobuf file
+  in a specified directory, using the worker name or a default hostname_pid filename.
+4 api_signature: paddle.profiler.export_protobuf(dir_name)
+5 api_details: ''
+6 api_parameters:
+- dir_name: Specifies the directory where profiling data will be saved.
+7 api_usage_example:
+- '>>>'
+- import paddle.profiler as profiler
+- import paddle
+- paddle.device.set_device('gpu')
+- with profiler.Profiler(
+- '    targets=[profiler.ProfilerTarget.CPU, profiler.ProfilerTarget.GPU],'
+- '    scheduler = (3, 10),'
+- '    on_trace_ready = profiler.export_protobuf(''./log'')'
+- ') as p:'
+- '    for iter in range(10):'
+- '        # train()'
+- '        p.step()'
+8 api_shape: {}

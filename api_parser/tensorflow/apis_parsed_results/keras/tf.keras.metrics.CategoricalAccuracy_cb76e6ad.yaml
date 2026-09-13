@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.metrics.CategoricalAccuracy
+3 api_description: Computes the fraction of samples where the predicted class matches
+  the one-hot true label, using argmax over logits or probabilities and optional sample
+  weights.
+4 api_signature: tf.keras.metrics.CategoricalAccuracy(name)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the metric instance’s display name.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([[0, 0, 1], [0, 1, 0]], [[0.1, 0.9, 0.8],
+- '                [0.05, 0.95, 0]],'
+- '               sample_weight=[0.7, 0.3])'
+- m.result()
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.enable_strict_mode
+3 api_description: Enables TensorFlow strict mode so deprecated behaviors raise errors
+  instead of warnings.
+4 api_signature: tf.experimental.enable_strict_mode()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

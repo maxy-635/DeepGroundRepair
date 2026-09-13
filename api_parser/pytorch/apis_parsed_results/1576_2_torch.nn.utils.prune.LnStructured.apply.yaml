@@ -1,0 +1,14 @@
+2 api_name: torch.nn.utils.prune.LnStructured.apply
+3 api_description: Structurally prunes a tensor during training by reparameterizing
+  it, replacing the original parameter with a masked version based on an L-norm criterion.
+4 api_signature: '"apply(module,name,amount,importance_scores)"'
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the parameter to be pruned.
+- name: The name of the parameter within the module to prune.
+- amount: The number or fraction of parameters to prune.
+- n: The norm degree used to determine which structured units are pruned.
+- importance_scores: Optional importance values used instead of the parameter itself
+    to rank elements for pruning.
+7 api_usage_example: null
+8 api_shape: null

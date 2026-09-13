@@ -1,0 +1,11 @@
+2 api_name: tensorflow.tensor_scatter_nd_sub
+3 api_description: Returns a new tensor by subtracting sparse update values from specified
+  positions in an existing tensor.
+4 api_signature: tf.tensor_scatter_nd_sub(tensor,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor to be copied and updated.
+- indices: The integer index locations where updates will be applied.
+- updates: The values to write into the specified positions, matching the tensor type.
+7 api_usage_example: null
+8 api_shape: ''

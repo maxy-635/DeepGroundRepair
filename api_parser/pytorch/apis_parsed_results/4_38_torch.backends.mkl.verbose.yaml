@@ -1,0 +1,12 @@
+2 api_name: torch.backends.mkl.verbose
+3 api_description: Enables on-demand oneMKL verbose logging for debugging and performance
+  diagnostics.
+4 api_signature: torch.backends.mkl.verbose(enable)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import torch
+- model(data)
+- 'with torch.backends.mkl.verbose(torch.backends.mkl.VERBOSE_ON):'
+- '    model(data)'
+8 api_shape: null

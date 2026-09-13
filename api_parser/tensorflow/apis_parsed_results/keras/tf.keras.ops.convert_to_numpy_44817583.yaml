@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.convert_to_numpy
+3 api_description: Converts a tensor or other supported value into a NumPy array.
+4 api_signature: tf.keras.ops.convert_to_numpy(x)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to convert into a NumPy array.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: paddle.i0
+3 api_description: Computes the modified Bessel function of the first kind of order
+  0 (I0) for the given input.
+4 api_signature: paddle.i0(x)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor to be processed, with supported data types including
+    float32, float64, uint8, int8, int16, int32, and int64.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([0, 1, 2, 3, 4], dtype="float32")
+- paddle.i0(x)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.99999994 , 1.26606596 , 2.27958512 , 4.88079262 , 11.30192089])'
+8 api_shape: {}

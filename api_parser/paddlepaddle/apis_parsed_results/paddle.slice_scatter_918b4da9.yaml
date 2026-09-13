@@ -1,0 +1,47 @@
+2 api_name: paddle.slice_scatter
+3 api_description: Returns a new tensor by inserting values into a sliced region across
+  multiple axes, with axes matching the starts, ends, and strides.
+4 api_signature: paddle.slice_scatter(x,value,axes,starts,ends)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor that will be updated with the scattered values.
+- value: The tensor containing the values to insert into `x`.
+- axes: The axes along which the insertion positions are specified.
+- starts: The starting indices that define where to insert `value`.
+- ends: The ending indices that define the slice range for insertion.
+7 api_usage_example:
+- import paddle
+- x = paddle.zeros((3, 9))
+- value = paddle.ones((3, 2))
+- res = paddle.slice_scatter(x, value, axes=[1], starts=[2], ends=[6], strides=[2])
+- print(res)
+- Tensor(shape=[3, 9], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 0., 1., 0., 1., 0., 0., 0., 0.],'
+- '[0., 0., 1., 0., 1., 0., 0., 0., 0.],'
+- '[0., 0., 1., 0., 1., 0., 0., 0., 0.]])'
+- '# broadcast `value` got the same result'
+- x = paddle.zeros((3, 9))
+- value = paddle.ones((3, 1))
+- res = paddle.slice_scatter(x, value, axes=[1], starts=[2], ends=[6], strides=[2])
+- print(res)
+- Tensor(shape=[3, 9], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 0., 1., 0., 1., 0., 0., 0., 0.],'
+- '[0., 0., 1., 0., 1., 0., 0., 0., 0.],'
+- '[0., 0., 1., 0., 1., 0., 0., 0., 0.]])'
+- '# broadcast `value` along multiple axes'
+- x = paddle.zeros((3, 3, 5))
+- value = paddle.ones((1, 3, 1))
+- res = paddle.slice_scatter(x, value, axes=[0, 2], starts=[1, 0], ends=[3, 4], strides=[1,
+  2])
+- print(res)
+- Tensor(shape=[3, 3, 5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[0., 0., 0., 0., 0.],'
+- '[0., 0., 0., 0., 0.],'
+- '[0., 0., 0., 0., 0.]],'
+- '[[1., 0., 1., 0., 0.],'
+- '[1., 0., 1., 0., 0.],'
+- '[1., 0., 1., 0., 0.]],'
+- '[[1., 0., 1., 0., 0.],'
+- '[1., 0., 1., 0., 0.],'
+- '[1., 0., 1., 0., 0.]]])'
+8 api_shape: {}

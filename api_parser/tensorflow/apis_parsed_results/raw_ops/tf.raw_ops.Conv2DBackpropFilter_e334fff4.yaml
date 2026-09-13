@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Conv2DBackpropFilter
+3 api_description: Computes the gradient of a convolution operation with respect to
+  the filter weights.
+4 api_signature: tf.raw_ops.Conv2DBackpropFilter(input,filter_sizes,out_backprop,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose convolution filter gradient is being computed.
+- filter_sizes: The shape of the filter tensor to compute gradients for.
+- out_backprop: The backpropagated output gradients used to compute the filter gradient.
+- strides: The sliding-window stride for the convolution in each dimension.
+- padding: 'The padding algorithm to apply: `SAME`, `VALID`, or `EXPLICIT`.'
+7 api_usage_example: null
+8 api_shape: ''

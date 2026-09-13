@@ -1,0 +1,8 @@
+2 api_name: torch.nn.PixelShuffle.forward
+3 api_description: Rearranges elements in a tensor to increase spatial resolution
+  by moving data from channels into the height and width dimensions.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

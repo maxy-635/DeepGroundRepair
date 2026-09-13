@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.numpy.experimental_enable_numpy_behavior
+3 api_description: Enables NumPy-style behavior on TensorFlow tensors, making tensors
+  support NumPy-like operations, broadcasting, and type promotion.
+4 api_signature: tf.experimental.numpy.experimental_enable_numpy_behavior(prefer_float32,dtype_conversion_mode)
+5 api_details: ''
+6 api_parameters:
+- prefer_float32: Chooses float32 instead of float64 when inferring dtypes for Python
+    float inputs.
+- dtype_conversion_mode: Selects the dtype promotion and conversion behavior, such
+    as off, legacy, safe, or all.
+7 api_usage_example: null
+8 api_shape: ''

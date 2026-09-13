@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.floatx
+3 api_description: Returns the current default floating-point dtype as a string.
+4 api_signature: tf.keras.backend.floatx()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- keras.config.floatx()
+8 api_shape: ''

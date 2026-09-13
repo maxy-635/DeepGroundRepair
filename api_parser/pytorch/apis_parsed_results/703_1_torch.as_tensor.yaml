@@ -1,0 +1,22 @@
+2 api_name: torch.as_tensor
+3 api_description: Converts input data into a tensor, reusing existing storage and
+  preserving autograd history when possible.
+4 api_signature: torch.as_tensor(data,*,dtype,device)
+5 api_details: ''
+6 api_parameters:
+- data: Provides the source values used to create the tensor.
+- dtype: Sets the tensor's data type.
+- device: Sets the tensor's device, or uses the input tensor's device/current device
+    when not specified.
+7 api_usage_example:
+- ' a = numpy.array([1, 2, 3])'
+- ' t = torch.as_tensor(a)'
+- ' t'
+- ' t[0] = -1'
+- ' a'
+- ' a = numpy.array([1, 2, 3])'
+- ' t = torch.as_tensor(a, device=torch.device(''cuda''))'
+- ' t'
+- ' t[0] = -1'
+- ' a'
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.debugging.assert_shapes
+3 api_description: Checks that tensor shapes and specified dimension relationships
+  match expected constraints, raising an error when they do not.
+4 api_signature: tf.debugging.assert_shapes(shapes,data)
+5 api_details: ''
+6 api_parameters:
+- shapes: Specifies the tensors and their expected shapes, either as a dictionary
+    or as a list of tensor-shape tuples.
+- data: Provides additional tensors to print when the shape assertion fails, defaulting
+    to the error message and sample values from the offending tensor.
+7 api_usage_example:
+- tf.debugging.assert_shapes([
+- '  (x, (''N'', ''D'')),'
+- '  (y, (''N'', ''D''))'
+- '])'
+8 api_shape: ''

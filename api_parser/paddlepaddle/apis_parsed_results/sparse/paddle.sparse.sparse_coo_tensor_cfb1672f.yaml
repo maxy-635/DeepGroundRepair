@@ -1,0 +1,21 @@
+2 api_name: paddle.sparse.sparse_coo_tensor
+3 api_description: Constructs a sparse Paddle tensor in COO format from specified
+  non-zero indices and values.
+4 api_signature: '"paddle.sparse.sparse_coo_tensor(indices,values,shape)"'
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the 2-D locations of the non-zero elements in the sparse tensor.
+- values: Provides the initial data values to place at the given non-zero indices.
+- shape: Sets the overall tensor dimensions, or is inferred automatically if omitted.
+7 api_usage_example:
+- import paddle
+- indices = [[0, 1, 2], [1, 2, 0]]
+- values = [1.0, 2.0, 3.0]
+- dense_shape = [3, 3]
+- coo = paddle.sparse.sparse_coo_tensor(indices, values, dense_shape)
+- print(coo)
+- Tensor(shape=[3, 3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 1, 2],
+- '[1, 2, 0]],'
+- values=[1., 2., 3.])
+8 api_shape: {}

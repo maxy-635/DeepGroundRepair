@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.PropagateUnbackedSymInts.call_function
+3 api_description: Executes a torch.fx call_function node and returns the computed
+  result.
+4 api_signature: call_function(target)
+5 api_details: ''
+6 api_parameters:
+- target: Identifies the function or callable that the FX node should invoke.
+7 api_usage_example: null
+8 api_shape: null

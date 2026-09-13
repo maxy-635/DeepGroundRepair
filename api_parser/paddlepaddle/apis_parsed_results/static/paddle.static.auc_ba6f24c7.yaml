@@ -1,0 +1,37 @@
+2 api_name: paddle.static.auc
+3 api_description: Computes the Area Under the Curve for binary classification by
+  tracking accumulated true/false positives across thresholds, returning the ROC or
+  PR AUC metric.
+4 api_signature: paddle.static.auc(input,label,curve,num_thresholds,topk)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the model prediction scores or probabilities for each label, expected
+    as a sorted 2D floating-point Tensor.
+- label: Provides the ground-truth class labels as a 2D integer Tensor with batch
+    size rows and one column.
+- curve: Selects whether AUC is computed using the ROC curve or the PR curve.
+- num_thresholds: Sets how many thresholds are used to discretize the curve when calculating
+    AUC.
+- topk: Limits AUC computation to the top-k prediction outputs.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import numpy as np
+- paddle.enable_static()
+- paddle.seed(2023)
+- data = paddle.static.data(name="input", shape=[-1, 32,32], dtype="float32")
+- label = paddle.static.data(name="label", shape=[-1], dtype="int64")
+- fc_out = paddle.static.nn.fc(x=data, size=2)
+- predict = paddle.nn.functional.softmax(x=fc_out)
+- result=paddle.static.auc(input=predict, label=label)
+- place = paddle.CPUPlace()
+- exe = paddle.static.Executor(place)
+- exe.run(paddle.static.default_startup_program())
+- np.random.seed(1107)
+- x = np.random.rand(3,32,32).astype("float32")
+- y = np.array([1,0,1])
+- 'output= exe.run(feed={"input": x,"label": y},'
+- '                fetch_list=[result[0]])'
+- print(output)
+- '[array(1.)]'
+8 api_shape: {}

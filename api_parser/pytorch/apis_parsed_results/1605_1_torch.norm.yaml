@@ -1,0 +1,27 @@
+2 api_name: torch.norm
+3 api_description: Computes the norm of a tensor, returning either its vector norm
+  or matrix norm depending on the input and options.
+4 api_signature: torch.norm(input,p,dim,keepdim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to compute the norm of; it must be floating-point or complex,
+    and complex values are handled via their magnitudes.
+- p: Specifies which norm order to compute.
+- dim: Selects the dimension or dimensions over which to compute the norm.
+- keepdim: Controls whether the reduced dimensions are kept in the output.
+7 api_usage_example:
+- ' import torch'
+- ' a = torch.arange(9, dtype= torch.float) - 4'
+- ' b = a.reshape((3, 3))'
+- ' torch.norm(a)'
+- ' torch.norm(b)'
+- ' torch.norm(a, float(''inf''))'
+- ' torch.norm(b, float(''inf''))'
+- ' c = torch.tensor([[ 1, 2, 3], [-1, 1, 4]] , dtype=torch.float)'
+- ' torch.norm(c, dim=0)'
+- ' torch.norm(c, dim=1)'
+- ' torch.norm(c, p=1, dim=1)'
+- ' d = torch.arange(8, dtype=torch.float).reshape(2, 2, 2)'
+- ' torch.norm(d, dim=(1, 2))'
+- ' torch.norm(d[0, :, :]), torch.norm(d[1, :, :])'
+8 api_shape: null

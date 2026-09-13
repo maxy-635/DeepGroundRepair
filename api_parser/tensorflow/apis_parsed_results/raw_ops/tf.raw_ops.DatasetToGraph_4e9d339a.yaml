@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.DatasetToGraph
+3 api_description: Serializes an input dataset into a GraphDef representation.
+4 api_signature: tf.raw_ops.DatasetToGraph(input_dataset,allow_stateful,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Specifies the input dataset as a variant tensor whose graph representation
+    will be generated.
+- allow_stateful: Controls whether stateful operations are permitted in the returned
+    graph, defaulting to False.
+- name: Sets an optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

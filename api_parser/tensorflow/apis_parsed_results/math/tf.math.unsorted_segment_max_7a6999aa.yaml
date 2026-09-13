@@ -1,0 +1,15 @@
+2 api_name: tensorflow.math.unsorted_segment_max
+3 api_description: Computes the maximum value for each unsorted segment of a tensor,
+  dropping negative segment IDs and using the lowest numeric value when a segment
+  has no elements.
+4 api_signature: tf.math.unsorted_segment_max(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are grouped and reduced by segment.
+- segment_ids: A tensor of segment labels that assigns each data slice to a segment
+    index.
+- num_segments: The total number of segments to produce in the output.
+7 api_usage_example:
+- c = tf.constant([[1,2,3,4], [5,6,7,8], [4,3,2,1]])
+- tf.math.unsorted_segment_max(c, tf.constant([0, 1, 0]), num_segments=2).numpy()
+8 api_shape: ''

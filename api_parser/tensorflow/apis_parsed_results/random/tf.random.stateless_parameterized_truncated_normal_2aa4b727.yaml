@@ -1,0 +1,23 @@
+2 api_name: tensorflow.random.stateless_parameterized_truncated_normal
+3 api_description: Generates stateless random values from a truncated normal distribution,
+  using a seed to produce reproducible samples and rejecting values more than 2 standard
+  deviations from the mean.
+4 api_signature: tf.random.stateless_parameterized_truncated_normal(shape,seed,means,stddevs)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the 1-D output tensor shape.
+- seed: Provides the random seed used to generate stateless values.
+- means: Sets the mean of the truncated normal distribution, broadcastable with the
+    other parameter tensors.
+- stddevs: Sets the standard deviation of the truncated normal distribution, broadcastable
+    with the other parameter tensors.
+7 api_usage_example:
+- means = 0.
+- stddevs = tf.math.exp(tf.random.uniform(shape=[2, 3]))
+- minvals = [-1., -2., -1000.]
+- maxvals = [[10000.], [1.]]
+- y = tf.random.stateless_parameterized_truncated_normal(
+- '  shape=[10, 2, 3], seed=[7, 17],'
+- '  means=means, stddevs=stddevs, minvals=minvals, maxvals=maxvals)'
+- y.shape
+8 api_shape: ''

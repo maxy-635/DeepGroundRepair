@@ -1,0 +1,19 @@
+2 api_name: paddle.distributed.dtensor_from_fn
+3 api_description: Creates a distributed tensor by applying a user-provided function
+  to the given arguments.
+4 api_signature: paddle.distributed.dtensor_from_fn(fn,mesh,placements)
+5 api_details: ''
+6 api_parameters:
+- fn: Callable that creates and returns the tensor to wrap as a DTensor.
+- mesh: ProcessMesh defining the process topology used to distribute the tensor.
+- placements: Distribution strategy for placing the tensor on the mesh, such as shard,
+    replicate, or partial.
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- '# Create a distributed attribute'
+- mesh = dist.ProcessMesh([0, 1], dim_names=["x"])
+- '# Call the function dtensor_from_fn with dist_attr parameter'
+- d_tensor = dist.dtensor_from_fn(paddle.ones, mesh, [dist.Replicate()], shape=[1])
+- print(d_tensor)
+8 api_shape: {}

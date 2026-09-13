@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ImmutableConst
+3 api_description: Returns an immutable tensor loaded from a file-backed memory-mapped
+  region.
+4 api_signature: tf.raw_ops.ImmutableConst(dtype,shape)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the data type of the tensor that will be returned.
+- shape: Defines the shape of the tensor that will be returned.
+7 api_usage_example: null
+8 api_shape: ''

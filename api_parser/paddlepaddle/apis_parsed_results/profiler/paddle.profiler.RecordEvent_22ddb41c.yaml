@@ -1,0 +1,26 @@
+2 api_name: paddle.profiler.RecordEvent
+3 api_description: Records a user-defined time range for profiling, allowing code
+  regions to be marked and measured.
+4 api_signature: paddle.profiler.RecordEvent(name,event_type)
+5 api_details: ''
+6 api_parameters:
+- name: Specifies the name of the record event.
+- event_type: Sets the event type, which is optional and usually left unspecified
+    because it is reserved for internal use.
+7 api_usage_example:
+- import paddle
+- import paddle.profiler as profiler
+- '# method1: using context manager'
+- paddle.seed(2023)
+- 'with profiler.RecordEvent("record_add"):'
+- '    data1 = paddle.randn(shape=[3])'
+- '    data2 = paddle.randn(shape=[3])'
+- '    result = data1 + data2'
+- '# method2: call begin() and end()'
+- record_event = profiler.RecordEvent("record_add")
+- record_event.begin()
+- data1 = paddle.randn(shape=[3])
+- data2 = paddle.randn(shape=[3])
+- result = data1 + data2
+- record_event.end()
+8 api_shape: {}

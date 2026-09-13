@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.MutableDenseHashTableV2
+3 api_description: Creates an empty mutable hash table backed by tensors, using open
+  addressing with quadratic reprobing for collisions, and supports scalar key/value
+  insertion but not initialization.
+4 api_signature: tf.raw_ops.MutableDenseHashTableV2(empty_key,deleted_key,value_dtype,initial_num_buckets,max_load_factor,value_shape)
+5 api_details: ''
+6 api_parameters:
+- empty_key: Defines the special key value used internally to mark empty buckets,
+    and it must never be used for inserts or lookups.
+- deleted_key: Defines the special key value used internally to mark deleted buckets,
+    and it must have the same type as `empty_key`.
+- value_dtype: Specifies the data type of the values stored in the hash table.
+- value_shape: Specifies the shape of each value stored in the table, defaulting to
+    a scalar shape.
+- initial_num_buckets: Sets the table’s starting number of buckets, which must be
+    a power of 2.
+- max_load_factor: Sets the load threshold that triggers table growth, as a value
+    between 0 and 1.
+7 api_usage_example: null
+8 api_shape: ''

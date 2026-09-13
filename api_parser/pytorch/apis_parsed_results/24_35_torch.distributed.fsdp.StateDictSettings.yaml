@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.StateDictSettings
+3 api_description: Configures how FSDP state dicts are saved or loaded, including
+  the state dict type and related settings for gathering or sharding parameters.
+4 api_signature: torch.distributed.fsdp.StateDictSettings(state_dict_type,state_dict_config,optim_state_dict_config)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

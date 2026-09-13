@@ -1,0 +1,21 @@
+2 api_name: torch.nn.functional.interpolate
+3 api_description: The torch.nn.functional.interpolate function resizes input tensors
+  by upsampling or downsampling using specified methods.
+4 api_signature: torch.nn.functional.interpolate(input,size,scale_factor,mode)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor to be upsampled or interpolated.
+- size: Defines the desired output spatial size for the upsampling operation.
+- scale_factor: Determines the multiplier for each spatial dimension, adjusting the
+    size of the output tensor.
+- mode: Specifies the algorithm to be used for upsampling, with options like nearest,
+    linear, bilinear, etc.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Width_in), (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Width_out), (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor depth: Depth_out = floor(Depth_in * scale_factor)
+    tensor height: Height_out = floor(Height_in * scale_factor)
+    tensor width: Width_out = floor(Width_in * scale_factor)

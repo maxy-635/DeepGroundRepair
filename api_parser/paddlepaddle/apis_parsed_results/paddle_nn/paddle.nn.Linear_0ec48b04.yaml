@@ -1,0 +1,36 @@
+2 api_name: paddle.nn.Linear
+3 api_description: paddle.nn.Linear performs a linear transformation on input data
+  by applying a weight matrix and optional bias.
+4 api_signature: paddle.nn.Linear(in_features,out_features)
+5 api_details: ''
+6 api_parameters:
+- in_features: Specifies the number of input units for the linear transformation.
+- out_features: Determines the number of output units produced by the linear transformation.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- '# Define the linear layer.'
+- weight_attr = paddle.ParamAttr(
+- '    name="weight",'
+- '    initializer=paddle.nn.initializer.Constant(value=0.5))'
+- bias_attr = paddle.ParamAttr(
+- '    name="bias",'
+- '    initializer=paddle.nn.initializer.Constant(value=1.0))'
+- linear = paddle.nn.Linear(2, 4, weight_attr=weight_attr, bias_attr=bias_attr)
+- print(linear.weight)
+- 'Parameter containing:'
+- Tensor(shape=[2, 4], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0.50000000, 0.50000000, 0.50000000, 0.50000000],'
+- '[0.50000000, 0.50000000, 0.50000000, 0.50000000]])'
+- print(linear.bias)
+- 'Parameter containing:'
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[1., 1., 1., 1.])'
+- x = paddle.randn((3, 2), dtype="float32")
+- y = linear(x)
+- print(y)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[ 0.42121571,  0.42121571,  0.42121571,  0.42121571],'
+- '[ 0.85327661,  0.85327661,  0.85327661,  0.85327661],'
+- '[-0.05398512, -0.05398512, -0.05398512, -0.05398512]])'
+8 api_shape: null

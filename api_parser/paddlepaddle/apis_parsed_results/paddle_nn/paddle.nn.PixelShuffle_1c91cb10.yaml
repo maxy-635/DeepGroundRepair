@@ -1,0 +1,11 @@
+2 api_name: paddle.nn.PixelShuffle
+3 api_description: The paddle.nn.PixelShuffle API rearranges a tensor's elements to
+  upscale its spatial dimensions by a specified factor while reducing the channel
+  dimensions, facilitating efficient sub-pixel convolution for super-resolution tasks.
+4 api_signature: paddle.nn.PixelShuffle(upscale_factor)
+5 api_details: ''
+6 api_parameters:
+- upscale_factor: Specifies the factor by which the spatial resolution of the input
+    is increased.
+7 api_usage_example: []
+8 api_shape: null

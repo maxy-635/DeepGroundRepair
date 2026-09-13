@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.preprocessing.image.random_brightness
+3 api_description: Applies a random brightness adjustment to an image.
+4 api_signature: tf.keras.preprocessing.image.random_brightness(x,brightness_range)
+5 api_details: ''
+6 api_parameters:
+- x: The 3D input image tensor to adjust.
+- brightness_range: The lower and upper float bounds that define how much to randomly
+    change brightness.
+7 api_usage_example: null
+8 api_shape: ''

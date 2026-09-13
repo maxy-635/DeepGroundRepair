@@ -1,0 +1,7 @@
+2 api_name: torch.UntypedStorage.fill_
+3 api_description: Fills the entire untyped storage with a single value.
+4 api_signature: '"fill_()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

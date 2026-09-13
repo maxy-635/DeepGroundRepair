@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.nvtx.range_pop
+3 api_description: Ends the most recent nested NVTX range and returns its zero-based
+  depth.
+4 api_signature: torch.cuda.nvtx.range_pop()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

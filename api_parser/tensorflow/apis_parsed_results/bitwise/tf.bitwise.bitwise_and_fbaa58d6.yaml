@@ -1,0 +1,12 @@
+2 api_name: tensorflow.bitwise.bitwise_and
+3 api_description: Computes the elementwise bitwise AND of x and y, setting bits only
+  where both inputs have the bit set.
+4 api_signature: tf.bitwise.bitwise_and(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first integer tensor whose bits are used as the left operand in the bitwise
+    AND operation.
+- y: The second integer tensor, matching `x`'s type, whose bits are combined with
+    `x` using bitwise AND.
+7 api_usage_example: null
+8 api_shape: ''

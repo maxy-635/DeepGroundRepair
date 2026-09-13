@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.empty_cache
+3 api_description: Releases unused cached GPU memory held by PyTorch’s caching allocator
+  so it can be used by other applications and appear free in `nvidia-smi`.
+4 api_signature: torch.cuda.empty_cache()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

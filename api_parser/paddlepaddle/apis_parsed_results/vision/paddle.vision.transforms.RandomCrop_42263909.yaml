@@ -1,0 +1,15 @@
+2 api_name: paddle.vision.transforms.RandomCrop
+3 api_description: Randomly crops a specified-size region from an image at a random
+  location.
+4 api_signature: paddle.vision.transforms.RandomCrop(size,padding,fill,keys)
+5 api_details: ''
+6 api_parameters:
+- size: Sets the target crop dimensions, using a square crop when given a single integer.
+- padding: Adds optional padding around the image borders before cropping, with 4-value
+    sequences mapping to left, top, right, and bottom.
+- fill: Specifies the constant pixel value used for padding, with an RGB tuple applying
+    separate values to each channel.
+- keys: Defines which data fields the transform is applied to, matching the behavior
+    of `BaseTransform`.
+7 api_usage_example: []
+8 api_shape: {}

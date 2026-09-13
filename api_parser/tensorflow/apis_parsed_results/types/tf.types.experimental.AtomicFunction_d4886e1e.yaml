@@ -1,0 +1,10 @@
+2 api_name: tensorflow.types.experimental.AtomicFunction
+3 api_description: Represents a graph function that can be called with its captured
+  inputs as defined by its FunctionType.
+4 api_signature: call_with_captures(captures)
+5 api_details: ''
+6 api_parameters:
+- captures: Provides the tensors that were captured from the surrounding context and
+    are needed when the atomic function runs.
+7 api_usage_example: null
+8 api_shape: ''

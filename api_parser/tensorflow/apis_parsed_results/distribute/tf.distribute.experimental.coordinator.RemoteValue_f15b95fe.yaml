@@ -1,0 +1,9 @@
+2 api_name: tensorflow.distribute.experimental.coordinator.RemoteValue
+3 api_description: Represents an asynchronously scheduled function result that can
+  be waited on to retrieve the concrete local NumPy value, or raises `tf.errors.CancelledError`
+  if the remote computation is aborted or cancelled.
+4 api_signature: fetch()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

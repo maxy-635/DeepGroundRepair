@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.LoadTPUEmbeddingStochasticGradientDescentParameters
+3 api_description: Loads stochastic gradient descent embedding parameters into TPU
+  HBM after the embedding table is configured.
+4 api_signature: tf.raw_ops.LoadTPUEmbeddingStochasticGradientDescentParameters(parameters,num_shards,shard_id,table_id,table_name)
+5 api_details: ''
+6 api_parameters:
+- parameters: Holds the float32 SGD parameter values to load into TPU embedding state.
+- num_shards: Specifies how many shards the embedding parameters are split across.
+- shard_id: Identifies which shard this call is loading.
+- table_id: Optionally selects the embedding table by numeric ID; defaults to -1 if
+    unset.
+- table_name: Optionally selects the embedding table by name; defaults to an empty
+    string if unset.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

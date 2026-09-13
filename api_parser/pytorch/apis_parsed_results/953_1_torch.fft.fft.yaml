@@ -1,0 +1,15 @@
+2 api_name: torch.fft.fft
+3 api_description: Computes the 1D discrete Fourier transform of an input tensor,
+  converting a signal from the time domain to the frequency domain.
+4 api_signature: torch.fft.fft(input,n,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the data to transform.
+- n: Sets the FFT length by zero-padding or trimming the input to this size.
+- dim: Chooses the dimension along which the 1D FFT is computed.
+- norm: Controls FFT normalization, determining the scaling applied to the transform.
+7 api_usage_example:
+- ' t = torch.arange(4)'
+- ' t'
+- ' torch.fft.fft(t)'
+8 api_shape: null

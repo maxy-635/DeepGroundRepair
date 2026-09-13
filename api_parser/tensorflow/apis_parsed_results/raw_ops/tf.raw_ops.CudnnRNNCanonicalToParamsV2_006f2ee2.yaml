@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.CudnnRNNCanonicalToParamsV2
+3 api_description: Converts canonical RNN weights and biases into an opaque cuDNN-compatible
+  params buffer for a multi-layer RNN, including optional LSTM projection, input mode,
+  direction, dropout, and seed settings.
+4 api_signature: tf.raw_ops.CudnnRNNCanonicalToParamsV2(num_layers,num_units,input_size,weights,biases,rnn_mode,input_mode,direction)
+5 api_details: ''
+6 api_parameters:
+- num_layers: Specifies how many recurrent layers are in the RNN.
+- num_units: Sets the number of hidden units in each recurrent layer.
+- input_size: Defines the size of each input feature vector.
+- weights: Provides the weight tensors to be packed into the canonical parameter buffer.
+- biases: Provides the bias tensors to be packed into the canonical parameter buffer.
+- rnn_mode: Chooses the RNN cell type to use, such as LSTM, GRU, or vanilla RNN.
+- input_mode: Determines how the input is transformed or connected before entering
+    the RNN.
+- direction: Specifies whether the RNN runs in one direction or both directions.
+7 api_usage_example: null
+8 api_shape: ''

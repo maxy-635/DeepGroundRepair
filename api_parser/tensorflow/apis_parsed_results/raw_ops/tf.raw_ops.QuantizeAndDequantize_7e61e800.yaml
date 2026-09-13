@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.QuantizeAndDequantize
+3 api_description: Quantizes and then dequantizes tensor values within a given range
+  to simulate lower-precision arithmetic, preserving shape while optionally narrowing
+  or using signed range behavior. Use QuantizeAndDequantizeV2 instead.
+4 api_signature: tf.raw_ops.QuantizeAndDequantize(input,num_bits,input_min,input_max)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be quantized and then dequantized.
+- num_bits: The number of bits used to represent the quantized values.
+- input_min: The lower bound of the input range used for quantization.
+- input_max: The upper bound of the input range used for quantization.
+7 api_usage_example: null
+8 api_shape: ''

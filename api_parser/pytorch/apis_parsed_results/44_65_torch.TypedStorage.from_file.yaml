@@ -1,0 +1,9 @@
+2 api_name: torch.TypedStorage.from_file
+3 api_description: Creates a CPU storage backed by a memory-mapped file.
+4 api_signature: '"from_file(filename,size)"'
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the file to map into the storage.
+- size: Sets the number of elements the storage will contain.
+7 api_usage_example: null
+8 api_shape: null

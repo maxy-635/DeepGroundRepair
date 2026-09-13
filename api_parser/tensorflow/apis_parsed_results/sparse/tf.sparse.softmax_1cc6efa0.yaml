@@ -1,0 +1,20 @@
+2 api_name: tensorflow.sparse.softmax
+3 api_description: Applies softmax to the last dimension of each innermost sparse
+  submatrix in a batched SparseTensor, ignoring implicit zeros, then renormalizes
+  the remaining nonzero values while preserving the original sparse indices and shape.
+4 api_signature: tf.sparse.softmax(sp_input)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The N-D SparseTensor to which softmax is applied along its innermost dimension.
+7 api_usage_example:
+- st = tf.sparse.from_dense(
+- '  [[[0., np.e],'
+- '    [1., 0.]],'
+- '   [[np.e, 0.],'
+- '    [np.e, np.e]]])'
+- res = tf.sparse.softmax(st)
+- res.indices
+- res.values
+- res.dense_shape
+- tf.sparse.to_dense(res)
+8 api_shape: ''

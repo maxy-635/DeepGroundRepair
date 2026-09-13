@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.models.model_from_json
+3 api_description: Parses a JSON-encoded Keras model configuration string and reconstructs
+  the corresponding model instance.
+4 api_signature: tf.keras.models.model_from_json(json_string)
+5 api_details: ''
+6 api_parameters:
+- json_string: The JSON string that contains the serialized model configuration to
+    reconstruct.
+7 api_usage_example:
+- model = keras.Sequential([
+- '    keras.layers.Dense(5, input_shape=(3,)),'
+- '    keras.layers.Softmax()])'
+- config = model.to_json()
+- loaded_model = keras.models.model_from_json(config)
+8 api_shape: ''

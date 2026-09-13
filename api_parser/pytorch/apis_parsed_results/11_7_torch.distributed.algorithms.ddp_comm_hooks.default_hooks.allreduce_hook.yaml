@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.algorithms.ddp_comm_hooks.default_hooks.allreduce_hook
+3 api_description: Performs an all-reduce on the tensors in a GradBucket, synchronizing
+  gradients across distributed workers during DDP training.
+4 api_signature: torch.distributed.algorithms.ddp_comm_hooks.default_hooks.allreduce_hook(bucket)
+5 api_details: ''
+6 api_parameters:
+- state: User-defined hook state object passed through the communication hook.
+- bucket: The gradient bucket to be allreduced across distributed workers.
+7 api_usage_example:
+- ' ddp_model.register_comm_hook(process_group, allreduce_hook)'
+8 api_shape: null

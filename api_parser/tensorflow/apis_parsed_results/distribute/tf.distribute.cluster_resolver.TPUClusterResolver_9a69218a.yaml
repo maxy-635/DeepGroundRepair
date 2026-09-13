@@ -1,0 +1,17 @@
+2 api_name: tensorflow.distribute.cluster_resolver.TPUClusterResolver
+3 api_description: Resolves Google Cloud TPU cluster information across supported
+  environments so TensorFlow can connect TPUs to tf.distribute.TPUStrategy for training.
+4 api_signature: tf.distribute.cluster_resolver.TPUClusterResolver(tpu,zone,project)
+5 api_details: ''
+6 api_parameters:
+- tpu: Specifies which TPU to connect to, either by name, gRPC address, or as a local
+    TPU if set to `local`.
+- zone: Sets the GCP zone where the TPU resides, or falls back to the VM’s zone if
+    not provided.
+- project: Sets the GCP project containing the TPU, or is auto-discovered from the
+    VM metadata if omitted.
+7 api_usage_example:
+- resolver = tf.distribute.cluster_resolver.TPUClusterResolver(tpu='')
+- tf.config.experimental_connect_to_cluster(resolver)
+- tf.tpu.experimental.initialize_tpu_system(resolver)
+8 api_shape: ''

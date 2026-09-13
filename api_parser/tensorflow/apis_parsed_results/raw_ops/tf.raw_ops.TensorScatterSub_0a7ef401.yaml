@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorScatterSub
+3 api_description: Subtract sparse update values from a tensor at the specified indices,
+  returning a new tensor with the updates applied.
+4 api_signature: tf.raw_ops.TensorScatterSub(tensor,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor that will be copied and updated.
+- indices: The index tensor that specifies where to apply the subtraction updates.
+- updates: The values to subtract and scatter into the output tensor.
+7 api_usage_example: null
+8 api_shape: ''

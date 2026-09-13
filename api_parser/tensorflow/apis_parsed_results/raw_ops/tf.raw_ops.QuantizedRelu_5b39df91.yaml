@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.QuantizedRelu
+3 api_description: Applies ReLU to quantized input by clamping negative values to
+  zero while preserving the quantized output range.
+4 api_signature: tf.raw_ops.QuantizedRelu(features,out_type)
+5 api_details: ''
+6 api_parameters:
+- features: Input quantized tensor whose values are passed through ReLU.
+- out_type: Optional output quantized dtype to use for the result, defaulting to `tf.quint8`.
+7 api_usage_example: null
+8 api_shape: ''

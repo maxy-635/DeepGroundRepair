@@ -1,0 +1,10 @@
+2 api_name: tensorflow.io.serialize_sparse
+3 api_description: Serializes a SparseTensor into a 3-element 1-D Tensor containing
+  its indices, values, and dense shape.
+4 api_signature: tf.io.serialize_sparse(sp_input,out_type)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The SparseTensor to be serialized.
+- out_type: The data type used for the serialized output.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Multinomial
+3 api_description: Draws random samples from a multinomial distribution based on input
+  log-probabilities or probabilities.
+4 api_signature: tf.raw_ops.Multinomial(logits,num_samples,output_dtype)
+5 api_details: ''
+6 api_parameters:
+- logits: Provides the batch of unnormalized log probabilities used to define the
+    sampling distribution for each row.
+- num_samples: Specifies how many independent samples to draw for each row in the
+    logits tensor.
+- output_dtype: Determines the integer type of the returned sample indices.
+7 api_usage_example: null
+8 api_shape: ''

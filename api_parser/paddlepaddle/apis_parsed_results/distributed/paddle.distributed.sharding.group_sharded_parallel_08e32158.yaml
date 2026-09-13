@@ -1,0 +1,45 @@
+2 api_name: paddle.distributed.sharding.group_sharded_parallel
+3 api_description: Configures distributed model, optimizer, and GradScaler sharding
+  across a group, supporting optimizer-state, optimizer-state+gradient, or parameter+gradient+optimizer-state
+  partitioning for different parallel training scenarios.
+4 api_signature: paddle.distributed.sharding.group_sharded_parallel(model,optimizer,level,scaler,group,offload,sync_buffers,sync_comm,dp_group)
+5 api_details: ''
+6 api_parameters:
+- model: Wraps the specified layer so it can be managed by group sharded parallelism.
+- optimizer: Wraps the optimizer so it works with group sharded parallel training.
+- level: Specifies the sharding strategy level to use, such as `os`, `os_g`, or `p_g_os`.
+- scaler: Provides the AMP `GradScaler` when mixed precision is enabled, or `None`
+    if AMP is not used.
+- group: Sets the communication group to use, or defaults to the environment's default
+    group when `None`.
+- offload: Enables or disables offloading, which is turned off by default.
+- sync_buffers: Controls whether model buffers are broadcast across workers, which
+    is off by default.
+- sync_comm: Controls whether communication is synchronous in `p_g_os`, with asynchronous
+    communication as the default.
+- dp_group: Specifies the data-parallel communication group for hybrid communication
+    with stage2 or stage3.
+7 api_usage_example:
+- '# type: ignore'
+- '>>>'
+- import paddle
+- from paddle.nn import Linear
+- from paddle.distributed import fleet
+- from paddle.distributed.sharding import group_sharded_parallel
+- fleet.init(is_collective=True)
+- group = paddle.distributed.new_group([0, 1])
+- model = Linear(1000, 1000)
+- clip = paddle.nn.ClipGradByGlobalNorm(clip_norm=1.0)
+- optimizer = paddle.optimizer.AdamW(learning_rate=0.001, parameters=model.parameters(),
+  weight_decay=0.00001, grad_clip=clip)
+- '# wrap sharding model, optimizer and scaler'
+- model, optimizer, scaler = group_sharded_parallel(model, optimizer, "p_g", scaler=scaler)
+- img, label = data
+- label.stop_gradient = True
+- img.stop_gradient = True
+- out = model(img)
+- loss = paddle.nn.functional.cross_entropy(input=out, label=label)
+- loss.backward()
+- optimizer.step()
+- optimizer.clear_grad()
+8 api_shape: {}

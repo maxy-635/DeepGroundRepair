@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseTensorDenseMatMul
+3 api_description: Multiplies a rank-2 sparse tensor A by a dense matrix B, with optional
+  adjoint of A, and assumes A’s indices are appropriately sorted for best performance.
+4 api_signature: tf.raw_ops.SparseTensorDenseMatMul(a_indices,a_values,a_shape,b)
+5 api_details: ''
+6 api_parameters:
+- a_indices: Specifies the row and column coordinates of the nonzero entries in the
+    sparse tensor.
+- a_values: Provides the nonzero values corresponding to the entries listed in `a_indices`.
+- a_shape: Defines the overall 2-D shape of the sparse tensor.
+- b: Provides the dense matrix to be multiplied with the sparse tensor.
+7 api_usage_example: null
+8 api_shape: ''

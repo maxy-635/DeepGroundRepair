@@ -1,0 +1,26 @@
+2 api_name: torch.nn.AdaptiveMaxPool2d
+3 api_description: Applies adaptive max pooling to reduce the spatial dimensions of
+  a 2D input tensor to a specified output size, preserving the most significant features.
+4 api_signature: torch.nn.AdaptiveMaxPool2d(output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the target output size of the image, which can be a tuple
+    (Hout, Wout) for different height and width, a single integer for a square output,
+    or None to keep the original size.
+7 api_usage_example:
+- ' # target output size of 5x7'
+- ' m = nn.AdaptiveMaxPool2d((5, 7))'
+- ' input = torch.randn(1, 64, 8, 9)'
+- ' output = m(input)'
+- ' # target output size of 7x7 (square)'
+- ' m = nn.AdaptiveMaxPool2d(7)'
+- ' input = torch.randn(1, 64, 10, 9)'
+- ' output = m(input)'
+- ' # target output size of 10x7'
+- ' m = nn.AdaptiveMaxPool2d((None, 7))'
+- ' input = torch.randn(1, 64, 10, 9)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.cast_to_floatx
+3 api_description: Converts a value or tensor to Keras's default float type (`floatx`),
+  returning it as a floating-point tensor or array.
+4 api_signature: tf.keras.backend.cast_to_floatx(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

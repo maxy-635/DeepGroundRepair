@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.margin_ranking_loss
+3 api_description: Computes the margin ranking loss between two input tensors, encouraging
+  the first tensor to have a higher value than the second by a specified margin.
+4 api_signature: torch.nn.functional.margin_ranking_loss(input1,input2,target,margin,reduction)
+5 api_details: ''
+6 api_parameters:
+- input1: First set of predicted values for comparison.
+- input2: Second set of predicted values for comparison.
+- target: Ground truth labels indicating the desired relationship between input1 and
+    input2.
+- reduction: 'Method to aggregate the output loss: ''none'' for no reduction, ''mean''
+    for averaging, or ''sum'' for total sum.'
+7 api_usage_example: null
+8 api_shape: null

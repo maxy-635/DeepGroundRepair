@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.losses.serialize
+3 api_description: Converts a Keras loss function or Loss instance into a serializable
+  configuration.
+4 api_signature: tf.keras.losses.serialize(loss)
+5 api_details: ''
+6 api_parameters:
+- loss: Specifies the Keras loss object or loss function to convert into a serialized
+    configuration.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.debugging.assert_scalar
+3 api_description: Statically verifies that a tensor is a known scalar and raises
+  ValueError if it is not or if its shape is unknown.
+4 api_signature: tf.debugging.assert_scalar(tensor)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to check, which must be a scalar (rank 0).
+7 api_usage_example: null
+8 api_shape: ''

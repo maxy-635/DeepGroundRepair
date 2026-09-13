@@ -1,0 +1,17 @@
+2 api_name: torch.cat
+3 api_description: Concatenates a sequence of tensors along a specified dimension,
+  requiring all tensors to have the same shape except in the concatenating dimension
+  or be a 1-D empty tensor.
+4 api_signature: torch.cat(tensors,dim)
+5 api_details: ''
+6 api_parameters:
+- tensors: This parameter specifies the collection of non-empty tensors that will
+    be concatenated, which must have the same shape except in the specified dimension.
+- dim: This parameter indicates the dimension along which the provided tensors will
+    be concatenated.
+7 api_usage_example:
+- ' x = torch.randn(2, 3)'
+- ' x'
+- ' torch.cat((x, x, x), 0)'
+- ' torch.cat((x, x, x), 1)'
+8 api_shape: null

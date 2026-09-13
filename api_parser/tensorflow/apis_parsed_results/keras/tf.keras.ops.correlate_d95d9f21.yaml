@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.correlate
+3 api_description: Computes the 1D cross-correlation between two tensors, returning
+  a tensor that measures their similarity as one is slid across the other.
+4 api_signature: tf.keras.ops.correlate(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first 1D input tensor to be correlated.
+- x2: The second 1D input tensor used in the correlation.
+7 api_usage_example: null
+8 api_shape: ''

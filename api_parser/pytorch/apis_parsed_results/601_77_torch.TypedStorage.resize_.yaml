@@ -1,0 +1,8 @@
+2 api_name: torch.TypedStorage.resize_
+3 api_description: Resizes a typed storage to the specified number of elements, changing
+  its capacity in place.
+4 api_signature: resize_(size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

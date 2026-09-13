@@ -1,0 +1,9 @@
+2 api_name: paddle.nn.utils.weight_norm
+3 api_description: Applies weight normalization to a parameter by decoupling the magnitude
+  of a parameter from its direction, enhancing convergence and stability during training.
+4 api_signature: paddle.nn.utils.weight_norm(layer)
+5 api_details: ''
+6 api_parameters:
+- layer: Specifies the Paddle layer that contains the weight to be normalized.
+7 api_usage_example: []
+8 api_shape: null

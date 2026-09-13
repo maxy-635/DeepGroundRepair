@@ -1,0 +1,18 @@
+2 api_name: paddle.distributed.rpc.init_rpc
+3 api_description: Initializes PyTorch RPC for distributed communication so processes
+  can register with a given name, rank, and worker count and then send/receive remote
+  procedure calls within a secure internal network.
+4 api_signature: paddle.distributed.rpc.init_rpc(name,rank,world_size)
+5 api_details: ''
+6 api_parameters:
+- name: The name used to identify the worker.
+- rank: The worker’s ID, which defaults to None if not provided.
+- world_size: The total number of workers participating, which defaults to None if
+    not provided.
+7 api_usage_example:
+- '>>>'
+- import paddle.distributed.rpc as rpc
+- rpc.init_rpc("worker0", rank=0, world_size=1,
+- '            master_endpoint="127.0.0.1:8001")'
+- rpc.shutdown()
+8 api_shape: {}

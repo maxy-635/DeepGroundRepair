@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.positive
+3 api_description: Returns the element-wise positive value of the input tensor, effectively
+  leaving values unchanged while supporting TensorFlow-compatible NumPy behavior.
+4 api_signature: tf.experimental.numpy.positive(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

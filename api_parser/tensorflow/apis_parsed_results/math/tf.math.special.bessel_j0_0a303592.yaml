@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.special.bessel_j0
+3 api_description: Computes the element-wise Bessel J0 function for each input value.
+4 api_signature: tf.math.special.bessel_j0(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the order-0 Bessel function of
+    the first kind.
+7 api_usage_example:
+- tf.math.special.bessel_j0([0.5, 1., 2., 4.]).numpy()
+8 api_shape: ''

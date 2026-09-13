@@ -1,0 +1,114 @@
+2 api_name: paddle.randint_like
+3 api_description: Returns a tensor of random integers with the same shape as `x`,
+  sampled uniformly from `[low, high)` or `[0, low)` when `high` is not provided.
+4 api_signature: paddle.randint_like(x,low,high)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the reference tensor whose shape determines the output size and whose
+    dtype must be one of the supported types.
+- low: Sets the inclusive lower bound for generated random integers, or acts as the
+    exclusive upper bound when `high` is not provided.
+- high: Sets the exclusive upper bound for generated random integers, defining the
+    range together with `low`.
+7 api_usage_example:
+- import paddle
+- '# example 1:'
+- '# dtype is None and the dtype of x is float32'
+- x = paddle.zeros((1,2)).astype("float32")
+- out1 = paddle.randint_like(x, low=-5, high=5)
+- print(out1)
+- '>>>'
+- Tensor(shape=[1, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 0.]])'
+- '>>>'
+- print(out1.dtype)
+- paddle.float32
+- '# example 2:'
+- '# dtype is None and the dtype of x is float64'
+- x = paddle.zeros((1,2)).astype("float64")
+- out2 = paddle.randint_like(x, low=-5, high=5)
+- print(out2)
+- '>>>'
+- Tensor(shape=[1, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[ 4., -5.]])'
+- '>>>'
+- print(out2.dtype)
+- paddle.float64
+- '# example 3:'
+- '# dtype is None and the dtype of x is int32'
+- x = paddle.zeros((1,2)).astype("int32")
+- out3 = paddle.randint_like(x, low=-5, high=5)
+- print(out3)
+- '>>>'
+- Tensor(shape=[1, 2], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[ 0, -4]])'
+- '>>>'
+- print(out3.dtype)
+- paddle.int32
+- '# example 4:'
+- '# dtype is None and the dtype of x is int64'
+- x = paddle.zeros((1,2)).astype("int64")
+- out4 = paddle.randint_like(x, low=-5, high=5)
+- print(out4)
+- '>>>'
+- Tensor(shape=[1, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[ 4, -3]])'
+- '>>>'
+- print(out4.dtype)
+- paddle.int64
+- '# example 5:'
+- '# dtype is float64 and the dtype of x is float32'
+- x = paddle.zeros((1,2)).astype("float32")
+- out5 = paddle.randint_like(x, low=-5, high=5, dtype="float64")
+- print(out5)
+- '>>>'
+- Tensor(shape=[1, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[3., 1.]])'
+- '>>>'
+- print(out5.dtype)
+- paddle.float64
+- '# example 6:'
+- '# dtype is bool and the dtype of x is float32'
+- x = paddle.zeros((1,2)).astype("float32")
+- out6 = paddle.randint_like(x, low=-5, high=5, dtype="bool")
+- print(out6)
+- '>>>'
+- Tensor(shape=[1, 2], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[[False, True ]])'
+- '>>>'
+- print(out6.dtype)
+- paddle.bool
+- '# example 7:'
+- '# dtype is int32 and the dtype of x is float32'
+- x = paddle.zeros((1,2)).astype("float32")
+- out7 = paddle.randint_like(x, low=-5, high=5, dtype="int32")
+- print(out7)
+- '>>>'
+- Tensor(shape=[1, 2], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[-2, -2]])'
+- '>>>'
+- print(out7.dtype)
+- paddle.int32
+- '# example 8:'
+- '# dtype is int64 and the dtype of x is float32'
+- x = paddle.zeros((1,2)).astype("float32")
+- out8 = paddle.randint_like(x, low=-5, high=5, dtype="int64")
+- print(out8)
+- '>>>'
+- Tensor(shape=[1, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[-5,  4]])'
+- '>>>'
+- print(out8.dtype)
+- paddle.int64
+- '# example 9:'
+- '# dtype is int64 and the dtype of x is bool'
+- x = paddle.zeros((1,2)).astype("bool")
+- out9 = paddle.randint_like(x, low=-5, high=5, dtype="int64")
+- print(out9)
+- '>>>'
+- Tensor(shape=[1, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[ 1, -2]])'
+- '>>>'
+- print(out9.dtype)
+- paddle.int64
+8 api_shape: {}

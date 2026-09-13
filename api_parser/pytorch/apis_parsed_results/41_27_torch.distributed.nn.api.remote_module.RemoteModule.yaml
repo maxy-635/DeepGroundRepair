@@ -1,0 +1,17 @@
+2 api_name: torch.distributed.nn.api.remote_module.RemoteModule
+3 api_description: Wraps a module that lives on a remote worker and exposes an RPC-based
+  interface for forwarding inputs, accessing parameters, and coordinating remote execution
+  after RPC has been initialized.
+4 api_signature: torch.distributed.nn.api.remote_module.RemoteModule(*args,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- args: Positional arguments forwarded to `module_cls` when constructing the remote
+    module.
+- kwargs: Keyword arguments forwarded to `module_cls` when constructing the remote
+    module.
+7 api_usage_example:
+- ' class MyModule(nn.Module):'
+- '     def forward(input):'
+- '         return input + 1'
+- ' module_cls = MyModule'
+8 api_shape: null

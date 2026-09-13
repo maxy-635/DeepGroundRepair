@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.patch_source_specialization
+3 api_description: Temporarily adds symbol-level specialization assumptions to a `ShapeEnv`,
+  enabling forked or parallel shape environments with different specialization constraints.
+4 api_signature: patch_source_specialization(source)
+5 api_details: ''
+6 api_parameters:
+- source: Identifies the symbol source whose value should be specialized.
+7 api_usage_example: null
+8 api_shape: null

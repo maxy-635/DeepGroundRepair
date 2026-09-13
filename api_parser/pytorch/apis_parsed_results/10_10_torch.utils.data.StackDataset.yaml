@@ -1,0 +1,15 @@
+2 api_name: torch.utils.data.StackDataset
+3 api_description: Combines multiple datasets into one dataset by stacking them so
+  each sample is a tuple or dict of corresponding items from the underlying datasets.
+4 api_signature: torch.utils.data.StackDataset(*args)
+5 api_details: ''
+6 api_parameters:
+- '*args': One or more datasets to combine into a stacked dataset returned as tuples.
+7 api_usage_example:
+- ' images = ImageDataset()'
+- ' texts = TextDataset()'
+- ' tuple_stack = StackDataset(images, texts)'
+- ' tuple_stack[0] == (images[0], texts[0])'
+- ' dict_stack = StackDataset(image=images, text=texts)'
+- ' dict_stack[0] == {"image": images[0], "text": texts[0]}'
+8 api_shape: null

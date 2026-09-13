@@ -1,0 +1,11 @@
+2 api_name: torch.eye
+3 api_description: Creates a 2D tensor with 1s on the diagonal and 0s elsewhere.
+4 api_signature: torch.eye(n,m)
+5 api_details: ''
+6 api_parameters:
+- n: Specifies how many rows the identity-like matrix will have.
+- m: Specifies how many columns the matrix will have, defaulting to the same value
+    as `n`.
+7 api_usage_example:
+- ' torch.eye(3)'
+8 api_shape: null

@@ -1,0 +1,21 @@
+2 api_name: tensorflow.keras.ops.categorical_crossentropy
+3 api_description: Computes the categorical cross-entropy loss between target labels
+  and predicted probabilities or logits for multi-class classification.
+4 api_signature: tf.keras.ops.categorical_crossentropy(target,output)
+5 api_details: ''
+6 api_parameters:
+- target: True categorical labels tensor whose shape matches `output` except for the
+    last dimension.
+- output: Predicted probabilities or logits tensor whose shape matches `target` except
+    for the last dimension.
+7 api_usage_example:
+- target = keras.ops.convert_to_tensor(
+- '[[1, 0, 0],'
+- ' [0, 1, 0],'
+- ' [0, 0, 1]])'
+- output = keras.ops.convert_to_tensor(
+- '[[0.9, 0.05, 0.05],'
+- ' [0.1, 0.8, 0.1],'
+- ' [0.2, 0.3, 0.5]])'
+- categorical_crossentropy(target, output)
+8 api_shape: ''

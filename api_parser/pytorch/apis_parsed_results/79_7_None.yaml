@@ -1,0 +1,11 @@
+2 api_name: null
+3 api_description: Flattens the specified dimensions into a single dimension named
+  `out_dim`.
+4 api_signature: flatten(out_dim)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' imgs = torch.randn(32, 3, 128, 128, names=(''N'', ''C'', ''H'', ''W''))'
+- ' flat_imgs = imgs.flatten([''C'', ''H'', ''W''], ''features'')'
+- ' flat_imgs.names, flat_imgs.shape'
+8 api_shape: null

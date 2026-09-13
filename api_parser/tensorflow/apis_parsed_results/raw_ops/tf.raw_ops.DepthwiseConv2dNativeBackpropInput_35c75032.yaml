@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.DepthwiseConv2dNativeBackpropInput
+3 api_description: Computes the gradient of a depthwise 2D convolution with respect
+  to the input tensor.
+4 api_signature: tf.raw_ops.DepthwiseConv2dNativeBackpropInput(input_sizes,filter,out_backprop,strides,padding,data_format,dilations,name)
+5 api_details: ''
+6 api_parameters:
+- input_sizes: Specifies the shape of the input tensor for which the backpropagated
+    gradient is being computed.
+- filter: Provides the depthwise convolution filter used to compute gradients with
+    respect to the input.
+- out_backprop: Supplies the gradient of the convolution output that is used to derive
+    the input gradient.
+- strides: Defines the sliding-window step size across each input dimension.
+- padding: Chooses the padding algorithm applied by the convolution operation.
+- data_format: Indicates the layout of tensor dimensions, such as NHWC or NCHW.
+- dilations: Sets the dilation rate for the input dimensions, controlling spacing
+    between filter elements.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.sym_eq
+3 api_description: Recursively compares values for equality, including lists and tuples,
+  and combines elementwise results with sym_and without adding guards.
+4 api_signature: '"torch.fx.experimental.symbolic_shapes.sym_eq(x,y)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

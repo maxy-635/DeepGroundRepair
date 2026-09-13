@@ -1,0 +1,11 @@
+2 api_name: paddle.version.xpu_xccl
+3 api_description: Returns the installed Paddle package’s XPU XCCL version.
+4 api_signature: paddle.version.xpu_xccl()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.version.xpu_xccl()
+- '>>>'
+- '''1.0.7'''
+8 api_shape: {}

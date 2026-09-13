@@ -1,0 +1,19 @@
+2 api_name: paddle.audio.info
+3 api_description: Returns basic signal information for an input audio file.
+4 api_signature: paddle.audio.info(filepath)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import os
+- import paddle
+- sample_rate = 16000
+- wav_duration = 0.5
+- num_channels = 1
+- num_frames = sample_rate * wav_duration
+- wav_data = paddle.linspace(-1.0, 1.0, int(num_frames)) * 0.1
+- waveform = wav_data.tile([num_channels, 1])
+- base_dir = os.getcwd()
+- filepath = os.path.join(base_dir, "test.wav")
+- paddle.audio.save(filepath, waveform, sample_rate)
+- wav_info = paddle.audio.info(filepath)
+8 api_shape: {}

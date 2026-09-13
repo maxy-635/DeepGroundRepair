@@ -1,0 +1,55 @@
+2 api_name: paddle.incubate.asp.prune_model
+3 api_description: Prunes supported model layers using a specified mask-generation
+  algorithm, with optional pruning of ASP mask-related variables during training or
+  inference.
+4 api_signature: paddle.incubate.asp.prune_model(model,n,m,mask_algo,with_mask)
+5 api_details: ''
+6 api_parameters:
+- model: The model or Paddle layer to be pruned.
+- n: The number of non-zero values to keep in each n:m sparsity group.
+- m: The size of each n:m sparsity group.
+- mask_algo: The algorithm used to generate the sparse mask.
+- with_mask: Whether to prune mask variables associated with the parameters.
+7 api_usage_example:
+- '# Example1: Usage of Dynamic Graph'
+- import paddle
+- import numpy as np
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self.conv1 = paddle.nn.Conv2D('
+- '            in_channels=3, out_channels=4, kernel_size=3, padding=2)'
+- '        self.linear1 = paddle.nn.Linear(4624, 32)'
+- '        self.linear2 = paddle.nn.Linear(32, 32)'
+- '        self.linear3 = paddle.nn.Linear(32, 10)'
+- '...'
+- '    def forward(self, img):'
+- '        hidden = self.conv1(img)'
+- '        hidden = paddle.flatten(hidden, start_axis=1)'
+- '        hidden = self.linear1(hidden)'
+- '        hidden = self.linear2(hidden)'
+- '        prediction = self.linear3(hidden)'
+- '        return prediction'
+- my_layer = MyLayer()
+- loss_fn = paddle.nn.MSELoss(reduction='mean')
+- optimizer = paddle.optimizer.SGD(
+- '    learning_rate=0.01, parameters=my_layer.parameters())'
+- '# Calling paddle.incubate.asp.decorate() to wrap step() in optimizer, which'
+- '# will apply necessary masking operations for ASP workflow.'
+- '# In dynamic graph mode, ASP would create related mask variables during decoration.'
+- optimizer = paddle.incubate.asp.decorate(optimizer)
+- '# Must call paddle.incubate.asp.decorate() first before calling paddle.incubate.asp.prune_model()'
+- paddle.incubate.asp.prune_model(my_layer, mask_algo='mask_2d_best')
+- 'for i in range(10):'
+- '    imgs = paddle.to_tensor('
+- '        np.random.randn(64, 3, 32, 32),'
+- '        dtype=''float32'', stop_gradient=False)'
+- '    labels = paddle.to_tensor('
+- '        np.random.randint(10, size=(64, 1)),'
+- '        dtype=''float32'', stop_gradient=False)'
+- '    output = my_layer(imgs)'
+- '    loss = loss_fn(output, labels)'
+- '    loss.backward()'
+- '    optimizer.step()'
+- '    optimizer.clear_grad()'
+8 api_shape: {}

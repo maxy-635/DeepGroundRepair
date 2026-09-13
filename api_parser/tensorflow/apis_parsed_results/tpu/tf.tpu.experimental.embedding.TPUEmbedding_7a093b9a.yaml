@@ -1,0 +1,12 @@
+2 api_name: tensorflow.tpu.experimental.embedding.TPUEmbedding
+3 api_description: Mid-level TPU embedding API for defining tables and feature lookups
+  up front, so large embedding models can train efficiently on TPU.
+4 api_signature: tf.tpu.experimental.embedding.TPUEmbedding(feature_config,optimizer)
+5 api_details: ''
+6 api_parameters:
+- feature_config: Specifies the nested feature configuration used to define how TPU
+    embeddings are set up for each input feature.
+- optimizer: Specifies the embedding optimizer to use for training, or can be set
+    to None outside TPUStrategy to avoid creating optimizer slot variables.
+7 api_usage_example: null
+8 api_shape: ''

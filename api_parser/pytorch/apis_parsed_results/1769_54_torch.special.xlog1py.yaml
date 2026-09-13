@@ -1,0 +1,18 @@
+2 api_name: torch.special.xlog1py
+3 api_description: Computes input multiplied by log1p(other), with special-case handling
+  for edge values to improve numerical stability.
+4 api_signature: torch.special.xlog1py(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The value to be multiplied by `log1p(other)`.
+- other: The value used inside `log1p` as the logarithm argument.
+7 api_usage_example:
+- ' x = torch.zeros(5,)'
+- ' y = torch.tensor([-1, 0, 1, float(''inf''), float(''nan'')])'
+- ' torch.special.xlog1py(x, y)'
+- ' x = torch.tensor([1, 2, 3])'
+- ' y = torch.tensor([3, 2, 1])'
+- ' torch.special.xlog1py(x, y)'
+- ' torch.special.xlog1py(x, 4)'
+- ' torch.special.xlog1py(2, y)'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.utils.checkpoint.set_checkpoint_debug_enabled
+3 api_description: Context manager that controls checkpoint debug logging, overriding
+  checkpoint()'s debug setting unless set to None.
+4 api_signature: torch.utils.checkpoint.set_checkpoint_debug_enabled(enabled)
+5 api_details: ''
+6 api_parameters:
+- enabled: Controls whether checkpointing prints debug information; `None` uses the
+    default behavior.
+7 api_usage_example: null
+8 api_shape: null

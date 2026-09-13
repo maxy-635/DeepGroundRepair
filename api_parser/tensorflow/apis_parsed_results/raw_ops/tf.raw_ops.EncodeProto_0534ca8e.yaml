@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.EncodeProto
+3 api_description: Serializes batches of protobuf messages from input tensors by encoding
+  specified fields, using `field_names`, `sizes`, and `message_type` to match the
+  protobuf schema and descriptor source.
+4 api_signature: tf.raw_ops.EncodeProto(sizes,values,field_names,message_type,descriptor_source)
+5 api_details: ''
+6 api_parameters:
+- sizes: Specifies the batch-shaped sizes of each proto field, with one size per field
+    name.
+- values: Provides the tensor values to encode into the corresponding proto fields.
+- field_names: Lists the proto field names that the input values and sizes correspond
+    to.
+- message_type: Identifies the proto message type to encode.
+- descriptor_source: Specifies where to load the proto descriptor from, defaulting
+    to the local source.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

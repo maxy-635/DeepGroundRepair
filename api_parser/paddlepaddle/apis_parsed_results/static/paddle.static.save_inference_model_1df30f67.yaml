@@ -1,0 +1,32 @@
+2 api_name: paddle.static.save_inference_model
+3 api_description: Saves a Paddle static inference model and its parameters to the
+  specified path prefix as separate .pdmodel and .pdiparams files for later inference
+  use.
+4 api_signature: paddle.static.save_inference_model(path_prefix,feed_vars,fetch_vars,executor)
+5 api_details: ''
+6 api_parameters:
+- path_prefix: Specifies the directory path and base model name used to save the inference
+    model files.
+- feed_vars: Provides the input variables that the inference model expects as feeds.
+- fetch_vars: Provides the output variables that the inference model will return for
+    inference.
+- executor: Supplies the executor responsible for saving the inference model.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- path_prefix = "./infer_model"
+- '# User defined network, here a softmax regression example'
+- image = paddle.static.data(name='img', shape=[None, 28, 28], dtype='float32')
+- label = paddle.static.data(name='label', shape=[None, 1], dtype='int64')
+- predict = paddle.static.nn.fc(image, 10, activation='softmax')
+- loss = paddle.nn.functional.cross_entropy(predict, label)
+- exe = paddle.static.Executor(paddle.CPUPlace())
+- exe.run(paddle.static.default_startup_program())
+- '# Feed data and train process'
+- '# Save inference model. Note we don''t save label and loss in this example'
+- paddle.static.save_inference_model(path_prefix, [image], [predict], exe)
+- '# In this example, the save_inference_mode inference will prune the default'
+- '# main program according to the network''s input node (img) and output node(predict).'
+- '# The pruned inference program is going to be saved in file "./infer_model.pdmodel"'
+- '# and parameters are going to be saved in file "./infer_model.pdiparams".'
+8 api_shape: {}

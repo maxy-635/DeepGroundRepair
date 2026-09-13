@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.fuse_conv_bn_eval
+3 api_description: Combines a convolution and BatchNorm module into one equivalent
+  convolution for evaluation.
+4 api_signature: torch.nn.utils.fuse_conv_bn_eval(conv,bn)
+5 api_details: ''
+6 api_parameters:
+- conv: The convolutional module to be fused with batch normalization.
+- bn: The BatchNorm module whose parameters are folded into the convolution.
+7 api_usage_example: null
+8 api_shape: null

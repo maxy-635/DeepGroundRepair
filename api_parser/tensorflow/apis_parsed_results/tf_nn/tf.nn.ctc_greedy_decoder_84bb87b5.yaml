@@ -1,0 +1,26 @@
+2 api_name: tensorflow.nn.ctc_greedy_decoder
+3 api_description: The tensorflow.nn.ctc_greedy_decoder performs greedy decoding on
+  input logits to find the best path, using the blank_index parameter to specify the
+  class index for the blank symbol.
+4 api_signature: tf.nn.ctc_greedy_decoder(inputs,sequence_length)
+5 api_details: ''
+6 api_parameters:
+- inputs: A 3-D float Tensor representing the logits with dimensions [max_time, batch_size,
+    num_classes], where max_time is the maximum sequence length, batch_size is the
+    number of sequences, and num_classes is the number of possible output classes.
+- sequence_length: A 1-D int32 vector specifying the actual lengths of each sequence
+    in the batch, with a size equal to the batch_size.
+7 api_usage_example:
+- inf = float("inf")
+- logits = tf.constant([[[   0., -inf, -inf],
+- '                       [ -2.3, -inf, -0.1]],'
+- '                      [[ -inf, -0.5, -inf],'
+- '                       [ -inf, -inf, -0.1]],'
+- '                      [[ -inf, -inf, -inf],'
+- '                       [ -0.1, -inf, -2.3]]])'
+- seq_lens = tf.constant([2, 3])
+- outputs = tf.nn.ctc_greedy_decoder(
+- '    logits,'
+- '    seq_lens,'
+- '    blank_index=1)'
+8 api_shape: ''

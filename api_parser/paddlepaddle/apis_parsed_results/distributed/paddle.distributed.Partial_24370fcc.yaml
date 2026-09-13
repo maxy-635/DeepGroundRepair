@@ -1,0 +1,16 @@
+2 api_name: paddle.distributed.Partial
+3 api_description: Represents a tensor sharded across devices with the same shape
+  but only part of the values, meant to be reduced (for example by sum, min, or max)
+  into a distributed tensor, typically as an intermediate representation.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- mesh = dist.ProcessMesh([0, 1], dim_names=["x"])
+- a = paddle.ones([10, 20])
+- '>>>'
+- '# distributed tensor'
+- d_tensor = dist.shard_tensor(a, mesh, [dist.Partial()])
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TPUPartitionedInputV2
+3 api_description: Groups a list of partitioned tensor inputs into a single combined
+  TPU input, supporting ND sharding.
+4 api_signature: tf.raw_ops.TPUPartitionedInputV2(inputs,partition_dims)
+5 api_details: ''
+6 api_parameters:
+- inputs: Provides the list of partitioned tensors that all share the same shape and
+    type.
+- partition_dims: Specifies how each tensor dimension is split across partitions,
+    or left replicated if empty.
+7 api_usage_example: null
+8 api_shape: ''

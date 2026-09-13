@@ -1,0 +1,12 @@
+2 api_name: torch.can_cast
+3 api_description: Checks whether PyTorch allows converting one tensor or scalar type
+  to another under its casting and type promotion rules.
+4 api_signature: torch.can_cast(from_,to)
+5 api_details: ''
+6 api_parameters:
+- from_: Specifies the source dtype to check for castability.
+- to: Specifies the destination dtype to check whether values can be cast to it.
+7 api_usage_example:
+- ' torch.can_cast(torch.double, torch.float)'
+- ' torch.can_cast(torch.float, torch.int)'
+8 api_shape: null

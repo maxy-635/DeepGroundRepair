@@ -1,0 +1,10 @@
+2 api_name: tensorflow.compat.as_bytes
+3 api_description: Converts bytearray, bytes, or Unicode input into bytes, using UTF-8
+  encoding by default for text.
+4 api_signature: tf.compat.as_bytes(bytes_or_text)
+5 api_details: ''
+6 api_parameters:
+- bytes_or_text: Input value to be converted to a `bytes` object, accepting bytearray,
+    bytes, str, or unicode.
+7 api_usage_example: null
+8 api_shape: ''

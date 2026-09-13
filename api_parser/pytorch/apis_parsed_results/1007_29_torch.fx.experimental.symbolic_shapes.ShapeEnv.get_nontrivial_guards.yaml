@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.get_nontrivial_guards
+3 api_description: Returns the non-trivial guard expressions in a ShapeEnv, excluding
+  guards that are already statically known.
+4 api_signature: get_nontrivial_guards()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

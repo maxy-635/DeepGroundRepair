@@ -1,0 +1,27 @@
+2 api_name: torch.enable_grad
+3 api_description: Context manager that temporarily enables gradient tracking and
+  autograd computation.
+4 api_signature: torch.enable_grad()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' x = torch.tensor([1.], requires_grad=True)'
+- ' with torch.no_grad():'
+- '...     with torch.enable_grad():'
+- '...         y = x * 2'
+- ' y.requires_grad'
+- ' y.backward()'
+- ' x.grad'
+- ' @torch.enable_grad()'
+- '... def doubler(x):'
+- '...     return x * 2'
+- ' with torch.no_grad():'
+- '...     z = doubler(x)'
+- ' z.requires_grad'
+- ' @torch.enable_grad()'
+- '... def tripler(x):'
+- '...     return x * 3'
+- ' with torch.no_grad():'
+- '...     z = tripler(x)'
+- ' z.requires_grad'
+8 api_shape: null

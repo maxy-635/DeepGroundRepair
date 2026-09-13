@@ -1,0 +1,7 @@
+2 api_name: torch.autograd.profiler.KinetoStepTracker.init_step_count
+3 api_description: Initializes and tracks the step count for a specific requester.
+4 api_signature: init_step_count(requester)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.ones_initializer
+3 api_description: Creates an initializer that fills tensors with ones, and can also
+  be restored from a configuration dictionary.
+4 api_signature: from_config(config)
+5 api_details: ''
+6 api_parameters:
+- config: Provides the initializer configuration as a Python dictionary, typically
+    produced by `get_config()`.
+7 api_usage_example:
+- 'def make_variables(k, initializer):'
+- '  return (tf.Variable(initializer(shape=[k], dtype=tf.float32)),'
+- '          tf.Variable(initializer(shape=[k, k], dtype=tf.float32)))'
+- v1, v2 = make_variables(3, tf.ones_initializer())
+- v1
+- v2
+- make_variables(4, tf.random_uniform_initializer(minval=-1., maxval=1.))
+8 api_shape: ''

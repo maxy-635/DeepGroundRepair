@@ -1,0 +1,12 @@
+2 api_name: tensorflow.linspace
+3 api_description: Generates `num` evenly spaced values from `start` to `stop` along
+  an axis, including both endpoints when `num > 1`.
+4 api_signature: tf.linspace(start,stop,num)
+5 api_details: ''
+6 api_parameters:
+- start: Specifies the first value in the generated range.
+- stop: Specifies the last value in the generated range.
+- num: Specifies how many values to generate.
+7 api_usage_example:
+- tf.linspace([0., 5.], [10., 40.], 5, axis=-1)
+8 api_shape: ''

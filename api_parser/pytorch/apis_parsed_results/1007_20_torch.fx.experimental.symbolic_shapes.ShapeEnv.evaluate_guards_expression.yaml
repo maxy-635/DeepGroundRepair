@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.evaluate_guards_expression
+3 api_description: Evaluates a guards expression produced by `produce_guards_expression()`
+  against concrete arguments to check whether the corresponding symbolic shape guards
+  hold.
+4 api_signature: evaluate_guards_expression(code)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

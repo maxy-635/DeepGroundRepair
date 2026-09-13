@@ -1,0 +1,16 @@
+2 api_name: torch.distributions.generalized_pareto.GeneralizedPareto
+3 api_description: A generalized Pareto distribution for modeling positive excesses
+  over a threshold, providing sampling, log-probability, and distribution properties
+  such as mean, variance, and entropy when defined.
+4 api_signature: torch.distributions.generalized_pareto.GeneralizedPareto(loc,scale,concentration)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the distribution’s starting point by shifting where values are centered
+    on the real line.
+- scale: Controls the spread or stretch of the distribution.
+- concentration: Determines the tail shape and how rapidly probabilities decay.
+7 api_usage_example:
+- ' m = GeneralizedPareto(torch.tensor([0.1]), torch.tensor([2.0]), torch.tensor([0.4]))'
+- ' m.sample()  # sample from a Generalized Pareto distribution with loc=0.1, scale=2.0,
+  and concentration=0.4'
+8 api_shape: null

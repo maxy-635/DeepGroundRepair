@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TensorListGather
+3 api_description: Gather elements from a TensorList by the given indices and stack
+  them into a Tensor, with each output row corresponding to a selected list element.
+4 api_signature: tf.raw_ops.TensorListGather(input_handle,indices,element_shape,element_dtype)
+5 api_details: ''
+6 api_parameters:
+- input_handle: Variant tensor that holds the TensorList to gather elements from.
+- indices: Int32 tensor specifying which elements to retrieve from the TensorList.
+- element_shape: Int32 tensor describing the shape of each gathered element.
+- element_dtype: DType of the elements stored in and returned from the TensorList.
+7 api_usage_example: null
+8 api_shape: ''

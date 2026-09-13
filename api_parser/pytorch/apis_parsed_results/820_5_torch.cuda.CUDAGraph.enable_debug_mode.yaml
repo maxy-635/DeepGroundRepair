@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.CUDAGraph.enable_debug_mode
+3 api_description: Enables debugging mode so `CUDAGraph.debug_dump` produces diagnostic
+  information.
+4 api_signature: enable_debug_mode()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

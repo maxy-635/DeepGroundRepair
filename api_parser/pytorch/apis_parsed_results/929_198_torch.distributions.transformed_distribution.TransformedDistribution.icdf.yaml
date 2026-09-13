@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.transformed_distribution.TransformedDistribution.icdf
+3 api_description: Computes the inverse CDF by applying the distribution's transforms
+  to quantiles from the base distribution and using the base distribution's score.
+4 api_signature: icdf(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

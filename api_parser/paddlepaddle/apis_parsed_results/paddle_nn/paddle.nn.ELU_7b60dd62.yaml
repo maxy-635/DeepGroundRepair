@@ -1,0 +1,19 @@
+2 api_name: paddle.nn.ELU
+3 api_description: The paddle.nn.ELU API applies the Exponential Linear Unit (ELU)
+  activation function, which introduces non-linearity by scaling negative inputs exponentially
+  and keeping positive inputs linear.
+4 api_signature: paddle.nn.ELU(alpha)
+5 api_details: ''
+6 api_parameters:
+- alpha: Specifies the slope of the ELU function for input values less than zero,
+    with a default value of 1.0.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[-1. ,6.], [1., 15.6]])
+- m = paddle.nn.ELU(0.2)
+- out = m(x)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.12642412,  6.        ],'
+- '[ 1.        , 15.60000038]])'
+8 api_shape: null

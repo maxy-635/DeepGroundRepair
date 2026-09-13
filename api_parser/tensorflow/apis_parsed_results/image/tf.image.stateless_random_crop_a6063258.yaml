@@ -1,0 +1,16 @@
+2 api_name: tensorflow.image.stateless_random_crop
+3 api_description: Deterministically crops a tensor to a specified size at a random
+  offset, using the given seed and ignoring global random state.
+4 api_signature: tf.image.stateless_random_crop(value,size,seed)
+5 api_details: ''
+6 api_parameters:
+- value: The tensor to crop.
+- size: A 1-D tensor specifying the crop size for each dimension, matching the rank
+    of `value`.
+- seed: A length-2 tensor that seeds the random number generator, using `int32` or
+    `int64` (`int32` only with XLA).
+7 api_usage_example:
+- image = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]
+- seed = (1, 2)
+- tf.image.stateless_random_crop(value=image, size=(1, 2, 3), seed=seed)
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.MatrixExponential
+3 api_description: Computes the matrix exponential of a square input tensor, returning
+  exp(A) for each matrix in the batch.
+4 api_signature: tf.raw_ops.MatrixExponential(input)
+5 api_details: ''
+6 api_parameters:
+- input: The square matrix or batch of square matrices whose matrix exponential is
+    computed.
+7 api_usage_example: null
+8 api_shape: ''

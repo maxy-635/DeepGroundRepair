@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.optimizers.Adamax
+3 api_description: Adamax is an adaptive first-order optimizer that uses the infinity
+  norm to scale parameter updates, adjusting learning rates based on gradient history
+  for robust training on changing data.
+4 api_signature: tf.keras.optimizers.Adamax(learning_rate,beta_1,beta_2,epsilon,weight_decay,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update model weights during optimization.
+- beta_1: Controls the decay rate for the first-moment estimate of the gradients.
+- beta_2: Controls the decay rate for the infinity-norm-based second-moment estimate.
+- epsilon: Adds a small stabilizing value to improve numerical stability during updates.
+- weight_decay: Applies weight decay to penalize large weights and improve regularization.
+7 api_usage_example: null
+8 api_shape: ''

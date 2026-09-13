@@ -1,0 +1,15 @@
+2 api_name: paddle.nn.MaxUnPool2D
+3 api_description: The paddle.nn.MaxUnPool2D API performs the inverse of a 2D max
+  pooling operation, reconstructing the original spatial dimensions from pooled outputs
+  using indices from a previous max pooling layer.
+4 api_signature: paddle.nn.MaxUnPool2D(kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Specifies the size of the unpooling window, which can be an integer
+    or a tuple/list containing an integer.
+- stride: Defines the stride size for the unpooling operation, which can be an integer
+    or a tuple/list containing an integer.
+- padding: Indicates the padding that was originally added to the input during the
+    pooling operation.
+7 api_usage_example: []
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.OneShotIterator
+3 api_description: Creates a one-shot dataset iterator that is initialized automatically
+  and can be consumed only once, bundling dataset definition and iterator state in
+  a single op for simple input pipelines.
+4 api_signature: tf.raw_ops.OneShotIterator(dataset_factory,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- dataset_factory: Provides a Defun-wrapped function that creates and returns the
+    dataset variant used by the iterator.
+- output_types: Specifies the data types of the values produced by the iterator.
+- output_shapes: Specifies the shapes of the values produced by the iterator.
+7 api_usage_example: null
+8 api_shape: ''

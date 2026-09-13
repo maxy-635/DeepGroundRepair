@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.CUDAGraph.capture_begin
+3 api_description: Starts capturing CUDA operations on the current stream into a CUDA
+  graph for later replay.
+4 api_signature: capture_begin(pool)
+5 api_details: ''
+6 api_parameters:
+- pool: Hints that this graph may share memory with the specified graph memory pool
+    token.
+7 api_usage_example: null
+8 api_shape: null

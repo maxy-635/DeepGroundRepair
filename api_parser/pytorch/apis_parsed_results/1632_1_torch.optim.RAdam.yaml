@@ -1,0 +1,37 @@
+2 api_name: torch.optim.RAdam
+3 api_description: Implements the RAdam optimizer to update model parameters using
+  rectified adaptive momentum-based gradient descent.
+4 api_signature: torch.optim.RAdam(params,lr,betas,eps,weight_decay,maximize)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies the model parameters or parameter groups to optimize, including
+    optionally named parameters.
+- lr: Sets the step size used to update the parameters during optimization.
+- betas: Controls the exponential moving averages of the gradient and squared gradient
+    used by RAdam.
+- eps: Adds a small value to improve numerical stability during parameter updates.
+- weight_decay: Applies L2 regularization to penalize large parameter values.
+- maximize: Switches the optimizer to maximize the objective instead of minimize it.
+7 api_usage_example:
+- ' model = torch.nn.Linear(10, 10)'
+- ' optim = torch.optim.SGD(model.parameters(), lr=3e-4)'
+- ' scheduler1 = torch.optim.lr_scheduler.LinearLR('
+- '...     optim,'
+- '...     start_factor=0.1,'
+- '...     end_factor=1,'
+- '...     total_iters=20,'
+- '... )'
+- ' scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR('
+- '...     optim,'
+- '...     T_max=80,'
+- '...     eta_min=3e-5,'
+- '... )'
+- ' lr = torch.optim.lr_scheduler.SequentialLR('
+- '...     optim,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' lr.load_state_dict(torch.load("./save_seq.pt"))'
+- ' # now load the optimizer checkpoint after loading the LRScheduler'
+- ' optim.load_state_dict(torch.load("./save_optim.pt"))'
+8 api_shape: null

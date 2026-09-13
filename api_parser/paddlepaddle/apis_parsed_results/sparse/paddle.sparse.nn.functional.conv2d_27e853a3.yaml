@@ -1,0 +1,16 @@
+2 api_name: paddle.sparse.nn.functional.conv2d
+3 api_description: Performs 2D sparse convolution on SparseCooTensor inputs and filters
+  using stride, padding, dilation, and groups settings, with optional bias added to
+  the result.
+4 api_signature: paddle.sparse.nn.functional.conv2d(x,weight,bias,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The 4-D sparse input tensor to be convolved, with shape [N, H, W, C].
+- weight: The convolution kernel tensor that defines the filters and their channel
+    grouping.
+- bias: The optional bias tensor added to each output channel.
+- stride: The convolution step size along the height and width dimensions.
+- padding: The zero-padding applied to the input, either by explicit sizes or by using
+    `VALID`/`SAME`.
+7 api_usage_example: []
+8 api_shape: {}

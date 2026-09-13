@@ -1,0 +1,15 @@
+2 api_name: tensorflow.experimental.ExtensionTypeBatchEncoder
+3 api_description: Encodes and decodes extension type values for batching by producing
+  a batched TypeSpec, typically by adding an outer batch axis to nested TypeSpecs
+  and TensorShape fields.
+4 api_signature: batch(spec)
+5 api_details: ''
+6 api_parameters:
+- spec: Defines the TypeSpec that describes a single value to be encoded in the batch.
+7 api_usage_example:
+- 'class CustomType(BatchableExtensionType):'
+- '  x: tf.Tensor'
+- '  y: tf.Tensor'
+- '  shape: tf.TensorShape'
+- '  __batch_encoder__ = CustomBatchEncoder()'
+8 api_shape: ''

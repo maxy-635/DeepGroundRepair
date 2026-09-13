@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.true_divide
+3 api_description: Element-wise division that returns floating-point results, following
+  NumPy's true_divide behavior.
+4 api_signature: tf.experimental.numpy.true_divide(x1,x2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

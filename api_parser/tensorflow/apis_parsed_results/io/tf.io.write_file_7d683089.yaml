@@ -1,0 +1,11 @@
+2 api_name: tensorflow.io.write_file
+3 api_description: Writes data to a file, creating the file and any missing parent
+  directories as needed.
+4 api_signature: tf.io.write_file(filename,contents)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the output file name to write the contents to.
+- contents: Provides the string data that will be written into the file.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

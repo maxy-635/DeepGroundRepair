@@ -1,0 +1,22 @@
+2 api_name: tensorflow.raw_ops.GetMinibatchSplitsWithPhysicalReplica
+3 api_description: Returns minibatch split boundaries for each physical replica so
+  input batches can be partitioned across replicas.
+4 api_signature: tf.raw_ops.GetMinibatchSplitsWithPhysicalReplica(program_key,row_ids,col_ids,gains,sample_count,num_replica,table_vocab_size,feature_width,num_sc_per_chip,table_name,mini_batch_splits)
+5 api_details: ''
+6 api_parameters:
+- program_key: Identifies which program or kernel configuration to use for the minibatch
+    split operation.
+- row_ids: Provides the row indices of the examples or features to be split.
+- col_ids: Provides the column indices associated with each input entry.
+- gains: Supplies the gain values or weights for the corresponding input entries.
+- sample_count: Specifies how many samples are included in the minibatch.
+- num_replica: Specifies the number of replicas over which the work is distributed.
+- table_vocab_size: Sets the vocabulary size of the table being processed.
+- feature_width: Sets the width of each feature vector in the table.
+- num_sc_per_chip: Specifies how many streaming cores are assigned per chip.
+- table_name: Names the table associated with this minibatch split operation.
+- mini_batch_splits: Provides the serialized minibatch split data to be consumed by
+    the operation.
+- name: Optionally assigns a custom name to the TensorFlow operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.data.experimental.from_variant
+3 api_description: Creates a dataset from a variant tensor using the provided nested
+  structure to interpret its elements.
+4 api_signature: tf.data.experimental.from_variant(variant,structure)
+5 api_details: ''
+6 api_parameters:
+- variant: The scalar `tf.variant` tensor that stores the serialized dataset to be
+    reconstructed.
+- structure: The nested `tf.TypeSpec` structure that defines the shape and type of
+    each dataset element.
+7 api_usage_example: null
+8 api_shape: ''

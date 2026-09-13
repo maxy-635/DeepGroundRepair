@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.CrossReplicaSum
+3 api_description: Sums each replica’s input across the TPU replica groups in `group_assignment`,
+  then returns the group total to every replica in that group.
+4 api_signature: tf.raw_ops.CrossReplicaSum(input,group_assignment)
+5 api_details: ''
+6 api_parameters:
+- input: The local tensor value to be summed across replicas.
+- group_assignment: Defines which replica IDs belong to each group for the cross-replica
+    sum.
+7 api_usage_example: null
+8 api_shape: ''

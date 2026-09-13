@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.RandomWidth
+3 api_description: tf.keras.layers.RandomWidth applies a random width adjustment to
+  input images during training, enhancing data augmentation by varying the width of
+  the images within a specified range.
+4 api_signature: tf.keras.layers.RandomWidth(factor)
+5 api_details: ''
+6 api_parameters:
+- probability: The probability that the layer will apply the transformation.
+- width: The maximum width of the random distortion, which defines the range of random
+    widths to apply.
+- seed: An optional integer to seed the random number generator for reproducibility.
+7 api_usage_example: null
+8 api_shape: null

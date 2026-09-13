@@ -1,0 +1,14 @@
+2 api_name: torch.distributed.rpc.PyRRef.remote
+3 api_description: Creates a proxy that runs methods on the RRef’s owner for the referenced
+  object, so `rref.remote().func_name(*args, **kwargs)` invokes that function remotely
+  on the object.
+4 api_signature: remote(self,timeout)
+5 api_details: ''
+6 api_parameters:
+- timeout: Sets how long `rref.remote()` may take to create the RRef before later
+    use of that RRef raises a timeout; if omitted, the default RPC timeout applies.
+7 api_usage_example:
+- ' def run(rref, func_name, args, kwargs):'
+- '   return getattr(rref.local_value(), func_name)(*args, **kwargs)'
+- ' rpc.remote(rref.owner(), run, args=(rref, func_name, args, kwargs))'
+8 api_shape: null

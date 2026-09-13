@@ -1,0 +1,9 @@
+2 api_name: tensorflow.signal.ifft3d
+3 api_description: Computes the inverse 3D FFT over the innermost three dimensions
+  of a tensor.
+4 api_signature: tf.signal.ifft3d(input)
+5 api_details: ''
+6 api_parameters:
+- input: The complex-valued tensor to transform with a 3D inverse FFT.
+7 api_usage_example: null
+8 api_shape: ''

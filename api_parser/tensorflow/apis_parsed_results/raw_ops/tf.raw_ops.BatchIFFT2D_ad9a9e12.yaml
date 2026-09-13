@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.BatchIFFT2D
+3 api_description: Computes the inverse 2D FFT for a batch of complex-valued tensors.
+4 api_signature: tf.raw_ops.BatchIFFT2D(input)
+5 api_details: ''
+6 api_parameters:
+- input: The complex64 tensor containing a batch of 2D frequency-domain inputs to
+    be transformed back into the spatial domain.
+7 api_usage_example: null
+8 api_shape: ''

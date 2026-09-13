@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.FloorDiv
+3 api_description: Performs element-wise floor division, returning x // y.
+4 api_signature: tf.raw_ops.FloorDiv(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The dividend tensor whose values are divided and then floored.
+- y: The divisor tensor, which must match `x` in type.
+7 api_usage_example: null
+8 api_shape: ''

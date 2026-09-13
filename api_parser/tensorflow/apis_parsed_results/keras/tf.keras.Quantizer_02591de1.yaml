@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.Quantizer
+3 api_description: Base API for objects that quantize tensors/weights by defining
+  how values are converted to lower-precision representations.
+4 api_signature: tf.keras.Quantizer(output_dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

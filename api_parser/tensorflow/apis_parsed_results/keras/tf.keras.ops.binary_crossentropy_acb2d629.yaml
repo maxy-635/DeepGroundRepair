@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.ops.binary_crossentropy
+3 api_description: Computes the binary cross-entropy loss between target and output
+  tensors for binary classification, measuring how different the predicted probabilities
+  or logits are from the true labels.
+4 api_signature: tf.keras.ops.binary_crossentropy(target,output)
+5 api_details: ''
+6 api_parameters:
+- target: True binary labels tensor that serves as the ground truth and must match
+    the output shape.
+- output: Predicted probabilities or logits tensor whose shape must match the target
+    shape.
+7 api_usage_example:
+- target = keras.ops.convert_to_tensor([0, 1, 1, 0])
+- output = keras.ops.convert_to_tensor([0.1, 0.9, 0.8, 0.2])
+- binary_crossentropy(target, output)
+8 api_shape: ''

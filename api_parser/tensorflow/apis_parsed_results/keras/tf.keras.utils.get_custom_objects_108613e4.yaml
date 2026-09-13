@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.utils.get_custom_objects
+3 api_description: Returns the global registry of custom Keras objects as a live dictionary
+  reference.
+4 api_signature: '"tf.keras.utils.get_custom_objects()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

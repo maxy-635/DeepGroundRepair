@@ -1,0 +1,18 @@
+2 api_name: paddle.gammainc
+3 api_description: Computes the regularized lower incomplete gamma function for given
+  inputs.
+4 api_signature: paddle.gammainc(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The non-negative input values at which the lower regularized incomplete gamma
+    function is evaluated.
+- y: The positive shape parameter that controls the gamma function computation.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([0.5, 0.5, 0.5, 0.5, 0.5], dtype="float32")
+- y = paddle.to_tensor([0, 1, 10, 100, 1000], dtype="float32")
+- out = paddle.gammainc(x, y)
+- print(out)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 0.84270084, 0.99999225, 1.        , 1.        ])'
+8 api_shape: {}

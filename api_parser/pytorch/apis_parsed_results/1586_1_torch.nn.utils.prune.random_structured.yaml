@@ -1,0 +1,15 @@
+2 api_name: torch.nn.utils.prune.random_structured
+3 api_description: Randomly removes entire channels from a tensor along a chosen dimension
+  to create structured sparsity.
+4 api_signature: torch.nn.utils.prune.random_structured(module,name,amount)
+5 api_details: ''
+6 api_parameters:
+- module: Specifies the module that contains the tensor to be pruned.
+- name: Identifies the parameter within the module that pruning will modify.
+- amount: Sets how much of the parameter to prune, either as a fraction or an absolute
+    count.
+7 api_usage_example:
+- ' m = prune.random_structured(nn.Linear(5, 3), "weight", amount=3, dim=1)'
+- ' columns_pruned = int(sum(torch.sum(m.weight, dim=0) == 0))'
+- ' print(columns_pruned)'
+8 api_shape: null

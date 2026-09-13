@@ -1,0 +1,19 @@
+2 api_name: tensorflow.sparse.bincount
+3 api_description: Counts occurrences of integer values in a tensor, RaggedTensor,
+  or SparseTensor and returns an int64 SparseTensor of per-slice value frequencies
+  along the specified axis.
+4 api_signature: tf.sparse.bincount(values,weights,axis,minlength,maxlength)
+5 api_details: ''
+6 api_parameters:
+- values: Specifies the tensor-like values to count into bins.
+- weights: Provides optional per-value weights to add instead of counting each occurrence
+    as 1.
+- axis: Chooses which axis to bin-count over, flattening axes at and below it.
+- minlength: Sets a minimum output length by padding the result with zeros if needed.
+- maxlength: Sets an upper bound on output length by ignoring values at or above this
+    limit.
+7 api_usage_example:
+- data = np.array([[10, 20, 30, 20], [11, 101, 11, 10001]], dtype=np.int64)
+- weights = [[2, 0.25, 15, 0.5], [2, 17, 3, 0.9]]
+- tf.sparse.bincount(data, weights=weights, axis=-1)
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.continuous_bernoulli.ContinuousBernoulli.rsample
+3 api_description: Draws a differentiable reparameterized sample from the Continuous
+  Bernoulli distribution, returning a tensor.
+4 api_signature: rsample(sample_shape)
+5 api_details: ''
+6 api_parameters:
+- sample_shape: Specifies the shape of the returned samples to draw from the distribution.
+7 api_usage_example: null
+8 api_shape: null

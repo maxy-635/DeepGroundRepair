@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Erf
+3 api_description: Computes the element-wise Gauss error function erf(x), which measures
+  the probability that a normally distributed variable falls within [-x, x].
+4 api_signature: tf.raw_ops.Erf(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are passed through the error function.
+7 api_usage_example:
+- tf.math.erf([[1.0, 2.0, 3.0], [0.0, -1.0, -2.0]])
+8 api_shape: ''

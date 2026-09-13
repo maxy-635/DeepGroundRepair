@@ -1,0 +1,35 @@
+2 api_name: tensorflow.raw_ops.XlaSparseDenseMatmulGradWithFtrlAndCsrInput
+3 api_description: Computes gradients for a sparse-dense matmul and applies FTRL updates
+  using CSR-formatted sparse input.
+4 api_signature: tf.raw_ops.XlaSparseDenseMatmulGradWithFtrlAndCsrInput(row_pointers,sorted_sample_ids,sorted_token_ids,sorted_gains,activation_gradients,learning_rate,embedding_table,accumulator,linear,beta,l1_regularization_strength,l2_regularization_strength,clip_weight_min,clip_weight_max,name)
+5 api_details: ''
+6 api_parameters:
+- row_pointers: Defines the CSR row offsets that indicate where each sparse row begins
+    in the compressed input.
+- sorted_sample_ids: Provides the sample indices for the sparse entries, sorted to
+    match the operator's expected sparse layout.
+- sorted_token_ids: Provides the token or feature IDs for the sparse entries, sorted
+    in the same order as the sparse samples.
+- sorted_gains: Supplies the per-entry gain or weighting values associated with the
+    sorted sparse inputs.
+- activation_gradients: Contains the gradients propagated back from the dense layer
+    activation for each output element.
+- learning_rate: Sets the step size used to update the model parameters during the
+    FTRL gradient update.
+- embedding_table: Holds the current embedding weights that will be read and updated
+    by the operation.
+- accumulator: Stores the FTRL accumulator state used to track historical gradient
+    magnitudes for adaptive updates.
+- linear: Stores the FTRL linear state used to accumulate gradient information for
+    parameter updates.
+- beta: Controls the FTRL update rule's smoothing term for balancing accumulated gradient
+    information.
+- l1_regularization_strength: Specifies the L1 penalty applied to encourage sparse
+    weights.
+- l2_regularization_strength: Specifies the L2 penalty applied to discourage large
+    weights.
+- clip_weight_min: Sets the lower bound to clip updated weights, if clipping is enabled.
+- clip_weight_max: Sets the upper bound to clip updated weights, if clipping is enabled.
+- name: Assigns an optional name to the operation for graph construction and debugging.
+7 api_usage_example: null
+8 api_shape: ''

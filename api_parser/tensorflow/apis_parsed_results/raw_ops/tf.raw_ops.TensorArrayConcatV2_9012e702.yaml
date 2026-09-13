@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TensorArrayConcatV2
+3 api_description: Concatenates all elements in a TensorArray along the first dimension
+  and returns the combined tensor, using the provided length, element shape, and flow
+  control.
+4 api_signature: tf.raw_ops.TensorArrayConcatV2(handle,flow_in,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource to concatenate.
+- flow_in: Carries the control dependency state for TensorArray operations.
+- dtype: Specifies the data type of the concatenated output tensor.
+7 api_usage_example: null
+8 api_shape: ''

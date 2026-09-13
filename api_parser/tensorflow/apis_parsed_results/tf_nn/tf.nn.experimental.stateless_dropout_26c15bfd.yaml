@@ -1,0 +1,18 @@
+2 api_name: tensorflow.nn.experimental.stateless_dropout
+3 api_description: tensorflow.nn.experimental.stateless_dropout applies dropout regularization
+  by randomly setting input elements to zero with a specified probability (rate) and
+  scaling the remaining elements to maintain the expected value, promoting independent
+  node utility in DNN models.
+4 api_signature: tf.nn.experimental.stateless_dropout(x,rate,seed)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to which dropout will be applied.
+- rate: The dropout rate specifying the probability of dropping each element in the
+    input tensor.
+- seed: The seed value used for random number generation to ensure reproducibility
+    of the dropout operation.
+7 api_usage_example:
+- x = tf.ones([3,10])
+- tf.nn.experimental.stateless_dropout(x, rate=2/3, noise_shape=[1,10],
+- '                                     seed=[1, 0])'
+8 api_shape: ''

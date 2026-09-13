@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.ops.istft
+3 api_description: Reconstructs a time-domain waveform from a short-time Fourier transform
+  along the last axis, using matching STFT parameters.
+4 api_signature: tf.keras.ops.istft(x,length,window)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the real and imaginary STFT components to reconstruct the time-domain
+    signal.
+- length: Sets the exact output length by clipping the reconstructed signal to that
+    size.
+- window: Specifies the windowing function or window tensor used during inverse STFT
+    reconstruction.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([0.0, 1.0, 2.0, 3.0, 4.0])
+- istft(stft(x, 1, 1, 1), 1, 1, 1)
+8 api_shape: ''

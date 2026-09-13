@@ -1,0 +1,61 @@
+2 api_name: paddle.linalg.norm
+3 api_description: Computes vector or matrix norms of a tensor, including Frobenius,
+  nuclear, 1-, 2-, and general p-norms.
+4 api_signature: paddle.linalg.norm(x,p,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor on which the norm is computed.
+- p: Specifies the norm order to compute, such as Frobenius, nuclear, vector p-norms,
+    or special cases like 0, ±1, ±2, and ±inf.
+- axis: Selects the axis or axes over which to apply the norm, using one axis for
+    vector norms or two axes for matrix norms.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(24, dtype="float32").reshape([2, 3, 4]) - 12
+- print(x)
+- Tensor(shape=[2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[-12., -11., -10., -9. ],'
+- '[-8. , -7. , -6. , -5. ],'
+- '[-4. , -3. , -2. , -1. ]],'
+- '[[ 0. ,  1. ,  2. ,  3. ],'
+- '[ 4. ,  5. ,  6. ,  7. ],'
+- '[ 8. ,  9. ,  10.,  11.]]])'
+- '# compute frobenius norm along last two dimensions.'
+- out_fro = paddle.linalg.norm(x, p='fro', axis=[0,1])
+- print(out_fro)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[17.43559647, 16.91153526, 16.73320007, 16.91153526])'
+- '# compute 2-order vector norm along last dimension.'
+- out_pnorm = paddle.linalg.norm(x, p=2, axis=-1)
+- print(out_pnorm)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[21.11871147, 13.19090557, 5.47722578 ],'
+- '[3.74165750 , 11.22497177, 19.13112640]])'
+- '# compute 2-order  norm along [0,1] dimension.'
+- out_pnorm = paddle.linalg.norm(x, p=2, axis=[0,1])
+- print(out_pnorm)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[15.75857544, 14.97978878, 14.69693947, 14.97978973])'
+- '# compute inf-order  norm'
+- out_pnorm = paddle.linalg.norm(x, p=float("inf"))
+- print(out_pnorm)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 12.)
+- out_pnorm = paddle.linalg.norm(x, p=float("inf"), axis=0)
+- print(out_pnorm)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[12., 11., 10., 9. ],'
+- '[8. , 7. , 6. , 7. ],'
+- '[8. , 9. , 10., 11.]])'
+- '# compute -inf-order  norm'
+- out_pnorm = paddle.linalg.norm(x, p=-float("inf"))
+- print(out_pnorm)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.)
+- out_pnorm = paddle.linalg.norm(x, p=-float("inf"), axis=0)
+- print(out_pnorm)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 1., 2., 3.],'
+- '[4., 5., 6., 5.],'
+- '[4., 3., 2., 1.]])'
+8 api_shape: {}

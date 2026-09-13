@@ -1,0 +1,19 @@
+2 api_name: tensorflow.nn.sparse_softmax_cross_entropy_with_logits
+3 api_description: The tensorflow.nn.sparse_softmax_cross_entropy_with_logits function
+  computes the cross-entropy loss for classification tasks where each instance belongs
+  to exactly one class, using logits and integer labels.
+4 api_signature: tf.nn.sparse_softmax_cross_entropy_with_logits(labels,logits)
+5 api_details: ''
+6 api_parameters:
+- labels: A tensor containing indices of the true class labels for each sample, where
+    each index must be within the range of available classes.
+- logits: A tensor of unscaled log probabilities for each class, used to compute the
+    cross-entropy loss.
+7 api_usage_example:
+- logits = tf.constant([[2., -5., .5, -.1],
+- '                      [0., 0., 1.9, 1.4],'
+- '                      [-100., 100., -100., -100.]])'
+- labels = tf.constant([0, 3, 1])
+- tf.nn.sparse_softmax_cross_entropy_with_logits(
+- '    labels=labels, logits=logits).numpy()'
+8 api_shape: ''

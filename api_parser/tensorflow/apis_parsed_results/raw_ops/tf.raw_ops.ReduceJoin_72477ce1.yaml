@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ReduceJoin
+3 api_description: Joins strings in a tensor along specified dimensions using a separator,
+  returning a new tensor of concatenated strings.
+4 api_signature: tf.raw_ops.ReduceJoin(inputs,reduction_indices,keep_dims,separator)
+5 api_details: ''
+6 api_parameters:
+- inputs: String tensor whose elements are joined along the specified dimensions.
+- reduction_indices: Integer tensor listing the dimensions to reduce, in the order
+    they are applied.
+- keep_dims: If true, keeps reduced dimensions in the output with size 1.
+- separator: String used between joined elements, defaulting to an empty string.
+7 api_usage_example: null
+8 api_shape: ''

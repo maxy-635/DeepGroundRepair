@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.ExperimentalMapAndBatchDataset
+3 api_description: Creates a dataset that maps a function over input elements and
+  batches the results, while running multiple map calls in parallel for higher throughput.
+4 api_signature: tf.raw_ops.ExperimentalMapAndBatchDataset(input_dataset,batch_size,num_parallel_calls,drop_remainder,f,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Provides the input dataset to read elements from and transform.
+- batch_size: Sets how many elements to collect into each batch.
+- num_parallel_calls: Limits how many map function calls can run in parallel.
+- drop_remainder: Controls whether to discard the final batch if it is smaller than
+    `batch_size`.
+- f: Defines the function applied to each element from the input dataset.
+- output_types: Specifies the data types of the dataset elements produced by the operation.
+- output_shapes: Specifies the shapes of the dataset elements produced by the operation.
+7 api_usage_example: null
+8 api_shape: ''

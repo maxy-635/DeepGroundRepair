@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.QuantizedReshape
+3 api_description: Reshapes a quantized tensor to a new shape while preserving its
+  quantized values, following the same behavior as the standard Reshape operation.
+4 api_signature: tf.raw_ops.QuantizedReshape(tensor,shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

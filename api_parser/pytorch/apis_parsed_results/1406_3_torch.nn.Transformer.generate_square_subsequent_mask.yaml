@@ -1,0 +1,8 @@
+2 api_name: torch.nn.Transformer.generate_square_subsequent_mask
+3 api_description: Creates a square causal mask that prevents each sequence position
+  from attending to future positions.
+4 api_signature: generate_square_subsequent_mask(sz)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

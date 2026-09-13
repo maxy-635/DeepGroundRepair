@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.divide_no_nan
+3 api_description: Performs element-wise division safely, returning 0 wherever the
+  denominator is 0.
+4 api_signature: tf.keras.ops.divide_no_nan(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The numerator tensor to be divided.
+- x2: The denominator tensor; if it is zero, the result is set to zero instead of
+    producing NaN.
+7 api_usage_example: null
+8 api_shape: ''

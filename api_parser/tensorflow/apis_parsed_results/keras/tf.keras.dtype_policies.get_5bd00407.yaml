@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.dtype_policies.get
+3 api_description: Returns a Keras DTypePolicy instance from an identifier, such as
+  a policy name string.
+4 api_signature: tf.keras.dtype_policies.get(identifier)
+5 api_details: ''
+6 api_parameters:
+- identifier: Specifies which dtype policy to retrieve, either by name, configuration
+    dictionary, existing policy instance, or `None`.
+7 api_usage_example:
+- 'identifier = {"class_name": "FloatDTypePolicy",'
+- '              "config": {"name": "float32"} }'
+- policy = dtype_policies.get(identifier)
+- type(loss)
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.AssignAddVariableOp
+3 api_description: Atomically adds a value to a variable and ensures dependent reads
+  see the updated value or a newer one.
+4 api_signature: tf.raw_ops.AssignAddVariableOp(resource,value)
+5 api_details: ''
+6 api_parameters:
+- resource: Handles the resource variable to be updated in place.
+- value: Specifies the amount to add to the variable.
+7 api_usage_example: null
+8 api_shape: ''

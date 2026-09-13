@@ -1,0 +1,16 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_hparams
+3 api_description: Logs a group of hyperparameters and their results to TensorBoard
+  so different experiment configurations can be compared.
+4 api_signature: add_hparams(hparam_dict,metric_dict)
+5 api_details: ''
+6 api_parameters:
+- hparam_dict: Defines the hyperparameter names and their values to log.
+- metric_dict: Defines the metric names and their values to log for comparison in
+    TensorBoard.
+7 api_usage_example:
+- from torch.utils.tensorboard import SummaryWriter
+- 'with SummaryWriter() as w:'
+- '    for i in range(5):'
+- '        w.add_hparams({''lr'': 0.1*i, ''bsize'': i},'
+- '                      {''hparam/accuracy'': 10*i, ''hparam/loss'': 10*i})'
+8 api_shape: null

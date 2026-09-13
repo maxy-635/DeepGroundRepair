@@ -1,0 +1,11 @@
+2 api_name: tensorflow.train.Checkpoint
+3 api_description: Saves and restores TensorFlow trackable objects and their state
+  to disk, including variables, optimizers, datasets, layers, and models, while tracking
+  checkpoint numbering with an internal save counter.
+4 api_signature: tf.train.Checkpoint(root)
+5 api_details: ''
+6 api_parameters:
+- root: Specifies the main trackable object to save and restore, or a weak reference
+    to one.
+7 api_usage_example: null
+8 api_shape: ''

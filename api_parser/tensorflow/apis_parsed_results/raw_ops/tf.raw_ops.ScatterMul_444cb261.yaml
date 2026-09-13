@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ScatterMul
+3 api_description: Multiplies the provided sparse update values into the referenced
+  variable at the specified indices, updating only those scattered positions.
+4 api_signature: tf.raw_ops.ScatterMul(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place by multiplying selected elements.
+- indices: The indices of the elements in the first dimension of `ref` that should
+    be multiplied.
+- updates: The values to multiply into the selected entries of `ref`.
+7 api_usage_example: null
+8 api_shape: ''

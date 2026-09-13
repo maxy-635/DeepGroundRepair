@@ -1,0 +1,9 @@
+2 api_name: tensorflow.data.experimental.enumerate_dataset
+3 api_description: Returns a dataset that pairs each element with its index, like
+  Python's enumerate.
+4 api_signature: tf.data.experimental.enumerate_dataset(start)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the initial integer value used to number the dataset elements.
+7 api_usage_example: null
+8 api_shape: ''

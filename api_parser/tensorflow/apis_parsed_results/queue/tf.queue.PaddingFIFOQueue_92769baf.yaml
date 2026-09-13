@@ -1,0 +1,12 @@
+2 api_name: tensorflow.queue.PaddingFIFOQueue
+3 api_description: A FIFO queue for variable-sized tensors that pads components to
+  support batching and `dequeue_many` with dynamic shapes.
+4 api_signature: tf.queue.PaddingFIFOQueue(capacity,dtypes,shapes)
+5 api_details: ''
+6 api_parameters:
+- capacity: Sets the maximum number of elements the queue can hold.
+- dtypes: Specifies the data types of the tensors in each queued element.
+- shapes: Defines the expected shapes of the queued tensors, allowing `None` for variable-sized
+    dimensions.
+7 api_usage_example: null
+8 api_shape: ''

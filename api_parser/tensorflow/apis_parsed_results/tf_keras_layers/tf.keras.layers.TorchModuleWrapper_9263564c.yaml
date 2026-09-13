@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.layers.TorchModuleWrapper
+3 api_description: TorchModuleWrapper allows you to integrate PyTorch nn.Module models
+  as Keras layers, enabling Keras to track their parameters.
+4 api_signature: tf.keras.layers.TorchModuleWrapper(module)
+5 api_details: ''
+6 api_parameters:
+- module: A PyTorch nn.Module instance that must have its parameters initialized if
+    it is a LazyModule before being wrapped.
+7 api_usage_example: null
+8 api_shape: null

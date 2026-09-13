@@ -1,0 +1,22 @@
+2 api_name: paddle.incubate.nn.functional.fused_rms_norm
+3 api_description: Applies a fused RMS normalization kernel, with support for the
+  fused pattern RMSNorm(bias + residual + x).
+4 api_signature: paddle.incubate.nn.functional.fused_rms_norm(x,norm_weight,epsilon)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be normalized.
+- norm_weight: The weight tensor used to apply an affine transformation to the normalized
+    output.
+- epsilon: A small float value added for numerical stability to prevent division by
+    zero.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- paddle_x = paddle.cast(paddle.randn(shape=[32, 256]), dtype=paddle.float16)
+- paddle_weight = paddle.cast(paddle.randn(shape=[256]), dtype=paddle.float16)
+- paddle_bias = paddle.cast(paddle.randn(shape=[256]), dtype=paddle.float16)
+- epsilon = 1e-6
+- paddle_rmsnorm = paddle.incubate.nn.functional.fused_rms_norm(paddle_x, paddle_weight,
+  paddle_bias, epsilon, 1)
+8 api_shape: {}

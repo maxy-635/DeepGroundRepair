@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Unpack
+3 api_description: Splits a tensor into a list of tensors by slicing along a specified
+  axis, removing that axis from each output tensor.
+4 api_signature: tf.raw_ops.Unpack(value,num,axis)
+5 api_details: ''
+6 api_parameters:
+- value: The input tensor to split into `num` pieces along the specified axis.
+- num: The number of tensors to unpack from the input along the axis.
+- axis: The dimension index along which to unpack the tensor, with negative values
+    counted from the end.
+7 api_usage_example: null
+8 api_shape: ''

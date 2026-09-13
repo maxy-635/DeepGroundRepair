@@ -1,0 +1,15 @@
+2 api_name: tensorflow.ragged.stack
+3 api_description: Stacks a list of tensors or ragged tensors with the same rank into
+  a rank+1 RaggedTensor along the specified axis.
+4 api_signature: tf.ragged.stack(values,axis)
+5 api_details: ''
+6 api_parameters:
+- values: The tensors or ragged tensors to stack, all with matching rank and dtype
+    but possibly different dimension sizes.
+- axis: The statically known integer axis along which to stack the values.
+7 api_usage_example:
+- '# Stacking two dense tensors with different sizes.'
+- t3 = tf.constant([[1, 2, 3], [4, 5, 6]])
+- t4 = tf.constant([[5], [6], [7]])
+- tf.ragged.stack([t3, t4], axis=0)
+8 api_shape: ''

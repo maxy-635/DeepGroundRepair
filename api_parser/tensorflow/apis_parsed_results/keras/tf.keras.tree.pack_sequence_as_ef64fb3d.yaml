@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.tree.pack_sequence_as
+3 api_description: Packs a flat sequence back into a nested structure, returning the
+  single element for atomic structures and using a deterministic sorted-key order
+  for dicts and OrderedDicts.
+4 api_signature: tf.keras.tree.pack_sequence_as(structure,flat_sequence)
+5 api_details: ''
+6 api_parameters:
+- structure: Defines the nested template that the flat values will be repacked to
+    match.
+- flat_sequence: Provides the flat values that will be arranged into the given structure.
+7 api_usage_example:
+- structure = ["a"]
+- flat_sequence = [keras.ops.ones([2, 2])]
+- keras.tree.pack_sequence_as(structure, flat_sequence)
+8 api_shape: ''

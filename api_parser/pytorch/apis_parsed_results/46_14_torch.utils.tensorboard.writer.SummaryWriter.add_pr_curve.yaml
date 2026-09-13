@@ -1,0 +1,19 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_pr_curve
+3 api_description: Logs a precision-recall curve to TensorBoard for binary or multilabel
+  classification, using labels and prediction scores at a given step.
+4 api_signature: add_pr_curve(labels,predictions,global_step,num_thresholds)
+5 api_details: ''
+6 api_parameters:
+- labels: Binary ground-truth labels for each element.
+- predictions: Predicted probabilities in the range [0, 1] for each element.
+- global_step: Step number to record the curve at.
+- num_thresholds: Number of thresholds used to approximate the curve.
+7 api_usage_example:
+- from torch.utils.tensorboard import SummaryWriter
+- import numpy as np
+- 'labels = np.random.randint(2, size=100)  # binary label'
+- predictions = np.random.rand(100)
+- writer = SummaryWriter()
+- writer.add_pr_curve('pr_curve', labels, predictions, 0)
+- writer.close()
+8 api_shape: null

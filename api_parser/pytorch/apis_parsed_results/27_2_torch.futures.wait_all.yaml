@@ -1,0 +1,9 @@
+2 api_name: torch.futures.wait_all
+3 api_description: Waits for all provided futures to complete and returns their values,
+  but exits early and reports an error if any future fails.
+4 api_signature: torch.futures.wait_all(futures)
+5 api_details: ''
+6 api_parameters:
+- futures: A list of Future objects to wait on until all have completed.
+7 api_usage_example: null
+8 api_shape: null

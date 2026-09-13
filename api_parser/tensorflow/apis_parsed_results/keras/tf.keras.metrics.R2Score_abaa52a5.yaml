@@ -1,0 +1,19 @@
+2 api_name: tensorflow.keras.metrics.R2Score
+3 api_description: Computes the R2 (coefficient of determination) score to measure
+  how well predictions fit the ground-truth values.
+4 api_signature: tf.keras.metrics.R2Score(class_aggregation,num_regressors)
+5 api_details: ''
+6 api_parameters:
+- class_aggregation: Controls how R2 scores across multiple output dimensions are
+    combined, including no aggregation, a uniform average, or a variance-weighted
+    average.
+- num_regressors: Sets how many independent regressors to account for when computing
+    the adjusted R2 score; use 0 for standard R2.
+7 api_usage_example:
+- y_true = np.array([[1], [4], [3]], dtype=np.float32)
+- y_pred = np.array([[2], [4], [4]], dtype=np.float32)
+- metric = keras.metrics.R2Score()
+- metric.update_state(y_true, y_pred)
+- result = metric.result()
+- result
+8 api_shape: ''

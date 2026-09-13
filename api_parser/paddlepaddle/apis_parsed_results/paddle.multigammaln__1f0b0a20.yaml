@@ -1,0 +1,8 @@
+2 api_name: paddle.multigammaln_
+3 api_description: In-place computes the multivariate gamma logarithm, writing the
+  result back into the input tensor.
+4 api_signature: paddle.multigammaln_(x,p)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

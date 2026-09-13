@@ -1,0 +1,20 @@
+2 api_name: torch.nn.functional.bilinear
+3 api_description: torch.nn.functional.bilinear applies a bilinear transformation
+  to two input tensors, x1 and x2, using a weight matrix A and an optional bias b,
+  resulting in an output tensor y computed as y = x1^T A x2 + b.
+4 api_signature: torch.nn.functional.bilinear(input1,input2,weight)
+5 api_details: ''
+6 api_parameters:
+- input1: The first input tensor for the bilinear transformation, typically of shape
+    (N, *, H_in1).
+- input2: The second input tensor for the bilinear transformation, typically of shape
+    (N, *, H_in2).
+- weight: The learnable weights of the bilinear transformation, typically of shape
+    (out_features, H_in1, H_in2).
+- bias: An optional bias tensor added to the output, typically of shape (out_features).
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: null
+  output tensor shape: (*, H_\text{out}) where H_\text{out}=\text{out_features} and
+    all but the last dimension are the same shape as the input.
+  tensor shape transform formulas: {}

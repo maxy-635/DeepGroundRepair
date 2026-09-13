@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.NonSerializableDataset
+3 api_description: Creates a dataset variant that cannot be serialized, typically
+  used as an internal placeholder for dataset pipelines during migration or compatibility
+  handling.
+4 api_signature: tf.raw_ops.NonSerializableDataset(input_dataset,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant tensor representing the dataset to wrap as a non-serializable
+    dataset.
+- output_types: The list of data types for each element produced by the dataset.
+- output_shapes: The list of shapes for each corresponding output element from the
+    dataset.
+7 api_usage_example: null
+8 api_shape: ''

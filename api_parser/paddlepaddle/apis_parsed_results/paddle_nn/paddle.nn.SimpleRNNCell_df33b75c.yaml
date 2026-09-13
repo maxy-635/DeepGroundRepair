@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.SimpleRNNCell
+3 api_description: The paddle.nn.SimpleRNNCell is an Elman RNN cell that processes
+  inputs and previous states to compute outputs and update states.
+4 api_signature: paddle.nn.SimpleRNNCell(input_size,hidden_size,activation)
+5 api_details: ''
+6 api_parameters:
+- input_size: Specifies the number of input features for the SimpleRNN cell.
+- hidden_size: Determines the number of features in the hidden state of the SimpleRNN
+    cell.
+- activation: Defines the activation function used in the SimpleRNN cell, either 'tanh'
+    or 'relu', with 'tanh' as the default.
+7 api_usage_example: []
+8 api_shape: null

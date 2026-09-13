@@ -1,0 +1,29 @@
+2 api_name: paddle.nn.Pad2D
+3 api_description: Pad2D is a PaddlePaddle API for padding 2D tensors according to
+  specified padding, mode, and value, with restrictions on padding size when using
+  'reflect' mode.
+4 api_signature: paddle.nn.Pad2D(padding,mode,value)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the size of the padding to apply on each side of the input tensor.
+- mode: Determines the method used for padding, such as 'constant', 'reflect', 'replicate',
+    etc.
+- value: Sets the constant value used to fill the padded areas when the mode is 'constant';
+    default is 0.0.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- input_shape = (1, 1, 2, 3)
+- pad = [1, 0, 1, 2]
+- data = paddle.arange(paddle.prod(paddle.to_tensor(input_shape)), dtype="float32").reshape(input_shape)
+  + 1
+- my_pad = nn.Pad2D(padding=pad, mode="constant")
+- result = my_pad(data)
+- print(result)
+- Tensor(shape=[1, 1, 5, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0., 0., 0., 0.],'
+- '[0., 1., 2., 3.],'
+- '[0., 4., 5., 6.],'
+- '[0., 0., 0., 0.],'
+- '[0., 0., 0., 0.]]]])'
+8 api_shape: null

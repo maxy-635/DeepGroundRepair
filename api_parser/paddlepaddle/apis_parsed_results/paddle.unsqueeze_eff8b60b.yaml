@@ -1,0 +1,10 @@
+2 api_name: paddle.unsqueeze
+3 api_description: Adds one or more singleton dimensions to a tensor at the specified
+  output positions.
+4 api_signature: paddle.unsqueeze(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to add singleton dimensions to.
+- axis: The dimension or dimensions where new size-1 axes are inserted.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,39 @@
+2 api_name: paddle.vision.ops.box_coder
+3 api_description: Encodes and decodes bounding boxes relative to prior boxes, transforming
+  between ground-truth box coordinates and prior-based box representations.
+4 api_signature: paddle.vision.ops.box_coder(prior_box,target_box,code_type,box_normalized,name)
+5 api_details: ''
+6 api_parameters:
+- prior_box: Provides the anchor/prior boxes used as references for encoding or decoding.
+- target_box: Provides the boxes to be encoded against the priors, or the encoded
+    offsets to be decoded.
+- code_type: Selects whether the operation encodes boxes into center-size offsets
+    or decodes them back to box coordinates.
+- box_normalized: Indicates whether the prior boxes should be treated as normalized
+    coordinates.
+- name: Supplies an optional operation name for identification in the computation
+    graph.
+7 api_usage_example:
+- import paddle
+- '# For encode'
+- prior_box_encode = paddle.rand((80, 4), dtype=paddle.float32)
+- prior_box_var_encode = paddle.rand((80, 4), dtype=paddle.float32)
+- target_box_encode = paddle.rand((20, 4), dtype=paddle.float32)
+- output_encode = paddle.vision.ops.box_coder(
+- '    prior_box=prior_box_encode,'
+- '    prior_box_var=prior_box_var_encode,'
+- '    target_box=target_box_encode,'
+- '    code_type="encode_center_size")'
+- '...'
+- '# For decode'
+- prior_box_decode = paddle.rand((80, 4), dtype=paddle.float32)
+- prior_box_var_decode = paddle.rand((80, 4), dtype=paddle.float32)
+- target_box_decode = paddle.rand((20, 80, 4), dtype=paddle.float32)
+- output_decode = paddle.vision.ops.box_coder(
+- '    prior_box=prior_box_decode,'
+- '    prior_box_var=prior_box_var_decode,'
+- '    target_box=target_box_decode,'
+- '    code_type="decode_center_size",'
+- '    box_normalized=False)'
+- '...'
+8 api_shape: {}

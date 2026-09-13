@@ -1,0 +1,13 @@
+2 api_name: tensorflow.summary.write
+3 api_description: Writes a generic summary to the default SummaryWriter, mainly as
+  a low-level helper for building type-specific summary ops.
+4 api_signature: tf.summary.write(tag,tensor,step)
+5 api_details: ''
+6 api_parameters:
+- tag: Identifies the summary in TensorBoard and other logging tools.
+- tensor: Provides the summary data to write, or a callable that produces it when
+    recording is enabled.
+- step: Sets the monotonic step number for the summary, defaulting to the current
+    summary step if omitted.
+7 api_usage_example: null
+8 api_shape: ''

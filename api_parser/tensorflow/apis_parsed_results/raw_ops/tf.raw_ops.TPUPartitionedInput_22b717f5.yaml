@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TPUPartitionedInput
+3 api_description: Groups a list of partitioned input tensors into a single TPU input
+  for downstream processing.
+4 api_signature: tf.raw_ops.TPUPartitionedInput(inputs,partition_dim)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of same-typed, same-shaped partitioned input tensors, with at least
+    one tensor required.
+- partition_dim: Specifies which dimension is partitioned, or `-1` to indicate the
+    inputs are replicated.
+7 api_usage_example: null
+8 api_shape: ''

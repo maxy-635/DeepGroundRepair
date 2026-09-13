@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.AdaptiveMaxPool3D
+3 api_description: The paddle.nn.AdaptiveMaxPool3D API performs 3D adaptive max pooling
+  on an input tensor, adjusting the h and w dimensions to match a specified output
+  size.
+4 api_signature: paddle.nn.AdaptiveMaxPool3D(output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the dimensions of the output after pooling, where each dimension
+    can be an integer or None, indicating that it should match the corresponding input
+    dimension.
+7 api_usage_example: []
+8 api_shape: null

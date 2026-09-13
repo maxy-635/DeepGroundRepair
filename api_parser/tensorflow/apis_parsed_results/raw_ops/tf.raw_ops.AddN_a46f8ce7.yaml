@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.AddN
+3 api_description: Adds a list of same-shaped input tensors element-wise and returns
+  the summed tensor.
+4 api_signature: tf.raw_ops.AddN(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of one or more tensors of the same supported type that are elementwise
+    summed together.
+7 api_usage_example: null
+8 api_shape: ''

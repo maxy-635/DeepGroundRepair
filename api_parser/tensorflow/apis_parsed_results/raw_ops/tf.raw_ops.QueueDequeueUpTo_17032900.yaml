@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.QueueDequeueUpTo
+3 api_description: Dequeues up to n tuple elements from a queue, concatenating each
+  component along the first dimension and returning one tensor per tuple component;
+  if the queue is closed with fewer than n items remaining, it returns the available
+  items, and if empty it raises OutOfRange.
+4 api_signature: tf.raw_ops.QueueDequeueUpTo(handle,n,component_types)
+5 api_details: ''
+6 api_parameters:
+- handle: The queue handle identifying which queue to dequeue from.
+- n: The maximum number of tuples to remove from the queue.
+- component_types: The data types of the components in each dequeued tuple.
+7 api_usage_example: null
+8 api_shape: ''

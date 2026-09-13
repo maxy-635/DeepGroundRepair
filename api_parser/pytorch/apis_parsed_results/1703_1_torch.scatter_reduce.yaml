@@ -1,0 +1,9 @@
+2 api_name: torch.scatter_reduce
+3 api_description: Returns a new tensor by scattering values from a source tensor
+  into an output tensor and reducing overlapping updates with the specified reduction
+  operation.
+4 api_signature: torch.scatter_reduce(input,dim,index,src,reduce)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

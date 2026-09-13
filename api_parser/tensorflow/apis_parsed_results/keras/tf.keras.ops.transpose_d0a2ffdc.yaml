@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.transpose
+3 api_description: Returns a tensor with its axes rearranged according to the specified
+  permutation.
+4 api_signature: tf.keras.ops.transpose(x,axes)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to transpose.
+- axes: The permutation of dimensions to apply; if omitted, the axes are reversed
+    by default.
+7 api_usage_example: null
+8 api_shape: ''

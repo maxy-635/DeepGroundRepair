@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesTrainingPredict
+3 api_description: Applies a boosted trees ensemble during training to compute updates
+  to cached logits for input instances, starting from cached tree and node positions.
+4 api_signature: tf.raw_ops.BoostedTreesTrainingPredict(tree_ensemble_handle,bucketized_features,logits_dimension)
+5 api_details: ''
+6 api_parameters:
+- tree_ensemble_handle: References the trained boosted trees ensemble resource to
+    use for prediction.
+- bucketized_features: Provides the bucket IDs for each feature as rank-1 int32 tensors,
+    which the predictor uses as input.
+- logits_dimension: Specifies the size of the logits output dimension used when forming
+    partial logits.
+7 api_usage_example: null
+8 api_shape: ''

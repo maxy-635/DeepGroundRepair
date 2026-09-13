@@ -1,0 +1,33 @@
+2 api_name: tensorflow.keras.layers.LSTMCell
+3 api_description: LSTMCell processes a single time step of input in an LSTM sequence,
+  managing cell state and hidden state updates, while keras.layers.LSTM handles entire
+  sequences.
+4 api_signature: tf.keras.layers.LSTMCell(units, activation, recurrent_activation,
+  use_bias, dropout, recurrent_dropout)
+5 api_details: ''
+6 api_parameters:
+- units: Specifies the dimensionality of the output space, which must be a positive
+    integer.
+- activation: Defines the activation function to be used, with 'tanh' as the default,
+    and allows for a linear activation if set to None.
+- recurrent_activation: Sets the activation function for the recurrent step, defaulting
+    to 'sigmoid', and allows for a linear activation if set to None.
+- use_bias: Indicates whether to include a bias vector in the layer, defaulting to
+    True.
+- dropout: Represents the fraction of input units to drop during training to prevent
+    overfitting, with a default value of 0.
+- recurrent_dropout: Indicates the fraction of recurrent units to drop during training,
+    also defaulting to 0.
+7 api_usage_example:
+- inputs = np.random.random((32, 10, 8))
+- rnn = keras.layers.RNN(keras.layers.LSTMCell(4))
+- output = rnn(inputs)
+- output.shape
+- rnn = keras.layers.RNN(
+- '   keras.layers.LSTMCell(4),'
+- '   return_sequences=True,'
+- '   return_state=True)'
+- whole_sequence_output, final_state = rnn(inputs)
+- whole_sequence_output.shape
+- final_state.shape
+8 api_shape: null

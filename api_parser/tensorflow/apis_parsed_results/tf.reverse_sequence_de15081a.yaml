@@ -1,0 +1,19 @@
+2 api_name: tensorflow.reverse_sequence
+3 api_description: Reverses the first seq_lengths elements of each batch slice along
+  seq_axis, leaving the remaining elements unchanged.
+4 api_signature: tf.reverse_sequence(input,seq_lengths,seq_axis,batch_axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements will be reversed in sequence.
+- seq_lengths: A 1-D tensor giving, for each batch element, how many entries to reverse
+    along the sequence dimension.
+- seq_axis: The axis that contains the sequences to reverse partially.
+- batch_axis: The axis used to define batches for applying the reversal, defaulting
+    to 0.
+7 api_usage_example:
+- seq_lengths = [7, 2, 3, 5]
+- input = [[1, 2, 3, 4, 5, 0, 0, 0], [1, 2, 0, 0, 0, 0, 0, 0],
+- '         [1, 2, 3, 4, 0, 0, 0, 0], [1, 2, 3, 4, 5, 6, 7, 8]]'
+- output = tf.reverse_sequence(input, seq_lengths, seq_axis=1, batch_axis=0)
+- output
+8 api_shape: ''

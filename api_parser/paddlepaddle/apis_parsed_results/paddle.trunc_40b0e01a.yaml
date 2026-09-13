@@ -1,0 +1,17 @@
+2 api_name: paddle.trunc
+3 api_description: Returns a new tensor with each input value truncated to its integer
+  part.
+4 api_signature: paddle.trunc(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to truncate elementwise toward zero, with supported dtypes int32,
+    int64, float32, or float64.
+7 api_usage_example:
+- import paddle
+- input = paddle.to_tensor([[0.1, 1.5], [-0.2, -2.4]], 'float32')
+- output = paddle.trunc(input)
+- output
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.,  1.],'
+- '[-0., -2.]])'
+8 api_shape: {}

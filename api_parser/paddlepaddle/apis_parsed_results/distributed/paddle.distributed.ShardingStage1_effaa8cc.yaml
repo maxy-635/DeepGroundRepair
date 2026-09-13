@@ -1,0 +1,34 @@
+2 api_name: paddle.distributed.ShardingStage1
+3 api_description: Provides the built-in shard function for `shard_optimizer`, enabling
+  Sharding Stage 1 optimizer sharding.
+4 api_signature: paddle.distributed.ShardingStage1(mesh)
+5 api_details: ''
+6 api_parameters:
+- mesh: Specifies the process mesh that defines the Cartesian topology of the processes
+    used for dense parameters, with only one mesh configuration supported for all
+    dense parameters.
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- mesh = dist.ProcessMesh([0, 1], dim_names=["x"])
+- 'class MLP(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self.fc1 = paddle.nn.Linear(8, 8)'
+- '        self.fc2 = paddle.nn.Linear(8, 8)'
+- '...'
+- '    def forward(self, input):'
+- '        return self.fc2(self.fc1(input))'
+- '>>>'
+- layer = MLP()
+- batch = paddle.rand(shape=[8, 8])
+- opt = paddle.optimizer.AdamW(parameters=layer.parameters())
+- opt = dist.shard_optimizer(opt, dist.ShardingStage1("x", mesh))
+- 'for _ in range(5):'
+- '    loss = layer(batch)'
+- '    loss.backward()'
+- '    opt.step()'
+- '    opt.clear_grad()'
+- '# This case need to be executed in multi-card environment'
+- '# python -m paddle.distributed.launch --gpus=0,1 {test_case}.py'
+8 api_shape: {}

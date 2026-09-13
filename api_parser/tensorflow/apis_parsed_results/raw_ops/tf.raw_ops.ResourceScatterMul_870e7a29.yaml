@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ResourceScatterMul
+3 api_description: Multiplies the specified sparse update values into the referenced
+  resource variable at the given indices.
+4 api_signature: tf.raw_ops.ResourceScatterMul(resource,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- resource: The variable resource to be updated in place.
+- indices: The indices along the first dimension where values will be multiplied.
+- updates: The values to multiply into the selected slices of the resource.
+7 api_usage_example: null
+8 api_shape: ''

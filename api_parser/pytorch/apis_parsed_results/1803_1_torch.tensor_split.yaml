@@ -1,0 +1,22 @@
+2 api_name: torch.tensor_split
+3 api_description: Split a tensor into multiple view sub-tensors along a specified
+  dimension by index positions or into a set number of sections, following NumPy-style
+  array splitting.
+4 api_signature: torch.tensor_split(input,indices_or_sections,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be split.
+- indices_or_sections: Specifies either the number of equal-or-nearly-equal parts
+    to split into, or the split indices where the tensor should be divided.
+- dim: The dimension along which the tensor is split.
+7 api_usage_example:
+- ' x = torch.arange(8)'
+- ' torch.tensor_split(x, 3)'
+- ' x = torch.arange(7)'
+- ' torch.tensor_split(x, 3)'
+- ' torch.tensor_split(x, (1, 6))'
+- ' x = torch.arange(14).reshape(2, 7)'
+- ' x'
+- ' torch.tensor_split(x, 3, dim=1)'
+- ' torch.tensor_split(x, (1, 6), dim=1)'
+8 api_shape: null

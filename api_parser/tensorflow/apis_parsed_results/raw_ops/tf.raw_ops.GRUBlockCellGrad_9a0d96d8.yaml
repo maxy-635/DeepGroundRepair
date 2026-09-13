@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.GRUBlockCellGrad
+3 api_description: Computes gradients for a GRU cell at one time step, backpropagating
+  through the cell to produce derivatives for its inputs, state, and parameters.
+4 api_signature: tf.raw_ops.GRUBlockCellGrad(x,h_prev,w_ru,w_c,b_ru,b_c,d_h)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor for the current GRU cell computation.
+- h_prev: Previous hidden state from the prior time step.
+- w_ru: Weights used to compute the reset and update gates.
+- w_c: Weights used to compute the candidate hidden state.
+- b_ru: Biases added to the reset and update gate computations.
+- b_c: Biases added to the candidate hidden state computation.
+- r: Reset gate values from the forward GRU pass.
+- u: Update gate values from the forward GRU pass.
+- c: Candidate hidden state values from the forward GRU pass.
+- d_h: Gradient of the loss with respect to the output hidden state.
+7 api_usage_example: null
+8 api_shape: ''

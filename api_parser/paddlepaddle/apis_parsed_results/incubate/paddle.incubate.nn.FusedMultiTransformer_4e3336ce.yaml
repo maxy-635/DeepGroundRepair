@@ -1,0 +1,14 @@
+2 api_name: paddle.incubate.nn.FusedMultiTransformer
+3 api_description: Applies a stack of fused transformer layers, each combining self-attention
+  and feedforward sublayers to transform sequence representations efficiently.
+4 api_signature: paddle.incubate.nn.FusedMultiTransformer(embed_dim,num_heads,dim_feedforward,num_layers,nranks,name)
+5 api_details: ''
+6 api_parameters:
+- embed_dim: Sets the input and output feature dimension of the transformer.
+- num_heads: Specifies how many attention heads to use in multi-head attention.
+- dim_feedforward: Sets the hidden-layer size of the feedforward network.
+- num_layers: Defines how many transformer layers to stack, unless inferred from `qkv_weight_attrs`.
+- nranks: Sets the number of tensor-parallel ranks for distributed model parallelism.
+- name: Provides an optional name for the layer or module.
+7 api_usage_example: []
+8 api_shape: {}

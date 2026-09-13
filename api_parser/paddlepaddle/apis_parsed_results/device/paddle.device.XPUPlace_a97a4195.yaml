@@ -1,0 +1,11 @@
+2 api_name: paddle.device.XPUPlace
+3 api_description: Returns a Paddle device place that targets a Baidu Kunlun XPU device.
+4 api_signature: paddle.device.XPUPlace(dev_id)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('xpu')
+- place = paddle.device.XPUPlace(0)
+8 api_shape: {}

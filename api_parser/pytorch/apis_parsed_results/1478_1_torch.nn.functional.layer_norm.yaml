@@ -1,0 +1,21 @@
+2 api_name: torch.nn.functional.layer_norm
+3 api_description: Applies layer normalization to the specified number of trailing
+  dimensions of a tensor, normalizing across the features within those dimensions.
+4 api_signature: torch.nn.functional.layer_norm(input,normalized_shape,eps)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be normalized.
+- normalized_shape: The shape of the input tensor that should be normalized, typically
+    the last dimension(s).
+- weight: Optional learnable weight tensor of the same shape as normalized_shape,
+    applied to the normalized output.
+- bias: Optional learnable bias tensor of the same shape as normalized_shape, added
+    to the normalized output.
+- eps: A small value added to the denominator for numerical stability during normalization.
+- affine: A boolean indicating whether to use learnable parameters (weight and bias)
+    in the layer normalization.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, *)
+  output tensor shape: (N, *) (same shape as input)
+  tensor shape transform formulas: {}

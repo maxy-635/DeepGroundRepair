@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.algorithms.ddp_comm_hooks.default_hooks.bf16_compress_hook
+3 api_description: Compresses DDP gradients to bfloat16 before NCCL communication
+  and decompresses them after, reducing communication bandwidth usage during distributed
+  training.
+4 api_signature: bf16_compress_hook(process_group,bucket)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' ddp_model.register_comm_hook(process_group, bf16_compress_hook)'
+8 api_shape: null

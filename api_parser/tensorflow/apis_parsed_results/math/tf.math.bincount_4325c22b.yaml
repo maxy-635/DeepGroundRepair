@@ -1,0 +1,20 @@
+2 api_name: tensorflow.math.bincount
+3 api_description: Counts occurrences of each integer value in an array and returns
+  a count vector sized by the maximum value, optionally using minlength and maxlength
+  to control its length.
+4 api_signature: tf.math.bincount(arr,weights,minlength,maxlength,axis,binary_output)
+5 api_details: ''
+6 api_parameters:
+- arr: Specifies the input tensor-like values to count by bin.
+- weights: Provides per-element weights so each value contributes its weight instead
+    of 1.
+- minlength: Sets a minimum output length by padding missing bins with zeros.
+- maxlength: Sets a maximum output length by ignoring values at or above this limit.
+- axis: Chooses which axis to count over, flattening that axis and all lower axes
+    first.
+- binary_output: Makes each bin output 1 if present at least once, rather than the
+    total count.
+7 api_usage_example:
+- data = np.array([[1, 2, 3, 0], [0, 0, 1, 2]], dtype=np.int32)
+- tf.math.bincount(data, axis=-1, binary_output=True)
+8 api_shape: ''

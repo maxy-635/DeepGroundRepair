@@ -1,0 +1,13 @@
+2 api_name: torch.linalg.inv_ex
+3 api_description: Computes the inverse of a square matrix when it is invertible,
+  and reports whether the inversion succeeded.
+4 api_signature: torch.linalg.inv_ex(A)
+5 api_details: ''
+6 api_parameters:
+- A: The input square matrix or batched square matrices to invert.
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' Ainv, info = torch.linalg.inv_ex(A)'
+- ' torch.dist(torch.linalg.inv(A), Ainv)'
+- ' info'
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Send
+3 api_description: Sends a tensor from one device to another by name, transferring
+  it from `send_device` to `recv_device`.
+4 api_signature: tf.raw_ops.Send(tensor,send_device,recv_device)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor value that will be transmitted.
+- send_device: The device name identifying where the tensor is sent from.
+- recv_device: The device name identifying where the tensor is received.
+7 api_usage_example: null
+8 api_shape: ''

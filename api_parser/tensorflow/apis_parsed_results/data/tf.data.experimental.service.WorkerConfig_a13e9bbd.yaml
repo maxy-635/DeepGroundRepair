@@ -1,0 +1,9 @@
+2 api_name: tensorflow.data.experimental.service.WorkerConfig
+3 api_description: Configures a tf.data service worker with dispatcher and data transfer
+  addresses, network protocol settings, bind port, heartbeat cadence, and dispatcher
+  retry timeout.
+4 api_signature: tf.data.experimental.service.WorkerConfig(dispatcher_address,worker_address,port)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

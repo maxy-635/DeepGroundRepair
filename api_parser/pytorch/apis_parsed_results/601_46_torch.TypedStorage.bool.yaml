@@ -1,0 +1,7 @@
+2 api_name: torch.TypedStorage.bool
+3 api_description: Casts the storage to boolean values.
+4 api_signature: bool()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

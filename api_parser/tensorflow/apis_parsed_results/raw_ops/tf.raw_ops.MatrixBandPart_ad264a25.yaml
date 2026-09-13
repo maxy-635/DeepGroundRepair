@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.MatrixBandPart
+3 api_description: Returns a tensor with the same shape as the input, zeroing elements
+  outside the specified lower and upper diagonal band of each innermost matrix.
+4 api_signature: tf.raw_ops.MatrixBandPart(input,num_lower,num_upper)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor whose banded matrix elements are kept while everything outside
+    the specified band is set to zero.
+- num_lower: The number of subdiagonals to preserve, or all lower-triangular entries
+    if negative.
+- num_upper: The number of superdiagonals to preserve, or all upper-triangular entries
+    if negative.
+7 api_usage_example: null
+8 api_shape: ''

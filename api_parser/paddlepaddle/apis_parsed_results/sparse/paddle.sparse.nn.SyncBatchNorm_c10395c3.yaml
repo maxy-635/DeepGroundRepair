@@ -1,0 +1,33 @@
+2 api_name: paddle.sparse.nn.SyncBatchNorm
+3 api_description: Constructs a cross-GPU synchronized batch normalization layer that
+  normalizes channel data using the mean and variance computed across the entire mini-batch
+  on all GPUs.
+4 api_signature: paddle.sparse.nn.SyncBatchNorm(num_features,momentum,epsilon)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies how many input channels the SyncBatchNorm layer normalizes.
+- epsilon: Adds a small constant to the variance for numerical stability and to avoid
+    division by zero.
+- momentum: Controls how quickly the running mean and variance are updated during
+    training.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.sparse.nn as nn
+- paddle.device.set_device('gpu')
+- x = paddle.to_tensor([[[[0.3, 0.4], [0.3, 0.07]], [[0.83, 0.37], [0.18, 0.93]]]],
+  dtype='float32')
+- x = x.to_sparse_coo(len(x.shape)-1)
+- 'if paddle.is_compiled_with_cuda():'
+- '    sync_batch_norm = nn.SyncBatchNorm(2)'
+- '    hidden1 = sync_batch_norm(x)'
+- '    print(hidden1)'
+- Tensor(shape=[1, 2, 2, 2], dtype=paddle.float32, place=Place(gpu:0), stop_gradient=False,
+- indices=[[0, 0, 0, 0],
+- '[0, 0, 1, 1],'
+- '[0, 1, 0, 1]],'
+- values=[[-0.40730840, -0.13725480],
+- '[-0.40730840, -1.20299828],'
+- '[ 1.69877410, -0.23414057],'
+- '[-0.88415730,  1.57439375]])'
+8 api_shape: {}

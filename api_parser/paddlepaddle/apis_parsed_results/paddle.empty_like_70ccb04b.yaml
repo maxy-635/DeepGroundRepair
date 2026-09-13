@@ -1,0 +1,22 @@
+2 api_name: paddle.empty_like
+3 api_description: Creates a new tensor with the same shape as `x` and uninitialized
+  data, using `x`'s dtype unless `dtype` is specified.
+4 api_signature: paddle.empty_like(x,dtype,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the reference tensor whose shape and data type are used to create the
+    new tensor.
+- dtype: Sets the output tensor’s data type, or keeps the same type as `x` when `None`.
+- device: Chooses the device where the returned tensor is created.
+- requires_grad: Indicates whether autograd should track operations on the returned
+    tensor.
+7 api_usage_example:
+- import paddle
+- 'paddle.set_device("cpu")  # and use cpu device'
+- x = paddle.randn([2, 3], 'float32')
+- output = paddle.empty_like(x)
+- print(output)
+- '>>>'
+- '[[1.8491974e+20 1.8037303e+28 1.7443726e+28]'
+- '[4.9640171e+28 3.0186127e+32 5.6715899e-11]]'
+8 api_shape: {}

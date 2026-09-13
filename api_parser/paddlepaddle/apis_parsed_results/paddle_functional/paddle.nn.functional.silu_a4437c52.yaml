@@ -1,0 +1,26 @@
+2 api_name: paddle.nn.functional.silu
+3 api_description: The paddle.nn.functional.silu API applies the Sigmoid Linear Unit
+  (SiLU) activation function, which combines element-wise multiplication of input
+  with its sigmoid, to enhance non-linearity in neural networks.
+4 api_signature: paddle.nn.functional.silu(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to which the SiLU activation function will be applied, supporting
+    various data types including bfloat16, float16, float32, float64, complex64, and
+    complex128.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([1.0, 2.0, 3.0, 4.0])
+- out = F.silu(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.73105860, 1.76159406, 2.85772228, 3.92805505])'
+- out = F.silu(x, True)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.73105860, 1.76159406, 2.85772228, 3.92805505])'
+- print(x)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.73105860, 1.76159406, 2.85772228, 3.92805505])'
+8 api_shape: null

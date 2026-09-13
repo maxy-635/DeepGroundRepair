@@ -1,0 +1,18 @@
+2 api_name: torch.distributed.fsdp.MixedPrecision
+3 api_description: Configures FSDP to run mixed-precision training by controlling
+  the dtypes used for parameters, gradients, and reductions to improve memory use
+  and performance.
+4 api_signature: torch.distributed.fsdp.MixedPrecision(param_dtype,reduce_dtype,buffer_dtype,keep_low_precision_grads)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' model = nn.Sequential(nn.Linear(3, 3), nn.Linear(3, 3))'
+- ' model[1] = FSDP('
+- '     model[1],'
+- '     mixed_precision=MixedPrecision(param_dtype=torch.float16, cast_forward_inputs=True),'
+- ' )'
+- ' model = FSDP('
+- '     model,'
+- '     mixed_precision=MixedPrecision(param_dtype=torch.bfloat16, cast_forward_inputs=True),'
+- ' )'
+8 api_shape: null

@@ -1,0 +1,22 @@
+2 api_name: paddle.distributed.fleet.MultiSlotStringDataGenerator
+3 api_description: Overrides batch sample processing to transform generated string
+  samples, typically for preprocessing such as padding to the batch’s maximum length.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle.distributed.fleet.data_generator as dg
+- 'class MyData(dg.DataGenerator):'
+- '    def generate_sample(self, line):'
+- '        def local_iter():'
+- '            int_words = [int(x) for x in line.split()]'
+- '            yield ("words", int_words)'
+- '        return local_iter'
+- '...'
+- '    def generate_batch(self, samples):'
+- '        def local_iter():'
+- '            for s in samples:'
+- '                yield ("words", s[1].extend([s[1][0]]))'
+- mydata = MyData()
+- mydata.set_batch(128)
+8 api_shape: {}

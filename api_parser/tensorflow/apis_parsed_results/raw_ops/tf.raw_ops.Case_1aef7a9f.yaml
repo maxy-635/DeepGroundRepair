@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Case
+3 api_description: Executes one of several branch functions based on a switch value,
+  selecting a single matching case in an n-way conditional.
+4 api_signature: tf.raw_ops.Case(branch_index,branches,Tout,name)
+5 api_details: ''
+6 api_parameters:
+- branch_index: Selects which branch function to execute.
+- Tout: Specifies the data types of the returned outputs.
+- branches: Provides the candidate branch functions to run, each returning matching
+    output tensors.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

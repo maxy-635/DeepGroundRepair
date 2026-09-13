@@ -1,0 +1,23 @@
+2 api_name: torch.nn.InstanceNorm2d
+3 api_description: Applies Instance Normalization to 2D inputs, normalizing each individual
+  instance across channels to improve training stability and performance.
+4 api_signature: torch.nn.InstanceNorm2d(num_features,affine,track_running_stats)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of channels in the input tensor, which is required
+    for the normalization operation.
+- affine: Determines whether the layer should have learnable parameters to scale and
+    shift the normalized output.
+- track_running_stats: Indicates if the layer should maintain running estimates of
+    the mean and variance for use in evaluation mode.
+7 api_usage_example:
+- ' # Without Learnable Parameters'
+- ' m = nn.InstanceNorm2d(100)'
+- ' # With Learnable Parameters'
+- ' m = nn.InstanceNorm2d(100, affine=True)'
+- ' input = torch.randn(20, 100, 35, 45)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height, Width)
+  output tensor shape: (N, Channel_out, Height, Width)
+  tensor shape transform formulas: {}

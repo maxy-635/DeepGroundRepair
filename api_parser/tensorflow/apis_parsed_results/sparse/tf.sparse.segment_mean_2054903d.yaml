@@ -1,0 +1,15 @@
+2 api_name: tensorflow.sparse.segment_mean
+3 api_description: Computes the mean of values grouped by sparse segment IDs along
+  the first dimension of a tensor, allowing missing segment IDs and optional num_segments
+  to define zero-filled outputs.
+4 api_signature: tf.sparse.segment_mean(data,segment_ids,num_segments,sparse_gradient)
+5 api_details: ''
+6 api_parameters:
+- data: The input values that are grouped and reduced by segment.
+- segment_ids: A sorted 1-D index tensor that assigns each data element to an output
+    segment.
+- num_segments: An optional scalar that sets the total number of output segments.
+- sparse_gradient: Whether to use a sparse IndexedSlices gradient instead of a dense
+    Tensor.
+7 api_usage_example: null
+8 api_shape: ''

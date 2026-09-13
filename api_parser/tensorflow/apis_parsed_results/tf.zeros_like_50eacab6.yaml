@@ -1,0 +1,12 @@
+2 api_name: tensorflow.zeros_like
+3 api_description: Returns a zero-filled tensor with the same shape as the input,
+  optionally with a specified dtype.
+4 api_signature: tf.zeros_like(input,dtype)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor or array-like object whose shape is used to create a
+    matching tensor of zeros.
+- dtype: Optionally sets the data type of the returned zero-filled tensor.
+7 api_usage_example:
+- tf.zeros_like([[1, 2, 3], [4, 5, 6]])
+8 api_shape: ''

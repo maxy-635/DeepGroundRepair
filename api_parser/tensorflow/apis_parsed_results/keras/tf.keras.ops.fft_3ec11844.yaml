@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.fft
+3 api_description: Computes the Fast Fourier Transform of the input along its last
+  axis.
+4 api_signature: tf.keras.ops.fft(x)
+5 api_details: ''
+6 api_parameters:
+- x: A tuple containing the real and imaginary floating-point parts of the input tensor.
+7 api_usage_example:
+- x = (
+- '    keras.ops.convert_to_tensor([1., 2.]),'
+- '    keras.ops.convert_to_tensor([0., 1.]),'
+- )
+- fft(x)
+8 api_shape: ''

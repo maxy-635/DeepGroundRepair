@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RFFT3D
+3 api_description: Computes the 3D FFT of a real-valued input over the innermost three
+  dimensions, returning only the non-redundant frequency components and cropping or
+  zero-padding to match fft_length.
+4 api_signature: tf.raw_ops.RFFT3D(input,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The real-valued 3D input tensor to transform into the frequency domain.
+- fft_length: A 3-element int32 tensor specifying the FFT size for each of the three
+    dimensions.
+7 api_usage_example: null
+8 api_shape: ''

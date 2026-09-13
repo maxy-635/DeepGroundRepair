@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.InTopKV2
+3 api_description: Returns a boolean per example indicating whether each target class’s
+  prediction is among the top K values, counting tied scores at the cutoff as top
+  K.
+4 api_signature: tf.raw_ops.InTopKV2(predictions,targets,k)
+5 api_details: ''
+6 api_parameters:
+- predictions: Contains the class scores for each example, with one row per batch
+    item and one column per class.
+- targets: Provides the true class IDs for each example in the batch.
+- k: Specifies how many of the top predicted classes to check when computing precision.
+7 api_usage_example: null
+8 api_shape: ''

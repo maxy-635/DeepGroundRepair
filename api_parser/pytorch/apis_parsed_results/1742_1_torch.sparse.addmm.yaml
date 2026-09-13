@@ -1,0 +1,12 @@
+2 api_name: torch.sparse.addmm
+3 api_description: Performs matrix multiplication and adds the result to mat, matching
+  `torch.addmm()` in forward, while also supporting backward passes for sparse COO
+  (with `sparse_dim=2`) and CSR `mat1` inputs.
+4 api_signature: torch.sparse.addmm(mat,mat1,mat2)
+5 api_details: ''
+6 api_parameters:
+- mat: Dense matrix that is added to the product.
+- mat1: Sparse matrix used as the left operand in the multiplication.
+- mat2: Dense matrix used as the right operand in the multiplication.
+7 api_usage_example: null
+8 api_shape: null

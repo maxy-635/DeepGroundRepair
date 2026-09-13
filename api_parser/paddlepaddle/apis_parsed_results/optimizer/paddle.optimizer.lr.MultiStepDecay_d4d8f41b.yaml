@@ -1,0 +1,21 @@
+2 api_name: paddle.optimizer.lr.MultiStepDecay
+3 api_description: Decays the learning rate by gamma at each milestone epoch.
+4 api_signature: paddle.optimizer.lr.MultiStepDecay(learning_rate,milestones,gamma)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the starting learning rate value before any decay is applied.
+- milestones: Specifies the ordered step boundaries at which the learning rate changes.
+- gamma: Defines the multiplicative decay factor used to reduce the learning rate
+    at each milestone.
+7 api_usage_example:
+- import paddle
+- value = paddle.arange(26, dtype='float32')
+- a = paddle.reshape(value, [2, 13])
+- linear = paddle.nn.Linear(13, 5)
+- adadelta = paddle.optimizer.Adadelta(learning_rate=0.0003, epsilon=1e-06, rho=0.95,
+- '                            parameters = linear.parameters())'
+- out = linear(a)
+- out.backward()
+- adadelta.step()
+- adadelta.clear_grad()
+8 api_shape: {}

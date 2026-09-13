@@ -1,0 +1,11 @@
+2 api_name: tensorflow.tpu.experimental.embedding.TPUEmbeddingV2
+3 api_description: Runs TPU-based embedding lookups and training for sparse features
+  using the TPU sparse core accelerator via the mid-level TPUEmbeddingV2 API.
+4 api_signature: tf.tpu.experimental.embedding.TPUEmbeddingV2(feature_config,optimizer)
+5 api_details: ''
+6 api_parameters:
+- feature_config: Specifies the nested TPU embedding feature configuration to use.
+- optimizer: Specifies the embedding optimizer to apply, or `None` outside `TPUStrategy`
+    to skip creating optimizer slot variables.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.utils.benchmark.Compare.extend_results
+3 api_description: Appends new benchmark results to the Compare object’s existing
+  stored results.
+4 api_signature: extend_results(results)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

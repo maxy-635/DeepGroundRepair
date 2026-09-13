@@ -1,0 +1,23 @@
+2 api_name: paddle.nn.functional.avg_pool2d
+3 api_description: The paddle.nn.functional.avg_pool2d API performs a 2D average pooling
+  operation, reducing the spatial dimensions of the input tensor by computing the
+  average value of elements within a specified window size.
+4 api_signature: paddle.nn.functional.avg_pool2d(x,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor for the pooling operation, a 4-D tensor with shape [N, C, H,
+    W] in 'NCHW' or 'NHWC' format, with data type float32 or float64.
+- kernel_size: Specifies the size of the pooling window, either as a tuple (height,
+    width) or a single integer for a square window.
+- stride: Defines the step size for moving the pooling window, either as a tuple (height,
+    width) or a single integer for equal strides in both dimensions.
+- padding: Indicates the padding strategy or size, which can be a string ('valid',
+    'same'), an integer, or a list/tuple specifying padding dimensions.
+7 api_usage_example: []
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

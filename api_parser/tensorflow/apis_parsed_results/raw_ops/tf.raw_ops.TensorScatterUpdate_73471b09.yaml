@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TensorScatterUpdate
+3 api_description: Updates selected positions in an existing tensor using sparse indices,
+  returning a new tensor with the changes applied; duplicate indices use the last
+  update, and out-of-bounds indices error on CPU.
+4 api_signature: tf.raw_ops.TensorScatterUpdate(tensor,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to be updated and returned with scattered changes applied.
+- indices: The index locations where the updates will be written.
+- updates: The values to scatter into the tensor at the specified indices.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,51 @@
+2 api_name: paddle.grad
+3 api_description: Computes gradients of the given target tensors with respect to
+  the specified parameters, supporting backpropagation through PaddlePaddle computation
+  graphs.
+4 api_signature: paddle.grad(outputs,inputs,grad_outputs,retain_graph,create_graph,allow_unused,*,dump_backward_graph_path)
+5 api_details: ''
+6 api_parameters:
+- outputs: Specifies the output tensor or tensors whose gradients will be computed.
+- inputs: Specifies the input tensor or tensors to return gradients for.
+- grad_outputs: Provides the initial gradient values for outputs, defaulting to ones
+    when omitted.
+- retain_graph: Controls whether to keep the forward graph for repeated backward passes.
+- create_graph: Controls whether to build a gradient graph for higher-order derivatives.
+- allow_unused: Controls whether to error or return None when some inputs are not
+    connected to the graph.
+- dump_backward_graph_path: Sets a directory where backward graph debug files and
+    call stack information are saved.
+7 api_usage_example:
+- import paddle
+- 'def test_dygraph_grad(create_graph):'
+- '    x = paddle.ones(shape=[1], dtype=''float32'')'
+- '    x.stop_gradient = False'
+- '    y = x * x'
+- '...'
+- '    # Since y = x * x, dx = 2 * x'
+- '    dx = paddle.grad('
+- '        outputs=[y],'
+- '        inputs=[x],'
+- '        create_graph=create_graph,'
+- '        retain_graph=True'
+- '    )[0]'
+- '...'
+- '    z = y + dx'
+- '...'
+- '    # If create_graph = False, the gradient of dx'
+- '    # would not be backpropagated. Therefore,'
+- '    # z = x * x + dx, and x.gradient() = 2 * x = 2.0'
+- '...'
+- '    # If create_graph = True, the gradient of dx'
+- '    # would be backpropagated. Therefore,'
+- '    # z = x * x + dx = x * x + 2 * x, and'
+- '    # x.gradient() = 2 * x + 2 = 4.0'
+- '...'
+- '    z.backward()'
+- '    return x.gradient()'
+- '...'
+- print(test_dygraph_grad(create_graph=False))
+- '[2.]'
+- print(test_dygraph_grad(create_graph=True))
+- '[4.]'
+8 api_shape: {}

@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.Stream.record_event
+3 api_description: Records an event on the stream so it is marked when all previously
+  queued work on that stream has completed.
+4 api_signature: '"record_event(event)"'
+5 api_details: ''
+6 api_parameters:
+- event: Specifies the event to record on the stream, or allocates a new one if omitted.
+7 api_usage_example: null
+8 api_shape: null

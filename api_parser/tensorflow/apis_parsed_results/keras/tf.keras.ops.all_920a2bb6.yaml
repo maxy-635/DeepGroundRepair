@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.all
+3 api_description: Returns whether all elements in an array are True, optionally along
+  a specified axis.
+4 api_signature: tf.keras.ops.all(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to reduce with a logical AND.
+- axis: The axis or axes along which to perform the logical AND reduction, or `None`
+    to reduce over all dimensions.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([[True, False], [True, True]])
+- keras.ops.all(x, axis=0)
+8 api_shape: ''

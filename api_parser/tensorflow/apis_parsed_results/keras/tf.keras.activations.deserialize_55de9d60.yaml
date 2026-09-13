@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.activations.deserialize
+3 api_description: Deserializes a Keras activation configuration and returns the corresponding
+  activation function.
+4 api_signature: tf.keras.activations.deserialize(config)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

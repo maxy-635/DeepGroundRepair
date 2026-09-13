@@ -1,0 +1,30 @@
+2 api_name: paddle.dist
+3 api_description: Computes the p-norm distance between x and y for broadcastable
+  shapes.
+4 api_signature: paddle.dist(x,y,p)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor whose values are used to compute the distance.
+- y: The second input tensor to compare against `x` when computing the distance.
+- p: The norm order that determines how the distance between `x` and `y` is calculated.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[3, 3],[3, 3]], dtype="float32")
+- y = paddle.to_tensor([[3, 3],[3, 1]], dtype="float32")
+- out = paddle.dist(x, y, 0)
+- print(out)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.)
+- out = paddle.dist(x, y, 2)
+- print(out)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 2.)
+- out = paddle.dist(x, y, float("inf"))
+- print(out)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 2.)
+- out = paddle.dist(x, y, float("-inf"))
+- print(out)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.)
+8 api_shape: {}

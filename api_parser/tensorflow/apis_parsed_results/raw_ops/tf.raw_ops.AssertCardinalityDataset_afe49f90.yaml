@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.AssertCardinalityDataset
+3 api_description: Checks that a dataset yields exactly the expected number of elements,
+  raising an error if the actual cardinality differs.
+4 api_signature: tf.raw_ops.AssertCardinalityDataset(input_dataset,cardinality)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset whose element count will be checked against the
+    expected cardinality.
+- cardinality: The expected number of elements the dataset should contain.
+7 api_usage_example: null
+8 api_shape: ''

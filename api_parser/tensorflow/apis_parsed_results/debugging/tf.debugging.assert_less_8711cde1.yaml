@@ -1,0 +1,15 @@
+2 api_name: tensorflow.debugging.assert_less
+3 api_description: Checks that `x < y` holds element-wise (with broadcasting), raising
+  `InvalidArgumentError` and printing a message plus summarized values when the condition
+  fails.
+4 api_signature: tf.debugging.assert_less(x,y,message,name)
+5 api_details: ''
+6 api_parameters:
+- x: The numeric tensor whose values are checked to be less than `y`.
+- y: The numeric tensor that `x` is compared against, with the same dtype and a broadcastable
+    shape.
+- message: An optional string added to the front of the default assertion error message.
+- name: An optional name used to label this `assert_less` operation.
+7 api_usage_example:
+- check_size(tf.ones([2, 3], tf.float32))
+8 api_shape: ''

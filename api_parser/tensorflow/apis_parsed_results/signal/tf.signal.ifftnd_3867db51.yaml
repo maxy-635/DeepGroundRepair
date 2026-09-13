@@ -1,0 +1,11 @@
+2 api_name: tensorflow.signal.ifftnd
+3 api_description: Computes the n-dimensional inverse FFT over the specified axes,
+  using the given FFT lengths or the input shape by default, and zero-padding if needed.
+4 api_signature: tf.signal.ifftnd(input_tensor,fft_length,axes)
+5 api_details: ''
+6 api_parameters:
+- input: The complex input tensor to be transformed by the inverse FFT.
+- fft_length: Specifies the FFT length to use for each transformed dimension.
+- axes: Indicates which axes of the input tensor to apply the transform along.
+7 api_usage_example: null
+8 api_shape: ''

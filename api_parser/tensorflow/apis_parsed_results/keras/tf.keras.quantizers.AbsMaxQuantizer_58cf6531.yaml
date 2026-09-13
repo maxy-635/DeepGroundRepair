@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.quantizers.AbsMaxQuantizer
+3 api_description: Quantizes inputs by scaling them relative to their absolute maximum
+  value, typically to preserve dynamic range while mapping values into a lower-precision
+  representation.
+4 api_signature: tf.keras.quantizers.AbsMaxQuantizer(axis,value_range,output_dtype)
+5 api_details: ''
+6 api_parameters:
+- A: The quantizer instance used to perform absolute-maximum-based quantization.
+7 api_usage_example: null
+8 api_shape: ''

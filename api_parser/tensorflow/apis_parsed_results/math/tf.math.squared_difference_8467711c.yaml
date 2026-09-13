@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.squared_difference
+3 api_description: Computes the element-wise squared magnitude of the difference between
+  x and y.
+4 api_signature: tf.math.squared_difference(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor input whose values are used in the squared difference calculation.
+- y: The second tensor input, which must match `x` in type, to compare against `x`.
+7 api_usage_example: null
+8 api_shape: ''

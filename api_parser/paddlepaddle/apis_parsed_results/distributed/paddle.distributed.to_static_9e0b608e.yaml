@@ -1,0 +1,100 @@
+2 api_name: paddle.distributed.to_static
+3 api_description: Converts a layer using distributed tensors into a static graph
+  DistModel for distributed training, evaluation, and prediction.
+4 api_signature: paddle.distributed.to_static(layer,loader,loss,optimizer,strategy,input_spec)
+5 api_details: ''
+6 api_parameters:
+- layer: The model layer to convert for static distributed execution, using its distributed
+    tensors or inputs as the basis.
+- loader: The data loader used to infer input and label specifications when running
+    in dygraph mode.
+- loss: The training or evaluation loss function used to compute the model's objective.
+- optimizer: The optimizer used to update model parameters during training, including
+    standard or sharded optimizers.
+- strategy: The configuration object that controls distributed parallelism and optimization
+    behavior.
+- input_spec: Custom input and label specifications that define shapes, dtypes, and
+    names for model inputs and labels.
+7 api_usage_example:
+- import numpy as np
+- import paddle
+- import paddle.distributed as dist
+- from paddle import nn
+- from paddle.distributed import Replicate, Shard
+- BATCH_SIZE = 4
+- BATCH_NUM = 4
+- IMAGE_SIZE = 16
+- CLASS_NUM = 8
+- 'class RandomDataset(paddle.io.Dataset): # type: ignore[type-arg]'
+- '    def __init__(self, images, labels, num_samples):'
+- '        self.images = images'
+- '        self.labels = labels'
+- '        self.num_samples = num_samples'
+- '    def __getitem__(self, idx):'
+- '        return self.images[idx], self.labels[idx]'
+- '    def __len__(self):'
+- '        return self.num_samples'
+- 'class DemoNet(nn.Layer):'
+- '    def __init__(self, mesh):'
+- '        super().__init__()'
+- '        self._mesh = mesh'
+- '        self.linear_0 = nn.Linear(IMAGE_SIZE, IMAGE_SIZE)'
+- '        self.linear_1 = nn.Linear(IMAGE_SIZE, CLASS_NUM)'
+- '        self.relu = nn.ReLU()'
+- '        # shard the weights of this layer'
+- '        self.linear_0.weight = dist.shard_tensor('
+- '            self.linear_0.weight,'
+- '            self._mesh,'
+- '            [Shard(1)],'
+- '            stop_gradient=False,'
+- '        )'
+- '        self.linear_1.weight = dist.shard_tensor('
+- '            self.linear_1.weight,'
+- '            self._mesh,'
+- '            [Shard(0)],'
+- '            stop_gradient=False,'
+- '        )'
+- '    def forward(self, x):'
+- '        out = self.linear_0(x)'
+- '        out = self.relu(out)'
+- '        out = self.linear_1(out)'
+- '        return out'
+- '>>>'
+- images = np.random.rand(BATCH_SIZE, IMAGE_SIZE).astype('float32')
+- labels = np.random.rand(BATCH_SIZE, CLASS_NUM).astype('float32')
+- dataset = RandomDataset(images, labels, BATCH_SIZE)
+- loader = paddle.io.DataLoader(dataset, batch_size=BATCH_SIZE)
+- mesh = dist.ProcessMesh([0, 1], dim_names=["x"])
+- layer = DemoNet(mesh)
+- opt = paddle.optimizer.SGD(
+- '    learning_rate=0.1, parameters=layer.parameters()'
+- )
+- loss_fn = nn.MSELoss()
+- dist_loader = dist.shard_dataloader(loader, meshes=[mesh])
+- dist_model = dist.to_static(
+- '    layer, dist_loader, loss_fn, opt'
+- )
+- '# training'
+- dist_model.train()
+- 'for batch_id, (image, label) in enumerate(dist_loader()):'
+- '    # in train mode, executing the __call__ method will'
+- '    # update the parameters of the model and return the'
+- '    # loss'
+- '    loss = dist_model(image, label)'
+- '# evaluation'
+- dist_model.eval()
+- 'for batch_id, (image, label) in enumerate(dist_loader()):'
+- '    # in eval mode, executing the __call__ method will'
+- '    # return the loss'
+- '    loss = dist_model(image, label)'
+- '# prediction'
+- dist_model.predict()
+- 'for batch_id, (image, label) in enumerate(dist_loader()):'
+- '    # in predict mode, executing the __call__ method will'
+- '    # return a dict that contains the outputs of the model,'
+- '    # where the value of "out0" is the first output.'
+- '    outs = dist_model(image)'
+- '# This case need to be executed in multi-card environment'
+- '# export CUDA_VISIBLE_DEVICES=0,1'
+- '# python -m paddle.distributed.launch {test_case}.py'
+8 api_shape: {}

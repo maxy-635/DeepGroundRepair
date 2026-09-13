@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.models.vgg13
+3 api_description: Builds the VGG-13 convolutional neural network for image recognition,
+  providing a pretrained or configurable deep feature extractor/classifier based on
+  the VGG architecture.
+4 api_signature: paddle.vision.models.vgg13(pretrained,batch_norm)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Loads ImageNet-pretrained weights when set to True.
+- batch_norm: Includes batch normalization layers when set to True.
+7 api_usage_example: []
+8 api_shape: {}

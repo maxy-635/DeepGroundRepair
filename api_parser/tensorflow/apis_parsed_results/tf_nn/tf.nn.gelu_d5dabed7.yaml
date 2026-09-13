@@ -1,0 +1,18 @@
+2 api_name: tensorflow.nn.gelu
+3 api_description: The tensorflow.nn.gelu function computes the GELU activation, which
+  weights inputs by their value using the Gaussian distribution, offering a smoother
+  alternative to ReLU.
+4 api_signature: tf.nn.gelu(features,approximate)
+5 api_details: ''
+6 api_parameters:
+- features: Represents the input tensor containing preactivation values for the GELU
+    activation function.
+- approximate: Indicates whether to use an approximate version of the GELU activation
+    function, defaulting to False.
+7 api_usage_example:
+- x = tf.constant([-3.0, -1.0, 0.0, 1.0, 3.0], dtype=tf.float32)
+- y = tf.nn.gelu(x)
+- y.numpy()
+- y = tf.nn.gelu(x, approximate=True)
+- y.numpy()
+8 api_shape: ''

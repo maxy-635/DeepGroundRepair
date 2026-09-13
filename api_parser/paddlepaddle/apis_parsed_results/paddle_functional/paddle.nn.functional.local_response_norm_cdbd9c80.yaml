@@ -1,0 +1,15 @@
+2 api_name: paddle.nn.functional.local_response_norm
+3 api_description: Local Response Normalization normalizes input over local regions
+  to enhance generalization and stability of neural network training by mimicking
+  lateral inhibition.
+4 api_signature: paddle.nn.functional.local_response_norm(x,size,alpha,beta,k)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input tensor which can be 3-D, 4-D, or 5-D with a data type of
+    float16 or float32.
+- size: Defines the number of adjacent channels to include in the sum for normalization.
+- alpha: A positive scaling factor used in the normalization formula.
+- beta: A positive exponent applied in the normalization process.
+- k: A positive offset added to the normalization formula to prevent division by zero.
+7 api_usage_example: []
+8 api_shape: null

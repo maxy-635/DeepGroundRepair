@@ -1,0 +1,12 @@
+2 api_name: paddle.Tensor.zero_
+3 api_description: In Dygraph mode, sets all elements of the Tensor in place to zero.
+4 api_signature: paddle.Tensor.zero_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- tensor = paddle.to_tensor([0, 1, 2, 3, 4])
+- tensor.zero_()
+- print(tensor.tolist())
+- '[0, 0, 0, 0, 0]'
+8 api_shape: {}

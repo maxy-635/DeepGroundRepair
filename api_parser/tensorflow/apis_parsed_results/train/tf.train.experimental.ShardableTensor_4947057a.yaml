@@ -1,0 +1,9 @@
+2 api_name: tensorflow.train.experimental.ShardableTensor
+3 api_description: Wraps a tensor with metadata needed to shard it during checkpointing,
+  including dtype, shape, device, slice information, checkpoint key, and trackable
+  object reference.
+4 api_signature: tf.train.experimental.ShardableTensor(tensor,dtype,shape,checkpoint_key)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

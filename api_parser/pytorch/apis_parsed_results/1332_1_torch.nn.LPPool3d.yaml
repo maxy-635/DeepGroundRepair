@@ -1,0 +1,23 @@
+2 api_name: torch.nn.LPPool3d
+3 api_description: Applies 3D power-average pooling to input signals, reducing dimensionality
+  while preserving spatial features across multiple input planes.
+4 api_signature: torch.nn.LPPool3d(norm_type,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: the size of the window used for the pooling operation, which determines
+    the region of input to consider for computing the p-norm.
+7 api_usage_example:
+- ' # power-2 pool of square window of size=3, stride=2'
+- ' m = nn.LPPool3d(2, 3, stride=2)'
+- ' # pool of non-square window of power 1.2'
+- ' m = nn.LPPool3d(1.2, (3, 2, 2), stride=(2, 1, 2))'
+- ' input = torch.randn(20, 16, 50, 44, 31)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor depth: Depth_out = floor((Depth_in - kernel_size_depth) / stride_depth + 1)
+    tensor height: Height_out = floor((Height_in - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in - kernel_size_width) / stride_width + 1)

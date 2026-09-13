@@ -1,0 +1,14 @@
+2 api_name: paddle.device.cuda.get_device_capability
+3 api_description: Returns the CUDA device’s compute capability as a (major, minor)
+  revision tuple.
+4 api_signature: paddle.device.cuda.get_device_capability(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- paddle.device.cuda.get_device_capability()
+- paddle.device.cuda.get_device_capability(0)
+- paddle.device.cuda.get_device_capability(paddle.CUDAPlace(0))
+8 api_shape: {}

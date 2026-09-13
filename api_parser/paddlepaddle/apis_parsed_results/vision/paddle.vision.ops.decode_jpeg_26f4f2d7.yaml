@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.ops.decode_jpeg
+3 api_description: Decodes a JPEG image into an RGB or grayscale uint8 tensor, optionally
+  converting to the requested format.
+4 api_signature: paddle.vision.ops.decode_jpeg(x,mode)
+5 api_details: ''
+6 api_parameters:
+- x: The JPEG image data as a 1D uint8 tensor of raw bytes to decode.
+- mode: The output color mode to use when reading the image, such as unchanged, gray,
+    or rgb.
+7 api_usage_example: []
+8 api_shape: {}

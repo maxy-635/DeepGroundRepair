@@ -1,0 +1,7 @@
+2 api_name: torch.sym_min
+3 api_description: Returns the minimum of symbolic integers in a SymInt-aware way.
+4 api_signature: torch.sym_min(a,b)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

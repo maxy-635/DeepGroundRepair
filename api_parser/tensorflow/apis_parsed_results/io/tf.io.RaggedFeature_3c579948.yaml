@@ -1,0 +1,12 @@
+2 api_name: tensorflow.io.RaggedFeature
+3 api_description: Configures a ragged input feature by reading a variable-length
+  list of values and optional partition keys to assemble them into a RaggedTensor
+  with higher dimensions.
+4 api_signature: tf.io.RaggedFeature(dtype,value_key,partitions)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- feature_dict = tf.io.parse_example(example_batch, features)
+- 'for (name, val) in sorted(feature_dict.items()):'
+- '  print(''%s: %s'' % (name, val))'
+8 api_shape: ''

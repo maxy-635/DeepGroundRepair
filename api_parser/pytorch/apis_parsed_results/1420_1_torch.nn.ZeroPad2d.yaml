@@ -1,0 +1,21 @@
+2 api_name: torch.nn.ZeroPad2d
+3 api_description: torch.nn.ZeroPad2d pads the boundaries of a 2D input tensor with
+  zeros.
+4 api_signature: torch.nn.ZeroPad2d(padding)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the size of the padding to apply; if an integer, the same padding
+    is applied to all boundaries, while a 4-tuple allows for different padding sizes
+    on each side.
+7 api_usage_example:
+- ' m = nn.ZeroPad2d(2)'
+- ' input = torch.randn(1, 1, 3, 3)'
+- ' input'
+- ' m(input)'
+- ' # using different paddings for different sides'
+- ' m = nn.ZeroPad2d((1, 1, 2, 0))'
+- ' m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

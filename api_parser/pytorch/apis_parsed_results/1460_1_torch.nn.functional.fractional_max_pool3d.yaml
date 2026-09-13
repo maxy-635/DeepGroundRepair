@@ -1,0 +1,23 @@
+2 api_name: torch.nn.functional.fractional_max_pool3d
+3 api_description: torch.nn.functional.fractional_max_pool3d performs 3D fractional
+  max pooling on multi-channel input data, reducing its spatial dimensions by selecting
+  maximum values from fractional-sized pooling windows.
+4 api_signature: torch.nn.functional.fractional_max_pool3d(input,kernel_size,output_size,return_indices)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Specifies the size of the window for the max pooling operation, either
+    as a single integer for a cubic kernel or a tuple for a rectangular kernel.
+- output_size: Defines the desired dimensions of the output, either as a single integer
+    for cubic output or a tuple for rectangular output.
+- return_indices: Determines whether to return the indices of the maximum values along
+    with the pooled output, useful for unpooling operations.
+7 api_usage_example:
+- ' input = torch.randn(20, 16, 50, 32, 16)'
+- ' # pool of cubic window of size=3, and target output size 13x12x11'
+- ' F.fractional_max_pool3d(input, 3, output_size=(13, 12, 11))'
+- ' # pool of cubic window and target output size being half of input size'
+- ' F.fractional_max_pool3d(input, 3, output_ratio=(0.5, 0.5, 0.5))'
+8 api_shape:
+  input tensor shape: (N, Channel_in, T_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, T_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

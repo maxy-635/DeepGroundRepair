@@ -1,0 +1,10 @@
+2 api_name: torch.set_deterministic_debug_mode
+3 api_description: Sets the deterministic debug mode to help detect and control nondeterministic
+  operations.
+4 api_signature: torch.set_deterministic_debug_mode(debug_mode)
+5 api_details: ''
+6 api_parameters:
+- debug_mode: 'Controls how PyTorch handles nondeterministic operations: default/0
+    ignores them, warn/1 emits warnings, and error/2 raises errors.'
+7 api_usage_example: null
+8 api_shape: null

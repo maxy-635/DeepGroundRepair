@@ -1,0 +1,12 @@
+2 api_name: torch.asinh
+3 api_description: Computes the inverse hyperbolic sine of each element in the input
+  tensor.
+4 api_signature: torch.asinh(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used to compute the inverse hyperbolic sine.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.asinh(a)'
+8 api_shape: null

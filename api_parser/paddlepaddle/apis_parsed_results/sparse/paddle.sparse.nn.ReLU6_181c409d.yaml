@@ -1,0 +1,13 @@
+2 api_name: paddle.sparse.nn.ReLU6
+3 api_description: Applies the ReLU6 activation to a sparse COO or CSR tensor, clipping
+  values to the range [0, 6].
+4 api_signature: paddle.sparse.nn.ReLU6(name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2., 0., 8.])
+- sparse_x = dense_x.to_sparse_coo(1)
+- relu6 = paddle.sparse.nn.ReLU6()
+- out = relu6(sparse_x)
+8 api_shape: {}

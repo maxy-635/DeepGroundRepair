@@ -1,0 +1,29 @@
+2 api_name: torch.autograd.function.InplaceFunction.save_for_backward
+3 api_description: Stores tensors during the forward pass so they can be retrieved
+  later in backward() for gradient computation.
+4 api_signature: save_for_backward(*tensors)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' class Func(Function):'
+- '     @staticmethod'
+- '     def forward(ctx, x: torch.Tensor, y: torch.Tensor, z: int):'
+- '         w = x * z'
+- '         out = x * y + y * z + w * y'
+- '         ctx.save_for_backward(x, y, w, out)'
+- '         ctx.z = z  # z is not a tensor'
+- '         return out'
+- '     @staticmethod'
+- '     @once_differentiable'
+- '     def backward(ctx, grad_out):'
+- '         x, y, w, out = ctx.saved_tensors'
+- '         z = ctx.z'
+- '         gx = grad_out * (y + y * z)'
+- '         gy = grad_out * (x + z + w)'
+- '         gz = None'
+- '         return gx, gy, gz'
+- ' a = torch.tensor(1., requires_grad=True, dtype=torch.double)'
+- ' b = torch.tensor(2., requires_grad=True, dtype=torch.double)'
+- ' c = 4'
+- ' d = Func.apply(a, b, c)'
+8 api_shape: null

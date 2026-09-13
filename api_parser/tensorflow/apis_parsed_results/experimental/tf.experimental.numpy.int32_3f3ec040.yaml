@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.int32
+3 api_description: A 32-bit signed integer scalar type for TensorFlow NumPy, matching
+  NumPy’s int32/intc behavior and exposing standard scalar array attributes.
+4 api_signature: tf.experimental.numpy.int32(*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

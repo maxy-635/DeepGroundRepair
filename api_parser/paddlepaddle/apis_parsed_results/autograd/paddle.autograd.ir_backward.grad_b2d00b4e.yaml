@@ -1,0 +1,12 @@
+2 api_name: paddle.autograd.ir_backward.grad
+3 api_description: Computes backward gradients for Paddle autograd IR operations,
+  returning the gradients needed to propagate loss derivatives through the recorded
+  computation graph.
+4 api_signature: paddle.autograd.ir_backward.grad(outputs,inputs,grad_outputs,retain_graph,create_graph)
+5 api_details: ''
+6 api_parameters:
+- retain_graph: Keeps the forward computation graph so you can run backward again
+    on the same graph.
+- create_graph: Builds a gradient computation graph to enable higher-order derivatives.
+7 api_usage_example: []
+8 api_shape: {}

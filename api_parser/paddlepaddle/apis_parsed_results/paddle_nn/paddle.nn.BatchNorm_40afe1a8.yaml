@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.BatchNorm
+3 api_description: paddle.nn.BatchNorm is a callable object for the Batch Normalization
+  Layer, normalizing data by channel mean and variance in the current batch, useful
+  for conv2d and fully connected layers.
+4 api_signature: paddle.nn.BatchNorm(num_channels)
+5 api_details: ''
+6 api_parameters:
+- num_channels: Specifies the number of channels in the input Tensor for normalization.
+7 api_usage_example:
+- import paddle.nn as nn
+- import paddle
+- import numpy as np
+- x = paddle.rand(shape=(3, 10, 3, 7), dtype="float32")
+- batch_norm = nn.BatchNorm(10)
+- hidden1 = batch_norm(x)
+8 api_shape: null

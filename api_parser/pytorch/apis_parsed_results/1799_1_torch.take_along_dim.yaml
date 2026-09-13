@@ -1,0 +1,17 @@
+2 api_name: torch.take_along_dim
+3 api_description: Gathers values from a tensor at specified 1D indices along a given
+  dimension, returning the selected elements in the same shape as the indices.
+4 api_signature: torch.take_along_dim(input,indices,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to gather values from.
+- indices: A long-dtype tensor of indices specifying which elements to take from the
+    input.
+- dim: The dimension along which to select elements.
+7 api_usage_example:
+- ' t = torch.tensor([[10, 30, 20], [60, 40, 50]])'
+- ' max_idx = torch.argmax(t)'
+- ' torch.take_along_dim(t, max_idx)'
+- ' sorted_idx = torch.argsort(t, dim=1)'
+- ' torch.take_along_dim(t, sorted_idx, dim=1)'
+8 api_shape: null

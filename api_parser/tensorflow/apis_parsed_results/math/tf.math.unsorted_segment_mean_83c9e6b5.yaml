@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.unsorted_segment_mean
+3 api_description: Computes the mean of values grouped by unsorted segment IDs, returning
+  0 for missing segments and ignoring negative IDs.
+4 api_signature: tf.math.unsorted_segment_mean(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are averaged within each segment.
+- segment_ids: An integer tensor that assigns each element of `data` to a segment
+    index.
+- num_segments: The total number of segments to compute means for.
+7 api_usage_example: null
+8 api_shape: ''

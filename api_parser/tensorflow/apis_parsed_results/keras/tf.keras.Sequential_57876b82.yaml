@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.Sequential
+3 api_description: Builds a linear stack of layers as a Keras Model for defining,
+  training, and running simple feed-forward networks.
+4 api_signature: tf.keras.Sequential(layers,name)
+5 api_details: ''
+6 api_parameters:
+- layer: A `Layer` instance to add to the `Sequential` model.
+7 api_usage_example: null
+8 api_shape: ''

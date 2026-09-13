@@ -1,0 +1,11 @@
+2 api_name: torch.optim.lr_scheduler.ReduceLROnPlateau.get_lr
+3 api_description: Returns the next learning rate for each optimizer param group when
+  validation performance stops improving, reducing the rate according to the scheduler’s
+  configured patience, factor, and threshold settings.
+4 api_signature: get_lr()
+5 api_details: ''
+6 api_parameters:
+- self: The scheduler instance whose current learning rate state is being queried
+    or updated.
+7 api_usage_example: null
+8 api_shape: null

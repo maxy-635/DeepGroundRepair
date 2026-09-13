@@ -1,0 +1,21 @@
+2 api_name: paddle.vision.transforms.normalize
+3 api_description: Normalizes a tensor or image using the specified mean and standard
+  deviation.
+4 api_signature: paddle.vision.transforms.normalize(img,mean,std)
+5 api_details: ''
+6 api_parameters:
+- img: The input image or data array to normalize.
+- mean: The per-channel mean values used to center the data.
+- std: The per-channel standard deviation values used to scale the data.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import functional as F
+- fake_img = (np.random.rand(256, 300, 3) * 255.).astype('uint8')
+- fake_img = Image.fromarray(fake_img)
+- mean = [127.5, 127.5, 127.5]
+- std = [127.5, 127.5, 127.5]
+- normalized_img = F.normalize(fake_img, mean, std, data_format='HWC')
+- print(normalized_img.max(), normalized_img.min())
+- 0.99215686 -1.0
+8 api_shape: {}

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.math.round
+3 api_description: Rounds each tensor element to the nearest integer using half-to-even
+  (bankers) rounding.
+4 api_signature: tf.math.round(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are rounded to the nearest integer value.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.Flatten
+3 api_description: Flattens the input tensor into a one-dimensional array, preserving
+  the batch size.
+4 api_signature: tf.keras.layers.Flatten()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- x = keras.Input(shape=(10, 64))
+- y = keras.layers.Flatten()(x)
+- y.shape
+8 api_shape: null

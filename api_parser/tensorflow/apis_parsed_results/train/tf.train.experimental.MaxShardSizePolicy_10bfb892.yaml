@@ -1,0 +1,9 @@
+2 api_name: tensorflow.train.experimental.MaxShardSizePolicy
+3 api_description: Splits checkpoint tensors into shards capped by a maximum size,
+  allowing exceptions for unsplittable oversized scalar/string tensors and the object
+  graph metadata.
+4 api_signature: tf.train.experimental.MaxShardSizePolicy(max_shard_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

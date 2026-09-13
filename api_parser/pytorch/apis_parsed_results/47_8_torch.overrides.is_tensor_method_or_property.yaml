@@ -1,0 +1,10 @@
+2 api_name: torch.overrides.is_tensor_method_or_property
+3 api_description: Checks whether a function is a torch.Tensor method or property
+  handler intended for __torch_function__.
+4 api_signature: torch.overrides.is_tensor_method_or_property(func)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' is_tensor_method_or_property(torch.Tensor.add)'
+- ' is_tensor_method_or_property(torch.add)'
+8 api_shape: null

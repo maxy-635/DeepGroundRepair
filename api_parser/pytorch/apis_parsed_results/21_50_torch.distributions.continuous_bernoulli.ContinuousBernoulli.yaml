@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.continuous_bernoulli.ContinuousBernoulli
+3 api_description: ContinuousBernoulli is a continuous probability distribution on
+  [0, 1] that models values between 0 and 1 with a Bernoulli-like shape, supporting
+  standard distribution methods such as sampling, log probabilities, and moments.
+4 api_signature: '"ContinuousBernoulli(probs,logits)"'
+5 api_details: ''
+6 api_parameters:
+- probs: Specifies the probability parameter in the open interval (0, 1).
+- logits: Specifies an unconstrained real-valued parameter whose sigmoid gives the
+    probability.
+7 api_usage_example:
+- ' m = ContinuousBernoulli(torch.tensor([0.3]))'
+- ' m.sample()'
+8 api_shape: null

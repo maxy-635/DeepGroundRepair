@@ -1,0 +1,16 @@
+2 api_name: torch.nn.functional.rms_norm
+3 api_description: Applies Root Mean Square Layer Normalization to input tensors,
+  normalizing them based on the root mean square of their elements.
+4 api_signature: torch.nn.functional.rms_norm(input,normalized_shape,eps)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which RMS normalization will be applied.
+- normalized_shape: The shape of the input tensor that should be normalized, typically
+    the last dimension(s).
+- eps: A small value added to the denominator for numerical stability during normalization.
+- weight: An optional learnable parameter that scales the normalized output.
+- bias: An optional learnable parameter that shifts the normalized output.
+- dim: The dimension or dimensions over which RMS normalization is computed, defaulting
+    to the last dimension.
+7 api_usage_example: null
+8 api_shape: null

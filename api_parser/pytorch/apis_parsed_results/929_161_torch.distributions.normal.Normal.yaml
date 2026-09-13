@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.normal.Normal
+3 api_description: A univariate normal (Gaussian) distribution with configurable mean
+  and standard deviation, supporting sampling, log-probability evaluation, entropy,
+  CDF/ICDF, and related distribution methods.
+4 api_signature: torch.distributions.normal.Normal(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the mean of the normal distribution.
+- scale: Sets the standard deviation, controlling the distribution’s spread.
+7 api_usage_example:
+- ' m = Normal(torch.tensor([0.0]), torch.tensor([1.0]))'
+- ' m.sample()  # normally distributed with loc=0 and scale=1'
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.random.poisson
+3 api_description: Draw samples from a Poisson distribution, returning random values
+  with the specified event rate and optional output shape.
+4 api_signature: tf.experimental.numpy.random.poisson(lam)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

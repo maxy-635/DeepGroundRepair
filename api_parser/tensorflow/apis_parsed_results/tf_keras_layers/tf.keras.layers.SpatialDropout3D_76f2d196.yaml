@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.layers.SpatialDropout3D
+3 api_description: SpatialDropout3D applies dropout to entire 3D feature maps instead
+  of individual elements, promoting independence between feature maps and enhancing
+  regularization in models with strongly correlated voxel activations.
+4 api_signature: tf.keras.layers.SpatialDropout3D(rate)
+5 api_details: ''
+6 api_parameters:
+- rate: Specifies the fraction of input units to drop during training to prevent overfitting.
+7 api_usage_example: null
+8 api_shape: null

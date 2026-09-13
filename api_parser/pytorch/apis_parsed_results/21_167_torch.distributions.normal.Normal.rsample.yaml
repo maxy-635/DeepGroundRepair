@@ -1,0 +1,11 @@
+2 api_name: torch.distributions.normal.Normal.rsample
+3 api_description: Draws a reparameterized sample from a normal distribution, allowing
+  gradients to flow through the sampling operation.
+4 api_signature: rsample(sample_shape)
+5 api_details: ''
+6 api_parameters:
+- self: The Normal distribution instance to sample from.
+- sample_shape: The shape of the sample to draw, prepended to the distribution's batch
+    shape.
+7 api_usage_example: null
+8 api_shape: null

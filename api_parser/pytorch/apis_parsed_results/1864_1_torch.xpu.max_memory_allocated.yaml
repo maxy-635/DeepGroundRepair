@@ -1,0 +1,10 @@
+2 api_name: torch.xpu.max_memory_allocated
+3 api_description: Returns the peak bytes of GPU memory allocated by tensors on a
+  specified XPU device.
+4 api_signature: torch.xpu.max_memory_allocated(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which device’s peak allocated memory to report; defaults to the
+    current device.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,24 @@
+2 api_name: paddle.distributed.all_gather
+3 api_description: Collects tensors from all participating processes so every process
+  receives the full set of gathered tensors.
+4 api_signature: paddle.distributed.all_gather(tensor_list,tensor)
+5 api_details: ''
+6 api_parameters:
+- tensor_list: Stores the gathered output tensors from all ranks, with each element
+    being a Tensor of the supported data types.
+- tensor: Specifies the input Tensor to be sent and gathered across all ranks, using
+    one of the supported data types.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'tensor_list = [] # type: ignore'
+- 'if dist.get_rank() == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- dist.all_gather(tensor_list, data)
+- print(tensor_list)
+- '# [[[4, 5, 6], [4, 5, 6]], [[1, 2, 3], [1, 2, 3]]] (2 GPUs)'
+8 api_shape: {}

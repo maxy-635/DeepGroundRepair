@@ -1,0 +1,11 @@
+2 api_name: tensorflow.io.TFRecordWriter
+3 api_description: Writes serialized records to a TFRecords file for efficient, high-throughput
+  input pipelines and later consumption with tf.data.
+4 api_signature: tf.io.TFRecordWriter(path)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the file path where the TFRecords file will be written.
+7 api_usage_example:
+- 'for batch in tf.data.TFRecordDataset([example_path]).map(decode_fn):'
+- '  print("x = {x:.4f},  y = {y:.4f}".format(**batch))'
+8 api_shape: ''

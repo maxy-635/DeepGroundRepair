@@ -1,0 +1,17 @@
+2 api_name: paddle.jit.ignore_module
+3 api_description: Registers modules to skip during JIT transcription so built-in
+  or specified modules are ignored and not converted.
+4 api_signature: paddle.jit.ignore_module(modules)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import scipy
+- import networkx
+- import paddle
+- from paddle.jit import ignore_module
+- modules = [
+- '    scipy,'
+- '    networkx,'
+- ']'
+- ignore_module(modules)
+8 api_shape: {}

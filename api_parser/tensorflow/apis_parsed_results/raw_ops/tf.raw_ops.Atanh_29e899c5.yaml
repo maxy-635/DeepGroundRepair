@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Atanh
+3 api_description: Computes the inverse hyperbolic tangent of each tensor element,
+  returning values in [-inf, inf] for inputs within [-1, 1] and nan for out-of-range
+  values.
+4 api_signature: tf.raw_ops.Atanh(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are transformed by the inverse hyperbolic tangent
+    operation.
+7 api_usage_example: null
+8 api_shape: ''

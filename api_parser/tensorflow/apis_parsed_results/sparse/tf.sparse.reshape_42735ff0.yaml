@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.reshape
+3 api_description: Reshapes a SparseTensor to a new dense shape, recomputing sparse
+  indices while preserving value order and total element count; supports one inferred
+  dimension of -1.
+4 api_signature: tf.sparse.reshape(sp_input,shape)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The SparseTensor to be reshaped.
+- shape: The new 1-D int64 dense shape for the SparseTensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.ps.utils.ps_factory.NuPsProgramBuilder
+3 api_description: Builds and configures a NuPS program for Paddle distributed parameter-server
+  workflows, assembling the program structure and related setup needed to run PS-based
+  training or serving.
+4 api_signature: '"paddle.distributed.ps.utils.ps_factory.NuPsProgramBuilder(pass_ctx)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

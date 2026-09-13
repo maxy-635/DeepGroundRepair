@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.random.truncated_normal
+3 api_description: Draws samples from a normal distribution and truncates values more
+  than two standard deviations from the mean by redrawing them.
+4 api_signature: tf.keras.random.truncated_normal(shape,seed)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the random values to generate.
+- seed: Sets the random seed for deterministic output, either as an integer or a `keras.random.SeedGenerator`.
+7 api_usage_example: null
+8 api_shape: ''

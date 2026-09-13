@@ -1,0 +1,24 @@
+2 api_name: paddle.select_scatter
+3 api_description: Inserts values from a tensor into x at the specified indices along
+  the given axis.
+4 api_signature: paddle.select_scatter(x,values,axis,index)
+5 api_details: ''
+6 api_parameters:
+- x: The output tensor that will receive the inserted values.
+- values: The tensor providing the values to place into `x`.
+- axis: The dimension along which the slice is inserted.
+- index: The position along `axis` where the values are selected or inserted.
+7 api_usage_example:
+- import paddle
+- x = paddle.zeros((2,3,4)).astype("float32")
+- values = paddle.ones((2,4)).astype("float32")
+- res = paddle.select_scatter(x,values,1,1)
+- print(res)
+- Tensor(shape=[2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[0., 0., 0., 0.],'
+- '[1., 1., 1., 1.],'
+- '[0., 0., 0., 0.]],'
+- '[[0., 0., 0., 0.],'
+- '[1., 1., 1., 1.],'
+- '[0., 0., 0., 0.]]])'
+8 api_shape: {}

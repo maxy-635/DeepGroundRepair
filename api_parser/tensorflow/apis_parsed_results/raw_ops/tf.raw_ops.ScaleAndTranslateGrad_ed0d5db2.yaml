@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ScaleAndTranslateGrad
+3 api_description: Computes gradients for the ScaleAndTranslate image resize operation,
+  returning the input gradient and the scale/translate parameter gradients needed
+  for backpropagation.
+4 api_signature: tf.raw_ops.ScaleAndTranslateGrad(grads,original_image,scale,translation)
+5 api_details: ''
+6 api_parameters:
+- grads: The gradient tensor to be backpropagated through the scale-and-translate
+    operation.
+- original_image: The original image tensor that provides the shape and context for
+    the gradient computation.
+- scale: The scaling factors used in the forward scale-and-translate operation.
+- translation: The translation offsets used in the forward scale-and-translate operation.
+7 api_usage_example: null
+8 api_shape: ''

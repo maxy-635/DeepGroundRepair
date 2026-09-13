@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.PropagateUnbackedSymInts.fetch_args_kwargs_from_env
+3 api_description: Fetches the current execution environment’s concrete values for
+  a node’s args and kwargs.
+4 api_signature: fetch_args_kwargs_from_env(n)
+5 api_details: ''
+6 api_parameters:
+- n: Identifies the node whose arguments and keyword arguments should be retrieved
+    from the environment.
+7 api_usage_example: null
+8 api_shape: null

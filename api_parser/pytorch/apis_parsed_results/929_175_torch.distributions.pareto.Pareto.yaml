@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.pareto.Pareto
+3 api_description: Pareto is a continuous distribution over positive values with a
+  minimum scale and positive shape parameter, used to model heavy-tailed phenomena.
+  It supports sampling and log-probability evaluation via a transformed distribution
+  representation.
+4 api_signature: '"torch.distributions.pareto.Pareto(scale,alpha)"'
+5 api_details: ''
+6 api_parameters:
+- scale: Sets the minimum value and scales the distribution's support.
+- alpha: Controls the shape and tail heaviness of the distribution.
+7 api_usage_example:
+- ' m = Pareto(torch.tensor([1.0]), torch.tensor([1.0]))'
+- ' m.sample()  # sample from a Pareto distribution with scale=1 and alpha=1'
+8 api_shape: null

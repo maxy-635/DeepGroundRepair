@@ -1,0 +1,34 @@
+2 api_name: paddle.diagflat
+3 api_description: Creates a 2D square tensor with a 1D input tensor’s values placed
+  on the diagonal.
+4 api_signature: paddle.diagflat(x,offset)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor whose values are placed along the diagonal of the
+    output.
+- offset: Sets which diagonal to fill, with positive values selecting a superdiagonal,
+    zero the main diagonal, and negative values a subdiagonal.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, 2, 3])
+- y = paddle.diagflat(x)
+- print(y)
+- Tensor(shape=[3, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 0, 0],'
+- '[0, 2, 0],'
+- '[0, 0, 3]])'
+- y = paddle.diagflat(x, offset=1)
+- print(y)
+- Tensor(shape=[4, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 1, 0, 0],'
+- '[0, 0, 2, 0],'
+- '[0, 0, 0, 3],'
+- '[0, 0, 0, 0]])'
+- y = paddle.diagflat(x, offset=-1)
+- print(y)
+- Tensor(shape=[4, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 0, 0, 0],'
+- '[1, 0, 0, 0],'
+- '[0, 2, 0, 0],'
+- '[0, 0, 3, 0]])'
+8 api_shape: {}

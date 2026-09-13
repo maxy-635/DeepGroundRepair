@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.ExperimentalDatasetCardinality
+3 api_description: Returns the number of elements in the input dataset.
+4 api_signature: tf.raw_ops.ExperimentalDatasetCardinality(input_dataset)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant dataset tensor whose cardinality is being computed.
+7 api_usage_example: null
+8 api_shape: ''

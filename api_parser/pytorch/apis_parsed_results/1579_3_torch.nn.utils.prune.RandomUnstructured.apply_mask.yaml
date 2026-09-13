@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.prune.RandomUnstructured.apply_mask
+3 api_description: Applies the pruning mask to the parameter by multiplying the parameter
+  values elementwise with the mask.
+4 api_signature: apply_mask(module)
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the tensor being pruned and from which the mask
+    is applied.
+7 api_usage_example: null
+8 api_shape: null

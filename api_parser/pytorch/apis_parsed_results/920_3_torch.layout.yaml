@@ -1,0 +1,9 @@
+2 api_name: torch.layout
+3 api_description: Represents how tensor elements are arranged in memory, such as
+  dense strided or sparse layouts, and is used to describe and compare tensor storage
+  formats.
+4 api_signature: class torch.layout#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

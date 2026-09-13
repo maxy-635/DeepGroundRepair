@@ -1,0 +1,31 @@
+2 api_name: torch.nn.functional.conv_transpose2d
+3 api_description: torch.nn.functional.conv_transpose2d applies a 2D transposed convolution,
+  also known as deconvolution, over an input image with multiple input planes.
+4 api_signature: torch.nn.functional.conv_transpose2d(input,weight,stride,padding,output_padding,dilation)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor with dimensions representing minibatch size, input channels,
+    height, and width.
+- weight: The filter tensor with dimensions for input channels, output channels divided
+    by groups, and kernel height and width.
+- stride: The step size of the convolution, which can be specified as a single number
+    or a tuple for height and width.
+- padding: The amount of zero-padding added to both sides of each input dimension,
+    calculated as dilation times (kernel size minus one) minus padding, specified
+    as a single number or a tuple.
+- output_padding: Additional size added to one side of each dimension in the output
+    shape, specified as a single number or a tuple.
+- dilation: The spacing between elements of the kernel, specified as a single number
+    or a tuple for height and width.
+7 api_usage_example:
+- ' # With square kernels and equal stride'
+- ' inputs = torch.randn(1, 4, 5, 5)'
+- ' weights = torch.randn(4, 8, 3, 3)'
+- ' F.conv_transpose2d(inputs, weights, padding=1)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[1]
+    tensor height: Height_out = (Height_in - 1) * stride_height - 2 * padding_height + kernel_size_height + output_padding_height
+    tensor width: Width_out = (Width_in - 1) * stride_width - 2 * padding_width + kernel_size_width + output_padding_width

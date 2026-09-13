@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ResourceSparseApplyProximalAdagrad
+3 api_description: Applies sparse Proximal Adagrad updates to selected rows of `var`
+  and `accum`, accumulating squared gradients and then updating parameters with L1/L2
+  proximal regularization.
+4 api_signature: ResourceSparseApplyProximalAdagrad(var,accum,grad,indices)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated in place.
+- accum: The accumulator tensor that stores per-variable accumulated squared gradients.
+- grad: The gradient values used to compute the proximal Adagrad update.
+- indices: The row indices in `var` and `accum` that identify which entries to update.
+7 api_usage_example: null
+8 api_shape: ''

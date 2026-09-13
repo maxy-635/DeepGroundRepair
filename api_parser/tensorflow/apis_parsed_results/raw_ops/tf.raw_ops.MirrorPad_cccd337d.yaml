@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.MirrorPad
+3 api_description: Pads a tensor by adding mirrored values before and after each dimension
+  according to the specified paddings.
+4 api_signature: tf.raw_ops.MirrorPad(input,paddings,mode)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be padded.
+- paddings: A 2-column integer matrix that specifies how much padding to add before
+    and after each dimension of the input.
+- mode: 'The padding rule to use: `REFLECT` excludes edge values from the padded অঞ্চল,
+    while `SYMMETRIC` includes them.'
+7 api_usage_example: null
+8 api_shape: ''

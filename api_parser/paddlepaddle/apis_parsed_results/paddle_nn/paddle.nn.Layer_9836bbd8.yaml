@@ -1,0 +1,40 @@
+2 api_name: paddle.nn.Layer
+3 api_description: paddle.nn.Layer is a dynamic graph layer in PaddlePaddle, designed
+  for object-oriented design (OOD), encapsulating layer parameters and defining the
+  forward computation graph structure.
+4 api_signature: paddle.nn.Layer()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- 'MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(1, 1)'
+- '        self._dropout = paddle.nn.Dropout(p=0.5)'
+- '...'
+- '    def forward(self, input):'
+- '        temp = self._linear(input)'
+- '        temp = self._dropout(temp)'
+- '        return temp'
+- '...'
+- x = paddle.randn([10, 1], 'float32')
+- mylayer = MyLayer()
+- 'mylayer.eval()  # set mylayer._dropout to eval mode'
+- out = mylayer(x)
+- 'mylayer.train()  # set mylayer._dropout to train mode'
+- out = mylayer(x)
+- print(out)
+- Tensor(shape=[10, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-3.44879317],'
+- '[ 0.        ],'
+- '[ 0.        ],'
+- '[-0.73825276],'
+- '[ 0.        ],'
+- '[ 0.        ],'
+- '[ 0.64444798],'
+- '[-3.22185946],'
+- '[ 0.        ],'
+- '[-0.68077987]])'
+8 api_shape: null

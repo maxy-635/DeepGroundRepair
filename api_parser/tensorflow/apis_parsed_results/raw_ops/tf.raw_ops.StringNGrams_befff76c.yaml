@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.StringNGrams
+3 api_description: Creates n-grams from a ragged tensor of strings and returns a ragged
+  tensor of joined n-grams along the innermost axis.
+4 api_signature: tf.raw_ops.StringNGrams(data,data_splits,ngram_widths,separator,pad_width)
+5 api_details: ''
+6 api_parameters:
+- data: Provides the flat string token values that will be grouped into n-grams.
+- data_splits: Indicates how the flat tokens are partitioned into the original ragged
+    sequences.
+- separator: Defines the string inserted between tokens when forming each n-gram.
+- ngram_widths: Specifies the n-gram sizes to generate from the input sequences.
+- pad_width: Sets how many padding elements to add to each sequence side before creating
+    n-grams.
+7 api_usage_example: null
+8 api_shape: ''

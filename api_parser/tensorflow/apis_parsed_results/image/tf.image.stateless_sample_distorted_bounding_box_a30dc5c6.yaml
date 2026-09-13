@@ -1,0 +1,28 @@
+2 api_name: tensorflow.image.stateless_sample_distorted_bounding_box
+3 api_description: Deterministically generates a random distorted bounding box for
+  an image, returning slice indices and the resulting box for cropping or visualization.
+4 api_signature: tf.image.stateless_sample_distorted_bounding_box(image_size,bounding_boxes,seed)
+5 api_details: ''
+6 api_parameters:
+- image_size: Specifies the image dimensions and number of channels for the input
+    image.
+- bounding_boxes: Provides the associated bounding boxes used to guide the sampled
+    distorted crop.
+- seed: Sets the random seed for reproducible stochastic sampling of the distorted
+    bounding box.
+7 api_usage_example:
+- image = np.array([[[1], [2], [3]], [[4], [5], [6]], [[7], [8], [9]]])
+- bbox = tf.constant(
+- '  [0.0, 0.0, 1.0, 1.0], dtype=tf.float32, shape=[1, 1, 4])'
+- seed = (1, 2)
+- '# Generate a single distorted bounding box.'
+- bbox_begin, bbox_size, bbox_draw = (
+- '  tf.image.stateless_sample_distorted_bounding_box('
+- '    tf.shape(image), bounding_boxes=bbox, seed=seed))'
+- '# Employ the bounding box to distort the image.'
+- tf.slice(image, bbox_begin, bbox_size)
+- '# Draw the bounding box in an image summary.'
+- colors = np.array([[1.0, 0.0, 0.0], [0.0, 0.0, 1.0]])
+- tf.image.draw_bounding_boxes(
+- '  tf.expand_dims(tf.cast(image, tf.float32),0), bbox_draw, colors)'
+8 api_shape: ''

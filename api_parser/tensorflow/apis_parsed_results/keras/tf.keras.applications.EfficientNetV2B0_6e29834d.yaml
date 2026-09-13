@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.applications.EfficientNetV2B0
+3 api_description: Builds the EfficientNetV2B0 image classification model, with optional
+  ImageNet pretrained weights for classification or transfer learning.
+4 api_signature: tf.keras.applications.EfficientNetV2B0(include_top,weights,input_shape,pooling,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Controls whether the model includes its final classification layer.
+- weights: Specifies which pretrained weights to load, or uses random initialization
+    if set to None.
+- input_shape: Sets the input tensor shape when using the model without the top classification
+    layer.
+- pooling: Chooses the pooling method to apply to feature maps when the top layer
+    is excluded.
+- classes: Defines the number of output classes when building the classification head
+    from scratch.
+7 api_usage_example: null
+8 api_shape: ''

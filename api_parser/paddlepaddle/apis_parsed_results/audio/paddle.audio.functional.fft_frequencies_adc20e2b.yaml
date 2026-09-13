@@ -1,0 +1,15 @@
+2 api_name: paddle.audio.functional.fft_frequencies
+3 api_description: Computes the Fourier frequency bins for a given FFT size and sampling
+  rate.
+4 api_signature: paddle.audio.functional.fft_frequencies(sr,n_fft)
+5 api_details: ''
+6 api_parameters:
+- sr: Sets the sampling rate used to convert FFT bin indices into frequency values.
+- n_fft: Defines the number of FFT bins, which determines the frequency resolution
+    of the output.
+7 api_usage_example:
+- import paddle
+- sr = 16000
+- n_fft = 128
+- fft_freq = paddle.audio.functional.fft_frequencies(sr, n_fft)
+8 api_shape: {}

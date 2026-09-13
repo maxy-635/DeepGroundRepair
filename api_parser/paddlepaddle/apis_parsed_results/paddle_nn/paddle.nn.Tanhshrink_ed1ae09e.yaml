@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.Tanhshrink
+3 api_description: The paddle.nn.Tanhshrink API applies the Tanhshrink activation
+  function, which computes the difference between the input and its hyperbolic tangent,
+  effectively shrinking the input towards zero.
+4 api_signature: paddle.nn.Tanhshrink()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- m = paddle.nn.Tanhshrink()
+- out = m(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.02005100, -0.00262472,  0.00033201,  0.00868741])'
+8 api_shape: null

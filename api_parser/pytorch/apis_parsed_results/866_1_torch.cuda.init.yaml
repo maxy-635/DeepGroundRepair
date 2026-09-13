@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.init
+3 api_description: Initializes PyTorch’s CUDA runtime and internal state so CUDA operations
+  can be used.
+4 api_signature: torch.cuda.init()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

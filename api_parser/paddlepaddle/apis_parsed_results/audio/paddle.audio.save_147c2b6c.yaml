@@ -1,0 +1,19 @@
+2 api_name: paddle.audio.save
+3 api_description: Saves an audio tensor to a file.
+4 api_signature: paddle.audio.save(filepath,src,sample_rate)
+5 api_details: ''
+6 api_parameters:
+- filepath: Specifies the destination path where the audio will be saved.
+- src: Provides the audio tensor to be written to disk.
+- sample_rate: Sets the audio sampling rate in samples per second.
+7 api_usage_example:
+- import paddle
+- sample_rate = 16000
+- wav_duration = 0.5
+- num_channels = 1
+- num_frames = sample_rate * wav_duration
+- wav_data = paddle.linspace(-1.0, 1.0, int(num_frames)) * 0.1
+- waveform = wav_data.tile([num_channels, 1])
+- filepath = "./test.wav"
+- paddle.audio.save(filepath, waveform, sample_rate)
+8 api_shape: {}

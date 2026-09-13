@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.exp2
+3 api_description: Computes 2 raised to the power of each element in the input tensor,
+  following NumPy exp2 behavior.
+4 api_signature: '"tf.experimental.numpy.exp2(x)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

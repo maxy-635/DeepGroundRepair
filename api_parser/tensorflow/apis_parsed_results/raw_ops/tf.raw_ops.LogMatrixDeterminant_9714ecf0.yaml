@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.LogMatrixDeterminant
+3 api_description: Returns the sign and log absolute determinant for each square matrix
+  in a batch, using LU decomposition to compute determinant = sign * exp(log_abs_determinant).
+4 api_signature: tf.raw_ops.LogMatrixDeterminant(input)
+5 api_details: ''
+6 api_parameters:
+- input: A batch of square matrices whose log determinant is computed.
+7 api_usage_example: null
+8 api_shape: ''

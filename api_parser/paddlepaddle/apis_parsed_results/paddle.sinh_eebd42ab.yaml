@@ -1,0 +1,15 @@
+2 api_name: paddle.sinh
+3 api_description: Applies the hyperbolic sine activation elementwise to the input
+  tensor, preserving shape and supporting gradient-based learning.
+4 api_signature: paddle.sinh(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are passed through the hyperbolic sine operation.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.sinh(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.41075233, -0.20133601,  0.10016675,  0.30452031])'
+8 api_shape: {}

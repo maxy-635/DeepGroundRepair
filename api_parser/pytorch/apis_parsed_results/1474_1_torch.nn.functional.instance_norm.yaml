@@ -1,0 +1,19 @@
+2 api_name: torch.nn.functional.instance_norm
+3 api_description: Applies Instance Normalization to each channel of input data in
+  a batch independently, normalizing across the spatial dimensions.
+4 api_signature: torch.nn.functional.instance_norm(input,running_mean,running_var,weight,bias,eps)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be normalized.
+- running_mean: The running mean of the input for normalization, used during evaluation
+    mode.
+- running_var: The running variance of the input for normalization, used during evaluation
+    mode.
+- weight: The learnable scale parameter for the normalized tensor.
+- bias: The learnable shift parameter for the normalized tensor.
+- use_input_stats: A boolean indicating whether to use the input's statistics or the
+    running statistics for normalization.
+- momentum: The value used for the running_mean and running_var computation.
+- eps: A small constant added to the denominator for numerical stability during normalization.
+7 api_usage_example: null
+8 api_shape: null

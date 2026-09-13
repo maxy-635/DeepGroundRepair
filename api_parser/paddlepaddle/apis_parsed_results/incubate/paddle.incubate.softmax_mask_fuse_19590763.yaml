@@ -1,0 +1,11 @@
+2 api_name: paddle.incubate.softmax_mask_fuse
+3 api_description: Computes a softmax over `x` while applying a mask so masked positions
+  are excluded from the normalization.
+4 api_signature: paddle.incubate.softmax_mask_fuse(x,mask)
+5 api_details: ''
+6 api_parameters:
+- x: The 4D input tensor whose values are fused with the mask during softmax computation.
+- mask: The 4D mask tensor that restricts or adjusts the softmax operation, with the
+    second dimension fixed to 1.
+7 api_usage_example: []
+8 api_shape: {}

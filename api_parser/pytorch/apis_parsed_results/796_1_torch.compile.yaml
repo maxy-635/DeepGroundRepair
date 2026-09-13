@@ -1,0 +1,18 @@
+2 api_name: torch.compile
+3 api_description: Compiles a PyTorch model or function with TorchDynamo and a selected
+  backend to optimize execution, and can also compile an nn.Module in place.
+4 api_signature: torch.compile(model,backend,mode,options,disable)
+5 api_details: ''
+6 api_parameters:
+- model: The module or function to optimize with `torch.compile`.
+- backend: Selects the compilation backend used to optimize the model or function.
+- mode: Chooses a preset compilation strategy that balances speed, overhead, and autotuning
+    behavior.
+- options: Provides backend-specific configuration options that customize compilation
+    behavior and debugging.
+- disable: Makes `torch.compile()` a no-op, which is useful for testing.
+7 api_usage_example:
+- '@torch.compile(options={"triton.cudagraphs": True}, fullgraph=True)'
+- 'def foo(x):'
+- '    return torch.sin(x) + torch.cos(x)'
+8 api_shape: null

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.random_uniform_initializer
+3 api_description: Creates tensors initialized with values sampled from a uniform
+  distribution, letting you define an initialization strategy without knowing the
+  variable’s shape or dtype in advance.
+4 api_signature: tf.random_uniform_initializer(minval,maxval)
+5 api_details: ''
+6 api_parameters:
+- minval: Sets the inclusive lower bound for the random values to generate.
+- maxval: Sets the exclusive upper bound for the random values to generate.
+7 api_usage_example:
+- 'def make_variables(k, initializer):'
+- '  return (tf.Variable(initializer(shape=[k], dtype=tf.float32)),'
+- '          tf.Variable(initializer(shape=[k, k], dtype=tf.float32)))'
+- v1, v2 = make_variables(3, tf.ones_initializer())
+- v1
+- v2
+- make_variables(4, tf.random_uniform_initializer(minval=-1., maxval=1.))
+8 api_shape: ''

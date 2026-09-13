@@ -1,0 +1,9 @@
+2 api_name: paddle.distribution.Transform
+3 api_description: Base class for defining transformations of random variables, providing
+  the interface to transform values and support for distribution change-of-variables
+  operations.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

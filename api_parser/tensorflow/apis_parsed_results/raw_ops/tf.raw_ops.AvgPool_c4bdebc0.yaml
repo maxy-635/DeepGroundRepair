@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.AvgPool
+3 api_description: Computes average pooling over sliding windows in the input tensor,
+  producing each output value as the mean of a corresponding ksize window.
+4 api_signature: tf.raw_ops.AvgPool(value,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- value: The 4-D input tensor to be average-pooled over batch, height, width, and
+    channels.
+- ksize: The sliding window size for each dimension of the input tensor.
+- strides: The step size for moving the pooling window across each dimension.
+- padding: The padding algorithm to use for handling borders, either `SAME` or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

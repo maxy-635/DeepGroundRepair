@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.ResourceSparseApplyAdagradDA
+3 api_description: Applies Proximal Adagrad updates to sparse slices of `var` and
+  `accum` using indexed gradients, regularization, and learning-rate parameters.
+4 api_signature: tf.raw_ops.ResourceSparseApplyAdagradDA(var,grad,indices,lr,l1,l2,global_step)
+5 api_details: ''
+6 api_parameters:
+- var: Resource variable to be updated in place by the sparse AdagradDA optimization
+    step.
+- grad: Sparse gradient values used to compute the update for the selected variable
+    entries.
+- indices: Indices of the variable rows/elements that correspond to the provided sparse
+    gradients.
+- lr: Scalar learning-rate value that controls the update size.
+- l1: Scalar L1 regularization strength applied during the update.
+- l2: Scalar L2 regularization strength applied during the update.
+- global_step: Scalar training-step counter used to adjust the optimizer’s behavior
+    over time.
+7 api_usage_example: null
+8 api_shape: ''

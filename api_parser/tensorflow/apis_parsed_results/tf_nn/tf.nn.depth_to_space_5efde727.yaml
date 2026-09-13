@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nn.depth_to_space
+3 api_description: tensorflow.nn.depth_to_space rearranges data from the depth dimension
+  into spatial blocks, effectively increasing spatial resolution by moving depth data
+  into height and width dimensions based on a specified block size.
+4 api_signature: tf.nn.depth_to_space(input,block_size)
+5 api_details: ''
+6 api_parameters:
+- input: This parameter specifies the input tensor that will be rearranged from depth
+    to spatial blocks.
+- block_size: This parameter defines the size of the spatial block and must be an
+    integer greater than or equal to 2.
+7 api_usage_example: null
+8 api_shape: ''

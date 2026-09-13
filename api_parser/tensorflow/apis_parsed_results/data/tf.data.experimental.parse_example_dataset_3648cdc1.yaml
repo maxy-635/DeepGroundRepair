@@ -1,0 +1,10 @@
+2 api_name: tensorflow.data.experimental.parse_example_dataset
+3 api_description: Parses a batch of serialized Example protos into a dictionary of
+  Tensors, SparseTensors, and RaggedTensors according to a feature spec.
+4 api_signature: tf.data.experimental.parse_example_dataset(features)
+5 api_details: ''
+6 api_parameters:
+- features: Specifies the feature schema used to decode each example, mapping feature
+    names to FixedLenFeature, VarLenFeature, RaggedFeature, or SparseFeature definitions.
+7 api_usage_example: null
+8 api_shape: ''

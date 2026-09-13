@@ -1,0 +1,34 @@
+2 api_name: paddle.bernoulli
+3 api_description: Samples each input element from a Bernoulli distribution with success
+  probability equal to that element, returning a binary result per input value.
+4 api_signature: paddle.bernoulli(x,p)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the input tensor whose values specify the success probability, and must
+    be float32 or float64.
+- p: Optionally overrides the input tensor by setting a fixed success probability;
+    if omitted, the probability comes from `x`.
+7 api_usage_example:
+- import paddle
+- 'paddle.set_device(''cpu'')  # on CPU device'
+- paddle.seed(100)
+- x = paddle.rand([2,3])
+- print(x)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.55355281, 0.20714243, 0.01162981],'
+- '[0.51577556, 0.36369765, 0.26091650]])'
+- '>>>'
+- out = paddle.bernoulli(x)
+- print(out)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 0., 1.],'
+- '[0., 1., 0.]])'
+- '>>>'
+- out = paddle.bernoulli(x, p=0)
+- print(out)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 0., 0.],'
+- '[0., 0., 0.]])'
+8 api_shape: {}

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.Conv3D
+3 api_description: Performs a 3-D cross-correlation (convolution) on 5-D input and
+  filter tensors to produce a volumetric feature map.
+4 api_signature: tf.raw_ops.Conv3D(input,filter,strides,padding,data_format,dilations,name)
+5 api_details: ''
+6 api_parameters:
+- input: The 5D input tensor to be convolved.
+- filter: The 5D convolution kernel tensor, with matching input channels and output
+    channels.
+- strides: The stride sizes for the 3D sliding window, with batch and channel strides
+    fixed at 1.
+- padding: The padding mode to use for the convolution, either `SAME` or `VALID`.
+- data_format: The layout of input and output tensors, either `NDHWC` or `NCDHW`.
+- dilations: The dilation factors for each dimension, controlling spacing between
+    filter elements.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

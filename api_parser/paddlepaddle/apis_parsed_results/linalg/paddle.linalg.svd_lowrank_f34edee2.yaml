@@ -1,0 +1,34 @@
+2 api_name: paddle.linalg.svd_lowrank
+3 api_description: Computes a low-rank singular value decomposition of a matrix or
+  batch of matrices, returning an approximate SVD for efficient dimensionality reduction.
+4 api_signature: paddle.linalg.svd_lowrank(x,q,niter)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor to decompose, with shape [..., N, M] and dtype float32
+    or float64.
+- q: Sets an overestimated target rank for the low-rank approximation, defaulting
+    to 6 when not provided.
+- niter: Controls how many iterative refinement steps are performed.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2024)
+- x = paddle.randn((5, 5), dtype='float64')
+- U, S, V = paddle.linalg.svd_lowrank(x)
+- print(U)
+- Tensor(shape=[5, 5], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[-0.03586982, -0.17211503,  0.31536566, -0.38225676, -0.85059629],'
+- '[-0.38386839,  0.67754925,  0.23222694,  0.51777188, -0.26749766],'
+- '[-0.85977150, -0.28442378, -0.41412094, -0.08955629, -0.01948348],'
+- '[ 0.18611503,  0.56047358, -0.67717019, -0.39286761, -0.19577062],'
+- '[ 0.27841082, -0.34099254, -0.46535957,  0.65071250, -0.40770727]])'
+- print(S)
+- Tensor(shape=[5], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[4.11253399, 3.03227120, 2.45499752, 1.25602436, 0.45825337])'
+- print(V)
+- Tensor(shape=[5, 5], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[ 0.46401347,  0.50977695, -0.08742316, -0.11140428, -0.71046833],'
+- '[-0.48927226, -0.35047624,  0.07918771,  0.45431083, -0.65200463],'
+- '[-0.20494730,  0.67097011, -0.05427719,  0.66510472,  0.24997083],'
+- '[-0.69645001,  0.40237917,  0.09360970, -0.58032322, -0.08666357],'
+- '[ 0.13512270,  0.07199989,  0.98710572,  0.04529277,  0.01134594]])'
+8 api_shape: {}

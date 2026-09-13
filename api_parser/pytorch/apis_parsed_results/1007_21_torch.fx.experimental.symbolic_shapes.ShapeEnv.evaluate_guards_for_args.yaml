@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.evaluate_guards_for_args
+3 api_description: Generate placeholder-value guards for a graph and evaluate those
+  guards against the provided arguments.
+4 api_signature: evaluate_guards_for_args(args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

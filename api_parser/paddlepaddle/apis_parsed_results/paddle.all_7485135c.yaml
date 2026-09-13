@@ -1,0 +1,44 @@
+2 api_name: paddle.all
+3 api_description: Computes the logical AND of tensor elements across a specified
+  dimension.
+4 api_signature: paddle.all(x,axis,keepdim,name,*,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are reduced by logical AND.
+- axis: The axis or axes along which to perform the reduction; if `None`, all elements
+    are reduced.
+- keepdim: Whether to keep the reduced dimensions in the output tensor.
+- name: An optional name for the operation.
+7 api_usage_example:
+- import paddle
+- '# x is a bool Tensor with following elements:'
+- '#    [[True, False]'
+- '#     [True, True]]'
+- x = paddle.to_tensor([[1, 0], [1, 1]], dtype='int32')
+- x
+- Tensor(shape=[2, 2], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[1, 0],'
+- '[1, 1]])'
+- x = paddle.cast(x, 'bool')
+- '# out1 should be False'
+- out1 = paddle.all(x)
+- out1
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- False)
+- '# out2 should be [True, False]'
+- out2 = paddle.all(x, axis=0)
+- out2
+- Tensor(shape=[2], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True , False])'
+- '# keepdim=False, out3 should be [False, True], out.shape should be (2,)'
+- out3 = paddle.all(x, axis=-1)
+- out3
+- Tensor(shape=[2], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, True ])'
+- '# keepdim=True, out4 should be [[False], [True]], out.shape should be (2, 1)'
+- out4 = paddle.all(x, axis=1, keepdim=True)
+- out4
+- Tensor(shape=[2, 1], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[[False],'
+- '[True ]])'
+8 api_shape: {}

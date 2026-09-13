@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.QuantizeAndDequantizeV4
+3 api_description: Quantizes and then dequantizes a tensor, preserving values within
+  the quantization range and using a gradient of 1 inside the range and 0 outside
+  it.
+4 api_signature: tf.raw_ops.QuantizeAndDequantizeV4(input,input_min,input_max,num_bits,axis,name)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be quantized and then dequantized.
+- input_min: The minimum value of the quantization range, or the observed minimum
+    of `input` when `range_given` is false.
+- input_max: The maximum value of the quantization range, or the observed maximum
+    of `input` when `range_given` is false.
+- num_bits: Sets the bit width used for quantization.
+- axis: Chooses a channel or slice axis for per-axis quantization ranges.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

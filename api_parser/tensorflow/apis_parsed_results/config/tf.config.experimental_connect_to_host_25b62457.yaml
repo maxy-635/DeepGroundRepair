@@ -1,0 +1,11 @@
+2 api_name: tensorflow.config.experimental_connect_to_host
+3 api_description: Connects TensorFlow to a remote host so its devices can be used
+  for remote execution; repeated calls replace the connection and invalidate existing
+  remote tensor handles.
+4 api_signature: tf.config.experimental_connect_to_host(remote_host)
+5 api_details: ''
+6 api_parameters:
+- remote_host: Specifies the remote server address, either as a single host-port string
+    or a list of host-port strings, to connect TensorFlow to.
+7 api_usage_example: null
+8 api_shape: ''

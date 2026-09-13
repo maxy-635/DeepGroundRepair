@@ -1,0 +1,19 @@
+2 api_name: torch.nn.functional.rrelu
+3 api_description: Randomized leaky ReLU introduces randomness to the negative slope
+  of the leaky ReLU activation function during training, allowing for different slopes
+  within a specified range to improve model robustness.
+4 api_signature: torch.nn.functional.rrelu(input,lower,upper)
+5 api_details: ''
+6 api_parameters:
+- lower: Defines the lower bound of the random slope for the negative part of the
+    input.
+- upper: Defines the upper bound of the random slope for the negative part of the
+    input.
+- inplace: If set to True, modifies the input tensor in-place and saves memory.
+- training: Indicates whether the function should behave differently during training
+    or evaluation.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.FinalizeDataset
+3 api_description: Applies tf.data.Options to an input dataset and returns the finalized
+  dataset.
+4 api_signature: tf.raw_ops.FinalizeDataset(input_dataset,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant tensor that provides the dataset to be finalized.
+- output_types: The list of output data types expected from the dataset.
+- output_shapes: The list of output shapes expected from the dataset elements.
+7 api_usage_example: null
+8 api_shape: ''

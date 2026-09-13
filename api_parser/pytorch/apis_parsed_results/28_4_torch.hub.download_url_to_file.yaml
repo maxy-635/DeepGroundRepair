@@ -1,0 +1,13 @@
+2 api_name: torch.hub.download_url_to_file
+3 api_description: Downloads a file from a URL to a specified local path.
+4 api_signature: torch.hub.download_url_to_file(url,dst)
+5 api_details: ''
+6 api_parameters:
+- url: Specifies the URL of the file or object to download.
+- dst: Specifies the full local file path where the downloaded object will be saved.
+7 api_usage_example:
+- ' torch.hub.download_url_to_file('
+- '...     "https://s3.amazonaws.com/pytorch/models/resnet18-5c106cde.pth",'
+- '...     "/tmp/temporary_file",'
+- '... )'
+8 api_shape: null

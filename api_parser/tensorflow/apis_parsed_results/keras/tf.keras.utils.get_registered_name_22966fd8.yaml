@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.utils.get_registered_name
+3 api_description: Returns the Keras-registered string name for an object, used for
+  serialization and deserialization.
+4 api_signature: tf.keras.utils.get_registered_name(obj)
+5 api_details: ''
+6 api_parameters:
+- obj: The object whose registered Keras name is being looked up.
+7 api_usage_example: null
+8 api_shape: ''

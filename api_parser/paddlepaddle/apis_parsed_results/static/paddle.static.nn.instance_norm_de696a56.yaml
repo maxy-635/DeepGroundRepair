@@ -1,0 +1,17 @@
+2 api_name: paddle.static.nn.instance_norm
+3 api_description: Applies instance normalization to each sample independently across
+  its feature dimensions, using learnable scale and bias when enabled.
+4 api_signature: paddle.static.nn.instance_norm(input,epsilon)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor to normalize, which must have rank 2, 3, 4, or
+    5 and be of type `float32` or `float64`.
+- epsilon: Adds a small constant to the denominator to improve numerical stability
+    during normalization.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data(name='x', shape=[3, 7, 3, 7], dtype='float32')
+- hidden1 = paddle.static.nn.fc(x, size=200)
+- hidden2 = paddle.static.nn.instance_norm(hidden1)
+8 api_shape: {}

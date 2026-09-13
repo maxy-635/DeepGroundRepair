@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.DeserializeSparse
+3 api_description: Deserializes a batched tensor of serialized SparseTensor objects
+  into one higher-rank SparseTensor, combining batch dimensions, taking the max shape
+  per original dimension, and preserving lexicographic index order assumptions.
+4 api_signature: tf.raw_ops.DeserializeSparse(serialized_sparse,dtype)
+5 api_details: ''
+6 api_parameters:
+- serialized_sparse: Holds the serialized SparseTensor data to be deserialized, with
+    the last dimension containing the three sparse tensor components.
+- dtype: Specifies the data type to use for the values in the deserialized SparseTensor
+    objects.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.argsort
+3 api_description: Returns the indices that would sort a tensor along a specified
+  axis.
+4 api_signature: tf.keras.ops.argsort(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to sort indices for.
+7 api_usage_example:
+- x = keras.ops.array([3, 1, 2])
+- keras.ops.argsort(x)
+8 api_shape: ''

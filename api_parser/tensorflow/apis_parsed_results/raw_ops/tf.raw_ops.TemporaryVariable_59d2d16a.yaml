@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TemporaryVariable
+3 api_description: Creates a temporary mutable tensor reference for use within a single
+  execution step, allowing read/write updates and requiring a matching destroy operation
+  when finished.
+4 api_signature: tf.raw_ops.TemporaryVariable(shape,dtype,var_name)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the tensor dimensions of the temporary variable.
+- dtype: Sets the data type of the variable’s elements.
+- var_name: Optionally assigns a custom resource name for the temporary variable.
+- name: Optionally gives the operation a name.
+7 api_usage_example: null
+8 api_shape: ''

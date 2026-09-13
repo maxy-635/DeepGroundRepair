@@ -1,0 +1,15 @@
+2 api_name: tensorflow.clip_by_norm
+3 api_description: Clips a tensor’s L2 norm to a maximum value, scaling it only when
+  the norm exceeds clip_norm along the specified axes.
+4 api_signature: tf.clip_by_norm(t,clip_norm,axes)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor or IndexedSlices input whose values are clipped by their L2 norm.
+- clip_norm: The maximum allowed L2 norm threshold used to scale down `t` when it
+    exceeds this value.
+- axes: The dimensions along which to compute the L2 norm for clipping, or all dimensions
+    if omitted.
+7 api_usage_example:
+- some_nums = tf.constant([[1, 2, 3, 4, 5]], dtype=tf.float32)
+- tf.clip_by_norm(some_nums, 2.0).numpy()
+8 api_shape: ''

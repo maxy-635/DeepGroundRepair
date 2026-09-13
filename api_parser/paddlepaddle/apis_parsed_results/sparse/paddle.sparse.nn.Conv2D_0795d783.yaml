@@ -1,0 +1,37 @@
+2 api_name: paddle.sparse.nn.Conv2D
+3 api_description: Applies a 2D sparse convolution over an input feature map, using
+  learned kernels to extract spatial features efficiently.
+4 api_signature: paddle.sparse.nn.Conv2D(in_channels,out_channels,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Specifies how many channels the input image has.
+- out_channels: Sets how many output feature channels the convolution produces.
+- kernel_size: Defines the height and width of the convolution kernel.
+- stride: Controls how far the kernel moves at each step over the input.
+- padding: Adds extra border values around the input to control output size.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(1, 1)'
+- '        w_tmp = self.create_parameter([1,1])'
+- '        self.add_parameter("w_tmp", w_tmp)'
+- '...'
+- '    def forward(self, input):'
+- '        return self._linear(input)'
+- '...'
+- mylayer = MyLayer()
+- 'for name, param in mylayer.named_parameters():'
+- '    print(name, param)'
+- 'w_tmp Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.01448846]])'
+- '_linear.weight Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0.18551230]])'
+- '_linear.bias Parameter containing:'
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[0.])'
+8 api_shape: {}

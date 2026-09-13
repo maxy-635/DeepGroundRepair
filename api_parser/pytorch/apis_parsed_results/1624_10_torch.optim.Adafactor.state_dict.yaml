@@ -1,0 +1,33 @@
+2 api_name: torch.optim.Adafactor.state_dict
+3 api_description: Returns a dictionary snapshot of the Adafactor optimizer’s current
+  state, including its parameter states and settings, for saving, inspecting, or restoring
+  optimizer progress.
+4 api_signature: state_dict()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '{'
+- '    ''state'': {'
+- '        0: {''momentum_buffer'': tensor(...), ...},'
+- '        1: {''momentum_buffer'': tensor(...), ...},'
+- '        2: {''momentum_buffer'': tensor(...), ...},'
+- '        3: {''momentum_buffer'': tensor(...), ...}'
+- '    },'
+- '    ''param_groups'': ['
+- '        {'
+- '            ''lr'': 0.01,'
+- '            ''weight_decay'': 0,'
+- '            ...'
+- '            ''params'': [0]'
+- '            ''param_names'' [''param0'']  (optional)'
+- '        },'
+- '        {'
+- '            ''lr'': 0.001,'
+- '            ''weight_decay'': 0.5,'
+- '            ...'
+- '            ''params'': [1, 2, 3]'
+- '            ''param_names'': [''param1'', ''layer.weight'', ''layer.bias''] (optional)'
+- '        }'
+- '    ]'
+- '}'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.laplace.Laplace.log_prob
+3 api_description: Computes the log probability density of values under a Laplace
+  distribution with the distribution’s specified location and scale.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The value or tensor of samples whose log probability under the Laplace distribution
+    is computed.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: torch.backends.cuda.can_use_efficient_attention
+3 api_description: Checks whether scaled_dot_product_attention can use the efficient_attention
+  backend for the given inputs and conditions.
+4 api_signature: torch.backends.cuda.can_use_efficient_attention(params)
+5 api_details: ''
+6 api_parameters:
+- params: Holds the query, key, and value tensors plus optional attention mask, dropout
+    rate, and causal-attention flag used to evaluate whether efficient attention can
+    be used.
+7 api_usage_example: null
+8 api_shape: null

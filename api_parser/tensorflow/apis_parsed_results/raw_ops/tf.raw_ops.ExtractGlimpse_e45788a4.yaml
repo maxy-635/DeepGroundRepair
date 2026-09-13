@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.ExtractGlimpse
+3 api_description: Extracts fixed-size image glimpses from an input tensor at specified
+  offsets, optionally using normalized/centered coordinates and filling out-of-bounds
+  areas with noise.
+4 api_signature: tf.raw_ops.ExtractGlimpse(input,size,offsets,centered,normalized,uniform_noise)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D float32 image tensor to extract glimpses from.
+- size: A 2-element int32 tensor specifying the glimpse height and width.
+- offsets: A [batch_size, 2] tensor giving the y and x center coordinates for each
+    glimpse.
+- centered: Controls whether offset coordinates are interpreted relative to the image
+    center or the upper-left corner.
+- normalized: Controls whether the offset coordinates are treated as normalized values.
+- uniform_noise: Chooses whether noise is drawn from a uniform distribution instead
+    of a Gaussian distribution.
+- noise: 'Selects the noise type to use: uniform, gaussian, or zero, with uniform
+    as the default behavior.'
+7 api_usage_example: null
+8 api_shape: ''

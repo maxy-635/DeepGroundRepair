@@ -1,0 +1,24 @@
+2 api_name: paddle.regularizer.L1Decay
+3 api_description: Applies L1 weight decay regularization by adding a penalty proportional
+  to the absolute value of weights, encouraging sparsity.
+4 api_signature: paddle.regularizer.L1Decay(coeff)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '# Example1: set Regularizer in optimizer'
+- import paddle
+- from paddle.regularizer import L1Decay
+- linear = paddle.nn.Linear(10, 10)
+- inp = paddle.rand(shape=[10, 10], dtype="float32")
+- out = linear(inp)
+- loss = paddle.mean(out)
+- beta1 = paddle.to_tensor([0.9], dtype="float32")
+- beta2 = paddle.to_tensor([0.99], dtype="float32")
+- momentum = paddle.optimizer.Momentum(
+- '    learning_rate=0.1,'
+- '    parameters=linear.parameters(),'
+- '    weight_decay=L1Decay(0.0001))'
+- back = out.backward()
+- momentum.step()
+- momentum.clear_grad()
+8 api_shape: {}

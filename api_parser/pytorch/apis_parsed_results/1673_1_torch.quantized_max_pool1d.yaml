@@ -1,0 +1,13 @@
+2 api_name: torch.quantized_max_pool1d
+3 api_description: Performs 1D max pooling on a quantized input tensor, downsampling
+  each input channel by taking the maximum value over sliding windows.
+4 api_signature: torch.quantized_max_pool1d(input,kernel_size,stride)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized tensor to pool over.
+- kernel_size: The size of the sliding window used for max pooling.
+- stride: The step size the sliding window moves between pooling regions.
+7 api_usage_example:
+- ' qx = torch.quantize_per_tensor(torch.rand(2, 2), 1.5, 3, torch.quint8)'
+- ' torch.quantized_max_pool1d(qx, [2])'
+8 api_shape: null

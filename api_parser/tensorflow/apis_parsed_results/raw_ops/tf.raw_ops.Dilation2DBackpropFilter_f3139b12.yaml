@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.Dilation2DBackpropFilter
+3 api_description: Computes the gradient of 2D morphological dilation with respect
+  to the filter, given the input, filter shape, upstream gradients, strides, rates,
+  and padding.
+4 api_signature: tf.raw_ops.Dilation2DBackpropFilter(input,filter,out_backprop)
+5 api_details: ''
+6 api_parameters:
+- input: The original 4-D input tensor whose values and shape define the dilation
+    operation.
+- filter: The 3-D filter tensor that was used in the forward dilation and for which
+    gradients are computed.
+- out_backprop: The gradient tensor from the dilation output, used to backpropagate
+    and compute the filter gradient.
+7 api_usage_example: null
+8 api_shape: ''

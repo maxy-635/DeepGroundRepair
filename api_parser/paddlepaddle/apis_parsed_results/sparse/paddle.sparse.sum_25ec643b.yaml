@@ -1,0 +1,35 @@
+2 api_name: paddle.sparse.sum
+3 api_description: Computes the sum of elements in a sparse COO or CSR tensor along
+  the specified dimension.
+4 api_signature: paddle.sparse.sum(x,axis,keepdim)
+5 api_details: ''
+6 api_parameters:
+- x: The input N-D tensor whose elements will be summed.
+- axis: The axis or axes to reduce by summation, or `None` to sum all elements.
+- keepdim: Whether to keep the reduced dimensions in the output tensor.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([[-2., 0.], [1., 2.]])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out1 = paddle.sparse.sum(sparse_x)
+- out1
+- Tensor(shape=[1], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[0],
+- values=1.)
+- out2 = paddle.sparse.sum(sparse_x, axis=0)
+- out2
+- Tensor(shape=[1, 2], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0]],
+- values=[[-1.,  2.]])
+- out3 = paddle.sparse.sum(sparse_x, axis=-1)
+- out3
+- Tensor(shape=[2], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 1]],
+- values=[-2.,  3.])
+- out4 = paddle.sparse.sum(sparse_x, axis=1, keepdim=True)
+- out4
+- Tensor(shape=[2, 1], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 1]],
+- values=[[-2.],
+- '[ 3.]])'
+8 api_shape: {}

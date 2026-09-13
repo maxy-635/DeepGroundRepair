@@ -1,0 +1,10 @@
+2 api_name: tensorflow.dtypes.saturate_cast
+3 api_description: Safely casts values to a target dtype by clamping out-of-range
+  values to prevent overflow or underflow.
+4 api_signature: tf.dtypes.saturate_cast(value,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be cast.
+- dtype: The target output data type for the cast.
+7 api_usage_example: null
+8 api_shape: ''

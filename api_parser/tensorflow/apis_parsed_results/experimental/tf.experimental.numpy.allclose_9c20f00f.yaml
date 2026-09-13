@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.allclose
+3 api_description: Returns True if two arrays are elementwise equal within a tolerance,
+  treating NaNs as equal when requested.
+4 api_signature: tf.experimental.numpy.allclose(a,b)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

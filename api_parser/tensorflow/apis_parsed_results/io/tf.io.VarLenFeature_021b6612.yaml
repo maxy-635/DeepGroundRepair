@@ -1,0 +1,8 @@
+2 api_name: tensorflow.io.VarLenFeature
+3 api_description: Defines how to parse a variable-length input feature as a sparse
+  tensor, with a specified data type.
+4 api_signature: tf.io.VarLenFeature(dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

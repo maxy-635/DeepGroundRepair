@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.vstack
+3 api_description: Stacks arrays vertically (row-wise) into a single TensorFlow tensor,
+  matching NumPy vstack behavior; dtype and casting are not supported.
+4 api_signature: tf.experimental.numpy.vstack(tup)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

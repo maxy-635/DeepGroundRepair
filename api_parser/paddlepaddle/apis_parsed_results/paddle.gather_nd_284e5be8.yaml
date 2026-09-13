@@ -1,0 +1,20 @@
+2 api_name: paddle.gather_nd
+3 api_description: Selects slices from a tensor using multi-axis integer indices,
+  returning the indexed values from the input.
+4 api_signature: paddle.gather_nd(x,index)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to gather values from, with supported dtypes bool, float16,
+    float32, float64, int32, or int64.
+- index: The index tensor specifying which elements to gather, with rank greater than
+    1 and supported dtypes int32 or int64.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[[1, 2], [3, 4], [5, 6]],
+- '                      [[7, 8], [9, 10], [11, 12]]])'
+- index = paddle.to_tensor([[0, 1]])
+- output = paddle.gather_nd(x, index)
+- print(output)
+- Tensor(shape=[1, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[3, 4]])'
+8 api_shape: {}

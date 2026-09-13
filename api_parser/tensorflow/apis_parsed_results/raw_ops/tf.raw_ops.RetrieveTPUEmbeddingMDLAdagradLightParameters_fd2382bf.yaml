@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingMDLAdagradLightParameters
+3 api_description: Retrieves MDL Adagrad Light embedding parameters from TPU embedding
+  memory to host memory, typically for checkpointing after the embedding host has
+  been configured.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingMDLAdagradLightParameters(table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- table_id: Identifies the embedding table by numeric ID, with -1 as the default unset
+    value.
+- table_name: Identifies the embedding table by name, with an empty string as the
+    default unset value.
+- config: Provides the serialized configuration string used to retrieve the TPU embedding
+    MDL Adagrad Light parameters.
+- name: Assigns an optional name to the operation for easier graph identification
+    and debugging.
+7 api_usage_example: null
+8 api_shape: ''

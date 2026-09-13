@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.applications.inception_resnet_v2.preprocess_input
+3 api_description: Scales image tensors or NumPy arrays for Inception-ResNet-v2 by
+  converting pixel values to the model’s expected normalized range.
+4 api_signature: tf.keras.applications.inception_resnet_v2.preprocess_input(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input image data in a 3D or 4D array or tensor with 3 color channels and pixel
+    values between 0 and 255, which is preprocessed in place when the data type allows
+    it.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,38 @@
+2 api_name: paddle.optimizer.lr.CyclicLR
+3 api_description: Adjusts the learning rate in repeating cycles between lower and
+  upper bounds with fixed frequency, optionally scaling the cycle range per iteration
+  or per cycle.
+4 api_signature: paddle.optimizer.lr.CyclicLR(base_learning_rate,max_learning_rate,step_size_up,step_size_down,mode,exp_gamma,scale_fn,scale_mode,last_epoch,verbose)
+5 api_details: ''
+6 api_parameters:
+- base_learning_rate: Sets the lower bound of the learning rate cycle and serves as
+    the starting learning rate.
+- max_learning_rate: Sets the upper bound of the cycle and determines the peak learning
+    rate.
+- step_size_up: Controls how many training steps it takes to increase the learning
+    rate to its peak.
+- step_size_down: Controls how many training steps it takes to decrease the learning
+    rate back to the base value.
+- mode: Chooses the built-in scaling pattern for the cycle, unless a custom scaling
+    function is provided.
+- exp_gamma: Provides the exponential decay factor used only when the mode is set
+    to `exp_range`.
+- scale_fn: Lets you supply a custom function to scale the cycle instead of using
+    the built-in modes.
+- scale_mode: Specifies whether the scaling function depends on cycle count or total
+    iteration count.
+- last_epoch: Stores the last completed epoch index so training can resume from that
+    point.
+- verbose: Controls whether each learning rate update is printed to stdout.
+7 api_usage_example:
+- import paddle
+- value = paddle.arange(26, dtype='float32')
+- a = paddle.reshape(value, [2, 13])
+- linear = paddle.nn.Linear(13, 5)
+- adadelta = paddle.optimizer.Adadelta(learning_rate=0.0003, epsilon=1e-06, rho=0.95,
+- '                            parameters = linear.parameters())'
+- out = linear(a)
+- out.backward()
+- adadelta.step()
+- adadelta.clear_grad()
+8 api_shape: {}

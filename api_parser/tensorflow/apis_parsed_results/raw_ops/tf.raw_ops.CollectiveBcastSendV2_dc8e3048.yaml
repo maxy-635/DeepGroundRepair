@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.CollectiveBcastSendV2
+3 api_description: Broadcasts a tensor from one device to matching receivers on other
+  devices as part of a collective operation.
+4 api_signature: tf.raw_ops.CollectiveBcastSendV2(input,group_size,group_key,instance_key)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be broadcast and sent to other devices in the collective operation.
+- group_size: The number of participating devices in the collective group.
+- group_key: The identifier that groups related collective operations together.
+- instance_key: The identifier that distinguishes this specific broadcast instance
+    within the group.
+7 api_usage_example: null
+8 api_shape: ''

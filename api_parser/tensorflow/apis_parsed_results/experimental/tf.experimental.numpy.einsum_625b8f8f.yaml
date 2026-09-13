@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.einsum
+3 api_description: Computes Einstein summation over one or more tensors, providing
+  a NumPy-compatible way to express sums, products, transposes, traces, and other
+  linear algebra operations with a compact index notation.
+4 api_signature: tf.experimental.numpy.einsum(subscripts,*operands)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

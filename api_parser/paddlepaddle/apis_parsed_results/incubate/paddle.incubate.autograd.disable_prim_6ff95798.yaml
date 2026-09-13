@@ -1,0 +1,17 @@
+2 api_name: paddle.incubate.autograd.disable_prim
+3 api_description: Disables the primitive operator autograd mechanism within the incubate
+  module.
+4 api_signature: paddle.incubate.autograd.disable_prim()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- from paddle.incubate.autograd import enable_prim, disable_prim, prim_enabled
+- paddle.enable_static()
+- enable_prim()
+- print(prim_enabled())
+- 'True'
+- disable_prim()
+- print(prim_enabled())
+- 'False'
+8 api_shape: {}

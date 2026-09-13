@@ -1,0 +1,18 @@
+2 api_name: torch.diagflat
+3 api_description: Creates a 2D square tensor with a 1D input tensor placed along
+  its main diagonal.
+4 api_signature: torch.diagflat(input,offset)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor whose values are placed along the diagonal of the output
+    matrix.
+- offset: Selects which diagonal to fill by shifting it above or below the main diagonal.
+7 api_usage_example:
+- ' a = torch.randn(3)'
+- ' a'
+- ' torch.diagflat(a)'
+- ' torch.diagflat(a, 1)'
+- ' a = torch.randn(2, 2)'
+- ' a'
+- ' torch.diagflat(a)'
+8 api_shape: null

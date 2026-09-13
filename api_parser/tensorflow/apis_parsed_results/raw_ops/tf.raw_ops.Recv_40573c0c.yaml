@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Recv
+3 api_description: Receives a tensor sent from one device to another and returns it
+  on the receiving device.
+4 api_signature: tf.raw_ops.Recv(tensor_type,tensor_name,send_device,recv_device)
+5 api_details: ''
+6 api_parameters:
+- tensor_type: Specifies the data type of the tensor being received.
+- tensor_name: Identifies the name of the tensor to be received.
+- send_device: Indicates the device that sends the tensor.
+- recv_device: Indicates the device that receives the tensor.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

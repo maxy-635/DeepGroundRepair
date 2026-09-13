@@ -1,0 +1,13 @@
+2 api_name: torch.signal.windows.general_cosine
+3 api_description: Computes a generalized cosine window as a weighted sum of cosine
+  terms, commonly used for signal processing windowing.
+4 api_signature: torch.signal.windows.general_cosine(M,a,sym)
+5 api_details: ''
+6 api_parameters:
+- M: Specifies the window length, i.e. the number of points in the returned window.
+7 api_usage_example:
+- ' # Generates a symmetric general cosine window with 3 coefficients.'
+- ' torch.signal.windows.general_cosine(10, a=[0.46, 0.23, 0.31], sym=True)'
+- ' # Generates a periodic general cosine window with 2 coefficients.'
+- ' torch.signal.windows.general_cosine(10, a=[0.5, 1 - 0.5], sym=False)'
+8 api_shape: null

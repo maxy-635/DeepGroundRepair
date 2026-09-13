@@ -1,0 +1,18 @@
+2 api_name: torch.fft.rfft2
+3 api_description: Computes the 2D Fourier transform of real-valued input, using FFTs
+  over the last two dimensions by default and returning only the non-redundant real-frequency
+  half.
+4 api_signature: torch.fft.rfft2(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: Tensor to be transformed by the 2D real FFT.
+- s: Target signal sizes for the transformed dimensions, with padding or trimming
+    applied as needed.
+- dim: The dimensions along which to perform the transform.
+- norm: The normalization mode that controls FFT scaling, such as no scaling, 1/n
+    scaling, or orthonormal scaling.
+7 api_usage_example:
+- ' t = torch.rand(10, 10)'
+- ' rfft2 = torch.fft.rfft2(t)'
+- ' rfft2.size()'
+8 api_shape: null

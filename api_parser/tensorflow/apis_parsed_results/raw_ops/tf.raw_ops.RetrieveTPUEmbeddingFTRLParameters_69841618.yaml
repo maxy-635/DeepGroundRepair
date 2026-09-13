@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingFTRLParameters
+3 api_description: Retrieves FTRL TPU embedding optimizer parameters from embedding
+  memory to host memory, typically before checkpointing.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingFTRLParameters(shard_id,table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- shard_id: Specifies which shard of the TPU embedding parameters to retrieve.
+- table_id: Identifies the embedding table by numeric ID, or uses -1 when not set.
+- table_name: Identifies the embedding table by name, or uses an empty string when
+    not set.
+- config: Provides optional configuration details for the retrieval operation.
+- name: Gives the operation an optional name for graph construction and debugging.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.linalg.tridiagonal_matmul
+3 api_description: Multiplies a tridiagonal NxN matrix, given in matrix, sequence,
+  or compact diagonal format, by a right-hand-side matrix of shape [..., M, N], ignoring
+  values outside the three diagonals.
+4 api_signature: tf.linalg.tridiagonal_matmul(diagonals,rhs)
+5 api_details: ''
+6 api_parameters:
+- diagonals: Specifies the tridiagonal matrix or matrices on the left-hand side, provided
+    as a tensor or tuple of tensors in the format indicated by `diagonals_format`.
+- rhs: Specifies the right-hand-side tensor to be multiplied by the tridiagonal matrix,
+    with shape `[..., M, N]` and the same dtype as `diagonals`.
+7 api_usage_example: null
+8 api_shape: ''

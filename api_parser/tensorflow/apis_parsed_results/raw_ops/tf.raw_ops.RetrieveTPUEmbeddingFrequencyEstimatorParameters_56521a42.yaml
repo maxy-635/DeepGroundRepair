@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingFrequencyEstimatorParameters
+3 api_description: Retrieves frequency estimator embedding parameters from TPU embedding
+  to host memory after configuration, typically for checkpointing or saving updated
+  parameters.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingFrequencyEstimatorParameters(table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- table_id: Identifies the embedding table by numeric ID when selecting which table's
+    parameters to retrieve.
+- table_name: Identifies the embedding table by name when selecting which table's
+    parameters to retrieve.
+- config: Carries the configuration information used by the operation to interpret
+    or locate the estimator parameters.
+- name: Assigns an optional name to the operation for graph readability and debugging.
+7 api_usage_example: null
+8 api_shape: ''

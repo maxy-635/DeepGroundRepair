@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.applications.vgg16.decode_predictions
+3 api_description: Converts an ImageNet model’s predicted class probabilities into
+  human-readable class labels and scores.
+4 api_signature: tf.keras.applications.vgg16.decode_predictions(preds,top)
+5 api_details: ''
+6 api_parameters:
+- preds: Holds the batch of prediction scores to decode into human-readable class
+    labels.
+- top: Sets how many of the highest-scoring predictions to return.
+7 api_usage_example: null
+8 api_shape: ''

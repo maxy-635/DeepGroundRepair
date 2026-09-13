@@ -1,0 +1,8 @@
+2 api_name: torch.nn.ParameterList.append
+3 api_description: Appends a specified value to the end of a ParameterList in PyTorch.
+4 api_signature: append(value)
+5 api_details: ''
+6 api_parameters:
+- value: The tensor value that will be appended to the ParameterList.
+7 api_usage_example: null
+8 api_shape: null

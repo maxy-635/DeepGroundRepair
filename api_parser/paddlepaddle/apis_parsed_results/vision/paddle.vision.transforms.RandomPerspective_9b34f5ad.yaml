@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.transforms.RandomPerspective
+3 api_description: Randomly applies a perspective warp to an image with a specified
+  probability.
+4 api_signature: paddle.vision.transforms.RandomPerspective(prob,distortion_scale,interpolation)
+5 api_details: ''
+6 api_parameters:
+- prob: Controls the probability that the random perspective transform is applied.
+- distortion_scale: Sets how strongly the image perspective is distorted.
+- interpolation: Chooses the resampling method used when transforming the image.
+7 api_usage_example: []
+8 api_shape: {}

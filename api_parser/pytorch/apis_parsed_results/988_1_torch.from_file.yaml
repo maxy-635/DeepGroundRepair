@@ -1,0 +1,13 @@
+2 api_name: torch.from_file
+3 api_description: Creates a CPU tensor whose storage is memory-mapped to a file,
+  enabling direct loading and sharing of file-backed data.
+4 api_signature: torch.from_file(filename,size,dtype,device)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the file to memory-map and load tensor data from.
+- size: Sets how many tensor elements to read from the mapped file.
+7 api_usage_example:
+- ' t = torch.randn(2, 5, dtype=torch.float64)'
+- ' t.numpy().tofile(''storage.pt'')'
+- ' t_mapped = torch.from_file(''storage.pt'', shared=False, size=10, dtype=torch.float64)'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.reduce_logsumexp
+3 api_description: Computes a numerically stable log of the sum of exponentials of
+  tensor elements, reducing over the specified axis or all dimensions.
+4 api_signature: tf.math.reduce_logsumexp(input_tensor,axis,keepdims)
+5 api_details: ''
+6 api_parameters:
+- input_tensor: The numeric tensor whose values will be reduced.
+- axis: The dimensions to collapse when computing the log-sum-exp, or all dimensions
+    if `None`.
+- keepdims: Whether to keep the reduced dimensions as size-1 axes in the output.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: paddle.device.cuda.device_count
+3 api_description: Returns the number of available GPUs.
+4 api_signature: paddle.device.cuda.device_count()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.device.cuda.device_count()
+8 api_shape: {}

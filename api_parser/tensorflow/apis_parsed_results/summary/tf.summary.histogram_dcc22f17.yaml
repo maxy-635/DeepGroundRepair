@@ -1,0 +1,9 @@
+2 api_name: tensorflow.summary.histogram
+3 api_description: Writes a histogram of all tensor values to the current default
+  summary writer for a given step and name, so TensorBoard can show the data in Histograms
+  and Distributions dashboards.
+4 api_signature: tf.summary.histogram(name,data,step)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

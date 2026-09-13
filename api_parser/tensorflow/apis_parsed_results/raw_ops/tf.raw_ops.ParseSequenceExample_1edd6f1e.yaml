@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.ParseSequenceExample
+3 api_description: Parses a vector of SequenceExample protos into typed context, sequence,
+  and feature tensors.
+4 api_signature: tf.raw_ops.ParseSequenceExample(serialized,context_dense_keys,feature_list_dense_keys,context_sparse_keys,feature_list_sparse_keys,name)
+5 api_details: ''
+6 api_parameters:
+- serialized: Contains the binary-serialized `SequenceExample` protos to parse.
+- context_sparse_keys: Specifies the context feature keys to extract as sparse values.
+- context_dense_keys: Specifies the context feature keys to extract as dense values.
+- feature_list_sparse_keys: Specifies the feature list keys to extract as sparse sequence
+    values.
+- feature_list_dense_keys: Specifies the feature list keys to extract as dense sequence
+    values.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

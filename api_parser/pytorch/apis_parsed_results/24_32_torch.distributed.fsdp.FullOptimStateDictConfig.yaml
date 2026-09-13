@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.FullOptimStateDictConfig
+3 api_description: Controls whether FSDP full optimizer state dicts are saved only
+  on rank 0 or on all ranks.
+4 api_signature: torch.distributed.fsdp.FullOptimStateDictConfig(offload_to_cpu,rank0_only)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

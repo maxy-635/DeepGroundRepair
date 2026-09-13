@@ -1,0 +1,19 @@
+2 api_name: torch.narrow_copy
+3 api_description: Returns a copied narrow slice of a tensor, rather than a view sharing
+  storage; mainly used for sparse tensors.
+4 api_signature: torch.narrow_copy(input,dim,start,length)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to take a narrowed copy from.
+- dim: The dimension along which to narrow the tensor.
+- start: The starting index of the narrowed slice, allowing negative values to count
+    from the end.
+- length: The number of elements to include in the narrowed dimension, and it must
+    be positive.
+7 api_usage_example:
+- ' x = torch.tensor([[1, 2, 3], [4, 5, 6], [7, 8, 9]])'
+- ' torch.narrow_copy(x, 0, 0, 2)'
+- ' torch.narrow_copy(x, 1, 1, 2)'
+- ' s = torch.arange(16).reshape(2, 2, 2, 2).to_sparse(2)'
+- ' torch.narrow_copy(s, 0, 0, 1)'
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.lite.experimental.QuantizationDebugger
+3 api_description: Runs TensorFlow Lite debug-mode quantized models with debug ops,
+  collects debug information, and computes statistics using default or user-defined
+  post-processing functions.
+4 api_signature: tf.lite.experimental.QuantizationDebugger(float_model_path:Optional[str]=None,debug_dataset:Optional[Callable[[],Iterable[Sequence[np.ndarray]]]]=None,converter:Optional[TFLiteConverter]=None)
+5 api_details: ''
+6 api_parameters:
+- float_model_path: Specifies the file path to the float TFLite model used as the
+    reference model.
+- debug_dataset: Provides a dataset generator factory that yields input samples matching
+    the model’s input types and shapes for debugging.
+- converter: Optionally supplies a converter to use instead of an already quantized
+    model.
+7 api_usage_example: null
+8 api_shape: ''

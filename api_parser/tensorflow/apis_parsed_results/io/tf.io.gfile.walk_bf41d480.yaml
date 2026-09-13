@@ -1,0 +1,9 @@
+2 api_name: tensorflow.io.gfile.walk
+3 api_description: Recursively yields directory paths, subdirectory names, and filenames
+  for each directory in a tree.
+4 api_signature: tf.io.gfile.walk(top)
+5 api_details: ''
+6 api_parameters:
+- top: Specifies the root directory to start walking through.
+7 api_usage_example: null
+8 api_shape: ''

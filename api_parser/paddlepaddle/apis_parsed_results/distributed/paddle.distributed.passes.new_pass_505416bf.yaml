@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.passes.new_pass
+3 api_description: Creates and registers a new distributed pass for PaddlePaddle,
+  letting users define custom pass logic to transform or optimize distributed training
+  programs.
+4 api_signature: paddle.distributed.passes.new_pass(name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

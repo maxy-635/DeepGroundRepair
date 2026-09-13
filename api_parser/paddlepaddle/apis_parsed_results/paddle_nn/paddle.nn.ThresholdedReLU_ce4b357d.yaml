@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.ThresholdedReLU
+3 api_description: ThresholdedReLU applies a thresholded rectified linear unit activation,
+  setting inputs below a specified threshold to zero while keeping other values unchanged.
+4 api_signature: paddle.nn.ThresholdedReLU(threshold)
+5 api_details: ''
+6 api_parameters:
+- threshold: Sets the minimum value for which the ThresholdedReLU activation function
+    will output non-zero values; defaults to 1.0.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([2., 0., 1.])
+- m = paddle.nn.ThresholdedReLU()
+- out = m(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[2., 0., 0.])'
+8 api_shape: null

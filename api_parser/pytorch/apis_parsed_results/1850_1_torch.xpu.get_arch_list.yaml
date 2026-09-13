@@ -1,0 +1,8 @@
+2 api_name: torch.xpu.get_arch_list
+3 api_description: Returns the list of XPU architectures that PyTorch was compiled
+  to support.
+4 api_signature: torch.xpu.get_arch_list()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

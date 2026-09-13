@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.tensor.placement_types._StridedShard.local_shard_size_and_offset
+3 api_description: Computes the size and offset of the local shard for a strided sharding
+  placement.
+4 api_signature: local_shard_size_and_offset(num_chunks,rank)
+5 api_details: ''
+6 api_parameters:
+- num_chunks: Specifies how many chunks the dimension is divided into to determine
+    the shard size and offset.
+- rank: Specifies which rank’s shard size and offset to compute.
+7 api_usage_example: null
+8 api_shape: null

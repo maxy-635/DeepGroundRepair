@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.export.ExportArchive
+3 api_description: ExportArchive packages tracked Keras models or layers into a SavedModel
+  for inference by defining one or more serving endpoints with their signatures, then
+  writing the artifact for later loading with tf.saved_model.load.
+4 api_signature: tf.keras.export.ExportArchive()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

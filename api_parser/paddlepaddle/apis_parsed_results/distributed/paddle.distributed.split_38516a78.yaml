@@ -1,0 +1,26 @@
+2 api_name: paddle.distributed.split
+3 api_description: Splits an operation’s weights across multiple devices to run the
+  computation in parallel.
+4 api_signature: paddle.distributed.split(x,size,axis,num_partitions,gather_out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be split, with dtype limited to float16, float32, float64,
+    int32, or int64.
+- size: A two-element list or tuple that specifies the weight shape.
+- axis: The axis along which the weight is split.
+- num_partitions: The number of partitions to divide the weight into.
+- gather_out: Controls whether outputs from all partitions are gathered after computation.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed.fleet as fleet
+- paddle.enable_static()
+- paddle.set_device(f'gpu:{paddle.distributed.ParallelEnv().dev_id}')
+- fleet.init(is_collective=True)
+- data = paddle.randint(0, 8, shape=[10,4])
+- emb_out = paddle.distributed.split(
+- '    data,'
+- '    (8, 8),'
+- '    operation="embedding",'
+- '    num_partitions=2)'
+8 api_shape: {}

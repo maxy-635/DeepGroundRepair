@@ -1,0 +1,20 @@
+2 api_name: tensorflow.data.experimental.service.WorkerServer
+3 api_description: An in-process tf.data service worker that executes dataset processing
+  for user-defined tf.data pipelines and serves the resulting elements over RPC to
+  a single associated DispatchServer.
+4 api_signature: tf.data.experimental.service.WorkerServer(config)
+5 api_details: ''
+6 api_parameters:
+- config: Specifies the worker server configuration used to set up and run the tf.data
+    service worker.
+7 api_usage_example:
+- dispatcher = tf.data.experimental.service.DispatchServer()
+- dispatcher_address = dispatcher.target.split("://")[1]
+- worker = tf.data.experimental.service.WorkerServer(
+- '    tf.data.experimental.service.WorkerConfig('
+- '        dispatcher_address=dispatcher_address))'
+- dataset = tf.data.Dataset.range(10)
+- dataset = dataset.apply(tf.data.experimental.service.distribute(
+- '    processing_mode="parallel_epochs", service=dispatcher.target))'
+- print(list(dataset.as_numpy_iterator()))
+8 api_shape: ''

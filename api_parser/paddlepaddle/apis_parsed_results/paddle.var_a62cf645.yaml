@@ -1,0 +1,23 @@
+2 api_name: paddle.var
+3 api_description: Computes the variance of a tensor along the specified axis, optionally
+  keeping reduced dimensions and supporting unbiased or biased estimation.
+4 api_signature: paddle.var(x,axis,unbiased,keepdim,correction,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose variance is computed.
+- axis: The axis or axes along which to calculate the variance.
+- unbiased: Controls whether to use the unbiased estimator with divisor N - 1 instead
+    of N.
+- correction: Sets the degrees-of-freedom correction used in the variance calculation
+    when `unbiased` is not specified.
+- out: An optional tensor to store the output result.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1.0, 2.0, 3.0], [1.0, 4.0, 5.0]])
+- out1 = paddle.var(x)
+- print(out1.numpy())
+- '2.6666667'
+- out2 = paddle.var(x, axis=1)
+- print(out2.numpy())
+- '[1.         4.3333335]'
+8 api_shape: {}

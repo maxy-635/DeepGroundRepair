@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.EagerPyFunc
+3 api_description: Executes a Python function eagerly on the given inputs and returns
+  its outputs, using the same input, output, and attribute semantics as `PyFunc`.
+4 api_signature: tf.raw_ops.EagerPyFunc(input,Tout,is_async)
+5 api_details: ''
+6 api_parameters:
+- input: The tensors to pass into the Python callback.
+- Tout: The data types of the tensors that the callback returns.
+- is_async: Whether to run the Python callback asynchronously; defaults to False.
+7 api_usage_example: null
+8 api_shape: ''

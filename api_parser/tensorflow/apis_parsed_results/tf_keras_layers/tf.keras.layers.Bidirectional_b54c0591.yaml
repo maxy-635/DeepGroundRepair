@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.Bidirectional
+3 api_description: The Bidirectional API in tf.keras.layers allows RNNs to process
+  input sequences in both forward and backward directions, enhancing the model's ability
+  to capture context from both past and future states.
+4 api_signature: tf.keras.layers.Bidirectional(layer, merge_mode)
+5 api_details: ''
+6 api_parameters:
+- layer: Specifies the RNN layer type to be used, such as LSTM or GRU.
+- merge_mode: Determines how the outputs from the forward and backward RNNs are combined,
+    with options including sum, multiplication, concatenation, averaging, or returning
+    as a list if None.
+7 api_usage_example: null
+8 api_shape: null

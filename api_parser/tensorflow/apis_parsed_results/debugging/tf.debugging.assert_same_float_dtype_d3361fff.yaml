@@ -1,0 +1,12 @@
+2 api_name: tensorflow.debugging.assert_same_float_dtype
+3 api_description: Checks that tensors share the same floating-point dtype, optionally
+  matches a requested dtype, and returns that dtype; defaults to float32 when no tensors
+  or dtype are provided.
+4 api_signature: tf.debugging.assert_same_float_dtype(tensors,dtype)
+5 api_details: ''
+6 api_parameters:
+- tensors: The input tensors whose float dtypes are checked for consistency, ignoring
+    any `None` elements.
+- dtype: The expected floating-point dtype to compare the tensors against.
+7 api_usage_example: null
+8 api_shape: ''

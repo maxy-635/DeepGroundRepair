@@ -1,0 +1,10 @@
+2 api_name: torch.onnx.unregister_custom_op_symbolic
+3 api_description: Removes a previously registered custom ONNX symbolic function for
+  the specified operator.
+4 api_signature: torch.onnx.unregister_custom_op_symbolic(symbolic_name)
+5 api_details: ''
+6 api_parameters:
+- symbolic_name: Specifies the custom operator name to unregister, using the `<domain>::<op>`
+    format.
+7 api_usage_example: null
+8 api_shape: null

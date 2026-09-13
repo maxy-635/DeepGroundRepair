@@ -1,0 +1,26 @@
+2 api_name: paddle.text.ViterbiDecoder
+3 api_description: Decodes the highest-scoring tag sequence using transition and potential
+  scores, returning the Viterbi path.
+4 api_signature: paddle.text.ViterbiDecoder(transitions)
+5 api_details: ''
+6 api_parameters:
+- transitions: Specifies the tag-to-tag transition scores used by the Viterbi decoder
+    to find the best label sequence.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- batch_size, seq_len, num_tags = 2, 4, 3
+- emission = paddle.rand((batch_size, seq_len, num_tags), dtype='float32')
+- length = paddle.randint(1, seq_len + 1, [batch_size])
+- tags = paddle.randint(0, num_tags, [batch_size, seq_len])
+- transition = paddle.rand((num_tags, num_tags), dtype='float32')
+- decoder = paddle.text.ViterbiDecoder(transition, include_bos_eos_tag=False)
+- scores, path = decoder(emission, length)
+- print(scores)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[2.57385254, 2.04533720])'
+- print(path)
+- Tensor(shape=[2, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 0],'
+- '[1, 1]])'
+8 api_shape: {}

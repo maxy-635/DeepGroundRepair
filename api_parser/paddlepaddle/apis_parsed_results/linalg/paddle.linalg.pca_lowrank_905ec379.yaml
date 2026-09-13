@@ -1,0 +1,35 @@
+2 api_name: paddle.linalg.pca_lowrank
+3 api_description: Computes a low-rank PCA approximation for a matrix or batch of
+  matrices.
+4 api_signature: paddle.linalg.pca_lowrank(x,q,center)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the input tensor to decompose, with shape [..., N, M] and float32 or
+    float64 dtype.
+- q: Sets an estimated rank for the low-rank approximation, typically slightly larger
+    than the true rank.
+- center: Controls whether to center the input tensor before performing PCA, defaulting
+    to True.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- x = paddle.randn((5, 5), dtype='float64')
+- U, S, V = paddle.linalg.pca_lowrank(x)
+- print(U)
+- Tensor(shape=[5, 5], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[ 0.80131563,  0.11962647,  0.27667179, -0.25891214,  0.44721360],'
+- '[-0.12642301,  0.69917551, -0.17899393,  0.51296394,  0.44721360],'
+- '[ 0.08997135, -0.69821706, -0.20059228,  0.51396579,  0.44721360],'
+- '[-0.23871837, -0.02815453, -0.59888153, -0.61932365,  0.44721360],'
+- '[-0.52614559, -0.09243040,  0.70179595, -0.14869394,  0.44721360]])'
+- print(S)
+- Tensor(shape=[5], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[2.60101614, 2.40554940, 1.49768346, 0.19064830, 0.00000000])'
+- print(V)
+- Tensor(shape=[5, 5], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[ 0.58339481, -0.17143771,  0.00522143,  0.57976310,  0.54231640],'
+- '[ 0.22334335,  0.72963474, -0.30148399, -0.39388750,  0.41438019],'
+- '[ 0.05416913,  0.34666487,  0.93549758,  0.00063507,  0.04162998],'
+- '[-0.39519094,  0.53074980, -0.16687419,  0.71175586, -0.16638919],'
+- '[-0.67131070, -0.19071018,  0.07795789, -0.04615811,  0.71046714]])'
+8 api_shape: {}

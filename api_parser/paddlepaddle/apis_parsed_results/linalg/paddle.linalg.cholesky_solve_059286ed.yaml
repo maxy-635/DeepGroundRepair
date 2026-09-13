@@ -1,0 +1,23 @@
+2 api_name: paddle.linalg.cholesky_solve
+3 api_description: Solves A @ X = B using the Cholesky factor of A and the right-hand
+  side matrix B.
+4 api_signature: paddle.linalg.cholesky_solve(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The right-hand side tensor containing one or more systems to solve, with shape
+    [*, M, K].
+- y: The triangular Cholesky factor tensor of the square matrix A used to solve the
+    system, with shape [*, M, M].
+7 api_usage_example:
+- import paddle
+- u = paddle.to_tensor([[1, 1, 1],
+- '                      [0, 2, 1],'
+- '                      [0, 0,-1]], dtype="float64")'
+- b = paddle.to_tensor([[0], [-9], [5]], dtype="float64")
+- out = paddle.linalg.cholesky_solve(b, u, upper=True)
+- print(out)
+- Tensor(shape=[3, 1], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[-2.50000000],'
+- '[-7.        ],'
+- '[ 9.50000000]])'
+8 api_shape: {}

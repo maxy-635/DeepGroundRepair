@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.forward_ad.UnpackedDualTensor
+3 api_description: Namedtuple holding the primal value and tangent of a dual tensor
+  returned by `unpack_dual()` for forward-mode automatic differentiation.
+4 api_signature: torch.autograd.forward_ad.UnpackedDualTensor(primal,tangent)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

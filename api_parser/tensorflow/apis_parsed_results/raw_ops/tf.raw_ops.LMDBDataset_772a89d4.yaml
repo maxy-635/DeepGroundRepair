@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.LMDBDataset
+3 api_description: Reads one or more LMDB database files and yields each stored key-value
+  pair as a pair of scalar string tensors, using the host machine’s LMDB file format.
+4 api_signature: tf.raw_ops.LMDBDataset(filenames,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies the scalar or vector of binary file names to read from the
+    LMDB dataset.
+- output_types: Defines the data types of the tensors that the operation will produce.
+- output_shapes: Defines the expected shapes of the output tensors.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

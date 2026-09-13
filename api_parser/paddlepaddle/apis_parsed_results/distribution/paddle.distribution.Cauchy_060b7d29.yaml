@@ -1,0 +1,22 @@
+2 api_name: paddle.distribution.Cauchy
+3 api_description: Represents the Cauchy (Cauchy–Lorentz) continuous probability distribution,
+  used to model heavy-tailed data and sample or evaluate distribution values.
+4 api_signature: paddle.distribution.Cauchy(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the distribution’s peak location.
+- scale: Sets the half-width at half-maximum and must be positive.
+7 api_usage_example:
+- import paddle
+- from paddle.distribution import Cauchy
+- '# init Cauchy with float'
+- rv = Cauchy(loc=0.1, scale=1.2)
+- print(rv.entropy())
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 2.71334577)
+- '# init Cauchy with N-Dim tensor'
+- rv = Cauchy(loc=paddle.to_tensor(0.1), scale=paddle.to_tensor([1.0, 2.0]))
+- print(rv.entropy())
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[2.53102422, 3.22417140])'
+8 api_shape: {}

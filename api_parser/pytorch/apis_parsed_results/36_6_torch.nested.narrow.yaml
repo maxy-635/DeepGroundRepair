@@ -1,0 +1,20 @@
+2 api_name: torch.nested.narrow
+3 api_description: Creates a nested tensor view from a strided tensor by narrowing
+  a chosen dimension to the slice [start, start + length), with per-row start and
+  length tensors also supported.
+4 api_signature: torch.nested.narrow(tensor,dim,start,length)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input strided tensor that supplies the data for the nested tensor, either
+    as the underlying storage for jagged layout or as copied data for strided layout.
+- dim: The dimension along which to apply `narrow`; only `dim=1` is valid for jagged
+    layout, while strided layout supports any dimension.
+- start: The index of the first element to include in the narrowed slice.
+- length: The number of elements to include in the narrowed slice.
+7 api_usage_example:
+- ' starts = torch.tensor([0, 1, 2, 3, 4], dtype=torch.int64)'
+- ' lengths = torch.tensor([3, 2, 2, 1, 5], dtype=torch.int64)'
+- ' narrow_base = torch.randn(5, 10, 20)'
+- ' nt_narrowed = torch.nested.narrow(narrow_base, 1, starts, lengths, layout=torch.jagged)'
+- ' nt_narrowed.is_contiguous()'
+8 api_shape: null

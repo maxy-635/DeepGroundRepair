@@ -1,0 +1,11 @@
+2 api_name: torch.nn.functional.hardswish
+3 api_description: Applies the element-wise hardswish activation function, which is
+  a smooth approximation of the ReLU6 function, to the input tensor.
+4 api_signature: torch.nn.functional.hardswish(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.wishart.Wishart.rsample
+3 api_description: Draws a differentiable sample from a Wishart distribution using
+  reparameterized sampling, returning a matrix-valued random variate with the specified
+  scale matrix and degrees of freedom.
+4 api_signature: rsample(sample_shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

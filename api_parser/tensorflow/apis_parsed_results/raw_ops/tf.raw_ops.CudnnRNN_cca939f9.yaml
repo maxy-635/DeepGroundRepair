@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.CudnnRNN
+3 api_description: Runs a cuDNN-accelerated RNN over a 3D input sequence using given
+  initial states and opaque packed parameters, producing the sequence outputs, final
+  hidden state, and final cell state for LSTM, with optional training reserve space.
+4 api_signature: tf.raw_ops.CudnnRNN(input,input_h,input_c,params,rnn_mode,input_mode,direction,is_training)
+5 api_details: ''
+6 api_parameters:
+- input: The input sequence tensor fed into the cuDNN RNN.
+- input_h: The initial hidden state tensor for the RNN.
+- input_c: The initial cell state tensor for the RNN, used by LSTM variants.
+- params: The packed learnable weight and bias parameters for the RNN.
+- rnn_mode: Selects the RNN cell type to use, such as LSTM, GRU, or vanilla RNN.
+- input_mode: Controls how input data is transformed before entering the recurrent
+    layer.
+- direction: Chooses whether the RNN runs in one direction or both directions.
+- is_training: Indicates whether the op is being run in training mode.
+7 api_usage_example: null
+8 api_shape: ''

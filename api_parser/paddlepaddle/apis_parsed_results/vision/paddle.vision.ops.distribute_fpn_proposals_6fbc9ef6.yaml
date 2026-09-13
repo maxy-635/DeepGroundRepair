@@ -1,0 +1,28 @@
+2 api_name: paddle.vision.ops.distribute_fpn_proposals
+3 api_description: Distributes proposals across FPN levels based on their scale, reference
+  scale, and reference level, and returns indices to restore the original proposal
+  order.
+4 api_signature: paddle.vision.ops.distribute_fpn_proposals(fpn_rois,min_level,max_level,refer_level,refer_scale,rois_num)
+5 api_details: ''
+6 api_parameters:
+- fpn_rois: Provides the proposal RoIs to be distributed across FPN levels.
+- min_level: Sets the lowest FPN level that can receive proposals.
+- max_level: Sets the highest FPN level that can receive proposals.
+- refer_level: Specifies the reference FPN level used to map proposal scale to a level.
+- refer_scale: Specifies the reference scale used together with the reference level
+    for level assignment.
+- rois_num: Supplies the number of RoIs per image and, if given, returns per-image
+    RoI counts for each level.
+7 api_usage_example:
+- import paddle
+- fpn_rois = paddle.rand((10, 4))
+- rois_num = paddle.to_tensor([3, 1, 4, 2], dtype=paddle.int32)
+- multi_rois, restore_ind, rois_num_per_level = paddle.vision.ops.distribute_fpn_proposals(
+- '    fpn_rois=fpn_rois,'
+- '    min_level=2,'
+- '    max_level=5,'
+- '    refer_level=4,'
+- '    refer_scale=224,'
+- '    rois_num=rois_num)'
+- '...'
+8 api_shape: {}

@@ -1,0 +1,15 @@
+2 api_name: torch.utils.benchmark.CallgrindStats.as_standardized
+3 api_description: Returns Callgrind function names normalized by stripping library
+  names and selected prefixes.
+4 api_signature: as_standardized()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 23234231 /tmp/first_build_dir/thing.c:foo(...)
+- ' 9823794 /tmp/first_build_dir/thing.c:bar(...)'
+- '  ...'
+- '   53453 .../aten/src/Aten/...:function_that_actually_changed(...)'
+- '  ...'
+- ' -9823794 /tmp/second_build_dir/thing.c:bar(...)'
+- -23234231 /tmp/second_build_dir/thing.c:foo(...)
+8 api_shape: null

@@ -1,0 +1,24 @@
+2 api_name: paddle.distributed.rpc.rpc_async
+3 api_description: Makes a non-blocking RPC call to execute a function on a remote
+  worker and returns immediately.
+4 api_signature: paddle.distributed.rpc.rpc_async(to,fn,args,kwargs,timeout)
+5 api_details: ''
+6 api_parameters:
+- to: Specifies which worker should receive and run the RPC.
+- fn: Specifies the callable to invoke on the destination worker.
+- args: Provides positional arguments to pass to the callable.
+- kwargs: Provides keyword arguments to pass to the callable.
+- timeout: Sets how long to wait for the RPC before raising a timeout error, with
+    nonpositive values meaning no timeout.
+7 api_usage_example:
+- '>>>'
+- import paddle.distributed.rpc as rpc
+- 'def add(a, b):'
+- '    return a + b'
+- rpc.init_rpc("worker0", rank=0, world_size=1,
+- '        master_endpoint="127.0.0.1:8003")'
+- fut = rpc.rpc_async("worker0", add, args=(2, 3))
+- print(fut.wait())
+- '5'
+- rpc.shutdown()
+8 api_shape: {}

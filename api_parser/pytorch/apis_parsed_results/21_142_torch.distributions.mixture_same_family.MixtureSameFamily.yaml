@@ -1,0 +1,31 @@
+2 api_name: torch.distributions.mixture_same_family.MixtureSameFamily
+3 api_description: Represents a batched mixture distribution where each component
+  comes from the same family; samples by choosing a mixture component from a categorical
+  distribution and evaluating the corresponding component distribution, with support
+  for computing log probabilities and related distribution properties.
+4 api_signature: MixtureSameFamily(mixture_distribution,component_distribution)
+5 api_details: ''
+6 api_parameters:
+- mixture_distribution: Selects which component to sample from by providing the categorical
+    probabilities over mixture components.
+- component_distribution: Defines the per-component distributions whose rightmost
+    batch dimension indexes the mixture components.
+7 api_usage_example:
+- ' # Construct Gaussian Mixture Model in 1D consisting of 5 equally'
+- ' # weighted normal distributions'
+- ' mix = D.Categorical(torch.ones(5,))'
+- ' comp = D.Normal(torch.randn(5,), torch.rand(5,))'
+- ' gmm = MixtureSameFamily(mix, comp)'
+- ' # Construct Gaussian Mixture Model in 2D consisting of 5 equally'
+- ' # weighted bivariate normal distributions'
+- ' mix = D.Categorical(torch.ones(5,))'
+- ' comp = D.Independent(D.Normal('
+- '...          torch.randn(5,2), torch.rand(5,2)), 1)'
+- ' gmm = MixtureSameFamily(mix, comp)'
+- ' # Construct a batch of 3 Gaussian Mixture Models in 2D each'
+- ' # consisting of 5 random weighted bivariate normal distributions'
+- ' mix = D.Categorical(torch.rand(3,5))'
+- ' comp = D.Independent(D.Normal('
+- '...         torch.randn(3,5,2), torch.rand(3,5,2)), 1)'
+- ' gmm = MixtureSameFamily(mix, comp)'
+8 api_shape: null

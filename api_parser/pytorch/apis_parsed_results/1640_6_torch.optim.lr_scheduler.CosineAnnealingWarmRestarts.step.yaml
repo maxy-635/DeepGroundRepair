@@ -1,0 +1,21 @@
+2 api_name: torch.optim.lr_scheduler.CosineAnnealingWarmRestarts.step
+3 api_description: Updates the learning rate using cosine annealing with periodic
+  warm restarts, and can be called after each batch update.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Optional epoch index used to step the scheduler to a specific point in the
+    cosine annealing cycle.
+7 api_usage_example:
+- ' scheduler = CosineAnnealingWarmRestarts(optimizer, T_0, T_mult)'
+- ' iters = len(dataloader)'
+- ' for epoch in range(20):'
+- '     for i, sample in enumerate(dataloader):'
+- '         inputs, labels = sample[''inputs''], sample[''labels'']'
+- '         optimizer.zero_grad()'
+- '         outputs = net(inputs)'
+- '         loss = criterion(outputs, labels)'
+- '         loss.backward()'
+- '         optimizer.step()'
+- '         scheduler.step(epoch + i / iters)'
+8 api_shape: null

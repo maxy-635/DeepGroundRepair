@@ -1,0 +1,14 @@
+2 api_name: torch.utils.data.random_split
+3 api_description: Randomly splits a dataset into non-overlapping subsets of specified
+  lengths.
+4 api_signature: torch.utils.data.random_split(dataset,lengths)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset to divide into separate subsets.
+- lengths: The sizes or proportions of the subsets to create.
+7 api_usage_example:
+- ' generator1 = torch.Generator().manual_seed(42)'
+- ' generator2 = torch.Generator().manual_seed(42)'
+- ' random_split(range(10), [3, 7], generator=generator1)'
+- ' random_split(range(30), [0.3, 0.3, 0.4], generator=generator2)'
+8 api_shape: null

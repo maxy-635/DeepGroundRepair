@@ -1,0 +1,22 @@
+2 api_name: tensorflow.tpu.experimental.embedding.Adagrad
+3 api_description: Configures TPU embedding training to use the Adagrad optimizer,
+  supplying the global optimization settings and parameters for sparse embedding updates.
+4 api_signature: tf.tpu.experimental.embedding.Adagrad(learning_rate,initial_accumulator_value,use_gradient_accumulation,clip_weight_min,clip_weight_max,weight_decay_factor,clipvalue)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update the embedding weights, either as
+    a fixed float or a no-argument callable for a dynamic value.
+- initial_accumulator_value: Initializes Adagrad’s accumulator value used to scale
+    future updates.
+- use_gradient_accumulation: Chooses whether to accumulate embedding gradients for
+    more accurate updates or disable it for faster, less accurate computation.
+- clip_weight_min: Sets the lower bound for clipping embedding weights, or leaves
+    the lower side unclipped when set to `None`.
+- clip_weight_max: Sets the upper bound for clipping embedding weights, or leaves
+    the upper side unclipped when set to `None`.
+- weight_decay_factor: Applies weight decay at the specified rate, or disables weight
+    decay when set to `None`.
+- clipvalue: Limits gradient magnitude by clipping to a positive scalar or to a specified
+    `(min, max)` range.
+7 api_usage_example: null
+8 api_shape: ''

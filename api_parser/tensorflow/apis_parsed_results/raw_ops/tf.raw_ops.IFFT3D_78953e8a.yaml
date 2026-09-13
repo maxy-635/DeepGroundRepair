@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.IFFT3D
+3 api_description: Computes the inverse 3D discrete Fourier transform over the innermost
+  three dimensions of the input tensor.
+4 api_signature: tf.raw_ops.IFFT3D(input)
+5 api_details: ''
+6 api_parameters:
+- input: The complex-valued 3D tensor to transform from the frequency domain back
+    to the spatial domain.
+7 api_usage_example: null
+8 api_shape: ''

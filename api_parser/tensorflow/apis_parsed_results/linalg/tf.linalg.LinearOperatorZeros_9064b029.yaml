@@ -1,0 +1,14 @@
+2 api_name: tensorflow.linalg.LinearOperatorZeros
+3 api_description: Represents a batch zero matrix as a LinearOperator, with configurable
+  rows, optional columns, batch shape, and dtype, and supports broadcasting without
+  materializing the matrix.
+4 api_signature: tf.linalg.LinearOperatorZeros(num_rows,num_columns,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- num_rows: Specifies the number of rows in the zero matrix.
+- num_columns: Specifies the number of columns in the zero matrix, defaulting to `num_rows`
+    when omitted.
+- dtype: Specifies the data type of the zero matrix represented by the operator.
+- name: Specifies the name used to identify the `LinearOperator`.
+7 api_usage_example: null
+8 api_shape: ''

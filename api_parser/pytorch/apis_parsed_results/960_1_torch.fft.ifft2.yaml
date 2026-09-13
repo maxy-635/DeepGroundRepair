@@ -1,0 +1,15 @@
+2 api_name: torch.fft.ifft2
+3 api_description: Computes the inverse 2D discrete Fourier transform of the input,
+  applying an IFFT to the last two dimensions by default.
+4 api_signature: torch.fft.ifft2(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to transform.
+- s: Specifies the output size for the transformed dimensions, with padding or trimming
+    applied as needed.
+- dim: Specifies which dimensions to apply the inverse FFT over.
+- norm: Sets the normalization method used for the inverse transform.
+7 api_usage_example:
+- ' x = torch.rand(10, 10, dtype=torch.complex64)'
+- ' ifft2 = torch.fft.ifft2(x)'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.divide_no_nan
+3 api_description: Safely divides x by y, returning 0 when the denominator is 0, even
+  if x is nonfinite.
+4 api_signature: tf.math.divide_no_nan(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The numerator tensor to be divided.
+- y: The denominator tensor that is used to divide `x` without producing NaNs when
+    it is zero.
+7 api_usage_example:
+- tf.math.divide_no_nan(np.nan, 0.0)
+8 api_shape: ''

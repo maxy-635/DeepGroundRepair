@@ -1,0 +1,15 @@
+2 api_name: torch.autograd.grad
+3 api_description: Computes the summed gradients of outputs with respect to the specified
+  inputs.
+4 api_signature: torch.autograd.grad(outputs,inputs,grad_outputs,retain_graph,create_graph,allow_unused)
+5 api_details: ''
+6 api_parameters:
+- outputs: The tensors produced by the function whose gradients you want to compute.
+- inputs: The tensors with respect to which gradients are calculated and returned.
+- grad_outputs: The gradient values supplied for each output in the vector-Jacobian
+    product.
+- retain_graph: Keeps the computation graph after backward so it can be reused.
+- create_graph: Builds a derivative graph so higher-order gradients can be computed.
+- allow_unused: Controls whether unused inputs are allowed or treated as an error.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.MatrixDiagPartV2
+3 api_description: Extracts one or more specified diagonals from each batch of an
+  input tensor and returns them as a tensor, preserving batch dimensions and packing
+  the selected diagonal values into the last dimension.
+4 api_signature: tf.raw_ops.MatrixDiagPartV2(input,k,padding_value)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor from which the specified diagonal band is extracted.
+- k: The diagonal offset or offset range that selects which diagonal(s) to return.
+- padding_value: The value used to fill positions outside the requested diagonal band.
+7 api_usage_example: null
+8 api_shape: ''

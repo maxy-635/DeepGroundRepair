@@ -1,0 +1,19 @@
+2 api_name: torch.cdist
+3 api_description: Computes the batched p-norm distances between every pair of row
+  vectors in two input collections.
+4 api_signature: torch.cdist(x1,x2,p)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input tensor containing points in its second-to-last dimension and
+    feature vectors in its last dimension.
+- x2: The second input tensor containing points in its second-to-last dimension and
+    feature vectors in its last dimension, with the same feature size as `x1`.
+- p: The norm degree used to compute the pairwise distance between vectors, ranging
+    from 0 to infinity.
+7 api_usage_example:
+- ' a = torch.tensor([[0.9041, 0.0196], [-0.3108, -2.4423], [-0.4821, 1.059]])'
+- ' a'
+- ' b = torch.tensor([[-2.1763, -0.4713], [-0.6986, 1.3702]])'
+- ' b'
+- ' torch.cdist(a, b, p=2)'
+8 api_shape: null

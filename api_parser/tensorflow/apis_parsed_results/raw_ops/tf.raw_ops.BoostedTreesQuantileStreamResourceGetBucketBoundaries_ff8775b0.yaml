@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesQuantileStreamResourceGetBucketBoundaries
+3 api_description: Returns per-feature 1D float tensors of bucket boundaries computed
+  from accumulated quantile summaries in a boosted trees quantile stream resource.
+4 api_signature: tf.raw_ops.BoostedTreesQuantileStreamResourceGetBucketBoundaries(quantile_stream_resource_handle,num_features)
+5 api_details: ''
+6 api_parameters:
+- quantile_stream_resource_handle: Resource handle to the QuantileStreamResource whose
+    bucket boundaries are being retrieved.
+- num_features: Number of features to return bucket boundaries for; must be a non-negative
+    integer.
+7 api_usage_example: null
+8 api_shape: ''

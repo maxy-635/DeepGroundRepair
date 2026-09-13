@@ -1,0 +1,11 @@
+2 api_name: torch.package.PackageImporter.file_structure
+3 api_description: Returns a representation of the packaged zipfile’s file structure,
+  showing the contents and layout of files inside the package.
+4 api_signature: file_structure(*,include,exclude)
+5 api_details: ''
+6 api_parameters:
+- include: Specifies which package, file names, or glob pattern to include in the
+    zipfile structure.
+- exclude: Specifies a pattern for omitting matching files from the zipfile structure.
+7 api_usage_example: null
+8 api_shape: null

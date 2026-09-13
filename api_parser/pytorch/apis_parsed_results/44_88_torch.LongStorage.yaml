@@ -1,0 +1,8 @@
+2 api_name: torch.LongStorage
+3 api_description: Legacy storage object for 64-bit integer tensor data, used to hold
+  and manage LongTensor memory and size information.
+4 api_signature: torch.LongStorage(*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

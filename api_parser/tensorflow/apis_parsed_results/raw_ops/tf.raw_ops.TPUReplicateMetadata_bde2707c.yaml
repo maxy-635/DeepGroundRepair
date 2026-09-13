@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.TPUReplicateMetadata
+3 api_description: Describes the replication metadata for a TPU computation subgraph,
+  specifying how a tpu.replicate() computation should be executed across TPU replicas.
+4 api_signature: tf.raw_ops.TPUReplicateMetadata(num_replicas,num_cores_per_replica,topology,use_tpu,device_assignment)
+5 api_details: ''
+6 api_parameters:
+- num_replicas: Sets how many replicas of the computation to run.
+- num_cores_per_replica: Sets how many TPU cores each replica uses, supporting model
+    parallelism.
+- topology: Provides the TPU pod slice topology information as a serialized string.
+- use_tpu: Specifies whether the computation should be placed on the TPU.
+- device_assignment: Defines the TPU device assignment for the computation.
+7 api_usage_example: null
+8 api_shape: ''

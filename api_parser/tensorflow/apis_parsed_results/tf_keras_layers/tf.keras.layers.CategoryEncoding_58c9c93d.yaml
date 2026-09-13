@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.layers.CategoryEncoding
+3 api_description: The tf.keras.layers.CategoryEncoding layer encodes integer features
+  into a dense or sparse categorical representation, requiring prior knowledge of
+  the total number of tokens.
+4 api_signature: tf.keras.layers.CategoryEncoding(num_tokens, output_mode)
+5 api_details: ''
+6 api_parameters:
+- num_tokens: Specifies the maximum integer value that can be input to the layer,
+    determining the size of the token space.
+- output_mode: Defines the format of the output from the layer, allowing for different
+    encoding schemes such as one-hot, multi-hot, or count.
+7 api_usage_example:
+- layer = keras.layers.CategoryEncoding(
+- '          num_tokens=4, output_mode="count")'
+- count_weights = np.array([[.1, .2], [.1, .1], [.2, .3], [.4, .2]])
+- layer([[0, 1], [0, 0], [1, 2], [3, 1]], count_weights=count_weights)
+8 api_shape: null

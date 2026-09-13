@@ -1,0 +1,11 @@
+2 api_name: torch.special.i0e
+3 api_description: Computes the exponentially scaled zeroth-order modified Bessel
+  function of the first kind for each element in the input.
+4 api_signature: torch.special.i0e(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose exponentially scaled modified Bessel function of the first
+    kind, order 0, is computed elementwise.
+7 api_usage_example:
+- ' torch.special.i0e(torch.arange(5, dtype=torch.float32))'
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: torch.autograd.profiler.KinetoStepTracker
+3 api_description: Tracks and increments a global step counter for Kineto profiling,
+  providing a shared abstraction for step progression across autograd profiling sessions.
+4 api_signature: class torch.autograd.profiler.KinetoStepTracker
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '{'
+- '   "ProfilerStep": 100,  # triggered by profiler step() call'
+- '   "Optimizer1Step": 100,   # Optimizer 1 or 2 are just examples, could be SGD,
+  Adam etc'
+- '   "Optimizer2Step": 100,'
+- '}'
+8 api_shape: null

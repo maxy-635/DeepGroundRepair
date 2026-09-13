@@ -1,0 +1,8 @@
+2 api_name: torch.package.PackageExporter.add_dependency
+3 api_description: Adds a module and its matching dependencies to the package dependency
+  graph based on user-specified patterns.
+4 api_signature: add_dependency(module_name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: torch.nn.utils.prune.remove
+3 api_description: Permanently removes pruning reparameterization from a module and
+  restores the pruned parameter as a regular parameter.
+4 api_signature: torch.nn.utils.prune.remove(module,name)
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the parameter or tensor to be removed from pruning.
+- name: The name of the parameter within the module whose pruning reparameterization
+    will be removed.
+7 api_usage_example:
+- ' m = random_unstructured(nn.Linear(5, 7), name="weight", amount=0.2)'
+- ' m = remove(m, name="weight")'
+8 api_shape: null

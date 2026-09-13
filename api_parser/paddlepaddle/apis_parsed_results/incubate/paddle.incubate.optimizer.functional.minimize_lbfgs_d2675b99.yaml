@@ -1,0 +1,37 @@
+2 api_name: paddle.incubate.optimizer.functional.minimize_lbfgs
+3 api_description: Minimizes a differentiable function using the L-BFGS quasi-Newton
+  optimization method for unconstrained problems.
+4 api_signature: paddle.incubate.optimizer.functional.minimize_lbfgs(objective_func,initial_position,history_size,max_iters,tolerance_grad,tolerance_change,line_search_fn,dtype)
+5 api_details: ''
+6 api_parameters:
+- objective_func: Defines the scalar-valued function to be minimized.
+- initial_position: Provides the starting point for the optimization search.
+- history_size: Sets how many past correction vector pairs are retained for L-BFGS
+    updates.
+- max_iters: Limits the maximum number of optimization iterations.
+- tolerance_grad: Stops when the gradient norm falls below the specified threshold.
+- tolerance_change: Stops when successive changes in loss, parameters, or position
+    become too small.
+- line_search_fn: Chooses the line search strategy used to find each update step.
+- dtype: Specifies the numeric precision used by the optimizer and input tensor.
+7 api_usage_example:
+- '# Example1: 1D Grid Parameters'
+- import paddle
+- '# Randomly simulate a batch of input data'
+- inputs = paddle. normal(shape=(100, 1))
+- labels = inputs * 2.0
+- '# define the loss function'
+- 'def loss(w):'
+- '    y = w * inputs'
+- '    return paddle.nn.functional.square_error_cost(y, labels).mean()'
+- '# Initialize weight parameters'
+- w = paddle.normal(shape=(1,))
+- '# Call the bfgs method to solve the weight that makes the loss the smallest, and
+  update the parameters'
+- 'for epoch in range(0, 10):'
+- '    # Call the bfgs method to optimize the loss, note that the third parameter
+  returned represents the weight'
+- '    w_update = paddle.incubate.optimizer.functional.minimize_bfgs(loss, w)[2]'
+- '    # Use paddle.assign to update parameters in place'
+- '    paddle.assign(w_update, w)'
+8 api_shape: {}

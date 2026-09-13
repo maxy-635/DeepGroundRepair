@@ -1,0 +1,11 @@
+2 api_name: torch.optim.lr_scheduler.ReduceLROnPlateau.step
+3 api_description: Adjusts the learning rate when a monitored metric stops improving,
+  reducing it by a factor after a plateau is detected.
+4 api_signature: '"step(epoch)"'
+5 api_details: ''
+6 api_parameters:
+- metrics: The quantity being monitored to decide whether learning rate reduction
+    is needed.
+- epoch: The current epoch number, used as an optional timestamp for the step call.
+7 api_usage_example: null
+8 api_shape: null

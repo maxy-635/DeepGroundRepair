@@ -1,0 +1,33 @@
+2 api_name: torch.linalg.norm
+3 api_description: Computes a vector or matrix norm, returning a measure of magnitude
+  based on the specified norm type.
+4 api_signature: torch.linalg.norm(A,ord,dim)
+5 api_details: ''
+6 api_parameters:
+- A: Input tensor whose vector or matrix norm is computed.
+- ord: Specifies which norm order to use.
+- dim: Selects the tensor dimensions over which to compute the norm.
+7 api_usage_example:
+- ' from torch import linalg as LA'
+- ' a = torch.arange(9, dtype=torch.float) - 4'
+- ' a'
+- ' B = a.reshape((3, 3))'
+- ' B'
+- ' LA.norm(a)'
+- ' LA.norm(B)'
+- ' LA.norm(B, ''fro'')'
+- ' LA.norm(a, float(''inf''))'
+- ' LA.norm(B, float(''inf''))'
+- ' LA.norm(a, -float(''inf''))'
+- ' LA.norm(B, -float(''inf''))'
+- ' LA.norm(a, 1)'
+- ' LA.norm(B, 1)'
+- ' LA.norm(a, -1)'
+- ' LA.norm(B, -1)'
+- ' LA.norm(a, 2)'
+- ' LA.norm(B, 2)'
+- ' LA.norm(a, -2)'
+- ' LA.norm(B.double(), -2)'
+- ' LA.norm(a, 3)'
+- ' LA.norm(a, -3)'
+8 api_shape: null

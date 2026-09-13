@@ -1,0 +1,9 @@
+2 api_name: torch.optim.Rprop.step
+3 api_description: Performs one Rprop optimization step by updating each parameter
+  using the sign of its gradient and adapting per-parameter step sizes.
+4 api_signature: step(closure)
+5 api_details: ''
+6 api_parameters:
+- closure: Recomputes the model and returns the current loss for the optimizer step.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.UniformDequantize
+3 api_description: Converts quantized tensor values back to approximate floating-point
+  values using the provided scale and zero point.
+4 api_signature: tf.raw_ops.UniformDequantize(input,scales,zero_points,Tout)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized tensor to be dequantized, with values stored as qint8 or qint32.
+- scales: The scale value(s) used to convert quantized values back to floating-point,
+    either per-tensor or per-axis.
+- zero_points: The zero-point value(s) paired with `scales` to reverse the quantization
+    offset, either per-tensor or per-axis.
+- Tout: The output dtype to produce, specified as `tf.float32`.
+7 api_usage_example: null
+8 api_shape: ''

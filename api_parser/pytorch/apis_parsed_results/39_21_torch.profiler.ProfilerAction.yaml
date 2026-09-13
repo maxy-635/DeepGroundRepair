@@ -1,0 +1,8 @@
+2 api_name: torch.profiler.ProfilerAction
+3 api_description: Enum of profiler control actions that determine whether to wait,
+  warm up, record, or stop profiling at a given interval.
+4 api_signature: class torch.profiler.ProfilerAction(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

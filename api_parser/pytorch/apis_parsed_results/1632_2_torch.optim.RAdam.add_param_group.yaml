@@ -1,0 +1,10 @@
+2 api_name: torch.optim.RAdam.add_param_group
+3 api_description: Add a new parameter group to the optimizer so its parameters and
+  settings are tracked and updated during optimization.
+4 api_signature: add_param_group(param_group)
+5 api_details: ''
+6 api_parameters:
+- param_group: Defines the set of tensors to optimize and any options specific to
+    that parameter group.
+7 api_usage_example: null
+8 api_shape: null

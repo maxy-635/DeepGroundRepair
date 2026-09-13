@@ -1,0 +1,8 @@
+2 api_name: paddle.nn.ParameterList
+3 api_description: paddle.nn.ParameterList is a container for managing a list of parameters,
+  allowing for easy storage and manipulation of model parameters in PaddlePaddle.
+4 api_signature: paddle.nn.ParameterList(parameters)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

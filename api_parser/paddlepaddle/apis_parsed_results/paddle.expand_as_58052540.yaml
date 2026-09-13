@@ -1,0 +1,19 @@
+2 api_name: paddle.expand_as
+3 api_description: Expands tensor x to match the shape of tensor y without copying
+  data.
+4 api_signature: paddle.expand_as(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values will be expanded, with supported data types bool, float32,
+    float64, int32, or int64.
+- y: Tensor providing the target shape used to expand `x`.
+7 api_usage_example:
+- import paddle
+- data_x = paddle.to_tensor([1, 2, 3], 'int32')
+- data_y = paddle.to_tensor([[1, 2, 3], [4, 5, 6]], 'int32')
+- out = paddle.expand_as(data_x, data_y)
+- print(out)
+- Tensor(shape=[2, 3], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[1, 2, 3],'
+- '[1, 2, 3]])'
+8 api_shape: {}

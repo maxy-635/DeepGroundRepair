@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.dtensor.unpack
+3 api_description: Splits a DTensor into its local tf.Tensor components, reversing
+  packing so each piece can be inspected or used independently.
+4 api_signature: tf.experimental.dtensor.unpack(tensor)
+5 api_details: ''
+6 api_parameters:
+- tensor: The DTensor to be split into its component local tensors.
+7 api_usage_example: null
+8 api_shape: ''

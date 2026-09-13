@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.moments
+3 api_description: Computes the mean and variance of a tensor by aggregating its values
+  across the specified axes.
+4 api_signature: tf.keras.ops.moments(x,axes,keepdims)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose mean and variance are computed.
+- axes: The axes to reduce over when calculating the mean and variance.
+- keepdims: Whether to keep the reduced axes as size-one dimensions in the output.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([0, 1, 2, 3, 100], dtype="float32")
+- keras.ops.moments(x, axes=[0])
+8 api_shape: ''

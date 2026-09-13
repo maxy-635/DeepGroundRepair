@@ -1,0 +1,20 @@
+2 api_name: torch.optim.lr_scheduler.MultiStepLR
+3 api_description: Reduces each parameter group's learning rate by gamma at specified
+  epoch milestones.
+4 api_signature: torch.optim.lr_scheduler.MultiStepLR(optimizer,milestones,gamma)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be adjusted by the scheduler.
+- milestones: The sorted epoch indices at which to decay the learning rate.
+- gamma: The factor by which to multiply the learning rate at each milestone.
+7 api_usage_example:
+- ' # Assuming optimizer uses lr = 0.05 for all groups'
+- ' # lr = 0.05     if epoch < 30'
+- ' # lr = 0.005    if 30 <= epoch < 80'
+- ' # lr = 0.0005   if epoch >= 80'
+- ' scheduler = MultiStepLR(optimizer, milestones=[30, 80], gamma=0.1)'
+- ' for epoch in range(100):'
+- '     train(...)'
+- '     validate(...)'
+- '     scheduler.step()'
+8 api_shape: null

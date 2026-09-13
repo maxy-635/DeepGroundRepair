@@ -1,0 +1,40 @@
+2 api_name: paddle.nanmedian
+3 api_description: Computes the median along a specified axis while ignoring NaN values.
+4 api_signature: paddle.nanmedian(x,axis,keepdim)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are used to compute the median.
+- axis: The axis or axes along which to compute the median, or all elements if None.
+- keepdim: Whether to keep the reduced dimensions in the output as size 1.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[float('nan'), 2. , 3. ], [0. , 1. , 2. ]])
+- y1 = x.nanmedian()
+- print(y1.numpy())
+- '2.0'
+- y2 = x.nanmedian(0)
+- print(y2.numpy())
+- '[0.  1.5 2.5]'
+- y3 = x.nanmedian(0, keepdim=True)
+- print(y3.numpy())
+- '[[0.  1.5 2.5]]'
+- y4 = x.nanmedian((0, 1))
+- print(y4.numpy())
+- '2.0'
+- y5 = x.nanmedian(mode='min')
+- print(y5.numpy())
+- '2.0'
+- y6, y6_index = x.nanmedian(0, mode='min')
+- print(y6.numpy())
+- '[0. 1. 2.]'
+- print(y6_index.numpy())
+- '[1 1 1]'
+- y7, y7_index = x.nanmedian(1, mode='min')
+- print(y7.numpy())
+- '[2. 1.]'
+- print(y7_index.numpy())
+- '[1 1]'
+- y8 = x.nanmedian((0,1), mode='min')
+- print(y8.numpy())
+- '2.0'
+8 api_shape: {}

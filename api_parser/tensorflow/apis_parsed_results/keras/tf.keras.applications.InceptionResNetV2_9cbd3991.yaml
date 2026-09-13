@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.applications.InceptionResNetV2
+3 api_description: Builds the Inception-ResNet v2 image classification model, optionally
+  with ImageNet pretrained weights, for classification or transfer learning.
+4 api_signature: tf.keras.applications.InceptionResNetV2(weights,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- weights: Specifies whether to use random initialization, pretrained ImageNet weights,
+    or a custom weights file.
+- input_shape: Sets the model input dimensions when `include_top` is False, using
+    a 3-channel image size of at least 75×75.
+- classes: Defines the number of output classes when `include_top` is True and no
+    pretrained weights are being loaded.
+7 api_usage_example: null
+8 api_shape: ''

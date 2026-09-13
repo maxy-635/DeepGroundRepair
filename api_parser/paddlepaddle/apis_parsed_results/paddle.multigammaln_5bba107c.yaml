@@ -1,0 +1,19 @@
+2 api_name: paddle.multigammaln
+3 api_description: Computes the log multivariate gamma function (generalized gamma)
+  for a given input and dimension.
+4 api_signature: paddle.multigammaln(x,p)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the multivariate log-gamma
+    function.
+- p: The integration-space dimension that determines how many gamma terms are included.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([2.5, 3.5, 4, 6.5, 7.8, 10.23, 34.25])
+- p = 2
+- out = paddle.multigammaln(x, p)
+- print(out)
+- Tensor(shape=[7], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.85704780  , 2.46648574  , 3.56509781  , 11.02241898 , 15.84497833 ,'
+- 26.09257698 , 170.68318176])
+8 api_shape: {}

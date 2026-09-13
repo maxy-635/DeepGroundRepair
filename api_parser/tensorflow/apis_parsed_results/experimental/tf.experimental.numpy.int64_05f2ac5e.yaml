@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.int64
+3 api_description: 64-bit signed integer scalar type for TensorFlow NumPy, compatible
+  with Python int and C long, representing whole numbers with standard scalar/array
+  attributes.
+4 api_signature: tf.experimental.numpy.int64
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

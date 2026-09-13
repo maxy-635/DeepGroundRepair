@@ -1,0 +1,7 @@
+2 api_name: tensorflow.keras.backend.concatenate
+3 api_description: Joins a list of tensors along a specified axis into a single tensor.
+4 api_signature: tf.keras.backend.concatenate(tensors,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

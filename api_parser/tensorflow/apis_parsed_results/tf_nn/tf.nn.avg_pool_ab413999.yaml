@@ -1,0 +1,17 @@
+2 api_name: tensorflow.nn.avg_pool
+3 api_description: tensorflow.nn.avg_pool performs average pooling on input data,
+  computing the mean for each window defined by ksize.
+4 api_signature: tf.nn.avg_pool(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor with a rank of N+2, indicating the shape based
+    on batch size, spatial dimensions, and number of channels, with format dependent
+    on the data_format parameter.
+- ksize: Defines the size of the pooling window for each dimension of the input tensor,
+    either as a single integer or a list of integers with length 1, N, or N+2.
+- strides: Determines the stride of the sliding window for each dimension of the input
+    tensor, given as a single integer or a list of integers with length 1, N, or N+2.
+- padding: Specifies the padding algorithm to use, either 'VALID' for no padding or
+    'SAME' for padding to maintain the input size.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,25 @@
+2 api_name: paddle.amp.GradScaler
+3 api_description: Controls automatic loss scaling for mixed-precision training in
+  dynamic graph mode to reduce numerical overflow, with methods to scale/unscale losses,
+  perform optimizer steps or minimization, and update scaling parameters.
+4 api_signature: paddle.amp.GradScaler(enable,init_loss_scaling,use_dynamic_loss_scaling)
+5 api_details: ''
+6 api_parameters:
+- enable: Turns loss scaling on or off.
+- init_loss_scaling: Sets the starting value for the loss scaling factor.
+- use_dynamic_loss_scaling: Chooses between dynamically adjusting loss scaling and
+    using a fixed value.
+7 api_usage_example:
+- import paddle
+- model = paddle.nn.Conv2D(3, 2, 3, bias_attr=True)
+- optimizer = paddle.optimizer.SGD(learning_rate=0.01, parameters=model.parameters())
+- scaler = paddle.amp.GradScaler(init_loss_scaling=1024)
+- data = paddle.rand([10, 3, 32, 32])
+- 'with paddle.amp.auto_cast():'
+- '    conv = model(data)'
+- '    loss = paddle.mean(conv)'
+- 'scaled = scaler.scale(loss)  # scale the loss'
+- 'scaled.backward()            # do backward'
+- 'scaler.minimize(optimizer, scaled)  # update parameters'
+- optimizer.clear_grad()
+8 api_shape: {}

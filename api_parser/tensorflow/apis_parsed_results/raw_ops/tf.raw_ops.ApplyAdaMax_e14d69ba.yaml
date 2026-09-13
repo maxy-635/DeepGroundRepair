@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.ApplyAdaMax
+3 api_description: Applies the AdaMax optimization update to a variable using the
+  current gradient, maintaining exponentially decayed first-moment and max-norm accumulators
+  to adjust the variable with bias-corrected adaptive learning.
+4 api_signature: tf.raw_ops.ApplyAdaMax(var,m,v,grad,lr,beta1,beta2,epsilon)
+5 api_details: ''
+6 api_parameters:
+- var: The model variable to be updated in place.
+- m: The first-moment accumulator used by AdaMax.
+- v: The exponentially weighted infinity-norm accumulator used by AdaMax.
+- lr: The learning rate that scales the update step.
+- beta1: The decay rate for the first-moment estimate.
+- beta2: The decay rate for the infinity-norm estimate.
+- epsilon: A small constant added for numerical stability.
+- grad: The gradient used to compute the parameter update.
+7 api_usage_example: null
+8 api_shape: ''

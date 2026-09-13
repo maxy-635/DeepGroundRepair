@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.losses.CosineSimilarity
+3 api_description: Computes cosine similarity between `y_true` and `y_pred` as a loss,
+  returning values from -1 to 1 where closer to -1 means greater similarity; zero
+  vectors always yield 0.
+4 api_signature: tf.keras.losses.CosineSimilarity(axis)
+5 api_details: ''
+6 api_parameters:
+- axis: Sets the features axis along which cosine similarity is computed.
+7 api_usage_example: null
+8 api_shape: ''

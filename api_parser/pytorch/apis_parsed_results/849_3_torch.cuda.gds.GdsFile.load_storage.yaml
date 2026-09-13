@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.gds.GdsFile.load_storage
+3 api_description: Loads data from a GDS file directly into the provided storage.
+4 api_signature: '"load_storage(storage)"'
+5 api_details: ''
+6 api_parameters:
+- storage: The storage object that receives the loaded data.
+7 api_usage_example: null
+8 api_shape: null

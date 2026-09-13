@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.FilterByLastComponentDataset
+3 api_description: Returns a dataset of the first components from input elements whose
+  last component is true.
+4 api_signature: tf.raw_ops.FilterByLastComponentDataset(input_dataset)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be filtered by the last component of each element.
+7 api_usage_example: null
+8 api_shape: ''

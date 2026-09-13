@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.normalize
+3 api_description: torch.nn.functional.normalize performs Lp normalization on input
+  tensors along a specified dimension, scaling the tensor's elements to have unit
+  norm.
+4 api_signature: torch.nn.functional.normalize(input,p,dim)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor that will be normalized.
+- p: Defines the exponent value used in computing the norm, determining the type of
+    norm (e.g., L1, L2).
+- dim: Indicates the dimension along which the normalization is applied.
+7 api_usage_example: null
+8 api_shape: null

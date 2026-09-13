@@ -1,0 +1,33 @@
+2 api_name: paddle.cartesian_prod
+3 api_description: Computes the Cartesian product of input tensors, returning all
+  possible combinations of their elements as tensors.
+4 api_signature: paddle.cartesian_prod(x)
+5 api_details: ''
+6 api_parameters:
+- x: One or more 1-D input tensors whose Cartesian product is computed.
+7 api_usage_example:
+- import paddle
+- a = paddle.to_tensor([1, 2, 3], dtype='int32')
+- b = paddle.to_tensor([5, 6], dtype='int32')
+- res = paddle.cartesian_prod([a, b])
+- print(res)
+- Tensor(shape=[6, 2], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[1, 5],'
+- '[1, 6],'
+- '[2, 5],'
+- '[2, 6],'
+- '[3, 5],'
+- '[3, 6]])'
+- c = paddle.to_tensor([7, 8, 9], dtype='float32')
+- res = paddle.cartesian_prod([c])
+- print(res)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[7., 8., 9.])'
+- d = paddle.empty([0], dtype='float64')
+- e = paddle.to_tensor([1, 2], dtype='float64')
+- f = paddle.to_tensor([3, 4, 5, 6, 7], dtype='float64')
+- res = paddle.cartesian_prod([d, e, f])
+- print(res)
+- Tensor(shape=[0, 3], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[])'
+8 api_shape: {}

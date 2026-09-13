@@ -1,0 +1,9 @@
+2 api_name: torch.Stream.synchronize
+3 api_description: Blocks until all kernels queued on the stream have finished executing.
+4 api_signature: '"synchronize()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' s_cuda = torch.Stream(device=''cuda'')'
+- ' s_cuda.synchronize()'
+8 api_shape: null

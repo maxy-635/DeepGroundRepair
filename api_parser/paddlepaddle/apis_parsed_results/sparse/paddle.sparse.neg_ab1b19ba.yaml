@@ -1,0 +1,16 @@
+2 api_name: paddle.sparse.neg
+3 api_description: Returns the elementwise negation of a sparse COO or CSR tensor.
+4 api_signature: paddle.sparse.neg(x)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse tensor whose values are negated elementwise.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2, 0, 3], dtype='float32')
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.neg(sparse_x)
+- out
+- Tensor(shape=[3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 2]],
+- values=[ 2., -3.])
+8 api_shape: {}

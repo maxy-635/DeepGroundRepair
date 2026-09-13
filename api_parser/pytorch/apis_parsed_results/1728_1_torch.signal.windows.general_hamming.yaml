@@ -1,0 +1,13 @@
+2 api_name: torch.signal.windows.general_hamming
+3 api_description: Computes a generalized Hamming window for a specified length and
+  parameters.
+4 api_signature: torch.signal.windows.general_hamming(M,alpha,sym)
+5 api_details: ''
+6 api_parameters:
+- M: Specifies the number of points in the returned window.
+7 api_usage_example:
+- ' # Generates a symmetric Hamming window with the general Hamming window.'
+- ' torch.signal.windows.general_hamming(10, sym=True)'
+- ' # Generates a periodic Hann window with the general Hamming window.'
+- ' torch.signal.windows.general_hamming(10, alpha=0.5, sym=False)'
+8 api_shape: null

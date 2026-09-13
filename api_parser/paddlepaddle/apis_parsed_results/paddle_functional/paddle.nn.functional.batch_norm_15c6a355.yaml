@@ -1,0 +1,32 @@
+2 api_name: paddle.nn.functional.batch_norm
+3 api_description: The paddle.nn.functional.batch_norm API normalizes input data across
+  the batch dimension to improve training stability and performance by reducing internal
+  covariate shift.
+4 api_signature: paddle.nn.functional.batch_norm(x,running_mean,running_var)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor for batch normalization, must be of type float32 or float64.
+- running_mean: Tensor that stores the running mean, used during inference.
+- running_var: Tensor that stores the running variance, used during inference.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(12, dtype="float32").reshape([2, 1, 2, 3])
+- print(x)
+- Tensor(shape=[2, 1, 2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0. , 1. , 2. ],'
+- '[3. , 4. , 5. ]]],'
+- '[[[6. , 7. , 8. ],'
+- '[9. , 10., 11.]]]])'
+- running_mean = paddle.to_tensor([0], dtype="float32")
+- running_variance = paddle.to_tensor([1], dtype="float32")
+- weight = paddle.to_tensor([2], dtype="float32")
+- bias = paddle.to_tensor([1], dtype="float32")
+- batch_norm_out = paddle.nn.functional.batch_norm(x, running_mean,
+- '                                            running_variance, weight, bias)'
+- print(batch_norm_out)
+- Tensor(shape=[2, 1, 2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[1.         , 2.99998999 , 4.99997997 ],'
+- '[6.99996948 , 8.99995995 , 10.99994946]]],'
+- '[[[12.99993896, 14.99992943, 16.99991989],'
+- '[18.99990845, 20.99989891, 22.99988937]]]])'
+8 api_shape: null

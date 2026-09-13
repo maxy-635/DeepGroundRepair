@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.layers.Lambda
+3 api_description: The tf.keras.layers.Lambda layer allows users to wrap arbitrary
+  expressions as a Layer object, facilitating the inclusion of custom operations in
+  Sequential and Functional API models, ideal for simple tasks and experimentation.
+4 api_signature: tf.keras.layers.Lambda(function, output_shape)
+5 api_details: ''
+6 api_parameters:
+- function: Specifies the operation to be performed on the input tensor.
+- output_shape: Defines the expected shape of the output tensor, which can be a tuple
+    or a function that determines the shape based on the input.
+7 api_usage_example: null
+8 api_shape: null

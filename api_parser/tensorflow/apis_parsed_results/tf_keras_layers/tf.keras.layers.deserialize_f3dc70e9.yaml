@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.layers.deserialize
+3 api_description: The tf.keras.layers.deserialize API converts a layer's configuration
+  dictionary back into a Keras layer object.
+4 api_signature: tf.keras.layers.deserialize(config, custom_objects)
+5 api_details: ''
+6 api_parameters:
+- config: A dictionary that holds the serialized configuration of the layer to be
+    deserialized.
+- custom_objects: An optional dictionary that maps string names to custom classes
+    or functions used during the deserialization process.
+7 api_usage_example: null
+8 api_shape: null

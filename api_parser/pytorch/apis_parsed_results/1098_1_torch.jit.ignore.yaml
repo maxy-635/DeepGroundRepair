@@ -1,0 +1,26 @@
+2 api_name: torch.jit.ignore
+3 api_description: Marks a function or method to be skipped by TorchScript and kept
+  as Python code, allowing non-scriptable logic to remain in a model while still callable
+  from scripted code via the Python interpreter.
+4 api_signature: torch.jit.ignore
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import torch
+- import torch.nn as nn
+- 'class MyModule(nn.Module):'
+- '    @torch.jit.ignore'
+- '    def debugger(self, x):'
+- '        import pdb'
+- '        pdb.set_trace()'
+- '    def forward(self, x):'
+- '        x += 10'
+- '        # The compiler would normally try to compile `debugger`,'
+- '        # but since it is `@ignore`d, it will be left as a call'
+- '        # to Python'
+- '        self.debugger(x)'
+- '        return x'
+- m = torch.jit.script(MyModule())
+- '# Error! The call `debugger` cannot be saved since it calls into Python'
+- m.save("m.pt")
+8 api_shape: null

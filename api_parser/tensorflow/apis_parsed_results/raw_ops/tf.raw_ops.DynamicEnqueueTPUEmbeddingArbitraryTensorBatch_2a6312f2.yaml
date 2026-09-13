@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.DynamicEnqueueTPUEmbeddingArbitraryTensorBatch
+3 api_description: Enqueues arbitrary tensor batches for TPU embedding lookup, matching
+  per-feature sample, embedding, and weight indices to support sparse embedding lookups
+  and aggregation.
+4 api_signature: tf.raw_ops.DynamicEnqueueTPUEmbeddingArbitraryTensorBatch(sample_indices_or_row_splits,embedding_indices,aggregation_weights,mode_override)
+5 api_details: ''
+6 api_parameters:
+- sample_indices_or_row_splits: Specifies, for each embedding example, which training
+    sample it belongs to using rank-2 integer tensors.
+- embedding_indices: Provides the rank-1 integer embedding table indices for each
+    example.
+- aggregation_weights: Provides the rank-1 floating-point weights used to aggregate
+    each example's contribution.
+- mode_override: Overrides the TPU embedding mode with a specified string value, or
+    uses the configured mode when set to 'unspecified'.
+7 api_usage_example: null
+8 api_shape: ''

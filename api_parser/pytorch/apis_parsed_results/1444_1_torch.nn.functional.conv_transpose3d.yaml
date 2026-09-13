@@ -1,0 +1,31 @@
+2 api_name: torch.nn.functional.conv_transpose3d
+3 api_description: torch.nn.functional.conv_transpose3d applies a 3D transposed convolution
+  (deconvolution) to an input composed of multiple planes, often used to upsample
+  or reconstruct spatial dimensions.
+4 api_signature: torch.nn.functional.conv_transpose3d(input,weight,stride,padding,output_padding,dilation)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor with dimensions representing minibatch size, input channels,
+    and 3D spatial dimensions (depth, height, width).
+- weight: The filter tensor with dimensions for input channels, output channels divided
+    by groups, and kernel size in 3D dimensions (depth, height, width).
+- stride: Defines the step size for traversing the input tensor during the convolution
+    operation, specified as a single number or a tuple for 3D dimensions.
+- padding: Specifies the amount of zero-padding added to each side of the input dimensions
+    to control the output size, defined as a single number or a tuple.
+- output_padding: Adds additional size to one side of each output dimension to control
+    the output shape, specified as a single number or a tuple.
+- dilation: Determines the spacing between elements in the convolution kernel, specified
+    as a single number or a tuple for 3D dimensions.
+7 api_usage_example:
+- ' inputs = torch.randn(20, 16, 50, 10, 20)'
+- ' weights = torch.randn(16, 33, 3, 3, 3)'
+- ' F.conv_transpose3d(inputs, weights)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[1]
+    tensor depth: Depth_out = (Depth_in - 1) * stride_depth - 2 * padding_depth + kernel_size_depth + output_padding_depth
+    tensor height: Height_out = (Height_in - 1) * stride_height - 2 * padding_height + kernel_size_height + output_padding_height
+    tensor width: Width_out = (Width_in - 1) * stride_width - 2 * padding_width + kernel_size_width + output_padding_width

@@ -1,0 +1,20 @@
+2 api_name: paddle.as_real
+3 api_description: Converts a complex tensor into its real-valued representation.
+4 api_signature: paddle.as_real(x)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the complex-valued input tensor whose real part will be returned.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(12, dtype=paddle.float32).reshape([2, 3, 2])
+- y = paddle.as_complex(x)
+- z = paddle.as_real(y)
+- print(z)
+- Tensor(shape=[2, 3, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[0. , 1. ],'
+- '[2. , 3. ],'
+- '[4. , 5. ]],'
+- '[[6. , 7. ],'
+- '[8. , 9. ],'
+- '[10., 11.]]])'
+8 api_shape: {}

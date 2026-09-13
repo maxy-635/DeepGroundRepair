@@ -1,0 +1,28 @@
+2 api_name: torch.jit.load
+3 api_description: Loads a previously saved TorchScript ScriptModule or ScriptFunction
+  from disk or a file-like object.
+4 api_signature: torch.jit.load(f,map_location)
+5 api_details: ''
+6 api_parameters:
+- f: Specifies the file-like object or filename to load the TorchScript module from.
+- map_location: Remaps stored tensors or storages to a different device during loading.
+7 api_usage_example:
+- import torch
+- import io
+- torch.jit.load('scriptmodule.pt')
+- '# Load ScriptModule from io.BytesIO object'
+- 'with open(''scriptmodule.pt'', ''rb'') as f:'
+- '    buffer = io.BytesIO(f.read())'
+- '# Load all tensors to the original device'
+- torch.jit.load(buffer)
+- '# Load all tensors onto CPU, using a device'
+- buffer.seek(0)
+- torch.jit.load(buffer, map_location=torch.device('cpu'))
+- '# Load all tensors onto CPU, using a string'
+- buffer.seek(0)
+- torch.jit.load(buffer, map_location='cpu')
+- '# Load with extra files.'
+- 'extra_files = {''foo.txt'': ''''}  # values will be replaced with data'
+- torch.jit.load('scriptmodule.pt', _extra_files=extra_files)
+- print(extra_files['foo.txt'])
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.create_unspecified_symbol
+3 api_description: Creates a new symbolic shape variable whose concrete value is intentionally
+  unspecified, for use in shape reasoning and constraints.
+4 api_signature: create_unspecified_symbol(val,dynamic_dim,constraint_dim)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

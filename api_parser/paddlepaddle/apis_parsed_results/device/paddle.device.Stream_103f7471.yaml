@@ -1,0 +1,17 @@
+2 api_name: paddle.device.Stream
+3 api_description: Provides a device-specific stream wrapper for managing and synchronizing
+  execution on a Paddle device stream.
+4 api_signature: paddle.device.Stream(device,priority)
+5 api_details: ''
+6 api_parameters:
+- priority: Sets the CUDA stream priority, where `1` is high priority and `2` is low
+    priority by default.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.set_device('custom_cpu')
+- s1 = paddle.device.Stream()
+- s2 = paddle.device.Stream('custom_cpu')
+- s3 = paddle.device.Stream('custom_cpu:0')
+- s4 = paddle.device.Stream(paddle.CustomPlace('custom_cpu', 0))
+8 api_shape: {}

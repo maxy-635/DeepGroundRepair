@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.random.beta
+3 api_description: Draw random samples from a Beta distribution parameterized by alpha
+  and beta.
+4 api_signature: tf.keras.random.beta(shape,alpha,beta)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the output random values to generate.
+- alpha: Sets the first Beta distribution parameter and must be broadcast-compatible
+    with `beta` and `shape`.
+- beta: Sets the second Beta distribution parameter and must be broadcast-compatible
+    with `alpha` and `shape`.
+7 api_usage_example: null
+8 api_shape: ''

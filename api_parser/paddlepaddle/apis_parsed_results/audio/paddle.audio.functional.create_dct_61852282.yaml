@@ -1,0 +1,14 @@
+2 api_name: paddle.audio.functional.create_dct
+3 api_description: Creates and returns a DCT matrix used to perform discrete cosine
+  transform operations.
+4 api_signature: paddle.audio.functional.create_dct(n_mfcc,n_mels)
+5 api_details: ''
+6 api_parameters:
+- n_mfcc: Sets how many mel frequency cepstral coefficients to compute.
+- n_mels: Sets how many mel filterbanks to use.
+7 api_usage_example:
+- import paddle
+- n_mfcc = 23
+- n_mels = 257
+- dct = paddle.audio.functional.create_dct(n_mfcc, n_mels)
+8 api_shape: {}

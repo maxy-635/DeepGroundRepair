@@ -1,0 +1,16 @@
+2 api_name: torch.fft.hfftn
+3 api_description: Computes the n-dimensional Fourier transform of a Hermitian-symmetric
+  input, returning the corresponding real-valued frequency-domain representation.
+4 api_signature: torch.fft.hfftn(input,s,dim,norm,*,out)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to transform.
+- s: Optionally pads or trims each transformed dimension to the specified signal size
+    before computing the FFT.
+- dim: Specifies which dimensions to transform, with the last one being the half-Hermitian
+    compressed dimension.
+- norm: Sets the normalization mode for the transform, controlling how the FFT output
+    is scaled.
+7 api_usage_example:
+- ' torch.fft.hfftn(t).size()'
+8 api_shape: null

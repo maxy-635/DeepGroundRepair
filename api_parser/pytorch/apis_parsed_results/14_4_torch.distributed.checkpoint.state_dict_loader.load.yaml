@@ -1,0 +1,22 @@
+2 api_name: torch.distributed.checkpoint.state_dict_loader.load
+3 api_description: Loads a checkpoint into a distributed state dict in SPMD style,
+  restoring model and related state across ranks.
+4 api_signature: torch.distributed.checkpoint.state_dict_loader.load(state_dict,checkpoint_id,storage_reader,planner)
+5 api_details: ''
+6 api_parameters:
+- state_dict: Provides the model or training state dictionary that will be populated
+    with checkpoint data.
+- checkpoint_id: Identifies the checkpoint to load, such as a file path, folder path,
+    or storage key.
+- storage_reader: Supplies the storage reader used to read checkpoint data, or lets
+    DCP infer one from `checkpoint_id`.
+- planner: Defines how checkpoint items are mapped and loaded, or uses the default
+    loading planner if omitted.
+7 api_usage_example:
+- ' my_model = MyModule()'
+- ' optimizer = Adagrad(my_model.parameters())'
+- ' model_state_dict = my_model.state_dict()'
+- ' fs_storage_reader = torch.distributed.checkpoint.FileSystemReader('
+- '...     "/checkpoint/1"'
+- '... )'
+8 api_shape: null

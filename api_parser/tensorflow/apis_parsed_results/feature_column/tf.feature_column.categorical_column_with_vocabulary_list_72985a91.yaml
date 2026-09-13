@@ -1,0 +1,13 @@
+2 api_name: tensorflow.feature_column.categorical_column_with_vocabulary_list
+3 api_description: Creates a categorical feature column from a fixed in-memory vocabulary,
+  mapping string or integer inputs to IDs and optionally sending out-of-vocabulary
+  values to a default ID or hashed OOV buckets.
+4 api_signature: tf.feature_column.categorical_column_with_vocabulary_list(key,vocabulary_list)
+5 api_details: ''
+6 api_parameters:
+- key: Names the input feature and serves as its lookup key in parsing configs, tensors,
+    and feature columns.
+- vocabulary_list: Defines the ordered set of allowed values, mapping each matched
+    feature value to its index in the list.
+7 api_usage_example: null
+8 api_shape: ''

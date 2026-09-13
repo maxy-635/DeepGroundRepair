@@ -1,0 +1,9 @@
+2 api_name: tensorflow.distribute.RunOptions
+3 api_description: Holds strategy.run configuration options, mainly for TPUStrategy,
+  to control dynamic batch sizing, dynamic-shape bucketizing, and TPU XLA compilation
+  settings.
+4 api_signature: tf.distribute.RunOptions(experimental_enable_dynamic_batch_size,experimental_bucketizing_dynamic_shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

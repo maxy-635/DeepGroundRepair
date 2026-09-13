@@ -1,0 +1,18 @@
+2 api_name: paddle.signal.istft
+3 api_description: Reconstructs a time-domain signal from its short-time Fourier transform
+  by applying overlap-add inverse frame processing.
+4 api_signature: paddle.signal.istft(x,n_fft,hop_length,win_length,window,center,normalized,onesided,length)
+5 api_details: ''
+6 api_parameters:
+- x: The complex STFT input tensor to be reconstructed into a time-domain signal.
+- n_fft: Sets the FFT size used for the inverse transform.
+- hop_length: Sets the number of samples between successive frames.
+- win_length: Sets the window length used during reconstruction.
+- window: Provides the window tensor applied to each frame, padded to `n_fft` if needed.
+- center: Indicates whether the original time-domain signal was center-padded.
+- normalized: Controls whether the output is scaled by `1/sqrt(n_fft)`.
+- onesided: Indicates whether the input contains only the one-sided STFT of a real
+    signal.
+- length: Specifies the desired length of the reconstructed time-domain signal.
+7 api_usage_example: []
+8 api_shape: {}

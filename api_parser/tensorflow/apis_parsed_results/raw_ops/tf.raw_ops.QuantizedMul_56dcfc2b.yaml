@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.QuantizedMul
+3 api_description: Performs element-wise multiplication of two quantized tensors and
+  returns the quantized result.
+4 api_signature: tf.raw_ops.QuantizedMul(x,y,Toutput,name)
+5 api_details: ''
+6 api_parameters:
+- x: The first quantized input tensor to multiply.
+- y: The second quantized input tensor to multiply.
+- Toutput: The output quantized data type to use, defaulting to `tf.qint32`.
+- name: An optional name used to label the operation.
+7 api_usage_example: null
+8 api_shape: ''

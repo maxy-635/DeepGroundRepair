@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.DebugIdentity
+3 api_description: Returns the input tensor unchanged as a debug-friendly identity
+  mapping for non-Ref tensors.
+4 api_signature: tf.raw_ops.DebugIdentity(input,debug_urls,tensor_name)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to pass through unchanged while attaching debug behavior.
+- tensor_name: An optional name assigned to the input tensor for debugging output.
+- debug_urls: A list of debug target URLs where tensor data or events should be sent.
+- name: An optional operation name used to identify the DebugIdentity op.
+7 api_usage_example: null
+8 api_shape: ''

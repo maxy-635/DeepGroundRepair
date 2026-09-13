@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.ExternalStream.record_event
+3 api_description: Records a CUDA event on the external stream so the event is marked
+  when all previously enqueued work in that stream has completed.
+4 api_signature: record_event(event)
+5 api_details: ''
+6 api_parameters:
+- event: The CUDA event to record on the stream; if omitted, a new event is created
+    automatically.
+7 api_usage_example: null
+8 api_shape: null

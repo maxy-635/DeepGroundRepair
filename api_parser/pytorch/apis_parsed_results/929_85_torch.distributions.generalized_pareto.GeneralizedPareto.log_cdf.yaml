@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.generalized_pareto.GeneralizedPareto.log_cdf
+3 api_description: Computes the logarithm of the cumulative distribution function
+  for a Generalized Pareto distribution.
+4 api_signature: log_cdf(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

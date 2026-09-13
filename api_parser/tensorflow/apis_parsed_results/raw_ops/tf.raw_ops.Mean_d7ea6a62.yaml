@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Mean
+3 api_description: Computes the average of a tensor’s elements along the specified
+  axis, optionally keeping reduced dimensions with size 1.
+4 api_signature: tf.raw_ops.Mean(input,axis,keep_dims)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor whose values will be averaged over the selected
+    dimensions.
+- axis: Specifies which tensor dimensions to reduce when computing the mean.
+- keep_dims: Determines whether the reduced dimensions are kept with size 1 in the
+    output.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.RequantizePerChannel
+3 api_description: Requantizes a tensor per channel using known min and max ranges
+  for each channel, producing a new quantized output.
+4 api_signature: tf.raw_ops.RequantizePerChannel(input,requested_output_min,requested_output_max,out_type,name)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the original quantized tensor to be requantized per channel.
+- requested_output_min: Specifies the minimum value allowed for the output tensor's
+    quantization range.
+- requested_output_max: Specifies the maximum value allowed for the output tensor's
+    quantization range.
+- out_type: Selects the quantized dtype of the output tensor.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

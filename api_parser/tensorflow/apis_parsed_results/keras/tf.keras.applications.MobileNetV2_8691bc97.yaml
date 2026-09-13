@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.applications.MobileNetV2
+3 api_description: Builds the MobileNetV2 image classification model with lightweight
+  inverted residual bottleneck blocks for efficient, low-parameter deep learning on
+  inputs larger than 32x32.
+4 api_signature: tf.keras.applications.MobileNetV2(input_shape,alpha,include_top,weights)
+5 api_details: ''
+6 api_parameters:
+- input_shape: Sets the expected input tensor shape when excluding the top classifier,
+    with 3 channels and minimum spatial size constraints.
+- alpha: Scales the network width by adjusting the number of filters throughout the
+    model.
+- include_top: Chooses whether to attach the final fully connected classification
+    layers.
+- weights: Selects the source of model weights, such as random initialization, ImageNet
+    pretrained weights, or a custom weights file.
+7 api_usage_example: null
+8 api_shape: ''

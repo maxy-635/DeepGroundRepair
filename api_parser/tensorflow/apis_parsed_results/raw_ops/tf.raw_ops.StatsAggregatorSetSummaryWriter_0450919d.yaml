@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.StatsAggregatorSetSummaryWriter
+3 api_description: Associates a summary writer with a stats aggregator so it can record
+  and emit statistics.
+4 api_signature: tf.raw_ops.StatsAggregatorSetSummaryWriter(stats_aggregator,summary)
+5 api_details: ''
+6 api_parameters:
+- stats_aggregator: The resource handle for the StatsAggregator instance to configure.
+- summary: The resource handle for the summary writer to associate with the stats
+    aggregator.
+7 api_usage_example: null
+8 api_shape: ''

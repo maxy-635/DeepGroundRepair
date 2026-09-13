@@ -1,0 +1,24 @@
+2 api_name: tensorflow.keras.FloatDTypePolicy
+3 api_description: Defines a Keras layer’s float dtype policy, controlling the dtypes
+  used for computation and variables, and can be set per layer or globally.
+4 api_signature: tf.keras.FloatDTypePolicy(name)
+5 api_details: ''
+6 api_parameters:
+- ? The policy name, which determines the compute and variable dtypes. Can be any
+    dtype name, such as "float32" or "float64", which causes both the compute and
+    variable dtypes will be that dtype. Can also be the string "mixed_float16" or
+    "mixed_bfloat16", which causes the compute dtype to be float16 or bfloat16 and
+    the variable dtype to be float32.
+  : Specifies the dtype policy name that sets the compute and variable dtypes, including
+    mixed-precision modes.
+7 api_usage_example:
+- keras.config.set_dtype_policy("mixed_float16")
+- layer1 = keras.layers.Dense(10)
+- 'layer1.dtype_policy  # layer1 will automatically use mixed precision'
+- '# Can optionally override layer to use float32'
+- '# instead of mixed precision.'
+- layer2 = keras.layers.Dense(10, dtype="float32")
+- layer2.dtype_policy
+- '# Set policy back to initial float32.'
+- keras.config.set_dtype_policy('float32')
+8 api_shape: ''

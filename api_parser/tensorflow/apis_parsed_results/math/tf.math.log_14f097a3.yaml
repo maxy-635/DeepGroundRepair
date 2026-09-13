@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.log
+3 api_description: Computes the element-wise natural logarithm of x.
+4 api_signature: tf.math.log(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose natural logarithm is computed elementwise.
+7 api_usage_example:
+- x = tf.constant([0, 0.5, 1, 5])
+- tf.math.log(x)
+8 api_shape: ''

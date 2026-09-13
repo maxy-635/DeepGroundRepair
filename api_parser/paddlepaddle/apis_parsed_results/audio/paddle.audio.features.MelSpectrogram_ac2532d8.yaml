@@ -1,0 +1,37 @@
+2 api_name: paddle.audio.features.MelSpectrogram
+3 api_description: Computes a Mel spectrogram from audio signals by multiplying the
+  spectrogram with a Mel filter bank matrix.
+4 api_signature: paddle.audio.features.MelSpectrogram(sr,n_fft,hop_length,win_length,window,power,center,pad_mode,n_mels,f_min,f_max,htk,norm,dtype)
+5 api_details: ''
+6 api_parameters:
+- sr: Sets the audio sample rate used to interpret the input signal.
+- n_fft: Sets the FFT size, which determines the number of frequency bins in each
+    short-time transform.
+- hop_length: Sets the number of samples between adjacent frames.
+- win_length: Sets the length of the analysis window for each FFT frame.
+- window: Chooses the windowing function applied before the Fourier transform to reduce
+    spectral leakage.
+- power: Sets the exponent applied to the magnitude spectrogram when computing the
+    output.
+- center: Controls whether frames are centered by padding the input signal before
+    analysis.
+- pad_mode: Chooses how the input is padded when centering is enabled.
+- n_mels: Sets the number of mel-frequency bands in the output spectrogram.
+- f_min: Sets the lowest frequency included in the mel filter bank.
+- f_max: Sets the highest frequency included in the mel filter bank.
+- htk: Selects whether to use the HTK mel scale formula.
+- norm: Sets the normalization method used when building the mel filter bank.
+- dtype: Sets the numeric data type used for the input and window computations.
+7 api_usage_example:
+- import paddle
+- from paddle.audio.features import MelSpectrogram
+- sample_rate = 16000
+- wav_duration = 0.5
+- num_channels = 1
+- num_frames = sample_rate * wav_duration
+- wav_data = paddle.linspace(-1.0, 1.0, int(num_frames)) * 0.1
+- waveform = wav_data.tile([num_channels, 1])
+- feature_extractor = MelSpectrogram(sr=sample_rate, n_fft=512, window = 'hann', power
+  = 1.0)
+- feats = feature_extractor(waveform)
+8 api_shape: {}

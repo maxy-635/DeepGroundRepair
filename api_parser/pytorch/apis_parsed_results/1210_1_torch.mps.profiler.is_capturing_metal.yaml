@@ -1,0 +1,8 @@
+2 api_name: torch.mps.profiler.is_capturing_metal
+3 api_description: Returns whether a Metal capture is currently in progress on the
+  MPS backend.
+4 api_signature: torch.mps.profiler.is_capturing_metal()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

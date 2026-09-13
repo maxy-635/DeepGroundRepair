@@ -1,0 +1,15 @@
+2 api_name: paddle.fft.fftn
+3 api_description: Computes the N-dimensional discrete Fourier transform of an input
+  array.
+4 api_signature: paddle.fft.fftn(x,s,axes,norm,*,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to transform.
+- s: The output shape for each transformed axis, with cropping or zero-padding applied
+    as needed.
+- axes: The axes along which to compute the FFT.
+- norm: The normalization mode that determines how scaling is applied between forward
+    and inverse transforms.
+- out: The tensor that receives the output of the FFT.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,13 @@
+2 api_name: paddle.cast
+3 api_description: Casts a tensor to a specified dtype, converting its data type to
+  the requested output type.
+4 api_signature: paddle.cast(x,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be cast to a new data type.
+- dtype: The target data type for the output tensor.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([2, 3, 4], 'float64')
+- y = paddle.cast(x, 'uint8')
+8 api_shape: {}

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Restore
+3 api_description: Restores a tensor from one or more checkpoint files, optionally
+  using a preferred shard to speed up lookup when multiple matching files exist.
+4 api_signature: tf.raw_ops.Restore(file_pattern,tensor_name,dt)
+5 api_details: ''
+6 api_parameters:
+- file_pattern: Specifies the file pattern identifying the checkpoint files to read
+    from.
+- tensor_name: Specifies the name of the tensor to restore from the checkpoint.
+- dt: Specifies the data type of the tensor being restored.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,21 @@
+2 api_name: tensorflow.keras.layers.EinsumDense
+3 api_description: The tf.keras.layers.EinsumDense layer performs generalized einsum
+  operations for arbitrary dimensional tensor computations, enabling flexible and
+  efficient manipulation of input data through Einstein summation convention.
+4 api_signature: tf.keras.layers.EinsumDense(equation, output_shape, activation)
+5 api_details: ''
+6 api_parameters:
+- equation: Defines the einsum operation to be performed using a valid einsum string
+    format.
+- output_shape: Specifies the expected shape of the output tensor, excluding batch
+    dimensions and allowing for unknown dimensions.
+- activation: Determines the activation function applied to the output, with a default
+    of no activation.
+7 api_usage_example:
+- layer = keras.layers.EinsumDense("...x,xy->...y",
+- '                                      output_shape=64,'
+- '                                      bias_axes="y")'
+- input_tensor = keras.Input(shape=[32, 128])
+- output_tensor = layer(input_tensor)
+- output_tensor.shape
+8 api_shape: null

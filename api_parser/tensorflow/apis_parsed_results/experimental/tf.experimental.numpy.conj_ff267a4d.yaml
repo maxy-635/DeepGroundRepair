@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.conj
+3 api_description: Returns the complex conjugate of an input, matching NumPy's conj
+  behavior for TensorFlow tensors.
+4 api_signature: tf.experimental.numpy.conj(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.ComputeBatchSize
+3 api_description: Returns the dataset’s static batch size, excluding any partial
+  batches.
+4 api_signature: tf.raw_ops.ComputeBatchSize(input_dataset)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant dataset tensor whose batch size is computed.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.repeat_elements
+3 api_description: Repeats each element of a tensor along a specified axis a given
+  number of times, expanding the tensor by duplicating values in that dimension.
+4 api_signature: tf.keras.backend.repeat_elements(x,rep,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

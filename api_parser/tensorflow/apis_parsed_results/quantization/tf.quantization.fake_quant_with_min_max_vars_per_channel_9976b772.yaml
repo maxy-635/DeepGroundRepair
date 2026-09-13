@@ -1,0 +1,16 @@
+2 api_name: tensorflow.quantization.fake_quant_with_min_max_vars_per_channel
+3 api_description: Fake-quantizes a float tensor per channel using per-channel min
+  and max values, returning an output tensor of the same shape as the input.
+4 api_signature: tf.quantization.fake_quant_with_min_max_vars_per_channel(inputs,min,max,num_bits,narrow_range)
+5 api_details: ''
+6 api_parameters:
+- inputs: The float32 tensor to be fake-quantized per channel.
+- min: The float32 tensor of minimum values used to clamp the quantization range per
+    channel.
+- max: The float32 tensor of maximum values used to clamp the quantization range per
+    channel.
+- num_bits: The optional number of quantization bits to use, defaulting to 8.
+- narrow_range: The optional flag indicating whether to use a narrower quantization
+    range, defaulting to False.
+7 api_usage_example: null
+8 api_shape: ''

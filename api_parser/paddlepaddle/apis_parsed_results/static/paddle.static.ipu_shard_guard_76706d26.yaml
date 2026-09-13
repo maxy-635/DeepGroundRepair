@@ -1,0 +1,22 @@
+2 api_name: paddle.static.ipu_shard_guard
+3 api_description: Context manager that assigns ops to specific IPUs and pipeline
+  stages for graph sharding and pipelined execution.
+4 api_signature: paddle.static.ipu_shard_guard(index,stage)
+5 api_details: ''
+6 api_parameters:
+- index: Sets which IPU the tensor or op runs on, with -1 defaulting to IPU 0.
+- stage: Sets the execution stage order for sharded models, with -1 using the normal
+    graph order.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('ipu')
+- paddle.enable_static()
+- a = paddle.static.data(name='data', shape=[None, 1], dtype='int32')
+- 'with paddle.static.ipu_shard_guard(index=0, stage=0):'
+- '    b = a + 1'
+- 'with paddle.static.ipu_shard_guard(index=1, stage=1):'
+- '    c = b + 1'
+- 'with paddle.static.ipu_shard_guard(index=0, stage=2):'
+- '    d = c + 1'
+8 api_shape: {}

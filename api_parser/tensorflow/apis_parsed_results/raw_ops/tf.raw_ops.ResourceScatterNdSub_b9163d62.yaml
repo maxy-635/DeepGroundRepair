@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ResourceScatterNdSub
+3 api_description: Subtracts update values or slices from a variable at the specified
+  sparse integer indices.
+4 api_signature: tf.raw_ops.ResourceScatterNdSub(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The resource variable to be updated.
+- indices: Integer indices that specify which locations in the resource to subtract
+    from.
+- updates: Values to subtract at the specified indices, matching the resource's type.
+7 api_usage_example: null
+8 api_shape: ''

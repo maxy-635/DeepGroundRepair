@@ -1,0 +1,21 @@
+2 api_name: torch.is_storage
+3 api_description: Returns True when the given object is a PyTorch storage object,
+  otherwise False.
+4 api_signature: torch.is_storage(obj)
+5 api_details: ''
+6 api_parameters:
+- obj: The object to check for whether it is a storage instance.
+7 api_usage_example:
+- ' import torch'
+- ' # UntypedStorage (recommended)'
+- ' tensor = torch.tensor([1, 2, 3])'
+- ' storage = tensor.untyped_storage()'
+- ' torch.is_storage(storage)'
+- ' # TypedStorage (legacy)'
+- ' typed_storage = torch.TypedStorage(5, dtype=torch.float32)'
+- ' torch.is_storage(typed_storage)'
+- ' # regular tensor (should return False)'
+- ' torch.is_storage(tensor)'
+- ' # non-storage object'
+- ' torch.is_storage([1, 2, 3])'
+8 api_shape: null

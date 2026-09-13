@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.add_
+3 api_description: In-place adds the given value to the tensor, modifying the input
+  tensor directly.
+4 api_signature: paddle.Tensor.add_(x,alpha)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.ragged.cross
+3 api_description: Builds a ragged feature cross from equal-row 2D tensors by combining
+  each row’s values across inputs into all possible string-joined 'X' combinations.
+4 api_signature: tf.ragged.cross(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: The tensors to cross, combining their values into all possible feature crosses.
+7 api_usage_example:
+- tf.ragged.cross([tf.ragged.constant([['a'], ['b', 'c']]),
+- '                 tf.ragged.constant([[''d''], [''e'']]),'
+- '                 tf.ragged.constant([[''f''], [''g'']])])'
+8 api_shape: ''

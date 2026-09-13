@@ -1,0 +1,11 @@
+2 api_name: tensorflow.image.hsv_to_rgb
+3 api_description: Converts one or more HSV images to RGB, returning a tensor with
+  the same shape as the input; results are well defined when input values are in the
+  [0, 1] range.
+4 api_signature: tf.image.hsv_to_rgb(images)
+5 api_details: ''
+6 api_parameters:
+- images: HSV tensor input with last dimension of size 3, containing values to be
+    converted to RGB.
+7 api_usage_example: null
+8 api_shape: ''

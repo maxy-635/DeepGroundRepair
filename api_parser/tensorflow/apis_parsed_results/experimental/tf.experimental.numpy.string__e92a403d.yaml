@@ -1,0 +1,13 @@
+2 api_name: tensorflow.experimental.numpy.string_
+3 api_description: Represents a fixed-length byte string scalar that strips trailing
+  null bytes in arrays and exposes standard ndarray-like scalar attributes.
+4 api_signature: tf.experimental.numpy.string_()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- value = b'\xb9\x01\xef'
+- value.hex()
+- value.hex(':')
+- value.hex(':', 2)
+- value.hex(':', -2)
+8 api_shape: ''

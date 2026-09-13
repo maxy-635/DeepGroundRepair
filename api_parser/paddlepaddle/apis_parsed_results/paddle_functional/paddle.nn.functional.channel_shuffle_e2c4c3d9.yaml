@@ -1,0 +1,33 @@
+2 api_name: paddle.nn.functional.channel_shuffle
+3 api_description: The paddle.nn.functional.channel_shuffle API performs a channel
+  shuffle operation, which rearranges the channels of a given input tensor to enhance
+  model performance, especially in grouped convolutional layers.
+4 api_signature: paddle.nn.functional.channel_shuffle(x,groups)
+5 api_details: ''
+6 api_parameters:
+- x: A 4-D tensor input whose data type must be either float32 or float64.
+- groups: Specifies the number of groups into which the channels of the input tensor
+    are divided.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.arange(0, 0.6, 0.1, 'float32')
+- x = paddle.reshape(x, [1, 6, 1, 1])
+- print(x)
+- Tensor(shape=[1, 6, 1, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0.        ]],'
+- '[[0.10000000]],'
+- '[[0.20000000]],'
+- '[[0.30000001]],'
+- '[[0.40000001]],'
+- '[[0.50000000]]]])'
+- y = F.channel_shuffle(x, 3)
+- print(y)
+- Tensor(shape=[1, 6, 1, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0.        ]],'
+- '[[0.20000000]],'
+- '[[0.40000001]],'
+- '[[0.10000000]],'
+- '[[0.30000001]],'
+- '[[0.50000000]]]])'
+8 api_shape: null

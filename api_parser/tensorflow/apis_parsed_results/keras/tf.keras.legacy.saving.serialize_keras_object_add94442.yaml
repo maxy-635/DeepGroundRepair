@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.legacy.saving.serialize_keras_object
+3 api_description: Converts a Keras object into a JSON-compatible form for saving,
+  preserving shared/reused objects with special IDs when used inside SharedObjectSavingScope
+  so models can be reconstructed correctly.
+4 api_signature: tf.keras.legacy.saving.serialize_keras_object(instance)
+5 api_details: ''
+6 api_parameters:
+- instance: The object whose configuration or state is converted into a serializable
+    form.
+7 api_usage_example: null
+8 api_shape: ''

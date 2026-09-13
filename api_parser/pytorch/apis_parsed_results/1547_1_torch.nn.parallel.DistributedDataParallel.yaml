@@ -1,0 +1,23 @@
+2 api_name: torch.nn.parallel.DistributedDataParallel
+3 api_description: Wraps a module for distributed training across processes, synchronizing
+  gradients during backpropagation so each replica stays in sync.
+4 api_signature: torch.nn.parallel.DistributedDataParallel(module,device_ids,output_device,broadcast_buffers,process_group,find_unused_parameters,gradient_as_bucket_view,static_graph)
+5 api_details: ''
+6 api_parameters:
+- module: The model to wrap for distributed training.
+- device_ids: The CUDA device or devices assigned to this process, or `None` for CPU
+    or multi-device modules.
+- output_device: The device where outputs are placed for single-device CUDA modules,
+    or `None` otherwise.
+- broadcast_buffers: Whether to broadcast module buffers from rank 0 at the start
+    of each forward pass.
+- process_group: The distributed process group used for gradient all-reduction.
+- find_unused_parameters: Whether to detect parameters that did not contribute to
+    the forward loss and mark them ready for reduction.
+- gradient_as_bucket_view: Whether gradients should be stored as views into allreduce
+    buckets to reduce memory use and copying.
+- static_graph: Whether to tell DDP the training graph is fixed so it can skip per-iteration
+    unused-parameter detection and support additional cases.
+7 api_usage_example:
+- ' torch.cuda.set_device(i)'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ResizeNearestNeighborGrad
+3 api_description: Computes the backpropagation gradient for nearest-neighbor image
+  resizing, distributing output gradients to the corresponding input pixels.
+4 api_signature: tf.raw_ops.ResizeNearestNeighborGrad(grads,size)
+5 api_details: ''
+6 api_parameters:
+- grads: The gradient tensor from the resized output, shaped [batch, height, width,
+    channels], used as the incoming gradients for the nearest-neighbor resize operation.
+- size: A 1-D int32 tensor with the original height and width, used to specify the
+    input image size for computing the gradient.
+7 api_usage_example: null
+8 api_shape: ''

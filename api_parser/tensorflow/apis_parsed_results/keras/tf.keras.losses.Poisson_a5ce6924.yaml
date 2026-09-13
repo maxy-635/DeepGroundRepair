@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.losses.Poisson
+3 api_description: Computes the Poisson loss between true and predicted values, commonly
+  used for count-based prediction tasks.
+4 api_signature: tf.keras.losses.Poisson(reduction,name)
+5 api_details: ''
+6 api_parameters:
+- reduction: Controls how individual loss values are aggregated across the batch.
+- name: Sets an optional human-readable name for the loss instance.
+7 api_usage_example: null
+8 api_shape: ''

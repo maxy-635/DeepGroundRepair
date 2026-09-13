@@ -1,0 +1,28 @@
+2 api_name: paddle.linalg.ormqr
+3 api_description: Applies the Householder matrix Q, defined by x and tau, to matrix
+  C and returns the resulting tensor product.
+4 api_signature: paddle.linalg.ormqr(x,tau,y)
+5 api_details: ''
+6 api_parameters:
+- x: Contains the reflectors from the QR factorization and determines whether they
+    represent an m-by-k or n-by-k matrix depending on `left`.
+- tau: Stores the scalar coefficients needed to apply the orthogonal/unitary matrix
+    represented by `x`.
+- y: Provides the matrix or batch of matrices to which the orthogonal/unitary transformation
+    is applied.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- from paddle import  linalg
+- input = paddle.to_tensor([[-114.6, 10.9, 1.1], [-0.304, 38.07, 69.38], [-0.45, -0.17,
+  62]])
+- tau = paddle.to_tensor([1.55, 1.94, 3.0])
+- y = paddle.to_tensor([[-114.6, 10.9, 1.1], [-0.304, 38.07, 69.38], [-0.45, -0.17,
+  62]])
+- output = linalg.ormqr(input, tau, y)
+- print(output)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 63.82712936 , -13.82312393 , -116.28614044],'
+- '[-53.65926361 , -28.15783691 , -70.42700958 ],'
+- '[-79.54292297 ,  24.00182915 , -41.34253311 ]])'
+8 api_shape: {}

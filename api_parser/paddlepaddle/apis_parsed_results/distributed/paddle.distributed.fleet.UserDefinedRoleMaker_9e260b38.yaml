@@ -1,0 +1,16 @@
+2 api_name: paddle.distributed.fleet.UserDefinedRoleMaker
+3 api_description: Initializes Paddle distributed roles and cluster information from
+  user-provided parameters, enabling custom setup for worker and server processes
+  in distributed training.
+4 api_signature: '"class paddle.distributed.fleet.UserDefinedRoleMaker(is_collective,init_gloo)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle.distributed.fleet as fleet
+- from paddle.distributed.fleet.base.role_maker import Role
+- fleet.UserDefinedRoleMaker(
+- '    current_id=0,'
+- '    role=Role.SERVER,'
+- '    worker_num=2,'
+- '    server_endpoints=["127.0.0.1:36011", "127.0.0.1:36012"])'
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.errors.OpError
+3 api_description: Base TensorFlow exception for operation errors, with more specific
+  tf.errors subclasses typically used for actual failures.
+4 api_signature: tf.errors.OpError(node_def,message,error_code)
+5 api_details: ''
+6 api_parameters:
+- node_def: Provides the op definition for the failed node when available, or `None`
+    if it is unknown.
+- message: Supplies a human-readable description of the failure.
+- error_code: Identifies the TensorFlow error type using the corresponding error code.
+7 api_usage_example: null
+8 api_shape: ''

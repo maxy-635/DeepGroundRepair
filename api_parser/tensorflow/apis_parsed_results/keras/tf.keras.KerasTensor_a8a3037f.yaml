@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.KerasTensor
+3 api_description: Symbolic tensor that stores shape and dtype for building Keras
+  computation graphs in Functional models and `keras.Function` objects.
+4 api_signature: tf.keras.KerasTensor(shape,dtype,sparse,name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- x = keras.KerasTensor(shape=(3, 4), dtype="float32")
+- x.shape
+- x.dtype
+8 api_shape: ''

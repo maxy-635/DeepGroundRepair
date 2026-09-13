@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.FusedPadConv2D
+3 api_description: Fuses padding with Conv2D preprocessing in NHWC format to reduce
+  intermediate memory use and improve latency.
+4 api_signature: tf.raw_ops.FusedPadConv2D(input,paddings,filter,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D input tensor to be padded and convolved, with shape [batch, in_height,
+    in_width, in_channels].
+- paddings: An int32 matrix that specifies how much padding to add for each input
+    dimension.
+- filter: The 4-D convolution kernel tensor, matching the input type and shaped [filter_height,
+    filter_width, in_channels, out_channels].
+- strides: A 4-element list that sets the sliding-window stride for each input dimension.
+- padding: A string that selects the padding algorithm, either `SAME` or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

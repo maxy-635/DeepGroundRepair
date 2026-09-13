@@ -1,0 +1,44 @@
+2 api_name: torch.optim.NAdam
+3 api_description: Implements the NAdam optimizer, combining Adam-style adaptive learning
+  rates with Nesterov momentum to update model parameters.
+4 api_signature: torch.optim.NAdam(params,lr,betas,eps,weight_decay,momentum_decay,decoupled_weight_decay,*,foreach,maximize,capturable,differentiable)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies the parameters or parameter groups to optimize, including optional
+    named parameters.
+- lr: Sets the learning rate for the optimizer.
+- betas: Controls the exponential moving averages of the gradient and its square.
+- eps: Adds a small constant to the denominator for numerical stability.
+- weight_decay: Applies L2 regularization to the parameters.
+- momentum_decay: Controls the decay rate of the NAdam momentum term.
+- decoupled_weight_decay: Uses AdamW-style decoupled weight decay instead of coupling
+    it with momentum and variance updates.
+- foreach: Chooses the faster foreach-based implementation when available, trading
+    extra peak memory for performance.
+- maximize: Updates parameters to maximize the objective instead of minimizing it.
+- capturable: Makes the optimizer step safe to capture in a CUDA graph or torch.compile
+    graph.
+- differentiable: Allows gradients to flow through the optimizer step itself.
+7 api_usage_example:
+- ' model = torch.nn.Linear(10, 10)'
+- ' optim = torch.optim.SGD(model.parameters(), lr=3e-4)'
+- ' scheduler1 = torch.optim.lr_scheduler.LinearLR('
+- '...     optim,'
+- '...     start_factor=0.1,'
+- '...     end_factor=1,'
+- '...     total_iters=20,'
+- '... )'
+- ' scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR('
+- '...     optim,'
+- '...     T_max=80,'
+- '...     eta_min=3e-5,'
+- '... )'
+- ' lr = torch.optim.lr_scheduler.SequentialLR('
+- '...     optim,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' lr.load_state_dict(torch.load("./save_seq.pt"))'
+- ' # now load the optimizer checkpoint after loading the LRScheduler'
+- ' optim.load_state_dict(torch.load("./save_optim.pt"))'
+8 api_shape: null

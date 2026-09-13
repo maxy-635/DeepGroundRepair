@@ -1,0 +1,17 @@
+2 api_name: torch.renorm
+3 api_description: Scales each slice of a tensor along a given dimension so its p-norm
+  does not exceed maxnorm.
+4 api_signature: torch.renorm(input,p,dim,maxnorm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose sub-tensors will be rescaled to satisfy the norm constraint.
+- p: The exponent used when computing each sub-tensor's norm.
+- dim: The dimension along which the input is split into sub-tensors for renormalization.
+- maxnorm: The maximum allowed norm for each sub-tensor after renormalization.
+7 api_usage_example:
+- ' x = torch.ones(3, 3)'
+- ' x[1].fill_(2)'
+- ' x[2].fill_(3)'
+- ' x'
+- ' torch.renorm(x, 1, 0, 5)'
+8 api_shape: null

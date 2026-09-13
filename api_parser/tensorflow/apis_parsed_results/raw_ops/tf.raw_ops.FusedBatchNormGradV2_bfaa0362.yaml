@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.FusedBatchNormGradV2
+3 api_description: Computes the backpropagation gradients for fused batch normalization,
+  returning gradients for the input, scale, offset, mean, and variance based on 4D
+  data layout (NHWC or NCHW) and 1D channel parameters.
+4 api_signature: tf.raw_ops.FusedBatchNormGradV2(y_backprop,x,scale,is_training,data_format,epsilon)
+5 api_details: ''
+6 api_parameters:
+- y_backprop: The gradient tensor flowing back from the output y.
+- x: The original 4D input tensor whose batch-normalization gradients are being computed.
+- scale: The 1D scale tensor used to rescale the normalized activations during backpropagation.
+- epsilon: A small constant added to the variance for numerical stability.
+- data_format: The layout of the 4D tensors, either NHWC or NCHW.
+- is_training: Indicates whether batch normalization is being computed in training
+    mode or inference mode.
+7 api_usage_example: null
+8 api_shape: ''

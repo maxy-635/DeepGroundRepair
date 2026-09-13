@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.atleast_3d
+3 api_description: Ensures inputs are at least 3-dimensional by promoting scalars
+  and lower-rank arrays with singleton dimensions, matching NumPy's atleast_3d behavior.
+4 api_signature: tf.experimental.numpy.atleast_3d(*arys)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: paddle.logical_and_
+3 api_description: Performs element-wise logical AND and stores the result in place
+  in x.
+4 api_signature: paddle.logical_and_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

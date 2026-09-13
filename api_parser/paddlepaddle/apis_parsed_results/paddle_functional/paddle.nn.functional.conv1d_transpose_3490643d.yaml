@@ -1,0 +1,37 @@
+2 api_name: paddle.nn.functional.conv1d_transpose
+3 api_description: The paddle.nn.functional.conv1d_transpose API performs a 1-D transposed
+  convolution operation on input data, considering parameters like filter, dilation,
+  stride, and padding. It supports 'NCL' or 'NLC' input formats and can apply a bias
+  and activation function to the output.
+4 api_signature: paddle.nn.functional.conv1d_transpose(x,weight,stride,padding,output_padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input 3-D tensor for the transposed convolution operation, with specified
+    format and data type.
+- weight: The convolution kernel tensor, defining the number of output channels, groups,
+    and kernel size.
+- stride: The step size for moving the kernel during the transposed convolution.
+- padding: Specifies the amount or method of padding added to the input tensor before
+    applying the convolution.
+- output_padding: Specifies additional padding added to the output dimensions after
+    the transposed convolution.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- '# shape: (1, 2, 4)'
+- x = paddle.to_tensor([[[4, 0, 9, 7],
+- '                      [8, 0, 9, 2,]]], dtype="float32")'
+- '# shape: (2, 1, 2)'
+- w = paddle.to_tensor([[[7, 0]],
+- '                      [[4, 2]]], dtype="float32")'
+- y = F.conv1d_transpose(x, w)
+- print(y)
+- Tensor(shape=[1, 1, 5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[60., 16., 99., 75., 4. ]]])'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Length_in)
+  output tensor shape: (N, Channel_out, Length_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[1]
+    tensor length: Length_out = (Length_in - 1) * stride - 2 * padding + dilation
+      * (kernel_size - 1) + output_padding + 1

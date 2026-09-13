@@ -1,0 +1,23 @@
+2 api_name: torch.nn.LPPool2d
+3 api_description: torch.nn.LPPool2d applies 2D power-average pooling to input signals,
+  allowing for flexible pooling based on a specified norm order across multiple input
+  planes.
+4 api_signature: torch.nn.LPPool2d(norm_type,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Specifies the dimensions of the pooling window used to compute the
+    Lp norm.
+7 api_usage_example:
+- ' # power-2 pool of square window of size=3, stride=2'
+- ' m = nn.LPPool2d(2, 3, stride=2)'
+- ' # pool of non-square window of power 1.2'
+- ' m = nn.LPPool2d(1.2, (3, 2), stride=(2, 1))'
+- ' input = torch.randn(20, 16, 50, 32)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: Height_out = floor((Height_in - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in - kernel_size_width) / stride_width + 1)

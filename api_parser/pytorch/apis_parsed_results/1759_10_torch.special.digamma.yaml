@@ -1,0 +1,11 @@
+2 api_name: torch.special.digamma
+3 api_description: Computes the logarithmic derivative of the gamma function for each
+  input element.
+4 api_signature: torch.special.digamma(input)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor whose values are used as the input to the digamma function.
+7 api_usage_example:
+- ' a = torch.tensor([1, 0.5])'
+- ' torch.special.digamma(a)'
+8 api_shape: null

@@ -1,0 +1,21 @@
+2 api_name: paddle.nn.Conv2D
+3 api_description: paddle.nn.Conv2D constructs a 2D convolutional layer that processes
+  input tensors in NCHW format using specified filters, strides, paddings, dilations,
+  and groups. The filter's shape is [M, C, H, W], where M is the number of output
+  feature maps. It supports bias addition and activation functions if provided.
+4 api_signature: paddle.nn.Conv2D(in_channels,out_channels,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Specifies the number of channels in the input image.
+- out_channels: Defines the number of channels produced by the convolution.
+- kernel_size: Determines the dimensions of the convolutional kernel.
+- stride: Sets the step size for traversing the input image during convolution.
+- padding: Adjusts the input image with zero-padding according to specified rules.
+7 api_usage_example: []
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = out_channels
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

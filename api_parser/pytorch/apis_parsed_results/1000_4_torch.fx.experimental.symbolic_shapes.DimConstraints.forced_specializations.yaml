@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.DimConstraints.forced_specializations
+3 api_description: Returns a mapping from symbol names to the concrete values they
+  were forced to specialize to.
+4 api_signature: forced_specializations()
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

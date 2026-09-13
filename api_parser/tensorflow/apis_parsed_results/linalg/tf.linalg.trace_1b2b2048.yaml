@@ -1,0 +1,9 @@
+2 api_name: tensorflow.linalg.trace
+3 api_description: Returns the sum of the main diagonal for each innermost matrix
+  in a tensor, reducing rank by 2.
+4 api_signature: tf.linalg.trace(x)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose trace is computed by summing the elements along its main diagonal.
+7 api_usage_example: null
+8 api_shape: ''

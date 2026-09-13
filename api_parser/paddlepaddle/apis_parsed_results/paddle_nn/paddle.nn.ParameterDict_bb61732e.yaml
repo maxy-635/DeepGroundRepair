@@ -1,0 +1,9 @@
+2 api_name: paddle.nn.ParameterDict
+3 api_description: paddle.nn.ParameterDict is a container for storing and managing
+  parameters in a dictionary format, allowing easy access and manipulation of model
+  parameters.
+4 api_signature: paddle.nn.ParameterDict(parameters:Mapping[str,paddle.Tensor])
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

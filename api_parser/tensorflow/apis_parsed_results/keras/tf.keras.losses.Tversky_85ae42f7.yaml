@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.losses.Tversky
+3 api_description: Computes the Tversky loss between true and predicted masks, balancing
+  false positives and false negatives with alpha and beta weights; with alpha=0.5
+  and beta=0.5, it matches Dice loss.
+4 api_signature: tf.keras.losses.Tversky(alpha,beta)
+5 api_details: ''
+6 api_parameters:
+- alpha: Controls how strongly false positives are penalized in the Tversky loss.
+- beta: Controls how strongly false negatives are penalized in the Tversky loss.
+7 api_usage_example: null
+8 api_shape: ''

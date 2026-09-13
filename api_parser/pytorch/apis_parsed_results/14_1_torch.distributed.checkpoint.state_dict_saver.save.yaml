@@ -1,0 +1,16 @@
+2 api_name: torch.distributed.checkpoint.state_dict_saver.save
+3 api_description: Saves a distributed model state dict in SPMD style, coordinating
+  sharded parameters and distributed metadata so checkpoints can be written consistently
+  across ranks.
+4 api_signature: torch.distributed.checkpoint.state_dict_saver.save(state_dict,checkpoint_id,storage_writer,planner)
+5 api_details: ''
+6 api_parameters:
+- state_dict: The model or application state to be saved.
+- checkpoint_id: Identifies where this checkpoint is stored, such as a path or storage
+    key.
+- storage_writer: Provides the writer implementation used to write the checkpoint
+    data.
+- planner: Controls how checkpoint contents are planned and organized for saving.
+7 api_usage_example:
+- ' my_model = MyModule()'
+8 api_shape: null

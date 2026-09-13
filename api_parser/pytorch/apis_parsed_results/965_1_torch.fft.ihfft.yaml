@@ -1,0 +1,18 @@
+2 api_name: torch.fft.ihfft
+3 api_description: Computes the inverse real-valued signal from a Hermitian-symmetric
+  frequency representation produced by hfft().
+4 api_signature: torch.fft.ihfft(input,n,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The real-valued input tensor to transform.
+- n: Sets the signal length by zero-padding or trimming the input before computing
+    the Hermitian IFFT.
+- dim: Selects the dimension along which to perform the one-dimensional Hermitian
+    IFFT.
+- norm: Controls the normalization mode applied to the transform, with `backward`
+    as the default.
+7 api_usage_example:
+- ' t = torch.arange(5)'
+- ' t'
+- ' torch.fft.ihfft(t)'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.debugging.assert_greater
+3 api_description: Checks element-wise that x is greater than y, raising InvalidArgumentError
+  with an optional message and value summaries if any comparison fails.
+4 api_signature: tf.debugging.assert_greater(x,y,message)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose values are checked to ensure they are greater than `y`.
+- y: The reference tensor that `x` must be greater than, with a compatible shape and
+    dtype.
+- message: An optional prefix added to the default assertion error message.
+7 api_usage_example:
+- check_size(tf.ones([2, 3], tf.float32))
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.rfftnd
+3 api_description: Computes an n-dimensional inverse real FFT over the specified axes,
+  using the provided FFT lengths or the input shape by default, with zero-padding
+  as needed.
+4 api_signature: tf.rfftnd(input,fft_length,axes,name)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to transform, expected to be a complex tensor of type float32
+    or float64.
+- fft_length: Specifies the FFT length to use for each transformed dimension.
+- axes: Specifies which axes of the input tensor the transform is applied to, matching
+    the shape of `fft_length`.
+- name: Optionally names the operation for easier identification in the graph.
+7 api_usage_example: null
+8 api_shape: ''

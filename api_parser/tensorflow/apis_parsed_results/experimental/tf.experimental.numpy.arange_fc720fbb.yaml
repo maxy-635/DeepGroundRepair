@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.arange
+3 api_description: Creates a TensorFlow NumPy array of evenly spaced values from start
+  up to, but not including, stop, separated by step.
+4 api_signature: tf.experimental.numpy.arange(start,stop,step)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

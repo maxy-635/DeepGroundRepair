@@ -1,0 +1,19 @@
+2 api_name: paddle.vision.transforms.Transpose
+3 api_description: Reorders image data axes to a specified layout, such as converting
+  HWC images to CHW tensors, and returns the result as a numpy.ndarray.
+4 api_signature: paddle.vision.transforms.Transpose(order,keys)
+5 api_details: ''
+6 api_parameters:
+- order: Specifies the axis order to rearrange the input data into the desired layout.
+- keys: Identifies which input keys to apply the transform to, following the BaseTransform
+    convention.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import Transpose
+- transform = Transpose()
+- fake_img = Image.fromarray((np.random.rand(300, 320, 3) * 255.).astype(np.uint8))
+- fake_img = transform(fake_img)
+- print(fake_img.shape)
+- (3, 300, 320)
+8 api_shape: {}

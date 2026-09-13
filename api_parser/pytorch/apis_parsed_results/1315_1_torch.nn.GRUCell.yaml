@@ -1,0 +1,20 @@
+2 api_name: torch.nn.GRUCell
+3 api_description: The torch.nn.GRUCell is a single cell of a Gated Recurrent Unit
+  (GRU) that processes input sequences by maintaining a hidden state, allowing it
+  to capture temporal dependencies in sequential data through gating mechanisms.
+4 api_signature: torch.nn.GRUCell(input_size,hidden_size)
+5 api_details: ''
+6 api_parameters:
+- input_size: Specifies the dimensionality of the input features fed into the GRU
+    cell.
+- hidden_size: Defines the dimensionality of the hidden state output from the GRU
+    cell.
+7 api_usage_example:
+- ' rnn = nn.GRUCell(10, 20)'
+- ' input = torch.randn(6, 3, 10)'
+- ' hx = torch.randn(3, 20)'
+- ' output = []'
+- ' for i in range(6):'
+- '...     hx = rnn(input[i], hx)'
+- '...     output.append(hx)'
+8 api_shape: null

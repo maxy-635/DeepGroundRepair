@@ -1,0 +1,12 @@
+2 api_name: torch.promote_types
+3 api_description: Returns the common promoted dtype that can safely represent both
+  input types based on PyTorch's type promotion rules.
+4 api_signature: torch.promote_types(type1,type2)
+5 api_details: ''
+6 api_parameters:
+- type1: The first input dtype to be promoted.
+- type2: The second input dtype to be promoted.
+7 api_usage_example:
+- ' torch.promote_types(torch.int32, torch.float32)'
+- ' torch.promote_types(torch.uint8, torch.long)'
+8 api_shape: null

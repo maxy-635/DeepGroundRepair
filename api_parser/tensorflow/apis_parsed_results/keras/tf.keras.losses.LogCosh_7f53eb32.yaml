@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.losses.LogCosh
+3 api_description: Computes the log of the hyperbolic cosine of the prediction error
+  (y_pred - y_true) as a smooth regression loss.
+4 api_signature: tf.keras.losses.LogCosh(reduction,name)
+5 api_details: ''
+6 api_parameters:
+- reduction: Specifies how to combine individual loss values into a final result.
+- name: Assigns an optional name to the loss instance for identification.
+7 api_usage_example: null
+8 api_shape: ''

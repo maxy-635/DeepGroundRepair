@@ -1,0 +1,27 @@
+2 api_name: torch.nn.SyncBatchNorm.convert_sync_batchnorm
+3 api_description: Converts all BatchNorm layers in a model to synchronized BatchNorm
+  layers for distributed training.
+4 api_signature: convert_sync_batchnorm(module,process_group)
+5 api_details: ''
+6 api_parameters:
+- module: The module containing one or more BatchNorm*D layers that will be converted
+    to synchronized batch normalization.
+- process_group: The process group that defines the scope for synchronization, defaulting
+    to the entire world if not specified.
+7 api_usage_example:
+- ' # Network with nn.BatchNorm layer'
+- ' module = torch.nn.Sequential('
+- '            torch.nn.Linear(20, 100),'
+- '            torch.nn.BatchNorm1d(100),'
+- '          ).cuda()'
+- ' # creating process group (optional)'
+- ' # ranks is a list of int identifying rank ids.'
+- ' ranks = list(range(8))'
+- ' r1, r2 = ranks[:4], ranks[4:]'
+- ' # Note: every rank calls into new_group for every'
+- ' # process group created, even if that rank is not'
+- ' # part of the group.'
+- ' process_groups = [torch.distributed.new_group(pids) for pids in [r1, r2]]'
+- ' process_group = process_groups[0 if dist.get_rank() <= 3 else 1]'
+- ' sync_bn_module = torch.nn.SyncBatchNorm.convert_sync_batchnorm(module, process_group)'
+8 api_shape: null

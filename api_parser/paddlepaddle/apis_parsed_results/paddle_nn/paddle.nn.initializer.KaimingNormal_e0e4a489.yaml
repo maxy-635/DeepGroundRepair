@@ -1,0 +1,18 @@
+2 api_name: paddle.nn.initializer.KaimingNormal
+3 api_description: The KaimingNormal initializer in paddle.nn.initializer initializes
+  weights with values drawn from a normal distribution, tailored for layers with ReLU
+  activations to maintain variance and improve training stability.
+4 api_signature: paddle.nn.initializer.KaimingNormal(fan_in,mode)
+5 api_details: ''
+6 api_parameters:
+- fan_in: Determines the number of input units for initializing the Tensor, inferred
+    automatically if not provided.
+- mode: Specifies whether to use fan_in or fan_out for initialization, defaulting
+    to fan_in.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- linear = nn.Linear(2, 4, weight_attr=nn.initializer.KaimingNormal())
+- data = paddle.rand([30, 10, 2], dtype='float32')
+- res = linear(data)
+8 api_shape: null

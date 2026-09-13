@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.count_params
+3 api_description: Returns the total number of scalar values in a tensor or variable
+  by multiplying its shape dimensions.
+4 api_signature: tf.keras.backend.count_params(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

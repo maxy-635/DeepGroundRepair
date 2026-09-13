@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SparseCrossV2
+3 api_description: Generates batchwise feature crosses from sparse and dense 2D inputs,
+  returning a 2D SparseTensor of the crossed features.
+4 api_signature: tf.raw_ops.SparseCrossV2(indices,values,shapes,dense_inputs)
+5 api_details: ''
+6 api_parameters:
+- indices: Gives the 2-D index coordinates for each input sparse tensor's nonzero
+    elements.
+- values: Provides the 1-D nonzero values corresponding to the sparse indices for
+    each input sparse tensor.
+- shapes: Specifies the 1-D shape of each input sparse tensor so the sparse structure
+    can be interpreted correctly.
+- dense_inputs: Supplies the 2-D dense tensor columns to be crossed with the sparse
+    inputs.
+7 api_usage_example: null
+8 api_shape: ''

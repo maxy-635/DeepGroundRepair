@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.memory_usage
+3 api_description: Returns the percentage of the last sample period that GPU device
+  memory was actively read from or written to.
+4 api_signature: torch.cuda.memory_usage(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which CUDA device to report memory usage for, defaulting to the
+    current device if omitted.
+7 api_usage_example: null
+8 api_shape: null

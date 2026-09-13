@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.tensor.DTensor
+3 api_description: DTensor is a distributed torch.Tensor subclass that presents a
+  single-tensor interface while tracking how data is sharded or replicated across
+  a DeviceMesh using placement rules.
+4 api_signature: torch.distributed.tensor.DTensor(**kwargs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

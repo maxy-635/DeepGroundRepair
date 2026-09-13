@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.constraints.UnitNorm
+3 api_description: Constrains each hidden unit's incoming weights to have unit norm.
+4 api_signature: tf.keras.constraints.UnitNorm(axis)
+5 api_details: ''
+6 api_parameters:
+- axis: Specifies the axis or axes along which to compute and apply the unit-norm
+    constraint to each weight vector or filter.
+7 api_usage_example: null
+8 api_shape: ''

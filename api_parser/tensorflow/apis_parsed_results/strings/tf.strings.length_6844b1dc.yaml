@@ -1,0 +1,13 @@
+2 api_name: tensorflow.strings.length
+3 api_description: Computes the length of each string in the input tensor.
+4 api_signature: tf.strings.length(input,unit)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor whose elements will be measured for length.
+- unit: The counting unit to use, either bytes or UTF-8 characters, defaulting to
+    bytes.
+7 api_usage_example:
+- strings = tf.constant(['Hello','TensorFlow', '\U0001F642'])
+- 'tf.strings.length(strings).numpy() # default counts bytes'
+- tf.strings.length(strings, unit="UTF8_CHAR").numpy()
+8 api_shape: ''

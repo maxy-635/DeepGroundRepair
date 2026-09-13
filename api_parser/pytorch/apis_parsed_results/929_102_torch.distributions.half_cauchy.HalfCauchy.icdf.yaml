@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.half_cauchy.HalfCauchy.icdf
+3 api_description: Returns the inverse cumulative distribution function for a HalfCauchy
+  distribution, mapping probabilities in [0, 1] to quantiles.
+4 api_signature: icdf(prob)
+5 api_details: ''
+6 api_parameters:
+- value: The quantile or probabilities in the interval [0, 1] to transform into HalfCauchy
+    samples via the inverse CDF.
+7 api_usage_example: null
+8 api_shape: null

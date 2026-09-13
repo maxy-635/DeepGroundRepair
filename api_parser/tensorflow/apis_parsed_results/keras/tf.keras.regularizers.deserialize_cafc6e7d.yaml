@@ -1,0 +1,7 @@
+2 api_name: tensorflow.keras.regularizers.deserialize
+3 api_description: Creates and returns a Keras regularizer from its configuration.
+4 api_signature: tf.keras.regularizers.deserialize(config)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

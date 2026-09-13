@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.LookupTableInsertV2
+3 api_description: Inserts or updates key-value pairs in a lookup table, requiring
+  keys and values to match the table’s key and value types.
+4 api_signature: tf.raw_ops.LookupTableInsertV2(table_handle,keys,values)
+5 api_details: ''
+6 api_parameters:
+- table_handle: Resource handle identifying the table to insert into.
+- keys: Tensor of keys to add to the table.
+- values: Tensor of values to store for the corresponding keys.
+7 api_usage_example: null
+8 api_shape: ''

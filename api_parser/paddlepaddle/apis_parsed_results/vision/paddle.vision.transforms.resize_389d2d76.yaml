@@ -1,0 +1,19 @@
+2 api_name: paddle.vision.transforms.resize
+3 api_description: Resizes an image to the specified size.
+4 api_signature: paddle.vision.transforms.resize(img,size)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the target output height and width to resize the input data to.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import functional as F
+- fake_img = (np.random.rand(256, 300, 3) * 255.).astype('uint8')
+- fake_img = Image.fromarray(fake_img)
+- converted_img = F.resize(fake_img, 224)
+- print(converted_img.size)
+- (262, 224)
+- converted_img = F.resize(fake_img, (200, 150))
+- print(converted_img.size)
+- (150, 200)
+8 api_shape: {}

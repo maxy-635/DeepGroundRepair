@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.shape
+3 api_description: Returns the symbolic shape of a tensor as a 1D integer tensor,
+  useful for inspecting dimensions in Keras backend computations.
+4 api_signature: tf.keras.backend.shape(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

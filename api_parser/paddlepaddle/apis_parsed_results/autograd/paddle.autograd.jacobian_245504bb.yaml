@@ -1,0 +1,13 @@
+2 api_name: paddle.autograd.jacobian
+3 api_description: Computes the Jacobian matrix of one tensor with respect to another,
+  returning the partial derivatives that describe how the outputs change as the inputs
+  vary.
+4 api_signature: paddle.autograd.jacobian(ys,xs)
+5 api_details: ''
+6 api_parameters:
+- ys: The output tensor or tuple of output tensors whose Jacobian with respect to
+    `xs` is computed.
+- xs: The input tensor or tuple of input tensors that the Jacobian is taken with respect
+    to.
+7 api_usage_example: []
+8 api_shape: {}

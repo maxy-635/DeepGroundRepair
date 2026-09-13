@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ExperimentalThreadPoolDataset
+3 api_description: Wraps an input dataset so its elements are computed using a custom
+  thread pool.
+4 api_signature: tf.raw_ops.ExperimentalThreadPoolDataset(input_dataset,thread_pool)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be consumed and processed by the thread pool.
+- thread_pool: The thread pool resource used to execute dataset processing.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.distribute.experimental.TerminationConfig
+3 api_description: Configures platform-specific preemption checkpoint behavior for
+  `PreemptionCheckpointHandler` by supplying termination-related settings.
+4 api_signature: tf.distribute.experimental.TerminationConfig(termination_watcher_fn,exit_fn)
+5 api_details: ''
+6 api_parameters:
+- termination_watcher_fn: Polls for an available preemption signal without blocking,
+    so the program can clean up properly before termination.
+- exit_fn: Runs after a checkpoint is saved to exit the process with a platform-specific
+    restart code before preemption occurs.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,52 @@
+2 api_name: paddle.optimizer.NAdam
+3 api_description: Implements the NAdam optimizer, combining Adam’s adaptive learning
+  rates with Nesterov momentum to improve parameter updates during training.
+4 api_signature: paddle.optimizer.NAdam(learning_rate,parameters,weight_decay,grad_clip,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update parameters, either as a fixed float
+    or a learning-rate scheduler.
+- parameters: Specifies which parameters to optimize, either as a list/tuple of tensors
+    or parameter-group dictionaries for per-group options.
+- weight_decay: Applies weight decay regularization to penalize large parameter values.
+- grad_clip: Defines the gradient clipping method to limit gradient magnitude during
+    optimization.
+- name: Optionally assigns a name to the optimizer instance for identification or
+    debugging.
+7 api_usage_example:
+- import paddle
+- inp = paddle.rand([10,10], dtype="float32")
+- linear = paddle.nn.Linear(10, 10)
+- out = linear(inp)
+- loss = paddle.mean(out)
+- nadam = paddle.optimizer.NAdam(
+- '    learning_rate=0.1,'
+- '    parameters=linear.parameters()'
+- )
+- out.backward()
+- nadam.step()
+- nadam.clear_grad()
+- '# Note that the learning_rate of linear_2 is 0.01.'
+- linear_1 = paddle.nn.Linear(10, 10)
+- linear_2 = paddle.nn.Linear(10, 10)
+- inp = paddle.uniform(shape=[10, 10], min=-0.1, max=0.1)
+- out = linear_1(inp)
+- out = linear_2(out)
+- loss = paddle.mean(out)
+- opt = paddle.optimizer.NAdam(
+- '    learning_rate=0.1,'
+- '    parameters=[{  # type: ignore'
+- '        ''params'': linear_1.parameters()'
+- '    }, {'
+- '        ''params'': linear_2.parameters(),'
+- '        ''weight_decay'': 0.001,'
+- '        ''learning_rate'': 0.1,'
+- '        ''beta1'': 0.8'
+- '    }],'
+- '    weight_decay=0.01,'
+- '    beta1=0.9'
+- )
+- loss.backward()
+- opt.step()
+- opt.clear_grad()
+8 api_shape: {}

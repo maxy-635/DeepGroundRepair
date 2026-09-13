@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.tensor.debug.CommDebugMode.log_comm_debug_tracing_table_to_file
+3 api_description: Writes CommDebugMode communication tracing output to a user-specified
+  file instead of the console.
+4 api_signature: log_comm_debug_tracing_table_to_file(file_name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

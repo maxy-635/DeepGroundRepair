@@ -1,0 +1,15 @@
+2 api_name: torch.distributed.tensor.distribute_tensor
+3 api_description: Shards or replicates a leaf tensor across a device mesh using the
+  given placements, taking the first-rank tensor as the global source of truth.
+4 api_signature: torch.distributed.tensor.distribute_tensor(tensor,device_mesh,placements)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to distribute across the device mesh, with uneven sharding handled
+    experimentally using `torch.chunk` semantics.
+- device_mesh: The device mesh that determines how the tensor is distributed; if omitted,
+    the call must occur within a `DeviceMesh` context.
+- placements: The placement spec for each mesh dimension, controlling how the tensor
+    is distributed or replicated; defaults to replication from the first rank of each
+    dimension.
+7 api_usage_example: null
+8 api_shape: null

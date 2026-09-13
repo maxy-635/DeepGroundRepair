@@ -1,0 +1,15 @@
+2 api_name: paddle.nn.Hardsigmoid
+3 api_description: The paddle.nn.Hardsigmoid API constructs a layer that applies the
+  hardsigmoid activation function to the input tensor.
+4 api_signature: paddle.nn.Hardsigmoid()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- m = paddle.nn.Hardsigmoid()
+- x = paddle.to_tensor([-4., 5., 1.])
+- out = m(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 1.        , 0.66666669])'
+8 api_shape: null

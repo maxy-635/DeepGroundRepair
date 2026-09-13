@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.freeze_runtime_asserts
+3 api_description: Prevents the ShapeEnv from adding any more deferred runtime assertions,
+  effectively freezing runtime-assert tracking.
+4 api_signature: freeze_runtime_asserts()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

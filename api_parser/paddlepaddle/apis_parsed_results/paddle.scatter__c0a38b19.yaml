@@ -1,0 +1,8 @@
+2 api_name: paddle.scatter_
+3 api_description: Updates a tensor in place by scattering input values into specified
+  positions, returning the modified tensor.
+4 api_signature: paddle.scatter_(x,index,updates,overwrite)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

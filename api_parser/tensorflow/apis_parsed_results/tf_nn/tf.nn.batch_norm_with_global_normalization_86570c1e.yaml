@@ -1,0 +1,23 @@
+2 api_name: tensorflow.nn.batch_norm_with_global_normalization
+3 api_description: The tensorflow.nn.batch_norm_with_global_normalization API performs
+  batch normalization by normalizing inputs across the batch using global statistics
+  (mean and variance) and applying a scale and offset. It is deprecated in favor of
+  tf.nn.batch_normalization.
+4 api_signature: tf.nn.batch_norm_with_global_normalization(input,mean,variance,beta,gamma,variance_epsilon,scale_after_normalization)
+5 api_details: ''
+6 api_parameters:
+- input: A 4D tensor representing the input data to be normalized.
+- mean: A 1D tensor representing the mean used for normalization, matching the last
+    dimension of the input.
+- variance: A 1D tensor representing the variance used for normalization, matching
+    the last dimension of the input.
+- beta: A 1D tensor providing an offset added to the normalized tensor, matching the
+    last dimension of the input.
+- gamma: A 1D tensor used to scale the normalized tensor if scale_after_normalization
+    is true, matching the last dimension of the input.
+- variance_epsilon: A small float added to the variance to prevent division by zero
+    during normalization.
+- scale_after_normalization: A boolean indicating whether the normalized tensor should
+    be scaled by gamma.
+7 api_usage_example: null
+8 api_shape: ''

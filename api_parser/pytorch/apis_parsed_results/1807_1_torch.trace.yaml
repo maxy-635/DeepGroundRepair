@@ -1,0 +1,11 @@
+2 api_name: torch.trace
+3 api_description: Returns the sum of the elements on the diagonal of a 2-D input
+  matrix.
+4 api_signature: torch.trace(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' x = torch.arange(1., 10.).view(3, 3)'
+- ' x'
+- ' torch.trace(x)'
+8 api_shape: null

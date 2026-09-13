@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.CreateSummaryDbWriter
+3 api_description: Creates a SummaryDbWriter resource that writes TensorFlow summaries
+  to a database-backed log destination.
+4 api_signature: tf.raw_ops.CreateSummaryDbWriter(db_uri,experiment_name,run_name)
+5 api_details: ''
+6 api_parameters:
+- db_uri: Specifies the database URI where summary data will be written.
+- experiment_name: Identifies the experiment associated with the summary writer.
+- run_name: Identifies the specific run within the experiment.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: torch.utils.data.SubsetRandomSampler
+3 api_description: Randomly samples elements from a specified list of indices without
+  replacement.
+4 api_signature: torch.utils.data.SubsetRandomSampler(indices)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the sequence of dataset indices that the sampler will draw from
+    in random order.
+7 api_usage_example: null
+8 api_shape: null

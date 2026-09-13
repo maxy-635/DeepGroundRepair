@@ -1,0 +1,22 @@
+2 api_name: torch.utils.cpp_extension.CppExtension
+3 api_description: Creates a setuptools Extension configured for compiling C++ sources
+  with PyTorch’s build settings.
+4 api_signature: '"torch.utils.cpp_extension.CppExtension(name,sources,**kwargs)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' from setuptools import setup'
+- ' from torch.utils.cpp_extension import BuildExtension, CppExtension'
+- ' setup('
+- '...     name=''extension'','
+- '...     ext_modules=['
+- '...         CppExtension('
+- '...             name=''extension'','
+- '...             sources=[''extension.cpp''],'
+- '...             extra_compile_args=[''-g''],'
+- '...             extra_link_args=[''-Wl,--no-as-needed'', ''-lm''])'
+- '...     ],'
+- '...     cmdclass={'
+- '...         ''build_ext'': BuildExtension'
+- '...     })'
+8 api_shape: null

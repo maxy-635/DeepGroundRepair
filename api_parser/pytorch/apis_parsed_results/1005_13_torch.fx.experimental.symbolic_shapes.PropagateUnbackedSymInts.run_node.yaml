@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.PropagateUnbackedSymInts.run_node
+3 api_description: Runs an FX node while propagating unbacked symbolic integer bindings
+  into the resulting fake tensor.
+4 api_signature: run_node(n)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

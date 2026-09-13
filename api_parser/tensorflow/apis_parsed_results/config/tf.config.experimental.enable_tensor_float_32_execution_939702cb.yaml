@@ -1,0 +1,10 @@
+2 api_name: tensorflow.config.experimental.enable_tensor_float_32_execution
+3 api_description: Enables or disables TensorFloat-32 execution on supported NVIDIA
+  Ampere+ GPUs to trade a small precision reduction for faster float32 matrix and
+  convolution operations.
+4 api_signature: tf.config.experimental.enable_tensor_float_32_execution(enabled)
+5 api_details: ''
+6 api_parameters:
+- enabled: Controls whether TensorFloat-32 execution is enabled.
+7 api_usage_example: null
+8 api_shape: ''

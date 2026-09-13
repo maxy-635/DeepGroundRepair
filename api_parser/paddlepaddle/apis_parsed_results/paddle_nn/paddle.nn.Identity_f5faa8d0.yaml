@@ -1,0 +1,23 @@
+2 api_name: paddle.nn.Identity
+3 api_description: paddle.nn.Identity is a placeholder operator that returns the input
+  unchanged.
+4 api_signature: paddle.nn.Identity()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- input_tensor = paddle.randn(shape=[3, 2])
+- layer = paddle.nn.Identity()
+- out = layer(input_tensor)
+- print(input_tensor)
+- Tensor(shape=[3, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-1.41661501,  0.25904641],'
+- '[ 0.00979547, -0.30324230],'
+- '[-1.34256756, -0.76540256]])'
+- print(out)
+- Tensor(shape=[3, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-1.41661501,  0.25904641],'
+- '[ 0.00979547, -0.30324230],'
+- '[-1.34256756, -0.76540256]])'
+8 api_shape: null

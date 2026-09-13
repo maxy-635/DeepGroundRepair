@@ -1,0 +1,21 @@
+2 api_name: torch.nn.FractionalMaxPool3d
+3 api_description: Applies 3D fractional max pooling to downsample input tensors while
+  preserving spatial features across multiple input planes.
+4 api_signature: torch.nn.FractionalMaxPool3d(kernel_size,output_size)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Specifies the dimensions of the pooling window, which can be either
+    a single integer or a tuple.
+- output_size: Defines the desired size of the output tensor, which can be given as
+    a tuple or a single integer for square outputs.
+7 api_usage_example:
+- ' # pool of cubic window of size=3, and target output size 13x12x11'
+- ' m = nn.FractionalMaxPool3d(3, output_size=(13, 12, 11))'
+- ' # pool of cubic window and target output size being half of input size'
+- ' m = nn.FractionalMaxPool3d(3, output_ratio=(0.5, 0.5, 0.5))'
+- ' input = torch.randn(20, 16, 50, 32, 16)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, T_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, T_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

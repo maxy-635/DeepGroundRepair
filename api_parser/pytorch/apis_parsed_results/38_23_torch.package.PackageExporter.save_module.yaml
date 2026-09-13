@@ -1,0 +1,12 @@
+2 api_name: torch.package.PackageExporter.save_module
+3 api_description: Saves a module’s source code into the package by locating the module
+  through the importer path and reading its __file__ source.
+4 api_signature: save_module(module_name,dependencies)
+5 api_details: ''
+6 api_parameters:
+- module_name: Names the module or package whose source code will be saved into the
+    package.
+- dependencies: Controls whether the source is scanned to include its dependencies
+    automatically.
+7 api_usage_example: null
+8 api_shape: null

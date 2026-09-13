@@ -1,0 +1,14 @@
+2 api_name: tensorflow.math.atan2
+3 api_description: Computes the element-wise arctangent of y/x, using the signs of
+  y and x to return the correct angle in [-pi, pi].
+4 api_signature: tf.math.atan2(y,x)
+5 api_details: ''
+6 api_parameters:
+- y: The tensor providing the y-coordinates for which to compute the arctangent.
+- x: The tensor providing the x-coordinates, matching `y`'s type, used together with
+    `y` to compute the angle.
+7 api_usage_example:
+- x = [1., 1.]
+- y = [1., -1.]
+- print((tf.math.atan2(y,x) * (180 / np.pi)).numpy())
+8 api_shape: ''

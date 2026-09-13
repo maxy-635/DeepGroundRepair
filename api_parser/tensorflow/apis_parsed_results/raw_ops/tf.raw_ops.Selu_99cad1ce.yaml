@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Selu
+3 api_description: 'Applies the SELU activation: negative inputs are transformed by
+  scale * alpha * (exp(x) - 1), while non-negative inputs are scaled linearly by scale
+  * x.'
+4 api_signature: tf.raw_ops.Selu(features)
+5 api_details: ''
+6 api_parameters:
+- features: The input tensor whose values are transformed by the SELU activation function.
+7 api_usage_example: null
+8 api_shape: ''

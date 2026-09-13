@@ -1,0 +1,24 @@
+2 api_name: tensorflow.gradients
+3 api_description: Computes symbolic gradients of ys with respect to xs in a graph
+  context, optionally using custom initial gradients and treating specified tensors
+  as constants.
+4 api_signature: tf.gradients(ys,xs,grad_ys,stop_gradients)
+5 api_details: ''
+6 api_parameters:
+- ys: The target tensor or tensors whose gradients will be computed.
+- xs: The tensor or tensors with respect to which the gradients are taken.
+- grad_ys: Optional upstream gradient tensor or tensors matching `ys` that seed the
+    backpropagation.
+- stop_gradients: Optional tensor or tensors that block gradient propagation through
+    the specified values.
+7 api_usage_example:
+- '@tf.function'
+- 'def example():'
+- '  Ws = tf.constant(0.)'
+- '  bs = 2 * Ws'
+- '  cost = Ws + bs  # This is just an example. Please ignore the formulas.'
+- '  g = tf.gradients(cost, [Ws, bs])'
+- '  dCost_dW, dCost_db = g'
+- '  return dCost_dW, dCost_db'
+- example()
+8 api_shape: ''

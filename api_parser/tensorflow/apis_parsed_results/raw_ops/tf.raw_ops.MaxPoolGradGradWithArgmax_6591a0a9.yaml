@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.MaxPoolGradGradWithArgmax
+3 api_description: Computes the second-order gradient of max pooling by using the
+  original input, first-order gradient, and argmax indices to route gradient contributions
+  back through the pooled regions.
+4 api_signature: tf.raw_ops.MaxPoolGradGradWithArgmax(input,grad,argmax,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The original input tensor whose max-pooling second-order gradient is being
+    computed.
+- grad: The gradient tensor from the max-pool output, used to backpropagate through
+    the operation.
+- argmax: The tensor of indices indicating where each max value was selected during
+    max-pooling.
+- ksize: The window size for the pooling operation across each input dimension.
+- strides: The step size for sliding the pooling window across each input dimension.
+- padding: The padding mode that determines how borders are handled, either `SAME`
+    or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

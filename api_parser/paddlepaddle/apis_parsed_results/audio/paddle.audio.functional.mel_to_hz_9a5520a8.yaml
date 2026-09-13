@@ -1,0 +1,16 @@
+2 api_name: paddle.audio.functional.mel_to_hz
+3 api_description: Converts mel-scale bin values into corresponding frequency values
+  in hertz.
+4 api_signature: paddle.audio.functional.mel_to_hz(mel,htk)
+5 api_details: ''
+6 api_parameters:
+- mel: Specifies the mel-frequency values to convert to Hertz.
+- htk: Selects the HTK mel scale conversion when set to True.
+7 api_usage_example:
+- import paddle
+- val = 3.0
+- htk_flag = True
+- mel_paddle_tensor = paddle.audio.functional.mel_to_hz(
+- '    paddle.to_tensor(val), htk_flag)'
+- '...'
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: torch.nn.RNNBase.flatten_parameters
+3 api_description: Resets RNN parameter storage pointers to enable faster internal
+  execution paths.
+4 api_signature: flatten_parameters()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

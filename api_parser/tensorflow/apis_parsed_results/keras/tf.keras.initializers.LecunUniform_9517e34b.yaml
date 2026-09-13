@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.initializers.LecunUniform
+3 api_description: Initializes weights with values sampled uniformly from [-sqrt(3/fan_in),
+  sqrt(3/fan_in)], where fan_in is the number of input units.
+4 api_signature: tf.keras.initializers.LecunUniform(seed)
+5 api_details: ''
+6 api_parameters:
+- seed: Controls the random seed so the initializer can produce deterministic values,
+    with a SeedGenerator enabling different values across calls.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = LecunUniform()
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

@@ -1,0 +1,23 @@
+2 api_name: torch.nn.Flatten
+3 api_description: torch.nn.Flatten flattens a specified range of dimensions in a
+  tensor into a single dimension, effectively transforming multi-dimensional input
+  into a 2D tensor.
+4 api_signature: torch.nn.Flatten()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' input = torch.randn(32, 1, 5, 5)'
+- ' # With default parameters'
+- ' m = nn.Flatten()'
+- ' output = m(input)'
+- ' output.size()'
+- ' # With non-default parameters'
+- ' m = nn.Flatten(0, 2)'
+- ' output = m(input)'
+- ' output.size()'
+8 api_shape:
+  input tensor shape: (*, S_{\text{start}},..., S_i,..., S_{\text{end}}, *),’ where
+    S_i is the size at dimension i and * means any number of dimensions including
+    none.
+  output tensor shape: (*, \prod_{i=\text{start}}^{\text{end}} S_i, *).
+  tensor shape transform formulas: {}

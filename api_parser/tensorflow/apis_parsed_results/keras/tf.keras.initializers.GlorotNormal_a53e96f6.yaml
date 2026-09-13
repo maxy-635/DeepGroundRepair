@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.initializers.GlorotNormal
+3 api_description: Initializes weights with values sampled from a truncated normal
+  distribution centered at 0, using stddev sqrt(2 / (fan_in + fan_out)) to balance
+  input and output layer sizes.
+4 api_signature: tf.keras.initializers.GlorotNormal(seed)
+5 api_details: ''
+6 api_parameters:
+- seed: Controls the random seed for deterministic initialization; use a SeedGenerator
+    for different values across calls.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = GlorotNormal()
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.random.experimental.stateless_shuffle
+3 api_description: Deterministically shuffles a tensor along its first dimension using
+  a stateless random seed.
+4 api_signature: tf.random.experimental.stateless_shuffle(value,seed)
+5 api_details: ''
+6 api_parameters:
+- value: The tensor whose elements are shuffled.
+- seed: A 2-element integer tensor that seeds the random shuffling process.
+7 api_usage_example:
+- v = tf.constant([[1, 2], [3, 4], [5, 6]])
+- shuffled = tf.random.experimental.stateless_shuffle(v, seed=[8, 9])
+- print(shuffled)
+8 api_shape: ''

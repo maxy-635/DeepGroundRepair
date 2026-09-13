@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.activations.tanh
+3 api_description: Applies the hyperbolic tangent activation, squashing inputs to
+  values between -1 and 1.
+4 api_signature: tf.keras.activations.tanh(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the hyperbolic tangent activation to.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.equal
+3 api_description: Compares two tensors or values element-wise and returns a boolean
+  result for where they are equal.
+4 api_signature: tf.keras.ops.equal(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first tensor whose values are compared for elementwise equality.
+- x2: The second tensor whose values are compared against `x1` for elementwise equality.
+7 api_usage_example: null
+8 api_shape: ''

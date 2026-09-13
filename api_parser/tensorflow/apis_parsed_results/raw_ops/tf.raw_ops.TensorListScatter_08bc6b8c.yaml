@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorListScatter
+3 api_description: Creates a TensorList by gathering rows from an input tensor at
+  the specified indices, with each list element matching the given element shape.
+4 api_signature: tf.raw_ops.TensorListScatter(tensor,indices)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor whose values are scattered into the TensorList.
+- indices: An int32 tensor specifying the positions where each tensor element should
+    be placed.
+7 api_usage_example: null
+8 api_shape: ''

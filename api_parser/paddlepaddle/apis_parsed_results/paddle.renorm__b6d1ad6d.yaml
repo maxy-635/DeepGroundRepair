@@ -1,0 +1,8 @@
+2 api_name: paddle.renorm_
+3 api_description: In-place renormalizes a tensor by updating it directly with the
+  renorm operation.
+4 api_signature: paddle.renorm_(x,max_norm)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.dot
+3 api_description: Computes the dot product of two tensors along their last and second-to-last
+  dimensions, returning their matrix multiplication result.
+4 api_signature: '"tf.keras.backend.dot(x,y)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

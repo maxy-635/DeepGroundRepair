@@ -1,0 +1,33 @@
+2 api_name: tensorflow.data.TFRecordDataset
+3 api_description: Creates a dataset of raw byte records read from one or more TFRecord
+  files; it performs no parsing or decoding, leaving that to later map transformations.
+4 api_signature: tf.data.TFRecordDataset(filenames,compression_type,buffer_size)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies the TFRecord files or dataset of filenames to read from.
+- compression_type: Sets the compression format for the input records, or leaves them
+    uncompressed.
+- buffer_size: Controls the size of the read buffer used when loading records.
+- name: Assigns an optional name to the dataset operation.
+7 api_usage_example:
+- '# The datasets or nested structure of datasets `*args` argument'
+- '# determines the structure of elements in the resulting dataset.'
+- 'a = tf.data.Dataset.range(1, 4)  # ==> [ 1, 2, 3 ]'
+- 'b = tf.data.Dataset.range(4, 7)  # ==> [ 4, 5, 6 ]'
+- ds = tf.data.Dataset.zip(a, b)
+- list(ds.as_numpy_iterator())
+- ds = tf.data.Dataset.zip(b, a)
+- list(ds.as_numpy_iterator())
+- '# The `datasets` argument may contain an arbitrary number of datasets.'
+- 'c = tf.data.Dataset.range(7, 13).batch(2)  # ==> [ [7, 8],'
+- '                                           #       [9, 10],'
+- '                                           #       [11, 12] ]'
+- ds = tf.data.Dataset.zip(a, b, c)
+- 'for element in ds.as_numpy_iterator():'
+- '  print(element)'
+- '# The number of elements in the resulting dataset is the same as'
+- '# the size of the smallest dataset in `datasets`.'
+- 'd = tf.data.Dataset.range(13, 15)  # ==> [ 13, 14 ]'
+- ds = tf.data.Dataset.zip(a, d)
+- list(ds.as_numpy_iterator())
+8 api_shape: ''

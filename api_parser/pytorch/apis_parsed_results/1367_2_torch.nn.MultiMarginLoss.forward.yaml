@@ -1,0 +1,8 @@
+2 api_name: torch.nn.MultiMarginLoss.forward
+3 api_description: Computes the multi-class margin loss for each input against the
+  target labels and returns the averaged or summed loss.
+4 api_signature: forward(input,target)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

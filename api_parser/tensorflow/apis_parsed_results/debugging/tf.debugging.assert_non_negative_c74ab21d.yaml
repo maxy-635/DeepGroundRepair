@@ -1,0 +1,11 @@
+2 api_name: tensorflow.debugging.assert_non_negative
+3 api_description: Checks that every element of `x` is non-negative and raises `InvalidArgumentError`
+  with a message and sample values if any element is less than 0.
+4 api_signature: tf.debugging.assert_non_negative(x,message,name)
+5 api_details: ''
+6 api_parameters:
+- x: The numeric tensor to check for non-negative values.
+- message: An optional string added to the start of the default error message.
+- name: An optional operation name; defaults to "assert_non_negative".
+7 api_usage_example: null
+8 api_shape: ''

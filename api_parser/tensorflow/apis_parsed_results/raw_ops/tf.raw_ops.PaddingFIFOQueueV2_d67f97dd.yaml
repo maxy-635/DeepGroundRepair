@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.PaddingFIFOQueueV2
+3 api_description: Creates a FIFO queue that supports variable-size elements by padding
+  dequeued minibatches to the largest element size.
+4 api_signature: tf.raw_ops.PaddingFIFOQueueV2(component_types,shapes,capacity)
+5 api_details: ''
+6 api_parameters:
+- component_types: Specifies the data type of each component stored in the queue value.
+- shapes: Defines the expected shape of each component, including optional variable
+    dimensions for padding during batched dequeues.
+- capacity: Sets the maximum number of elements the queue can hold, with negative
+    values meaning unbounded capacity.
+7 api_usage_example: null
+8 api_shape: ''

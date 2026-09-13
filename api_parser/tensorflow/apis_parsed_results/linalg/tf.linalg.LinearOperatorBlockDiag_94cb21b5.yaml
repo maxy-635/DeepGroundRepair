@@ -1,0 +1,13 @@
+2 api_name: tensorflow.linalg.LinearOperatorBlockDiag
+3 api_description: Creates a block-diagonal linear operator by placing one or more
+  LinearOperators along the main diagonal and filling all off-diagonal blocks with
+  zeros.
+4 api_signature: tf.linalg.LinearOperatorBlockDiag(operators,name)
+5 api_details: ''
+6 api_parameters:
+- operators: The collection of LinearOperator instances to combine into a block-diagonal
+    operator, all sharing the same dtype and compatible shapes.
+- name: An optional name used to identify the LinearOperator, defaulting to the joined
+    names of the individual operators.
+7 api_usage_example: null
+8 api_shape: ''

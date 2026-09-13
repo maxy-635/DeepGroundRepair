@@ -1,0 +1,10 @@
+2 api_name: paddle.reshape
+3 api_description: Reshapes a tensor without changing its data.
+4 api_signature: paddle.reshape(x,shape)
+5 api_details: ''
+6 api_parameters:
+- x: The input N-D tensor whose data will be reshaped.
+- shape: The target shape to reshape `x` into, with at most one dimension allowed
+    to be `-1`.
+7 api_usage_example: []
+8 api_shape: {}

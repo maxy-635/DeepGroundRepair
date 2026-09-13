@@ -1,0 +1,11 @@
+2 api_name: tensorflow.random.categorical
+3 api_description: Draws random samples from a categorical distribution based on input
+  logits or probabilities.
+4 api_signature: tf.random.categorical(logits,num_samples)
+5 api_details: ''
+6 api_parameters:
+- logits: Provides the unnormalized log-probabilities for each class in each batch
+    row.
+- num_samples: Specifies how many independent samples to draw for each row.
+7 api_usage_example: null
+8 api_shape: ''

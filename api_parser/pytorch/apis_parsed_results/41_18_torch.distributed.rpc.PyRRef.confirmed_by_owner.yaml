@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.rpc.PyRRef.confirmed_by_owner
+3 api_description: Checks whether an RRef has been acknowledged by its owner; owner
+  RRefs always return true, while user RRefs return true only after the owner knows
+  about them.
+4 api_signature: confirmed_by_owner(self)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

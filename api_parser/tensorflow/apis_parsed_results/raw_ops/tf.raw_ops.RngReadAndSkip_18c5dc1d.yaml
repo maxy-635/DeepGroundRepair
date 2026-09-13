@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RngReadAndSkip
+3 api_description: Advances a counter-based RNG state by a specified amount without
+  generating values, keeping the counter aligned with what would have been consumed
+  by drawing n random samples.
+4 api_signature: tf.raw_ops.RngReadAndSkip(resource,delta)
+5 api_details: ''
+6 api_parameters:
+- resource: Resource handle for the RNG state variable, which stores the counter and
+    key.
+- delta: Unsigned 64-bit amount by which to advance the RNG state.
+7 api_usage_example: null
+8 api_shape: ''

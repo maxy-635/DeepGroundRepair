@@ -1,0 +1,8 @@
+2 api_name: paddle.index_put_
+3 api_description: In-place updates a tensor at the specified indices with the given
+  values, modifying the original tensor directly.
+4 api_signature: paddle.index_put_(x,indices,value,accumulate)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

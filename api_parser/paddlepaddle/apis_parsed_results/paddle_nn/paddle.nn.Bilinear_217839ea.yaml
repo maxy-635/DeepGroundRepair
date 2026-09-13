@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.Bilinear
+3 api_description: paddle.nn.Bilinear performs a bilinear transformation on two input
+  tensors, combining them through a learned weight matrix to produce an output tensor.
+4 api_signature: paddle.nn.Bilinear(in1_features,in2_features,out_features)
+5 api_details: ''
+6 api_parameters:
+- in1_features: Specifies the size of the first input vector for the bilinear transformation.
+- in2_features: Defines the size of the second input vector for the bilinear transformation.
+- out_features: Determines the size of the output vector produced by the bilinear
+    layer.
+7 api_usage_example: []
+8 api_shape: null

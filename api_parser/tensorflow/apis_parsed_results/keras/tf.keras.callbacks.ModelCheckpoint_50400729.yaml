@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.callbacks.ModelCheckpoint
+3 api_description: Saves a Keras model or its weights during training at specified
+  intervals so training can be resumed or the saved model reused later.
+4 api_signature: tf.keras.callbacks.ModelCheckpoint(filepath,monitor,save_best_only,save_weights_only,save_freq)
+5 api_details: ''
+6 api_parameters:
+- filepath: Specifies where to save checkpoint files, with optional formatting tokens
+    for epoch and logged metrics.
+- monitor: Chooses the metric name used to decide which model is being tracked or
+    compared.
+- save_best_only: Saves only when the monitored metric improves, avoiding overwriting
+    the best checkpoint unless the path is reused.
+- save_weights_only: Saves only the model weights instead of the full model.
+- save_freq: Controls whether saving happens every epoch or after a set number of
+    batches.
+7 api_usage_example: null
+8 api_shape: ''

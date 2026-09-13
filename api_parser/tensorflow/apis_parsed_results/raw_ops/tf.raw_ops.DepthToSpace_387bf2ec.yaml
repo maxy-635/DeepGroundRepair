@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.DepthToSpace
+3 api_description: Rearranges a 4D tensor by moving data from the depth dimension
+  into spatial blocks across height and width, reversing SpaceToDepth using the specified
+  block size.
+4 api_signature: tf.raw_ops.DepthToSpace(input,block_size,data_format)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be rearranged from depth into spatial blocks.
+- block_size: The factor by which depth is split into height and width, and it must
+    be at least 2.
+- data_format: The tensor layout to use, defaulting to `NHWC`, with optional `NCHW`
+    or `NCHW_VECT_C`.
+7 api_usage_example: null
+8 api_shape: ''

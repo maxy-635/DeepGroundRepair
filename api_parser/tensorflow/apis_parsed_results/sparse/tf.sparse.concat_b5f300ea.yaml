@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.concat
+3 api_description: Concatenates multiple SparseTensor inputs along a specified axis,
+  merging their sparse indices and values while preserving sorted order; supports
+  either matching non-concat dimensions or expanding them to the largest input shape.
+4 api_signature: tf.sparse.concat(axis,sp_inputs)
+5 api_details: ''
+6 api_parameters:
+- axis: Specifies the dimension along which to join the sparse tensors.
+- sp_inputs: Provides the list of SparseTensor inputs to concatenate.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.QuantizedBiasAdd
+3 api_description: Adds a quantized bias tensor to a quantized input tensor, broadcasting
+  bias across all but the last dimension of the input.
+4 api_signature: tf.raw_ops.QuantizedBiasAdd(input,bias,out_type,name)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized input tensor to which the bias will be added.
+- bias: A 1D quantized bias tensor whose length matches the input’s last dimension.
+- out_type: The quantized dtype of the output tensor.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

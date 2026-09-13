@@ -1,0 +1,17 @@
+2 api_name: paddle.incubate.nn.FusedFeedForward
+3 api_description: Applies a fused feed-forward transformation that maps inputs to
+  the same feature size as `d_model`.
+4 api_signature: paddle.incubate.nn.FusedFeedForward(d_model,dim_feedforward,dropout_rate,activation,normalize_before,nranks,ring_id,name)
+5 api_details: ''
+6 api_parameters:
+- d_model: Sets the input and output feature dimension of the feed-forward block.
+- dim_feedforward: Sets the size of the intermediate hidden layer.
+- dropout_rate: Controls the dropout applied before and after the feed-forward transformation.
+- activation: Chooses the activation function used in the feed-forward layer.
+- normalize_before: Specifies whether layer normalization is applied before or after
+    the main computation.
+- nranks: Sets the number of tensor-parallel ranks to use for distributed execution.
+- ring_id: Identifies the distributed ring used for tensor parallelism.
+- name: Provides an optional name for the layer or operation.
+7 api_usage_example: []
+8 api_shape: {}

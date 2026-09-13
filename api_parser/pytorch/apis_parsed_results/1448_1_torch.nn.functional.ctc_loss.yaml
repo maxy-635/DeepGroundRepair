@@ -1,0 +1,25 @@
+2 api_name: torch.nn.functional.ctc_loss
+3 api_description: torch.nn.functional.ctc_loss computes the CTC loss between input
+  log probabilities and target sequences, facilitating training of sequence-to-sequence
+  models with variable-length outputs.
+4 api_signature: torch.nn.functional.ctc_loss(log_probs,targets,input_lengths,target_lengths,blank)
+5 api_details: ''
+6 api_parameters:
+- log_probs: Logarithmized probabilities of the outputs, with dimensions indicating
+    time steps, batch size, and character classes including blank.
+- targets: Target sequences either as a batch or concatenated, with dimensions indicating
+    batch size and sequence length.
+- input_lengths: Lengths of each input sequence, ensuring they do not exceed the maximum
+    input length T.
+- target_lengths: Lengths of each target sequence, corresponding to the number of
+    elements in the targets.
+- blank: The label used for the blank character in the CTC loss computation, defaulting
+    to 0.
+7 api_usage_example:
+- ' log_probs = torch.randn(50, 16, 20).log_softmax(2).detach().requires_grad_()'
+- ' targets = torch.randint(1, 20, (16, 30), dtype=torch.long)'
+- ' input_lengths = torch.full((16,), 50, dtype=torch.long)'
+- ' target_lengths = torch.randint(10, 30, (16,), dtype=torch.long)'
+- ' loss = F.ctc_loss(log_probs, targets, input_lengths, target_lengths)'
+- ' loss.backward()'
+8 api_shape: null

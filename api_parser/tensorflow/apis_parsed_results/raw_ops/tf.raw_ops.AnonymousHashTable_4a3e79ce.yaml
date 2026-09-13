@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.AnonymousHashTable
+3 api_description: Creates a new anonymous hash table resource with specified key
+  and value dtypes, returning a handle that must be initialized before use and is
+  automatically deleted when no handles remain.
+4 api_signature: tf.raw_ops.AnonymousHashTable(key_dtype,value_dtype)
+5 api_details: ''
+6 api_parameters:
+- key_dtype: Specifies the data type used for the table's keys.
+- value_dtype: Specifies the data type used for the table's values.
+7 api_usage_example: null
+8 api_shape: ''

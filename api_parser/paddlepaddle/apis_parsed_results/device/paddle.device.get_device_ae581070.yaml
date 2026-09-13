@@ -1,0 +1,13 @@
+2 api_name: paddle.device.get_device
+3 api_description: Returns the program’s current global device as a string such as
+  'cpu', 'gpu:x', 'xpu:x', or 'npu:x', defaulting to a CUDA GPU or CPU when no device
+  is set.
+4 api_signature: paddle.device.get_device()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- device = paddle.device.get_device()
+- x_cpu = paddle.to_tensor([1, 2, 3], place=paddle.CPUPlace())
+- 'id = paddle.get_device(x_cpu) # -1'
+8 api_shape: {}

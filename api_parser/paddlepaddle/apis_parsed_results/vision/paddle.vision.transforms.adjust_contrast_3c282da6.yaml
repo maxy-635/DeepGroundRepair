@@ -1,0 +1,20 @@
+2 api_name: paddle.vision.transforms.adjust_contrast
+3 api_description: Adjusts an image’s contrast by increasing or decreasing the difference
+  between light and dark regions.
+4 api_signature: paddle.vision.transforms.adjust_contrast(img,contrast_factor)
+5 api_details: ''
+6 api_parameters:
+- img: The image to be adjusted.
+- contrast_factor: A non-negative value that controls the contrast level, where 0
+    makes the image solid gray, 1 leaves it unchanged, and higher values increase
+    contrast.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import functional as F
+- fake_img = (np.random.rand(256, 300, 3) * 255.).astype('uint8')
+- fake_img = Image.fromarray(fake_img)
+- converted_img = F.adjust_contrast(fake_img, 0.4)
+- print(converted_img.size)
+- (300, 256)
+8 api_shape: {}

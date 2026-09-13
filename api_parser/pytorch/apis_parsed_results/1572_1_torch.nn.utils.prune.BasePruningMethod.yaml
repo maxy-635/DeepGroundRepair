@@ -1,0 +1,9 @@
+2 api_name: torch.nn.utils.prune.BasePruningMethod
+3 api_description: Abstract base class for defining new pruning methods that modify
+  module parameters by masking or reparameterizing them, with hooks to apply, combine,
+  and manage pruning operations.
+4 api_signature: class torch.nn.utils.prune.BasePruningMethod
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

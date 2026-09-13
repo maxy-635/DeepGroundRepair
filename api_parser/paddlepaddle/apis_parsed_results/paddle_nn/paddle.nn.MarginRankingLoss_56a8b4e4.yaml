@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.MarginRankingLoss
+3 api_description: The paddle.nn.MarginRankingLoss API constructs a callable object
+  to compute the margin ranking loss between input tensors, using a specified margin
+  and label to determine the loss based on their relative ranking.
+4 api_signature: paddle.nn.MarginRankingLoss(margin)
+5 api_details: ''
+6 api_parameters:
+- margin: Specifies the margin value to be added to the loss computation, with a default
+    of 0.
+7 api_usage_example:
+- import paddle
+- input = paddle.to_tensor([[1, 2], [3, 4]], dtype="float32")
+- other = paddle.to_tensor([[2, 1], [2, 4]], dtype="float32")
+- label = paddle.to_tensor([[1, -1], [-1, -1]], dtype="float32")
+- margin_rank_loss = paddle.nn.MarginRankingLoss()
+- loss = margin_rank_loss(input, other, label)
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.75000000)
+8 api_shape: null

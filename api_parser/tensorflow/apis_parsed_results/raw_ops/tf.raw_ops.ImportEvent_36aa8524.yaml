@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.ImportEvent
+3 api_description: Imports a serialized TensorBoard event proto into the event writer,
+  allowing the event data to be recorded in a summary log.
+4 api_signature: tf.raw_ops.ImportEvent(event)
+5 api_details: ''
+6 api_parameters:
+- event: A serialized TensorBoard event record to import.
+7 api_usage_example: null
+8 api_shape: ''

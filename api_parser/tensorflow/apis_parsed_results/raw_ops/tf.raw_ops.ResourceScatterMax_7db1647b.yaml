@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ResourceScatterMax
+3 api_description: Applies sparse updates to a resource variable by taking the element-wise
+  maximum at the specified indices.
+4 api_signature: tf.raw_ops.ResourceScatterMax(resource,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- resource: The variable resource to update in place.
+- indices: The index positions along the first dimension where values will be scattered.
+- updates: The values used to compute the elementwise maximum updates.
+7 api_usage_example: null
+8 api_shape: ''

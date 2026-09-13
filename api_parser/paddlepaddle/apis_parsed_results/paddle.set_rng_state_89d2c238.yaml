@@ -1,0 +1,12 @@
+2 api_name: paddle.set_rng_state
+3 api_description: Sets the random number generator state across all device generators.
+4 api_signature: paddle.set_rng_state(state_list)
+5 api_details: ''
+6 api_parameters:
+- state_list: A list of device RNG states to restore to the corresponding device generators,
+    typically obtained from `get_rng_state()`.
+7 api_usage_example:
+- import paddle
+- sts = paddle.get_rng_state()
+- paddle.set_rng_state(sts)
+8 api_shape: {}

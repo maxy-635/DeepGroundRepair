@@ -1,0 +1,14 @@
+2 api_name: paddle.vision.ops.DeformConv2D
+3 api_description: Applies 2D deformable convolution to a 4D input by learning spatial
+  offsets for the sampling locations, producing an output feature map with adaptable
+  receptive fields.
+4 api_signature: paddle.vision.ops.DeformConv2D(in_channels,out_channels,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Sets how many channels the input image has.
+- out_channels: Sets how many feature channels the convolution outputs.
+- kernel_size: Defines the spatial size of the convolution kernel.
+- stride: Controls how far the kernel moves across the input each step.
+- padding: Controls how much zero-padding is added around the input edges.
+7 api_usage_example: []
+8 api_shape: {}

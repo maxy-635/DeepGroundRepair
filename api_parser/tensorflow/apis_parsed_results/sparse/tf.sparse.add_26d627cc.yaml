@@ -1,0 +1,13 @@
+2 api_name: tensorflow.sparse.add
+3 api_description: Adds a sparse tensor to another sparse or dense tensor with matching
+  shapes, returning a SparseTensor for sparse-sparse inputs or a dense Tensor otherwise;
+  preserves lexicographic ordering assumptions and optionally drops near-zero sparse-sparse
+  sums using a threshold.
+4 api_signature: tf.sparse.add(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: The first value to add, which can be a `SparseTensor` or a dense `Tensor`.
+- b: The second value to add, which can be a `SparseTensor` or a dense `Tensor`, with
+    at least one input required to be sparse.
+7 api_usage_example: null
+8 api_shape: ''

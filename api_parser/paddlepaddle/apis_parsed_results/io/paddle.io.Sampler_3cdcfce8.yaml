@@ -1,0 +1,40 @@
+2 api_name: paddle.io.Sampler
+3 api_description: Abstract base class for defining how to iterate over dataset indices,
+  controlling sample order and batching behavior.
+4 api_signature: paddle.io.Sampler(data_source)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import numpy as np
+- from paddle.io import Dataset, Sampler
+- 'class RandomDataset(Dataset):  # type: ignore[type-arg]'
+- '    def __init__(self, num_samples):'
+- '        self.num_samples = num_samples'
+- '...'
+- '    def __getitem__(self, idx):'
+- '        image = np.random.random([784]).astype(''float32'')'
+- '        label = np.random.randint(0, 9, (1, )).astype(''int64'')'
+- '        return image, label'
+- '...'
+- '    def __len__(self):'
+- '        return self.num_samples'
+- '...'
+- 'class MySampler(Sampler):  # type: ignore[type-arg]'
+- '    def __init__(self, data_source):'
+- '        self.data_source = data_source'
+- '...'
+- '    def __iter__(self):'
+- '        return iter(range(len(self.data_source)))  # type: ignore[arg-type]'
+- '...'
+- '    def __len__(self):'
+- '        return len(self.data_source)  # type: ignore[arg-type]'
+- '...'
+- sampler = MySampler(data_source=RandomDataset(100))
+- 'for index in sampler:'
+- '    print(index)'
+- '0'
+- '1'
+- '2'
+- '...'
+- '99'
+8 api_shape: {}

@@ -1,0 +1,11 @@
+2 api_name: torch.ne
+3 api_description: Returns a boolean tensor indicating element-wise inequality between
+  input and other.
+4 api_signature: torch.ne(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are compared against `other`.
+- other: The tensor or scalar value each element of `input` is compared to.
+7 api_usage_example:
+- ' torch.ne(torch.tensor([[1, 2], [3, 4]]), torch.tensor([[1, 1], [4, 4]]))'
+8 api_shape: null

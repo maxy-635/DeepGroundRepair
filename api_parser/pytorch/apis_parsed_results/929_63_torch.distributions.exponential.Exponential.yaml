@@ -1,0 +1,12 @@
+2 api_name: torch.distributions.exponential.Exponential
+3 api_description: An exponential distribution over positive real values, parameterized
+  by a rate, with methods for sampling, computing log probabilities, entropy, and
+  related distribution statistics.
+4 api_signature: '"Exponential(rate)"'
+5 api_details: ''
+6 api_parameters:
+- rate: Sets the exponential distribution’s rate, equal to the inverse of its scale.
+7 api_usage_example:
+- ' m = Exponential(torch.tensor([1.0]))'
+- ' m.sample()  # Exponential distributed with rate=1'
+8 api_shape: null

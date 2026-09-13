@@ -1,0 +1,23 @@
+2 api_name: tensorflow.linalg.banded_triangular_solve
+3 api_description: Solves batched triangular linear systems using a banded matrix
+  representation, broadcasting batch dimensions of `bands` and `rhs` as needed.
+4 api_signature: tf.linalg.banded_triangular_solve(bands,rhs,lower)
+5 api_details: ''
+6 api_parameters:
+- bands: Supplies the banded triangular matrix coefficients for the left-hand side,
+    arranged by diagonals and aligned for cuSPARSE.
+- rhs: Provides the right-hand-side vector or matrix to solve against, with the same
+    dtype as the bands.
+- lower: Specifies whether the banded matrix represents a lower triangular matrix;
+    if False, it is treated as upper triangular.
+7 api_usage_example:
+- x = [[2., 3., 4., 5.], [-1., -2., -3., -4.]]
+- y = tf.zeros([4, 4])
+- z = tf.linalg.set_diag(y, x, align='LEFT_RIGHT', k=(0, 1))
+- z
+- soln = tf.linalg.banded_triangular_solve(x, tf.ones([4, 1]), lower=False)
+- soln
+- are_equal = (soln == tf.linalg.triangular_solve(
+- '  z, tf.ones([4, 1]), lower=False))'
+- tf.reduce_all(are_equal).numpy()
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.ctc_decode
+3 api_description: Decodes CTC model outputs into the most likely label sequences,
+  optionally using greedy or beam search decoding and returning the decoded paths
+  with their scores.
+4 api_signature: tf.keras.ops.ctc_decode(inputs,sequence_lengths,strategy,beam_width,top_paths)
+5 api_details: ''
+6 api_parameters:
+- inputs: Provides the unnormalized model logits to decode into output sequences.
+- sequence_lengths: Specifies the valid length of each sequence in the batch for decoding.
+- strategy: Chooses the decoding method, either greedy search or beam search.
+- beam_width: Sets how many candidate paths beam search explores at each step.
+- top_paths: Determines how many of the best decoded paths to return.
+7 api_usage_example: null
+8 api_shape: ''

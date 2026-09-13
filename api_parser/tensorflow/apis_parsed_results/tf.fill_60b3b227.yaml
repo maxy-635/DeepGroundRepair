@@ -1,0 +1,11 @@
+2 api_name: tensorflow.fill
+3 api_description: Creates a tensor of the specified shape and fills every element
+  with the given scalar value.
+4 api_signature: tf.fill(dims,value)
+5 api_details: ''
+6 api_parameters:
+- dims: Specifies the output tensor’s shape as a 1-D sequence of non-negative integers.
+- value: Provides the value used to fill every element of the returned tensor.
+7 api_usage_example:
+- tf.fill([2, 3], 9)
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.optim.ZeroRedundancyOptimizer.load_state_dict
+3 api_description: Loads the portion of an optimizer state_dict assigned to the current
+  rank and updates the local optimizer state accordingly.
+4 api_signature: load_state_dict(state_dict)
+5 api_details: ''
+6 api_parameters:
+- state_dict: The optimizer state to load, expected to be a state dictionary previously
+    returned by `state_dict()`.
+7 api_usage_example: null
+8 api_shape: null

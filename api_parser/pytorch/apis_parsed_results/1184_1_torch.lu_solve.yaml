@@ -1,0 +1,13 @@
+2 api_name: torch.lu_solve
+3 api_description: Solves Ax = b using the partially pivoted LU factorization of A.
+4 api_signature: torch.lu_solve(b,LU_data,LU_pivots)
+5 api_details: ''
+6 api_parameters:
+- b: Right-hand-side tensor containing the system(s) to solve.
+- LU_data: Pivoted LU factorization of the coefficient matrix used to solve the linear
+    system.
+- LU_pivots: Pivot indices corresponding to the LU factorization, matching the batch
+    dimensions of `LU_data`.
+7 api_usage_example:
+- X = linalg.lu_solve(LU, pivots, B)
+8 api_shape: null

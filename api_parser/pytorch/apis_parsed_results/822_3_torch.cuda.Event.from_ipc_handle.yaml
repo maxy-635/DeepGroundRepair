@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.Event.from_ipc_handle
+3 api_description: Reconstructs a CUDA event on the specified device from an IPC handle.
+4 api_signature: '"from_ipc_handle(device,handle)"'
+5 api_details: ''
+6 api_parameters:
+- ipc_handle: An IPC handle that identifies a CUDA event created in another process.
+- device: The CUDA device on which the imported event is located.
+7 api_usage_example: null
+8 api_shape: null

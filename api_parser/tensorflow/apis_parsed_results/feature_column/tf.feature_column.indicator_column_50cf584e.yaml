@@ -1,0 +1,10 @@
+2 api_name: tensorflow.feature_column.indicator_column
+3 api_description: Converts a categorical column into a multi-hot indicator vector
+  for DNN input, with each category represented as a binary feature.
+4 api_signature: tf.feature_column.indicator_column(categorical_column)
+5 api_details: ''
+6 api_parameters:
+- categorical_column: Specifies the categorical feature column to convert into a one-hot
+    indicator representation.
+7 api_usage_example: null
+8 api_shape: ''

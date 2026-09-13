@@ -1,0 +1,34 @@
+2 api_name: paddle.incubate.asp.decorate
+3 api_description: Wraps an optimizer with ASP sparsity support, creating mask variables
+  for supported parameters and inserting the needed ops during minimize() in static
+  graph mode.
+4 api_signature: paddle.incubate.asp.decorate(optimizer)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '# Example1: Usage of Dynamic Graph'
+- import paddle
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self.conv1 = paddle.nn.Conv2D('
+- '            in_channels=3, out_channels=4, kernel_size=3, padding=2)'
+- '        self.linear1 = paddle.nn.Linear(4624, 32)'
+- '        self.linear2 = paddle.nn.Linear(32, 32)'
+- '        self.linear3 = paddle.nn.Linear(32, 10)'
+- '...'
+- '    def forward(self, img):'
+- '        hidden = self.conv1(img)'
+- '        hidden = paddle.flatten(hidden, start_axis=1)'
+- '        hidden = self.linear1(hidden)'
+- '        hidden = self.linear2(hidden)'
+- '        prediction = self.linear3(hidden)'
+- '        return prediction'
+- my_layer = MyLayer()
+- optimizer = paddle.optimizer.SGD(
+- '    learning_rate=0.01, parameters=my_layer.parameters())'
+- '# Calling paddle.incubate.asp.decorate() to wrap step() in optimizer, which'
+- '# will apply necessary masking operations for ASP workflow.'
+- '# In dynamic graph mode, ASP would create related mask variables during decoration.'
+- optimizer = paddle.incubate.asp.decorate(optimizer)
+8 api_shape: {}

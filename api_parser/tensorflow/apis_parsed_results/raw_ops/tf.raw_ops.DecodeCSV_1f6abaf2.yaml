@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.DecodeCSV
+3 api_description: Parses RFC 4180 CSV records into one tensor per column, treating
+  missing fields as defaults and allowing surrounding spaces for int or float values.
+4 api_signature: tf.raw_ops.DecodeCSV(records,record_defaults,field_delim,use_quote_delim)
+5 api_details: ''
+6 api_parameters:
+- records: Supplies the CSV rows to parse, with each string representing one record
+    and all records sharing the same format.
+- record_defaults: Provides one default tensor per column, either a scalar default
+    value or an empty vector to mark the column as required.
+- field_delim: Sets the character used to separate fields within each CSV record,
+    defaulting to a comma.
+- use_quote_delim: Controls whether double quotes are treated as CSV quote delimiters
+    or as ordinary characters.
+7 api_usage_example: null
+8 api_shape: ''

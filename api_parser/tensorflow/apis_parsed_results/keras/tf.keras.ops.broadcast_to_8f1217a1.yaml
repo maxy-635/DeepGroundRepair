@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.broadcast_to
+3 api_description: Broadcast a tensor to a specified new shape by expanding its dimensions
+  without copying data.
+4 api_signature: tf.keras.ops.broadcast_to(x,shape)
+5 api_details: ''
+6 api_parameters:
+- x: Tensor to expand by broadcasting.
+- shape: Target shape for the broadcasted tensor; a single integer is treated as a
+    1D shape tuple.
+7 api_usage_example:
+- x = keras.ops.array([1, 2, 3])
+- keras.ops.broadcast_to(x, (3, 3))
+8 api_shape: ''

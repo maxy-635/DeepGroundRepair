@@ -1,0 +1,11 @@
+2 api_name: torch.cuda.ExternalStream
+3 api_description: Wraps an externally allocated CUDA stream so it can be used with
+  PyTorch CUDA operations.
+4 api_signature: torch.cuda.ExternalStream(stream_ptr,device)
+5 api_details: ''
+6 api_parameters:
+- stream_ptr: The external CUDA stream handle as an integer representation of a `cudaStream_t`.
+- device: The device on which the stream was originally created, which must be correct
+    for later launches to work properly.
+7 api_usage_example: null
+8 api_shape: null

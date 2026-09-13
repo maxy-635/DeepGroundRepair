@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.retain
+3 api_description: Filters a SparseTensor to keep only the entries selected by a boolean
+  mask, returning a new SparseTensor with the retained non-empty values and their
+  indices.
+4 api_signature: tf.sparse.retain(sp_input,to_retain)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The SparseTensor whose non-empty elements are filtered.
+- to_retain: A boolean mask indicating which of the N elements to keep.
+7 api_usage_example: null
+8 api_shape: ''

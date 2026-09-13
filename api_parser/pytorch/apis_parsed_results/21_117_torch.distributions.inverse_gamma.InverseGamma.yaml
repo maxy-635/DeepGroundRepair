@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.inverse_gamma.InverseGamma
+3 api_description: InverseGamma is a transformed distribution representing positive-valued
+  random variables whose density is the inverse-gamma law, commonly used as a prior
+  over scale or variance parameters.
+4 api_signature: torch.distributions.inverse_gamma.InverseGamma(concentration,rate)
+5 api_details: ''
+6 api_parameters:
+- concentration: Controls the inverse gamma shape, determining how the distribution’s
+    mass is shaped across values.
+- rate: Sets the inverse gamma rate, which is the inverse of scale and influences
+    how quickly probability decays.
+7 api_usage_example:
+- X ~ Gamma(concentration, rate)
+- Y = 1 / X ~ InverseGamma(concentration, rate)
+8 api_shape: null

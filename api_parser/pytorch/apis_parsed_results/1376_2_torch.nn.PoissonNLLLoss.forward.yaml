@@ -1,0 +1,18 @@
+2 api_name: torch.nn.PoissonNLLLoss.forward
+3 api_description: Computes the Poisson negative log-likelihood loss between input
+  and target, with optional control over log-input handling, full loss terms, and
+  reduction.
+4 api_signature: forward(log_input)
+5 api_details: ''
+6 api_parameters:
+- input: Predicted values, typically expected log-rate or rate, used to compute the
+    Poisson negative log-likelihood.
+- target: Ground-truth count data that the loss compares against the predictions.
+- log_input: Indicates whether `input` is provided as logarithms of the expected counts.
+- full: Controls whether to include the Stirling approximation term for the target
+    factorial in the loss.
+- eps: Small constant added for numerical stability when `log_input` is `False`.
+- reduction: Specifies how to aggregate element-wise losses, such as returning the
+    mean, sum, or no reduction.
+7 api_usage_example: null
+8 api_shape: null

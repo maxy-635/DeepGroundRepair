@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.device
+3 api_description: Context manager that temporarily sets the current CUDA device and
+  restores the previous device on exit.
+4 api_signature: torch.cuda.device(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects the CUDA device to use, and does nothing if it is `None` or a negative
+    integer.
+7 api_usage_example: null
+8 api_shape: null

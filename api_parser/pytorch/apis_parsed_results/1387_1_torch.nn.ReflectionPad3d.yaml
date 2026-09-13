@@ -1,0 +1,17 @@
+2 api_name: torch.nn.ReflectionPad3d
+3 api_description: torch.nn.ReflectionPad3d pads a 3D input tensor by reflecting its
+  boundary values.
+4 api_signature: torch.nn.ReflectionPad3d(padding)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the size of the padding; if an int, applies the same padding
+    to all boundaries, and if a 6-tuple, applies different padding values to each
+    boundary.
+7 api_usage_example:
+- ' m = nn.ReflectionPad3d(1)'
+- ' input = torch.arange(8, dtype=torch.float).reshape(1, 1, 2, 2, 2)'
+- ' m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

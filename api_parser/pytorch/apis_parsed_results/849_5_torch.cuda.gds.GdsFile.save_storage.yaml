@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.gds.GdsFile.save_storage
+3 api_description: Writes the contents of a storage object to a file.
+4 api_signature: save_storage(storage)
+5 api_details: ''
+6 api_parameters:
+- storage: The storage object containing the data to be saved.
+7 api_usage_example: null
+8 api_shape: null

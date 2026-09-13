@@ -1,0 +1,21 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_scalars
+3 api_description: Logs multiple scalar values under a common tag for TensorBoard
+  visualization.
+4 api_signature: add_scalars(main_tag,tag_scalar_dict,global_step)
+5 api_details: ''
+6 api_parameters:
+- main_tag: Sets the parent tag name under which all provided scalar tags are grouped.
+- tag_scalar_dict: Maps each scalar tag to its corresponding value or values to log.
+- global_step: Records the scalars at a specific training step or iteration.
+7 api_usage_example:
+- from torch.utils.tensorboard import SummaryWriter
+- writer = SummaryWriter()
+- r = 5
+- 'for i in range(100):'
+- '    writer.add_scalars(''run_14h'', {''xsinx'':i*np.sin(i/r),'
+- '                                    ''xcosx'':i*np.cos(i/r),'
+- '                                    ''tanx'': np.tan(i/r)}, i)'
+- writer.close()
+- '# This call adds three values to the same scalar plot with the tag'
+- '# ''run_14h'' in TensorBoard''s scalar section.'
+8 api_shape: null

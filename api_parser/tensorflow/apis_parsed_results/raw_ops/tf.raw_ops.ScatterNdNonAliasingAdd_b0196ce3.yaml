@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ScatterNdNonAliasingAdd
+3 api_description: Adds sparse values or slices to a tensor at specified indices,
+  making a copy first if needed to avoid in-place aliasing.
+4 api_signature: tf.raw_ops.ScatterNdNonAliasingAdd(indices,updates)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the positions in the input tensor where values will be added.
+- updates: Provides the values to add at the indexed positions.
+7 api_usage_example: null
+8 api_shape: ''

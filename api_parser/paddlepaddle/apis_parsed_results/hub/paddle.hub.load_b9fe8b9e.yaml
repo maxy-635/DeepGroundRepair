@@ -1,0 +1,14 @@
+2 api_name: paddle.hub.load
+3 api_description: Loads a pretrained Paddle model or dataset from PaddleHub, optionally
+  downloading it, and returns the loaded object for inference or use.
+4 api_signature: paddle.hub.load(repo_dir,model,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- repo_dir: Specifies the local repository directory to use for loading the model.
+- model: Identifies the model name to load from PaddleHub.
+- '**kwargs': Passes additional model-specific parameters to customize loading or
+    behavior.
+7 api_usage_example:
+- import paddle
+- paddle.hub.load('lyuwenyu/paddlehub_demo:main', model='MM', source='github')
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.lite.experimental.QuantizationDebugOptions
+3 api_description: Configures a QuantizationDebugger with debug options for collecting
+  and comparing quantization behavior during evaluation.
+4 api_signature: tf.lite.experimental.QuantizationDebugOptions(fully_quantize:bool)
+5 api_details: ''
+6 api_parameters:
+- fully_quantize: Controls whether the model is fully quantized, including the inputs
+    and outputs as well as the model body.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,20 @@
+2 api_name: paddle.Tensor.set_value
+3 api_description: In Dygraph mode, updates a Tensor in place by assigning it the
+  value and shape of another Tensor or compatible data.
+4 api_signature: paddle.Tensor.set_value(self,value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle.base as base
+- import paddle
+- from paddle.nn import Linear
+- import numpy as np
+- data = np.ones([3, 1024], dtype='float32')
+- 'with base.dygraph.guard():'
+- '    linear = Linear(1024, 4)'
+- '    t = paddle.to_tensor(data)'
+- '    linear(t)  # call with default weight'
+- '    custom_weight = np.random.randn(1024, 4).astype("float32")'
+- '    linear.weight.set_value(custom_weight)  # change existing weight'
+- '    out = linear(t)  # call with different weight'
+8 api_shape: {}

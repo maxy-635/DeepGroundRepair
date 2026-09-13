@@ -1,0 +1,11 @@
+2 api_name: paddle.incubate.nn.FusedBiasDropoutResidualLayerNorm
+3 api_description: Fuses bias addition, dropout, residual connection, and layer normalization
+  into a single operation.
+4 api_signature: paddle.incubate.nn.FusedBiasDropoutResidualLayerNorm(embed_dim,dropout_rate,epsilon)
+5 api_details: ''
+6 api_parameters:
+- embed_dim: Sets the input and output feature size.
+- dropout_rate: Controls how often attention weights are randomly dropped during dropout.
+- epsilon: Adds a small constant to the variance for numerical stability during normalization.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.matrix_rank
+3 api_description: Computes the rank of one or more matrices by estimating the number
+  of linearly independent rows or columns.
+4 api_signature: tf.linalg.matrix_rank(a,tol)
+5 api_details: ''
+6 api_parameters:
+- a: (Batch of) float-like matrix-shaped Tensor(s) whose rank is computed.
+- tol: Threshold used to treat small singular values as zero when determining rank.
+7 api_usage_example: null
+8 api_shape: ''

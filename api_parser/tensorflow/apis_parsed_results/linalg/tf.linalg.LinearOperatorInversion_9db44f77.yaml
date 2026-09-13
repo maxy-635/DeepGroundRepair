@@ -1,0 +1,12 @@
+2 api_name: tensorflow.linalg.LinearOperatorInversion
+3 api_description: Represents the inverse of a linear operator, applying the inverse
+  transformation of another operator.
+4 api_signature: tf.linalg.LinearOperatorInversion(operator,name)
+5 api_details: ''
+6 api_parameters:
+- operator: The linear operator to invert, provided it is non-singular; its self-adjoint
+    and positive-definite properties are preserved when known.
+- name: The name assigned to the inverse linear operator, defaulting to the original
+    operator name with `'_inv'` appended.
+7 api_usage_example: null
+8 api_shape: ''

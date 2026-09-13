@@ -1,0 +1,21 @@
+2 api_name: torch.fake_quantize_per_channel_affine
+3 api_description: Applies per-channel fake quantization to a tensor using the given
+  scale, zero point, quantization range, and channel axis.
+4 api_signature: torch.fake_quantize_per_channel_affine(input,scale,zero_point,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The float32 tensor to be fake-quantized.
+- scale: The per-channel float32 quantization scale used to map values into quantized
+    range.
+- zero_point: The per-channel quantization zero point used to shift the quantization
+    grid.
+- axis: The dimension along which per-channel quantization is applied.
+7 api_usage_example:
+- ' x = torch.randn(2, 2, 2)'
+- ' x'
+- ' scales = (torch.randn(2) + 1) * 0.05'
+- ' scales'
+- ' zero_points = torch.zeros(2).to(torch.int32)'
+- ' zero_points'
+- ' torch.fake_quantize_per_channel_affine(x, scales, zero_points, 1, 0, 255)'
+8 api_shape: null

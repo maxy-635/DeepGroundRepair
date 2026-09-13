@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.resnext50_32x4d
+3 api_description: ResNeXt-50 32x4d is a deep convolutional image classification model
+  that uses grouped residual transformations to extract hierarchical visual features
+  for recognition tasks.
+4 api_signature: paddle.vision.models.resnext50_32x4d(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet-pretrained weights.
+7 api_usage_example: []
+8 api_shape: {}

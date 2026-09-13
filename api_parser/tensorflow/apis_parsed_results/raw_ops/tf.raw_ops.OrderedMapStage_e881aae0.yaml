@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.OrderedMapStage
+3 api_description: Stages a key and associated values into an ordered associative
+  container, keeping elements sorted by key.
+4 api_signature: tf.raw_ops.OrderedMapStage(key,values,dtypes,capacity,memory_limit,name)
+5 api_details: ''
+6 api_parameters:
+- key: Specifies the int64 key used to stage the values in the ordered map.
+- values: Provides the tensors to insert into the staging area.
+- dtypes: Defines the expected data types for the inserted values.
+- capacity: Sets the maximum number of staged elements before inserts block when the
+    limit is reached.
+- memory_limit: Sets an optional memory cap for the staging area.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

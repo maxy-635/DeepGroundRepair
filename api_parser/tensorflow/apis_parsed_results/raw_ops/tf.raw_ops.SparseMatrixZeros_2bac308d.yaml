@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixZeros
+3 api_description: Creates a CSR sparse matrix filled with zeros for the given dense
+  shape.
+4 api_signature: tf.raw_ops.SparseMatrixZeros(dense_shape,type)
+5 api_details: ''
+6 api_parameters:
+- dense_shape: Specifies the desired shape of the sparse matrix as an int64 tensor.
+- type: Specifies the data type of the zero-valued sparse matrix entries.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.DeleteSessionTensor
+3 api_description: Deletes a tensor from the session using its handle.
+4 api_signature: tf.raw_ops.DeleteSessionTensor(handle,name)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the session-stored tensor to delete.
+- name: Optionally sets the operation name.
+7 api_usage_example: null
+8 api_shape: ''

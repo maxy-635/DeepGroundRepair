@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.wishart.Wishart.rsample
+3 api_description: Draws a reparameterized sample from a Wishart distribution, returning
+  a positive semidefinite matrix sample with support for differentiable sampling.
+4 api_signature: rsample(sample_shape)
+5 api_details: ''
+6 api_parameters:
+- n: The number of degrees of freedom used to parameterize the Wishart distribution
+    and control its shape.
+- scale_tril: The lower-triangular scale matrix that sets the covariance structure
+    of the sampled positive-definite matrix.
+- max_try_correction: An optional limit on how many times the sampler retries or adjusts
+    when numerical issues occur.
+7 api_usage_example: null
+8 api_shape: null

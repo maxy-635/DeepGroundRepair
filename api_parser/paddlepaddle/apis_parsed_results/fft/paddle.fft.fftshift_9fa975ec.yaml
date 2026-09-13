@@ -1,0 +1,21 @@
+2 api_name: paddle.fft.fftshift
+3 api_description: Reorders an FFT result so the zero-frequency component is centered
+  in the spectrum.
+4 api_signature: paddle.fft.fftshift(x,axes)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose frequency components will be shifted; it can contain real
+    or complex values.
+- axes: Axis or axes along which to shift the zero-frequency component; if `None`,
+    all axes are shifted.
+7 api_usage_example:
+- import paddle
+- fftfreq_xp = paddle.fft.fftfreq(5, d=0.3)
+- print(fftfreq_xp)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0., 0.66666669, 1.33333337, -1.33333337, -0.66666669])'
+- res = paddle.fft.fftshift(fftfreq_xp)
+- print(res)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-1.33333337, -0.66666669, 0., 0.66666669, 1.33333337])'
+8 api_shape: {}

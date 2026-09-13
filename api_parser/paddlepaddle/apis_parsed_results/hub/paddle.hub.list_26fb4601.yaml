@@ -1,0 +1,12 @@
+2 api_name: paddle.hub.list
+3 api_description: Lists all available entrypoints defined in the GitHub hubconf.
+4 api_signature: paddle.hub.list(repo_dir,source)
+5 api_details: ''
+6 api_parameters:
+- repo_dir: Specifies the local repository directory to list resources from.
+- source: Selects the source platform for listing, such as GitHub, Gitee, or local,
+    with GitHub as the default.
+7 api_usage_example:
+- import paddle
+- paddle.hub.list('lyuwenyu/paddlehub_demo:main', source='github', force_reload=False)
+8 api_shape: {}

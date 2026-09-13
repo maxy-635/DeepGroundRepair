@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.AdjustContrast
+3 api_description: Adjusts image contrast by scaling pixel values around their mean;
+  deprecated and disallowed in GraphDef version 2 or later.
+4 api_signature: tf.raw_ops.AdjustContrast(images,contrast_factor,min_value,max_value)
+5 api_details: ''
+6 api_parameters:
+- images: Input image tensor whose contrast will be adjusted.
+- contrast_factor: Float factor that controls how much the image contrast is increased
+    or decreased.
+- min_value: Lower bound used when clipping or scaling the adjusted image values.
+- max_value: Upper bound used when clipping or scaling the adjusted image values.
+7 api_usage_example: null
+8 api_shape: ''

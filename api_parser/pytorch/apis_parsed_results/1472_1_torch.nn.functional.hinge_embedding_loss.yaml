@@ -1,0 +1,15 @@
+2 api_name: torch.nn.functional.hinge_embedding_loss
+3 api_description: Computes the hinge embedding loss between input tensors, used for
+  binary classification tasks to measure the distance between predicted and true labels,
+  with a margin parameter controlling the separation.
+4 api_signature: torch.nn.functional.hinge_embedding_loss(input,target,margin,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the predicted values from the model.
+- target: Represents the ground truth values against which predictions are compared.
+- margin: Defines the threshold margin for the hinge loss calculation, defaulting
+    to 1.
+- reduction: Determines how the output loss values are aggregated, with options for
+    'none', 'mean', or 'sum'.
+7 api_usage_example: null
+8 api_shape: null

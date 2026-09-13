@@ -1,0 +1,18 @@
+2 api_name: tensorflow.image.sample_distorted_bounding_box
+3 api_description: Randomly generates a distorted bounding box for an image, returning
+  slice coordinates and the adjusted box for cropping or visualization.
+4 api_signature: tf.image.sample_distorted_bounding_box(image_size,bounding_boxes,min_object_covered,aspect_ratio_range,area_range)
+5 api_details: ''
+6 api_parameters:
+- image_size: Specifies the input image dimensions as a 1-D tensor of [height, width,
+    channels].
+- bounding_boxes: Provides the ground-truth bounding boxes associated with the image
+    for the crop to respect.
+- min_object_covered: Sets the minimum fraction of any bounding box that the cropped
+    region must include.
+- aspect_ratio_range: Constrains the cropped region's width-to-height ratio to stay
+    within the specified bounds.
+- area_range: Constrains the cropped region to cover a specified fraction of the original
+    image area.
+7 api_usage_example: null
+8 api_shape: ''

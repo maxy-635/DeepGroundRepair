@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.ExperimentalStatsAggregatorHandle
+3 api_description: Creates a statistics manager resource handle for collecting and
+  managing runtime statistics.
+4 api_signature: tf.raw_ops.ExperimentalStatsAggregatorHandle(name)
+5 api_details: ''
+6 api_parameters:
+- name: Optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

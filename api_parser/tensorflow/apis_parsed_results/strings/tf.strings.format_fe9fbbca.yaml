@@ -1,0 +1,15 @@
+2 api_name: tensorflow.strings.format
+3 api_description: Formats a string template with one tensor or a list of tensors,
+  summarizing tensor values by showing only the first and last elements of each dimension.
+4 api_signature: tf.strings.format(template,inputs,placeholder)
+5 api_details: ''
+6 api_parameters:
+- template: The format string that defines where tensor values will be inserted.
+- inputs: The tensor or list of tensors whose values are substituted into the template.
+- placeholder: The placeholder token in the template to replace with each input tensor,
+    defaulting to `{}`.
+7 api_usage_example:
+- tensor_a = tf.range(2)
+- tensor_b = tf.range(1, 4, 2)
+- 'tf.strings.format("a: {}, b: {}, suffix", (tensor_a, tensor_b))'
+8 api_shape: ''

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.Tensor
+3 api_description: Represents a multidimensional array of elements and can be evaluated
+  in a TensorFlow Session.
+4 api_signature: '"eval(feed_dict,session)"'
+5 api_details: ''
+6 api_parameters:
+- feed_dict: Provides a mapping from tensors to concrete values used when evaluating
+    the tensor.
+- session: Optionally specifies the session used to evaluate the tensor; otherwise
+    the default session is used.
+7 api_usage_example:
+- '# Serialize a rank-3 tensor'
+- t = tf.ones([5,5,5], dtype=tf.float32)
+- serialized = tf.io.serialize_tensor(t)
+- '# The function still runs, even though it `set_shape([None,None])`'
+- t2 = concrete_parse(serialized)
+- print(t2.shape)
+8 api_shape: ''

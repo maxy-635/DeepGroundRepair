@@ -1,0 +1,13 @@
+2 api_name: torch.qr
+3 api_description: Computes the QR decomposition of a matrix or batch of matrices,
+  returning orthogonal Q and upper-triangular R such that input = Q @ R.
+4 api_signature: torch.qr(input:Tensor,some:bool,out:Tensor|Tuple[Tensor,...]|List[Tensor]|None)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor containing one or more m×n matrices to factorize with QR
+    decomposition.
+- some: Controls whether to return the reduced QR decomposition (`True`) or the complete
+    QR decomposition (`False`).
+7 api_usage_example:
+- Q, R = torch.linalg.qr(A)
+8 api_shape: null

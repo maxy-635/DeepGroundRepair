@@ -1,0 +1,7 @@
+2 api_name: torch.nn.Softshrink.extra_repr
+3 api_description: Returns a string with the module’s extra representation for display.
+4 api_signature: '"extra_repr()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

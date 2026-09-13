@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.erfcinv
+3 api_description: Computes the inverse complementary error function for inputs in
+  [0, 2].
+4 api_signature: tf.math.erfcinv(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor of float or double values for which to compute the inverse complementary
+    error function.
+7 api_usage_example:
+- tf.math.erfcinv([0., 0.2, 1., 1.5, 2.])
+8 api_shape: ''

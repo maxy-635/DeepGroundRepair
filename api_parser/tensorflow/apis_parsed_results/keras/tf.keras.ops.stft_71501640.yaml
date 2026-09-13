@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.ops.stft
+3 api_description: Computes the short-time Fourier transform of the input along the
+  last axis using overlapping windows to produce time-varying frequency components.
+4 api_signature: tf.keras.ops.stft(x,fft_length,window)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose short-time Fourier transform is computed.
+- fft_length: Sets the FFT size used for the transform, or defaults to the smallest
+    power of 2 that encloses the input sequence length.
+- window: Specifies the windowing applied to each frame, either by name, by providing
+    a window tensor directly, or by disabling windowing with `None`.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([0.0, 1.0, 2.0, 3.0, 4.0])
+- stft(x, 3, 2, 3)
+8 api_shape: ''

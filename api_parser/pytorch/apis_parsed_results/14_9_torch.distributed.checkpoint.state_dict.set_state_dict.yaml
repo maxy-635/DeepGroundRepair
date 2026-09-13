@@ -1,0 +1,15 @@
+2 api_name: torch.distributed.checkpoint.state_dict.set_state_dict
+3 api_description: Loads a model’s state dict and optimizer state dicts into distributed
+  training components using checkpointed state.
+4 api_signature: torch.distributed.checkpoint.state_dict.set_state_dict(model,optimizers,*,model_state_dict,optim_state_dict)
+5 api_details: ''
+6 api_parameters:
+- model: The model whose parameters and buffers will be updated from the provided
+    state dict.
+- optimizers: The optimizers whose internal states will be restored from the provided
+    optimizer state dict.
+- model_state_dict: The model state data to load, either for the whole model or for
+    specific submodules with prefixes applied automatically.
+- optim_state_dict: The optimizer state data to load into the given optimizers.
+7 api_usage_example: null
+8 api_shape: null

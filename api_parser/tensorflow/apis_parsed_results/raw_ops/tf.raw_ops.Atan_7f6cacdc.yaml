@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Atan
+3 api_description: Computes the element-wise inverse tangent of `x`, returning the
+  angle whose tangent is `x`.
+4 api_signature: tf.raw_ops.Atan(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose element-wise arctangent is computed.
+7 api_usage_example: null
+8 api_shape: ''

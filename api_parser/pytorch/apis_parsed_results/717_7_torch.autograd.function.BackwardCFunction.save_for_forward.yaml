@@ -1,0 +1,32 @@
+2 api_name: torch.autograd.function.BackwardCFunction.save_for_forward
+3 api_description: Saves tensors during backward so they can be reused later by jvp()
+  in forward-mode autodiff.
+4 api_signature: save_for_forward(*tensors)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' class Func(torch.autograd.Function):'
+- '     @staticmethod'
+- '     def forward(ctx, x: torch.Tensor, y: torch.Tensor, z: int):'
+- '         ctx.save_for_backward(x, y)'
+- '         ctx.save_for_forward(x, y)'
+- '         ctx.z = z'
+- '         return x * y * z'
+- '     @staticmethod'
+- '     def jvp(ctx, x_t, y_t, _):'
+- '         x, y = ctx.saved_tensors'
+- '         z = ctx.z'
+- '         return z * (y * x_t + x * y_t)'
+- '     @staticmethod'
+- '     def vjp(ctx, grad_out):'
+- '         x, y = ctx.saved_tensors'
+- '         z = ctx.z'
+- '         return z * grad_out * y, z * grad_out * x, None'
+- '     a = torch.tensor(1., requires_grad=True, dtype=torch.double)'
+- '     t = torch.tensor(1., dtype=torch.double)'
+- '     b = torch.tensor(2., requires_grad=True, dtype=torch.double)'
+- '     c = 4'
+- '     with fwAD.dual_level():'
+- '         a_dual = fwAD.make_dual(a, t)'
+- '         d = Func.apply(a_dual, b, c)'
+8 api_shape: null

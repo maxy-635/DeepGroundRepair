@@ -1,0 +1,20 @@
+2 api_name: torch.nn.functional.binary_cross_entropy_with_logits
+3 api_description: Computes binary cross-entropy loss between input logits and target,
+  applying a sigmoid function internally.
+4 api_signature: torch.nn.functional.binary_cross_entropy_with_logits(input,target,weight,reduction,pos_weight)
+5 api_details: ''
+6 api_parameters:
+- input: Tensor of logits representing unnormalized scores for binary classification.
+- target: Tensor of the same shape as input with values between 0 and 1, representing
+    the true labels.
+- weight: Optional tensor for manual rescaling, supporting broadcasting to match input
+    and target shapes.
+- reduction: 'Specifies the method to reduce the output loss: none, mean, or sum.'
+- pos_weight: Tensor to apply different weights to positive examples, supporting broadcasting
+    across dimensions.
+7 api_usage_example:
+- ' input = torch.randn(3, requires_grad=True)'
+- ' target = torch.empty(3).random_(2)'
+- ' loss = F.binary_cross_entropy_with_logits(input, target)'
+- ' loss.backward()'
+8 api_shape: null

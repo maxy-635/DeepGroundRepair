@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.prune.L1Unstructured
+3 api_description: Zeros out the currently unpruned tensor elements with the smallest
+  absolute values, based on L1 magnitude.
+4 api_signature: torch.nn.utils.prune.L1Unstructured(amount)
+5 api_details: ''
+6 api_parameters:
+- amount: Specifies how many parameters to prune, either as a fraction of the total
+    (float between 0.0 and 1.0) or as an absolute count (int).
+7 api_usage_example: null
+8 api_shape: null

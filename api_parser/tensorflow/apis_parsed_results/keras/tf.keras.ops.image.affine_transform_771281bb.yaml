@@ -1,0 +1,22 @@
+2 api_name: tensorflow.keras.ops.image.affine_transform
+3 api_description: Applies affine transformations to one or more images, transforming
+  their spatial layout using the provided transform parameters.
+4 api_signature: tf.keras.ops.image.affine_transform(image,transform)
+5 api_details: ''
+6 api_parameters:
+- image: The input image or batch of images to transform, provided as a 3D or 4D tensor.
+- transform: The projective transform coefficients that map each output point back
+    to a corresponding input point, with optional perspective terms supported only
+    on the TensorFlow backend.
+7 api_usage_example:
+- 'x = np.random.random((2, 3, 64, 80)) # batch of 2 RGB images'
+- transform = np.array(
+- '    ['
+- '        [1.5, 0, -20, 0, 1.5, -16, 0, 0],  # zoom'
+- '        [1, 0, -20, 0, 1, -16, 0, 0],  # translation'
+- '    ]'
+- )
+- y = keras.ops.image.affine_transform(x, transform,
+- '    data_format="channels_first")'
+- y.shape
+8 api_shape: ''

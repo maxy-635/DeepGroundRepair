@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Softsign
+3 api_description: Applies the softsign activation by dividing each input value by
+  its absolute value plus 1, producing outputs in the range (-1, 1).
+4 api_signature: tf.raw_ops.Softsign(features)
+5 api_details: ''
+6 api_parameters:
+- features: The input tensor whose values are passed through the softsign activation
+    function.
+7 api_usage_example: null
+8 api_shape: ''

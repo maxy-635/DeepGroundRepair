@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.losses.hinge
+3 api_description: Computes the hinge loss between true labels and predicted values
+  for margin-based classification.
+4 api_signature: tf.keras.losses.hinge(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: Provides the true labels, expected as -1 or 1, and converts 0/1 labels to
+    that format if needed.
+- y_pred: Provides the model’s predicted values used to compute the hinge loss.
+7 api_usage_example:
+- y_true = np.random.choice([-1, 1], size=(2, 3))
+- y_pred = np.random.random(size=(2, 3))
+- loss = keras.losses.hinge(y_true, y_pred)
+8 api_shape: ''

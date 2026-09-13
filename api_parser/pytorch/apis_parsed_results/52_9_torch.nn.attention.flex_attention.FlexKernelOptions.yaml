@@ -1,0 +1,26 @@
+2 api_name: torch.nn.attention.flex_attention.FlexKernelOptions
+3 api_description: Configures FlexAttention kernel behavior by letting you tune performance,
+  numerical stability, and implementation details for attention execution.
+4 api_signature: class torch.nn.attention.flex_attention.FlexKernelOptions
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '# Using dictionary (backward compatible)'
+- 'kernel_opts = {"BLOCK_M": 64, "BLOCK_N": 64, "PRESCALE_QK": True}'
+- output = flex_attention(q, k, v, kernel_options=kernel_opts)
+- '# Using TypedDict (recommended for type safety)'
+- from torch.nn.attention.flex_attention import FlexKernelOptions
+- 'kernel_opts: FlexKernelOptions = {'
+- '    "BLOCK_M": 64,'
+- '    "BLOCK_N": 64,'
+- '    "PRESCALE_QK": True,'
+- '}'
+- output = flex_attention(q, k, v, kernel_options=kernel_opts)
+- '# Forward/backward specific options'
+- 'kernel_opts: FlexKernelOptions = {'
+- '    "fwd_BLOCK_M": 64,'
+- '    "bwd_BLOCK_M1": 32,'
+- '    "PRESCALE_QK": False,'
+- '}'
+- output = flex_attention(q, k, v, kernel_options=kernel_opts)
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: paddle.distributed.ps.the_one_ps.BarrierTable
+3 api_description: Synchronizes parameter-server workers by blocking until all participating
+  parties reach the same barrier point.
+4 api_signature: paddle.distributed.ps.the_one_ps.BarrierTable(context,idx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

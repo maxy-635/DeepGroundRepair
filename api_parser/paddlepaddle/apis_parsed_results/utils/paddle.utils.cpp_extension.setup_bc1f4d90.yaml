@@ -1,0 +1,10 @@
+2 api_name: paddle.utils.cpp_extension.setup
+3 api_description: Configures and builds customized Paddle operators into shared libraries,
+  auto-generates Python APIs, and installs them into site-packages for direct import
+  use.
+4 api_signature: '"paddle.utils.cpp_extension.setup(**attr)"'
+5 api_details: ''
+6 api_parameters:
+- '**attr**': Holds additional arguments passed through to `setuptools.setup`.
+7 api_usage_example: []
+8 api_shape: {}

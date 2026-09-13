@@ -1,0 +1,12 @@
+2 api_name: tensorflow.signal.kaiser_bessel_derived_window
+3 api_description: Generates a Kaiser-Bessel-derived window for signal processing,
+  producing a symmetric window of the specified length and beta parameter.
+4 api_signature: tf.signal.kaiser_bessel_derived_window(window_length,beta)
+5 api_details: ''
+6 api_parameters:
+- window_length: Specifies how many samples the generated Kaiser-Bessel-derived window
+    should contain.
+- beta: Controls the window shape by setting the Kaiser beta parameter, which affects
+    tapering.
+7 api_usage_example: null
+8 api_shape: ''

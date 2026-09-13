@@ -1,0 +1,14 @@
+2 api_name: torch.reshape
+3 api_description: Returns a tensor with the same data rearranged to a specified shape,
+  using a view when possible and a copy when needed.
+4 api_signature: torch.reshape(input,shape)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements will be rearranged into a new shape.
+- shape: The target dimensions that define the tensor’s new shape.
+7 api_usage_example:
+- ' a = torch.arange(4.)'
+- ' torch.reshape(a, (2, 2))'
+- ' b = torch.tensor([[0, 1], [2, 3]])'
+- ' torch.reshape(b, (-1,))'
+8 api_shape: null

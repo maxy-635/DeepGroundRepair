@@ -1,0 +1,8 @@
+2 api_name: torch.mps.profiler.metal_capture
+3 api_description: Context manager that records Metal API calls on Apple GPU into
+  a gputrace capture for profiling and debugging.
+4 api_signature: torch.mps.profiler.metal_capture(fname)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

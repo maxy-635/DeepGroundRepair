@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.BatchIFFT
+3 api_description: Computes the inverse FFT for each input in a batch of complex-valued
+  signals.
+4 api_signature: tf.raw_ops.BatchIFFT(input)
+5 api_details: ''
+6 api_parameters:
+- input: The complex64 tensor containing batched frequency-domain data to transform
+    with the inverse FFT.
+7 api_usage_example: null
+8 api_shape: ''

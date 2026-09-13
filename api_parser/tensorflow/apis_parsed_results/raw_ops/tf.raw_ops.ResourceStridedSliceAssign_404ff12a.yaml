@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ResourceStridedSliceAssign
+3 api_description: Assigns a value tensor directly to the sliced portion of a resource
+  variable, using StridedSlice-style indexing with no broadcasting.
+4 api_signature: ResourceStridedSliceAssign(ref,begin,end,strides,value)
+5 api_details: ''
+6 api_parameters:
+- ref: A resource tensor identifying the variable or resource to update.
+- begin: The starting indices for the strided slice assignment.
+- end: The ending indices for the strided slice assignment.
+- strides: The step sizes to use when traversing the slice dimensions.
+- value: The tensor containing the values to write into the selected slice.
+7 api_usage_example: null
+8 api_shape: ''

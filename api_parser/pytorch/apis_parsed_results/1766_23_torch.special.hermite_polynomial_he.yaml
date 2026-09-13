@@ -1,0 +1,10 @@
+2 api_name: torch.special.hermite_polynomial_he
+3 api_description: Computes the probabilist’s Hermite polynomial He_n(input) for the
+  given input tensor or value.
+4 api_signature: torch.special.hermite_polynomial_he(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor of values at which to evaluate the Hermite polynomial.
+- n: The polynomial degree to compute.
+7 api_usage_example: null
+8 api_shape: null

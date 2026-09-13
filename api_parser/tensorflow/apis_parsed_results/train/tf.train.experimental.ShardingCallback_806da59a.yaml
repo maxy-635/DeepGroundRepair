@@ -1,0 +1,8 @@
+2 api_name: tensorflow.train.experimental.ShardingCallback
+3 api_description: A callback that lets TensorFlow split checkpoint data into shards,
+  returning shard assignments and related metadata when called.
+4 api_signature: __call__(shardable_tensors)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

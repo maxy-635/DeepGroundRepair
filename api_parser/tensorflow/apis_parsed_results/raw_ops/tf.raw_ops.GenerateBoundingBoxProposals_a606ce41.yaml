@@ -1,0 +1,22 @@
+2 api_name: tensorflow.raw_ops.GenerateBoundingBoxProposals
+3 api_description: Generates region proposals (ROIs) by applying bounding-box deltas
+  to anchor boxes and selecting the resulting candidate boxes.
+4 api_signature: tf.raw_ops.GenerateBoundingBoxProposals(scores,bbox_deltas,image_info,anchors,nms_threshold,pre_nms_topn,min_size,post_nms_topn)
+5 api_details: ''
+6 api_parameters:
+- scores: Per-anchor objectness scores for each image location, used to rank candidate
+    boxes.
+- bbox_deltas: Predicted box adjustments for each anchor, encoded as [dy, dx, dh,
+    dw].
+- image_info: Image metadata such as height, width, and scale used to clip and normalize
+    proposals.
+- anchors: The base anchor boxes that the deltas are applied to in order to generate
+    proposals.
+- nms_threshold: The IoU threshold used to suppress overlapping proposals during non-maximal
+    suppression.
+- pre_nms_topn: The number of highest-scoring boxes kept before non-maximal suppression
+    is applied.
+- min_size: The minimum allowed box size; smaller proposals are discarded.
+- post_nms_topn: The maximum number of proposals returned after non-maximal suppression.
+7 api_usage_example: null
+8 api_shape: ''

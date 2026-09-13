@@ -1,0 +1,18 @@
+2 api_name: paddle.device.stream_guard
+3 api_description: Context manager that temporarily sets the active Paddle device
+  stream for a specific device, restoring the previous stream when the scope exits.
+4 api_signature: paddle.device.stream_guard(stream)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.set_device('custom_cpu')
+- s = paddle.device.Stream()
+- data1 = paddle.ones(shape=[20])
+- data2 = paddle.ones(shape=[20])
+- data3 = data1 + data2
+- 'with paddle.device.stream_guard(s):'
+- '    s.wait_stream(paddle.device.default_stream()) # type: ignore[attr-defined]'
+- '    data4 = data1 + data3'
+8 api_shape: {}

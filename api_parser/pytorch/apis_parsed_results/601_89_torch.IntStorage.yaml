@@ -1,0 +1,9 @@
+2 api_name: torch.IntStorage
+3 api_description: A low-level storage type for integer tensors that holds raw integer
+  values in contiguous memory and supports basic storage operations such as indexing,
+  resizing, and sharing data with tensors.
+4 api_signature: torch.IntStorage(dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

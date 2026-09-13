@@ -1,0 +1,11 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.PropagateUnbackedSymInts.placeholder
+3 api_description: Returns the next runtime argument for a placeholder node by advancing
+  the interpreter’s internal argument iterator.
+4 api_signature: placeholder(target,args,kwargs)
+5 api_details: ''
+6 api_parameters:
+- target: Specifies the callable or operation this node represents.
+- args: Supplies the positional arguments passed to the call.
+- kwargs: Supplies the keyword arguments passed to the call.
+7 api_usage_example: null
+8 api_shape: null

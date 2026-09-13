@@ -1,0 +1,17 @@
+2 api_name: paddle.device.Event
+3 api_description: Wraps a StreamBase to represent and manage device events, providing
+  a simple event object for Paddle device-side event handling.
+4 api_signature: paddle.device.Event(device,enable_timing)
+5 api_details: ''
+6 api_parameters:
+- enable_timing: Controls whether the event records timing information, and defaults
+    to False.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.set_device('custom_cpu')
+- e1 = paddle.device.Event()
+- e2 = paddle.device.Event('custom_cpu')
+- e3 = paddle.device.Event('custom_cpu:0')
+- e4 = paddle.device.Event(paddle.CustomPlace('custom_cpu', 0))
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.CropAndResize
+3 api_description: Extracts and resizes image crops from specified bounding boxes
+  to a fixed output size using bilinear or nearest-neighbor sampling with corner alignment.
+4 api_signature: tf.raw_ops.CropAndResize(image,boxes,box_ind,crop_size)
+5 api_details: ''
+6 api_parameters:
+- image: The input 4-D image tensor to crop and resize patches from.
+- boxes: The normalized box coordinates that define each crop region.
+- box_ind: The batch index for the source image corresponding to each box.
+- crop_size: The target height and width that each cropped patch is resized to.
+7 api_usage_example: null
+8 api_shape: ''

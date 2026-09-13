@@ -1,0 +1,10 @@
+2 api_name: tensorflow.device
+3 api_description: Sets the device context for TensorFlow ops so created and executed
+  operations run on a specified device, with nested scopes inheriting or overriding
+  the device assignment.
+4 api_signature: tf.device(device_name)
+5 api_details: ''
+6 api_parameters:
+- device_name: Specifies the device name used within the context.
+7 api_usage_example: null
+8 api_shape: ''

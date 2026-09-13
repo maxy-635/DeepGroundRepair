@@ -1,0 +1,7 @@
+2 api_name: torch.UntypedStorage.short
+3 api_description: Casts the storage to 16-bit short type.
+4 api_signature: short()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

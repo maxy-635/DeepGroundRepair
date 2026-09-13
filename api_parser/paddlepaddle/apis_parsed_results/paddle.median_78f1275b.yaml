@@ -1,0 +1,66 @@
+2 api_name: paddle.median
+3 api_description: Computes the median of a tensor along a specified axis.
+4 api_signature: paddle.median(x,axis,keepdim,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose median values will be computed.
+- axis: The dimension along which to compute the median, or all elements if set to
+    None.
+- keepdim: Controls whether the reduced dimension is kept in the output with size
+    1.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- x = paddle.arange(12).reshape([3, 4])
+- print(x)
+- Tensor(shape=[3, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0 , 1 , 2 , 3 ],'
+- '[4 , 5 , 6 , 7 ],'
+- '[8 , 9 , 10, 11]])'
+- y1 = paddle.median(x)
+- print(y1)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 5.50000000)
+- y2 = paddle.median(x, axis=0)
+- print(y2)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[4., 5., 6., 7.])'
+- y3 = paddle.median(x, axis=1)
+- print(y3)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.50000000, 5.50000000, 9.50000000])'
+- y4 = paddle.median(x, axis=0, keepdim=True)
+- print(y4)
+- Tensor(shape=[1, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[4., 5., 6., 7.]])'
+- y5 = paddle.median(x, mode='min')
+- print(y5)
+- Tensor(shape=[], dtype=int64, place=Place(cpu), stop_gradient=True,
+- 5)
+- median_value, median_indices = paddle.median(x, axis=1, mode='min')
+- print(median_value)
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[1, 5, 9])'
+- print(median_indices)
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[1, 1, 1])'
+- '# cases containing nan values'
+- x = paddle.to_tensor(np.array([[1,float('nan'),3,float('nan')],[1,2,3,4],[float('nan'),1,2,3]]))
+- y6 = paddle.median(x, axis=-1, keepdim=True)
+- print(y6)
+- Tensor(shape=[3, 1], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[nan       ],'
+- '[2.50000000],'
+- '[nan       ]])'
+- median_value, median_indices = paddle.median(x, axis=1, keepdim=True, mode='min')
+- print(median_value)
+- Tensor(shape=[3, 1], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[nan],'
+- '[2. ],'
+- '[nan]])'
+- print(median_indices)
+- Tensor(shape=[3, 1], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1],'
+- '[1],'
+- '[0]])'
+8 api_shape: {}

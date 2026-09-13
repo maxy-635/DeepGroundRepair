@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.QuantizedConv2D
+3 api_description: Performs a 2D convolution on quantized 4D input and filter tensors,
+  returning a quantized output along with its min and max values for real-number interpretation.
+4 api_signature: tf.raw_ops.QuantizedConv2D(input,filter,strides,padding,out_type,name)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized input tensor to be convolved.
+- filter: The quantized convolution kernel whose input depth must match the input
+    depth.
+- strides: The stride values that control how far the convolution window moves across
+    the input.
+- padding: The padding algorithm to apply around the input, either `SAME` or `VALID`.
+- out_type: The desired output data type for the quantized convolution result.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

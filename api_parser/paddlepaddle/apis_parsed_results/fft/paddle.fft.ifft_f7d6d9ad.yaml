@@ -1,0 +1,22 @@
+2 api_name: paddle.fft.ifft
+3 api_description: Computes the 1-D inverse discrete Fourier transform, converting
+  frequency-domain input back to the time/domain signal.
+4 api_signature: paddle.fft.ifft(x,n,axis,norm,*,out)
+5 api_details: ''
+6 api_parameters:
+- x: Input complex tensor to transform.
+- n: Sets the output transform length, cropping or zero-padding the input as needed.
+- axis: Chooses the axis along which to compute the inverse FFT, defaulting to the
+    last axis.
+- norm: Controls FFT normalization scaling with options for backward, forward, or
+    orthogonal scaling.
+- out: Optional tensor to store the output result.
+7 api_usage_example:
+- import numpy as np
+- import paddle
+- x = np.exp(3j * np.pi * np.arange(7) / 7)
+- xp = paddle.to_tensor(x)
+- ifft_xp = paddle.fft.ifft(xp).numpy().round(3)
+- print(ifft_xp)
+- '[0.143+0.179j 0.143+0.069j 0.143+0.j 0.143-0.069j 0.143-0.179j 0.143-0.626j 0.143+0.626j]'
+8 api_shape: {}

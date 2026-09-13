@@ -1,0 +1,22 @@
+2 api_name: tensorflow.keras.preprocessing.text_dataset_from_directory
+3 api_description: Creates a `tf.data.Dataset` from text files organized in directories,
+  automatically inferring class labels from subdirectory names and preparing batched
+  text data for model training or evaluation.
+4 api_signature: tf.keras.preprocessing.text_dataset_from_directory(directory,labels,label_mode,batch_size,shuffle,seed,validation_split,subset)
+5 api_details: ''
+6 api_parameters:
+- directory: Path to the directory containing the text data, organized into class
+    subfolders when labels are inferred.
+- labels: 'Specifies how labels are assigned: inferred from subdirectories, omitted,
+    or provided explicitly as integers.'
+- label_mode: Controls how the labels are encoded.
+- batch_size: Sets the number of samples per batch, or returns individual samples
+    when set to None.
+- shuffle: Determines whether the data is shuffled, or kept in alphanumeric order
+    when False.
+- seed: Provides a random seed for reproducible shuffling and transformations.
+- validation_split: Reserves a fraction of the data for validation.
+- subset: 'Chooses which split to return: training, validation, or both when using
+    a validation split.'
+7 api_usage_example: null
+8 api_shape: ''

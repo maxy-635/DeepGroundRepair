@@ -1,0 +1,13 @@
+2 api_name: torch.logcumsumexp
+3 api_description: Computes the cumulative log-sum-exp of a tensor along a given dimension
+  in a numerically stable way.
+4 api_signature: torch.logcumsumexp(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are accumulated using a logarithmic cumulative sum
+    exponential.
+- dim: The dimension along which to compute the cumulative log-sum-exp operation.
+7 api_usage_example:
+- ' a = torch.randn(10)'
+- ' torch.logcumsumexp(a, dim=0)'
+8 api_shape: null

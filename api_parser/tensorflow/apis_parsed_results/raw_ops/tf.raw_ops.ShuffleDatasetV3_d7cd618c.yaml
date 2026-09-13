@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ShuffleDatasetV3
+3 api_description: Randomly shuffles elements from an input dataset using a buffer,
+  then emits them as a dataset stream.
+4 api_signature: tf.raw_ops.ShuffleDatasetV3(input_dataset,buffer_size,seed,seed2,output_types,output_shapes,reshuffle_each_iteration)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be shuffled.
+- buffer_size: The size of the shuffle buffer used to randomize elements.
+- seed: The primary random seed for shuffling.
+- seed2: The secondary random seed for shuffling.
+- output_types: The data types of the dataset elements produced by the operation.
+- output_shapes: The shapes of the dataset elements produced by the operation.
+- reshuffle_each_iteration: Whether to reshuffle the dataset order on each new iteration.
+7 api_usage_example: null
+8 api_shape: ''

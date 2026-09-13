@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.LeakyReLU
+3 api_description: LeakyReLU is an activation layer that permits a small gradient
+  for negative input values, enabling better learning in neural networks by avoiding
+  dead neurons.
+4 api_signature: tf.keras.layers.LeakyReLU(negative_slope)
+5 api_details: ''
+6 api_parameters:
+- negative_slope: Controls the slope of the function for negative input values, allowing
+    a small gradient when the input is less than zero.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.GroupByWindowDataset
+3 api_description: Creates a dataset that groups elements from `input_dataset` into
+  windows and computes grouped results for each window.
+4 api_signature: tf.raw_ops.GroupByWindowDataset(input_dataset,key_func,reduce_func,window_size_func,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The source dataset to read elements from and group into windows.
+- key_func: Computes an int64 grouping key for each input element.
+- reduce_func: Defines how to reduce the elements collected in each group/window.
+- window_size_func: Determines the window size for each group based on the input element.
+- output_types: Specifies the data types of the dataset elements produced by the operation.
+- output_shapes: Specifies the shapes of the dataset elements produced by the operation.
+7 api_usage_example: null
+8 api_shape: ''

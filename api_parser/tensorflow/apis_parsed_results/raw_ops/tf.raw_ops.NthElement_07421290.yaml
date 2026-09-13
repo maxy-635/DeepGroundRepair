@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.NthElement
+3 api_description: Returns the n-th smallest value along the last dimension of the
+  input tensor; for rank-1 inputs it returns a scalar, and for higher-rank inputs
+  it computes one n-th order statistic per row or last-dimension slice.
+4 api_signature: tf.raw_ops.NthElement(input,n)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor whose nth element is selected from each vector along the last
+    dimension.
+- n: A scalar int32 index specifying which sorted element to return from each last-dimension
+    slice.
+7 api_usage_example: null
+8 api_shape: ''

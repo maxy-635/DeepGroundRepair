@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.irfft
+3 api_description: Computes the inverse real FFT along the last axis to reconstruct
+  a real-valued signal from RFFT data, inferring or using `fft_length` as needed and
+  padding or cropping the input frequency bins to match the target length.
+4 api_signature: tf.keras.ops.irfft(x,fft_length)
+5 api_details: ''
+6 api_parameters:
+- x: The real and imaginary input tensors to transform, both of which must be floating-point
+    tensors.
+- fft_length: The FFT length to use for the inverse real FFT, inferred from the last
+    axis of `x` when omitted.
+7 api_usage_example:
+- irfft(rfft(real, 5), 5)
+8 api_shape: ''

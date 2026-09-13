@@ -1,0 +1,13 @@
+2 api_name: tensorflow.data.experimental.map_and_batch
+3 api_description: Applies a mapping function to consecutive dataset elements and
+  batches the results, providing a fused map-then-batch operation.
+4 api_signature: tf.data.experimental.map_and_batch(map_func,batch_size,drop_remainder)
+5 api_details: ''
+6 api_parameters:
+- map_func: Transforms each dataset element by applying a function to its nested tensor
+    structure.
+- batch_size: Sets how many consecutive elements to combine into each batch.
+- drop_remainder: Controls whether to discard the final batch if it is smaller than
+    the requested batch size.
+7 api_usage_example: null
+8 api_shape: ''

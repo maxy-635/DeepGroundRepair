@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.tree.map_structure_up_to
+3 api_description: Applies a function to matching elements across structures only
+  up to a specified shallow structure, leaving deeper nested parts unchanged.
+4 api_signature: tf.keras.tree.map_structure_up_to(shallow_structure,func,*structures)
+5 api_details: ''
+6 api_parameters:
+- shallow_structure: Defines the common structural template used to guide how the
+    nested inputs are traversed.
+- func: A callable applied to corresponding elements from each structure during the
+    traversal.
+- '*structures': One or more nested structures that must share the same layout as
+    the shallow template.
+7 api_usage_example:
+- shallow_structure = [None, [None, None]]
+- keras.tree.map_structure_up_to(shallow_structure, str, structure)
+8 api_shape: ''

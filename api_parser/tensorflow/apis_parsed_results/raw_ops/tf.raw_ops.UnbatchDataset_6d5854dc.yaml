@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.UnbatchDataset
+3 api_description: Splits batched input dataset elements back into individual elements,
+  producing a dataset of unbatched items.
+4 api_signature: tf.raw_ops.UnbatchDataset(input_dataset,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant tensor containing the dataset to be unbatched.
+- output_types: The data types of the components produced by each unbatched element.
+- output_shapes: The shapes of the components produced by each unbatched element.
+7 api_usage_example: null
+8 api_shape: ''

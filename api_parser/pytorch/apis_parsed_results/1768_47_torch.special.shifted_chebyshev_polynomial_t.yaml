@@ -1,0 +1,11 @@
+2 api_name: torch.special.shifted_chebyshev_polynomial_t
+3 api_description: Computes the shifted Chebyshev polynomial of the first kind T_n^*(input)
+  for a given input and degree.
+4 api_signature: torch.special.shifted_chebyshev_polynomial_t(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor of values at which to evaluate the shifted Chebyshev polynomial
+    T.
+- n: The polynomial degree to compute.
+7 api_usage_example: null
+8 api_shape: null

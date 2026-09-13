@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.device
+3 api_description: A compatibility alias for `tf.keras.device` used during TensorFlow
+  migration, providing device-scoped Keras execution under the `tf.compat.v1` namespace.
+4 api_signature: tf.keras.device(device_name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

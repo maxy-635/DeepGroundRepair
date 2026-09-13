@@ -1,0 +1,13 @@
+2 api_name: torch.amp.custom_fwd
+3 api_description: Decorator for custom autograd forward methods that runs the forward
+  in the specified AMP cast context, optionally casting floating-point inputs to a
+  target dtype.
+4 api_signature: torch.amp.custom_fwd(fwd,device_type,cast_inputs)
+5 api_details: ''
+6 api_parameters:
+- device_type: Specifies which device type the custom forward pass should use for
+    autocast handling.
+- cast_inputs: Optionally casts floating-point inputs to the target dtype and runs
+    forward with autocast disabled; otherwise, forward uses the current autocast state.
+7 api_usage_example: null
+8 api_shape: null

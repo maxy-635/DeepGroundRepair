@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.set_real_tensor_prop_unbacked_vals
+3 api_description: Registers a real tensor-derived value for an unbacked symbol during
+  real-tensor propagation, so hints can be resolved as a last resort.
+4 api_signature: set_real_tensor_prop_unbacked_vals(k,v)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,24 @@
+2 api_name: paddle.metric.Accuracy
+3 api_description: Computes classification accuracy by comparing predicted labels
+  to ground-truth labels and tracking the proportion of correct predictions.
+4 api_signature: paddle.metric.Accuracy(topk)
+5 api_details: ''
+6 api_parameters:
+- topk: Specifies how many of the highest-scoring predictions to consider when computing
+    accuracy.
+7 api_usage_example:
+- import numpy as np
+- import paddle
+- x = paddle.to_tensor(np.array([
+- '    [0.1, 0.2, 0.3, 0.4],'
+- '    [0.1, 0.4, 0.3, 0.2],'
+- '    [0.1, 0.2, 0.4, 0.3],'
+- '    [0.1, 0.2, 0.3, 0.4]]))'
+- y = paddle.to_tensor(np.array([[0], [1], [2], [3]]))
+- m = paddle.metric.Accuracy()
+- correct = m.compute(x, y)
+- m.update(correct)
+- res = m.accumulate()
+- print(res)
+- '0.75'
+8 api_shape: {}

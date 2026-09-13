@@ -1,0 +1,23 @@
+2 api_name: paddle.nn.functional.cosine_similarity
+3 api_description: Computes the cosine similarity between two tensors along a specified
+  axis.
+4 api_signature: paddle.nn.functional.cosine_similarity(x1,x2,axis)
+5 api_details: ''
+6 api_parameters:
+- x1: Specifies the first input tensor for which cosine similarity is to be computed,
+    with data type float32 or double.
+- x2: Specifies the second input tensor against which cosine similarity is computed,
+    with data type float32 or double.
+- axis: Defines the dimension along which the cosine similarity is computed, with
+    a default value of 1.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- paddle.seed(1)
+- x1 = paddle.randn(shape=[2, 3])
+- x2 = paddle.randn(shape=[2, 3])
+- result = paddle.nn.functional.cosine_similarity(x1, x2, axis=0)
+- print(result)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[ 0.97689527,  0.99996042, -0.55138415])'
+8 api_shape: null

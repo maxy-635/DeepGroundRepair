@@ -1,0 +1,8 @@
+2 api_name: torch.greater_equal
+3 api_description: Returns a boolean tensor indicating elementwise whether each input
+  is greater than or equal to the other.
+4 api_signature: torch.greater_equal(input,other)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

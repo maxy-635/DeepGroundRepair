@@ -1,0 +1,14 @@
+2 api_name: torch.moveaxis
+3 api_description: Alias for torch.movedim() that reorders tensor dimensions by moving
+  specified axes to new positions.
+4 api_signature: torch.moveaxis(input,source,destination)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' t = torch.randn(3,2,1)'
+- ' t'
+- ' torch.moveaxis(t, 1, 0).shape'
+- ' torch.moveaxis(t, 1, 0)'
+- ' torch.moveaxis(t, (1, 2), (0, 1)).shape'
+- ' torch.moveaxis(t, (1, 2), (0, 1))'
+8 api_shape: null

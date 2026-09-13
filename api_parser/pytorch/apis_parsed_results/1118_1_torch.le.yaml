@@ -1,0 +1,11 @@
+2 api_name: torch.le
+3 api_description: Returns an element-wise boolean tensor indicating where each input
+  value is less than or equal to the corresponding other value.
+4 api_signature: torch.le(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are compared.
+- other: The tensor or scalar value used as the comparison target.
+7 api_usage_example:
+- ' torch.le(torch.tensor([[1, 2], [3, 4]]), torch.tensor([[1, 1], [4, 4]]))'
+8 api_shape: null

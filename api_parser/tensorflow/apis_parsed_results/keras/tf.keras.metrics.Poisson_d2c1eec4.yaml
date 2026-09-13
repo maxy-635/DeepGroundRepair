@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.metrics.Poisson
+3 api_description: Computes the mean Poisson error between true and predicted values,
+  measuring how well predicted rates match observed counts.
+4 api_signature: tf.keras.metrics.Poisson()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([[0, 1], [0, 0]], [[1, 1], [0, 0]],
+- '               sample_weight=[1, 0])'
+- m.result()
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.bitwise.bitwise_xor
+3 api_description: Computes the elementwise bitwise XOR of two tensors, setting bits
+  where the inputs differ based on their underlying integer representations.
+4 api_signature: tf.bitwise.bitwise_xor(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first integer tensor whose bits are used as the left operand in the XOR operation.
+- y: The second integer tensor, matching `x`'s type, whose bits are used as the right
+    operand in the XOR operation.
+7 api_usage_example: null
+8 api_shape: ''

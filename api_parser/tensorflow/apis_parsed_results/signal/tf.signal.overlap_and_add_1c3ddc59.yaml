@@ -1,0 +1,12 @@
+2 api_name: tensorflow.signal.overlap_and_add
+3 api_description: Reconstructs a signal by overlap-adding framed segments along the
+  frame axis, shifting each frame by frame_step to produce the output waveform.
+4 api_signature: tf.signal.overlap_and_add(signal,frame_step)
+5 api_details: ''
+6 api_parameters:
+- signal: The input tensor containing overlapping frames to be recombined into a single
+    signal.
+- frame_step: The step size between consecutive frames, controlling how much they
+    overlap when added together.
+7 api_usage_example: null
+8 api_shape: ''

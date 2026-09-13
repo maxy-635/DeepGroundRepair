@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Cast
+3 api_description: Casts a tensor from one data type to another.
+4 api_signature: tf.raw_ops.Cast(x,DstT)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be converted.
+- DstT: The target data type to cast the input tensor to.
+7 api_usage_example: null
+8 api_shape: ''

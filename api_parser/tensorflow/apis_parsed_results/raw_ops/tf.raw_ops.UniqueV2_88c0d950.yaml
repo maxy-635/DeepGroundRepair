@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.UniqueV2
+3 api_description: Returns unique elements of a tensor along the specified axis, preserving
+  first-seen order, and also returns indices that map each input element to its corresponding
+  unique output.
+4 api_signature: tf.raw_ops.UniqueV2(x,axis,out_idx)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose unique elements are to be found.
+- axis: The axis that specifies which dimension of `x` to treat as the unique elements.
+- out_idx: The integer dtype used for the returned index mapping, either `tf.int32`
+    or `tf.int64`.
+7 api_usage_example: null
+8 api_shape: ''

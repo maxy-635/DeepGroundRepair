@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.Unflatten
+3 api_description: paddle.nn.Unflatten transforms a specified dimension of an input
+  tensor into a desired shape.
+4 api_signature: paddle.nn.Unflatten(axis,shape)
+5 api_details: ''
+6 api_parameters:
+- axis: Specifies the index of the dimension in x.shape that will be unflattened.
+- shape: Defines the new shape to unflatten the specified axis into, allowing for
+    one dimension to be -1 to infer size, and must match the product of the original
+    dimension if no -1 is present.
+7 api_usage_example: []
+8 api_shape: null

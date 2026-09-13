@@ -1,0 +1,12 @@
+2 api_name: torch.sinh
+3 api_description: Returns a new tensor containing the hyperbolic sine of each element
+  in the input tensor.
+4 api_signature: torch.sinh(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used to compute the hyperbolic sine.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.sinh(a)'
+8 api_shape: null

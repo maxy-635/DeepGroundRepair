@@ -1,0 +1,9 @@
+2 api_name: torch.bartlett_window
+3 api_description: Returns a Bartlett (triangular) window of a given length, with
+  optional periodic or symmetric behavior, to weight samples in signal processing.
+4 api_signature: torch.bartlett_window(window_length,*,dtype,device)
+5 api_details: ''
+6 api_parameters:
+- window_length: Specifies how many points the Bartlett window contains.
+7 api_usage_example: null
+8 api_shape: null

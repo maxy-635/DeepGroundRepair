@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.sparse_dense_matmul
+3 api_description: Multiplies a rank-2 SparseTensor or dense matrix `A` with a dense
+  matrix or SparseTensor `B`, requiring exactly one input to be sparse and the other
+  dense.
+4 api_signature: tf.sparse.sparse_dense_matmul(sp_a,b)
+5 api_details: ''
+6 api_parameters:
+- sp_a: The sparse rank-2 matrix A to multiply.
+- b: The dense or sparse matrix B with the same dtype as A.
+7 api_usage_example: null
+8 api_shape: ''

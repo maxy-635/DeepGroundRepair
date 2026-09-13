@@ -1,0 +1,23 @@
+2 api_name: tensorflow.raw_ops.CudnnRNNCanonicalToParams
+3 api_description: Converts canonical RNN weights and biases into the opaque cuDNN
+  parameter buffer for a configured RNN layer stack, so the parameters can be used
+  for training or inference.
+4 api_signature: tf.raw_ops.CudnnRNNCanonicalToParams(num_layers,num_units,input_size,weights,biases,rnn_mode,input_mode,direction)
+5 api_details: ''
+6 api_parameters:
+- num_layers: Specifies how many stacked RNN layers are being converted into the packed
+    parameter tensor.
+- num_units: Sets the number of hidden units in each RNN layer.
+- input_size: Defines the size of the input feature vector expected by the RNN.
+- weights: Provides the raw weight tensors to be combined into the canonical cuDNN
+    parameter format.
+- biases: Provides the bias tensors that correspond to the supplied weights for packing
+    into cuDNN parameters.
+- rnn_mode: Chooses the RNN cell type to encode, such as LSTM, GRU, or simple RNN
+    variants.
+- input_mode: Determines how inputs are treated at the first layer, such as linear
+    projection, skipping, or automatic selection.
+- direction: Specifies whether the RNN is packed for one direction or for bidirectional
+    operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,24 @@
+2 api_name: tensorflow.nn.conv1d_transpose
+3 api_description: tensorflow.nn.conv1d_transpose performs the inverse operation of
+  conv1d, computing the gradient of the convolution, often referred to as 'deconvolution'.
+4 api_signature: tf.nn.conv1d_transpose(input,filters,output_shape,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Defines the 3-D input tensor with batch size, width, and channel dimensions
+    for the deconvolution operation.
+- filters: Specifies the 3-D filter tensor with dimensions for width, output channels,
+    and matching input channels.
+- output_shape: Determines the desired shape of the output tensor resulting from the
+    deconvolution operation.
+- strides: Indicates the step size for moving the filter across the input tensor during
+    the deconvolution process.
+- padding: Specifies the padding algorithm ('VALID' or 'SAME') to be used when applying
+    the deconvolution.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Length_in, Channel_in)
+  output tensor shape: (N, Length_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filter
+    tensor length: If padding = "VALID", Length_out = (Length_in - 1) * strides + filter_width; 
+                  If padding = "SAME", Length_out = Length_in * strides

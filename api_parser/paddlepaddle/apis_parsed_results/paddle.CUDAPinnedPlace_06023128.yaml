@@ -1,0 +1,11 @@
+2 api_name: paddle.CUDAPinnedPlace
+3 api_description: Represents CUDA pinned host memory for page-locked buffers that
+  enable faster host-GPU data transfer via direct access.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- place = paddle.CUDAPinnedPlace()
+8 api_shape: {}

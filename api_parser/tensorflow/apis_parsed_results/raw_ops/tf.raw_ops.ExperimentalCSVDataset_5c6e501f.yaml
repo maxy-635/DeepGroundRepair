@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ExperimentalCSVDataset
+3 api_description: Creates a dataset from one or more CSV files, parsing each record
+  into columns according to the provided defaults and options.
+4 api_signature: tf.raw_ops.ExperimentalCSVDataset(filenames,record_defaults,output_shapes,name)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies the CSV file paths to read records from.
+- record_defaults: Provides default values and expected types for CSV fields when
+    data is missing or parsing fails.
+- output_shapes: Defines the shapes of the tensors produced for each parsed CSV field.
+- name: Optionally assigns a name to the operation for easier graph identification.
+7 api_usage_example: null
+8 api_shape: ''

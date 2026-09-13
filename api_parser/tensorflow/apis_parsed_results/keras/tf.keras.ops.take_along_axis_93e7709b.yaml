@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.take_along_axis
+3 api_description: Returns values from x by gathering elements at specified 1-D indices
+  along a given axis.
+4 api_signature: '"tf.keras.ops.take_along_axis(x,indices)"'
+5 api_details: ''
+6 api_parameters:
+- x: The source tensor to gather values from.
+- indices: The index tensor specifying which values to extract.
+- axis: The axis along which to select values, or the flattened tensor if omitted.
+7 api_usage_example: null
+8 api_shape: ''

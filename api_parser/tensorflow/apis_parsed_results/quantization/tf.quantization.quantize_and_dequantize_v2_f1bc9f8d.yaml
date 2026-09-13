@@ -1,0 +1,16 @@
+2 api_name: tensorflow.quantization.quantize_and_dequantize_v2
+3 api_description: Quantizes and then dequantizes a tensor, with gradients set to
+  zero for values outside the quantization range.
+4 api_signature: tf.quantization.quantize_and_dequantize_v2(input,input_min,input_max,num_bits,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be quantized and then dequantized.
+- input_min: The minimum representable value used to define the quantization range,
+    or per-slice minima when `axis` is set.
+- input_max: The maximum representable value used to define the quantization range,
+    or per-slice maxima when `axis` is set.
+- num_bits: The number of bits to use for the quantized representation.
+- axis: The dimension along which to apply per-slice quantization instead of using
+    one range for the whole tensor.
+7 api_usage_example: null
+8 api_shape: ''

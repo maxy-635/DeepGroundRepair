@@ -1,0 +1,23 @@
+2 api_name: torch.linalg.matrix_rank
+3 api_description: Computes the numerical rank of a matrix by determining how many
+  singular values are significantly nonzero.
+4 api_signature: torch.linalg.matrix_rank(A)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor whose matrix rank is computed for each matrix in the batch.
+7 api_usage_example:
+- ' A = torch.eye(10)'
+- ' torch.linalg.matrix_rank(A)'
+- ' B = torch.eye(10)'
+- ' B[0, 0] = 0'
+- ' torch.linalg.matrix_rank(B)'
+- ' A = torch.randn(4, 3, 2)'
+- ' torch.linalg.matrix_rank(A)'
+- ' A = torch.randn(2, 4, 2, 3)'
+- ' torch.linalg.matrix_rank(A)'
+- ' A = torch.randn(2, 4, 3, 3, dtype=torch.complex64)'
+- ' torch.linalg.matrix_rank(A)'
+- ' torch.linalg.matrix_rank(A, hermitian=True)'
+- ' torch.linalg.matrix_rank(A, atol=1.0, rtol=0.0)'
+- ' torch.linalg.matrix_rank(A, atol=1.0, rtol=0.0, hermitian=True)'
+8 api_shape: null

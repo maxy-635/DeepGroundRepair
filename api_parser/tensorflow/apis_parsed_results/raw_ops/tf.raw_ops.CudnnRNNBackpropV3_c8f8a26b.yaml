@@ -1,0 +1,32 @@
+2 api_name: tensorflow.raw_ops.CudnnRNNBackpropV3
+3 api_description: Computes backpropagation for a cuDNN RNN v3, returning gradients
+  for the input, hidden/cell states, and opaque parameters using the forward pass
+  outputs, reserve space, and sequence lengths.
+4 api_signature: tf.raw_ops.CudnnRNNBackpropV3(input,input_h,input_c,params,sequence_lengths,output_backprop,output_h_backprop,output_c_backprop,reserve_space,rnn_mode,input_mode,direction,dropout,seed,seed2,num_proj,time_major,name)
+5 api_details: ''
+6 api_parameters:
+- input: The input sequence tensor whose gradients are being computed.
+- input_h: The final hidden state tensor used in the backward pass.
+- input_c: The final cell state tensor used in the backward pass.
+- params: The packed RNN weight and bias parameters tensor.
+- sequence_lengths: The valid length of each sequence in the batch.
+- output: The forward-pass output tensor used to compute gradients.
+- output_h: The forward-pass final hidden state tensor used to compute gradients.
+- output_c: The forward-pass final cell state tensor used to compute gradients.
+- output_backprop: The gradient of the loss with respect to the output tensor.
+- output_h_backprop: The gradient of the loss with respect to the final hidden state
+    output.
+- output_c_backprop: The gradient of the loss with respect to the final cell state
+    output.
+- reserve_space: Temporary workspace saved from the forward pass for use during backpropagation.
+- rnn_mode: Selects the RNN cell type to backpropagate through.
+- input_mode: Specifies how the input is connected to the RNN cell.
+- direction: Chooses whether the RNN runs in one or two directions.
+- dropout: Sets the dropout probability applied during training.
+- seed: Sets the primary random seed for dropout.
+- seed2: Sets the secondary random seed for dropout.
+- num_proj: Specifies the size of the projection layer, if used.
+- time_major: Indicates whether the time dimension comes before the batch dimension.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

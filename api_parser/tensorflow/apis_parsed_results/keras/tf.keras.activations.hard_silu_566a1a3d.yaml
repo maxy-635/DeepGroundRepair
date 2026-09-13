@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.activations.hard_silu
+3 api_description: Applies the Hard SiLU (Hard Swish) activation, a fast piecewise-linear
+  approximation of SiLU.
+4 api_signature: tf.keras.activations.hard_silu(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are transformed by the hard-silu activation.
+7 api_usage_example: null
+8 api_shape: ''

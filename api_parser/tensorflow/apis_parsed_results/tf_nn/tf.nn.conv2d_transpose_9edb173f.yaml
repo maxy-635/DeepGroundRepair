@@ -1,0 +1,27 @@
+2 api_name: tensorflow.nn.conv2d_transpose
+3 api_description: The tensorflow.nn.conv2d_transpose function performs the transpose
+  of a 2D convolution operation, often referred to as 'deconvolution', effectively
+  reversing the spatial transformation of a standard 2D convolution.
+4 api_signature: tf.nn.conv2d_transpose(input,filters,output_shape,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: A 4-D tensor specifying the input data with shape and format based on NHWC
+    or NCHW.
+- filters: A 4-D tensor defining the filter weights with shape [height, width, output_channels,
+    in_channels], matching input's in_channels.
+- output_shape: A 1-D tensor specifying the desired shape of the output from the deconvolution
+    operation.
+- strides: An int or list specifying the stride of the sliding window for each input
+    dimension, with H and W specified and N and C defaulting to 0.
+- padding: Specifies the padding algorithm ('SAME', 'VALID', or explicit) and its
+    configuration based on the data format (NHWC or NCHW).
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Height_in, Width_in, Channel_in)
+  output tensor shape: (N, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filter
+    tensor height: If padding = "VALID", Height_out = (Height_in - 1) * strides_height + filter_height; 
+                  If padding = "SAME", Height_out = Height_in * strides_height
+    tensor width: If padding = "VALID", Width_out = (Width_in - 1) * strides_width + filter_width; 
+                  If padding = "SAME", Width_out = Width_in * strides_width

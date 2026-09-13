@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.vectorized_map
+3 api_description: Applies a function independently and in parallel to each slice
+  along axis 0 of one or more tensors, then stacks the results into a single output
+  tensor.
+4 api_signature: tf.keras.ops.vectorized_map(function,elements)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

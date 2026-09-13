@@ -1,0 +1,11 @@
+2 api_name: tensorflow.TensorSpec
+3 api_description: Describes the shape, dtype, and optional name of a tf.Tensor, allowing
+  TensorFlow APIs to validate and specify expected tensor inputs and outputs.
+4 api_signature: tf.TensorSpec(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the tensor’s shape.
+- dtype: Specifies the tensor’s data type.
+7 api_usage_example:
+- tf.TensorSpec.from_tensor(tf.constant([1, 2, 3]))
+8 api_shape: ''

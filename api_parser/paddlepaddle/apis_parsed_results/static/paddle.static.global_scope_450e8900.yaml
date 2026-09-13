@@ -1,0 +1,13 @@
+2 api_name: paddle.static.global_scope
+3 api_description: Returns the global Scope used by Paddle static graph programs,
+  providing shared access to variables and parameters across the current static execution
+  context.
+4 api_signature: paddle.static.global_scope()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import numpy
+- paddle.static.global_scope().var("data").get_tensor().set(numpy.ones((2, 2)), paddle.CPUPlace())
+- numpy.array(paddle.static.global_scope().find_var("data").get_tensor())
+8 api_shape: {}

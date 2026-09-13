@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.functional.upsample
+3 api_description: The paddle.nn.functional.upsample API resizes a batch of images
+  to a specified size or scale using various interpolation methods.
+4 api_signature: paddle.nn.functional.upsample(x,size,scale_factor,mode)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor which can be 3-D, 4-D, or 5-D, with data types float32, float64,
+    or uint8, and data format determined by its dimension or specified explicitly.
+- size: Specifies the output shape for the resized image, varying based on the tensor's
+    dimensionality.
+- scale_factor: Defines the multiplier for resizing the input's dimensions, with size
+    taking precedence if both are specified.
+- mode: Determines the resampling method, offering options like 'linear', 'nearest',
+    'bilinear', 'area', 'bicubic', and 'trilinear'.
+7 api_usage_example: []
+8 api_shape: null

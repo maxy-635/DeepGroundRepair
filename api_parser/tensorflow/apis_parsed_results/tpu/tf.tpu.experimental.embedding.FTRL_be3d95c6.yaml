@@ -1,0 +1,20 @@
+2 api_name: tensorflow.tpu.experimental.embedding.FTRL
+3 api_description: Configures FTRL optimization parameters for TPU embedding training,
+  providing the global optimizer settings used by `tf.tpu.experimental.embedding.TPUEmbedding`.
+4 api_signature: tf.tpu.experimental.embedding.FTRL(learning_rate,l1_regularization_strength,l2_regularization_strength,beta,initial_accumulator_value,use_gradient_accumulation)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Controls the step size used to update embeddings, and can be a fixed
+    value or a callable for dynamic scheduling.
+- l1_regularization_strength: Applies L1 regularization to encourage sparsity in the
+    learned embeddings.
+- l2_regularization_strength: Applies L2 regularization to penalize large embedding
+    values and improve stability.
+- beta: Sets the beta hyperparameter used by the FTRL optimizer to adjust its adaptive
+    update behavior.
+- initial_accumulator_value: Initializes the optimizer’s accumulators, which must
+    start at zero or a positive value.
+- use_gradient_accumulation: Controls whether gradients are accumulated for more accurate
+    updates or computed without accumulation for faster but less precise training.
+7 api_usage_example: null
+8 api_shape: ''

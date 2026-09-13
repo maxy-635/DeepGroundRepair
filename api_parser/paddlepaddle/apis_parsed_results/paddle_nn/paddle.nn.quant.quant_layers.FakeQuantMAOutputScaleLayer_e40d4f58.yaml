@@ -1,0 +1,8 @@
+2 api_name: paddle.nn.quant.quant_layers.FakeQuantMAOutputScaleLayer
+3 api_description: FakeQuantMAOutputScaleLayer applies a FakeQuantization using Moving
+  Average Abs Max to the output of an input layer for quantization-aware training.
+4 api_signature: paddle.nn.quant.quant_layers.FakeQuantMAOutputScaleLayer(layer,weight_bits,activation_bits)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

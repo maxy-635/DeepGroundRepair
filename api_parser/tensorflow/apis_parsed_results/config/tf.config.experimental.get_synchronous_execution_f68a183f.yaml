@@ -1,0 +1,8 @@
+2 api_name: tensorflow.config.experimental.get_synchronous_execution
+3 api_description: Returns whether TensorFlow operations run synchronously or asynchronously
+  in the current thread.
+4 api_signature: tf.config.experimental.get_synchronous_execution()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

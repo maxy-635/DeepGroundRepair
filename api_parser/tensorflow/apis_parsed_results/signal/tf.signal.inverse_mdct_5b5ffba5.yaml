@@ -1,0 +1,28 @@
+2 api_name: tensorflow.signal.inverse_mdct
+3 api_description: Computes the inverse modified DCT to reconstruct a waveform from
+  MDCT coefficients, using the same window function as `mdct` for correct inversion.
+4 api_signature: tf.signal.inverse_mdct(mdcts,window_fn,norm)
+5 api_details: ''
+6 api_parameters:
+- mdcts: The MDCT coefficient tensor to transform back into a time-domain signal.
+- window_fn: The window function used for overlap-add reconstruction, or `None` to
+    use a default rectangular window.
+- norm: The normalization mode for the inverse DCT-IV step, either orthonormal (`'ortho'`)
+    or scaled by `1/frame_length` when `None`.
+7 api_usage_example:
+- '@tf.function'
+- 'def compare_round_trip():'
+- '  samples = 1000'
+- '  frame_length = 400'
+- '  halflen = frame_length // 2'
+- '  waveform = tf.random.normal(dtype=tf.float32, shape=[samples])'
+- '  waveform_pad = tf.pad(waveform, [[halflen, 0],])'
+- '  mdct = tf.signal.mdct(waveform_pad, frame_length, pad_end=True,'
+- '                        window_fn=tf.signal.vorbis_window)'
+- '  inverse_mdct = tf.signal.inverse_mdct(mdct,'
+- '                                        window_fn=tf.signal.vorbis_window)'
+- '  inverse_mdct = inverse_mdct[halflen: halflen + samples]'
+- '  return waveform, inverse_mdct'
+- waveform, inverse_mdct = compare_round_trip()
+- np.allclose(waveform.numpy(), inverse_mdct.numpy(), rtol=1e-3, atol=1e-4)
+8 api_shape: ''

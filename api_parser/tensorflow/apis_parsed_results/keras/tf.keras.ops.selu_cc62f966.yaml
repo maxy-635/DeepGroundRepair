@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.selu
+3 api_description: Applies the SELU activation, scaling positive inputs linearly and
+  mapping negative inputs through an exponential form to encourage self-normalizing
+  behavior.
+4 api_signature: tf.keras.ops.selu(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the SELU activation to.
+7 api_usage_example:
+- x = np.array([-1., 0., 1.])
+- x_selu = keras.ops.selu(x)
+- print(x_selu)
+8 api_shape: ''

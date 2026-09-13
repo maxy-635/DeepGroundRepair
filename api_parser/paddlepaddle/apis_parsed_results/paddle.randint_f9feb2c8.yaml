@@ -1,0 +1,64 @@
+2 api_name: paddle.randint
+3 api_description: Returns a tensor of random integers from a discrete uniform range,
+  with optional `high` defaulting to 0..low, using the specified shape and dtype.
+4 api_signature: paddle.randint(low,high,shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- low: Sets the inclusive lower bound of the random integer range, or acts as the
+    exclusive upper bound for a range starting at 0 when `high` is `None`.
+- high: Sets the exclusive upper bound of the random integer range, using `low` and
+    `high` together to define the interval.
+- shape: Specifies the output tensor shape to create, either as a list/tuple of integers
+    or 0-D tensors, or as a 1-D tensor of shape values.
+- dtype: Specifies the output tensor’s integer type, defaulting to `int64` when not
+    provided.
+7 api_usage_example:
+- import paddle
+- '# example 1:'
+- '# attr shape is a list which doesn''t contain Tensor.'
+- out1 = paddle.randint(low=-5, high=5, shape=[2, 3])
+- print(out1)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[-1,  4,  4],'
+- '[-2, -5, -2]])'
+- '>>>'
+- '# example 2:'
+- '# attr shape is a list which contains Tensor.'
+- dim1 = paddle.to_tensor(2, 'int64')
+- dim2 = paddle.to_tensor(3, 'int32')
+- out2 = paddle.randint(low=-5, high=5, shape=[dim1, dim2])
+- print(out2)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[-4, -4,  2],'
+- '[-3, -1, -5]])'
+- '>>>'
+- '# example 3:'
+- '# attr shape is a Tensor'
+- shape_tensor = paddle.to_tensor([2, 3])
+- out3 = paddle.randint(low=-5, high=5, shape=shape_tensor)
+- print(out3)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[-1,  4, -3],'
+- '[ 1,  2, -1]])'
+- '>>>'
+- '# example 4:'
+- '# data type is int32'
+- out4 = paddle.randint(low=-5, high=5, shape=[3], dtype='int32')
+- print(out4)
+- '>>>'
+- Tensor(shape=[3], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[4, 4, 0])'
+- '>>>'
+- '# example 5:'
+- '# Input only one parameter'
+- '# low=0, high=10, shape=[1], dtype=''int64'''
+- out5 = paddle.randint(10)
+- print(out5)
+- '>>>'
+- Tensor(shape=[1], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[7])'
+- '>>>'
+8 api_shape: {}

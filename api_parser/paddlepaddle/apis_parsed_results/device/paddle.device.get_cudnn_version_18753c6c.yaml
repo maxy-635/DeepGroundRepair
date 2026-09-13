@@ -1,0 +1,9 @@
+2 api_name: paddle.device.get_cudnn_version
+3 api_description: Returns the installed cuDNN version as an integer code.
+4 api_signature: paddle.device.get_cudnn_version()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- cudnn_version = paddle.device.get_cudnn_version()
+8 api_shape: {}

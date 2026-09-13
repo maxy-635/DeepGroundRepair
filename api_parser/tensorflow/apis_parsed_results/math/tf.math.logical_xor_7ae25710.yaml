@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.logical_xor
+3 api_description: Returns the elementwise logical XOR of two boolean tensors, using
+  broadcasting when needed; each output is True only when exactly one input is True.
+4 api_signature: tf.math.logical_xor(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first boolean tensor to compare elementwise.
+- y: The second boolean tensor to compare elementwise against `x`.
+7 api_usage_example:
+- y = tf.constant([False, False, True, True])
+- z = tf.constant([False, True, False, True])
+- tf.math.logical_xor(y, z)
+8 api_shape: ''

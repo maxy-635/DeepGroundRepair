@@ -1,0 +1,8 @@
+2 api_name: paddle.logical_or_
+3 api_description: Computes the elementwise logical OR of two tensors in place, storing
+  the result in `x`.
+4 api_signature: paddle.logical_or_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

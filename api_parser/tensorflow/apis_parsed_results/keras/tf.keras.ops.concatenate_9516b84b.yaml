@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.concatenate
+3 api_description: Concatenates a sequence of tensors along an existing axis.
+4 api_signature: tf.keras.ops.concatenate(xs,axis)
+5 api_details: ''
+6 api_parameters:
+- xs: Specifies the sequence of tensors to join together.
+- axis: Specifies the axis along which to concatenate the tensors, defaulting to 0.
+7 api_usage_example: null
+8 api_shape: ''

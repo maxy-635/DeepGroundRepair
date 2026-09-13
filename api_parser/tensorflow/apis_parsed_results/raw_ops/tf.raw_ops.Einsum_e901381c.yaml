@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Einsum
+3 api_description: Performs generalized tensor contraction and reduction using Einstein
+  summation notation, mapping input subscripts to an output subscript with optional
+  ellipsis.
+4 api_signature: tf.raw_ops.Einsum(inputs,equation)
+5 api_details: ''
+6 api_parameters:
+- inputs: One or two tensors of the same type that provide the operands for the Einstein
+    summation.
+- equation: A NumPy-style einsum string that specifies how to combine, contract, and/or
+    reorder the input tensors.
+7 api_usage_example: null
+8 api_shape: ''

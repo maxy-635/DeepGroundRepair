@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.KLDivLoss
+3 api_description: KLDivLoss calculates the Kullback-Leibler divergence loss between
+  an input log-probability distribution and a target probability distribution.
+4 api_signature: paddle.nn.KLDivLoss(reduction,log_target)
+5 api_details: ''
+6 api_parameters:
+- reduction: Determines the method for averaging the loss, with options 'none', 'batchmean',
+    'mean', or 'sum', affecting the final output.
+- log_target: Specifies if the label input is in log space, defaulting to False if
+    not indicated.
+7 api_usage_example: []
+8 api_shape: null

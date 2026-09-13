@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.image.map_coordinates
+3 api_description: Interpolates values from an input array at specified coordinates,
+  mapping the data to new positions with boundary behavior that differs from SciPy's
+  implementation.
+4 api_signature: tf.keras.ops.image.map_coordinates(input,coordinates)
+5 api_details: ''
+6 api_parameters:
+- input: The array or image data to sample from.
+- coordinates: The coordinate locations where the input values are looked up.
+7 api_usage_example: null
+8 api_shape: ''

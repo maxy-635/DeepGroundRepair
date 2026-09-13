@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.StatelessTruncatedNormalV2
+3 api_description: Generates deterministic pseudorandom values from a truncated normal
+  distribution, using shape, key, counter, and alg as inputs.
+4 api_signature: tf.raw_ops.StatelessTruncatedNormalV2(shape,key,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the output tensor to generate.
+- key: Provides the uint64 RNG seed key used by the counter-based random number generator.
+- dtype: Sets the data type of the generated truncated normal values.
+7 api_usage_example: null
+8 api_shape: ''

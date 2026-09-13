@@ -1,0 +1,7 @@
+2 api_name: torch.UntypedStorage.data_ptr
+3 api_description: Returns the memory address of the storage’s underlying data buffer.
+4 api_signature: data_ptr()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

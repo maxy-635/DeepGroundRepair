@@ -1,0 +1,8 @@
+2 api_name: paddle.trunc_
+3 api_description: Applies truncation in place, replacing the output tensor with the
+  truncated values of the input tensor.
+4 api_signature: paddle.trunc_(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

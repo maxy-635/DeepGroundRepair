@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.l2_normalize
+3 api_description: L2-normalizes a tensor by dividing it by its L2 norm along a specified
+  axis, optionally keeping reduced dimensions and avoiding division by zero with epsilon.
+4 api_signature: tf.keras.backend.l2_normalize(x,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

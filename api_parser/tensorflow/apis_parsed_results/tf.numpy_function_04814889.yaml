@@ -1,0 +1,14 @@
+2 api_name: tensorflow.numpy_function
+3 api_description: Wraps a Python function as a TensorFlow op inside `tf.function`,
+  passing NumPy arrays in and out.
+4 api_signature: tf.numpy_function(func,inp,Tout)
+5 api_details: ''
+6 api_parameters:
+- func: Python function to execute on NumPy arrays, taking one argument per input
+    tensor and returning NumPy array(s) matching `Tout`.
+- inp: List of `tf.Tensor` inputs to pass to `func`.
+- Tout: Output TensorFlow dtype or dtypes that describe the NumPy array(s) returned
+    by `func`.
+7 api_usage_example:
+- tf.numpy_function(my_func, [tf.constant(1.0)], tf.float32)
+8 api_shape: ''

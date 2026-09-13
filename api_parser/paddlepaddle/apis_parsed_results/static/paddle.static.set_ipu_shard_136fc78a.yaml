@@ -1,0 +1,19 @@
+2 api_name: paddle.static.set_ipu_shard
+3 api_description: Assign all operations executed within the provided call function
+  to the specified IPU shard.
+4 api_signature: paddle.static.set_ipu_shard(call_func,index,stage)
+5 api_details: ''
+6 api_parameters:
+- call_func: Wraps the specified function for IPU sharding.
+- index: Sets which IPU the tensor or operation runs on.
+- stage: Sets the execution stage order for pipeline sharding.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('ipu')
+- paddle.enable_static()
+- a = paddle.static.data(name='data', shape=[None, 1], dtype='float32')
+- relu = paddle.nn.ReLU()
+- relu = paddle.static.set_ipu_shard(relu, index=1, stage=1)
+- relu(a)
+8 api_shape: {}

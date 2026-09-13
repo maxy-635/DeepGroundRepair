@@ -1,0 +1,32 @@
+2 api_name: tensorflow.keras.layers.LSTM
+3 api_description: The tf.keras.layers.LSTM layer implements Long Short-Term Memory
+  networks, enabling the modeling of sequential data with improved performance through
+  automatic selection of optimized implementations based on hardware availability.
+4 api_signature: tf.keras.layers.LSTM(units, activation, return_sequences, return_state,
+  dropout, recurrent_dropout, stateful)
+5 api_details: ''
+6 api_parameters:
+- units: Specifies the number of output dimensions for the LSTM layer.
+- activation: Defines the activation function applied to the output, with a default
+    of hyperbolic tangent (tanh).
+- dropout: Sets the fraction of input units to drop during training to prevent overfitting.
+- recurrent_dropout: Sets the fraction of recurrent units to drop during training
+    to prevent overfitting.
+- return_sequences: Determines whether to return the full sequence of outputs or just
+    the last output.
+- return_state: Indicates whether to return the last hidden and cell states along
+    with the output.
+- stateful: Indicates whether to maintain the hidden state across batches, allowing
+    for stateful LSTMs.
+7 api_usage_example:
+- inputs = np.random.random((32, 10, 8))
+- lstm = keras.layers.LSTM(4)
+- output = lstm(inputs)
+- output.shape
+- lstm = keras.layers.LSTM(
+- '    4, return_sequences=True, return_state=True)'
+- whole_seq_output, final_memory_state, final_carry_state = lstm(inputs)
+- whole_seq_output.shape
+- final_memory_state.shape
+- final_carry_state.shape
+8 api_shape: null

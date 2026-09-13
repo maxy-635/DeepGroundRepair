@@ -1,0 +1,50 @@
+2 api_name: paddle.distributed.communication.stream.alltoall_single
+3 api_description: Splits the input tensor into chunks and scatters them across devices,
+  gathering the corresponding output tensor segments.
+4 api_signature: paddle.distributed.communication.stream.alltoall_single(out_tensor,in_tensor,out_split_sizes,in_split_sizes)
+5 api_details: ''
+6 api_parameters:
+- out_tensor: Receives the concatenated result tensor after the all-to-all exchange.
+- in_tensor: Provides the input tensor to be split and distributed among ranks.
+- out_split_sizes: Specifies how much data each rank contributes to `out_tensor` along
+    the first dimension.
+- in_split_sizes: Specifies how to split `in_tensor` along the first dimension before
+    sending to each rank.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- local_rank = dist.get_rank()
+- '# case 1'
+- output = paddle.empty([2], dtype="int64")
+- 'if local_rank == 0:'
+- '    data = paddle.to_tensor([0, 1])'
+- 'else:'
+- '    data = paddle.to_tensor([2, 3])'
+- task = dist.stream.alltoall_single(output, data, sync_op=False)
+- task.wait()
+- out = output.numpy()
+- print(out)
+- '# [0, 2] (2 GPUs, out for rank 0)'
+- '# [1, 3] (2 GPUs, out for rank 1)'
+- '# case 2'
+- size = dist.get_world_size()
+- output = paddle.empty([(local_rank + 1) * size, size], dtype='float32')
+- 'if local_rank == 0:'
+- '    data = paddle.to_tensor([[0., 0.], [0., 0.], [0., 0.]])'
+- 'else:'
+- '    data = paddle.to_tensor([[1., 1.], [1., 1.], [1., 1.]])'
+- out_split_sizes = [local_rank + 1 for i in range(size)]
+- in_split_sizes = [i + 1 for i in range(size)]
+- task = dist.stream.alltoall_single(output,
+- '                                data,'
+- '                                out_split_sizes,'
+- '                                in_split_sizes,'
+- '                                sync_op=False)'
+- task.wait()
+- out = output.numpy()
+- print(out)
+- '# [[0., 0.], [1., 1.]]                     (2 GPUs, out for rank 0)'
+- '# [[0., 0.], [0., 0.], [1., 1.], [1., 1.]] (2 GPUs, out for rank 1)'
+8 api_shape: {}

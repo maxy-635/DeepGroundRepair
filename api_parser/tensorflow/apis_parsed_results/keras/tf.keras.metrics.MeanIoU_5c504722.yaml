@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.metrics.MeanIoU
+3 api_description: Computes mean Intersection-over-Union for segmentation by accumulating
+  weighted predictions in a confusion matrix, then averaging the per-class IoU scores.
+4 api_signature: tf.keras.metrics.MeanIoU(num_classes,ignore_class)
+5 api_details: ''
+6 api_parameters:
+- num_classes: Sets how many label classes the metric tracks, which determines the
+    size of the confusion matrix.
+- ignore_class: Specifies a class ID to exclude from metric calculation, such as a
+    void or unlabeled class.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([0, 0, 1, 1], [0, 1, 0, 1],
+- '               sample_weight=[0.3, 0.3, 0.3, 0.1])'
+- m.result().numpy()
+8 api_shape: ''

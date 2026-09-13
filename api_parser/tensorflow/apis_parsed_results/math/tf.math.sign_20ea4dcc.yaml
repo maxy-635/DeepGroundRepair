@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.sign
+3 api_description: 'Returns the element-wise sign of each value: -1 for negative,
+  0 for zero, 1 for positive, and x/|x| for nonzero complex numbers.'
+4 api_signature: tf.math.sign(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose element-wise sign is returned.
+7 api_usage_example:
+- '# complex number'
+- tf.math.sign([1 + 1j, 0 + 0j])
+8 api_shape: ''

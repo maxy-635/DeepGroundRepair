@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.Masking
+3 api_description: The tf.keras.layers.Masking layer skips timesteps in a sequence
+  input where all values are equal to a specified mask_value, allowing downstream
+  layers that support masking to ignore these timesteps.
+4 api_signature: tf.keras.layers.Masking(mask_value)
+5 api_details: ''
+6 api_parameters:
+- mask_value: Specifies the value that will be masked (ignored) in the input data.
+- input_shape: Defines the shape of the input data, excluding the batch size.
+7 api_usage_example: null
+8 api_shape: null

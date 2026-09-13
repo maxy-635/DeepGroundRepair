@@ -1,0 +1,18 @@
+2 api_name: tensorflow.conv2d_backprop_input_v2
+3 api_description: Computes the gradient of a convolution operation with respect to
+  its input tensor, given the upstream gradient, filter, strides, padding, and data
+  format.
+4 api_signature: tf.conv2d_backprop_input_v2(input,filter,out_backprop,strides,padding,data_format,dilations,name)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor shape for the convolution backprop operation.
+- filter: Provides the convolution filter tensor used to compute gradients for the
+    input.
+- out_backprop: Supplies the gradient tensor from the convolution output.
+- strides: Sets the sliding-window stride for each input dimension.
+- padding: Chooses the padding algorithm used by the convolution backprop operation.
+- data_format: Defines the tensor layout format, such as NHWC or NCHW.
+- dilations: Sets the spacing between filter elements for atrous convolution behavior.
+- name: Gives the operation an optional name.
+7 api_usage_example: null
+8 api_shape: ''

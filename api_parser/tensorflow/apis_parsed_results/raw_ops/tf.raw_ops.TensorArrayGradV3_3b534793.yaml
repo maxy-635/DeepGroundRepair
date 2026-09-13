@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TensorArrayGradV3
+3 api_description: Creates or returns the TensorArray used to accumulate gradients
+  for a forward TensorArray, freezing the forward array’s size and using a unique
+  source suffix to keep separate gradient computations from sharing the same accumulator.
+4 api_signature: tf.raw_ops.TensorArrayGradV3(handle,flow_in)
+5 api_details: ''
+6 api_parameters:
+- handle: Resource handle identifying the forward TensorArray to compute gradients
+    for.
+- flow_in: Float scalar used to enforce correct execution order and chaining of TensorArray
+    operations.
+7 api_usage_example: null
+8 api_shape: ''

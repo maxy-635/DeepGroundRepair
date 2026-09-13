@@ -1,0 +1,14 @@
+2 api_name: torch.signal.windows.exponential
+3 api_description: Generates an exponential (Poisson) window waveform for signal processing.
+4 api_signature: torch.signal.windows.exponential(M,center,tau,sym)
+5 api_details: ''
+6 api_parameters:
+- M: Sets the window length, i.e. the number of points returned by the function.
+7 api_usage_example:
+- ' # Generates a symmetric exponential window of size 10 and with a decay value of
+  1.0.'
+- ' # The center will be at (M - 1) / 2, where M is 10.'
+- ' torch.signal.windows.exponential(10)'
+- ' # Generates a periodic exponential window and decay factor equal to .5'
+- ' torch.signal.windows.exponential(10, sym=False,tau=.5)'
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: paddle.vision.transforms.HueTransform
+3 api_description: Adjusts an image’s hue by shifting color tones while preserving
+  overall structure.
+4 api_signature: paddle.vision.transforms.HueTransform(value)
+5 api_details: ''
+6 api_parameters:
+- value: Sets the hue adjustment amount, from 0 to 0.5, where 0 leaves the image unchanged.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import HueTransform
+- transform = HueTransform(0.4)
+- fake_img = Image.fromarray((np.random.rand(224, 224, 3) * 255.).astype(np.uint8))
+- fake_img = transform(fake_img)
+- print(fake_img.size)
+- (224, 224)
+8 api_shape: {}

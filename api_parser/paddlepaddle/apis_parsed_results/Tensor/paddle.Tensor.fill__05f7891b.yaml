@@ -1,0 +1,14 @@
+2 api_name: paddle.Tensor.fill_
+3 api_description: Fills the tensor in-place with a specified scalar value in Dygraph
+  mode.
+4 api_signature: paddle.Tensor.fill_(value)
+5 api_details: ''
+6 api_parameters:
+- value: The value used to fill the tensor.
+7 api_usage_example:
+- import paddle
+- tensor = paddle.to_tensor([0, 1, 2, 3, 4])
+- tensor.fill_(0)
+- print(tensor.tolist())
+- '[0, 0, 0, 0, 0]'
+8 api_shape: {}

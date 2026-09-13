@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.one_hot_categorical.OneHotCategorical
+3 api_description: Represents a categorical distribution over one-hot encoded outcomes,
+  allowing sampling, log-probability evaluation, entropy, and related distribution
+  methods.
+4 api_signature: OneHotCategorical(probs,logits)
+5 api_details: ''
+6 api_parameters:
+- probs: Specifies the categorical event probabilities for each class.
+- logits: Specifies unnormalized event log probabilities used to define the categorical
+    distribution.
+7 api_usage_example:
+- ' m = OneHotCategorical(torch.tensor([ 0.25, 0.25, 0.25, 0.25 ]))'
+- ' m.sample()  # equal probability of 0, 1, 2, 3'
+8 api_shape: null

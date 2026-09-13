@@ -1,0 +1,15 @@
+2 api_name: torch.nn.functional.selu
+3 api_description: The torch.nn.functional.selu function applies the Scaled Exponential
+  Linear Unit (SELU) activation function element-wise to input data, using predefined
+  constants alpha and scale to ensure self-normalizing properties.
+4 api_signature: torch.nn.functional.selu(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to apply the SELU activation function.
+- inplace: A boolean indicating whether to perform the operation in-place, saving
+    memory.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

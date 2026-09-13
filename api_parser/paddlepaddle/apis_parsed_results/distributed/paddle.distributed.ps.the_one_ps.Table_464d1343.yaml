@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.ps.the_one_ps.Table
+3 api_description: A distributed parameter-server table for PaddlePaddle that stores
+  and manages model parameters, supports lookup and update operations across workers,
+  and coordinates synchronized access through the_one_ps infrastructure.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

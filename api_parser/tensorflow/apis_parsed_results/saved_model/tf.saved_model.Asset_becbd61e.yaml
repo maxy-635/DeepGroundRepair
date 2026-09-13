@@ -1,0 +1,8 @@
+2 api_name: tensorflow.saved_model.Asset
+3 api_description: Represents a file asset that is packaged with a SavedModel so dependent
+  code can reliably access the correct file path after export and loading.
+4 api_signature: tf.saved_model.Asset(path)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

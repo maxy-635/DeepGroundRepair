@@ -1,0 +1,29 @@
+2 api_name: tensorflow.nn.conv3d_transpose
+3 api_description: tensorflow.nn.conv3d_transpose performs the reverse operation of
+  conv3d, often referred to as 'deconvolution', by computing the gradient of the 3D
+  convolution, effectively expanding the input dimensions.
+4 api_signature: tf.nn.conv3d_transpose(input,filters,output_shape,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: A 5-D Tensor representing the input data, with shape determined by the data
+    format (NDHWC or NCDHW).
+- filters: A 5-D Tensor representing the filter weights, with a shape that matches
+    the input's in_channels dimension.
+- output_shape: A 1-D Tensor specifying the desired shape of the output tensor after
+    the deconvolution operation.
+- strides: An integer or list of integers defining the stride of the sliding window
+    for each spatial dimension of the input.
+- padding: A string indicating the padding algorithm, either 'VALID' or 'SAME', to
+    be used during deconvolution.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Depth_in, Height_in, Width_in, Channel_in)
+  output tensor shape: (N, Depth_out, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filter_output_channels
+    tensor depth: If padding = "VALID", Depth_out = (Depth_in - 1) * stride_depth + filter_depth; 
+                  If padding = "SAME", Depth_out = Depth_in * stride_depth
+    tensor height: If padding = "VALID", Height_out = (Height_in - 1) * strides_height + filter_height; 
+                  If padding = "SAME", Height_out = Height_in * strides_height
+    tensor width: If padding = "VALID", Width_out = (Width_in - 1) * strides_width + filter_width; 
+                  If padding = "SAME", Width_out = Width_in * strides_width

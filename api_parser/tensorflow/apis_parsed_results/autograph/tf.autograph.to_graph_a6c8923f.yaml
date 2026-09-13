@@ -1,0 +1,22 @@
+2 api_name: tensorflow.autograph.to_graph
+3 api_description: Converts Python code into TensorFlow graph code at a low level,
+  giving direct control over the generated graph without caching, variable management,
+  or wrapping it as a callable.
+4 api_signature: tf.autograph.to_graph(entity,recursive)
+5 api_details: ''
+6 api_parameters:
+- entity: The Python callable or class that will be converted to TensorFlow graph
+    code.
+- recursive: Controls whether functions called by the converted object are also converted
+    recursively.
+7 api_usage_example:
+- 'def f(x):'
+- '  if x > 0:'
+- '    y = x * x'
+- '  else:'
+- '    y = -x'
+- '  return y'
+- converted_f = to_graph(f)
+- x = tf.constant(2)
+- 'converted_f(x)  # converted_foo is like a TensorFlow Op.'
+8 api_shape: ''

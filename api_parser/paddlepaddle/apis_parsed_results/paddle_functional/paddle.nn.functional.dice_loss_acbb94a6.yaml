@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.functional.dice_loss
+3 api_description: The paddle.nn.functional.dice_loss API calculates the Dice loss,
+  a metric for evaluating the similarity between binary classification predictions
+  and labels, commonly used in segmentation tasks by comparing sigmoid predictions
+  of each pixel.
+4 api_signature: paddle.nn.functional.dice_loss(input,label,epsilon)
+5 api_details: ''
+6 api_parameters:
+- input: A tensor representing the model's predicted probabilities for each category,
+    typically after a sigmoid activation.
+- label: A tensor representing the ground truth labels for the predictions, with a
+    similar shape to the input tensor.
+- epsilon: A small constant added to both the numerator and denominator to prevent
+    division by zero and ensure stability in the dice coefficient calculation.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.randn((3,224,224,2))
+- label = paddle.randint(high=2, shape=(3,224,224,1))
+- predictions = F.softmax(x)
+- loss = F.dice_loss(input=predictions, label=label)
+8 api_shape: null

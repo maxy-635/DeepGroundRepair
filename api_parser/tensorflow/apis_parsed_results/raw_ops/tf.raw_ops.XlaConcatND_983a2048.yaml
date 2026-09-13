@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.XlaConcatND
+3 api_description: Concatenates tensor slices across all dimensions, optionally removing
+  paddings, to merge split inputs into a single tensor.
+4 api_signature: tf.raw_ops.XlaConcatND(inputs,num_concats)
+5 api_details: ''
+6 api_parameters:
+- inputs: A non-empty list of same-typed tensors with identical shapes, providing
+    the row-major input slices to be concatenated across all dimensions.
+- num_concats: A list of integers specifying how many pieces to merge along each dimension.
+7 api_usage_example: null
+8 api_shape: ''

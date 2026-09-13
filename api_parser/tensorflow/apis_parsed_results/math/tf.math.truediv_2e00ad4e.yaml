@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.truediv
+3 api_description: Elementwise true division of x by y with Python 3 semantics, casting
+  integer inputs to floating point and preserving floating type for float inputs.
+4 api_signature: tf.math.truediv(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The numerator tensor to be divided.
+- y: The denominator tensor that `x` is divided by.
+7 api_usage_example: null
+8 api_shape: ''

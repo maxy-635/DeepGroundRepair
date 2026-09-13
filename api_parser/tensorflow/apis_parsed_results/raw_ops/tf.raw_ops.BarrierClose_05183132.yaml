@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.BarrierClose
+3 api_description: Closes a barrier to new keys, allowing only completion of existing
+  elements while take operations continue until remaining completed elements are exhausted.
+4 api_signature: tf.raw_ops.BarrierClose(handle)
+5 api_details: ''
+6 api_parameters:
+- handle: The handle that identifies the barrier resource to close.
+7 api_usage_example: null
+8 api_shape: ''

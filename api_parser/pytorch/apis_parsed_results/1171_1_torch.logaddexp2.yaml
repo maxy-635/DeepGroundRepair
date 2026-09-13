@@ -1,0 +1,9 @@
+2 api_name: torch.logaddexp2
+3 api_description: Computes log2(2**x1 + 2**x2) in a numerically stable way.
+4 api_signature: torch.logaddexp2(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first input tensor containing values to be combined.
+- other: The second input tensor containing values to be combined.
+7 api_usage_example: null
+8 api_shape: null

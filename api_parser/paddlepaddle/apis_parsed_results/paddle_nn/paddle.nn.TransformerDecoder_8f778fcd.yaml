@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.TransformerDecoder
+3 api_description: TransformerDecoder is a module that consists of multiple decoder
+  layers used to transform an input sequence in the context of a transformer architecture,
+  facilitating tasks like sequence-to-sequence translation by attending to encoded
+  input and previous outputs.
+4 api_signature: paddle.nn.TransformerDecoder(decoder_layer,num_layers)
+5 api_details: ''
+6 api_parameters:
+- decoder_layer: Specifies the initial TransformerDecoderLayer instance to define
+    the configuration for subsequent layers.
+- num_layers: Determines how many TransformerDecoderLayer instances will be stacked
+    in the decoder.
+7 api_usage_example: []
+8 api_shape: null

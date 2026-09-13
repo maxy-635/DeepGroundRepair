@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.pdist
+3 api_description: torch.nn.functional.pdist computes the p-norm distance between
+  each pair of row vectors in a matrix, equivalent to the upper triangular part of
+  torch.norm without the diagonal, optimized for contiguous rows.
+4 api_signature: torch.nn.functional.pdist(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor of shape N×M, where N is the number of vectors and M is
+    the dimensionality of each vector.
+- p: The p value specifies the norm degree for calculating the p-norm distance between
+    each pair of vectors, ranging from 0 to infinity.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: torch.nn.LazyLinear
+3 api_description: torch.nn.LazyLinear is a linear layer that automatically infers
+  the number of input features (in_features) during the first forward pass, allowing
+  for flexible model design without needing to specify input dimensions upfront.
+4 api_signature: torch.nn.LazyLinear(out_features,bias)
+5 api_details: ''
+6 api_parameters:
+- out_features: Defines the number of output features produced by the layer.
+- bias: Determines whether an additive bias term is included in the layer's computations.
+7 api_usage_example: null
+8 api_shape: null

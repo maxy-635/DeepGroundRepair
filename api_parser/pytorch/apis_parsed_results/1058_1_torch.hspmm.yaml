@@ -1,0 +1,10 @@
+2 api_name: torch.hspmm
+3 api_description: Multiplies a sparse COO matrix by a dense strided matrix and returns
+  the result as a hybrid COO sparse tensor.
+4 api_signature: torch.hspmm(mat1,mat2)
+5 api_details: ''
+6 api_parameters:
+- mat1: The first sparse matrix input used in the matrix multiplication.
+- mat2: The second strided matrix input used in the matrix multiplication.
+7 api_usage_example: null
+8 api_shape: null

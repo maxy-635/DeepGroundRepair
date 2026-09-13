@@ -1,0 +1,9 @@
+2 api_name: tensorflow.distribute.experimental.coordinator.PerWorkerValues
+3 api_description: Holds one value per worker so `ClusterCoordinator.schedule()` can
+  pass each worker’s own value into the scheduled function; currently created only
+  by iterating a `ClusterCoordinator.create_per_worker_dataset()` result.
+4 api_signature: tf.distribute.experimental.coordinator.PerWorkerValues(values)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

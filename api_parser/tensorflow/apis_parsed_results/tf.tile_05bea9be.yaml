@@ -1,0 +1,18 @@
+2 api_name: tensorflow.tile
+3 api_description: Replicates a tensor along each dimension according to `multiples`,
+  producing a larger tensor with each axis repeated the specified number of times.
+4 api_signature: tf.tile(input,multiples)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be repeated along each dimension.
+- multiples: A 1-D integer tensor giving how many times to tile `input` across each
+    corresponding dimension.
+7 api_usage_example:
+- a = tf.constant([[1,2,3],[4,5,6]], tf.int32)
+- b = tf.constant([1,2], tf.int32)
+- tf.tile(a, b)
+- c = tf.constant([2,1], tf.int32)
+- tf.tile(a, c)
+- d = tf.constant([2,2], tf.int32)
+- tf.tile(a, d)
+8 api_shape: ''

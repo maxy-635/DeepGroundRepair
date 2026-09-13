@@ -1,0 +1,16 @@
+2 api_name: paddle.distribution.Dirichlet
+3 api_description: Represents a Dirichlet distribution parameterized by concentration,
+  used to model probability vectors over multiple categories.
+4 api_signature: paddle.distribution.Dirichlet(concentration)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- dirichlet = paddle.distribution.Dirichlet(paddle.to_tensor([1., 2., 3.]))
+- print(dirichlet.entropy())
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- -1.24434423)
+- print(dirichlet.prob(paddle.to_tensor([.3, .5, .6])))
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 10.80000019)
+8 api_shape: {}

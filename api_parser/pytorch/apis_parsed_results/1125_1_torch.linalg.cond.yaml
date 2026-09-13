@@ -1,0 +1,26 @@
+2 api_name: torch.linalg.cond
+3 api_description: Computes a matrix’s condition number under a chosen norm, indicating
+  how sensitive the matrix is to numerical errors.
+4 api_signature: torch.linalg.cond(A,p)
+5 api_details: ''
+6 api_parameters:
+- A: Input matrix or batch of matrices whose condition number is computed.
+- p: Specifies which matrix norm to use when calculating the condition number.
+7 api_usage_example:
+- ' A = torch.randn(3, 4, 4, dtype=torch.complex64)'
+- ' torch.linalg.cond(A)'
+- ' A = torch.tensor([[1., 0, -1], [0, 1, 0], [1, 0, 1]])'
+- ' torch.linalg.cond(A)'
+- ' torch.linalg.cond(A, ''fro'')'
+- ' torch.linalg.cond(A, ''nuc'')'
+- ' torch.linalg.cond(A, float(''inf''))'
+- ' torch.linalg.cond(A, float(''-inf''))'
+- ' torch.linalg.cond(A, 1)'
+- ' torch.linalg.cond(A, -1)'
+- ' torch.linalg.cond(A, 2)'
+- ' torch.linalg.cond(A, -2)'
+- ' A = torch.randn(2, 3, 3)'
+- ' torch.linalg.cond(A)'
+- ' A = torch.randn(2, 3, 3, dtype=torch.complex64)'
+- ' torch.linalg.cond(A)'
+8 api_shape: null

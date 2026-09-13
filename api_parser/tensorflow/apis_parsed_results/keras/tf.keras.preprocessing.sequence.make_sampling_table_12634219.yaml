@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.preprocessing.sequence.make_sampling_table
+3 api_description: Creates a rank-based probability table for downsampling frequent
+  words, mainly to supply skipgrams with sampling probabilities that reduce common
+  words more often.
+4 api_signature: tf.keras.preprocessing.sequence.make_sampling_table(size)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies how many of the most frequent words to include in the sampling table.
+7 api_usage_example: null
+8 api_shape: ''

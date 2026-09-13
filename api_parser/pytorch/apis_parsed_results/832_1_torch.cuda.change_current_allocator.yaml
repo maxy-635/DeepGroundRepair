@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.change_current_allocator
+3 api_description: Switches the active CUDA memory allocator to a provided custom
+  allocator.
+4 api_signature: torch.cuda.change_current_allocator(allocator)
+5 api_details: ''
+6 api_parameters:
+- allocator: Sets the CUDA allocator that will become the active allocator.
+7 api_usage_example: null
+8 api_shape: null

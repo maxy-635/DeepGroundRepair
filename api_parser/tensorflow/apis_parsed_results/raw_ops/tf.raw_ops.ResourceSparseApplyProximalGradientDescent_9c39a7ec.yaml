@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ResourceSparseApplyProximalGradientDescent
+3 api_description: Applies a sparse proximal gradient descent update to selected rows
+  of a resource variable, using the provided gradients, learning rate, and L1/L2 regularization.
+4 api_signature: tf.raw_ops.ResourceSparseApplyProximalGradientDescent(var,grad,indices,alpha,l1,l2)
+5 api_details: ''
+6 api_parameters:
+- var: Resource variable to be updated in place.
+- alpha: Scalar learning-rate scaling factor for the update.
+- l1: Scalar L1 regularization strength used in the proximal step.
+- l2: Scalar L2 regularization strength used in the proximal step.
+- grad: Gradient values applied to the selected variable entries.
+- indices: Indices of the variable rows to update.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.optimizers.Adagrad
+3 api_description: Implements Adagrad, an optimizer that adapts each parameter’s learning
+  rate based on its update history, giving less frequent updates to larger steps and
+  more frequently updated parameters smaller steps.
+4 api_signature: tf.keras.optimizers.Adagrad(learning_rate,initial_accumulator_value,epsilon,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Controls the step size used to update model weights during optimization.
+- initial_accumulator_value: Sets the starting value for each accumulator, affecting
+    how strongly early gradients are scaled.
+- epsilon: Adds a small constant for numerical stability to avoid division issues.
+- name: Assigns the name used for the optimizer's internal accumulator weights.
+7 api_usage_example: null
+8 api_shape: ''

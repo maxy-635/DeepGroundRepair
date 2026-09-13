@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.tree.map_shape_structure
+3 api_description: Applies a function to each shape tuple in a nested structure, preserving
+  the structure of the input.
+4 api_signature: tf.keras.tree.map_shape_structure(func,structure)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.fix
+3 api_description: Rounds elements toward zero to the nearest integer, returning the
+  result as a TensorFlow tensor.
+4 api_signature: tf.experimental.numpy.fix(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

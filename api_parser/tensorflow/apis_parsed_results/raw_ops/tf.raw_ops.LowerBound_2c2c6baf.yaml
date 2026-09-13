@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.LowerBound
+3 api_description: Returns, for each row, the insertion indices where each value would
+  be placed in a sorted sequence to keep it ordered (equivalent to np.searchsorted(...,
+  side='left') on the last dimension).
+4 api_signature: tf.raw_ops.LowerBound(sorted_inputs,values)
+5 api_details: ''
+6 api_parameters:
+- sorted_inputs: A 2-D tensor with each row sorted, used as the reference data to
+    search within.
+- values: A 2-D tensor of the same type as `sorted_inputs`, containing the values
+    to locate in the sorted rows.
+7 api_usage_example: null
+8 api_shape: ''

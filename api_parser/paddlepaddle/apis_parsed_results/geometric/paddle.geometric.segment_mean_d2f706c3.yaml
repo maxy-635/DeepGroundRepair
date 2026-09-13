@@ -1,0 +1,17 @@
+2 api_name: paddle.geometric.segment_mean
+3 api_description: Computes the mean of values within each segment, returning one
+  averaged result per segment.
+4 api_signature: paddle.geometric.segment_mean(data,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor containing the values to be grouped and reduced by segment.
+- segment_ids: A 1D tensor that assigns each row of `data` to a segment for mean aggregation.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([[1, 2, 3], [3, 2, 1], [4, 5, 6]], dtype='float32')
+- segment_ids = paddle.to_tensor([0, 0, 1], dtype='int32')
+- out = paddle.geometric.segment_mean(data, segment_ids)
+- print(out.numpy())
+- '[[2. 2. 2.]'
+- '[4. 5. 6.]]'
+8 api_shape: {}

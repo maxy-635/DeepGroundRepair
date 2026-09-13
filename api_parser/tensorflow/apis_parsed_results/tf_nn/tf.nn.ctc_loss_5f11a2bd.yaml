@@ -1,0 +1,39 @@
+2 api_name: tensorflow.nn.ctc_loss
+3 api_description: The tensorflow.nn.ctc_loss API computes the Connectionist Temporal
+  Classification (CTC) loss for training RNNs on sequence problems with variable timing,
+  such as handwriting or speech recognition, independent of the network structure.
+4 api_signature: tf.nn.ctc_loss(labels,logits,label_length,logit_length)
+5 api_details: ''
+6 api_parameters:
+- labels: Represents the true label sequences, either as a dense tensor or a sparse
+    tensor.
+- logits: Contains the predicted outputs from the model, organized by time frames
+    and classes.
+- label_length: Specifies the actual lengths of each label sequence when labels are
+    provided as dense tensors.
+- logit_length: Indicates the lengths of the input sequences in the logits tensor.
+7 api_usage_example:
+- tf.random.set_seed(50)
+- batch_size = 8
+- num_labels = 6
+- max_label_length = 5
+- num_frames = 12
+- labels = tf.random.uniform([batch_size, max_label_length],
+- '                           minval=1, maxval=num_labels, dtype=tf.int64)'
+- logits = tf.random.uniform([num_frames, batch_size, num_labels])
+- label_length = tf.random.uniform([batch_size], minval=2,
+- '                                 maxval=max_label_length, dtype=tf.int64)'
+- label_mask = tf.sequence_mask(label_length, maxlen=max_label_length,
+- '                              dtype=label_length.dtype)'
+- labels *= label_mask
+- logit_length = [num_frames] * batch_size
+- 'with tf.GradientTape() as t:'
+- '  t.watch(logits)'
+- '  ref_loss = tf.nn.ctc_loss('
+- '      labels=labels,'
+- '      logits=logits,'
+- '      label_length=label_length,'
+- '      logit_length=logit_length,'
+- '      blank_index=0)'
+- ref_grad = t.gradient(ref_loss, logits)
+8 api_shape: ''

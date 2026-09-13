@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.regularizers.L2
+3 api_description: Applies an L2 penalty to a tensor by adding l2 times the sum of
+  squared values, and can be used as a layer regularizer via the 'l2' string identifier.
+4 api_signature: tf.keras.regularizers.L2(l2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- dense = Dense(3, kernel_regularizer='l2')
+8 api_shape: ''

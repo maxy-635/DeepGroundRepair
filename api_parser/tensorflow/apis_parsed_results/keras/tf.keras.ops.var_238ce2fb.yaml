@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.var
+3 api_description: Computes the variance of a tensor along the specified axis or axes,
+  with optional control over keeping reduced dimensions and choosing the variance
+  definition.
+4 api_signature: tf.keras.ops.var(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose variance will be computed.
+- axis: The axis or axes to reduce over when computing the variance, or omitted to
+    use the flattened tensor.
+7 api_usage_example: null
+8 api_shape: ''

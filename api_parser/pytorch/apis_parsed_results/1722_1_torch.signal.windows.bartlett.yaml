@@ -1,0 +1,13 @@
+2 api_name: torch.signal.windows.bartlett
+3 api_description: Returns a Bartlett (triangular) window, with values that rise linearly
+  to a peak at the center and then fall linearly to zero at the ends.
+4 api_signature: torch.signal.windows.bartlett(M,sym)
+5 api_details: ''
+6 api_parameters:
+- M: Specifies the number of points in the Bartlett window.
+7 api_usage_example:
+- ' # Generates a symmetric Bartlett window.'
+- ' torch.signal.windows.bartlett(10)'
+- ' # Generates a periodic Bartlett window.'
+- ' torch.signal.windows.bartlett(10, sym=False)'
+8 api_shape: null

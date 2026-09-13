@@ -1,0 +1,10 @@
+2 api_name: tensorflow.train.experimental.ShardByTaskPolicy
+3 api_description: Splits tensors into shards according to each tensor’s device-spec
+  task, so data is partitioned by task across devices.
+4 api_signature: __call__(shardable_tensors)
+5 api_details: ''
+6 api_parameters:
+- shardable_tensors: Specifies the list of tensors that can be partitioned into shards
+    for task-based distribution.
+7 api_usage_example: null
+8 api_shape: ''

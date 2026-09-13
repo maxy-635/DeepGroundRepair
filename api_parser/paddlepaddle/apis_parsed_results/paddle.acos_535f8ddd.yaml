@@ -1,0 +1,15 @@
+2 api_name: paddle.acos
+3 api_description: Computes the elementwise arccosine of the input tensor, returning
+  values in radians.
+4 api_signature: paddle.acos(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the elementwise arc-cosine.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.acos(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.98231316, 1.77215421, 1.47062886, 1.26610363])'
+8 api_shape: {}

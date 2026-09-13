@@ -1,0 +1,25 @@
+2 api_name: torch.linalg.lstsq
+3 api_description: Solves linear least squares problems by finding the best-fit solution
+  to Ax \u2248 b, returning the minimum-norm result when the system is underdetermined.
+4 api_signature: torch.linalg.lstsq(A,B,rcond,driver)
+5 api_details: ''
+6 api_parameters:
+- A: The input matrix whose least-squares solution is being computed, with optional
+    batch dimensions.
+- B: The right-hand-side vector or matrix to fit against `A`, with optional batch
+    dimensions.
+- rcond: The cutoff used to decide which singular values count toward the effective
+    rank of `A`; if `None`, it defaults to machine precision times `max(m, n)`.
+7 api_usage_example:
+- ' A = torch.randn(1,3,3)'
+- ' A'
+- ' B = torch.randn(2,3,3)'
+- ' B'
+- ' X = torch.linalg.lstsq(A, B).solution # A is broadcasted to shape (2, 3, 3)'
+- ' torch.dist(X, torch.linalg.pinv(A) @ B)'
+- ' S = torch.linalg.lstsq(A, B, driver=''gelsd'').singular_values'
+- ' torch.dist(S, torch.linalg.svdvals(A))'
+- ' A[:, 0].zero_()  # Decrease the rank of A'
+- ' rank = torch.linalg.lstsq(A, B).rank'
+- ' rank'
+8 api_shape: null

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.Variable
+3 api_description: Creates a TensorFlow variable that holds shared, persistent state
+  with a fixed type and shape, initialized from a given value and later updated via
+  assign operations.
+4 api_signature: tf.Variable(initial_value,trainable,dtype,shape,name)
+5 api_details: ''
+6 api_parameters:
+- initial_value: Sets the variable’s starting value, either from a Tensor, convertible
+    Python object, or no-arg callable.
+- trainable: Controls whether automatic differentiation tracks this variable for training.
+- name: Assigns an optional name to the variable, using 'Variable' by default.
+- dtype: Specifies the variable’s data type and converts the initial value to that
+    type if needed.
+- shape: Defines the variable’s shape, or lets it inherit shape from the initial value
+    if omitted.
+7 api_usage_example:
+- x = tf.Variable(5)
+- x.ref().deref()
+8 api_shape: ''

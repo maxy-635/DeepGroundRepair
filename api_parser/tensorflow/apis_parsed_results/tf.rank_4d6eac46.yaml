@@ -1,0 +1,9 @@
+2 api_name: tensorflow.rank
+3 api_description: Returns a 0-D int32 tensor representing the rank (number of dimensions)
+  of the input tensor.
+4 api_signature: tf.rank(input)
+5 api_details: ''
+6 api_parameters:
+- input: The Tensor or SparseTensor whose rank (number of dimensions) is computed.
+7 api_usage_example: null
+8 api_shape: ''

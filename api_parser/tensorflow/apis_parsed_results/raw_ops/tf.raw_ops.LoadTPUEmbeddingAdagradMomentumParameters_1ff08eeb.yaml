@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.LoadTPUEmbeddingAdagradMomentumParameters
+3 api_description: Loads Adagrad Momentum embedding optimization parameters into HBM
+  for TPU embeddings after configuration, typically to restore checkpointed values
+  before training.
+4 api_signature: tf.raw_ops.LoadTPUEmbeddingAdagradMomentumParameters(parameters,accumulators,momenta,num_shards,shard_id,table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- parameters: The float32 parameters tensor holding the embedding weights to be loaded.
+- accumulators: The float32 accumulators tensor holding Adagrad state to be loaded.
+- momenta: The float32 momenta tensor holding momentum state to be loaded.
+- num_shards: The total number of shards that make up the embedding table.
+- shard_id: The index of the current shard being loaded.
+- table_id: An optional table identifier used to select the target embedding table.
+- table_name: An optional table name used to identify the target embedding table.
+- config: An optional serialized configuration string for the embedding table or load
+    operation.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

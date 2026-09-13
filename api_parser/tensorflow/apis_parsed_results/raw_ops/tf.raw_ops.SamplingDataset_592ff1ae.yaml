@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SamplingDataset
+3 api_description: Creates a dataset by randomly Bernoulli-sampling elements from
+  another dataset, typically as a fused tf.data optimization rather than a direct
+  Python transformation.
+4 api_signature: tf.raw_ops.SamplingDataset(input_dataset,rate,seed,seed2)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to sample from.
+- rate: The probability of retaining each element in the input dataset.
+- seed: The primary random seed used to initialize sampling.
+- seed2: The secondary random seed used to initialize sampling.
+7 api_usage_example: null
+8 api_shape: ''

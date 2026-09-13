@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.DebugNumericSummaryV2
+3 api_description: Computes a numeric summary of an input tensor for tfdbg v2, with
+  output shape determined by the tensor_debug_mode setting.
+4 api_signature: tf.raw_ops.DebugNumericSummaryV2(input,tensor_debug_mode)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose values and statistics are summarized by the op.
+- tensor_debug_mode: Selects the tensor debug mode used to summarize the input tensor.
+7 api_usage_example: null
+8 api_shape: ''

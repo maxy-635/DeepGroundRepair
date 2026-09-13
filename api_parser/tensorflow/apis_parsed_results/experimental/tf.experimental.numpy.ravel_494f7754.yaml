@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.ravel
+3 api_description: Returns a flattened 1D view of a tensor or array-like input, following
+  NumPy ravel behavior but without supporting the order argument.
+4 api_signature: tf.experimental.numpy.ravel(a)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

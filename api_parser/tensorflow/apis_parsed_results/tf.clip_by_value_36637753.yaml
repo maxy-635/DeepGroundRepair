@@ -1,0 +1,15 @@
+2 api_name: tensorflow.clip_by_value
+3 api_description: Clips tensor values to a specified minimum and maximum, returning
+  a tensor of the same shape and type.
+4 api_signature: tf.clip_by_value(t,clip_value_min,clip_value_max)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor or IndexedSlices input to be clipped.
+- clip_value_min: The lower bound used to clip values, broadcastable to the input
+    shape.
+- clip_value_max: The upper bound used to clip values, broadcastable to the input
+    shape.
+7 api_usage_example:
+- t = tf.constant([[1, 2], [3, 4]], dtype=tf.int32)
+- t5 = tf.clip_by_value(t, clip_value_min=-3.1, clip_value_max=3.1)
+8 api_shape: ''

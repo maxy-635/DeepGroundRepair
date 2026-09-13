@@ -1,0 +1,9 @@
+2 api_name: torch.__future__.set_overwrite_module_params_on_conversion
+3 api_description: Controls whether nn.Module conversion replaces parameters with
+  new tensors instead of updating existing parameter objects in place.
+4 api_signature: torch.__future__.set_overwrite_module_params_on_conversion(value)
+5 api_details: ''
+6 api_parameters:
+- value: Controls whether converted module parameters are assigned as new tensors.
+7 api_usage_example: null
+8 api_shape: null

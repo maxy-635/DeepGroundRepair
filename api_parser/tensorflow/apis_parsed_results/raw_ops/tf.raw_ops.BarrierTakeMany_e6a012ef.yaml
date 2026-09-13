@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BarrierTakeMany
+3 api_description: Removes a specified number of completed elements from a barrier,
+  concatenating each component tensor along the first dimension and returning insertion
+  batch indices in completion order.
+4 api_signature: tf.raw_ops.BarrierTakeMany(handle,num_elements,component_types)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the barrier resource from which values will be taken.
+- num_elements: Specifies how many queued elements to remove from the barrier.
+- component_types: Defines the data types expected for each component in the taken
+    values.
+7 api_usage_example: null
+8 api_shape: ''

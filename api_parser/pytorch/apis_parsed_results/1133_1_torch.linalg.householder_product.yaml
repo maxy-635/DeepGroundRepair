@@ -1,0 +1,20 @@
+2 api_name: torch.linalg.householder_product
+3 api_description: Computes the first n columns of the matrix product formed by applying
+  a sequence of Householder reflectors.
+4 api_signature: torch.linalg.householder_product(A,tau)
+5 api_details: ''
+6 api_parameters:
+- A: The tensor containing the Householder reflector vectors, with optional batch
+    dimensions.
+- tau: The tensor containing the scalar coefficients that define the Householder reflectors,
+    with optional batch dimensions.
+7 api_usage_example:
+- ' A = torch.randn(2, 2)'
+- ' h, tau = torch.geqrf(A)'
+- ' Q = torch.linalg.householder_product(h, tau)'
+- ' torch.dist(Q, torch.linalg.qr(A).Q)'
+- ' h = torch.randn(3, 2, 2, dtype=torch.complex128)'
+- ' tau = torch.randn(3, 1, dtype=torch.complex128)'
+- ' Q = torch.linalg.householder_product(h, tau)'
+- ' Q'
+8 api_shape: null

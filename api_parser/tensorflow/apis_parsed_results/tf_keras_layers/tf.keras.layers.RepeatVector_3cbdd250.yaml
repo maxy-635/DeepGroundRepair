@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.RepeatVector
+3 api_description: Repeats the input tensor n times along a new axis.
+4 api_signature: tf.keras.layers.RepeatVector(n)
+5 api_details: ''
+6 api_parameters:
+- n: The integer value that specifies how many times the input will be repeated.
+7 api_usage_example:
+- x = keras.Input(shape=(32,))
+- y = keras.layers.RepeatVector(3)(x)
+- y.shape
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.audio.decode_wav
+3 api_description: Decodes a 16-bit PCM WAV file into a float tensor scaled to [-1.0,
+  1.0], optionally adjusting the number of channels and samples by duplicating, trimming,
+  cropping, or zero-padding as needed.
+4 api_signature: tf.audio.decode_wav(contents,desired_channels,desired_samples)
+5 api_details: ''
+6 api_parameters:
+- contents: The WAV-encoded audio data to decode, typically read from a file.
+- desired_channels: The number of audio channels to output, or -1 to keep the file’s
+    channel count.
+- desired_samples: The number of audio samples to output, or -1 to use the full decoded
+    length.
+7 api_usage_example: null
+8 api_shape: ''

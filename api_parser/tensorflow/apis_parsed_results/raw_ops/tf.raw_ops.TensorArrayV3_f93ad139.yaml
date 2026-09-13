@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.TensorArrayV3
+3 api_description: Creates a fixed-size TensorArray container for storing tensors,
+  with data written via Write and retrieved via Read or Pack.
+4 api_signature: tf.raw_ops.TensorArrayV3(size,dtype,element_shape,dynamic_size,clear_after_read)
+5 api_details: ''
+6 api_parameters:
+- size: Sets the initial number of elements the TensorArray can hold.
+- dtype: Specifies the data type of the TensorArray elements.
+- element_shape: Optionally defines the expected shape of each element for validation.
+- dynamic_size: Controls whether the TensorArray can grow beyond its initial size
+    when written to.
+- clear_after_read: Determines whether elements are removed after reading to save
+    memory and prevent repeated reads.
+7 api_usage_example: null
+8 api_shape: ''

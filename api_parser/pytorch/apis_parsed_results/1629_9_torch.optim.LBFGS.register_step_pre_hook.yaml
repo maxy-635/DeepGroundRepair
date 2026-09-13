@@ -1,0 +1,10 @@
+2 api_name: torch.optim.LBFGS.register_step_pre_hook
+3 api_description: Registers a callback that runs before each LBFGS optimizer step,
+  allowing you to inspect or modify the optimizer’s state or step behavior.
+4 api_signature: register_step_pre_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: Registers a user-defined callback to run before each LBFGS optimization step.
+7 api_usage_example:
+- hook(optimizer, args, kwargs) -> None or modified args and kwargs
+8 api_shape: null

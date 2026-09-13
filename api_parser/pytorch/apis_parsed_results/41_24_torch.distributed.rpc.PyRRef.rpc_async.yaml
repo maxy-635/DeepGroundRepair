@@ -1,0 +1,13 @@
+2 api_name: torch.distributed.rpc.PyRRef.rpc_async
+3 api_description: Creates a proxy that dispatches rpc_async calls to the RRef’s owner,
+  letting you invoke methods on the referenced object remotely.
+4 api_signature: rpc_async(self,timeout)
+5 api_details: ''
+6 api_parameters:
+- timeout: Sets how long to wait for the RPC to complete before raising a timeout
+    exception; if omitted, the default RPC timeout is used.
+7 api_usage_example:
+- ' def run(rref, func_name, args, kwargs):'
+- '   return getattr(rref.local_value(), func_name)(*args, **kwargs)'
+- ' rpc.rpc_async(rref.owner(), run, args=(rref, func_name, args, kwargs))'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: torch.special.expit
+3 api_description: Applies the logistic sigmoid (expit) function elementwise to the
+  input, mapping values to the range 0 to 1.
+4 api_signature: torch.special.expit(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are transformed by the sigmoid (expit) function.
+7 api_usage_example:
+- ' t = torch.randn(4)'
+- ' t'
+- ' torch.special.expit(t)'
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.backend.set_image_data_format
+3 api_description: Sets the global image data format convention used by Keras, such
+  as channels-first or channels-last.
+4 api_signature: tf.keras.backend.set_image_data_format(data_format)
+5 api_details: ''
+6 api_parameters:
+- data_format: Sets the global image data format to either `channels_first` or `channels_last`.
+7 api_usage_example:
+- '# Set it back to `''channels_last''`'
+- keras.config.set_image_data_format('channels_last')
+8 api_shape: ''

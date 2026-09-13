@@ -1,0 +1,11 @@
+2 api_name: tensorflow.experimental.numpy.float64
+3 api_description: 64-bit double-precision floating-point scalar type compatible with
+  Python float and C double, providing standard scalar array attributes like dtype,
+  shape, real, imag, and nbytes.
+4 api_signature: tf.experimental.numpy.float64()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- (-0.1).hex()
+- 3.14159.hex()
+8 api_shape: ''

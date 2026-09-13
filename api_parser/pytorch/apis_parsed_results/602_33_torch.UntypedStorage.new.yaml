@@ -1,0 +1,8 @@
+2 api_name: torch.UntypedStorage.new
+3 api_description: Creates a new untyped storage object, typically as an empty or
+  default-constructed storage container.
+4 api_signature: new()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,19 @@
+2 api_name: torch.nn.BatchNorm2d
+3 api_description: Applies Batch Normalization to 4D input tensors, normalizing each
+  channel across a batch to improve training stability and convergence.
+4 api_signature: torch.nn.BatchNorm2d(num_features)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of input channels (C) for the batch normalization
+    operation.
+7 api_usage_example:
+- ' # With Learnable Parameters'
+- ' m = nn.BatchNorm2d(100)'
+- ' # Without Learnable Parameters'
+- ' m = nn.BatchNorm2d(100, affine=False)'
+- ' input = torch.randn(20, 100, 35, 45)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height, Width)
+  output tensor shape: (N, Channel_out, Height, Width) (same shape as input)
+  tensor shape transform formulas: {}

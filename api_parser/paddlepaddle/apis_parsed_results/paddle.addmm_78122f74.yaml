@@ -1,0 +1,23 @@
+2 api_name: paddle.addmm
+3 api_description: Computes matrix multiplication of two input matrices, scales the
+  result and an existing tensor by optional factors, and adds them together.
+4 api_signature: paddle.addmm(input,x,y,beta,alpha)
+5 api_details: ''
+6 api_parameters:
+- input: Tensor added to the matrix multiplication result.
+- x: First tensor used as the left matrix operand.
+- y: Second tensor used as the right matrix operand.
+- beta: Scales the input tensor before adding it to the result, defaulting to 1.
+- alpha: Scales the matrix product x*y before it is combined with the input, defaulting
+    to 1.
+7 api_usage_example:
+- import paddle
+- x = paddle.ones([2, 2])
+- y = paddle.ones([2, 2])
+- input = paddle.ones([2, 2])
+- out = paddle.addmm(input=input, x=x, y=y, beta=0.5, alpha=5.0)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[10.50000000, 10.50000000],'
+- '[10.50000000, 10.50000000]])'
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: torch.utils.data.TensorDataset
+3 api_description: Wraps one or more tensors into a dataset that returns aligned samples
+  by index.
+4 api_signature: '"torch.utils.data.TensorDataset(*tensors)"'
+5 api_details: ''
+6 api_parameters:
+- tensors: A set of tensors that all share the same size in their first dimension
+    so they can be indexed together.
+7 api_usage_example: null
+8 api_shape: null

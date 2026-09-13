@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.memory_snapshot
+3 api_description: Returns a snapshot of the CUDA memory allocator state across all
+  devices.
+4 api_signature: torch.cuda.memory_snapshot()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

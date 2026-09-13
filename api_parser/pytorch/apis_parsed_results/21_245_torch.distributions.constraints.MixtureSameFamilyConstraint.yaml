@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.constraints.MixtureSameFamilyConstraint
+3 api_description: Validates a MixtureSameFamily distribution by restoring the rightmost
+  batch dimension before checking the component distribution’s constraint.
+4 api_signature: '"MixtureSameFamilyConstraint(base_constraint)"'
+5 api_details: ''
+6 api_parameters:
+- base_constraint: Specifies the constraint used by each component distribution in
+    the mixture.
+7 api_usage_example: null
+8 api_shape: null

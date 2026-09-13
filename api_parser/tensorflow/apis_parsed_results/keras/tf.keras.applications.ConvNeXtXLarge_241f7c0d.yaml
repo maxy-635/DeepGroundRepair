@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.applications.ConvNeXtXLarge
+3 api_description: Builds the ConvNeXtXLarge image classification model in Keras,
+  optionally loading pretrained ImageNet weights for transfer learning or fine-tuning.
+4 api_signature: tf.keras.applications.ConvNeXtXLarge(include_top,weights,input_shape,pooling,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Controls whether to keep the model's final classification layer.
+- weights: Specifies which pretrained weights to load, or none for random initialization.
+- input_shape: Sets the input tensor shape when not using the top classification layer.
+- pooling: Chooses the global pooling mode used to convert features into a vector
+    when the top layer is omitted.
+- classes: Defines the number of output classes for classification when using the
+    top layer without pretrained weights.
+7 api_usage_example: null
+8 api_shape: ''

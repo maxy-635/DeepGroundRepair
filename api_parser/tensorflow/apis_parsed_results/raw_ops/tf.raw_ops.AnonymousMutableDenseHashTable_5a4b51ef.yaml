@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.AnonymousMutableDenseHashTable
+3 api_description: Creates a new anonymous mutable hash table resource for scalar
+  tensor keys and values, using open addressing with quadratic reprobing, and returning
+  a handle for insert and lookup operations until the resource is no longer referenced.
+4 api_signature: tf.raw_ops.AnonymousMutableDenseHashTable(empty_key,deleted_key,value_dtype,value_shape)
+5 api_details: ''
+6 api_parameters:
+- empty_key: Specifies the sentinel key value used to mark empty buckets in the hash
+    table and cannot be used as a real key.
+- deleted_key: Specifies the sentinel key value used to mark deleted buckets and must
+    be the same type as `empty_key`.
+- value_dtype: Sets the data type of the values stored in the hash table.
+- value_shape: Defines the shape of each stored value, defaulting to a scalar shape
+    `[]` if not provided.
+7 api_usage_example: null
+8 api_shape: ''

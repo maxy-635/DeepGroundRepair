@@ -1,0 +1,25 @@
+2 api_name: tensorflow.keras.layers.MaxPool1D
+3 api_description: MaxPool1D downsamples 1D temporal data by taking the maximum value
+  over a specified window size (pool_size) and shifting it by defined strides, with
+  options for 'valid' or 'same' padding affecting the output shape.
+4 api_signature: tf.keras.layers.MaxPool1D(pool_size, strides, padding)
+5 api_details: ''
+6 api_parameters:
+- pool_size: Defines the size of the window used for max pooling.
+- strides: Determines the step size for moving the pooling window; defaults to pool_size
+    if not specified.
+- padding: Specifies the padding method, either 'valid' for no padding or 'same' for
+    equal padding to maintain input dimensions.
+7 api_usage_example:
+- x = np.array([1., 2., 3., 4., 5.])
+- x = np.reshape(x, [1, 5, 1])
+- max_pool_1d = keras.layers.MaxPooling1D(pool_size=2,
+- '   strides=1, padding="same")'
+- max_pool_1d(x)
+8 api_shape:
+  input tensor shape: (N, Length_in, Channel_in)
+  output tensor shape: (N, Length_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor length: If padding = "valid", Length_out = floor((Length_in - pool_size) / strides + 1); 
+                  If padding = "same", Length_out = floor((Length_in - 1) / strides + 1)

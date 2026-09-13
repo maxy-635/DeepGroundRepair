@@ -1,0 +1,11 @@
+2 api_name: torch._logging.set_logs
+3 api_description: Configures per-component PyTorch logging levels and enables or
+  disables specific log artifact types.
+4 api_signature: torch._logging.set_logs(*,dynamo,aot,autograd,inductor,distributed,graph,graph_code,graph_breaks,kernel_code,schedule,perf_hints,compiled_autograd,caching)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' import logging'
+- ' torch._logging.set_logs(dynamo=logging.DEBUG, graph_code=True)'
+- ' torch._logging.set_logs(modules={"unregistered.module.name": logging.DEBUG})'
+8 api_shape: null

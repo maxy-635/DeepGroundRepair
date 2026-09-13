@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.CompressElement
+3 api_description: Compresses a single dataset element into a compact representation.
+4 api_signature: tf.raw_ops.CompressElement(components)
+5 api_details: ''
+6 api_parameters:
+- components: The tensor objects to compress into a single compressed element.
+7 api_usage_example: null
+8 api_shape: ''

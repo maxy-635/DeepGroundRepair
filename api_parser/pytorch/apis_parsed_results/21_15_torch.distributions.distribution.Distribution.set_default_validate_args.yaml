@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.distribution.Distribution.set_default_validate_args
+3 api_description: Controls whether distribution argument validation is enabled by
+  default.
+4 api_signature: staticset_default_validate_args(value)
+5 api_details: ''
+6 api_parameters:
+- value: Controls whether distribution arguments and samples are validated.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: torch.nn.EmbeddingBag.forward
+3 api_description: The torch.nn.EmbeddingBag.forward method computes the weighted
+  sum of embeddings for a bag of indices, efficiently handling variable-length input
+  sequences and allowing for optional averaging or summation of the embeddings.
+4 api_signature: forward(input,offsets)
+5 api_details: ''
+6 api_parameters:
+- input: A tensor that holds the indices for the embeddings to be retrieved.
+- offsets: A tensor that specifies the starting positions of each bag in the 1D input
+    tensor.
+7 api_usage_example: null
+8 api_shape: null

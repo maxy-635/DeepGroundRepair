@@ -1,0 +1,8 @@
+2 api_name: torch.nn.utils.parametrize.is_parametrized
+3 api_description: Returns whether a module has one or more registered parametrizations.
+4 api_signature: '"torch.nn.utils.parametrize.is_parametrized(module)"'
+5 api_details: ''
+6 api_parameters:
+- module: The module to check for whether it has any active parameterizations applied.
+7 api_usage_example: null
+8 api_shape: null

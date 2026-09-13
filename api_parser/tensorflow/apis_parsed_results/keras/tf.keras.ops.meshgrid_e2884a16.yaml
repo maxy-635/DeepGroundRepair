@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.meshgrid
+3 api_description: Builds coordinate grids from 1-D input tensors, returning one N-D
+  tensor per input expanded to a shared grid shape.
+4 api_signature: tf.keras.ops.meshgrid(*x,indexing)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the 1-D coordinate tensors used to generate the grid.
+- indexing: Chooses the output indexing convention, either cartesian ('xy') or matrix
+    ('ij'), with 'xy' as the default.
+7 api_usage_example:
+- grid_x, grid_y = ops.meshgrid(x, y, indexing="ij")
+- grid_x
+- grid_y
+8 api_shape: ''

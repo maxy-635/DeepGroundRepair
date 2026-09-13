@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.utils.model_to_dot
+3 api_description: Converts a Keras model into Graphviz dot format for visualizing
+  the model architecture.
+4 api_signature: tf.keras.utils.model_to_dot(model,show_shapes,show_layer_names,rankdir,expand_nested)
+5 api_details: ''
+6 api_parameters:
+- model: The Keras model instance to convert into a dot graph.
+- show_shapes: Controls whether layer output shape information is shown.
+- show_layer_names: Controls whether layer names are displayed in the graph.
+- rankdir: Sets the graph layout direction for PyDot, such as vertical (`TB`) or horizontal
+    (`LR`).
+- expand_nested: Controls whether nested Functional models are expanded into separate
+    clusters.
+7 api_usage_example: null
+8 api_shape: ''

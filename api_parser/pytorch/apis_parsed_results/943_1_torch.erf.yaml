@@ -1,0 +1,7 @@
+2 api_name: torch.erf
+3 api_description: Computes the Gauss error function elementwise, as an alias of torch.special.erf().
+4 api_signature: torch.erf(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.pipelining.schedules.PipelineScheduleMulti.step
+3 api_description: Runs one pipeline iteration on a full batch by automatically splitting
+  it into microbatches and processing them according to the schedule.
+4 api_signature: step(target,losses,return_outputs)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.ExperimentalParseExampleDataset
+3 api_description: Parses a dataset of serialized Example protos into tensors or sparse
+  tensors for the requested features.
+4 api_signature: tf.raw_ops.ExperimentalParseExampleDataset(input_dataset,dense_defaults,sparse_keys,dense_keys,sparse_types,dense_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant dataset of serialized examples to parse.
+- dense_defaults: Default values to use when dense features are missing, matching
+    the dense keys.
+- sparse_keys: The feature keys to extract as sparse tensors from each example.
+- dense_keys: The feature keys to extract as dense tensors from each example.
+- sparse_types: The data types of the sparse outputs, one per sparse key.
+- dense_shapes: The expected shapes of the dense feature outputs, used for padding
+    and shape inference.
+7 api_usage_example: null
+8 api_shape: ''

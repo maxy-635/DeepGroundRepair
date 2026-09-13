@@ -1,0 +1,13 @@
+2 api_name: paddle.trace
+3 api_description: Computes the sum of tensor elements along each diagonal of the
+  input.
+4 api_signature: paddle.trace(x,offset,axis1,axis2)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose diagonals will be extracted; it must be at least 2D and
+    have a supported numeric dtype.
+- offset: Selects which diagonal of the input tensor to return.
+- axis1: Specifies the first axis used to define the diagonal.
+- axis2: Specifies the second axis used to define the diagonal.
+7 api_usage_example: []
+8 api_shape: {}

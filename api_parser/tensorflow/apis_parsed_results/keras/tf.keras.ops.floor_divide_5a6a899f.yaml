@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.floor_divide
+3 api_description: Computes the floor of element-wise division, returning the greatest
+  integer less than or equal to each quotient.
+4 api_signature: tf.keras.ops.floor_divide(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The numerator value to be floor-divided.
+- x2: The denominator value used to divide the numerator.
+7 api_usage_example: null
+8 api_shape: ''

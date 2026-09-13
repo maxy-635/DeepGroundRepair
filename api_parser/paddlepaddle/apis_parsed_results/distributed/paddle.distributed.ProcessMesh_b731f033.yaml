@@ -1,0 +1,17 @@
+2 api_name: paddle.distributed.ProcessMesh
+3 api_description: Defines a Cartesian arrangement of distributed processes for parallel
+  training, enabling communication and sharding strategies to be mapped onto a process
+  topology.
+4 api_signature: paddle.distributed.ProcessMesh(mesh,dim_names)
+5 api_details: ''
+6 api_parameters:
+- mesh: Defines the n-dimensional topology arrangement of the processes.
+- dim_names: Names each mesh dimension, with the i-th entry corresponding to the i-th
+    dimension.
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- mesh = dist.ProcessMesh([[2, 4, 5], [0, 1, 3]], dim_names=["x", "y"])
+- assert mesh.shape == [2, 3]
+- assert mesh.process_ids == [2, 4, 5, 0, 1, 3]
+8 api_shape: {}

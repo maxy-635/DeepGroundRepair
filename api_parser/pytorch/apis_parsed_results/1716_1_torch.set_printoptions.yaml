@@ -1,0 +1,23 @@
+2 api_name: torch.set_printoptions
+3 api_description: Configures how PyTorch tensors are displayed when printed, such
+  as precision, line width, and other formatting options.
+4 api_signature: torch.set_printoptions(precision,threshold,linewidth)
+5 api_details: ''
+6 api_parameters:
+- precision: Sets how many digits are shown for floating-point values.
+- threshold: Sets the array size at which PyTorch switches from full printing to summarized
+    output.
+- linewidth: Sets the maximum number of characters per line before wrapping printed
+    output.
+7 api_usage_example:
+- ' # Limit the precision of elements'
+- ' torch.set_printoptions(precision=2)'
+- ' torch.tensor([1.12345])'
+- ' # Limit the number of elements shown'
+- ' torch.set_printoptions(threshold=5)'
+- ' torch.arange(10)'
+- ' # Restore defaults'
+- ' torch.set_printoptions(profile=''default'')'
+- ' torch.tensor([1.12345])'
+- ' torch.arange(10)'
+8 api_shape: null

@@ -1,0 +1,21 @@
+2 api_name: paddle.device.set_device
+3 api_description: Sets the global Paddle device used for subsequent operations, choosing
+  where computations run (for example CPU, GPU, XPU, NPU, or IPU).
+4 api_signature: paddle.device.set_device(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device("cpu")
+- x1 = paddle.ones(name='x1', shape=[1, 2], dtype='int32')
+- print(x1.place)
+- Place(cpu)
+- paddle.device.set_device("gpu:0")
+- x2 = paddle.zeros(name='x2', shape=[1, 2], dtype='int32')
+- print(x2.place)
+- Place(gpu:0)
+- '# x1 is still on cpu'
+- print(x1.place)
+- Place(cpu)
+8 api_shape: {}

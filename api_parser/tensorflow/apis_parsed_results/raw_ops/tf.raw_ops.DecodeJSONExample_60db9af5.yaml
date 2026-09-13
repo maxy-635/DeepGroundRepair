@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.DecodeJSONExample
+3 api_description: Converts JSON-encoded tf.train.Example records into binary serialized
+  Example protocol buffer strings for downstream parsing.
+4 api_signature: tf.raw_ops.DecodeJSONExample(json_examples)
+5 api_details: ''
+6 api_parameters:
+- json_examples: A string tensor containing serialized JSON Example objects to be
+    decoded.
+7 api_usage_example: null
+8 api_shape: ''

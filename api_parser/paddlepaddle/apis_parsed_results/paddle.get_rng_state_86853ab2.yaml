@@ -1,0 +1,10 @@
+2 api_name: paddle.get_rng_state
+3 api_description: Returns the full random state for all random number generators
+  on the specified device.
+4 api_signature: paddle.get_rng_state(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- sts = paddle.get_rng_state()
+8 api_shape: {}

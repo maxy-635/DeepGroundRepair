@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.cauchy.Cauchy.rsample
+3 api_description: Draws a differentiable reparameterized sample from the Cauchy distribution
+  and returns it as a tensor.
+4 api_signature: '"rsample(sample_shape)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

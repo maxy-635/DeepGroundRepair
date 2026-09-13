@@ -1,0 +1,11 @@
+2 api_name: tensorflow.experimental.numpy.iinfo
+3 api_description: Returns machine-specific limits for an integer dtype, such as the
+  minimum and maximum representable values.
+4 api_signature: tf.experimental.numpy.iinfo(int_type)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ii32 = np.iinfo(np.int32(10))
+- ii32.min
+- ii32.max
+8 api_shape: ''

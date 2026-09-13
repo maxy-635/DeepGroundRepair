@@ -1,0 +1,23 @@
+2 api_name: paddle.nn.AvgPool2D
+3 api_description: paddle.nn.AvgPool2D performs 2D average pooling on input features
+  with specified kernel size, stride, and padding, using NCHW format for batch, channels,
+  height, and width.
+4 api_signature: paddle.nn.AvgPool2D(kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Defines the dimensions of the pooling window, either as a tuple for
+    height and width or as a single integer for a square window.
+- stride: Specifies the step size for moving the pooling window, either as a tuple
+    for height and width or as a single integer, defaulting to the kernel size if
+    not set.
+- padding: Determines the amount of padding added to the input, which can be specified
+    as a string, integer, list, or tuple, affecting how the pooling window interacts
+    with the input boundaries.
+7 api_usage_example: []
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

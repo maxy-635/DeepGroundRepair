@@ -1,0 +1,14 @@
+2 api_name: tensorflow.switch_case
+3 api_description: Selects and executes one branch function by integer index, with
+  an optional default, returning a shared nested output structure across branches.
+4 api_signature: tf.switch_case(branch_index,branch_fns,default)
+5 api_details: ''
+6 api_parameters:
+- branch_index: Selects which branch function to run by providing the branch key as
+    an integer tensor.
+- branch_fns: Defines the available branch callables to execute, keyed by integers
+    or list position, with each returning the same tensor structure.
+- default: Provides the fallback callable to run when `branch_index` does not match
+    any listed branch.
+7 api_usage_example: null
+8 api_shape: ''

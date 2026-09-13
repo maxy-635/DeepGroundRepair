@@ -1,0 +1,38 @@
+2 api_name: paddle.nn.initializer.XavierUniform
+3 api_description: The paddle.nn.initializer.XavierUniform API initializes weights
+  using the Xavier uniform distribution, optimizing variance scaling for deep networks
+  as proposed by Glorot and Bengio.
+4 api_signature: paddle.nn.initializer.XavierUniform(fan_in,fan_out)
+5 api_details: ''
+6 api_parameters:
+- fan_in: Specifies the number of input units in the weight tensor for Xavier initialization,
+    inferred from the Tensor if not provided.
+- fan_out: Specifies the number of output units in the weight tensor for Xavier initialization,
+    inferred from the Tensor if not provided.
+7 api_usage_example:
+- import paddle
+- paddle.seed(1)
+- data = paddle.ones(shape=[3, 1, 2], dtype='float32')
+- weight_attr = paddle.framework.ParamAttr(
+- '    name="linear_weight",'
+- '    initializer=paddle.nn.initializer.XavierUniform())'
+- bias_attr = paddle.framework.ParamAttr(
+- '    name="linear_bias",'
+- '    initializer=paddle.nn.initializer.XavierUniform())'
+- linear = paddle.nn.Linear(2, 2, weight_attr=weight_attr, bias_attr=bias_attr)
+- print(linear.weight)
+- 'Parameter containing:'
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.18095720,  0.64892638],'
+- '[ 0.43125069, -1.11156428]])'
+- print(linear.bias)
+- 'Parameter containing:'
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[-0.27524316,  1.13808715])'
+- res = linear(data)
+- print(res)
+- Tensor(shape=[3, 1, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[-1.02494967,  0.67544925]],'
+- '[[-1.02494967,  0.67544925]],'
+- '[[-1.02494967,  0.67544925]]])'
+8 api_shape: null

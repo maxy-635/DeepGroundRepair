@@ -1,0 +1,17 @@
+2 api_name: paddle.static.nn.sequence_last_step
+3 api_description: Selects the last valid time-step output from each variable-length
+  sequence in a batch.
+4 api_signature: paddle.static.nn.sequence_last_step(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- '# set env var before import paddle to disable pir mode, following example code
+  use os module.'
+- import os
+- os.environ['FLAGS_enable_pir_api'] = '0'
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data(name='x', shape=[None, 10], dtype='float32', lod_level=1)
+- x_last_step = paddle.static.nn.sequence_last_step(input=x)
+8 api_shape: {}

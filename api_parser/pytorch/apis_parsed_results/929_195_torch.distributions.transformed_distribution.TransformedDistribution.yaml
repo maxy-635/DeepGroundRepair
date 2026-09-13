@@ -1,0 +1,12 @@
+2 api_name: torch.distributions.transformed_distribution.TransformedDistribution
+3 api_description: Wraps a base distribution with a sequence of transforms to produce
+  a new distribution, handling sampling, log-probability evaluation, and support changes
+  induced by the transforms.
+4 api_signature: TransformedDistribution(base_distribution,transforms)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- X ~ BaseDistribution
+- Y = f(X) ~ TransformedDistribution(BaseDistribution, f)
+- log p(Y) = log p(X) + log |det (dX/dY)|
+8 api_shape: null

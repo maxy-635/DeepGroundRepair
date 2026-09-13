@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.utils.PyDataset
+3 api_description: A Python-based dataset base class for Keras that yields full batches
+  in parallel, requiring __getitem__ and __len__ for batch access and size, with optional
+  on_epoch_end to update data between epochs.
+4 api_signature: tf.keras.utils.PyDataset(workers,use_multiprocessing)
+5 api_details: ''
+6 api_parameters:
+- workers: Sets how many worker threads or processes are used to load and prepare
+    data in parallel.
+- use_multiprocessing: Enables multiprocessing-based parallelism for safely picklable
+    datasets, allowing multiple process copies of the dataset to run in parallel.
+7 api_usage_example: null
+8 api_shape: ''

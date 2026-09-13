@@ -1,0 +1,9 @@
+2 api_name: tensorflow.SparseTensorSpec
+3 api_description: Type specification for a tf.sparse.SparseTensor, describing the
+  expected sparse tensor shape and value dtype for use in TensorFlow APIs.
+4 api_signature: tf.SparseTensorSpec(dtype)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the data type of the SparseTensor's values.
+7 api_usage_example: null
+8 api_shape: ''

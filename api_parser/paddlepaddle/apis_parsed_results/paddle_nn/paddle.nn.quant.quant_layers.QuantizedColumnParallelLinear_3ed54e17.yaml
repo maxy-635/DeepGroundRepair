@@ -1,0 +1,29 @@
+2 api_name: paddle.nn.quant.quant_layers.QuantizedColumnParallelLinear
+3 api_description: QuantizedColumnParallelLinear is a PaddlePaddle API that performs
+  quantized linear transformations in parallel across columns, optimizing both computation
+  and memory efficiency for neural network layers.
+4 api_signature: paddle.nn.quant.quant_layers.QuantizedColumnParallelLinear(layer,weight_bits,activation_bits,weight_quantize_type,activation_quantize_type)
+5 api_details: ''
+6 api_parameters:
+- in_features: The number of input features to the linear layer.
+- out_features: The number of output features from the linear layer.
+- weight_attr: Attributes for the weight parameter such as initializer, regularizer,
+    etc.
+- bias_attr: Attributes for the bias parameter such as initializer, regularizer, etc.
+- dtype: The data type of the parameters, typically float32 or float64.
+- parallel_mode: The mode of parallelism to use for the linear layer, e.g., data or
+    model parallelism.
+- input_is_parallel: A flag indicating if the input is already partitioned across
+    devices.
+- weight_quantize_type: The type of quantization to apply to the weights, such as
+    'channel_wise_abs_max'.
+- activation_quantize_type: The type of quantization to apply to the activations,
+    such as 'moving_average_abs_max'.
+- weight_bits: The number of bits to use for weight quantization.
+- activation_bits: The number of bits to use for activation quantization.
+- moving_rate: The moving average rate for updating quantization scales.
+- quantizable_weight: A list of weight parameter names that should be quantized.
+- quantizable_activation: A list of activation outputs that should be quantized.
+- onnx_format: A flag indicating whether to export the model in ONNX format.
+7 api_usage_example: []
+8 api_shape: null

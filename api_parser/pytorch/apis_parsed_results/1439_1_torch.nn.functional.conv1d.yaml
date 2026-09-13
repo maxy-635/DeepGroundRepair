@@ -1,0 +1,25 @@
+2 api_name: torch.nn.functional.conv1d
+3 api_description: torch.nn.functional.conv1d performs a 1D convolution on an input
+  signal with multiple input channels, enabling feature extraction through learnable
+  filters.
+4 api_signature: torch.nn.functional.conv1d(input,weight,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor with dimensions for minibatch size, number of input channels,
+    and input width.
+- weight: The filters applied during convolution, with dimensions for output channels,
+    input channels per group, and kernel width.
+- stride: Defines the step size of the convolution kernel, either as a single integer
+    or a tuple.
+- padding: Specifies the padding added to both sides of the input, which can be a
+    predefined string, an integer, or a tuple.
+7 api_usage_example:
+- ' inputs = torch.randn(33, 16, 30)'
+- ' filters = torch.randn(20, 16, 5)'
+- ' F.conv1d(inputs, filters)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, L_in)
+  output tensor shape: (N, Channel_out, L_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[0]
+    L_out: L_out = floor((L_in + 2 * padding - kernel_size) / stride + 1)

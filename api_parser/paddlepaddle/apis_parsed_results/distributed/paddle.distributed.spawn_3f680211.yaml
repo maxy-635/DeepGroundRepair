@@ -1,0 +1,75 @@
+2 api_name: paddle.distributed.spawn
+3 api_description: Launches multiple parallel training processes using the spawn method.
+4 api_signature: paddle.distributed.spawn(func,args,nprocs,join,daemon,**options)
+5 api_details: ''
+6 api_parameters:
+- func: The function each spawned process runs, and it must be picklable and defined
+    at module scope.
+- args: The arguments to pass to `func`.
+- nprocs: The number of processes to start.
+- join: Whether to block until all spawned processes finish.
+- daemon: Whether the spawned processes run as daemon processes.
+- '**options': Additional process-launch configuration options, such as `start_method`.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.nn as nn
+- import paddle.optimizer as opt
+- import paddle.distributed as dist
+- 'class LinearNet(nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear1 = nn.Linear(10, 10)'
+- '        self._linear2 = nn.Linear(10, 1)'
+- '    def forward(self, x):'
+- '        return self._linear2(self._linear1(x))'
+- 'def train(print_result=False):'
+- '    # 1. initialize parallel environment'
+- '    group = dist.init_parallel_env()'
+- '    process_group = group.process_group if group else None'
+- '    # 2. create data parallel layer & optimizer'
+- '    layer = LinearNet()'
+- '    dp_layer = paddle.DataParallel(layer, group = process_group)  # type: ignore[arg-type]'
+- '    loss_fn = nn.MSELoss()'
+- '    adam = opt.Adam('
+- '        learning_rate=0.001, parameters=dp_layer.parameters())'
+- '    # 3. run layer'
+- '    inputs = paddle.randn([10, 10], ''float32'')'
+- '    outputs = dp_layer(inputs)'
+- '    labels = paddle.randn([10, 1], ''float32'')'
+- '    loss = loss_fn(outputs, labels)'
+- '    if print_result is True:'
+- '        print("loss:", loss.numpy())'
+- '    loss.backward()'
+- '    adam.step()'
+- '    adam.clear_grad()'
+- '# Usage 1: only pass function.'
+- '# If your training method no need any argument, and'
+- '# use all visible devices for parallel training.'
+- 'if __name__ == ''__main__'':'
+- '    dist.spawn(train)'
+- '# Usage 2: pass function and arguments.'
+- '# If your training method need some arguments, and'
+- '# use all visible devices for parallel training.'
+- 'if __name__ == ''__main__'':'
+- '    dist.spawn(train, args=(True,))'
+- '# Usage 3: pass function, arguments and nprocs.'
+- '# If your training method need some arguments, and'
+- '# only use part of visible devices for parallel training.'
+- '# If your machine hold 8 cards {0,1,2,3,4,5,6,7},'
+- '# this case will use cards {0,1}; If you set'
+- '# CUDA_VISIBLE_DEVICES=4,5,6,7, this case will use'
+- '# cards {4,5}'
+- 'if __name__ == ''__main__'':'
+- '    dist.spawn(train, args=(True,), nprocs=2)'
+- '# Usage 4: pass function, arguments, nprocs and gpus.'
+- '# If your training method need some arguments, and'
+- '# only use part of visible devices for parallel training,'
+- '# but you can''t set your machine''s environment variable'
+- '# CUDA_VISIBLE_DEVICES, such as it is None or all cards'
+- '# {0,1,2,3,4,5,6,7}, you can pass `gpus` to'
+- '# select the GPU cards you want to use. For example,'
+- '# this case will use cards {4,5} if your machine hold 8 cards.'
+- 'if __name__ == ''__main__'':'
+- '    dist.spawn(train, args=(True,), nprocs=2, gpus=''4,5'')'
+8 api_shape: {}

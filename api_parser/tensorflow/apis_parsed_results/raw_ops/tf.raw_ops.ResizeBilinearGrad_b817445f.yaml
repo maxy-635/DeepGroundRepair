@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ResizeBilinearGrad
+3 api_description: Computes the gradient of bilinear image resizing by backpropagating
+  `grads` to the input image shape using bilinear interpolation rules.
+4 api_signature: tf.raw_ops.ResizeBilinearGrad(grads,original_image)
+5 api_details: ''
+6 api_parameters:
+- grads: The gradient tensor from the resized image, shaped [batch, height, width,
+    channels].
+- original_image: The original input image tensor that was resized, used to compute
+    the bilinear resize gradient.
+7 api_usage_example: null
+8 api_shape: ''

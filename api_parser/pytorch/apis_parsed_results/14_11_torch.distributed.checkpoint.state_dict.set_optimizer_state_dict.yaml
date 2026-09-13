@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.checkpoint.state_dict.set_optimizer_state_dict
+3 api_description: Load and restore optimizer state from a checkpoint state_dict into
+  one or more optimizers.
+4 api_signature: '"torch.distributed.checkpoint.state_dict.set_optimizer_state_dict(model,optimizers,optim_state_dict)"'
+5 api_details: ''
+6 api_parameters:
+- model: The model module whose parameters are associated with the optimizer state.
+- optimizers: The optimizer or optimizers that will receive the loaded state.
+- optim_state_dict: The optimizer state dictionary to be applied to the optimizers.
+7 api_usage_example: null
+8 api_shape: null

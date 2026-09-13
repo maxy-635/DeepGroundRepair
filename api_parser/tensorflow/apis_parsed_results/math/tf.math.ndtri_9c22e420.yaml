@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.ndtri
+3 api_description: Computes the inverse standard normal cumulative distribution, returning
+  the z-score for a given probability.
+4 api_signature: tf.math.ndtri(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor of float or double values for which to compute the inverse standard
+    normal CDF.
+7 api_usage_example: null
+8 api_shape: ''

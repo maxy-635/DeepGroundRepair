@@ -1,0 +1,25 @@
+2 api_name: paddle.kron
+3 api_description: Computes the Kronecker product of two tensors by multiplying every
+  element of the first tensor with every element of the second, producing an output
+  whose shape is the elementwise product of the input shapes.
+4 api_signature: paddle.kron(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to the Kronecker product operation, with supported numeric
+    types.
+- y: The second input tensor to the Kronecker product operation, which must have the
+    same data type as `x`.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1, 2], [3, 4]], dtype='int64')
+- y = paddle.to_tensor([[1, 2, 3], [4, 5, 6], [7, 8, 9]], dtype='int64')
+- out = paddle.kron(x, y)
+- out
+- Tensor(shape=[6, 6], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1 , 2 , 3 , 2 , 4 , 6 ],'
+- '[4 , 5 , 6 , 8 , 10, 12],'
+- '[7 , 8 , 9 , 14, 16, 18],'
+- '[3 , 6 , 9 , 4 , 8 , 12],'
+- '[12, 15, 18, 16, 20, 24],'
+- '[21, 24, 27, 28, 32, 36]])'
+8 api_shape: {}

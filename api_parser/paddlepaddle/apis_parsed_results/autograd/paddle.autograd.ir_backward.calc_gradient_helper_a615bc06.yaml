@@ -1,0 +1,8 @@
+2 api_name: paddle.autograd.ir_backward.calc_gradient_helper
+3 api_description: Builds backward gradients for Paddle autograd IR by calculating
+  and assembling the gradient information needed for reverse-mode differentiation.
+4 api_signature: paddle.autograd.ir_backward.calc_gradient_helper(outputs,inputs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

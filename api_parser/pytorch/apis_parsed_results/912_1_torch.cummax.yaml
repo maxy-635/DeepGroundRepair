@@ -1,0 +1,13 @@
+2 api_name: torch.cummax
+3 api_description: Computes the cumulative maximum along a specified dimension and
+  returns both the running max values and the indices where each maximum first occurs.
+4 api_signature: torch.cummax(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor whose cumulative maximum values are computed.
+- dim: Specifies the dimension along which the cumulative maximum is calculated.
+7 api_usage_example:
+- ' a = torch.randn(10)'
+- ' a'
+- ' torch.cummax(a, dim=0)'
+8 api_shape: null

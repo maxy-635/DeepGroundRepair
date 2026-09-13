@@ -1,0 +1,8 @@
+2 api_name: torch.jit.ScriptFunction
+3 api_description: A TorchScript object that compiles and runs a single function,
+  without module attributes or parameters.
+4 api_signature: class torch.jit.ScriptFunction
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

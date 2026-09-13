@@ -1,0 +1,13 @@
+2 api_name: tensorflow.stack
+3 api_description: Stacks a list of समान-shaped tensors into a single higher-rank
+  tensor by inserting a new axis at the specified position.
+4 api_signature: tf.stack(values,axis)
+5 api_details: ''
+6 api_parameters:
+- values: The tensors to combine into a single stacked tensor; they must all have
+    the same shape and type.
+- axis: The dimension index along which to stack the tensors, with negative values
+    counting from the end.
+7 api_usage_example:
+- np.array_equal(np.stack([x, y, z]), tf.stack([x, y, z]))
+8 api_shape: ''

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.losses.poisson
+3 api_description: Computes the Poisson loss between true and predicted values, measuring
+  how well predictions fit count-based targets.
+4 api_signature: tf.keras.losses.poisson(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: The ground truth target values used to compute the Poisson loss.
+- y_pred: The model’s predicted values used to compare against the ground truth.
+7 api_usage_example:
+- y_true = np.random.randint(0, 2, size=(2, 3))
+- y_pred = np.random.random(size=(2, 3))
+- loss = keras.losses.poisson(y_true, y_pred)
+- assert loss.shape == (2,)
+- y_pred = y_pred + 1e-7
+- assert np.allclose(
+- '    loss, np.mean(y_pred - y_true * np.log(y_pred), axis=-1),'
+- '    atol=1e-5)'
+8 api_shape: ''

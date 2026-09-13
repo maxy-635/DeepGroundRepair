@@ -1,0 +1,9 @@
+2 api_name: tensorflow.math.expm1
+3 api_description: Computes exp(x) - 1 element-wise for each tensor value, using a
+  numerically stable form for e^x - 1.
+4 api_signature: tf.math.expm1(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose elements are used to compute `exp(x) - 1` elementwise.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,36 @@
+2 api_name: torch.optim.Adafactor
+3 api_description: Implements the Adafactor optimizer, using adaptive factorized second-moment
+  estimates for efficient parameter updates with lower memory usage.
+4 api_signature: torch.optim.Adafactor(params,lr,*,maximize)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies the parameters or parameter groups that Adafactor will optimize,
+    including optionally named parameters.
+- lr: Sets the maximum relative step size and is also used to apply weight decay,
+    with a default of 1e-2.
+- d: Controls gradient update clipping to prevent excessively large parameter updates.
+- maximize: If True, updates parameters to maximize the objective instead of minimizing
+    it.
+7 api_usage_example:
+- ' model = torch.nn.Linear(10, 10)'
+- ' optim = torch.optim.SGD(model.parameters(), lr=3e-4)'
+- ' scheduler1 = torch.optim.lr_scheduler.LinearLR('
+- '...     optim,'
+- '...     start_factor=0.1,'
+- '...     end_factor=1,'
+- '...     total_iters=20,'
+- '... )'
+- ' scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR('
+- '...     optim,'
+- '...     T_max=80,'
+- '...     eta_min=3e-5,'
+- '... )'
+- ' lr = torch.optim.lr_scheduler.SequentialLR('
+- '...     optim,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' lr.load_state_dict(torch.load("./save_seq.pt"))'
+- ' # now load the optimizer checkpoint after loading the LRScheduler'
+- ' optim.load_state_dict(torch.load("./save_optim.pt"))'
+8 api_shape: null

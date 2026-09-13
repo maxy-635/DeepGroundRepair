@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.WindowOp
+3 api_description: Creates a window operation in a TensorFlow graph, used as a placeholder/control
+  node for coordinating execution.
+4 api_signature: tf.raw_ops.WindowOp(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of Tensor objects to be used as the operation's inputs.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.nvtx.range
+3 api_description: Pushes an NVTX range on entry and pops it on exit, optionally formatting
+  the message with any extra arguments.
+4 api_signature: torch.cuda.nvtx.range(msg)
+5 api_details: ''
+6 api_parameters:
+- msg: Specifies the message to associate with the NVTX range.
+7 api_usage_example: null
+8 api_shape: null

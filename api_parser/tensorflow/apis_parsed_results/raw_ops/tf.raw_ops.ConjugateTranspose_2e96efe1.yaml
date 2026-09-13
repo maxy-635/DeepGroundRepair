@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ConjugateTranspose
+3 api_description: Permutes the axes of `x` according to `perm` and returns the complex-conjugated
+  result with the same rank and reordered shape.
+4 api_signature: tf.raw_ops.ConjugateTranspose(x,perm)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be conjugate-transposed.
+- perm: The permutation of dimensions that defines how axes are reordered for the
+    transpose.
+7 api_usage_example: null
+8 api_shape: ''

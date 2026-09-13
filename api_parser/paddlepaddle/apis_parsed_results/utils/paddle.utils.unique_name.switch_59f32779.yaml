@@ -1,0 +1,25 @@
+2 api_name: paddle.utils.unique_name.switch
+3 api_description: Switches the current context to a new namespace, typically used
+  to change the active unique-name namespace.
+4 api_signature: paddle.utils.unique_name.switch(new_generator)
+5 api_details: ''
+6 api_parameters:
+- new_generator: Optionally supplies a specific UniqueNameGenerator to switch to;
+    if omitted, the function switches to a new anonymous namespace.
+7 api_usage_example:
+- import paddle
+- name1 = paddle.utils.unique_name.generate('fc')
+- name2 = paddle.utils.unique_name.generate('fc')
+- print(name1, name2)
+- fc_0 fc_1
+- 'pre_generator, pre_dygraph_name_checker = paddle.utils.unique_name.switch() # switch
+  to a new anonymous namespace.'
+- name2 = paddle.utils.unique_name.generate('fc')
+- print(name2)
+- fc_0
+- 'paddle.utils.unique_name.switch(pre_generator, pre_dygraph_name_checker) # switch
+  back to pre_generator.'
+- name3 = paddle.utils.unique_name.generate('fc')
+- print(name3)
+- fc_2
+8 api_shape: {}

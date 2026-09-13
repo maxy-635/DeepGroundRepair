@@ -1,0 +1,23 @@
+2 api_name: paddle.static.nn.conv2d_transpose
+3 api_description: Performs 2D transposed convolution to upsample an input tensor
+  using a filter, stride, dilation, and padding, with optional bias addition and activation
+  on the result.
+4 api_signature: paddle.static.nn.conv2d_transpose(input,num_filters,filter_size,stride,padding,output_size,data_format)
+5 api_details: ''
+6 api_parameters:
+- input: The input feature map tensor for the transposed convolution.
+- num_filters: The number of output channels produced by the layer.
+- output_size: The target spatial size of the output feature map.
+- filter_size: The size of the convolution kernel used in the transposed convolution.
+- padding: The amount and mode of padding applied to control the output shape.
+- stride: The step size used when sliding the transposed convolution kernel.
+- data_format: The tensor layout convention used for input and output data.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- data = paddle.static.data(name='data', shape=[None, 3, 32, 32], dtype='float32')
+- conv2d_transpose = paddle.static.nn.conv2d_transpose(input=data, num_filters=2,
+  filter_size=3)
+- print(conv2d_transpose.shape)
+- (-1, 2, 34, 34)
+8 api_shape: {}

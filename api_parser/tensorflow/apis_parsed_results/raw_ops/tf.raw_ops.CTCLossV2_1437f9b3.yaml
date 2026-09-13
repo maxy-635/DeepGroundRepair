@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.CTCLossV2
+3 api_description: Computes the CTC loss for each batch entry from logits and labels,
+  and also returns the gradient; it includes the softmax step internally, so inputs
+  should be unnormalized scores.
+4 api_signature: tf.raw_ops.CTCLossV2(inputs,labels_indices,labels_values,sequence_length)
+5 api_details: ''
+6 api_parameters:
+- inputs: The time-major logit tensor containing class scores for each batch element
+    at each time step.
+- labels_indices: Sparse tensor indices that locate each target label by batch and
+    time position.
+- labels_values: The integer target label values corresponding to the sparse indices.
+- sequence_length: The valid length of each input sequence in the batch.
+7 api_usage_example: null
+8 api_shape: ''

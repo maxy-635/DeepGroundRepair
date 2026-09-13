@@ -1,0 +1,15 @@
+2 api_name: tensorflow.IndexedSlices
+3 api_description: Represents sparse tensor slices as values paired with their indices,
+  enabling efficient storage and operations on selected rows or elements.
+4 api_signature: tf.IndexedSlices(values,indices)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- v = tf.Variable([[0.,1, 2], [2, 3, 4], [4, 5, 6], [6, 7, 8]])
+- 'with tf.GradientTape() as tape:'
+- '  r = tf.gather(v, [1,3])'
+- index_slices = tape.gradient(r,v)
+- index_slices
+- index_slices.indices.numpy()
+- index_slices.values.numpy()
+8 api_shape: ''

@@ -1,0 +1,40 @@
+2 api_name: paddle.incubate.inference
+3 api_description: Converts a dynamic-graph Paddle API into a saved static-graph model
+  on disk and returns a callable that runs inference with Paddle Inference like the
+  original dynamic function.
+4 api_signature: paddle.incubate.inference(function,save_model_dir,memory_pool_init_size_mb,precision_mode,with_trt,trt_precision_mode,collect_shape)
+5 api_details: ''
+6 api_parameters:
+- function: The Layer member function to be converted or decorated for dynamic-graph-to-static
+    inference.
+- save_model_dir: The output directory where the static inference model is saved.
+- memory_pool_init_size_mb: The initial size, in MB, of the memory pool used for inference.
+- precision_mode: The numerical precision used for inference.
+- with_trt: Whether to enable TensorRT acceleration for inference.
+- trt_precision_mode: The numerical precision used by TensorRT during inference.
+- collect_shape: Whether to collect input shapes for inference optimization.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- 'class ExampleLayer(paddle.nn.Layer):'
+- '    def __init__(self, hidd):'
+- '        super().__init__()'
+- '        self.fn = paddle.nn.Linear(hidd, hidd, bias_attr=False)'
+- '    def forward(self, x):'
+- '        for i in range(10):'
+- '            x = paddle.nn.functional.softmax(x,-1)'
+- '        x = x.cast("float32")'
+- '        x = self.func(x)'
+- '        return x'
+- '    def func(self, x):'
+- '        x = x + x'
+- '        return self.fn(x)'
+- batch = 4096
+- hidd = 1024
+- dtype = "bfloat16"
+- 'x = paddle.rand([batch, hidd], dtype=dtype) # type: ignore[arg-type]'
+- mylayer = ExampleLayer(hidd)
+- dynamic_result = mylayer(x)
+- mylayer = paddle.incubate.jit.inference(mylayer)
+- decorator_result = mylayer(x)
+8 api_shape: {}

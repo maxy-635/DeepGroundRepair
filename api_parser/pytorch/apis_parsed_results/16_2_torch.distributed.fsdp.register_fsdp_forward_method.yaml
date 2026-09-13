@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.fsdp.register_fsdp_forward_method
+3 api_description: Registers a module method as an FSDP forward method so it is treated
+  like forward during distributed execution.
+4 api_signature: '"torch.distributed.fsdp.register_fsdp_forward_method(module,method_name)"'
+5 api_details: ''
+6 api_parameters:
+- module: The module whose forward method will be registered for FSDP use.
+- method_name: The name of the forward method to register on the module.
+7 api_usage_example: null
+8 api_shape: null

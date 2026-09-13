@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nn.log_softmax
+3 api_description: Computes the log of softmax activations, providing a stabilized
+  version of softmax by applying the logarithm to the softmax outputs for each batch
+  and class.
+4 api_signature: tf.nn.log_softmax(logits,axis)
+5 api_details: ''
+6 api_parameters:
+- logits: Specifies the input tensor containing the unnormalized log probabilities
+    for the log softmax operation.
+- axis: Determines the dimension along which the log softmax normalization is applied,
+    with the default being the last dimension.
+7 api_usage_example: null
+8 api_shape: ''

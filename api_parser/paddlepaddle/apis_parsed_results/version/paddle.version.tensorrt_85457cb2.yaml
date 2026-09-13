@@ -1,0 +1,11 @@
+2 api_name: paddle.version.tensorrt
+3 api_description: Returns the TensorRT version bundled with the Paddle package.
+4 api_signature: paddle.version.tensorrt()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.version.tensorrt()
+- '>>>'
+- 'False'
+8 api_shape: {}

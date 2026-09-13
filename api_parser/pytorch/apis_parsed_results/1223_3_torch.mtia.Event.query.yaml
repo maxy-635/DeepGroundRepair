@@ -1,0 +1,11 @@
+2 api_name: torch.mtia.Event.query
+3 api_description: Checks whether the recording stream has advanced past the event’s
+  recorded point; returns True if the event was never recorded.
+4 api_signature: query()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' s_cuda = torch.Stream(device=''cuda'')'
+- ' e_cuda = s_cuda.record_event()'
+- ' e_cuda.query()'
+8 api_shape: null

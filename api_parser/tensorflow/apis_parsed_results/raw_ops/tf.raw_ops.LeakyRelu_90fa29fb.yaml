@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.LeakyRelu
+3 api_description: Applies leaky rectified linear activation by returning the input
+  when it is positive and scaling negative values by alpha.
+4 api_signature: tf.raw_ops.LeakyRelu(features,alpha)
+5 api_details: ''
+6 api_parameters:
+- features: Input tensor whose values are passed through the leaky ReLU activation.
+- alpha: Slope applied to negative input values; defaults to 0.2.
+7 api_usage_example: null
+8 api_shape: ''

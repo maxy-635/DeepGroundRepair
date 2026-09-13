@@ -1,0 +1,7 @@
+2 api_name: torch.autograd.profiler_util.StringTable.items
+3 api_description: Returns the table’s stored string items.
+4 api_signature: items()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: paddle.round
+3 api_description: Rounds each input value to the nearest integer.
+4 api_signature: paddle.round(x,decimals)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements will be rounded.
+- decimals: The number of decimal places to round to, defaulting to 0.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.5, -0.2, 0.6, 1.5])
+- out = paddle.round(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0., -0.,  1.,  2.])'
+8 api_shape: {}

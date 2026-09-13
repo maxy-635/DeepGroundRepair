@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.For
+3 api_description: Executes a loop by repeatedly applying a body function with loop-carried
+  inputs until a specified iteration count is reached.
+4 api_signature: tf.raw_ops.For(start,limit,delta,input,body)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the inclusive lower bound for the loop range.
+- limit: Sets the exclusive upper bound for the loop range.
+- delta: Sets the step size used to increment each iteration.
+- input: Provides the input tensors passed into the loop body.
+- body: Defines the function executed each iteration to transform the loop index and
+    inputs.
+7 api_usage_example: null
+8 api_shape: ''

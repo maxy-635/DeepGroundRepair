@@ -1,0 +1,8 @@
+2 api_name: torch.monitor.log_event
+3 api_description: Logs a specified event to all registered event handlers, which
+  then forward it to their respective event sinks.
+4 api_signature: torch.monitor.log_event(event)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

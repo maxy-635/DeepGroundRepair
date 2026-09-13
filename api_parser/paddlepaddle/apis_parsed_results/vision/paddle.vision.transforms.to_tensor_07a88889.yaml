@@ -1,0 +1,8 @@
+2 api_name: paddle.vision.transforms.to_tensor
+3 api_description: Converts a PIL Image or NumPy array into a Paddle tensor.
+4 api_signature: paddle.vision.transforms.to_tensor(pic)
+5 api_details: ''
+6 api_parameters:
+- pic: The image to convert into a tensor.
+7 api_usage_example: []
+8 api_shape: {}

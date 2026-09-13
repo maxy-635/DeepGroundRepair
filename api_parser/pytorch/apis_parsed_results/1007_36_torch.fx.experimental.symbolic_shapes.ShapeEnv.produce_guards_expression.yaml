@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.produce_guards_expression
+3 api_description: Builds a guard expression for the given placeholders, intended
+  for later evaluation with concrete values via evaluate_guards_expression().
+4 api_signature: produce_guards_expression(placeholders,*,guards)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

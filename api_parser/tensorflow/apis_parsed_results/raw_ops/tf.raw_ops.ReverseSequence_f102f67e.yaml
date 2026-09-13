@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ReverseSequence
+3 api_description: Reverses the first seq_lengths[i] elements of each slice along
+  seq_dim for every batch slice i, leaving the rest unchanged.
+4 api_signature: tf.raw_ops.ReverseSequence(input,seq_lengths,seq_dim,batch_dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements will be partially reversed.
+- seq_lengths: A 1-D tensor giving, for each batch entry, how many elements to reverse
+    along the sequence dimension.
+- seq_dim: The dimension of `input` to reverse within each sequence.
+- batch_dim: The dimension of `input` that identifies batches and defaults to `0`.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.distribution.set_distribution
+3 api_description: Sets the active global distribution configuration for Keras so
+  subsequent distributed operations use that setting.
+4 api_signature: tf.keras.distribution.set_distribution(value)
+5 api_details: ''
+6 api_parameters:
+- distribution: Sets the active Keras distribution to the provided `Distribution`
+    instance.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Xlog1py
+3 api_description: Computes x * log1p(y) elementwise, returning 0 when x is 0.
+4 api_signature: tf.raw_ops.Xlog1py(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used as the first argument in the Xlog1py computation.
+- y: Input tensor of the same type as `x` used as the second argument in the Xlog1py
+    computation.
+7 api_usage_example: null
+8 api_shape: ''

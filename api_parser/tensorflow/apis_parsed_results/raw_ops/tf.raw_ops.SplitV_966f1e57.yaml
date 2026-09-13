@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SplitV
+3 api_description: Splits a tensor into multiple tensors along a specified dimension
+  using given split sizes.
+4 api_signature: tf.raw_ops.SplitV(value,size_splits,axis,num_split)
+5 api_details: ''
+6 api_parameters:
+- value: The input tensor to be split into multiple outputs.
+- size_splits: Specifies the sizes of each split along the chosen axis, with one optional
+    `-1` inferred from the remainder.
+- axis: Selects the dimension of `value` along which the split is performed.
+- num_split: States how many output tensors the input should be divided into.
+7 api_usage_example: null
+8 api_shape: ''

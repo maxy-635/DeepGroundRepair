@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.OptimizeDatasetV2
+3 api_description: Creates a new dataset that applies optimization passes to the input
+  dataset.
+4 api_signature: tf.raw_ops.OptimizeDatasetV2(input_dataset,optimizations_enabled,optimizations_disabled,output_types,output_shapes,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Supplies the input dataset to be optimized.
+- optimizations_enabled: Lists the optimizations that are explicitly enabled by the
+    user.
+- optimizations_disabled: Lists the optimizations that are explicitly disabled by
+    the user.
+- output_types: Specifies the data types of the dataset elements produced by the operation.
+- output_shapes: Specifies the shapes of the dataset elements produced by the operation.
+- name: Optionally sets the operation name.
+7 api_usage_example: null
+8 api_shape: ''

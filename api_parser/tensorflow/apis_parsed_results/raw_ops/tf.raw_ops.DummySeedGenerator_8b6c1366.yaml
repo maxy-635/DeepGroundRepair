@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.DummySeedGenerator
+3 api_description: Creates a dummy seed generator resource used to provide deterministic
+  seeding state for random operations during migration and compatibility with TensorFlow
+  v1 APIs.
+4 api_signature: tf.raw_ops.DummySeedGenerator()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

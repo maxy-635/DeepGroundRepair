@@ -1,0 +1,9 @@
+2 api_name: paddle.nn.functional.thresholded_relu_
+3 api_description: The paddle.nn.functional.thresholded_relu_ API applies an in-place
+  thresholded ReLU activation, replacing the input tensor with the output where values
+  below a specified threshold are set to zero.
+4 api_signature: paddle.nn.functional.thresholded_relu_(x,threshold)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

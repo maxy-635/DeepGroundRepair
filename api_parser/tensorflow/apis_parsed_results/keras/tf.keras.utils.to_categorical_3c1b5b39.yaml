@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.utils.to_categorical
+3 api_description: Converts an integer class vector into a one-hot encoded binary
+  class matrix for categorical classification tasks.
+4 api_signature: tf.keras.utils.to_categorical(x,num_classes)
+5 api_details: ''
+6 api_parameters:
+- x: The class labels to convert into a one-hot encoded matrix.
+- num_classes: The total number of classes to use for the encoding, inferred from
+    `x` if not provided.
+7 api_usage_example:
+- loss = keras.ops.categorical_crossentropy(a, a)
+- print(np.around(loss, 5))
+8 api_shape: ''

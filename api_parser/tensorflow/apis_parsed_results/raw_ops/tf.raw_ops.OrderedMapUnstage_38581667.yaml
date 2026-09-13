@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.OrderedMapUnstage
+3 api_description: Removes and returns values for a key from an ordered map, blocking
+  until the key is available.
+4 api_signature: tf.raw_ops.OrderedMapUnstage(key,indices,dtypes)
+5 api_details: ''
+6 api_parameters:
+- key: Identifies the map entry to unstage from the ordered map.
+- indices: Specifies which staged element or position to unstage.
+- dtypes: Declares the data types of the values returned by the operation.
+7 api_usage_example: null
+8 api_shape: ''

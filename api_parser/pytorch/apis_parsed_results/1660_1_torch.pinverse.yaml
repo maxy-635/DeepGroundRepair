@@ -1,0 +1,8 @@
+2 api_name: torch.pinverse
+3 api_description: Computes the Moore-Penrose pseudoinverse of a tensor, providing
+  a stable generalized inverse for matrices that may be non-square or singular.
+4 api_signature: torch.pinverse(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

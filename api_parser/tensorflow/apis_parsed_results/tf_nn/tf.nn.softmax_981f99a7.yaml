@@ -1,0 +1,15 @@
+2 api_name: tensorflow.nn.softmax
+3 api_description: Computes softmax activations for multi-class predictions, ensuring
+  the output values sum to 1.
+4 api_signature: tf.nn.softmax(logits,axis)
+5 api_details: ''
+6 api_parameters:
+- logits: A tensor containing the input data for which the softmax function will be
+    computed.
+- axis: Specifies the dimension along which the softmax function is applied, with
+    a default of -1 indicating the last dimension.
+7 api_usage_example:
+- softmax = tf.nn.softmax([-1, 0., 1.])
+- softmax
+- sum(softmax)
+8 api_shape: ''

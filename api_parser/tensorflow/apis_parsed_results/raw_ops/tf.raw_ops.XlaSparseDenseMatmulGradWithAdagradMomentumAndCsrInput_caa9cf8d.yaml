@@ -1,0 +1,24 @@
+2 api_name: tensorflow.raw_ops.XlaSparseDenseMatmulGradWithAdagradMomentumAndCsrInput
+3 api_description: Computes gradients for an XLA sparse-dense matrix multiplication
+  with a CSR sparse input, applying Adagrad momentum updates to the affected variables.
+4 api_signature: tf.raw_ops.XlaSparseDenseMatmulGradWithAdagradMomentumAndCsrInput(row_pointers,sorted_sample_ids,sorted_token_ids,sorted_gains,activation_gradients,learning_rate,embedding_table,accumulator,momenta,use_nesterov,beta1,beta2,epsilon)
+5 api_details: ''
+6 api_parameters:
+- row_pointers: CSR row index offsets that delimit the nonzero entries for each row
+    of the sparse input.
+- sorted_sample_ids: Sorted sample identifiers that associate sparse entries with
+    their corresponding samples.
+- sorted_token_ids: Sorted token or feature IDs for the sparse input entries.
+- sorted_gains: Sorted per-entry gain values used as sparse input weights or coefficients.
+- activation_gradients: Gradients flowing back from the activation/output with respect
+    to the sparse-dense matmul result.
+- learning_rate: Step-size tensor that controls how much the parameters are updated.
+- embedding_table: The dense embedding matrix being used and updated by the optimizer.
+- accumulator: Per-parameter second-moment accumulator used by the Adagrad-style update.
+- momenta: Per-parameter momentum values used to smooth and accelerate updates.
+- use_nesterov: Flag indicating whether to apply Nesterov momentum in the update rule.
+- beta1: Exponential decay rate for the first-moment or momentum component.
+- beta2: Exponential decay rate for the second-moment accumulator component.
+- epsilon: Small constant added for numerical stability to avoid division by zero.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.feature_column.sequence_categorical_column_with_vocabulary_file
+3 api_description: Creates a sequence categorical column that maps terms to IDs using
+  a vocabulary file for use in sequence models.
+4 api_signature: tf.feature_column.sequence_categorical_column_with_vocabulary_file(key,vocabulary_file,vocabulary_size)
+5 api_details: ''
+6 api_parameters:
+- key: Identifies the input feature with a unique string name.
+- vocabulary_file: Specifies the file containing the vocabulary entries.
+- vocabulary_size: Sets how many vocabulary entries to use from the file.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,23 @@
+2 api_name: paddle.distributed.scatter_object_list
+3 api_description: Scatter a list of picklable Python objects from one source rank
+  to all other ranks in the distributed group.
+4 api_signature: paddle.distributed.scatter_object_list(out_object_list,in_object_list,src)
+5 api_details: ''
+6 api_parameters:
+- out_object_list: Receives and stores the scattered objects on each rank.
+- in_object_list: Provides the objects to be scattered from the source rank.
+- src: Specifies which global rank acts as the source of the scatter.
+7 api_usage_example:
+- '>>>'
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'out_object_list = [] # type: ignore'
+- 'if dist.get_rank() == 0:'
+- '    in_object_list = [{''foo'': [1, 2, 3]}, {''foo'': [4, 5, 6]}]'
+- 'else:'
+- '    in_object_list = [{''bar'': [1, 2, 3]}, {''bar'': [4, 5, 6]}]'
+- dist.scatter_object_list(out_object_list, in_object_list, src=1)
+- print(out_object_list)
+- '# [{''bar'': [1, 2, 3]}] (2 GPUs, out for rank 0)'
+- '# [{''bar'': [4, 5, 6]}] (2 GPUs, out for rank 1)'
+8 api_shape: {}

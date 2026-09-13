@@ -1,0 +1,21 @@
+2 api_name: tensorflow.keras.metrics.F1Score
+3 api_description: Computes the harmonic mean of precision and recall (F1 score) for
+  multi-class and multi-label classification, with results ranging from 0 to 1.
+4 api_signature: tf.keras.metrics.F1Score(average,threshold)
+5 api_details: ''
+6 api_parameters:
+- average: Chooses how to aggregate per-class F1 scores, either not averaging or using
+    micro, macro, or support-weighted averaging.
+- threshold: Converts prediction values into binary labels using a cutoff, or uses
+    the highest predicted class when no threshold is set.
+7 api_usage_example:
+- metric = keras.metrics.F1Score(threshold=0.5)
+- y_true = np.array([[1, 1, 1],
+- '                   [1, 0, 0],'
+- '                   [1, 1, 0]], np.int32)'
+- y_pred = np.array([[0.2, 0.6, 0.7],
+- '                   [0.2, 0.6, 0.6],'
+- '                   [0.6, 0.8, 0.0]], np.float32)'
+- metric.update_state(y_true, y_pred)
+- result = metric.result()
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: paddle.angle
+3 api_description: Returns the element-wise phase angle of complex numbers; for real
+  inputs, non-negative values map to 0 and negative values to π, with NaNs preserved.
+4 api_signature: paddle.angle(x)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose angle is computed, with supported complex or real floating-point
+    values.
+7 api_usage_example: []
+8 api_shape: {}

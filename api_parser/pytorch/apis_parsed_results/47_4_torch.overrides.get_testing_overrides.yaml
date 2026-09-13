@@ -1,0 +1,11 @@
+2 api_name: torch.overrides.get_testing_overrides
+3 api_description: Returns a dictionary of dummy override implementations for every
+  overridable function, intended for testing override behavior.
+4 api_signature: '"torch.overrides.get_testing_overrides()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' import inspect'
+- ' my_add = torch.overrides.get_testing_overrides()[torch.add]'
+- ' inspect.signature(my_add)'
+8 api_shape: null

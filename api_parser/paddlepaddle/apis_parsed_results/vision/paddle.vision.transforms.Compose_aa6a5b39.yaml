@@ -1,0 +1,18 @@
+2 api_name: paddle.vision.transforms.Compose
+3 api_description: Compose a sequence of transforms and apply them in order to dataset
+  samples.
+4 api_signature: '"paddle.vision.transforms.Compose(transforms)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- from paddle.vision.datasets import Flowers
+- from paddle.vision.transforms import Compose, ColorJitter, Resize
+- transform = Compose([ColorJitter(), Resize(size=608)])
+- flowers = Flowers(mode='test', transform=transform)
+- 'for i in range(3):'
+- '    sample = flowers[i]'
+- '    print(sample[0].size, sample[1])'
+- (916, 608) [1]
+- (758, 608) [1]
+- (811, 608) [1]
+8 api_shape: {}

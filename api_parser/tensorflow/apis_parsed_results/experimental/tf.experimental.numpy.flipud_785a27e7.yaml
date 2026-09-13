@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.flipud
+3 api_description: Reverses the order of rows in an array, flipping it upside down
+  along the first axis.
+4 api_signature: tf.experimental.numpy.flipud(m)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

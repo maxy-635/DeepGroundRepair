@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.metrics.SquaredHinge
+3 api_description: Computes the squared hinge loss between true and predicted labels,
+  converting binary 0/1 targets to -1/1 when needed.
+4 api_signature: tf.keras.metrics.SquaredHinge(name,dtype)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the metric instance’s display name.
+- dtype: Sets the data type used for the metric’s result.
+7 api_usage_example:
+- m = keras.metrics.SquaredHinge()
+- m.update_state([[0, 1], [0, 0]], [[0.6, 0.4], [0.4, 0.6]])
+- m.result()
+- m.reset_state()
+- m.update_state([[0, 1], [0, 0]], [[0.6, 0.4], [0.4, 0.6]],
+- '               sample_weight=[1, 0])'
+- m.result()
+8 api_shape: ''

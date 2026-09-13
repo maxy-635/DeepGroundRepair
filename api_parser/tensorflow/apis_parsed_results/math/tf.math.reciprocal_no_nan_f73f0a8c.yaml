@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.reciprocal_no_nan
+3 api_description: Computes the element-wise reciprocal of a tensor, returning 0 for
+  any zero inputs to avoid division by zero.
+4 api_signature: tf.math.reciprocal_no_nan(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are returned as their reciprocal, with zeros
+    mapped to zero instead of producing NaN.
+7 api_usage_example: null
+8 api_shape: ''

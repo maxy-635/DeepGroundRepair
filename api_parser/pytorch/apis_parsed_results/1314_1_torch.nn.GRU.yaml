@@ -1,0 +1,20 @@
+2 api_name: torch.nn.GRU
+3 api_description: The torch.nn.GRU applies a multi-layer gated recurrent unit RNN
+  to input sequences, enabling efficient processing of sequential data by maintaining
+  hidden states across time steps.
+4 api_signature: torch.nn.GRU(input_size,hidden_size,num_layers,batch_first,bidirectional)
+5 api_details: ''
+6 api_parameters:
+- input_size: Specifies the number of input features for each time step.
+- hidden_size: Determines the number of features in the hidden state.
+- num_layers: Indicates the number of stacked GRU layers for deeper architectures.
+- batch_first: If set to True, the input and output tensors are expected in (batch,
+    seq, feature) format.
+- bidirectional: If True, enables the GRU to process input sequences in both forward
+    and backward directions.
+7 api_usage_example:
+- ' rnn = nn.GRU(10, 20, 2)'
+- ' input = torch.randn(5, 3, 10)'
+- ' h0 = torch.randn(2, 3, 20)'
+- ' output, hn = rnn(input, h0)'
+8 api_shape: null

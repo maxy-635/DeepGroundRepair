@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.StatsAggregatorSummary
+3 api_description: Returns a summary string of statistics recorded by a stats aggregator.
+4 api_signature: tf.raw_ops.StatsAggregatorSummary(iterator)
+5 api_details: ''
+6 api_parameters:
+- iterator: A resource handle to the stats aggregator whose collected statistics will
+    be summarized.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.ragged.constant
+3 api_description: Creates a RaggedTensor constant from a nested Python list, preserving
+  nested structure and inferring rank from scalar depth or empty-list nesting while
+  enforcing dtype compatibility.
+4 api_signature: tf.ragged.constant(pylist,dtype,ragged_rank,row_splits_dtype)
+5 api_details: ''
+6 api_parameters:
+- pylist: Provides the nested input data used to build the RaggedTensor.
+- dtype: Sets the element type of the returned RaggedTensor, or is inferred from the
+    input if omitted.
+- ragged_rank: Specifies how many nested dimensions are ragged in the returned RaggedTensor.
+- row_splits_dtype: Chooses the integer dtype used for the RaggedTensor row_splits
+    values.
+7 api_usage_example:
+- tf.ragged.constant([[1, 2], [3], [4, 5, 6]])
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.ReLU
+3 api_description: The paddle.nn.ReLU API applies the Rectified Linear Unit activation
+  function, which outputs the input directly if it is positive; otherwise, it outputs
+  zero.
+4 api_signature: paddle.nn.ReLU()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-2., 0., 1.])
+- m = paddle.nn.ReLU()
+- out = m(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0., 0., 1.])'
+8 api_shape: null

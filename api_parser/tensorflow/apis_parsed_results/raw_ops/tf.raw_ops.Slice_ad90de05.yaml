@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Slice
+3 api_description: Extracts a contiguous slice from an input tensor starting at the
+  specified begin offsets and shaped by size, subject to bounds constraints.
+4 api_signature: tf.raw_ops.Slice(input,begin,size)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to slice.
+- begin: Specifies the starting offset for each dimension of the input tensor.
+- size: Specifies how many elements to take from each dimension, with -1 meaning take
+    the rest of that dimension.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.pipelining.schedules.ScheduleDualPipeV
+3 api_description: Implements the DualPipeV pipeline-parallel schedule, an optimized
+  DualPipe variant that overlaps forward and backward microbatch execution to improve
+  training efficiency and device utilization.
+4 api_signature: torch.distributed.pipelining.schedules.ScheduleDualPipeV(stages,n_microbatches,loss_fn)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

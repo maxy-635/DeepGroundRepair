@@ -1,0 +1,15 @@
+2 api_name: torch.select_scatter
+3 api_description: Returns a new tensor by inserting src into input at the specified
+  index along a chosen dimension, without creating a view.
+4 api_signature: torch.select_scatter(input,src,dim,index)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor that will be updated with the scattered slice.
+- src: The tensor containing the values to insert into the input tensor.
+- dim: The dimension along which the selected slice is replaced.
+- index: The position of the slice to select and scatter into.
+7 api_usage_example:
+- ' a = torch.zeros(2, 2)'
+- ' b = torch.ones(2)'
+- ' a.select_scatter(b, 0, 0)'
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: torch.fft.hfft2
+3 api_description: Computes the 2D FFT of a Hermitian-symmetric input, transforming
+  the last two dimensions by default.
+4 api_signature: torch.fft.hfft2(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the half-Hermitian frequency-domain data to transform.
+- s: Optional target signal shape that pads or trims transformed dimensions before
+    computing the FFT.
+- dim: The dimensions to transform, with the last one being the half-Hermitian compressed
+    dimension.
+- norm: The normalization mode that controls scaling of the transform, such as no
+    normalization, 1/n, or orthonormal scaling.
+7 api_usage_example:
+- ' torch.fft.hfft2(t).size()'
+8 api_shape: null

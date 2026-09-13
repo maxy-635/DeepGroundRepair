@@ -1,0 +1,24 @@
+2 api_name: torch.library.define
+3 api_description: Registers a new custom operator in torch.library so it can be implemented
+  and called like a first-class PyTorch op.
+4 api_signature: torch.library.define(qualname,schema,lib)
+5 api_details: ''
+6 api_parameters:
+- qualname: Specifies the fully qualified operator name, including namespace, to uniquely
+    register the op.
+- schema: Defines the operator’s input and output signature without the operator name.
+- lib: Optionally ties the operator’s lifetime to the provided `Library` object.
+7 api_usage_example:
+- ' import torch'
+- ' import numpy as np'
+- ' # Define the operator'
+- ' torch.library.define("mylib::sin", "(Tensor x) -> Tensor")'
+- ' # Add implementations for the operator'
+- ' @torch.library.impl("mylib::sin", "cpu")'
+- ' def f(x):'
+- '     return torch.from_numpy(np.sin(x.numpy()))'
+- ' # Call the new operator from torch.ops.'
+- ' x = torch.randn(3)'
+- ' y = torch.ops.mylib.sin(x)'
+- ' assert torch.allclose(y, x.sin())'
+8 api_shape: null

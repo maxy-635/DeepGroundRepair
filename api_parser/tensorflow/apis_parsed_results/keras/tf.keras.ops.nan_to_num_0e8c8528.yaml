@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.nan_to_num
+3 api_description: Replaces NaN values with 0 and converts positive or negative infinity
+  to large finite numbers.
+4 api_signature: tf.keras.ops.nan_to_num(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor or array whose NaN values will be replaced.
+- nan: The optional numeric value used to replace any NaN entries in the input.
+7 api_usage_example: null
+8 api_shape: ''

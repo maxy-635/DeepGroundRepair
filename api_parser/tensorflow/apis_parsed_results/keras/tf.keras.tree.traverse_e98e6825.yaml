@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.tree.traverse
+3 api_description: Depth-first traverses a nested structure and applies a function
+  to each node, visiting parents before children when top_down is True so traversal
+  can skip subtrees.
+4 api_signature: tf.keras.tree.traverse(func,structure)
+5 api_details: ''
+6 api_parameters:
+- func: Specifies the function applied to each sub-nest during traversal.
+- structure: Specifies the nested structure to traverse.
+7 api_usage_example:
+- v = []
+- 'keras.tree.traverse(v.append, [(1, 2), [3], {"a": 4}], top_down=False)'
+- v
+8 api_shape: ''

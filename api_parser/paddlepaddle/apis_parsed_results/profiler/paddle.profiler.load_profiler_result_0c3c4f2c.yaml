@@ -1,0 +1,20 @@
+2 api_name: paddle.profiler.load_profiler_result
+3 api_description: Loads previously dumped profiler data from storage back into memory
+  for analysis or inspection.
+4 api_signature: paddle.profiler.load_profiler_result(filename)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle.profiler as profiler
+- import paddle
+- paddle.device.set_device('gpu')
+- with profiler.Profiler(
+- '        targets=[profiler.ProfilerTarget.CPU, profiler.ProfilerTarget.GPU],'
+- '        scheduler = (3, 10)) as p:'
+- '    for iter in range(10):'
+- '        #train()'
+- '        p.step()'
+- p.export('test_export_protobuf.pb', format='pb')
+- profiler_result = profiler.load_profiler_result('test_export_protobuf.pb')
+8 api_shape: {}

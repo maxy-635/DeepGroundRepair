@@ -1,0 +1,20 @@
+2 api_name: torch.nn.RMSNorm
+3 api_description: Applies root mean square normalization to input features, scaling
+  them with a learned weight to stabilize activations.
+4 api_signature: torch.nn.RMSNorm(normalized_shape,eps,elementwise_affine)
+5 api_details: ''
+6 api_parameters:
+- normalized_shape: Specifies the dimensions of the input to normalize over, typically
+    the last one or more dimensions.
+- eps: Adds a small constant to the denominator to improve numerical stability during
+    normalization.
+- elementwise_affine: Enables learnable per-element scaling parameters after normalization
+    when set to True.
+7 api_usage_example:
+- ' rms_norm = nn.RMSNorm([2, 3])'
+- ' input = torch.randn(2, 2, 3)'
+- ' rms_norm(input)'
+8 api_shape:
+  input tensor shape: (N, *)
+  output tensor shape: (N, *) (same shape as input)
+  tensor shape transform formulas: {}

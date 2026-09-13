@@ -1,0 +1,13 @@
+2 api_name: tensorflow.io.gfile.glob
+3 api_description: Returns a list of file paths matching one or more glob pattern
+  strings.
+4 api_signature: tf.io.gfile.glob(pattern)
+5 api_details: ''
+6 api_parameters:
+- pattern: Specifies the glob pattern or patterns to match file paths.
+7 api_usage_example:
+- files = {"*.py"}
+- the_iterator = iter(files)
+- tf.io.gfile.glob(the_iterator)
+- '# As above'
+8 api_shape: ''

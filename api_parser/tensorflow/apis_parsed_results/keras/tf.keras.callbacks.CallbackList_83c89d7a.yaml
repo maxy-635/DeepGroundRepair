@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.callbacks.CallbackList
+3 api_description: Container that manages and coordinates a list of Keras callbacks,
+  forwarding training events and lifecycle hooks to each callback in order.
+4 api_signature: tf.keras.callbacks.CallbackList(callbacks,model,**params)
+5 api_details: ''
+6 api_parameters:
+- callbacks: The callback instances to manage and invoke during model training or
+    evaluation.
+- model: The model associated with the callbacks, which they will observe and interact
+    with.
+- '**params': Optional configuration values to distribute to each callback through
+    `set_params`.
+7 api_usage_example: null
+8 api_shape: ''

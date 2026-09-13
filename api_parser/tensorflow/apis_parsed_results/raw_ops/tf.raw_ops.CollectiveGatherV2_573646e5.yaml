@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.CollectiveGatherV2
+3 api_description: Collects matching tensors from multiple replicas and gathers them
+  into a single result, using runtime-unique keys for stateless collective groups.
+4 api_signature: tf.raw_ops.CollectiveGatherV2(input,group_size,group_key,instance_key,ordering_token,timeout_seconds)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be gathered across the collective group.
+- group_size: The total number of participants expected in the collective group.
+- group_key: A shared identifier that selects which collective group this operation
+    belongs to.
+- instance_key: A unique identifier for this specific collective gather instance within
+    the group.
+- ordering_token: Resource tokens used to enforce execution ordering with other collective
+    operations.
+- timeout_seconds: The maximum time to wait for the collective gather to complete
+    before timing out.
+7 api_usage_example: null
+8 api_shape: ''

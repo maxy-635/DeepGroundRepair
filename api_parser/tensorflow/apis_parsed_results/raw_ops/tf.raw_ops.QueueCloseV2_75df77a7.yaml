@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.QueueCloseV2
+3 api_description: Closes a queue so no more items can be added, while allowing remaining
+  items to be dequeued until the queue is empty.
+4 api_signature: tf.raw_ops.QueueCloseV2(handle)
+5 api_details: ''
+6 api_parameters:
+- handle: Resource handle identifying the queue to be closed.
+7 api_usage_example: null
+8 api_shape: ''

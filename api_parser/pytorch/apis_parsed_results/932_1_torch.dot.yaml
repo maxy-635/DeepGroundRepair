@@ -1,0 +1,13 @@
+2 api_name: torch.dot
+3 api_description: Computes the dot product of two 1D tensors and returns a single
+  scalar result.
+4 api_signature: torch.dot(input,tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The first 1D tensor used in the dot product.
+- tensor: The second 1D tensor used in the dot product.
+7 api_usage_example:
+- ' torch.dot(torch.tensor([2, 3]), torch.tensor([2, 1]))'
+- ' t1, t2 = torch.tensor([0, 1]), torch.tensor([2, 3])'
+- ' torch.dot(t1, t2)'
+8 api_shape: null

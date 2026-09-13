@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.losses.logcosh
+3 api_description: Computes the logarithm of the hyperbolic cosine of prediction error;
+  it behaves like mean squared error for small errors and is more robust to large
+  outliers.
+4 api_signature: tf.keras.losses.logcosh(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: Provides the ground truth target values used to compute the loss.
+- y_pred: Provides the model’s predicted values that are compared against the targets.
+7 api_usage_example:
+- y_true = [[0., 1.], [0., 0.]]
+- y_pred = [[1., 1.], [0., 0.]]
+- loss = keras.losses.log_cosh(y_true, y_pred)
+8 api_shape: ''

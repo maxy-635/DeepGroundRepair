@@ -1,0 +1,11 @@
+2 api_name: paddle.device.IPUPlace
+3 api_description: Returns a Paddle device place representing a Graphcore IPU.
+4 api_signature: paddle.device.IPUPlace()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('ipu')
+- place = paddle.device.IPUPlace()
+8 api_shape: {}

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.dynamic_partition
+3 api_description: Splits `data` into `num_partitions` tensors by routing each slice
+  to an output based on the matching value in `partitions`, preserving lexicographic
+  order within each partition.
+4 api_signature: tf.dynamic_partition(data,partitions,num_partitions)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor whose values will be split into partitions.
+- partitions: An int32 tensor that assigns each element of `data` to a partition index.
+- num_partitions: The total number of output partitions to create, must be at least
+    1.
+7 api_usage_example: null
+8 api_shape: ''

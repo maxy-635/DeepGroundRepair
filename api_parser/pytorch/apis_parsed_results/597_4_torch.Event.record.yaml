@@ -1,0 +1,12 @@
+2 api_name: torch.Event.record
+3 api_description: Records the event on a specified stream for the same device, equivalent
+  to stream.record_event(self).
+4 api_signature: record(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: Specifies the stream to record the event on; if omitted, the current stream
+    is used.
+7 api_usage_example:
+- ' e_cuda = torch.Event(device=''cuda'')'
+- ' e_cuda.record()'
+8 api_shape: null

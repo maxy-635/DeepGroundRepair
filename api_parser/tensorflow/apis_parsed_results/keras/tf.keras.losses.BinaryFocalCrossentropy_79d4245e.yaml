@@ -1,0 +1,20 @@
+2 api_name: tensorflow.keras.losses.BinaryFocalCrossentropy
+3 api_description: Computes binary focal cross-entropy for 0/1 classification, down-weighting
+  easy examples and focusing learning on hard, misclassified cases.
+4 api_signature: tf.keras.losses.BinaryFocalCrossentropy(alpha,gamma,from_logits,label_smoothing)
+5 api_details: ''
+6 api_parameters:
+- alpha: Balances the loss contribution between positive and negative classes, weighting
+    class 1 by `alpha` and class 0 by `1 - alpha`.
+- gamma: Controls how strongly easy examples are down-weighted, with larger values
+    focusing more on hard examples.
+- from_logits: Specifies whether `y_pred` contains raw logits instead of probabilities.
+- label_smoothing: Softens the true labels toward 0.5 to reduce overconfidence during
+    training.
+7 api_usage_example:
+- '# Apply class weight'
+- loss = keras.losses.BinaryFocalCrossentropy(
+- '    apply_class_balancing=True, gamma=5, from_logits=True,'
+- '    reduction=None)'
+- loss(y_true, y_pred)
+8 api_shape: ''

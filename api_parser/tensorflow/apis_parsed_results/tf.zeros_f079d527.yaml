@@ -1,0 +1,11 @@
+2 api_name: tensorflow.zeros
+3 api_description: Creates a tensor of the specified shape and dtype with all elements
+  initialized to zero.
+4 api_signature: tf.zeros(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the zero-filled tensor to create.
+- dtype: Specifies the data type of the tensor elements to initialize with zeros.
+7 api_usage_example:
+- tf.zeros([3, 4], tf.int32)
+8 api_shape: ''

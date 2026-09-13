@@ -1,0 +1,8 @@
+2 api_name: torch.optim.lr_scheduler.ChainedScheduler.state_dict
+3 api_description: Returns a dictionary capturing the full state of the chained learning-rate
+  scheduler for saving and restoring its progress.
+4 api_signature: '"state_dict()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

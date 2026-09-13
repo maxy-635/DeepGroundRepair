@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.layers.HashedCrossing
+3 api_description: The tf.keras.layers.HashedCrossing layer crosses categorical features
+  using the hashing trick, transforming input features into a hashed representation
+  based on concatenation, with output shaped for scalar inputs and batches.
+4 api_signature: tf.keras.layers.HashedCrossing(num_bins, output_mode, name)
+5 api_details: ''
+6 api_parameters:
+- num_bins: Specifies the number of hash bins to use for hashing input features.
+- output_mode: Defines the output format of the layer, either as integer indices or
+    one-hot encoded vectors.
+7 api_usage_example:
+- layer = keras.layers.HashedCrossing(
+- '    num_bins=5, output_mode=''one_hot'')'
+- feat1 = np.array(['A', 'B', 'A', 'B', 'A'])
+- feat2 = np.array([101, 101, 101, 102, 102])
+- layer((feat1, feat2))
+8 api_shape: null

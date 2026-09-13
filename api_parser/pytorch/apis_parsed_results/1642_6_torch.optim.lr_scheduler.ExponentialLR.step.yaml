@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.ExponentialLR.step
+3 api_description: Updates the optimizer’s learning rate by multiplying it with a
+  constant exponential decay factor at each step.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Deprecated optional epoch index that, if provided, sets `last_epoch` to that
+    value and may use the closed-form learning-rate computation when available.
+7 api_usage_example: null
+8 api_shape: null

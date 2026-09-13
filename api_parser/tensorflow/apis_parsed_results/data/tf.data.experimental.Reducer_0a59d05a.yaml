@@ -1,0 +1,8 @@
+2 api_name: tensorflow.data.experimental.Reducer
+3 api_description: Defines how to reduce a set of dataset elements by combining intermediate
+  state with incoming values and producing a final result.
+4 api_signature: tf.data.experimental.Reducer(init_func,reduce_func)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

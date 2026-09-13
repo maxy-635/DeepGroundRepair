@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.FractionalMaxPoolGrad
+3 api_description: Computes the gradient of FractionalMaxPool by routing incoming
+  gradients back to the original input positions that produced the pooled outputs.
+4 api_signature: tf.raw_ops.FractionalMaxPoolGrad(orig_input,out_backprop,row_pooling_sequence,col_pooling_sequence)
+5 api_details: ''
+6 api_parameters:
+- orig_input: The original input tensor used during fractional max pooling, which
+    the gradient is computed against.
+- out_backprop: The backpropagated gradient from the fractional max pool output, shaped
+    as a 4-D tensor matching the output layout.
+- row_pooling_sequence: The row pooling sequence that defines the pooling regions
+    along the height dimension.
+- col_pooling_sequence: The column pooling sequence that defines the pooling regions
+    along the width dimension.
+7 api_usage_example: null
+8 api_shape: ''

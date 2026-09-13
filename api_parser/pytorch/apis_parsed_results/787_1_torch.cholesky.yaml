@@ -1,0 +1,13 @@
+2 api_name: torch.cholesky
+3 api_description: Computes the Cholesky decomposition of a symmetric positive-definite
+  matrix, or a batch of such matrices.
+4 api_signature: torch.cholesky(input,upper)
+5 api_details: ''
+6 api_parameters:
+- input: The symmetric positive-definite input tensor to be factorized, with optional
+    batch dimensions.
+- upper: A flag that selects whether the returned Cholesky factor is upper or lower
+    triangular.
+7 api_usage_example:
+- L = torch.linalg.cholesky(A)
+8 api_shape: null

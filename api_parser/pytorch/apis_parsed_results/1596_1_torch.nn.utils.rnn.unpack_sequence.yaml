@@ -1,0 +1,19 @@
+2 api_name: torch.nn.utils.rnn.unpack_sequence
+3 api_description: Converts a PackedSequence into a list of tensors, one per original
+  sequence, each restored to its variable length.
+4 api_signature: torch.nn.utils.rnn.unpack_sequence(packed_sequences)
+5 api_details: ''
+6 api_parameters:
+- packed_sequences: The PackedSequence to unpack back into a list of individual sequences.
+7 api_usage_example:
+- ' from torch.nn.utils.rnn import pack_sequence, unpack_sequence'
+- ' a = torch.tensor([1, 2, 3])'
+- ' b = torch.tensor([4, 5])'
+- ' c = torch.tensor([6])'
+- ' sequences = [a, b, c]'
+- ' print(sequences)'
+- ' packed_sequences = pack_sequence(sequences)'
+- ' print(packed_sequences)'
+- ' unpacked_sequences = unpack_sequence(packed_sequences)'
+- ' print(unpacked_sequences)'
+8 api_shape: null

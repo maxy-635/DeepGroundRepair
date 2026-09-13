@@ -1,0 +1,22 @@
+2 api_name: paddle.eye
+3 api_description: Creates a 2-D tensor with ones on the diagonal and zeros elsewhere.
+4 api_signature: paddle.eye(num_rows,num_columns,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- num_rows: Sets the number of rows in each batch tensor.
+- num_columns: Sets the number of columns in each batch tensor, defaulting to `num_rows`
+    when not provided.
+- dtype: Specifies the data type of the returned tensor.
+- name: Provides an optional name for the API call, usually left unset.
+7 api_usage_example:
+- import paddle
+- data = paddle.eye(3, dtype='int32')
+- print(data.numpy())
+- '[[1 0 0]'
+- '[0 1 0]'
+- '[0 0 1]]'
+- data = paddle.eye(2, 3, dtype='int32')
+- print(data.numpy())
+- '[[1 0 0]'
+- '[0 1 0]]'
+8 api_shape: {}

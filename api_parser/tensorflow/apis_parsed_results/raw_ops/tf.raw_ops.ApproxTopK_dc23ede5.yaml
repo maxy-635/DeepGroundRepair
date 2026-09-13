@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ApproxTopK
+3 api_description: Approximates the top-k minimum or maximum values of an input tensor
+  and returns those values with their indices, optimized for TPU use.
+4 api_signature: tf.raw_ops.ApproxTopK(input,k,reduction_dimension,is_max_k,name)
+5 api_details: ''
+6 api_parameters:
+- input: The floating-point tensor to search for the top or bottom values in.
+- k: The number of maximum or minimum values to select.
+- reduction_dimension: The axis along which to perform the top-k or min-k search.
+- is_max_k: Whether to return the largest values (`True`) or the smallest values (`False`).
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

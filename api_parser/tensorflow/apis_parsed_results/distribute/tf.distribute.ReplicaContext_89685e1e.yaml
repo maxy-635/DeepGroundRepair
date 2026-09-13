@@ -1,0 +1,17 @@
+2 api_name: tensorflow.distribute.ReplicaContext
+3 api_description: Provides replica-only utilities for code running inside `tf.distribute.Strategy.run`,
+  letting each replica access its context and coordinate with the distribution strategy.
+4 api_signature: tf.distribute.ReplicaContext(strategy)
+5 api_details: ''
+6 api_parameters:
+- strategy: The `tf.distribute.Strategy` that defines how computations are distributed
+    across replicas.
+7 api_usage_example:
+- strategy = tf.distribute.MirroredStrategy(["GPU:0", "GPU:1"])
+- 'def step_fn():'
+- '  ctx = tf.distribute.get_replica_context()'
+- '  value1 = tf.identity(1.)'
+- '  value2 = tf.identity(2.)'
+- '  return ctx.all_reduce(tf.distribute.ReduceOp.SUM, [value1, value2])'
+- strategy.experimental_local_results(strategy.run(step_fn))
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.xla.experimental.compile
+3 api_description: Deprecated API that compiles and executes a TensorFlow computation
+  with XLA for performance.
+4 api_signature: tf.xla.experimental.compile(computation)
+5 api_details: ''
+6 api_parameters:
+- computation: Defines the Python function that constructs the computation to run
+    on the provided input tensors.
+7 api_usage_example: null
+8 api_shape: ''

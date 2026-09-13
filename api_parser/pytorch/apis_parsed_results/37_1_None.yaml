@@ -1,0 +1,32 @@
+2 api_name: null
+3 api_description: Exports a model to ONNX format.
+4 api_signature: torch.onnx.export(model,args,f,*,input_names,output_names,opset_version,dynamo,external_data,dynamic_shapes,optimize,verify,export_params,dynamic_axes)
+5 api_details: ''
+6 api_parameters:
+- model: Specifies the model to export.
+- args: Provides example positional inputs used to trace or export the model.
+- f: Optionally writes the exported ONNX model to the given file path.
+- input_names: Sets the names of the exported graph's input nodes.
+- output_names: Sets the names of the exported graph's output nodes.
+- opset_version: Chooses the ONNX opset version used for export.
+- dynamo: Selects whether export uses `torch.export`-based exporting instead of TorchScript.
+- external_data: Controls whether large weights are saved in a separate external data
+    file.
+- dynamic_shapes: Defines dynamic input shapes when exporting with `dynamo=True`.
+- optimize: Enables or disables export-time optimization when using `dynamo=True`.
+- verify: Checks the exported model with ONNX Runtime when using `dynamo=True`.
+- export_params: Controls whether model parameters are included when writing to `f`.
+- dynamic_axes: Deprecated option for marking specified input or output axes as dynamic
+    when not using `dynamo=True`.
+7 api_usage_example:
+- 'class SumModule(torch.nn.Module):'
+- '    def forward(self, x):'
+- '        return torch.sum(x, dim=1)'
+- torch.onnx.export(
+- '    SumModule(),'
+- '    (torch.ones(2, 2),),'
+- '    "onnx.pb",'
+- '    input_names=["x"],'
+- '    output_names=["sum"],'
+- )
+8 api_shape: null

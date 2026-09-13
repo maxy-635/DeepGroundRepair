@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.special.bessel_k0
+3 api_description: Computes the modified Bessel function K0 element-wise for each
+  input value, with k0e recommended for better numerical stability.
+4 api_signature: tf.math.special.bessel_k0(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the modified Bessel function of
+    the second kind, order 0.
+7 api_usage_example:
+- tf.math.special.bessel_k0([0.5, 1., 2., 4.]).numpy()
+8 api_shape: ''

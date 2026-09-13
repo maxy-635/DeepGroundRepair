@@ -1,0 +1,11 @@
+2 api_name: tensorflow.one_hot
+3 api_description: Creates a one-hot tensor from `indices`, placing `on_value` at
+  the indexed positions and `off_value` everywhere else, with an added axis whose
+  size is `depth`.
+4 api_signature: tf.one_hot(indices,depth)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the positions to encode as one-hot vectors.
+- depth: Sets the length of the one-hot output dimension.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.BesselK0
+3 api_description: Computes the modified Bessel function of the second kind of order
+  0 for each input element.
+4 api_signature: tf.raw_ops.BesselK0(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values the modified Bessel function K0 is computed for.
+7 api_usage_example: null
+8 api_shape: ''

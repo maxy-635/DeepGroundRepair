@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.RandomFlip
+3 api_description: Randomly flips images horizontally and/or vertically during training,
+  ensuring consistent output during inference. Supports various input pixel value
+  ranges and data types, defaulting to float output.
+4 api_signature: tf.keras.layers.RandomFlip(mode)
+5 api_details: ''
+6 api_parameters:
+- mode: Specifies the flip mode for the layer, allowing for horizontal, vertical,
+    or both types of flips on the input images.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: paddle.device.synchronize
+3 api_description: Waits for all compute on the specified device, or the current device
+  if none is given, to finish.
+4 api_signature: paddle.device.synchronize(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '.. code-block:: python'
+- '# doctest: +REQUIRES(env:CUSTOM_DEVICE)'
+- import paddle
+- paddle.set_device('custom_cpu')
+- paddle.device.synchronize()
+- paddle.device.synchronize("custom_cpu:0")
+- place = paddle.CustomPlace('custom_cpu', 0)
+- paddle.device.synchronize(place)
+8 api_shape: {}

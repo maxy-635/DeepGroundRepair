@@ -1,0 +1,52 @@
+2 api_name: paddle.vision.datasets.Flowers
+3 api_description: Provides access to the Flowers102 image classification dataset,
+  including downloading, loading, and splitting flower images with their labels for
+  training, validation, and test use.
+4 api_signature: paddle.vision.datasets.Flowers(mode,transform,download,backend)
+5 api_details: ''
+6 api_parameters:
+- mode: Selects whether the dataset loads training or test samples, with `train` as
+    the default.
+- transform: Applies an optional transform pipeline to each image, or leaves images
+    unchanged if `None`.
+- download: Automatically downloads the dataset when the data file is not already
+    available.
+- backend: Chooses the image return type as `PIL.Image` or `numpy.ndarray`, defaulting
+    to Paddle’s current image backend if unset.
+7 api_usage_example:
+- '>>>'
+- import itertools
+- import paddle.vision.transforms as T
+- from paddle.vision.datasets import Flowers
+- flowers = Flowers()
+- print(len(flowers))
+- '6149'
+- 'for i in range(5):  # only show first 5 images'
+- '    img, label = flowers[i]'
+- '    # do something with img and label'
+- '    print(type(img), img.size, label)'
+- '    # <class ''PIL.JpegImagePlugin.JpegImageFile''> (523, 500) [1]'
+- transform = T.Compose(
+- '    ['
+- '        T.Resize(64),'
+- '        T.ToTensor(),'
+- '        T.Normalize('
+- '            mean=[0.5, 0.5, 0.5],'
+- '            std=[0.5, 0.5, 0.5],'
+- '            to_rgb=True,'
+- '        ),'
+- '    ]'
+- )
+- flowers_test = Flowers(
+- '    mode="test",'
+- '    transform=transform,  # apply transform to every image'
+- '    backend="cv2",  # use OpenCV as image transform backend'
+- )
+- print(len(flowers_test))
+- '1020'
+- 'for img, label in itertools.islice(iter(flowers_test), 5):  # only show first 5
+  images'
+- '    # do something with img and label'
+- '    print(type(img), img.shape, label) # type: ignore'
+- '    # <class ''paddle.Tensor''> [3, 64, 96] [1]'
+8 api_shape: {}

@@ -1,0 +1,11 @@
+2 api_name: torch.remainder
+3 api_description: Computes the elementwise modulus, returning values with the same
+  sign as the divisor and smaller absolute value than the divisor.
+4 api_signature: torch.remainder(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor or value whose remainder will be computed.
+- other: The tensor or value used as the divisor for the remainder operation.
+7 api_usage_example:
+- torch.remainder(a, b) == a - a.div(b, rounding_mode="floor") * b
+8 api_shape: null

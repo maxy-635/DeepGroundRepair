@@ -1,0 +1,10 @@
+2 api_name: paddle.sgn
+3 api_description: 'Returns a tensor with unit-magnitude values: for complex inputs,
+  each element keeps its angle but has absolute value 1; for float inputs, each element
+  becomes its sign (1, -1, or 0).'
+4 api_signature: paddle.sgn(x)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor whose element-wise sign is computed.
+7 api_usage_example: []
+8 api_shape: {}

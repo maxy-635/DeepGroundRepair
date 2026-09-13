@@ -1,0 +1,11 @@
+2 api_name: torch.linalg.matrix_power
+3 api_description: Computes the integer power of a square matrix, returning the matrix
+  raised to the n-th power.
+4 api_signature: torch.linalg.matrix_power(A,n)
+5 api_details: ''
+6 api_parameters:
+- A: The square matrix or batched square matrices whose power is to be computed.
+- n: The integer exponent indicating how many times to multiply the matrix by itself.
+7 api_usage_example:
+- torch.linalg.solve(matrix_power(A, n), B) == matrix_power(A, -n)  @ B
+8 api_shape: null

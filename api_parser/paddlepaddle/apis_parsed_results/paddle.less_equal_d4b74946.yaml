@@ -1,0 +1,19 @@
+2 api_name: paddle.less_equal
+3 api_description: Returns an elementwise boolean result indicating whether each value
+  in x is less than or equal to the corresponding value in y.
+4 api_signature: paddle.less_equal(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor to compare elementwise with `y` using the less-than-or-equal
+    operation.
+- y: The second tensor to compare elementwise against `x` using the less-than-or-equal
+    operation.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, 2, 3])
+- y = paddle.to_tensor([1, 3, 2])
+- result1 = paddle.less_equal(x, y)
+- print(result1)
+- Tensor(shape=[3], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True , True , False])'
+8 api_shape: {}

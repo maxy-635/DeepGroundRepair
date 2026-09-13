@@ -1,0 +1,22 @@
+2 api_name: paddle.shard_index
+3 api_description: Redistribute each non-negative input index into its shard-relative
+  offset based on a computed shard size, keeping values within the range [0, index_num)
+  and mapping them to the shard that owns their interval.
+4 api_signature: paddle.shard_index(input,nshards,shard_id)
+5 api_details: ''
+6 api_parameters:
+- input: Supplies the tensor of shard indices to be processed, with dtype int64 or
+    int32 and a last dimension of 1.
+- nshards: Specifies how many total shards the data is divided into.
+- shard_id: Identifies which shard in the set is the current one.
+7 api_usage_example:
+- import paddle
+- label = paddle.to_tensor([[16], [1]], "int64")
+- shard_label = paddle.shard_index(input=label,
+- '                                 index_num=20,'
+- '                                 nshards=2,'
+- '                                 shard_id=0)'
+- print(shard_label.numpy())
+- '[[-1]'
+- '[ 1]]'
+8 api_shape: {}

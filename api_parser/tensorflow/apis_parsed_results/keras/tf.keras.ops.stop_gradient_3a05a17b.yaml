@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.stop_gradient
+3 api_description: Prevents gradients from flowing through the given tensor during
+  backpropagation, treating it as a constant.
+4 api_signature: tf.keras.ops.stop_gradient(variable)
+5 api_details: ''
+6 api_parameters:
+- variable: The tensor whose gradient computation should be disabled.
+7 api_usage_example:
+- var = keras.backend.convert_to_tensor(
+- '    [1., 2., 3.],'
+- '    dtype="float32"'
+- )
+- var = keras.ops.stop_gradient(var)
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.gather
+3 api_description: Returns slices from `params` selected by integer `indices` along
+  a given axis, extending indexing to tensor-based indices.
+4 api_signature: tf.gather(params,indices,axis,batch_dims,name)
+5 api_details: ''
+6 api_parameters:
+- params: The source tensor to gather values from.
+- indices: The integer indices specifying which values to select from `params`.
+- axis: The dimension of `params` to gather along.
+- batch_dims: The number of leading batch dimensions to treat as matching between
+    `params` and `indices`.
+- name: An optional name for the operation.
+7 api_usage_example:
+- tf.gather(params, indices, axis=1, batch_dims=1).shape.as_list()
+8 api_shape: ''

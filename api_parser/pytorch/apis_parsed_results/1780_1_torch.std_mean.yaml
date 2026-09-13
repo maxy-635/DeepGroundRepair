@@ -1,0 +1,18 @@
+2 api_name: torch.std_mean
+3 api_description: Computes the standard deviation and mean of a tensor across a specified
+  dimension or dimensions, or across all dimensions if none are given.
+4 api_signature: torch.std_mean(input,dim,correction,keepdim)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor whose standard deviation and mean will be computed.
+- dim: Selects the dimension or dimensions to reduce; if `None`, all dimensions are
+    reduced.
+7 api_usage_example:
+- ' a = torch.tensor('
+- '...     [[ 0.2035,  1.2959,  1.8101, -0.4644],'
+- '...      [ 1.5027, -0.3270,  0.5905,  0.6538],'
+- '...      [-1.5745,  1.3330, -0.5596, -0.6548],'
+- '...      [ 0.1264, -0.5080,  1.6420,  0.1992]]'
+- '... )  # fmt: skip'
+- ' torch.std_mean(a, dim=0, keepdim=True)'
+8 api_shape: null

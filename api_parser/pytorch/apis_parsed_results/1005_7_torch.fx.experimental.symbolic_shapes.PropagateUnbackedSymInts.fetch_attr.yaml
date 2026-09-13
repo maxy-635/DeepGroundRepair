@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.PropagateUnbackedSymInts.fetch_attr
+3 api_description: Retrieves a named attribute by walking the module hierarchy of
+  `self.module` and returning the resolved value.
+4 api_signature: fetch_attr(target)
+5 api_details: ''
+6 api_parameters:
+- target: Specifies the fully qualified attribute name to retrieve from the module
+    or object.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,33 @@
+2 api_name: paddle.incubate.nn.functional.moe_reduce
+3 api_description: Combines expert outputs and restores them to the original token
+  order.
+4 api_signature: paddle.incubate.nn.functional.moe_reduce(ffn_out,expert_scales_float,permute_indices_per_token,top_k_indices)
+5 api_details: ''
+6 api_parameters:
+- ffn_out: Holds the experts’ feed-forward output embeddings for all routed tokens,
+    ready to be combined back into token order.
+- expert_scales_float: Provides the per-expert weighting factors used to scale each
+    selected expert’s contribution before reduction.
+- permute_indices_per_token: Maps each expert-produced output back to its original
+    token position for regrouping and accumulation.
+- top_k_indices: Identifies which top-k experts were selected for each token during
+    routing.
+7 api_usage_example:
+- import paddle
+- from paddle.incubate.nn.functional import moe_reduce
+- 'ffn_out = paddle.randn([7680, 768])  # 7680 = bs * 128 * 6'
+- ffn2_bias = paddle.randn([48, 1, 768])
+- expert_scales_float = paddle.rand([1280, 6, 1, 1])
+- permute_indices_per_token = paddle.to_tensor([6, 1280], dtype='int32')
+- top_k_indices = paddle.to_tensor([1280, 6], dtype='int32')
+- norm_topk_prob = False
+- output = moe_reduce(
+- '    ffn_out,'
+- '    expert_scales_float,'
+- '    permute_indices_per_token,'
+- '    top_k_indices,'
+- '    ffn2_bias,'
+- '    norm_topk_prob,'
+- )
+- 'print(output.shape)  # 输出: [1280, 768]'
+8 api_shape: {}

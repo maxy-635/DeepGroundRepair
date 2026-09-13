@@ -1,0 +1,8 @@
+2 api_name: paddle.greater_than_
+3 api_description: Performs an in-place greater-than comparison, writing the result
+  into input `x`'s tensor.
+4 api_signature: paddle.greater_than_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

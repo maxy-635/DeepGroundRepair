@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.MatrixDiagPart
+3 api_description: Extracts the diagonal elements from each matrix in a batched tensor,
+  returning a tensor with one fewer dimension.
+4 api_signature: tf.raw_ops.MatrixDiagPart(input)
+5 api_details: ''
+6 api_parameters:
+- input: The rank-2-or-higher tensor from which to extract the diagonal part.
+7 api_usage_example: null
+8 api_shape: ''

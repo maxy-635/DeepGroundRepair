@@ -1,0 +1,14 @@
+2 api_name: tensorflow.sparse.SparseTensor
+3 api_description: Represents a sparse tensor using separate `indices`, `values`,
+  and `dense_shape` tensors, wrapping them into a single Python object for convenient
+  use with TensorFlow ops.
+4 api_signature: tf.sparse.SparseTensor(indices,values,dense_shape)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the coordinates of each nonzero element in the sparse tensor.
+- values: Stores the value corresponding to each entry listed in `indices`.
+- dense_shape: Defines the full dense shape of the sparse tensor.
+7 api_usage_example:
+- st = tf.sparse.from_dense([[1, 0, 2, 0], [3, 0, 0, 4]])
+- 'tf.sparse.to_dense(st.with_values([10, 20, 30, 40]))  # 4 nonzero values'
+8 api_shape: ''

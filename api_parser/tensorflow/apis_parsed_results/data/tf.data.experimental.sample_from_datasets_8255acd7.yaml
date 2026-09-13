@@ -1,0 +1,12 @@
+2 api_name: tensorflow.data.experimental.sample_from_datasets
+3 api_description: Randomly interleaves elements from multiple datasets according
+  to specified weights, sampling without replacement.
+4 api_signature: tf.data.experimental.sample_from_datasets(datasets,weights)
+5 api_details: ''
+6 api_parameters:
+- datasets: Provides the non-empty set of compatible `tf.data.Dataset` objects to
+    sample from.
+- weights: Specifies the sampling probabilities for each dataset, or a dataset of
+    weight lists, defaulting to uniform sampling when omitted.
+7 api_usage_example: null
+8 api_shape: ''

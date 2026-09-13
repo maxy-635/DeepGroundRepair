@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.Conv3DBackpropFilterV2
+3 api_description: Computes the gradient of a 3-D convolution with respect to the
+  filter tensor, given the input, filter shape, and backpropagated output gradients.
+4 api_signature: tf.raw_ops.Conv3DBackpropFilterV2(input,filter_sizes,out_backprop,strides,padding,data_format,dilations,name)
+5 api_details: ''
+6 api_parameters:
+- input: The 5-D input tensor whose filter gradient is being computed.
+- filter_sizes: The 5-D shape of the convolution filter to backpropagate into.
+- out_backprop: The 5-D gradient tensor flowing back from the output of the convolution.
+- strides: The stride values for the sliding window across the 5-D input tensor.
+- padding: The padding mode that determines how input boundaries are handled.
+- data_format: The layout format of the input and output tensors.
+- dilations: The dilation factors that space out filter elements along each dimension.
+- name: An optional name used to label the operation.
+7 api_usage_example: null
+8 api_shape: ''

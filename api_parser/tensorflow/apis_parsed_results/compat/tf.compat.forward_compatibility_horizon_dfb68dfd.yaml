@@ -1,0 +1,11 @@
+2 api_name: tensorflow.compat.forward_compatibility_horizon
+3 api_description: Context manager that temporarily sets TensorFlow’s forward-compatibility
+  horizon, letting you test whether generated graphs remain usable with older binaries.
+4 api_signature: tf.compat.forward_compatibility_horizon(year,month,day)
+5 api_details: ''
+6 api_parameters:
+- year: Specifies the year component of the forward-compatibility horizon.
+- month: Specifies the month component of the forward-compatibility horizon.
+- day: Specifies the day component of the forward-compatibility horizon.
+7 api_usage_example: null
+8 api_shape: ''

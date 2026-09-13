@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.hint_int
+3 api_description: Converts a symbolic integer-like value into a plain Python int
+  hint for use in tracing and shape reasoning.
+4 api_signature: torch.fx.experimental.symbolic_shapes.hint_int(a)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

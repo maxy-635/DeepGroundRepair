@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.utils.load_img
+3 api_description: Loads an image file into a PIL Image object for preprocessing or
+  display.
+4 api_signature: tf.keras.utils.load_img(path,target_size,color_mode)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the image file path to load.
+- color_mode: Sets the image color format, such as grayscale, rgb, or rgba.
+- target_size: Resizes the image to the given (img_height, img_width) or leaves it
+    at the original size if None.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.math.polyval
+3 api_description: Evaluates a polynomial elementwise on x using Horner's method from
+  a list of coefficients.
+4 api_signature: tf.math.polyval(coeffs,x)
+5 api_details: ''
+6 api_parameters:
+- coeffs: Specifies the polynomial coefficients to evaluate, with each tensor contributing
+    a coefficient term.
+- x: Provides the input tensor value at which the polynomial is evaluated.
+7 api_usage_example:
+- x = tf.constant(3)
+- theta1 = tf.Variable(2)
+- theta2 = tf.Variable(1)
+- theta3 = tf.Variable(0)
+- tf.math.polyval([theta1, theta2, theta3], x)
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixSoftmax
+3 api_description: Computes the softmax over the innermost dimensions of a CSR sparse
+  matrix, treating missing entries as -inf and preserving the input sparsity structure
+  in the output.
+4 api_signature: tf.raw_ops.SparseMatrixSoftmax(logits)
+5 api_details: ''
+6 api_parameters:
+- logits: A CSRSparseMatrix containing the input values to normalize with a sparse
+    softmax operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.softsign
+3 api_description: Applies the softsign activation, transforming each input as x /
+  (abs(x) + 1).
+4 api_signature: tf.keras.ops.softsign(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the softsign activation to.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([-0.100, -10.0, 1.0, 0.0, 100.0])
+- keras.ops.softsign(x)
+8 api_shape: ''

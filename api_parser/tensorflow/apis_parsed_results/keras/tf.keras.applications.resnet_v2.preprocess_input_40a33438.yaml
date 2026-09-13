@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.resnet_v2.preprocess_input
+3 api_description: Scales image tensors or NumPy arrays for ResNetV2 by converting
+  pixel values to the format expected by the model.
+4 api_signature: tf.keras.applications.resnet_v2.preprocess_input(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input image data to be preprocessed in place, expected as a 3D or 4D float array
+    or tensor with 3 color channels and values in the range [0, 255].
+7 api_usage_example: null
+8 api_shape: ''

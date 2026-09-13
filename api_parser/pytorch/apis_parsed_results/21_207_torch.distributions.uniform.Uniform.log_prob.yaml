@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.uniform.Uniform.log_prob
+3 api_description: Returns the log probability of each value under a uniform distribution,
+  giving a constant log density for values within the support and -inf for values
+  outside it.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

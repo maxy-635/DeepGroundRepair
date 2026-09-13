@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.LegacyParallelInterleaveDatasetV2
+3 api_description: Creates a non-deterministic interleaved dataset that maps `f` over
+  `input_dataset` and skips any input whose next element would block, helping training
+  continue when some data sources are slow.
+4 api_signature: tf.raw_ops.LegacyParallelInterleaveDatasetV2(input_dataset,other_arguments,cycle_length,block_length,f,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to interleave from.
+- other_arguments: Additional tensors passed to the mapping function `f` for every
+    input element.
+- cycle_length: The number of input elements to process in parallel before cycling
+    back.
+- block_length: The number of consecutive elements to take from each produced dataset
+    before switching.
+- f: A function that maps each input element, together with `other_arguments`, to
+    a dataset variant.
+- output_types: The data types of the elements produced by the resulting dataset.
+- output_shapes: The shapes of the elements produced by the resulting dataset.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.cumsum
+3 api_description: Computes the cumulative sum of tensor elements along a specified
+  axis.
+4 api_signature: tf.keras.ops.cumsum(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are cumulatively summed.
+- axis: The axis to compute the cumulative sum along, or flatten the input if omitted.
+7 api_usage_example: null
+8 api_shape: ''

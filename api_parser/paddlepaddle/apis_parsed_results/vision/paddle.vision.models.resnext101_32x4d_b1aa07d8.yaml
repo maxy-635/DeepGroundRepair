@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.resnext101_32x4d
+3 api_description: ResNeXt-101 32x4d is a deep convolutional neural network for image
+  feature extraction and classification, using aggregated residual blocks with grouped
+  convolutions to improve accuracy and efficiency.
+4 api_signature: paddle.vision.models.resnext101_32x4d(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.UnicodeDecodeWithOffsets
+3 api_description: Decodes each input string into Unicode code points and returns
+  the flattened code points, their byte start offsets, and row_splits marking each
+  string’s span in the outputs.
+4 api_signature: tf.raw_ops.UnicodeDecodeWithOffsets(input,input_encoding,errors,replacement_char,replace_control_characters)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor containing text to decode, flattened to a vector of Unicode
+    code points in the output.
+- input_encoding: The character encoding used to interpret the input strings.
+- errors: 'The policy for handling invalid input formatting: raise an error, replace
+    invalid parts, or ignore them.'
+- replacement_char: The Unicode code point used to substitute for invalid formatting
+    or control characters when replacement is enabled.
+- replace_control_characters: Whether to replace C0 control characters with the replacement
+    character.
+7 api_usage_example: null
+8 api_shape: ''

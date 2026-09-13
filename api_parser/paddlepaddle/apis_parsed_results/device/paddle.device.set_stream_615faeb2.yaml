@@ -1,0 +1,12 @@
+2 api_name: paddle.device.set_stream
+3 api_description: Sets the active device stream used for subsequent paddle operations.
+4 api_signature: paddle.device.set_stream(stream)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.set_device('custom_cpu')
+- s = paddle.device.Stream()
+- paddle.device.set_stream(s)
+8 api_shape: {}

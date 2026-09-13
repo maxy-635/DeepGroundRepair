@@ -1,0 +1,8 @@
+2 api_name: tensorflow.test.is_gpu_available
+3 api_description: Returns whether TensorFlow can access a GPU.
+4 api_signature: tf.test.is_gpu_available(cuda_only:bool)
+5 api_details: ''
+6 api_parameters:
+- cuda_only: Restrict the GPU availability check to CUDA-capable GPUs only.
+7 api_usage_example: null
+8 api_shape: ''

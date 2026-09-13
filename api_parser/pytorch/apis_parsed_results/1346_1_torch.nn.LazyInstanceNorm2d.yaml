@@ -1,0 +1,17 @@
+2 api_name: torch.nn.LazyInstanceNorm2d
+3 api_description: torch.nn.LazyInstanceNorm2d is an Instance Normalization layer
+  for 2D inputs that initializes its num_features parameter lazily, allowing it to
+  determine the number of features from the input data at runtime.
+4 api_signature: torch.nn.LazyInstanceNorm2d(eps,affine,track_running_stats)
+5 api_details: ''
+6 api_parameters:
+- eps: A small constant added to the denominator to enhance numerical stability.
+- affine: Determines whether the layer has learnable parameters that are initialized
+    like those in batch normalization.
+- track_running_stats: Indicates whether to track running mean and variance, or to
+    use batch statistics exclusively.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height, Width)
+  output tensor shape: (N, Channel_out, Height, Width)
+  tensor shape transform formulas: {}

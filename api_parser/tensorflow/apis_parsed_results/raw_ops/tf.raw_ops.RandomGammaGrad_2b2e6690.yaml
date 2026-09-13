@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RandomGammaGrad
+3 api_description: Computes the gradient of a Gamma random sample with respect to
+  the alpha parameter.
+4 api_signature: tf.raw_ops.RandomGammaGrad(alpha,sample)
+5 api_details: ''
+6 api_parameters:
+- alpha: The concentration parameter tensor that defines the gamma distribution and
+    matches the type of `sample`.
+- sample: The gamma-distribution sample tensor used together with `alpha` to compute
+    the gradient.
+7 api_usage_example: null
+8 api_shape: ''

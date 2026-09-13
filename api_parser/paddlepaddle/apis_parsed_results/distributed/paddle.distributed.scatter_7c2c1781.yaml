@@ -1,0 +1,27 @@
+2 api_name: paddle.distributed.scatter
+3 api_description: Distributes a tensor from one source process/GPU to all participating
+  processes, splitting the data evenly across them.
+4 api_signature: paddle.distributed.scatter(tensor,tensor_list,src)
+5 api_details: ''
+6 api_parameters:
+- tensor: Receives the scattered output tensor on each rank.
+- tensor_list: Provides the list or tuple of tensors to be scattered from the source
+    rank.
+- src: Specifies which rank sends the tensors during the scatter operation.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data1 = paddle.to_tensor([7, 8, 9])'
+- '    data2 = paddle.to_tensor([10, 11, 12])'
+- '    dist.scatter(data1, src=1)'
+- 'else:'
+- '    data1 = paddle.to_tensor([1, 2, 3])'
+- '    data2 = paddle.to_tensor([4, 5, 6])'
+- '    dist.scatter(data1, tensor_list=[data1, data2], src=1)'
+- print(data1, data2)
+- '# [1, 2, 3] [10, 11, 12] (2 GPUs, out for rank 0)'
+- '# [4, 5, 6] [4, 5, 6] (2 GPUs, out for rank 1)'
+8 api_shape: {}

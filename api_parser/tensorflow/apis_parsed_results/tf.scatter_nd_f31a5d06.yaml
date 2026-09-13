@@ -1,0 +1,11 @@
+2 api_name: tensorflow.scatter_nd
+3 api_description: Creates a zero-initialized tensor of the given shape and scatters
+  `updates` into it at `indices`, summing duplicate index updates.
+4 api_signature: tf.scatter_nd(indices,updates,shape)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the locations in the output tensor where values will be written.
+- updates: Provides the values that will be scattered into the output tensor.
+- shape: Defines the 1-D shape of the output tensor to create.
+7 api_usage_example: null
+8 api_shape: ''

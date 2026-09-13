@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.lkj_cholesky.LKJCholesky
+3 api_description: Represents the LKJ distribution over Cholesky factors of correlation
+  matrices, allowing sampling and log-probability evaluation for lower-triangular
+  factors parameterized by a concentration value.
+4 api_signature: '"LKJCholesky(dim,concentration)"'
+5 api_details: ''
+6 api_parameters:
+- concentration: Controls how strongly the LKJ prior favors correlation matrices near
+    the identity versus more extreme correlations.
+7 api_usage_example:
+- L ~ LKJCholesky(dim, concentration)
+- X = L @ L' ~ LKJCorr(dim, concentration)
+8 api_shape: null

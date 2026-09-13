@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.proxy_tensor.handle_sym_dispatch
+3 api_description: Dispatches a function through the active proxy tracing mode so
+  symbolic integers, floats, and booleans are traced correctly.
+4 api_signature: torch.fx.experimental.proxy_tensor.handle_sym_dispatch(func,args,kwargs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

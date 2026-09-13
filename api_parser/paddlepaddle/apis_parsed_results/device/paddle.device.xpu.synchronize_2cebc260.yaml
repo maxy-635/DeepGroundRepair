@@ -1,0 +1,14 @@
+2 api_name: paddle.device.xpu.synchronize
+3 api_description: Blocks until all queued XPU operations on the current device finish
+  executing.
+4 api_signature: paddle.device.xpu.synchronize(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('xpu')
+- paddle.device.xpu.synchronize()
+- paddle.device.xpu.synchronize(0)
+- paddle.device.xpu.synchronize(paddle.XPUPlace(0))
+8 api_shape: {}

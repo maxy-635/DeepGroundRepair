@@ -1,0 +1,8 @@
+2 api_name: torch.backends.cuda.cudnn_sdp_enabled
+3 api_description: Returns whether cuDNN is enabled for scaled dot product attention
+  on CUDA.
+4 api_signature: torch.backends.cuda.cudnn_sdp_enabled()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

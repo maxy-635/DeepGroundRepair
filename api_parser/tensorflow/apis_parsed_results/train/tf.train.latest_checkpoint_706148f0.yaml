@@ -1,0 +1,11 @@
+2 api_name: tensorflow.train.latest_checkpoint
+3 api_description: Returns the path to the most recent saved checkpoint in a directory,
+  preferring TensorFlow 2 checkpoints and falling back to TensorFlow 1.x checkpoint
+  paths when needed.
+4 api_signature: tf.train.latest_checkpoint(checkpoint_dir)
+5 api_details: ''
+6 api_parameters:
+- checkpoint_dir: Specifies the directory containing the saved checkpoint files to
+    search for the latest checkpoint.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.OneCycleLR.step
+3 api_description: Advance the OneCycle learning-rate schedule by one step, updating
+  the optimizer’s learning rate according to the configured cycle.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Deprecated; if provided, sets `last_epoch` to the given epoch and uses the
+    closed-form learning-rate computation when available.
+7 api_usage_example: null
+8 api_shape: null

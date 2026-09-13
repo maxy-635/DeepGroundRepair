@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.UnsortedSegmentProd
+3 api_description: Computes the product of `data` values grouped by `segment_ids`,
+  producing one product per segment.
+4 api_signature: tf.raw_ops.UnsortedSegmentProd(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are multiplied within each segment.
+- segment_ids: An integer tensor assigning each entry in `data` to a segment index.
+- num_segments: The total number of output segments to produce.
+7 api_usage_example:
+- c = tf.constant([[1,2,3,4], [5,6,7,8], [4,3,2,1]])
+- tf.math.unsorted_segment_prod(c, tf.constant([0, 1, 0]), num_segments=2).numpy()
+8 api_shape: ''

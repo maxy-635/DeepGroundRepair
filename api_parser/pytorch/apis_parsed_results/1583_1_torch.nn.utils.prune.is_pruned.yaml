@@ -1,0 +1,14 @@
+2 api_name: torch.nn.utils.prune.is_pruned
+3 api_description: Checks whether a PyTorch module has been pruned by detecting pruning
+  pre-hooks.
+4 api_signature: torch.nn.utils.prune.is_pruned(module)
+5 api_details: ''
+6 api_parameters:
+- module: The module to check for pruning reparameterizations.
+7 api_usage_example:
+- ' from torch.nn.utils import prune'
+- ' m = nn.Linear(5, 7)'
+- ' print(prune.is_pruned(m))'
+- ' prune.random_unstructured(m, name="weight", amount=0.2)'
+- ' print(prune.is_pruned(m))'
+8 api_shape: null

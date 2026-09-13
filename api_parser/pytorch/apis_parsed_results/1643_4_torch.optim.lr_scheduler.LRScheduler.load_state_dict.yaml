@@ -1,0 +1,9 @@
+2 api_name: torch.optim.lr_scheduler.LRScheduler.load_state_dict
+3 api_description: Loads a learning rate scheduler's saved state so it can resume
+  from the same scheduling progress and internal settings.
+4 api_signature: load_state_dict(state_dict)
+5 api_details: ''
+6 api_parameters:
+- state_dict: Loads the saved scheduler state produced by `state_dict()`.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.InfeedEnqueuePrelinearizedBuffer
+3 api_description: Enqueues a prelinearized buffer into TPU infeed for consumption
+  by TPU computation.
+4 api_signature: tf.raw_ops.InfeedEnqueuePrelinearizedBuffer(input,device_ordinal)
+5 api_details: ''
+6 api_parameters:
+- input: Supplies the variant tensor that contains the linearized output to enqueue.
+- device_ordinal: Selects which TPU device to use, with -1 for TPU execution and 0
+    when running on CPU.
+7 api_usage_example: null
+8 api_shape: ''

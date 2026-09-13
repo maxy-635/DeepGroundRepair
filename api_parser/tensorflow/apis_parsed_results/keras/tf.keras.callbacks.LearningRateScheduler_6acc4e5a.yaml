@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.callbacks.LearningRateScheduler
+3 api_description: Updates the optimizer’s learning rate at the start of each epoch
+  using a user-provided schedule function.
+4 api_signature: tf.keras.callbacks.LearningRateScheduler(schedule)
+5 api_details: ''
+6 api_parameters:
+- schedule: A function that computes and returns the learning rate for each epoch
+    based on the epoch index and current learning rate.
+7 api_usage_example:
+- callback = keras.callbacks.LearningRateScheduler(scheduler)
+- history = model.fit(np.arange(100).reshape(5, 20), np.zeros(5),
+- '                    epochs=15, callbacks=[callback], verbose=0)'
+- round(model.optimizer.learning_rate, 5)
+8 api_shape: ''

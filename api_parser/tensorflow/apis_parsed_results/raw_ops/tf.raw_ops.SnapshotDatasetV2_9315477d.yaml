@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.SnapshotDatasetV2
+3 api_description: Creates a dataset that reads from an existing snapshot if available,
+  otherwise processes the input dataset and writes a new snapshot for future reuse.
+4 api_signature: tf.raw_ops.SnapshotDatasetV2(input_dataset,path,output_types,output_shapes,reader_func,shard_func,compression,metadata,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Provides the input dataset to be snapshotted.
+- path: Specifies where snapshot data is written and later read from.
+- output_types: Defines the element data types produced by the dataset.
+- output_shapes: Defines the shapes of the dataset elements.
+- reader_func: Optionally customizes how snapshot shards are read back.
+- shard_func: Optionally customizes how elements are partitioned into shards when
+    writing.
+- compression: Specifies the compression codec used for snapshot files.
+- metadata: Stores optional metadata associated with the snapshot.
+- name: Sets an optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

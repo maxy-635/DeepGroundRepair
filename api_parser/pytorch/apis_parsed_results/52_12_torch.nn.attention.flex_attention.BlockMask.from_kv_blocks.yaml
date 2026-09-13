@@ -1,0 +1,18 @@
+2 api_name: torch.nn.attention.flex_attention.BlockMask.from_kv_blocks
+3 api_description: Creates a BlockMask from key-value block layout data, defining
+  which key/value blocks are allowed for attention.
+4 api_signature: from_kv_blocks(kv_num_blocks,kv_indices,full_kv_num_blocks,full_kv_indices,BLOCK_SIZE,mask_mod)
+5 api_details: ''
+6 api_parameters:
+- kv_num_blocks: Specifies how many key-value blocks are present in each Q_BLOCK_SIZE
+    row tile.
+- kv_indices: Provides the indices of the key-value blocks for each Q_BLOCK_SIZE row
+    tile.
+- full_kv_num_blocks: Specifies how many fully covered key-value blocks are present
+    in each Q_BLOCK_SIZE row tile.
+- full_kv_indices: Provides the indices of the fully covered key-value blocks for
+    each Q_BLOCK_SIZE row tile.
+- BLOCK_SIZE: Sets the tile size used for key-value and query blocks.
+- mask_mod: Defines a function used to modify the attention mask.
+7 api_usage_example: null
+8 api_shape: null

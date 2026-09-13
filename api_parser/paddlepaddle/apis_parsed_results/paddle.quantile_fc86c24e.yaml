@@ -1,0 +1,44 @@
+2 api_name: paddle.quantile
+3 api_description: Computes the quantile of input values along a specified axis, returning
+  NaN for any reduction that contains NaN values.
+4 api_signature: paddle.quantile(x,q,axis,keepdim,interpolation)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the quantile.
+- q: Quantile value or values in [0, 1] that determine which percentile(s) to calculate.
+- axis: Dimension or dimensions along which to compute the quantile, or all elements
+    if None.
+- keepdim: Keeps reduced dimensions in the output when True; otherwise removes them.
+- interpolation: Chooses how to estimate the quantile when it falls between two data
+    points.
+7 api_usage_example:
+- import paddle
+- y = paddle.arange(0, 8 ,dtype="float32").reshape([4, 2])
+- print(y)
+- Tensor(shape=[4, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 1.],'
+- '[2., 3.],'
+- '[4., 5.],'
+- '[6., 7.]])'
+- y1 = paddle.quantile(y, q=0.5, axis=[0, 1])
+- print(y1)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 3.50000000)
+- y2 = paddle.quantile(y, q=0.5, axis=1)
+- print(y2)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.50000000, 2.50000000, 4.50000000, 6.50000000])'
+- y3 = paddle.quantile(y, q=[0.3, 0.5], axis=0)
+- print(y3)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1.80000000, 2.80000000],'
+- '[3.        , 4.        ]])'
+- y[0,0] = float("nan")
+- y4 = paddle.quantile(y, q=0.8, axis=1, keepdim=True)
+- print(y4)
+- Tensor(shape=[4, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[nan       ],'
+- '[2.80000000],'
+- '[4.80000000],'
+- '[6.80000000]])'
+8 api_shape: {}

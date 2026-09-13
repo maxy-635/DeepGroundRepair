@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.functional.relu6
+3 api_description: Applies the ReLU6 activation function, which limits the output
+  to the range [0, 6].
+4 api_signature: paddle.nn.functional.relu6(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to which the ReLU6 activation function is applied, with supported
+    data types being float32 and float64.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([-1, 0.3, 6.5])
+- out = F.relu6(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 0.30000001, 6.        ])'
+8 api_shape: null

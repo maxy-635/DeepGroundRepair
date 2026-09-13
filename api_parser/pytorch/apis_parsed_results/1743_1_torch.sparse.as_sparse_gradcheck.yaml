@@ -1,0 +1,15 @@
+2 api_name: torch.sparse.as_sparse_gradcheck
+3 api_description: Decorator that extends `gradcheck` to support sparse tensors by
+  enabling gradient checks on sparse inputs and outputs.
+4 api_signature: torch.sparse.as_sparse_gradcheck(gradcheck)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' gradcheck = torch.sparse.as_sparse_gradcheck(torch.autograd.gradcheck)'
+- ' x = ('
+- '...     torch.tensor([[0, 1], [2, 3]], dtype=torch.float64)'
+- '...     .to_sparse_coo()'
+- '...     .requires_grad_(True)'
+- '... )'
+- ' gradcheck(lambda x: x.to_sparse_csr(), x)'
+8 api_shape: null

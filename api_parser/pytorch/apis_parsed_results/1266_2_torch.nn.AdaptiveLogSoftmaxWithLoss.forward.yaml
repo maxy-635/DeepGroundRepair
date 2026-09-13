@@ -1,0 +1,9 @@
+2 api_name: torch.nn.AdaptiveLogSoftmaxWithLoss.forward
+3 api_description: Computes the adaptive log softmax output and loss for input hidden
+  states against target classes, using a hierarchical class partition for efficient
+  training on large vocabularies.
+4 api_signature: forward(input_,target_)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

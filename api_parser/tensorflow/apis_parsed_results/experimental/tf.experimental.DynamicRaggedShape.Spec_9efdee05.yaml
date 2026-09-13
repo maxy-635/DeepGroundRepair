@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.DynamicRaggedShape.Spec
+3 api_description: Represents the expected structure of a DynamicRaggedShape as a
+  static-like spec, capturing shape compatibility and enabling validation, comparison,
+  and serialization of ragged shape metadata.
+4 api_signature: tf.experimental.DynamicRaggedShape.Spec(row_partitions,static_inner_shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- row_partitions: Describes how the ragged shape is split into row partitions.
+- static_inner_shape: Specifies the fixed shape of the underlying flat values.
+- dtype: Sets the integer type used to encode the shape, either `tf.int64` or `tf.int32`.
+7 api_usage_example: null
+8 api_shape: ''

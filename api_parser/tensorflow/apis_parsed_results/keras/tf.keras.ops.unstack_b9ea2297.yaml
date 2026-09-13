@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.unstack
+3 api_description: Splits a tensor along the specified axis into a list of lower-rank
+  tensors.
+4 api_signature: tf.keras.ops.unstack(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to split into separate tensors.
+- axis: The dimension along which to unstack the tensor.
+7 api_usage_example:
+- x = keras.ops.array([[1, 2], [3, 4]])
+- keras.ops.unstack(x, axis=0)
+8 api_shape: ''

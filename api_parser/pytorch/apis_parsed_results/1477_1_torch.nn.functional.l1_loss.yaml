@@ -1,0 +1,12 @@
+2 api_name: torch.nn.functional.l1_loss
+3 api_description: torch.nn.functional.l1_loss computes the mean absolute error between
+  input and target tensors, optionally applying element-wise weights.
+4 api_signature: torch.nn.functional.l1_loss(input,target,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the predicted values from the model.
+- target: Represents the actual ground truth values for comparison.
+- reduction: 'Determines how the loss output is aggregated: ''none'' for no reduction,
+    ''mean'' to average the loss, or ''sum'' to total the loss.'
+7 api_usage_example: null
+8 api_shape: null

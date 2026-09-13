@@ -1,0 +1,10 @@
+2 api_name: torch.package.PackageImporter.load_binary
+3 api_description: Loads a binary resource from a packaged archive and returns its
+  raw bytes.
+4 api_signature: load_binary(package)
+5 api_details: ''
+6 api_parameters:
+- package: Specifies the package name whose binary resource or module data should
+    be loaded.
+7 api_usage_example: null
+8 api_shape: null

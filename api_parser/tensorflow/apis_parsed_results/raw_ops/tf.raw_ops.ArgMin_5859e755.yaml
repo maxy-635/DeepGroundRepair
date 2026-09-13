@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ArgMin
+3 api_description: Returns the index of the smallest value along the specified dimension
+  of a tensor, with tie identity not guaranteed.
+4 api_signature: tf.raw_ops.ArgMin(input,dimension,output_type)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to search for the minimum values along the specified dimension.
+- dimension: The axis to reduce across when computing the index of the minimum value.
+- output_type: The integer dtype to use for the returned indices.
+7 api_usage_example: null
+8 api_shape: ''

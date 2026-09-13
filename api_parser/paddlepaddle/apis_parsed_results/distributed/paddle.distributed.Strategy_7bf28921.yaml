@@ -1,0 +1,20 @@
+2 api_name: paddle.distributed.Strategy
+3 api_description: Configures distributed training strategies for static graphs, including
+  sharding, fused passes, gradient merge, and pipeline parallelism.
+4 api_signature: paddle.distributed.Strategy(config)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- strategy = dist.Strategy()
+- strategy.sharding.enable = True
+- strategy.sharding.stage = 2
+- strategy.sharding.degree = 2
+- strategy.gradient_merge.enable = True
+- strategy.gradient_merge.k_steps = 2
+- strategy.gradient_merge.avg = False
+- strategy.pipeline.enable = True
+- 'strategy.pipeline.schedule_mode = "1F1B" # default is "1F1B"'
+- strategy.pipeline.micro_batch_size = 2
+8 api_shape: {}

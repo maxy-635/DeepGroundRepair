@@ -1,0 +1,11 @@
+2 api_name: tensorflow.ragged_fill_empty_rows_grad
+3 api_description: Computes gradients for `ragged_fill_empty_rows`, propagating values
+  back to the original ragged tensor while handling empty rows.
+4 api_signature: tf.ragged_fill_empty_rows_grad(reverse_index_map,grad_values)
+5 api_details: ''
+6 api_parameters:
+- reverse_index_map: Maps each filled ragged output value back to its original position
+    for gradient propagation.
+- grad_values: Carries the gradient values associated with the filled output elements.
+7 api_usage_example: null
+8 api_shape: ''

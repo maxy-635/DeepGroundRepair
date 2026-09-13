@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.backend.clear_session
+3 api_description: Clears Keras’ global state to free memory and reset model/layer
+  naming between model builds.
+4 api_signature: tf.keras.backend.clear_session()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- layers = [keras.layers.Dense(10) for _ in range(10)]
+- new_layer = keras.layers.Dense(10)
+- print(new_layer.name)
+- keras.backend.clear_session()
+- new_layer = keras.layers.Dense(10)
+- print(new_layer.name)
+8 api_shape: ''

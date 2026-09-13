@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.InfeedEnqueueTuple
+3 api_description: Enqueues multiple Tensor values together as a single XLA tuple
+  into the infeed for use by the computation.
+4 api_signature: tf.raw_ops.InfeedEnqueueTuple(inputs,shapes)
+5 api_details: ''
+6 api_parameters:
+- inputs: Supplies the tensors that will be sent through the infeed mechanism.
+- shapes: Specifies the expected shape of each tensor in `inputs`.
+7 api_usage_example: null
+8 api_shape: ''

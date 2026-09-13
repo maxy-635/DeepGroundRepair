@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.MapPeek
+3 api_description: Returns the value for a specified key from a map-like container,
+  blocking until the key exists.
+4 api_signature: tf.raw_ops.MapPeek(key,indices,dtypes,capacity,memory_limit)
+5 api_details: ''
+6 api_parameters:
+- key: Identifies the map entry to peek at as a 64-bit integer key.
+- indices: Specifies the positions or slots to inspect as 32-bit integer indices.
+- dtypes: Defines the expected data types of the returned values.
+- capacity: Sets the maximum map capacity, defaulting to 0 when unspecified.
+- memory_limit: Sets an optional memory usage limit for the map, defaulting to 0 when
+    unspecified.
+7 api_usage_example: null
+8 api_shape: ''

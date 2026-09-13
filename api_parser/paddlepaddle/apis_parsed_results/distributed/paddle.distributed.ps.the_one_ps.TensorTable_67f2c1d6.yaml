@@ -1,0 +1,8 @@
+2 api_name: paddle.distributed.ps.the_one_ps.TensorTable
+3 api_description: Represents a tensor table in the one-PS distributed parameter server,
+  providing table-level storage and management for tensors used in distributed training.
+4 api_signature: paddle.distributed.ps.the_one_ps.TensorTable(tensor_dict,role_maker)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

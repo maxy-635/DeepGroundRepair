@@ -1,0 +1,11 @@
+2 api_name: torch.nn.functional.sigmoid
+3 api_description: The torch.nn.functional.sigmoid function applies the element-wise
+  sigmoid activation, transforming input values to a range between 0 and 1 using the
+  formula Sigmoid(x) = 1 / (1 + exp(-x)).
+4 api_signature: torch.nn.functional.sigmoid(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input parameter is a tensor to which the sigmoid function is applied
+    element-wise.
+7 api_usage_example: null
+8 api_shape: null

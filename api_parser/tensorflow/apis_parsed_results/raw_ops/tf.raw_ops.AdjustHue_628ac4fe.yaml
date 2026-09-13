@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.AdjustHue
+3 api_description: Adjusts the hue of RGB images by converting them to HSV, shifting
+  the hue by a given delta, and converting them back to RGB.
+4 api_signature: tf.raw_ops.AdjustHue(images,delta)
+5 api_details: ''
+6 api_parameters:
+- images: Input image tensor whose hue will be adjusted; it must be at least 3-D and
+    use `half` or `float32` values.
+- delta: Float32 offset added to the hue of each image.
+7 api_usage_example: null
+8 api_shape: ''

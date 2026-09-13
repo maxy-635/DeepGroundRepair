@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.clip
+3 api_description: Clips tensor values to a specified minimum and maximum, replacing
+  values outside the interval with the nearest boundary.
+4 api_signature: tf.keras.ops.clip(x,x_min,x_max)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be clipped.
+- x_min: The lower bound used to clamp values from below.
+- x_max: The upper bound used to clamp values from above.
+7 api_usage_example: null
+8 api_shape: ''

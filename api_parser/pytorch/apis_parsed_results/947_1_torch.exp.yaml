@@ -1,0 +1,10 @@
+2 api_name: torch.exp
+3 api_description: Returns a new tensor containing the element-wise exponential of
+  the input tensor.
+4 api_signature: torch.exp(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used to compute the elementwise exponential.
+7 api_usage_example:
+- ' torch.exp(torch.tensor([0, math.log(2.)]))'
+8 api_shape: null

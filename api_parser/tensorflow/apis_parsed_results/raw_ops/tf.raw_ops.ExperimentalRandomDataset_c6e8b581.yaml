@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ExperimentalRandomDataset
+3 api_description: Creates a dataset that yields pseudorandom numbers for repeated
+  use in input pipelines.
+4 api_signature: tf.raw_ops.ExperimentalRandomDataset(seed,seed2,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- seed: Sets the primary random seed for the dataset; if non-zero, it controls reproducible
+    random generation.
+- seed2: Provides a secondary seed to reduce seed collisions and further distinguish
+    random streams.
+- output_types: Specifies the data types of the dataset elements that will be produced.
+- output_shapes: Specifies the shapes of the dataset elements that will be produced.
+7 api_usage_example: null
+8 api_shape: ''

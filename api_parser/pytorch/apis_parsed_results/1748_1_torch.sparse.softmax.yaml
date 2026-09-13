@@ -1,0 +1,10 @@
+2 api_name: torch.sparse.softmax
+3 api_description: Applies softmax to the values of a sparse tensor along a specified
+  dimension, producing normalized probabilities over the nonzero entries.
+4 api_signature: torch.sparse.softmax(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The sparse tensor whose values are normalized with softmax.
+- dim: The dimension along which to compute the softmax probabilities.
+7 api_usage_example: null
+8 api_shape: null

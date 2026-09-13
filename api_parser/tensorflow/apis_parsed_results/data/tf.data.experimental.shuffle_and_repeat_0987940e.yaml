@@ -1,0 +1,15 @@
+2 api_name: tensorflow.data.experimental.shuffle_and_repeat
+3 api_description: Shuffles the dataset and then repeats it, reshuffling before each
+  new repetition.
+4 api_signature: tf.data.experimental.shuffle_and_repeat(buffer_size,count)
+5 api_details: ''
+6 api_parameters:
+- buffer_size: Sets the maximum number of elements to buffer while prefetching and
+    shuffling.
+- count: Sets how many times the dataset is repeated, or repeats indefinitely if `None`
+    or `-1`.
+7 api_usage_example:
+- d = tf.data.Dataset.from_tensor_slices([1, 2, 3])
+- d = d.apply(tf.data.experimental.shuffle_and_repeat(2, count=2))
+- '[elem.numpy() for elem in d] # doctest: +SKIP'
+8 api_shape: ''

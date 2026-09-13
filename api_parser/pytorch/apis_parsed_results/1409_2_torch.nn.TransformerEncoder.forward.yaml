@@ -1,0 +1,11 @@
+2 api_name: torch.nn.TransformerEncoder.forward
+3 api_description: Passes the input through each Transformer encoder layer in sequence
+  to produce the encoded output.
+4 api_signature: forward(src,mask)
+5 api_details: ''
+6 api_parameters:
+- src: Input sequence passed to the encoder for processing.
+- mask: Optional mask that controls which source positions the encoder can attend
+    to.
+7 api_usage_example: null
+8 api_shape: null

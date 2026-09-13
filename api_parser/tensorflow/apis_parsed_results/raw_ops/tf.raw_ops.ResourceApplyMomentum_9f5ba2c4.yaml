@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyMomentum
+3 api_description: Applies a momentum update to a variable using the accumulator and
+  learning rate, optionally using Nesterov momentum.
+4 api_signature: tf.raw_ops.ResourceApplyMomentum(var,accum,lr,grad,momentum)
+5 api_details: ''
+6 api_parameters:
+- var: Resource variable holding the weights to be updated.
+- accum: Resource variable holding the accumulated momentum state.
+- lr: Scalar learning-rate scaling factor used to size the update.
+- grad: Gradient tensor used to compute the update step.
+- momentum: Scalar momentum coefficient controlling how much past updates are retained.
+7 api_usage_example: null
+8 api_shape: ''

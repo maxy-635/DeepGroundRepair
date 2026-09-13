@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.PreventGradient
+3 api_description: Returns the input unchanged, but raises an error if a gradient
+  is requested to prevent accidental use in backpropagation.
+4 api_signature: tf.raw_ops.PreventGradient(input,message)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose gradients should be blocked.
+- message: An optional error message to show if differentiation is attempted.
+7 api_usage_example: null
+8 api_shape: ''

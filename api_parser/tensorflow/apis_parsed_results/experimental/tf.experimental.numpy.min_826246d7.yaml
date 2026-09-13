@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.min
+3 api_description: Computes the minimum value of an input array, matching NumPy's
+  min behavior, but without supporting `out`, `initial`, or `where`.
+4 api_signature: tf.experimental.numpy.min(a,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

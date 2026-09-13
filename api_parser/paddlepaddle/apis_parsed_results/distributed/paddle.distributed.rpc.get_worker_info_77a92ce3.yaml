@@ -1,0 +1,17 @@
+2 api_name: paddle.distributed.rpc.get_worker_info
+3 api_description: Returns information about a worker identified by name for use within
+  Paddle distributed RPC.
+4 api_signature: paddle.distributed.rpc.get_worker_info(name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle.distributed.rpc as rpc
+- import os
+- os.environ["PADDLE_WORKER_ENDPOINT"] = "127.0.0.1:9002"
+- rpc.init_rpc("worker0", rank=0, world_size=1,
+- '            master_endpoint="127.0.0.1:8005")'
+- print(rpc.get_worker_info("worker0"))
+- '{name: worker0, rank: 0, ip: 127.0.0.1, port: 9002}'
+- rpc.shutdown()
+8 api_shape: {}

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.metrics.KLDivergence
+3 api_description: Computes the Kullback-Leibler divergence between true and predicted
+  probability distributions, clipping inputs to the [0, 1] range.
+4 api_signature: tf.keras.metrics.KLDivergence(name,dtype)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the metric instance’s display name.
+- dtype: Controls the data type used for the metric’s result.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([[0, 1], [0, 0]], [[0.6, 0.4], [0.4, 0.6]],
+- '               sample_weight=[1, 0])'
+- m.result()
+8 api_shape: ''

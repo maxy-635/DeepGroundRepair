@@ -1,0 +1,11 @@
+2 api_name: tensorflow.nn.ctc_unique_labels
+3 api_description: The tensorflow.nn.ctc_unique_labels API extracts unique labels
+  and their indices from batched labels to optimize memory and speed when computing
+  CTC loss, particularly on TPUs.
+4 api_signature: tf.nn.ctc_unique_labels(labels)
+5 api_details: ''
+6 api_parameters:
+- labels: A tensor containing sequences of labels for each batch, where each sequence
+    is padded to a fixed maximum length with zeros.
+7 api_usage_example: null
+8 api_shape: ''

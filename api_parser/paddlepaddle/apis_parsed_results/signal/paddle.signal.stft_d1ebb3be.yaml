@@ -1,0 +1,19 @@
+2 api_name: paddle.signal.stft
+3 api_description: Computes the short-time Fourier transform of a signal by splitting
+  it into overlapping frames and returning their frequency-domain representation.
+4 api_signature: paddle.signal.stft(x,n_fft,hop_length,window,center,normalized,onesided,name)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the 1D signal data to transform, either real or complex.
+- n_fft: Sets the FFT size, i.e. how many samples are used for each Fourier transform.
+- hop_length: Sets the step size between consecutive windows of the STFT.
+- window: Provides the window function tensor applied to each frame, padded to `n_fft`
+    if needed.
+- center: Controls whether the input is padded so each frame is centered on its time
+    step.
+- normalized: Controls whether the STFT output is scaled by `1/sqrt(n_fft)`.
+- onesided: Controls whether to return only the non-redundant half of the spectrum
+    for real input.
+- name: Specifies an optional name for the operation, usually left unset.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ImageProjectiveTransformV2
+3 api_description: Applies a projective transform to each image by mapping output
+  coordinates back to input coordinates and sampling the corresponding pixels, setting
+  out-of-bounds results to 0.
+4 api_signature: tf.raw_ops.ImageProjectiveTransformV2(images,transforms,output_shape,interpolation)
+5 api_details: ''
+6 api_parameters:
+- images: Input batch of 4D images to be geometrically transformed.
+- transforms: Projective transform matrices that specify how each image is warped.
+- output_shape: Desired height and width of the transformed output images.
+- interpolation: Interpolation mode used to sample pixels in the transformed images.
+7 api_usage_example: null
+8 api_shape: ''

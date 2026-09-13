@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.AddManySparseToTensorsMap
+3 api_description: Stores a batched SparseTensor in a SparseTensorsMap and returns
+  N handles, one per minibatch row, for later retrieval as rank R-1 SparseTensors.
+4 api_signature: tf.raw_ops.AddManySparseToTensorsMap(sparse_indices,sparse_values,sparse_shape)
+5 api_details: ''
+6 api_parameters:
+- sparse_indices: Specifies the 2-D int64 indices of the minibatch SparseTensor, with
+    the first column ordered and in the range [0, N).
+- sparse_values: Provides the 1-D tensor of values corresponding to the minibatch
+    SparseTensor.
+- sparse_shape: Defines the 1-D int64 shape of the minibatch SparseTensor, where the
+    first dimension is the minibatch size N.
+7 api_usage_example: null
+8 api_shape: ''

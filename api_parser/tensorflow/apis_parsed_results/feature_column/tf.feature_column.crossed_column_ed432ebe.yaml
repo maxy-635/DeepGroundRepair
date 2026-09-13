@@ -1,0 +1,11 @@
+2 api_name: tensorflow.feature_column.crossed_column
+3 api_description: Creates a deprecated feature column that hashes combinations of
+  categorical features into a fixed-size bucket space for feature crosses.
+4 api_signature: tf.feature_column.crossed_column(keys,hash_bucket_size)
+5 api_details: ''
+6 api_parameters:
+- keys: Specifies the feature names or columns to combine into a crossed feature.
+- hash_bucket_size: Sets the number of hash buckets used to map the crossed feature
+    combinations.
+7 api_usage_example: null
+8 api_shape: ''

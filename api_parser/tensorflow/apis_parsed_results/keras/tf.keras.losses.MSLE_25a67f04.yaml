@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.losses.MSLE
+3 api_description: Computes the mean squared logarithmic error between true and predicted
+  values, replacing non-positive inputs with a small epsilon before calculating the
+  loss.
+4 api_signature: tf.keras.losses.MSLE(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: Provides the ground-truth target values used as the reference for computing
+    the loss.
+- y_pred: Provides the model's predicted values that are compared against the ground
+    truth to compute the loss.
+7 api_usage_example:
+- y_true = np.random.randint(0, 2, size=(2, 3))
+- y_pred = np.random.random(size=(2, 3))
+- loss = keras.losses.mean_squared_logarithmic_error(y_true, y_pred)
+8 api_shape: ''

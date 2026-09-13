@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.uniform.Uniform.icdf
+3 api_description: Computes the inverse cumulative distribution function for a Uniform
+  distribution, mapping probabilities in [0, 1] to corresponding sample values within
+  the distribution’s support.
+4 api_signature: icdf(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

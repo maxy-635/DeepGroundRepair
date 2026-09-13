@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.arcsinh
+3 api_description: Computes the inverse hyperbolic sine element-wise for an input
+  tensor and returns a tensor with the same shape.
+4 api_signature: '"tf.keras.ops.arcsinh(x)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([1, -1, 0])
+- keras.ops.arcsinh(x)
+8 api_shape: ''

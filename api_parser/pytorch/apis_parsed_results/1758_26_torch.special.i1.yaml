@@ -1,0 +1,11 @@
+2 api_name: torch.special.i1
+3 api_description: Computes the first-order modified Bessel function of the first
+  kind for each element in the input tensor.
+4 api_signature: torch.special.i1(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose modified Bessel function of the first kind, order
+    1, is computed elementwise.
+7 api_usage_example:
+- ' torch.special.i1(torch.arange(5, dtype=torch.float32))'
+8 api_shape: null

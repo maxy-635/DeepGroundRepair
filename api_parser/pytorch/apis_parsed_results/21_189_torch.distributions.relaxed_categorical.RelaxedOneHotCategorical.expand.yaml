@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.relaxed_categorical.RelaxedOneHotCategorical.expand
+3 api_description: Returns a new RelaxedOneHotCategorical distribution with the batch
+  shape expanded to the requested size, sharing the same parameters and sample semantics.
+4 api_signature: expand(batch_shape)
+5 api_details: ''
+6 api_parameters:
+- batch_shape: Defines the new batch shape to which the distribution is expanded.
+7 api_usage_example: null
+8 api_shape: null

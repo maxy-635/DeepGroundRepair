@@ -1,0 +1,42 @@
+2 api_name: paddle.static.nn.deform_conv2d
+3 api_description: Applies 2D deformable convolution to a 4D input, using learned
+  offsets to adapt sampling locations and produce the output feature map.
+4 api_signature: paddle.static.nn.deform_conv2d(x,offset,mask,num_filters,filter_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input feature map to be convolved, in NCHW format.
+- offset: The learned spatial offsets that shift sampling locations for deformable
+    convolution.
+- mask: The modulation mask that scales sampled values in deformable convolution v2;
+    use `None` for v1.
+- num_filters: The number of output channels produced by the convolution.
+- filter_size: The kernel size, either a single square size or a pair of height and
+    width values.
+- stride: The step size of the convolution window, either a single value or separate
+    height and width values.
+- padding: The amount of zero-padding applied around the input, either a single value
+    or separate height and width values.
+7 api_usage_example:
+- '# deformable conv v2:'
+- import paddle
+- paddle.enable_static()
+- C_in, H_in, W_in = 3, 32, 32
+- filter_size, deformable_groups = 3, 1
+- data = paddle.static.data(name='data', shape=[None, C_in, H_in, W_in], dtype='float32')
+- offset = paddle.static.data(name='offset', shape=[None, 2*deformable_groups*filter_size**2,
+  H_in, W_in], dtype='float32')
+- mask = paddle.static.data(name='mask', shape=[None, deformable_groups*filter_size**2,
+  H_in, W_in], dtype='float32')
+- out = paddle.static.nn.deform_conv2d(x=data, offset=offset, mask=mask,
+- '                                     num_filters=2, filter_size=filter_size, padding=1)'
+- '# deformable conv v1:'
+- import paddle
+- paddle.enable_static()
+- C_in, H_in, W_in = 3, 32, 32
+- filter_size, deformable_groups = 3, 1
+- data = paddle.static.data(name='data', shape=[None, C_in, H_in, W_in], dtype='float32')
+- offset = paddle.static.data(name='offset', shape=[None, 2*deformable_groups*filter_size**2,
+  H_in, W_in], dtype='float32')
+- out = paddle.static.nn.deform_conv2d(x=data, offset=offset, mask=None,
+- '                                     num_filters=2, filter_size=filter_size, padding=1)'
+8 api_shape: {}

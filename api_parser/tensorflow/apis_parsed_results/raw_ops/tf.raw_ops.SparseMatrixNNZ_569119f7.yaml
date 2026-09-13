@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixNNZ
+3 api_description: Returns the count of nonzero elements in a sparse matrix.
+4 api_signature: tf.raw_ops.SparseMatrixNNZ(sparse_matrix)
+5 api_details: ''
+6 api_parameters:
+- sparse_matrix: The CSRSparseMatrix variant input whose number of stored non-zero
+    entries is to be counted.
+7 api_usage_example: null
+8 api_shape: ''

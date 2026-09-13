@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.SegmentMin
+3 api_description: Computes the minimum value for each segment of a tensor based on
+  segment IDs, returning 0 for any segment with no elements.
+4 api_signature: tf.raw_ops.SegmentMin(data,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose first dimension is partitioned into segments for computing
+    the minimum value in each segment.
+- segment_ids: A sorted 1-D tensor assigning each row of `data` to a segment, with
+    repeated values allowed.
+7 api_usage_example:
+- c = tf.constant([[1,2,3,4], [4, 3, 2, 1], [5,6,7,8]])
+- tf.math.segment_min(c, tf.constant([0, 0, 1])).numpy()
+8 api_shape: ''

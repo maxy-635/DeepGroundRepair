@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.RaggedRange
+3 api_description: Creates a RaggedTensor of number sequences where each row is range(starts[i],
+  limits[i], deltas[i]).
+4 api_signature: tf.raw_ops.RaggedRange(starts,limits,deltas)
+5 api_details: ''
+6 api_parameters:
+- starts: Specifies the starting value for each individual range.
+- limits: Specifies the exclusive upper limit for each range.
+- deltas: Specifies the step size used to increment through each range.
+7 api_usage_example: null
+8 api_shape: ''

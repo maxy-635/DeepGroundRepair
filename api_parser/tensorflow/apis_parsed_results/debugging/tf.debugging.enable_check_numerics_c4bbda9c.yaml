@@ -1,0 +1,9 @@
+2 api_name: tensorflow.debugging.enable_check_numerics
+3 api_description: Enables TensorFlow numerics checking so eager or graph execution
+  raises `InvalidArgumentError` as soon as an op produces NaN or infinity on the current
+  thread.
+4 api_signature: tf.debugging.enable_check_numerics()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.sqrtm
+3 api_description: Computes the matrix square root of each square matrix in a tensor,
+  returning a same-shaped tensor whose inner matrices satisfy sqrtm(A) @ sqrtm(A)
+  = A.
+4 api_signature: tf.linalg.sqrtm(input)
+5 api_details: ''
+6 api_parameters:
+- input: The square matrix or batch of square matrices to compute the matrix square
+    root for.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.StatefulPartitionedCall
+3 api_description: Executes a stateful function on the given inputs and returns its
+  outputs, with the function body placed and partitioned across devices.
+4 api_signature: tf.raw_ops.StatefulPartitionedCall(args,Tout,f)
+5 api_details: ''
+6 api_parameters:
+- args: The input tensors passed into the function.
+- Tout: The data types of the tensors returned by the function.
+- f: The decorated function to execute across devices, consuming the inputs and producing
+    the outputs.
+7 api_usage_example: null
+8 api_shape: ''

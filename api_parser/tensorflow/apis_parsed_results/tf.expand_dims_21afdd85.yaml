@@ -1,0 +1,10 @@
+2 api_name: tensorflow.expand_dims
+3 api_description: Insert a length-1 dimension at the specified axis of a tensor.
+4 api_signature: tf.expand_dims(input,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose shape will be expanded.
+- axis: The index of the new dimension to insert, allowed from -(D+1) to D.
+7 api_usage_example:
+- tf.expand_dims(image, -1).shape.as_list()
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: torch.isin
+3 api_description: Returns a boolean tensor indicating which elements are present
+  in a given set of test elements.
+4 api_signature: torch.isin(elements,test_elements)
+5 api_details: ''
+6 api_parameters:
+- elements: The input tensor whose values are checked for membership.
+- test_elements: The values used to test whether each input element is present.
+7 api_usage_example:
+- ' torch.isin(torch.tensor([[1, 2], [3, 4]]), torch.tensor([2, 3]))'
+8 api_shape: null

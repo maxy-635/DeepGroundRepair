@@ -1,0 +1,19 @@
+2 api_name: paddle.static.scope_guard
+3 api_description: Context manager that switches to a new variable scope so variables
+  created inside a `with` block are recorded separately and same-named variables do
+  not overwrite each other.
+4 api_signature: paddle.static.scope_guard(scope)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import numpy
+- paddle.enable_static()
+- new_scope = paddle.static.Scope()
+- 'with paddle.static.scope_guard(new_scope):'
+- '        paddle.static.global_scope().var("data").get_tensor().set(numpy.ones((2,
+  2)), paddle.CPUPlace())'
+- numpy.array(new_scope.find_var("data").get_tensor())
+- array([[1., 1.],
+- '[1., 1.]])'
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.SpectralNorm
+3 api_description: The paddle.nn.SpectralNorm API constructs a callable object that
+  applies spectral normalization to weight parameters of layers such as fc, conv1d,
+  conv2d, and conv3d, ensuring the weights are normalized across 2-D to 5-D parameters.
+4 api_signature: paddle.nn.SpectralNorm(weight_shape,dim)
+5 api_details: ''
+6 api_parameters:
+- weight_shape: Defines the shape of the weight parameter for the layer.
+- dim: Specifies the dimension index to permute to the first position before reshaping
+    the weight to a matrix, depending on the type of layer (fc or conv).
+7 api_usage_example: []
+8 api_shape: null

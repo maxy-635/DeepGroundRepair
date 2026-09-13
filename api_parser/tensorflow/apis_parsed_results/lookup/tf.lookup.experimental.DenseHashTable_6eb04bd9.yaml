@@ -1,0 +1,27 @@
+2 api_name: tensorflow.lookup.experimental.DenseHashTable
+3 api_description: A mutable hash table for fast insert, remove, and lookup operations
+  using open addressing with quadratic reprobing; it requires reserved empty and deleted
+  keys, uses more memory than MutableHashTable, and does not support init-based initialization.
+4 api_signature: tf.lookup.experimental.DenseHashTable(key_dtype,value_dtype,default_value,empty_key,deleted_key)
+5 api_details: ''
+6 api_parameters:
+- key_dtype: Specifies the data type used for table keys.
+- value_dtype: Specifies the data type used for table values.
+- default_value: Provides the value returned when a key is not found in the table.
+- empty_key: Defines the special key used internally to mark empty buckets and must
+    not be used in table operations.
+- deleted_key: Defines the special key used internally to mark deleted buckets and
+    must be distinct from `empty_key` and must not be used in table operations.
+7 api_usage_example:
+- table = tf.lookup.experimental.DenseHashTable(
+- '    key_dtype=tf.string,'
+- '    value_dtype=tf.int64,'
+- '    default_value=-1,'
+- '    empty_key='''','
+- '    deleted_key=''$'')'
+- keys = tf.constant(['a', 'b', 'c'])
+- values = tf.constant([0, 1, 2], dtype=tf.int64)
+- table.insert(keys, values)
+- table.remove(tf.constant(['c']))
+- table.lookup(tf.constant(['a', 'b', 'c','d'])).numpy()
+8 api_shape: ''

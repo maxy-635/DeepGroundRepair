@@ -1,0 +1,11 @@
+2 api_name: paddle.squeeze
+3 api_description: Removes dimensions of size 1 from a tensor’s shape, optionally
+  at specified axes.
+4 api_signature: paddle.squeeze(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose dimensions of size 1 may be removed.
+- axis: The specific axes to squeeze; if provided, only dimensions of size 1 at these
+    axes are removed.
+7 api_usage_example: []
+8 api_shape: {}

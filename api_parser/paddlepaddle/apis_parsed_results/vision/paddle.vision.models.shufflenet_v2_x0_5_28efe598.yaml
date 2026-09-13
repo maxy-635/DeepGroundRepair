@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.shufflenet_v2_x0_5
+3 api_description: Creates a ShuffleNetV2 0.5x image classification model, providing
+  a lightweight, efficient CNN backbone with reduced channel width for faster inference
+  and lower compute.
+4 api_signature: paddle.vision.models.shufflenet_v2_x0_5(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+7 api_usage_example: []
+8 api_shape: {}

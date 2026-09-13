@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.tensor.debug.CommDebugMode.generate_json_dump
+3 api_description: Generates a JSON dump for communication debugging, summarizing
+  collective counts and tracing non-trivial dTensor and tensor operations at multiple
+  detail levels for browser-based visualization.
+4 api_signature: generate_json_dump(file_name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

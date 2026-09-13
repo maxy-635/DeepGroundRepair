@@ -1,0 +1,21 @@
+2 api_name: paddle.optimizer.lr.PiecewiseDecay
+3 api_description: Piecewise learning rate scheduler that applies different learning
+  rates at specified step boundaries, decaying the rate according to the provided
+  milestones and values.
+4 api_signature: paddle.optimizer.lr.PiecewiseDecay(boundaries,values)
+5 api_details: ''
+6 api_parameters:
+- boundaries: Defines the step numbers where the learning rate changes.
+- values: Provides the learning rate values to use between those boundaries.
+7 api_usage_example:
+- import paddle
+- value = paddle.arange(26, dtype='float32')
+- a = paddle.reshape(value, [2, 13])
+- linear = paddle.nn.Linear(13, 5)
+- adadelta = paddle.optimizer.Adadelta(learning_rate=0.0003, epsilon=1e-06, rho=0.95,
+- '                            parameters = linear.parameters())'
+- out = linear(a)
+- out.backward()
+- adadelta.step()
+- adadelta.clear_grad()
+8 api_shape: {}

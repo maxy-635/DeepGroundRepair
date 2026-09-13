@@ -1,0 +1,16 @@
+2 api_name: tensorflow.experimental.dispatch_for_binary_elementwise_assert_apis
+3 api_description: Registers a custom handler that overrides binary elementwise assert
+  APIs for matching first-argument types, letting you adapt asserts like `tf.debugging.assert_equal`
+  for custom tensor-like objects.
+4 api_signature: tf.experimental.dispatch_for_binary_elementwise_assert_apis(x_type,y_type)
+5 api_details: ''
+6 api_parameters:
+- x_type: Specifies the type annotation that determines when the API handler is invoked
+    for the `x` argument.
+- y_type: Specifies the type annotation that determines when the API handler is invoked
+    for the `y` argument.
+7 api_usage_example:
+- a = MaskedTensor([1, 1, 1, 1, 1], [True, True, True, True, True])
+- b = MaskedTensor([0, 0, 0, 0, 2], [True, True, True, True, True])
+- tf.debugging.assert_greater(a, b)
+8 api_shape: ''

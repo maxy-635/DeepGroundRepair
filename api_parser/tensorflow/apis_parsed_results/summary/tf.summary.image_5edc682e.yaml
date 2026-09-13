@@ -1,0 +1,8 @@
+2 api_name: tensorflow.summary.image
+3 api_description: Writes one or more images to the current default summary writer
+  for TensorBoard’s Images dashboard, grouping each image collection by name and step.
+4 api_signature: tf.summary.image(name,data,step)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

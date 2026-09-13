@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.rsqrt
+3 api_description: Computes the element-wise reciprocal of the square root of `x`.
+4 api_signature: tf.math.rsqrt(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose reciprocal square root is computed elementwise.
+7 api_usage_example:
+- x = tf.constant([2., 0., -2.])
+- tf.math.rsqrt(x)
+8 api_shape: ''

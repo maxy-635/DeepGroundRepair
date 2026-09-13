@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.applications.ResNet152
+3 api_description: Builds the ResNet152 deep residual neural network architecture
+  for image classification and transfer learning.
+4 api_signature: tf.keras.applications.ResNet152(weights,include_top,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Controls whether the model includes the final fully connected classification
+    layer.
+- weights: Selects the initialization weights, either random, pretrained on ImageNet,
+    or loaded from a specified file.
+- input_shape: Sets the input tensor shape when the top layer is excluded, with 3
+    channels and minimum spatial size of 32.
+- classes: Specifies the number of output classes when using the top layer without
+    pretrained weights.
+7 api_usage_example: null
+8 api_shape: ''

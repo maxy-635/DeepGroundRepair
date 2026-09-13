@@ -1,0 +1,14 @@
+2 api_name: torch.nn.utils.rnn.PackedSequence
+3 api_description: Represents a variable-length sequence in packed form, storing the
+  flattened data and batch sizes for efficient RNN processing.
+4 api_signature: torch.nn.utils.rnn.PackedSequence(data,batch_sizes)
+5 api_details: ''
+6 api_parameters:
+- data: The packed tensor containing all sequence elements concatenated together.
+- batch_sizes: A 1D tensor giving the batch size at each timestep in the packed sequence.
+- sorted_indices: Indices that map the original batch order to the sorted-by-length
+    order.
+- unsorted_indices: Indices that restore the packed sequence back to the original
+    batch order.
+7 api_usage_example: null
+8 api_shape: null

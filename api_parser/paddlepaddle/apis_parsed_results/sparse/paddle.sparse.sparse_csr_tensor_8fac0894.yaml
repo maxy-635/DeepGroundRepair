@@ -1,0 +1,29 @@
+2 api_name: paddle.sparse.sparse_csr_tensor
+3 api_description: Creates a CSR-format sparse tensor from row pointers (`crows`),
+  column indices (`cols`), and `values`, with batched inputs requiring incremented
+  `crows` and `cols`.
+4 api_signature: paddle.sparse.sparse_csr_tensor(crows,cols,values,shape,dtype,place,stop_gradient)
+5 api_details: ''
+6 api_parameters:
+- crows: Defines the row pointer array that marks where each row’s non-zero values
+    begin in the sparse CSR representation.
+- cols: Specifies the column indices of the non-zero elements.
+- values: Provides the non-zero values to store in the sparse tensor.
+- shape: Sets the overall tensor shape, matching the original dense tensor dimensions.
+- dtype: Chooses the data type of the returned sparse tensor.
+- place: Selects the device or memory location where the tensor is allocated.
+- stop_gradient: Indicates whether gradient propagation should be disabled for the
+    tensor.
+7 api_usage_example:
+- import paddle
+- crows = [0, 2, 3, 5]
+- cols = [1, 3, 2, 0, 1]
+- values = [1, 2, 3, 4, 5]
+- dense_shape = [3, 4]
+- csr = paddle.sparse.sparse_csr_tensor(crows, cols, values, dense_shape)
+- print(csr)
+- Tensor(shape=[3, 4], dtype=paddle.int64, place=Place(cpu), stop_gradient=True,
+- crows=[0, 2, 3, 5],
+- cols=[1, 3, 2, 0, 1],
+- values=[1, 2, 3, 4, 5])
+8 api_shape: {}

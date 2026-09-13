@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.name_scope
+3 api_description: Creates a nested name scope to group ops and variables under a
+  shared namespace.
+4 api_signature: tf.keras.name_scope(name)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the current naming scope for operations and layers created within it.
+7 api_usage_example: null
+8 api_shape: ''

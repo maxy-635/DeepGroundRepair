@@ -1,0 +1,24 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_image
+3 api_description: Logs an image tensor or array to TensorBoard as a summary image
+  for visualization.
+4 api_signature: add_image(tag,img_tensor,global_step)
+5 api_details: ''
+6 api_parameters:
+- tag: Names the image in TensorBoard so it can be grouped and identified.
+- img_tensor: Provides the image data to be logged.
+- global_step: Sets the step number associated with the logged image.
+7 api_usage_example:
+- from torch.utils.tensorboard import SummaryWriter
+- import numpy as np
+- img = np.zeros((3, 100, 100))
+- img[0] = np.arange(0, 10000).reshape(100, 100) / 10000
+- img[1] = 1 - np.arange(0, 10000).reshape(100, 100) / 10000
+- img_HWC = np.zeros((100, 100, 3))
+- img_HWC[:, :, 0] = np.arange(0, 10000).reshape(100, 100) / 10000
+- img_HWC[:, :, 1] = 1 - np.arange(0, 10000).reshape(100, 100) / 10000
+- writer = SummaryWriter()
+- writer.add_image('my_image', img, 0)
+- '# If you have non-default dimension setting, set the dataformats argument.'
+- writer.add_image('my_image_HWC', img_HWC, 0, dataformats='HWC')
+- writer.close()
+8 api_shape: null

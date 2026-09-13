@@ -1,0 +1,8 @@
+2 api_name: tensorflow.train.Coordinator
+3 api_description: Coordinates a group of threads, signaling them to stop, tracking
+  errors, and helping them shut down cleanly.
+4 api_signature: tf.train.Coordinator()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.layers.MultiHeadAttention
+3 api_description: The MultiHeadAttention layer implements multi-headed attention,
+  allowing each query to attend to corresponding keys and values, producing a fixed-width
+  output vector. It projects inputs into multiple attention heads, computes scaled
+  dot-product attention, applies softmax to obtain attention weights, interpolates
+  values based on these weights, and concatenates the results for a final linear projection.
+4 api_signature: tf.keras.layers.MultiHeadAttention(num_heads, key_dim, value_dim,
+  dropout)
+5 api_details: ''
+6 api_parameters:
+- num_heads: Specifies the number of parallel attention mechanisms (heads) to be used.
+- key_dim: Determines the dimensionality of the query and key vectors for each attention
+    head.
+- value_dim: Defines the dimensionality of the value vectors for each attention head.
+- dropout: Sets the dropout rate to prevent overfitting during training.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.strings.unicode_split
+3 api_description: Splits each input string into its Unicode code points, returning
+  the jth character of each string as a separate substring decoded with the specified
+  input encoding.
+4 api_signature: tf.strings.unicode_split(input,input_encoding)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor to split into individual Unicode characters or code points.
+- input_encoding: The Unicode encoding used to decode each input string before splitting.
+7 api_usage_example:
+- input = [s.encode('utf8') for s in (u'G\xf6\xf6dnight', u'\U0001f60a')]
+- tf.strings.unicode_split(input, 'UTF-8').to_list()
+8 api_shape: ''

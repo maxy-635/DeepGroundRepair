@@ -1,0 +1,8 @@
+2 api_name: torch.nn.ModuleList.extend
+3 api_description: Appends modules from an iterable to the end of the ModuleList.
+4 api_signature: extend(modules)
+5 api_details: ''
+6 api_parameters:
+- modules: An iterable of modules to append to the `ModuleList`.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.eye
+3 api_description: Creates a 2-D tensor with ones on the main diagonal and zeros elsewhere.
+4 api_signature: tf.keras.ops.eye(N,M,dtype)
+5 api_details: ''
+6 api_parameters:
+- N: Sets the number of rows in the output tensor.
+- M: Sets the number of columns in the output tensor, defaulting to `N` when omitted.
+- k: Chooses which diagonal to populate, with `0` for the main diagonal, positive
+    values for upper diagonals, and negative values for lower diagonals.
+- dtype: Specifies the data type of the returned tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.nn.utils.prune.LnStructured.prune
+3 api_description: Prunes structured groups of tensor `t` by an L-norm criterion along
+  a chosen dimension, returning a version with selected channels or blocks zeroed
+  out.
+4 api_signature: prune(t,importance_scores)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor to prune, which must have the same shape as the default mask.
+- importance_scores: Optional tensor of per-element importance scores used to compute
+    the pruning mask; if omitted, the tensor `t` is used instead.
+7 api_usage_example: null
+8 api_shape: null

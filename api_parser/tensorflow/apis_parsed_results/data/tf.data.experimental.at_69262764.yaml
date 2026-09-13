@@ -1,0 +1,10 @@
+2 api_name: tensorflow.data.experimental.at
+3 api_description: Returns the dataset element at a given index, supporting random
+  access for selected tf.data operations.
+4 api_signature: tf.data.experimental.at(dataset,index)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset to inspect for random-access support.
+- index: The position of the element to retrieve.
+7 api_usage_example: null
+8 api_shape: ''

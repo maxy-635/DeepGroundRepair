@@ -1,0 +1,19 @@
+2 api_name: tensorflow.nn.convolution
+3 api_description: tensorflow.nn.convolution computes N-D cross-correlation on input
+  tensors, supporting optional output striding or dilated convolution. It operates
+  on input tensors of shape [num_batches, input_spatial_shape, num_input_channels]
+  and filter tensors of shape [spatial_filter_shape, num_input_channels, num_output_channels],
+  with optional dilations and strides for spatial output computation.
+4 api_signature: tf.nn.convolution(input,filters,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor with a shape determined by batch size, spatial
+    dimensions, and channel configuration.
+- filters: Defines the filter tensor with spatial dimensions and channel configuration
+    for the convolution operation.
+- padding: Determines the padding strategy ('VALID' or 'SAME') applied to the input
+    tensor during convolution.
+- strides: Specifies the stride length for the convolution operation, affecting the
+    downsampling rate of the input.
+7 api_usage_example: null
+8 api_shape: ''

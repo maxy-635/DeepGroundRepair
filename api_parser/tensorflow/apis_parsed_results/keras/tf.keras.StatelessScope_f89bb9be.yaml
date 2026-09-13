@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.StatelessScope
+3 api_description: Temporarily blocks in-place updates to Keras variables by using
+  a provided mapping of variable values inside the scope, while allowing updated values
+  to be retrieved on exit.
+4 api_signature: tf.keras.StatelessScope(state_mapping,initialize_variables)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.algorithms.JoinHook
+3 api_description: Defines a hook used by `join` to run custom logic when distributed
+  participants finish at different times, with entry points for normal post-join handling
+  and for handling remaining work after some ranks have joined.
+4 api_signature: class torch.distributed.algorithms.JoinHook
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

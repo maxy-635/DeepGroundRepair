@@ -1,0 +1,15 @@
+2 api_name: tensorflow.identity
+3 api_description: Returns a new Tensor with the same shape and values as the input,
+  efficiently copying it on the same device.
+4 api_signature: tf.identity(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor-like value to return as an identity, converted to a tensor if
+    needed.
+7 api_usage_example:
+- 'with tf.device("/gpu:0"):'
+- '  x_on_gpu = tf.constant(1)'
+- 'with tf.device("/cpu:0"):'
+- '  x_on_cpu = tf.identity(x_on_gpu)'
+- x_on_cpu.device
+8 api_shape: ''

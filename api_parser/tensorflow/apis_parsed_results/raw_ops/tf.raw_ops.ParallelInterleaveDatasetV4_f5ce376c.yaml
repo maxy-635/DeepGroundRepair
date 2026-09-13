@@ -1,0 +1,25 @@
+2 api_name: tensorflow.raw_ops.ParallelInterleaveDatasetV4
+3 api_description: Builds a dataset that maps `f` over `input_dataset` and interleaves
+  the resulting datasets by fetching elements in parallel, with optional deterministic
+  ordering.
+4 api_signature: tf.raw_ops.ParallelInterleaveDatasetV4(input_dataset,other_arguments,cycle_length,block_length,num_parallel_calls,f,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Supplies the dataset whose elements are used as inputs to create
+    the nested datasets.
+- other_arguments: Provides extra constant arguments passed to `f` when each nested
+    dataset is created.
+- cycle_length: Sets how many nested datasets are active at once in the round-robin
+    interleaving cycle.
+- block_length: Sets how many consecutive elements to take from each active nested
+    dataset before switching.
+- num_parallel_calls: Controls how many threads are used to fetch from nested datasets
+    in parallel, or enables autotuning when set to `AUTOTUNE`.
+- f: Defines the mapping from each input element and extra arguments to a dataset-producing
+    function.
+- output_types: Specifies the data types expected from the elements produced by the
+    interleaved datasets.
+- output_shapes: Specifies the shapes expected from the elements produced by the interleaved
+    datasets.
+7 api_usage_example: null
+8 api_shape: ''

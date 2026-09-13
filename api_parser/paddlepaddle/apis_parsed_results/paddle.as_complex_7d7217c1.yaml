@@ -1,0 +1,9 @@
+2 api_name: paddle.as_complex
+3 api_description: Converts a real tensor into a complex tensor representation.
+4 api_signature: paddle.as_complex(x)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor to be converted to a complex representation, using
+    float32 or float64 data.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,26 @@
+2 api_name: torch.nn.functional.conv2d
+3 api_description: Applies a 2D convolution operation on a multi-channel input image
+  using specified filters, producing a transformed output.
+4 api_signature: torch.nn.functional.conv2d(input,weight,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor with dimensions representing batch size, number of input
+    channels, height, and width.
+- weight: The filter tensor with dimensions for output channels, input channels per
+    group, filter height, and filter width.
+- stride: The step size of the convolution kernel, specified as a single number or
+    a tuple for height and width.
+- padding: The padding applied to both sides of the input, defined by a string, single
+    number, or tuple for height and width.
+7 api_usage_example:
+- ' # With square kernels and equal stride'
+- ' filters = torch.randn(8, 4, 3, 3)'
+- ' inputs = torch.randn(1, 4, 5, 5)'
+- ' F.conv2d(inputs, filters, padding=1)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[0]
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

@@ -1,0 +1,17 @@
+2 api_name: paddle.audio.functional.mel_frequencies
+3 api_description: Computes a sequence of frequencies on the mel scale, typically
+  for building mel filter banks or related audio features.
+4 api_signature: paddle.audio.functional.mel_frequencies(n_mels,f_min,f_max)
+5 api_details: ''
+6 api_parameters:
+- n_mels: Sets how many mel-frequency bins to generate.
+- f_min: Sets the lowest frequency in Hertz included in the mel scale.
+7 api_usage_example:
+- import paddle
+- n_mels = 64
+- f_min = 0.5
+- f_max = 10000
+- htk_flag = True
+- paddle_mel_freq = paddle.audio.functional.mel_frequencies(
+- '    n_mels, f_min, f_max, htk_flag, ''float64'')'
+8 api_shape: {}

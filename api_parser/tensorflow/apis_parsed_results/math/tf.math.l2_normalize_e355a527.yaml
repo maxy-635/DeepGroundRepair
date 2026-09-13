@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.l2_normalize
+3 api_description: Normalizes a tensor along the specified axis using the L2 norm,
+  scaling values so the selected dimension has unit magnitude.
+4 api_signature: tf.math.l2_normalize(x,axis,epsilon)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be normalized.
+- axis: The dimension or dimensions along which to compute the normalization.
+- epsilon: A minimum norm threshold used to avoid division by very small values.
+7 api_usage_example:
+- x = tf.constant([[3.0], [4.0]])
+- tf.math.l2_normalize(x, 1).numpy()
+8 api_shape: ''

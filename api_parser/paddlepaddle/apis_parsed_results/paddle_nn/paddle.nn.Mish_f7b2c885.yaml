@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.Mish
+3 api_description: The paddle.nn.Mish API implements the Mish activation function,
+  which is a smooth, non-monotonic function defined as x * tanh(softplus(x)), used
+  to enhance neural network performance by introducing non-linearity.
+4 api_signature: paddle.nn.Mish()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-5., 0., 5.])
+- m = paddle.nn.Mish()
+- out = m(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.03357624,  0.        ,  4.99955177])'
+8 api_shape: null

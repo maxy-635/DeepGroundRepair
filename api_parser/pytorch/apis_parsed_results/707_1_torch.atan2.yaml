@@ -1,0 +1,15 @@
+2 api_name: torch.atan2
+3 api_description: Computes the element-wise signed angle in radians for each (other,
+  input) pair, using atan2 to return the correct quadrant-aware arctangent.
+4 api_signature: torch.atan2(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor, representing the y-coordinate values used in the angle
+    calculation.
+- other: The second tensor, representing the x-coordinate values used in the angle
+    calculation.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.atan2(a, torch.randn(4))'
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.BatchMatrixSetDiag
+3 api_description: Sets the diagonal of each matrix in a batch of tensors to the values
+  from a matching batch of diagonal vectors.
+4 api_signature: tf.raw_ops.BatchMatrixSetDiag(input,diagonal)
+5 api_details: ''
+6 api_parameters:
+- input: The batch of matrices whose diagonals will be replaced.
+- diagonal: The batch of values to write onto each matrix diagonal, matching the input
+    type.
+7 api_usage_example: null
+8 api_shape: ''

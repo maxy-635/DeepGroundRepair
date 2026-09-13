@@ -1,0 +1,55 @@
+2 api_name: paddle.normal
+3 api_description: Creates a tensor of random values sampled from a normal distribution
+  with the specified mean and standard deviation.
+4 api_signature: paddle.normal(mean,std,shape,out)
+5 api_details: ''
+6 api_parameters:
+- mean: Sets the normal distribution mean for the output tensor, either as a shared
+    float value or as per-element values from a tensor.
+- std: Sets the normal distribution standard deviation for the output tensor, either
+    as a shared float value or as per-element values from a tensor.
+- shape: Defines the size of the tensor to create, unless `mean` or `std` is a tensor,
+    in which case the output shape follows them.
+- out: Provides an optional preallocated tensor to store the result, as long as it
+    matches the expected shape and dtype.
+7 api_usage_example:
+- import paddle
+- out1 = paddle.normal(shape=[2, 3])
+- print(out1)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.85107994, -0.85490644, -1.35941815],'
+- '[-0.55500370,  0.20964541,  2.24193954]])'
+- '>>>'
+- mean_tensor = paddle.to_tensor([1.0, 2.0, 3.0])
+- out2 = paddle.normal(mean=mean_tensor)
+- print(out2)
+- '>>>'
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.05411839, 3.71514320, 3.42665267])'
+- '>>>'
+- std_tensor = paddle.to_tensor([1.0, 2.0, 3.0])
+- out3 = paddle.normal(mean=mean_tensor, std=std_tensor)
+- print(out3)
+- '>>>'
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.48646951, 0.00815189, 3.74022293])'
+- '>>>'
+- paddle.seed(200)
+- out4 = paddle.normal(mean=1+1j, shape=[2, 3])
+- print(out4)
+- Tensor(shape=[2, 3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[[(1.137553095817566+1.0932074785232544j)  ,'
+- (1.7955012321472168+0.5819810628890991j) ,
+- (0.32699793577194214+0.9083631038665771j)],
+- '[(1.1745303869247437+0.09971672296524048j),'
+- (1.1627092361450195-0.30863022804260254j),
+- (1.9428746700286865+1.0686945915222168j) ]])
+- mean_tensor = paddle.to_tensor([1+1j, 2+2j, 3+3j])
+- out5 = paddle.normal(mean=mean_tensor)
+- print(out5)
+- Tensor(shape=[3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[(1.136009693145752-0.11074113845825195j),'
+- (2.529331684112549+2.1968750953674316j) ,
+- (2.2910101413726807+1.8114780187606812j)])
+8 api_shape: {}

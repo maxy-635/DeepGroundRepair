@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.UpsamplingBilinear2D
+3 api_description: paddle.nn.UpsamplingBilinear2D upsamples 4-D image tensors using
+  bilinear interpolation, applying the upsampling on the height and width dimensions.
+4 api_signature: paddle.nn.UpsamplingBilinear2D(size,scale_factor)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the desired output dimensions (height, width) for resizing the input
+    image when it's a 4-D Tensor.
+- scale_factor: Defines the scaling factor for resizing the input image's height and
+    width, used if 'size' is not specified.
+7 api_usage_example: []
+8 api_shape: null

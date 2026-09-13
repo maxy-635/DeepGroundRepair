@@ -1,0 +1,14 @@
+2 api_name: tensorflow.eye
+3 api_description: Creates an identity matrix, or a batch of identity matrices, with
+  ones on the diagonal and zeros elsewhere.
+4 api_signature: tf.eye(num_rows,num_columns,batch_shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- num_rows: Sets the number of rows in each identity matrix in the batch.
+- num_columns: Sets the number of columns in each identity matrix, defaulting to `num_rows`
+    when omitted.
+- batch_shape: Adds leading batch dimensions with the specified batch shape to create
+    a batch of eye matrices.
+- dtype: Specifies the data type of the values in the resulting tensor.
+7 api_usage_example: null
+8 api_shape: ''

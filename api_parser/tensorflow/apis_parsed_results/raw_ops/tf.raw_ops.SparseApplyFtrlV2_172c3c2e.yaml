@@ -1,0 +1,22 @@
+2 api_name: tensorflow.raw_ops.SparseApplyFtrlV2
+3 api_description: 'Applies the Ftrl-proximal update to sparse slices of variables:
+  for indexed rows, it updates accumulators and linear terms from the provided gradients,
+  then adjusts `var` using L1/L2 regularized thresholding.'
+4 api_signature: tf.raw_ops.SparseApplyFtrlV2(var,accum,linear,grad,indices,lr,l1,l2,l2_shrinkage,lr_power)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated in place by the sparse FTRL optimizer.
+- accum: The accumulator tensor that stores per-variable accumulated gradient history.
+- linear: The linear slot tensor that stores the optimizer’s linear terms for each
+    variable.
+- grad: The gradient tensor providing the sparse updates to apply.
+- indices: The indices of the rows in `var` and `accum` that should be updated.
+- lr: The learning rate scalar that controls the step size of the update.
+- l1: The L1 regularization scalar that encourages sparsity in the variables.
+- l2: The L2 regularization scalar that adds weight decay to the update.
+- l2_shrinkage: The L2 shrinkage scalar used to modify the gradient with shrinkage
+    regularization.
+- lr_power: The learning-rate power scalar that determines how the effective learning
+    rate decays over time.
+7 api_usage_example: null
+8 api_shape: ''

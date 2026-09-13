@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.losses.BinaryCrossentropy
+3 api_description: Computes binary cross-entropy loss between true labels and predicted
+  probabilities for 0/1 classification tasks.
+4 api_signature: tf.keras.losses.BinaryCrossentropy(from_logits,label_smoothing)
+5 api_details: ''
+6 api_parameters:
+- from_logits: Treats y_pred as raw logits instead of probability values.
+- label_smoothing: Softens the true labels toward 0.5 to reduce confidence in the
+    targets.
+7 api_usage_example:
+- '# Make the following updates to the above "Recommended Usage" section'
+- '# 1. Set `from_logits=False`'
+- 'keras.losses.BinaryCrossentropy() # OR ...(''from_logits=False'')'
+- '# 2. Update `y_pred` to use probabilities instead of logits'
+- 'y_pred = [0.6, 0.3, 0.2, 0.8] # OR [[0.6, 0.3], [0.2, 0.8]]'
+8 api_shape: ''

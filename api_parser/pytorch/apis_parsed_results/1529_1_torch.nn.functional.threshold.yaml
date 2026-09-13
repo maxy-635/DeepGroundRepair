@@ -1,0 +1,17 @@
+2 api_name: torch.nn.functional.threshold
+3 api_description: Applies a threshold to each element in a tensor, setting values
+  below a specified threshold to a fixed value.
+4 api_signature: torch.nn.functional.threshold(input,threshold,value)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be thresholded.
+- threshold: The value below which elements in the input tensor are set to the value
+    of 'value'.
+- value: The value to replace elements in the input tensor that are below the threshold.
+- inplace: A boolean indicating whether the operation should be performed in-place
+    on the input tensor.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

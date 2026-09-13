@@ -1,0 +1,14 @@
+2 api_name: tensorflow.space_to_batch
+3 api_description: Reshapes an N-D tensor by zero-padding spatial dimensions if needed,
+  splitting them into blocks of a given shape, and moving block positions into the
+  batch dimension.
+4 api_signature: tf.space_to_batch(input,block_shape,paddings)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be rearranged from spatial dimensions into the batch dimension.
+- block_shape: A 1-D tensor of positive integers that specifies how each spatial dimension
+    is split into blocks.
+- paddings: A 2-D tensor that defines how much zero-padding to add before and after
+    each spatial dimension so it can be evenly divided by `block_shape`.
+7 api_usage_example: null
+8 api_shape: ''

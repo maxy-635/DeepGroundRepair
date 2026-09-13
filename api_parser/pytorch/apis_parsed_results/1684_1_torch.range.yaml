@@ -1,0 +1,13 @@
+2 api_name: torch.range
+3 api_description: Creates a 1-D tensor of evenly spaced values from start to end
+  using the given step.
+4 api_signature: torch.range(start,end,step)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the first value in the generated range.
+- end: Sets the last value in the generated range.
+- step: Sets the spacing between consecutive values.
+7 api_usage_example:
+- ' torch.range(1, 4)'
+- ' torch.range(1, 4, 0.5)'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: torch.nn.utils.fuse_linear_bn_eval
+3 api_description: Combines a linear layer and BatchNorm in eval mode into one equivalent
+  linear layer for inference.
+4 api_signature: torch.nn.utils.fuse_linear_bn_eval(linear,bn)
+5 api_details: ''
+6 api_parameters:
+- linear: The Linear module whose weights and bias are fused with batch normalization
+    for evaluation.
+- bn: The BatchNorm module whose normalization parameters are merged into the Linear
+    module for evaluation.
+7 api_usage_example: null
+8 api_shape: null

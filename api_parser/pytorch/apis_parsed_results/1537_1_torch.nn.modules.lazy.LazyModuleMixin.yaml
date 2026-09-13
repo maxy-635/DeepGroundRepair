@@ -1,0 +1,33 @@
+2 api_name: torch.nn.modules.lazy.LazyModuleMixin
+3 api_description: Mixin for modules that defer parameter initialization until the
+  first forward pass, using input shape to materialize and initialize lazy parameters.
+4 api_signature: '"class torch.nn.modules.lazy.LazyModuleMixin"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' class LazyMLP(torch.nn.Module):'
+- '...     def __init__(self) -> None:'
+- '...         super().__init__()'
+- '...         self.fc1 = torch.nn.LazyLinear(10)'
+- '...         self.relu1 = torch.nn.ReLU()'
+- '...         self.fc2 = torch.nn.LazyLinear(1)'
+- '...         self.relu2 = torch.nn.ReLU()'
+- '...'
+- '...     def forward(self, input):'
+- '...         x = self.relu1(self.fc1(input))'
+- '...         y = self.relu2(self.fc2(x))'
+- '...         return y'
+- ' # constructs a network with lazy modules'
+- ' lazy_mlp = LazyMLP()'
+- ' # transforms the network''s device and dtype'
+- ' # NOTE: these transforms can and should be applied after construction and before
+  any ''dry runs'''
+- ' lazy_mlp = lazy_mlp.cuda()'
+- ' lazy_mlp'
+- ' # performs a dry run to initialize the network''s lazy modules'
+- ' lazy_mlp(torch.ones(10, 10).cuda())'
+- ' # after initialization, LazyLinear modules become regular Linear modules'
+- ' lazy_mlp'
+- ' # attaches an optimizer, since parameters can now be used as usual'
+- ' optim = torch.optim.SGD(lazy_mlp.parameters(), lr=0.01)'
+8 api_shape: null

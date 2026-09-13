@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Invert
+3 api_description: Flips every bit of each element in the input tensor for supported
+  integer types.
+4 api_signature: tf.raw_ops.Invert(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose bits are inverted elementwise; it must have an integer type.
+7 api_usage_example: null
+8 api_shape: ''

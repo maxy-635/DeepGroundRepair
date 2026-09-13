@@ -1,0 +1,16 @@
+2 api_name: tensorflow.ragged.map_flat_values
+3 api_description: Applies an operation to the flat values of one or more RaggedTensors,
+  preserving their row splits and returning a RaggedTensor with the same ragged structure.
+4 api_signature: tf.ragged.map_flat_values(op,*args)
+5 api_details: ''
+6 api_parameters:
+- op: Specifies the operation to apply to the RaggedTensor's flat values, with the
+    requirement that it preserves the outermost dimension size.
+- '*args': Provides the arguments passed to `op`.
+7 api_usage_example:
+- rt = tf.ragged.constant([[1.0, 3.0], [], [3.0, 6.0, 3.0]])
+- 'def normalized(x):'
+- '  return x / tf.reduce_sum(x)'
+- tf.ragged.map_flat_values(normalized, rt)
+- tf.map_fn(normalized, rt)
+8 api_shape: ''

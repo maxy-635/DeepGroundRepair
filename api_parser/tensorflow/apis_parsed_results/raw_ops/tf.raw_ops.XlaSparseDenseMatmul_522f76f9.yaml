@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.XlaSparseDenseMatmul
+3 api_description: Computes a sparse-by-dense matrix multiplication using XLA, multiplying
+  a sparse matrix representation by a dense matrix.
+4 api_signature: tf.raw_ops.XlaSparseDenseMatmul(values,embedding_table,input_size,name)
+5 api_details: ''
+6 api_parameters:
+- values: Contains the sparse input values used in the matrix multiplication.
+- embedding_table: Provides the dense embedding table to multiply against the sparse
+    values.
+- input_size: Specifies the size of the input dimension for the sparse data.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

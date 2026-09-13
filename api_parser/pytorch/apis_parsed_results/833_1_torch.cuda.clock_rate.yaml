@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.clock_rate
+3 api_description: Returns the GPU SM clock speed in MHz over the previous sample
+  period.
+4 api_signature: torch.cuda.clock_rate(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which CUDA device to query; defaults to the current device if `None`.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.custom_gradient
+3 api_description: Decorator that wraps a function to define its own gradient computation,
+  giving fine-grained control over backpropagation for a sequence of operations, often
+  for efficiency or numerical stability.
+4 api_signature: tf.keras.ops.custom_gradient(f)
+5 api_details: ''
+6 api_parameters:
+- f: Defines a function that computes the forward pass and returns both the output
+    and a gradient function for the backward pass.
+7 api_usage_example: null
+8 api_shape: ''

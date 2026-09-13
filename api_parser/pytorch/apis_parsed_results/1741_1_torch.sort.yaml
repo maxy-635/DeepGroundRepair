@@ -1,0 +1,21 @@
+2 api_name: torch.sort
+3 api_description: Sorts tensor elements along a specified dimension in ascending
+  order by value.
+4 api_signature: torch.sort(input,dim,descending)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be sorted.
+- dim: The dimension along which the tensor is sorted.
+- descending: Whether to sort in descending order instead of ascending order.
+7 api_usage_example:
+- ' x = torch.randn(3, 4)'
+- ' sorted, indices = torch.sort(x)'
+- ' sorted'
+- ' indices'
+- ' sorted, indices = torch.sort(x, 0)'
+- ' sorted'
+- ' indices'
+- ' x = torch.tensor([0, 1] * 9)'
+- ' x.sort()'
+- ' x.sort(stable=True)'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.sparse.check_sparse_tensor_invariants
+3 api_description: Controls whether PyTorch checks sparse tensor invariants, helping
+  validate sparse tensor correctness during creation and operations.
+4 api_signature: '"torch.sparse.check_sparse_tensor_invariants(enable)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'with torch.sparse.check_sparse_tensor_invariants():'
+- '    run_my_model()'
+8 api_shape: null

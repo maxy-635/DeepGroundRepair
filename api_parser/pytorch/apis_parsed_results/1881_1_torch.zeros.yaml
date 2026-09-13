@@ -1,0 +1,11 @@
+2 api_name: torch.zeros
+3 api_description: Creates a tensor of the given shape filled with zeros.
+4 api_signature: torch.zeros(size,out,dtype,device)
+5 api_details: ''
+6 api_parameters:
+- size: Defines the shape of the output tensor, either as separate integer arguments
+    or as a list/tuple of integers.
+7 api_usage_example:
+- ' torch.zeros(2, 3)'
+- ' torch.zeros(5)'
+8 api_shape: null

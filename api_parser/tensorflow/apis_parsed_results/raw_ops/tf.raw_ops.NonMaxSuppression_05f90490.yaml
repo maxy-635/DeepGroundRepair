@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.NonMaxSuppression
+3 api_description: Selects the highest-scoring bounding boxes while suppressing boxes
+  with excessive IoU overlap, returning the indices of the kept boxes.
+4 api_signature: tf.raw_ops.NonMaxSuppression(boxes,scores,max_output_size)
+5 api_details: ''
+6 api_parameters:
+- boxes: Provides the candidate bounding boxes to evaluate for non-max suppression.
+- scores: Provides a score for each box so the highest-scoring boxes can be prioritized.
+- max_output_size: Sets the maximum number of boxes to return after suppression.
+7 api_usage_example: null
+8 api_shape: ''

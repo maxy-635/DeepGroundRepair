@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.gcd
+3 api_description: Computes the element-wise greatest common divisor of two inputs
+  using TensorFlow-compatible NumPy semantics.
+4 api_signature: tf.experimental.numpy.gcd(x1,x2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

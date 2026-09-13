@@ -1,0 +1,12 @@
+2 api_name: torch.flip
+3 api_description: Reverses the elements of an n-D tensor along the specified dimensions.
+4 api_signature: torch.flip(input,dims)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to reverse along the specified dimensions.
+- dims: The axis or axes along which to flip the input tensor.
+7 api_usage_example:
+- ' x = torch.arange(8).view(2, 2, 2)'
+- ' x'
+- ' torch.flip(x, [0, 1])'
+8 api_shape: null

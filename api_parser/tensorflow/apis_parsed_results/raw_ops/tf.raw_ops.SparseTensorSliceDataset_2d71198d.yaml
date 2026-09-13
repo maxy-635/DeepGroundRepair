@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseTensorSliceDataset
+3 api_description: Creates a dataset that slices a SparseTensor row by row into individual
+  dataset elements.
+4 api_signature: tf.raw_ops.SparseTensorSliceDataset(indices,values,dense_shape)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the coordinates of the non-zero elements in the sparse tensor.
+- values: Contains the values associated with the listed sparse tensor indices.
+- dense_shape: Defines the full shape of the sparse tensor in its dense form.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.Variable.SaveSliceInfo
+3 api_description: Stores metadata describing how a variable maps to a slice of a
+  larger variable for checkpoint saving and restoration.
+4 api_signature: tf.Variable.SaveSliceInfo(full_name,full_shape,var_offset,var_shape)
+5 api_details: ''
+6 api_parameters:
+- full_name: Identifies the name of the complete variable that this slice belongs
+    to.
+- full_shape: Specifies the dimensions of the full variable as a list of integers.
+- var_offset: Gives the starting offset of this slice within the full variable as
+    a list of integers.
+- var_shape: Specifies the dimensions of this sliced variable as a list of integers.
+7 api_usage_example: null
+8 api_shape: ''

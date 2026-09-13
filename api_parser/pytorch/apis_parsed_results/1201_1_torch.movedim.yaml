@@ -1,0 +1,17 @@
+2 api_name: torch.movedim
+3 api_description: Reorders one or more tensor dimensions by moving specified source
+  dimensions to new destination positions.
+4 api_signature: torch.movedim(input,source,destination)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be rearranged by moving its dimensions.
+- source: The unique original dimension positions to move.
+- destination: The unique target positions where the source dimensions should be placed.
+7 api_usage_example:
+- ' t = torch.randn(3,2,1)'
+- ' t'
+- ' torch.movedim(t, 1, 0).shape'
+- ' torch.movedim(t, 1, 0)'
+- ' torch.movedim(t, (1, 2), (0, 1)).shape'
+- ' torch.movedim(t, (1, 2), (0, 1))'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.parallel_stack
+3 api_description: Stacks a known-length list of equal-shaped tensors along a new
+  first dimension in parallel to produce a rank-1-higher tensor.
+4 api_signature: tf.parallel_stack(values)
+5 api_details: ''
+6 api_parameters:
+- values: The list of Tensor objects to stack in parallel, all sharing the same shape
+    and type.
+7 api_usage_example: null
+8 api_shape: ''

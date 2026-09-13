@@ -1,0 +1,23 @@
+2 api_name: tensorflow.raw_ops.SampleDistortedBoundingBox
+3 api_description: Randomly generates one distorted bounding box for an image under
+  size and constraint limits, returning crop begin/size tensors and the chosen box
+  for visualization or slicing.
+4 api_signature: tf.raw_ops.SampleDistortedBoundingBox(image_size,bounding_boxes,seed,seed2,min_object_covered,aspect_ratio_range,area_range,max_attempts)
+5 api_details: ''
+6 api_parameters:
+- image_size: Specifies the image height, width, and channels used to define the input
+    image shape.
+- bounding_boxes: Provides the bounding boxes that the sampled crop should try to
+    cover.
+- seed: Sets the primary random seed for reproducible crop sampling when non-zero.
+- seed2: Sets a secondary random seed to help avoid collisions when non-zero.
+- min_object_covered: Requires the sampled crop to cover at least this fraction of
+    any given bounding box.
+- aspect_ratio_range: Constrains the sampled crop to have a width-to-height ratio
+    within the specified range.
+- area_range: Constrains the sampled crop to cover a fraction of the image within
+    the specified range.
+- max_attempts: Limits how many crop proposals are tried before falling back to the
+    full image.
+7 api_usage_example: null
+8 api_shape: ''

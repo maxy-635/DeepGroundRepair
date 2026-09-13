@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.mobilenet_v3_small
+3 api_description: Builds a MobileNetV3 Small image classification backbone, providing
+  a lightweight, efficient convolutional network for feature extraction and inference.
+4 api_signature: paddle.vision.models.mobilenet_v3_small(pretrained,scale)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+- scale: Sets the channel width multiplier for the network layers.
+7 api_usage_example: []
+8 api_shape: {}

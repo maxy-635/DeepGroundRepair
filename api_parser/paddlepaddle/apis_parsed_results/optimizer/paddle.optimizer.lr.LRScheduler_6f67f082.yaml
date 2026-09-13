@@ -1,0 +1,35 @@
+2 api_name: paddle.optimizer.lr.LRScheduler
+3 api_description: Base class for learning-rate schedulers that provides a common
+  interface to update, query, and manage the optimizer's learning rate over training.
+4 api_signature: paddle.optimizer.lr.LRScheduler(learning_rate,last_epoch)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the initial learning rate as a Python float.
+- last_epoch: Specifies the index of the last epoch, allowing training to resume or
+    restart.
+7 api_usage_example:
+- import paddle
+- from paddle.optimizer.lr import LRScheduler
+- 'class StepDecay(LRScheduler):'
+- '    def __init__(self,'
+- '                learning_rate,'
+- '                step_size,'
+- '                gamma=0.1,'
+- '                last_epoch=-1,'
+- '                verbose=False):'
+- '        if not isinstance(step_size, int):'
+- '            raise TypeError('
+- '                "The type of ''step_size'' must be ''int'', but received %s." %'
+- '                type(step_size))'
+- '        if gamma >= 1.0:'
+- '            raise ValueError(''gamma should be < 1.0.'')'
+- '...'
+- '        self.step_size = step_size'
+- '        self.gamma = gamma'
+- '        super().__init__(learning_rate, last_epoch, verbose)'
+- '...'
+- '    def get_lr(self):'
+- '        i = self.last_epoch // self.step_size'
+- '        return self.base_lr * (self.gamma**i)'
+- '...'
+8 api_shape: {}

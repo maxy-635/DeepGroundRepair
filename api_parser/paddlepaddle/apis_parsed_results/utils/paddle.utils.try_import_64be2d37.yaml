@@ -1,0 +1,8 @@
+2 api_name: paddle.utils.try_import
+3 api_description: Attempts to import a module and raises an informative error if
+  the import fails.
+4 api_signature: paddle.utils.try_import(module_name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

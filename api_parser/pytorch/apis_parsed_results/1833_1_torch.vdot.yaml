@@ -1,0 +1,16 @@
+2 api_name: torch.vdot
+3 api_description: Computes the complex dot product of two 1D tensors, conjugating
+  the first input if needed.
+4 api_signature: torch.vdot(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first 1D tensor in the dot product; if it is complex, its conjugate is
+    used.
+- other: The second 1D tensor in the dot product.
+7 api_usage_example:
+- ' torch.vdot(torch.tensor([2, 3]), torch.tensor([2, 1]))'
+- ' a = torch.tensor((1 +2j, 3 - 1j))'
+- ' b = torch.tensor((2 +1j, 4 - 0j))'
+- ' torch.vdot(a, b)'
+- ' torch.vdot(b, a)'
+8 api_shape: null

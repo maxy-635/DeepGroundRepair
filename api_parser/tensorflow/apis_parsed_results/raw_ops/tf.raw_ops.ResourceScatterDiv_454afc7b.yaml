@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ResourceScatterDiv
+3 api_description: Divides the elements at specified indices of a resource variable
+  by sparse update values in place.
+4 api_signature: tf.raw_ops.ResourceScatterDiv(resource,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- resource: References the variable resource whose selected entries will be divided
+    in place.
+- indices: Specifies which first-dimension entries of the variable to update.
+- updates: Provides the values used to divide the selected entries of the variable.
+7 api_usage_example: null
+8 api_shape: ''

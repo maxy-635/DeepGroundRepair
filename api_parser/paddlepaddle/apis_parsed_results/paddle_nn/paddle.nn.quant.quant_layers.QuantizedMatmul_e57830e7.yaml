@@ -1,0 +1,9 @@
+2 api_name: paddle.nn.quant.quant_layers.QuantizedMatmul
+3 api_description: QuantizedMatmul performs matrix multiplication with inputs that
+  are fake quantized, maintaining the same computational logic as the standard Matmul
+  operation.
+4 api_signature: paddle.nn.quant.quant_layers.QuantizedMatmul(layer,weight_bits,activation_bits)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

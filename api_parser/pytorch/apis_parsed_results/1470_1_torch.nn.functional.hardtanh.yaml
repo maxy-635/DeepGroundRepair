@@ -1,0 +1,16 @@
+2 api_name: torch.nn.functional.hardtanh
+3 api_description: torch.nn.functional.hardtanh applies the HardTanh activation function
+  element-wise, clamping inputs to a specified range, typically between -1 and 1.
+4 api_signature: torch.nn.functional.hardtanh(input,min_val,max_val)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the HardTanh activation function is applied.
+- min_val: The minimum value to which elements in the input tensor are clamped.
+- max_val: The maximum value to which elements in the input tensor are clamped.
+- inplace: A boolean flag indicating whether the operation should be performed in-place
+    on the input tensor.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

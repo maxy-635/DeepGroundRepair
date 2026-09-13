@@ -1,0 +1,15 @@
+2 api_name: torch.corrcoef
+3 api_description: Computes the Pearson correlation coefficient matrix for the input
+  variables, with each row treated as a variable and each column as an observation.
+4 api_signature: torch.corrcoef(input)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the data whose pairwise correlation coefficients are computed.
+7 api_usage_example:
+- ' x = torch.tensor([[0, 1, 2], [2, 1, 0]])'
+- ' torch.corrcoef(x)'
+- ' x = torch.randn(2, 4)'
+- ' x'
+- ' torch.corrcoef(x)'
+- ' torch.corrcoef(x[0])'
+8 api_shape: null

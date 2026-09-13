@@ -1,0 +1,11 @@
+2 api_name: torch.optim.RMSprop.register_load_state_dict_pre_hook
+3 api_description: Registers a pre-hook that runs before `load_state_dict()` to let
+  you inspect or modify the incoming optimizer state.
+4 api_signature: register_load_state_dict_pre_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: Registers a user-defined callback that runs before the optimizer’s state_dict
+    is loaded, allowing the state to be adjusted or validated.
+7 api_usage_example:
+- hook(optimizer, state_dict) -> state_dict or None
+8 api_shape: null

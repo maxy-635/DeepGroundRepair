@@ -1,0 +1,18 @@
+2 api_name: paddle.nn.quant.weight_dequantize
+3 api_description: The paddle.nn.quant.weight_dequantize API performs dequantization
+  on weights for weight-only and llm.int8 quantization schemes.
+4 api_signature: paddle.nn.quant.weight_dequantize(x,scale)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input Tensor to be dequantized, and it must be of type int8.
+- scale: Represents the scale Tensor obtained from weight_quantize, and it must be
+    of type float32.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- from paddle.nn.quant import weight_quantize, weight_dequantize
+- paddle.seed(2023)
+- x = paddle.rand(shape=[64, 32], dtype=paddle.float16)
+- out, scale = weight_quantize(x, algo='weight_only_int8')
+- x_dequant = weight_dequantize(out, scale)
+8 api_shape: null

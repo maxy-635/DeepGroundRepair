@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SdcaShrinkL1
+3 api_description: Applies an L1 shrinkage step to model parameters, reducing weights
+  toward zero for regularization.
+4 api_signature: tf.raw_ops.SdcaShrinkL1(weights,l1,l2)
+5 api_details: ''
+6 api_parameters:
+- weights: Holds the feature-group weight vectors that will be updated in place.
+- l1: Sets the symmetric L1 regularization strength used for shrinkage.
+- l2: Sets the symmetric L2 regularization strength, which must be positive.
+7 api_usage_example: null
+8 api_shape: ''

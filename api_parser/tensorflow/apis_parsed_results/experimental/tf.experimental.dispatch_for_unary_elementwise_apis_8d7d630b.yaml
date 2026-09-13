@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.dispatch_for_unary_elementwise_apis
+3 api_description: Registers a custom handler that overrides unary elementwise TensorFlow
+  APIs for a matching first-argument type, letting you define one implementation that
+  applies across operations like abs, neg, and similar unary functions.
+4 api_signature: tf.experimental.dispatch_for_unary_elementwise_apis(x_type)
+5 api_details: ''
+6 api_parameters:
+- x_type: Specifies the type annotation that determines when the API handler is dispatched.
+7 api_usage_example:
+- ones_mt = tf.ones_like(mt, dtype=tf.float32)
+- print(f"values={ones_mt.values.numpy()}, mask={ones_mt.mask.numpy()}")
+8 api_shape: ''

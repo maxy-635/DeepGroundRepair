@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.memory_cached
+3 api_description: Deprecated API that reports the amount of GPU memory reserved by
+  the caching allocator.
+4 api_signature: torch.cuda.memory_cached(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

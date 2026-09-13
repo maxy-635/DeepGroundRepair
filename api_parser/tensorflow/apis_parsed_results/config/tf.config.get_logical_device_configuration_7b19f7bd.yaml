@@ -1,0 +1,25 @@
+2 api_name: tensorflow.config.get_logical_device_configuration
+3 api_description: Returns the previously set virtual (logical) device configuration
+  for a physical TensorFlow device.
+4 api_signature: tf.config.get_logical_device_configuration(device)
+5 api_details: ''
+6 api_parameters:
+- device: The physical device whose logical device configuration you want to retrieve.
+7 api_usage_example:
+- physical_devices = tf.config.list_physical_devices('CPU')
+- assert len(physical_devices) == 1, "No CPUs found"
+- configs = tf.config.get_logical_device_configuration(
+- '  physical_devices[0])'
+- 'try:'
+- '  assert configs is None'
+- '  tf.config.set_logical_device_configuration('
+- '    physical_devices[0],'
+- '    [tf.config.LogicalDeviceConfiguration(),'
+- '     tf.config.LogicalDeviceConfiguration()])'
+- '  configs = tf.config.get_logical_device_configuration('
+- '    physical_devices[0])'
+- '  assert len(configs) == 2'
+- 'except:'
+- '  # Cannot modify virtual devices once initialized.'
+- '  pass'
+8 api_shape: ''

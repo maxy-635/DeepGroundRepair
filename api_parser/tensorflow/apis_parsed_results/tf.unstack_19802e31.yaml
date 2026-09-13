@@ -1,0 +1,17 @@
+2 api_name: tensorflow.unstack
+3 api_description: Splits a tensor along a specified axis into multiple rank-(R-1)
+  tensors.
+4 api_signature: tf.unstack(value,num,axis)
+5 api_details: ''
+6 api_parameters:
+- value: The input tensor to split into separate tensors along the specified axis.
+- num: The number of output tensors to produce, inferred automatically if not provided.
+- axis: The dimension along which to unstack the tensor, with negative values counting
+    from the end.
+7 api_usage_example:
+- '@tf.function(input_signature=[tf.TensorSpec([None], tf.float32)])'
+- 'def bad(t):'
+- '  tensors = tf.unstack(t)'
+- '  return tensors[0]'
+- bad(tf.constant([1.0, 2.0, 3.0]))
+8 api_shape: ''

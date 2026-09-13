@@ -1,0 +1,19 @@
+2 api_name: tensorflow.nn.dilation2d
+3 api_description: tensorflow.nn.dilation2d performs grayscale morphological 2-D dilation
+  on a 4-D input tensor using a 3-D filter tensor, where each input channel is processed
+  independently. The output tensor's spatial dimensions are determined by the padding
+  algorithm, and the operation follows a max-sum correlation approach similar to conv2d.
+4 api_signature: tf.nn.dilation2d(input,filters,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor, a 4-D array with shape [batch, in_height, in_width, depth],
+    containing the data to be dilated.
+- filters: A 3-D tensor with shape [filter_height, filter_width, depth], representing
+    the structuring element used for dilation, and must be of the same type as the
+    input.
+- strides: A list of integers specifying the sliding window stride for each dimension
+    of the input tensor, formatted as [1, strides_height, strides_width, 1].
+- padding: A string indicating the padding algorithm to use, either 'SAME' for zero-padding
+    or 'VALID' for no padding.
+7 api_usage_example: null
+8 api_shape: ''

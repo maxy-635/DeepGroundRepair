@@ -1,0 +1,30 @@
+2 api_name: torch.nn.LayerNorm
+3 api_description: Applies Layer Normalization to normalize the inputs across features
+  for each example in a mini-batch.
+4 api_signature: torch.nn.LayerNorm(normalized_shape,eps,elementwise_affine)
+5 api_details: ''
+6 api_parameters:
+- normalized_shape: Specifies the shape of the input to be normalized, typically the
+    last dimensions of the input tensor.
+- eps: A small value added to the denominator to ensure numerical stability during
+    normalization.
+- elementwise_affine: Indicates whether the layer should have learnable parameters
+    for scaling and shifting the normalized output.
+7 api_usage_example:
+- ' # NLP Example'
+- ' batch, sentence_length, embedding_dim = 20, 5, 10'
+- ' embedding = torch.randn(batch, sentence_length, embedding_dim)'
+- ' layer_norm = nn.LayerNorm(embedding_dim)'
+- ' # Activate module'
+- ' layer_norm(embedding)'
+- ' # Image Example'
+- ' N, C, H, W = 20, 5, 10, 10'
+- ' input = torch.randn(N, C, H, W)'
+- ' # Normalize over the last three dimensions (i.e. the channel and spatial dimensions)'
+- ' # as shown in the image below'
+- ' layer_norm = nn.LayerNorm([C, H, W])'
+- ' output = layer_norm(input)'
+8 api_shape:
+  input tensor shape: (N, *)
+  output tensor shape: (N, *) (same shape as input)
+  tensor shape transform formulas: {}

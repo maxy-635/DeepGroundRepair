@@ -1,0 +1,10 @@
+2 api_name: torch.nn.parallel.DistributedDataParallel.join_hook
+3 api_description: Lets DDP keep training with uneven inputs by mirroring the model’s
+  communication pattern in forward and backward passes so all ranks stay synchronized.
+4 api_signature: '"join_hook(**kwargs)"'
+5 api_details: ''
+6 api_parameters:
+- kwargs: Optional runtime keyword arguments passed to the join hook to adjust its
+    behavior, shared across all joinable instances in the same join context.
+7 api_usage_example: null
+8 api_shape: null

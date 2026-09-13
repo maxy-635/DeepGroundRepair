@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.average
+3 api_description: Computes the weighted or unweighted average of values along a specified
+  axis, matching NumPy's average behavior except that `keepdims` is not supported.
+4 api_signature: tf.experimental.numpy.average(a,axis,weights,returned)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

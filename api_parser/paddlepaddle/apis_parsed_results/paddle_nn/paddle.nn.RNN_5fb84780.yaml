@@ -1,0 +1,11 @@
+2 api_name: paddle.nn.RNN
+3 api_description: The paddle.nn.RNN API creates a recurrent neural network using
+  an RNN cell, repeatedly executing the cell's forward pass until the input sequence
+  reaches its maximum length.
+4 api_signature: paddle.nn.RNN(cell)
+5 api_details: ''
+6 api_parameters:
+- cell: Specifies the RNN cell type to be used, which is an instance of RNNCellBase
+    and determines the behavior of the RNN layer.
+7 api_usage_example: []
+8 api_shape: null

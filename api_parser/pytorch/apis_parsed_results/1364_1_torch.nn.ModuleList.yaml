@@ -1,0 +1,18 @@
+2 api_name: torch.nn.ModuleList
+3 api_description: A container that stores submodules in an ordered list and registers
+  them as part of the module.
+4 api_signature: torch.nn.ModuleList(modules)
+5 api_details: ''
+6 api_parameters:
+- modules: An iterable of modules to store in the ModuleList.
+7 api_usage_example:
+- 'class MyModule(nn.Module):'
+- '    def __init__(self) -> None:'
+- '        super().__init__()'
+- '        self.linears = nn.ModuleList([nn.Linear(10, 10) for i in range(10)])'
+- '    def forward(self, x):'
+- '        # ModuleList can act as an iterable, or be indexed using ints'
+- '        for i, l in enumerate(self.linears):'
+- '            x = self.linears[i // 2](x) + l(x)'
+- '        return x'
+8 api_shape: null

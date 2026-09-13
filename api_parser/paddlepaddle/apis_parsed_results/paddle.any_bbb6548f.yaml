@@ -1,0 +1,45 @@
+2 api_name: paddle.any
+3 api_description: Computes the logical OR of tensor elements along a specified dimension
+  and returns the result.
+4 api_signature: paddle.any(x,axis,keepdim)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are reduced by a logical OR operation.
+- axis: The dimension or dimensions to reduce across; if `None`, all elements are
+    reduced.
+- keepdim: Controls whether the reduced dimensions are kept in the output tensor with
+    size 1.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1, 0], [1, 1]], dtype='int32')
+- x = paddle.assign(x)
+- x
+- Tensor(shape=[2, 2], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[1, 0],'
+- '[1, 1]])'
+- x = paddle.cast(x, 'bool')
+- '# x is a bool Tensor with following elements:'
+- '#    [[True, False]'
+- '#     [True, True]]'
+- '# out1 should be True'
+- out1 = paddle.any(x)
+- out1
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- True)
+- '# out2 should be [True, True]'
+- out2 = paddle.any(x, axis=0)
+- out2
+- Tensor(shape=[2], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True, True])'
+- '# keepdim=False, out3 should be [True, True], out.shape should be (2,)'
+- out3 = paddle.any(x, axis=-1)
+- out3
+- Tensor(shape=[2], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True, True])'
+- '# keepdim=True, result should be [[True], [True]], out.shape should be (2,1)'
+- out4 = paddle.any(x, axis=1, keepdim=True)
+- out4
+- Tensor(shape=[2, 1], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[[True],'
+- '[True]])'
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: torch.package.PackageExporter.all_paths
+3 api_description: Returns all files and packages in the exporter matching the given
+  source-to-destination path mapping.
+4 api_signature: all_paths(src,dst)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

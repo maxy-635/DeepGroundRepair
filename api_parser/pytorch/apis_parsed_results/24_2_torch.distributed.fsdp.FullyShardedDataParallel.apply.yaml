@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.apply
+3 api_description: Recursively applies a function to this module and all child submodules.
+4 api_signature: apply(fn)
+5 api_details: ''
+6 api_parameters:
+- fn: Function to apply to each submodule in the module tree.
+7 api_usage_example: null
+8 api_shape: null

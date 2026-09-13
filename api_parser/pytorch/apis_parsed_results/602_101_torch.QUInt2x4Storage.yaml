@@ -1,0 +1,10 @@
+2 api_name: torch.QUInt2x4Storage
+3 api_description: A 2-bit quantized tensor storage type that packs four unsigned
+  2-bit values per element for compact storage and efficient access in PyTorch.
+4 api_signature: torch.QUInt2x4Storage(*args,dtype,device)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

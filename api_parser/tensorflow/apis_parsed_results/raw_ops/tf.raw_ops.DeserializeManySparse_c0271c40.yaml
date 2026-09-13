@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.DeserializeManySparse
+3 api_description: Deserializes a minibatch of SparseTensors from a [N x 3] serialized
+  input and concatenates them along a new first dimension, producing one higher-rank
+  SparseTensor whose non-batch shape is the elementwise max of the inputs.
+4 api_signature: tf.raw_ops.DeserializeManySparse(serialized_sparse,dtype)
+5 api_details: ''
+6 api_parameters:
+- serialized_sparse: Contains the batch of serialized SparseTensor objects to be deserialized,
+    arranged as a 2-D tensor with three columns.
+- dtype: Specifies the data type to use for the deserialized SparseTensor values.
+7 api_usage_example: null
+8 api_shape: ''

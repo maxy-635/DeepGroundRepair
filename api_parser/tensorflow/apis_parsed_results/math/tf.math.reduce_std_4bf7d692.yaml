@@ -1,0 +1,15 @@
+2 api_name: tensorflow.math.reduce_std
+3 api_description: Computes the standard deviation of a tensor along specified axes,
+  optionally keeping reduced dimensions.
+4 api_signature: tf.math.reduce_std(input_tensor,axis)
+5 api_details: ''
+6 api_parameters:
+- input_tensor: Specifies the tensor whose values will be reduced to compute the standard
+    deviation.
+- axis: Specifies which dimensions to reduce over; if `None`, all dimensions are reduced.
+7 api_usage_example:
+- x = tf.constant([[1., 2.], [3., 4.]])
+- tf.math.reduce_std(x)
+- tf.math.reduce_std(x, 0)
+- tf.math.reduce_std(x, 1)
+8 api_shape: ''

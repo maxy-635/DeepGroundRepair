@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.multilabel_soft_margin_loss
+3 api_description: Calculates the multilabel soft margin loss, which is a criterion
+  that measures the loss given inputs and target labels for multi-label classification
+  tasks, using a sigmoid layer and binary cross-entropy loss.
+4 api_signature: torch.nn.functional.multilabel_soft_margin_loss(input,target,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the predicted values for the multi-label classification task.
+- target: Represents the ground truth values for the multi-label classification task.
+- reduction: 'Determines how the loss output is processed: ''none'' for no reduction,
+    ''mean'' for averaging, or ''sum'' for summing the loss values.'
+7 api_usage_example: null
+8 api_shape: null

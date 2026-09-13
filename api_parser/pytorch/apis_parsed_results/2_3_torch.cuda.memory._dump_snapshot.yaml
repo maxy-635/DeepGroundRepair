@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.memory._dump_snapshot
+3 api_description: Saves a pickled snapshot of PyTorch memory state to a file.
+4 api_signature: torch.cuda.memory._dump_snapshot(filename)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the output file name for the snapshot, defaulting to `dump_snapshot.pickle`.
+7 api_usage_example: null
+8 api_shape: null

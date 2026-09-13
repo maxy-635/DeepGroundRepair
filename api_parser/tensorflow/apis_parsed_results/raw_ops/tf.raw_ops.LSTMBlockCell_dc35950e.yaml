@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.LSTMBlockCell
+3 api_description: Computes one LSTM cell forward step from inputs, previous state,
+  weights, and bias, optionally using peephole connections, and returns the updated
+  cell and hidden states.
+4 api_signature: tf.raw_ops.LSTMBlockCell(x,cs_prev,h_prev,w,b,forget_bias,cell_clip,use_peephole)
+5 api_details: ''
+6 api_parameters:
+- x: The current input tensor to the LSTM cell, shaped as [batch_size, num_inputs].
+- cs_prev: The previous time step’s cell state tensor.
+- h_prev: The previous time step’s hidden output tensor.
+- w: The weight matrix used to transform the inputs and recurrent state.
+- b: The bias vector added during the LSTM computations.
+- forget_bias: A bias term added to the forget gate to help control memory retention.
+- cell_clip: A clipping threshold applied to the cell state to keep values bounded.
+- use_peephole: A flag that enables peephole connections for gate calculations.
+7 api_usage_example: null
+8 api_shape: ''

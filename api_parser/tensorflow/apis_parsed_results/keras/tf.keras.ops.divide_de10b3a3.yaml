@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.divide
+3 api_description: Divides two inputs element-wise, returning the true quotient.
+4 api_signature: tf.keras.ops.divide(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The numerator tensor to be divided.
+- x2: The denominator tensor used to divide `x1`.
+7 api_usage_example: null
+8 api_shape: ''

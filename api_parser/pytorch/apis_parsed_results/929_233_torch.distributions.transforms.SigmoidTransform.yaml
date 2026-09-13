@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.transforms.SigmoidTransform
+3 api_description: Applies the logistic sigmoid and its inverse logit to map between
+  real numbers and values in (0, 1).
+4 api_signature: torch.distributions.transforms.SigmoidTransform(cache_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

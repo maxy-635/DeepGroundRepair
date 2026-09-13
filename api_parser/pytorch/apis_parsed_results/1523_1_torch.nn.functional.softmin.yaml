@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.softmin
+3 api_description: torch.nn.functional.softmin computes the softmin over the input
+  tensor, emphasizing smaller values by transforming them into larger probabilities.
+4 api_signature: torch.nn.functional.softmin(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor input on which the softmin operation will be applied.
+- dim: The dimension along which the softmin will be computed, ensuring each slice
+    sums to 1.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*) where * means, any number of additional dimensions
+  output tensor shape: (*), same shape as the input
+  tensor shape transform formulas: {}

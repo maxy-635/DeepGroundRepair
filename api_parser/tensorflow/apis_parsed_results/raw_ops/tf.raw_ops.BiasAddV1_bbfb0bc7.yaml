@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.BiasAddV1
+3 api_description: Adds a 1-D bias to a value tensor with broadcasting support; this
+  deprecated BiasAddV1 variant behaves like tf.add for bias addition.
+4 api_signature: tf.raw_ops.BiasAddV1(value,bias)
+5 api_details: ''
+6 api_parameters:
+- value: The input tensor to which a bias will be added along its last dimension.
+- bias: A 1-D bias tensor, matching the input type, whose length equals the last dimension
+    of `value`.
+7 api_usage_example: null
+8 api_shape: ''

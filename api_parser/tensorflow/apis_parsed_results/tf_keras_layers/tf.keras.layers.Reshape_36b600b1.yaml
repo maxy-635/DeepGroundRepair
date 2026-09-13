@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.Reshape
+3 api_description: The tf.keras.layers.Reshape layer changes the shape of input tensors
+  to a specified target shape without altering the data.
+4 api_signature: tf.keras.layers.Reshape(target_shape)
+5 api_details: ''
+6 api_parameters:
+- target_shape: Specifies the desired shape of the output tensor, excluding the batch
+    size.
+7 api_usage_example:
+- '# also supports shape inference using `-1` as dimension'
+- y = keras.layers.Reshape((-1, 2, 2))(x)
+- y.shape
+8 api_shape: null

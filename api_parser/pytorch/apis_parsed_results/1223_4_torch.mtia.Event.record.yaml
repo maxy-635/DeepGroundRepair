@@ -1,0 +1,12 @@
+2 api_name: torch.mtia.Event.record
+3 api_description: Records the event on a specified stream, requiring the stream and
+  event to be on the same device.
+4 api_signature: record(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: Specifies the stream on which the event is recorded; if omitted, the current
+    stream is used.
+7 api_usage_example:
+- ' e_cuda = torch.Event(device=''cuda'')'
+- ' e_cuda.record()'
+8 api_shape: null

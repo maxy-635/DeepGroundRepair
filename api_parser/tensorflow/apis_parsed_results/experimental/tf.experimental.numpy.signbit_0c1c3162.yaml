@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.signbit
+3 api_description: Returns a boolean tensor indicating whether each element has its
+  sign bit set (i.e., is negative).
+4 api_signature: tf.experimental.numpy.signbit(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

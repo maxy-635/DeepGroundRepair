@@ -1,0 +1,50 @@
+2 api_name: torch.library.triton_op
+3 api_description: Registers a custom PyTorch operator implemented with one or more
+  Triton kernels, so the op can be called through `torch.library` like a native operator.
+4 api_signature: '"torch.library.triton_op(name,fn,*,mutates_args,schema)"'
+5 api_details: ''
+6 api_parameters:
+- name: Specifies the custom op’s fully qualified identifier, including namespace,
+    so PyTorch can uniquely track it.
+- mutates_args: Declares which arguments the op mutates so PyTorch can model side
+    effects correctly.
+- schema: Defines the operator’s input and output signature, or lets PyTorch infer
+    it from type annotations when omitted.
+7 api_usage_example:
+- ' import torch'
+- ' from torch.library import triton_op, wrap_triton'
+- ' import triton'
+- ' from triton import language as tl'
+- ' @triton.jit'
+- ' def add_kernel('
+- '     in_ptr0,'
+- '     in_ptr1,'
+- '     out_ptr,'
+- '     n_elements,'
+- '     BLOCK_SIZE: "tl.constexpr",'
+- ' ):'
+- '     pid = tl.program_id(axis=0)'
+- '     block_start = pid * BLOCK_SIZE'
+- '     offsets = block_start + tl.arange(0, BLOCK_SIZE)'
+- '     mask = offsets < n_elements'
+- '     x = tl.load(in_ptr0 + offsets, mask=mask)'
+- '     y = tl.load(in_ptr1 + offsets, mask=mask)'
+- '     output = x + y'
+- '     tl.store(out_ptr + offsets, output, mask=mask)'
+- ' @triton_op("mylib::add", mutates_args={})'
+- ' def add(x: torch.Tensor, y: torch.Tensor) -> torch.Tensor:'
+- '     output = torch.empty_like(x)'
+- '     n_elements = output.numel()'
+- '     def grid(meta):'
+- '         return (triton.cdiv(n_elements, meta["BLOCK_SIZE"]),)'
+- '     # NB: we need to wrap the triton kernel in a call to wrap_triton'
+- '     wrap_triton(add_kernel)[grid](x, y, output, n_elements, 16)'
+- '     return output'
+- ' @torch.compile'
+- ' def f(x, y):'
+- '     return add(x, y)'
+- ' x = torch.randn(3, device="cuda")'
+- ' y = torch.randn(3, device="cuda")'
+- ' z = f(x, y)'
+- ' assert torch.allclose(z, x + y)'
+8 api_shape: null

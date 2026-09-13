@@ -1,0 +1,33 @@
+2 api_name: paddle.nn.LayerDict
+3 api_description: LayerDict is an ordered dictionary that holds and registers sublayers,
+  allowing access and management of these sublayers like a standard Python ordered
+  dictionary.
+4 api_signature: paddle.nn.LayerDict(sublayers:Mapping[str,paddle.nn.Layer])
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- from collections import OrderedDict
+- sublayers = OrderedDict([
+- '    (''conv1d'', paddle.nn.Conv1D(3, 2, 3)),'
+- '    (''conv2d'', paddle.nn.Conv2D(3, 2, 3)),'
+- '    (''conv3d'', paddle.nn.Conv3D(4, 6, (3, 3, 3))),'
+- '])'
+- layers_dict = paddle.nn.LayerDict(sublayers=sublayers)
+- l = layers_dict['conv1d']
+- 'for k in layers_dict:'
+- '    l = layers_dict[k]'
+- '...'
+- print(len(layers_dict))
+- '3'
+- del layers_dict['conv2d']
+- print(len(layers_dict))
+- '2'
+- conv1d = layers_dict.pop('conv1d')
+- print(len(layers_dict))
+- '1'
+- layers_dict.clear()
+- print(len(layers_dict))
+- '0'
+8 api_shape: null

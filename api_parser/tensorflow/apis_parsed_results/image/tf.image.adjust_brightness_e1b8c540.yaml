@@ -1,0 +1,15 @@
+2 api_name: tensorflow.image.adjust_brightness
+3 api_description: Adjusts an RGB or grayscale image’s brightness by adding a delta
+  to every pixel value, converting fixed-point inputs to float and back as needed.
+4 api_signature: tf.image.adjust_brightness(image,delta)
+5 api_details: ''
+6 api_parameters:
+- image: The RGB image or batch of images whose brightness will be adjusted.
+- delta: The scalar value added to each pixel to make the image brighter or darker.
+7 api_usage_example:
+- x = [[[1.0, 2.0, 3.0],
+- '      [4.0, 5.0, 6.0]],'
+- '    [[7.0, 8.0, 9.0],'
+- '      [10.0, 11.0, 12.0]]]'
+- tf.image.adjust_brightness(x, delta=0.1)
+8 api_shape: ''

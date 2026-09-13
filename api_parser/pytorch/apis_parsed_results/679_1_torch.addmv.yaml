@@ -1,0 +1,14 @@
+2 api_name: torch.addmv
+3 api_description: Computes mat @ vec and adds the input vector to the result.
+4 api_signature: torch.addmv(input,mat,vec)
+5 api_details: ''
+6 api_parameters:
+- input: The vector that receives the result and is added to the matrix-vector product.
+- mat: The matrix operand used in the multiplication.
+- vec: The vector operand used in the multiplication.
+7 api_usage_example:
+- ' M = torch.randn(2)'
+- ' mat = torch.randn(2, 3)'
+- ' vec = torch.randn(3)'
+- ' torch.addmv(M, mat, vec)'
+8 api_shape: null

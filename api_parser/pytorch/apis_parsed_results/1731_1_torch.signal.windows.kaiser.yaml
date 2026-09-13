@@ -1,0 +1,14 @@
+2 api_name: torch.signal.windows.kaiser
+3 api_description: Computes a Kaiser window of a given length using a beta parameter
+  to control the window’s shape and sidelobe attenuation.
+4 api_signature: torch.signal.windows.kaiser(M,beta,sym)
+5 api_details: ''
+6 api_parameters:
+- M: Specifies the window length, i.e. how many points the returned Kaiser window
+    contains.
+7 api_usage_example:
+- ' # Generates a symmetric gaussian window with a standard deviation of 1.0.'
+- ' torch.signal.windows.kaiser(5)'
+- ' # Generates a periodic gaussian window and standard deviation equal to 0.9.'
+- ' torch.signal.windows.kaiser(5, sym=False,std=0.9)'
+8 api_shape: null

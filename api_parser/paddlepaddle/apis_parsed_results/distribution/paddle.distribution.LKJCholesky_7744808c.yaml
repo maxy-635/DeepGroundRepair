@@ -1,0 +1,14 @@
+2 api_name: paddle.distribution.LKJCholesky
+3 api_description: Represents the LKJ distribution over Cholesky factors of correlation
+  matrices, supporting sampling via the onion and cvine methods as described by Lewandowski,
+  Kurowicka, and Joe (2009).
+4 api_signature: paddle.distribution.LKJCholesky(dim,concentration,sample_method)
+5 api_details: ''
+6 api_parameters:
+- dim: Sets the size of the square correlation matrices produced by the distribution.
+- concentration: Controls how strongly the sampled correlation matrices are concentrated
+    near the identity matrix versus more varied correlations.
+- sample_method: Chooses the algorithm used to generate samples, either `onion` or
+    `cvine`.
+7 api_usage_example: []
+8 api_shape: {}

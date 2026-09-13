@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesCreateEnsemble
+3 api_description: Creates a new boosted trees ensemble resource and returns a handle
+  for managing the model.
+4 api_signature: tf.raw_ops.BoostedTreesCreateEnsemble(tree_ensemble_handle,stamp_token,tree_ensemble_serialized)
+5 api_details: ''
+6 api_parameters:
+- tree_ensemble_handle: Resource handle where the new tree ensemble will be created.
+- stamp_token: Initial stamp token used to version the resource.
+- tree_ensemble_serialized: Serialized tree ensemble proto used to initialize the
+    ensemble.
+7 api_usage_example: null
+8 api_shape: ''

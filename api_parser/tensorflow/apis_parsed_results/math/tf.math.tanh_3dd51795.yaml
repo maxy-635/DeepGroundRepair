@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.tanh
+3 api_description: Computes the element-wise hyperbolic tangent of a tensor, mapping
+  inputs from all real values to outputs in the range [-1, 1].
+4 api_signature: tf.math.tanh(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are transformed by applying the hyperbolic tangent
+    function.
+7 api_usage_example:
+- x = tf.constant([-float("inf"), -5, -0.5, 1, 1.2, 2, 3, float("inf")])
+- tf.math.tanh(x)
+8 api_shape: ''

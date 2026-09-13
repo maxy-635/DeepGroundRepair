@@ -1,0 +1,17 @@
+2 api_name: tensorflow.test.experimental.sync_devices
+3 api_description: Blocks until all pending device operations finish executing, making
+  asynchronous device work synchronous for timing or benchmarking.
+4 api_signature: tf.test.experimental.sync_devices()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import time
+- x = tf.random.normal((4096, 4096))
+- 'tf.linalg.matmul(x, x)  # Warmup.'
+- 'tf.test.experimental.sync_devices()  # Block until warmup has completed.'
+- start = time.time()
+- y = tf.linalg.matmul(x, x)
+- 'tf.test.experimental.sync_devices()  # Block until matmul has completed.'
+- end = time.time()
+- 'print(f''Time taken: {end - start}'')'
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.random.gamma
+3 api_description: Draws random samples from one or more Gamma distributions, using
+  alpha as the shape parameter and beta as the inverse scale parameter.
+4 api_signature: tf.random.gamma(shape,alpha)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output sample dimensions to generate for each gamma distribution.
+- alpha: Defines the gamma distribution shape parameter(s) to sample from, broadcastable
+    with `beta`.
+7 api_usage_example: null
+8 api_shape: ''

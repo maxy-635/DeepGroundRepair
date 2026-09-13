@@ -1,0 +1,9 @@
+2 api_name: torch.autograd.profiler.load_nvprof
+3 api_description: Opens an nvprof trace file and parses its autograd annotations
+  into a usable profiling representation.
+4 api_signature: torch.autograd.profiler.load_nvprof(path)
+5 api_details: ''
+6 api_parameters:
+- path: Path to the nvprof trace file to load and parse.
+7 api_usage_example: null
+8 api_shape: null

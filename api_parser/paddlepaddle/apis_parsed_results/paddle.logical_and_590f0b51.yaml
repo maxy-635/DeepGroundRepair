@@ -1,0 +1,19 @@
+2 api_name: paddle.logical_and
+3 api_description: Computes the element-wise logical AND of two inputs and returns
+  an N-dimensional boolean tensor.
+4 api_signature: paddle.logical_and(x,y,out)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to be combined with `y` using logical AND.
+- y: The second input tensor to be combined with `x` using logical AND.
+- out: Optional output tensor to store the result; if not provided, a new tensor is
+    created.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([True])
+- y = paddle.to_tensor([True, False, True, False])
+- res = paddle.logical_and(x, y)
+- print(res)
+- Tensor(shape=[4], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True , False, True , False])'
+8 api_shape: {}

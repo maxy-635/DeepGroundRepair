@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.random.binomial
+3 api_description: Draws samples from a binomial distribution given the number of
+  trials and success probability.
+4 api_signature: tf.keras.random.binomial(shape,probabilities,seed)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the random output to generate.
+- probabilities: Sets the success probability for each event, broadcastable with `counts`.
+- seed: Controls randomness and reproducibility via an integer or `SeedGenerator`.
+7 api_usage_example: null
+8 api_shape: ''

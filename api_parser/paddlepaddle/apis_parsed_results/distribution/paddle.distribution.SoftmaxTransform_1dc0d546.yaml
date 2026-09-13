@@ -1,0 +1,19 @@
+2 api_name: paddle.distribution.SoftmaxTransform
+3 api_description: Applies a softmax transformation by exponentiating inputs and normalizing
+  them to produce a probability distribution.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.ones((2,3))
+- t = paddle.distribution.SoftmaxTransform()
+- print(t.forward(x))
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.33333334, 0.33333334, 0.33333334],'
+- '[0.33333334, 0.33333334, 0.33333334]])'
+- print(t.inverse(t.forward(x)))
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-1.09861231, -1.09861231, -1.09861231],'
+- '[-1.09861231, -1.09861231, -1.09861231]])'
+8 api_shape: {}

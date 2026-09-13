@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Eig
+3 api_description: Computes the eigenvalues and optional right eigenvectors of one
+  or more square matrices, returning them in non-decreasing order.
+4 api_signature: tf.raw_ops.Eig(input,Tout,compute_v)
+5 api_details: ''
+6 api_parameters:
+- input: The square matrix tensor whose eigenvalues, and optionally eigenvectors,
+    are computed.
+- Tout: The complex output dtype used for the returned eigenvalues and eigenvectors.
+- compute_v: Controls whether eigenvectors are also computed and returned, or only
+    eigenvalues are returned.
+7 api_usage_example: null
+8 api_shape: ''

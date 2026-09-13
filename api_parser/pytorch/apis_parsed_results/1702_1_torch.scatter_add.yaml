@@ -1,0 +1,9 @@
+2 api_name: torch.scatter_add
+3 api_description: Returns a new tensor by adding source values into the specified
+  dim of the input tensor at the given indices, accumulating contributions when indices
+  repeat.
+4 api_signature: torch.scatter_add(input,dim,index,src)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

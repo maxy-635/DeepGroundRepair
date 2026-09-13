@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.extract_sequences
+3 api_description: Slices the input’s last axis into overlapping or non-overlapping
+  windows of fixed length, replacing that axis with a `[num_sequences, sequence_length]`
+  sequence dimension based on the given stride.
+4 api_signature: tf.keras.ops.extract_sequences(x,sequence_length)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor from which sequences are extracted.
+- sequence_length: The length of each extracted sequence.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([1, 2, 3, 4, 5, 6])
+- extract_sequences(x, 3, 2)
+8 api_shape: ''

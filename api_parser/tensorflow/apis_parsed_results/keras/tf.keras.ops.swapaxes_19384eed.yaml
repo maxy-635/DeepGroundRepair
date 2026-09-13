@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.swapaxes
+3 api_description: Swap two specified axes of a tensor and return the reordered tensor.
+4 api_signature: tf.keras.ops.swapaxes(x,axis1,axis2)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose axes will be swapped.
+- axis1: The first axis to exchange.
+- axis2: The second axis to exchange with the first axis.
+7 api_usage_example: null
+8 api_shape: ''

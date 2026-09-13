@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SqrtGrad
+3 api_description: Computes the gradient of sqrt(x) with respect to x by scaling the
+  incoming gradient dy as 0.5 * dy / sqrt(x).
+4 api_signature: tf.raw_ops.SqrtGrad(y,dy)
+5 api_details: ''
+6 api_parameters:
+- y: The input tensor whose square-root gradient is being computed.
+- dy: The upstream gradient tensor with the same type as `y`, used to calculate the
+    gradient of `sqrt(y)`.
+7 api_usage_example: null
+8 api_shape: ''

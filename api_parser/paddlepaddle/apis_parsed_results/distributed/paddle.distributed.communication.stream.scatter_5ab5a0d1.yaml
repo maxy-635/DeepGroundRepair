@@ -1,0 +1,32 @@
+2 api_name: paddle.distributed.communication.stream.scatter
+3 api_description: Scatters a tensor or tensor list from a source to multiple devices,
+  sending each device its corresponding piece.
+4 api_signature: paddle.distributed.communication.stream.scatter(tensor,tensor_or_tensor_list,src,group)
+5 api_details: ''
+6 api_parameters:
+- tensor: Receives the scattered output on each rank and is overwritten with the communicated
+    data.
+- tensor_or_tensor_list: Provides the data to be scattered from the source rank, either
+    as a single tensor or a list of tensors.
+- src: Specifies which rank acts as the source of the scatter operation, defaulting
+    to rank 0.
+- group: Specifies the communication group to use for the scatter operation, defaulting
+    to the global group.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data1 = paddle.to_tensor([7, 8, 9])'
+- '    data2 = paddle.to_tensor([10, 11, 12])'
+- '    dist.stream.scatter(data1, src=1)'
+- 'else:'
+- '    data1 = paddle.to_tensor([1, 2, 3])'
+- '    data2 = paddle.to_tensor([4, 5, 6])'
+- '    dist.stream.scatter(data1, [data1, data2], src=1)'
+- out = data1.numpy()
+- print(out)
+- '# [1, 2, 3] (2 GPUs, out for rank 0)'
+- '# [4, 5, 6] (2 GPUs, out for rank 1)'
+8 api_shape: {}

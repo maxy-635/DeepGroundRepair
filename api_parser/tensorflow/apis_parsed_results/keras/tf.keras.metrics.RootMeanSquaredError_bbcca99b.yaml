@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.metrics.RootMeanSquaredError
+3 api_description: Computes the root mean squared error between true and predicted
+  values, tracking prediction accuracy as the square root of mean squared differences.
+4 api_signature: tf.keras.metrics.RootMeanSquaredError(dtype)
+5 api_details: ''
+6 api_parameters:
+- dtype: Sets the data type used for the metric’s result.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([[0, 1], [0, 0]], [[1, 1], [0, 0]],
+- '               sample_weight=[1, 0])'
+- m.result()
+8 api_shape: ''

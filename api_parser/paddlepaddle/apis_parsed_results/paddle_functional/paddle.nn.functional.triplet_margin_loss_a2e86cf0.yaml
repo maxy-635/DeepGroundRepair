@@ -1,0 +1,32 @@
+2 api_name: paddle.nn.functional.triplet_margin_loss
+3 api_description: The paddle.nn.functional.triplet_margin_loss API computes the triplet
+  loss to evaluate relative similarity between samples using input, positive, and
+  negative examples, requiring a margin greater than 0 and input tensors of shape
+  (N, *).
+4 api_signature: paddle.nn.functional.triplet_margin_loss(input,positive,negative,margin)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor representing anchor samples with a shape of [N, *] and data
+    type float32 or float64.
+- positive: The positive tensor representing samples similar to the anchor, with the
+    same shape and data type as the input.
+- negative: The negative tensor representing samples dissimilar to the anchor, with
+    the same shape and data type as the input.
+- margin: The margin value that defines the minimum distance between positive and
+    negative pairs.
+- p: The norm degree used to calculate pairwise distances between the input samples.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- input = paddle.to_tensor([[1, 5, 3], [0, 3, 2], [1, 4, 1]], dtype=paddle.float32)
+- positive = paddle.to_tensor([[5, 1, 2], [3, 2, 1], [3, -1, 1]], dtype=paddle.float32)
+- negative = paddle.to_tensor([[2, 1, -3], [1, 1, -1], [4, -2, 1]], dtype=paddle.float32)
+- loss = F.triplet_margin_loss(input, positive, negative, margin=1.0, reduction='none')
+- print(loss)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 0.57496595, 0.        ])'
+- loss = F.triplet_margin_loss(input, positive, negative, margin=1.0, reduction='mean')
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.19165532)
+8 api_shape: null

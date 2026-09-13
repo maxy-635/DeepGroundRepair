@@ -1,0 +1,12 @@
+2 api_name: torch.nn.functional.mse_loss
+3 api_description: Computes the element-wise mean squared error between input and
+  target tensors, with optional weighting for each element.
+4 api_signature: torch.nn.functional.mse_loss(input,target,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: The predicted values from the model.
+- target: The actual ground truth values to compare against.
+- reduction: 'Determines how to aggregate the loss values: ''none'' for no reduction,
+    ''mean'' for averaging, or ''sum'' for total summation.'
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,20 @@
+2 api_name: tensorflow.keras.losses.CategoricalFocalCrossentropy
+3 api_description: Computes alpha-balanced categorical focal crossentropy for one-hot
+  multi-class labels, down-weighting easy examples with a gamma-based focal factor
+  to emphasize hard examples and help with class imbalance.
+4 api_signature: tf.keras.losses.CategoricalFocalCrossentropy(gamma,from_logits,label_smoothing,axis)
+5 api_details: ''
+6 api_parameters:
+- gamma: Controls how strongly easy examples are down-weighted, with higher values
+    focusing training more on hard examples.
+- from_logits: Indicates whether the model outputs raw logits instead of normalized
+    probabilities.
+- label_smoothing: Reduces target certainty by blending labels with a small uniform
+    distribution across classes.
+- axis: Specifies which axis contains the class features when computing crossentropy.
+7 api_usage_example:
+- '# Using ''none'' reduction type.'
+- cce = keras.losses.CategoricalFocalCrossentropy(
+- '    reduction=None)'
+- cce(y_true, y_pred)
+8 api_shape: ''

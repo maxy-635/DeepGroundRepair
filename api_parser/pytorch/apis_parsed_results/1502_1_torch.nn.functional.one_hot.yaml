@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.one_hot
+3 api_description: Converts a LongTensor of indices into a one-hot encoded tensor,
+  expanding the last dimension to the specified number of classes with 1s at the index
+  positions and 0s elsewhere.
+4 api_signature: torch.nn.functional.one_hot(tensor,num_class es)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor containing integer class values that need to be converted
+    to one-hot encoded format.
+7 api_usage_example:
+- ' F.one_hot(torch.arange(0, 5) % 3)'
+- ' F.one_hot(torch.arange(0, 5) % 3, num_classes=5)'
+- ' F.one_hot(torch.arange(0, 6).view(3,2) % 3)'
+8 api_shape: null

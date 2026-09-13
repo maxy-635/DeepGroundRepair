@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.models.load_model
+3 api_description: Loads a model previously saved with model.save(), restoring its
+  architecture, weights, and compile state when available.
+4 api_signature: tf.keras.models.load_model(filepath,compile)
+5 api_details: ''
+6 api_parameters:
+- filepath: Path to the saved model file to load.
+- compile: Whether to compile the model after loading.
+7 api_usage_example: null
+8 api_shape: ''

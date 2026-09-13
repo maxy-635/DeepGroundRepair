@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.utils.plot_model
+3 api_description: Converts a Keras model into a graph visualization in dot format
+  and saves it to a file.
+4 api_signature: tf.keras.utils.plot_model(model,to_file,show_shapes,show_layer_names,rankdir)
+5 api_details: ''
+6 api_parameters:
+- model: The Keras model instance to visualize.
+- to_file: The file path where the plot image will be saved.
+- show_shapes: Whether to include tensor shape information in the plot.
+- show_layer_names: Whether to display layer names in the plot.
+- rankdir: The layout direction for the plot, with `TB` for vertical and `LR` for
+    horizontal.
+7 api_usage_example: null
+8 api_shape: ''

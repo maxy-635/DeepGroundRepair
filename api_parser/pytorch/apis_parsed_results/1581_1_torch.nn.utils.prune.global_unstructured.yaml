@@ -1,0 +1,35 @@
+2 api_name: torch.nn.utils.prune.global_unstructured
+3 api_description: Globally applies a pruning method across the specified parameters,
+  pruning the least important tensor elements from all selected tensors based on the
+  method.
+4 api_signature: '"torch.nn.utils.prune.global_unstructured(parameters,pruning_method,importance_scores,**kwargs)"'
+5 api_details: ''
+6 api_parameters:
+- pruning_method: Specifies the unstructured pruning function to apply globally across
+    the selected parameters.
+- importance_scores: Provides per-parameter score tensors used to decide which weights
+    to prune instead of using the parameters themselves.
+- kwargs: Supplies additional pruning options such as `amount`, which sets how many
+    parameters to remove.
+7 api_usage_example:
+- ' from torch.nn.utils import prune'
+- ' from collections import OrderedDict'
+- ' net = nn.Sequential('
+- '...     OrderedDict('
+- '...         ['
+- '...             ("first", nn.Linear(10, 4)),'
+- '...             ("second", nn.Linear(4, 1)),'
+- '...         ]'
+- '...     )'
+- '... )'
+- ' parameters_to_prune = ('
+- '...     (net.first, "weight"),'
+- '...     (net.second, "weight"),'
+- '... )'
+- ' prune.global_unstructured('
+- '...     parameters_to_prune,'
+- '...     pruning_method=prune.L1Unstructured,'
+- '...     amount=10,'
+- '... )'
+- ' print(sum(torch.nn.utils.parameters_to_vector(net.buffers()) == 0))'
+8 api_shape: null

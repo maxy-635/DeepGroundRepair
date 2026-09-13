@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.applications.ResNet50V2
+3 api_description: Builds the ResNet50V2 deep convolutional network for image classification
+  and transfer learning, with support for pretrained weights and fine-tuning.
+4 api_signature: tf.keras.applications.ResNet50V2(include_top,weights,input_shape,pooling,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Controls whether the model includes its final classification layer.
+- weights: Specifies the source of pretrained weights, or uses random initialization
+    if set to None.
+- input_shape: Defines the input tensor shape when not using the top classification
+    layer.
+- pooling: Chooses the pooling strategy for feature extraction when the top layer
+    is excluded.
+- classes: Sets the number of output classes when using the top layer without pretrained
+    weights.
+7 api_usage_example: null
+8 api_shape: ''

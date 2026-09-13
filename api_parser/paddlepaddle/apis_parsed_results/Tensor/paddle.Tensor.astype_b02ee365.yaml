@@ -1,0 +1,16 @@
+2 api_name: paddle.Tensor.astype
+3 api_description: Returns the tensor cast to a requested dtype, or the original tensor
+  if it already has that dtype.
+4 api_signature: paddle.Tensor.astype(self,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- original_tensor = paddle.ones([2, 2])
+- 'print("original tensor''s dtype is: {}".format(original_tensor.dtype))'
+- 'original tensor''s dtype is: paddle.float32'
+- new_tensor = original_tensor.astype('float32')
+- 'print("new tensor''s dtype is: {}".format(new_tensor.dtype))'
+- 'new tensor''s dtype is: paddle.float32'
+8 api_shape: {}

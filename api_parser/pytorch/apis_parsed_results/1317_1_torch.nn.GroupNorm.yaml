@@ -1,0 +1,27 @@
+2 api_name: torch.nn.GroupNorm
+3 api_description: GroupNorm normalizes the input across groups of channels in a mini-batch,
+  improving training stability and performance, especially in scenarios with small
+  batch sizes.
+4 api_signature: torch.nn.GroupNorm(num_groups,num_channels,eps)
+5 api_details: ''
+6 api_parameters:
+- num_groups: Specifies how many groups the input channels will be divided into for
+    normalization.
+- num_channels: Defines the total number of channels in the input tensor that will
+    be normalized.
+- eps: Provides a small constant added to the denominator to prevent division by zero
+    during normalization.
+7 api_usage_example:
+- ' input = torch.randn(20, 6, 10, 10)'
+- ' # Separate 6 channels into 3 groups'
+- ' m = nn.GroupNorm(3, 6)'
+- ' # Separate 6 channels into 6 groups (equivalent with InstanceNorm)'
+- ' m = nn.GroupNorm(6, 6)'
+- ' # Put all 6 channels into a single group (equivalent with LayerNorm)'
+- ' m = nn.GroupNorm(1, 6)'
+- ' # Activating the module'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, *) where Channel_in=\text{num_channels}
+  output tensor shape: (N, Channel_out, *) (same shape as input)
+  tensor shape transform formulas: {}

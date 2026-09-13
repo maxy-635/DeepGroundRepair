@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.preprocessing.image.random_shear
+3 api_description: Applies a random shear transformation to an image within a specified
+  intensity range, with the shear amount sampled uniformly and optionally adjusted
+  by a random seed.
+4 api_signature: tf.keras.preprocessing.image.random_shear(x,intensity)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.optimizers.serialize
+3 api_description: Serializes a Keras optimizer into a Python dictionary configuration
+  that can be saved, inspected, or recreated later.
+4 api_signature: tf.keras.optimizers.serialize(optimizer)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The Optimizer instance to convert into a serialized configuration.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.datasets.imdb.load_data
+3 api_description: Loads the preprocessed IMDB movie review sentiment dataset as integer-encoded
+  word sequences, with optional vocabulary filtering and padding-token handling.
+4 api_signature: tf.keras.datasets.imdb.load_data(num_words,maxlen,start_char,oov_char,index_from)
+5 api_details: ''
+6 api_parameters:
+- num_words: Keeps only the `num_words` most frequent words and replaces the rest
+    with `oov_char`; if `None`, keeps all words.
+- maxlen: Limits sequences to a maximum length by truncating any that are longer;
+    if `None`, no truncation is applied.
+- start_char: Prepends this integer as the sequence start marker, usually using `1`
+    since `0` is typically reserved for padding.
+- oov_char: Uses this integer to represent words that are out of vocabulary or filtered
+    out by `num_words` or `skip_top`.
+- index_from: Offsets actual word indices so real tokens start at this integer or
+    higher.
+7 api_usage_example: null
+8 api_shape: ''

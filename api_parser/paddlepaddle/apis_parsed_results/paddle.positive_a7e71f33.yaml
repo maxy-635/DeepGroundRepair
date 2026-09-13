@@ -1,0 +1,15 @@
+2 api_name: paddle.positive
+3 api_description: Returns the tensor unchanged when unary plus is applied.
+4 api_signature: paddle.positive(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are checked for positivity; it must not be of boolean
+    type.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-1, 0, 1])
+- out = paddle.positive(x)
+- print(out)
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[-1,  0,  1])'
+8 api_shape: {}

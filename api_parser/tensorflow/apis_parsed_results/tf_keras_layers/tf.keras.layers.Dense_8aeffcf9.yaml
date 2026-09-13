@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.layers.Dense
+3 api_description: The tf.keras.layers.Dense layer performs a dense (fully connected)
+  neural network operation, computing the output as the element-wise activation of
+  the dot product of the input and a weights matrix, plus an optional bias vector.
+4 api_signature: tf.keras.layers.Dense(units, activation)
+5 api_details: ''
+6 api_parameters:
+- units: Defines the number of output neurons in the layer.
+- activation: Specifies the activation function applied to the output; defaults to
+    linear if not provided.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,43 @@
+2 api_name: paddle.sparse.pca_lowrank
+3 api_description: Computes low-rank principal components from a sparse matrix, providing
+  a linear PCA approximation.
+4 api_signature: paddle.sparse.pca_lowrank(x,q,center)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the input 2D tensor to decompose, with float32 or float64 data.
+- q: Sets the approximate rank used for the low-rank PCA, typically chosen slightly
+    above the true rank.
+- center: Controls whether the input tensor is mean-centered before performing PCA.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- format = "coo"
+- paddle.seed(2023)
+- dense_x = paddle.randn((5, 5), dtype='float64')
+- 'if format == "coo":'
+- '    sparse_x = dense_x.to_sparse_coo(len(dense_x.shape))'
+- 'else:'
+- '    sparse_x = dense_x.to_sparse_csr()'
+- print("sparse.pca_lowrank API only support CUDA 11.x")
+- '# U, S, V = None, None, None'
+- '# use code blow when your device CUDA version >= 11.0'
+- U, S, V = paddle.sparse.pca_lowrank(sparse_x)
+- print(U)
+- Tensor(shape=[5, 5], dtype=float64, place=Place(gpu:0), stop_gradient=True,
+- '[[-0.31412600,  0.44814876,  0.18390454, -0.19967630, -0.79170452],'
+- '[-0.31412600,  0.44814876,  0.18390454, -0.58579808,  0.56877700],'
+- '[-0.31412600,  0.44814876,  0.18390454,  0.78547437,  0.22292751],'
+- '[-0.38082462,  0.10982129, -0.91810233,  0.00000000,  0.00000000],'
+- '[ 0.74762770,  0.62082796, -0.23585052,  0.00000000, -0.00000000]])'
+- print(S)
+- Tensor(shape=[5], dtype=float64, place=Place(gpu:0), stop_gradient=True,
+- '[1.56031096, 1.12956227, 0.27922715, 0.00000000, 0.00000000])'
+- print(V)
+- Tensor(shape=[5, 5], dtype=float64, place=Place(gpu:0), stop_gradient=True,
+- '[[ 0.88568469, -0.29081908,  0.06163676,  0.19597228, -0.29796422],'
+- '[-0.26169364, -0.27616183,  0.43148760, -0.42522796, -0.69874939],'
+- '[ 0.28587685,  0.30695344, -0.47790836, -0.76982533, -0.05501437],'
+- '[-0.23958121, -0.62770647, -0.71141770,  0.11463224, -0.17125926],'
+- '[ 0.08918713, -0.59238761,  0.27478686, -0.41833534,  0.62498824]])'
+8 api_shape: {}

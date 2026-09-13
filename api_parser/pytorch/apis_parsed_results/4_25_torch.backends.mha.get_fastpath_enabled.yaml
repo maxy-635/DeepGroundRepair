@@ -1,0 +1,8 @@
+2 api_name: torch.backends.mha.get_fastpath_enabled
+3 api_description: Returns whether the TransformerEncoder and MultiHeadAttention fast
+  path is enabled, or True during JIT scripting.
+4 api_signature: torch.backends.mha.get_fastpath_enabled()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

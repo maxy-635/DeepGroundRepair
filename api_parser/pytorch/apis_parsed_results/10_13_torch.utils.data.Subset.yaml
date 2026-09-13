@@ -1,0 +1,12 @@
+2 api_name: torch.utils.data.Subset
+3 api_description: A dataset wrapper that exposes only the items from a parent dataset
+  at the specified indices.
+4 api_signature: torch.utils.data.Subset(dataset,indices)
+5 api_details: ''
+6 api_parameters:
+- dataset: The full dataset to draw the subset from.
+- indices: The selected indices from the dataset that define the subset.
+7 api_usage_example:
+- 'def __getitems__(self, indices):'
+- '    return [self.__getitem__(idx) for idx in indices]'
+8 api_shape: null

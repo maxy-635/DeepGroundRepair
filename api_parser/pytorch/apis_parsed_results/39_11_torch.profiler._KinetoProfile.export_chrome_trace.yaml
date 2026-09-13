@@ -1,0 +1,8 @@
+2 api_name: torch.profiler._KinetoProfile.export_chrome_trace
+3 api_description: Exports the collected profiling trace as Chrome JSON, and when
+  Kineto is enabled, exports only the last scheduled cycle.
+4 api_signature: export_chrome_trace(path)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

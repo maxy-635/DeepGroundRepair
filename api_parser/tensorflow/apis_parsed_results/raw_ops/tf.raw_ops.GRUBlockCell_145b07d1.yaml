@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.GRUBlockCell
+3 api_description: Computes one forward-propagation step of a GRU cell, producing
+  updated gate values, new hidden state, and output from the current input and previous
+  state.
+4 api_signature: tf.raw_ops.GRUBlockCell(x,h_prev,w_ru,w_c,b_ru,b_c)
+5 api_details: ''
+6 api_parameters:
+- x: The current input tensor for the GRU cell.
+- h_prev: The previous hidden state used as the recurrent input.
+- w_ru: Weights for computing the reset and update gates from the input and previous
+    state.
+- w_c: Weights for computing the candidate hidden state.
+- b_ru: Biases for the reset and update gate computations.
+- b_c: Biases for the candidate state computation.
+7 api_usage_example: null
+8 api_shape: ''

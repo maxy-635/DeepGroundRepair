@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.TensorListResize
+3 api_description: Resizes a TensorList to the specified output size.
+4 api_signature: tf.raw_ops.TensorListResize(input_handle,size)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The variant tensor that references the TensorList to resize.
+- size: The int32 tensor specifying the new desired length of the TensorList.
+7 api_usage_example: null
+8 api_shape: ''

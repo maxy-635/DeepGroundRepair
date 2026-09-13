@@ -1,0 +1,23 @@
+2 api_name: paddle.where
+3 api_description: Select elements from `x` or `y` based on `condition`, returning
+  a tensor with values chosen elementwise according to the condition.
+4 api_signature: paddle.where(condition,x,y)
+5 api_details: ''
+6 api_parameters:
+- condition: Selects which elements come from `x` or `y` based on whether the condition
+    is True or False.
+- x: Provides the value to use when `condition` is True.
+- y: Provides the value to use when `condition` is False.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([0.9383, 0.1983, 3.2, 1.2])
+- y = paddle.to_tensor([1.0, 1.0, 1.0, 1.0])
+- out = paddle.where(x>1, x, y)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.        , 1.        , 3.20000005, 1.20000005])'
+- out = paddle.where(x>1)
+- print(out)
+- (Tensor(shape=[2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[2, 3]),)'
+8 api_shape: {}

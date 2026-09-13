@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.logical_xor
+3 api_description: Returns the element-wise logical XOR of two inputs, producing True
+  where exactly one input is True and False otherwise.
+4 api_signature: tf.keras.ops.logical_xor(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input tensor to compare elementwise.
+- x2: The second input tensor to compare elementwise.
+7 api_usage_example: null
+8 api_shape: ''

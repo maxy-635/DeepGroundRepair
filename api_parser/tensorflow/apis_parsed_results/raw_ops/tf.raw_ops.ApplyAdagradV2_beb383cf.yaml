@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ApplyAdagradV2
+3 api_description: Applies the AdagradV2 update to a variable by accumulating squared
+  gradients and subtracting a learning-rate-scaled, inverse-root-accumulated gradient
+  step.
+4 api_signature: tf.raw_ops.ApplyAdagradV2(var,accum,lr,grad)
+5 api_details: ''
+6 api_parameters:
+- var: The variable to be updated in place by the AdagradV2 optimization step.
+- accum: The accumulator tensor that stores the running sum of squared gradients for
+    adaptive scaling.
+- lr: The scalar learning-rate tensor that controls the step size of the update.
+- grad: The gradient tensor used to compute the parameter update.
+7 api_usage_example: null
+8 api_shape: ''

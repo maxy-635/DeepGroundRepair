@@ -1,0 +1,24 @@
+2 api_name: paddle.linalg.lu_solve
+3 api_description: Solves the linear system Ax = b using a precomputed LU decomposition
+  of A and a right-hand side vector b.
+4 api_signature: paddle.linalg.lu_solve(b,lu,pivots,trans)
+5 api_details: ''
+6 api_parameters:
+- b: The right-hand side vector or matrix to solve for in the linear system.
+- lu: The LU factorization of the coefficient matrix used to compute the solution.
+- pivots: The pivot indices or permutation information from the LU decomposition.
+- trans: Specifies whether to solve the original system or a transposed/conjugate-transposed
+    version.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- A = paddle.to_tensor([[3, 1], [1, 2]], dtype="float64")
+- b = paddle.to_tensor([[9, 8], [9, 8]], dtype="float64")
+- lu, p = paddle.linalg.lu(A)
+- x = paddle.linalg.lu_solve(b, lu, p)
+- paddle.allclose(A @ x, b)
+- print(x)
+- Tensor(shape=[2, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[1.80000000, 1.60000000],'
+- '[3.60000000, 3.20000000]])'
+8 api_shape: {}

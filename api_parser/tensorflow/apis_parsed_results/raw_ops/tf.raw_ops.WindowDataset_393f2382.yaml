@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.WindowDataset
+3 api_description: Groups input elements into sliding windows of a fixed size, advancing
+  by a given shift, and optionally drops incomplete final windows.
+4 api_signature: tf.raw_ops.WindowDataset(input_dataset,size,shift,stride,drop_remainder)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset whose elements are grouped into sliding windows.
+- size: The number of input elements to include in each window.
+- shift: The number of input elements to advance the window each time.
+- stride: The spacing between elements selected within each window.
+- drop_remainder: Whether to discard the final window if it is smaller than `size`.
+7 api_usage_example: null
+8 api_shape: ''

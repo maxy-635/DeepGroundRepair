@@ -1,0 +1,8 @@
+2 api_name: paddle.profiler.SortedKeys
+3 api_description: Specifies the sort order used when displaying `paddle.profiler.Profiler.summary`
+  tables.
+4 api_signature: paddle.profiler.SortedKeys(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

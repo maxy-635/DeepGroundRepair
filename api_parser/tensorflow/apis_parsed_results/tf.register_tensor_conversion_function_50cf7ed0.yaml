@@ -1,0 +1,11 @@
+2 api_name: tensorflow.register_tensor_conversion_function
+3 api_description: Registers a conversion function that turns objects of a specified
+  base type into Tensor values.
+4 api_signature: tf.register_tensor_conversion_function(base_type,conversion_func)
+5 api_details: ''
+6 api_parameters:
+- base_type: Specifies the type or types of objects that the conversion function can
+    accept.
+- conversion_func: Defines how instances of the base type are converted into a Tensor.
+7 api_usage_example: null
+8 api_shape: ''

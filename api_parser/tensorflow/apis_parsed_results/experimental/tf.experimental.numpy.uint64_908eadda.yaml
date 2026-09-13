@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.uint64
+3 api_description: 64-bit unsigned integer scalar type for TensorFlow NumPy, representing
+  nonnegative whole numbers from 0 to 2^64-1 with NumPy-compatible scalar attributes
+  and array-like properties.
+4 api_signature: tf.experimental.numpy.uint64(*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

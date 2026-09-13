@@ -1,0 +1,7 @@
+2 api_name: torch.cuda.reset_peak_host_memory_stats
+3 api_description: Resets the host memory allocator’s recorded peak memory statistics.
+4 api_signature: torch.cuda.reset_peak_host_memory_stats()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

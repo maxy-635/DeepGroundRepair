@@ -1,0 +1,11 @@
+2 api_name: tensorflow.make_tensor_proto
+3 api_description: Creates a TensorProto from a Python value or numpy array, inferring
+  or using a specified dtype and shape for TensorFlow serialization and serving requests.
+4 api_signature: tf.make_tensor_proto(values,dtype,shape)
+5 api_details: ''
+6 api_parameters:
+- values: Supplies the data that will be encoded into the TensorProto.
+- dtype: Specifies the tensor data type to use, if provided.
+- shape: Defines the tensor's dimensions as a list of integers.
+7 api_usage_example: null
+8 api_shape: ''

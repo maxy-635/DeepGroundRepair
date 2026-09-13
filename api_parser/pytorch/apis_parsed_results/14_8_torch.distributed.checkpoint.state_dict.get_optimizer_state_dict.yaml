@@ -1,0 +1,12 @@
+2 api_name: torch.distributed.checkpoint.state_dict.get_optimizer_state_dict
+3 api_description: Returns a combined optimizer state_dict, gathering and normalizing
+  optimizer states for checkpointing in distributed training.
+4 api_signature: torch.distributed.checkpoint.state_dict.get_optimizer_state_dict(model,optimizers)
+5 api_details: ''
+6 api_parameters:
+- model: The model whose parameters are used to determine which optimizer state should
+    be collected and mapped.
+- optimizers: The optimizer or optimizers whose state dictionaries are gathered for
+    checkpointing.
+7 api_usage_example: null
+8 api_shape: null

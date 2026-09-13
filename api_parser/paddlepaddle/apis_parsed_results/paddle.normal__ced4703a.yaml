@@ -1,0 +1,20 @@
+2 api_name: paddle.normal_
+3 api_description: In-place fills the input tensor with random values sampled from
+  a normal distribution.
+4 api_signature: paddle.normal_(x,mean,std)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor to fill with random values.
+- mean: Sets the mean of the generated output tensor, defaulting to 0.0.
+- std: Sets the standard deviation of the generated output tensor, defaulting to 1.0.
+7 api_usage_example:
+- import paddle
+- x = paddle.randn([3, 4])
+- x.normal_()
+- '>>>'
+- print(x)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.06132207,  1.11349595,  0.41906244, -0.24858207],'
+- '[-1.85169315, -1.50370061,  1.73954511,  0.13331604],'
+- '[ 1.66359663, -0.55764782, -0.59911072, -0.57773495]])'
+8 api_shape: {}

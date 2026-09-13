@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.LoadTPUEmbeddingADAMParameters
+3 api_description: Loads ADAM optimization parameters into TPU HBM for embedding tables,
+  after configuration, typically to restore checkpointed values before training.
+4 api_signature: tf.raw_ops.LoadTPUEmbeddingADAMParameters(parameters,momenta,velocities,num_shards,shard_id)
+5 api_details: ''
+6 api_parameters:
+- parameters: Holds the ADAM optimizer parameters tensor as float32 values.
+- momenta: Holds the ADAM optimizer momenta tensor as float32 values.
+- velocities: Holds the ADAM optimizer velocities tensor as float32 values.
+- num_shards: Specifies the total number of shards.
+- shard_id: Specifies the ID of the current shard.
+7 api_usage_example: null
+8 api_shape: ''

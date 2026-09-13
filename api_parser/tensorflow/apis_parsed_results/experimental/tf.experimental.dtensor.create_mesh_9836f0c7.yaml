@@ -1,0 +1,15 @@
+2 api_name: tensorflow.experimental.dtensor.create_mesh
+3 api_description: Creates a single-client DTensor mesh from specified dimensions
+  and devices, or a default 1D CPU mesh using all available devices when no arguments
+  are provided.
+4 api_signature: tf.experimental.dtensor.create_mesh(mesh_dims,mesh_name,devices,device_type,use_xla_spmd)
+5 api_details: ''
+6 api_parameters:
+- mesh_dims: Defines the mesh dimensions and their sizes, determining how devices
+    are arranged across the mesh.
+- mesh_name: Sets an optional name for the created mesh.
+- devices: Specifies the logical devices to build the mesh from.
+- device_type: Selects the device type to use when `devices` is not provided.
+- use_xla_spmd: Chooses XLA SPMD execution instead of DTensor SPMD when set to True.
+7 api_usage_example: null
+8 api_shape: ''

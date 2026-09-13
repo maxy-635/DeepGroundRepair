@@ -1,0 +1,18 @@
+2 api_name: tensorflow.random_normal_initializer
+3 api_description: Creates tensor initial values from a normal distribution for variable
+  initialization, with the shape and dtype determined later.
+4 api_signature: tf.random_normal_initializer(stddev,seed)
+5 api_details: ''
+6 api_parameters:
+- stddev: Sets the standard deviation of the generated random values.
+- seed: Sets the Python integer seed used to make the random values reproducible.
+7 api_usage_example:
+- 'def make_variables(k, initializer):'
+- '  return (tf.Variable(initializer(shape=[k], dtype=tf.float32)),'
+- '          tf.Variable(initializer(shape=[k, k], dtype=tf.float32)))'
+- v1, v2 = make_variables(3,
+- '                        tf.random_normal_initializer(mean=1., stddev=2.))'
+- v1
+- v2
+- make_variables(4, tf.random_uniform_initializer(minval=-1., maxval=1.))
+8 api_shape: ''

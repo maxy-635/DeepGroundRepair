@@ -1,0 +1,20 @@
+2 api_name: torch.nn.PixelShuffle
+3 api_description: The torch.nn.PixelShuffle API rearranges elements in a tensor to
+  increase its spatial resolution by a specified upscaling factor.
+4 api_signature: torch.nn.PixelShuffle(upscale_factor)
+5 api_details: ''
+6 api_parameters:
+- upscale_factor: The factor by which to increase the spatial resolution of the input
+    tensor.
+7 api_usage_example:
+- ' pixel_shuffle = nn.PixelShuffle(3)'
+- ' input = torch.randn(1, 9, 4, 4)'
+- ' output = pixel_shuffle(input)'
+- ' print(output.size())'
+8 api_shape:
+  input tensor shape: (*, Channel_in, Height_in, Width_in), where * is zero
+  output tensor shape: (*, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in \div upscale_factor^2
+    tensor height: Height_out = Height_in * upscale_factor
+    tensor width: Width_out = Width_in * upscale_factor

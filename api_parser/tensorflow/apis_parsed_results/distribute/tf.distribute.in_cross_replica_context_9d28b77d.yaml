@@ -1,0 +1,8 @@
+2 api_name: tensorflow.distribute.in_cross_replica_context
+3 api_description: Returns True when TensorFlow is executing in a cross-replica context,
+  rather than within a replica context.
+4 api_signature: tf.distribute.in_cross_replica_context()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

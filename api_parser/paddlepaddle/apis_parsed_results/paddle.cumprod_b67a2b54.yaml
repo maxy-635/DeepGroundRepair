@@ -1,0 +1,38 @@
+2 api_name: paddle.cumprod
+3 api_description: Computes the cumulative product of tensor elements along a specified
+  dimension.
+4 api_signature: paddle.cumprod(x,dim)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are cumulatively multiplied.
+- dim: The axis along which to compute the cumulative product, or `None` to use the
+    flattened tensor.
+7 api_usage_example:
+- import paddle
+- data = paddle.arange(12)
+- data = paddle.reshape(data, (3, 4))
+- data
+- Tensor(shape=[3, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0 , 1 , 2 , 3 ],'
+- '[4 , 5 , 6 , 7 ],'
+- '[8 , 9 , 10, 11]])'
+- y = paddle.cumprod(data, dim=0)
+- y
+- Tensor(shape=[3, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0  , 1  , 2  , 3  ],'
+- '[0  , 5  , 12 , 21 ],'
+- '[0  , 45 , 120, 231]])'
+- y = paddle.cumprod(data, dim=-1)
+- y
+- Tensor(shape=[3, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0   , 0   , 0   , 0   ],'
+- '[4   , 20  , 120 , 840 ],'
+- '[8   , 72  , 720 , 7920]])'
+- y = paddle.cumprod(data, dim=1, dtype='float64')
+- y
+- Tensor(shape=[3, 4], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[0.   , 0.   , 0.   , 0.   ],'
+- '[4.   , 20.  , 120. , 840. ],'
+- '[8.   , 72.  , 720. , 7920.]])'
+- assert y.dtype == paddle.float64
+8 api_shape: {}

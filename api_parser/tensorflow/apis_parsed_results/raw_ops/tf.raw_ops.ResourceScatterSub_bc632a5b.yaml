@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ResourceScatterSub
+3 api_description: Subtracts sparse update values from the referenced resource variable
+  at specified indices.
+4 api_signature: tf.raw_ops.ResourceScatterSub(resource,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- resource: The variable resource to be updated in place.
+- indices: The indices along the first dimension where subtraction updates are applied.
+- updates: The values to subtract from the variable at the specified indices.
+7 api_usage_example: null
+8 api_shape: ''

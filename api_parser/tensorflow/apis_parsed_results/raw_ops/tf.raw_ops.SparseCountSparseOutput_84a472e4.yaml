@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SparseCountSparseOutput
+3 api_description: Counts occurrences of input values in a sparse tensor and returns
+  the result as a sparse output.
+4 api_signature: tf.raw_ops.SparseCountSparseOutput(indices,values,dense_shape,binary_output,minlength,maxlength)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the coordinates of the sparse tensor elements to be counted.
+- values: Provides the sparse values whose occurrences will be counted.
+- dense_shape: Defines the overall dense shape of the sparse tensor.
+- binary_output: Controls whether to output counts or just presence indicators.
+- minlength: Sets the minimum output value index to include, or disables the minimum
+    when -1.
+- maxlength: Sets the maximum output value index to include, or disables the maximum
+    when -1.
+7 api_usage_example: null
+8 api_shape: ''

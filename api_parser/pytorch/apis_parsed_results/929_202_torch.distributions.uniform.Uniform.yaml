@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.uniform.Uniform
+3 api_description: Represents a continuous uniform distribution over an interval [low,
+  high], with methods to sample values, compute log probabilities, and access distribution
+  properties such as mean, variance, support, and entropy.
+4 api_signature: '"Uniform(low,high)"'
+5 api_details: ''
+6 api_parameters:
+- low: Sets the inclusive lower bound of the uniform distribution.
+- high: Sets the exclusive upper bound of the uniform distribution.
+7 api_usage_example:
+- ' m = Uniform(torch.tensor([0.0]), torch.tensor([5.0]))'
+- ' m.sample()  # uniformly distributed in the range [0.0, 5.0)'
+8 api_shape: null

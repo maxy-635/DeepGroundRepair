@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli.log_prob
+3 api_description: Computes the log probability of a sample under a LogitRelaxedBernoulli
+  distribution.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The sample or tensor of values whose log probability under the distribution
+    is being computed.
+7 api_usage_example: null
+8 api_shape: null

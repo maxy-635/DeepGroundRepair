@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ReaderSerializeState
+3 api_description: Serializes a Reader’s current state into a string tensor when the
+  reader supports serialization; otherwise, it may return an Unimplemented error.
+4 api_signature: tf.raw_ops.ReaderSerializeState(reader_handle)
+5 api_details: ''
+6 api_parameters:
+- reader_handle: A mutable string tensor that identifies the Reader instance whose
+    state will be serialized.
+7 api_usage_example: null
+8 api_shape: ''

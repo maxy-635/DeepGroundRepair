@@ -1,0 +1,20 @@
+2 api_name: tensorflow.autograph.experimental.set_loop_options
+3 api_description: Sets options for the immediately enclosing staged TensorFlow while_loop,
+  with no effect on non-staged loops.
+4 api_signature: tf.autograph.experimental.set_loop_options(parallel_iterations,maximum_iterations)
+5 api_details: ''
+6 api_parameters:
+- parallel_iterations: Limits how many loop iterations may be in flight at once, without
+    guaranteeing they will actually run in parallel.
+- maximum_iterations: Caps the total number of loop iterations that can execute.
+7 api_usage_example:
+- '@tf.function(autograph=True)'
+- 'def f():'
+- '  v = tf.constant((0,))'
+- '  for i in tf.range(3):'
+- '    tf.autograph.experimental.set_loop_options('
+- '        shape_invariants=[(v, tf.TensorShape([None]))]'
+- '    )'
+- '    v = tf.concat((v, [i]), 0)'
+- '  return v'
+8 api_shape: ''

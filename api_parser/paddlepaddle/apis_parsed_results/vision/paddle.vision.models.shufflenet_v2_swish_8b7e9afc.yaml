@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.shufflenet_v2_swish
+3 api_description: Builds a ShuffleNetV2 convolutional neural network for efficient
+  image feature extraction, using swish activation.
+4 api_signature: paddle.vision.models.shufflenet_v2_swish(pretrained,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet-pretrained weights.
+- '**kwargs': Passes through additional keyword arguments used to configure ShuffleNetV2.
+7 api_usage_example: []
+8 api_shape: {}

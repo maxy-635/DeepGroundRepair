@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.generalized_pareto.GeneralizedPareto.entropy
+3 api_description: Computes the differential entropy of the Generalized Pareto distribution.
+4 api_signature: entropy()
+5 api_details: ''
+6 api_parameters:
+- concentration: Controls the tail heaviness of the generalized Pareto distribution.
+- scale: Sets the overall scale or spread of the distribution.
+- validate_args: Enables argument validation to check parameter values at runtime.
+7 api_usage_example: null
+8 api_shape: null

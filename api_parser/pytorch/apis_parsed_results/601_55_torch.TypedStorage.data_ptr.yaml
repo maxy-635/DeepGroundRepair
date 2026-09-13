@@ -1,0 +1,8 @@
+2 api_name: torch.TypedStorage.data_ptr
+3 api_description: Returns the memory address of the underlying storage data as an
+  integer pointer.
+4 api_signature: data_ptr()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

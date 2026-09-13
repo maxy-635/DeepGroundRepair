@@ -1,0 +1,24 @@
+2 api_name: torch.nn.attention.flex_attention.create_block_mask
+3 api_description: Creates a block-sparse attention mask tuple from a user-provided
+  mask_mod function, representing which query-key blocks are allowed in flex attention.
+4 api_signature: torch.nn.attention.flex_attention.create_block_mask(mask_mod,B,H,Q_LEN,KV_LEN,device,BLOCK_SIZE)
+5 api_details: ''
+6 api_parameters:
+- mask_mod: Defines the attention mask pattern by returning a boolean value for each
+    batch, head, query index, and key/value index pair.
+- B: Sets the batch size for which the block mask is created.
+- H: Sets the number of query heads used in the mask.
+- Q_LEN: Sets the query sequence length.
+- KV_LEN: Sets the key/value sequence length.
+- device: Specifies the device on which the mask creation runs.
+- BLOCK_SIZE: Sets the block size used to build the block mask, using one value for
+    both query and key/value if a single integer is provided.
+7 api_usage_example:
+- 'def causal_mask(b, h, q_idx, kv_idx):'
+- '    return q_idx >= kv_idx'
+- block_mask = create_block_mask(causal_mask, 1, 1, 8192, 8192, device="cuda")
+- query = torch.randn(1, 1, 8192, 64, device="cuda", dtype=torch.float16)
+- key = torch.randn(1, 1, 8192, 64, device="cuda", dtype=torch.float16)
+- value = torch.randn(1, 1, 8192, 64, device="cuda", dtype=torch.float16)
+- output = flex_attention(query, key, value, block_mask=block_mask)
+8 api_shape: null

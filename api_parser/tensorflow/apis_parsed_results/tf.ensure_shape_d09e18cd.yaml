@@ -1,0 +1,12 @@
+2 api_name: tensorflow.ensure_shape
+3 api_description: Ensures a tensor has the specified compatible shape and raises
+  an error at runtime if it does not.
+4 api_signature: tf.ensure_shape(x,shape)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose shape is being checked or constrained.
+- shape: The expected shape to enforce, or None to leave the shape unconstrained.
+7 api_usage_example:
+- image = bad_decode_image(png)
+- print(image.shape)
+8 api_shape: ''

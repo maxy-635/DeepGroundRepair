@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.select
+3 api_description: Selects elements from a list of choices based on the first true
+  condition in a sequence of boolean masks, with an optional default when no conditions
+  match.
+4 api_signature: tf.experimental.numpy.select(condlist,choicelist,default)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

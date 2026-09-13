@@ -1,0 +1,15 @@
+2 api_name: torch.set_default_dtype
+3 api_description: Sets PyTorch’s default floating-point dtype to the specified floating-point
+  type.
+4 api_signature: torch.set_default_dtype(dtype)
+5 api_details: ''
+6 api_parameters:
+- d: Sets which floating-point dtype PyTorch uses by default for newly created tensors.
+7 api_usage_example:
+- ' # initial default for floating point is torch.float32'
+- ' # Python floats are interpreted as float32'
+- ' torch.tensor([1.2, 3]).dtype'
+- ' # initial default for floating point is torch.complex64'
+- ' # Complex Python numbers are interpreted as complex64'
+- ' torch.tensor([1.2, 3j]).dtype'
+8 api_shape: null

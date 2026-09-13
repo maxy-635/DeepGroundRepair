@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesUpdateEnsembleV2
+3 api_description: Updates a boosted trees ensemble by adding a new layer to the current
+  tree being grown or, if needed, starting a new tree.
+4 api_signature: tf.raw_ops.BoostedTreesUpdateEnsembleV2(tree_ensemble_handle,feature_ids,node_ids,gains,thresholds,left_node_contribs,right_node_contribs,split_types,max_depth,learning_rate,pruning_mode)
+5 api_details: ''
+6 api_parameters:
+- tree_ensemble_handle: Reference to the ensemble variable that will be updated.
+- feature_ids: IDs of the features used to define the splits.
+- node_ids: IDs of the tree nodes that receive each feature split.
+- gains: Gain values associated with each proposed split.
+- thresholds: Threshold values used to decide split directions.
+- left_node_contribs: Contribution values added to create the left child node values.
+- right_node_contribs: Contribution values added to create the right child node values.
+- split_types: Split type labels indicating how each feature is split.
+- max_depth: Maximum depth allowed for the tree being built.
+- learning_rate: Shrinkage factor applied to the values of the new tree.
+- pruning_mode: 'Pruning strategy to use: none, pre-pruning, or post-pruning.'
+7 api_usage_example: null
+8 api_shape: ''

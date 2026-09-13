@@ -1,0 +1,22 @@
+2 api_name: torch.nn.Embedding.from_pretrained
+3 api_description: Creates an embedding layer from a pre-initialized 2D FloatTensor,
+  allowing for the use of custom embeddings in neural networks.
+4 api_signature: from_pretrained(embeddings,freeze,padding_idx)
+5 api_details: ''
+6 api_parameters:
+- embeddings: A FloatTensor that defines the weights for the embedding layer, where
+    the first dimension corresponds to the number of embeddings and the second dimension
+    corresponds to the embedding size.
+- freeze: A boolean that, if set to True, prevents the embedding weights from being
+    updated during training.
+- padding_idx: An integer that specifies an index for padding, where the corresponding
+    embedding vector is not updated during training and does not contribute to the
+    gradient.
+7 api_usage_example:
+- ' # FloatTensor containing pretrained weights'
+- ' weight = torch.FloatTensor([[1, 2.3, 3], [4, 5.1, 6.3]])'
+- ' embedding = nn.Embedding.from_pretrained(weight)'
+- ' # Get embeddings for index 1'
+- ' input = torch.LongTensor([1])'
+- ' embedding(input)'
+8 api_shape: null

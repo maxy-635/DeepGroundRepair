@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Substr
+3 api_description: Extracts substrings from each input string tensor element using
+  matching pos and len values, supporting negative positions and truncating to available
+  characters when needed.
+4 api_signature: tf.raw_ops.Substr(input,pos,len)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor to extract substrings from.
+- pos: The scalar starting character position for each substring.
+- len: The scalar number of characters to include in each substring.
+7 api_usage_example: null
+8 api_shape: ''

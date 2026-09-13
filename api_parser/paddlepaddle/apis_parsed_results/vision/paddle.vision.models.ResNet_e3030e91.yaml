@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.ResNet
+3 api_description: ResNet is a residual convolutional neural network for image classification
+  that learns deep feature representations using skip connections to improve training
+  stability and accuracy.
+4 api_signature: paddle.vision.models.ResNet(block,depth,num_class es)
+5 api_details: ''
+6 api_parameters:
+- depth: Specifies how many layers the ResNet backbone has.
+7 api_usage_example: []
+8 api_shape: {}

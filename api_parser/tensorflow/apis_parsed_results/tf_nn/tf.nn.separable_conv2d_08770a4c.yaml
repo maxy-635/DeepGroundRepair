@@ -1,0 +1,18 @@
+2 api_name: tensorflow.nn.separable_conv2d
+3 api_description: Performs a 2-D convolution using separable filters by applying
+  a depthwise convolution on individual input channels followed by a pointwise convolution
+  to combine the channels, using the NHWC data format.
+4 api_signature: tf.nn.separable_conv2d(input,depthwise_filter,pointwise_filter,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: A 4-D Tensor representing the input data with shape defined by the data_format.
+- depthwise_filter: A 4-D Tensor with shape [filter_height, filter_width, in_channels,
+    channel_multiplier] representing depthwise convolutional filters.
+- pointwise_filter: A 4-D Tensor with shape [1, 1, channel_multiplier * in_channels,
+    out_channels] for channel mixing after depthwise convolution.
+- strides: A 1-D list of size 4 specifying the stride of the depthwise convolution
+    for each input dimension.
+- padding: Defines the padding algorithm ('SAME', 'VALID', or explicit) for the depthwise
+    convolution.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: torch.special.erfcx
+3 api_description: Computes the scaled complementary error function elementwise for
+  the input.
+4 api_signature: torch.special.erfcx(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used as the input to `erfcx`.
+7 api_usage_example:
+- ' torch.special.erfcx(torch.tensor([0, -1., 10.]))'
+8 api_shape: null

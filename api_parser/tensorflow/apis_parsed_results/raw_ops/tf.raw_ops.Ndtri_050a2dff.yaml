@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Ndtri
+3 api_description: Computes the inverse of the normal distribution CDF (the quantile
+  function) for each input value.
+4 api_signature: tf.raw_ops.Ndtri(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor of probabilities for which to compute the inverse of the normal
+    cumulative distribution function.
+7 api_usage_example: null
+8 api_shape: ''

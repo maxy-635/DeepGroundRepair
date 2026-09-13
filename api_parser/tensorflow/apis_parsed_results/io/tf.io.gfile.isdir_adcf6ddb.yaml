@@ -1,0 +1,9 @@
+2 api_name: tensorflow.io.gfile.isdir
+3 api_description: Checks whether a given path exists and is a directory, returning
+  True or False.
+4 api_signature: tf.io.gfile.isdir(path)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the filesystem path to check for whether it refers to a directory.
+7 api_usage_example: null
+8 api_shape: ''

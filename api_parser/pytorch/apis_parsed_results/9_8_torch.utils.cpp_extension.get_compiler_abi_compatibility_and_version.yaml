@@ -1,0 +1,10 @@
+2 api_name: torch.utils.cpp_extension.get_compiler_abi_compatibility_and_version
+3 api_description: Checks whether a compiler is ABI-compatible with the installed
+  PyTorch build and returns its compatibility status together with the compiler version.
+4 api_signature: torch.utils.cpp_extension.get_compiler_abi_compatibility_and_version(compiler)
+5 api_details: ''
+6 api_parameters:
+- compiler: Specifies the compiler executable name to inspect for ABI compatibility
+    and version, and it must be runnable from the shell.
+7 api_usage_example: null
+8 api_shape: null

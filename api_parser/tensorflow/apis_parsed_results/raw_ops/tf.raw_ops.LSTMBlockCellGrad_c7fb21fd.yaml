@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.LSTMBlockCellGrad
+3 api_description: Computes the backward pass for a single LSTMBlockCell timestep,
+  producing gradients for the LSTM cell inputs and state.
+4 api_signature: tf.raw_ops.LSTMBlockCellGrad(x,cs_prev,h_prev,w,b,cs_grad,h_grad,use_peephole,name)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to the LSTM cell for the current time step.
+- cs_prev: The previous cell state tensor from the prior time step.
+- h_prev: The previous hidden state tensor from the prior time step.
+- w: The weight matrix used by the LSTM cell.
+- b: The bias vector used by the LSTM cell.
+- cs: The cell state tensor before the tanh activation is applied.
+- f: The forget gate activation tensor.
+- o: The output gate activation tensor.
+- cs_grad: The gradient flowing into the current cell state.
+- h_grad: The gradient flowing into the current hidden state.
+- use_peephole: Indicates whether peephole connections are enabled.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

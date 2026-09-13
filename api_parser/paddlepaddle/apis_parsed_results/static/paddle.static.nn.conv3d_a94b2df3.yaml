@@ -1,0 +1,35 @@
+2 api_name: paddle.static.nn.conv3d
+3 api_description: Performs 3D convolution on NCDHW or NDHWC input using filters,
+  strides, paddings, dilations, and groups, and can optionally add bias and apply
+  an activation.
+4 api_signature: paddle.static.nn.conv3d(input,num_filters,filter_size,stride,padding,act,name)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the 5-D input tensor in `[N, C, D, H, W]` format for the 3D convolution.
+- num_filters: Sets how many convolution filters to apply, which determines the output
+    channel count.
+- filter_size: Specifies the 3D kernel size for depth, height, and width.
+- stride: Defines how far the convolution kernel moves along each spatial dimension.
+- padding: Controls zero-padding on the input, either by padding mode or explicit
+    padding values.
+- act: Chooses an optional activation function to apply after convolution.
+- name: Assigns an optional layer name for identification and reference.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- np.random.seed(1107)
+- paddle.seed(1107)
+- paddle.enable_static()
+- data = paddle.static.data(name='data', shape=[None, 3, 12, 32, 32], dtype='float32')
+- param_attr = paddle.framework.ParamAttr(name='conv3d.weight', initializer=paddle.nn.initializer.XavierNormal(),
+  learning_rate=0.001)
+- res = paddle.static.nn.conv3d(input=data, num_filters=2, filter_size=3, act="relu",
+  param_attr=param_attr)
+- place = paddle.CPUPlace()
+- exe = paddle.static.Executor(place)
+- exe.run(paddle.static.default_startup_program())
+- x = np.random.rand(1, 3, 12, 32, 32).astype("float32")
+- 'output,  = exe.run(feed={"data": x}, fetch_list=[res])'
+- print(output.shape)
+- (1, 2, 10, 30, 30)
+8 api_shape: {}

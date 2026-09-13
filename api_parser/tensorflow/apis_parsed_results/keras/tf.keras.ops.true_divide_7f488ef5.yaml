@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.true_divide
+3 api_description: Returns the element-wise true division of two inputs, with behavior
+  equivalent to `keras.ops.divide`.
+4 api_signature: tf.keras.ops.true_divide(x1,x2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

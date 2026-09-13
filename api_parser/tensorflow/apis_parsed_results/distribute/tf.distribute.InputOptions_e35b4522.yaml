@@ -1,0 +1,8 @@
+2 api_name: tensorflow.distribute.InputOptions
+3 api_description: Configures strategy-specific options for distributing input datasets,
+  especially experimental_distribute_dataset(s_from_function).
+4 api_signature: tf.distribute.InputOptions(experimental_fetch_to_device,experimental_replication_mode)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

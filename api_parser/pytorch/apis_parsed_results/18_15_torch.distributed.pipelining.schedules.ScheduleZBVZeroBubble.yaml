@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.pipelining.schedules.ScheduleZBVZeroBubble
+3 api_description: Implements the Zero Bubble pipeline schedule (ZBV variant) for
+  torch.distributed.pipelining, coordinating forward, backward, and weight-update
+  microbatches to reduce pipeline idle time and improve training throughput.
+4 api_signature: torch.distributed.pipelining.schedules.ScheduleZBVZeroBubble(stages,n_microbatches,loss_fn,scale_grads,backward_requires_autograd)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

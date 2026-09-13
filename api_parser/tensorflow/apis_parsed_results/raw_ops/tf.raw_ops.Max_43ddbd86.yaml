@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Max
+3 api_description: Computes the maximum values of a tensor along the specified axes,
+  optionally keeping reduced dimensions with size 1.
+4 api_signature: tf.raw_ops.Max(input,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be reduced to their maximum along the specified
+    dimensions.
+- axis: The dimension or dimensions over which to compute the maximum reduction.
+7 api_usage_example: null
+8 api_shape: ''

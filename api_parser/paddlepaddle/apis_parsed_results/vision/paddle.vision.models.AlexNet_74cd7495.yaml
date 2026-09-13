@@ -1,0 +1,9 @@
+2 api_name: paddle.vision.models.AlexNet
+3 api_description: AlexNet is a deep convolutional neural network for image classification,
+  designed for ImageNet-scale recognition using stacked convolution, pooling, and
+  fully connected layers.
+4 api_signature: paddle.vision.models.AlexNet(num_class es)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

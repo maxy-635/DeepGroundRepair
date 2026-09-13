@@ -1,0 +1,18 @@
+2 api_name: paddle.sparse.atan
+3 api_description: Computes the elementwise arctangent of a sparse tensor input, supporting
+  SparseCooTensor and SparseCsrTensor.
+4 api_signature: paddle.sparse.atan(x)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input sparse tensor whose elements are used to compute the elementwise
+    arctangent.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2., 0., 1.])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.atan(sparse_x)
+- out
+- Tensor(shape=[3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 2]],
+- values=[-1.10714877,  0.78539819])
+8 api_shape: {}

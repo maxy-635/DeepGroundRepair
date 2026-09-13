@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.algorithms.Joinable.join_hook
+3 api_description: Returns a JoinHook for a Joinable, defining how it participates
+  in the join context and handles distributed synchronization when some workers finish
+  early.
+4 api_signature: '"join_hook(**kwargs)"'
+5 api_details: ''
+6 api_parameters:
+- kwargs: A dictionary of runtime keyword arguments used to adjust join hook behavior,
+    shared across all `Joinable` instances in the same join context manager.
+7 api_usage_example: null
+8 api_shape: null

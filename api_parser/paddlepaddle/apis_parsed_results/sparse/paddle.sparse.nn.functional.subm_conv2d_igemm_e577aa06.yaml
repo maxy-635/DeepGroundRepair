@@ -1,0 +1,16 @@
+2 api_name: paddle.sparse.nn.functional.subm_conv2d_igemm
+3 api_description: Performs sparse 2D submanifold convolution on SparseCooTensor inputs
+  in N-H-W-C format using the given filter, stride, padding, dilation, and groups
+  settings, with optional bias added to the result.
+4 api_signature: paddle.sparse.nn.functional.subm_conv2d_igemm(x,weight,bias,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: Sparse 4-D input tensor in `NHWC` format that provides the feature map to convolve.
+- weight: Convolution kernel tensor that defines the filter weights, output channels,
+    and grouping layout.
+- bias: Optional bias tensor added to each output channel.
+- stride: Step size of the convolution window along height and width.
+- padding: Zero-padding applied around the input, either by explicit sizes or by `VALID`/`SAME`
+    rules.
+7 api_usage_example: []
+8 api_shape: {}

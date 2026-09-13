@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.ops.argmax
+3 api_description: Returns the index or indices of the maximum values along a specified
+  axis.
+4 api_signature: tf.keras.ops.argmax(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose maximum-value index is returned.
+- axis: The axis along which to compute the index of the maximum value, or the flattened
+    tensor if omitted.
+7 api_usage_example:
+- x = keras.ops.arange(6).reshape(2, 3) + 10
+- x
+- keras.ops.argmax(x)
+- keras.ops.argmax(x, axis=0)
+- keras.ops.argmax(x, axis=1)
+8 api_shape: ''

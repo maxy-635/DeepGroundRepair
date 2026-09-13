@@ -1,0 +1,18 @@
+2 api_name: torch.pow
+3 api_description: Raises each element of the input tensor to the given power and
+  returns the resulting tensor.
+4 api_signature: torch.pow(input,exponent)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are raised to a power.
+- exponent: The value used as the power to raise the input tensor by.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.pow(a, 2)'
+- ' exp = torch.arange(1., 5.)'
+- ' a = torch.arange(1., 5.)'
+- ' a'
+- ' exp'
+- ' torch.pow(a, exp)'
+8 api_shape: null

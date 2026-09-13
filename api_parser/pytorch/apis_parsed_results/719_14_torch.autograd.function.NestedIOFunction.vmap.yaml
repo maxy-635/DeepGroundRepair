@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.function.NestedIOFunction.vmap
+3 api_description: Defines how an autograd.Function should vectorize under `torch.vmap()`,
+  using `vmap` to batch its inputs and outputs while preserving correct autograd behavior.
+4 api_signature: staticvmap(info,in_dims,*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

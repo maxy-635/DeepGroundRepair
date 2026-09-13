@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.convert_to_tensor
+3 api_description: Converts a NumPy array or array-like input into a TensorFlow tensor.
+4 api_signature: tf.keras.ops.convert_to_tensor(x,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input NumPy array to convert into a tensor.
+- dtype: The desired data type of the resulting tensor.
+7 api_usage_example:
+- x = np.array([1, 2, 3])
+- y = keras.ops.convert_to_tensor(x)
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.mps.current_allocated_memory
+3 api_description: Returns the current GPU memory used by tensors on the MPS device,
+  in bytes.
+4 api_signature: torch.mps.current_allocated_memory()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

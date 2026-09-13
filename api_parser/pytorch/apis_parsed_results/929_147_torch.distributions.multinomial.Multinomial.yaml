@@ -1,0 +1,16 @@
+2 api_name: torch.distributions.multinomial.Multinomial
+3 api_description: A discrete distribution over counts from repeated categorical trials,
+  parameterized by total count and class probabilities or logits, with methods for
+  sampling and evaluating log probability.
+4 api_signature: torch.distributions.multinomial.Multinomial(total_count,probs,logits)
+5 api_details: ''
+6 api_parameters:
+- total_count: Specifies the total number of trials to draw from the multinomial distribution.
+- probs: Sets the probability of each event outcome, with values summing to 1.
+- logits: Sets unnormalized log probabilities for each event outcome, which are normalized
+    internally.
+7 api_usage_example:
+- ' m = Multinomial(100, torch.tensor([ 1., 1., 1., 1.]))'
+- ' x = m.sample()  # equal probability of 0, 1, 2, 3'
+- ' Multinomial(probs=torch.tensor([1., 1., 1., 1.])).log_prob(x)'
+8 api_shape: null

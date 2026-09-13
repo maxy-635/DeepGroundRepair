@@ -1,0 +1,28 @@
+2 api_name: paddle.static.Print
+3 api_description: Prints a tensor or variable’s values, shape, and other info during
+  static graph execution for debugging.
+4 api_signature: paddle.static.Print(input,message,summarize)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- x = paddle.full(shape=[2, 3], fill_value=3, dtype='int64')
+- out = paddle.static.Print(x, message="The content of input layer:")
+- main_program = paddle.static.default_main_program()
+- exe = paddle.static.Executor(place=paddle.CPUPlace())
+- res = exe.run(main_program, fetch_list=[out])
+- '>>>'
+- 'Variable: fill_constant_1.tmp_0'
+- '- message: The content of input layer:'
+- '- lod: {}'
+- '- place: Place(cpu)'
+- '- shape: [2, 3]'
+- '- layout: NCHW'
+- '- dtype: int64'
+- '- data: [3 3 3 3 3 3]'
+- '>>>'
+- res
+- '[array([[3, 3, 3],'
+- '[3, 3, 3]], dtype=int64)]'
+8 api_shape: {}

@@ -1,0 +1,27 @@
+2 api_name: tensorflow.data.experimental.service.register_dataset
+3 api_description: Registers a dataset with the tf.data service and returns its dataset
+  ID so it can be recreated later, especially across processes.
+4 api_signature: tf.data.experimental.service.register_dataset(service,dataset,dataset_id)
+5 api_details: ''
+6 api_parameters:
+- service: Specifies how to connect to the tf.data service dispatcher, either as a
+    connection string or as a (protocol, address) tuple.
+- dataset: Provides the `tf.data.Dataset` object to register with the tf.data service.
+- dataset_id: Optionally assigns a custom dataset ID so the same registered dataset
+    can be reused if that ID already exists.
+7 api_usage_example:
+- dispatcher = tf.data.experimental.service.DispatchServer()
+- dispatcher_address = dispatcher.target.split("://")[1]
+- worker = tf.data.experimental.service.WorkerServer(
+- '    tf.data.experimental.service.WorkerConfig('
+- '        dispatcher_address=dispatcher_address))'
+- dataset = tf.data.Dataset.range(10)
+- dataset_id = tf.data.experimental.service.register_dataset(
+- '    dispatcher.target, dataset)'
+- dataset = tf.data.experimental.service.from_dataset_id(
+- '    processing_mode="parallel_epochs",'
+- '    service=dispatcher.target,'
+- '    dataset_id=dataset_id,'
+- '    element_spec=dataset.element_spec)'
+- print(list(dataset.as_numpy_iterator()))
+8 api_shape: ''

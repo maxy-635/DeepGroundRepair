@@ -1,0 +1,19 @@
+2 api_name: torch.nn.AvgPool1d
+3 api_description: Applies 1D average pooling to reduce the dimensionality of input
+  signals by averaging values in specified kernel regions across multiple input planes.
+4 api_signature: torch.nn.AvgPool1d(kernel_size,stride)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Defines the size of the window over which the average is computed.
+- stride: Specifies the step size with which the window moves; defaults to the value
+    of kernel_size if not provided.
+7 api_usage_example:
+- ' # pool with window of size=3, stride=2'
+- ' m = nn.AvgPool1d(3, stride=2)'
+- ' m(torch.tensor([[[1., 2, 3, 4, 5, 6, 7]]]))'
+8 api_shape:
+  input tensor shape: (N, Channel_in, L_in)
+  output tensor shape: (N, Channel_out, L_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    L_out: L_out = floor((L_in + 2 * padding - kernel_size) / stride + 1)

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ScanDataset
+3 api_description: Builds a dataset by repeatedly applying a reduction function across
+  elements of an input dataset.
+4 api_signature: tf.raw_ops.ScanDataset(input_dataset,initial_state,f,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to iterate over and scan through.
+- initial_state: The starting state tensors passed into the scan function.
+- f: The user-defined function applied to each dataset element and state.
+- output_types: The data types of the tensors produced by the scan operation.
+- output_shapes: The expected shapes of the tensors produced by the scan operation.
+7 api_usage_example: null
+8 api_shape: ''

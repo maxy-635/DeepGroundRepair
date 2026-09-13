@@ -1,0 +1,19 @@
+2 api_name: paddle.nn.functional.fractional_max_pool3d
+3 api_description: Applies 3D fractional max pooling on an input tensor, allowing
+  for non-integer pooling ratios, as described in relevant research literature.
+4 api_signature: paddle.nn.functional.fractional_max_pool3d(x,output_size,kernel_size,random_u)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the 5-D input tensor for the fractional max pool3d operation, supporting
+    various floating-point data types.
+- output_size: Defines the desired output dimensions, which can be specified as a
+    tuple or list with three elements (D, H, W) or left as None to match the input
+    size.
+- kernel_size: Sets the size of the pooling kernel, either as a tuple/list of three
+    integers or as a single integer for a cubic kernel, with a default non-overlapping
+    mode if None.
+- random_u: Provides a random float within (0, 1) for fractional pooling, defaulting
+    to a framework-generated value if not specified, which can be controlled by setting
+    a seed.
+7 api_usage_example: []
+8 api_shape: null

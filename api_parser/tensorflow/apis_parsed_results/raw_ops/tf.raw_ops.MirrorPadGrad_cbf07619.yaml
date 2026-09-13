@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.MirrorPadGrad
+3 api_description: Computes the gradient of `MirrorPad` by folding mirrored padded
+  অঞ্চল back into the unpadded tensor shape using the original paddings.
+4 api_signature: tf.raw_ops.MirrorPadGrad(input,paddings,mode)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose mirrored padding gradient is being folded back into the
+    original shape.
+- paddings: A 2-column padding matrix that specifies how much padding was applied
+    to each input dimension.
+- mode: The mirroring rule used by the forward padding op, either `REFLECT` or `SYMMETRIC`.
+7 api_usage_example: null
+8 api_shape: ''

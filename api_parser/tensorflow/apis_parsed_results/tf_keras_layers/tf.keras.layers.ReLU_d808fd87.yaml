@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.layers.ReLU
+3 api_description: Applies the Rectified Linear Unit (ReLU) activation function, outputting
+  the input directly if positive, otherwise outputting zero.
+4 api_signature: tf.keras.layers.ReLU(max_value, negative_slope)
+5 api_details: ''
+6 api_parameters:
+- max_value: Limits the maximum output value of the activation function; if set to
+    None, there is no upper limit.
+- negative_slope: Controls the slope of the function for negative input values, allowing
+    for leaky behavior when set greater than 0.
+7 api_usage_example: null
+8 api_shape: null

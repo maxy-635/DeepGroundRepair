@@ -1,0 +1,21 @@
+2 api_name: torch.cholesky_inverse
+3 api_description: Computes the inverse of a real symmetric or complex Hermitian positive-definite
+  matrix from its Cholesky decomposition.
+4 api_signature: torch.cholesky_inverse(L,upper)
+5 api_details: ''
+6 api_parameters:
+- L: The Cholesky factor tensor to invert, supporting optional batch dimensions and
+    either lower- or upper-triangular factors.
+- upper: Specifies whether `L` is an upper-triangular Cholesky factor (`True`) or
+    a lower-triangular one (`False`).
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' A = A @ A.T + torch.eye(3) * 1e-3 # Creates a symmetric positive-definite matrix'
+- ' L = torch.linalg.cholesky(A) # Extract Cholesky decomposition'
+- ' torch.cholesky_inverse(L)'
+- ' A.inverse()'
+- ' A = torch.randn(3, 2, 2, dtype=torch.complex64)'
+- ' A = A @ A.mH + torch.eye(2) * 1e-3 # Batch of Hermitian positive-definite matrices'
+- ' L = torch.linalg.cholesky(A)'
+- ' torch.dist(torch.inverse(A), torch.cholesky_inverse(L))'
+8 api_shape: null

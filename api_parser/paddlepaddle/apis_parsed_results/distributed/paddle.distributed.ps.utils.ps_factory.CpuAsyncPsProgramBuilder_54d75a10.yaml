@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.ps.utils.ps_factory.CpuAsyncPsProgramBuilder
+3 api_description: Builds a CPU-based asynchronous parameter-server program for Paddle
+  distributed training, assembling the components needed to run PS worker and server
+  processes.
+4 api_signature: paddle.distributed.ps.utils.ps_factory.CpuAsyncPsProgramBuilder(pass_ctx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

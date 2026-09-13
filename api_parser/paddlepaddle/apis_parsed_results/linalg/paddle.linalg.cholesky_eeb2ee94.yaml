@@ -1,0 +1,23 @@
+2 api_name: paddle.linalg.cholesky
+3 api_description: Computes the Cholesky decomposition of a symmetric positive-definite
+  matrix or a batch of such matrices.
+4 api_signature: paddle.linalg.cholesky(x,upper)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing one or more symmetric positive-definite matrices with
+    shape [*, M, M] and dtype float32 or float64.
+- upper: Controls whether the decomposition returns the upper triangular factor instead
+    of the lower triangular factor.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- a = paddle.rand([3, 3], dtype="float32")
+- a_t = paddle.transpose(a, [1, 0])
+- x = paddle.matmul(a, a_t) + 1e-03
+- out = paddle.linalg.cholesky(x, upper=False)
+- print(out)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1.04337072, 0.        , 0.        ],'
+- '[1.06467664, 0.17859250, 0.        ],'
+- '[1.30602181, 0.08326444, 0.22790681]])'
+8 api_shape: {}

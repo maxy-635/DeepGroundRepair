@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.IgnoreErrorsDataset
+3 api_description: Creates a dataset that yields elements from the input dataset while
+  skipping any elements that cause errors.
+4 api_signature: tf.raw_ops.IgnoreErrorsDataset(input_dataset,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to wrap so that any errors encountered while iterating
+    are ignored.
+- output_types: The data types of the elements produced by the resulting dataset.
+- output_shapes: The shapes of the elements produced by the resulting dataset.
+7 api_usage_example: null
+8 api_shape: ''

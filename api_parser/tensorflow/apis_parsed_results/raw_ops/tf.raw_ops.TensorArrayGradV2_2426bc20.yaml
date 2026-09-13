@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TensorArrayGradV2
+3 api_description: Creates a gradient TensorArray for backpropagation by constructing
+  a TensorArray handle tied to a forward TensorArray and a gradient source, used to
+  accumulate gradients in TensorFlow.
+4 api_signature: tf.raw_ops.TensorArrayGradV2(handle,flow_in,source)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource to be used for computing gradients.
+- flow_in: Carries the control flow dependency into the gradient TensorArray operation.
+- source: Names the originating operation or source that created the TensorArray.
+7 api_usage_example: null
+8 api_shape: ''

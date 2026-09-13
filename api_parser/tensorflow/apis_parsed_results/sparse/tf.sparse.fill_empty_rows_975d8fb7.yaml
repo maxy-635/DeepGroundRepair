@@ -1,0 +1,10 @@
+2 api_name: tensorflow.sparse.fill_empty_rows
+3 api_description: Fills missing rows in a 2-D SparseTensor by inserting a default
+  value at column 0 for each empty row.
+4 api_signature: tf.sparse.fill_empty_rows(sp_input,default_value)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The input sparse tensor whose empty rows will be checked and filled.
+- default_value: The value used to populate any empty rows in the sparse tensor.
+7 api_usage_example: null
+8 api_shape: ''

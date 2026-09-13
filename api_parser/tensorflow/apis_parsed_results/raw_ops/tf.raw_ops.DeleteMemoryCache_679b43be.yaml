@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.DeleteMemoryCache
+3 api_description: Deletes a named in-memory cache resource, removing it from TensorFlow’s
+  memory cache system.
+4 api_signature: tf.raw_ops.DeleteMemoryCache(handle)
+5 api_details: ''
+6 api_parameters:
+- handle: A resource tensor that identifies the memory cache to delete.
+7 api_usage_example: null
+8 api_shape: ''

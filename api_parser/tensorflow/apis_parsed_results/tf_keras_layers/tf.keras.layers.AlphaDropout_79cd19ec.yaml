@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.AlphaDropout
+3 api_description: AlphaDropout is a regularization layer in Keras that randomly sets
+  a fraction of input units to zero while maintaining the mean and variance of the
+  inputs, specifically designed for use with SELU activation functions.
+4 api_signature: tf.keras.layers.AlphaDropout(rate)
+5 api_details: ''
+6 api_parameters:
+- A: An instance of the layer that applies AlphaDropout, which is designed to maintain
+    the mean and variance of the inputs while randomly dropping units.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.quantile
+3 api_description: Computes the specified quantile(s) of input data along a chosen
+  axis, summarizing the distribution with one or more q-th percentile values.
+4 api_signature: tf.keras.ops.quantile(x,q,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose quantiles are computed.
+- q: The quantile probabilities to calculate, each between 0 and 1.
+- axis: The axis or axes along which to compute the quantiles, or `None` to flatten
+    the tensor first.
+7 api_usage_example: null
+8 api_shape: ''

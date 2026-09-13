@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.normalize
+3 api_description: Scales a tensor along a chosen axis so its values have unit norm,
+  with a small epsilon to avoid division by zero.
+4 api_signature: tf.keras.ops.normalize(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be normalized.
+- axis: The axis or axes over which to compute normalization, with `-1` as the default.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([[1, 2, 3], [4, 5, 6]])
+- x_norm = keras.ops.math.normalize(x)
+- print(x_norm)
+8 api_shape: ''

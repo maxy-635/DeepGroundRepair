@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.resolve_unbacked_bindings
+3 api_description: Applies post-hoc renaming of unbacked symbolic-int bindings in
+  node metadata so fake tensor/proxy tensor propagation stays consistent after PropagateUnbackedSymInts.
+4 api_signature: '"torch.fx.experimental.symbolic_shapes.resolve_unbacked_bindings(shape_env,bindings)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

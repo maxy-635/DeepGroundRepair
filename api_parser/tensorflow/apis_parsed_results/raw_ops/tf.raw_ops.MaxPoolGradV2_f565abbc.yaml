@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.MaxPoolGradV2
+3 api_description: Computes the gradient of max pooling by propagating upstream gradients
+  only to the input locations that were maximal within each pooling window.
+4 api_signature: tf.raw_ops.MaxPoolGradV2(orig_input,grad,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- orig_input: Provides the original input tensor used to determine where the max values
+    came from during backpropagation.
+- grad: Supplies the gradient flowing from the max-pooling output back into the pooling
+    input.
+- ksize: Specifies the pooling window size for each input dimension.
+- strides: Specifies how far the pooling window moves at each step across the input.
+- padding: Chooses whether pooling uses 'SAME' or 'VALID' padding semantics.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.losses.CategoricalHinge
+3 api_description: Computes categorical hinge loss by comparing the score of the true
+  class against the highest-scoring incorrect class.
+4 api_signature: tf.keras.losses.CategoricalHinge()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: paddle.distributed.DistModel
+3 api_description: A distributed static-graph model converted from a Paddle layer
+  with sharded tensor parameters, used for training, evaluation, and prediction.
+4 api_signature: paddle.distributed.DistModel(layer,loader,loss,optimizer,strategy)
+5 api_details: ''
+6 api_parameters:
+- layer: The distributed model layer whose parameters are sharded tensors in dygraph
+    mode.
+- loader: The data loader used in dygraph mode to infer input and label specifications.
+- loss: The training or evaluation loss function, which also helps determine the default
+    model mode.
+- optimizer: The optimizer used for training, which sets the model to train mode when
+    combined with loss.
+- strategy: The configuration object for distributed parallelism and optimization
+    settings.
+7 api_usage_example: []
+8 api_shape: {}

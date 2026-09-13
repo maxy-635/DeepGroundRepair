@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.OutfeedDequeueTuple
+3 api_description: Blocks until data is available, then dequeues and returns multiple
+  outfed values as tuple elements in order.
+4 api_signature: tf.raw_ops.OutfeedDequeueTuple(dtypes,shapes)
+5 api_details: ''
+6 api_parameters:
+- dtypes: Specifies the data types of the tensors to dequeue in the output tuple.
+- shapes: Specifies the shapes of the tensors to dequeue in the output tuple.
+7 api_usage_example: null
+8 api_shape: ''

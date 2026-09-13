@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.arctan2
+3 api_description: Computes the element-wise signed angle of x1 and x2 as arctan2(x1,
+  x2), returning the correct quadrant and handling zeros and infinities by IEEE convention.
+4 api_signature: tf.keras.ops.arctan2(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input tensor whose values are used as the numerator in the arctangent
+    calculation.
+- x2: The second input tensor whose values are used as the denominator in the arctangent
+    calculation.
+7 api_usage_example: null
+8 api_shape: ''

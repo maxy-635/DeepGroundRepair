@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.random.randint
+3 api_description: Generates random integers from a specified range, matching NumPy’s
+  randint behavior in TensorFlow.
+4 api_signature: tf.experimental.numpy.random.randint(low,high,size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

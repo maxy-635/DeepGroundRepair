@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.FusedBatchNormGrad
+3 api_description: Computes the backpropagation gradients for fused batch normalization,
+  producing gradients for the inputs, scale, and offset from upstream gradient and
+  saved batch-norm statistics.
+4 api_signature: tf.raw_ops.FusedBatchNormGrad(y_backprop,x,scale,is_training,data_format,epsilon)
+5 api_details: ''
+6 api_parameters:
+- y_backprop: Provides the upstream gradient of the batch-normalized output for backpropagation.
+- x: Supplies the original input tensor whose batch normalization gradient is being
+    computed.
+- scale: Provides the learned scaling factor used to compute gradients with respect
+    to the normalized inputs.
+- epsilon: Adds a small constant to the variance for numerical stability during gradient
+    computation.
+- data_format: Specifies the tensor layout used for the input and gradient tensors.
+- is_training: Indicates whether to compute gradients in training mode or treat the
+    op as inference-related.
+7 api_usage_example: null
+8 api_shape: ''

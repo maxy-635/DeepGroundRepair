@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.ops.while_loop
+3 api_description: Executes a while loop by repeatedly calling a condition and body
+  function on loop variables until the condition becomes false.
+4 api_signature: tf.keras.ops.while_loop(cond,body,loop_vars)
+5 api_details: ''
+6 api_parameters:
+- cond: Defines the loop’s stopping condition and decides whether another iteration
+    should run.
+- body: Defines the computation performed on each loop iteration and returns the updated
+    loop state.
+- loop_vars: Provides the tensor state carried through the loop and updated across
+    iterations.
+7 api_usage_example:
+- x, y = 0, 1
+- 'cond = lambda x, y: x < 10'
+- 'body = lambda x, y: (x + 1, y + 1)'
+- keras.ops.while_loop(cond, body, (x, y))
+8 api_shape: ''

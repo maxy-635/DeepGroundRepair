@@ -1,0 +1,88 @@
+2 api_name: paddle.tensordot
+3 api_description: Computes a tensor contraction by summing products of elements from
+  two tensors over the specified axes.
+4 api_signature: paddle.tensordot(x,y,axes)
+5 api_details: ''
+6 api_parameters:
+- x: Left input tensor to be contracted.
+- y: Right input tensor to be contracted with `x`.
+- axes: Number or specification of axes over which to perform the tensor contraction.
+7 api_usage_example:
+- import paddle
+- from typing import Literal
+- 'data_type: Literal["float64"] = ''float64'''
+- '# For two 2-d tensor x and y, the case axes=0 is equivalent to outer product.'
+- '# Note that tensordot supports empty axis sequence, so all the axes=0, axes=[],
+  axes=[[]], and axes=[[],[]] are equivalent cases.'
+- x = paddle.arange(4, dtype=data_type).reshape([2, 2])
+- y = paddle.arange(4, dtype=data_type).reshape([2, 2])
+- z = paddle.tensordot(x, y, axes=0)
+- print(z)
+- Tensor(shape=[2, 2, 2, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[[[0., 0.],'
+- '[0., 0.]],'
+- '[[0., 1.],'
+- '[2., 3.]]],'
+- '[[[0., 2.],'
+- '[4., 6.]],'
+- '[[0., 3.],'
+- '[6., 9.]]]])'
+- '# For two 1-d tensor x and y, the case axes=1 is equivalent to inner product.'
+- x = paddle.arange(10, dtype=data_type)
+- y = paddle.arange(10, dtype=data_type)
+- z1 = paddle.tensordot(x, y, axes=1)
+- z2 = paddle.dot(x, y)
+- print(z1)
+- Tensor(shape=[], dtype=float64, place=Place(cpu), stop_gradient=True,
+- 285.)
+- print(z2)
+- Tensor(shape=[], dtype=float64, place=Place(cpu), stop_gradient=True,
+- 285.)
+- '# For two 2-d tensor x and y, the case axes=1 is equivalent to matrix multiplication.'
+- x = paddle.arange(6, dtype=data_type).reshape([2, 3])
+- y = paddle.arange(12, dtype=data_type).reshape([3, 4])
+- z1 = paddle.tensordot(x, y, axes=1)
+- z2 = paddle.matmul(x, y)
+- print(z1)
+- Tensor(shape=[2, 4], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[20., 23., 26., 29.],'
+- '[56., 68., 80., 92.]])'
+- print(z2)
+- Tensor(shape=[2, 4], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[20., 23., 26., 29.],'
+- '[56., 68., 80., 92.]])'
+- '# When axes is a 1-d int list, x and y will be contracted along the same given
+  axes.'
+- '# Note that axes=[1, 2] is equivalent to axes=[[1, 2]], axes=[[1, 2], []], axes=[[1,
+  2], [1]], and axes=[[1, 2], [1, 2]].'
+- x = paddle.arange(24, dtype=data_type).reshape([2, 3, 4])
+- y = paddle.arange(36, dtype=data_type).reshape([3, 3, 4])
+- z = paddle.tensordot(x, y, axes=[1, 2])
+- print(z)
+- Tensor(shape=[2, 3], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[506. , 1298., 2090.],'
+- '[1298., 3818., 6338.]])'
+- '# When axes is a list containing two 1-d int list, the first will be applied to
+  x and the second to y.'
+- x = paddle.arange(60, dtype=data_type).reshape([3, 4, 5])
+- y = paddle.arange(24, dtype=data_type).reshape([4, 3, 2])
+- z = paddle.tensordot(x, y, axes=([1, 0], [0, 1]))
+- print(z)
+- Tensor(shape=[5, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[4400., 4730.],'
+- '[4532., 4874.],'
+- '[4664., 5018.],'
+- '[4796., 5162.],'
+- '[4928., 5306.]])'
+- '# Thanks to the support of axes expansion, axes=[[0, 1, 3, 4], [1, 0, 3, 4]] can
+  be abbreviated as axes= [[0, 1, 3, 4], [1, 0]].'
+- x = paddle.arange(720, dtype=data_type).reshape([2, 3, 4, 5, 6])
+- y = paddle.arange(720, dtype=data_type).reshape([3, 2, 4, 5, 6])
+- z = paddle.tensordot(x, y, axes=[[0, 1, 3, 4], [1, 0]])
+- print(z)
+- Tensor(shape=[4, 4], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[23217330., 24915630., 26613930., 28312230.],'
+- '[24915630., 26775930., 28636230., 30496530.],'
+- '[26613930., 28636230., 30658530., 32680830.],'
+- '[28312230., 30496530., 32680830., 34865130.]])'
+8 api_shape: {}

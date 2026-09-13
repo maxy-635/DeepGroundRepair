@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SquaredDifference
+3 api_description: Computes the element-wise squared difference between two inputs,
+  returning conj(x - y) * (x - y).
+4 api_signature: tf.raw_ops.SquaredDifference(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor whose values are compared and squared against `y`.
+- y: The second tensor, which must match `x` in type, used to compute the squared
+    elementwise difference.
+7 api_usage_example: null
+8 api_shape: ''

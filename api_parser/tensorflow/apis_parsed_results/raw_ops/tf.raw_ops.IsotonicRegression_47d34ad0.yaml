@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.IsotonicRegression
+3 api_description: Solves batched isotonic regression problems by fitting a monotonic
+  sequence to each input using least-squares optimization.
+4 api_signature: tf.raw_ops.IsotonicRegression(input)
+5 api_details: ''
+6 api_parameters:
+- input: Holds a batch of input values, one `(batch_size, dim)` tensor per batch,
+    for isotonic regression processing.
+7 api_usage_example: null
+8 api_shape: ''

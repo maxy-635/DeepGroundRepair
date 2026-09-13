@@ -1,0 +1,23 @@
+2 api_name: torch.optim.lr_scheduler.ConstantLR
+3 api_description: Scales each parameter group’s learning rate by a fixed constant
+  factor.
+4 api_signature: torch.optim.lr_scheduler.ConstantLR(optimizer,factor,total_iters)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be scheduled.
+- factor: The multiplier applied to the learning rate for the initial period.
+- total_iters: The number of steps to keep applying the learning-rate multiplier.
+7 api_usage_example:
+- ' # Assuming optimizer uses lr = 0.05 for all groups'
+- ' # lr = 0.025   if epoch == 0'
+- ' # lr = 0.025   if epoch == 1'
+- ' # lr = 0.025   if epoch == 2'
+- ' # lr = 0.025   if epoch == 3'
+- ' # ...'
+- ' # lr = 0.05    if epoch >= 40'
+- ' scheduler = ConstantLR(optimizer, factor=0.5, total_iters=40)'
+- ' for epoch in range(100):'
+- '     train(...)'
+- '     validate(...)'
+- '     scheduler.step()'
+8 api_shape: null

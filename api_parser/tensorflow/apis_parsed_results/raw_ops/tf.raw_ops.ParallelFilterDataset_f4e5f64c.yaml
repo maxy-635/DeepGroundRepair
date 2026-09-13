@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.ParallelFilterDataset
+3 api_description: Creates a dataset by filtering `input_dataset` in parallel, keeping
+  only elements for which the predicate returns true.
+4 api_signature: tf.raw_ops.ParallelFilterDataset(input_dataset,num_parallel_calls,predicate,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset whose elements are passed through the parallel
+    filter operation.
+- num_parallel_calls: The number of elements to process concurrently when applying
+    the predicate.
+- predicate: A function that evaluates each element and returns a scalar boolean to
+    decide whether it is kept.
+- output_types: The data types of the values produced by the filtered dataset.
+- output_shapes: The shapes of the values produced by the filtered dataset.
+7 api_usage_example: null
+8 api_shape: ''

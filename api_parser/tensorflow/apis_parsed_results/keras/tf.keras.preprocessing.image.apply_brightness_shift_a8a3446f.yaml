@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.preprocessing.image.apply_brightness_shift
+3 api_description: Adjusts an image’s brightness by applying a specified shift; this
+  API is deprecated.
+4 api_signature: tf.keras.preprocessing.image.apply_brightness_shift(x,brightness)
+5 api_details: ''
+6 api_parameters:
+- x: The 3D input tensor to adjust brightness for.
+- brightness: The float value that sets the new brightness level.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.layers.GaussianDropout
+3 api_description: Applies multiplicative Gaussian noise centered at 1 during training
+  to regularize the model.
+4 api_signature: tf.keras.layers.GaussianDropout(rate)
+5 api_details: ''
+6 api_parameters:
+- rate: Controls the drop probability, determining the amount of multiplicative noise
+    applied to the inputs.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.losses.MeanAbsoluteError
+3 api_description: Computes the average absolute difference between true labels and
+  predicted values.
+4 api_signature: tf.keras.losses.MeanAbsoluteError(name)
+5 api_details: ''
+6 api_parameters:
+- name: Sets an optional identifier for the loss instance.
+7 api_usage_example: null
+8 api_shape: ''

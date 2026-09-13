@@ -1,0 +1,17 @@
+2 api_name: paddle.fft.ifft2
+3 api_description: Computes the 2-D inverse discrete Fourier transform, converting
+  frequency-domain data back to the spatial domain.
+4 api_signature: paddle.fft.ifft2(x,s,axes,norm,name,*,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be transformed by the 2D inverse FFT.
+- s: Specifies the output transform size for each of the two axes, with cropping or
+    zero-padding applied as needed.
+- axes: Specifies the two axes along which the inverse FFT is computed, defaulting
+    to the last two axes.
+- norm: Controls the normalization mode used for scaling the forward and inverse transform
+    pair.
+- name: An optional name for the operation, mainly used for API bookkeeping.
+- out: An optional tensor to store the output of the operation.
+7 api_usage_example: []
+8 api_shape: {}

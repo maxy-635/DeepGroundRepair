@@ -1,0 +1,12 @@
+2 api_name: torch.floor
+3 api_description: Returns a new tensor with each element rounded down to the greatest
+  integer less than or equal to it.
+4 api_signature: torch.floor(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are rounded down to the nearest integer.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.floor(a)'
+8 api_shape: null

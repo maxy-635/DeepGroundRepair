@@ -1,0 +1,11 @@
+2 api_name: torch.nanmedian
+3 api_description: Computes the median of tensor values while ignoring any NaN entries.
+4 api_signature: torch.nanmedian(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose median values are computed while ignoring NaN entries.
+7 api_usage_example:
+- ' a = torch.tensor([1, float(''nan''), 3, 2])'
+- ' a.median()'
+- ' a.nanmedian()'
+8 api_shape: null

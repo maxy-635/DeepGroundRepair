@@ -1,0 +1,24 @@
+2 api_name: tensorflow.keras.preprocessing.image_dataset_from_directory
+3 api_description: Creates a tf.data.Dataset by loading and batching images from a
+  directory organized by class subfolders, with optional validation splitting, labels,
+  resizing, shuffling, and other preprocessing controls.
+4 api_signature: tf.keras.preprocessing.image_dataset_from_directory(directory,labels,label_mode,batch_size,image_size,shuffle,seed,validation_split,subset,color_mode)
+5 api_details: ''
+6 api_parameters:
+- directory: Specifies the root folder containing the image data, with class subfolders
+    required when labels are inferred.
+- labels: Controls how labels are assigned, either inferred from subfolders, omitted,
+    or provided explicitly as integers.
+- label_mode: Determines the format used to encode the labels.
+- color_mode: Sets the image channel format, converting images to grayscale, RGB,
+    or RGBA.
+- batch_size: Sets how many images are grouped into each batch, or yields single samples
+    if None.
+- image_size: Resizes each image to the given height and width after loading.
+- shuffle: Chooses whether to randomize the dataset order or keep files sorted alphabetically.
+- seed: Provides a random seed for reproducible shuffling and transformations.
+- validation_split: Reserves a fraction of the data for validation.
+- subset: Selects which split to return when using a validation split, or both splits
+    at once.
+7 api_usage_example: null
+8 api_shape: ''

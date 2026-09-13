@@ -1,0 +1,28 @@
+2 api_name: torch.optim.lr_scheduler.OneCycleLR
+3 api_description: Adjusts each optimizer parameter group's learning rate following
+  the 1cycle policy, typically increasing then decreasing it over the course of training.
+4 api_signature: torch.optim.lr_scheduler.OneCycleLR(optimizer,max_lr,total_steps,epochs,steps_per_epoch,pct_start,anneal_strategy)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be scheduled.
+- max_lr: The maximum learning rate reached by each parameter group during the cycle.
+- total_steps: The total number of scheduler steps in the full cycle.
+- epochs: The number of epochs used with `steps_per_epoch` to infer `total_steps`
+    when needed.
+- steps_per_epoch: The number of steps in each epoch used with `epochs` to infer `total_steps`
+    when needed.
+- pct_start: The fraction of the cycle spent increasing the learning rate.
+- anneal_strategy: The method used to decrease the learning rate, either cosine or
+    linear.
+7 api_usage_example:
+- ' data_loader = torch.utils.data.DataLoader(...)'
+- ' optimizer = torch.optim.SGD(model.parameters(), lr=1e-4, momentum=0.9)'
+- ' scheduler = torch.optim.lr_scheduler.OneCycleLR('
+- '...     optimizer, max_lr=0.01, steps_per_epoch=len(data_loader), epochs=10'
+- '... )'
+- ' for epoch in range(10):'
+- '     for batch in data_loader:'
+- '         train_batch(...)'
+- '         optimizer.step()'
+- '         scheduler.step()'
+8 api_shape: null

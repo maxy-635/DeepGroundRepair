@@ -1,0 +1,9 @@
+2 api_name: torch.profiler.itt.range_push
+3 api_description: Starts a new nested profiling range by pushing it onto a stack
+  and returns its zero-based depth.
+4 api_signature: torch.profiler.itt.range_push(msg)
+5 api_details: ''
+6 api_parameters:
+- msg: Specifies the ASCII message label to associate with the profiling range.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,18 @@
+2 api_name: paddle.static.InputSpec
+3 api_description: Defines the expected model input signature by specifying shape,
+  dtype, and optional name for static graph inputs.
+4 api_signature: paddle.static.InputSpec(shape,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the data type of the input data.
+- name: Specifies the variable's name or alias.
+7 api_usage_example:
+- import paddle
+- from paddle.static import InputSpec
+- input = InputSpec([None, 784], 'float32', 'x')
+- label = InputSpec([None, 1], 'int64', 'label')
+- print(input)
+- InputSpec(shape=(-1, 784), dtype=paddle.float32, name=x, stop_gradient=False)
+- print(label)
+- InputSpec(shape=(-1, 1), dtype=paddle.int64, name=label, stop_gradient=False)
+8 api_shape: {}

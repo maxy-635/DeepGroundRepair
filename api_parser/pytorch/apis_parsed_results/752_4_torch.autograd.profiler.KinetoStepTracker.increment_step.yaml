@@ -1,0 +1,10 @@
+2 api_name: torch.autograd.profiler.KinetoStepTracker.increment_step
+3 api_description: Increments and returns the current step count for the requesting
+  source.
+4 api_signature: '"increment_step(requester)"'
+5 api_details: ''
+6 api_parameters:
+- step_name: A string identifier for the step category to increment.
+- num_steps: The number of steps to advance the tracker by.
+7 api_usage_example: null
+8 api_shape: null

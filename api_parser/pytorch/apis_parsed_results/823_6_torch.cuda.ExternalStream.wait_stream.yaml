@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.ExternalStream.wait_stream
+3 api_description: Wait for another CUDA stream to complete its queued work before
+  continuing on this external stream.
+4 api_signature: wait_stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: The stream whose work must be synchronized with this external stream.
+7 api_usage_example: null
+8 api_shape: null

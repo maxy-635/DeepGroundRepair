@@ -1,0 +1,12 @@
+2 api_name: tensorflow.nn.isotonic_regression
+3 api_description: The tensorflow.nn.isotonic_regression API solves isotonic regression
+  problems for input vectors along a specified axis, minimizing the sum of squared
+  differences while ensuring the output is non-increasing. It returns the isotonic
+  regression solution and a tensor indicating constant segments.
+4 api_signature: tf.nn.isotonic_regression(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A tensor holding the inputs for which isotonic regression is to be performed.
+7 api_usage_example:
+- segments
+8 api_shape: ''

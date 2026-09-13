@@ -1,0 +1,19 @@
+2 api_name: torch.nn.TransformerEncoderLayer
+3 api_description: Applies self-attention and a feedforward network to transform encoder
+  inputs.
+4 api_signature: torch.nn.TransformerEncoderLayer(d_model,nhead,dim_feedforward,dropout,activation,batch_first,norm_first)
+5 api_details: ''
+6 api_parameters:
+- d_model: Sets the input and output feature size for each token.
+- nhead: Specifies how many attention heads the layer uses.
+- dim_feedforward: Sets the hidden size of the feedforward subnetwork.
+- dropout: Controls the dropout rate used for regularization.
+- activation: Chooses the activation function used in the feedforward block.
+- batch_first: Determines whether tensors use batch-first layout `(batch, seq, feature)`.
+- norm_first: Chooses whether layer normalization is applied before or after attention
+    and feedforward blocks.
+7 api_usage_example:
+- ' encoder_layer = nn.TransformerEncoderLayer(d_model=512, nhead=8)'
+- ' src = torch.rand(10, 32, 512)'
+- ' out = encoder_layer(src)'
+8 api_shape: null

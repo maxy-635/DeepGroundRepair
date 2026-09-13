@@ -1,0 +1,9 @@
+2 api_name: torch.xpu.reset_peak_memory_stats
+3 api_description: Resets the XPU memory allocator’s recorded peak memory statistics.
+4 api_signature: torch.xpu.reset_peak_memory_stats(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which XPU device’s peak memory stats to reset, defaulting to the
+    current device when omitted.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: torch.poisson
+3 api_description: Samples a tensor of the same shape as the input, drawing each element
+  from a Poisson distribution whose rate is given by the corresponding input value.
+4 api_signature: torch.poisson(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor specifies the Poisson rate (expected count) for each element.
+7 api_usage_example:
+- ' rates = torch.rand(4, 4) * 5  # rate parameter between 0 and 5'
+- ' torch.poisson(rates)'
+8 api_shape: null

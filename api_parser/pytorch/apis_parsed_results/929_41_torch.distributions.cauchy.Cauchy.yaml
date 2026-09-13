@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.cauchy.Cauchy
+3 api_description: A distribution over real-valued random variables with location
+  and scale parameters, supporting sampling, log probability evaluation, and standard
+  distribution methods for Cauchy behavior.
+4 api_signature: torch.distributions.cauchy.Cauchy(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the distribution’s central location, corresponding to its mode and median.
+- scale: Sets the half-width at half-maximum, controlling the distribution’s spread.
+7 api_usage_example:
+- ' m = Cauchy(torch.tensor([0.0]), torch.tensor([1.0]))'
+- ' m.sample()  # sample from a Cauchy distribution with loc=0 and scale=1'
+8 api_shape: null

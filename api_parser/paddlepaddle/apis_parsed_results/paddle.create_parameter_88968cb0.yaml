@@ -1,0 +1,16 @@
+2 api_name: paddle.create_parameter
+3 api_description: Creates a learnable parameter tensor that can store gradients and
+  be optimized during training.
+4 api_signature: paddle.create_parameter(shape,dtype,name,default_initializer)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the parameter tensor.
+- dtype: Specifies the parameter's data type, such as `float16`, `float32`, or `float64`.
+- name: Optionally assigns a name to the parameter; it is usually left as `None`.
+- default_initializer: Provides the initializer used to create the parameter's initial
+    values.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- W = paddle.create_parameter(shape=[784, 200], dtype='float32')
+8 api_shape: {}

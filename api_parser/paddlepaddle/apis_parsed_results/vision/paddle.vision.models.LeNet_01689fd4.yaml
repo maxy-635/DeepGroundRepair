@@ -1,0 +1,9 @@
+2 api_name: paddle.vision.models.LeNet
+3 api_description: A classic LeNet convolutional neural network for image classification,
+  using convolution, pooling, and fully connected layers to learn document-recognition
+  features.
+4 api_signature: paddle.vision.models.LeNet(num_class es)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

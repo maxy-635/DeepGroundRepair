@@ -1,0 +1,13 @@
+2 api_name: tensorflow.RaggedTensorSpec
+3 api_description: Specifies the shape, dtype, and ragged rank of a tf.RaggedTensor
+  for serialization, type checking, and function signatures.
+4 api_signature: tf.RaggedTensorSpec(shape,dtype,ragged_rank)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the overall RaggedTensor shape, or `None` to accept any shape.
+- dtype: Sets the data type of the RaggedTensor values.
+- ragged_rank: Defines how many levels of ragged partitioning are applied to `flat_values`.
+7 api_usage_example:
+- rt = tf.ragged.constant([[[0, 1]], [[1, 2], [3, 4]]], ragged_rank=1)
+- tf.type_spec_from_value(rt).shape
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ExperimentalDatasetToTFRecord
+3 api_description: Writes a dataset to a file in TFRecord format.
+4 api_signature: tf.raw_ops.ExperimentalDatasetToTFRecord(input_dataset,filename)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset, encoded as a variant tensor, that will be written out
+    to a TFRecord file.
+- filename: The scalar string tensor specifying the output TFRecord filename.
+- name: An optional operation name used to label the TensorFlow op.
+7 api_usage_example: null
+8 api_shape: ''

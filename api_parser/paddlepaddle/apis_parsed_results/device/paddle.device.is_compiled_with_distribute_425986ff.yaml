@@ -1,0 +1,10 @@
+2 api_name: paddle.device.is_compiled_with_distribute
+3 api_description: Returns whether the installed Paddle wheel supports distributed
+  training and inference.
+4 api_signature: paddle.device.is_compiled_with_distribute()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- support_distribute = paddle.device.is_compiled_with_distribute()
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.nn.bias_add
+3 api_description: The tensorflow.nn.bias_add function adds a 1-D bias to a value
+  tensor, supporting broadcasting and allowing differing types for quantized inputs.
+4 api_signature: tf.nn.bias_add(value,bias)
+5 api_details: ''
+6 api_parameters:
+- value: Represents the input tensor to which the bias will be added, supporting various
+    data types.
+- bias: Represents a 1-D tensor containing the bias values to be added, with size
+    matching the channel dimension of the input tensor.
+7 api_usage_example: null
+8 api_shape: ''

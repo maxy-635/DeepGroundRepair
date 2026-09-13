@@ -1,0 +1,9 @@
+2 api_name: tensorflow.Operation
+3 api_description: Represents a graph node that consumes tensor inputs, performs a
+  computation in a TensorFlow graph, and produces tensor outputs, with support for
+  control dependencies, device placement, and execution via a session.
+4 api_signature: tf.Operation()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

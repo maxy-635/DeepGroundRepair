@@ -1,0 +1,14 @@
+2 api_name: tensorflow.linalg.LinearOperatorCirculant2D
+3 api_description: Represents a batched 2D circulant linear operator that acts like
+  a block circulant N×N matrix without materializing it, supporting broadcasting over
+  leading batch dimensions.
+4 api_signature: tf.linalg.LinearOperatorCirculant2D(spectrum,input_output_dtype,is_square,name)
+5 api_details: ''
+6 api_parameters:
+- spectrum: Defines the 2D circulant operator's frequency-domain coefficients, with
+    batch and spatial dimensions specified by the tensor shape.
+- input_output_dtype: Sets the data type used for the operator's inputs and outputs.
+- is_square: Indicates whether the operator is expected to behave as a square matrix.
+- name: Provides a name prefix for operations created by this class.
+7 api_usage_example: null
+8 api_shape: ''

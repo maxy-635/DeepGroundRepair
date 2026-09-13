@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.UpsamplingNearest2D
+3 api_description: The paddle.nn.UpsamplingNearest2D API performs nearest neighbor
+  interpolation to upsample a batch of 4-D image tensors on the height and width dimensions.
+4 api_signature: paddle.nn.UpsamplingNearest2D(size,scale_factor)
+5 api_details: ''
+6 api_parameters:
+- size: Defines the target output shape (height, width) for the resized image when
+    the input is a 4-D Tensor.
+- scale_factor: Specifies the multiplier for scaling the input height and width, used
+    when size is not set and must match the input dimensions if provided as a list,
+    tuple, or Tensor.
+7 api_usage_example: []
+8 api_shape: null

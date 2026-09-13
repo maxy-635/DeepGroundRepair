@@ -1,0 +1,13 @@
+2 api_name: tensorflow.distribute.experimental.CollectiveHints
+3 api_description: Provides optional performance hints for distributed collective
+  ops like all-reduce, helping strategies optimize communication and overlap work,
+  though the hints may be ignored.
+4 api_signature: tf.distribute.experimental.CollectiveHints(bytes_per_pack,timeout_seconds)
+5 api_details: ''
+6 api_parameters:
+- bytes_per_pack: Sets the collective pack size for all-reduce operations in MultiWorkerMirroredStrategy,
+    with 0 using an automatic size.
+- timeout_seconds: Sets a debugging timeout for collectives in MultiWorkerMirroredStrategy,
+    raising DeadlineExceededError if the operation exceeds the limit.
+7 api_usage_example: null
+8 api_shape: ''

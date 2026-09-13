@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.NcclAllReduce
+3 api_description: Performs an NCCL all-reduce across num_devices tensors sharing
+  the same shared_name, returning the reduced result on each participating device
+  using the specified reduction operation.
+4 api_signature: tf.raw_ops.NcclAllReduce(input,reduction,num_devices)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be reduced across devices.
+- reduction: The reduction operation to apply, such as min, max, prod, or sum.
+- num_devices: The number of devices participating in the all-reduce operation.
+7 api_usage_example: null
+8 api_shape: ''

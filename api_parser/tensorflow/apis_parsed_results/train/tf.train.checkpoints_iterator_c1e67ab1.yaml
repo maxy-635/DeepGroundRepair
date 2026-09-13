@@ -1,0 +1,14 @@
+2 api_name: tensorflow.train.checkpoints_iterator
+3 api_description: Continuously yields newly available checkpoint files, polling only
+  when control returns to the iterator, and can block up to a timeout while waiting
+  for the next checkpoint.
+4 api_signature: tf.train.checkpoints_iterator(checkpoint_dir,timeout_fn)
+5 api_details: ''
+6 api_parameters:
+- checkpoint_dir: Directory where checkpoints are saved and monitored.
+- timeout: Maximum number of seconds to wait for a new checkpoint, or wait indefinitely
+    if `None`.
+- timeout_fn: Optional no-argument function called on timeout that can stop the iterator
+    by returning `True`.
+7 api_usage_example: null
+8 api_shape: ''

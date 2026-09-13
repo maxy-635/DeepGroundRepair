@@ -1,0 +1,11 @@
+2 api_name: torch.optim.Adagrad.register_load_state_dict_post_hook
+3 api_description: Registers a callback that runs after `load_state_dict()` to let
+  you inspect or adjust the loaded optimizer state.
+4 api_signature: register_load_state_dict_post_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: Registers a user-defined callback to run after the optimizer state dict is
+    loaded.
+7 api_usage_example:
+- hook(optimizer) -> None
+8 api_shape: null

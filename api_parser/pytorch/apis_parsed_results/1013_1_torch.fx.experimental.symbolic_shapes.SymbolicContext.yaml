@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.SymbolicContext
+3 api_description: Describes how symbolic sizes, strides, and storage offsets should
+  be created, including whether they are treated as static or dynamic.
+4 api_signature: class torch.fx.experimental.symbolic_shapes.SymbolicContext
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

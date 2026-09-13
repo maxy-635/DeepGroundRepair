@@ -1,0 +1,12 @@
+2 api_name: torch.argwhere
+3 api_description: Returns the indices of all non-zero elements as a lexicographically
+  sorted tensor, with one row per non-zero element.
+4 api_signature: torch.argwhere(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' t = torch.tensor([1, 0, 1])'
+- ' torch.argwhere(t)'
+- ' t = torch.tensor([[1, 0, 1], [0, 1, 1]])'
+- ' torch.argwhere(t)'
+8 api_shape: null

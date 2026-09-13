@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.quant.quant_layers.QuantizedConv2D
+3 api_description: QuantizedConv2D performs convolution operations like Conv2D, but
+  with inputs that are fake quantized for model quantization purposes.
+4 api_signature: paddle.nn.quant.quant_layers.QuantizedConv2D(layer,weight_bits,activation_bits)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Number of input channels to the convolutional layer.
+- out_channels: Number of output channels produced by the convolution.
+- kernel_size: Size of the convolving kernel.
+- stride: Stride of the convolution.
+- padding: Padding added to all four sides of the input.
+- dilation: Spacing between kernel elements.
+- groups: Number of blocked connections from input channels to output channels.
+- bias_attr: Specifies whether to include a bias term in the convolution.
+- padding_mode: Specifies the padding mode to use (such as 'zeros' or 'reflect').
+- weight_attr: Attributes for the learnable weight of the convolution layer.
+- quant_bits: Number of bits used for quantization.
+- quant_axis: Axis along which quantization is applied.
+- act: Activation function to apply after the convolution.
+- dtype: Data type of the output tensor.
+7 api_usage_example: []
+8 api_shape: null

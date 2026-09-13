@@ -1,0 +1,33 @@
+2 api_name: paddle.linalg.matrix_exp
+3 api_description: Computes the matrix exponential of square matrices.
+4 api_signature: paddle.linalg.matrix_exp(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input square matrix or batch of square matrices whose matrix exponential
+    is computed.
+7 api_usage_example:
+- import paddle
+- mat_a = paddle.empty((2, 2, 2))
+- mat_a[0, :, :] = paddle.eye(2, 2)
+- mat_a[1, :, :] = 2 * paddle.eye(2, 2)
+- print(mat_a)
+- Tensor(shape=[2, 2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[1., 0.],'
+- '[0., 1.]],'
+- '[[2., 0.],'
+- '[0., 2.]]])'
+- out = paddle.linalg.matrix_exp(mat_a)
+- print(out)
+- Tensor(shape=[2, 2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[2.71828198, 0.        ],'
+- '[0.        , 2.71828198]],'
+- '[[7.38905621, 0.        ],'
+- '[0.        , 7.38905621]]])'
+- import math
+- mat_a = paddle.to_tensor([[0, math.pi/3], [-math.pi/3, 0]])
+- out = paddle.linalg.matrix_exp(mat_a)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.49999994,  0.86602545],'
+- '[-0.86602551,  0.50000000]])'
+8 api_shape: {}

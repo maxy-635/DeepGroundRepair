@@ -1,0 +1,8 @@
+2 api_name: paddle.floor_divide_
+3 api_description: Performs in-place floor division on x, updating x with the floor-divided
+  result.
+4 api_signature: paddle.floor_divide_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

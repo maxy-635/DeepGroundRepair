@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.AnonymousIteratorV2
+3 api_description: Creates an anonymous iterator resource container used to hold iterator
+  state without requiring a named shared resource.
+4 api_signature: tf.raw_ops.AnonymousIteratorV2(output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- output_types: Specifies the data types of the iterator’s outputs.
+- output_shapes: Specifies the shapes of the iterator’s outputs.
+7 api_usage_example: null
+8 api_shape: ''

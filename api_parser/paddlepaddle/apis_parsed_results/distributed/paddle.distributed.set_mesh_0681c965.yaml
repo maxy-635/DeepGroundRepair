@@ -1,0 +1,16 @@
+2 api_name: paddle.distributed.set_mesh
+3 api_description: Sets the global distributed mesh used to define how computation
+  and data are partitioned across devices.
+4 api_signature: paddle.distributed.set_mesh(mesh)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- mesh = dist.ProcessMesh([[[0, 1], [2, 3]], [[4, 5], [6, 7]]], dim_names=["dp", "mp",
+  "pp"])
+- '>>>'
+- dist.auto_parallel.set_mesh(mesh)
+- '# This case need to be executed in multi-card environment'
+- '# python -m paddle.distributed.launch --gpus=0,1,2,3,4,5,6,7 {test_case}.py'
+8 api_shape: {}

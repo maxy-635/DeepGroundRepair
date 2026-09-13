@@ -1,0 +1,12 @@
+2 api_name: tensorflow.io.TFRecordOptions
+3 api_description: Configuration options for reading and writing TFRecord files, including
+  compression and record formatting behavior.
+4 api_signature: tf.io.TFRecordOptions(compression_type,compression_level)
+5 api_details: ''
+6 api_parameters:
+- compression_type: Specifies whether TFRecord data is written with GZIP, ZLIB, or
+    no compression.
+- compression_level: Sets the compression strength from 0 to 9, or leaves it unset
+    with None.
+7 api_usage_example: null
+8 api_shape: ''

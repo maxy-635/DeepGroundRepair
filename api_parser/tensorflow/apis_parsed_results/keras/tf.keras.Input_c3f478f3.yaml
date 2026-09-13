@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.Input
+3 api_description: Creates a symbolic Keras input tensor used to define model inputs
+  and build models from input-output tensors.
+4 api_signature: tf.keras.Input(shape,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the expected input dimensions per sample, excluding the batch size,
+    with `None` allowed for variable-length dimensions.
+- dtype: Sets the data type of the input tensor the layer expects to receive.
+- name: Assigns an optional unique layer name for easier identification in the model.
+7 api_usage_example: null
+8 api_shape: ''

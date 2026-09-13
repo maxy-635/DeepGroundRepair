@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.LoopCond
+3 api_description: Forwards the loop condition input unchanged to signal loop termination
+  in pivot switches.
+4 api_signature: tf.raw_ops.LoopCond(input)
+5 api_details: ''
+6 api_parameters:
+- input: A boolean scalar tensor that serves as the Switch branch predicate.
+7 api_usage_example: null
+8 api_shape: ''

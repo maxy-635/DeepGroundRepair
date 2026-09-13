@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.StatefulStandardNormalV2
+3 api_description: Generates random values from a normal distribution with mean 0
+  and standard deviation 1.
+4 api_signature: tf.raw_ops.StatefulStandardNormalV2(resource,shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- resource: Supplies the RNG state resource handle used to generate and update random
+    values.
+- shape: Specifies the output tensor shape to generate.
+- dtype: Sets the output tensor data type, defaulting to `tf.float32`.
+7 api_usage_example: null
+8 api_shape: ''

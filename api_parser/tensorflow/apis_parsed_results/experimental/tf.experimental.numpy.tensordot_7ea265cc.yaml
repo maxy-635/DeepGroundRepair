@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.tensordot
+3 api_description: Computes the tensor dot product of two arrays by summing over specified
+  axes, like NumPy tensordot.
+4 api_signature: tf.experimental.numpy.tensordot(a,b,axes)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

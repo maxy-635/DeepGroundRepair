@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BatchFunction
+3 api_description: Combines multiple input tensors into batches and applies a function
+  to the batched computation, improving efficiency by processing grouped inputs together.
+4 api_signature: tf.raw_ops.BatchFunction(in_tensors,f,max_batch_size,Tout,name)
+5 api_details: ''
+6 api_parameters:
+- in_tensors: Specifies the input tensors that will be grouped together for batching.
+- f: Provides the @Defun-decorated function to apply to each batch.
+- max_batch_size: Sets the maximum number of items allowed in any batch.
+- Tout: Defines the output tensor data types expected from the batched function.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

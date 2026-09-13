@@ -1,0 +1,12 @@
+2 api_name: torch.acosh
+3 api_description: Computes the inverse hyperbolic cosine of each element in the input
+  tensor and returns a new tensor.
+4 api_signature: torch.acosh(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose inverse hyperbolic cosine is computed elementwise.
+7 api_usage_example:
+- ' a = torch.randn(4).uniform_(1, 2)'
+- ' a'
+- ' torch.acosh(a)'
+8 api_shape: null

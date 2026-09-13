@@ -1,0 +1,16 @@
+2 api_name: tensorflow.distribute.experimental.partitioners.FixedShardsPartitioner
+3 api_description: Creates a variable partitioner that splits tensors into a fixed
+  number of shards, regardless of tensor size.
+4 api_signature: tf.distribute.experimental.partitioners.FixedShardsPartitioner(num_shards)
+5 api_details: ''
+6 api_parameters:
+- num_shards: Specifies how many shards to split the variable into during partitioning.
+7 api_usage_example:
+- '# standalone usage:'
+- partitioner = FixedShardsPartitioner(num_shards=2)
+- partitions = partitioner(tf.TensorShape([10, 3]), tf.float32)
+- '[2, 1]'
+- '# use in ParameterServerStrategy'
+- '# strategy = tf.distribute.experimental.ParameterServerStrategy('
+- '#   cluster_resolver=cluster_resolver, variable_partitioner=partitioner)'
+8 api_shape: ''

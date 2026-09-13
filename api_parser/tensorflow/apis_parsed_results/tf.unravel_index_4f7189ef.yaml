@@ -1,0 +1,10 @@
+2 api_name: tensorflow.unravel_index
+3 api_description: Converts flat indices into coordinate indices for each dimension
+  of a tensor shape.
+4 api_signature: tf.unravel_index(indices,dims)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the flat index or indices to convert into coordinates.
+- dims: Specifies the target array shape used to unravel the flat indices.
+7 api_usage_example: null
+8 api_shape: ''

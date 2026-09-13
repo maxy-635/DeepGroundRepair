@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.config.set_backend
+3 api_description: Reloads Keras with a new backend, but should be used with extreme
+  caution because existing Keras objects and code must be recreated after the change.
+4 api_signature: tf.keras.config.set_backend(backend)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

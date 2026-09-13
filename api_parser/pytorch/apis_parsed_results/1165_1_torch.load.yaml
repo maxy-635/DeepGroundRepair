@@ -1,0 +1,39 @@
+2 api_name: torch.load
+3 api_description: Loads and deserializes an object previously saved with `torch.save()`
+  from a file.
+4 api_signature: torch.load(f,map_location,weights_only,mmap)
+5 api_details: ''
+6 api_parameters:
+- f: Specifies the file-like object or file path to load the serialized object from.
+- map_location: Controls how storage locations are remapped during loading.
+- weights_only: Restricts loading to tensors, primitive types, dictionaries, and approved
+    safe globals.
+- mmap: Loads tensor storages via memory mapping for lazy access instead of copying
+    them into memory first.
+7 api_usage_example:
+- ' torch.load("tensors.pt", weights_only=True)'
+- ' torch.load('
+- '...     "tensors.pt",'
+- '...     map_location=torch.device("cpu"),'
+- '...     weights_only=True,'
+- '... )'
+- ' torch.load('
+- '...     "tensors.pt",'
+- '...     map_location=lambda storage, loc: storage,'
+- '...     weights_only=True,'
+- '... )'
+- ' torch.load('
+- '...     "tensors.pt",'
+- '...     map_location=lambda storage, loc: storage.cuda(1),  # type: ignore[attr-defined]'
+- '...     weights_only=True,'
+- '... )  # type: ignore[attr-defined]'
+- ' torch.load('
+- '...     "tensors.pt",'
+- '...     map_location={"cuda:1": "cuda:0"},'
+- '...     weights_only=True,'
+- '... )'
+- ' with open("tensor.pt", "rb") as f:'
+- '...     buffer = io.BytesIO(f.read())'
+- ' torch.load(buffer, weights_only=False)'
+- ' torch.load("module.pt", encoding="ascii", weights_only=False)'
+8 api_shape: null

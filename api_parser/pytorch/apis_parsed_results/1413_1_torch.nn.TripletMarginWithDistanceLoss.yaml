@@ -1,0 +1,42 @@
+2 api_name: torch.nn.TripletMarginWithDistanceLoss
+3 api_description: Measures triplet loss using anchor, positive, and negative examples
+  with a customizable distance function to evaluate their relationships.
+4 api_signature: torch.nn.TripletMarginWithDistanceLoss(*,distance_function,margin)
+5 api_details: ''
+6 api_parameters:
+- distance_function: Specifies the function used to calculate the distance between
+    two tensors, defaulting to nn.PairwiseDistance if not provided.
+- margin: Defines the minimum required difference between the positive and negative
+    distances for the loss to be zero, with larger margins imposing stricter penalties.
+7 api_usage_example:
+- ' # Initialize embeddings'
+- ' embedding = nn.Embedding(1000, 128)'
+- ' anchor_ids = torch.randint(0, 1000, (1,))'
+- ' positive_ids = torch.randint(0, 1000, (1,))'
+- ' negative_ids = torch.randint(0, 1000, (1,))'
+- ' anchor = embedding(anchor_ids)'
+- ' positive = embedding(positive_ids)'
+- ' negative = embedding(negative_ids)'
+- ' # Built-in Distance Function'
+- ' triplet_loss = \'
+- '     nn.TripletMarginWithDistanceLoss(distance_function=nn.PairwiseDistance())'
+- ' output = triplet_loss(anchor, positive, negative)'
+- ' output.backward()'
+- ' # Custom Distance Function'
+- ' def l_infinity(x1, x2):'
+- '     return torch.max(torch.abs(x1 - x2), dim=1).values'
+- ' triplet_loss = ('
+- '     nn.TripletMarginWithDistanceLoss(distance_function=l_infinity, margin=1.5))'
+- ' output = triplet_loss(anchor, positive, negative)'
+- ' output.backward()'
+- ' # Custom Distance Function (Lambda)'
+- ' triplet_loss = ('
+- '     nn.TripletMarginWithDistanceLoss('
+- '         distance_function=lambda x, y: 1.0 - F.cosine_similarity(x, y)))'
+- ' output = triplet_loss(anchor, positive, negative)'
+- ' output.backward()'
+8 api_shape:
+  input tensor shape: (N, *) where * represents any number of additional dimensions
+    as supported by the distance function.
+  output tensor shape: A Tensor of shape (N) if reduction is 'none',
+  tensor shape transform formulas: {}

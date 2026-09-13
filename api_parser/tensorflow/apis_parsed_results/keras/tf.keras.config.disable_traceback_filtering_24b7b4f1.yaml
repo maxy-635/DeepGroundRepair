@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.config.disable_traceback_filtering
+3 api_description: Disables Keras traceback filtering so exceptions show full raw
+  stack traces, including internal frames, instead of shortened user-focused tracebacks.
+4 api_signature: tf.keras.config.disable_traceback_filtering()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

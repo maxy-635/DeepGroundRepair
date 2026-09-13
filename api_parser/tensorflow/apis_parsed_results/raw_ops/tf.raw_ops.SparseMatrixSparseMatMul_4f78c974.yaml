@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixSparseMatMul
+3 api_description: Multiplies two CSR sparse matrices, with optional transposition
+  or conjugate-transposition of either input, and returns the sparse product when
+  shapes are compatible.
+4 api_signature: tf.raw_ops.SparseMatrixSparseMatMul(a,b,type,transpose_a,transpose_b,adjoint_a,adjoint_b)
+5 api_details: ''
+6 api_parameters:
+- a: The left CSRSparseMatrix operand to multiply.
+- b: The right CSRSparseMatrix operand to multiply.
+- type: The numeric dtype used for the sparse matrix multiplication result.
+- transpose_a: Whether to transpose `a` before multiplying.
+- transpose_b: Whether to transpose `b` before multiplying.
+- adjoint_a: Whether to conjugate-transpose `a` before multiplying.
+- adjoint_b: Whether to conjugate-transpose `b` before multiplying.
+7 api_usage_example: null
+8 api_shape: ''

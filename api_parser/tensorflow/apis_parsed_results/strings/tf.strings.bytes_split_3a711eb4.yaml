@@ -1,0 +1,12 @@
+2 api_name: tensorflow.strings.bytes_split
+3 api_description: Splits each input string into its individual bytes, rather than
+  Unicode characters.
+4 api_signature: tf.strings.bytes_split(input)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor or ragged tensor to split into individual bytes, with statically
+    known rank.
+7 api_usage_example:
+- tf.strings.bytes_split('hello').numpy()
+- tf.strings.bytes_split(['hello', '123'])
+8 api_shape: ''

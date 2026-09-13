@@ -1,0 +1,16 @@
+2 api_name: torch.mps.compile_shader
+3 api_description: Compiles a compute shader from source for Apple MPS and lets Python
+  invoke the kernels it defines.
+4 api_signature: torch.mps.compile_shader(source)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example:
+- ' lib = torch.mps.compile_shader('
+- '... "kernel void full(device float* out, constant float& val, uint idx [[thread_position_in_grid]])
+  { out[idx] = val; }"'
+- '...  )'
+- ' x = torch.zeros(16, device="mps")'
+- ' lib.full(x, 3.14)'
+8 api_shape: null

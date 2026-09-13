@@ -1,0 +1,21 @@
+2 api_name: torch.nn.utils.rnn.unpad_sequence
+3 api_description: Converts a padded tensor into a list of variable-length tensors
+  by removing padding from each sequence.
+4 api_signature: torch.nn.utils.rnn.unpad_sequence(padded_sequences,lengths)
+5 api_details: ''
+6 api_parameters:
+- padded_sequences: The padded input sequences to be unpadded.
+- lengths: The original lengths of each sequence before padding.
+7 api_usage_example:
+- ' from torch.nn.utils.rnn import pad_sequence, unpad_sequence'
+- ' a = torch.ones(25, 300)'
+- ' b = torch.ones(22, 300)'
+- ' c = torch.ones(15, 300)'
+- ' sequences = [a, b, c]'
+- ' padded_sequences = pad_sequence(sequences)'
+- ' lengths = torch.as_tensor([v.size(0) for v in sequences])'
+- ' unpadded_sequences = unpad_sequence(padded_sequences, lengths)'
+- ' torch.allclose(sequences[0], unpadded_sequences[0])'
+- ' torch.allclose(sequences[1], unpadded_sequences[1])'
+- ' torch.allclose(sequences[2], unpadded_sequences[2])'
+8 api_shape: null

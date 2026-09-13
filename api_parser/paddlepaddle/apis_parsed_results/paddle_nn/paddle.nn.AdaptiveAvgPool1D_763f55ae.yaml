@@ -1,0 +1,11 @@
+2 api_name: paddle.nn.AdaptiveAvgPool1D
+3 api_description: The paddle.nn.AdaptiveAvgPool1D API performs 1D adaptive average
+  pooling on input signals with multiple channels, adjusting the output to a specified
+  size while maintaining the NCL format.
+4 api_signature: paddle.nn.AdaptiveAvgPool1D(output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the desired size of the output after applying adaptive average
+    pooling, and must be an integer.
+7 api_usage_example: []
+8 api_shape: null

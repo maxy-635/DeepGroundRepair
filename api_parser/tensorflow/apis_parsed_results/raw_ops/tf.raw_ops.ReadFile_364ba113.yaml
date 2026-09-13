@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ReadFile
+3 api_description: Reads the full contents of a file specified by filename and returns
+  the data as output.
+4 api_signature: tf.raw_ops.ReadFile(filename)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the path to the file to read as a string tensor.
+- name: Optionally assigns a name to the operation for graph identification.
+7 api_usage_example: null
+8 api_shape: ''

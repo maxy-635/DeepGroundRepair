@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.produce_guards_verbose
+3 api_description: Produces a verbose list of guard expressions that can be evaluated
+  against the corresponding tensor sources to check whether all shape-related guards
+  pass.
+4 api_signature: produce_guards_verbose(placeholders,sources,guards,langs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

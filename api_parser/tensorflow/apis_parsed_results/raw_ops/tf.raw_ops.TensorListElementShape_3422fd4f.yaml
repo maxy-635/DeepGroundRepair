@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorListElementShape
+3 api_description: Returns the shape of elements stored in a TensorList as a tensor.
+4 api_signature: tf.raw_ops.TensorListElementShape(input_handle,shape_type)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The variant tensor that identifies the TensorList whose element shape
+    is being queried.
+- shape_type: The integer dtype (`tf.int32` or `tf.int64`) used to represent the returned
+    shape values.
+7 api_usage_example: null
+8 api_shape: ''

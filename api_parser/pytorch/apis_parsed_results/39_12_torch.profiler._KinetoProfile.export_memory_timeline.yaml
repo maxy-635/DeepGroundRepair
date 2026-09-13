@@ -1,0 +1,10 @@
+2 api_name: torch.profiler._KinetoProfile.export_memory_timeline
+3 api_description: Exports profiler memory-event data for a selected device and writes
+  a memory timeline file, with the output format determined by the path suffix.
+4 api_signature: export_memory_timeline(path,device)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

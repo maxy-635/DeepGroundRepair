@@ -1,0 +1,16 @@
+2 api_name: paddle.isneginf
+3 api_description: Returns a boolean indication for each input element, showing whether
+  it is negative infinity.
+4 api_signature: paddle.isneginf(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to check for negative infinity values.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- x = paddle.to_tensor([-0., float('inf'), -2.1, -float('inf'), 2.5], dtype='float32')
+- res = paddle.isneginf(x)
+- print(res)
+- Tensor(shape=[5], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, False, False, True, False])'
+8 api_shape: {}

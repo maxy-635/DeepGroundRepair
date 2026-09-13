@@ -1,0 +1,23 @@
+2 api_name: torch.distributions.independent.Independent
+3 api_description: Wraps a base distribution and reinterprets some of its batch dimensions
+  as event dimensions, so independent components are treated as a single multivariate
+  event.
+4 api_signature: torch.distributions.independent.Independent(base_distribution,reinterpreted_batch_ndims)
+5 api_details: ''
+6 api_parameters:
+- base_distribution: The underlying distribution whose batch dimensions will be reinterpreted
+    as event dimensions.
+- reinterpreted_batch_ndims: The number of batch dimensions to treat as event dimensions
+    instead of batch dimensions.
+7 api_usage_example:
+- ' from torch.distributions.multivariate_normal import MultivariateNormal'
+- ' from torch.distributions.normal import Normal'
+- ' loc = torch.zeros(3)'
+- ' scale = torch.ones(3)'
+- ' mvn = MultivariateNormal(loc, scale_tril=torch.diag(scale))'
+- ' [mvn.batch_shape, mvn.event_shape]'
+- ' normal = Normal(loc, scale)'
+- ' [normal.batch_shape, normal.event_shape]'
+- ' diagn = Independent(normal, 1)'
+- ' [diagn.batch_shape, diagn.event_shape]'
+8 api_shape: null

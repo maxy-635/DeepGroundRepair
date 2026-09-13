@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.metrics.serialize
+3 api_description: Converts a Keras metric function or Metric instance into a serialized
+  representation for saving, transferring, or later reconstruction.
+4 api_signature: tf.keras.metrics.serialize(metric)
+5 api_details: ''
+6 api_parameters:
+- metric: The Keras metric instance or metric function to serialize.
+7 api_usage_example: null
+8 api_shape: ''

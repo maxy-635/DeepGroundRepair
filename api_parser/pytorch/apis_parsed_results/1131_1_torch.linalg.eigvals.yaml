@@ -1,0 +1,13 @@
+2 api_name: torch.linalg.eigvals
+3 api_description: Computes the eigenvalues of a square matrix.
+4 api_signature: torch.linalg.eigvals(A)
+5 api_details: ''
+6 api_parameters:
+- A: The input square tensor whose eigenvalues are computed, with optional leading
+    batch dimensions.
+7 api_usage_example:
+- ' A = torch.randn(2, 2, dtype=torch.complex128)'
+- ' L = torch.linalg.eigvals(A)'
+- ' L'
+- ' torch.dist(L, torch.linalg.eig(A).eigenvalues)'
+8 api_shape: null

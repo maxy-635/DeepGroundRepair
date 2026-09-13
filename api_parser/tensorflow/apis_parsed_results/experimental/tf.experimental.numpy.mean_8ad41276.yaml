@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.mean
+3 api_description: Computes the arithmetic mean of tensor elements using TensorFlow’s
+  NumPy-compatible interface; supports standard mean behavior but does not support
+  `out` or `where`.
+4 api_signature: tf.experimental.numpy.mean(a,axis,dtype,keepdims)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

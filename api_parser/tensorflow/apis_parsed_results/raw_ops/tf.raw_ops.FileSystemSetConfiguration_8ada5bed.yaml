@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.FileSystemSetConfiguration
+3 api_description: Sets the configuration for a file system.
+4 api_signature: tf.raw_ops.FileSystemSetConfiguration(scheme,key,value)
+5 api_details: ''
+6 api_parameters:
+- scheme: Identifies the file system scheme to configure.
+- key: Specifies the name of the configuration option to set.
+- value: Provides the value to assign to the specified configuration option.
+7 api_usage_example: null
+8 api_shape: ''

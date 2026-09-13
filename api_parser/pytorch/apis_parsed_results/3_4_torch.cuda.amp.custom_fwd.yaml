@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.amp.custom_fwd
+3 api_description: Decorator for defining a custom forward pass that runs under CUDA
+  autocast with controlled casting behavior.
+4 api_signature: torch.cuda.amp.custom_fwd(*,cast_inputs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

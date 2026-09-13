@@ -1,0 +1,12 @@
+2 api_name: torch.linalg.det
+3 api_description: Computes the determinant of a square matrix.
+4 api_signature: torch.linalg.det(A)
+5 api_details: ''
+6 api_parameters:
+- A: The square matrix or batch of square matrices whose determinant is computed.
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' torch.linalg.det(A)'
+- ' A = torch.randn(3, 2, 2)'
+- ' torch.linalg.det(A)'
+8 api_shape: null

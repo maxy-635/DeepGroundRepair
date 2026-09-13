@@ -1,0 +1,23 @@
+2 api_name: tensorflow.keras.layers.Normalization
+3 api_description: The tf.keras.layers.Normalization layer normalizes continuous features
+  by centering them around 0 and scaling to a standard deviation of 1, using precomputed
+  or learned mean and variance values.
+4 api_signature: tf.keras.layers.Normalization(axis, mean, variance)
+5 api_details: ''
+6 api_parameters:
+- axis: Defines the axis or axes for which separate mean and variance values are tracked
+    during normalization.
+- mean: Specifies the mean value(s) used for normalization, which are broadcast to
+    the appropriate shape.
+- variance: Specifies the variance value(s) used for normalization, which are also
+    broadcast to the appropriate shape.
+7 api_usage_example:
+- adapt_data = np.array([[0., 7., 4.],
+- '                       [2., 9., 6.],'
+- '                       [0., 7., 4.],'
+- '                       [2., 9., 6.]], dtype=''float32'')'
+- input_data = np.array([[1., 2., 3.]], dtype='float32')
+- layer = keras.layers.Normalization(axis=-1, invert=True)
+- layer.adapt(adapt_data)
+- layer(input_data)
+8 api_shape: null

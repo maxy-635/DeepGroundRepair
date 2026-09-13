@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.is_accessor_node
+3 api_description: Returns whether a `torch.fx` node is accessing symbolic shape metadata
+  or related integer values, such as size, stride, offset, or item, to help determine
+  purity in optimization passes.
+4 api_signature: '"torch.fx.experimental.symbolic_shapes.is_accessor_node(node)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.PropagateUnbackedSymInts.call_module
+3 api_description: Executes a `call_module` node in a symbolic-shapes propagation
+  context and returns the module's result.
+4 api_signature: call_module(target)
+5 api_details: ''
+6 api_parameters:
+- target: Identifies the module or callable being invoked by this node.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.nn.ModuleList.append
+3 api_description: Adds a module to the end of a ModuleList.
+4 api_signature: append(module)
+5 api_details: ''
+6 api_parameters:
+- module: The module instance to add to the end of the `ModuleList`.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.less
+3 api_description: Element-wise compares x and y and returns a boolean tensor indicating
+  where x is less than y.
+4 api_signature: '"tf.math.less(x,y)"'
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor to compare, providing the left-hand values for the less-than
+    operation.
+- y: The second tensor to compare, providing the right-hand values and matching the
+    type of `x`.
+7 api_usage_example: null
+8 api_shape: ''

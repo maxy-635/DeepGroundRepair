@@ -1,0 +1,10 @@
+2 api_name: tensorflow.feature_column.sequence_categorical_column_with_hash_bucket
+3 api_description: Creates a sequence categorical feature by hashing terms into bucket
+  IDs for use in embedding or indicator columns.
+4 api_signature: tf.feature_column.sequence_categorical_column_with_hash_bucket(key,hash_bucket_size)
+5 api_details: ''
+6 api_parameters:
+- key: Identifies the input feature by a unique string name.
+- hash_bucket_size: Sets the number of hash buckets used to map feature values.
+7 api_usage_example: null
+8 api_shape: ''

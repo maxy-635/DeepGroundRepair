@@ -1,0 +1,18 @@
+2 api_name: paddle.static.nn.bilinear_tensor_product
+3 api_description: Computes a bilinear tensor product between two input tensors to
+  model pairwise interactions.
+4 api_signature: paddle.static.nn.bilinear_tensor_product(x,y,size)
+5 api_details: ''
+6 api_parameters:
+- x: The first 2-D input tensor, providing batch-wise features with shape [batch_size,
+    M].
+- y: The second 2-D input tensor, providing batch-wise features with shape [batch_size,
+    N] and matching the data type of `x`.
+- size: The output dimension of the bilinear tensor product layer.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data("t1", shape=[-1, 5], dtype="float32")
+- y = paddle.static.data("t2", shape=[-1, 4], dtype="float32")
+- tensor = paddle.static.nn.bilinear_tensor_product(x, y, size=1000)
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.categorical.Categorical.enumerate_support
+3 api_description: Returns all possible category values in the distribution’s support,
+  optionally using expanded batch shape.
+4 api_signature: '"enumerate_support(expand)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

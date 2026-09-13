@@ -1,0 +1,24 @@
+2 api_name: paddle.nn.BatchNorm3D
+3 api_description: BatchNorm3D normalizes a 5D input (batch of 3D inputs with channels)
+  by adjusting and scaling the activations to improve training stability and performance.
+4 api_signature: paddle.nn.BatchNorm3D(num_features)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of input channels for the BatchNorm3D layer.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- x = paddle.rand((2, 1, 2, 2, 3))
+- batch_norm = paddle.nn.BatchNorm3D(1)
+- batch_norm_out = batch_norm(x)
+- print(batch_norm_out)
+- Tensor(shape=[2, 1, 2, 2, 3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[[[ 0.28011751, -0.95211101, -1.64757574],'
+- '[ 0.14573872, -0.39522290, -0.76082933]],'
+- '[[-1.01646376,  0.31086648, -1.66019011],'
+- '[ 1.08991623, -0.54664266,  1.53283834]]]],'
+- '[[[[ 1.33958006,  1.71585774, -0.12862551],'
+- '[-0.66051245,  1.32629418, -0.06402326]],'
+- '[[-0.28699064,  0.87359405,  0.42558217],'
+- '[-0.46636176,  1.09858704, -1.55342245]]]]])'
+8 api_shape: null

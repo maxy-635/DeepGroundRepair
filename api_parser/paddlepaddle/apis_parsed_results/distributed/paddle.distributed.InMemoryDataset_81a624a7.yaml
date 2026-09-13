@@ -1,0 +1,12 @@
+2 api_name: paddle.distributed.InMemoryDataset
+3 api_description: A distributed in-memory dataset for static-graph training that
+  loads and caches data in memory, shards it across workers, and supports fast, coordinated
+  iteration over batches.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- dataset = paddle.distributed.InMemoryDataset()
+8 api_shape: {}

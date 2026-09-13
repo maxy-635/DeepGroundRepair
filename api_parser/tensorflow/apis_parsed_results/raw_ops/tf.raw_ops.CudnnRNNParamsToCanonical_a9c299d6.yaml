@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.CudnnRNNParamsToCanonical
+3 api_description: Converts opaque CuDNN RNN parameter buffers into canonical weights
+  and biases for portable saving and restoration across runs and GPU versions.
+4 api_signature: tf.raw_ops.CudnnRNNParamsToCanonical(num_layers,num_units,input_size,params,rnn_mode,input_mode,direction)
+5 api_details: ''
+6 api_parameters:
+- num_layers: Specifies how many recurrent layers the RNN model has.
+- num_units: Sets the number of hidden units in each recurrent layer.
+- input_size: Defines the dimensionality of the input feature vectors.
+- params: Provides the packed CuDNN RNN parameters to convert into canonical form.
+- rnn_mode: Chooses the RNN cell type used for the parameter conversion.
+- input_mode: Determines how inputs are handled before being fed into the RNN.
+- direction: Specifies whether the RNN runs in one direction or both directions.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,23 @@
+2 api_name: torch.sparse_compressed_tensor
+3 api_description: Creates a sparse tensor in compressed sparse format (CSR, CSC,
+  BSR, or BSC) from compressed and plain indices plus values, for efficient sparse
+  matrix storage and multiplication.
+4 api_signature: torch.sparse_compressed_tensor(compressed_indices,plain_indices,values,size)
+5 api_details: ''
+6 api_parameters:
+- compressed_indices: Stores the compressed-dimension index pointers that delimit
+    where each row or column’s non-zero entries begin and end.
+- plain_indices: Stores the row or column coordinates for each non-zero element or
+    block in the sparse tensor.
+- values: Provides the non-zero values, or blocks of values, that populate the sparse
+    tensor.
+- size: Specifies the full shape of the sparse tensor, or lets PyTorch infer the smallest
+    shape that fits all stored entries.
+7 api_usage_example:
+- ' compressed_indices = [0, 2, 4]'
+- ' plain_indices = [0, 1, 0, 1]'
+- ' values = [1, 2, 3, 4]'
+- ' torch.sparse_compressed_tensor(torch.tensor(compressed_indices, dtype=torch.int64),'
+- '...                                torch.tensor(plain_indices, dtype=torch.int64),'
+- '...                                torch.tensor(values), dtype=torch.double, layout=torch.sparse_csr)'
+8 api_shape: null

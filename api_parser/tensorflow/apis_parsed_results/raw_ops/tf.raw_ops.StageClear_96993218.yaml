@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.StageClear
+3 api_description: Removes all elements from the underlying Stage container.
+4 api_signature: tf.raw_ops.StageClear(dtypes,capacity,memory_limit)
+5 api_details: ''
+6 api_parameters:
+- dtypes: Specifies the data types of elements handled by the stage.
+- capacity: Sets the optional maximum number of elements the stage can hold.
+- memory_limit: Sets the optional memory limit for the stage in bytes.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,32 @@
+2 api_name: paddle.Tensor.apply_
+3 api_description: Applies a Python function to each element of the tensor in place,
+  modifying the tensor directly.
+4 api_signature: paddle.Tensor.apply_(self,func)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[0.3, 0.5, 0.1],
+- '       [0.9, 0.9, 0.7],'
+- '       [0.4, 0.8, 0.2]]).to("cpu", "float64")'
+- 'f = lambda x: 3*x+2'
+- x.apply_(f)
+- print(x)
+- Tensor(shape=[3, 3], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[2.90000004, 3.50000000, 2.30000000],'
+- '[4.69999993, 4.69999993, 4.09999996],'
+- '[3.20000002, 4.40000004, 2.60000001]])'
+- x = paddle.to_tensor([[0.3, 0.5, 0.1],
+- '       [0.9, 0.9, 0.7],'
+- '       [0.4, 0.8, 0.2]]).to("cpu", "float16")'
+- x.apply_(f)
+- x = paddle.to_tensor([[0.3, 0.5, 0.1],
+- '       [0.9, 0.9, 0.7],'
+- '       [0.4, 0.8, 0.2]]).to("cpu", "bfloat16")'
+- x.apply_(f)
+- 'if paddle.is_compiled_with_cuda():'
+- '    x = paddle.to_tensor([[0.3, 0.5, 0.1],'
+- '       [0.9, 0.9, 0.7],'
+- '       [0.4, 0.8, 0.2]]).to("gpu", "float32")'
+- '    x.apply_(f)'
+8 api_shape: {}

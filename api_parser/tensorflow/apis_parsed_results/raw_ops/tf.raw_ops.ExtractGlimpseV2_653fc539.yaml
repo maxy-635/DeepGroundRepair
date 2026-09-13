@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ExtractGlimpseV2
+3 api_description: Extracts fixed-size glimpses from an input tensor at specified
+  offsets, returning a 4-D batch of windows and filling any out-of-bounds areas with
+  random noise.
+4 api_signature: tf.raw_ops.ExtractGlimpseV2(input,size,offsets)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D image tensor from which glimpses are extracted.
+- size: The 2-element tensor that specifies the glimpse height and width.
+- offsets: The per-example center coordinates for each glimpse window.
+7 api_usage_example: null
+8 api_shape: ''

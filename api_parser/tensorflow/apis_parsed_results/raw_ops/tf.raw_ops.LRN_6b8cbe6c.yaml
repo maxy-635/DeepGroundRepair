@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.LRN
+3 api_description: Applies local response normalization to each 1-D vector along the
+  last dimension of a 4-D input tensor, scaling each value by the weighted squared
+  sum of neighboring values within a depth radius.
+4 api_signature: tf.raw_ops.LRN(input,depth_radius,bias,alpha,beta)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D tensor to be locally normalized.
+- depth_radius: Sets the half-width of the normalization window along the depth dimension.
+- bias: Adds a constant offset to keep the normalization denominator away from zero.
+- alpha: Scales the normalization term before it is applied.
+- beta: Controls the strength of the normalization by acting as the exponent.
+7 api_usage_example: null
+8 api_shape: ''

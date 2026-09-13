@@ -1,0 +1,14 @@
+2 api_name: tensorflow.random.split
+3 api_description: Splits a random seed into multiple new seeds, returning them with
+  a leading axis.
+4 api_signature: tf.random.split(seed,num)
+5 api_details: ''
+6 api_parameters:
+- seed: Specifies the input RNG seed used to generate multiple new seeds.
+- num: Sets how many new seeds to produce, defaulting to 2.
+7 api_usage_example:
+- seed = [1, 2]
+- new_seeds = tf.random.split(seed, num=3)
+- print(new_seeds)
+- tf.random.stateless_normal(shape=[3], seed=new_seeds[0, :])
+8 api_shape: ''

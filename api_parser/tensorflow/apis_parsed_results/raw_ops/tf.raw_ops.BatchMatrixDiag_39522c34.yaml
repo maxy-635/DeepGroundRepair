@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.BatchMatrixDiag
+3 api_description: Creates a batch of square diagonal matrices from the last two dimensions
+  of the input, placing each row of diagonal values on the corresponding matrix diagonal.
+4 api_signature: tf.raw_ops.BatchMatrixDiag(diagonal)
+5 api_details: ''
+6 api_parameters:
+- diagonal: The input tensor containing the diagonal elements to place into batched
+    matrices.
+7 api_usage_example: null
+8 api_shape: ''

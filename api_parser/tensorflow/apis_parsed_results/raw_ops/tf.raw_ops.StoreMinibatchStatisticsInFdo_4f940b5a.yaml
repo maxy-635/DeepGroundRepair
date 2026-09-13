@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.StoreMinibatchStatisticsInFdo
+3 api_description: Stores minibatch statistics in FDO for later use by TensorFlow’s
+  optimization and tuning systems.
+4 api_signature: tf.raw_ops.StoreMinibatchStatisticsInFdo(program_key,sample_count,table_name,name)
+5 api_details: ''
+6 api_parameters:
+- program_key: Identifies the program or model key whose minibatch statistics will
+    be stored.
+- sample_count: Specifies how many samples were used to compute the minibatch statistics,
+    and must be at least 1.
+- table_name: Names the FDO table where the minibatch statistics are written.
+- name: Optionally assigns a custom name to the operation for graph readability and
+    debugging.
+7 api_usage_example: null
+8 api_shape: ''

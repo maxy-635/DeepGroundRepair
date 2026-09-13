@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.special.bessel_k1e
+3 api_description: Computes the exponentially scaled modified Bessel function of the
+  second kind of order 1 (`k1e`) element-wise for each input value.
+4 api_signature: tf.math.special.bessel_k1e(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor of values at which to compute the exponentially scaled modified
+    Bessel function K1.
+7 api_usage_example:
+- tf.math.special.bessel_k1e([0.5, 1., 2., 4.]).numpy()
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.keras.losses.KLD
+3 api_description: Computes the Kullback-Leibler divergence loss between true and
+  predicted probability distributions, clipping inputs to the [0, 1] range.
+4 api_signature: '"tf.keras.losses.KLD(y_true,y_pred)"'
+5 api_details: ''
+6 api_parameters:
+- y_true: The ground-truth target distribution used as the reference for computing
+    Kullback-Leibler divergence.
+- y_pred: The model’s predicted distribution being compared against the true targets.
+7 api_usage_example:
+- y_true = np.random.randint(0, 2, size=(2, 3)).astype(np.float32)
+- y_pred = np.random.random(size=(2, 3))
+- loss = keras.losses.kl_divergence(y_true, y_pred)
+- assert loss.shape == (2,)
+- y_true = ops.clip(y_true, 1e-7, 1)
+- y_pred = ops.clip(y_pred, 1e-7, 1)
+- assert np.array_equal(
+- '    loss, np.sum(y_true * np.log(y_true / y_pred), axis=-1))'
+8 api_shape: ''

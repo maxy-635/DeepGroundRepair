@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.Barrier
+3 api_description: Creates a persistent key-value barrier for coordinating tensor
+  tuples across graph executions, supporting insertion of incomplete entries and retrieval
+  of complete entries.
+4 api_signature: tf.raw_ops.Barrier(component_types,shapes,capacity,name)
+5 api_details: ''
+6 api_parameters:
+- component_types: Specifies the data type of each component stored in the barrier
+    values.
+- shapes: Optionally defines the expected shape of each component in a barrier value.
+- capacity: Sets the maximum number of values the barrier can hold before it is considered
+    full.
+- name: Assigns an optional name to the operation for identification in the graph.
+7 api_usage_example: null
+8 api_shape: ''

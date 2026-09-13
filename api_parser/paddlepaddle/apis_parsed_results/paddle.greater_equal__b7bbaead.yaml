@@ -1,0 +1,8 @@
+2 api_name: paddle.greater_equal_
+3 api_description: Performs elementwise greater-than-or-equal comparison in place,
+  storing the result in input x.
+4 api_signature: paddle.greater_equal_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

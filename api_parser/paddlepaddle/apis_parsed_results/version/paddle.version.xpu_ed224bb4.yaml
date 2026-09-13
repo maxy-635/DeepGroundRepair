@@ -1,0 +1,13 @@
+2 api_name: paddle.version.xpu
+3 api_description: Returns the installed Paddle package’s XPU version; deprecated
+  in favor of `xpu_xhpc()`.
+4 api_signature: paddle.version.xpu()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '.. code-block:: python'
+- import paddle
+- paddle.version.xpu()
+- '# doctest: +SKIP(''Different environments yield different output.'')'
+- '''20230114'''
+8 api_shape: {}

@@ -1,0 +1,36 @@
+2 api_name: paddle.assign
+3 api_description: Copies the value from thex tensor to the output tensor.
+4 api_signature: paddle.assign(x,output)
+5 api_details: ''
+6 api_parameters:
+- x: The source value to assign, provided as a Tensor, numpy array, tuple/list of
+    scalars, or scalar.
+- output: The Tensor to store the assigned result in, or `None` to create a new Tensor.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- data = paddle.full(shape=[3, 2], fill_value=2.5, dtype='float64')
+- print(data.numpy())
+- '[[2.5 2.5]'
+- '[2.5 2.5]'
+- '[2.5 2.5]]'
+- array = np.array([[1, 1], [3, 4], [1, 3]]).astype(
+- '    np.int64'
+- )
+- result1 = paddle.zeros(shape=[3, 3], dtype='float32')
+- paddle.assign(array, result1)
+- print(result1.numpy())
+- '[[1 1]'
+- '[3 4]'
+- '[1 3]]'
+- result2 = paddle.assign(data)
+- print(result2.numpy())
+- '[[2.5 2.5]'
+- '[2.5 2.5]'
+- '[2.5 2.5]]'
+- result3 = paddle.assign(np.array([[2.5, 2.5], [2.5, 2.5], [2.5, 2.5]], dtype='float32'))
+- print(result3.numpy())
+- '[[2.5 2.5]'
+- '[2.5 2.5]'
+- '[2.5 2.5]]'
+8 api_shape: {}

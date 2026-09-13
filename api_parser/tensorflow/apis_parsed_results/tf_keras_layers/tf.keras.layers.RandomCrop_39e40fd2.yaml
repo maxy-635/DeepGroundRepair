@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.RandomCrop
+3 api_description: Randomly crops images to a target size during training, using the
+  same cropping location for all images in a batch. At inference, it resizes and crops
+  images if they are smaller than the target size, maintaining the aspect ratio.
+4 api_signature: tf.keras.layers.RandomCrop(height, width)
+5 api_details: ''
+6 api_parameters:
+- height: Specifies the height of the cropped output image.
+- width: Specifies the width of the cropped output image.
+7 api_usage_example: null
+8 api_shape: null

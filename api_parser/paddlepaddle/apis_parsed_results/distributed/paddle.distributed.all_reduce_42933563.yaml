@@ -1,0 +1,22 @@
+2 api_name: paddle.distributed.all_reduce
+3 api_description: Synchronizes a tensor across all distributed ranks by reducing
+  it with a sum so every rank receives the same summed result.
+4 api_signature: paddle.distributed.all_reduce(tensor,op)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor to be reduced across all processes, and it also receives
+    the result.
+- op: The reduction operation to apply, with `ReduceOp.SUM` used by default.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- dist.all_reduce(data)
+- print(data)
+- '# [[5, 7, 9], [5, 7, 9]] (2 GPUs)'
+8 api_shape: {}

@@ -1,0 +1,11 @@
+2 api_name: torch.optim.LBFGS.step
+3 api_description: Performs one L-BFGS optimization step by repeatedly evaluating
+  the closure to compute loss and gradients, then updating the parameters using the
+  quasi-Newton L-BFGS algorithm.
+4 api_signature: step(closure)
+5 api_details: ''
+6 api_parameters:
+- closure: A function that recomputes the loss (and gradients) by re-running the model
+    during the LBFGS optimization step.
+7 api_usage_example: null
+8 api_shape: null

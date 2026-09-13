@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.SegmentProdV2
+3 api_description: Computes the product of `data` values within each segment ID, returning
+  1 for any empty segment.
+4 api_signature: tf.raw_ops.SegmentProdV2(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose first dimension will be grouped and reduced by segment.
+- segment_ids: A sorted 1-D tensor of segment labels, one per entry in `data`'s first
+    dimension, indicating which segment each value belongs to.
+- num_segments: The total number of output segments to produce.
+7 api_usage_example:
+- '@tf.function(jit_compile=True)'
+- 'def test(c):'
+- '  return tf.raw_ops.SegmentProdV2(data=c, segment_ids=tf.constant([0, 0, 1]), num_segments=2)'
+- c = tf.constant([[1,2,3,4], [4, 3, 2, 1], [5,6,7,8]])
+- test(c).numpy()
+8 api_shape: ''

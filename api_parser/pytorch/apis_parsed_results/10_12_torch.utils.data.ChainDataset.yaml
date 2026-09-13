@@ -1,0 +1,10 @@
+2 api_name: torch.utils.data.ChainDataset
+3 api_description: Chains multiple IterableDataset objects into a single iterable
+  dataset that yields items from each dataset in sequence.
+4 api_signature: '"class torch.utils.data.ChainDataset(datasets)"'
+5 api_details: ''
+6 api_parameters:
+- datasets: The datasets that are concatenated in sequence and iterated over as one
+    chained dataset.
+7 api_usage_example: null
+8 api_shape: null

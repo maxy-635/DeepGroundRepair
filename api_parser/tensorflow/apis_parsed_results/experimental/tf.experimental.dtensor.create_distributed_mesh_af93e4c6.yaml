@@ -1,0 +1,15 @@
+2 api_name: tensorflow.experimental.dtensor.create_distributed_mesh
+3 api_description: Creates a distributed DTensor mesh across a multi-client cluster,
+  using evenly distributed local devices; on CPU/GPU it can use a subset of local
+  devices, while TPU meshes must use all TPU cores.
+4 api_signature: tf.experimental.dtensor.create_distributed_mesh(mesh_dims,mesh_name,device_type,use_xla_spmd)
+5 api_details: ''
+6 api_parameters:
+- mesh_dims: Defines the mesh dimensions and their sizes used to build the distributed
+    mesh.
+- mesh_name: Sets the name of the created mesh, or leaves it empty by default.
+- device_type: Chooses which device type the mesh is created for, such as CPU, GPU,
+    or TPU.
+- use_xla_spmd: Controls whether XLA SPMD is used instead of DTensor SPMD.
+7 api_usage_example: null
+8 api_shape: ''

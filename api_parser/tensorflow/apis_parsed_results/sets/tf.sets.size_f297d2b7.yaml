@@ -1,0 +1,9 @@
+2 api_name: tensorflow.sets.size
+3 api_description: Returns the number of unique elements along the last dimension
+  of a tensor.
+4 api_signature: tf.sets.size(a)
+5 api_details: ''
+6 api_parameters:
+- a: The SparseTensor whose set sizes are computed, with row-major sorted indices.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: paddle.histogram_bin_edges
+3 api_description: Compute histogram bin edges from data, using the data's min and
+  max when both are zero.
+4 api_signature: paddle.histogram_bin_edges(input,bins)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor whose values are used to compute the histogram
+    bin edges.
+- bins: Sets the number of bins to divide the data range into.
+7 api_usage_example:
+- import paddle
+- inputs = paddle.to_tensor([1, 2, 1])
+- result = paddle.histogram_bin_edges(inputs, bins=4, min=0, max=3)
+- print(result)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 0.75000000, 1.50000000, 2.25000000, 3.        ])'
+8 api_shape: {}

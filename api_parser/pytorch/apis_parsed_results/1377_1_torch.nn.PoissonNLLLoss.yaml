@@ -1,0 +1,21 @@
+2 api_name: torch.nn.PoissonNLLLoss
+3 api_description: Calculates the negative log likelihood loss for Poisson-distributed
+  targets, useful for modeling count data.
+4 api_signature: torch.nn.PoissonNLLLoss(log_input,reduction)
+5 api_details: ''
+6 api_parameters:
+- log_input: Determines whether the loss is computed using the exponential of the
+    input or the logarithm of the input with a small epsilon added.
+- reduction: 'Specifies how to aggregate the loss values: no reduction, mean reduction,
+    or sum reduction.'
+7 api_usage_example:
+- ' loss = nn.PoissonNLLLoss()'
+- ' log_input = torch.randn(5, 2, requires_grad=True)'
+- ' target = torch.randn(5, 2)'
+- ' output = loss(log_input, target)'
+- ' output.backward()'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: scalar by default. If reduction is 'none', then (*), the same
+    shape as the input.
+  tensor shape transform formulas: {}

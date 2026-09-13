@@ -1,0 +1,7 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ConvertIntKey.get
+3 api_description: Converts a boolean key to its integer value.
+4 api_signature: get(b)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

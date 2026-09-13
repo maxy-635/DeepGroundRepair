@@ -1,0 +1,10 @@
+2 api_name: tensorflow.debugging.assert_rank
+3 api_description: Checks that x has the specified rank and raises InvalidArgumentError
+  with a message and x's shape if the rank differs.
+4 api_signature: tf.debugging.assert_rank(x,rank)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose rank is checked.
+- rank: The expected rank, given as a scalar integer tensor.
+7 api_usage_example: null
+8 api_shape: ''

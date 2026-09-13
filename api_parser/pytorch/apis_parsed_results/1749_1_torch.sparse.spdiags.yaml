@@ -1,0 +1,18 @@
+2 api_name: torch.sparse.spdiags
+3 api_description: Constructs a sparse 2D tensor by placing each input row of values
+  onto the specified diagonal positions of the output.
+4 api_signature: torch.sparse.spdiags(diagonals,offsets,shape)
+5 api_details: ''
+6 api_parameters:
+- diagonals: Holds the diagonal values to place into the sparse matrix, with each
+    row representing one diagonal.
+- offsets: Specifies which diagonals to fill by giving each diagonal’s offset from
+    the main diagonal.
+- shape: Defines the output sparse matrix’s dimensions.
+7 api_usage_example:
+- ' diags = torch.arange(9).reshape(3, 3)'
+- ' diags'
+- ' s = torch.sparse.spdiags(diags, torch.tensor([0, -1, -2]), (3, 3))'
+- ' s'
+- ' s.to_dense()'
+8 api_shape: null

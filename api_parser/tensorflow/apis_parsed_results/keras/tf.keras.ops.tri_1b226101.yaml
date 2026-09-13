@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.tri
+3 api_description: Creates a tensor filled with ones on and below a diagonal, and
+  zeros above it.
+4 api_signature: tf.keras.ops.tri(N,M,k,dtype)
+5 api_details: ''
+6 api_parameters:
+- N: Sets the number of rows in the generated tensor.
+- M: Sets the number of columns in the generated tensor.
+- k: Controls which diagonal and sub-diagonals are filled with ones, relative to the
+    main diagonal.
+- dtype: Specifies the data type of the returned tensor.
+7 api_usage_example: null
+8 api_shape: ''

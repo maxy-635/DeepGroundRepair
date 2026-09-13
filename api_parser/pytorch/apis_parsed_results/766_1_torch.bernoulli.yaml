@@ -1,0 +1,18 @@
+2 api_name: torch.bernoulli
+3 api_description: Draws 0/1 samples from a Bernoulli distribution based on the given
+  probabilities.
+4 api_signature: torch.bernoulli(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: Tensor of probabilities used to sample Bernoulli outcomes, where each value
+    represents the chance of drawing 1.
+7 api_usage_example:
+- ' a = torch.empty(3, 3).uniform_(0, 1)  # generate a uniform random matrix with
+  range [0, 1]'
+- ' a'
+- ' torch.bernoulli(a)'
+- ' a = torch.ones(3, 3) # probability of drawing "1" is 1'
+- ' torch.bernoulli(a)'
+- ' a = torch.zeros(3, 3) # probability of drawing "1" is 0'
+- ' torch.bernoulli(a)'
+8 api_shape: null

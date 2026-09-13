@@ -1,0 +1,9 @@
+2 api_name: torch.utils.data.SequentialSampler
+3 api_description: Iterates over dataset indices in a fixed, sequential order.
+4 api_signature: torch.utils.data.SequentialSampler(data_source)
+5 api_details: ''
+6 api_parameters:
+- data_source: The dataset or iterable to sample from sequentially, which must implement
+    `__len__`.
+7 api_usage_example: null
+8 api_shape: null

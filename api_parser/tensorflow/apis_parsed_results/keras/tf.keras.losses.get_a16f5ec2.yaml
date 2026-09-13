@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.losses.get
+3 api_description: Returns a Keras loss function or Loss instance from a string name,
+  config, or existing loss object.
+4 api_signature: tf.keras.losses.get(identifier)
+5 api_details: ''
+6 api_parameters:
+- identifier: Specifies the loss to retrieve, accepting `None`, a loss name, a loss
+    config dictionary, a loss function, or a loss class instance.
+7 api_usage_example:
+- 'identifier = {"class_name": "CategoricalCrossentropy",'
+- '              "config": {"from_logits": True} }'
+- loss = losses.get(identifier)
+- type(loss)
+8 api_shape: ''

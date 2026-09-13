@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.weibull.Weibull
+3 api_description: A Weibull continuous distribution implemented as a transformed
+  distribution, providing sampling and log-probability evaluation for positive-valued
+  data with shape and scale parameters.
+4 api_signature: torch.distributions.weibull.Weibull(scale,concentration)
+5 api_details: ''
+6 api_parameters:
+- scale: Sets the distribution’s scale (lambda), stretching or shrinking the Weibull
+    along the x-axis.
+- concentration: Sets the distribution’s shape (k), controlling how the hazard and
+    spread change.
+7 api_usage_example:
+- ' m = Weibull(torch.tensor([1.0]), torch.tensor([1.0]))'
+- ' m.sample()  # sample from a Weibull distribution with scale=1, concentration=1'
+8 api_shape: null

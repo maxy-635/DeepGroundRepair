@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.dtensor.check_layout
+3 api_description: Asserts that a DTensor has the specified layout.
+4 api_signature: tf.experimental.dtensor.check_layout(tensor,layout)
+5 api_details: ''
+6 api_parameters:
+- tensor: Specifies the DTensor whose layout will be verified.
+- layout: Specifies the Layout that the tensor’s layout is compared against.
+7 api_usage_example: null
+8 api_shape: ''

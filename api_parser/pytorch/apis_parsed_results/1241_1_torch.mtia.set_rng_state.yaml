@@ -1,0 +1,9 @@
+2 api_name: torch.mtia.set_rng_state
+3 api_description: Sets the RNG state for a specified MTIA device so random number
+  generation can be reproduced or restored.
+4 api_signature: torch.mtia.set_rng_state(new_state)
+5 api_details: ''
+6 api_parameters:
+- new_state: Sets the MTIA random number generator to the specified state.
+7 api_usage_example: null
+8 api_shape: null

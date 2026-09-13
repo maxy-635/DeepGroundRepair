@@ -1,0 +1,13 @@
+2 api_name: tensorflow.train.ExponentialMovingAverage
+3 api_description: Maintains exponential moving averages of model variables during
+  training, creating shadow copies on apply() and letting you read or restore the
+  averaged values with average() for better evaluation or checkpointing.
+4 api_signature: tf.train.ExponentialMovingAverage(decay,num_updates)
+5 api_details: ''
+6 api_parameters:
+- decay: Controls how quickly the moving averages decay, weighting newer values against
+    older ones.
+- num_updates: Optionally tracks how many updates have been applied to adjust the
+    effective decay.
+7 api_usage_example: null
+8 api_shape: ''

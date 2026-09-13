@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.functional.swish
+3 api_description: The paddle.nn.functional.swish API applies the Swish activation
+  function, which is defined as x * sigmoid(x), to the input tensor.
+4 api_signature: paddle.nn.functional.swish(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor that must be of data type float32 or float64, representing the
+    data on which the Swish activation function will be applied.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([-2., 0., 1.])
+- out = F.swish(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.23840584,  0.        ,  0.73105860])'
+8 api_shape: null

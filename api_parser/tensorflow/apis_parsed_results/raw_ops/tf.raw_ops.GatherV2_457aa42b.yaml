@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.GatherV2
+3 api_description: Returns slices from `params` gathered along `axis` at the positions
+  given by `indices`, preserving the remaining dimensions and combining the indexed
+  slices into the output.
+4 api_signature: tf.raw_ops.GatherV2(params,indices,axis)
+5 api_details: ''
+6 api_parameters:
+- params: The source tensor to gather values from along the specified axis.
+- indices: The integer indices selecting which elements to gather from `params`.
+- axis: The dimension of `params` to gather from, with negative values allowed.
+7 api_usage_example: null
+8 api_shape: ''

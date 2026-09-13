@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.add_n
+3 api_description: Returns the element-wise sum of a list of tensors with identical
+  shapes, without broadcasting.
+4 api_signature: tf.math.add_n(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of tensors or indexed slices to be converted to dense tensors if
+    needed and added together elementwise.
+7 api_usage_example:
+- a = tf.constant([[3, 5], [4, 8]])
+- b = tf.constant([[1, 6], [2, 9]])
+- tf.math.add_n([a, b, a]).numpy()
+8 api_shape: ''

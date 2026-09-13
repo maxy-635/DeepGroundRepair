@@ -1,0 +1,10 @@
+2 api_name: torch.smm
+3 api_description: Multiplies a sparse matrix by a dense matrix and returns the resulting
+  dense matrix.
+4 api_signature: torch.smm(input,mat)
+5 api_details: ''
+6 api_parameters:
+- input: The sparse matrix operand to multiply.
+- mat: The dense matrix operand to multiply with the sparse input.
+7 api_usage_example: null
+8 api_shape: null

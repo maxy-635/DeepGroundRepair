@@ -1,0 +1,15 @@
+2 api_name: tensorflow.image.non_max_suppression_padded
+3 api_description: Selects the highest-scoring non-overlapping bounding boxes using
+  non-max suppression, returning selected indices and their valid count, with optional
+  zero-padding to a fixed output size.
+4 api_signature: tf.image.non_max_suppression_padded(boxes,scores,max_output_size,iou_threshold,score_threshold)
+5 api_details: ''
+6 api_parameters:
+- boxes: Provides the candidate bounding boxes to be filtered, with batch dimensions
+    allowed.
+- scores: Provides the confidence scores for each box, used to rank and suppress boxes.
+- max_output_size: Sets the maximum number of boxes the suppression step may return.
+- iou_threshold: Sets how much overlap between boxes is allowed before one is suppressed.
+- score_threshold: Sets the minimum score a box must exceed to avoid being suppressed.
+7 api_usage_example: null
+8 api_shape: ''

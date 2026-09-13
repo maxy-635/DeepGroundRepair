@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.functional.interpolate
+3 api_description: The paddle.nn.functional.interpolate function resizes input tensor
+  data by either changing its shape to a specified size or scaling it by a given factor,
+  supporting various interpolation modes.
+4 api_signature: paddle.nn.functional.interpolate(x,size,scale_factor,mode,align_corners)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be resized.
+- size: Specifies the desired output dimensions of the resized tensor.
+- scale_factor: Determines the scaling multiplier for resizing dimensions; used if
+    'size' is not set.
+- mode: Defines the interpolation method to be used for resizing.
+- align_corners: Indicates whether to align the corner pixels of input and output
+    for certain interpolation methods.
+7 api_usage_example: []
+8 api_shape: null

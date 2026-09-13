@@ -1,0 +1,25 @@
+2 api_name: torch.autograd.function.InplaceFunction.mark_dirty
+3 api_description: Marks tensors as modified by an in-place operation so autograd
+  can track and validate the mutation.
+4 api_signature: '"mark_dirty()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' class Inplace(Function):'
+- '     @staticmethod'
+- '     def forward(ctx, x):'
+- '         x_npy = x.numpy() # x_npy shares storage with x'
+- '         x_npy += 1'
+- '         ctx.mark_dirty(x)'
+- '         return x'
+- '     @staticmethod'
+- '     @once_differentiable'
+- '     def backward(ctx, grad_output):'
+- '         return grad_output'
+- ' a = torch.tensor(1., requires_grad=True, dtype=torch.double).clone()'
+- ' b = a * a'
+- ' Inplace.apply(a)  # This would lead to wrong gradients!'
+- '                   # but the engine would not know unless we mark_dirty'
+- ' b.backward() # RuntimeError: one of the variables needed for gradient'
+- '              # computation has been modified by an inplace operation'
+8 api_shape: null

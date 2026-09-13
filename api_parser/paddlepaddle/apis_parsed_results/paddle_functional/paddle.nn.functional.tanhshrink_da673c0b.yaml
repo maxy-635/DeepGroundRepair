@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.functional.tanhshrink
+3 api_description: 'The paddle.nn.functional.tanhshrink API applies the tanhshrink
+  activation function, which computes the element-wise operation: input - tanh(input).'
+4 api_signature: paddle.nn.functional.tanhshrink(x)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input tensor on which the tanhshrink activation function will
+    be applied, and it must be of data type float32 or float64.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = F.tanhshrink(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.02005100, -0.00262472,  0.00033201,  0.00868741])'
+8 api_shape: null

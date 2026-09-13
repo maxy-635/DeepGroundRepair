@@ -1,0 +1,24 @@
+2 api_name: paddle.amp.debugging.collect_operator_stats
+3 api_description: A context manager that collects and prints operator counts by data
+  type—float32, float16, bfloat16, and other—when the context exits.
+4 api_signature: paddle.amp.debugging.collect_operator_stats()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- conv = paddle.nn.Conv2D(3, 2, 3)
+- x = paddle.rand([10, 3, 32, 32])
+- 'with paddle.amp.debugging.collect_operator_stats():'
+- '    # AMP list including cast, conv2d, elementwise_add, reshape'
+- '    with paddle.amp.auto_cast(enable=True, level=''O2''):'
+- '        out = conv(x)'
+- '# Print to the standard output.'
+- '# <------------------------------------------------------- op list -------------------------------------------------------->'
+- '# <--------------- Op Name ---------------- | -- FP16 Calls --- | -- BF16 Calls
+  --- | --- FP32 Calls--- | -- Other Calls -->'
+- '#   cast                                    |  1                |  0                |  2                |  0'
+- '#   conv2d                                  |  1                |  0                |  0                |  0'
+- '#   elementwise_add                         |  0                |  0                |  1                |  0'
+- '#   reshape                                 |  0                |  0                |  1                |  0'
+- '# <----------------------------------------------------- op count: 4 ------------------------------------------------------>'
+8 api_shape: {}

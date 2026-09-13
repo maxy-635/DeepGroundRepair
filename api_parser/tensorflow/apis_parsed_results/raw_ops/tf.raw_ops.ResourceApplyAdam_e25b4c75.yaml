@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyAdam
+3 api_description: Applies one Adam optimization step to a variable in place, updating
+  the variable and its first and second moment accumulators using the gradient, learning
+  rate, beta parameters, epsilon, and optional Nesterov momentum.
+4 api_signature: tf.raw_ops.ResourceApplyAdam(var,m,v,lr,grad)
+5 api_details: ''
+6 api_parameters:
+- var: The variable to be updated by the Adam optimizer.
+- m: The first-moment accumulator for the variable.
+- v: The second-moment accumulator for the variable.
+- lr: The scalar learning rate that controls the update step size.
+- grad: The gradient used to compute the Adam update.
+7 api_usage_example: null
+8 api_shape: ''

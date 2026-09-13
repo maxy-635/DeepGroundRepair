@@ -1,0 +1,24 @@
+2 api_name: paddle.masked_fill
+3 api_description: Replaces elements in a tensor with a specified value wherever the
+  broadcastable mask is True.
+4 api_signature: paddle.masked_fill(x,mask,value)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to be modified by filling selected positions.
+- mask: A boolean tensor that marks which positions in `x` should be filled.
+- value: The value used to replace the masked positions in `x`.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- x = paddle.ones((3, 3), dtype="float32")
+- mask = paddle.to_tensor([[True, True, False]])
+- print(mask)
+- Tensor(shape=[1, 3], dtype=bool, place=Place(gpu:0), stop_gradient=True,
+- '[[True , True , False]])'
+- out = paddle.masked_fill(x, mask, 2)
+- print(out)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[2., 2., 1.],'
+- '[2., 2., 1.],'
+- '[2., 2., 1.]])'
+8 api_shape: {}

@@ -1,0 +1,15 @@
+2 api_name: torch.nn.LazyConvTranspose2d
+3 api_description: torch.nn.LazyConvTranspose2d is a transposed convolution layer
+  that defers the specification of input channels until the first input is received,
+  allowing for more flexible model definitions.
+4 api_signature: torch.nn.LazyConvTranspose2d(out_channels,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- out_channels: Specifies the number of output channels that the transposed convolution
+    will produce.
+- kernel_size: Defines the size of the filter used for the transposed convolution.
+- stride: Determines the step size with which the filter moves across the input.
+- padding: Indicates the number of zero-padding layers added to each side of the input
+    dimensions.
+7 api_usage_example: null
+8 api_shape: null

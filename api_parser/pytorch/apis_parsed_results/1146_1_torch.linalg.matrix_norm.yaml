@@ -1,0 +1,23 @@
+2 api_name: torch.linalg.matrix_norm
+3 api_description: Computes a specified norm of a matrix, such as Frobenius, nuclear,
+  or induced matrix norms, along chosen dimensions.
+4 api_signature: torch.linalg.matrix_norm(A,ord,dim)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor whose matrix norm is computed over its last two dimensions or
+    the dimensions specified by `dim`.
+- ord: The type of matrix norm to calculate, such as Frobenius, nuclear, or a specified
+    vector-matrix norm order.
+- dim: The pair of dimensions that define which axes of `A` are treated as the matrix
+    for norm computation.
+7 api_usage_example:
+- ' from torch import linalg as LA'
+- ' A = torch.arange(9, dtype=torch.float).reshape(3, 3)'
+- ' A'
+- ' LA.matrix_norm(A)'
+- ' LA.matrix_norm(A, ord=-1)'
+- ' B = A.expand(2, -1, -1)'
+- ' B'
+- ' LA.matrix_norm(B)'
+- ' LA.matrix_norm(B, dim=(0, 2))'
+8 api_shape: null

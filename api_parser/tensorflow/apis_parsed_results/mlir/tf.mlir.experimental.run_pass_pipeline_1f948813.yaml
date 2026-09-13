@@ -1,0 +1,9 @@
+2 api_name: tensorflow.mlir.experimental.run_pass_pipeline
+3 api_description: Runs a sequence of MLIR passes on an input module.
+4 api_signature: '"tf.mlir.experimental.run_pass_pipeline(mlir_txt,pass_pipeline)"'
+5 api_details: ''
+6 api_parameters:
+- mlir_txt: The MLIR module text to be processed.
+- pass_pipeline: The sequence of compiler passes to apply to the module.
+7 api_usage_example: null
+8 api_shape: ''

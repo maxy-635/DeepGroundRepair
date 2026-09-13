@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.AsString
+3 api_description: Converts each element of a tensor into its string representation,
+  supporting numeric and boolean types.
+4 api_signature: tf.raw_ops.AsString(input,name)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to convert into strings, supporting the listed numeric, boolean,
+    complex, variant, and string types.
+- name: An optional name used to label the operation.
+7 api_usage_example:
+- tf.strings.as_string([3, 2])
+- tf.strings.as_string([3.1415926, 2.71828], precision=2).numpy()
+8 api_shape: ''

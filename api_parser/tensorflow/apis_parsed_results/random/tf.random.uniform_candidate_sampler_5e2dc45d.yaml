@@ -1,0 +1,14 @@
+2 api_name: tensorflow.random.uniform_candidate_sampler
+3 api_description: Uniformly samples candidate classes from [0, range_max), with or
+  without replacement, and returns the sampled classes plus expected counts for true
+  and sampled classes to support candidate sampling algorithms.
+4 api_signature: tf.random.uniform_candidate_sampler(true_classes,num_true,num_sampled,unique,range_max)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Specifies the target class IDs for each example in the batch.
+- num_true: Sets how many true classes are associated with each training example.
+- num_sampled: Controls how many classes are randomly drawn for sampling.
+- unique: Indicates whether the sampled classes must be distinct within a batch.
+- range_max: Defines the total number of possible classes to sample from.
+7 api_usage_example: null
+8 api_shape: ''

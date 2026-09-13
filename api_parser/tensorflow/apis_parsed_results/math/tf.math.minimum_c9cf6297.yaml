@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.minimum
+3 api_description: Returns the element-wise minimum of two same-dtype numeric tensors
+  (excluding complex values).
+4 api_signature: tf.math.minimum(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor whose element-wise values are compared to the second tensor.
+- y: The second tensor, which must match `x` in type for element-wise minimum comparison.
+7 api_usage_example:
+- x = tf.constant([-5., 0., 0., 0.])
+- y = tf.constant([-3.])
+- tf.math.minimum(x, y)
+8 api_shape: ''

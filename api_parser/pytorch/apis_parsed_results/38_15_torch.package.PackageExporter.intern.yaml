@@ -1,0 +1,10 @@
+2 api_name: torch.package.PackageExporter.intern
+3 api_description: Marks modules to be included in a package and recursively processes
+  their dependencies when they match an intern pattern.
+4 api_signature: intern(include,exclude)
+5 api_details: ''
+6 api_parameters:
+- include: Specifies the module names or glob patterns to intern into the package.
+- exclude: Optionally omits matching modules or patterns from being interned.
+7 api_usage_example: null
+8 api_shape: null

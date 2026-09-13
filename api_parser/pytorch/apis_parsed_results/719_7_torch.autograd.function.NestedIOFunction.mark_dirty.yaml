@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.function.NestedIOFunction.mark_dirty
+3 api_description: Marks the given input tensors as modified in place so autograd
+  can track version changes and detect unsafe reuse in the backward pass.
+4 api_signature: mark_dirty()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

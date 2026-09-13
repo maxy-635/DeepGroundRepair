@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.layers.RNN
+3 api_description: The tf.keras.layers.RNN API serves as a base class for creating
+  recurrent neural network layers, enabling the processing of sequential data by maintaining
+  a hidden state across time steps.
+4 api_signature: tf.keras.layers.RNN(cell, return_sequences, return_state)
+5 api_details: ''
+6 api_parameters:
+- cell: Specifies the RNN cell or cells used to compute the outputs and states.
+- return_sequences: Determines if the layer should return the full sequence of outputs
+    or just the last output.
+- return_state: Indicates whether the layer should also return the last state along
+    with the output.
+7 api_usage_example: null
+8 api_shape: null

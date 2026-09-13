@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.std
+3 api_description: Computes the standard deviation of a tensor along an axis, with
+  optional keepdims support.
+4 api_signature: tf.keras.backend.std(x,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

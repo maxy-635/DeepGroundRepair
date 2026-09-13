@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.ActivityRegularization
+3 api_description: The tf.keras.layers.ActivityRegularization layer adds a penalty
+  to the loss function based on the output of the layer, encouraging sparsity or controlling
+  the magnitude of the activations during training.
+4 api_signature: tf.keras.layers.ActivityRegularization(l1, l2)
+5 api_details: ''
+6 api_parameters:
+- l1: The L1 regularization factor adds a penalty equal to the absolute value of the
+    weights, promoting sparsity in the model.
+- l2: The L2 regularization factor adds a penalty equal to the square of the weights,
+    helping to prevent overfitting by discouraging large weights.
+7 api_usage_example: null
+8 api_shape: null

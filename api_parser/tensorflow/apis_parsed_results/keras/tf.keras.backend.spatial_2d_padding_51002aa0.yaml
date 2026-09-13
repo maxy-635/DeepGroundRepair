@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.spatial_2d_padding
+3 api_description: Pads the height and width dimensions of a 4D tensor by adding zeros
+  around the spatial axes, with configurable padding size and data format.
+4 api_signature: tf.keras.backend.spatial_2d_padding(x,padding,data_format)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

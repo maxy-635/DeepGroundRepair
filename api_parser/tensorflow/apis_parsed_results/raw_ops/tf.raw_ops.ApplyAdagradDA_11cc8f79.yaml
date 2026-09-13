@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ApplyAdagradDA
+3 api_description: Updates a variable in place using the proximal Adagrad dual-averaging
+  update rule, combining accumulated gradients, L1/L2 regularization, and global step
+  information.
+4 api_signature: tf.raw_ops.ApplyAdagradDA(var,grad,lr,l1,l2)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated in place by the Adagrad DA optimizer.
+- grad: The gradient tensor used to compute the update for `var`.
+- lr: The scalar learning-rate tensor that scales the update step.
+- l1: The scalar L1 regularization tensor that promotes sparsity in the update.
+- l2: The scalar L2 regularization tensor that adds weight decay to the update.
+7 api_usage_example: null
+8 api_shape: ''

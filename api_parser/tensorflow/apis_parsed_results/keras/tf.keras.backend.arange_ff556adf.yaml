@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.arange
+3 api_description: Returns a tensor containing a sequence of evenly spaced integers
+  from start to stop with the given step.
+4 api_signature: tf.keras.backend.arange(start,stop,step)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

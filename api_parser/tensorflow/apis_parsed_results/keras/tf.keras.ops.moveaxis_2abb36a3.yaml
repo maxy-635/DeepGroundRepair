@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.moveaxis
+3 api_description: Reorders a tensor’s axes by moving specified axes to new positions
+  while leaving the remaining axes in their original order.
+4 api_signature: tf.keras.ops.moveaxis(x,source,destination)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose axes will be reordered.
+- source: The original axis positions to move, which must be unique.
+- destination: The target axis positions for the moved axes, which must also be unique.
+7 api_usage_example: null
+8 api_shape: ''

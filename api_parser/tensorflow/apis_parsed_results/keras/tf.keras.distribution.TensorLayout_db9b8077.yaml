@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.distribution.TensorLayout
+3 api_description: Describes how a tensor is partitioned and placed across devices
+  using named dimensions, aligning tensor layout with distributed sharding semantics.
+4 api_signature: tf.keras.distribution.TensorLayout(axes,device_mesh)
+5 api_details: ''
+6 api_parameters:
+- axes: Specifies how each tensor dimension is mapped to device-mesh axes, with `None`
+    marking unsharded dimensions.
+- device_mesh: Optionally provides the `DeviceMesh` used to resolve the tensor-to-device
+    mapping.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: paddle.sparse.abs
+3 api_description: Returns the elementwise absolute value of a sparse COO or CSR tensor.
+4 api_signature: paddle.sparse.abs(x)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse tensor whose elementwise absolute values are computed.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2, 0, 3], dtype='float32')
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.abs(sparse_x)
+- out
+- Tensor(shape=[3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 2]],
+- values=[2., 3.])
+8 api_shape: {}

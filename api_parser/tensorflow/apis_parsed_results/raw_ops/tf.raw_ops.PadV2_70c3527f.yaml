@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.PadV2
+3 api_description: Pads a tensor on each dimension using a specified constant value,
+  with padding amounts given before and after the input for every axis.
+4 api_signature: tf.raw_ops.PadV2(input,paddings,constant_values)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be padded.
+- paddings: A tensor specifying how many values to pad before and after each dimension
+    of the input.
+- constant_values: The constant value used to fill the padded regions.
+7 api_usage_example: null
+8 api_shape: ''

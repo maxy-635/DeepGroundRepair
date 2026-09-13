@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.pipelining.schedules.ScheduleGPipe
+3 api_description: Runs pipeline-parallel training in a fill-drain GPipe pattern,
+  processing all microbatches stage by stage before draining for backward.
+4 api_signature: torch.distributed.pipelining.schedules.ScheduleGPipe(stage,n_microbatches,loss_fn,scale_grads)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

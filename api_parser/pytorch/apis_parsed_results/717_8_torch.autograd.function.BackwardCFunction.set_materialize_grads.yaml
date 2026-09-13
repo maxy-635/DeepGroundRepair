@@ -1,0 +1,35 @@
+2 api_name: torch.autograd.function.BackwardCFunction.set_materialize_grads
+3 api_description: Controls whether missing gradients are converted into zero tensors
+  during backward, with True as the default.
+4 api_signature: set_materialize_grads(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' class SimpleFunc(Function):'
+- '     @staticmethod'
+- '     def forward(ctx, x):'
+- '         return x.clone(), x.clone()'
+- '     @staticmethod'
+- '     @once_differentiable'
+- '     def backward(ctx, g1, g2):'
+- '         return g1 + g2  # No check for None necessary'
+- ' # We modify SimpleFunc to handle non-materialized grad outputs'
+- ' class Func(Function):'
+- '     @staticmethod'
+- '     def forward(ctx, x):'
+- '         ctx.set_materialize_grads(False)'
+- '         ctx.save_for_backward(x)'
+- '         return x.clone(), x.clone()'
+- '     @staticmethod'
+- '     @once_differentiable'
+- '     def backward(ctx, g1, g2):'
+- '         x, = ctx.saved_tensors'
+- '         grad_input = torch.zeros_like(x)'
+- '         if g1 is not None:  # We must check for None now'
+- '             grad_input += g1'
+- '         if g2 is not None:'
+- '             grad_input += g2'
+- '         return grad_input'
+- ' a = torch.tensor(1., requires_grad=True)'
+- ' b, _ = Func.apply(a)  # induces g2 to be undefined'
+8 api_shape: null

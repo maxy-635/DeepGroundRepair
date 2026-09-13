@@ -1,0 +1,30 @@
+2 api_name: paddle.nn.InstanceNorm2D
+3 api_description: paddle.nn.InstanceNorm2D normalizes a 4D input tensor across each
+  channel for each instance in a mini-batch, facilitating style transfer by reducing
+  internal covariate shift.
+4 api_signature: paddle.nn.InstanceNorm2D(num_features,epsilon,momentum)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of input channels that the InstanceNorm2D layer
+    will normalize.
+- epsilon: Ensures numerical stability by adding a small constant to the variance
+    denominator.
+- momentum: Determines the rate at which the moving averages of mean and variance
+    are updated.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- x = paddle.rand((2, 2, 2, 3))
+- instance_norm = paddle.nn.InstanceNorm2D(2)
+- instance_norm_out = instance_norm(x)
+- print(instance_norm_out)
+- Tensor(shape=[2, 2, 2, 3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[[ 1.26652932, -0.60229748, -1.65705574],'
+- '[ 1.06272733,  0.24229208, -0.31219524]],'
+- '[[-0.85414171,  0.31684181, -1.42204332],'
+- '[ 1.00412714, -0.43966094,  1.39487720]]],'
+- '[[[ 0.83324969,  1.25046813, -0.79470295],'
+- '[-1.38446140,  0.81851846, -0.72307163]],'
+- '[[-0.33560610,  0.95346332,  0.45585334],'
+- '[-0.53483474,  1.20336461, -1.74224067]]]])'
+8 api_shape: null

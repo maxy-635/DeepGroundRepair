@@ -1,0 +1,17 @@
+2 api_name: torch.mode
+3 api_description: Computes the most frequent value along a specified tensor dimension
+  and returns both the mode values and their corresponding indices.
+4 api_signature: torch.mode(input,dim,keepdim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used to compute the mode.
+- dim: The dimension along which to find the mode.
+- keepdim: Whether to keep the reduced dimension in the output.
+7 api_usage_example:
+- ' b = torch.tensor([[0, 0, 0, 2, 0, 0, 2],'
+- '...                   [0, 3, 0, 0, 2, 0, 1],'
+- '...                   [2, 2, 2, 0, 0, 0, 3],'
+- '...                   [2, 2, 3, 0, 1, 1, 0],'
+- '...                   [1, 1, 0, 0, 2, 0, 2]])'
+- ' torch.mode(b, 0)'
+8 api_shape: null

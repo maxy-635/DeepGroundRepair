@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.BatchNormWithGlobalNormalizationGrad
+3 api_description: Computes gradients for batch normalization with global normalization,
+  returning the backpropagated updates for the input, scale, offset, and related normalization
+  terms.
+4 api_signature: tf.raw_ops.BatchNormWithGlobalNormalizationGrad(t,m,v,gamma,backprop)
+5 api_details: ''
+6 api_parameters:
+- t: The 4D input tensor whose batch normalization gradient is being computed.
+- m: The per-channel mean tensor used during normalization.
+- v: The per-channel variance tensor used during normalization.
+- gamma: The scale tensor applied to the normalized values when scaling is enabled.
+- backprop: The 4D upstream gradient tensor flowing back from the next layer.
+7 api_usage_example: null
+8 api_shape: ''

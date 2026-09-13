@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SparseSegmentSqrtNGradV2
+3 api_description: Computes gradients for SparseSegmentSqrtN by aggregating `grad`
+  over unique segment indices, returning a tensor shaped like `grad` except with the
+  first dimension equal to the number of unique indices, plus the corresponding sorted
+  unique indices.
+4 api_signature: tf.raw_ops.SparseSegmentSqrtNGradV2(grad,indices,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- grad: Holds the upstream gradient tensor to be backpropagated through the SparseSegmentSqrtN
+    operation.
+- indices: Specifies which input elements were selected by the corresponding SparseSegmentSqrtN
+    operation.
+- segment_ids: Identifies the segment assignment for each indexed element in the corresponding
+    SparseSegmentSqrtN operation.
+7 api_usage_example: null
+8 api_shape: ''

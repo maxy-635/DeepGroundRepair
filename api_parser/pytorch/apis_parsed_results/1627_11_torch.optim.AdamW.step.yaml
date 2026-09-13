@@ -1,0 +1,10 @@
+2 api_name: torch.optim.AdamW.step
+3 api_description: Performs one AdamW optimization update on model parameters using
+  gradients and decoupled weight decay.
+4 api_signature: step(closure)
+5 api_details: ''
+6 api_parameters:
+- closure: A callable that recomputes the model and returns the current loss for the
+    optimizer step.
+7 api_usage_example: null
+8 api_shape: null

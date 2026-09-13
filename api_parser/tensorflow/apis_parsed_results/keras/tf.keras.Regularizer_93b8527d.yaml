@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.Regularizer
+3 api_description: Base class for Keras regularizers, with config serialization and
+  deserialization support to recreate the same regularizer from its saved configuration.
+4 api_signature: from_config(config)
+5 api_details: ''
+6 api_parameters:
+- config: A Python dictionary containing the regularizer’s serialized configuration,
+    typically produced by `get_config()` for reconstructing the object.
+7 api_usage_example:
+- tensor = ops.ones(shape=(5, 5))
+- out = layer(tensor)
+- layer.losses
+8 api_shape: ''

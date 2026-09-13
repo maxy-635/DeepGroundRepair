@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.AssignVariableOp
+3 api_description: Assigns a new value to a variable, ensuring dependent reads return
+  this value or a newer one.
+4 api_signature: tf.raw_ops.AssignVariableOp(resource,value)
+5 api_details: ''
+6 api_parameters:
+- resource: Resource handle where the variable value will be stored.
+- value: Tensor containing the value to assign to the variable.
+7 api_usage_example: null
+8 api_shape: ''

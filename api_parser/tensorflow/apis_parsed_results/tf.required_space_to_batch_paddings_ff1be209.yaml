@@ -1,0 +1,12 @@
+2 api_name: tensorflow.required_space_to_batch_paddings
+3 api_description: Computes the paddings needed to make each input spatial dimension
+  divisible by the given block shape for use with space_to_batch_nd and batch_to_space_nd.
+4 api_signature: tf.required_space_to_batch_paddings(input_shape,block_shape)
+5 api_details: ''
+6 api_parameters:
+- input_shape: The shape of the input tensor to analyze for space-to-batch padding
+    requirements.
+- block_shape: The block size for each input dimension used to compute the required
+    paddings.
+7 api_usage_example: null
+8 api_shape: ''

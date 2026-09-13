@@ -1,0 +1,13 @@
+2 api_name: tensorflow.lookup.StaticHashTable
+3 api_description: An immutable hash table for fast key-value lookups after initialization.
+4 api_signature: tf.lookup.StaticHashTable(initializer,default_value)
+5 api_details: ''
+6 api_parameters:
+- initializer: Initializes the hash table with the provided key-value data and supported
+    types.
+- default_value: Supplies the value returned when a queried key is not found in the
+    table.
+7 api_usage_example:
+- input_tensor = tf.constant([['a', 'b'], ['c', 'd']])
+- table[input_tensor].numpy()
+8 api_shape: ''

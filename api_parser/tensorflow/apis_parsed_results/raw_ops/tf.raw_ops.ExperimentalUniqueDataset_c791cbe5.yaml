@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ExperimentalUniqueDataset
+3 api_description: Creates a dataset that yields the unique elements from the input
+  dataset.
+4 api_signature: tf.raw_ops.ExperimentalUniqueDataset(input_dataset)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be transformed into a dataset that yields only
+    unique elements.
+7 api_usage_example: null
+8 api_shape: ''

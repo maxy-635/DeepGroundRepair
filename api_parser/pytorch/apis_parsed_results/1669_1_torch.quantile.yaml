@@ -1,0 +1,26 @@
+2 api_name: torch.quantile
+3 api_description: Computes the specified quantile values for each row of a tensor
+  along a given dimension.
+4 api_signature: torch.quantile(input,q,dim,keepdim,*,interpolation)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used to compute the quantile.
+- q: The quantile level or levels to compute, given as a scalar or 1D tensor in the
+    range [0, 1].
+- dim: The dimension along which to compute the quantile reduction.
+- keepdim: Controls whether the reduced dimension is kept in the output tensor.
+7 api_usage_example:
+- ' a = torch.randn(2, 3)'
+- ' a'
+- ' q = torch.tensor([0.25, 0.5, 0.75])'
+- ' torch.quantile(a, q, dim=1, keepdim=True)'
+- ' torch.quantile(a, q, dim=1, keepdim=True).shape'
+- ' a = torch.arange(4.)'
+- ' a'
+- ' torch.quantile(a, 0.6, interpolation=''linear'')'
+- ' torch.quantile(a, 0.6, interpolation=''lower'')'
+- ' torch.quantile(a, 0.6, interpolation=''higher'')'
+- ' torch.quantile(a, 0.6, interpolation=''midpoint'')'
+- ' torch.quantile(a, 0.6, interpolation=''nearest'')'
+- ' torch.quantile(a, 0.4, interpolation=''nearest'')'
+8 api_shape: null

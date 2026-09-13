@@ -1,0 +1,10 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_graph
+3 api_description: Adds a model graph to TensorBoard summaries for visualization.
+4 api_signature: add_graph(model,input_to_model)
+5 api_details: ''
+6 api_parameters:
+- model: The model to visualize as a computation graph.
+- input_to_model: The input tensor or tuple of tensors to feed into the model when
+    building the graph.
+7 api_usage_example: null
+8 api_shape: null

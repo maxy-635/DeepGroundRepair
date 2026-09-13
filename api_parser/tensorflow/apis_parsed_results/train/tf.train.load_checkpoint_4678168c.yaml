@@ -1,0 +1,10 @@
+2 api_name: tensorflow.train.load_checkpoint
+3 api_description: Loads a TensorFlow checkpoint from a file or directory and returns
+  a reader for the latest checkpoint if multiple are present.
+4 api_signature: tf.train.load_checkpoint(ckpt_dir_or_file)
+5 api_details: ''
+6 api_parameters:
+- ckpt_dir_or_file: Specifies the checkpoint directory or file path to load the checkpoint
+    from.
+7 api_usage_example: null
+8 api_shape: ''

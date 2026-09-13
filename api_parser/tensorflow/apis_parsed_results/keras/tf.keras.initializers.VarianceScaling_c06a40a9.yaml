@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.initializers.VarianceScaling
+3 api_description: Initializes tensors with values drawn from a normal or uniform
+  distribution whose scale is adapted to the input shape, using zero mean and variance
+  based on `scale / n`.
+4 api_signature: tf.keras.initializers.VarianceScaling(scale,mode,distribution)
+5 api_details: ''
+6 api_parameters:
+- scale: Sets the overall magnitude of the initialized values by multiplying the computed
+    variance.
+- mode: 'Chooses which fan value to base the variance on: input, output, or their
+    average.'
+- distribution: Selects the random distribution used to sample the initial weights.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = VarianceScaling(
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

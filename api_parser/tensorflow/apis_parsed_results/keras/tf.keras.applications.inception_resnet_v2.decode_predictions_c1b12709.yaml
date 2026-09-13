@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.inception_resnet_v2.decode_predictions
+3 api_description: Converts an ImageNet model’s prediction scores into human-readable
+  class labels and descriptions.
+4 api_signature: tf.keras.applications.inception_resnet_v2.decode_predictions(preds)
+5 api_details: ''
+6 api_parameters:
+- preds: Batch of model prediction scores to convert into human-readable class labels
+    and probabilities.
+7 api_usage_example: null
+8 api_shape: ''

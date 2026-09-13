@@ -1,0 +1,22 @@
+2 api_name: torch.autograd.function.BackwardCFunction.mark_non_differentiable
+3 api_description: Marks specified outputs of a custom autograd backward function
+  as non-differentiable so autograd will not compute gradients for them.
+4 api_signature: '"mark_non_differentiable()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' class Func(Function):'
+- '     @staticmethod'
+- '     def forward(ctx, x):'
+- '         sorted, idx = x.sort()'
+- '         ctx.mark_non_differentiable(idx)'
+- '         ctx.save_for_backward(x, idx)'
+- '         return sorted, idx'
+- '     @staticmethod'
+- '     @once_differentiable'
+- '     def backward(ctx, g1, g2):  # still need to accept g2'
+- '         x, idx = ctx.saved_tensors'
+- '         grad_input = torch.zeros_like(x)'
+- '         grad_input.index_add_(0, idx, g1)'
+- '         return grad_input'
+8 api_shape: null

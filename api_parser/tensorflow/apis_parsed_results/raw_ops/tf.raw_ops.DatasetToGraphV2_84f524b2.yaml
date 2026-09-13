@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.DatasetToGraphV2
+3 api_description: Serializes an input dataset into a GraphDef representation of its
+  computation graph.
+4 api_signature: tf.raw_ops.DatasetToGraphV2(input_dataset,external_state_policy)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant dataset tensor whose graph representation should be generated.
+- external_state_policy: An optional policy value that controls how external state
+    is handled during graph serialization.
+7 api_usage_example: null
+8 api_shape: ''

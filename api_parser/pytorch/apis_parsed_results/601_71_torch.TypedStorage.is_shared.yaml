@@ -1,0 +1,7 @@
+2 api_name: torch.TypedStorage.is_shared
+3 api_description: Checks whether the underlying storage is shared across processes.
+4 api_signature: is_shared()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

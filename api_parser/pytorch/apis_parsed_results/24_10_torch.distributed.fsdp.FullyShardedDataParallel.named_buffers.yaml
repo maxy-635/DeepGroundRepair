@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.named_buffers
+3 api_description: Iterate over a module’s buffers and yield each buffer’s name with
+  the buffer object.
+4 api_signature: '"named_buffers()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: paddle.erfinv
+3 api_description: Computes the inverse error function, returning the input value
+  whose error function equals x.
+4 api_signature: paddle.erfinv(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the inverse error function
+    elementwise.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([0, 0.5, -1.], dtype="float32")
+- out = paddle.erfinv(x)
+- out
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[ 0.       , 0.47693631, -inf.     ])'
+8 api_shape: {}

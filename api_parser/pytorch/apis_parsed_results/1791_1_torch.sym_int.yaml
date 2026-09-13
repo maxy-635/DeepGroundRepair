@@ -1,0 +1,9 @@
+2 api_name: torch.sym_int
+3 api_description: Converts a symbolic integer to a Python int-like value, preserving
+  SymInt-aware behavior when handling symbolic shapes or dimensions.
+4 api_signature: torch.sym_int(a)
+5 api_details: ''
+6 api_parameters:
+- a: The object to convert into a symbolic integer.
+7 api_usage_example: null
+8 api_shape: null

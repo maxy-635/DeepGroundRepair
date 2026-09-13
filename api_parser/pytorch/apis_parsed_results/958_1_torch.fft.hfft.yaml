@@ -1,0 +1,16 @@
+2 api_name: torch.fft.hfft
+3 api_description: Computes the 1D inverse-like FFT for Hermitian-symmetric input,
+  returning a real-valued signal.
+4 api_signature: torch.fft.hfft(input,n,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the half-Hermitian input tensor to transform.
+- n: Sets the length of the real output signal, padding or trimming the input as needed.
+- dim: Specifies which dimension to use for the one-dimensional Hermitian FFT.
+- norm: Chooses the normalization mode applied to the transform.
+7 api_usage_example:
+- ' t = torch.linspace(0, 1, 5)'
+- ' t'
+- ' T = torch.fft.ifft(t)'
+- ' T'
+8 api_shape: null

@@ -1,0 +1,23 @@
+2 api_name: paddle.optimizer.lr.NoamDecay
+3 api_description: Adjusts the learning rate using Noam decay, scaling it based on
+  training step to warm up initially and then decay afterward.
+4 api_signature: paddle.optimizer.lr.NoamDecay(d_model,warmup_steps,learning_rate)
+5 api_details: ''
+6 api_parameters:
+- d_model: Sets the model's feature size, which is used to scale the learning rate.
+- warmup_steps: Defines how many initial steps the learning rate spends increasing
+    during warmup.
+- learning_rate: Sets the base initial learning rate before Noam decay scaling is
+    applied.
+7 api_usage_example:
+- import paddle
+- value = paddle.arange(26, dtype='float32')
+- a = paddle.reshape(value, [2, 13])
+- linear = paddle.nn.Linear(13, 5)
+- adadelta = paddle.optimizer.Adadelta(learning_rate=0.0003, epsilon=1e-06, rho=0.95,
+- '                            parameters = linear.parameters())'
+- out = linear(a)
+- out.backward()
+- adadelta.step()
+- adadelta.clear_grad()
+8 api_shape: {}

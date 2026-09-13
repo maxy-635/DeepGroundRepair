@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.resize_images
+3 api_description: Deprecated backend utility that upsamples or downsamples image
+  tensors by resizing their spatial dimensions using a specified height and width
+  factor, with configurable data format and interpolation behavior.
+4 api_signature: tf.keras.backend.resize_images(x,height_factor,width_factor)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

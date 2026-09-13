@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.log1p
+3 api_description: Computes the element-wise natural logarithm of 1 + x.
+4 api_signature: '"tf.keras.ops.log1p(x)"'
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements will have 1 added and then the natural logarithm
+    taken.
+7 api_usage_example: null
+8 api_shape: ''

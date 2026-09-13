@@ -1,0 +1,12 @@
+2 api_name: torch.linalg.svdvals
+3 api_description: Computes and returns the singular values of a matrix.
+4 api_signature: torch.linalg.svdvals(A)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor whose singular values are computed for each matrix in the batch.
+7 api_usage_example:
+- ' A = torch.randn(5, 3)'
+- ' S = torch.linalg.svdvals(A)'
+- ' S'
+- ' torch.dist(S, torch.linalg.svd(A, full_matrices=False).S)'
+8 api_shape: null

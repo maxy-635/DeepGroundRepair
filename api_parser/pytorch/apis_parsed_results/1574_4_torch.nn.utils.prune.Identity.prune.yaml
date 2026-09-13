@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.prune.Identity.prune
+3 api_description: Returns a pruned version of the input tensor unchanged, applying
+  the Identity pruning mask.
+4 api_signature: prune(t,importance_scores)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor to prune, which must match the shape of `default_mask`.
+- importance_scores: Optional tensor of the same shape as `t` that provides importance
+    values used to determine the pruning mask; if omitted, `t` itself is used.
+7 api_usage_example: null
+8 api_shape: null

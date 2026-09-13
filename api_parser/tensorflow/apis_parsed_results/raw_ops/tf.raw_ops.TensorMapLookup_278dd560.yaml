@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorMapLookup
+3 api_description: Looks up a key in a TensorMap and returns the associated value
+  from the input map.
+4 api_signature: tf.raw_ops.TensorMapLookup(input_handle,key,value_dtype)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The variant tensor that contains the TensorMap to look up from.
+- key: The key tensor used to search for a matching entry in the TensorMap.
+- value_dtype: The data type of the value expected to be returned for the found key.
+7 api_usage_example: null
+8 api_shape: ''

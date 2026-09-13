@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.random_normal_variable
+3 api_description: DEPRECATED. Creates a Keras backend variable initialized with random
+  values drawn from a normal distribution with a specified mean, standard deviation,
+  and optional seed.
+4 api_signature: tf.keras.backend.random_normal_variable(shape,mean,scale)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

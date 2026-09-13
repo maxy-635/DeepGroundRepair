@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.QuantizeAndDequantizeV4Grad
+3 api_description: Computes the backpropagation mask for QuantizeAndDequantizeV4,
+  passing a gradient of 1 for values within the quantization range and 0 for values
+  outside it.
+4 api_signature: tf.raw_ops.QuantizeAndDequantizeV4Grad(gradients,input,input_min,input_max)
+5 api_details: ''
+6 api_parameters:
+- gradients: The upstream gradient tensor passed back from the loss, using the same
+    floating-point type as the other inputs.
+- input: The original input tensor that was quantize-dequantized in the forward pass,
+    used to compute the gradient.
+- input_min: The minimum range value from the forward quantization step, used to determine
+    how gradients are clipped or propagated.
+- input_max: The maximum range value from the forward quantization step, used to determine
+    how gradients are clipped or propagated.
+7 api_usage_example: null
+8 api_shape: ''

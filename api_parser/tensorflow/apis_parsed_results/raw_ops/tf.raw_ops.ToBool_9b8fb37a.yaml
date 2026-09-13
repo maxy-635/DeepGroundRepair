@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.ToBool
+3 api_description: Converts a tensor to a scalar boolean predicate by evaluating whether
+  its value is logically true or false.
+4 api_signature: tf.raw_ops.ToBool(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to convert to boolean values.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.relu6
+3 api_description: The torch.nn.functional.relu6 function applies an element-wise
+  ReLU6 activation, which clamps the input to the range [0, 6].
+4 api_signature: torch.nn.functional.relu6(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the ReLU6 activation function is applied.
+- inplace: A boolean flag that, if set to True, will do the operation in-place and
+    modify the input tensor directly.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

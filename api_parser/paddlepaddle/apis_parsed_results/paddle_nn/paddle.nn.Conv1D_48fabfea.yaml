@@ -1,0 +1,47 @@
+2 api_name: paddle.nn.Conv1D
+3 api_description: The paddle.nn.Conv1D API constructs a 1D convolutional layer that
+  processes input data in NCL or NLC format using specified filter, stride, padding,
+  dilation, and groups parameters. The layer outputs a feature map by convolving the
+  input with a filter of shape [MCK], where M is the number of output feature maps,
+  C is the number of input feature maps, and K is the kernel size. Optional bias and
+  activation can be applied to the output.
+4 api_signature: paddle.nn.Conv1D(in_channels,out_channels,kernel_size,stride,padding,groups)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Specifies the number of input channels for the convolution operation.
+- out_channels: Determines the number of filters, equivalent to the number of output
+    feature maps.
+- kernel_size: Defines the size of the convolutional filter, specified as a single
+    integer or a tuple/list of one integer.
+- stride: Sets the step size for the convolution, given as a single integer or a tuple/list
+    of one integer.
+- padding: Indicates the amount of zero-padding applied to the input, which can be
+    'valid', 'same', an integer, or a tuple/list of one integer.
+- groups: Determines how the input channels and filters are divided into groups, affecting
+    connectivity as described in grouped convolution.
+7 api_usage_example:
+- import paddle
+- from paddle.nn import Conv1D
+- x = paddle.to_tensor([[[4, 8, 1, 9],
+- '[7, 2, 0, 9],'
+- '[6, 9, 2, 6]]], dtype="float32")'
+- w = paddle.to_tensor([[[9, 3, 4],
+- '[0, 0, 7],'
+- '[2, 5, 6]],'
+- '[[0, 3, 4],'
+- '[2, 9, 7],'
+- '[5, 6, 8]]], dtype="float32")'
+- conv = Conv1D(3, 2, 3)
+- conv.weight.set_value(w)
+- y = conv(x)
+- print(y)
+- Tensor(shape=[1, 2, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[133., 238.],'
+- '[160., 211.]]])'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Length_in)
+  output tensor shape: (N, Channel_out, Length_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = out_channels
+    tensor length: Length_out = floor((Length_in + 2 * padding - dilation * (kernel_size
+      - 1) - 1) / stride + 1)

@@ -1,0 +1,14 @@
+2 api_name: torch.nn.MultiheadAttention.forward
+3 api_description: Computes attention outputs by applying the multi-head attention
+  mechanism on query, key, and value embeddings.
+4 api_signature: forward(query,key,value,attn_mask)
+5 api_details: ''
+6 api_parameters:
+- query: Embeddings representing the target sequence, used to compute attention scores.
+- key: Embeddings representing the source sequence, used as the basis for attention.
+- value: Embeddings representing the source sequence values, which are weighted by
+    the attention scores.
+- attn_mask: A mask to prevent attention to certain positions, influencing which tokens
+    can be attended to.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.hstack
+3 api_description: Horizontally stack tensors, concatenating 1-D tensors along the
+  first axis and higher-dimensional tensors along the second axis.
+4 api_signature: tf.keras.ops.hstack(xs)
+5 api_details: ''
+6 api_parameters:
+- xs: A sequence of tensors to stack horizontally along the second axis.
+7 api_usage_example: null
+8 api_shape: ''

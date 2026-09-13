@@ -1,0 +1,17 @@
+2 api_name: paddle.sparse.tan
+3 api_description: Computes the elementwise tangent of a sparse tensor, supporting
+  SparseCooTensor and SparseCsrTensor inputs.
+4 api_signature: paddle.sparse.tan(x)
+5 api_details: ''
+6 api_parameters:
+- x: Sparse tensor input whose values are used to compute the elementwise tangent.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2., 0., 1.])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.tan(sparse_x)
+- out
+- Tensor(shape=[3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 2]],
+- values=[2.18503976, 1.55740774])
+8 api_shape: {}

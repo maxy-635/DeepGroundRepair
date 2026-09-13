@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.DecodePaddedRaw
+3 api_description: Reinterprets a padded byte string as a vector of numeric values
+  of a specified type.
+4 api_signature: tf.raw_ops.DecodePaddedRaw(input_bytes,fixed_length,out_type)
+5 api_details: ''
+6 api_parameters:
+- input_bytes: Contains the encoded string data to be decoded into tensors.
+- fixed_length: Specifies the byte length of each decoded output element and must
+    be a multiple of the output type size.
+- out_type: Indicates the data type of the decoded output values.
+7 api_usage_example: null
+8 api_shape: ''

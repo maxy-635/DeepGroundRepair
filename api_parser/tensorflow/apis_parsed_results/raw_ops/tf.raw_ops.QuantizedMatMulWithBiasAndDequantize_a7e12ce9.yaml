@@ -1,0 +1,22 @@
+2 api_name: tensorflow.raw_ops.QuantizedMatMulWithBiasAndDequantize
+3 api_description: Computes quantized matrix multiplication with an added bias, then
+  dequantizes the result to a floating-point tensor.
+4 api_signature: tf.raw_ops.QuantizedMatMulWithBiasAndDequantize(a,b,bias,min_a,max_a,min_b,max_b,min_freezed_output,max_freezed_output,Toutput,transpose_a,transpose_b)
+5 api_details: ''
+6 api_parameters:
+- a: Quantized input matrix A to be multiplied.
+- b: Quantized input matrix B to be multiplied with A.
+- bias: Bias tensor added to the matrix multiplication result before dequantization.
+- min_a: Minimum quantization range value for A.
+- max_a: Maximum quantization range value for A.
+- min_b: Minimum quantization range value for B.
+- max_b: Maximum quantization range value for B.
+- min_freezed_output: Lower bound of the frozen output quantization range used for
+    dequantization.
+- max_freezed_output: Upper bound of the frozen output quantization range used for
+    dequantization.
+- Toutput: Data type of the dequantized output tensor.
+- transpose_a: Whether to treat A as transposed before multiplication.
+- transpose_b: Whether to treat B as transposed before multiplication.
+7 api_usage_example: null
+8 api_shape: ''

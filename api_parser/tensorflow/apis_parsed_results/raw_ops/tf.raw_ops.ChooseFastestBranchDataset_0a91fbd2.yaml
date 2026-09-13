@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.ChooseFastestBranchDataset
+3 api_description: Selects the first branch dataset to produce an element and returns
+  that branch’s output, enabling fast-path choice among multiple input datasets.
+4 api_signature: tf.raw_ops.ChooseFastestBranchDataset(input_dataset,ratio_numerator,ratio_denominator,branches,output_types,output_shapes,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset input to which the branch-selection logic is applied.
+- ratio_numerator: The numerator used to determine the branch choice ratio.
+- ratio_denominator: The denominator used to determine the branch choice ratio.
+- branches: The candidate branch functions to choose from when constructing the output
+    pipeline.
+- output_types: The data types expected for each component produced by the selected
+    branch.
+- output_shapes: The shapes expected for each component produced by the selected branch.
+- name: An optional name used to label the operation.
+7 api_usage_example: null
+8 api_shape: ''

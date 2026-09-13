@@ -1,0 +1,11 @@
+2 api_name: tensorflow.debugging.check_numerics
+3 api_description: Checks a tensor for NaN or Inf values and raises an InvalidArgument
+  error if any are found; otherwise returns the input tensor unchanged.
+4 api_signature: tf.debugging.check_numerics(tensor,message)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to check for NaNs and infinities.
+- message: A prefix string added to the error message if invalid numeric values are
+    found.
+7 api_usage_example: null
+8 api_shape: ''

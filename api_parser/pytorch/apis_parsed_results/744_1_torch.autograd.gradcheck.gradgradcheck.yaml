@@ -1,0 +1,20 @@
+2 api_name: torch.autograd.gradcheck.gradgradcheck
+3 api_description: Verifies second-order gradients by comparing finite-difference
+  approximations with analytical gradients for floating-point or complex inputs and
+  grad_outputs that require grad.
+4 api_signature: torch.autograd.gradcheck.gradgradcheck(func,inputs,grad_outputs,*,eps,atol,rtol,raise_exception,nondet_tol,check_undefined_grad,fast_mode)
+5 api_details: ''
+6 api_parameters:
+- func: The function to test for second-order gradient correctness.
+- inputs: The tensor inputs to pass to the function.
+- grad_outputs: The gradient values applied to the function outputs during checking.
+- eps: The finite-difference step size used for numerical approximation.
+- atol: The absolute tolerance allowed between numerical and analytical results.
+- rtol: The relative tolerance allowed between numerical and analytical results.
+- raise_exception: Whether to raise an informative exception when the check fails.
+- nondet_tol: The tolerance allowed for nondeterministic gradient behavior.
+- check_undefined_grad: Whether to verify that undefined output gradients are handled
+    as zeros.
+- fast_mode: Whether to use a faster, less exhaustive gradgradcheck implementation.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: torch.accelerator.is_available
+3 api_description: Checks whether the current accelerator can be used at runtime,
+  including build support, required drivers, and device visibility.
+4 api_signature: torch.accelerator.is_available()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' assert torch.accelerator.is_available() "No available accelerators detected."'
+8 api_shape: null

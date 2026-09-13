@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.AudioSummary
+3 api_description: Creates a TensorFlow Summary protobuf containing audio clips from
+  a 2-D or 3-D input tensor, using up to `max_outputs` examples and the given `sample_rate`
+  and string `tag`.
+4 api_signature: tf.raw_ops.AudioSummary(tensor,sample_rate)
+5 api_details: ''
+6 api_parameters:
+- tensor: Contains the batch of audio waveforms as 2-D float32 tensors with shape
+    [batch_size, frames].
+- sample_rate: Specifies the audio signal’s sample rate in hertz.
+7 api_usage_example: null
+8 api_shape: ''

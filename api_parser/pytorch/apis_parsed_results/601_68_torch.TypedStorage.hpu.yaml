@@ -1,0 +1,9 @@
+2 api_name: torch.TypedStorage.hpu
+3 api_description: Returns a copy of the storage object placed in HPU memory.
+4 api_signature: hpu(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which HPU device the storage should be moved to, defaulting to
+    the current device if not provided.
+7 api_usage_example: null
+8 api_shape: null

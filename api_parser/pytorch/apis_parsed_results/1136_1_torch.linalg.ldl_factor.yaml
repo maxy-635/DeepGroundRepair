@@ -1,0 +1,17 @@
+2 api_name: torch.linalg.ldl_factor
+3 api_description: Computes a compact LDL factorization of a Hermitian or symmetric
+  matrix, returning factors suitable for solving or reconstructing the original matrix
+  even when it is indefinite.
+4 api_signature: torch.linalg.ldl_factor(A,*,hermitian)
+5 api_details: ''
+6 api_parameters:
+- A: The symmetric or Hermitian input tensor to be factorized into an LDL decomposition,
+    optionally across batch dimensions.
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' A = A @ A.mT # make symmetric'
+- ' A'
+- ' LD, pivots = torch.linalg.ldl_factor(A)'
+- ' LD'
+- ' pivots'
+8 api_shape: null

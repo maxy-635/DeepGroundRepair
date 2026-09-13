@@ -1,0 +1,26 @@
+2 api_name: tensorflow.config.set_logical_device_configuration
+3 api_description: Configures one visible physical device to expose one or more logical
+  devices before TensorFlow runtime initialization.
+4 api_signature: tf.config.set_logical_device_configuration(device,logical_devices)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the physical device to configure.
+- logical_devices: Optionally provides the logical device configurations to allocate
+    for the physical device, or uses the default configuration if omitted.
+7 api_usage_example:
+- physical_devices = tf.config.list_physical_devices('GPU')
+- 'try:'
+- '  tf.config.set_logical_device_configuration('
+- '    physical_devices[0],'
+- '    [tf.config.LogicalDeviceConfiguration(memory_limit=100),'
+- '     tf.config.LogicalDeviceConfiguration(memory_limit=100)])'
+- '  logical_devices = tf.config.list_logical_devices(''GPU'')'
+- '  assert len(logical_devices) == len(physical_devices) + 1'
+- '  tf.config.set_logical_device_configuration('
+- '    physical_devices[0],'
+- '    [tf.config.LogicalDeviceConfiguration(memory_limit=10),'
+- '     tf.config.LogicalDeviceConfiguration(memory_limit=10)])'
+- 'except:'
+- '  # Invalid device or cannot modify logical devices once initialized.'
+- '  pass'
+8 api_shape: ''

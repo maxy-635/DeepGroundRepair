@@ -1,0 +1,38 @@
+2 api_name: paddle.autograd.backward
+3 api_description: Computes backward gradients for the specified tensors, propagating
+  derivatives through the computation graph.
+4 api_signature: paddle.autograd.backward(tensors,grad_tensors,retain_graph)
+5 api_details: ''
+6 api_parameters:
+- tensors: Specifies the tensors whose gradients will be computed, and they must be
+    unique.
+- grad_tensors: Provides the initial gradients for the tensors, defaulting to 1.0
+    for any missing values or for all tensors when `None`.
+- retain_graph: Controls whether to keep the computation graph after backpropagation
+    for additional backward passes or free it to save memory.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1, 2], [3, 4]], dtype='float32', stop_gradient=False)
+- y = paddle.to_tensor([[3, 2], [3, 4]], dtype='float32')
+- grad_tensor1 = paddle.to_tensor([[1,2], [2, 3]], dtype='float32')
+- grad_tensor2 = paddle.to_tensor([[1,1], [1, 1]], dtype='float32')
+- z1 = paddle.matmul(x, y)
+- z2 = paddle.matmul(x, y)
+- paddle.autograd.backward([z1, z2], [grad_tensor1, grad_tensor2], True)
+- print(x.grad)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[12., 18.],'
+- '[17., 25.]])'
+- x.clear_grad()
+- paddle.autograd.backward([z1, z2], [grad_tensor1, None], True)
+- print(x.grad)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[12., 18.],'
+- '[17., 25.]])'
+- x.clear_grad()
+- paddle.autograd.backward([z1, z2])
+- print(x.grad)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[10., 14.],'
+- '[10., 14.]])'
+8 api_shape: {}

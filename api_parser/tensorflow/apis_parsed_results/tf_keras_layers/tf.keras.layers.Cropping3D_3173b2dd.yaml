@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.layers.Cropping3D
+3 api_description: Cropping3D is a Keras layer that removes specified borders from
+  3D input data, allowing for spatial or spatio-temporal data manipulation.
+4 api_signature: tf.keras.layers.Cropping3D(cropping, data_format)
+5 api_details: ''
+6 api_parameters:
+- cropping: Specifies the number of pixels to crop from each dimension, which can
+    be an integer, a tuple of three integers, or a tuple of three tuples of two integers.
+- data_format: Determines the ordering of dimensions in the input data, either 'channels_last'
+    for shape (batch_size, spatial_dim1, spatial_dim2, spatial_dim3, channels) or
+    'channels_first' for shape (batch_size, channels, spatial_dim1, spatial_dim2,
+    spatial_dim3), defaulting to the Keras configuration if unspecified.
+7 api_usage_example:
+- input_shape = (2, 28, 28, 10, 3)
+- x = np.arange(np.prod(input_shape)).reshape(input_shape)
+- y = keras.layers.Cropping3D(cropping=(2, 4, 2))(x)
+- y.shape
+8 api_shape: null

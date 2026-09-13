@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.TPUEmbeddingActivations
+3 api_description: Returns the sliced embedding activations unchanged to support automatic
+  differentiation of TPU embedding graphs.
+4 api_signature: tf.raw_ops.TPUEmbeddingActivations(embedding_variable,sliced_activations,table_id,lookup_id)
+5 api_details: ''
+6 api_parameters:
+- embedding_variable: Represents the trainable embedding variable used by optimizers
+    to track and update this operation.
+- sliced_activations: Contains the embedding activation values to be returned as the
+    op’s output.
+- table_id: Specifies which embedding table in the layer configuration these activations
+    came from.
+- lookup_id: Identifies the particular set of embedding indices that produced these
+    activations.
+7 api_usage_example: null
+8 api_shape: ''

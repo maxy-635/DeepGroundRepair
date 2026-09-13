@@ -1,0 +1,14 @@
+2 api_name: torch.nn.AdaptiveLogSoftmaxWithLoss
+3 api_description: AdaptiveLogSoftmaxWithLoss provides an efficient way to compute
+  softmax and loss for large output vocabularies by approximating the softmax function,
+  allowing for faster training and reduced memory usage.
+4 api_signature: torch.nn.AdaptiveLogSoftmaxWithLoss(in_features,n_classes,cutoffs)
+5 api_details: ''
+6 api_parameters:
+- in_features: Specifies the dimensionality of the input tensor that will be processed
+    by the model.
+- n_classes: Indicates the total number of distinct classes in the dataset for classification.
+- cutoffs: Defines the thresholds that determine how targets are grouped into different
+    buckets for efficient computation.
+7 api_usage_example: null
+8 api_shape: null

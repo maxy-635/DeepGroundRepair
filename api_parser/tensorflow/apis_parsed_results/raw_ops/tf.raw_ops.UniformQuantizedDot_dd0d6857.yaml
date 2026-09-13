@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.UniformQuantizedDot
+3 api_description: Computes a quantized matrix dot product between two 2D quantized
+  tensors with compatible inner dimensions, producing a quantized output using the
+  same scale/zero-point style quantization; if `rhs` is per-tensor quantized, the
+  output must also be per-tensor quantized.
+4 api_signature: tf.raw_ops.UniformQuantizedDot(lhs,rhs,output_scales,output_zero_points,Tout,name)
+5 api_details: ''
+6 api_parameters:
+- lhs: The left-hand 2D quantized input tensor to multiply.
+- rhs: The right-hand 2D quantized input tensor to multiply with `lhs`.
+- output_scales: The scale or per-channel scales used to quantize the output tensor.
+- output_zero_points: The zero point or per-channel zero points used to quantize the
+    output tensor.
+- Tout: The data type of the quantized output tensor.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ScatterMin
+3 api_description: Applies sparse updates to a tensor or variable by taking the element-wise
+  minimum at the specified indices.
+4 api_signature: tf.raw_ops.ScatterMin(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place by taking the elementwise minimum
+    with the provided updates.
+- indices: The index tensor that selects rows in the first dimension of `ref` to receive
+    the minimum reductions.
+- updates: The tensor containing values to compare against and reduce into `ref` at
+    the specified indices.
+7 api_usage_example: null
+8 api_shape: ''

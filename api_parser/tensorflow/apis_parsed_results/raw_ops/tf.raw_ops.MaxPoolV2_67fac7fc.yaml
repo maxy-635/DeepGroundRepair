@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.MaxPoolV2
+3 api_description: Applies 2D max pooling to the input tensor, returning the maximum
+  value from each sliding window.
+4 api_signature: tf.raw_ops.MaxPoolV2(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D tensor to be max-pooled.
+- ksize: The window size to use for pooling along each dimension.
+- strides: The step size the pooling window moves each time.
+- padding: The padding mode to apply around the input, either `SAME` or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

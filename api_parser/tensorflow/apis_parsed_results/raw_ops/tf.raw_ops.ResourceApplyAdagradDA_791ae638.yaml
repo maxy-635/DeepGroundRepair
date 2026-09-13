@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyAdagradDA
+3 api_description: Applies the proximal AdagradDA update to a resource variable, adjusting
+  it and the accumulation variables using gradient statistics and regularization terms.
+4 api_signature: tf.raw_ops.ResourceApplyAdagradDA(var,grad,lr,l1,l2,global_step)
+5 api_details: ''
+6 api_parameters:
+- var: The resource variable to update in place.
+- grad: The gradient used to compute the AdagradDA update.
+- lr: The scalar learning-rate scaling factor.
+- l1: The scalar L1 regularization strength.
+- l2: The scalar L2 regularization strength.
+- global_step: The scalar training step number used by the optimizer.
+7 api_usage_example: null
+8 api_shape: ''

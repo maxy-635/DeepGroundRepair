@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Fill
+3 api_description: Creates a tensor of the specified shape and fills every element
+  with the given scalar value.
+4 api_signature: tf.raw_ops.Fill(dims,value)
+5 api_details: ''
+6 api_parameters:
+- dims: Specifies the 1-D shape of the output tensor.
+- value: Provides the scalar value used to fill every element of the output tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.compat.dimension_value
+3 api_description: Returns the integer value of a TensorShape dimension when known,
+  while preserving compatibility between TensorFlow v1 and v2 behavior.
+4 api_signature: tf.compat.dimension_value(dimension)
+5 api_details: ''
+6 api_parameters:
+- dimension: Specifies the dimension value to resolve, whether provided as a TensorFlow
+    Dimension, a plain integer, or None.
+7 api_usage_example: null
+8 api_shape: ''

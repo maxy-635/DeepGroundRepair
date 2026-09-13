@@ -1,0 +1,13 @@
+2 api_name: tensorflow.config.experimental.get_memory_info
+3 api_description: Returns a dict with the selected device’s current and peak memory
+  usage.
+4 api_signature: tf.config.experimental.get_memory_info(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the device string whose memory information should be returned.
+7 api_usage_example:
+- 'if tf.config.list_physical_devices(''GPU''):'
+- '  # Returns a dict in the form {''current'': <current mem usage>,'
+- '  #                             ''peak'': <peak mem usage>}'
+- '  tf.config.experimental.get_memory_info(''GPU:0'')'
+8 api_shape: ''

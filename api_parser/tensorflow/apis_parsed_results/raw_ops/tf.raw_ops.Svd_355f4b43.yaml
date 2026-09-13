@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.Svd
+3 api_description: Computes the singular value decomposition of one or more matrices,
+  returning factors `u`, `s`, and `v` such that each input matrix equals `u * diag(s)
+  * transpose(v)`.
+4 api_signature: tf.raw_ops.Svd(input,compute_uv,full_matrices)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor containing one or more matrices of shape [..., M, N] to decompose
+    into singular values and vectors.
+- compute_uv: Controls whether to compute and return the left and right singular vectors
+    in addition to the singular values.
+- full_matrices: Determines whether to return full-sized singular vector matrices
+    or only the leading P singular vectors when `compute_uv` is enabled.
+7 api_usage_example: null
+8 api_shape: ''

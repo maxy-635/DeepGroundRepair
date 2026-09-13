@@ -1,0 +1,19 @@
+2 api_name: torch.diff
+3 api_description: Computes the n-th forward difference of a tensor along a specified
+  dimension.
+4 api_signature: torch.diff(input,n,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used to compute differences.
+- n: The number of recursive difference operations to apply.
+- dim: The dimension along which to compute the differences, defaulting to the last
+    dimension.
+7 api_usage_example:
+- ' a = torch.tensor([1, 3, 2])'
+- ' torch.diff(a)'
+- ' b = torch.tensor([4, 5])'
+- ' torch.diff(a, append=b)'
+- ' c = torch.tensor([[1, 2, 3], [3, 4, 5]])'
+- ' torch.diff(c, dim=0)'
+- ' torch.diff(c, dim=1)'
+8 api_shape: null

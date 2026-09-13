@@ -1,0 +1,36 @@
+2 api_name: paddle.empty
+3 api_description: Creates a Tensor of the specified shape with uninitialized values.
+4 api_signature: paddle.empty(shape,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the tensor shape to create, accepting an int, list/tuple of integers
+    or 0-D tensors, or a 1-D tensor of dimensions.
+- dtype: Specifies the output tensor’s data type, or uses Paddle’s global default
+    dtype when not provided.
+- name: Optionally assigns a name to the created tensor, usually left unset.
+7 api_usage_example:
+- import paddle
+- '# shape is a list/tuple'
+- data1 = paddle.empty(shape=[3, 2])
+- print(data1.numpy())
+- '>>>'
+- '[[1. 1.]'
+- '[1. 1.]'
+- '[1. 1.]]'
+- '# shape is a Tensor'
+- shape = paddle.to_tensor([3, 2])
+- data2 = paddle.empty(shape=shape)
+- print(data2.numpy())
+- '>>>'
+- '[[1. 1.]'
+- '[1. 1.]'
+- '[1. 1.]]'
+- '# shape is a Tensor List'
+- shape = [paddle.to_tensor(3), paddle.to_tensor(2)]
+- data3 = paddle.empty(shape=shape)
+- print(data3.numpy())
+- '>>>'
+- '[[1. 1.]'
+- '[1. 1.]'
+- '[1. 1.]]'
+8 api_shape: {}

@@ -1,0 +1,15 @@
+2 api_name: torch.histogramdd
+3 api_description: Computes an N-dimensional histogram by binning tensor values into
+  specified ranges and counting how many fall into each multi-dimensional bin.
+4 api_signature: torch.histogramdd(input,bins,range,weight,density)->(Tensor,Tensor[])
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the data points to be binned.
+- bins: Specifies the bin edges or the number of equal-width bins for each dimension.
+7 api_usage_example:
+- ' torch.histogramdd(torch.tensor([[0., 1.], [1., 0.], [2., 0.], [2., 2.]]), bins=[3,
+  3],'
+- '...                   weight=torch.tensor([1., 2., 4., 8.]))'
+- ' torch.histogramdd(torch.tensor([[0., 0.], [1., 1.], [2., 2.]]), bins=[2, 2],'
+- '...                   range=[0., 1., 0., 1.], density=True)'
+8 api_shape: null

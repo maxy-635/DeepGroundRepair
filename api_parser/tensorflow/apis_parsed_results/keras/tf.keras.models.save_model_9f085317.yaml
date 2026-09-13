@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.models.save_model
+3 api_description: Saves a Keras model to a .keras file so it can be loaded later
+  with its architecture, weights, and training configuration preserved.
+4 api_signature: tf.keras.models.save_model(model,filepath)
+5 api_details: ''
+6 api_parameters:
+- model: The Keras model instance to serialize and save.
+- filepath: The file path where the model will be saved.
+7 api_usage_example: null
+8 api_shape: ''

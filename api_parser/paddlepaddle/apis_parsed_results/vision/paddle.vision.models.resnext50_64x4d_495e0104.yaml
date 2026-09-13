@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.resnext50_64x4d
+3 api_description: Builds a ResNeXt-50 64x4d convolutional neural network for image
+  feature extraction and classification, using aggregated residual transformations
+  to improve representation power and accuracy.
+4 api_signature: paddle.vision.models.resnext50_64x4d(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.in_top_k
+3 api_description: Returns a boolean tensor indicating whether each target label is
+  among the top-k predicted classes for each sample.
+4 api_signature: tf.keras.backend.in_top_k(predictions,targets,k)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

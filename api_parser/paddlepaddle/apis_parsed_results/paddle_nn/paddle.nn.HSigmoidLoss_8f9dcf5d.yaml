@@ -1,0 +1,30 @@
+2 api_name: paddle.nn.HSigmoidLoss
+3 api_description: paddle.nn.HSigmoidLoss is a hierarchical sigmoid layer used to
+  compute the loss for training models with hierarchical or multi-outputs, optimizing
+  the computation of probabilities in large output spaces.
+4 api_signature: paddle.nn.HSigmoidLoss(feature_size,num_class es)
+5 api_details: ''
+6 api_parameters:
+- feature_size: Specifies the dimensionality of the input feature space for the HSigmoidLoss
+    calculation.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- paddle.seed(2023)
+- input = paddle.uniform([4, 3])
+- print(input)
+- Tensor(shape=[4, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.73167229,  0.04029441, -0.48078126],'
+- '[ 0.81050646, -0.15199822, -0.18717426],'
+- '[ 0.94041789,  0.48874724,  0.03570259],'
+- '[ 0.46585739,  0.95573163, -0.91368192]])'
+- label = paddle.to_tensor([0, 1, 4, 5])
+- m = paddle.nn.HSigmoidLoss(3, 6)
+- out = m(input, label)
+- print(out)
+- Tensor(shape=[4, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[1.94512916],'
+- '[2.26129627],'
+- '[2.36135936],'
+- '[2.97453213]])'
+8 api_shape: null

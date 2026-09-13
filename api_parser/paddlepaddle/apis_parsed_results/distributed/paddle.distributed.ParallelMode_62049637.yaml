@@ -1,0 +1,14 @@
+2 api_name: paddle.distributed.ParallelMode
+3 api_description: Defines the supported distributed parallel modes and provides a
+  unified way to identify how work is partitioned across processes in Paddle distributed
+  training.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- parallel_mode = paddle.distributed.ParallelMode
+- print(parallel_mode.DATA_PARALLEL)
+- '0'
+8 api_shape: {}

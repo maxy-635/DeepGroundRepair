@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.MulNoNan
+3 api_description: Multiplies x and y element-wise, returning 0 wherever y is 0 even
+  if x is infinite or NaN.
+4 api_signature: tf.raw_ops.MulNoNan(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor whose values are multiplied elementwise.
+- y: The second input tensor, with the same type as `x`, used for elementwise multiplication.
+7 api_usage_example: null
+8 api_shape: ''

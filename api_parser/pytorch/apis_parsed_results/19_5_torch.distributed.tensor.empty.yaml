@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.tensor.empty
+3 api_description: Creates a DTensor with the specified shape and uninitialized contents.
+4 api_signature: torch.distributed.tensor.empty(*size,device_mesh,placements)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the shape of the output DTensor as a sequence of integers, either
+    passed as separate arguments or as a list or tuple.
+7 api_usage_example: null
+8 api_shape: null

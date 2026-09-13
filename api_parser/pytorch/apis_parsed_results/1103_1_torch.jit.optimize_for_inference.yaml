@@ -1,0 +1,19 @@
+2 api_name: torch.jit.optimize_for_inference
+3 api_description: Applies inference-focused JIT optimizations to a TorchScript model
+  to improve runtime performance.
+4 api_signature: torch.jit.optimize_for_inference(mod)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import torch
+- in_channels, out_channels = 3, 32
+- conv = torch.nn.Conv2d(
+- '    in_channels, out_channels, kernel_size=3, stride=2, bias=True'
+- )
+- bn = torch.nn.BatchNorm2d(out_channels, eps=0.001)
+- mod = torch.nn.Sequential(conv, bn)
+- frozen_mod = torch.jit.optimize_for_inference(torch.jit.script(mod.eval()))
+- assert "batch_norm" not in str(frozen_mod.graph)
+- '# if built with MKLDNN, convolution will be run with MKLDNN weights'
+- assert "MKLDNN" in frozen_mod.graph
+8 api_shape: null

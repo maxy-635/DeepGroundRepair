@@ -1,0 +1,14 @@
+2 api_name: tensorflow.type_spec_from_value
+3 api_description: Returns a `tf.TypeSpec` that describes the structure and type of
+  a given value.
+4 api_signature: '"tf.type_spec_from_value(value)"'
+5 api_details: ''
+6 api_parameters:
+- value: The input object to describe as a TensorFlow TypeSpec, accepting tensors,
+    tensor-convertible values, and CompositeTensor subclasses.
+7 api_usage_example:
+- example_input = tf.ragged.constant([[1, 2], [3]])
+- '@tf.function(input_signature=[tf.type_spec_from_value(example_input)])'
+- 'def f(x):'
+- '  return tf.reduce_sum(x, axis=1)'
+8 api_shape: ''

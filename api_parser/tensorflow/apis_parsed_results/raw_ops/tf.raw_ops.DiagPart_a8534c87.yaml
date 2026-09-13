@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.DiagPart
+3 api_description: Extracts the diagonal part of a tensor by selecting elements where
+  the first half and second half of its dimensions match.
+4 api_signature: tf.raw_ops.DiagPart(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose diagonal elements are extracted from each inner matrix in
+    a rank-`k` tensor.
+7 api_usage_example: null
+8 api_shape: ''

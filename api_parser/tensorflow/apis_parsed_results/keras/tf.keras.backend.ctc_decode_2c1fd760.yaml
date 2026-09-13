@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.ctc_decode
+3 api_description: Decodes the most likely character sequences from CTC model output
+  probabilities, optionally using greedy or beam-search decoding and returning decoded
+  labels with their log probability scores.
+4 api_signature: tf.keras.backend.ctc_decode(y_pred,input_length)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

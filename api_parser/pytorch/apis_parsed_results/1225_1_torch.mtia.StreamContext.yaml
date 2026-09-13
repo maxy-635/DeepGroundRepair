@@ -1,0 +1,9 @@
+2 api_name: torch.mtia.StreamContext
+3 api_description: Context manager that temporarily selects a specified MTIA stream
+  for the enclosed operations.
+4 api_signature: torch.mtia.StreamContext(stream)
+5 api_details: ''
+6 api_parameters:
+- Stream: Selects the stream to use; if it is `None`, the context manager does nothing.
+7 api_usage_example: null
+8 api_shape: null

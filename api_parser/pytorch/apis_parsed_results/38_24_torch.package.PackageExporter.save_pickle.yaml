@@ -1,0 +1,10 @@
+2 api_name: torch.package.PackageExporter.save_pickle
+3 api_description: Pickles a Python object into a package archive like `torch.save()`,
+  and optionally includes the object's required module code dependencies for reconstruction.
+4 api_signature: save_pickle(obj,dependencies,pickle_protocol)
+5 api_details: ''
+6 api_parameters:
+- obj: The picklable object to serialize and save into the package.
+- dependencies: When true, scans the source for required dependencies before saving.
+7 api_usage_example: null
+8 api_shape: null

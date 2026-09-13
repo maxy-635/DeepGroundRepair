@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TensorStridedSliceUpdate
+3 api_description: Updates a tensor slice in place by assigning `value` to the region
+  of `input` selected by the slice parameters; `value` must exactly match the slice
+  shape.
+4 api_signature: tf.raw_ops.TensorStridedSliceUpdate(input,begin,end,value)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be updated.
+- begin: The starting indices for the strided slice update.
+- end: The ending indices for the strided slice update.
+- value: The tensor containing values to write into the specified slice.
+7 api_usage_example: null
+8 api_shape: ''

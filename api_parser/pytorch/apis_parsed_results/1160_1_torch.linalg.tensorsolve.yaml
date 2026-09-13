@@ -1,0 +1,14 @@
+2 api_name: torch.linalg.tensorsolve
+3 api_description: Solves a tensor linear system by finding X such that torch.tensordot(A,
+  X) = B.
+4 api_signature: torch.linalg.tensorsolve(A,B,dims)
+5 api_details: ''
+6 api_parameters:
+- A: The coefficient tensor to solve, whose shape must be compatible with `B` so the
+    tensor equation can be formed.
+- B: The right-hand-side tensor that defines the target shape for the solution.
+- dims: Optional dimensions of `A` to move before solving; if omitted, no dimensions
+    are rearranged.
+7 api_usage_example:
+- A = movedim(A, dims, range(len(dims) - A.ndim + 1, 0))
+8 api_shape: null

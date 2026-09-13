@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseSlice
+3 api_description: Slices a `SparseTensor` by start and size, returning the sparse
+  subset that falls within the specified range.
+4 api_signature: tf.raw_ops.SparseSlice(indices,values,start,size)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the coordinates of the non-zero elements in the input sparse
+    tensor.
+- values: Contains the values corresponding to each sparse index.
+- start: Defines the starting coordinates of the slice to extract.
+- size: Defines the shape of the slice to extract from the sparse tensor.
+7 api_usage_example: null
+8 api_shape: ''

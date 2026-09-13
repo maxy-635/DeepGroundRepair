@@ -1,0 +1,38 @@
+2 api_name: paddle.sparse.nn.BatchNorm
+3 api_description: Normalizes a SparseCooTensor using batch statistics to stabilize
+  and speed up training.
+4 api_signature: paddle.sparse.nn.BatchNorm(num_features,momentum,epsilon,data_format,use_global_stats)
+5 api_details: ''
+6 api_parameters:
+- num_features: Sets the number of input channels the BatchNorm layer expects.
+- momentum: Controls how quickly running mean and variance are updated.
+- epsilon: Adds a small constant to variance for numerical stability.
+- data_format: Specifies whether the input uses NDHWC or NHWC layout.
+- use_global_stats: Chooses between global statistics and batch statistics during
+    normalization, with optional phase-dependent behavior.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(1, 1)'
+- '        w_tmp = self.create_parameter([1,1])'
+- '        self.add_parameter("w_tmp", w_tmp)'
+- '...'
+- '    def forward(self, input):'
+- '        return self._linear(input)'
+- '...'
+- mylayer = MyLayer()
+- 'for name, param in mylayer.named_parameters():'
+- '    print(name, param)'
+- 'w_tmp Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.01448846]])'
+- '_linear.weight Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0.18551230]])'
+- '_linear.bias Parameter containing:'
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[0.])'
+8 api_shape: {}

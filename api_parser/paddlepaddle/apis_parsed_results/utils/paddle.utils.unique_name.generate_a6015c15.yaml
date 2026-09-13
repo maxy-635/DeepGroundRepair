@@ -1,0 +1,13 @@
+2 api_name: paddle.utils.unique_name.generate
+3 api_description: Generates a unique name by appending an incrementing number to
+  the given prefix key.
+4 api_signature: paddle.utils.unique_name.generate(key)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- name1 = paddle.utils.unique_name.generate('fc')
+- name2 = paddle.utils.unique_name.generate('fc')
+- print(name1, name2)
+- fc_0 fc_1
+8 api_shape: {}

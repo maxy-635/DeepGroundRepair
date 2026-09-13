@@ -1,0 +1,13 @@
+2 api_name: tensorflow.graph_util.import_graph_def
+3 api_description: Imports a serialized GraphDef into the current default TensorFlow
+  graph, creating tf.Tensor and tf.Operation objects from its contents.
+4 api_signature: tf.graph_util.import_graph_def(graph_def,input_map,return_elements,name)
+5 api_details: ''
+6 api_parameters:
+- graph_def: Specifies the GraphDef to import into the default TensorFlow graph.
+- input_map: Replaces named inputs in the GraphDef with the provided Tensor values.
+- return_elements: Requests specific operations and/or tensors from the imported graph
+    to be returned.
+- name: Adds an optional prefix to imported names in the graph, defaulting to 'import'.
+7 api_usage_example: null
+8 api_shape: ''

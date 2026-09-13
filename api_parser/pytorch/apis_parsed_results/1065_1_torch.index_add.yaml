@@ -1,0 +1,10 @@
+2 api_name: torch.index_add
+3 api_description: Adds values from a source tensor into a destination tensor at positions
+  specified by an index tensor along a given dimension, optionally scaling the added
+  values by alpha.
+4 api_signature: torch.index_add(input:Tensor,dim:int,index:Tensor,source:Tensor)
+5 api_details: ''
+6 api_parameters:
+- param: one-sentence summary
+7 api_usage_example: null
+8 api_shape: null

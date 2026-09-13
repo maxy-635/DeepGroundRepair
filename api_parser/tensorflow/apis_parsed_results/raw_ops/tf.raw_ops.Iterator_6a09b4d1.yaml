@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Iterator
+3 api_description: Creates an iterator resource container used to hold and manage
+  dataset iteration state.
+4 api_signature: tf.raw_ops.Iterator(output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- output_types: Specifies the data type for each component that the iterator will
+    produce.
+- output_shapes: Specifies the shape for each component that the iterator will produce.
+7 api_usage_example: null
+8 api_shape: ''

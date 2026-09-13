@@ -1,0 +1,17 @@
+2 api_name: paddle.disable_static
+3 api_description: Disables Paddle static graph mode so subsequent operations run
+  in dynamic/eager mode.
+4 api_signature: paddle.disable_static(place)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- print(paddle.in_dynamic_mode())
+- 'True'
+- paddle.enable_static()
+- print(paddle.in_dynamic_mode())
+- 'False'
+- paddle.disable_static()
+- print(paddle.in_dynamic_mode())
+- 'True'
+8 api_shape: {}

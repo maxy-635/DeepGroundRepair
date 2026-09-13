@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.KMC2ChainInitialization
+3 api_description: Initializes one K-MC^2 Markov chain and returns the index of a
+  candidate data point to add to the seed set as a new cluster center, based on squared
+  distances to existing centers.
+4 api_signature: tf.raw_ops.KMC2ChainInitialization(distances,seed)
+5 api_details: ''
+6 api_parameters:
+- distances: Provides the squared distance for each candidate point to its nearest
+    previously sampled cluster center, used to guide chain initialization.
+- seed: Supplies the random seed for initializing the random number generator.
+7 api_usage_example: null
+8 api_shape: ''

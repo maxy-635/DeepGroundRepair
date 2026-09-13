@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RecordInput
+3 api_description: Emits a randomized stream of input records from one or more files,
+  with optional batching, parallelism, and repeat behavior for efficient data ingestion.
+4 api_signature: tf.raw_ops.RecordInput(file_pattern,batch_size,name)
+5 api_details: ''
+6 api_parameters:
+- file_pattern: Specifies the glob pattern used to locate the input data files.
+- batch_size: Sets how many records are read and returned in each batch, defaulting
+    to 32.
+- name: Assigns an optional name to the operation for graph readability and debugging.
+7 api_usage_example: null
+8 api_shape: ''

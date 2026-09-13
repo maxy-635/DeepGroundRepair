@@ -1,0 +1,38 @@
+2 api_name: paddle.distributed.shard_layer
+3 api_description: Converts a layer’s parameters into DistTensor parameters using
+  the specified sharding function, and can optionally transform the layer’s inputs
+  and outputs between regular paddle.Tensor values and distributed tensors.
+4 api_signature: paddle.distributed.shard_layer(layer,process_mesh,shard_fn,input_fn,output_fn)
+5 api_details: ''
+6 api_parameters:
+- layer: The layer instance to be converted into a sharded layer.
+- process_mesh: The process mesh that defines where the layer is placed and how it
+    is distributed.
+- shard_fn: A function that shards the layer’s parameters across the process mesh,
+    or replicates them by default.
+- input_fn: A function that defines how the layer’s inputs are sharded before the
+    forward pass, or leaves them unsharded by default.
+- output_fn: A function that defines how the layer’s outputs are sharded or converted
+    back to a normal tensor after the forward pass, or leaves them unchanged by default.
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- mesh = dist.ProcessMesh([0, 1], dim_names=["x"])
+- 'class MLP(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self.fc1 = paddle.nn.Linear(8, 8)'
+- '        self.fc2 = paddle.nn.Linear(8, 8)'
+- '...'
+- '    def forward(self, input):'
+- '        return self.fc2(self.fc1(input))'
+- 'def shard_fn(layer_name, layer, process_mesh):'
+- '    if layer_name == ''fc1'':'
+- '        layer.weight = dist.shard_tensor(layer.weight, process_mesh, [dist.Shard(0)])'
+- layer = MLP()
+- layer = dist.shard_layer(layer, mesh, shard_fn)
+- print(layer)
+- '# This case need to be executed in multi-card environment'
+- '# export CUDA_VISIBLE_DEVICES=0,1'
+- '# python -m paddle.distributed.launch {test_case}.py'
+8 api_shape: {}

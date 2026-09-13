@@ -1,0 +1,12 @@
+2 api_name: tensorflow.queue.FIFOQueue
+3 api_description: A first-in, first-out queue that stores elements and dequeues them
+  in the order they were enqueued.
+4 api_signature: tf.queue.FIFOQueue(capacity,dtypes,shapes)
+5 api_details: ''
+6 api_parameters:
+- capacity: Sets the maximum number of elements the queue can hold.
+- dtypes: Specifies the data types for each tensor in every queue element.
+- shapes: Optionally defines the fully specified shapes for each tensor in each queue
+    element.
+7 api_usage_example: null
+8 api_shape: ''

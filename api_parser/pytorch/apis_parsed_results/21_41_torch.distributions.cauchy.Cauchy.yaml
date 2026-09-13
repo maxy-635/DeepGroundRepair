@@ -1,0 +1,12 @@
+2 api_name: torch.distributions.cauchy.Cauchy
+3 api_description: Cauchy distribution with loc and scale parameters; provides sampling
+  and log probability evaluation for a continuous heavy-tailed distribution.
+4 api_signature: Cauchy(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the center of the distribution, corresponding to its mode and median.
+- scale: Sets the half-width at half maximum, controlling the distribution's spread.
+7 api_usage_example:
+- ' m = Cauchy(torch.tensor([0.0]), torch.tensor([1.0]))'
+- ' m.sample()  # sample from a Cauchy distribution with loc=0 and scale=1'
+8 api_shape: null

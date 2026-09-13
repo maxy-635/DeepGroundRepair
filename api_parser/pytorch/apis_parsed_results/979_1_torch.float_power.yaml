@@ -1,0 +1,18 @@
+2 api_name: torch.float_power
+3 api_description: Computes elementwise power in double precision, returning float64
+  for real inputs and complex128 when any input is complex.
+4 api_signature: torch.float_power(input,exponent)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the base value or values to be raised to a power.
+- exponent: Specifies the exponent value or values applied to the base.
+7 api_usage_example:
+- ' a = torch.randint(10, (4,))'
+- ' a'
+- ' torch.float_power(a, 2)'
+- ' a = torch.arange(1, 5)'
+- ' a'
+- ' exp = torch.tensor([2, -3, 4, -5])'
+- ' exp'
+- ' torch.float_power(a, exp)'
+8 api_shape: null

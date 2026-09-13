@@ -1,0 +1,7 @@
+2 api_name: tensorflow.debugging.is_numeric_tensor
+3 api_description: Returns True when a tensor’s dtype is numeric, otherwise False.
+4 api_signature: tf.debugging.is_numeric_tensor(tensor)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

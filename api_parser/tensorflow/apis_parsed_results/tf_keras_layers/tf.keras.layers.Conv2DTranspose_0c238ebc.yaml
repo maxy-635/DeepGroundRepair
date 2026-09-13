@@ -1,0 +1,27 @@
+2 api_name: tensorflow.keras.layers.Conv2DTranspose
+3 api_description: The tf.keras.layers.Conv2DTranspose layer performs 2D transposed
+  convolution, reversing the operation of a standard convolution to transform output
+  feature maps back to input-like shapes while preserving the connectivity pattern.
+4 api_signature: tf.keras.layers.Conv2DTranspose(filters, kernel_size, strides, padding,
+  activation)
+5 api_details: ''
+6 api_parameters:
+- filters: Specifies the number of output filters in the transposed convolution.
+- kernel_size: Determines the size of the convolution window.
+- strides: Sets the step size for moving the convolution window across the input.
+- padding: Defines the padding method, either 'valid' (no padding) or 'same' (padding
+    to maintain output size).
+- activation: Specifies the activation function to apply, or None for no activation.
+7 api_usage_example:
+- x = np.random.rand(4, 10, 8, 128)
+- y = keras.layers.Conv2DTranspose(32, 2, 2, activation='relu')(x)
+- print(y.shape)
+8 api_shape:
+  input tensor shape: (N, Height_in, Width_in, Channel_in)
+  output tensor shape: (N, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filter
+    tensor height: If padding = "valid", Height_out = (Height_in - 1) * strides_height + filter_height; 
+                  If padding = "same", Height_out = Height_in * strides_height
+    tensor width: If padding = "valid", Width_out = (Width_in - 1) * strides_width + filter_width; 
+                  If padding = "same", Width_out = Width_in * strides_width

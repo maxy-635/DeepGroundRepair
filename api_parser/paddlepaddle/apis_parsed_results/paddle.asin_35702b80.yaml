@@ -1,0 +1,15 @@
+2 api_name: paddle.asin
+3 api_description: Computes the element-wise inverse sine (arcsin) of a tensor, returning
+  values in radians.
+4 api_signature: paddle.asin(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the elementwise arcsine.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.asin(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.41151685, -0.20135793,  0.10016742,  0.30469266])'
+8 api_shape: {}

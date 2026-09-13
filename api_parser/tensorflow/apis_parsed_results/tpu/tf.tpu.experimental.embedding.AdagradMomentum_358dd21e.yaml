@@ -1,0 +1,19 @@
+2 api_name: tensorflow.tpu.experimental.embedding.AdagradMomentum
+3 api_description: Configures TPU embedding optimization with Adagrad plus momentum,
+  providing global optimizer parameters for tf.tpu.experimental.embedding.TPUEmbedding.
+4 api_signature: tf.tpu.experimental.embedding.AdagradMomentum(learning_rate,momentum,use_nesterov,exponent,beta2,epsilon,use_gradient_accumulation)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Controls the step size used to update the embeddings on each optimization
+    step.
+- momentum: Sets how much past updates are blended into the momentum accumulator.
+- use_nesterov: Chooses whether to apply Nesterov-style momentum updates instead of
+    standard momentum.
+- exponent: Determines the power used when computing the Adagrad accumulator scaling.
+- beta2: Controls the decay rate for the Adagrad accumulator moving average.
+- epsilon: Provides the initial accumulator value for Adagrad to improve numerical
+    stability.
+- use_gradient_accumulation: Enables or disables gradient accumulation to trade accuracy
+    for faster embedding gradient computation.
+7 api_usage_example: null
+8 api_shape: ''

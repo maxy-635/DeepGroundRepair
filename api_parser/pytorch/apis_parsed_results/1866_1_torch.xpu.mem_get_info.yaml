@@ -1,0 +1,9 @@
+2 api_name: torch.xpu.mem_get_info
+3 api_description: Returns the free and total GPU memory available on the specified
+  XPU device.
+4 api_signature: torch.xpu.mem_get_info(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which XPU device to query; defaults to the current device when `None`.
+7 api_usage_example: null
+8 api_shape: null

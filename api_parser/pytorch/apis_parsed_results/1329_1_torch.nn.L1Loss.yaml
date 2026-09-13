@@ -1,0 +1,19 @@
+2 api_name: torch.nn.L1Loss
+3 api_description: Measures the mean absolute error (MAE) between the input and target
+  tensors.
+4 api_signature: torch.nn.L1Loss(reduction)
+5 api_details: ''
+6 api_parameters:
+- reduction: Specifies how to aggregate the loss output, with options for no reduction,
+    mean reduction, or sum reduction.
+7 api_usage_example:
+- ' loss = nn.L1Loss()'
+- ' input = torch.randn(3, 5, requires_grad=True)'
+- ' target = torch.randn(3, 5)'
+- ' output = loss(input, target)'
+- ' output.backward()'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: scalar. If reduction is 'none', then (*), same shape as the
+    input.
+  tensor shape transform formulas: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ReaderSerializeStateV2
+3 api_description: Returns a string tensor encoding a Reader’s state; may raise Unimplemented
+  if the reader cannot be serialized.
+4 api_signature: tf.raw_ops.ReaderSerializeStateV2(reader_handle)
+5 api_details: ''
+6 api_parameters:
+- reader_handle: Resource handle identifying the Reader instance whose state will
+    be serialized.
+7 api_usage_example: null
+8 api_shape: ''

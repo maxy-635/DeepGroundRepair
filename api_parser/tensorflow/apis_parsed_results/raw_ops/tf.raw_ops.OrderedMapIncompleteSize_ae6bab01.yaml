@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.OrderedMapIncompleteSize
+3 api_description: Returns the count of incomplete elements currently stored in the
+  underlying ordered map container.
+4 api_signature: tf.raw_ops.OrderedMapIncompleteSize(container,shared_name)
+5 api_details: ''
+6 api_parameters:
+- container: Specifies the container name for the underlying resource, or uses the
+    default empty container when omitted.
+- shared_name: Sets the shared resource name used to identify and reuse the same map
+    across calls, or defaults to empty.
+- name: Assigns an optional operation name for graph readability and debugging.
+7 api_usage_example: null
+8 api_shape: ''

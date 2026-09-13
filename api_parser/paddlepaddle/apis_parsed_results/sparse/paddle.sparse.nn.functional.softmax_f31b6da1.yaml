@@ -1,0 +1,49 @@
+2 api_name: paddle.sparse.nn.functional.softmax
+3 api_description: Applies softmax to a sparse COO or CSR tensor, producing normalized
+  values over the non-zero elements.
+4 api_signature: paddle.sparse.nn.functional.softmax(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse input tensor to apply softmax to, supporting `SparseCooTensor` or
+    `SparseCsrTensor` with `float32` or `float64` data.
+- axis: The dimension over which to compute softmax, with `-1` being the only supported
+    value for `SparseCsrTensor`.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- mask = paddle.rand((3, 4)) < 0.5
+- x = paddle.rand((3, 4)) * mask.astype('float32')
+- print(x)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.        , 0.95717543, 0.43864486, 0.        ],'
+- '[0.84765935, 0.45680618, 0.39412445, 0.        ],'
+- '[0.59444654, 0.        , 0.78364515, 0.        ]])'
+- csr = x.to_sparse_csr()
+- print(csr)
+- Tensor(shape=[3, 4], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- crows=[0, 2, 5, 7],
+- cols=[1, 2, 0, 1, 2, 0, 2],
+- values=[0.95717543, 0.43864486, 0.84765935, 0.45680618, 0.39412445,
+- 0.59444654, 0.78364515])
+- out = paddle.sparse.nn.functional.softmax(csr)
+- print(out)
+- Tensor(shape=[3, 4], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- crows=[0, 2, 5, 7],
+- cols=[1, 2, 0, 1, 2, 0, 2],
+- values=[0.62680405, 0.37319586, 0.43255258, 0.29261294, 0.27483448,
+- 0.45284089, 0.54715902])
+- coo = x.to_sparse_coo(sparse_dim=2)
+- print(coo)
+- Tensor(shape=[3, 4], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 0, 1, 1, 1, 2, 2],
+- '[1, 2, 0, 1, 2, 0, 2]],'
+- values=[0.95717543, 0.43864486, 0.84765935, 0.45680618, 0.39412445,
+- 0.59444654, 0.78364515])
+- out = paddle.sparse.nn.functional.softmax(coo)
+- print(out)
+- Tensor(shape=[3, 4], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 0, 1, 1, 1, 2, 2],
+- '[1, 2, 0, 1, 2, 0, 2]],'
+- values=[0.62680405, 0.37319589, 0.43255258, 0.29261294, 0.27483445,
+- 0.45284092, 0.54715902])
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.ones_like
+3 api_description: Returns a tensor of ones with the same shape and dtype as the input
+  tensor.
+4 api_signature: tf.keras.backend.ones_like(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

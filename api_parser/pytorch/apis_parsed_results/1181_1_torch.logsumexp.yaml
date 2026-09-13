@@ -1,0 +1,14 @@
+2 api_name: torch.logsumexp
+3 api_description: Computes the numerically stabilized log of the sum of exponentials
+  along a specified dimension.
+4 api_signature: torch.logsumexp(input,dim,keepdim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the values to be reduced.
+- dim: The dimension or dimensions over which to compute the log-sum-exp reduction.
+- keepdim: Whether to keep the reduced dimensions in the output tensor.
+7 api_usage_example:
+- ' a = torch.randn(3, 3)'
+- ' torch.logsumexp(a, 1)'
+- ' torch.dist(torch.logsumexp(a, 1), torch.log(torch.sum(torch.exp(a), 1)))'
+8 api_shape: null

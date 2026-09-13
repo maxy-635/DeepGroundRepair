@@ -1,0 +1,10 @@
+2 api_name: tensorflow.config.experimental_run_functions_eagerly
+3 api_description: Enables or disables eager execution for tf.function calls, causing
+  them to run immediately instead of as traced graph functions.
+4 api_signature: tf.config.experimental_run_functions_eagerly(run_eagerly)
+5 api_details: ''
+6 api_parameters:
+- run_eagerly: Controls whether TensorFlow functions execute eagerly instead of being
+    traced and run as graphs.
+7 api_usage_example: null
+8 api_shape: ''

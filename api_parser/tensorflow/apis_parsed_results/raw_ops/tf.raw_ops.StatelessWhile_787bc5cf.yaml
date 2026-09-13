@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.StatelessWhile
+3 api_description: Runs a stateless while loop that repeatedly applies the body to
+  the current output while the condition remains true.
+4 api_signature: tf.raw_ops.StatelessWhile(input,cond,body,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input: The initial loop tensors whose values and types are carried through the while
+    loop.
+- cond: The predicate function that decides whether the loop should continue running.
+- body: The loop body function that transforms the current tensors into the next iteration's
+    tensors.
+- output_shapes: Optional expected shapes for the loop outputs.
+7 api_usage_example: null
+8 api_shape: ''

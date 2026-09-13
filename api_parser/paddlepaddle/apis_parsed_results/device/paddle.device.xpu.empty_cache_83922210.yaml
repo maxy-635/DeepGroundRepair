@@ -1,0 +1,14 @@
+2 api_name: paddle.device.xpu.empty_cache
+3 api_description: Releases idle cached XPU memory from Paddle’s allocator pool so
+  it can be reused by other XPU applications and show up as available in xpu-smi.
+4 api_signature: paddle.device.xpu.empty_cache()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('xpu')
+- tensor = paddle.randn([512, 512, 512], "float64")
+- del tensor
+- paddle.device.xpu.empty_cache()
+8 api_shape: {}

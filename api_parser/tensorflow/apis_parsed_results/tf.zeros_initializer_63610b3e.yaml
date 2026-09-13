@@ -1,0 +1,17 @@
+2 api_name: tensorflow.zeros_initializer
+3 api_description: Returns an initializer that creates tensors filled with zeros,
+  typically used to initialize model weights or variables.
+4 api_signature: from_config(config)
+5 api_details: ''
+6 api_parameters:
+- config: A configuration dictionary, typically produced by `get_config()`, used to
+    recreate or configure the initializer.
+7 api_usage_example:
+- 'def make_variables(k, initializer):'
+- '  return (tf.Variable(initializer(shape=[k], dtype=tf.float32)),'
+- '          tf.Variable(initializer(shape=[k, k], dtype=tf.float32)))'
+- v1, v2 = make_variables(3, tf.zeros_initializer())
+- v1
+- v2
+- make_variables(4, tf.random_uniform_initializer(minval=-1., maxval=1.))
+8 api_shape: ''

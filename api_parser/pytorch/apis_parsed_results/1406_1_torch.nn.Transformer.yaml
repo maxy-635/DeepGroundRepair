@@ -1,0 +1,24 @@
+2 api_name: torch.nn.Transformer
+3 api_description: Implements a basic Transformer network for sequence-to-sequence
+  modeling using stacked self-attention and feedforward layers, with configurable
+  encoder, decoder, masking, and normalization behavior.
+4 api_signature: torch.nn.Transformer(d_model,nhead,num_encoder_layers,num_decoder_layers,dim_feedforward,dropout,activation,batch_first)
+5 api_details: ''
+6 api_parameters:
+- d_model: Sets the embedding size of the input and output features used throughout
+    the transformer.
+- nhead: Specifies how many attention heads each multi-head attention layer uses.
+- num_encoder_layers: Controls how many stacked layers the encoder contains.
+- num_decoder_layers: Controls how many stacked layers the decoder contains.
+- dim_feedforward: Defines the hidden size of the feedforward network inside each
+    transformer layer.
+- dropout: Sets the dropout probability applied for regularization within the transformer.
+- activation: Chooses the nonlinearity used in the intermediate feedforward sublayers.
+- batch_first: Determines whether inputs and outputs use batch-first tensor layout
+    `(batch, seq, feature)`.
+7 api_usage_example:
+- ' transformer_model = nn.Transformer(nhead=16, num_encoder_layers=12)'
+- ' src = torch.rand((10, 32, 512))'
+- ' tgt = torch.rand((20, 32, 512))'
+- ' out = transformer_model(src, tgt)'
+8 api_shape: null

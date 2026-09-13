@@ -1,0 +1,25 @@
+2 api_name: paddle.batch
+3 api_description: Creates a batched reader that groups records from an input reader
+  into batches.
+4 api_signature: paddle.batch(reader,batch_size,drop_last)
+5 api_details: ''
+6 api_parameters:
+- reader: Specifies the data reader to pull records from.
+- batch_size: Sets how many samples are included in each mini-batch.
+- drop_last: Controls whether to discard the final incomplete batch when it is smaller
+    than `batch_size`.
+7 api_usage_example:
+- import paddle
+- 'def reader():'
+- '    for i in range(10):'
+- '        yield i'
+- batch_reader = paddle.batch(reader, batch_size=2)
+- 'for data in batch_reader():'
+- '    print(data)'
+- '...'
+- '[0, 1]'
+- '[2, 3]'
+- '[4, 5]'
+- '[6, 7]'
+- '[8, 9]'
+8 api_shape: {}

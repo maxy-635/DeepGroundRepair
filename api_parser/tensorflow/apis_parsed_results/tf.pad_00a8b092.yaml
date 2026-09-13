@@ -1,0 +1,12 @@
+2 api_name: tensorflow.pad
+3 api_description: Pads a tensor by adding specified values before and after each
+  dimension, with optional REFLECT or SYMMETRIC modes enforcing padding limits.
+4 api_signature: tf.pad(tensor,paddings,mode)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor to be padded.
+- paddings: An int32 tensor that specifies how much padding to add before and after
+    each dimension.
+- mode: 'The padding mode to use: constant, reflect, or symmetric.'
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_scalar
+3 api_description: Logs a single scalar value to TensorBoard for tracking and visualization
+  over time.
+4 api_signature: add_scalar(tag,scalar_value,global_step)
+5 api_details: ''
+6 api_parameters:
+- tag: Names the scalar series being logged in TensorBoard.
+- scalar_value: Provides the numeric value to record for that scalar.
+- global_step: Sets the step index associated with the logged value.
+7 api_usage_example:
+- from torch.utils.tensorboard import SummaryWriter
+- writer = SummaryWriter()
+- x = range(100)
+- 'for i in x:'
+- '    writer.add_scalar(''y=2x'', i * 2, i)'
+- writer.close()
+8 api_shape: null

@@ -1,0 +1,21 @@
+2 api_name: torch.sparse_bsc_tensor
+3 api_description: Creates a sparse tensor in Block Compressed Sparse Column (BSC)
+  format from 2D block values and their compressed column and row indices for efficient
+  sparse matrix operations.
+4 api_signature: torch.sparse_bsc_tensor(ccol_indices,row_indices,values,size)
+5 api_details: ''
+6 api_parameters:
+- ccol_indices: Stores the compressed sparse column block pointers, marking where
+    each column block starts and how many non-zero blocks it contains.
+- row_indices: Stores the row block index for each non-zero block in the sparse tensor.
+- values: Stores the actual block values that make up the sparse tensor.
+- size: Specifies the full shape of the sparse tensor, or is inferred automatically
+    if omitted.
+7 api_usage_example:
+- ' ccol_indices = [0, 1, 2]'
+- ' row_indices = [0, 1]'
+- ' values = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]'
+- ' torch.sparse_bsc_tensor(torch.tensor(ccol_indices, dtype=torch.int64),'
+- '...                         torch.tensor(row_indices, dtype=torch.int64),'
+- '...                         torch.tensor(values), dtype=torch.double)'
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.StringToHashBucket
+3 api_description: Hashes each input string deterministically within a process and
+  maps the result into one of a fixed number of buckets.
+4 api_signature: tf.raw_ops.StringToHashBucket(string_tensor,num_buckets)
+5 api_details: ''
+6 api_parameters:
+- string_tensor: Input string tensor whose elements are hashed into bucket IDs.
+- num_buckets: Number of hash buckets to map each string element into, must be at
+    least 1.
+7 api_usage_example: null
+8 api_shape: ''

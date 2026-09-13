@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.initializers.HeNormal
+3 api_description: Initializes weights with values sampled from a truncated normal
+  distribution centered at 0, using a standard deviation of sqrt(2 / fan_in) to suit
+  ReLU-style networks.
+4 api_signature: tf.keras.initializers.HeNormal(seed)
+5 api_details: ''
+6 api_parameters:
+- seed: Controls the initializer’s random seed so the generated weights are deterministic
+    when desired.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = HeNormal()
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

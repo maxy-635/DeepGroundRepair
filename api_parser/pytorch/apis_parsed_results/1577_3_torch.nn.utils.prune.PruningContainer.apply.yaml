@@ -1,0 +1,15 @@
+2 api_name: torch.nn.utils.prune.PruningContainer.apply
+3 api_description: Applies a pruning method to a parameter, reparameterizing the tensor
+  so the original weight is preserved and a pruned version is used during forward
+  passes.
+4 api_signature: '"apply(module,name,*args,importance_scores,**kwargs)"'
+5 api_details: ''
+6 api_parameters:
+- module: The module that owns the parameter to be pruned.
+- name: The name of the parameter within the module that pruning will target.
+- args: Positional arguments forwarded to the pruning method subclass.
+- importance_scores: A tensor of importance values used to compute the pruning mask,
+    or the parameter itself if not provided.
+- kwargs: Keyword arguments forwarded to the pruning method subclass.
+7 api_usage_example: null
+8 api_shape: null

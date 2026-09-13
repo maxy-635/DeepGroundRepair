@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.PropagateUnbackedSymInts.boxed_run
+3 api_description: Interprets a module using boxed arguments, clearing the input list
+  during execution so tensors are promptly deallocated, and returns the computed result.
+4 api_signature: boxed_run(args_list)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

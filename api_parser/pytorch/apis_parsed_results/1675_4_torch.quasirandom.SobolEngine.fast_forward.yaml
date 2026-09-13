@@ -1,0 +1,9 @@
+2 api_name: torch.quasirandom.SobolEngine.fast_forward
+3 api_description: Advances the SobolEngine state by n steps without returning samples,
+  effectively skipping n generated points.
+4 api_signature: fast_forward(n)
+5 api_details: ''
+6 api_parameters:
+- n: Specifies how many Sobol sequence points to skip ahead.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: torch.equal
+3 api_description: Checks whether two tensors have the same shape and identical values,
+  returning True if they do and False otherwise.
+4 api_signature: torch.equal(input,other)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' torch.equal(torch.tensor([1, 2]), torch.tensor([1, 2]))'
+- ' torch.equal(torch.tensor([3, torch.nan]), torch.tensor([3, torch.nan]))'
+- ' torch.equal(torch.tensor([1, 2, 3], dtype=torch.int32), torch.tensor([1, 2, 3],
+  dtype=torch.float32))'
+8 api_shape: null

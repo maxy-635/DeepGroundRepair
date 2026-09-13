@@ -1,0 +1,18 @@
+2 api_name: torch.kron
+3 api_description: Computes the Kronecker product of two tensors, producing a larger
+  tensor formed by multiplying each element of the first input by the entire second
+  input.
+4 api_signature: torch.kron(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor whose elements are used in the Kronecker product.
+- other: The second tensor whose elements are combined with the first tensor to form
+    the Kronecker product.
+7 api_usage_example:
+- ' mat1 = torch.eye(2)'
+- ' mat2 = torch.ones(2, 2)'
+- ' torch.kron(mat1, mat2)'
+- ' mat1 = torch.eye(2)'
+- ' mat2 = torch.arange(1, 5).reshape(2, 2)'
+- ' torch.kron(mat1, mat2)'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.optim.Adafactor.step
+3 api_description: Performs one Adafactor optimization step, updating parameters in
+  place using the current gradients and optimizer state.
+4 api_signature: step(closure)
+5 api_details: ''
+6 api_parameters:
+- closure: Optional function that recomputes the model and returns the loss for use
+    during the optimization step.
+7 api_usage_example: null
+8 api_shape: null

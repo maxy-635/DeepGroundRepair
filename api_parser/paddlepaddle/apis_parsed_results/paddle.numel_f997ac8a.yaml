@@ -1,0 +1,14 @@
+2 api_name: paddle.numel
+3 api_description: Returns a 0-D int64 tensor containing the number of elements in
+  the input tensor.
+4 api_signature: paddle.numel(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input Tensor whose total number of elements is counted.
+7 api_usage_example:
+- import paddle
+- x = paddle.full(shape=[4, 5, 7], fill_value=0, dtype='int32')
+- numel = paddle.numel(x)
+- print(numel.numpy())
+- '140'
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.train.load_variable
+3 api_description: Loads and returns the tensor value for a specified variable from
+  a checkpoint, and can be paired with `tf.train.list_variables` to find available
+  variable names.
+4 api_signature: tf.train.load_variable(ckpt_dir_or_file,name)
+5 api_details: ''
+6 api_parameters:
+- ckpt_dir_or_file: Specifies the checkpoint directory or file path to read the variable
+    from.
+- name: Identifies the variable name to load and return from the checkpoint.
+7 api_usage_example: null
+8 api_shape: ''

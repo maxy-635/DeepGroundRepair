@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.AssertPrevDataset
+3 api_description: Verifies that specified prior dataset transformations match expected
+  names and optional attributes, raising an error during iteration if they do not.
+4 api_signature: tf.raw_ops.AssertPrevDataset(input_dataset,transformations,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Provides the input dataset variant whose elements are passed through
+    unchanged.
+- transformations: Specifies the expected sequence of prior dataset transformations,
+    optionally with attribute name-value pairs.
+- output_types: Defines the data types of the dataset elements that the operation
+    outputs.
+- output_shapes: Defines the shapes of the dataset elements that the operation outputs.
+7 api_usage_example: null
+8 api_shape: ''

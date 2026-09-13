@@ -1,0 +1,27 @@
+2 api_name: paddle.index_fill
+3 api_description: Fills selected elements of a tensor along a specified axis at given
+  indices with a chosen value.
+4 api_signature: paddle.index_fill(x,index,axis,value)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to be updated in place at the specified indices.
+- index: A 1-D tensor of int32 or int64 indices indicating which entries to fill.
+- axis: The dimension of `x` along which the indexed positions are selected.
+- value: The tensor whose value is used to fill the selected positions.
+7 api_usage_example:
+- import paddle
+- input_tensor = paddle.to_tensor([[1, 2, 3], [4, 5, 6], [7, 8, 9]], dtype='int64')
+- index = paddle.to_tensor([0, 2], dtype="int32")
+- value = -1
+- res = paddle.index_fill(input_tensor, index, 0, value)
+- print(input_tensor)
+- Tensor(shape=[3, 3], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[[1, 2, 3],'
+- '[4, 5, 6],'
+- '[7, 8, 9]])'
+- print(res)
+- Tensor(shape=[3, 3], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[[-1, -1, -1],'
+- '[ 4,  5,  6],'
+- '[-1, -1, -1]])'
+8 api_shape: {}

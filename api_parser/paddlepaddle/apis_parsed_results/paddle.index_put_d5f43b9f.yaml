@@ -1,0 +1,29 @@
+2 api_name: paddle.index_put
+3 api_description: Updates tensor x at the specified tuple of indices with values,
+  optionally adding to existing elements when accumulate=True.
+4 api_signature: paddle.index_put(x,indices,value)
+5 api_details: ''
+6 api_parameters:
+- x: The source tensor whose selected elements will be updated.
+- indices: A tuple of index tensors that specifies which elements of `x` to select.
+- value: The tensor containing the values to assign into the selected positions of
+    `x`.
+7 api_usage_example:
+- import paddle
+- x = paddle.zeros([3, 3])
+- value = paddle.ones([3])
+- ix1 = paddle.to_tensor([0,1,2])
+- ix2 = paddle.to_tensor([1,2,1])
+- indices=(ix1,ix2)
+- out = paddle.index_put(x,indices,value)
+- print(x)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 0., 0.],'
+- '[0., 0., 0.],'
+- '[0., 0., 0.]])'
+- print(out)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 1., 0.],'
+- '[0., 0., 1.],'
+- '[0., 1., 0.]])'
+8 api_shape: {}

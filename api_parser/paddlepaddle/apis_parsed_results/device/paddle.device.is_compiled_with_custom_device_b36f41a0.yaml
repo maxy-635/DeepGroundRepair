@@ -1,0 +1,9 @@
+2 api_name: paddle.device.is_compiled_with_custom_device
+3 api_description: Checks whether Paddle was compiled with custom device support.
+4 api_signature: paddle.device.is_compiled_with_custom_device(device_type)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- support_npu = paddle.device.is_compiled_with_custom_device("npu")
+8 api_shape: {}

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.backend
+3 api_description: 'Returns the name of the active Keras backend: tensorflow, torch,
+  or jax.'
+4 api_signature: tf.keras.backend.backend()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- keras.config.backend()
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.ops.einsum
+3 api_description: Computes Einstein summation over one or more operands using a specified
+  equation, enabling flexible tensor contraction, reduction, transposition, and diagonal
+  extraction.
+4 api_signature: tf.keras.ops.einsum(subscripts,*operands)
+5 api_details: ''
+6 api_parameters:
+- subscripts: Defines the Einstein summation notation, using comma-separated labels
+    and an optional `->` output specification to determine how operands are combined
+    and reduced.
+- operands: Provides the input tensors or arrays that are multiplied, matched, and
+    summed according to the subscripts.
+7 api_usage_example:
+- ops.einsum("ij, j", a, b)
+- ops.einsum(a, [0, 1], b, [1])
+- ops.einsum("...j, j", a, b)
+8 api_shape: ''

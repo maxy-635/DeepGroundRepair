@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.is_available
+3 api_description: Returns whether Paddle’s distributed package is available.
+4 api_signature: paddle.distributed.is_available()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- print(paddle.distributed.is_available())
+8 api_shape: {}

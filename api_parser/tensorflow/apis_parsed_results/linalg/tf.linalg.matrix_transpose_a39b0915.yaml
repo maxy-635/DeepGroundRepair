@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.matrix_transpose
+3 api_description: Transposes the last two dimensions of a tensor.
+4 api_signature: tf.linalg.matrix_transpose(a,conjugate)
+5 api_details: ''
+6 api_parameters:
+- a: The input tensor whose last two dimensions will be transposed; it must have rank
+    at least 2.
+- conjugate: If True, conjugates complex values in addition to transposing the last
+    two dimensions.
+7 api_usage_example: null
+8 api_shape: ''

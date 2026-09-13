@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.mean
+3 api_description: Computes the arithmetic mean of a tensor along one or more specified
+  axes.
+4 api_signature: tf.keras.ops.mean(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are averaged.
+- axis: The axis or axes over which to compute the mean, or all elements if omitted.
+7 api_usage_example: null
+8 api_shape: ''

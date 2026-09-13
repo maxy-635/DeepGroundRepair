@@ -1,0 +1,17 @@
+2 api_name: torch.nn.CosineSimilarity
+3 api_description: Computes the cosine similarity between two tensors along a specified
+  dimension.
+4 api_signature: torch.nn.CosineSimilarity(dim,eps)
+5 api_details: ''
+6 api_parameters:
+- dim: Specifies the dimension along which the cosine similarity is calculated.
+- eps: A small constant added to the denominator to prevent division by zero.
+7 api_usage_example:
+- ' input1 = torch.randn(100, 128)'
+- ' input2 = torch.randn(100, 128)'
+- ' cos = nn.CosineSimilarity(dim=1, eps=1e-6)'
+- ' output = cos(input1, input2)'
+8 api_shape:
+  input tensor shape: null
+  output tensor shape: (\ast_1, \ast_2)
+  tensor shape transform formulas: {}

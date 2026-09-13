@@ -1,0 +1,13 @@
+2 api_name: tensorflow.linalg.diag_part
+3 api_description: Extracts one or more specified diagonals from each matrix in a
+  batched tensor and returns them as a tensor, with shape determined by the batch
+  dimensions and the diagonal lengths.
+4 api_signature: tf.linalg.diag_part(input,k,align)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose diagonal or banded diagonals will be extracted.
+- k: Selects which diagonal(s) to extract by offset, either a single diagonal or a
+    band range.
+- align: Controls how shorter diagonals are padded and aligned within the output.
+7 api_usage_example: null
+8 api_shape: ''

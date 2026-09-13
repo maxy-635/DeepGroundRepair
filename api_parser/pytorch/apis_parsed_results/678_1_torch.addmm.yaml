@@ -1,0 +1,14 @@
+2 api_name: torch.addmm
+3 api_description: Computes mat1 @ mat2 and adds the input matrix to the result.
+4 api_signature: torch.addmm(input,mat1,mat2,*,beta,alpha)
+5 api_details: ''
+6 api_parameters:
+- input: The matrix that receives the added result.
+- mat1: The first matrix used in the multiplication.
+- mat2: The second matrix used in the multiplication.
+7 api_usage_example:
+- ' M = torch.randn(2, 3)'
+- ' mat1 = torch.randn(2, 3)'
+- ' mat2 = torch.randn(3, 3)'
+- ' torch.addmm(M, mat1, mat2)'
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.image.ssim_multiscale
+3 api_description: Computes the multi-scale structural similarity index (MS-SSIM)
+  between two image batches, comparing their last three dimensions as height, width,
+  and channels.
+4 api_signature: tf.image.ssim_multiscale(img1,img2,max_val)
+5 api_details: ''
+6 api_parameters:
+- img1: Specifies the first image batch to compare, with positive pixel values.
+- img2: Specifies the second image batch to compare against `img1`, with the same
+    rank and positive pixel values.
+- max_val: Sets the images’ dynamic range, defining the difference between their minimum
+    and maximum allowed values.
+7 api_usage_example: null
+8 api_shape: ''

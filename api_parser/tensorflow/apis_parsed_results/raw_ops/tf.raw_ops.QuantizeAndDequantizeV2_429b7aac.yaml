@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.QuantizeAndDequantizeV2
+3 api_description: Simulates quantization-aware precision loss by quantizing a tensor
+  and then dequantizing it back to the original dtype.
+4 api_signature: tf.raw_ops.QuantizeAndDequantizeV2(input,input_min,input_max,num_bits,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be quantized and then dequantized.
+- input_min: The lower bound of the value range to represent during quantization.
+- input_max: The upper bound of the value range to represent during quantization.
+- num_bits: The number of bits used to quantize the values.
+- axis: The axis along which to apply separate per-channel or per-slice quantization
+    ranges.
+7 api_usage_example: null
+8 api_shape: ''

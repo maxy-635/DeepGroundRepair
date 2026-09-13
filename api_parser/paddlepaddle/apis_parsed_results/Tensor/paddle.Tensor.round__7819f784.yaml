@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.round_
+3 api_description: In-place rounds each element of the tensor, modifying the original
+  tensor and returning it.
+4 api_signature: paddle.Tensor.round_(x,decimals)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.BatchToSpace
+3 api_description: Moves data from the batch dimension into 2D spatial blocks (height
+  and width), then crops the result; this is the 4-D legacy inverse of SpaceToBatch.
+4 api_signature: tf.raw_ops.BatchToSpace(input,crops,block_size)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D input tensor whose batch dimension is rearranged into spatial dimensions,
+    and whose batch size must be divisible by `block_size * block_size`.
+- crops: A 2×2 tensor of non-negative integers that specifies how much to crop from
+    the intermediate result along the height and width dimensions.
+- block_size: The integer block factor, at least 2, used to split the batch dimension
+    into blocks that are moved into spatial dimensions.
+7 api_usage_example: null
+8 api_shape: ''

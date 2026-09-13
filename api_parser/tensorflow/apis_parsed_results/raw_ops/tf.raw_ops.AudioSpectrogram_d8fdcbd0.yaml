@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.AudioSpectrogram
+3 api_description: Computes an audio spectrogram by sliding a window over float audio
+  samples and applying an FFT to produce time-ordered frequency magnitude slices for
+  each channel.
+4 api_signature: tf.raw_ops.AudioSpectrogram(input,window_size,stride)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the float32 audio waveform data to transform into a spectrogram.
+- window_size: Sets the number of samples used in each analysis window.
+- stride: Sets the spacing in samples between the centers of consecutive windows.
+7 api_usage_example: null
+8 api_shape: ''

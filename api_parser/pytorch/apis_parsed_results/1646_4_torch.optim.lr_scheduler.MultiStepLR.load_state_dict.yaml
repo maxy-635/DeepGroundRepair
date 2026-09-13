@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.MultiStepLR.load_state_dict
+3 api_description: Loads a MultiStepLR scheduler’s saved state so its milestone tracking,
+  last epoch, and related scheduling behavior can resume consistently.
+4 api_signature: load_state_dict(state_dict)
+5 api_details: ''
+6 api_parameters:
+- state_dict: Provides the saved scheduler state produced by `state_dict()` so it
+    can be restored.
+7 api_usage_example: null
+8 api_shape: null

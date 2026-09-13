@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.VarHandleOp
+3 api_description: Creates a resource handle for a TensorFlow variable, which can
+  later be used to read, assign, and manage the variable’s stored value.
+4 api_signature: tf.raw_ops.VarHandleOp(dtype,shape,name)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the variable's data type and must match all operations that use
+    it.
+- shape: Defines the variable's shape, which can be fully or partially specified.
+- name: Optionally sets the operation's name.
+7 api_usage_example: null
+8 api_shape: ''

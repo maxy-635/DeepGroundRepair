@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.checkpoint.format_utils.dcp_to_torch_save
+3 api_description: Converts a directory of torch.distributed.checkpoint (DCP) checkpoint
+  files into a Torch save checkpoint file.
+4 api_signature: torch.distributed.checkpoint.format_utils.dcp_to_torch_save(dcp_checkpoint_dir)
+5 api_details: ''
+6 api_parameters:
+- dcp_checkpoint_dir: Specifies the directory that contains the DCP checkpoint to
+    be converted.
+7 api_usage_example: null
+8 api_shape: null

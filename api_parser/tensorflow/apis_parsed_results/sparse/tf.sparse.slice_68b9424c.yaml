@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.slice
+3 api_description: Slices a SparseTensor from a given start index and size, returning
+  the corresponding sparse slice.
+4 api_signature: tf.sparse.slice(sp_input,start,size)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The sparse tensor that will be sliced.
+- start: A 1-D tensor specifying the starting index of the slice.
+- size: A 1-D tensor specifying the size of the slice to extract.
+7 api_usage_example: null
+8 api_shape: ''

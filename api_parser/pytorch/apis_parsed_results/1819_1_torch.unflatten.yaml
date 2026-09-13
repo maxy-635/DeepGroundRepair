@@ -1,0 +1,15 @@
+2 api_name: torch.unflatten
+3 api_description: Splits one tensor dimension into multiple dimensions with specified
+  sizes, reshaping the tensor without changing its data.
+4 api_signature: torch.unflatten(input,dim,sizes)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be reshaped by splitting one of its dimensions.
+- dim: The index of the dimension in `input` to unflatten.
+- sizes: The target shape for the chosen dimension, with one optional `-1` value allowed
+    to infer its size.
+7 api_usage_example:
+- ' torch.unflatten(torch.randn(3, 4, 1), 1, (2, 2)).shape'
+- ' torch.unflatten(torch.randn(3, 4, 1), 1, (-1, 2)).shape'
+- ' torch.unflatten(torch.randn(5, 12, 3), -2, (2, 2, 3, 1, 1)).shape'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.half_cauchy.HalfCauchy
+3 api_description: HalfCauchy is a nonnegative probability distribution representing
+  the absolute value of a Cauchy random variable, typically used as a heavy-tailed
+  prior over positive scale parameters.
+4 api_signature: '"HalfCauchy(scale)"'
+5 api_details: ''
+6 api_parameters:
+- scale: Sets the scale of the underlying full Cauchy distribution, controlling its
+    spread.
+7 api_usage_example:
+- X ~ Cauchy(0, scale)
+- Y = |X| ~ HalfCauchy(scale)
+8 api_shape: null

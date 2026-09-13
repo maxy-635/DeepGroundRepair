@@ -1,0 +1,21 @@
+2 api_name: torch.jit.annotate
+3 api_description: Hints TorchScript’s compiler with the expected type of a value
+  so it can infer and check types correctly.
+4 api_signature: torch.jit.annotate(the_type,the_value)
+5 api_details: ''
+6 api_parameters:
+- the_type: Specifies the TorchScript type hint to use for `the_value`.
+- the_value: Provides the value or expression whose type is being annotated.
+7 api_usage_example:
+- import torch
+- from typing import Dict
+- '@torch.jit.script'
+- 'def fn():'
+- '    # Telling TorchScript that this empty dictionary is a (str -> int) dictionary'
+- '    # instead of default dictionary type of (str -> Tensor).'
+- '    d = torch.jit.annotate(Dict[str, int], {})'
+- '    # Without `torch.jit.annotate` above, following statement would fail because
+  of'
+- '    # type mismatch.'
+- '    d["name"] = 20'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.sparse.maximum
+3 api_description: Returns a SparseTensor containing the element-wise maximum of two
+  same-shaped SparseTensors, without broadcasting.
+4 api_signature: tf.sparse.maximum(sp_a,sp_b)
+5 api_details: ''
+6 api_parameters:
+- sp_a: The first real-valued SparseTensor operand, with lexicographically ordered
+    indices.
+- sp_b: The second real-valued SparseTensor operand, with the same shape and lexicographically
+    ordered indices.
+7 api_usage_example: null
+8 api_shape: ''

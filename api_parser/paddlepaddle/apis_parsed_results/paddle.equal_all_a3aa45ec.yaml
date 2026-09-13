@@ -1,0 +1,22 @@
+2 api_name: paddle.equal_all
+3 api_description: Checks whether two inputs contain exactly the same elements and
+  returns True if they are equal, otherwise False.
+4 api_signature: paddle.equal_all(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor whose values are compared for equality.
+- y: The second input tensor whose values are compared against the first tensor.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, 2, 3])
+- y = paddle.to_tensor([1, 2, 3])
+- z = paddle.to_tensor([1, 4, 3])
+- result1 = paddle.equal_all(x, y)
+- print(result1)
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- True)
+- result2 = paddle.equal_all(x, z)
+- print(result2)
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- False)
+8 api_shape: {}

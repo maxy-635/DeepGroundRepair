@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.studentT.StudentT
+3 api_description: StudentT represents a univariate Student’s t-distribution, supporting
+  sampling, log probability evaluation, entropy, mean/variance-related properties,
+  and parameterization by degrees of freedom, location, and scale.
+4 api_signature: torch.distributions.studentT.StudentT(df,loc,scale)
+5 api_details: ''
+6 api_parameters:
+- df: Controls the degrees of freedom, which determines the shape and tail heaviness
+    of the Student-t distribution.
+- loc: Sets the distribution’s central location, shifting its mean position.
+- scale: Sets the spread of the distribution, scaling how wide or narrow it is.
+7 api_usage_example:
+- ' m = StudentT(torch.tensor([2.0]))'
+- ' m.sample()  # Student''s t-distributed with degrees of freedom=2'
+8 api_shape: null

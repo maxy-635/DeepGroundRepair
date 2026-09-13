@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.WriteScalarSummary
+3 api_description: Writes a scalar value to a summary writer at a given step with
+  the specified tag.
+4 api_signature: tf.raw_ops.WriteScalarSummary(writer,step,tag,value)
+5 api_details: ''
+6 api_parameters:
+- writer: The summary writer resource used to record the scalar value.
+- step: The training or logging step associated with the summary event.
+- tag: The string label that names the scalar summary.
+- value: The scalar numeric value to write, provided in one of the supported numeric
+    types.
+7 api_usage_example: null
+8 api_shape: ''

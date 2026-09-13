@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.quant.weight_quantize
+3 api_description: The paddle.nn.quant.weight_quantize API provides quantization functionality
+  specifically for weight-only and llm.int8 weights, optimizing storage and computation
+  efficiency.
+4 api_signature: paddle.nn.quant.weight_quantize(x,algo)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input Tensor to be quantized, which should be of data type float16
+    or bfloat16.
+- algo: Determines the quantization algorithm to be applied, with options including
+    'weight_only_int8', 'weight_only_int4', 'llm.int8', 'w4a8', and 'w4afp8', defaulting
+    to 'weight_only_int8'.
+7 api_usage_example: []
+8 api_shape: null

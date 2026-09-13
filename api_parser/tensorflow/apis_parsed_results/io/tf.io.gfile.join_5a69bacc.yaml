@@ -1,0 +1,16 @@
+2 api_name: tensorflow.io.gfile.join
+3 api_description: Joins one or more path components into a single path using TensorFlow
+  filesystem rules, treating separators like URL-style '/' on all platforms.
+4 api_signature: tf.io.gfile.join(path,*paths)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the base directory path to start joining from.
+- paths: Provides one or more additional path segments to append to the base path.
+7 api_usage_example:
+- path = tf.io.gfile.join("folder", "file.py")
+- 'if os.name == "nt":'
+- '  expected = "folder\\file.py"  # Windows'
+- 'else:'
+- '  expected = "folder/file.py"  # Linux/Unix-like'
+- path == expected
+8 api_shape: ''

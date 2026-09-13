@@ -1,0 +1,8 @@
+2 api_name: torch.nn.LPPool2d.forward
+3 api_description: Applies 2D Lp pooling to an input tensor by sliding a window over
+  each channel and computing the p-norm within each window.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

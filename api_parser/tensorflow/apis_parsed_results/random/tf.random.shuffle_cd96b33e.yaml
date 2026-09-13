@@ -1,0 +1,10 @@
+2 api_name: tensorflow.random.shuffle
+3 api_description: Randomly shuffles a tensor along its first dimension, permuting
+  rows so each input element maps to exactly one output position.
+4 api_signature: tf.random.shuffle(value,seed)
+5 api_details: ''
+6 api_parameters:
+- value: The tensor whose elements are randomly shuffled.
+- seed: An optional Python integer used to set the random seed for shuffling behavior.
+7 api_usage_example: null
+8 api_shape: ''

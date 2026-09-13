@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.OptionalGetValue
+3 api_description: Retrieves the stored value from an Optional variant, or raises
+  an error if it is empty.
+4 api_signature: tf.raw_ops.OptionalGetValue(optional,output_types)
+5 api_details: ''
+6 api_parameters:
+- optional: The variant tensor that contains the optional value to read from.
+- output_types: The list of output data types to extract from the optional, with at
+    least one type specified.
+7 api_usage_example: null
+8 api_shape: ''

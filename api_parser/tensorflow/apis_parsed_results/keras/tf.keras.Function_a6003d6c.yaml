@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.Function
+3 api_description: Encapsulates a stateless Keras computation graph that maps input
+  tensors to output tensors and can be reused on new inputs.
+4 api_signature: tf.keras.Function(inputs,outputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: Defines the input KerasTensor(s) that the function will accept.
+- outputs: Defines the output KerasTensor(s) that are computed from the given inputs.
+7 api_usage_example: null
+8 api_shape: ''

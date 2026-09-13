@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseSegmentMeanGradV2
+3 api_description: Computes the gradient of SparseSegmentMean by aggregating gradients
+  for unique segment indices and returning the corresponding sorted unique indices.
+4 api_signature: tf.raw_ops.SparseSegmentMeanGradV2(grad,indices,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- grad: The upstream gradient tensor to propagate back through `SparseSegmentMean`.
+- indices: The indices tensor originally passed to the corresponding `SparseSegmentMean`
+    op.
+- segment_ids: The segment IDs tensor originally passed to the corresponding `SparseSegmentMean`
+    op.
+7 api_usage_example: null
+8 api_shape: ''

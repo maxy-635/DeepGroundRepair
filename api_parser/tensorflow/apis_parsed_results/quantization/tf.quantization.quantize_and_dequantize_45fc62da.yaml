@@ -1,0 +1,18 @@
+2 api_name: tensorflow.quantization.quantize_and_dequantize
+3 api_description: Converts a tensor to a lower-precision quantized representation
+  and then back to dequantized form, typically to simulate quantization effects during
+  training or inference.
+4 api_signature: tf.quantization.quantize_and_dequantize(input,input_min,input_max,num_bits,narrow_range,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be quantized and then dequantized.
+- input_min: The minimum value to represent in the quantized range, or per-slice minima
+    when `axis` is set.
+- input_max: The maximum value to represent in the quantized range, or per-slice maxima
+    when `axis` is set.
+- num_bits: The number of bits used to quantize the input.
+- narrow_range: Whether to use a narrow quantization range with one fewer negative
+    value than the full symmetric range.
+- axis: The dimension along which to apply per-slice quantization.
+7 api_usage_example: null
+8 api_shape: ''

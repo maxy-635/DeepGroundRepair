@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseSegmentMeanWithNumSegments
+3 api_description: Computes the mean of data values grouped by sparse segment ids,
+  allowing missing segment ids and returning zeros for any missing segments.
+4 api_signature: tf.raw_ops.SparseSegmentMeanWithNumSegments(data,indices,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The source values to be grouped and averaged by segment.
+- indices: A 1-D tensor that selects entries from `data` and aligns with `segment_ids`.
+- segment_ids: A sorted 1-D tensor that assigns each selected value to a segment,
+    allowing repeats.
+- num_segments: The total number of output segments to produce.
+7 api_usage_example: null
+8 api_shape: ''

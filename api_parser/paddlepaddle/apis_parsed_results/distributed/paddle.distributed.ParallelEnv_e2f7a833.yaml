@@ -1,0 +1,30 @@
+2 api_name: paddle.distributed.ParallelEnv
+3 api_description: Represents a distributed parallel training environment, storing
+  cluster and rank information such as endpoints, trainer count, current endpoint,
+  and current trainer id for Paddle distributed execution.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- 'def train():'
+- '    # 1. initialize parallel environment'
+- '    dist.init_parallel_env()'
+- '    # 2. get current ParallelEnv'
+- '    parallel_env = dist.ParallelEnv()'
+- '    print("rank: ", parallel_env.rank)'
+- '    print("world_size: ", parallel_env.world_size)'
+- 'if __name__ == ''__main__'':'
+- '    # 1. start by ``paddle.distributed.spawn`` (default)'
+- '    dist.spawn(train, nprocs=2)'
+- '    # 2. start by ``paddle.distributed.launch``'
+- '    train()'
+- '# Print result in process 1:'
+- 'rank: 1'
+- 'world_size: 2'
+- '# Print result in process 2:'
+- 'rank: 2'
+- 'world_size: 2'
+8 api_shape: {}

@@ -1,0 +1,17 @@
+2 api_name: paddle.sinc
+3 api_description: Computes the normalized sinc of each input element elementwise.
+4 api_signature: paddle.sinc(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the sinc function elementwise.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- paddle.seed(100)
+- x = paddle.rand([2,3], dtype='float32')
+- res = paddle.sinc(x)
+- print(res)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.56691176, 0.93089867, 0.99977750],'
+- '[0.61639023, 0.79618412, 0.89171958]])'
+8 api_shape: {}

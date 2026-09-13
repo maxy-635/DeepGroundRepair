@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.erf
+3 api_description: Computes the element-wise error function of x.
+4 api_signature: tf.keras.ops.erf(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements the error function is applied to.
+7 api_usage_example:
+- x = np.array([-3.0, -2.0, -1.0, 0.0, 1.0])
+- keras.ops.erf(x)
+8 api_shape: ''

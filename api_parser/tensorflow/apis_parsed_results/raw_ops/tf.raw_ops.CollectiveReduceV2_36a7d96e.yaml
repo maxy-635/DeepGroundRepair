@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.CollectiveReduceV2
+3 api_description: Mutually reduces multiple same-shaped, same-type tensors across
+  a collective group into a combined result, with stateless execution using runtime-unique
+  keys to distinguish groups.
+4 api_signature: tf.raw_ops.CollectiveReduceV2(input,group_size,group_key,instance_key,merge_op,final_op,communication_hint,timeout_seconds)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be reduced across the collective group.
+- group_size: The total number of participants expected in the collective group.
+- group_key: A shared identifier that marks which collective group the operation belongs
+    to.
+- instance_key: A unique identifier for this specific collective reduction instance.
+- merge_op: The reduction operation used to combine values during the merge phase.
+- final_op: The final transformation applied to the merged result before output.
+- communication_hint: An optional hint that suggests which communication method to
+    use.
+- timeout_seconds: An optional timeout, in seconds, for the collective operation to
+    complete.
+7 api_usage_example: null
+8 api_shape: ''

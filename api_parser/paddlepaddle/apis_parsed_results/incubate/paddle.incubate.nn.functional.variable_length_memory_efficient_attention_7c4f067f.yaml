@@ -1,0 +1,18 @@
+2 api_name: paddle.incubate.nn.functional.variable_length_memory_efficient_attention
+3 api_description: Computes variable-length memory-efficient attention using a CUTLASS-based
+  implementation optimized for SM70, SM75, and SM80 GPUs.
+4 api_signature: paddle.incubate.nn.functional.variable_length_memory_efficient_attention(query,key,value,seq_lens,kv_seq_lens,mask,scale,causal)
+5 api_details: ''
+6 api_parameters:
+- query: Provides the query representations used to compute attention scores.
+- key: Provides the key representations that query vectors attend over.
+- value: Provides the value representations that are combined using the attention
+    weights.
+- seq_lens: Specifies the valid query sequence length for each batch element.
+- kv_seq_lens: Specifies the valid key/value sequence length for each batch element.
+- mask: Supplies an optional attention mask to restrict which positions can attend
+    to which.
+- scale: Sets the scaling factor applied to attention scores before softmax.
+- causal: Controls whether attention is restricted to past and current positions only.
+7 api_usage_example: []
+8 api_shape: {}

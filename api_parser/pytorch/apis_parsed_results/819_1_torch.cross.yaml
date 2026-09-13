@@ -1,0 +1,16 @@
+2 api_name: torch.cross
+3 api_description: Computes the cross product of two tensors along a specified dimension.
+4 api_signature: torch.cross(input,other,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor used as one vector in the cross product.
+- other: The second tensor used as the other vector in the cross product.
+- dim: The dimension along which to compute the cross product.
+7 api_usage_example:
+- ' a = torch.randn(4, 3)'
+- ' a'
+- ' b = torch.randn(4, 3)'
+- ' b'
+- ' torch.cross(a, b, dim=1)'
+- ' torch.cross(a, b)'
+8 api_shape: null

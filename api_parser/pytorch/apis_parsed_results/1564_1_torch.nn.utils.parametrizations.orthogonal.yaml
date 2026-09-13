@@ -1,0 +1,19 @@
+2 api_name: torch.nn.utils.parametrizations.orthogonal
+3 api_description: Applies an orthogonal or unitary parametrization to a matrix or
+  batch of matrices, constraining the parameterized tensor to remain orthogonal or
+  unitary during training.
+4 api_signature: '"torch.nn.utils.parametrizations.orthogonal(module,name,orthogonal_map,use_trivialization)"'
+5 api_details: ''
+6 api_parameters:
+- module: The module where the orthogonal parametrization is attached.
+- name: The tensor name to be constrained to an orthogonal form.
+- orthogonal_map: 'The method used to construct the orthogonal transform: `matrix_exp`,
+    `cayley`, or `householder`.'
+- use_trivialization: Whether to enable the dynamic trivialization framework for the
+    parametrization.
+7 api_usage_example:
+- ' orth_linear = orthogonal(nn.Linear(20, 40))'
+- ' orth_linear'
+- ' Q = orth_linear.weight'
+- ' torch.dist(Q.T @ Q, torch.eye(20))'
+8 api_shape: null

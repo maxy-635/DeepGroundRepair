@@ -1,0 +1,9 @@
+2 api_name: torch.sym_float
+3 api_description: Converts a SymInt-aware value to a float, preserving symbolic shape
+  compatibility when possible.
+4 api_signature: torch.sym_float(a)
+5 api_details: ''
+6 api_parameters:
+- a: The object that will be converted to a floating-point symbolic value.
+7 api_usage_example: null
+8 api_shape: null

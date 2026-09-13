@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.canonicalize_bool_expr
+3 api_description: Normalizes boolean expressions into a canonical comparison form
+  by rewriting them as lt/le inequalities, moving non-constant terms to the right-hand
+  side, and recursively simplifying logical And/Or/Not expressions via CNF.
+4 api_signature: '"canonicalize_bool_expr(expr)"'
+5 api_details: ''
+6 api_parameters:
+- expr: The boolean expression to normalize into a canonical form.
+7 api_usage_example: null
+8 api_shape: null

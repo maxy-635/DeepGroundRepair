@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.cumprod
+3 api_description: Returns the cumulative product of tensor elements along a specified
+  axis.
+4 api_signature: tf.keras.ops.cumprod(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are cumulatively multiplied.
+- axis: The axis to compute the cumulative product along; if omitted, the tensor is
+    flattened first.
+7 api_usage_example: null
+8 api_shape: ''

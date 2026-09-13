@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.layers.ZeroPadding3D
+3 api_description: The tf.keras.layers.ZeroPadding3D layer adds zero-padding to the
+  edges of 3D input data, allowing for spatial or spatio-temporal processing in neural
+  networks.
+4 api_signature: tf.keras.layers.ZeroPadding3D(padding)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the number of zeros to add to the dimensions of the input tensor,
+    which can be an integer, a tuple of three integers, or a tuple of three tuples
+    containing two integers each.
+7 api_usage_example:
+- input_shape = (1, 1, 2, 2, 3)
+- x = np.arange(np.prod(input_shape)).reshape(input_shape)
+- y = keras.layers.ZeroPadding3D(padding=2)(x)
+- y.shape
+8 api_shape: null

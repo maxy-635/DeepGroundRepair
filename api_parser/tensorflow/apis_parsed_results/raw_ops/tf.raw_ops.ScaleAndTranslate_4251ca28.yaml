@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ScaleAndTranslate
+3 api_description: Scales and translates an image tensor to a new size using the specified
+  scale and translation factors, with a chosen kernel and optional antialiasing.
+4 api_signature: tf.raw_ops.ScaleAndTranslate(images,size,scale,translation,kernel_type)
+5 api_details: ''
+6 api_parameters:
+- images: Input image tensor to be rescaled and translated.
+- size: Target output size tensor specifying the resized image dimensions.
+- scale: Scale factors tensor that controls how much the image is resized.
+- translation: Translation offsets tensor that controls how the resized image is shifted.
+- kernel_type: Optional interpolation kernel to use for the resize operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyPowerSign
+3 api_description: Applies the PowerSign optimizer update to a variable using the
+  current gradient and accumulated momentum, scaling the gradient by an exponential
+  factor based on the signs of the gradient and momentum before subtracting the result
+  from the variable.
+4 api_signature: ResourceApplyPowerSign(var,m,lr,grad)
+5 api_details: ''
+6 api_parameters:
+- var: Resource variable to be updated in place.
+- m: Resource variable storing the optimizer’s momentum or auxiliary state.
+- lr: Scalar learning-rate factor that scales the update step.
+- grad: Gradient tensor used to compute the parameter update.
+7 api_usage_example: null
+8 api_shape: ''

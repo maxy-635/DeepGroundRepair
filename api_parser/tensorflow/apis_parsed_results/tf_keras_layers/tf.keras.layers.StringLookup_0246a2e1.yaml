@@ -1,0 +1,26 @@
+2 api_name: tensorflow.keras.layers.StringLookup
+3 api_description: The tf.keras.layers.StringLookup layer maps strings to integer
+  indices via a vocabulary lookup, allowing for encoding of arbitrary strings. It
+  can learn a vocabulary from data using adapt(), supports various output modes (int,
+  multi_hot, count, tf_idf), and can include mask and out-of-vocabulary tokens with
+  fixed positions.
+4 api_signature: tf.keras.layers.StringLookup(max_tokens, oov_token, vocabulary, output_mode,
+  name)
+5 api_details: ''
+6 api_parameters:
+- max_tokens: Limits the vocabulary size for the layer, including OOV and mask tokens,
+    and defaults to None if not specified.
+- oov_token: Specifies the token to use for out-of-vocabulary indices when invert
+    is True, defaulting to '[UNK]'.
+- vocabulary: Provides an optional array of integers or a file path for the vocabulary,
+    eliminating the need to adapt the layer if set.
+- output_mode: Defines the output format of the layer, which can be 'int', 'one_hot',
+    'multi_hot', 'count', or 'tf_idf'.
+7 api_usage_example:
+- vocab = ["a", "b", "c", "d"]
+- data = [["a", "c", "d"], ["d", "z", "b"]]
+- layer = StringLookup(vocabulary=vocab)
+- i_layer = StringLookup(vocabulary=vocab, invert=True)
+- int_data = layer(data)
+- i_layer(int_data)
+8 api_shape: null

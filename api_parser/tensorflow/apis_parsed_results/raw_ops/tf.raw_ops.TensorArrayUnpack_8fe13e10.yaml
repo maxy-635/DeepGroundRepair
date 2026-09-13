@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TensorArrayUnpack
+3 api_description: Unpacks a TensorArray into a single tensor by stacking its elements
+  along the specified axis.
+4 api_signature: tf.raw_ops.TensorArrayUnpack(handle,value,flow_in)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource to unpack from.
+- value: Receives the unpacked tensor values from the TensorArray.
+- flow_in: Carries the control dependency state to ensure correct TensorArray operation
+    ordering.
+7 api_usage_example: null
+8 api_shape: ''

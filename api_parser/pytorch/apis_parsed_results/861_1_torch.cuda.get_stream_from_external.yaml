@@ -1,0 +1,12 @@
+2 api_name: torch.cuda.get_stream_from_external
+3 api_description: Creates a PyTorch Stream wrapper for an externally allocated CUDA
+  stream.
+4 api_signature: torch.cuda.get_stream_from_external(data_ptr,device)
+5 api_details: ''
+6 api_parameters:
+- data_ptr: The integer value of an externally allocated `cudaStream_t` to wrap or
+    access.
+- device: The device the stream was originally created on, which must be correct for
+    safe use.
+7 api_usage_example: null
+8 api_shape: null

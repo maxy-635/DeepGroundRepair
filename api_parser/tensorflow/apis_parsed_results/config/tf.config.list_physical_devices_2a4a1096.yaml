@@ -1,0 +1,13 @@
+2 api_name: tensorflow.config.list_physical_devices
+3 api_description: Lists the host’s visible physical devices, such as CPUs and GPUs,
+  before TensorFlow runtime initialization so you can inspect hardware and configure
+  it first.
+4 api_signature: tf.config.list_physical_devices(device_type)
+5 api_details: ''
+6 api_parameters:
+- device_type: Filters the returned devices to only those of the specified type, such
+    as `CPU` or `GPU`.
+7 api_usage_example:
+- physical_devices = tf.config.list_physical_devices('GPU')
+- print("Num GPUs:", len(physical_devices))
+8 api_shape: ''

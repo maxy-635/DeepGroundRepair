@@ -1,0 +1,25 @@
+2 api_name: torch.jit.script
+3 api_description: Compiles a Python function or module into TorchScript so it can
+  run with PyTorch JIT, enabling optimized execution and deployment.
+4 api_signature: torch.jit.script(obj,example_inputs)
+5 api_details: ''
+6 api_parameters:
+- obj: The object to be compiled into TorchScript, such as a module, function, class,
+    dictionary, or list.
+- example_inputs: Sample inputs used to infer and annotate argument types when scripting
+    a function or module.
+7 api_usage_example:
+- import torch
+- '@torch.jit.script'
+- 'def foo(x, y):'
+- '    if x.max() > y.max():'
+- '        r = x'
+- '    else:'
+- '        r = y'
+- '    return r'
+- 'print(type(foo))  # torch.jit.ScriptFunction'
+- '# See the compiled graph as Python code'
+- print(foo.code)
+- '# Call the function using the TorchScript interpreter'
+- foo(torch.ones(2, 2), torch.ones(2, 2))
+8 api_shape: null

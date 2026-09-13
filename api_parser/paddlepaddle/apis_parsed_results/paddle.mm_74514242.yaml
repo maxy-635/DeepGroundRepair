@@ -1,0 +1,19 @@
+2 api_name: paddle.mm
+3 api_description: Performs matrix multiplication between two tensors and returns
+  the resulting tensor.
+4 api_signature: paddle.mm(input,mat2)
+5 api_details: ''
+6 api_parameters:
+- input: The first matrix/tensor to multiply.
+- mat2: The second matrix/tensor to multiply with `input`.
+7 api_usage_example:
+- import paddle
+- input = paddle.arange(1, 7).reshape((3, 2)).astype('float32')
+- mat2 = paddle.arange(1, 9).reshape((2, 4)).astype('float32')
+- out = paddle.mm(input, mat2)
+- out
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[11., 14., 17., 20.],'
+- '[23., 30., 37., 44.],'
+- '[35., 46., 57., 68.]])'
+8 api_shape: {}

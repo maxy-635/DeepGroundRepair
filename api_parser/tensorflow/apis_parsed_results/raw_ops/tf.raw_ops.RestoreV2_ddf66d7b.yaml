@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.RestoreV2
+3 api_description: Restores one or more tensors from a V2 checkpoint, and for backward
+  compatibility can also read V1 checkpoints.
+4 api_signature: tf.raw_ops.RestoreV2(prefix,tensor_names,dtypes)
+5 api_details: ''
+6 api_parameters:
+- prefix: Specifies the checkpoint path prefix to restore from, as a single string
+    tensor.
+- tensor_names: Lists the names of the tensors to load from the checkpoint.
+- dtypes: Provides the expected data types for each tensor being restored, matching
+    the checkpoint contents.
+- name: Optionally assigns a name to the restore operation.
+7 api_usage_example: null
+8 api_shape: ''

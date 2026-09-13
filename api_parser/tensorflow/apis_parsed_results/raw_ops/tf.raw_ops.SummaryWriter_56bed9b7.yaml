@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SummaryWriter
+3 api_description: Creates a TensorFlow summary writer resource for logging summaries
+  such as scalars, images, and histograms to event files, typically for visualization
+  in TensorBoard.
+4 api_signature: tf.raw_ops.SummaryWriter(shared_name,name)
+5 api_details: ''
+6 api_parameters:
+- shared_name: An optional identifier used to give the SummaryWriter resource a shared
+    name.
+- name: An optional name used to label the operation in the graph.
+7 api_usage_example: null
+8 api_shape: ''

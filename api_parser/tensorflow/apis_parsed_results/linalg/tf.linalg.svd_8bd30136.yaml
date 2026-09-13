@@ -1,0 +1,13 @@
+2 api_name: tensorflow.linalg.svd
+3 api_description: Computes the singular value decomposition of one or more matrices,
+  returning factors that reconstruct each matrix from its singular values and left/right
+  singular vectors.
+4 api_signature: tf.linalg.svd(tensor,compute_uv)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor whose last two dimensions define the matrices to decompose
+    into singular values and optionally singular vectors.
+- compute_uv: Controls whether to compute and return the left and right singular vectors
+    in addition to the singular values.
+7 api_usage_example: null
+8 api_shape: ''

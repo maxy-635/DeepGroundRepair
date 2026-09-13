@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ApplyAdadelta
+3 api_description: Applies one Adadelta optimization step to update a variable using
+  the gradient, maintaining running accumulators for squared gradients and squared
+  updates.
+4 api_signature: tf.raw_ops.ApplyAdadelta(var,accum,accum_update,grad)
+5 api_details: ''
+6 api_parameters:
+- var: The model variable to be updated by the Adadelta optimizer.
+- accum: The running accumulator for squared gradients used by Adadelta.
+- accum_update: The running accumulator for squared parameter updates used by Adadelta.
+- grad: The gradient tensor applied to update the variable.
+7 api_usage_example: null
+8 api_shape: ''

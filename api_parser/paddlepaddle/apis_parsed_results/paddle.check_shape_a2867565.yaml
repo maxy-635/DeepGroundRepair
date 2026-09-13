@@ -1,0 +1,8 @@
+2 api_name: paddle.check_shape
+3 api_description: Checks whether a tensor or array has the specified shape and returns
+  a boolean result.
+4 api_signature: paddle.check_shape(shape,op_name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

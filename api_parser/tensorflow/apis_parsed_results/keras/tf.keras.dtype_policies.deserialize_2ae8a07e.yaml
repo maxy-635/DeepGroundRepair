@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.dtype_policies.deserialize
+3 api_description: Converts a serialized DTypePolicy representation back into a DTypePolicy
+  instance.
+4 api_signature: tf.keras.dtype_policies.deserialize(config)
+5 api_details: ''
+6 api_parameters:
+- config: The configuration object or dict used to reconstruct the `DTypePolicy`.
+7 api_usage_example: null
+8 api_shape: ''

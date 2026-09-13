@@ -1,0 +1,21 @@
+2 api_name: paddle.nn.BatchNorm2D
+3 api_description: BatchNorm2D normalizes a 4D input across the batch and spatial
+  dimensions to improve training stability and performance by reducing internal covariate
+  shift.
+4 api_signature: paddle.nn.BatchNorm2D(num_features)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of input channels for the BatchNorm2D layer.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- x = paddle.rand((2, 1, 2, 3))
+- batch_norm = paddle.nn.BatchNorm2D(1)
+- batch_norm_out = batch_norm(x)
+- print(batch_norm_out)
+- Tensor(shape=[2, 1, 2, 3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[[ 0.60520101, -0.67670590, -1.40020895],'
+- '[ 0.46540475, -0.09736633, -0.47771257]]],'
+- '[[[-0.74365312,  0.63718963, -1.41333187],'
+- '[ 1.44764757, -0.25489068,  1.90842628]]]])'
+8 api_shape: null

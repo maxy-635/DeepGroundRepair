@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.MatrixSetDiagV3
+3 api_description: Returns a copy of the input batched matrices with one or more specified
+  diagonals overwritten by values from `diagonal`.
+4 api_signature: tf.raw_ops.MatrixSetDiagV3(input,diagonal,k)
+5 api_details: ''
+6 api_parameters:
+- input: The source tensor whose specified diagonal or diagonal band will be replaced.
+- diagonal: The tensor containing the values to write into the selected diagonal(s)
+    of the input.
+- k: The diagonal offset or range of offsets that identifies which diagonal(s) in
+    the matrix to set.
+7 api_usage_example: null
+8 api_shape: ''

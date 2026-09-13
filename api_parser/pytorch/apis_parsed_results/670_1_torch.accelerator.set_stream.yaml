@@ -1,0 +1,10 @@
+2 api_name: torch.accelerator.set_stream
+3 api_description: Sets the active accelerator stream to the specified stream for
+  subsequent operations.
+4 api_signature: torch.accelerator.set_stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: Sets the active stream for the current accelerator device, and it must belong
+    to the same accelerator device type.
+7 api_usage_example: null
+8 api_shape: null

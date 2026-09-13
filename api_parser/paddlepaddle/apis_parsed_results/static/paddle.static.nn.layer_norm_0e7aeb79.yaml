@@ -1,0 +1,23 @@
+2 api_name: paddle.static.nn.layer_norm
+3 api_description: Applies layer normalization to a tensor by normalizing across the
+  last D dimensions and optionally scaling and shifting the result with learnable
+  parameters.
+4 api_signature: paddle.static.nn.layer_norm(input,scale,shift,begin_norm_axis,epsilon)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to normalize, which must be a float32 or float64 multi-dimensional
+    input.
+- scale: Controls whether the layer learns a scaling factor after normalization.
+- shift: Controls whether the layer learns a bias term after normalization.
+- begin_norm_axis: Sets the first axis from which normalization is applied through
+    the last dimension.
+- epsilon: Adds a small constant to the variance for numerical stability and to avoid
+    division by zero.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data(name='x', shape=[8, 32, 32], dtype='float32')
+- output = paddle.static.nn.layer_norm(input=x, begin_norm_axis=1)
+- print(output.shape)
+- (8, 32, 32)
+8 api_shape: {}

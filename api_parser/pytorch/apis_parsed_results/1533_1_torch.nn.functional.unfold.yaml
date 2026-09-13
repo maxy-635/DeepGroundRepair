@@ -1,0 +1,18 @@
+2 api_name: torch.nn.functional.unfold
+3 api_description: torch.nn.functional.unfold extracts sliding local blocks from a
+  batched input tensor, enabling operations on smaller, overlapping regions of the
+  input.
+4 api_signature: torch.nn.functional.unfold(input,kernel_size,stride)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be unfolded.
+- kernel_size: The size of the sliding blocks to be extracted from the input tensor.
+- dilation: The spacing between elements within each sliding block.
+- padding: The amount of zero-padding added to both sides of the input tensor.
+- stride: The step size at which the sliding blocks are extracted from the input tensor.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, *)
+  output tensor shape: (N, Channel_out \times \prod(\text{kernel_size}), L) as described
+    above
+  tensor shape transform formulas: {}

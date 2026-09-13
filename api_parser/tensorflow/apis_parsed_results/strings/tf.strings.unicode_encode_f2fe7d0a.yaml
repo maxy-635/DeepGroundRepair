@@ -1,0 +1,17 @@
+2 api_name: tensorflow.strings.unicode_encode
+3 api_description: Encodes each input sequence of Unicode code points into a string
+  using the specified output encoding.
+4 api_signature: tf.strings.unicode_encode(input,output_encoding,errors)
+5 api_details: ''
+6 api_parameters:
+- input: A rank N+1 integer tensor of codepoint sequences to be encoded, optionally
+    ragged, with shape [D1...DN, num_chars].
+- output_encoding: The target Unicode encoding to use when converting each codepoint
+    sequence, such as UTF-8, UTF-16-BE, or UTF-32-BE.
+- errors: Controls how invalid codepoints are handled during encoding, if any are
+    encountered.
+7 api_usage_example:
+- input = tf.ragged.constant(
+- '    [[71, 246, 246, 100, 110, 105, 103, 104, 116], [128522]])'
+- print(unicode_encode(input, 'UTF-8'))
+8 api_shape: ''

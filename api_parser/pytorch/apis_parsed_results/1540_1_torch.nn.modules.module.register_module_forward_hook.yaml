@@ -1,0 +1,11 @@
+2 api_name: torch.nn.modules.module.register_module_forward_hook
+3 api_description: Registers a global forward hook that runs on every module after
+  its forward pass.
+4 api_signature: torch.nn.modules.module.register_module_forward_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: A user-defined callback that is registered to run after each module forward
+    pass.
+7 api_usage_example:
+- hook(module, input, output) -> None or modified output
+8 api_shape: null

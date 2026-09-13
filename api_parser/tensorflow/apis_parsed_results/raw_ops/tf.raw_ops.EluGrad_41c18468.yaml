@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.EluGrad
+3 api_description: Computes the gradient of the ELU activation by combining the upstream
+  gradient with the ELU input to produce backpropagation values.
+4 api_signature: tf.raw_ops.EluGrad(gradients,outputs)
+5 api_details: ''
+6 api_parameters:
+- gradients: Backpropagated gradients from the corresponding `Elu` operation, used
+    to compute the gradient of the ELU activation.
+- outputs: The outputs produced by the corresponding `Elu` operation, used together
+    with `gradients` to calculate the ELU backpropagation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.nn.NLLLoss.forward
+3 api_description: Computes the negative log-likelihood loss between log-probabilities
+  and target labels.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

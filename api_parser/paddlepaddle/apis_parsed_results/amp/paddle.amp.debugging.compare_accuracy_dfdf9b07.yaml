@@ -1,0 +1,41 @@
+2 api_name: paddle.amp.debugging.compare_accuracy
+3 api_description: Compares float16 and float32 log data to help debug precision differences
+  in AMP.
+4 api_signature: paddle.amp.debugging.compare_accuracy(dump_path,another_dump_path,output_filename)
+5 api_details: ''
+6 api_parameters:
+- dump_path: Specifies the path to the first run log, typically the baseline float32
+    execution log.
+- another_dump_path: Specifies the path to the second run log, typically the float16
+    execution log to compare against.
+- output_filename: Specifies the name of the Excel file used to save the comparison
+    results.
+7 api_usage_example:
+- import paddle
+- from paddle.base import core
+- 'try:'
+- '    import xlsxwriter as xlw'
+- 'except ImportError:'
+- '    import subprocess'
+- '    subprocess.check_call('
+- '        [''python'', ''-m'', ''pip'', ''install'', ''xlsxwriter==3.0.9'']'
+- '    )'
+- '    import xlsxwriter as xlw'
+- '    if core.is_compiled_with_cuda():'
+- '        paddle.set_flags('
+- '            {"FLAGS_check_nan_inf": 1, "FLAGS_check_nan_inf_level": 3}'
+- '        )'
+- '        path = "workerlog_log_dir"'
+- '        paddle.base.core.set_nan_inf_debug_path(path)'
+- '        x = paddle.to_tensor('
+- '            [2, 3, 4, 0], dtype="float32"'
+- '        )'
+- '        y = paddle.to_tensor('
+- '            [1, 5, 2, 0], dtype="float32"'
+- '        )'
+- '        z1 = x + y'
+- '        out_excel = "compare_accuracy_out_excel.csv"'
+- '        paddle.amp.debugging.compare_accuracy('
+- '            path, path, out_excel, loss_scale=1, dump_all_tensors=False'
+- '        )'
+8 api_shape: {}

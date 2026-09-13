@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.StridedSlice
+3 api_description: Returns a new tensor by extracting a strided slice from the input
+  tensor using sparse begin, end, and stride range specifications.
+4 api_signature: tf.raw_ops.StridedSlice(input,begin,end,strides,name)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to slice.
+- begin: The starting indices for each slice dimension, with optional masking and
+    clamping.
+- end: The ending indices for each slice dimension, interpreted like `begin` and controlled
+    by `end_mask`.
+- strides: The step size for each slice dimension, which can also reverse the order
+    when negative.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

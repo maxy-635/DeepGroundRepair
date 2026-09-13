@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.set_diag
+3 api_description: Returns a batched tensor like input with the specified diagonal(s)
+  of each innermost matrix replaced by values from diagonal.
+4 api_signature: tf.linalg.set_diag(input,diagonal)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose diagonal(s) will be replaced.
+- diagonal: The values to write onto the specified diagonal(s) of `input`.
+7 api_usage_example: null
+8 api_shape: ''

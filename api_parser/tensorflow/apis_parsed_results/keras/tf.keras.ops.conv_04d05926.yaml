@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.conv
+3 api_description: Performs 1D, 2D, or 3D convolution on input tensors using a kernel,
+  with support for configurable strides, padding, dilation, and data format.
+4 api_signature: tf.keras.ops.conv(inputs,kernel,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- inputs: The input tensor to convolve, including batch, spatial dimensions, and channels.
+- kernel: The convolution filter tensor, with input channels matching the input tensor
+    and output channels defining the result depth.
+- strides: The step size of the convolution across each spatial dimension.
+- padding: The padding mode that controls whether the input is unpadded (`valid`)
+    or padded to preserve size (`same`).
+7 api_usage_example: null
+8 api_shape: ''

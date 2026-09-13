@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RandomShuffle
+3 api_description: Randomly permutes the elements of a tensor along its first dimension,
+  assigning each input row to exactly one output row.
+4 api_signature: tf.raw_ops.RandomShuffle(value,seed,seed2,name)
+5 api_details: ''
+6 api_parameters:
+- value: The tensor whose elements are randomly shuffled.
+- seed: Sets the primary random seed for reproducible shuffling when non-zero.
+- seed2: Sets a secondary seed to reduce the chance of seed collisions when non-zero.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

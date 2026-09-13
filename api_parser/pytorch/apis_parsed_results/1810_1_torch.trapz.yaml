@@ -1,0 +1,8 @@
+2 api_name: torch.trapz
+3 api_description: Computes the trapezoidal numerical integral of values along a given
+  dimension.
+4 api_signature: torch.trapz(y,x,dim)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

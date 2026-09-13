@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.inv
+3 api_description: Computes the matrix inverse of a square tensor.
+4 api_signature: tf.keras.ops.inv(x)
+5 api_details: ''
+6 api_parameters:
+- x: The square input tensor to invert, with shape (..., M, M).
+7 api_usage_example: null
+8 api_shape: ''

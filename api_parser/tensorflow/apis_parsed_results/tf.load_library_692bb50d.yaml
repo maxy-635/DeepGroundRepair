@@ -1,0 +1,10 @@
+2 api_name: tensorflow.load_library
+3 api_description: Loads a TensorFlow plugin from a shared object file or folder of
+  libtfkernel libraries, registering its kernels with the TensorFlow process.
+4 api_signature: tf.load_library(library_location)
+5 api_details: ''
+6 api_parameters:
+- library_location: Specifies the file or folder path to the TensorFlow plugin dynamic
+    library to load.
+7 api_usage_example: null
+8 api_shape: ''

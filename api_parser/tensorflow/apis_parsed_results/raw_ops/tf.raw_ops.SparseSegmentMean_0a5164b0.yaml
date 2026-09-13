@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseSegmentMean
+3 api_description: Computes the mean of selected rows of a tensor grouped by sparse
+  segment IDs, allowing segment_ids to index a subset of the first dimension.
+4 api_signature: tf.raw_ops.SparseSegmentMean(data,indices,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: Contains the values to be grouped and averaged across sparse segments.
+- indices: Specifies the positions in `data` associated with each segment assignment.
+- segment_ids: Assigns each indexed value to a sorted segment for computing the mean.
+7 api_usage_example: null
+8 api_shape: ''

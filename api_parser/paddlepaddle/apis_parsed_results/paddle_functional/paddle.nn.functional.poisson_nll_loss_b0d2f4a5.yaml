@@ -1,0 +1,34 @@
+2 api_name: paddle.nn.functional.poisson_nll_loss
+3 api_description: The paddle.nn.functional.poisson_nll_loss API computes the Poisson
+  negative log likelihood loss between predicted and target values, useful for modeling
+  count data.
+4 api_signature: paddle.nn.functional.poisson_nll_loss(input,label,log_input,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor representing the expected values of the Poisson distribution,
+    with specified shapes and data types.
+- label: The label tensor sampled from a Poisson distribution, matching the shape
+    and data type of the input tensor.
+- log_input: A boolean to determine if the input tensor should be treated as log input,
+    affecting the computation of the loss.
+- reduction: Specifies the method for reducing the loss across the batch, with options
+    'none', 'mean', or 'sum', defaulting to 'mean'.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- paddle.seed(2023)
+- input = paddle.randn([5, 2], dtype=paddle.float32)
+- label = paddle.randn([5, 2], dtype=paddle.float32)
+- loss = F.poisson_nll_loss(input, label, log_input=True, reduction='none')
+- print(loss)
+- Tensor(shape=[5, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 1.09998012,  3.68829036],'
+- '[ 1.95291090,  0.69603068],'
+- '[-0.39289063, -2.03713036],'
+- '[ 4.52518702,  1.28625548],'
+- '[ 3.94454789,  0.53521496]])'
+- loss = F.poisson_nll_loss(input, label, reduction='mean')
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.52983975)
+8 api_shape: null

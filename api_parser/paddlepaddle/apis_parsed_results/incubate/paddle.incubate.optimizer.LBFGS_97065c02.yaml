@@ -1,0 +1,46 @@
+2 api_name: paddle.incubate.optimizer.LBFGS
+3 api_description: LBFGS is a quasi-Newton optimizer that uses limited-memory BFGS
+  updates to minimize a loss function with low memory overhead, typically for full-batch
+  optimization.
+4 api_signature: paddle.incubate.optimizer.LBFGS(learning_rate,parameters,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used by the optimizer when updating parameters.
+- parameters: Specifies which Tensor names the optimizer should update to minimize
+    the loss.
+- name: Provides an optional identifier for the optimizer instance.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- from paddle.incubate.optimizer import LBFGS
+- paddle.disable_static()
+- np.random.seed(0)
+- np_w = np.random.rand(1).astype(np.float32)
+- np_x = np.random.rand(1).astype(np.float32)
+- inputs = [np.random.rand(1).astype(np.float32) for i in range(10)]
+- '# y = 2x'
+- targets = [2 * x for x in inputs]
+- 'class Net(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        w = paddle.to_tensor(np_w)'
+- '        self.w = paddle.create_parameter(shape=w.shape, dtype=w.dtype, default_initializer=paddle.nn.initializer.Assign(w))'
+- '    def forward(self, x):'
+- '        return self.w * x'
+- net = Net()
+- opt = LBFGS(learning_rate=1, max_iter=1, max_eval=None, tolerance_grad=1e-07, tolerance_change=1e-09,
+  history_size=100, line_search_fn='strong_wolfe', parameters=net.parameters())
+- 'def train_step(inputs, targets):'
+- '    def closure():'
+- '        outputs = net(inputs)'
+- '        loss = paddle.nn.functional.mse_loss(outputs, targets)'
+- '        print(''loss: '', loss.item())'
+- '        opt.clear_grad()'
+- '        loss.backward()'
+- '        return loss'
+- '    opt.step(closure)'
+- 'for input, target in zip(inputs, targets):'
+- '    input_tensor = paddle.to_tensor(input)'
+- '    target_tensor = paddle.to_tensor(target)'
+- '    train_step(input_tensor, target_tensor)'
+8 api_shape: {}

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.Atan2
+3 api_description: Element-wise computes the signed angle whose tangent is y/x, returning
+  values in [-pi, pi] based on the signs of x and y.
+4 api_signature: tf.raw_ops.Atan2(y,x)
+5 api_details: ''
+6 api_parameters:
+- y: The tensor of y-values used as the numerator input for computing the element-wise
+    arctangent.
+- x: The tensor of x-values used as the denominator input, and it must have the same
+    type as `y`.
+7 api_usage_example:
+- x = [1., 1.]
+- y = [1., -1.]
+- print((tf.math.atan2(y,x) * (180 / np.pi)).numpy())
+8 api_shape: ''

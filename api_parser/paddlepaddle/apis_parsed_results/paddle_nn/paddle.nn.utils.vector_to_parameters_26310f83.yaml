@@ -1,0 +1,21 @@
+2 api_name: paddle.nn.utils.vector_to_parameters
+3 api_description: Transforms a 1-D Tensor into the model's parameters, updating the
+  parameters to match the Tensor's values.
+4 api_signature: paddle.nn.utils.vector_to_parameters(vec,parameters)
+5 api_details: ''
+6 api_parameters:
+- vec: A 1-D Tensor that is used to update the values of the input parameters.
+- parameters: An iterable of Tensors representing the trainable parameters of a Layer
+    that will be updated.
+7 api_usage_example:
+- import paddle
+- weight_attr = paddle.ParamAttr(initializer=paddle.nn.initializer.Constant(3.))
+- linear1 = paddle.nn.Linear(10, 15, weight_attr)
+- vec = paddle.nn.utils.parameters_to_vector(linear1.parameters())
+- linear2 = paddle.nn.Linear(10, 15)
+- '# copy weight of linear1 to linear2'
+- paddle.nn.utils.vector_to_parameters(vec, linear2.parameters())
+- print((linear1.weight == linear2.weight).all())
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- True)
+8 api_shape: null

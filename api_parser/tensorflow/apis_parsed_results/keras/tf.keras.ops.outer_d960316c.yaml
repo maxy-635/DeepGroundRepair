@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.outer
+3 api_description: Computes the outer product of two vectors, producing a matrix of
+  pairwise products between every element in the first vector and every element in
+  the second.
+4 api_signature: tf.keras.ops.outer(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input tensor used to compute the outer product.
+- x2: The second input tensor used to compute the outer product.
+7 api_usage_example: null
+8 api_shape: ''

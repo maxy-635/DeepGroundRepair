@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ShuffleDatasetV2
+3 api_description: Randomly shuffles the elements of a dataset using a buffer, then
+  outputs a new dataset with the same structure.
+4 api_signature: tf.raw_ops.ShuffleDatasetV2(input_dataset,buffer_size,seed_generator)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be shuffled.
+- buffer_size: The size of the shuffle buffer used to randomize the dataset.
+- seed_generator: A resource handle used to generate random seeds for the shuffling
+    operation.
+7 api_usage_example: null
+8 api_shape: ''

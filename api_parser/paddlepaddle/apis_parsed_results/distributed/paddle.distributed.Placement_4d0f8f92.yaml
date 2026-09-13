@@ -1,0 +1,18 @@
+2 api_name: paddle.distributed.Placement
+3 api_description: Defines how a tensor is placed on a ProcessMesh, with support for
+  replicated, sharded, or partial placements.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle.distributed as dist
+- placements = [dist.Replicate(), dist.Shard(0), dist.Partial()]
+- 'for p in placements:'
+- '    if isinstance(p, dist.Placement):'
+- '        if p.is_replicated():'
+- '            print("replicate.")'
+- '        elif p.is_shard():'
+- '            print("shard.")'
+- '        elif p.is_partial():'
+- '            print("partial.")'
+8 api_shape: {}

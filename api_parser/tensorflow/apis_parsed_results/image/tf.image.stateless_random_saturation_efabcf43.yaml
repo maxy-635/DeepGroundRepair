@@ -1,0 +1,20 @@
+2 api_name: tensorflow.image.stateless_random_saturation
+3 api_description: Deterministically adjusts RGB image saturation by a randomly chosen
+  factor within a given range, producing the same result for the same seed.
+4 api_signature: tf.image.stateless_random_saturation(image,lower,upper,seed)
+5 api_details: ''
+6 api_parameters:
+- image: The RGB image or batch of images whose saturation will be adjusted; the last
+    dimension must have size 3.
+- lower: The minimum random multiplier used to change the image saturation.
+- upper: The maximum random multiplier used to change the image saturation.
+- seed: A length-2 tensor that seeds the stateless random number generator for reproducible
+    results.
+7 api_usage_example:
+- x = [[[1.0, 2.0, 3.0],
+- '      [4.0, 5.0, 6.0]],'
+- '     [[7.0, 8.0, 9.0],'
+- '      [10.0, 11.0, 12.0]]]'
+- seed = (1, 2)
+- tf.image.stateless_random_saturation(x, 0.5, 1.0, seed)
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Unique
+3 api_description: Returns the unique values from a 1-D tensor in first-occurrence
+  order, along with indices mapping each input element to its position in the unique
+  output.
+4 api_signature: tf.raw_ops.Unique(x,out_idx)
+5 api_details: ''
+6 api_parameters:
+- x: The 1-D input tensor whose unique values are computed.
+- out_idx: The integer dtype used for the returned index tensor, either `tf.int32`
+    or `tf.int64`.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,21 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.shard_full_optim_state_dict
+3 api_description: Converts a full optimizer state dict into a sharded form compatible
+  with FSDP, so each rank keeps only the optimizer state for the parameters it owns.
+4 api_signature: staticshard_full_optim_state_dict(full_optim_state_dict,model,optim)
+5 api_details: ''
+6 api_parameters:
+- full_optim_state_dict: The full, unsharded optimizer state dict for the model’s
+    unflattened parameters.
+- model: The root model whose parameters match the optimizer state in `full_optim_state_dict`.
+- optim: The optimizer that will load the sharded state dict produced by this method.
+7 api_usage_example:
+- ' from torch.distributed.fsdp import FullyShardedDataParallel as FSDP'
+- ' model, optim = ...'
+- ' full_osd = FSDP.full_optim_state_dict(model, optim)'
+- ' torch.save(full_osd, PATH)'
+- ' # Define new model with possibly different world size'
+- ' new_model, new_optim = ...'
+- ' full_osd = torch.load(PATH)'
+- ' sharded_osd = FSDP.shard_full_optim_state_dict(full_osd, new_model)'
+- ' new_optim.load_state_dict(sharded_osd)'
+8 api_shape: null

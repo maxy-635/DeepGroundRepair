@@ -1,0 +1,10 @@
+2 api_name: tensorflow.meshgrid
+3 api_description: Creates N-D coordinate grids from one-dimensional input arrays
+  for evaluating functions over a mesh.
+4 api_signature: tf.meshgrid(*args)
+5 api_details: ''
+6 api_parameters:
+- '*args': One or more rank-1 tensors that provide the coordinate values for constructing
+    the mesh grid.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.profiler.parse_nvprof_trace
+3 api_description: Parses an nvprof trace file and returns profiler events in a format
+  usable by PyTorch autograd profiling tools.
+4 api_signature: torch.autograd.profiler.parse_nvprof_trace(path)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

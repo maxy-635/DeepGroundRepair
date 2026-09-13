@@ -1,0 +1,35 @@
+2 api_name: paddle.nn.functional.flash_attn_qkvpacked
+3 api_description: The paddle.nn.functional.flash_attn_qkvpacked API performs efficient
+  attention computations using packed queries, keys, and values, optimizing memory
+  usage and computational speed for transformer models.
+4 api_signature: paddle.nn.functional.flash_attn_qkvpacked(qkv,dropout,causal,return_softmax)
+5 api_details: ''
+6 api_parameters:
+- qkv: Represents the packed query/key/value tensor used in the Attention module with
+    specific dimensions and data types.
+- dropout: Specifies the ratio of dropout to apply during the attention computation
+    for regularization.
+- causal: Indicates whether causal mode is enabled, which prevents attending to future
+    positions in the sequence.
+- return_softmax: Determines whether the function should return the softmax probabilities
+    of the attention scores.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.seed(2023)
+- q = paddle.rand((1, 128, 2, 16))
+- qkv = paddle.stack([q, q, q], axis=2)
+- output = paddle.nn.functional.flash_attn_qkvpacked(qkv, 0.9, False, False)
+- print(output)
+- (Tensor(shape=[1, 128, 2, 16], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0.34992966, 0.34456208, 0.45826620, ..., 0.39883569,'
+- 0.42132431, 0.39157745],
+- '[0.76687670, 0.65837246, 0.69117945, ..., 0.82817286,'
+- 0.76690865, 0.71485823]],
+- '...,'
+- '[[0.71662450, 0.57275224, 0.57053083, ..., 0.48108247,'
+- 0.53336465, 0.54540104],
+- '[0.59137970, 0.51350880, 0.50449550, ..., 0.38860250,'
+- 0.40526697, 0.60541755]]]]), None)
+- '>>>'
+8 api_shape: null

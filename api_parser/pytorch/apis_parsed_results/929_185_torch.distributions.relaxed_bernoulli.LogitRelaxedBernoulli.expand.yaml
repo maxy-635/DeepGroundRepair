@@ -1,0 +1,11 @@
+2 api_name: torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli.expand
+3 api_description: Returns a new relaxed Bernoulli distribution expanded to the specified
+  batch shape, sharing the same parameters and supporting broadcasting without changing
+  event shape.
+4 api_signature: expand(batch_shape)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.optimizers.Adadelta
+3 api_description: Adaptive optimizer that adjusts per-parameter learning rates using
+  Adadelta to update weights without a fixed global step size.
+4 api_signature: tf.keras.optimizers.Adadelta(learning_rate,rho,epsilon,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Controls the step size used for each optimization update.
+- rho: Sets the decay rate for the moving average of squared gradients and updates.
+- epsilon: Adds a small constant to improve numerical stability and avoid division
+    by zero.
+- name: Specifies the name used for optimizer-created accumulator weights and internal
+    variables.
+7 api_usage_example: null
+8 api_shape: ''

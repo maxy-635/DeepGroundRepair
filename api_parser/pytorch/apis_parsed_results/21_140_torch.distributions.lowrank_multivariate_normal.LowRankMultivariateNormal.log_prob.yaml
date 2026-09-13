@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal.log_prob
+3 api_description: Compute the log probability density of a value under the low-rank
+  multivariate normal distribution.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The sample or batch of values whose log probability under the distribution
+    is evaluated.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.losses.MeanSquaredError
+3 api_description: Computes the average squared difference between true labels and
+  predicted values.
+4 api_signature: tf.keras.losses.MeanSquaredError(reduction)
+5 api_details: ''
+6 api_parameters:
+- reduction: Controls how the loss values are aggregated across the batch, such as
+    summing them, averaging them over the batch size, or leaving them unreduced.
+7 api_usage_example: null
+8 api_shape: ''

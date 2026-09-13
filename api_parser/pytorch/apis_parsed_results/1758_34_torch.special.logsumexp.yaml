@@ -1,0 +1,13 @@
+2 api_name: torch.special.logsumexp
+3 api_description: Computes the log of the sum of exponentials of input elements in
+  a numerically stable way.
+4 api_signature: torch.special.logsumexp(input,dim,keepdim)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose values are combined by a numerically stable log-sum-exp
+    operation.
+- dim: The dimension or dimensions along which to reduce the tensor.
+- keepdim: Whether to keep the reduced dimensions in the output tensor.
+- out: An optional tensor to write the result into.
+7 api_usage_example: null
+8 api_shape: null

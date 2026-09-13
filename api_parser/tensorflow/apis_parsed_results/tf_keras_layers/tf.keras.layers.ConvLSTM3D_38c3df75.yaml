@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.layers.ConvLSTM3D
+3 api_description: ConvLSTM3D is a layer that combines 3D convolutional operations
+  with LSTM functionality, allowing for the processing of spatiotemporal data by capturing
+  both spatial and temporal features in sequences of 3D inputs.
+4 api_signature: tf.keras.layers.ConvLSTM3D(filters, kernel_size, padding, activation,
+  return_sequences, stateful)
+5 api_details: ''
+6 api_parameters:
+- filters: Defines the number of output filters in the convolution.
+- kernel_size: Specifies the dimensions of the convolution window.
+- padding: Determines the type of padding applied to the input, either 'valid' or
+    'same'.
+- activation: Sets the activation function to be used in the layer.
+- return_sequences: Indicates whether to return the full sequence of outputs or just
+    the last output.
+- stateful: Specifies whether to maintain the state across batches for each sample.
+7 api_usage_example: null
+8 api_shape: null

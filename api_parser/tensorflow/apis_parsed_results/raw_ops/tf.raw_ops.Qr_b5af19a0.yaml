@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Qr
+3 api_description: Computes the QR decomposition of one or more matrices, returning
+  Q and R factors for each inner matrix.
+4 api_signature: tf.raw_ops.Qr(input,full_matrices)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor containing one or more matrices to factorize into Q and R.
+- full_matrices: Controls whether to compute full-sized Q and R or only the leading
+    P columns of Q.
+7 api_usage_example: null
+8 api_shape: ''

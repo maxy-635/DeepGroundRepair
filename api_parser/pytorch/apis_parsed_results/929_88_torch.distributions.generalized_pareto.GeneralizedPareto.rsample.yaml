@@ -1,0 +1,7 @@
+2 api_name: torch.distributions.generalized_pareto.GeneralizedPareto.rsample
+3 api_description: Draws reparameterized samples from a generalized Pareto distribution.
+4 api_signature: rsample(sample_shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

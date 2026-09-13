@@ -1,0 +1,32 @@
+2 api_name: paddle.nn.functional.cross_entropy
+3 api_description: paddle.nn.functional.cross_entropy computes cross entropy loss
+  using a numerically stable combination of softmax and cross entropy operations.
+4 api_signature: paddle.nn.functional.cross_entropy(input,label,weight,reduction,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor containing raw, unnormalized scores for each class.
+- label: The tensor containing the true class indices for each sample.
+- weight: A tensor for manually rescaling the loss contribution of each class.
+- reduction: Specifies the method to reduce the loss across the batch, either 'none',
+    'mean', or 'sum'.
+- axis: Specifies the dimension along which softmax is computed, typically the class
+    dimension.
+7 api_usage_example:
+- '# hard labels'
+- import paddle
+- paddle.seed(99999)
+- N=100
+- C=200
+- reduction='mean'
+- input =  paddle.rand([N, C], dtype='float64')
+- label =  paddle.randint(0, C, shape=[N], dtype='int64')
+- weight = paddle.rand([C], dtype='float64')
+- cross_entropy_loss = paddle.nn.loss.CrossEntropyLoss(
+- '    weight=weight, reduction=reduction)'
+- dy_ret = cross_entropy_loss(
+- '                            input,'
+- '                            label)'
+- print(dy_ret)
+- Tensor(shape=[], dtype=float64, place=Place(cpu), stop_gradient=True,
+- 5.35419278)
+8 api_shape: null

@@ -1,0 +1,39 @@
+2 api_name: torch.nn.SyncBatchNorm
+3 api_description: SyncBatchNorm synchronizes batch statistics across multiple devices
+  during training, applying batch normalization to N-Dimensional inputs for improved
+  model performance in distributed settings.
+4 api_signature: torch.nn.SyncBatchNorm(num_features,affine,process_group)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of features or channels from the input tensor.
+- affine: Indicates whether the layer should have learnable parameters for scaling
+    and shifting.
+- process_group: Defines the scope for synchronizing statistics, allowing for individual
+    group synchronization if specified.
+7 api_usage_example:
+- ' # With Learnable Parameters'
+- ' m = nn.SyncBatchNorm(100)'
+- ' # creating process group (optional)'
+- ' # ranks is a list of int identifying rank ids.'
+- ' ranks = list(range(8))'
+- ' r1, r2 = ranks[:4], ranks[4:]'
+- ' # Note: every rank calls into new_group for every'
+- ' # process group created, even if that rank is not'
+- ' # part of the group.'
+- ' process_groups = [torch.distributed.new_group(pids) for pids in [r1, r2]]'
+- ' process_group = process_groups[0 if dist.get_rank() <= 3 else 1]'
+- ' # Without Learnable Parameters'
+- ' m = nn.BatchNorm3d(100, affine=False, process_group=process_group)'
+- ' input = torch.randn(20, 100, 35, 45, 10)'
+- ' output = m(input)'
+- ' # network is nn.BatchNorm layer'
+- ' sync_bn_network = nn.SyncBatchNorm.convert_sync_batchnorm(network, process_group)'
+- ' # only single gpu per process is currently supported'
+- ' ddp_sync_bn_network = torch.nn.parallel.DistributedDataParallel('
+- '                         sync_bn_network,'
+- '                         device_ids=[args.local_rank],'
+- '                         output_device=args.local_rank)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, +)
+  output tensor shape: (N, Channel_out, +) (same shape as input)
+  tensor shape transform formulas: {}

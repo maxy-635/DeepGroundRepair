@@ -1,0 +1,34 @@
+2 api_name: paddle.nn.SoftMarginLoss
+3 api_description: The paddle.nn.SoftMarginLoss calculates the two-soft margin
+  loss between predictions and target labels, facilitating binary classification tasks.
+4 api_signature: paddle.nn.SoftMarginLoss(reduction)
+5 api_details: ''
+6 api_parameters:
+- reduction: Determines how the loss is aggregated across the batch, with options
+    'none', 'mean', or 'sum', where 'none' returns the individual losses, 'mean' returns
+    the average loss, and 'sum' returns the total loss, defaulting to 'mean'.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- input = paddle.to_tensor([[0.5, 0.6, 0.7],[0.3, 0.5, 0.2]], 'float32')
+- label = paddle.to_tensor([[1.0, -1.0, 1.0],[-1.0, 1.0, 1.0]], 'float32')
+- soft_margin_loss = paddle.nn.SoftMarginLoss()
+- output = soft_margin_loss(input, label)
+- print(output)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.64022040)
+- input_np = paddle.uniform(shape=(5, 5), min=0.1, max=0.8, dtype="float64")
+- label_np = paddle.randint(high=2, shape=(5, 5), dtype="int64")
+- label_np[label_np==0]=-1
+- input = paddle.to_tensor(input_np)
+- label = paddle.to_tensor(label_np)
+- soft_margin_loss = paddle.nn.SoftMarginLoss(reduction='none')
+- output = soft_margin_loss(input, label)
+- print(output)
+- Tensor(shape=[5, 5], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[1.10725628, 0.48778139, 0.56217249, 1.12581404, 0.51430043],'
+- '[0.90375795, 0.37761249, 0.43007557, 0.95089798, 0.43288319],'
+- '[1.16043599, 0.63015939, 0.51362715, 0.43617541, 0.57783301],'
+- '[0.81927846, 0.52558369, 0.59713908, 0.83100696, 0.50811616],'
+- '[0.82684205, 1.02064907, 0.50296995, 1.13461733, 0.93222519]])'
+8 api_shape: null

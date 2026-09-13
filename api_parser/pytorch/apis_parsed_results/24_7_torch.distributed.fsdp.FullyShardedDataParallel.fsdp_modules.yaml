@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.fsdp_modules
+3 api_description: Returns all nested FullyShardedDataParallel instances contained
+  within the given FSDP module.
+4 api_signature: staticfsdp_modules(module)
+5 api_details: ''
+6 api_parameters:
+- module: Specifies the root module to inspect, which may itself be an FSDP module
+    or a non-FSDP container.
+7 api_usage_example: null
+8 api_shape: null

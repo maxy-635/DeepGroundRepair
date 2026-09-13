@@ -1,0 +1,17 @@
+2 api_name: tensorflow.config.experimental.set_memory_growth
+3 api_description: Configures a physical device to allocate GPU memory on demand instead
+  of reserving all memory upfront, and must be set before virtual devices are configured.
+4 api_signature: tf.config.experimental.set_memory_growth(device,enable)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the physical device whose GPU memory allocation behavior will
+    be configured.
+- enable: Turns memory growth on or off for the selected device.
+7 api_usage_example:
+- physical_devices = tf.config.list_physical_devices('GPU')
+- 'try:'
+- '  tf.config.experimental.set_memory_growth(physical_devices[0], True)'
+- 'except:'
+- '  # Invalid device or cannot modify virtual devices once initialized.'
+- '  pass'
+8 api_shape: ''

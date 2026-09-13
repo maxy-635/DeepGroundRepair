@@ -1,0 +1,17 @@
+2 api_name: torch.nn.HingeEmbeddingLoss
+3 api_description: HingeEmbeddingLoss computes the loss for input tensors and labels
+  (1 or -1), commonly used to measure similarity or dissimilarity between inputs,
+  often in the context of learning embeddings or semi-supervised learning.
+4 api_signature: torch.nn.HingeEmbeddingLoss(margin,reduction)
+5 api_details: ''
+6 api_parameters:
+- margin: Defines the minimum distance between the embeddings of different classes,
+    with a default value of 1.
+- reduction: Determines how the output loss is aggregated, with options for no reduction,
+    mean reduction, or sum reduction.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*) where * means, any number of dimensions. The sum operation
+    operates over all the elements.
+  output tensor shape: scalar. If reduction is 'none', then same shape as the input
+  tensor shape transform formulas: {}

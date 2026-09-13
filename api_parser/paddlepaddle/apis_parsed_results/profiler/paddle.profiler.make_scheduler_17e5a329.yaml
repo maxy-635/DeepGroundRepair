@@ -1,0 +1,18 @@
+2 api_name: paddle.profiler.make_scheduler
+3 api_description: Creates a scheduler function that controls `ProfilerState` transitions
+  based on the provided profiling settings.
+4 api_signature: paddle.profiler.make_scheduler(closed,ready,record,repeat,skip_first)
+5 api_details: ''
+6 api_parameters:
+- closed: Controls how many initial steps the profiler stays closed and does nothing.
+- ready: Controls how many steps the profiler remains ready before recording starts.
+- record: Controls how many steps to actively record, with the last recorded step
+    ending in `RECORD_AND_RETURN`.
+- repeat: Controls how many times the closed-ready-record cycle repeats; `0` means
+    repeat until the profiler exits.
+- skip_first: Controls how many first steps are ignored entirely and kept in the closed
+    state.
+7 api_usage_example:
+- import paddle.profiler as profiler
+- profiler.make_scheduler(closed=1, ready=1, record=4, repeat=1)
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: torch.logit
+3 api_description: Computes the logit transform, converting probabilities in (0, 1)
+  to log-odds.
+4 api_signature: torch.logit(input,eps)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor of probabilities to transform into log-odds.
+- eps: Optional clamp value that restricts inputs to the interval [`eps`, 1 - `eps`]
+    before applying the logit.
+- out: Optional output tensor where the result is written in place.
+7 api_usage_example: null
+8 api_shape: null

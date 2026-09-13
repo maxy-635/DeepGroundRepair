@@ -1,0 +1,13 @@
+2 api_name: torch.Event.elapsed_time
+3 api_description: Returns the elapsed time in milliseconds between two recorded events
+  on a stream.
+4 api_signature: elapsed_time(end_event)
+5 api_details: ''
+6 api_parameters:
+- end_event: The recorded event that marks when the elapsed time measurement ends.
+7 api_usage_example:
+- ' s_cuda = torch.Stream(device=''cuda'')'
+- ' e1_cuda = s_cuda.record_event()'
+- ' e2_cuda = s_cuda.record_event()'
+- ' ms = e1_cuda.elapsed_time(e2_cuda)'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.reduce_max
+3 api_description: Reduces a tensor by taking the maximum value across specified axes,
+  optionally keeping reduced dimensions as size 1.
+4 api_signature: tf.math.reduce_max(input_tensor,axis)
+5 api_details: ''
+6 api_parameters:
+- input_tensor: Specifies the real-valued tensor whose elements will be reduced to
+    their maximum.
+- axis: Specifies which dimension or dimensions to reduce, or `None` to reduce across
+    all dimensions.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: torch.nn.utils.rnn.pad_sequence
+3 api_description: Pads a list of variable-length tensors to the same length using
+  a specified padding value.
+4 api_signature: torch.nn.utils.rnn.pad_sequence(sequences,batch_first,padding_value)
+5 api_details: ''
+6 api_parameters:
+- sequences: A list of variable-length tensors to be padded into a single batch.
+- batch_first: Controls whether the output shape is batch-major (`B x T x *`) or time-major
+    (`T x B x *`).
+- padding_value: Specifies the value used to fill padded positions.
+7 api_usage_example:
+- ' from torch.nn.utils.rnn import pad_sequence'
+- ' a = torch.ones(25, 300)'
+- ' b = torch.ones(22, 300)'
+- ' c = torch.ones(15, 300)'
+- ' pad_sequence([a, b, c]).size()'
+8 api_shape: null

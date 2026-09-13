@@ -1,0 +1,12 @@
+2 api_name: paddle.utils.download.get_weights_path_from_url
+3 api_description: Returns the local path for a weight file under WEIGHT_HOME, downloading
+  it from the given URL if it is not already present.
+4 api_signature: paddle.utils.download.get_weights_path_from_url(url)
+5 api_details: ''
+6 api_parameters:
+- url: The download URL pointing to the weights file to retrieve.
+7 api_usage_example:
+- from paddle.utils.download import get_weights_path_from_url
+- resnet18_pretrained_weight_url = 'https://paddle-hapi.bj.bcebos.com/models/resnet18.pdparams'
+- local_weight_path = get_weights_path_from_url(resnet18_pretrained_weight_url)
+8 api_shape: {}

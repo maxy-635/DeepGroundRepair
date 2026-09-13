@@ -1,0 +1,12 @@
+2 api_name: tensorflow.recompute_grad
+3 api_description: Wraps a function so TensorFlow can recompute its intermediate values
+  during backpropagation instead of storing them, reducing autodiff memory usage at
+  the cost of extra computation.
+4 api_signature: tf.recompute_grad(f)
+5 api_details: ''
+6 api_parameters:
+- f: The function to wrap so its forward computation can be recomputed during backpropagation
+    to save memory.
+7 api_usage_example:
+- grad = tape.gradient(r, model_recompute.__wrapped__.variables)
+8 api_shape: ''

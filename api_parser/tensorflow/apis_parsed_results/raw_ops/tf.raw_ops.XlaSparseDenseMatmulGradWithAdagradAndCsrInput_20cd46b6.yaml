@@ -1,0 +1,22 @@
+2 api_name: tensorflow.raw_ops.XlaSparseDenseMatmulGradWithAdagradAndCsrInput
+3 api_description: Computes sparse-dense matmul gradients for CSR-formatted sparse
+  input and applies Adagrad updates to the relevant variables.
+4 api_signature: tf.raw_ops.XlaSparseDenseMatmulGradWithAdagradAndCsrInput(row_pointers,sorted_sample_ids,sorted_token_ids,sorted_gains,activation_gradients,learning_rate,embedding_table,accumulator,name)
+5 api_details: ''
+6 api_parameters:
+- row_pointers: CSR row offsets that delimit each sparse row in the input batch.
+- sorted_sample_ids: Sorted sample indices identifying which examples contribute to
+    each sparse update.
+- sorted_token_ids: Sorted token or feature ids corresponding to the sparse entries
+    being processed.
+- sorted_gains: Sorted per-entry gain or weight values applied to the sparse inputs.
+- activation_gradients: Gradients propagated back from the activation/output of the
+    dense matmul operation.
+- learning_rate: Step size used by the Adagrad optimizer when updating parameters.
+- embedding_table: The dense embedding weight matrix to be updated by the gradient
+    operation.
+- accumulator: Adagrad accumulator state that stores past squared gradients for adaptive
+    learning rates.
+- name: Optional operation name used to label the TensorFlow op in the graph.
+7 api_usage_example: null
+8 api_shape: ''

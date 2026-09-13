@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BarrierInsertMany
+3 api_description: Inserts multiple key-value components into a barrier, creating
+  new incomplete entries as needed and failing if a component is overwritten.
+4 api_signature: tf.raw_ops.BarrierInsertMany(handle,keys,values)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the barrier resource where the key-value pairs will be inserted.
+- keys: Provides the 1D list of keys used to match each inserted value.
+- values: Contains the values to insert, with the first dimension aligned one-to-one
+    with `keys`.
+7 api_usage_example: null
+8 api_shape: ''

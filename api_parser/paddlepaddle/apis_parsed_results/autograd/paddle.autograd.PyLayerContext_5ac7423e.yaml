@@ -1,0 +1,24 @@
+2 api_name: paddle.autograd.PyLayerContext
+3 api_description: Context object used by `paddle.autograd.PyLayer` to save tensors,
+  mark outputs, and access information needed during backward computation.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- from paddle.autograd import PyLayer
+- 'class cus_tanh(PyLayer):'
+- '    @staticmethod'
+- '    def forward(ctx, x):'
+- '        # ctx is a object of PyLayerContext.'
+- '        y = paddle.tanh(x)'
+- '        ctx.save_for_backward(y)'
+- '        return y'
+- '...'
+- '    @staticmethod'
+- '    def backward(ctx, dy):'
+- '        # ctx is a object of PyLayerContext.'
+- '        y, = ctx.saved_tensor()'
+- '        grad = dy * (1 - paddle.square(y))'
+- '        return grad'
+8 api_shape: {}

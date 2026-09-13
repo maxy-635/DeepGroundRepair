@@ -1,0 +1,25 @@
+2 api_name: paddle.nn.Conv3D
+3 api_description: The paddle.nn.Conv3D API performs 3D convolution operations on
+  input tensors of shape [N, C, D, H, W], where it computes the output using specified
+  filters, strides, paddings, dilations, and groups. It optionally applies a bias
+  and an activation function to the convolved output.
+4 api_signature: paddle.nn.Conv3D(in_channels,out_channels,kernel_size,stride,padding,groups)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Specifies the number of channels in the input data.
+- out_channels: Determines the number of channels produced by the convolution output.
+- kernel_size: Defines the dimensions of the convolutional filter.
+- stride: Sets the step size for traversing the input data during convolution.
+- padding: Configures the padding strategy to adjust the spatial dimensions of the
+    output.
+- groups: Controls the connection pattern between input and output channels for grouped
+    convolution.
+7 api_usage_example: []
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = out_channels
+    tensor depth: Depth_out = floor((Depth_in + 2 * padding_depth - kernel_size_depth) / stride_depth + 1)
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

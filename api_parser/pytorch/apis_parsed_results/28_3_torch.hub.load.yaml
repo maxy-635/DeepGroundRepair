@@ -1,0 +1,21 @@
+2 api_name: torch.hub.load
+3 api_description: Loads a model from a GitHub repository or local directory by fetching
+  the hub code and instantiating the requested model entrypoint.
+4 api_signature: torch.hub.load(repo_or_dir,model,*args,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- repo_or_dir: Specifies the GitHub repository or local directory containing the hubconf.py
+    file to load from.
+- model: Names the callable entrypoint in hubconf.py that should be loaded and returned.
+- '*args': Supplies positional arguments to pass to the selected model callable.
+- '**kwargs': Supplies keyword arguments to pass to the selected model callable.
+7 api_usage_example:
+- ' # from a github repo'
+- ' repo = "pytorch/vision"'
+- ' model = torch.hub.load('
+- '...     repo, "resnet50", weights="ResNet50_Weights.IMAGENET1K_V1"'
+- '... )'
+- ' # from a local directory'
+- ' path = "/some/local/path/pytorch/vision"'
+- ' model = torch.hub.load(path, "resnet50", weights="ResNet50_Weights.DEFAULT")'
+8 api_shape: null

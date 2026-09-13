@@ -1,0 +1,17 @@
+2 api_name: torch.optim.lr_scheduler.MultiplicativeLR
+3 api_description: Multiplies each parameter group’s learning rate by a factor from
+  a user-specified function at each step.
+4 api_signature: torch.optim.lr_scheduler.MultiplicativeLR(optimizer,lr_lambda)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be updated.
+- lr_lambda: A function or list of functions that computes the multiplicative learning-rate
+    factor for each epoch.
+7 api_usage_example:
+- ' lmbda = lambda epoch: 0.95'
+- ' scheduler = MultiplicativeLR(optimizer, lr_lambda=lmbda)'
+- ' for epoch in range(100):'
+- '     train(...)'
+- '     validate(...)'
+- '     scheduler.step()'
+8 api_shape: null

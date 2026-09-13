@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TileGrad
+3 api_description: Computes the gradient of `Tile` by summing repeated tiles back
+  into the original input shape using the given multiples.
+4 api_signature: tf.raw_ops.TileGrad(input,multiples)
+5 api_details: ''
+6 api_parameters:
+- input: The gradient tensor to be un-tiled back to the original input shape.
+- multiples: The int32 tensor specifying how many times each input dimension was tiled.
+7 api_usage_example: null
+8 api_shape: ''

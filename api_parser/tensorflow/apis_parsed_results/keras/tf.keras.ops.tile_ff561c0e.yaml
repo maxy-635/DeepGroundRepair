@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.tile
+3 api_description: Repeats a tensor according to `repeats`, promoting `x` or `repeats`
+  as needed so their dimensions match.
+4 api_signature: tf.keras.ops.tile(x,repeats)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be repeated.
+- repeats: The repetition counts for `x` along each axis.
+7 api_usage_example: null
+8 api_shape: ''

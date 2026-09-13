@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.rpc.TensorPipeRpcBackendOptions.set_devices
+3 api_description: Sets the local CUDA devices TensorPipe RPC will synchronize when
+  handling CUDA RPC requests.
+4 api_signature: set_devices(devices)
+5 api_details: ''
+6 api_parameters:
+- devices: Local devices used by the TensorPipe RPC agent.
+7 api_usage_example: null
+8 api_shape: null

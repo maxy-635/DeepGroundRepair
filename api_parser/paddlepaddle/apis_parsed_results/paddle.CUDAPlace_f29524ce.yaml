@@ -1,0 +1,12 @@
+2 api_name: paddle.CUDAPlace
+3 api_description: Represents a specific GPU device for tensor allocation and storage,
+  identified by a logical dev_id starting at 0, with memory isolated across devices
+  and device numbering controlled by CUDA_VISIBLE_DEVICES.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- place = paddle.CUDAPlace(0)
+8 api_shape: {}

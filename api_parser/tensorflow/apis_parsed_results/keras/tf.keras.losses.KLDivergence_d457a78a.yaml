@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.losses.KLDivergence
+3 api_description: Computes the Kullback-Leibler divergence between true and predicted
+  probability distributions, clipping inputs to the [0, 1] range.
+4 api_signature: tf.keras.losses.KLDivergence(reduction)
+5 api_details: ''
+6 api_parameters:
+- reduction: Controls how the loss values are aggregated, typically as "sum_over_batch_size",
+    with "sum" and None also supported.
+7 api_usage_example: null
+8 api_shape: ''

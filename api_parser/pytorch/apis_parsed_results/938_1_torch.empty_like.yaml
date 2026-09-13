@@ -1,0 +1,12 @@
+2 api_name: torch.empty_like
+3 api_description: Creates an uninitialized tensor matching the input tensor’s size,
+  dtype, layout, and device.
+4 api_signature: torch.empty_like(input)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the reference tensor whose shape is used to determine the output
+    tensor’s size.
+7 api_usage_example:
+- ' a=torch.empty((2,3), dtype=torch.int32, device = ''cuda'')'
+- ' torch.empty_like(a)'
+8 api_shape: null

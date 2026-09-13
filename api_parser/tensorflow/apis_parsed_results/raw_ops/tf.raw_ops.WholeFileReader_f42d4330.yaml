@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.WholeFileReader
+3 api_description: Reads whole files from an input filename queue and returns each
+  file's name as the key and its full contents as the value.
+4 api_signature: tf.raw_ops.WholeFileReader(name)
+5 api_details: ''
+6 api_parameters:
+- name: An optional name used to label the operation in the graph.
+7 api_usage_example: null
+8 api_shape: ''

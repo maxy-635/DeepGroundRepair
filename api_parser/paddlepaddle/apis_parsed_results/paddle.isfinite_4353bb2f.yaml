@@ -1,0 +1,14 @@
+2 api_name: paddle.isfinite
+3 api_description: Checks whether all elements in a tensor are finite numbers.
+4 api_signature: paddle.isfinite(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor to check elementwise for finite values.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([float('-inf'), -2, 3.6, float('inf'), 0, float('-nan'), float('nan')])
+- out = paddle.isfinite(x)
+- out
+- Tensor(shape=[7], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, True , True , False, True , False, False])'
+8 api_shape: {}

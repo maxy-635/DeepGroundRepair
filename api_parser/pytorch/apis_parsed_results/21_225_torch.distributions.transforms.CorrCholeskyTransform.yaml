@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.transforms.CorrCholeskyTransform
+3 api_description: Maps an unconstrained vector to the Cholesky factor of a correlation
+  matrix, producing a lower-triangular matrix with positive diagonal entries and unit
+  row norms.
+4 api_signature: torch.distributions.transforms.CorrCholeskyTransform(cache_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.initializers.RandomNormal
+3 api_description: Initializes weights by drawing values from a normal (Gaussian)
+  distribution with specified mean and standard deviation.
+4 api_signature: tf.keras.initializers.RandomNormal(stddev)
+5 api_details: ''
+6 api_parameters:
+- stddev: Sets the standard deviation of the normal distribution used to generate
+    the random values.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = RandomNormal(mean=0.0, stddev=1.0)
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

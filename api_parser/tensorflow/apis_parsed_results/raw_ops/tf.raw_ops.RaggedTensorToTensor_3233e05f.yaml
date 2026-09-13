@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.RaggedTensorToTensor
+3 api_description: Converts a ragged tensor into a dense tensor by filling a target
+  shape with a broadcast default value, then overwriting it with ragged tensor values
+  using the provided row partitions.
+4 api_signature: tf.raw_ops.RaggedTensorToTensor(values,row_partition_tensors,row_partition_types)
+5 api_details: ''
+6 api_parameters:
+- values: Supplies the flat values that make up the ragged tensor.
+- row_partition_tensors: Provides the row-partition metadata tensors that describe
+    how the flat values are grouped into ragged rows.
+- row_partition_types: Specifies the partitioning scheme used by each row-partition
+    tensor.
+7 api_usage_example: null
+8 api_shape: ''

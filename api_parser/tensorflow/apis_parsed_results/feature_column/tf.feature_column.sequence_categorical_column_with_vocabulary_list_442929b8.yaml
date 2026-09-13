@@ -1,0 +1,11 @@
+2 api_name: tensorflow.feature_column.sequence_categorical_column_with_vocabulary_list
+3 api_description: Creates a sequence categorical feature from an in-memory vocabulary
+  list for use with embedding or indicator columns in sequence models.
+4 api_signature: tf.feature_column.sequence_categorical_column_with_vocabulary_list(key,vocabulary_list)
+5 api_details: ''
+6 api_parameters:
+- key: Identifies which input feature the sequence categorical column applies to.
+- vocabulary_list: Provides the ordered set of allowed values and maps each present
+    feature value to its index in that list.
+7 api_usage_example: null
+8 api_shape: ''

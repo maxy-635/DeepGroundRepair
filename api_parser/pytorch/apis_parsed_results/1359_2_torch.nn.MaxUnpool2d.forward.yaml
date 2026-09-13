@@ -1,0 +1,12 @@
+2 api_name: torch.nn.MaxUnpool2d.forward
+3 api_description: Reconstructs an input tensor from pooled values using the saved
+  indices, placing each value back into its original max-pooling location.
+4 api_signature: forward(input,indices)
+5 api_details: ''
+6 api_parameters:
+- input: The pooled input tensor to be unpooled.
+- indices: The pooling indices that specify where each value should be placed in the
+    output.
+- output_size: The desired size of the unpooled output tensor.
+7 api_usage_example: null
+8 api_shape: null

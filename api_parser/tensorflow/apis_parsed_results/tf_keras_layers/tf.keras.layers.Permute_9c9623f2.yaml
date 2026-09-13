@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.Permute
+3 api_description: Permutes the dimensions of input tensors based on a specified pattern,
+  facilitating the integration of RNNs and convolutional networks.
+4 api_signature: tf.keras.layers.Permute(dims)
+5 api_details: ''
+6 api_parameters:
+- dims: Specifies the permutation pattern for the input dimensions, excluding the
+    batch dimension, with indexing starting at 1.
+7 api_usage_example:
+- x = keras.Input(shape=(10, 64))
+- y = keras.layers.Permute((2, 1))(x)
+- y.shape
+8 api_shape: null

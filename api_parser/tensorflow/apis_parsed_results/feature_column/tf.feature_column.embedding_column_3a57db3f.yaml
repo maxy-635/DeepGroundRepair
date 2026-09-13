@@ -1,0 +1,15 @@
+2 api_name: tensorflow.feature_column.embedding_column
+3 api_description: Converts sparse categorical features into dense embedding vectors
+  for use in neural network models.
+4 api_signature: tf.feature_column.embedding_column(categorical_column,dimension,combiner,initializer)
+5 api_details: ''
+6 api_parameters:
+- categorical_column: Specifies the categorical feature column whose sparse IDs are
+    converted into embeddings.
+- dimension: Sets the size of the embedding vector and must be greater than 0.
+- combiner: Chooses how to aggregate multiple sparse values in a row, such as by mean,
+    sum, or square-root of sum.
+- initializer: Provides the initializer used to create the embedding variables, defaulting
+    to a truncated normal distribution based on the embedding dimension.
+7 api_usage_example: null
+8 api_shape: ''

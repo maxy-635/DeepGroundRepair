@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.categorical.Categorical.enumerate_support
+3 api_description: Returns all possible categorical outcomes as a tensor, optionally
+  expanding it to match the distribution batch shape.
+4 api_signature: '"enumerate_support()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

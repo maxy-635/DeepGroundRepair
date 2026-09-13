@@ -1,0 +1,10 @@
+2 api_name: tensorflow.lite.experimental.load_delegate
+3 api_description: Loads a TensorFlow Lite delegate object, typically to enable hardware-accelerated
+  inference such as Edge TPU execution.
+4 api_signature: tf.lite.experimental.load_delegate(library)
+5 api_details: ''
+6 api_parameters:
+- library: Specifies the shared library that contains the TensorFlow Lite delegate
+    implementation to load.
+7 api_usage_example: null
+8 api_shape: ''

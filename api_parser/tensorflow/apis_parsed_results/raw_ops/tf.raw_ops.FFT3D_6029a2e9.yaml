@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.FFT3D
+3 api_description: Computes the 3D discrete Fourier transform over the innermost three
+  dimensions of the input tensor.
+4 api_signature: tf.raw_ops.FFT3D(input)
+5 api_details: ''
+6 api_parameters:
+- input: The complex tensor to transform with a 3D FFT.
+7 api_usage_example: null
+8 api_shape: ''

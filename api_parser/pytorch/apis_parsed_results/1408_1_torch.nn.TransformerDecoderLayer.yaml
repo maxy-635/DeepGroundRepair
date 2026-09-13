@@ -1,0 +1,24 @@
+2 api_name: torch.nn.TransformerDecoderLayer
+3 api_description: A transformer decoder layer that applies masked self-attention,
+  cross-attention over encoder outputs, and a feedforward network to refine sequence
+  representations.
+4 api_signature: torch.nn.TransformerDecoderLayer(d_model,nhead,dim_feedforward,dropout,activation,batch_first,norm_first)
+5 api_details: ''
+6 api_parameters:
+- d_model: Sets the size of the model's feature dimension for the decoder layer input
+    and output.
+- nhead: Specifies how many attention heads the multi-head attention module uses.
+- dim_feedforward: Controls the size of the intermediate feedforward network hidden
+    layer.
+- dropout: Sets the dropout probability used for regularization within the layer.
+- activation: Chooses the nonlinearity applied in the feedforward sublayer.
+- batch_first: Makes the input and output use `(batch, seq, feature)` tensor layout
+    when enabled.
+- norm_first: Determines whether layer normalization is applied before or after the
+    attention and feedforward operations.
+7 api_usage_example:
+- ' decoder_layer = nn.TransformerDecoderLayer(d_model=512, nhead=8)'
+- ' memory = torch.rand(10, 32, 512)'
+- ' tgt = torch.rand(20, 32, 512)'
+- ' out = decoder_layer(tgt, memory)'
+8 api_shape: null

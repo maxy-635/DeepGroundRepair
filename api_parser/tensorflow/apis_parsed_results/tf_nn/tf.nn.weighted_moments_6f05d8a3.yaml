@@ -1,0 +1,12 @@
+2 api_name: tensorflow.nn.weighted_moments
+3 api_description: tensorflow.nn.weighted_moments computes the mean and variance of
+  a tensor x, weighted by given frequencies.
+4 api_signature: tf.nn.weighted_moments(x,axes,frequency_weights)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor for which the weighted mean and variance are computed.
+- axes: Specifies the dimensions along which the mean and variance are calculated.
+- frequency_weights: Provides weights for each element in the tensor, influencing
+    the calculation of mean and variance.
+7 api_usage_example: null
+8 api_shape: ''

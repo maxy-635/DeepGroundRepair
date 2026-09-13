@@ -1,0 +1,13 @@
+2 api_name: paddle.incubate.distributed.fleet.recompute_hybrid
+3 api_description: Recomputes intermediate activations during hybrid parallel training
+  to reduce memory use, with support limitations around outputs that don’t require
+  gradients or have no gradients.
+4 api_signature: paddle.incubate.distributed.fleet.recompute_hybrid(function,*args,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- function: Defines the forward-pass layer or layer sequence whose intermediate activations
+    are dropped to save memory and later recomputed during backpropagation.
+- '*args': Positional input arguments passed to the function.
+- '**kwargs': Keyword input arguments passed to the function.
+7 api_usage_example: []
+8 api_shape: {}

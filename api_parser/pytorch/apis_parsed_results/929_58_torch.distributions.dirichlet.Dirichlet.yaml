@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.dirichlet.Dirichlet
+3 api_description: Dirichlet distribution over probability vectors on the simplex,
+  parameterized by concentration values; supports sampling, log probability evaluation,
+  mean/variance and related statistics, and is a conjugate prior for multinomial/categorical
+  probabilities.
+4 api_signature: torch.distributions.dirichlet.Dirichlet(concentration)
+5 api_details: ''
+6 api_parameters:
+- concentration: Sets the Dirichlet concentration (alpha) values that determine the
+    distribution over simplex probabilities.
+7 api_usage_example:
+- ' m = Dirichlet(torch.tensor([0.5, 0.5]))'
+- ' m.sample()  # Dirichlet distributed with concentration [0.5, 0.5]'
+8 api_shape: null

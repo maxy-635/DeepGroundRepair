@@ -1,0 +1,9 @@
+2 api_name: torch.package.Directory
+3 api_description: Represents a package’s file tree as nested Directory nodes, each
+  holding its child directories, and is produced by PackageImporter.file_structure()
+  to inspect package structure.
+4 api_signature: torch.package.Directory(name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

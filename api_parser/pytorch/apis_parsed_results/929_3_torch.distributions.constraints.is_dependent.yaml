@@ -1,0 +1,11 @@
+2 api_name: torch.distributions.constraints.is_dependent
+3 api_description: Returns whether a constraint is a _Dependent constraint object.
+4 api_signature: torch.distributions.constraints.is_dependent(constraint)
+5 api_details: ''
+6 api_parameters:
+- constraint: The Constraint object to check for dependency.
+7 api_usage_example:
+- ' import torch'
+- ' from torch.distributions import Bernoulli'
+- ' from torch.distributions.constraints import is_dependent'
+8 api_shape: null

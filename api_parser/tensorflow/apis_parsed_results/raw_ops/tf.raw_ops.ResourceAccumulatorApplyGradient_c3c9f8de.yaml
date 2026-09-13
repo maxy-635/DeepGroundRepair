@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ResourceAccumulatorApplyGradient
+3 api_description: Applies a gradient update to a resource accumulator when the local
+  step is not behind the accumulator's global step.
+4 api_signature: tf.raw_ops.ResourceAccumulatorApplyGradient(handle,gradient)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the resource accumulator to update.
+- gradient: Provides the gradient tensor to add into the accumulator.
+7 api_usage_example: null
+8 api_shape: ''

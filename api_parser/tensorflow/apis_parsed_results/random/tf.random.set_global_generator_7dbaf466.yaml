@@ -1,0 +1,11 @@
+2 api_name: tensorflow.random.set_global_generator
+3 api_description: Replaces TensorFlow’s global random generator with a provided Generator
+  object, updating the shared RNG state used for random operations.
+4 api_signature: tf.random.set_global_generator(generator)
+5 api_details: ''
+6 api_parameters:
+- generator: Sets the global random number generator to this new `Generator` instance.
+7 api_usage_example:
+- rng = tf.random.get_global_generator()
+- rng.reset_from_seed(30)
+8 api_shape: ''

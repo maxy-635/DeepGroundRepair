@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.special.dawsn
+3 api_description: Computes Dawson’s integral element-wise for real inputs, returning
+  an odd function defined as exp(-x**2) times the integral of exp(t**2) from 0 to
+  x.
+4 api_signature: tf.math.special.dawsn(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the values at which to compute Dawson's integral.
+7 api_usage_example: null
+8 api_shape: ''

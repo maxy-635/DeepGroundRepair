@@ -1,0 +1,17 @@
+2 api_name: tensorflow.image.random_saturation
+3 api_description: Randomly adjusts the saturation of RGB images by choosing a factor
+  from a given range.
+4 api_signature: tf.image.random_saturation(image,lower,upper)
+5 api_details: ''
+6 api_parameters:
+- image: Specifies the RGB image or batch of images to adjust, with the last dimension
+    required to have size 3.
+- lower: Sets the minimum random saturation factor that can be applied.
+- upper: Sets the maximum random saturation factor that can be applied.
+7 api_usage_example:
+- x = [[[1.0, 2.0, 3.0],
+- '      [4.0, 5.0, 6.0]],'
+- '    [[7.0, 8.0, 9.0],'
+- '      [10.0, 11.0, 12.0]]]'
+- tf.image.random_saturation(x, 5, 10)
+8 api_shape: ''

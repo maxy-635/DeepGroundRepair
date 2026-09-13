@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseDenseCwiseMul
+3 api_description: Element-wise multiplies a SparseTensor by a dense tensor, broadcasting
+  only the dense tensor to the sparse tensor’s shape and keeping implicit zeros in
+  the sparse output zero.
+4 api_signature: tf.raw_ops.SparseDenseCwiseMul(sp_indices,sp_values,sp_shape,dense)
+5 api_details: ''
+6 api_parameters:
+- sp_indices: Holds the coordinates of the non-zero entries in the sparse tensor.
+- sp_values: Contains the values for those sparse entries, matching `sp_indices` one-to-one.
+- sp_shape: Specifies the full shape of the sparse tensor being represented.
+- dense: Provides the dense tensor to multiply elementwise with the sparse tensor.
+7 api_usage_example: null
+8 api_shape: ''

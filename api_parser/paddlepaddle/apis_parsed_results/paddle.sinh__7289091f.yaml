@@ -1,0 +1,8 @@
+2 api_name: paddle.sinh_
+3 api_description: Computes the hyperbolic sine of x in place, writing the result
+  into the output tensor.
+4 api_signature: paddle.sinh_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

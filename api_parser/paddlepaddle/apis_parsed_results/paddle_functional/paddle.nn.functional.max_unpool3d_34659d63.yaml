@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.functional.max_unpool3d
+3 api_description: paddle.nn.functional.max_unpool3d performs a 3D max unpooling operation,
+  using the output and indices from max_pool3d to partially invert the pooling, setting
+  non-maximum values to zero.
+4 api_signature: paddle.nn.functional.max_unpool3d(x,indices,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor for the unpooling operation, a 5-D tensor with shape [N, C,
+    D, H, W], where N is batch size, C is the number of channels, D is depth, H is
+    height, and W is width, with data types float32, float64, or int64.
+- indices: Indices from the maxpooling3d operation, a 5-D tensor with shape [N, C,
+    D, H, W], where N is batch size, C is the number of channels, D is depth, H is
+    height, and W is width, with data types int32 or int64.
+- kernel_size: The size of the unpool kernel, specified as an integer or a tuple/list
+    of integers.
+- stride: The size of the unpool stride, specified as an integer or a tuple/list of
+    integers.
+- padding: The amount of padding that was added to the input.
+7 api_usage_example: []
+8 api_shape: null

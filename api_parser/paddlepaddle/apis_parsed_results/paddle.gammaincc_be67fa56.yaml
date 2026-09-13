@@ -1,0 +1,17 @@
+2 api_name: paddle.gammaincc
+3 api_description: Computes the regularized upper incomplete gamma function.
+4 api_signature: paddle.gammaincc(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the non-negative values where the complemented incomplete
+    gamma function is evaluated.
+- y: Positive shape parameter tensor that controls the gamma function calculation.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([0.5, 0.5, 0.5, 0.5, 0.5], dtype="float32")
+- y = paddle.to_tensor([0, 1, 10, 100, 1000], dtype="float32")
+- out = paddle.gammaincc(x, y)
+- print(out)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.        , 0.15729916, 0.00000774, 0.        , 0.        ])'
+8 api_shape: {}

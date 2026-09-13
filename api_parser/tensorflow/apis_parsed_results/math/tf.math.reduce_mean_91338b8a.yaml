@@ -1,0 +1,15 @@
+2 api_name: tensorflow.math.reduce_mean
+3 api_description: Computes the mean of tensor elements across specified axes, optionally
+  keeping reduced dimensions.
+4 api_signature: tf.math.reduce_mean(input_tensor,axis)
+5 api_details: ''
+6 api_parameters:
+- input_tensor: Specifies the numeric tensor whose values will be averaged.
+- axis: Specifies which dimensions to reduce when computing the mean, or all dimensions
+    if `None`.
+7 api_usage_example:
+- x = tf.constant([1, 0, 1, 0])
+- tf.reduce_mean(x)
+- y = tf.constant([1., 0., 1., 0.])
+- tf.reduce_mean(y)
+8 api_shape: ''

@@ -1,0 +1,18 @@
+2 api_name: torch.fft.irfftn
+3 api_description: Computes the inverse real N-dimensional FFT, reconstructing a real-valued
+  signal from its frequency-domain representation produced by rfftn.
+4 api_signature: torch.fft.irfftn(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the half-Hermitian frequency-domain input to be transformed
+    back to the real domain.
+- s: The target signal shape in the transformed dimensions, used to pad or trim each
+    dimension before the inverse real FFT.
+- dim: The dimensions over which to perform the inverse transform, with the last one
+    being the half-Hermitian compressed dimension.
+- norm: The normalization mode that controls scaling of the inverse transform, such
+    as no normalization, 1/n, or 1/sqrt(n).
+7 api_usage_example:
+- ' t = torch.rand(10, 9)'
+- ' T = torch.fft.rfftn(t)'
+8 api_shape: null

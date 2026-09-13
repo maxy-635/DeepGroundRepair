@@ -1,0 +1,10 @@
+2 api_name: paddle.set_default_dtype
+3 api_description: Sets Paddle's default floating-point dtype used for new tensors
+  and operations; it starts as float32.
+4 api_signature: paddle.set_default_dtype(d)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.set_default_dtype("float32")
+8 api_shape: {}

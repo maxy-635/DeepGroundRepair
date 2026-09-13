@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.lu
+3 api_description: Computes the LU decomposition of one or more invertible square
+  matrices, returning packed LU factors and a permutation index tensor such that P_mat
+  * input = L * U.
+4 api_signature: tf.linalg.lu(input)
+5 api_details: ''
+6 api_parameters:
+- input: The square matrix tensor to factorize into LU form, with optional batch dimensions.
+7 api_usage_example: null
+8 api_shape: ''

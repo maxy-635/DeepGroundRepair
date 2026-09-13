@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.LookupTableImportV2
+3 api_description: Replaces a lookup table’s contents with the provided keys and values,
+  requiring the keys and values to match the table’s key and value types.
+4 api_signature: tf.raw_ops.LookupTableImportV2(table_handle,keys,values)
+5 api_details: ''
+6 api_parameters:
+- table_handle: Reference to the lookup table that will be populated with imported
+    key-value pairs.
+- keys: The keys that identify which table entries to add or update.
+- values: The values to store in the table for the corresponding keys.
+7 api_usage_example: null
+8 api_shape: ''

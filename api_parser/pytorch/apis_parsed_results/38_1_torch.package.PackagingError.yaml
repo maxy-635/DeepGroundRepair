@@ -1,0 +1,8 @@
+2 api_name: torch.package.PackagingError
+3 api_description: Raised when package export fails; `PackageExporter` collects related
+  export errors and reports them together.
+4 api_signature: torch.package.PackagingError(dependency_graph)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

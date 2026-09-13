@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.normal.Normal.log_prob
+3 api_description: Computes the log probability density of each value under a Normal
+  (Gaussian) distribution parameterized by mean and standard deviation.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The observed value(s) at which to evaluate the log probability under the
+    normal distribution.
+7 api_usage_example: null
+8 api_shape: null

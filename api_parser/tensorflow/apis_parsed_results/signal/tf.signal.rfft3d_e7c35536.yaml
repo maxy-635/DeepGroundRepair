@@ -1,0 +1,11 @@
+2 api_name: tensorflow.signal.rfft3d
+3 api_description: Computes the 3D FFT of a real-valued input over the innermost three
+  dimensions, returning only the unique half-spectrum for the last transformed axis
+  and cropping or zero-padding dimensions to match `fft_length`.
+4 api_signature: tf.signal.rfft3d(input_tensor,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The real-valued input tensor to transform with a 3D FFT.
+- fft_length: A 3-element int32 tensor specifying the FFT size for each dimension.
+7 api_usage_example: null
+8 api_shape: ''

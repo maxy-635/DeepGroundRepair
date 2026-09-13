@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.UniqueDataset
+3 api_description: Creates a dataset that yields the unique elements from input_dataset,
+  removing duplicates.
+4 api_signature: tf.raw_ops.UniqueDataset(input_dataset,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be deduplicated and transformed into a unique
+    dataset variant.
+- output_types: The data types of the elements produced by the resulting dataset.
+- output_shapes: The shapes of the elements produced by the resulting dataset.
+7 api_usage_example: null
+8 api_shape: ''

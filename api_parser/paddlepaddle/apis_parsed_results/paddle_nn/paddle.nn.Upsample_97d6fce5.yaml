@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.Upsample
+3 api_description: paddle.nn.Upsample resizes a batch of images to a specified size
+  or scale factor.
+4 api_signature: paddle.nn.Upsample(size,scale_factor,mode,align_corners)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the desired output shape for the resized image, varying based on
+    the dimensionality of the input tensor.
+- scale_factor: Defines the scaling factor for height and width, used to resize the
+    input dimensions proportionally.
+- mode: Determines the resampling method to be used for resizing, with options like
+    'linear', 'nearest', 'bilinear', etc.
+- align_corners: Indicates whether to align the corners of the input and output tensors,
+    ensuring corner pixel values are preserved.
+7 api_usage_example: []
+8 api_shape: null

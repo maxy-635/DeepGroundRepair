@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ApplyPowerSign
+3 api_description: 'Updates a variable using the PowerSign optimization rule: it combines
+  the current gradient with a moving average of past gradients, scales the gradient
+  by an exponential factor based on their sign agreement, and applies the result with
+  the learning rate.'
+4 api_signature: tf.raw_ops.ApplyPowerSign(var,m,lr,grad)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated in place by the optimizer.
+- m: The momentum-like accumulator tensor used to track past updates.
+- lr: The scalar learning-rate tensor that controls the update size.
+- grad: The current gradient tensor used to compute the update.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.config.get_soft_device_placement
+3 api_description: Returns whether soft device placement is enabled, allowing TensorFlow
+  to place ops on devices other than the one explicitly requested when needed.
+4 api_signature: tf.config.get_soft_device_placement()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

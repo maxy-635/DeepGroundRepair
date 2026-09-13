@@ -1,0 +1,8 @@
+2 api_name: torch.nn.modules.module.register_module_full_backward_pre_hook
+3 api_description: Registers a global backward pre-hook that runs before module backward
+  passes to let you inspect or modify incoming gradients for all modules.
+4 api_signature: torch.nn.modules.module.register_module_full_backward_pre_hook(hook)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

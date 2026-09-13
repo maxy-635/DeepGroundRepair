@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.datasets.boston_housing.load_data
+3 api_description: Loads the Boston Housing dataset and returns training and test
+  data for model development.
+4 api_signature: tf.keras.datasets.boston_housing.load_data(test_split,seed)
+5 api_details: ''
+6 api_parameters:
+- test_split: Specifies the fraction of the dataset to hold out as the test set.
+- seed: Sets the random seed used to shuffle the data before creating the test split.
+7 api_usage_example: null
+8 api_shape: ''

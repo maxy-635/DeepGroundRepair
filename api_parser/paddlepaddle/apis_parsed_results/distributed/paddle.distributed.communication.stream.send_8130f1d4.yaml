@@ -1,0 +1,25 @@
+2 api_name: paddle.distributed.communication.stream.send
+3 api_description: Sends a tensor asynchronously to a specified destination device
+  over distributed communication.
+4 api_signature: paddle.distributed.communication.stream.send(tensor,dst)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to send to another device.
+- dst: The destination rank to receive the tensor, defaulting to 0 if not specified.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- local_rank = dist.get_rank()
+- 'if local_rank == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- '    task = dist.stream.send(data, dst=1, sync_op=False)'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- '    task = dist.stream.recv(data, src=0, sync_op=False)'
+- 'task.wait()  # type: ignore[union-attr]'
+- out = data.numpy()
+- print(out)
+- '[[4, 5, 6], [4, 5, 6]]'
+8 api_shape: {}

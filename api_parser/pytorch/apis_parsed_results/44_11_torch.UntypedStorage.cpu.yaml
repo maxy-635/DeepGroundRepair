@@ -1,0 +1,8 @@
+2 api_name: torch.UntypedStorage.cpu
+3 api_description: Returns a CPU copy of the storage, moving it to CPU only if it
+  is not already there.
+4 api_signature: cpu()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

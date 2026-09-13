@@ -1,0 +1,12 @@
+2 api_name: tensorflow.debugging.assert_near
+3 api_description: Checks that two tensors are element-wise close within absolute
+  and relative tolerances, raising InvalidArgumentError and printing diagnostics if
+  any values differ too much.
+4 api_signature: tf.debugging.assert_near(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose values are compared against `y` for near equality.
+- y: The reference tensor that `x` is checked against, with matching dtype and broadcastable
+    shape.
+7 api_usage_example: null
+8 api_shape: ''

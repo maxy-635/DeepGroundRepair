@@ -1,0 +1,12 @@
+2 api_name: tensorflow.tpu.experimental.embedding.TPUEmbeddingForServing
+3 api_description: CPU-based serving API for restoring TPUEmbedding checkpoints after
+  training, enabling inference with saved embedding tables.
+4 api_signature: tf.tpu.experimental.embedding.TPUEmbeddingForServing(feature_config,optimizer)
+5 api_details: ''
+6 api_parameters:
+- feature_config: Specifies the nested feature configuration used to define the TPU
+    embedding inputs and their behavior.
+- optimizer: Provides the embedding optimizer to create and manage training state,
+    or can be `None` outside `TPUStrategy` to skip slot variables for serving.
+7 api_usage_example: null
+8 api_shape: ''

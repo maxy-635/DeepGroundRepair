@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.float_power
+3 api_description: Raises each element of the first input to the corresponding power
+  of the second input using TensorFlow's NumPy-compatible float_power behavior, returning
+  floating-point results.
+4 api_signature: tf.experimental.numpy.float_power(x1,x2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

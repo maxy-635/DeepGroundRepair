@@ -1,0 +1,13 @@
+2 api_name: tensorflow.random.stateless_binomial
+3 api_description: Generates deterministic stateless pseudorandom samples from a binomial
+  distribution given count and success probability, producing the same results for
+  the same seeds and shape.
+4 api_signature: tf.random.stateless_binomial(shape,seed,counts,probs)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the output tensor dimensions.
+- seed: Provides the stateless random seed for generating the samples.
+- counts: Sets the number of trials for the binomial distribution.
+- probs: Sets the success probability for each binomial trial.
+7 api_usage_example: null
+8 api_shape: ''

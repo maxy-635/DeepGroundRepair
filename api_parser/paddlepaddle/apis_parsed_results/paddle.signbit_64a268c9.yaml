@@ -1,0 +1,16 @@
+2 api_name: paddle.signbit
+3 api_description: Returns a boolean tensor indicating whether each input element
+  has its sign bit set.
+4 api_signature: paddle.signbit(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose sign bits are checked elementwise.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- x = paddle.to_tensor([-0., 1.1, -2.1, 0., 2.5], dtype='float32')
+- res = paddle.signbit(x)
+- print(res)
+- Tensor(shape=[5], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True, False, True, False, False])'
+8 api_shape: {}

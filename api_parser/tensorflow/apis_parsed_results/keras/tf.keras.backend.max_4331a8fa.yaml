@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.max
+3 api_description: Returns the maximum value across a tensor along a specified axis,
+  with an optional keepdims setting; deprecated in favor of TensorFlow’s newer APIs.
+4 api_signature: tf.keras.backend.max(x,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

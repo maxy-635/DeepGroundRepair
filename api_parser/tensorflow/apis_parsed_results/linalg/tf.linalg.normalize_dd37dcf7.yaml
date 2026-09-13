@@ -1,0 +1,12 @@
+2 api_name: tensorflow.linalg.normalize
+3 api_description: Normalizes a tensor along a specified axis by dividing it by its
+  norm, computed with tf.linalg.norm.
+4 api_signature: tf.linalg.normalize(tensor,ord,axis)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor whose values are normalized.
+- ord: Specifies which norm to compute, such as Euclidean, Frobenius, or a p-norm.
+- axis: Chooses whether to normalize the whole tensor, each vector along one axis,
+    or each matrix over two axes.
+7 api_usage_example: null
+8 api_shape: ''

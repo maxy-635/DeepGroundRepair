@@ -1,0 +1,25 @@
+2 api_name: paddle.nn.InstanceNorm1D
+3 api_description: InstanceNorm1D normalizes a 3D input (batch, channels, length)
+  by applying instance normalization, which standardizes the input across each channel
+  independently, enhancing training stability and performance in neural networks.
+4 api_signature: paddle.nn.InstanceNorm1D(num_features,epsilon,momentum)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of input channels for the InstanceNorm1D layer.
+- epsilon: Adds a small constant to the denominator to ensure numerical stability
+    during normalization.
+- momentum: Determines the weight of the moving average for computing running mean
+    and variance.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- x = paddle.rand((2, 2, 3))
+- instance_norm = paddle.nn.InstanceNorm1D(2)
+- instance_norm_out = instance_norm(x)
+- print(instance_norm_out)
+- Tensor(shape=[2, 2, 3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[ 1.32132232, -0.22444785, -1.09687424],'
+- '[ 1.29506636, -0.15688568, -1.13818073]],'
+- '[[-0.27764025,  1.33961368, -1.06197333],'
+- '[ 0.44484580, -1.38489723,  0.94005162]]])'
+8 api_shape: null

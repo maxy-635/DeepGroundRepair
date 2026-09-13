@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TensorMapStackKeys
+3 api_description: Returns a Tensor containing all keys from a TensorMap.
+4 api_signature: tf.raw_ops.TensorMapStackKeys(input_handle,key_dtype)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The variant TensorMap handle whose stored keys will be stacked into
+    a tensor.
+- key_dtype: The dtype to use for the output tensor of keys.
+7 api_usage_example: null
+8 api_shape: ''

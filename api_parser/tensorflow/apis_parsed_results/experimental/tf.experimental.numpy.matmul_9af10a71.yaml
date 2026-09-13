@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.matmul
+3 api_description: Computes matrix multiplication for TensorFlow arrays, following
+  NumPy’s matmul behavior.
+4 api_signature: tf.experimental.numpy.matmul(x1,x2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

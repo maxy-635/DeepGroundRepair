@@ -1,0 +1,20 @@
+2 api_name: torch.repeat_interleave
+3 api_description: Repeats each tensor element according to specified repeat counts,
+  producing a new tensor with repeated values.
+4 api_signature: torch.repeat_interleave(input,repeats,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements will be repeated.
+- repeats: Specifies how many times each element is repeated, with broadcasting to
+    match the chosen dimension.
+- dim: Selects the dimension along which to repeat elements; if omitted, the input
+    is flattened first.
+7 api_usage_example:
+- ' x = torch.tensor([1, 2, 3])'
+- ' x.repeat_interleave(2)'
+- ' y = torch.tensor([[1, 2], [3, 4]])'
+- ' torch.repeat_interleave(y, 2)'
+- ' torch.repeat_interleave(y, 3, dim=1)'
+- ' torch.repeat_interleave(y, torch.tensor([1, 2]), dim=0)'
+- ' torch.repeat_interleave(y, torch.tensor([1, 2]), dim=0, output_size=3)'
+8 api_shape: null

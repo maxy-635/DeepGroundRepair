@@ -1,0 +1,9 @@
+2 api_name: torch.nn.Softmin.forward
+3 api_description: Applies the softmin function along the specified dimension, returning
+  a normalized probability distribution where smaller input values get larger output
+  weights.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

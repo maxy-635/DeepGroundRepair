@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TensorDataset
+3 api_description: Creates a dataset that outputs the provided tensors as one tuple-valued
+  element, emitting them once.
+4 api_signature: tf.raw_ops.TensorDataset(components,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- components: Specifies the tensor components that make up each element of the dataset.
+- output_shapes: Defines the shape of each output component produced by the dataset.
+7 api_usage_example: null
+8 api_shape: ''

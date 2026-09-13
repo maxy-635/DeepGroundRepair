@@ -1,0 +1,10 @@
+2 api_name: tensorflow.io.matching_files
+3 api_description: Returns a deterministic list of files matching one or more glob
+  patterns, with wildcards allowed only in the filename portion of the path.
+4 api_signature: tf.io.matching_files(pattern)
+5 api_details: ''
+6 api_parameters:
+- pattern: A string tensor containing one or more shell wildcard patterns used to
+    match file names.
+7 api_usage_example: null
+8 api_shape: ''

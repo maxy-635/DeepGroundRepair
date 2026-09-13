@@ -1,0 +1,47 @@
+2 api_name: paddle.count_nonzero
+3 api_description: Counts non-zero elements in a tensor, optionally along a specified
+  axis.
+4 api_signature: paddle.count_nonzero(x,axis,keepdim)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose nonzero elements are counted.
+- axis: The dimension or dimensions to reduce when counting nonzero elements.
+- keepdim: Whether to keep reduced dimensions in the output tensor.
+7 api_usage_example:
+- import paddle
+- '# x is a 2-D Tensor:'
+- x = paddle.to_tensor([[0., 1.1, 1.2], [0., 0., 1.3], [0., 0., 0.]])
+- out1 = paddle.count_nonzero(x)
+- out1
+- Tensor(shape=[], dtype=int64, place=Place(cpu), stop_gradient=True,
+- 3)
+- out2 = paddle.count_nonzero(x, axis=0)
+- out2
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 1, 2])'
+- out3 = paddle.count_nonzero(x, axis=0, keepdim=True)
+- out3
+- Tensor(shape=[1, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 1, 2]])'
+- out4 = paddle.count_nonzero(x, axis=1)
+- out4
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[2, 1, 0])'
+- out5 = paddle.count_nonzero(x, axis=1, keepdim=True)
+- out5
+- Tensor(shape=[3, 1], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[2],'
+- '[1],'
+- '[0]])'
+- '# y is a 3-D Tensor:'
+- y = paddle.to_tensor([[[0., 1.1, 1.2], [0., 0., 1.3], [0., 0., 0.]],
+- '                        [[0., 2.5, 2.6], [0., 0., 2.4], [2.1, 2.2, 2.3]]])'
+- out6 = paddle.count_nonzero(y, axis=[1, 2])
+- out6
+- Tensor(shape=[2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[3, 6])'
+- out7 = paddle.count_nonzero(y, axis=[0, 1])
+- out7
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[1, 3, 5])'
+8 api_shape: {}

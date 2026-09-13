@@ -1,0 +1,8 @@
+2 api_name: paddle.inference.PredictorPool
+3 api_description: Creates and manages a pool of Paddle inference predictors for concurrent,
+  reusable execution of model predictions.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

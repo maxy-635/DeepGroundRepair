@@ -1,0 +1,14 @@
+2 api_name: tensorflow.random.stateless_truncated_normal
+3 api_description: Generates deterministic stateless pseudorandom values from a truncated
+  normal distribution, producing the same results for the same seed and shape on supported
+  hardware.
+4 api_signature: tf.random.stateless_truncated_normal(shape,seed,mean,stddev,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor dimensions.
+- seed: Provides the stateless random seed used to generate reproducible values.
+- mean: Sets the mean value of the truncated normal distribution.
+- stddev: Sets the standard deviation of the normal distribution before truncation.
+- dtype: Specifies the data type of the generated output tensor.
+7 api_usage_example: null
+8 api_shape: ''

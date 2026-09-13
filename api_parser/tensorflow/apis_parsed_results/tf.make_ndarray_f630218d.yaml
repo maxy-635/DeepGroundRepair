@@ -1,0 +1,9 @@
+2 api_name: tensorflow.make_ndarray
+3 api_description: Converts a TensorFlow tensor into a NumPy ndarray with the same
+  shape and data.
+4 api_signature: tf.make_ndarray(tensor)
+5 api_details: ''
+6 api_parameters:
+- tensor: The TensorProto to convert into a NumPy ndarray.
+7 api_usage_example: null
+8 api_shape: ''

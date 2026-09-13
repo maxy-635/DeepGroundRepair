@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.eye
+3 api_description: Returns an identity matrix as a tensor, with ones on the specified
+  diagonal and zeros elsewhere.
+4 api_signature: tf.keras.backend.eye(size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.fingerprint
+3 api_description: Computes byte-array fingerprints for each batch element from the
+  raw tensor contents, producing a fixed-size hash value per slice and remaining invariant
+  to reshapes or bitcasts that preserve the batch dimension.
+4 api_signature: tf.fingerprint(data,method)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor to fingerprint, and it must be at least 1-D.
+- method: The fingerprinting algorithm to use, currently `farmhash64`.
+7 api_usage_example: null
+8 api_shape: ''

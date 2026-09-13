@@ -1,0 +1,23 @@
+2 api_name: tensorflow.nn.with_space_to_batch
+3 api_description: The tensorflow.nn.with_space_to_batch API transforms sliding window
+  operations into atrous operations by performing operations on the space-to-batch
+  representation of the input. If dilation_rate is uniformly 1, it performs the operation
+  directly. Otherwise, it adjusts the dilation_rate, paddings, and crops for space_to_batch_nd
+  and batch_to_space_nd operations. For 'VALID' padding, it is equivalent to 'SAME'
+  padding with a filter_shape of [1]*N when dilation_rate is not uniformly 1. Multiple
+  with_space_to_batch calls with identical dilation_rate and padding can be combined
+  to reduce overhead.
+4 api_signature: tf.nn.with_space_to_batch(input,dilation_rate,padding,filter_shape,spatial_dims)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor, which must have a rank greater than the largest
+    index in spatial_dims.
+- dilation_rate: Defines the dilation rate for the spatial dimensions as an int32
+    Tensor of known shape.
+- padding: Determines the type of padding algorithm to use, either 'VALID' or 'SAME'.
+- filter_shape: Indicates the shape of the convolution kernel or pooling window when
+    padding is 'SAME'; ignored if padding is 'VALID'.
+- spatial_dims: Lists the spatial dimensions of the input and output, specified as
+    a sequence of increasing integers.
+7 api_usage_example: null
+8 api_shape: ''

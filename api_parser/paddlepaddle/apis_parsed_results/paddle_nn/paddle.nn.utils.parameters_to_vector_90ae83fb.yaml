@@ -1,0 +1,9 @@
+2 api_name: paddle.nn.utils.parameters_to_vector
+3 api_description: Converts model parameters into a single 1-D tensor for easy manipulation
+  and analysis.
+4 api_signature: paddle.nn.utils.parameters_to_vector(parameters)
+5 api_details: ''
+6 api_parameters:
+- parameters: An iterable collection of trainable tensors from a neural network layer.
+7 api_usage_example: []
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SpaceToDepth
+3 api_description: Rearranges spatial blocks of a tensor into the depth dimension
+  using the specified block size.
+4 api_signature: tf.raw_ops.SpaceToDepth(input,block_size,data_format)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose spatial dimensions will be rearranged into the depth dimension.
+- block_size: The factor by which each spatial dimension is split and folded into
+    channels, and must be at least 2.
+- data_format: The layout of the input tensor, specifying whether channels are last,
+    first, or vectored channels.
+7 api_usage_example: null
+8 api_shape: ''

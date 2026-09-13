@@ -1,0 +1,15 @@
+2 api_name: torch.nn.utils.parametrizations.spectral_norm
+3 api_description: Applies spectral normalization to a module parameter to constrain
+  its spectral norm during training.
+4 api_signature: torch.nn.utils.parametrizations.spectral_norm(module,name,n_power_iterations)
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the parameter to be normalized.
+- name: The name of the weight parameter to apply spectral normalization to.
+- n_power_iterations: The number of power iterations used to estimate the spectral
+    norm.
+7 api_usage_example:
+- ' snm = spectral_norm(nn.Linear(20, 40))'
+- ' snm'
+- ' torch.linalg.matrix_norm(snm.weight, 2)'
+8 api_shape: null

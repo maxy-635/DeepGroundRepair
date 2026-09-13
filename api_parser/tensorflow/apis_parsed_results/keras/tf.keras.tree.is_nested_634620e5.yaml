@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.tree.is_nested
+3 api_description: Returns True if the input is a nested structure, and False otherwise.
+4 api_signature: tf.keras.tree.is_nested(structure)
+5 api_details: ''
+6 api_parameters:
+- structure: The structure to check for whether it is nested.
+7 api_usage_example:
+- keras.tree.is_nested(42)
+- 'keras.tree.is_nested({"foo": 42})'
+8 api_shape: ''

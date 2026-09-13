@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv
+3 api_description: Adds a new symbolic value to the ShapeEnv so tensor shapes or related
+  quantities can be tracked and reasoned about symbolically.
+4 api_signature: '"torch.fx.experimental.symbolic_shapes.ShapeEnv(*,should_record_events,tracked_fakes)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

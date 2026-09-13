@@ -1,0 +1,34 @@
+2 api_name: torch.jit.trace_module
+3 api_description: Traces the specified methods of a PyTorch module to produce an
+  executable, JIT-optimized ScriptModule.
+4 api_signature: torch.jit.trace_module(mod,inputs,check_trace,strict)
+5 api_details: ''
+6 api_parameters:
+- mod: The module whose named methods will be traced and compiled into a single ScriptModule.
+- inputs: A dictionary mapping method names to example inputs used to trace each corresponding
+    method.
+7 api_usage_example:
+- import torch
+- import torch.nn as nn
+- 'class Net(nn.Module):'
+- '    def __init__(self) -> None:'
+- '        super().__init__()'
+- '        self.conv = nn.Conv2d(1, 1, 3)'
+- '    def forward(self, x):'
+- '        return self.conv(x)'
+- '    def weighted_kernel_sum(self, weight):'
+- '        return weight * self.conv.weight'
+- n = Net()
+- example_weight = torch.rand(1, 1, 3, 3)
+- example_forward_input = torch.rand(1, 1, 3, 3)
+- '# Trace a specific method and construct `ScriptModule` with'
+- '# a single `forward` method'
+- module = torch.jit.trace(n.forward, example_forward_input)
+- '# Trace a module (implicitly traces `forward`) and construct a'
+- '# `ScriptModule` with a single `forward` method'
+- module = torch.jit.trace(n, example_forward_input)
+- '# Trace specific methods on a module (specified in `inputs`), constructs'
+- '# a `ScriptModule` with `forward` and `weighted_kernel_sum` methods'
+- 'inputs = {"forward": example_forward_input, "weighted_kernel_sum": example_weight}'
+- module = torch.jit.trace_module(n, inputs)
+8 api_shape: null

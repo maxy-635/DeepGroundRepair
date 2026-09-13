@@ -1,0 +1,11 @@
+2 api_name: torch.special.shifted_chebyshev_polynomial_w
+3 api_description: Computes the shifted Chebyshev polynomial of the fourth kind W_n^*(x)
+  for a given input tensor and polynomial degree n.
+4 api_signature: torch.special.shifted_chebyshev_polynomial_w(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose values are used to evaluate the shifted Chebyshev
+    polynomial.
+- n: The degree of the shifted Chebyshev polynomial to compute.
+7 api_usage_example: null
+8 api_shape: null

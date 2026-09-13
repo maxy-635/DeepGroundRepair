@@ -1,0 +1,21 @@
+2 api_name: torch.optim.lr_scheduler.StepLR
+3 api_description: Reduces each parameter group's learning rate by gamma every step_size
+  epochs.
+4 api_signature: torch.optim.lr_scheduler.StepLR(optimizer,step_size,gamma)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be scheduled.
+- step_size: The number of epochs between each learning rate decay.
+- gamma: The factor used to multiply the learning rate at each decay step.
+7 api_usage_example:
+- ' # Assuming optimizer uses lr = 0.05 for all groups'
+- ' # lr = 0.05     if epoch < 30'
+- ' # lr = 0.005    if 30 <= epoch < 60'
+- ' # lr = 0.0005   if 60 <= epoch < 90'
+- ' # ...'
+- ' scheduler = StepLR(optimizer, step_size=30, gamma=0.1)'
+- ' for epoch in range(100):'
+- '     train(...)'
+- '     validate(...)'
+- '     scheduler.step()'
+8 api_shape: null

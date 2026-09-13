@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.pipelining.microbatch.merge_chunks
+3 api_description: Merge a list of microbatch chunks back into one value according
+  to the provided chunk specification.
+4 api_signature: torch.distributed.pipelining.microbatch.merge_chunks(chunks)
+5 api_details: ''
+6 api_parameters:
+- chunks: The list of chunk tensors or values to merge back into a single output.
+7 api_usage_example: null
+8 api_shape: null

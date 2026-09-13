@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.slice_update
+3 api_description: Slices an input tensor at the given start indices and replaces
+  that region with `updates`, matching the input rank and fitting within the remaining
+  dimensions.
+4 api_signature: tf.keras.ops.slice_update(inputs,start_indices,updates)
+5 api_details: ''
+6 api_parameters:
+- inputs: The tensor whose values will be updated.
+- start_indices: The starting position for the update along each dimension of `inputs`.
+- updates: The tensor containing replacement values to write into `inputs`.
+7 api_usage_example: null
+8 api_shape: ''

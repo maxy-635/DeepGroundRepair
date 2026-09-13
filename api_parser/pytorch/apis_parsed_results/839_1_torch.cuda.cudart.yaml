@@ -1,0 +1,27 @@
+2 api_name: torch.cuda.cudart
+3 api_description: Returns the CUDA runtime API module so you can access CUDA runtime
+  functions through PyTorch.
+4 api_signature: torch.cuda.cudart()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' import torch'
+- ' from torch.cuda import cudart, check_error'
+- ' import os'
+- ' os.environ["CUDA_PROFILE"] = "1"'
+- ' def perform_cuda_operations_with_streams():'
+- '     stream = torch.cuda.Stream()'
+- '     with torch.cuda.stream(stream):'
+- '         x = torch.randn(100, 100, device=''cuda'')'
+- '         y = torch.randn(100, 100, device=''cuda'')'
+- '         z = torch.mul(x, y)'
+- '     return z'
+- ' torch.cuda.synchronize()'
+- ' print("====== Start nsys profiling ======")'
+- ' check_error(cudart().cudaProfilerStart())'
+- ' with torch.autograd.profiler.emit_nvtx():'
+- '     result = perform_cuda_operations_with_streams()'
+- '     print("CUDA operations completed.")'
+- ' check_error(torch.cuda.cudart().cudaProfilerStop())'
+- ' print("====== End nsys profiling ======")'
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.logical_not
+3 api_description: Returns the elementwise logical negation of an array or tensor,
+  mapping truthy values to False and falsy values to True.
+4 api_signature: tf.experimental.numpy.logical_not(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

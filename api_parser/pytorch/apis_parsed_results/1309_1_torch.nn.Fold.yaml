@@ -1,0 +1,20 @@
+2 api_name: torch.nn.Fold
+3 api_description: torch.nn.Fold combines overlapping local blocks of data into a
+  larger tensor, enabling the reconstruction of high-dimensional outputs from smaller
+  patches.
+4 api_signature: torch.nn.Fold(output_size,kernel_size,padding)
+5 api_details: ''
+6 api_parameters:
+- output_size: Defines the desired spatial dimensions of the output tensor.
+- kernel_size: Specifies the dimensions of the sliding blocks used to fold the input.
+- padding: Indicates the amount of implicit zero padding added to both sides of the
+    input.
+7 api_usage_example:
+- ' fold_params = dict(kernel_size=..., dilation=..., padding=..., stride=...)'
+- ' fold = nn.Fold(output_size=..., **fold_params)'
+- ' unfold = nn.Unfold(**fold_params)'
+8 api_shape:
+  input tensor shape: (N, Channel_in \times \prod(\text{kernel_size}), L)
+  output tensor shape: (N, Channel_out, \text{output_size}[0], \text{output_size}[1],
+    \dots)
+  tensor shape transform formulas: {}

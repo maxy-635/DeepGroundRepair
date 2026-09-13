@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.batch_set_value
+3 api_description: Sets the values of multiple backend variables or weights at once
+  from a list of (value, variable) pairs.
+4 api_signature: tf.keras.backend.batch_set_value(tuples)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

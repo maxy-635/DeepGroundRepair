@@ -1,0 +1,8 @@
+2 api_name: torch._foreach_abs
+3 api_description: Applies torch.abs() to each tensor in the input list and returns
+  the elementwise absolute value results.
+4 api_signature: torch._foreach_abs(self)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

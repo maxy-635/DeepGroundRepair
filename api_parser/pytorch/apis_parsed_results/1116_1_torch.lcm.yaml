@@ -1,0 +1,16 @@
+2 api_name: torch.lcm
+3 api_description: Computes the element-wise least common multiple of two tensors.
+4 api_signature: torch.lcm(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first input tensor whose values are used to compute the least common
+    multiple.
+- other: The second input tensor used together with `input` to compute the least common
+    multiple.
+7 api_usage_example:
+- ' a = torch.tensor([5, 10, 15])'
+- ' b = torch.tensor([3, 4, 5])'
+- ' torch.lcm(a, b)'
+- ' c = torch.tensor([3])'
+- ' torch.lcm(a, c)'
+8 api_shape: null

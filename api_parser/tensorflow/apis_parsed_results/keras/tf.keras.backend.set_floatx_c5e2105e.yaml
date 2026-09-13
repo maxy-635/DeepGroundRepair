@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.backend.set_floatx
+3 api_description: Sets the global default floating-point dtype used by Keras.
+4 api_signature: tf.keras.backend.set_floatx(value)
+5 api_details: ''
+6 api_parameters:
+- value: Sets the default floating-point precision used by Keras to one of the supported
+    data types.
+7 api_usage_example:
+- '# Set it back to float32'
+- keras.config.set_floatx('float32')
+8 api_shape: ''

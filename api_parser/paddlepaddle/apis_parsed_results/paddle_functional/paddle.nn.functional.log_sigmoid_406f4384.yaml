@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.functional.log_sigmoid
+3 api_description: Computes the element-wise log-sigmoid activation function, returning
+  the log of the sigmoid of the input tensor.
+4 api_signature: paddle.nn.functional.log_sigmoid(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor that the log sigmoid activation function is applied to, accepting
+    data types float32, float64, complex64, or complex128.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([1.0, 2.0, 3.0, 4.0])
+- out = F.log_sigmoid(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.31326166, -0.12692805, -0.04858733, -0.01814996])'
+8 api_shape: null

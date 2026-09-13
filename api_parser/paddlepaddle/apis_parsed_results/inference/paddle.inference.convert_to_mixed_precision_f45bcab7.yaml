@@ -1,0 +1,17 @@
+2 api_name: paddle.inference.convert_to_mixed_precision
+3 api_description: Converts an FP32 Paddle inference model to a mixed-precision model
+  for faster, more efficient execution while preserving accuracy where needed.
+4 api_signature: paddle.inference.convert_to_mixed_precision(model_file,params_file,mixed_model_file,mixed_params_file,mixed_precision,backend)
+5 api_details: ''
+6 api_parameters:
+- model_file: Specifies the input fp32 model file to convert, such as `inference.pdmodel`.
+- params_file: Specifies the input fp32 parameter file to convert, such as `inference.pdiparams`.
+- mixed_model_file: Sets the output path where the converted mixed-precision model
+    will be saved.
+- mixed_params_file: Sets the output path where the converted mixed-precision parameters
+    will be saved.
+- mixed_precision: Chooses the target mixed-precision type to use during conversion,
+    such as `PrecisionType.Half`.
+- backend: Chooses the backend device used for conversion, such as `PlaceType.GPU`.
+7 api_usage_example: []
+8 api_shape: {}

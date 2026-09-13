@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.OptionalHasValue
+3 api_description: Checks whether an Optional variant currently contains a value and
+  returns true only when it does.
+4 api_signature: tf.raw_ops.OptionalHasValue(optional)
+5 api_details: ''
+6 api_parameters:
+- optional: The variant tensor representing the optional container to check for a
+    stored value.
+7 api_usage_example: null
+8 api_shape: ''

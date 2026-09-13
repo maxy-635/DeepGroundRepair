@@ -1,0 +1,9 @@
+2 api_name: torch.TypedStorage.type
+3 api_description: Returns the storage type when no dtype is given, or casts the storage
+  to the specified type when dtype is provided.
+4 api_signature: type(dtype)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the desired storage type to use.
+7 api_usage_example: null
+8 api_shape: null

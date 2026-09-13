@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SoftplusGrad
+3 api_description: Computes the gradient of a softplus activation by combining the
+  upstream gradient with the sigmoid of the input.
+4 api_signature: tf.raw_ops.SoftplusGrad(gradients,features)
+5 api_details: ''
+6 api_parameters:
+- gradients: The upstream gradient values passed back from the softplus operation
+    for backpropagation.
+- features: The original input features to the softplus operation, used to compute
+    the gradient.
+7 api_usage_example: null
+8 api_shape: ''

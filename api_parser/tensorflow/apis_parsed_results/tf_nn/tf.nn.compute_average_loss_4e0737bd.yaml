@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nn.compute_average_loss
+3 api_description: The tensorflow.nn.compute_average_loss API scales individual losses
+  using sample weights and calculates their average, facilitating usage in distribution
+  strategies and custom training loops.
+4 api_signature: tf.nn.compute_average_loss(per_example_loss,global_batch_size)
+5 api_details: ''
+6 api_parameters:
+- per_example_loss: The loss calculated for each individual example in the batch.
+- global_batch_size: The total batch size across all replicas, used to scale the average
+    loss; defaults to the size of the first dimension of losses multiplied by the
+    number of replicas.
+7 api_usage_example: null
+8 api_shape: ''

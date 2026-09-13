@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.IsVariableInitialized
+3 api_description: Returns a boolean scalar indicating whether a variable tensor has
+  been initialized.
+4 api_signature: tf.raw_ops.IsVariableInitialized(ref)
+5 api_details: ''
+6 api_parameters:
+- ref: A mutable tensor from a Variable node whose initialization state is being checked.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.io.encode_png
+3 api_description: Encodes a rank-N uint8 or uint16 image tensor with shape batch_dims
+  + [height, width, channels] into PNG format.
+4 api_signature: tf.io.encode_png(image)
+5 api_details: ''
+6 api_parameters:
+- image: The image tensor to encode as PNG, with shape batch_dims + [height, width,
+    channels] and dtype uint8 or uint16.
+7 api_usage_example: null
+8 api_shape: ''

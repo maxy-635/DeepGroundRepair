@@ -1,0 +1,48 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.optim_state_dict_to_load
+3 api_description: Convert an optimizer state dict into the format needed to load
+  it into the optimizer attached to an FSDP model.
+4 api_signature: staticoptim_state_dict_to_load(model,optim,optim_state_dict)
+5 api_details: ''
+6 api_parameters:
+- model: The root model whose parameters were optimized and whose structure is used
+    to map optimizer state.
+- optim: The optimizer associated with the model’s parameters that will receive the
+    loaded state.
+- optim_state_dict: The optimizer state dictionary containing the saved states to
+    be converted for loading.
+7 api_usage_example:
+- ' from torch.distributed.fsdp import FullyShardedDataParallel as FSDP'
+- ' from torch.distributed.fsdp import StateDictType'
+- ' from torch.distributed.fsdp import FullStateDictConfig'
+- ' from torch.distributed.fsdp import FullOptimStateDictConfig'
+- ' # Save a checkpoint'
+- ' model, optim = ...'
+- ' FSDP.set_state_dict_type('
+- '     model,'
+- '     StateDictType.FULL_STATE_DICT,'
+- '     FullStateDictConfig(rank0_only=False),'
+- '     FullOptimStateDictConfig(rank0_only=False),'
+- ' )'
+- ' state_dict = model.state_dict()'
+- ' original_osd = optim.state_dict()'
+- ' optim_state_dict = FSDP.optim_state_dict('
+- '     model,'
+- '     optim,'
+- '     optim_state_dict=original_osd'
+- ' )'
+- ' save_a_checkpoint(state_dict, optim_state_dict)'
+- ' # Load a checkpoint'
+- ' model, optim = ...'
+- ' state_dict, optim_state_dict = load_a_checkpoint()'
+- ' FSDP.set_state_dict_type('
+- '     model,'
+- '     StateDictType.FULL_STATE_DICT,'
+- '     FullStateDictConfig(rank0_only=False),'
+- '     FullOptimStateDictConfig(rank0_only=False),'
+- ' )'
+- ' model.load_state_dict(state_dict)'
+- ' optim_state_dict = FSDP.optim_state_dict_to_load('
+- '     model, optim, optim_state_dict'
+- ' )'
+- ' optim.load_state_dict(optim_state_dict)'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.AddSparseToTensorsMap
+3 api_description: Stores a SparseTensor in a SparseTensorsMap and returns a unique
+  int64 handle for later retrieval via TakeManySparseFromTensorsMap.
+4 api_signature: tf.raw_ops.AddSparseToTensorsMap(sparse_indices,sparse_values,sparse_shape)
+5 api_details: ''
+6 api_parameters:
+- sparse_indices: Specifies the 2-D int64 coordinates of the nonzero entries in the
+    sparse tensor.
+- sparse_values: Provides the 1-D values corresponding to the sparse tensor’s nonzero
+    entries.
+- sparse_shape: Defines the 1-D int64 overall shape of the sparse tensor.
+7 api_usage_example: null
+8 api_shape: ''

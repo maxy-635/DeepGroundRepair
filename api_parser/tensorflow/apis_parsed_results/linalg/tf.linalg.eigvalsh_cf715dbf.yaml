@@ -1,0 +1,9 @@
+2 api_name: tensorflow.linalg.eigvalsh
+3 api_description: Computes the eigenvalues of one or more self-adjoint (Hermitian)
+  matrices.
+4 api_signature: tf.linalg.eigvalsh(tensor)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input square tensor whose eigenvalues are computed.
+7 api_usage_example: null
+8 api_shape: ''

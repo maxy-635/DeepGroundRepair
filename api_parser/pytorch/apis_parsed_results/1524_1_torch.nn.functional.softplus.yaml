@@ -1,0 +1,17 @@
+2 api_name: torch.nn.functional.softplus
+3 api_description: The torch.nn.functional.softplus function applies the Softplus
+  activation, which smooths ReLU by computing (1/β) * log(1 + exp(β * x)) element-wise
+  on the input tensor.
+4 api_signature: torch.nn.functional.softplus(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor for which the softplus activation function will be applied.
+- beta: The beta value which controls the smoothness of the approximation to the ReLU
+    function.
+- threshold: The threshold value above which the softplus function is approximated
+    by a linear function to improve numerical stability.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

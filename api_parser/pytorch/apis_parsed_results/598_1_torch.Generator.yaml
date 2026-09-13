@@ -1,0 +1,11 @@
+2 api_name: torch.Generator
+3 api_description: Creates a generator that controls pseudo-random number state for
+  reproducible random sampling operations.
+4 api_signature: torch.Generator(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the device on which the generator will create random numbers.
+7 api_usage_example:
+- ' g_cpu = torch.Generator()'
+- ' g_cuda = torch.Generator(device=''cuda'')'
+8 api_shape: null

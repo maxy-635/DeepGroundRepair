@@ -1,0 +1,18 @@
+2 api_name: torch.add
+3 api_description: Adds a scaled version of 'other' to 'input' using the specified
+  alpha value.
+4 api_signature: torch.add(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor that will be added to.
+- other: The tensor or number that will be added to the input tensor.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.add(a, 20)'
+- ' b = torch.randn(4)'
+- ' b'
+- ' c = torch.randn(4, 1)'
+- ' c'
+- ' torch.add(b, c, alpha=10)'
+8 api_shape: null

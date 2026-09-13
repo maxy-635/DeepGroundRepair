@@ -1,0 +1,16 @@
+2 api_name: tensorflow.image.adjust_gamma
+3 api_description: Applies gamma correction by converting the image to float, scaling
+  pixels with gain * In**gamma, and casting the result back to the original dtype.
+4 api_signature: tf.image.adjust_gamma(image,gamma)
+5 api_details: ''
+6 api_parameters:
+- image: The RGB image or batch of images whose pixel values will be adjusted.
+- gamma: The non-negative scalar or tensor value that controls the gamma correction
+    applied to the image.
+7 api_usage_example:
+- x = [[[1.0, 2.0, 3.0],
+- '      [4.0, 5.0, 6.0]],'
+- '    [[7.0, 8.0, 9.0],'
+- '      [10.0, 11.0, 12.0]]]'
+- tf.image.adjust_gamma(x, 0.2)
+8 api_shape: ''

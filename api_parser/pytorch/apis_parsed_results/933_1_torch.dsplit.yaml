@@ -1,0 +1,15 @@
+2 api_name: torch.dsplit
+3 api_description: Splits a 3D-or-higher tensor into depthwise view tensors according
+  to the specified sections or indices.
+4 api_signature: torch.dsplit(input,indices_or_sections)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to split along its depth dimension.
+- indices_or_sections: The split points or number of equal sections, as defined by
+    `torch.tensor_split()`.
+7 api_usage_example:
+- ' t = torch.arange(16.0).reshape(2, 2, 4)'
+- ' t'
+- ' torch.dsplit(t, 2)'
+- ' torch.dsplit(t, [3, 6])'
+8 api_shape: null

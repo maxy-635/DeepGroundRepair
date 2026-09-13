@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ShuffleDataset
+3 api_description: Creates a dataset that randomly shuffles elements from an input
+  dataset using a pseudorandom order.
+4 api_signature: tf.raw_ops.ShuffleDataset(input_dataset,buffer_size,seed,seed2,reshuffle_each_iteration)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to shuffle.
+- buffer_size: The number of elements to keep buffered while randomly shuffling output.
+- seed: The primary random seed used to initialize shuffling.
+- seed2: A secondary random seed used to reduce seed collisions.
+- reshuffle_each_iteration: Controls whether each new iteration gets a different shuffle
+    order or repeats the same order.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.remove_spectral_norm
+3 api_description: Removes spectral normalization from a module by deleting the reparameterization
+  and restoring the original weights.
+4 api_signature: torch.nn.utils.remove_spectral_norm(module)
+5 api_details: ''
+6 api_parameters:
+- module: The module from which spectral normalization will be removed.
+7 api_usage_example:
+- ' m = spectral_norm(nn.Linear(40, 10))'
+- ' remove_spectral_norm(m)'
+8 api_shape: null

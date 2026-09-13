@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.StreamContext
+3 api_description: Context manager that temporarily sets the active CUDA stream for
+  operations within its block.
+4 api_signature: torch.cuda.StreamContext(stream)
+5 api_details: ''
+6 api_parameters:
+- Stream: Selects the CUDA stream to use within the context; if it is `None`, the
+    context manager does nothing.
+7 api_usage_example: null
+8 api_shape: null

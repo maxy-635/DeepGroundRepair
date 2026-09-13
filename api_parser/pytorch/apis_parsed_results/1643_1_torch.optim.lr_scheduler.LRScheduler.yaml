@@ -1,0 +1,9 @@
+2 api_name: torch.optim.lr_scheduler.LRScheduler
+3 api_description: Base class for learning rate schedulers that updates optimizer
+  learning rates over time according to a scheduling rule.
+4 api_signature: torch.optim.lr_scheduler.LRScheduler(optimizer)
+5 api_details: ''
+6 api_parameters:
+- optimizer: Specifies the optimizer whose learning rates this scheduler will update.
+7 api_usage_example: null
+8 api_shape: null

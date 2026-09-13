@@ -1,0 +1,20 @@
+2 api_name: tensorflow.data.experimental.dense_to_ragged_batch
+3 api_description: Batches consecutive dataset elements into RaggedTensors, allowing
+  inputs with different shapes while adding a batch dimension; the final batch may
+  be smaller unless drop_remainder=True.
+4 api_signature: tf.data.experimental.dense_to_ragged_batch(batch_size,drop_remainder)
+5 api_details: ''
+6 api_parameters:
+- batch_size: Specifies how many consecutive dataset elements to combine into each
+    batch.
+- drop_remainder: Determines whether to discard the final batch if it contains fewer
+    than `batch_size` elements.
+7 api_usage_example:
+- dataset = tf.data.Dataset.from_tensor_slices(np.arange(6))
+- 'dataset = dataset.map(lambda x: tf.range(x))'
+- dataset.element_spec.shape
+- dataset = dataset.apply(
+- '    tf.data.experimental.dense_to_ragged_batch(batch_size=2))'
+- 'for batch in dataset:'
+- '  print(batch)'
+8 api_shape: ''

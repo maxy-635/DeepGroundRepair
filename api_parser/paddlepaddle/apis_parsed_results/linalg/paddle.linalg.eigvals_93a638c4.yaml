@@ -1,0 +1,20 @@
+2 api_name: paddle.linalg.eigvals
+3 api_description: Computes the eigenvalues of one or more square general matrices.
+4 api_signature: paddle.linalg.eigvals(x)
+5 api_details: ''
+6 api_parameters:
+- x: The square matrix or batch of square matrices whose eigenvalues are computed.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- x = paddle.rand(shape=[3, 3], dtype='float64')
+- print(x)
+- Tensor(shape=[3, 3], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[0.86583615, 0.52014721, 0.25960938],'
+- '[0.90525323, 0.42400090, 0.40641288],'
+- '[0.97020893, 0.74437359, 0.51785128]])'
+- print(paddle.linalg.eigvals(x))
+- Tensor(shape=[3], dtype=complex128, place=Place(cpu), stop_gradient=True,
+- '[ (1.788956694280852+0j)  ,  (0.16364484879581526+0j),'
+- (-0.14491322408727625+0j)])
+8 api_shape: {}

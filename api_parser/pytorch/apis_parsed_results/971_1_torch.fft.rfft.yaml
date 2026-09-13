@@ -1,0 +1,17 @@
+2 api_name: torch.fft.rfft
+3 api_description: Computes the one-dimensional Fourier transform of real-valued input
+  and returns the non-redundant half of the frequency spectrum.
+4 api_signature: torch.fft.rfft(input,n,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The real-valued tensor to transform.
+- n: Sets the FFT signal length, padding or trimming the input to this size before
+    the transform.
+- dim: Chooses which dimension of the input tensor to apply the 1D real FFT along.
+- norm: Specifies the normalization mode for the transform, controlling the scaling
+    applied to the FFT result.
+7 api_usage_example:
+- ' t = torch.arange(4)'
+- ' t'
+- ' torch.fft.rfft(t)'
+8 api_shape: null

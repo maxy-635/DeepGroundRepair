@@ -1,0 +1,12 @@
+2 api_name: tensorflow.signal.stft
+3 api_description: Computes the short-time Fourier transform of input signals, producing
+  frequency-domain representations over sliding windows with TPU/GPU-compatible ops
+  and gradient support.
+4 api_signature: tf.signal.stft(signals,frame_length,frame_step)
+5 api_details: ''
+6 api_parameters:
+- signals: The input real-valued signal tensor to be framed for the STFT.
+- frame_length: The number of samples in each analysis frame.
+- frame_step: The number of samples to advance between consecutive frames.
+7 api_usage_example: null
+8 api_shape: ''

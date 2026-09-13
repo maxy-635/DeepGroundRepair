@@ -1,0 +1,13 @@
+2 api_name: torch.histc
+3 api_description: Computes a histogram of tensor values by counting them into a specified
+  number of bins over a given range.
+4 api_signature: torch.histc(input,bins,min,max)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used to compute the histogram.
+- bins: Sets how many bins the histogram is divided into.
+- min: Defines the inclusive lower bound of the histogram range.
+- max: Defines the inclusive upper bound of the histogram range.
+7 api_usage_example:
+- ' torch.histc(torch.tensor([1., 2, 1]), bins=4, min=0, max=3)'
+8 api_shape: null

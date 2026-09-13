@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.FlushSummaryWriter
+3 api_description: Flushes pending summary data from a summary writer so it is written
+  out to storage.
+4 api_signature: tf.raw_ops.FlushSummaryWriter(writer)
+5 api_details: ''
+6 api_parameters:
+- writer: The resource handle for the summary writer whose buffered events should
+    be flushed.
+7 api_usage_example: null
+8 api_shape: ''

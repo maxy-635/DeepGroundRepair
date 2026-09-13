@@ -1,0 +1,9 @@
+2 api_name: torch.mtia.default_stream
+3 api_description: Returns the default stream associated with a specified MTIA device.
+4 api_signature: torch.mtia.default_stream(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which device’s default stream to return; if omitted, uses the current
+    device.
+7 api_usage_example: null
+8 api_shape: null

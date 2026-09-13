@@ -1,0 +1,17 @@
+2 api_name: torch.fft.ihfftn
+3 api_description: Computes the N-dimensional inverse FFT for real-valued Hermitian-symmetric
+  frequency input, reconstructing a real-valued signal in the spatial domain.
+4 api_signature: torch.fft.ihfftn(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to transform.
+- s: Sets the transformed signal size, padding or trimming each transformed dimension
+    as needed.
+- dim: Specifies which dimensions to apply the Hermitian inverse FFT to.
+- norm: Controls normalization of the inverse transform, with options for no normalization,
+    1/n, or 1/sqrt(n).
+7 api_usage_example:
+- ' T = torch.rand(10, 10)'
+- ' ihfftn = torch.fft.ihfftn(T)'
+- ' ihfftn.size()'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Min
+3 api_description: Computes the minimum values of a tensor across the specified axes,
+  optionally keeping reduced dimensions with length 1.
+4 api_signature: tf.raw_ops.Min(input,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be reduced to their minimum.
+- axis: The dimensions along which to compute the minimum reduction.
+7 api_usage_example: null
+8 api_shape: ''

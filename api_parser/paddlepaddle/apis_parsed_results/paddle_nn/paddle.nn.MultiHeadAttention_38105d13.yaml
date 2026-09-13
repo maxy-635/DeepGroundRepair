@@ -1,0 +1,15 @@
+2 api_name: paddle.nn.MultiHeadAttention
+3 api_description: paddle.nn.MultiHeadAttention performs parallel attention mechanisms
+  on queries and key-value pairs to capture information from multiple representation
+  subspaces, enhancing model's ability to focus on different aspects of the input
+  data.
+4 api_signature: paddle.nn.MultiHeadAttention(embed_dim,num_heads,dropout)
+5 api_details: ''
+6 api_parameters:
+- embed_dim: Defines the feature size for both input and output of the attention mechanism.
+- num_heads: Specifies the number of attention heads for parallel processing in multi-head
+    attention.
+- dropout: Determines the probability of dropping attention weights to prevent overfitting,
+    with 0 indicating no dropout.
+7 api_usage_example: []
+8 api_shape: null

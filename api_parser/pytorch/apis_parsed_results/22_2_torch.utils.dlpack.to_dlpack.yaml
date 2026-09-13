@@ -1,0 +1,9 @@
+2 api_name: torch.utils.dlpack.to_dlpack
+3 api_description: Creates an opaque DLPack capsule that represents a tensor for zero-copy
+  interchange with other frameworks.
+4 api_signature: '"torch.utils.dlpack.to_dlpack(tensor)"'
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to export as a DLPack capsule.
+7 api_usage_example: null
+8 api_shape: null

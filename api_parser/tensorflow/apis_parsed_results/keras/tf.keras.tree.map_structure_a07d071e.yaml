@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.tree.map_structure
+3 api_description: Applies a function to matching elements across one or more nested
+  structures and returns a new structure with the same layout.
+4 api_signature: tf.keras.tree.map_structure(func,*structures)
+5 api_details: ''
+6 api_parameters:
+- func: The callable to apply to corresponding elements from the input structures.
+- '*structures': One or more arbitrarily nested structures with the same layout whose
+    matching elements are passed to `func`.
+7 api_usage_example:
+- Foo = collections.namedtuple('Foo', ['a', 'b'])
+- structure = Foo(a=1, b=2)
+- 'keras.tree.map_structure(lambda v: v * 2, structure)'
+8 api_shape: ''

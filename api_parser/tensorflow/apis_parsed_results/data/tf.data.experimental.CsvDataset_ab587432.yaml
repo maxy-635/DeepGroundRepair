@@ -1,0 +1,37 @@
+2 api_name: tensorflow.data.experimental.CsvDataset
+3 api_description: Creates a TensorFlow dataset from one or more RFC 4180 CSV files,
+  yielding one element per record with fields parsed into specified types; it supports
+  basic CSV reading with optional handling of leading/trailing spaces for numeric
+  fields.
+4 api_signature: tf.data.experimental.CsvDataset(filenames,record_defaults,header,field_delim,na_value)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies one or more CSV files to read from.
+- record_defaults: Provides per-column default values or types used when parsing CSV
+    fields, including which columns are required or optional.
+- header: Indicates whether the first line(s) of the CSV file should be skipped as
+    headers.
+- field_delim: Sets the character used to separate fields within each CSV record.
+- na_value: Defines a string value that should be interpreted as missing or NaN data.
+7 api_usage_example:
+- '# The datasets or nested structure of datasets `*args` argument'
+- '# determines the structure of elements in the resulting dataset.'
+- 'a = tf.data.Dataset.range(1, 4)  # ==> [ 1, 2, 3 ]'
+- 'b = tf.data.Dataset.range(4, 7)  # ==> [ 4, 5, 6 ]'
+- ds = tf.data.Dataset.zip(a, b)
+- list(ds.as_numpy_iterator())
+- ds = tf.data.Dataset.zip(b, a)
+- list(ds.as_numpy_iterator())
+- '# The `datasets` argument may contain an arbitrary number of datasets.'
+- 'c = tf.data.Dataset.range(7, 13).batch(2)  # ==> [ [7, 8],'
+- '                                           #       [9, 10],'
+- '                                           #       [11, 12] ]'
+- ds = tf.data.Dataset.zip(a, b, c)
+- 'for element in ds.as_numpy_iterator():'
+- '  print(element)'
+- '# The number of elements in the resulting dataset is the same as'
+- '# the size of the smallest dataset in `datasets`.'
+- 'd = tf.data.Dataset.range(13, 15)  # ==> [ 13, 14 ]'
+- ds = tf.data.Dataset.zip(a, d)
+- list(ds.as_numpy_iterator())
+8 api_shape: ''

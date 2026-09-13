@@ -1,0 +1,12 @@
+2 api_name: tensorflow.debugging.experimental.enable_dump_debug_info
+3 api_description: Enable dumping TensorFlow debugging information to a specified
+  filesystem directory so debugger UIs can ingest and inspect it.
+4 api_signature: tf.debugging.experimental.enable_dump_debug_info(dump_root,tensor_debug_mode,circular_buffer_size)
+5 api_details: ''
+6 api_parameters:
+- dump_root: Specifies the directory where debug dump data will be saved.
+- tensor_debug_mode: Chooses how tensor values are recorded for debugging.
+- circular_buffer_size: Sets the size of the in-memory circular buffers for recent
+    execution debug events, or disables buffering when non-positive.
+7 api_usage_example: null
+8 api_shape: ''

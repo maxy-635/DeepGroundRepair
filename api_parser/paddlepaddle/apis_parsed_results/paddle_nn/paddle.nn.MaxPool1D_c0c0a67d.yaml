@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.MaxPool1D
+3 api_description: paddle.nn.MaxPool1D performs 1D max pooling on input data in NCL
+  format using specified kernel size, stride, and padding, reducing the length of
+  the feature while retaining the maximum values within the kernel window.
+4 api_signature: paddle.nn.MaxPool1D(kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Specifies the size of the window to take a max over.
+- stride: Defines the step size for moving the pool window; defaults to the kernel
+    size if not specified.
+- padding: Determines the padding added to both sides of the input, which can be specified
+    as a string, integer, or list/tuple of integers.
+7 api_usage_example: []
+8 api_shape:
+  input tensor shape: (N, Channel_in, Length_in)
+  output tensor shape: (N, Channel_out, Length_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor length: Length_out = floor((Length_in + 2 * padding - kernel_size) / stride
+      + 1)

@@ -1,0 +1,14 @@
+2 api_name: paddle.negative
+3 api_description: Returns the elementwise negation of a tensor.
+4 api_signature: paddle.negative(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to negate elementwise; it must not be of boolean type.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-1, 0, 1])
+- out = paddle.negative(x)
+- print(out)
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[1,  0,  -1])'
+8 api_shape: {}

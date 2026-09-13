@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.InfeedDequeueTuple
+3 api_description: Fetches multiple tensors from the infeed queue and returns them
+  together as a single XLA tuple.
+4 api_signature: tf.raw_ops.InfeedDequeueTuple(dtypes,shapes)
+5 api_details: ''
+6 api_parameters:
+- dtypes: Specifies the data type for each tensor returned by `outputs`.
+- shapes: Specifies the shape of each tensor returned by `outputs`.
+7 api_usage_example: null
+8 api_shape: ''

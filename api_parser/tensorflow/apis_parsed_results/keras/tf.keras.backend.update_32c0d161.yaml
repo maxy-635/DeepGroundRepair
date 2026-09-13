@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.update
+3 api_description: Assigns a new value to a backend variable or tensor, returning
+  the updated variable; deprecated in favor of direct variable assignment methods.
+4 api_signature: tf.keras.backend.update(x,new_x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,20 @@
+2 api_name: tensorflow.keras.layers.GroupQueryAttention
+3 api_description: The GroupQueryAttention layer implements grouped-query attention,
+  projecting query, key, and value tensors, repeating key and value for each query
+  head, and computing attention probabilities via scaled dot-product. It then interpolates
+  value tensors using these probabilities and concatenates them into a single output
+  tensor.
+4 api_signature: tf.keras.layers.GroupQueryAttention(head_dim, num_query_heads, num_key_value_heads,
+  dropout)
+5 api_details: ''
+6 api_parameters:
+- head_dim: Specifies the dimensionality of each individual attention head, influencing
+    the model's capacity to learn complex representations.
+- num_query_heads: Determines the number of separate attention heads used for processing
+    queries, enhancing the model's ability to focus on different aspects of the input.
+- num_key_value_heads: Defines the number of attention heads used for keys and values,
+    allowing for parallel processing and richer contextual understanding.
+- dropout: Indicates the probability of dropping units during training to prevent
+    overfitting and improve generalization.
+7 api_usage_example: null
+8 api_shape: null

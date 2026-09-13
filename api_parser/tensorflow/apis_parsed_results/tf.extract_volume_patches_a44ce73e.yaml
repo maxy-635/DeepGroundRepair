@@ -1,0 +1,12 @@
+2 api_name: tensorflow.extract_volume_patches
+3 api_description: Extracts sliding 3D patches from the input tensor and packs each
+  patch into the depth dimension.
+4 api_signature: tf.extract_volume_patches(input,ksizes,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The 5-D input tensor from which volume patches are extracted.
+- ksizes: The sliding-window size for each dimension of the input.
+- strides: The step size between adjacent patch centers across the input dimensions.
+- padding: The padding mode to use when extracting patches, either `SAME` or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

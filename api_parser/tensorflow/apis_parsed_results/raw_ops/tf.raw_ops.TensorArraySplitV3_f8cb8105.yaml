@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TensorArraySplitV3
+3 api_description: Splits an input tensor into TensorArray elements according to the
+  given lengths, storing each slice as a separate element.
+4 api_signature: tf.raw_ops.TensorArraySplitV3(handle,value,lengths)
+5 api_details: ''
+6 api_parameters:
+- handle: The resource handle identifying the TensorArray to split into.
+- value: The concatenated tensor whose rows are split and written into the TensorArray.
+- lengths: The int64 vector specifying how many rows to assign to each TensorArray
+    element.
+7 api_usage_example: null
+8 api_shape: ''

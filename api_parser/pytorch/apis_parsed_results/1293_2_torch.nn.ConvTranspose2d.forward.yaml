@@ -1,0 +1,8 @@
+2 api_name: torch.nn.ConvTranspose2d.forward
+3 api_description: Applies a 2D transposed convolution to the input tensor, producing
+  an output with expanded spatial dimensions.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

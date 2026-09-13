@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.metrics.get
+3 api_description: Returns a Keras metric function or Metric instance from a string
+  name or metric identifier.
+4 api_signature: tf.keras.metrics.get(identifier)
+5 api_details: ''
+6 api_parameters:
+- identifier: Specifies the metric to retrieve, either by name, configuration dictionary,
+    function, class, or class instance, or returns `None`.
+7 api_usage_example:
+- 'identifier = {"class_name": "CategoricalCrossentropy",'
+- '              "config": {"from_logits": True} }'
+- metric = metrics.get(identifier)
+- type(metric)
+8 api_shape: ''

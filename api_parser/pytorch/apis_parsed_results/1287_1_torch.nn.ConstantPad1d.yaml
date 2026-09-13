@@ -1,0 +1,25 @@
+2 api_name: torch.nn.ConstantPad1d
+3 api_description: Pads a 1D input tensor on both sides with a specified constant
+  value.
+4 api_signature: torch.nn.ConstantPad1d(padding,value)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the size of the padding to be added; if an int, applies the same
+    padding to both ends, and if a 2-tuple, allows for different padding sizes on
+    each side.
+7 api_usage_example:
+- ' m = nn.ConstantPad1d(2, 3.5)'
+- ' input = torch.randn(1, 2, 4)'
+- ' input'
+- ' m(input)'
+- ' m = nn.ConstantPad1d(2, 3.5)'
+- ' input = torch.randn(1, 2, 3)'
+- ' input'
+- ' m(input)'
+- ' # using different paddings for different sides'
+- ' m = nn.ConstantPad1d((3, 1), 3.5)'
+- ' m(input)'
+8 api_shape:
+  input tensor shape: (Channel_in, Width_in)
+  output tensor shape: (Channel_out, Width_out)
+  tensor shape transform formulas: {}

@@ -1,0 +1,9 @@
+2 api_name: torch.utils.swap_tensors
+3 api_description: Swaps the contents of two tensors while keeping each tensor object’s
+  identity unchanged.
+4 api_signature: torch.utils.swap_tensors(t1,t2)
+5 api_details: ''
+6 api_parameters:
+- param: one-sentence summary
+7 api_usage_example: null
+8 api_shape: null

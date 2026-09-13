@@ -1,0 +1,13 @@
+2 api_name: torch.autograd.backward
+3 api_description: Backpropagates through a computation graph to compute and accumulate
+  gradients of specified tensors with respect to leaf tensors.
+4 api_signature: torch.autograd.backward(tensors,grad_tensors,retain_graph,create_graph)
+5 api_details: ''
+6 api_parameters:
+- tensors: The output tensors whose derivatives will be computed.
+- grad_tensors: The gradient vectors used to weight each tensor in the backward pass.
+- retain_graph: Whether to keep the computation graph after backpropagation.
+- create_graph: Whether to build a graph for the derivative to enable higher-order
+    gradients.
+7 api_usage_example: null
+8 api_shape: null

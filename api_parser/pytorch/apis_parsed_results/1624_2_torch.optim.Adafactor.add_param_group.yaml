@@ -1,0 +1,10 @@
+2 api_name: torch.optim.Adafactor.add_param_group
+3 api_description: Add a new parameter group to the optimizer’s parameter groups for
+  separate optimization settings.
+4 api_signature: add_param_group(param_group)
+5 api_details: ''
+6 api_parameters:
+- param_group: Defines a new set of tensors to optimize and any optimization options
+    that apply only to that group.
+7 api_usage_example: null
+8 api_shape: null

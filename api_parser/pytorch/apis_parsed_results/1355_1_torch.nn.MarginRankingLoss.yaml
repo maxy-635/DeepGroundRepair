@@ -1,0 +1,22 @@
+2 api_name: torch.nn.MarginRankingLoss
+3 api_description: Measures the loss between two input tensors based on their ranking,
+  with labels indicating whether the first input should be ranked higher (+1) or lower
+  (-1) than the second.
+4 api_signature: torch.nn.MarginRankingLoss(margin,reduction)
+5 api_details: ''
+6 api_parameters:
+- margin: Specifies the minimum difference between the two inputs for a positive ranking.
+- reduction: Determines how the output loss is aggregated, with options for no reduction,
+    mean reduction, or sum reduction.
+7 api_usage_example:
+- ' loss = nn.MarginRankingLoss()'
+- ' input1 = torch.randn(3, requires_grad=True)'
+- ' input2 = torch.randn(3, requires_grad=True)'
+- ' target = torch.randn(3).sign()'
+- ' output = loss(input1, input2, target)'
+- ' output.backward()'
+8 api_shape:
+  input tensor shape: null
+  output tensor shape: scalar. If reduction is 'none' and Input size is not (), then
+    (N).
+  tensor shape transform formulas: {}

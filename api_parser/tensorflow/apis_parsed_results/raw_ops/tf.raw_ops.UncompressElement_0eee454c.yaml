@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.UncompressElement
+3 api_description: Uncompresses a compressed dataset element and returns the decoded
+  element.
+4 api_signature: tf.raw_ops.UncompressElement(compressed,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- compressed: The variant tensor containing the compressed element to be uncompressed.
+- output_types: The data types of the tensors to produce when decompressing the element.
+- output_shapes: The expected shapes of the output tensors produced from the uncompressed
+    element.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: paddle.static.IpuStrategy
+3 api_description: Controls how a `paddle.static.IpuCompiledProgram` builds and compiles
+  the graph for IPU execution, giving users fine-grained control over compilation
+  behavior and graph construction.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.static as static
+- paddle.enable_static()
+- ipu_strategy = static.IpuStrategy()
+8 api_shape: {}

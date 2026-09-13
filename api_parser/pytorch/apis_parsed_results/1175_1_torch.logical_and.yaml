@@ -1,0 +1,20 @@
+2 api_name: torch.logical_and
+3 api_description: Returns the element-wise logical AND of two tensors, treating zero
+  values as False and nonzero values as True.
+4 api_signature: torch.logical_and(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose values are used as the first operand for the logical
+    AND operation.
+- other: The tensor used as the second operand to compute the elementwise logical
+    AND with `input`.
+7 api_usage_example:
+- ' torch.logical_and(torch.tensor([True, False, True]), torch.tensor([True, False,
+  False]))'
+- ' a = torch.tensor([0, 1, 10, 0], dtype=torch.int8)'
+- ' b = torch.tensor([4, 0, 1, 0], dtype=torch.int8)'
+- ' torch.logical_and(a, b)'
+- ' torch.logical_and(a.double(), b.double())'
+- ' torch.logical_and(a.double(), b)'
+- ' torch.logical_and(a, b, out=torch.empty(4, dtype=torch.bool))'
+8 api_shape: null

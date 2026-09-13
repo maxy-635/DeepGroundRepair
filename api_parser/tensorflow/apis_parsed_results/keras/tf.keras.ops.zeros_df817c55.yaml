@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.zeros
+3 api_description: Creates a new tensor with the specified shape and dtype, filled
+  entirely with zeros.
+4 api_signature: tf.keras.ops.zeros(shape)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the shape of the new tensor to create.
+7 api_usage_example: null
+8 api_shape: ''

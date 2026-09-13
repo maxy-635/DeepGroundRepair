@@ -1,0 +1,38 @@
+2 api_name: tensorflow.nn.conv2d
+3 api_description: The tensorflow.nn.conv2d API performs a 2-D convolution operation
+  on a 4-D input tensor with specified filters, considering the first dimensions as
+  batch dimensions, and returns the convolved output based on the given input and
+  filter shapes.
+4 api_signature: tf.nn.conv2d(input,filters,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor of at least rank 4, with dimensions interpreted
+    based on data_format.
+- filters: Defines the filter tensor with shape [filter_height, filter_width, in_channels,
+    out_channels] and the same type as input.
+- strides: Determines the stride of the sliding window for each dimension, with options
+    for a single value or a list of values.
+- padding: Indicates the padding algorithm ('SAME' or 'VALID') or explicit padding
+    values to apply to the input tensor.
+7 api_usage_example:
+- x_in = np.array([[
+- '  [[2], [1], [2], [0], [1]],'
+- '  [[1], [3], [2], [2], [3]],'
+- '  [[1], [1], [3], [3], [0]],'
+- '  [[2], [2], [0], [1], [1]],'
+- '  [[0], [0], [3], [1], [2]], ]])'
+- kernel_in = np.array([
+- ' [ [[2, 0.1]], [[3, 0.2]] ],'
+- ' [ [[0, 0.3]], [[1, 0.4]] ], ])'
+- x = tf.constant(x_in, dtype=tf.float32)
+- kernel = tf.constant(kernel_in, dtype=tf.float32)
+- tf.nn.conv2d(x, kernel, strides=[1, 1, 1, 1], padding='VALID')
+8 api_shape:
+  input tensor shape: (N, Height_in, Width_in, Channel_in)
+  output tensor shape: (N, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filter
+    tensor height: If padding = "VALID", Height_out = floor((Height_in - filter_height) / strides_height + 1); 
+                  If padding = "SAME", Height_out = floor((Height_in - 1) / strides_height + 1)
+    tensor width: If padding = "VALID", Width_out = floor((Width_in - filter_width) / strides_width + 1); 
+                  If padding = "SAME", Width_out = floor((Width_in - 1) / strides_width + 1)

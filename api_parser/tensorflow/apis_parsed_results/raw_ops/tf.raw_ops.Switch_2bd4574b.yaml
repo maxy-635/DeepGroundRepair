@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Switch
+3 api_description: Routes the input data to `output_true` when `pred` is true, otherwise
+  sends it to `output_false`.
+4 api_signature: tf.raw_ops.Switch(data,pred)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor input that is routed to one of the two outputs based on `pred`.
+- pred: A boolean scalar that selects which output port receives the input tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SaveDatasetV2
+3 api_description: Saves a dataset to one or more files in TensorFlow’s dataset format,
+  using the provided filenames, element spec, compression, and metadata inputs.
+4 api_signature: tf.raw_ops.SaveDatasetV2(input_dataset,path,shard_func,output_types,output_shapes,compression,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to be saved, provided as a variant tensor.
+- path: The destination file path where the dataset will be written.
+- shard_func: A user-defined function that determines how elements are partitioned
+    into shards.
+- output_types: The data types expected for the dataset elements being saved.
+- output_shapes: The shapes expected for the dataset elements being saved.
+- compression: An optional compression setting for the saved dataset output.
+- name: An optional name used to identify the operation.
+7 api_usage_example: null
+8 api_shape: ''

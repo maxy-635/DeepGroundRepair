@@ -1,0 +1,10 @@
+2 api_name: torch.linalg.inv
+3 api_description: Computes the inverse of a square matrix when it is invertible,
+  and raises a RuntimeError if it is not.
+4 api_signature: torch.linalg.inv(A)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor containing one or more invertible square matrices to be inverted.
+7 api_usage_example:
+- 'linalg.solve(A, B) == linalg.inv(A) @ B  # When B is a matrix'
+8 api_shape: null

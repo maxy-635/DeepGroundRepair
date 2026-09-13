@@ -1,0 +1,11 @@
+2 api_name: tensorflow.io.decode_compressed
+3 api_description: Decompresses each byte string in the input tensor using the specified
+  compression type and returns a same-shaped string tensor with the decompressed data.
+4 api_signature: tf.io.decode_compressed(bytes,compression_type)
+5 api_details: ''
+6 api_parameters:
+- bytes: Input string tensor containing the compressed data to decode.
+- compression_type: 'Optional scalar string specifying the compression format to use:
+    empty for none, `ZLIB`, or `GZIP`.'
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,23 @@
+2 api_name: paddle.nn.initializer.calculate_gain
+3 api_description: The paddle.nn.initializer.calculate_gain API provides the recommended
+  gain value for a specified nonlinearity function, which can be used to adjust initialization
+  values in paddle.nn.initializer.
+4 api_signature: paddle.nn.initializer.calculate_gain(nonlinearity,param)
+5 api_details: ''
+6 api_parameters:
+- nonlinearity: Specifies the type of nonlinearity activation function for which the
+    gain is calculated, returning 1.0 for linear functions.
+- param: An optional parameter used for certain nonlinearity functions, currently
+    applicable only to 'leaky_relu'.
+7 api_usage_example:
+- import paddle
+- gain = paddle.nn.initializer.calculate_gain('tanh')
+- print(gain)
+- '1.6666666666666667'
+- '# 5.0 / 3'
+- gain = paddle.nn.initializer.calculate_gain('leaky_relu', param=1.0)
+- print(gain)
+- '1.0'
+- '# math.sqrt(2.0 / (1+param^2))'
+- initializer = paddle.nn.initializer.Orthogonal(gain)
+8 api_shape: null

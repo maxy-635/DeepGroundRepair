@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.subtract
+3 api_description: Element-wise subtracts y from x, supporting array and scalar inputs
+  and returning values in the range (-inf, inf).
+4 api_signature: tf.math.subtract(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor to subtract from.
+- y: The second tensor to subtract from x, with the same type as x.
+7 api_usage_example:
+- x = np.ones(6).reshape(2, 3, 1)
+- y = np.ones(6).reshape(1, 6)
+- tf.subtract(x, y)
+8 api_shape: ''

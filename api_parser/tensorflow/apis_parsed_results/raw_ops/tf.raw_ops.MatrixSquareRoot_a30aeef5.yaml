@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.MatrixSquareRoot
+3 api_description: Computes the matrix square root of each square matrix in the input
+  tensor, returning a tensor of the same shape whose product with itself equals the
+  original matrix.
+4 api_signature: tf.raw_ops.MatrixSquareRoot(input)
+5 api_details: ''
+6 api_parameters:
+- input: The square matrix tensor whose matrix square root is computed, with shape
+    [..., M, M] and a supported floating-point or complex type.
+7 api_usage_example: null
+8 api_shape: ''

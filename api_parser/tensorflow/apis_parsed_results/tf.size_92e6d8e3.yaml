@@ -1,0 +1,13 @@
+2 api_name: tensorflow.size
+3 api_description: Returns a 0-D tensor with the total number of elements in the input
+  tensor, using the specified integer type.
+4 api_signature: tf.size(input,out_type)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor or sparse tensor whose total number of elements will be returned.
+- out_type: The integer output type to use for the size result, defaulting to `tf.int32`
+    unless overridden.
+7 api_usage_example:
+- t = tf.constant([[[1, 1, 1], [2, 2, 2]], [[3, 3, 3], [4, 4, 4]]])
+- tf.size(t)
+8 api_shape: ''

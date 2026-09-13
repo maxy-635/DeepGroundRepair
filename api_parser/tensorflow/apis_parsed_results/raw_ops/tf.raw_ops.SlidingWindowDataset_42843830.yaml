@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SlidingWindowDataset
+3 api_description: Creates a dataset by moving a fixed-size sliding window over input_dataset
+  and emitting each window as an element.
+4 api_signature: tf.raw_ops.SlidingWindowDataset(input_dataset,window_size,drop_remainder,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to generate sliding windows from.
+- window_size: The number of elements to include in each sliding window.
+- drop_remainder: Whether to discard the final window if it has fewer than `window_size`
+    elements.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

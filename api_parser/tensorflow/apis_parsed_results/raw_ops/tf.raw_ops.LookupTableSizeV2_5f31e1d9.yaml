@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.LookupTableSizeV2
+3 api_description: Returns the number of elements currently stored in a lookup table.
+4 api_signature: tf.raw_ops.LookupTableSizeV2(table_handle)
+5 api_details: ''
+6 api_parameters:
+- table_handle: Resource handle identifying the lookup table whose size will be returned.
+7 api_usage_example: null
+8 api_shape: ''

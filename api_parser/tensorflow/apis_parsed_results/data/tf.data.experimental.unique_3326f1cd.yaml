@@ -1,0 +1,8 @@
+2 api_name: tensorflow.data.experimental.unique
+3 api_description: Returns a dataset with duplicate elements removed, keeping one
+  instance of each unique input element.
+4 api_signature: tf.data.experimental.unique()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

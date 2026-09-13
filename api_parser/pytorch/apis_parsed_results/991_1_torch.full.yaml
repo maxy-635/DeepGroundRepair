@@ -1,0 +1,11 @@
+2 api_name: torch.full
+3 api_description: Creates a tensor of the specified size, filled with a given value,
+  with dtype inferred from that value.
+4 api_signature: torch.full(size,fill_value,*,dtype,device)
+5 api_details: ''
+6 api_parameters:
+- size: Defines the shape of the output tensor.
+- fill_value: Specifies the value used to fill the output tensor.
+7 api_usage_example:
+- ' torch.full((2, 3), 3.141592)'
+8 api_shape: null

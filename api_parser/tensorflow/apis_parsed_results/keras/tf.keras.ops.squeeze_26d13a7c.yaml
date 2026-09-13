@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.squeeze
+3 api_description: Removes dimensions of size 1 from a tensor, optionally only at
+  specified axes.
+4 api_signature: tf.keras.ops.squeeze(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to remove dimensions of size one from.
+- axis: The axis or axes of size one to squeeze out of the tensor shape.
+7 api_usage_example: null
+8 api_shape: ''

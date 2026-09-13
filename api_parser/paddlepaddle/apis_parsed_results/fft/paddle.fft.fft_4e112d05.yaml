@@ -1,0 +1,20 @@
+2 api_name: paddle.fft.fft
+3 api_description: Computes the one-dimensional discrete Fourier transform of an input
+  tensor, converting data from the time or spatial domain into the frequency domain.
+4 api_signature: paddle.fft.fft(x,n,axis,norm)
+5 api_details: ''
+6 api_parameters:
+- x: The complex input tensor to transform.
+- n: Sets the FFT length along the chosen axis, cropping or zero-padding as needed.
+- axis: Specifies which axis to compute the FFT over, defaulting to the last axis.
+- norm: Controls the normalization mode for the transform, determining how scaling
+    is applied between forward and inverse FFTs.
+7 api_usage_example:
+- import numpy as np
+- import paddle
+- x = np.exp(3j * np.pi * np.arange(7) / 7)
+- xp = paddle.to_tensor(x)
+- fft_xp = paddle.fft.fft(xp).numpy().round(3)
+- print(fft_xp)
+- '[1.+1.254j 1.+4.381j 1.-4.381j 1.-1.254j 1.-0.482j 1.+0.j 1.+0.482j]'
+8 api_shape: {}

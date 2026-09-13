@@ -1,0 +1,19 @@
+2 api_name: paddle.sparse.is_same_shape
+3 api_description: Checks whether two tensors have the same shape and returns the
+  comparison result; supports DenseTensor, SparseCooTensor, and SparseCsrTensor.
+4 api_signature: paddle.sparse.is_same_shape(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor whose shape is compared.
+- y: The second input tensor whose shape is compared.
+7 api_usage_example:
+- import paddle
+- x = paddle.rand([2, 3, 8])
+- y = paddle.rand([2, 3, 8])
+- y = y.to_sparse_csr()
+- z = paddle.rand([2, 5])
+- paddle.sparse.is_same_shape(x, y)
+- 'True'
+- paddle.sparse.is_same_shape(x, z)
+- 'False'
+8 api_shape: {}

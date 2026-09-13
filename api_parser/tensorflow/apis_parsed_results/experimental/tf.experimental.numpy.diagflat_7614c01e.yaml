@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.diagflat
+3 api_description: Creates a 2D tensor with the flattened input placed along a specified
+  diagonal and zeros elsewhere.
+4 api_signature: tf.experimental.numpy.diagflat(v,k)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

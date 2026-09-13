@@ -1,0 +1,16 @@
+2 api_name: tensorflow.linalg.diag
+3 api_description: Constructs a batched tensor whose specified diagonal(s) are filled
+  from the input values, with all other entries padded, and infers the output matrix
+  size from k and the diagonal shape when needed.
+4 api_signature: tf.linalg.diag(diagonal,k,num_rows,num_cols)
+5 api_details: ''
+6 api_parameters:
+- diagonal: Provides the values to place on one or more diagonals of the output matrix.
+- k: Specifies which diagonal or diagonal band to fill, using an offset or a low-high
+    offset range.
+- num_rows: Sets the number of rows in the output matrix, or lets TensorFlow infer
+    a square size if omitted.
+- num_cols: Sets the number of columns in the output matrix, or lets TensorFlow infer
+    a square size if omitted.
+7 api_usage_example: null
+8 api_shape: ''

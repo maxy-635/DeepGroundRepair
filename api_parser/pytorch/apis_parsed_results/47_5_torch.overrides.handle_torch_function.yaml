@@ -1,0 +1,19 @@
+2 api_name: torch.overrides.handle_torch_function
+3 api_description: Dispatches a Torch API call to any applicable __torch_function__
+  overrides, validating override types and collecting arguments before falling back
+  to the default implementation.
+4 api_signature: torch.overrides.handle_torch_function(public_api,relevant_args,*args,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- public_api: The public torch function being dispatched, used as the operation context
+    for `__torch_function__` checking.
+- relevant_args: The arguments that should be inspected for any `__torch_function__`
+    overrides.
+- args: The original positional arguments passed to the public API call.
+- kwargs: The original keyword arguments passed to the public API call.
+7 api_usage_example:
+- ' def func(a):'
+- '...     if has_torch_function_unary(a):'
+- '...         return handle_torch_function(func, (a,), a)'
+- '...     return a + 0'
+8 api_shape: null

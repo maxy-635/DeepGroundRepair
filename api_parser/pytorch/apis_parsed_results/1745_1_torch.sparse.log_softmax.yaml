@@ -1,0 +1,9 @@
+2 api_name: torch.sparse.log_softmax
+3 api_description: Computes the log of the softmax over sparse tensor values.
+4 api_signature: torch.sparse.log_softmax(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The sparse tensor or tensor-like input on which log softmax is computed.
+- dim: The dimension over which to normalize and compute the log softmax values.
+7 api_usage_example: null
+8 api_shape: null

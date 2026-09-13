@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.AssertNextDataset
+3 api_description: Asserts that the next dataset transformations match an expected
+  list of camel-case names during iteration, raising an error on mismatch after static
+  optimizations.
+4 api_signature: tf.raw_ops.AssertNextDataset(input_dataset,transformations)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to pass through unchanged while asserting that
+    the next transformations match expectations.
+- transformations: A list of expected upcoming transformation names that the dataset
+    pipeline should apply next.
+7 api_usage_example: null
+8 api_shape: ''

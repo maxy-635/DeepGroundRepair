@@ -1,0 +1,8 @@
+2 api_name: torch.QUInt2x4Storage
+3 api_description: A 2-bit quantized storage type for packed unsigned values, used
+  to store and access low-precision tensor data efficiently.
+4 api_signature: torch.QUInt2x4Storage(dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

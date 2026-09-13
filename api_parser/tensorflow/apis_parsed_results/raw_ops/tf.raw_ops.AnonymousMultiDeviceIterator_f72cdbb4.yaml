@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.AnonymousMultiDeviceIterator
+3 api_description: Creates a resource that serves as a multi-device iterator container
+  for coordinating data iteration across multiple devices.
+4 api_signature: tf.raw_ops.AnonymousMultiDeviceIterator(devices,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- devices: Specifies the list of device strings that the iterator will use, with at
+    least one device required.
+- output_types: Defines the list of TensorFlow dtypes for the iterator outputs, with
+    at least one type required.
+- output_shapes: Defines the list of output tensor shapes for the iterator, with at
+    least one shape required.
+7 api_usage_example: null
+8 api_shape: ''

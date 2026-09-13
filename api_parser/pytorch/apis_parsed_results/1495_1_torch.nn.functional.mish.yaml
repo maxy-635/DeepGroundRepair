@@ -1,0 +1,11 @@
+2 api_name: torch.nn.functional.mish
+3 api_description: Applies the Mish activation function element-wise, defined as x
+  * tanh(softplus(x)).
+4 api_signature: torch.nn.functional.mish(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the Mish activation function will be applied.
+- inplace: A boolean indicating whether the operation should be done in-place, modifying
+    the input tensor directly.
+7 api_usage_example: null
+8 api_shape: null

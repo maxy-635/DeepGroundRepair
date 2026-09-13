@@ -1,0 +1,25 @@
+2 api_name: torch.nn.functional.max_unpool2d
+3 api_description: torch.nn.functional.max_unpool2d performs the partial inverse of
+  MaxPool2d by reconstructing the input tensor from the pooled output and indices,
+  using the specified output size to determine the shape of the unpooled result.
+4 api_signature: torch.nn.functional.max_unpool2d(input,indices,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor that was previously max pooled.
+- indices: The indices tensor obtained from the max pooling operation, used to place
+    the values back to their original positions.
+- kernel_size: The size of the window used during the max pooling operation.
+- stride: The stride used during the max pooling operation, which determines the step
+    size for sliding the window.
+- padding: The amount of padding added to each side of the input during the max pooling
+    operation.
+- output_size: The desired size of the unpooled output, which helps to determine the
+    output dimensions.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: Height_out = (Height_in - 1) * stride_height - 2 * padding_height + kernel_size_height
+    tensor width: Width_out = (Width_in - 1) * stride_width - 2 * padding_width + kernel_size_width

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.tpu.experimental.embedding.RowIdInitializer
+3 api_description: Initializes an embedding table with vocabulary row IDs, assigning
+  each entry its corresponding id.
+4 api_signature: tf.tpu.experimental.embedding.RowIdInitializer(offset)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

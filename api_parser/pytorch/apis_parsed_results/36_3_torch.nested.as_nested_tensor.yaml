@@ -1,0 +1,20 @@
+2 api_name: torch.nested.as_nested_tensor
+3 api_description: Creates a nested tensor from a tensor or a list/tuple of tensors
+  while preserving autograd history.
+4 api_signature: torch.nested.as_nested_tensor(ts)
+5 api_details: ''
+6 api_parameters:
+- ts: The input tensor or list/tuple of tensors to convert into a nested tensor, with
+    all tensors sharing the same number of dimensions.
+7 api_usage_example:
+- ' a = torch.arange(3, dtype=torch.float, requires_grad=True)'
+- ' b = torch.arange(5, dtype=torch.float, requires_grad=True)'
+- ' nt = torch.nested.as_nested_tensor([a, b])'
+- ' nt.is_leaf'
+- ' fake_grad = torch.nested.nested_tensor([torch.ones_like(a), torch.zeros_like(b)])'
+- ' nt.backward(fake_grad)'
+- ' a.grad'
+- ' b.grad'
+- ' c = torch.randn(3, 5, requires_grad=True)'
+- ' nt2 = torch.nested.as_nested_tensor(c)'
+8 api_shape: null

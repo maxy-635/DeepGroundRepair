@@ -1,0 +1,17 @@
+2 api_name: torch.autograd.functional.jvp
+3 api_description: Computes the Jacobian-vector product by evaluating the given function
+  at the inputs and multiplying its Jacobian by a vector v.
+4 api_signature: torch.autograd.functional.jvp(func,inputs,v)
+5 api_details: ''
+6 api_parameters:
+- func: Defines the tensor-based function to evaluate for the Jacobian-vector product.
+- inputs: Provides the input tensors passed into `func`.
+- v: Supplies the vector used to compute the Jacobian-vector product, defaulting to
+    1 for single-element inputs if omitted.
+7 api_usage_example:
+- ' def exp_reducer(x):'
+- '...     return x.exp().sum(dim=1)'
+- ' inputs = torch.rand(4, 4)'
+- ' v = torch.ones(4, 4)'
+- ' jvp(exp_reducer, inputs, v)'
+8 api_shape: null

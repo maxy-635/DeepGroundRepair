@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.RaggedTensorFromVariant
+3 api_description: Decodes a variant tensor into a RaggedTensor, inferring ragged
+  rank when needed and stacking decoded elements across the input shape.
+4 api_signature: tf.raw_ops.RaggedTensorFromVariant(encoded_ragged,input_ragged_rank,output_ragged_rank,Tvalues,Tsplits)
+5 api_details: ''
+6 api_parameters:
+- encoded_ragged: Holds the variant-encoded RaggedTensor data to be decoded.
+- input_ragged_rank: Specifies the ragged rank of each encoded component, or lets
+    TensorFlow infer it when set to -1.
+- output_ragged_rank: Sets the expected ragged rank of the decoded output RaggedTensor.
+- Tvalues: Declares the data type of the RaggedTensor values.
+- Tsplits: Chooses the integer dtype used for row-split tensors, defaulting to int64.
+7 api_usage_example: null
+8 api_shape: ''

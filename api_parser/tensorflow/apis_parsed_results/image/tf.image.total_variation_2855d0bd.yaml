@@ -1,0 +1,11 @@
+2 api_name: tensorflow.image.total_variation
+3 api_description: Computes the total variation of one or more images by summing absolute
+  differences between neighboring pixels, producing a noise measure that can also
+  be used as a regularization loss.
+4 api_signature: tf.image.total_variation(images)
+5 api_details: ''
+6 api_parameters:
+- images: Input image or batch of images whose total variation is computed as a measure
+    of spatial smoothness.
+7 api_usage_example: null
+8 api_shape: ''

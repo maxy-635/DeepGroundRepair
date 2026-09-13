@@ -1,0 +1,22 @@
+2 api_name: torch.nn.functional.avg_pool1d
+3 api_description: Applies 1D average pooling to reduce the size of the input signal
+  by computing the average of elements within a specified window across input planes.
+4 api_signature: torch.nn.functional.avg_pool1d(input,kernel_size,stride)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor with dimensions representing minibatch size, number of input
+    channels, and the input width.
+- kernel_size: Specifies the size of the pooling window, which can be defined as a
+    single integer or a tuple representing the width.
+- stride: Determines the step size of the pooling window movement, defined as a single
+    integer or a tuple for the width stride.
+7 api_usage_example:
+- ' # pool of square window of size=3, stride=2'
+- ' input = torch.tensor([[[1, 2, 3, 4, 5, 6, 7]]], dtype=torch.float32)'
+- ' F.avg_pool1d(input, kernel_size=3, stride=2)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, L_in)
+  output tensor shape: (N, Channel_out, L_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    L_out: L_out = floor((L_in + 2 * padding - kernel_size) / stride + 1)

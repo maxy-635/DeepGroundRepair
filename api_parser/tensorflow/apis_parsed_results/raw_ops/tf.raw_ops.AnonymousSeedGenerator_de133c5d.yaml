@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.AnonymousSeedGenerator
+3 api_description: Creates an anonymous seed generator resource for producing random
+  seeds, without requiring a named variable.
+4 api_signature: tf.raw_ops.AnonymousSeedGenerator(seed,seed2)
+5 api_details: ''
+6 api_parameters:
+- seed: Sets the primary seed value used to initialize the anonymous seed generator.
+- seed2: Sets the secondary seed value used together with `seed` to produce the generator
+    state.
+7 api_usage_example: null
+8 api_shape: ''

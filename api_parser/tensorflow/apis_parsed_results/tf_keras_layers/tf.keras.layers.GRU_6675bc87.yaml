@@ -1,0 +1,26 @@
+2 api_name: tensorflow.keras.layers.GRU
+3 api_description: The tf.keras.layers.GRU layer implements Gated Recurrent Units
+  for processing sequential data, automatically selecting the most efficient implementation
+  (cuDNN or native) based on hardware availability and input parameters.
+4 api_signature: tf.keras.layers.GRU(units, activation, return_sequences, return_state,
+  dropout, recurrent_dropout, stateful)
+5 api_details: ''
+6 api_parameters:
+- units: Specifies the number of output dimensions for the GRU layer.
+- activation: Defines the activation function applied to the output; defaults to 'tanh'.
+- dropout: Sets the fraction of input units to drop during training to prevent overfitting.
+- recurrent_dropout: Specifies the fraction of recurrent units to drop during training.
+- return_sequences: Determines whether to return the full sequence of outputs or just
+    the last output.
+- return_state: Indicates whether to return the last hidden state along with the output.
+- stateful: If true, maintains the hidden state across batches for each sample.
+7 api_usage_example:
+- inputs = np.random.random((32, 10, 8))
+- gru = keras.layers.GRU(4)
+- output = gru(inputs)
+- output.shape
+- gru = keras.layers.GRU(4, return_sequences=True, return_state=True)
+- whole_sequence_output, final_state = gru(inputs)
+- whole_sequence_output.shape
+- final_state.shape
+8 api_shape: null

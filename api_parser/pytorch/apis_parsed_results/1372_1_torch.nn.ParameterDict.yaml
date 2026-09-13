@@ -1,0 +1,22 @@
+2 api_name: torch.nn.ParameterDict
+3 api_description: A dictionary-like container for storing and managing learnable
+  `torch.nn.Parameter` objects by key.
+4 api_signature: '"torch.nn.ParameterDict(parameters)"'
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example:
+- 'class MyModule(nn.Module):'
+- '    def __init__(self) -> None:'
+- '        super().__init__()'
+- '        self.params = nn.ParameterDict('
+- '            {'
+- '                "left": nn.Parameter(torch.randn(5, 10)),'
+- '                "right": nn.Parameter(torch.randn(5, 10)),'
+- '            }'
+- '        )'
+- '    def forward(self, x, choice):'
+- '        x = self.params[choice].mm(x)'
+- '        return x'
+8 api_shape: null

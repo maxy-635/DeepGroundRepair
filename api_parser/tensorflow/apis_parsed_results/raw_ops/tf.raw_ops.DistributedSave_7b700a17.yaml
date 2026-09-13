@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.DistributedSave
+3 api_description: Saves distributed TensorFlow variables or tensors to a checkpoint,
+  coordinating across replicas and workers.
+4 api_signature: tf.raw_ops.DistributedSave(dataset,directory,address)
+5 api_details: ''
+6 api_parameters:
+- dataset: The variant tensor containing the dataset to be saved.
+- directory: The destination directory where the dataset will be written.
+- address: The server or worker address used to coordinate the distributed save operation.
+7 api_usage_example: null
+8 api_shape: ''

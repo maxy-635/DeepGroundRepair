@@ -1,0 +1,10 @@
+2 api_name: torch.mps.profiler.profile
+3 api_description: Context manager that enables MPS backend OS Signpost tracing for
+  profiling while the block runs.
+4 api_signature: torch.mps.profiler.profile(mode)
+5 api_details: ''
+6 api_parameters:
+- mode: Selects the OS signpost tracing mode, either interval, event, or both, to
+    record operation durations and/or completion points.
+7 api_usage_example: null
+8 api_shape: null

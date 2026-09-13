@@ -1,0 +1,30 @@
+2 api_name: paddle.optimizer.lr.OneCycleLR
+3 api_description: 'OneCycleLR updates the learning rate in a single cycle: it rises
+  from the initial rate to a peak, then falls to a much lower minimum rate.'
+4 api_signature: paddle.optimizer.lr.OneCycleLR(max_learning_rate,total_steps,divide_factor,end_learning_rate,phase_pct,anneal_strategy,three_phase,last_epoch,verbose)
+5 api_details: ''
+6 api_parameters:
+- max_learning_rate: Sets the peak learning rate used by the OneCycle schedule and
+    determines the starting rate via `divide_factor`.
+- total_steps: Specifies the total number of training steps for the entire schedule.
+- divide_factor: Controls how much smaller the initial learning rate is than `max_learning_rate`.
+- end_learning_rate: Sets the lowest learning rate reached during training.
+- phase_pct: Defines the fraction of total steps spent increasing the learning rate.
+- anneal_strategy: Chooses the decay shape for learning-rate adjustment, either cosine
+    or linear.
+- three_phase: Enables or disables a three-phase learning-rate schedule.
+- last_epoch: Indicates the last completed epoch or step so training can resume from
+    that point.
+- verbose: Controls whether each learning-rate update is printed to stdout.
+7 api_usage_example:
+- import paddle
+- value = paddle.arange(26, dtype='float32')
+- a = paddle.reshape(value, [2, 13])
+- linear = paddle.nn.Linear(13, 5)
+- adadelta = paddle.optimizer.Adadelta(learning_rate=0.0003, epsilon=1e-06, rho=0.95,
+- '                            parameters = linear.parameters())'
+- out = linear(a)
+- out.backward()
+- adadelta.step()
+- adadelta.clear_grad()
+8 api_shape: {}

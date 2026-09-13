@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.RandomShuffleQueue
+3 api_description: Creates a queue that returns enqueued elements in random order
+  instead of FIFO.
+4 api_signature: tf.raw_ops.RandomShuffleQueue(capacity,min_after_dequeue,seed,seed2,shared_name)
+5 api_details: ''
+6 api_parameters:
+- capacity: Sets the maximum number of elements the queue can hold, with negative
+    values meaning no limit.
+- min_after_dequeue: Specifies the minimum number of elements that must remain in
+    the queue after a dequeue before it can proceed, to maintain mixing.
+- seed: Provides the primary random seed for the queue's random number generator when
+    non-zero.
+- seed2: Provides a secondary random seed to reduce the chance of seed collisions.
+- shared_name: Assigns a shared queue name so multiple sessions can access the same
+    queue instance.
+- name: Names the operation for easier identification and graph organization.
+7 api_usage_example: null
+8 api_shape: ''

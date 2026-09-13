@@ -1,0 +1,8 @@
+2 api_name: paddle.baddbmm_
+3 api_description: In-place adds the batched matrix-matrix product of two tensors
+  to an input tensor and stores the result back into the input.
+4 api_signature: paddle.baddbmm_(input,x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

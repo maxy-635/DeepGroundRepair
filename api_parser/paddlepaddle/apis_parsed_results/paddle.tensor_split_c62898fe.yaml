@@ -1,0 +1,12 @@
+2 api_name: paddle.tensor_split
+3 api_description: Splits a tensor into multiple sub-tensors along a specified axis,
+  allowing uneven segment sizes.
+4 api_signature: paddle.tensor_split(x,num_or_indices,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be split.
+- num_or_indices: Specifies either how many sections to split the tensor into or the
+    exact split indices.
+- axis: The dimension along which to split the tensor.
+7 api_usage_example: []
+8 api_shape: {}

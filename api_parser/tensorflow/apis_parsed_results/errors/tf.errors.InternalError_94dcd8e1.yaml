@@ -1,0 +1,9 @@
+2 api_name: tensorflow.errors.InternalError
+3 api_description: Represents an internal TensorFlow runtime failure when an expected
+  invariant is broken, providing error details such as the message, error code, failed
+  op, node definition, and experimental payloads.
+4 api_signature: tf.errors.InternalError(message)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

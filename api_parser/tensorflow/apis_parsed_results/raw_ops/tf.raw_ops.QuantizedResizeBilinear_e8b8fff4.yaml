@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.QuantizedResizeBilinear
+3 api_description: Resizes quantized images to a target size using bilinear interpolation,
+  preserving quantized input and output types.
+4 api_signature: tf.raw_ops.QuantizedResizeBilinear(images,size)
+5 api_details: ''
+6 api_parameters:
+- images: The 4-D input image tensor to be resized, with shape [batch, height, width,
+    channels].
+- size: A 2-element int32 tensor specifying the target height and width for the resized
+    images.
+7 api_usage_example: null
+8 api_shape: ''

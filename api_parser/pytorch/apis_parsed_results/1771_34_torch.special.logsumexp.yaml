@@ -1,0 +1,8 @@
+2 api_name: torch.special.logsumexp
+3 api_description: Computes the log of the sum of exponentials of the input values
+  in a numerically stable way.
+4 api_signature: torch.special.logsumexp(input,dim,keepdim)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

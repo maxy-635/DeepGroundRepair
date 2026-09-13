@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.UniformQuantize
+3 api_description: Quantizes a tensor by scaling, rounding to the nearest integer,
+  and adding a zero point.
+4 api_signature: tf.raw_ops.UniformQuantize(input,scales,zero_points,Tout,quantization_min_val,quantization_max_val)
+5 api_details: ''
+6 api_parameters:
+- input: The float32 tensor to be quantized.
+- scales: The scale value(s) used to map input values into quantized values, either
+    as a scalar for per-tensor quantization or a 1D tensor for per-axis quantization.
+- zero_points: The zero-point value(s) used to offset the quantized representation,
+    matching the shape rules of `scales`.
+- Tout: The dtype of the quantized output tensor, such as `tf.qint8` or `tf.qint32`.
+- quantization_min_val: The minimum allowed quantized value, typically used to represent
+    the lower bound of the quantization range.
+- quantization_max_val: The maximum allowed quantized value, typically used to represent
+    the upper bound of the quantization range.
+7 api_usage_example: null
+8 api_shape: ''

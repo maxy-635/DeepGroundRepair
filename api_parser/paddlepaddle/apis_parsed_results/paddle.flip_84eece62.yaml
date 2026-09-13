@@ -1,0 +1,34 @@
+2 api_name: paddle.flip
+3 api_description: Returns a tensor with the elements reversed along the specified
+  axis.
+4 api_signature: paddle.flip(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be flipped, with support for float32, float64, int32, int64,
+    and bool data types.
+- axis: The dimension or dimensions along which to reverse the tensor, allowing negative
+    indices to count from the end.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- image_shape=(3, 2, 2)
+- img = paddle.arange(image_shape[0] * image_shape[1] * image_shape[2]).reshape(image_shape)
+- tmp = paddle.flip(img, [0,1])
+- print(tmp)
+- Tensor(shape=[3, 2, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[[10, 11],'
+- '[8 , 9 ]],'
+- '[[6 , 7 ],'
+- '[4 , 5 ]],'
+- '[[2 , 3 ],'
+- '[0 , 1 ]]])'
+- out = paddle.flip(tmp,-1)
+- print(out)
+- Tensor(shape=[3, 2, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[[11, 10],'
+- '[9 , 8 ]],'
+- '[[7 , 6 ],'
+- '[5 , 4 ]],'
+- '[[3 , 2 ],'
+- '[1 , 0 ]]])'
+8 api_shape: {}

@@ -1,0 +1,9 @@
+2 api_name: torch.nn.TripletMarginLoss.forward
+3 api_description: Computes the triplet margin loss for anchor, positive, and negative
+  inputs by comparing distances and encouraging the anchor to be closer to the positive
+  than the negative.
+4 api_signature: forward(anchor,positive,negative)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

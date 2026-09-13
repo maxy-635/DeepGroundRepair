@@ -1,0 +1,8 @@
+2 api_name: torch.ByteStorage
+3 api_description: A storage type for holding raw bytes (8-bit unsigned values) in
+  a contiguous, low-level tensor-like memory buffer.
+4 api_signature: torch.ByteStorage(*args,wrap_storage,dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

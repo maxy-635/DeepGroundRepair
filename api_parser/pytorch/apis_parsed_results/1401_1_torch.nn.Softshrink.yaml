@@ -1,0 +1,16 @@
+2 api_name: torch.nn.Softshrink
+3 api_description: Applies the soft shrinkage function element-wise to the input tensor,
+  reducing values towards zero by a specified threshold.
+4 api_signature: torch.nn.Softshrink(lambd)
+5 api_details: ''
+6 api_parameters:
+- lambd: The λ value determines the threshold for shrinking the input values towards
+    zero in the Softshrink function.
+7 api_usage_example:
+- ' m = nn.Softshrink()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

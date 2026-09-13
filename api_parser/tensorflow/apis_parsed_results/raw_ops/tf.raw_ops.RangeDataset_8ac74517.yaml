@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.RangeDataset
+3 api_description: Creates a dataset that yields a sequence of values over a specified
+  numeric range, similar to Python's xrange.
+4 api_signature: tf.raw_ops.RangeDataset(start,stop,step)
+5 api_details: ''
+6 api_parameters:
+- start: The first value in the integer range sequence.
+- stop: The end limit of the range sequence, exclusive.
+- step: The increment between successive values in the range sequence.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.special.entr
+3 api_description: Computes elementwise entropy values for the input tensor.
+4 api_signature: torch.special.entr(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used to compute the elementwise entropy-like
+    function.
+7 api_usage_example:
+- ' a = torch.arange(-0.5, 1, 0.5)'
+- ' a'
+- ' torch.special.entr(a)'
+8 api_shape: null

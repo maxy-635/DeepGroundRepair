@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.LocalOptimStateDictConfig
+3 api_description: Configures how FSDP collects and formats the local optimizer state
+  dict for each rank.
+4 api_signature: torch.distributed.fsdp.LocalOptimStateDictConfig(offload_to_cpu:bool)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

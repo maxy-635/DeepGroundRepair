@@ -1,0 +1,12 @@
+2 api_name: paddle.linalg.eigh
+3 api_description: Computes the eigenvalues and eigenvectors of a real symmetric or
+  complex Hermitian matrix.
+4 api_signature: paddle.linalg.eigh(x,UPLO)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor of shape [*, N, N] containing the matrix or batch of matrices to
+    decompose; supported dtypes are float32, float64, complex64, and complex128.
+- UPLO: Specifies whether to use the lower triangular part ('L') or upper triangular
+    part ('U') of the input matrix.
+7 api_usage_example: []
+8 api_shape: {}

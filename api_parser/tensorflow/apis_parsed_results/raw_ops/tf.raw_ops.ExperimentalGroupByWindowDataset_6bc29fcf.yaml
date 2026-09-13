@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ExperimentalGroupByWindowDataset
+3 api_description: Creates a dataset that groups input elements into windows and computes
+  windowed aggregations over each group.
+4 api_signature: tf.raw_ops.ExperimentalGroupByWindowDataset(input_dataset,key_func,reduce_func,window_size_func,output_types,output_shapes,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to group and window over.
+- key_func: Computes a scalar int64 grouping key for each input element.
+- reduce_func: Defines how to reduce each grouped window into output values.
+- window_size_func: Computes the window size to use for each group.
+- output_types: Specifies the data types of the operation’s outputs.
+- output_shapes: Specifies the shapes of the operation’s outputs.
+- name: Optionally names the operation.
+7 api_usage_example: null
+8 api_shape: ''

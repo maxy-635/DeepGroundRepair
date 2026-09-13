@@ -1,0 +1,25 @@
+2 api_name: torch.nn.MaxPool1d
+3 api_description: Applies 1D max pooling to reduce the dimensionality of input signals
+  by selecting the maximum value within specified kernel size segments across multiple
+  input planes.
+4 api_signature: torch.nn.MaxPool1d(kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Defines the size of the window that slides over the input, and must
+    be greater than zero.
+- stride: Specifies the step size of the sliding window, must be greater than zero,
+    and defaults to the value of kernel_size.
+- padding: Indicates the amount of implicit negative infinity padding to be added
+    on both sides of the input, which must be non-negative and not exceed half of
+    the kernel_size.
+7 api_usage_example:
+- ' # pool of size=3, stride=2'
+- ' m = nn.MaxPool1d(3, stride=2)'
+- ' input = torch.randn(20, 16, 50)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, L_in)
+  output tensor shape: (N, Channel_out, L_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    L_out: L_out = \lceil (L_in + 2 * padding - dilation * (kernel_size - 1) - 1 + (stride - 1)) / stride\rceil + 1

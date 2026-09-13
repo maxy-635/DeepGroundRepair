@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.categorical.Categorical.sample
+3 api_description: Draws samples from the categorical distribution, returning category
+  indices according to the specified probabilities.
+4 api_signature: sample(sample_shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

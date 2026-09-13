@@ -1,0 +1,12 @@
+2 api_name: torch.nn.functional.dropout2d
+3 api_description: torch.nn.functional.dropout2d randomly zeroes out entire 2D feature
+  map channels to prevent overfitting.
+4 api_signature: torch.nn.functional.dropout2d(input,p)
+5 api_details: ''
+6 api_parameters:
+- p: Specifies the probability that each channel will be set to zero during dropout.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height, Width)
+  output tensor shape: (N, Channel_out, Height, Width)
+  tensor shape transform formulas: {}

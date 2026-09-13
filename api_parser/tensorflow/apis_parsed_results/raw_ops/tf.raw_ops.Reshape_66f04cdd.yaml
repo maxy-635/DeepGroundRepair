@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Reshape
+3 api_description: Returns a tensor with the same values as the input but reshaped
+  to a 1-D shape tensor; supports one unknown dimension (-1) inferred to keep the
+  total number of elements unchanged.
+4 api_signature: tf.raw_ops.Reshape(tensor,shape)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor whose values are reshaped.
+- shape: The target output shape, specified as an int32 or int64 tensor.
+7 api_usage_example: null
+8 api_shape: ''

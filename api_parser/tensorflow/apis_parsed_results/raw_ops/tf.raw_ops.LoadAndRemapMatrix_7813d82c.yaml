@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.LoadAndRemapMatrix
+3 api_description: Loads a 2-D matrix from a checkpoint and optionally remaps its
+  rows and columns according to provided 1-D index tensors.
+4 api_signature: tf.raw_ops.LoadAndRemapMatrix(ckpt_path,old_tensor_name,row_remapping,col_remapping,num_rows,num_cols)
+5 api_details: ''
+6 api_parameters:
+- ckpt_path: Specifies the checkpoint file path from which to load the old matrix
+    tensor.
+- old_tensor_name: Identifies the 2-D tensor name to retrieve from the checkpoint.
+- row_remapping: Provides the row index mapping used to reorder or shift rows when
+    loading the matrix.
+- col_remapping: Provides the column index mapping used to reorder columns, or an
+    empty tensor if no column remapping is needed.
+- num_rows: Sets the number of rows in the output matrix.
+- num_cols: Sets the number of columns in the output matrix.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

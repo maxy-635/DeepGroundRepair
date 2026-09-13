@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.ExtensionType
+3 api_description: Base class for defining TensorFlow ExtensionType classes with annotated
+  fields, enabling custom Python objects to work transparently with TensorFlow ops,
+  tf.function, tf.cond, tf.while_loop, and Keras layers.
+4 api_signature: tf.experimental.ExtensionType(*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'class ToyStore(ExtensionType):'
+- '  name: str'
+- '  toys: typing.Tuple[Toy, ...]'
+8 api_shape: ''

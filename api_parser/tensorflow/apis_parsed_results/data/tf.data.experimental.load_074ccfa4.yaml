@@ -1,0 +1,19 @@
+2 api_name: tensorflow.data.experimental.load
+3 api_description: Loads a previously saved dataset from shards, preserving saved
+  order by default, with optional custom shard reading order via `reader_func`.
+4 api_signature: tf.data.experimental.load(path,element_spec)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the location of the previously saved dataset to load.
+- element_spec: Defines the expected structure and type specification of dataset elements,
+    or uses the saved spec if omitted.
+7 api_usage_example:
+- import tempfile
+- path = os.path.join(tempfile.gettempdir(), "saved_data")
+- '# Save a dataset'
+- dataset = tf.data.Dataset.range(2)
+- tf.data.experimental.save(dataset, path)
+- new_dataset = tf.data.experimental.load(path)
+- 'for elem in new_dataset:'
+- '  print(elem)'
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.image.rgb_to_yiq
+3 api_description: Converts RGB images to YIQ color space, returning a tensor with
+  the same shape; results are well defined only for input values in the [0, 1] range.
+4 api_signature: tf.image.rgb_to_yiq(images)
+5 api_details: ''
+6 api_parameters:
+- images: The input RGB image tensor to convert, with rank 2 or higher and a last
+    dimension of size 3.
+7 api_usage_example:
+- x = tf.constant([[[1.0, 2.0, 3.0]]])
+- tf.image.rgb_to_yiq(x)
+8 api_shape: ''

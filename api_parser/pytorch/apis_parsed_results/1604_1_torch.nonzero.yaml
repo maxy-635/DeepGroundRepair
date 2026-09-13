@@ -1,0 +1,19 @@
+2 api_name: torch.nonzero
+3 api_description: Returns the indices of nonzero elements in a tensor.
+4 api_signature: torch.nonzero(input,as_tuple)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to search for non-zero elements.
+7 api_usage_example:
+- ' torch.nonzero(torch.tensor([1, 1, 1, 0, 1]))'
+- ' torch.nonzero(torch.tensor([[0.6, 0.0, 0.0, 0.0],'
+- '...                             [0.0, 0.4, 0.0, 0.0],'
+- '...                             [0.0, 0.0, 1.2, 0.0],'
+- '...                             [0.0, 0.0, 0.0,-0.4]]))'
+- ' torch.nonzero(torch.tensor([1, 1, 1, 0, 1]), as_tuple=True)'
+- ' torch.nonzero(torch.tensor([[0.6, 0.0, 0.0, 0.0],'
+- '...                             [0.0, 0.4, 0.0, 0.0],'
+- '...                             [0.0, 0.0, 1.2, 0.0],'
+- '...                             [0.0, 0.0, 0.0,-0.4]]), as_tuple=True)'
+- ' torch.nonzero(torch.tensor(5), as_tuple=True)'
+8 api_shape: null

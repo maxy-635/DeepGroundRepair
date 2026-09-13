@@ -1,0 +1,12 @@
+2 api_name: tensorflow.signal.inverse_stft
+3 api_description: Reconstructs a time-domain waveform from STFT frames using an inverse
+  STFT, typically with a complementary window function for accurate recovery.
+4 api_signature: tf.signal.inverse_stft(stfts,frame_length,frame_step)
+5 api_details: ''
+6 api_parameters:
+- stfts: The input batch of complex STFT frames to be transformed back into time-domain
+    signals.
+- frame_length: The length of each analysis/synthesis window in samples.
+- frame_step: The hop size, or number of samples between successive frames.
+7 api_usage_example: null
+8 api_shape: ''

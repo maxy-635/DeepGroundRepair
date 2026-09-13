@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.RefEnter
+3 api_description: Creates or reuses a child execution frame and passes input data
+  into it, optionally as a constant, with controlled parallel iteration.
+4 api_signature: tf.raw_ops.RefEnter(data,frame_name,is_constant)
+5 api_details: ''
+6 api_parameters:
+- data: The mutable tensor to pass into and make available within the child frame.
+- frame_name: The name assigned to the child frame that receives the tensor.
+- is_constant: Indicates whether the output should be treated as constant within the
+    child frame; defaults to False.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: torch.UntypedStorage.cuda
+3 api_description: Returns a copy of the storage allocated in CUDA GPU memory.
+4 api_signature: cuda(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the destination GPU device to move the storage to, defaulting
+    to the current device if not provided.
+7 api_usage_example: null
+8 api_shape: null

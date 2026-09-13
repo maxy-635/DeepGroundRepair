@@ -1,0 +1,39 @@
+2 api_name: torch.nn.Upsample
+3 api_description: Upsamples multi-channel 1D, 2D, or 3D data using specified scaling
+  factors or target sizes.
+4 api_signature: torch.nn.Upsample(size,scale_factor,mode)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the desired output spatial dimensions for the upsampled tensor.
+- scale_factor: Defines the multiplicative factor by which to scale the input size,
+    which must match the input dimensions if provided as a tuple.
+- mode: Determines the algorithm used for upsampling, with options including 'nearest',
+    'linear', 'bilinear', 'bicubic', and 'trilinear'.
+7 api_usage_example:
+- ' input = torch.arange(1, 5, dtype=torch.float32).view(1, 1, 2, 2)'
+- ' input'
+- ' m = nn.Upsample(scale_factor=2, mode=''nearest'')'
+- ' m(input)'
+- ' m = nn.Upsample(scale_factor=2, mode=''bilinear'')  # align_corners=False'
+- ' m(input)'
+- ' m = nn.Upsample(scale_factor=2, mode=''bilinear'', align_corners=True)'
+- ' m(input)'
+- ' # Try scaling the same data in a larger tensor'
+- ' input_3x3 = torch.zeros(3, 3).view(1, 1, 3, 3)'
+- ' input_3x3[:, :, :2, :2].copy_(input)'
+- ' input_3x3'
+- ' m = nn.Upsample(scale_factor=2, mode=''bilinear'')  # align_corners=False'
+- ' # Notice that values in top left corner are the same with the small input (except
+  at boundary)'
+- ' m(input_3x3)'
+- ' m = nn.Upsample(scale_factor=2, mode=''bilinear'', align_corners=True)'
+- ' # Notice that values in top left corner are now changed'
+- ' m(input_3x3)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Width_in), (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Width_out), (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor depth: Depth_out = floor(Depth_in * scale_factor)
+    tensor height: Height_out = floor(Height_in * scale_factor)
+    tensor width: Width_out = floor(Width_in * scale_factor)

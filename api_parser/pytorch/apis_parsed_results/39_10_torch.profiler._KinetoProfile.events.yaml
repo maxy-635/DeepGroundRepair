@@ -1,0 +1,8 @@
+2 api_name: torch.profiler._KinetoProfile.events
+3 api_description: Returns the unaggregated profiler events collected during profiling,
+  for use in trace callbacks or after profiling completes.
+4 api_signature: events()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

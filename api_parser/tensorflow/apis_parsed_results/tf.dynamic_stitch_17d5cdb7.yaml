@@ -1,0 +1,12 @@
+2 api_name: tensorflow.dynamic_stitch
+3 api_description: Interleaves values from multiple data tensors into one merged tensor
+  according to index positions.
+4 api_signature: tf.dynamic_stitch(indices,data)
+5 api_details: ''
+6 api_parameters:
+- indices: A list of int32 tensors that specify where each corresponding data tensor's
+    values should be placed in the output.
+- data: A list of tensors, matching `indices` in length and dtype, whose values are
+    stitched together according to the provided indices.
+7 api_usage_example: null
+8 api_shape: ''

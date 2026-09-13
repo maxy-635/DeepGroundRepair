@@ -1,0 +1,14 @@
+2 api_name: torch.nn.MultiheadAttention.merge_masks
+3 api_description: Determine the mask type and combine the attention and padding masks
+  into a single merged mask when needed.
+4 api_signature: merge_masks(attn_mask,key_padding_mask)
+5 api_details: ''
+6 api_parameters:
+- query: The query tensor used to determine the batch size and sequence length for
+    mask expansion.
+- key_padding_mask: A mask that marks padding positions in the key sequence to be
+    ignored.
+- attn_mask: A mask that restricts which query-key positions can attend to each other.
+- batch_first: A flag indicating whether input tensors use batch-first layout.
+7 api_usage_example: null
+8 api_shape: null

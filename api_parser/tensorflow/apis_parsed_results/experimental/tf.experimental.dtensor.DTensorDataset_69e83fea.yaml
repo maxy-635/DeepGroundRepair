@@ -1,0 +1,39 @@
+2 api_name: tensorflow.experimental.dtensor.DTensorDataset
+3 api_description: Wraps a tf.data.Dataset and automatically packs each element into
+  DTensors according to a specified mesh and layouts.
+4 api_signature: tf.experimental.dtensor.DTensorDataset(dataset,mesh,layouts,global_batch_size,dataset_already_batched)
+5 api_details: ''
+6 api_parameters:
+- dataset: The input `tf.data.Dataset` whose elements will be distributed as DTensor
+    batches.
+- mesh: The DTensor mesh that determines how the dataset batches are partitioned across
+    devices.
+- layouts: The DTensor layout or nested layout structure that maps dataset values
+    onto the mesh, with batch sharding applied consistently to all or none of the
+    layouts.
+- global_batch_size: The total batch size across all replicas that the dataset should
+    produce.
+- dataset_already_batched: Indicates that the dataset is already batched to the per-replica
+    size and uses `drop_remainder=True` for static slicing.
+7 api_usage_example:
+- '# The datasets or nested structure of datasets `*args` argument'
+- '# determines the structure of elements in the resulting dataset.'
+- 'a = tf.data.Dataset.range(1, 4)  # ==> [ 1, 2, 3 ]'
+- 'b = tf.data.Dataset.range(4, 7)  # ==> [ 4, 5, 6 ]'
+- ds = tf.data.Dataset.zip(a, b)
+- list(ds.as_numpy_iterator())
+- ds = tf.data.Dataset.zip(b, a)
+- list(ds.as_numpy_iterator())
+- '# The `datasets` argument may contain an arbitrary number of datasets.'
+- 'c = tf.data.Dataset.range(7, 13).batch(2)  # ==> [ [7, 8],'
+- '                                           #       [9, 10],'
+- '                                           #       [11, 12] ]'
+- ds = tf.data.Dataset.zip(a, b, c)
+- 'for element in ds.as_numpy_iterator():'
+- '  print(element)'
+- '# The number of elements in the resulting dataset is the same as'
+- '# the size of the smallest dataset in `datasets`.'
+- 'd = tf.data.Dataset.range(13, 15)  # ==> [ 13, 14 ]'
+- ds = tf.data.Dataset.zip(a, d)
+- list(ds.as_numpy_iterator())
+8 api_shape: ''

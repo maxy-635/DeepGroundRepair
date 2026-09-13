@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.cross_hashed
+3 api_description: Generates hashed feature crosses from sparse and dense tensors,
+  producing compact cross IDs suitable for sparse modeling inputs.
+4 api_signature: tf.sparse.cross_hashed(inputs,num_buckets)
+5 api_details: ''
+6 api_parameters:
+- inputs: Provides the tensors or sparse tensors whose values are combined and hashed.
+- num_buckets: Sets the hash bucket count and reduces the hashed value modulo this
+    number when it is greater than zero.
+7 api_usage_example: null
+8 api_shape: ''

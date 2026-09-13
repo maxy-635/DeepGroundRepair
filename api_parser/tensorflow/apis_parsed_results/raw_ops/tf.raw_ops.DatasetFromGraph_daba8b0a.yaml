@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.DatasetFromGraph
+3 api_description: Creates a dataset from a supplied GraphDef, reconstructing the
+  dataset pipeline defined in the graph.
+4 api_signature: tf.raw_ops.DatasetFromGraph(graph_def)
+5 api_details: ''
+6 api_parameters:
+- graph_def: Serialized `GraphDef` bytes that define the dataset graph to load.
+7 api_usage_example: null
+8 api_shape: ''

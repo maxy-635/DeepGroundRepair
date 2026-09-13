@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ExperimentalMapDataset
+3 api_description: Creates a new dataset by applying a function to each element produced
+  by an input dataset.
+4 api_signature: tf.raw_ops.ExperimentalMapDataset(input_dataset,f,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be transformed and mapped over.
+- f: The function applied to each dataset element.
+- output_types: The data types produced by the mapped function.
+- output_shapes: The shapes of the tensors produced by the mapped function.
+7 api_usage_example: null
+8 api_shape: ''

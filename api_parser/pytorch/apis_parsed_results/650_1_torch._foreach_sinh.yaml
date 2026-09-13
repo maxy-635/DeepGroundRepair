@@ -1,0 +1,8 @@
+2 api_name: torch._foreach_sinh
+3 api_description: Applies `torch.sinh()` elementwise to every tensor in a list and
+  returns the results as a foreach operation.
+4 api_signature: torch._foreach_sinh(List[Tensor])
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

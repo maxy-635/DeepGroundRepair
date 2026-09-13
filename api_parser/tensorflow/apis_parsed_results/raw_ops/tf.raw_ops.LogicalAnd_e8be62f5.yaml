@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.LogicalAnd
+3 api_description: Computes element-wise logical AND of two tensors, returning a boolean
+  result with broadcasting support for compatible shapes.
+4 api_signature: tf.raw_ops.LogicalAnd(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first boolean tensor whose values are combined with `y` using logical AND.
+- y: The second boolean tensor whose values are combined with `x` using logical AND.
+7 api_usage_example:
+- tf.logical_and([[True, False]], [[True], [False]])
+8 api_shape: ''

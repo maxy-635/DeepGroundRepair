@@ -1,0 +1,10 @@
+2 api_name: torch.broadcast_shapes
+3 api_description: Computes the broadcasted shape for multiple input shapes without
+  creating tensors.
+4 api_signature: '"torch.broadcast_shapes(*shapes)"'
+5 api_details: ''
+6 api_parameters:
+- '*shapes': The input tensor shapes to compare and broadcast together.
+7 api_usage_example:
+- ' torch.broadcast_shapes((2,), (3, 1), (1, 1, 1))'
+8 api_shape: null

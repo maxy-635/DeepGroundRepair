@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.optimizers.schedules.ExponentialDecay
+3 api_description: Returns a learning rate schedule that exponentially decreases the
+  initial learning rate as training steps increase.
+4 api_signature: tf.keras.optimizers.schedules.ExponentialDecay(initial_learning_rate,decay_steps,decay_rate)
+5 api_details: ''
+6 api_parameters:
+- initial_learning_rate: Sets the starting learning rate before any decay is applied.
+- decay_steps: Specifies how many steps it takes for the learning rate to decay.
+- decay_rate: Controls the rate at which the learning rate decreases over time.
+7 api_usage_example: null
+8 api_shape: ''

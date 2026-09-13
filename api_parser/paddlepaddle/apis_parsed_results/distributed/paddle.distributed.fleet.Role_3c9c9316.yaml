@@ -1,0 +1,8 @@
+2 api_name: paddle.distributed.fleet.Role
+3 api_description: Defines fleet roles for Paddle distributed training, letting a
+  process identify its job type and coordination role in a distributed cluster.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

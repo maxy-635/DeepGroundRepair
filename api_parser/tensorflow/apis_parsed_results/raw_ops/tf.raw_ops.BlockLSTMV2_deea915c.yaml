@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.BlockLSTMV2
+3 api_description: Runs the forward pass of an LSTM over all time steps, equivalent
+  to applying LSTMBlockCell repeatedly in a loop.
+4 api_signature: tf.raw_ops.BlockLSTMV2(x,w,b,seq_len_max,use_peephole,cell_clip)
+5 api_details: ''
+6 api_parameters:
+- seq_len_max: Specifies the maximum valid time length in the input sequence, with
+    outputs padded with zeros beyond this length.
+- x: Provides the input sequence tensor to the LSTM, shaped as `(timelen, batch_size,
+    num_inputs)`.
+- w: Supplies the LSTM weight matrix used to compute the gate and state transformations.
+- b: Supplies the LSTM bias vector added during the gate and state computations.
+- cell_clip: Sets the optional clipping threshold for the cell state `cs` value.
+- use_peephole: Indicates whether to enable peephole connections in the LSTM cell.
+7 api_usage_example: null
+8 api_shape: ''

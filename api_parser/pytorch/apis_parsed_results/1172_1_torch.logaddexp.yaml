@@ -1,0 +1,14 @@
+2 api_name: torch.logaddexp
+3 api_description: Computes log(exp(x) + exp(y)) in a numerically stable way.
+4 api_signature: torch.logaddexp(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first input tensor whose values are combined with the second tensor using
+    log-add-exp.
+- other: The second input tensor that is combined elementwise with the first tensor
+    using log-add-exp.
+7 api_usage_example:
+- ' torch.logaddexp(torch.tensor([-1.0]), torch.tensor([-1.0, -2, -3]))'
+- ' torch.logaddexp(torch.tensor([-100.0, -200, -300]), torch.tensor([-1.0, -2, -3]))'
+- ' torch.logaddexp(torch.tensor([1.0, 2000, 30000]), torch.tensor([-1.0, -2, -3]))'
+8 api_shape: null

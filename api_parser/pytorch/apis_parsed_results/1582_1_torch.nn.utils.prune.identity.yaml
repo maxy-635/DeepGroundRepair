@@ -1,0 +1,12 @@
+2 api_name: torch.nn.utils.prune.identity
+3 api_description: Applies pruning reparameterization to a module while leaving all
+  weights or units unchanged.
+4 api_signature: torch.nn.utils.prune.identity(module,name)
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the parameter tensor to be pruned.
+- name: The name of the parameter within the module that pruning will act on.
+7 api_usage_example:
+- ' m = prune.identity(nn.Linear(2, 3), ''bias'')'
+- ' print(m.bias_mask)'
+8 api_shape: null

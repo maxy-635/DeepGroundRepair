@@ -1,0 +1,11 @@
+2 api_name: tensorflow.debugging.assert_all_finite
+3 api_description: Checks that a tensor contains no NaN or Inf values and raises an
+  error if any are found.
+4 api_signature: tf.debugging.assert_all_finite(x,message)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose values are checked for NaN and infinity.
+- message: An optional message to include in the error output if the check fails.
+7 api_usage_example:
+- f(tf.constant([np.inf, 1, 2]))
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: torch.nn.MultiLabelMarginLoss
+3 api_description: Computes multi-class multi-label hinge loss for a mini-batch, comparing
+  predicted scores against target class indices to optimize classification.
+4 api_signature: torch.nn.MultiLabelMarginLoss(reduction)
+5 api_details: ''
+6 api_parameters:
+- reduction: 'Specifies how the loss output should be aggregated: no aggregation (''none''),
+    averaged (''mean''), or summed (''sum'').'
+7 api_usage_example:
+- ' loss = nn.MultiLabelMarginLoss()'
+- ' x = torch.FloatTensor([[0.1, 0.2, 0.4, 0.8]])'
+- ' # for target y, only consider labels 3 and 0, not after label -1'
+- ' y = torch.LongTensor([[3, 0, -1, 1]])'
+- ' # 0.25 * ((1-(0.1-0.2)) + (1-(0.1-0.4)) + (1-(0.8-0.2)) + (1-(0.8-0.4)))'
+- ' loss(x, y)'
+8 api_shape:
+  input tensor shape: (Channel_in)
+  output tensor shape: scalar. If reduction is 'none', then (N).
+  tensor shape transform formulas: {}

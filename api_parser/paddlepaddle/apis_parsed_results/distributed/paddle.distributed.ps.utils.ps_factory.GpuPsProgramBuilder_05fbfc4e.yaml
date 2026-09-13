@@ -1,0 +1,8 @@
+2 api_name: paddle.distributed.ps.utils.ps_factory.GpuPsProgramBuilder
+3 api_description: Builds a GPU parameter-server program for Paddle distributed training,
+  assembling the ops and variables needed to configure and run GPU PS execution.
+4 api_signature: paddle.distributed.ps.utils.ps_factory.GpuPsProgramBuilder(pass_ctx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.layers.Wrapper
+3 api_description: The tf.keras.layers.Wrapper API serves as an abstract base class
+  for creating layer wrappers that augment existing layers, such as TimeDistributed
+  and Bidirectional, without being used directly as layers themselves.
+4 api_signature: tf.keras.layers.Wrapper(layer)
+5 api_details: ''
+6 api_parameters:
+- layer: The specific layer instance that will be wrapped by the Wrapper API.
+7 api_usage_example: null
+8 api_shape: null

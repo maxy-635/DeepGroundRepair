@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.von_mises.VonMises.log_prob
+3 api_description: Computes the log probability density of values under a Von Mises
+  distribution.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The value at which to evaluate the Von Mises log probability.
+7 api_usage_example: null
+8 api_shape: null

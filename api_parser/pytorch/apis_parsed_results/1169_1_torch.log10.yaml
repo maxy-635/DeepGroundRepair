@@ -1,0 +1,12 @@
+2 api_name: torch.log10
+3 api_description: Computes the base-10 logarithm of each element in a tensor and
+  returns a new tensor.
+4 api_signature: torch.log10(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose base-10 logarithm is computed elementwise.
+7 api_usage_example:
+- ' a = torch.rand(5)'
+- ' a'
+- ' torch.log10(a)'
+8 api_shape: null

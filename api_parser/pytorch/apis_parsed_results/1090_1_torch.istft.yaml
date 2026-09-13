@@ -1,0 +1,19 @@
+2 api_name: torch.istft
+3 api_description: Reconstructs a time-domain signal from a short-time Fourier transform
+  (STFT) spectrogram.
+4 api_signature: torch.istft(input,n_fft,hop_length,win_length,window,center,normalized,onesided,length)
+5 api_details: ''
+6 api_parameters:
+- input: The complex STFT output tensor to be inverted back into a time-domain signal.
+- n_fft: Sets the Fourier transform size used to reconstruct the waveform.
+- hop_length: Controls the step size between adjacent frames during reconstruction.
+- win_length: Defines the window size used for each STFT frame.
+- window: Provides the optional 1D window function applied during reconstruction.
+- center: Specifies whether the original STFT frames were centered with padding.
+- normalized: Indicates whether the STFT was computed with normalization enabled.
+- onesided: Indicates whether the STFT input contains only the one-sided frequency
+    spectrum.
+- length: Sets the target output signal length for trimming or padding the reconstructed
+    waveform.
+7 api_usage_example: null
+8 api_shape: null

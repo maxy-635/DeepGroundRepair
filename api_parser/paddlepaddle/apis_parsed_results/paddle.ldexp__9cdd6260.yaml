@@ -1,0 +1,8 @@
+2 api_name: paddle.ldexp_
+3 api_description: Computes the polygamma function in place, writing the result into
+  the input tensor.
+4 api_signature: paddle.ldexp_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

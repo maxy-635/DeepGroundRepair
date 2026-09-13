@@ -1,0 +1,7 @@
+2 api_name: torch.nn.modules.lazy.LazyModuleMixin.has_uninitialized_params
+3 api_description: Returns whether a lazy module still contains uninitialized parameters.
+4 api_signature: has_uninitialized_params()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

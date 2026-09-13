@@ -1,0 +1,15 @@
+2 api_name: torch.fft.fftn
+3 api_description: Computes the N-dimensional discrete Fourier transform of an input
+  tensor.
+4 api_signature: torch.fft.fftn(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to transform with an N-dimensional FFT.
+- s: The target sizes of the transformed dimensions, with padding or trimming applied
+    as needed.
+- dim: The dimensions of the input to compute the FFT over.
+- norm: The normalization mode that controls scaling of the FFT output.
+7 api_usage_example:
+- ' x = torch.rand(10, 10, dtype=torch.complex64)'
+- ' fftn = torch.fft.fftn(x)'
+8 api_shape: null

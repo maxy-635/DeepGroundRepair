@@ -1,0 +1,16 @@
+2 api_name: torch.nn.LogSoftmax
+3 api_description: Applies the logarithm of the softmax function to an n-dimensional
+  input tensor, effectively normalizing the input while providing log probabilities.
+4 api_signature: torch.nn.LogSoftmax(dim)
+5 api_details: ''
+6 api_parameters:
+- dim: Specifies the dimension of the input tensor along which the LogSoftmax function
+    will be applied.
+7 api_usage_example:
+- ' m = nn.LogSoftmax(dim=1)'
+- ' input = torch.randn(2, 3)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*) where * means, any number of additional dimensions
+  output tensor shape: (*), same shape as the input
+  tensor shape transform formulas: {}

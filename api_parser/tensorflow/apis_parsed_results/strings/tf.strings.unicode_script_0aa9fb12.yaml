@@ -1,0 +1,10 @@
+2 api_name: tensorflow.strings.unicode_script
+3 api_description: Maps Unicode code points to their ICU script codes, returning -1
+  for invalid code points and preserving the input shape.
+4 api_signature: tf.strings.unicode_script(input)
+5 api_details: ''
+6 api_parameters:
+- input: An int32 tensor containing Unicode code points to classify by script.
+7 api_usage_example:
+- tf.strings.unicode_script([1, 31, 38])
+8 api_shape: ''

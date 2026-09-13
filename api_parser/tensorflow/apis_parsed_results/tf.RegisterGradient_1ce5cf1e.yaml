@@ -1,0 +1,9 @@
+2 api_name: tensorflow.RegisterGradient
+3 api_description: Registers a gradient function for a new op type, mapping output
+  gradients back to input gradients for use in automatic differentiation.
+4 api_signature: tf.RegisterGradient(op_type)
+5 api_details: ''
+6 api_parameters:
+- op_type: Specifies the name of the operation whose gradient function is being registered.
+7 api_usage_example: null
+8 api_shape: ''

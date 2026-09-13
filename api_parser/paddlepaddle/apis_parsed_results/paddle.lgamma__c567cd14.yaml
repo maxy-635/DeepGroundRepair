@@ -1,0 +1,8 @@
+2 api_name: paddle.lgamma_
+3 api_description: Computes the natural logarithm of the absolute value of the gamma
+  function in place, writing the result back into the input tensor.
+4 api_signature: paddle.lgamma_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

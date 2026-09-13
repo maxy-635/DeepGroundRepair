@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.square
+3 api_description: Returns the element-wise square of x, computing x * x.
+4 api_signature: tf.math.square(x)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to square elementwise; it must be one of the supported numeric or
+    complex types.
+7 api_usage_example:
+- tf.math.square([-2., 0., 3.])
+8 api_shape: ''

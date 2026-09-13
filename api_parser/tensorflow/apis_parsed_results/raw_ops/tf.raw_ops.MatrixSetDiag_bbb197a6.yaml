@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.MatrixSetDiag
+3 api_description: Returns a tensor like `input` with each innermost matrix’s main
+  diagonal replaced by the corresponding values from `diagonal`.
+4 api_signature: tf.raw_ops.MatrixSetDiag(input,diagonal)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose specified diagonal will be replaced.
+- diagonal: The tensor containing the values to write onto the matrix diagonal.
+7 api_usage_example: null
+8 api_shape: ''

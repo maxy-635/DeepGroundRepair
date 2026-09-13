@@ -1,0 +1,15 @@
+2 api_name: torch.cumprod
+3 api_description: Computes the cumulative product of tensor elements along a specified
+  dimension.
+4 api_signature: torch.cumprod(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose cumulative product is computed.
+- dim: The dimension along which the cumulative product is calculated.
+7 api_usage_example:
+- ' a = torch.randn(10)'
+- ' a'
+- ' torch.cumprod(a, dim=0)'
+- ' a[5] = 0.0'
+- ' torch.cumprod(a, dim=0)'
+8 api_shape: null

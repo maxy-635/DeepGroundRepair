@@ -1,0 +1,16 @@
+2 api_name: tensorflow.ragged.range
+3 api_description: Creates a RaggedTensor of number sequences, where each row contains
+  one generated range.
+4 api_signature: tf.ragged.range(starts,limits,deltas)
+5 api_details: ''
+6 api_parameters:
+- starts: Sets the starting value for each range, or the range limits when `limits`
+    is not provided.
+- limits: Sets the exclusive upper bound for each range.
+- deltas: Sets the step size between successive values in each range, defaulting to
+    1.
+7 api_usage_example:
+- tf.ragged.range([3, 5, 2]).to_list()
+- tf.ragged.range([0, 5, 8], [3, 3, 12]).to_list()
+- tf.ragged.range([0, 5, 8], [3, 3, 12], 2).to_list()
+8 api_shape: ''

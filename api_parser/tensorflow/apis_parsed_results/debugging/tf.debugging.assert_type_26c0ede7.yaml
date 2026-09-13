@@ -1,0 +1,12 @@
+2 api_name: tensorflow.debugging.assert_type
+3 api_description: Asserts that a tensor has the specified data type and returns nothing.
+4 api_signature: tf.debugging.assert_type(tensor,tf_type)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor, sparse tensor, or variable whose data type is being checked.
+- tf_type: The TensorFlow dtype that `tensor` is expected to have.
+7 api_usage_example:
+- c = tf.SparseTensor(indices=[[0, 0], [1, 2]], values=[1, 2],
+- ' dense_shape=[3, 4])'
+- tf.debugging.assert_type(c, tf_type= tf.int32)
+8 api_shape: ''

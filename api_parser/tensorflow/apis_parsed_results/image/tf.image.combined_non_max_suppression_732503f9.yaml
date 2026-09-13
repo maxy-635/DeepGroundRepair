@@ -1,0 +1,20 @@
+2 api_name: tensorflow.image.combined_non_max_suppression
+3 api_description: Performs batched greedy non-max suppression across all classes
+  to keep the highest-scoring bounding boxes while removing boxes with excessive IoU
+  overlap, returning the final boxes, scores, and class labels.
+4 api_signature: tf.image.combined_non_max_suppression(boxes,scores,max_output_size_per_class,max_total_size,iou_threshold,score_threshold)
+5 api_details: ''
+6 api_parameters:
+- boxes: Provides the candidate bounding boxes to evaluate for non-max suppression,
+    either shared across classes or class-specific.
+- scores: Provides the confidence scores for each box across all classes so the best
+    boxes can be selected.
+- max_output_size_per_class: Sets the maximum number of boxes that can be kept for
+    each class after suppression.
+- max_total_size: Sets the overall maximum number of boxes to keep across all classes.
+- iou_threshold: Controls how much overlap is allowed before boxes are considered
+    duplicates and suppressed.
+- score_threshold: Filters out boxes whose scores are below the minimum acceptable
+    confidence level.
+7 api_usage_example: null
+8 api_shape: ''

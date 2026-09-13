@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.check_equal
+3 api_description: Checks whether two ShapeEnv instances are equivalent by comparing
+  their symbolic shape constraints and state.
+4 api_signature: check_equal(other)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

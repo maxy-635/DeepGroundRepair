@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.StatelessRandomUniformInt
+3 api_description: Generates deterministic pseudorandom integers uniformly in [minval,
+  maxval) for a given shape and seed.
+4 api_signature: tf.raw_ops.StatelessRandomUniformInt(shape,seed,minval,maxval)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the shape of the output tensor to generate.
+- seed: Provides the two-element stateless random seed used to deterministically generate
+    values.
+- minval: Sets the inclusive lower bound for the random integers.
+- maxval: Sets the exclusive upper bound for the random integers, with the same type
+    as `minval`.
+7 api_usage_example: null
+8 api_shape: ''

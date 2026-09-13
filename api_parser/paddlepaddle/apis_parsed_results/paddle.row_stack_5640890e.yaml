@@ -1,0 +1,42 @@
+2 api_name: paddle.row_stack
+3 api_description: Stacks a sequence of tensors vertically along axis 0; all inputs
+  must share the same dtype.
+4 api_signature: paddle.row_stack(x)
+5 api_details: ''
+6 api_parameters:
+- x: A list or tuple of same-shaped, same-dtype tensors to be stacked row-wise.
+7 api_usage_example:
+- import paddle
+- '# row_stack with 0-D tensors'
+- x1 = paddle.to_tensor(1.0)
+- x2 = paddle.to_tensor(2.0)
+- out = paddle.row_stack((x1, x2))
+- print(out)
+- Tensor(shape=[2, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1.],'
+- '[2.]])'
+- '# row_stack with 1-D tensors'
+- x1 = paddle.to_tensor([1.0, 2.0, 3.0])
+- x2 = paddle.to_tensor([3.0, 4.0, 5.0])
+- out = paddle.row_stack((x1, x2))
+- print(out)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 2., 3.],'
+- '[3., 4., 5.]])'
+- '# row_stack mix with 1-D & 2-D tensors'
+- x1 = paddle.to_tensor([1.0, 2.0, 3.0])
+- x2 = paddle.to_tensor([[3.0, 4.0, 5.0]])
+- out = paddle.row_stack((x1, x2))
+- print(out)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 2., 3.],'
+- '[3., 4., 5.]])'
+- '# row_stack with 2-D tensors'
+- x1 = paddle.to_tensor([[1.0, 2.0, 3.0]])
+- x2 = paddle.to_tensor([[3.0, 4.0, 5.0]])
+- out = paddle.row_stack((x1, x2))
+- print(out)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 2., 3.],'
+- '[3., 4., 5.]])'
+8 api_shape: {}

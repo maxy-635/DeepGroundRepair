@@ -1,0 +1,12 @@
+2 api_name: tensorflow.nn.fractional_max_pool
+3 api_description: tensorflow.nn.fractional_max_pool performs fractional max pooling,
+  reducing input size by taking maximum values from randomly sized but fairly uniform
+  subsections, allowing non-integer reduction ratios for more flexible downsampling.
+4 api_signature: tf.nn.fractional_max_pool(value,pooling_ratio)
+5 api_details: ''
+6 api_parameters:
+- value: Specifies the input tensor with a 4-D shape [batch, height, width, channels].
+- pooling_ratio: Defines the pooling ratio for each dimension, focusing on height
+    and width, and must be >= 1.0, with batch and channels dimensions fixed at 1.0.
+7 api_usage_example: null
+8 api_shape: ''

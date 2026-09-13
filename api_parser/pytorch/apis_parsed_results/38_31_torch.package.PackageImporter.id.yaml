@@ -1,0 +1,9 @@
+2 api_name: torch.package.PackageImporter.id
+3 api_description: Returns the internal identifier torch.package uses to distinguish
+  one PackageImporter instance from another.
+4 api_signature: id()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- <torch_package_0>
+8 api_shape: null

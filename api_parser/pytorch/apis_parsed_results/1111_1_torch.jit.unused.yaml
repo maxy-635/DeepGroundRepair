@@ -1,0 +1,31 @@
+2 api_name: torch.jit.unused
+3 api_description: Marks a function or method to be ignored by TorchScript and replaced
+  with an exception, letting you keep non-scriptable code in a model while still exporting
+  it.
+4 api_signature: '"torch.jit.unused(fn)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import torch
+- import torch.nn as nn
+- 'class MyModule(nn.Module):'
+- '    def __init__(self, use_memory_efficient):'
+- '        super().__init__()'
+- '        self.use_memory_efficient = use_memory_efficient'
+- '    @torch.jit.unused'
+- '    def memory_efficient(self, x):'
+- '        import pdb'
+- '        pdb.set_trace()'
+- '        return x + 10'
+- '    def forward(self, x):'
+- '        # Use not-yet-scriptable memory efficient mode'
+- '        if self.use_memory_efficient:'
+- '            return self.memory_efficient(x)'
+- '        else:'
+- '            return x + 10'
+- m = torch.jit.script(MyModule(use_memory_efficient=False))
+- m.save("m.pt")
+- m = torch.jit.script(MyModule(use_memory_efficient=True))
+- '# exception raised'
+- m(torch.rand(100))
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: torch.cuda.Stream
+3 api_description: Represents and manages a CUDA execution stream, enabling asynchronous
+  GPU work scheduling and coordination.
+4 api_signature: torch.cuda.Stream(device,priority)
+5 api_details: ''
+6 api_parameters:
+- device: Selects the CUDA device on which to create the stream, or uses the current
+    device when omitted or set to None/a negative value.
+- priority: Sets the stream priority, where lower numbers mean higher priority and
+    out-of-range values are clamped to the nearest valid priority.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,21 @@
+2 api_name: torch.nn.PixelUnshuffle
+3 api_description: torch.nn.PixelUnshuffle reverses the PixelShuffle operation by
+  rearranging elements in a tensor from a higher spatial resolution to a lower one,
+  effectively increasing the channel dimension while decreasing the height and width.
+4 api_signature: torch.nn.PixelUnshuffle(downscale_factor)
+5 api_details: ''
+6 api_parameters:
+- downscale_factor: The factor by which to reduce the spatial resolution of the input
+    tensor.
+7 api_usage_example:
+- ' pixel_unshuffle = nn.PixelUnshuffle(3)'
+- ' input = torch.randn(1, 1, 12, 12)'
+- ' output = pixel_unshuffle(input)'
+- ' print(output.size())'
+8 api_shape:
+  input tensor shape: (*, Channel_in, Height_in, Width_in), where * is zero
+  output tensor shape: (*, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in * downscale_factor^2
+    tensor height: Height_out = Height_in \div downscale_factor
+    tensor width: Width_out = Width_in \div downscale_factor

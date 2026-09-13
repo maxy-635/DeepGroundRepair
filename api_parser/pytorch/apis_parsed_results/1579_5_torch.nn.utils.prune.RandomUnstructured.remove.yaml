@@ -1,0 +1,9 @@
+2 api_name: torch.nn.utils.prune.RandomUnstructured.remove
+3 api_description: Permanently removes the pruning reparameterization from a module,
+  restoring the pruned parameter as a normal parameter while keeping the current pruned
+  values.
+4 api_signature: remove(module)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

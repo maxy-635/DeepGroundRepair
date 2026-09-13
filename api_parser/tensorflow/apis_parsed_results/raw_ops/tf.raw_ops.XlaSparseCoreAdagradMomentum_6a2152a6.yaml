@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.XlaSparseCoreAdagradMomentum
+3 api_description: Applies the XLA SparseCore AdagradMomentum update to sparse parameters
+  using accumulated gradients, learning rate, momentum, and related optimizer state.
+4 api_signature: tf.raw_ops.XlaSparseCoreAdagradMomentum(indices,gradient,learning_rate,accumulator,momentum,embedding_table,feature_width)
+5 api_details: ''
+6 api_parameters:
+- indices: Integer index values that identify which rows or features to update.
+- gradient: The gradient tensor used to compute the parameter update.
+- learning_rate: The step size that scales how much the embedding table is updated.
+- accumulator: A state tensor that accumulates squared gradients or related optimizer
+    history.
+- momentum: A state tensor that stores momentum information to smooth updates over
+    time.
+- embedding_table: The embedding weights being updated by the optimizer operation.
+- feature_width: The width of each feature block or embedding row used for indexing
+    and updates.
+7 api_usage_example: null
+8 api_shape: ''

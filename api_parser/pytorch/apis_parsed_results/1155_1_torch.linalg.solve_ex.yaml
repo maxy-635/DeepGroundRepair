@@ -1,0 +1,14 @@
+2 api_name: torch.linalg.solve_ex
+3 api_description: Solves linear systems like solve(), optionally skipping error checks,
+  and returns both the solution and LAPACK getrf info tensor.
+4 api_signature: torch.linalg.solve_ex(A,B,*,left)
+5 api_details: ''
+6 api_parameters:
+- A: The square matrix or batched square matrices used as the coefficient matrix in
+    the linear system to be solved.
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' Ainv, info = torch.linalg.solve_ex(A)'
+- ' torch.dist(torch.linalg.inv(A), Ainv)'
+- ' info'
+8 api_shape: null

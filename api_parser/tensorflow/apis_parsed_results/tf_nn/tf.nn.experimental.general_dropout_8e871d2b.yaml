@@ -1,0 +1,21 @@
+2 api_name: tensorflow.nn.experimental.general_dropout
+3 api_description: The tensorflow.nn.experimental.general_dropout API performs dropout
+  by randomly setting elements to zero to prevent overfitting, allowing the use of
+  a custom uniform sampler function for generating random numbers.
+4 api_signature: tf.nn.experimental.general_dropout(x,rate,noise_shape,name)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input tensor to which dropout is applied, and must be of a floating
+    point type.
+- rate: Defines the dropout rate, indicating the probability of dropping each element
+    in the input tensor.
+- noise_shape: Specifies the shape of the tensor that determines which elements are
+    randomly kept or dropped.
+- name: Provides an optional name for the dropout operation for easier identification.
+7 api_usage_example:
+- g = tf.random.Generator.from_seed(7)
+- x = tf.constant([1.1, 2.2, 3.3, 4.4, 5.5])
+- rate = 0.5
+- tf.nn.experimental.stateless_dropout(x, rate, g.make_seeds(1)[:, 0])
+- tf.nn.experimental.stateless_dropout(x, rate, g.make_seeds(1)[:, 0])
+8 api_shape: ''

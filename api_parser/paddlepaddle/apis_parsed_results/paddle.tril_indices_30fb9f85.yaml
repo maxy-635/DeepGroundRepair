@@ -1,0 +1,31 @@
+2 api_name: paddle.tril_indices
+3 api_description: Returns the row and column indices for the lower triangular part
+  of a 2-D matrix, ordered by row then column, including the diagonal.
+4 api_signature: paddle.tril_indices(row,col,offset)
+5 api_details: ''
+6 api_parameters:
+- row: Specifies the number of rows in the matrix.
+- col: Specifies the number of columns in the matrix.
+- offset: Sets the diagonal offset used to choose which lower-triangular elements
+    are included.
+7 api_usage_example:
+- import paddle
+- '# example 1, default offset value'
+- data1 = paddle.tril_indices(4,4,0)
+- print(data1)
+- Tensor(shape=[2, 10], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 1, 1, 2, 2, 2, 3, 3, 3, 3],'
+- '[0, 0, 1, 0, 1, 2, 0, 1, 2, 3]])'
+- '# example 2, positive offset value'
+- data2 = paddle.tril_indices(4,4,2)
+- print(data2)
+- Tensor(shape=[2, 15], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3],'
+- '[0, 1, 2, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3]])'
+- '# example 3, negative offset value'
+- data3 = paddle.tril_indices(4,4,-1)
+- print(data3)
+- Tensor(shape=[2, 6], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 2, 2, 3, 3, 3],'
+- '[0, 0, 1, 0, 1, 2]])'
+8 api_shape: {}

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.unique
+3 api_description: Returns the unique values from a 1-D tensor in first-occurrence
+  order, along with indices that map each input element back to its unique value.
+4 api_signature: tf.unique(x,out_idx)
+5 api_details: ''
+6 api_parameters:
+- x: A 1-D tensor whose unique values will be computed.
+- out_idx: The integer dtype used for the index tensor that maps each input element
+    to its unique value.
+7 api_usage_example: null
+8 api_shape: ''

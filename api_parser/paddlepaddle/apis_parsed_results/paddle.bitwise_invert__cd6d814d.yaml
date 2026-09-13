@@ -1,0 +1,8 @@
+2 api_name: paddle.bitwise_invert_
+3 api_description: In-place bitwise inversion that updates the input tensor with its
+  bitwise-not result.
+4 api_signature: paddle.bitwise_invert_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

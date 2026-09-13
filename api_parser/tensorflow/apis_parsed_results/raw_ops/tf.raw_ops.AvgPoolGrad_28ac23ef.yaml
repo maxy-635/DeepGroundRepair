@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.AvgPoolGrad
+3 api_description: Computes the gradient of average pooling by distributing each output
+  gradient evenly across the corresponding input window.
+4 api_signature: tf.raw_ops.AvgPoolGrad(orig_input_shape,grad,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- orig_input_shape: Specifies the shape of the original input tensor to `avg_pool`,
+    which is needed to compute the gradient shape correctly.
+- grad: Supplies the upstream gradient from the `avg_pool` output, which is used to
+    calculate gradients with respect to the input.
+- ksize: Defines the pooling window size for each dimension, determining how the gradient
+    is distributed across input regions.
+- strides: Defines the step size of the pooling window in each dimension, controlling
+    how gradient contributions are mapped back.
+- padding: Selects the padding mode (`SAME` or `VALID`) used to interpret the pooling
+    regions during gradient computation.
+7 api_usage_example: null
+8 api_shape: ''

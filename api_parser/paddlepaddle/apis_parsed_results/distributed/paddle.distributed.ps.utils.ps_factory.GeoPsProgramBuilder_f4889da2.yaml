@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.ps.utils.ps_factory.GeoPsProgramBuilder
+3 api_description: Builds a GeoPs distributed program for PaddlePaddle parameter server
+  workflows, assembling the required training/inference components and execution logic
+  from a ps_factory configuration.
+4 api_signature: paddle.distributed.ps.utils.ps_factory.GeoPsProgramBuilder(pass_ctx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

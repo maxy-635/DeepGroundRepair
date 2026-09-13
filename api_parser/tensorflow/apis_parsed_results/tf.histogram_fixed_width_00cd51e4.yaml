@@ -1,0 +1,18 @@
+2 api_name: tensorflow.histogram_fixed_width
+3 api_description: Computes a rank-1 histogram by counting how many values fall into
+  each equal-width bin within the specified range.
+4 api_signature: tf.histogram_fixed_width(values,value_range,nbins)
+5 api_details: ''
+6 api_parameters:
+- values: The numeric data to be binned into a histogram.
+- value_range: The inclusive lower and upper bounds that define how values are mapped
+    into histogram bins.
+- nbins: The number of bins to use when constructing the histogram.
+7 api_usage_example:
+- '# Bins will be:  (-inf, 1), [1, 2), [2, 3), [3, 4), [4, inf)'
+- nbins = 5
+- value_range = [0.0, 5.0]
+- new_values = [-1.0, 0.0, 1.5, 2.0, 5.0, 15]
+- hist = tf.histogram_fixed_width(new_values, value_range, nbins=5)
+- hist.numpy()
+8 api_shape: ''

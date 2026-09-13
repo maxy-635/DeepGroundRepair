@@ -1,0 +1,12 @@
+2 api_name: torch.bitwise_right_shift
+3 api_description: Performs an elementwise arithmetic right shift on an integral tensor
+  by the given number of bits, with broadcasting and type promotion supported.
+4 api_signature: torch.bitwise_right_shift(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor whose values are right-shifted.
+- other: The second tensor that provides the shift amount.
+7 api_usage_example:
+- ' torch.bitwise_right_shift(torch.tensor([-2, -7, 31], dtype=torch.int8), torch.tensor([1,
+  0, 3], dtype=torch.int8))'
+8 api_shape: null

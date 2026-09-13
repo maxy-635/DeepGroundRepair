@@ -1,0 +1,26 @@
+2 api_name: paddle.bmm
+3 api_description: Performs batched matrix multiplication on two tensors.
+4 api_signature: paddle.bmm(x,y,out)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the batch of matrices to be multiplied.
+- y: Input tensor containing the batch of matrices to multiply with `x`.
+- out: Optional output tensor that receives the result.
+7 api_usage_example:
+- import paddle
+- '# In imperative mode:'
+- '# size x: (2, 2, 3) and y: (2, 3, 2)'
+- x = paddle.to_tensor([[[1.0, 1.0, 1.0],
+- '                    [2.0, 2.0, 2.0]],'
+- '                    [[3.0, 3.0, 3.0],'
+- '                    [4.0, 4.0, 4.0]]])'
+- y = paddle.to_tensor([[[1.0, 1.0],[2.0, 2.0],[3.0, 3.0]],
+- '                    [[4.0, 4.0],[5.0, 5.0],[6.0, 6.0]]])'
+- out = paddle.bmm(x, y)
+- print(out)
+- Tensor(shape=[2, 2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[6. , 6. ],'
+- '[12., 12.]],'
+- '[[45., 45.],'
+- '[60., 60.]]])'
+8 api_shape: {}

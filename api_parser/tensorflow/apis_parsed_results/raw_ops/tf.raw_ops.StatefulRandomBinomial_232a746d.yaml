@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.StatefulRandomBinomial
+3 api_description: Generates random binomial samples using a stateful random number
+  generator, with each call updating the generator state.
+4 api_signature: tf.raw_ops.StatefulRandomBinomial(resource,shape,counts,probs,dtype)
+5 api_details: ''
+6 api_parameters:
+- resource: Provides the random generator resource used to produce stateful binomial
+    samples.
+- shape: Specifies the output tensor shape of the generated samples.
+- counts: Gives the number of trials for each binomial sample.
+- probs: Gives the success probability for each trial in the binomial distribution.
+- dtype: Sets the data type of the returned samples.
+7 api_usage_example: null
+8 api_shape: ''

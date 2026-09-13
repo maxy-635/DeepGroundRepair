@@ -1,0 +1,13 @@
+2 api_name: torch.nn.AdaptiveLogSoftmaxWithLoss.predict
+3 api_description: Returns the predicted class with the highest probability for each
+  example in the input minibatch.
+4 api_signature: predict(input)
+5 api_details: ''
+6 api_parameters:
+- input: A minibatch of examples used to predict the output probabilities for each
+    class.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, \texttt{in_features})
+  output tensor shape: (N)
+  tensor shape transform formulas: {}

@@ -1,0 +1,10 @@
+2 api_name: torch.isinf
+3 api_description: Returns a boolean tensor indicating which input elements are positive
+  or negative infinity.
+4 api_signature: torch.isinf(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to check for infinite values.
+7 api_usage_example:
+- ' torch.isinf(torch.tensor([1, float(''inf''), 2, float(''-inf''), float(''nan'')]))'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.special.bessel_j1
+3 api_description: Computes the element-wise Bessel J1 function for each input value
+  x.
+4 api_signature: tf.math.special.bessel_j1(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing values at which to compute the Bessel function J1.
+7 api_usage_example:
+- tf.math.special.bessel_j1([0.5, 1., 2., 4.]).numpy()
+8 api_shape: ''

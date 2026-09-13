@@ -1,0 +1,9 @@
+2 api_name: paddle.vision.models.wide_resnet50_2
+3 api_description: A Wide ResNet-50-2 image classification model that uses widened
+  residual blocks to extract visual features and predict labels.
+4 api_signature: paddle.vision.models.wide_resnet50_2(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model initializes with ImageNet-pretrained weights.
+7 api_usage_example: []
+8 api_shape: {}

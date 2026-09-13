@@ -1,0 +1,9 @@
+2 api_name: tensorflow.distribute.CrossDeviceOps
+3 api_description: Base class for cross-device reduction and broadcasting used by
+  `tf.distribute.MirroredStrategy` to choose communication algorithms between devices;
+  prefer using `tf.distribute.Strategy` methods instead.
+4 api_signature: tf.distribute.CrossDeviceOps()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

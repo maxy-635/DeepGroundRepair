@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.DebugGradientRefIdentity
+3 api_description: Returns an identity of a reference tensor for gradient debugging,
+  allowing TensorFlow Debugger to register and inspect gradient tensors.
+4 api_signature: tf.raw_ops.DebugGradientRefIdentity(input)
+5 api_details: ''
+6 api_parameters:
+- input: The mutable tensor to pass through the operation unchanged while preserving
+    reference semantics for gradient debugging.
+7 api_usage_example: null
+8 api_shape: ''

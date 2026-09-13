@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.MapStage
+3 api_description: Stores key-value pairs in an internal hash table-like container.
+4 api_signature: tf.raw_ops.MapStage(key,values,dtypes,capacity,memory_limit,container,shared_name,name)
+5 api_details: ''
+6 api_parameters:
+- key: Int64 tensor used as the staging key or index.
+- values: List of tensors to insert into the staging area.
+- dtypes: Data types that the inserted values must match.
+- capacity: Maximum number of elements allowed in the staging area before inserts
+    block.
+- memory_limit: Upper bound on memory usage for the staging area.
+- container: Optional container name that groups the staging queue.
+- shared_name: Optional shared identifier that must match the corresponding `Unstage`
+    op.
+- name: Optional name assigned to the operation.
+7 api_usage_example: null
+8 api_shape: ''

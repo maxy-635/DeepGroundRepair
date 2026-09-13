@@ -1,0 +1,10 @@
+2 api_name: torch.UntypedStorage.from_file
+3 api_description: Creates a CPU storage that is backed by a memory-mapped file, allowing
+  data to be stored and accessed directly from the file.
+4 api_signature: staticfrom_file(filename,nbytes)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the file to memory-map as the storage backing.
+- nbytes: Sets the number of bytes to map into the storage.
+7 api_usage_example: null
+8 api_shape: null

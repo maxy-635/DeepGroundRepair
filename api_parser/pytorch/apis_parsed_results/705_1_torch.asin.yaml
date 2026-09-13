@@ -1,0 +1,13 @@
+2 api_name: torch.asin
+3 api_description: Computes the element-wise arcsine of a tensor and returns the result
+  in radians.
+4 api_signature: torch.asin(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used to compute the inverse sine (arcsine)
+    elementwise.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.asin(a)'
+8 api_shape: null

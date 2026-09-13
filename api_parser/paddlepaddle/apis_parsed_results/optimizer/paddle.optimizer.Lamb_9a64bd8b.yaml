@@ -1,0 +1,31 @@
+2 api_name: paddle.optimizer.Lamb
+3 api_description: Layer-wise adaptive optimizer that uses Adam-style moments with
+  trust-ratio scaling to help stabilize and speed up large-batch training.
+4 api_signature: paddle.optimizer.Lamb(learning_rate,parameters,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update model parameters, either as a float
+    or a float32 Variable.
+- parameters: Specifies the variables or parameter groups to optimize; required in
+    dygraph mode and optional in static graph mode.
+- name: Assigns an optional name to the optimizer instance for identification and
+    debugging.
+7 api_usage_example:
+- import paddle
+- inp = paddle.uniform(shape=[10, 10], dtype='float32', min=-0.1, max=0.1)
+- linear = paddle.nn.Linear(10, 10)
+- out = linear(inp)
+- loss = paddle.mean(out)
+- beta1 = paddle.to_tensor([0.9], dtype="float32")
+- beta2 = paddle.to_tensor([0.85], dtype="float32")
+- lamb = paddle.optimizer.Lamb(
+- '    learning_rate=0.002,'
+- '    beta1=beta1,'
+- '    beta2=beta2,'
+- '    parameters=linear.parameters(),'
+- '    lamb_weight_decay=0.01'
+- )
+- back = out.backward()
+- lamb.step()
+- lamb.clear_grad()
+8 api_shape: {}

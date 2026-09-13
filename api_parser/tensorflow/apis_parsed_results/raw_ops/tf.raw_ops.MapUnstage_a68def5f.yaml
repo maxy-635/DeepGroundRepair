@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.MapUnstage
+3 api_description: Blocks until the specified key is present, then removes and returns
+  its associated values from the container.
+4 api_signature: tf.raw_ops.MapUnstage(indices,dtypes,capacity)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the integer indices used to identify which stored values to unstage.
+- dtypes: Defines the data types of the values to be unstaged from the map.
+- capacity: Sets the maximum number of elements the unstaging map can hold, defaulting
+    to 0.
+7 api_usage_example: null
+8 api_shape: ''

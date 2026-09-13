@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.PaddingFIFOQueue
+3 api_description: Creates a FIFO queue that preserves insertion order and supports
+  variable-size elements by padding them in `DequeueMany` to the largest shape in
+  the batch.
+4 api_signature: tf.raw_ops.PaddingFIFOQueue(component_types,shapes,capacity)
+5 api_details: ''
+6 api_parameters:
+- component_types: Specifies the data type of each component stored in each queue
+    value.
+- shapes: Optionally defines the shape of each component and enables padding behavior
+    for variable-sized dimensions during batch dequeue operations.
+- capacity: Sets the maximum number of elements the queue can hold, with negative
+    values meaning unlimited capacity.
+7 api_usage_example: null
+8 api_shape: ''

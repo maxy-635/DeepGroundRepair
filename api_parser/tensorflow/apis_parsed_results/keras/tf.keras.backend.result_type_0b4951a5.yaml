@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.backend.result_type
+3 api_description: Returns the promoted dtype for the given inputs by standardizing
+  their dtypes and applying Keras type promotion rules to find their least upper bound.
+4 api_signature: tf.keras.backend.result_type(*dtypes)
+5 api_details: ''
+6 api_parameters:
+- dtypes: The input data types to evaluate when determining the resulting TensorFlow/Keras
+    result type.
+7 api_usage_example:
+- x = keras.ops.ones((1,), dtype="int32")
+- y = keras.ops.ones((1,), dtype="float32")
+- keras.backend.result_type(x.dtype, y.dtype)
+8 api_shape: ''

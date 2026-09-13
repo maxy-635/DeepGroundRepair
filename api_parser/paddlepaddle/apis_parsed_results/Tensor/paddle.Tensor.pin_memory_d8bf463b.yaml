@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.pin_memory
+3 api_description: Pins the tensor’s memory so it can be transferred more efficiently
+  between CPU and GPU, returning a pinned-memory copy when needed.
+4 api_signature: paddle.Tensor.pin_memory(self)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

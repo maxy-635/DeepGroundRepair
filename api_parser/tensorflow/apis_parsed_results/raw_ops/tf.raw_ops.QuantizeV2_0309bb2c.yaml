@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.QuantizeV2
+3 api_description: Quantizes a float tensor into a lower-precision tensor using provided
+  min/max ranges, mode, and rounding rules.
+4 api_signature: tf.raw_ops.QuantizeV2(input,min_range,max_range,T,mode,round_mode,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The float32 tensor to be quantized.
+- min_range: The lower bound of the quantization range, which may be adjusted by the
+    op and returned as `output_min`.
+- max_range: The upper bound of the quantization range, which may be adjusted by the
+    op and returned as `output_max`.
+- T: The target quantized output data type.
+- mode: The quantization mode used to map float values to quantized values.
+- round_mode: The rounding rule used when converting values to integers.
+- axis: The axis for per-axis quantization, or `-1` to disable axis-based quantization.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.random.Generator
+3 api_description: Creates a stateful random-number generator from a seed for generating
+  reproducible random values.
+4 api_signature: tf.random.Generator(state,alg)
+5 api_details: ''
+6 api_parameters:
+- state: Initial RNG state vector that determines the generator’s starting point and
+    may be reused if provided as a variable.
+- alg: RNG algorithm to use, such as Philox or ThreeFry, which determines how random
+    numbers are generated and affects cross-platform reproducibility.
+7 api_usage_example:
+- g = tf.random.get_global_generator()
+- g.normal(shape=(2, 3))
+8 api_shape: ''

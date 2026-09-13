@@ -1,0 +1,17 @@
+2 api_name: torch.kthvalue
+3 api_description: Returns the k-th smallest value and its index along a specified
+  dimension of a tensor.
+4 api_signature: torch.kthvalue(input,k,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to search for the k-th smallest value.
+- k: The rank of the smallest element to return along the chosen dimension.
+- dim: The dimension along which to compute the k-th value.
+7 api_usage_example:
+- ' x = torch.arange(1., 6.)'
+- ' x'
+- ' torch.kthvalue(x, 4)'
+- ' x=torch.arange(1.,7.).resize_(2,3)'
+- ' x'
+- ' torch.kthvalue(x, 2, 0, True)'
+8 api_shape: null

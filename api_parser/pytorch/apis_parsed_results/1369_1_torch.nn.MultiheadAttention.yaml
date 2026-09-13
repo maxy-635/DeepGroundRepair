@@ -1,0 +1,18 @@
+2 api_name: torch.nn.MultiheadAttention
+3 api_description: The torch.nn.MultiheadAttention module enables the model to simultaneously
+  focus on different subspaces of input representations, enhancing its ability to
+  capture complex relationships in the data.
+4 api_signature: torch.nn.MultiheadAttention(embed_dim,num_heads,dropout,batch_first)
+5 api_details: ''
+6 api_parameters:
+- embed_dim: Specifies the total dimension of the model for the multihead attention.
+- num_heads: Indicates the number of parallel attention heads, dividing the embed_dim
+    across them.
+- dropout: Sets the dropout probability for the attention output weights to prevent
+    overfitting.
+- batch_first: Determines whether the input and output tensors are formatted with
+    the batch dimension first.
+7 api_usage_example:
+- ' multihead_attn = nn.MultiheadAttention(embed_dim, num_heads)'
+- ' attn_output, attn_output_weights = multihead_attn(query, key, value)'
+8 api_shape: null

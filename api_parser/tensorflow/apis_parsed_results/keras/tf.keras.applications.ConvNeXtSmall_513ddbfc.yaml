@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.applications.ConvNeXtSmall
+3 api_description: Builds the ConvNeXtSmall image classification model, optionally
+  loading pretrained weights for transfer learning or fine-tuning.
+4 api_signature: tf.keras.applications.ConvNeXtSmall(weights,include_top,include_preprocessing,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Controls whether the model ends with its default fully connected classification
+    layer.
+- weights: Selects pretrained ImageNet weights, random initialization, or a custom
+    weights file.
+- input_shape: Specifies the input tensor shape when using the model without the top
+    classification layer.
+- classes: Sets the number of output classes when building a custom top layer without
+    pretrained weights.
+7 api_usage_example: null
+8 api_shape: ''

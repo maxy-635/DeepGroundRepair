@@ -1,0 +1,19 @@
+2 api_name: paddle.geometric_
+3 api_description: Fills a tensor with random values sampled from a geometric distribution.
+4 api_signature: paddle.geometric_(x,probs)
+5 api_details: ''
+6 api_parameters:
+- x: The output tensor to fill, with float32 or float64 data type.
+- probs: The positive probability of success used by the geometric distribution, either
+    as a scalar or per-trial tensor.
+7 api_usage_example:
+- import paddle
+- x = paddle.randn([3, 4])
+- x.geometric_(0.3)
+- '>>>'
+- print(x)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[2.42739224, 4.78268528, 1.23302543, 3.76555204],'
+- '[1.38877118, 0.16075331, 0.16401523, 2.47349310],'
+- '[1.72872102, 2.76533413, 0.33410925, 1.63351011]])'
+8 api_shape: {}

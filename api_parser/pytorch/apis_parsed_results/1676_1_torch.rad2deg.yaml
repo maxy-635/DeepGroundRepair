@@ -1,0 +1,11 @@
+2 api_name: torch.rad2deg
+3 api_description: Converts each tensor element from radians to degrees and returns
+  a new tensor.
+4 api_signature: torch.rad2deg(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values, interpreted as radians, are converted to degrees.
+7 api_usage_example:
+- ' a = torch.tensor([[3.142, -3.142], [6.283, -6.283], [1.570, -1.570]])'
+- ' torch.rad2deg(a)'
+8 api_shape: null

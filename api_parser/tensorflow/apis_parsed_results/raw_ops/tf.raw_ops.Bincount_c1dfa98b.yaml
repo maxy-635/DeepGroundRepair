@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Bincount
+3 api_description: Counts occurrences of integer values in an array, or sums matching
+  weights per value, producing an output vector of length size and ignoring values
+  outside [0, size).
+4 api_signature: tf.raw_ops.Bincount(arr,size,weights)
+5 api_details: ''
+6 api_parameters:
+- arr: Contains the integer values to count.
+- size: Specifies the number of output bins and must be a non-negative scalar.
+- weights: Provides optional per-element weights for the counts, or defaults to 1
+    for each element when empty.
+7 api_usage_example: null
+8 api_shape: ''

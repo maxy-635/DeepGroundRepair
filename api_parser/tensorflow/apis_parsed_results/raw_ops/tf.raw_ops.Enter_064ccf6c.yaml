@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Enter
+3 api_description: Creates or reuses a child execution frame for loop control, passing
+  data into it and marking whether the value stays constant or can change across parallel
+  iterations.
+4 api_signature: tf.raw_ops.Enter(data,frame_name)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor to pass into and make available to the child frame.
+- frame_name: The name of the child frame that receives the tensor.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

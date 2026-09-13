@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.functional.dropout3d
+3 api_description: paddle.nn.functional.dropout3d randomly zeroes out entire channels
+  in a 5D tensor (NCDHW) with a given probability during training, treating each channel
+  independently using a Bernoulli distribution.
+4 api_signature: paddle.nn.functional.dropout3d(x,p,training)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the 5-D input tensor with dimensions [N, C, D, H, W] or [N, D, H, W,
+    C] and data type float32 or float64.
+- p: Defines the probability of dropping out units to zero during the dropout operation.
+- training: Indicates whether the dropout is applied in training mode or not.
+7 api_usage_example:
+- import paddle
+- x = paddle.randn(shape=(2, 3, 4, 5, 6)).astype(paddle.float32)
+- 'y_train = paddle.nn.functional.dropout3d(x)  #train'
+- 'y_test = paddle.nn.functional.dropout3d(x, training=False) #test'
+- print(x[0,0,:,:,:])
+- 'print(y_train[0,0,:,:,:]) # may all 0'
+- print(y_test[0,0,:,:,:])
+8 api_shape: null

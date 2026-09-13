@@ -1,0 +1,14 @@
+2 api_name: tensorflow.signal.dct
+3 api_description: Computes a 1D Discrete Cosine Transform for input signals, supporting
+  DCT types I, II, III, and IV via FFT-based implementations and inverse/derived transforms.
+4 api_signature: tf.signal.dct(input,type,n,axis,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The signal tensor whose last dimension is transformed by the DCT.
+- type: 'Selects which DCT variant to compute: type I, II, III, or IV.'
+- n: Sets the transform length, truncating extra samples or zero-padding short inputs
+    as needed.
+- axis: Specifies the transform axis, which must be the last axis (`-1`).
+- norm: Controls scaling of the DCT, either unnormalized or orthonormal with `'ortho'`.
+7 api_usage_example: null
+8 api_shape: ''

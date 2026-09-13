@@ -1,0 +1,19 @@
+2 api_name: paddle.incubate.nn.functional.fused_feedforward
+3 api_description: Fused GPU feed-forward operator for transformer layers that combines
+  linear projection, optional activation, dropout, residual addition, and normalization
+  into a single efficient computation.
+4 api_signature: paddle.incubate.nn.functional.fused_feedforward(x,linear1_weight,linear2_weight,activation,pre_layer_norm,training,mode)
+5 api_details: ''
+6 api_parameters:
+- x: Input 3-D tensor containing the sequence data to be processed.
+- linear1_weight: Weights for the first linear projection from `d_model` to `dim_feedforward`.
+- linear2_weight: Weights for the second linear projection from `dim_feedforward`
+    back to `d_model`.
+- activation: Activation function applied between the two linear layers, defaulting
+    to `relu`.
+- pre_layer_norm: Controls whether layer normalization is applied before or after
+    the feedforward block.
+- training: Indicates whether the operation should run in training mode.
+- mode: Reserved or unspecified mode parameter for selecting function behavior.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BroadcastArgs
+3 api_description: Computes the broadcasted output shape for two input shapes and
+  returns it as an integer vector.
+4 api_signature: tf.raw_ops.BroadcastArgs(s0,s1)
+5 api_details: ''
+6 api_parameters:
+- s0: Provides the first shape tensor used to determine the broadcast-compatible output
+    shape.
+- s1: Provides the second shape tensor that is compared with s0 to compute the broadcast-compatible
+    output shape.
+7 api_usage_example: null
+8 api_shape: ''

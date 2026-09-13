@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Assign
+3 api_description: Assigns `value` to `ref` and returns the updated `ref` for chaining.
+4 api_signature: tf.raw_ops.Assign(ref,value)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable variable tensor that will be updated.
+- value: The tensor value to assign into `ref`, matching its type.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: paddle.device.get_available_device
+3 api_description: Returns a list of all devices currently available for use.
+4 api_signature: paddle.device.get_available_device()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.device.get_available_device()
+- '# Case 1: paddlepaddle-cpu package installed, and no custom device registered.'
+- '# Output: []'
+- '# Case 2: paddlepaddle-gpu package installed, and no custom device registered.'
+- '# Output: [''gpu:0'', ''gpu:1'']'
+- '# Case 3: paddlepaddle-cpu package installed, and custom device ''CustomCPU'' is
+  registered.'
+- '# Output: [''CustomCPU'']'
+- '# Case 4: paddlepaddle-gpu package installed, and custom device ''CustomCPU'' and
+  ''CustomGPU'' is registered.'
+- '# Output: [''gpu:0'', ''gpu:1'', ''CustomCPU'', ''CustomGPU:0'', ''CustomGPU:1'']'
+8 api_shape: {}

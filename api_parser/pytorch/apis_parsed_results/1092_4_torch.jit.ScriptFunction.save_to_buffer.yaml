@@ -1,0 +1,8 @@
+2 api_name: torch.jit.ScriptFunction.save_to_buffer
+3 api_description: Serializes a TorchScript function to an in-memory buffer for later
+  loading or saving.
+4 api_signature: save_to_buffer(_extra_files:dict[str,str]={})
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

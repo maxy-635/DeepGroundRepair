@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.CacheDatasetV2
+3 api_description: Caches the input dataset elements in memory or on disk so repeated
+  iterations can reuse them instead of recomputing the dataset pipeline.
+4 api_signature: tf.raw_ops.CacheDatasetV2(input_dataset,filename,cache,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be cached and passed through the operation.
+- filename: The cache file path used to store or retrieve the dataset cache.
+- cache: The resource handle for the cache object that maintains cached dataset state.
+- name: An optional name used to identify the operation.
+7 api_usage_example: null
+8 api_shape: ''

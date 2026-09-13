@@ -1,0 +1,30 @@
+2 api_name: paddle.nn.Transformer
+3 api_description: The paddle.nn.Transformer API provides a Transformer model structure
+  consisting of a TransformerEncoder and a TransformerDecoder, excluding the embedding
+  and output layers.
+4 api_signature: paddle.nn.Transformer(d_model,nhead,num_encoder_layers,num_decoder_layers,dim_feedforward,dropout)
+5 api_details: ''
+6 api_parameters:
+- d_model: Defines the feature size for inputs and outputs in both encoder and decoder.
+- nhead: Specifies the number of attention heads in the multi-head attention mechanism.
+- num_encoder_layers: Determines the number of layers present in the encoder component.
+- num_decoder_layers: Determines the number of layers present in the decoder component.
+- dim_feedforward: Sets the size of the hidden layer in the feedforward network.
+- dropout: Indicates the dropout probability applied in the multi-head attention and
+    feedforward network layers.
+7 api_usage_example:
+- import paddle
+- from paddle.nn.layer.transformer import Transformer
+- length = 5
+- d_model, n_head, dim_feedforward = 8, 4, 64
+- transformer_paddle = Transformer(
+- '    d_model, n_head, dim_feedforward=dim_feedforward)'
+- mask = transformer_paddle.generate_square_subsequent_mask(length)
+- print(mask)
+- Tensor(shape=[5, 5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.  , -inf., -inf., -inf., -inf.],'
+- '[ 0.  ,  0.  , -inf., -inf., -inf.],'
+- '[ 0.  ,  0.  ,  0.  , -inf., -inf.],'
+- '[ 0.  ,  0.  ,  0.  ,  0.  , -inf.],'
+- '[ 0.  ,  0.  ,  0.  ,  0.  ,  0.  ]])'
+8 api_shape: null

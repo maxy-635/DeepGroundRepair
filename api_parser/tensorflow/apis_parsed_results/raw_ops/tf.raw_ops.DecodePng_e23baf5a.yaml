@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.DecodePng
+3 api_description: Decodes a PNG-encoded image into a uint8 or uint16 tensor, with
+  the `channels` attribute controlling the number of output color channels.
+4 api_signature: tf.raw_ops.DecodePng(contents,channels)
+5 api_details: ''
+6 api_parameters:
+- contents: PNG-encoded image data to decode.
+- channels: Desired number of output color channels.
+7 api_usage_example: null
+8 api_shape: ''

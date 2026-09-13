@@ -1,0 +1,10 @@
+2 api_name: torch.optim.Adam.step
+3 api_description: Performs one Adam optimization update on model parameters using
+  their gradients and internal running estimates.
+4 api_signature: step(closure)
+5 api_details: ''
+6 api_parameters:
+- closure: A function that recomputes the loss and gradients, usually for optimizers
+    that need to reevaluate the model during the step.
+7 api_usage_example: null
+8 api_shape: null

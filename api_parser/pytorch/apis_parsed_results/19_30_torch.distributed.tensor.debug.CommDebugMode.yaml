@@ -1,0 +1,13 @@
+2 api_name: torch.distributed.tensor.debug.CommDebugMode
+3 api_description: Context manager that uses a TorchDispatchMode to count functional
+  distributed collectives executed within its scope.
+4 api_signature: class torch.distributed.tensor.debug.CommDebugMode#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- mod = ...
+- comm_mode = CommDebugMode()
+- 'with comm_mode:'
+- '    mod.sum().backward()'
+- print(comm_mode.get_comm_counts())
+8 api_shape: null

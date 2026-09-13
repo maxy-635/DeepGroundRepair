@@ -1,0 +1,12 @@
+2 api_name: torch.imag
+3 api_description: Returns a tensor of the imaginary values that shares storage with
+  the original tensor.
+4 api_signature: torch.imag(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose imaginary component is returned.
+7 api_usage_example:
+- ' x=torch.randn(4, dtype=torch.cfloat)'
+- ' x'
+- ' x.imag'
+8 api_shape: null

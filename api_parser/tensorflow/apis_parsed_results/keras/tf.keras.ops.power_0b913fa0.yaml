@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.power
+3 api_description: Raises each element of the first tensor to the corresponding power
+  in the second tensor, element-wise.
+4 api_signature: '"power(x1,x2)"'
+5 api_details: ''
+6 api_parameters:
+- x1: Specifies the base values to be raised to a power.
+- x2: Specifies the exponent values applied to the bases.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: torch.nn.modules.module.register_module_module_registration_hook
+3 api_description: Registers a global hook that runs whenever any `nn.Module` registers
+  a submodule.
+4 api_signature: '"torch.nn.modules.module.register_module_module_registration_hook(hook)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- hook(module, name, submodule) -> None or new submodule
+8 api_shape: null

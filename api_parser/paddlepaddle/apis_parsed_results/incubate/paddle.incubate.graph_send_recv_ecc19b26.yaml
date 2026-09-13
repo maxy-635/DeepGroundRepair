@@ -1,0 +1,51 @@
+2 api_name: paddle.incubate.graph_send_recv
+3 api_description: Sends and receives graph data between distributed workers for graph
+  training or inference, enabling communication of node, edge, or feature information
+  across partitions.
+4 api_signature: paddle.incubate.graph_send_recv(x,src_index,dst_index,pool_type,out_size)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the node features or input tensor to be aggregated during message passing.
+- src_index: Specifies the source node indices for each edge in the graph.
+- dst_index: Specifies the destination node indices for each edge and must match `src_index`
+    in shape.
+- pool_type: Chooses how messages are aggregated at each destination node, such as
+    sum, mean, max, or min.
+- out_size: Sets the output tensor size explicitly when needed; otherwise it is inferred
+    from `dst_index`.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[0, 2, 3], [1, 4, 5], [2, 6, 7]], dtype="float32")
+- indexes = paddle.to_tensor([[0, 1], [1, 2], [2, 1], [0, 0]], dtype="int32")
+- src_index = indexes[:, 0]
+- dst_index = indexes[:, 1]
+- 'out = paddle.incubate.graph_send_recv(x, src_index, dst_index, pool_type="sum")
+  # type: ignore[operator]'
+- print(out)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0. , 2. , 3. ],'
+- '[2. , 8. , 10.],'
+- '[1. , 4. , 5. ]])'
+- x = paddle.to_tensor([[0, 2, 3], [1, 4, 5], [2, 6, 7]], dtype="float32")
+- indexes = paddle.to_tensor([[0, 1], [2, 1], [0, 0]], dtype="int32")
+- src_index = indexes[:, 0]
+- dst_index = indexes[:, 1]
+- out_size = paddle.max(dst_index) + 1
+- 'out = paddle.incubate.graph_send_recv(x, src_index, dst_index, pool_type="sum",
+  out_size=out_size) # type: ignore[operator]'
+- print(out)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0. , 2. , 3. ],'
+- '[2. , 8. , 10.]])'
+- x = paddle.to_tensor([[0, 2, 3], [1, 4, 5], [2, 6, 7]], dtype="float32")
+- indexes = paddle.to_tensor([[0, 1], [2, 1], [0, 0]], dtype="int32")
+- src_index = indexes[:, 0]
+- dst_index = indexes[:, 1]
+- 'out = paddle.incubate.graph_send_recv(x, src_index, dst_index, pool_type="sum")
+  # type: ignore[operator]'
+- print(out)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0. , 2. , 3. ],'
+- '[2. , 8. , 10.],'
+- '[0. , 0. , 0. ]])'
+8 api_shape: {}

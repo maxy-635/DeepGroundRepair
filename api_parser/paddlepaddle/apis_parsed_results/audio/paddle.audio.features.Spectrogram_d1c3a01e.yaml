@@ -1,0 +1,26 @@
+2 api_name: paddle.audio.features.Spectrogram
+3 api_description: Computes a spectrogram from input signals, typically audio waveforms,
+  by applying a short-time Fourier transform and returning its complex magnitude representation.
+4 api_signature: paddle.audio.features.Spectrogram(n_fft,hop_length,win_length,window,power,center,pad_mode,dtype)
+5 api_details: ''
+6 api_parameters:
+- n_fft: Sets the FFT size, determining how many frequency bins the spectrogram uses.
+- hop_length: Sets the frame stride between successive short-time FFT windows.
+- win_length: Sets the analysis window length for each short-time FFT frame.
+- window: Chooses the window function applied to each frame before the Fourier transform.
+- power: Controls the exponent applied to the magnitude spectrogram output.
+- center: Specifies whether to pad the input so each frame is centered on its timestamp.
+- pad_mode: Specifies how the input is padded when centering is enabled.
+- dtype: Sets the data type used for the input signal and window values.
+7 api_usage_example:
+- import paddle
+- from paddle.audio.features import Spectrogram
+- sample_rate = 16000
+- wav_duration = 0.5
+- num_channels = 1
+- num_frames = sample_rate * wav_duration
+- wav_data = paddle.linspace(-1.0, 1.0, int(num_frames)) * 0.1
+- waveform = wav_data.tile([num_channels, 1])
+- feature_extractor = Spectrogram(n_fft=512, window = 'hann', power = 1.0)
+- feats = feature_extractor(waveform)
+8 api_shape: {}

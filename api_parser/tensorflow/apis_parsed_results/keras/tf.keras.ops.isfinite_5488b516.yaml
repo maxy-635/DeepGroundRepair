@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.isfinite
+3 api_description: Checks each tensor element for finiteness, returning true only
+  when values are neither NaN nor positive/negative infinity; complex values are finite
+  only if both parts are finite.
+4 api_signature: tf.keras.ops.isfinite(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to check for finite values.
+7 api_usage_example: null
+8 api_shape: ''

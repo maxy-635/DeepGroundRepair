@@ -1,0 +1,8 @@
+2 api_name: torch.nn.ParameterDict.popitem
+3 api_description: Removes and returns the most recently inserted key-parameter pair
+  from the ParameterDict.
+4 api_signature: popitem()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

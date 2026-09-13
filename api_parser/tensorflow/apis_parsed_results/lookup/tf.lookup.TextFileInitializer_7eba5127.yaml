@@ -1,0 +1,21 @@
+2 api_name: tensorflow.lookup.TextFileInitializer
+3 api_description: Initializes a lookup table from a text file by reading one entry
+  per line and extracting the key and value from specified columns or indices.
+4 api_signature: tf.lookup.TextFileInitializer(filename,key_dtype,value_dtype,vocab_size,delimiter)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the text file used to initialize the lookup table, and must
+    be accessible when the graph is initialized.
+- key_dtype: Sets the data type used for the keys read from the file.
+- value_dtype: Sets the data type used for the values read from the file.
+- vocab_size: Optionally provides the expected number of entries in the file.
+- delimiter: Defines the character used to split each line into fields.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example:
+- init = tf.lookup.TextFileInitializer(
+- '  filename=f.name,'
+- '  key_dtype=tf.string, key_index=tf.lookup.TextFileIndex.WHOLE_LINE,'
+- '  value_dtype=tf.int64, value_index=tf.lookup.TextFileIndex.LINE_NUMBER)'
+- table = tf.lookup.StaticHashTable(init, -1)
+- table.lookup(tf.constant('palmer 30')).numpy()
+8 api_shape: ''

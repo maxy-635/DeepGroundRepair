@@ -1,0 +1,14 @@
+2 api_name: torch.empty_strided
+3 api_description: Creates a tensor with a specified shape and memory stride layout,
+  leaving its contents uninitialized.
+4 api_signature: torch.empty_strided(size,stride)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the shape of the output tensor.
+- stride: Specifies the stride layout of the output tensor.
+7 api_usage_example:
+- ' a = torch.empty_strided((2, 3), (1, 2))'
+- ' a'
+- ' a.stride()'
+- ' a.size()'
+8 api_shape: null

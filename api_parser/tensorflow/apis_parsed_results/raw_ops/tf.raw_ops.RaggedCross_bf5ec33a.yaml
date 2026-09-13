@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.RaggedCross
+3 api_description: Generates a ragged tensor feature cross from multiple input tensors,
+  combining features into crossed values.
+4 api_signature: tf.raw_ops.RaggedCross(ragged_values,ragged_row_splits,sparse_indices,sparse_values,sparse_shape,dense_inputs,input_order,hashed_output,num_buckets,hash_key)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

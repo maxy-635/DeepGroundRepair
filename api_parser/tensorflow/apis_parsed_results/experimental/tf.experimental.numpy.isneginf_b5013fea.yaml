@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.isneginf
+3 api_description: Returns a boolean tensor indicating which elements are negative
+  infinity.
+4 api_signature: tf.experimental.numpy.isneginf(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

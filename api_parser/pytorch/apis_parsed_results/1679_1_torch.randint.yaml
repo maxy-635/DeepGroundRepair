@@ -1,0 +1,14 @@
+2 api_name: torch.randint
+3 api_description: Returns a tensor of uniformly random integers in the range [low,
+  high).
+4 api_signature: torch.randint(low,high,size,*,device,dtype)
+5 api_details: ''
+6 api_parameters:
+- low: Sets the inclusive lower bound for generated integers.
+- high: Sets the exclusive upper bound for generated integers.
+- size: Defines the output tensor shape.
+7 api_usage_example:
+- ' torch.randint(3, 5, (3,))'
+- ' torch.randint(10, (2, 2))'
+- ' torch.randint(3, 10, (2, 2))'
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.summary.should_record_summaries
+3 api_description: Returns a boolean Tensor indicating whether summaries should currently
+  be recorded, based on the active summary writer and any `tf.summary.record_if()`
+  condition.
+4 api_signature: tf.summary.should_record_summaries()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

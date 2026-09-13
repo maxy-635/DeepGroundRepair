@@ -1,0 +1,43 @@
+2 api_name: paddle.nn.functional.rnnt_loss
+3 api_description: The paddle.nn.functional.rnnt_loss API computes the RNN-T loss
+  for sequence transduction tasks using the Warp-Transducer library.
+4 api_signature: paddle.nn.functional.rnnt_loss(input,label,input_lengths,label_lengths,blank)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the log probabilities of the input sequences with padding, structured
+    as a 4-D Tensor with shape [B, Tmax, Umax, D].
+- label: Holds the ground truth sequences with padding in a 2-D Tensor format with
+    shape [B, Umax].
+- input_lengths: Specifies the actual lengths of each input sequence in a batch, given
+    as a 1-D Tensor with shape [batch_size].
+- label_lengths: Indicates the actual lengths of each label sequence in a batch, represented
+    as a 1-D Tensor with shape [batch_size].
+- blank: Defines the blank label index used in RNN-T loss, with a default value of
+    0 and a data type of int32.
+7 api_usage_example:
+- '# declarative mode'
+- import paddle.nn.functional as F
+- import numpy as np
+- import paddle
+- import functools
+- fn = functools.partial(F.rnnt_loss, reduction='sum', fastemit_lambda=0.0, blank=0)
+- acts = np.array([[
+- '    [[0.1, 0.6, 0.1, 0.1, 0.1],'
+- '     [0.1, 0.1, 0.6, 0.1, 0.1],'
+- '     [0.1, 0.1, 0.2, 0.8, 0.1]],'
+- '    [[0.1, 0.6, 0.1, 0.1, 0.1],'
+- '     [0.1, 0.1, 0.2, 0.1, 0.1],'
+- '     [0.7, 0.1, 0.2, 0.1, 0.1]]'
+- ']])'
+- labels = [[1, 2]]
+- acts = paddle.to_tensor(acts, stop_gradient=False)
+- lengths = [acts.shape[1]] * acts.shape[0]
+- label_lengths = [len(l) for l in labels]
+- labels = paddle.to_tensor(labels, paddle.int32)
+- lengths = paddle.to_tensor(lengths, paddle.int32)
+- label_lengths = paddle.to_tensor(label_lengths, paddle.int32)
+- costs = fn(acts, labels, lengths, label_lengths)
+- print(costs)
+- Tensor(shape=[], dtype=float64, place=Place(cpu), stop_gradient=False,
+- -2.85042444)
+8 api_shape: null

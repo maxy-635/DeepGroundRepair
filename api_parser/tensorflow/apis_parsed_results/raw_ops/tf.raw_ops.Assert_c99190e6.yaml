@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Assert
+3 api_description: Checks that a condition is true and, if it is false, prints the
+  provided tensors with optional summary truncation.
+4 api_signature: tf.raw_ops.Assert(condition,data)
+5 api_details: ''
+6 api_parameters:
+- condition: A boolean tensor that determines whether the assertion passes or fails.
+- data: A list of tensors whose values are printed when the condition evaluates to
+    false.
+7 api_usage_example: null
+8 api_shape: ''

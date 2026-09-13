@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.LogicalNot
+3 api_description: Returns the element-wise logical negation of a boolean tensor.
+4 api_signature: tf.raw_ops.LogicalNot(x)
+5 api_details: ''
+6 api_parameters:
+- x: The boolean tensor to invert elementwise, turning True values into False and
+    False values into True.
+7 api_usage_example:
+- tf.math.logical_not(tf.constant([True, False]))
+8 api_shape: ''

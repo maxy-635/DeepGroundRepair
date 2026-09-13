@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.GroupByReducerDataset
+3 api_description: Creates a dataset that groups input elements by key and applies
+  a reducer to each group.
+4 api_signature: tf.raw_ops.GroupByReducerDataset(input_dataset,key_func,init_func,reduce_func,finalize_func,output_types,output_shapes,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Provides the variant tensor containing the input dataset to be grouped
+    and reduced.
+- key_func: Computes a scalar `int64` key for each input element, optionally using
+    extra arguments.
+- init_func: Creates the initial reducer state for each key, optionally using extra
+    arguments.
+- reduce_func: Updates the reducer state by combining the current state with each
+    input element, optionally using extra arguments.
+- finalize_func: Converts the final reducer state into the output element.
+- output_types: Specifies the data types of the op's outputs.
+- output_shapes: Specifies the shapes of the op's outputs.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

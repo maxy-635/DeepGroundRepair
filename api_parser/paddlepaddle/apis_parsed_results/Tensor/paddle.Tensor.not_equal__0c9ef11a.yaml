@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.not_equal_
+3 api_description: Compares a tensor with another value elementwise for inequality
+  and updates the input tensor in place with the boolean result.
+4 api_signature: paddle.Tensor.not_equal_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

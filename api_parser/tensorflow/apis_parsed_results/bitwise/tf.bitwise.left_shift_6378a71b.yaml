@@ -1,0 +1,10 @@
+2 api_name: tensorflow.bitwise.left_shift
+3 api_description: Performs an elementwise bitwise left shift of `x` by `y` bits,
+  with out-of-range shift amounts producing implementation-defined results.
+4 api_signature: tf.bitwise.left_shift(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The integer tensor whose bits are shifted left.
+- y: The tensor specifying how many bit positions to shift `x` left by.
+7 api_usage_example: null
+8 api_shape: ''

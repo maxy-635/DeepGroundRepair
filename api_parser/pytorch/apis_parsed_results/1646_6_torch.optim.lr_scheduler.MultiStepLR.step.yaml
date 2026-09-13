@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.MultiStepLR.step
+3 api_description: Updates the learning rate by decaying it at specified milestone
+  epochs according to the scheduler's gamma factor.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Deprecated optional epoch index that, if provided, sets `last_epoch` to that
+    value and may use the scheduler's closed-form learning-rate computation.
+7 api_usage_example: null
+8 api_shape: null

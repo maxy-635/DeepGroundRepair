@@ -1,0 +1,8 @@
+2 api_name: torch.nn.parameter.UninitializedParameter
+3 api_description: A placeholder parameter for lazy modules that has no data yet and
+  must be initialized before it can be used.
+4 api_signature: torch.nn.parameter.UninitializedParameter(requires_grad,device,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

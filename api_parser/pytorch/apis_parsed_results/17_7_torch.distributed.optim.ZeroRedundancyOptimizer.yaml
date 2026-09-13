@@ -1,0 +1,23 @@
+2 api_name: torch.distributed.optim.ZeroRedundancyOptimizer
+3 api_description: Wraps a standard optimizer and shards its optimizer state across
+  the ranks in a process group to reduce per-rank memory use.
+4 api_signature: '"torch.distributed.optim.ZeroRedundancyOptimizer(params,optimizer_class
+  ,process_group,**defaults)"'
+5 api_details: ''
+6 api_parameters:
+- params: An iterable of tensors or parameter groups whose parameters will be sharded
+    across ranks.
+7 api_usage_example:
+- ' import torch.nn as nn'
+- ' from torch.distributed.optim import ZeroRedundancyOptimizer'
+- ' from torch.nn.parallel import DistributedDataParallel as DDP'
+- ' model = nn.Sequential(*[nn.Linear(2000, 2000).to(rank) for _ in range(20)])'
+- ' ddp = DDP(model, device_ids=[rank])'
+- ' opt = ZeroRedundancyOptimizer('
+- '     ddp.parameters(),'
+- '     optimizer_class=torch.optim.Adam,'
+- '     lr=0.01'
+- ' )'
+- ' ddp(inputs).sum().backward()'
+- ' opt.step()'
+8 api_shape: null

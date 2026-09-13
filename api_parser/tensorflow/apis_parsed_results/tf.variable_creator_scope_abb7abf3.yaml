@@ -1,0 +1,10 @@
+2 api_name: tensorflow.variable_creator_scope
+3 api_description: Defines a scope that intercepts variable creation and routes it
+  through a custom variable_creator function with a prescribed signature.
+4 api_signature: tf.variable_creator_scope(variable_creator)
+5 api_details: ''
+6 api_parameters:
+- variable_creator: A callable that creates variables and can override or wrap TensorFlow's
+    default variable creation behavior.
+7 api_usage_example: null
+8 api_shape: ''

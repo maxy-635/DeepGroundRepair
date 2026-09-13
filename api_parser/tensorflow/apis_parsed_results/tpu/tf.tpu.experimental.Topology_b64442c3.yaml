@@ -1,0 +1,12 @@
+2 api_name: tensorflow.tpu.experimental.Topology
+3 api_description: Represents TPU device topology, including the physical mesh shape
+  and how TensorFlow TPU devices map to mesh coordinates.
+4 api_signature: tf.tpu.experimental.Topology(mesh_shape,device_coordinates)
+5 api_details: ''
+6 api_parameters:
+- mesh_shape: Defines the TPU topology shape in number of cores when a serialized
+    topology is not provided.
+- device_coordinates: Specifies how TensorFlow TPU devices map to TPU fabric coordinates
+    when a serialized topology is not provided.
+7 api_usage_example: null
+8 api_shape: ''

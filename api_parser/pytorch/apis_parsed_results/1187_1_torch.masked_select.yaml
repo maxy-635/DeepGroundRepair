@@ -1,0 +1,15 @@
+2 api_name: torch.masked_select
+3 api_description: Returns a new 1-D tensor containing the elements of the input tensor
+  selected by a boolean mask.
+4 api_signature: torch.masked_select(input,mask)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are filtered and selected.
+- mask: A binary mask tensor that specifies which elements to keep.
+7 api_usage_example:
+- ' x = torch.randn(3, 4)'
+- ' x'
+- ' mask = x.ge(0.5)'
+- ' mask'
+- ' torch.masked_select(x, mask)'
+8 api_shape: null

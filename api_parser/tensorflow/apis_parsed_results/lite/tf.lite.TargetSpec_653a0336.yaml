@@ -1,0 +1,9 @@
+2 api_name: tensorflow.lite.TargetSpec
+3 api_description: Describes the target device capabilities used to optimize a TFLite
+  model, including supported operator sets, data types, optional select TensorFlow
+  ops, and backend targets.
+4 api_signature: tf.lite.TargetSpec(supported_ops,supported_types)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

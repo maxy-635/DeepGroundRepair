@@ -1,0 +1,18 @@
+2 api_name: torch.nn.GELU
+3 api_description: Applies the Gaussian Error Linear Unit (GELU) activation function,
+  which combines properties of dropout and smooth activation for improved performance
+  in neural networks.
+4 api_signature: torch.nn.GELU(approximate)
+5 api_details: ''
+6 api_parameters:
+- approximate: Specifies the algorithm to use for the GELU approximation, allowing
+    options for 'none' (exact computation) or 'tanh' (approximated using the tanh
+    function).
+7 api_usage_example:
+- ' m = nn.GELU()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

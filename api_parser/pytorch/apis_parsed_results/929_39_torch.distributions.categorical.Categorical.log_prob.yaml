@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.categorical.Categorical.log_prob
+3 api_description: Returns the log probability of each value under the categorical
+  distribution.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

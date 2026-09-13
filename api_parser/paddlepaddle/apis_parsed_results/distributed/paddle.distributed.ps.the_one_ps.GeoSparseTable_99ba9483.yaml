@@ -1,0 +1,10 @@
+2 api_name: paddle.distributed.ps.the_one_ps.GeoSparseTable
+3 api_description: A distributed parameter-server sparse table for PaddlePaddle that
+  manages geo-aware sparse parameter storage and updates across workers, supporting
+  efficient lookup, push, pull, and synchronization for large-scale embedding-style
+  models.
+4 api_signature: paddle.distributed.ps.the_one_ps.GeoSparseTable(context,send_ctx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

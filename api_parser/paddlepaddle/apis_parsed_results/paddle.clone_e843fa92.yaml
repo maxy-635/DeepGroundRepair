@@ -1,0 +1,21 @@
+2 api_name: paddle.clone
+3 api_description: Creates and returns a copied Tensor with its own data.
+4 api_signature: paddle.clone(x)
+5 api_details: ''
+6 api_parameters:
+- x: The Tensor to be cloned.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- x = paddle.ones([2])
+- x.stop_gradient = False
+- x.retain_grads()
+- clone_x = paddle.clone(x)
+- clone_x.retain_grads()
+- y = clone_x**3
+- y.backward()
+- 'print(clone_x.grad.numpy())  # type: ignore'
+- '[3. 3.]'
+- 'print(x.grad.numpy())  # type: ignore'
+- '[3. 3.]'
+8 api_shape: {}

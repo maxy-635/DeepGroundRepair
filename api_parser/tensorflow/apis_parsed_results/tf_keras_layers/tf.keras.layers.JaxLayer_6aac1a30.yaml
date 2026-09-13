@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.JaxLayer
+3 api_description: The tf.keras.layers.JaxLayer allows integration of JAX models within
+  Keras, enabling the use of JAX components while leveraging Keras as the high-level
+  API.
+4 api_signature: tf.keras.layers.JaxLayer(call_fn, params)
+5 api_details: ''
+6 api_parameters:
+- params: A PyTree that contains the model's trainable parameters, allowing for the
+    passing of pre-trained parameters or control over initialization.
+7 api_usage_example: null
+8 api_shape: null

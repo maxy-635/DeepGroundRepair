@@ -1,0 +1,8 @@
+2 api_name: torch.profiler._KinetoProfile.preset_metadata_json
+3 api_description: Stores user-defined JSON metadata before profiling starts so it
+  can be included later in the generated trace file.
+4 api_signature: preset_metadata_json(key)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

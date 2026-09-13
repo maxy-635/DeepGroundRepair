@@ -1,0 +1,10 @@
+2 api_name: paddle.device.is_compiled_with_xpu
+3 api_description: Returns whether Paddle was compiled with XPU support enabled for
+  Baidu Kunlun devices.
+4 api_signature: paddle.device.is_compiled_with_xpu()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- support_xpu = paddle.device.is_compiled_with_xpu()
+8 api_shape: {}

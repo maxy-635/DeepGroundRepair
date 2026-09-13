@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.DataFormatVecPermute
+3 api_description: Permutes a tensor’s data-format dimension order from a source format
+  to a destination format, supporting 4D or 5D formats and vectors or 2D index pairs
+  with optional omitted non-spatial dimensions.
+4 api_signature: tf.raw_ops.DataFormatVecPermute(x,src_format,dst_format)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor of rank 1 or 2 whose values are permuted according to the source
+    and destination data formats.
+- src_format: Specifies the source data format to interpret the input tensor, defaulting
+    to NHWC.
+- dst_format: Specifies the destination data format to convert the input tensor into,
+    defaulting to NCHW.
+7 api_usage_example: null
+8 api_shape: ''

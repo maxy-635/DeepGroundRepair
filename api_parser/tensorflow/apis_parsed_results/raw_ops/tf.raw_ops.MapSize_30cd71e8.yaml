@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.MapSize
+3 api_description: Returns the number of elements currently stored in the underlying
+  map container.
+4 api_signature: tf.raw_ops.MapSize(container,shared_name)
+5 api_details: ''
+6 api_parameters:
+- container: Identifies the hash table container to read from, allowing this op to
+    target a specific shared resource.
+- shared_name: Specifies the shared resource name used to locate the map when no explicit
+    container is provided.
+- name: Sets an optional operation name for graph labeling and debugging.
+7 api_usage_example: null
+8 api_shape: ''

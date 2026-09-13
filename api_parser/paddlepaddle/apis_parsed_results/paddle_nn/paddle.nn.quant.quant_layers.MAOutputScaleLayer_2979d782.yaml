@@ -1,0 +1,9 @@
+2 api_name: paddle.nn.quant.quant_layers.MAOutputScaleLayer
+3 api_description: The MAOutputScaleLayer applies a Moving Average Max Scale to the
+  output of a preceding layer, calculating the scale based on the moving average of
+  the absolute maximum values.
+4 api_signature: paddle.nn.quant.quant_layers.MAOutputScaleLayer(layer,moving_rate)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

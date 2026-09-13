@@ -1,0 +1,17 @@
+2 api_name: tensorflow.strings.ngrams
+3 api_description: Generates n-grams by sliding a window over the inner axis of string
+  sequences, optionally padding the start and end, and can preserve short non-empty
+  sequences by producing at least one n-gram.
+4 api_signature: tf.strings.ngrams(data,ngram_width,separator,pad_values)
+5 api_details: ''
+6 api_parameters:
+- data: Supplies the input tensor or ragged tensor whose elements are used to build
+    the ngrams.
+- ngram_width: Specifies the ngram length or lengths to generate from the input data.
+- separator: Sets the fixed string inserted between elements when forming each ngram.
+- pad_values: Defines optional left and right padding strings to add around the input
+    before ngram generation.
+7 api_usage_example:
+- tf.strings.ngrams(["A", "B", "C", "D"], 2).numpy()
+- tf.strings.ngrams(["TF", "and", "keras"], 1).numpy()
+8 api_shape: ''

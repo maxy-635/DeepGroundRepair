@@ -1,0 +1,35 @@
+2 api_name: torch.optim.Rprop
+3 api_description: Implements the Rprop optimizer, which adapts per-parameter step
+  sizes based on the sign of the gradient to provide resilient backpropagation updates.
+4 api_signature: torch.optim.Rprop(params,lr,etas,step_sizes)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies the parameters to optimize, either as an iterable of parameters/named
+    parameters or as parameter-group dictionaries.
+- lr: Sets the optimizer’s learning rate.
+- etas: Controls how the Rprop step size is decreased and increased using the `(etaminus,
+    etaplus)` factors.
+- step_sizes: Defines the minimum and maximum allowed step sizes for the optimizer.
+7 api_usage_example:
+- ' model = torch.nn.Linear(10, 10)'
+- ' optim = torch.optim.SGD(model.parameters(), lr=3e-4)'
+- ' scheduler1 = torch.optim.lr_scheduler.LinearLR('
+- '...     optim,'
+- '...     start_factor=0.1,'
+- '...     end_factor=1,'
+- '...     total_iters=20,'
+- '... )'
+- ' scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR('
+- '...     optim,'
+- '...     T_max=80,'
+- '...     eta_min=3e-5,'
+- '... )'
+- ' lr = torch.optim.lr_scheduler.SequentialLR('
+- '...     optim,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' lr.load_state_dict(torch.load("./save_seq.pt"))'
+- ' # now load the optimizer checkpoint after loading the LRScheduler'
+- ' optim.load_state_dict(torch.load("./save_optim.pt"))'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: torch.distributed.pipelining.stage.build_stage
+3 api_description: Builds and returns a pipeline stage by wrapping the given stage
+  module with the provided pipeline information.
+4 api_signature: torch.distributed.pipelining.stage.build_stage(stage_module,pipe_info,device,group)
+5 api_details: ''
+6 api_parameters:
+- stage_module: The module that this stage wraps and runs.
+- pipe_info: The pipeline metadata needed to configure the stage, typically obtained
+    from `pipe.info()`.
+- device: The device assigned to this stage for computation and tensor placement.
+- group: The process group used for distributed coordination within this stage.
+7 api_usage_example: null
+8 api_shape: null

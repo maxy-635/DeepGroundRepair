@@ -1,0 +1,22 @@
+2 api_name: paddle.vision.transforms.Pad
+3 api_description: Pads a CV image on all sides by a specified amount using the given
+  pad value.
+4 api_signature: paddle.vision.transforms.Pad(padding,fill,padding_mode)
+5 api_details: ''
+6 api_parameters:
+- padding: Sets how many pixels to add around the image on each side, either uniformly
+    or separately for left/right and top/bottom or each border.
+- fill: Specifies the constant pixel value used to fill padded areas when `padding_mode`
+    is `constant`, optionally with separate RGB values.
+- padding_mode: Chooses the padding behavior, such as constant fill, edge replication,
+    reflection, or symmetric reflection.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import Pad
+- transform = Pad(2)
+- fake_img = Image.fromarray((np.random.rand(224, 224, 3) * 255.).astype(np.uint8))
+- fake_img = transform(fake_img)
+- print(fake_img.size)
+- (228, 228)
+8 api_shape: {}

@@ -1,0 +1,18 @@
+2 api_name: paddle.nn.quant.quant_layers.FakeQuantChannelWiseAbsMax
+3 api_description: FakeQuantChannelWiseAbsMax performs channel-wise fake quantization
+  using absolute max scaling to simulate the effects of quantization during training.
+4 api_signature: paddle.nn.quant.quant_layers.FakeQuantChannelWiseAbsMax(channel_num,quant_bits,quant_axis)
+5 api_details: ''
+6 api_parameters:
+- channel_num: Specifies the number of channels for which separate quantization parameters
+    are calculated.
+- quant_bits: Defines the number of bits to use for quantization, affecting the precision
+    of the quantized values.
+- dtype: Indicates the data type of the output quantized tensor, typically float32
+    or int8.
+- moving_rate: Determines the rate at which the moving average updates for the quantization
+    scale.
+- name: An optional parameter that allows naming the operation for easier identification
+    in a model.
+7 api_usage_example: []
+8 api_shape: null

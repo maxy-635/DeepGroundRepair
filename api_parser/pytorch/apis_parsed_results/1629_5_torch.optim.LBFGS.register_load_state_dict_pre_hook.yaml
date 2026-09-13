@@ -1,0 +1,11 @@
+2 api_name: torch.optim.LBFGS.register_load_state_dict_pre_hook
+3 api_description: Registers a hook that runs before `load_state_dict()` to inspect
+  or modify the incoming state dict or optimizer state.
+4 api_signature: register_load_state_dict_pre_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: A user-defined callback that runs before `LBFGS` loads a state dict, allowing
+    you to adjust or validate the incoming state.
+7 api_usage_example:
+- hook(optimizer, state_dict) -> state_dict or None
+8 api_shape: null

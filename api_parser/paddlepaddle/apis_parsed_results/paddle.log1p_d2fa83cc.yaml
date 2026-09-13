@@ -1,0 +1,18 @@
+2 api_name: paddle.log1p
+3 api_description: Computes the element-wise natural logarithm of each input value
+  plus 1.
+4 api_signature: paddle.log1p(x,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements have 1 added to them and then take the natural
+    logarithm.
+- out: An optional tensor to store the computed result.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([[0], [1]], dtype='float32')
+- res = paddle.log1p(data)
+- res
+- Tensor(shape=[2, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.        ],'
+- '[0.69314718]])'
+8 api_shape: {}

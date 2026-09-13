@@ -1,0 +1,10 @@
+2 api_name: tensorflow.data.experimental.get_single_element
+3 api_description: Returns the single element from a tf.data.Dataset as a nested tensor
+  structure, enabling stateless tensor-in tensor-out processing without creating an
+  iterator.
+4 api_signature: tf.data.experimental.get_single_element(dataset)
+5 api_details: ''
+6 api_parameters:
+- dataset: The `tf.data.Dataset` to read a single element from.
+7 api_usage_example: null
+8 api_shape: ''

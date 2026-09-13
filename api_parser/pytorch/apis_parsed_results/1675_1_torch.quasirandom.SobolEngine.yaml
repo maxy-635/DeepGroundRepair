@@ -1,0 +1,12 @@
+2 api_name: torch.quasirandom.SobolEngine
+3 api_description: Generates low-discrepancy Sobol quasi-random samples, with optional
+  scrambling, fast-forwarding, and reset support for reproducible quasi-random sequence
+  generation.
+4 api_signature: '"torch.quasirandom.SobolEngine(dimension)"'
+5 api_details: ''
+6 api_parameters:
+- dimension: Sets the number of dimensions for each sample drawn from the Sobol sequence.
+7 api_usage_example:
+- ' soboleng = torch.quasirandom.SobolEngine(dimension=5)'
+- ' soboleng.draw(3)'
+8 api_shape: null

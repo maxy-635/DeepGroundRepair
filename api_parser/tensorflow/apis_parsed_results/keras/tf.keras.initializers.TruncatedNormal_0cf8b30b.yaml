@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.initializers.TruncatedNormal
+3 api_description: Initializes tensors with values drawn from a normal distribution,
+  discarding and redrawing samples more than two standard deviations from the mean.
+4 api_signature: tf.keras.initializers.TruncatedNormal(stddev,seed)
+5 api_details: ''
+6 api_parameters:
+- stddev: Sets the standard deviation used to sample the truncated normal random values.
+- seed: Controls randomness and determinism for the initializer's generated values.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = TruncatedNormal(mean=0., stddev=1.)
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

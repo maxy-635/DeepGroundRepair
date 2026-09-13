@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.Tanh
+3 api_description: The paddle.nn.Tanh API implements the hyperbolic tangent activation
+  function, which maps input values to an output range of (-1, 1), commonly used in
+  neural networks to introduce non-linearity.
+4 api_signature: paddle.nn.Tanh()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- m = paddle.nn.Tanh()
+- out = m(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.37994900, -0.19737528,  0.09966799,  0.29131261])'
+8 api_shape: null

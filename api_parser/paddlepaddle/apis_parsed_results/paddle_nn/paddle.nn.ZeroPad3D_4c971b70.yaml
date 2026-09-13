@@ -1,0 +1,25 @@
+2 api_name: paddle.nn.ZeroPad3D
+3 api_description: The paddle.nn.ZeroPad3D API creates an object that pads the boundaries
+  of a 3D input tensor with zeros.
+4 api_signature: paddle.nn.ZeroPad3D(padding)
+5 api_details: ''
+6 api_parameters:
+- padding: Defines the size and application of padding on all six sides of a 3D input,
+    either uniformly with an int or specifically with a list/tuple of six ints.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- input_shape = (1, 1, 1, 2, 3)
+- pad = [1, 0, 1, 2, 0, 0]
+- data = paddle.arange(paddle.prod(paddle.to_tensor(input_shape)), dtype="float32").reshape(input_shape)
+  + 1
+- my_pad = nn.ZeroPad3D(padding=pad)
+- result = my_pad(data)
+- print(result)
+- Tensor(shape=[1, 1, 1, 5, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[[0., 0., 0., 0.],'
+- '[0., 1., 2., 3.],'
+- '[0., 4., 5., 6.],'
+- '[0., 0., 0., 0.],'
+- '[0., 0., 0., 0.]]]]])'
+8 api_shape: null

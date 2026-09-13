@@ -1,0 +1,22 @@
+2 api_name: torch.nn.Unfold
+3 api_description: torch.nn.Unfold extracts sliding local blocks from a batched input
+  tensor, enabling the transformation of spatial data into a 2D representation for
+  tasks like convolution.
+4 api_signature: torch.nn.Unfold(kernel_size,padding,stride)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Defines the dimensions of the sliding window used to extract patches
+    from the input.
+- padding: Specifies the amount of zero-padding to be added to the input on both sides
+    before applying the sliding window.
+- stride: Determines the step size with which the sliding window moves across the
+    input spatial dimensions.
+7 api_usage_example:
+- ' fold_params = dict(kernel_size=..., dilation=..., padding=..., stride=...)'
+- ' fold = nn.Fold(output_size=..., **fold_params)'
+- ' unfold = nn.Unfold(**fold_params)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, *)
+  output tensor shape: (N, Channel_out \times \prod(\text{kernel_size}), L) as described
+    above
+  tensor shape transform formulas: {}

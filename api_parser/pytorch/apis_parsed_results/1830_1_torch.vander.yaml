@@ -1,0 +1,17 @@
+2 api_name: torch.vander
+3 api_description: Generates a Vandermonde matrix from a 1D tensor by constructing
+  columns (or rows) of increasing powers of each element.
+4 api_signature: torch.vander(x,N,increasing)
+5 api_details: ''
+6 api_parameters:
+- x: The 1-D input tensor used as the base values for the Vandermonde matrix.
+- N: Sets the number of output columns; if omitted, the result is square with one
+    column per input element.
+- increasing: Controls whether powers increase from left to right or decrease from
+    left to right by default.
+7 api_usage_example:
+- ' x = torch.tensor([1, 2, 3, 5])'
+- ' torch.vander(x)'
+- ' torch.vander(x, N=3)'
+- ' torch.vander(x, N=3, increasing=True)'
+8 api_shape: null

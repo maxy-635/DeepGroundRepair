@@ -1,0 +1,20 @@
+2 api_name: tensorflow.keras.layers.LayerNormalization
+3 api_description: LayerNormalization normalizes activations for each example independently,
+  adjusting the mean to 0 and variance to 1. It can scale and center outputs using
+  trainable parameters gamma and beta, defaulting to ones and zeros respectively.
+4 api_signature: tf.keras.layers.LayerNormalization(axis, epsilon, center, scale)
+5 api_details: ''
+6 api_parameters:
+- axis: Specifies the dimension(s) along which to normalize the input tensor, typically
+    the feature dimensions.
+- epsilon: A small constant added to the variance to prevent division by zero during
+    normalization.
+- center: Determines whether to add a learnable offset (beta) to the normalized output.
+- scale: Indicates whether to multiply the normalized output by a learnable scale
+    factor (gamma).
+7 api_usage_example:
+- layer = keras.layers.LayerNormalization(axis=[1, 2, 3])
+- layer.build([5, 20, 30, 40])
+- print(layer.beta.shape)
+- print(layer.gamma.shape)
+8 api_shape: null

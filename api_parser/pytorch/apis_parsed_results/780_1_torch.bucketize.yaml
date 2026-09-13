@@ -1,0 +1,17 @@
+2 api_name: torch.bucketize
+3 api_description: Returns a tensor of bucket indices for each input value based on
+  sorted boundaries, with optional left- or right-open interval behavior.
+4 api_signature: torch.bucketize(input,boundaries,right)
+5 api_details: ''
+6 api_parameters:
+- input: The value or values to search for within the boundaries.
+- boundaries: The sorted 1-D sequence of cutoff values used to determine each input’s
+    insertion bucket.
+7 api_usage_example:
+- ' boundaries = torch.tensor([1, 3, 5, 7, 9])'
+- ' boundaries'
+- ' v = torch.tensor([[3, 6, 9], [3, 6, 9]])'
+- ' v'
+- ' torch.bucketize(v, boundaries)'
+- ' torch.bucketize(v, boundaries, right=True)'
+8 api_shape: null

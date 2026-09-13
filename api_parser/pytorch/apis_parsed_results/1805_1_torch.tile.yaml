@@ -1,0 +1,14 @@
+2 api_name: torch.tile
+3 api_description: Repeats a tensor’s elements across each dimension according to
+  the specified repetition counts.
+4 api_signature: torch.tile(input,dims)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be repeated across one or more dimensions.
+- dims: The repetition counts to apply along each dimension of the input tensor.
+7 api_usage_example:
+- ' x = torch.tensor([1, 2, 3])'
+- ' x.tile((2,))'
+- ' y = torch.tensor([[1, 2], [3, 4]])'
+- ' torch.tile(y, (2, 2))'
+8 api_shape: null

@@ -1,0 +1,49 @@
+2 api_name: paddle.prod
+3 api_description: Computes the product of tensor elements along a specified axis.
+4 api_signature: paddle.prod(x,axis,keepdim,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are multiplied together to produce the product.
+- axis: The dimension or dimensions to reduce when computing the product, or `None`
+    to multiply all elements.
+- keepdim: Controls whether reduced dimensions are kept as size-1 dimensions in the
+    output.
+- dtype: Specifies the output data type, casting the input first if needed to avoid
+    overflow or change precision.
+7 api_usage_example:
+- import paddle
+- '# the axis is a int element'
+- x = paddle.to_tensor([[0.2, 0.3, 0.5, 0.9],
+- '                      [0.1, 0.2, 0.6, 0.7]])'
+- out1 = paddle.prod(x)
+- out1
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.00022680)
+- out2 = paddle.prod(x, -1)
+- out2
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.02700000, 0.00840000])'
+- out3 = paddle.prod(x, 0)
+- out3
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.02000000, 0.06000000, 0.30000001, 0.63000000])'
+- out4 = paddle.prod(x, 0, keepdim=True)
+- out4
+- Tensor(shape=[1, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.02000000, 0.06000000, 0.30000001, 0.63000000]])'
+- out5 = paddle.prod(x, 0, dtype='int64')
+- out5
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 0, 0, 0])'
+- '# the axis is list'
+- y = paddle.to_tensor([[[1.0, 2.0], [3.0, 4.0]],
+- '                        [[5.0, 6.0], [7.0, 8.0]]])'
+- out6 = paddle.prod(y, [0, 1])
+- out6
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[105., 384.])'
+- out7 = paddle.prod(y, (1, 2))
+- out7
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[24.  , 1680.])'
+8 api_shape: {}

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.AdjustSaturation
+3 api_description: Adjusts the saturation of RGB images by converting them to HSV,
+  scaling the saturation channel, and converting them back to RGB.
+4 api_signature: AdjustSaturation(images,scale)
+5 api_details: ''
+6 api_parameters:
+- images: Input image tensor whose saturation will be adjusted; it must be at least
+    3-D and use `half` or `float32`.
+- scale: Float32 scalar controlling how much to change the saturation.
+7 api_usage_example: null
+8 api_shape: ''

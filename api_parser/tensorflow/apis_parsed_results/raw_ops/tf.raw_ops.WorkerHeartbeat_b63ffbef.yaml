@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.WorkerHeartbeat
+3 api_description: Sends a worker heartbeat to confirm the coordinator is active,
+  report current worker status, and help trigger shutdown when needed.
+4 api_signature: tf.raw_ops.WorkerHeartbeat(request)
+5 api_details: ''
+6 api_parameters:
+- request: A serialized `WorkerHeartbeatRequest` message, passed as a string tensor.
+7 api_usage_example: null
+8 api_shape: ''

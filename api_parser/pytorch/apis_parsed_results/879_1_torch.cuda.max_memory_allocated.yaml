@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.max_memory_allocated
+3 api_description: Returns the peak GPU memory, in bytes, allocated by tensors on
+  a specified device.
+4 api_signature: torch.cuda.max_memory_allocated(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which CUDA device to query for the peak allocated memory, defaulting
+    to the current device when omitted.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.SparseToDense
+3 api_description: Converts sparse indices and values into a dense tensor of the given
+  shape, filling unspecified positions with a default value.
+4 api_signature: tf.raw_ops.SparseToDense(sparse_indices,output_shape,sparse_values,default_value)
+5 api_details: ''
+6 api_parameters:
+- sparse_indices: Specifies the positions in the dense output where each sparse value
+    should be placed.
+- output_shape: Defines the shape of the dense tensor to create.
+- sparse_values: Provides the values to insert at the given sparse indices, or one
+    scalar value for all indices.
+- default_value: Sets the value used for all output positions not listed in `sparse_indices`.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ShuffleAndRepeatDatasetV2
+3 api_description: Creates a dataset that randomly shuffles elements from an input
+  dataset using a buffer, then repeats the dataset for a specified number of epochs.
+4 api_signature: tf.raw_ops.ShuffleAndRepeatDatasetV2(input_dataset,buffer_size,count,reshuffle_each_iteration)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be shuffled and repeated.
+- buffer_size: The size of the shuffle buffer used to randomize dataset elements.
+- count: The number of times to repeat the dataset, or a special value indicating
+    indefinite repetition.
+- reshuffle_each_iteration: Whether to reshuffle the dataset order each time it is
+    repeated.
+7 api_usage_example: null
+8 api_shape: ''

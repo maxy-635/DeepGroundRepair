@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.floormod
+3 api_description: Computes the element-wise modulus so floor(x / y) * y + floormod(x,
+  y) equals x, following Python-style floor division semantics for positive or negative
+  values.
+4 api_signature: '"tf.math.floormod(x,y)"'
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are divided by `y` to compute the floor modulus.
+- y: The divisor tensor used to calculate the floor modulus with `x`.
+7 api_usage_example: null
+8 api_shape: ''

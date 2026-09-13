@@ -1,0 +1,11 @@
+2 api_name: torch.nn.parameter.Parameter
+3 api_description: A Tensor subclass used to register trainable module parameters
+  that are tracked by `nn.Module` and included in optimization, saving, and device
+  transfers.
+4 api_signature: torch.nn.parameter.Parameter(data,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor data to wrap as a parameter.
+- requires_grad: Whether the parameter should track gradients during training.
+7 api_usage_example: null
+8 api_shape: null

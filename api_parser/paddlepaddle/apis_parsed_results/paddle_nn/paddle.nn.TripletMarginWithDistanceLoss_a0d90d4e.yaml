@@ -1,0 +1,28 @@
+2 api_name: paddle.nn.TripletMarginWithDistanceLoss
+3 api_description: The paddle.nn.TripletMarginWithDistanceLoss API computes the triplet
+  loss for input, positive, and negative tensors, measuring the relative similarity
+  with a specified margin, where all tensors have the shape (N, D).
+4 api_signature: paddle.nn.TripletMarginWithDistanceLoss(distance_function,margin)
+5 api_details: ''
+6 api_parameters:
+- distance_function: Specifies the function used to calculate the distance between
+    two tensors; defaults to the 2-norm if not provided.
+- margin: Defines the minimum desired difference between the anchor-positive and anchor-negative
+    distances.
+7 api_usage_example:
+- import paddle
+- from paddle.nn import TripletMarginWithDistanceLoss
+- input = paddle.to_tensor([[1, 5, 3], [0, 3, 2], [1, 4, 1]], dtype=paddle.float32)
+- positive= paddle.to_tensor([[5, 1, 2], [3, 2, 1], [3, -1, 1]], dtype=paddle.float32)
+- negative = paddle.to_tensor([[2, 1, -3], [1, 1, -1], [4, -2, 1]], dtype=paddle.float32)
+- triplet_margin_with_distance_loss = TripletMarginWithDistanceLoss(reduction='none')
+- loss = triplet_margin_with_distance_loss(input, positive, negative,)
+- print(loss)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 0.57496595, 0.        ])'
+- triplet_margin_with_distance_loss = TripletMarginWithDistanceLoss(reduction='mean')
+- loss = triplet_margin_with_distance_loss(input, positive, negative,)
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.19165532)
+8 api_shape: null

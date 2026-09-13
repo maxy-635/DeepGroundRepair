@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.expm1
+3 api_description: Computes exp(x) - 1 elementwise for all values in a tensor.
+4 api_signature: tf.keras.ops.expm1(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input values on which to compute exp(x) - 1.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.linalg.inv
+3 api_description: Computes the inverse of each square matrix in a batch, or its adjoint,
+  returning a tensor with the same shape as the input.
+4 api_signature: tf.linalg.inv(input)
+5 api_details: ''
+6 api_parameters:
+- A: The square matrix or batch of square matrices to invert.
+7 api_usage_example: null
+8 api_shape: ''

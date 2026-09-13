@@ -1,0 +1,18 @@
+2 api_name: torch.atleast_1d
+3 api_description: Converts scalar tensors to 1D views while leaving tensors with
+  one or more dimensions unchanged.
+4 api_signature: torch.atleast_1d(*tensors)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' x = torch.arange(2)'
+- ' x'
+- ' torch.atleast_1d(x)'
+- ' x = torch.tensor(1.)'
+- ' x'
+- ' torch.atleast_1d(x)'
+- ' x = torch.tensor(0.5)'
+- ' y = torch.tensor(1.)'
+- ' torch.atleast_1d((x, y))'
+- ' torch.atleast_1d()'
+8 api_shape: null

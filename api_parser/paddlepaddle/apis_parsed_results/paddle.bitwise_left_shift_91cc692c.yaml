@@ -1,0 +1,17 @@
+2 api_name: paddle.bitwise_left_shift
+3 api_description: Performs an elementwise bitwise left shift on Tensor X by Tensor
+  Y.
+4 api_signature: paddle.bitwise_left_shift(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements will be left-shifted bitwise.
+- y: The tensor providing the shift amounts applied to `x` elementwise.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1,2,4,8],[16,17,32,65]])
+- y = paddle.to_tensor([[1,2,3,4,], [2,3,2,1]])
+- paddle.bitwise_left_shift(x, y, is_arithmetic=True)
+- Tensor(shape=[2, 4], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[[2  , 8  , 32 , 128],'
+- '[64 , 136, 128, 130]])'
+8 api_shape: {}

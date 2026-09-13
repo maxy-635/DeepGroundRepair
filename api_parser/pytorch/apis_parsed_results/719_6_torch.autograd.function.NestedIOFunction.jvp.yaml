@@ -1,0 +1,9 @@
+2 api_name: torch.autograd.function.NestedIOFunction.jvp
+3 api_description: Defines the forward-mode Jacobian-vector product for a custom autograd
+  function, specifying how input tangent vectors are propagated to compute output
+  tangents during jvp.
+4 api_signature: staticjvp(ctx,*grad_inputs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

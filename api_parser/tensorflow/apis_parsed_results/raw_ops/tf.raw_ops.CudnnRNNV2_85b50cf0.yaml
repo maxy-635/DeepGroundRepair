@@ -1,0 +1,22 @@
+2 api_name: tensorflow.raw_ops.CudnnRNNV2
+3 api_description: Runs a cuDNN-backed RNN (including LSTM/GRU variants) on a 3D input
+  sequence using provided initial states and opaque parameters, returning the sequence
+  output, final hidden/state tensors, and optional training-only reserve buffers for
+  backpropagation.
+4 api_signature: tf.raw_ops.CudnnRNNV2(input,input_h,input_c,params,rnn_mode,input_mode,direction,is_training)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the input sequence tensor that the CUDNN RNN processes.
+- input_h: Provides the initial hidden state tensor for the RNN.
+- input_c: Provides the initial cell state tensor, used for LSTM-style recurrence.
+- params: Supplies the packed RNN weights and biases used by the CUDNN kernel.
+- rnn_mode: Selects the recurrent cell type to run, such as LSTM, GRU, or basic RNN
+    variants.
+- input_mode: Controls how the input tensor is transformed before entering the recurrent
+    cell.
+- direction: Chooses whether the RNN runs in one direction or both forward and backward
+    directions.
+- is_training: Indicates whether the op is being run in training mode, which can affect
+    internal kernel behavior.
+7 api_usage_example: null
+8 api_shape: ''

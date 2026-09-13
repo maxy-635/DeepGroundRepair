@@ -1,0 +1,17 @@
+2 api_name: torch.cond
+3 api_description: Conditionally executes either `true_fn` or `false_fn` based on
+  a predicate.
+4 api_signature: torch.cond(pred,true_fn,false_fn)
+5 api_details: ''
+6 api_parameters:
+- pred: Determines which branch to execute based on a boolean or single-element tensor.
+- true_fn: Defines the function to run when the condition is true.
+- false_fn: Defines the function to run when the condition is false, matching the
+    true branch's inputs and output structure.
+7 api_usage_example:
+- 'def cond(pred, true_branch, false_branch, operands):'
+- '    if pred:'
+- '        return true_branch(*operands)'
+- '    else:'
+- '        return false_branch(*operands)'
+8 api_shape: null

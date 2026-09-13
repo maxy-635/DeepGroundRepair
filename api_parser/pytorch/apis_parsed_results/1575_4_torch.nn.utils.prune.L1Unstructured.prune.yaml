@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.prune.L1Unstructured.prune
+3 api_description: Prunes the input tensor by removing the lowest-magnitude values
+  according to an L1 criterion, returning a pruned version of the tensor.
+4 api_signature: prune(t,importance_scores)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor to be pruned, which must match the shape of the default mask.
+- importance_scores: Optional tensor of importance scores, same shape as `t`, used
+    to decide which elements to prune; if omitted, `t` itself is used.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: torch.Tensor.rename
+3 api_description: Renames the named dimensions of a tensor.
+4 api_signature: rename(*names,**rename_map)
+5 api_details: ''
+6 api_parameters:
+- names: Assigns new names to tensor dimensions or clears existing names when set
+    to `None`.
+- name: Specifies the new names for the tensor’s dimensions.
+7 api_usage_example:
+- ' imgs = torch.rand(2, 3, 5, 7, names=(''N'', ''C'', ''H'', ''W''))'
+- ' renamed_imgs = imgs.rename(N=''batch'', C=''channels'')'
+- ' renamed_imgs.names'
+- ' renamed_imgs = imgs.rename(None)'
+- ' renamed_imgs.names'
+- ' renamed_imgs = imgs.rename(''batch'', ''channel'', ''height'', ''width'')'
+- ' renamed_imgs.names'
+8 api_shape: null

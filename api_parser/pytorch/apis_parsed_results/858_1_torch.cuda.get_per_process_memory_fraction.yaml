@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.get_per_process_memory_fraction
+3 api_description: Returns the GPU memory fraction reserved for the current process.
+4 api_signature: torch.cuda.get_per_process_memory_fraction(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which CUDA device to query; if `None`, the default CUDA device is
+    used.
+7 api_usage_example: null
+8 api_shape: null

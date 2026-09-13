@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.bias_add
+3 api_description: Adds a bias vector to a tensor along a specified data format channel
+  axis, broadcasting the bias across the remaining dimensions.
+4 api_signature: tf.keras.backend.bias_add(x,bias)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.log_softmax
+3 api_description: Applies log-softmax to inputs by normalizing each value with the
+  log of the summed exponentials, producing numerically stable log-probabilities.
+4 api_signature: tf.keras.ops.log_softmax(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be normalized with log-softmax.
+7 api_usage_example:
+- x = np.array([-1., 0., 1.])
+- x_log_softmax = keras.ops.log_softmax(x)
+- print(x_log_softmax)
+8 api_shape: ''

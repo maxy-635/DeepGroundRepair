@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.asinh_
+3 api_description: Computes the inverse hyperbolic sine of a tensor in place, modifying
+  the input tensor directly.
+4 api_signature: paddle.Tensor.asinh_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

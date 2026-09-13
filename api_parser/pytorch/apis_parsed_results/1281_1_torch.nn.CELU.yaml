@@ -1,0 +1,15 @@
+2 api_name: torch.nn.CELU
+3 api_description: Applies the Continuous Exponential Linear Unit (CELU) activation
+  function element-wise to input tensors.
+4 api_signature: torch.nn.CELU(alpha)
+5 api_details: ''
+6 api_parameters:
+- alpha: the α (alpha) value that controls the smoothness of the CELU activation function.
+7 api_usage_example:
+- ' m = nn.CELU()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

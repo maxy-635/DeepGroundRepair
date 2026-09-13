@@ -1,0 +1,14 @@
+2 api_name: torch.nn.SiLU
+3 api_description: Applies the SiLU activation function element-wise, multiplying
+  each input by its sigmoid.
+4 api_signature: torch.nn.SiLU(inplace)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' m = nn.SiLU()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

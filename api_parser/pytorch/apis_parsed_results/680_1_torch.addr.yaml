@@ -1,0 +1,15 @@
+2 api_name: torch.addr
+3 api_description: Computes the outer product of two vectors and adds the result to
+  an input matrix.
+4 api_signature: torch.addr(input,vec1,vec2,*,beta,alpha,out)
+5 api_details: ''
+6 api_parameters:
+- input: The matrix to which the outer product is added.
+- vec1: The first vector used in the outer product.
+- vec2: The second vector used in the outer product.
+7 api_usage_example:
+- ' vec1 = torch.arange(1., 4.)'
+- ' vec2 = torch.arange(1., 3.)'
+- ' M = torch.zeros(3, 2)'
+- ' torch.addr(M, vec1, vec2)'
+8 api_shape: null

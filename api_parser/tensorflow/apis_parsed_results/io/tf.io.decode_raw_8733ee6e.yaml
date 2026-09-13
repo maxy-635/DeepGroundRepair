@@ -1,0 +1,14 @@
+2 api_name: tensorflow.io.decode_raw
+3 api_description: Decodes raw bytes from each input tensor element into numeric values
+  of the specified output type.
+4 api_signature: tf.io.decode_raw(input_bytes,out_type)
+5 api_details: ''
+6 api_parameters:
+- input_bytes: Specifies the input tensor whose elements are interpreted as raw bytes.
+- out_type: Specifies the data type of the output tensor produced from the decoded
+    bytes.
+7 api_usage_example:
+- x = ["12345678", "87654321"]
+- tf.io.decode_raw(x, tf.int16)
+- tf.io.decode_raw(x, tf.int16, fixed_length=len(x[0]))
+8 api_shape: ''

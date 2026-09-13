@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.produce_guards
+3 api_description: Generates the non-verbose Python guard expressions needed to validate
+  symbolic shape assumptions.
+4 api_signature: produce_guards(*args,**kwargs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

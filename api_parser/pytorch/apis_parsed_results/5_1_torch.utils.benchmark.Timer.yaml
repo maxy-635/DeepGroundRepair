@@ -1,0 +1,16 @@
+2 api_name: torch.utils.benchmark.Timer
+3 api_description: Measures the execution time of PyTorch statements for benchmarking
+  and performance comparison.
+4 api_signature: torch.utils.benchmark.Timer(stmt,setup,globals,num_threads)
+5 api_details: ''
+6 api_parameters:
+- stmt: The code to benchmark repeatedly in the timed loop.
+- setup: Optional preparatory code that defines anything needed by `stmt`.
+- globals: A dictionary of global variables made available when `stmt` runs.
+- num_threads: The number of PyTorch threads to use while executing `stmt`.
+7 api_usage_example:
+- '                        | n=1 | n=4 | ...'
+- '                        ------------- ...'
+- 'ReLU(x + 1): (float)    | ... | ... | ...'
+- 'ReLU(x + 1): (int)      | ... | ... | ...'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseDenseCwiseAdd
+3 api_description: Broadcasts a dense tensor to match a SparseTensor’s shape if needed,
+  then adds only the dense values at the sparse indices to the sparse values and returns
+  the updated non-zero values.
+4 api_signature: tf.raw_ops.SparseDenseCwiseAdd(sp_indices,sp_values,sp_shape,dense)
+5 api_details: ''
+6 api_parameters:
+- sp_indices: Gives the coordinates of the non-empty entries in the sparse tensor.
+- sp_values: Provides the values for those sparse entries, in the same order as `sp_indices`.
+- sp_shape: Specifies the full shape of the sparse tensor.
+- dense: Supplies the dense tensor to add elementwise to the sparse tensor.
+7 api_usage_example: null
+8 api_shape: ''

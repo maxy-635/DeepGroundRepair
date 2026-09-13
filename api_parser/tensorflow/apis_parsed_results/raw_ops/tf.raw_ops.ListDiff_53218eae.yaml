@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ListDiff
+3 api_description: Returns the elements in `x` that are not in `y`, preserving `x`
+  order and duplicates, along with the original indices of each returned element.
+4 api_signature: tf.raw_ops.ListDiff(x,y,out_idx)
+5 api_details: ''
+6 api_parameters:
+- x: The 1-D tensor containing the values to keep after removing matches.
+- y: The 1-D tensor of values to remove from `x`, using the same data type as `x`.
+- out_idx: The optional output index type to use for the returned indices, either
+    `tf.int32` or `tf.int64`.
+7 api_usage_example: null
+8 api_shape: ''

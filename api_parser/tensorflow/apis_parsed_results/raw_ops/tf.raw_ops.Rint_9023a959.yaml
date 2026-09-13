@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Rint
+3 api_description: Rounds each element to the nearest integer, with halfway cases
+  rounded to the even representable value.
+4 api_signature: tf.raw_ops.Rint(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are rounded to the nearest integer values.
+7 api_usage_example: null
+8 api_shape: ''

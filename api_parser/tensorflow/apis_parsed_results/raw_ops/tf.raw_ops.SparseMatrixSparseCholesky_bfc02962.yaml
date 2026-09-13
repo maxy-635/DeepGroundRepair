@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixSparseCholesky
+3 api_description: Computes the sparse Cholesky factorization of a symmetric positive
+  definite sparse matrix using a provided fill-in reducing permutation, returning
+  the lower-triangular factor with the same dense shape.
+4 api_signature: tf.raw_ops.SparseMatrixSparseCholesky(input,permutation,type)
+5 api_details: ''
+6 api_parameters:
+- input: The CSRSparseMatrix to be factorized with sparse Cholesky.
+- permutation: A fill-in reducing permutation matrix applied before factorization.
+- type: The numeric dtype of the matrix values used in the factorization.
+7 api_usage_example: null
+8 api_shape: ''

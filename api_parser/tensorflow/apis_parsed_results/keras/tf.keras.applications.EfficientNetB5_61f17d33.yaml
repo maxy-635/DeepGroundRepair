@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.applications.EfficientNetB5
+3 api_description: Builds the EfficientNetB5 image classification model, with optional
+  ImageNet pretrained weights for classification, transfer learning, and fine-tuning.
+4 api_signature: tf.keras.applications.EfficientNetB5(weights,include_top,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Controls whether the model ends with the built-in fully connected classification
+    layer.
+- weights: Selects pretrained weights to load, random initialization, or a custom
+    weights file.
+- input_shape: Specifies the input tensor shape when omitting the top classification
+    layer, with 3 channels required.
+- classes: Sets the number of output classes when using the top layer without pretrained
+    weights.
+7 api_usage_example: null
+8 api_shape: ''

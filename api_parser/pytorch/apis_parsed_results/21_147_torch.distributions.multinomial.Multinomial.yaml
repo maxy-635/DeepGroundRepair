@@ -1,0 +1,16 @@
+2 api_name: torch.distributions.multinomial.Multinomial
+3 api_description: Samples counts from a multinomial distribution over classes given
+  event probabilities and a fixed total count; supports computing log probabilities,
+  entropies, and related distribution properties.
+4 api_signature: '"Multinomial(total_count,probs,logits)"'
+5 api_details: ''
+6 api_parameters:
+- total_count: Specifies the total number of trials or draws in the multinomial experiment.
+- probs: Sets the probability of each event category as normalized probabilities.
+- logits: Sets the event category scores as unnormalized log probabilities that are
+    converted to probabilities internally.
+7 api_usage_example:
+- ' m = Multinomial(100, torch.tensor([ 1., 1., 1., 1.]))'
+- ' x = m.sample()  # equal probability of 0, 1, 2, 3'
+- ' Multinomial(probs=torch.tensor([1., 1., 1., 1.])).log_prob(x)'
+8 api_shape: null

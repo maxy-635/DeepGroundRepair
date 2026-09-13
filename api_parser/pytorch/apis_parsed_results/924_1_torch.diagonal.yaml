@@ -1,0 +1,20 @@
+2 api_name: torch.diagonal
+3 api_description: Returns a view of the input tensor with the elements along the
+  specified diagonal dimensions extracted and appended as the last dimension.
+4 api_signature: torch.diagonal(input,dim1,dim2)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to extract a diagonal from; it must have at least two dimensions.
+- dim1: The first dimension that defines the diagonal plane.
+- dim2: The second dimension that defines the diagonal plane.
+7 api_usage_example:
+- ' a = torch.randn(3, 3)'
+- ' a'
+- ' torch.diagonal(a)'
+- ' torch.diagonal(a, 1)'
+- ' b = torch.randn(2, 5)'
+- ' b'
+- ' torch.diagonal(b, 1, 1, 0)'
+- ' x = torch.randn(2, 5, 4, 2)'
+- ' torch.diagonal(x, offset=-1, dim1=1, dim2=2)'
+8 api_shape: null

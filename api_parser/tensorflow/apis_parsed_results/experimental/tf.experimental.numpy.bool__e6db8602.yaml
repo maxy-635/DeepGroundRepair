@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.bool_
+3 api_description: TensorFlow NumPy boolean scalar type representing True/False values
+  as a 1-byte non-numeric bool_ with standard scalar array attributes like dtype,
+  shape, size, and nbytes.
+4 api_signature: tf.experimental.numpy.bool_(*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

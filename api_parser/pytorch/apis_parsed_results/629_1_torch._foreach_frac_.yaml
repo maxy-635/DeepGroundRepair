@@ -1,0 +1,8 @@
+2 api_name: torch._foreach_frac_
+3 api_description: Applies `torch.frac()` in-place to each tensor in a list, replacing
+  every element with its fractional part.
+4 api_signature: torch._foreach_frac_(self)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

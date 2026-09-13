@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.HashTable
+3 api_description: Creates an uninitialized hash table with specified key and value
+  types, which must be initialized before use and becomes immutable afterward.
+4 api_signature: tf.raw_ops.HashTable(key_dtype,value_dtype,container,shared_name)
+5 api_details: ''
+6 api_parameters:
+- key_dtype: Specifies the data type used for the table's keys.
+- value_dtype: Specifies the data type used for the table's values.
+- container: Optionally assigns the table to a named container; otherwise a default
+    container is used.
+- shared_name: Optionally gives the table a shared name so it can be reused across
+    sessions.
+- name: Sets an optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

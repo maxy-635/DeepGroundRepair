@@ -1,0 +1,8 @@
+2 api_name: torch.package.PackageExporter.dependency_graph_string
+3 api_description: Returns a Graphviz digraph string showing the package’s dependency
+  graph.
+4 api_signature: dependency_graph_string()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.losses.MeanAbsolutePercentageError
+3 api_description: Computes the mean absolute percentage error between true and predicted
+  values, measuring prediction error as a percentage.
+4 api_signature: tf.keras.losses.MeanAbsolutePercentageError()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

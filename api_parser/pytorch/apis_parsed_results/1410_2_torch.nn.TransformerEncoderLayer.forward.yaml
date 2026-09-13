@@ -1,0 +1,14 @@
+2 api_name: torch.nn.TransformerEncoderLayer.forward
+3 api_description: Applies a single Transformer encoder layer to the input, using
+  self-attention and feedforward sublayers with residual connections and normalization.
+4 api_signature: forward(src,src_mask,src_key_padding_mask,is_causal)
+5 api_details: ''
+6 api_parameters:
+- src: Input sequence passed through the encoder layer.
+- src_mask: Optional mask that controls which source positions can attend to each
+    other.
+- src_key_padding_mask: Optional mask that hides padding tokens in each batch element.
+- is_causal: Optional flag that applies a causal attention mask to prevent attending
+    to future tokens.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,25 @@
+2 api_name: paddle.linalg.qr
+3 api_description: Computes the QR decomposition of a matrix or a batch of matrices,
+  returning orthogonal and upper-triangular factors; backward support is not available.
+4 api_signature: paddle.linalg.qr(x,mode)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor to decompose, with shape [..., M, N] and supported
+    floating-point or complex data types.
+- mode: Controls whether QR returns reduced, complete, or R-only outputs, determining
+    the shapes of Q and R.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]).astype('float64')
+- q, r = paddle.linalg.qr(x)
+- print(q)
+- Tensor(shape=[3, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[-0.16903085,  0.89708523],'
+- '[-0.50709255,  0.27602622],'
+- '[-0.84515425, -0.34503278]])'
+- print(r)
+- Tensor(shape=[2, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[-5.91607978, -7.43735744],'
+- '[ 0.        ,  0.82807867]])'
+- '# one can verify : X = Q * R ;'
+8 api_shape: {}

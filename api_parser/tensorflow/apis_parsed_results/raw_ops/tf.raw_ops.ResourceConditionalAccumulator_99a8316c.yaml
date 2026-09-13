@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ResourceConditionalAccumulator
+3 api_description: Aggregates gradients conditionally by global step, accepts only
+  up-to-date gradients, and can return/reset the average while advancing the recorded
+  step.
+4 api_signature: tf.raw_ops.ResourceConditionalAccumulator(dtype,shape,reduction_type)
+5 api_details: ''
+6 api_parameters:
+- dtype: Sets the data type of the values that will be accumulated.
+- shape: Specifies the shape of each accumulated value, or leaves it unknown when
+    empty.
+- reduction_type: Chooses how accumulated values are combined, either by averaging
+    them or summing them.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.image.grayscale_to_rgb
+3 api_description: Converts grayscale images with a single-channel last dimension
+  into RGB by replicating the channel to produce a same-rank tensor whose last dimension
+  is 3.
+4 api_signature: tf.image.grayscale_to_rgb(images)
+5 api_details: ''
+6 api_parameters:
+- images: Grayscale input tensor whose single-channel values are converted into an
+    RGB tensor by repeating the channel across the last dimension.
+7 api_usage_example:
+- original = tf.constant([[[1.0], [2.0], [3.0]]])
+- converted = tf.image.grayscale_to_rgb(original)
+- print(converted.numpy())
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.grad_pass_through
+3 api_description: Wraps an operation so it behaves normally in the forward pass but
+  is treated as an identity during backpropagation.
+4 api_signature: tf.grad_pass_through(f)
+5 api_details: ''
+6 api_parameters:
+- f: The function whose forward computation is used as-is while its gradients are
+    passed through unchanged.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,22 @@
+2 api_name: paddle.outer
+3 api_description: Computes the outer product of two tensors, returning a tensor formed
+  by multiplying every element of the first tensor with every element of the second
+  tensor.
+4 api_signature: paddle.outer(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor or scalar tensor whose elements are used to form the outer
+    product.
+- y: The second input tensor or scalar tensor whose elements are used to form the
+    outer product.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(1, 4).astype('float32')
+- y = paddle.arange(1, 6).astype('float32')
+- out = paddle.outer(x, y)
+- print(out)
+- Tensor(shape=[3, 5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1. , 2. , 3. , 4. , 5. ],'
+- '[2. , 4. , 6. , 8. , 10.],'
+- '[3. , 6. , 9. , 12., 15.]])'
+8 api_shape: {}

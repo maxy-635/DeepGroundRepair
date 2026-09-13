@@ -1,0 +1,9 @@
+2 api_name: torch.abs
+3 api_description: Returns the absolute value of each element in the input tensor.
+4 api_signature: torch.abs(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose absolute value is computed elementwise.
+7 api_usage_example:
+- ' torch.abs(torch.tensor([-1, -2, 3]))'
+8 api_shape: null

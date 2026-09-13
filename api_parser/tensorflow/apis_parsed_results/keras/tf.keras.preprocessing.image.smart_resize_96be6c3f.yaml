@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.preprocessing.image.smart_resize
+3 api_description: Resize images to a fixed target size while preserving aspect ratio
+  by center-cropping or padding as needed so they can be batched.
+4 api_signature: tf.keras.preprocessing.image.smart_resize(x,size,interpolation)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the image or batch of images to resize, in either single-image or batched
+    tensor/NumPy array format.
+- size: Specifies the target output height and width as an integer tuple.
+- interpolation: Chooses the resizing interpolation method, with bilinear used by
+    default.
+7 api_usage_example: null
+8 api_shape: ''

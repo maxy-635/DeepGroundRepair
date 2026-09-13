@@ -1,0 +1,14 @@
+2 api_name: torch.frexp
+3 api_description: Splits each input value into a mantissa and exponent so the original
+  value can be reconstructed as mantissa × 2^exponent.
+4 api_signature: torch.frexp(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are decomposed into normalized mantissas and exponents.
+7 api_usage_example:
+- ' x = torch.arange(9.)'
+- ' mantissa, exponent = torch.frexp(x)'
+- ' mantissa'
+- ' exponent'
+- ' torch.ldexp(mantissa, exponent)'
+8 api_shape: null

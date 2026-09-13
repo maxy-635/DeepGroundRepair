@@ -1,0 +1,16 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.rekey_optim_state_dict
+3 api_description: Converts an optimizer state dict to use a different key type for
+  FSDP-compatible state dict loading and saving.
+4 api_signature: staticrekey_optim_state_dict(optim_state_dict,model,optim)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example:
+- ' wrapped_model, wrapped_optim = ...'
+- ' full_osd = FSDP.full_optim_state_dict(wrapped_model, wrapped_optim)'
+- ' nonwrapped_model, nonwrapped_optim = ...'
+- ' rekeyed_osd = FSDP.rekey_optim_state_dict(full_osd, OptimStateKeyType.PARAM_ID,
+  nonwrapped_model)'
+- ' nonwrapped_optim.load_state_dict(rekeyed_osd)'
+8 api_shape: null

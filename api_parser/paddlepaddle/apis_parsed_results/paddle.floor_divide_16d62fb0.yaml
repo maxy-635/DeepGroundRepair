@@ -1,0 +1,24 @@
+2 api_name: paddle.floor_divide
+3 api_description: Element-wise floor division of two tensors, rounding each quotient
+  down toward negative infinity.
+4 api_signature: paddle.floor_divide(x,y,out)
+5 api_details: ''
+6 api_parameters:
+- x: The left-hand input tensor whose values are floor-divided by `y`.
+- y: The right-hand input tensor or number used as the divisor.
+- out: An optional tensor that stores the result of the floor division.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([2, 3, 8, 7])
+- y = paddle.to_tensor([1, 5, 3, 3])
+- z = paddle.floor_divide(x, y)
+- print(z)
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[2, 0, 2, 2])'
+- x = paddle.to_tensor([2, 3, 8, 7])
+- y = paddle.to_tensor([1, -5, -3, -3])
+- z = paddle.floor_divide(x, y)
+- print(z)
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[2, -1, -3, -3])'
+8 api_shape: {}

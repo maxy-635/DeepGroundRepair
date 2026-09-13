@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.std
+3 api_description: Computes the standard deviation of a tensor along a specified axis.
+4 api_signature: tf.keras.ops.std(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose standard deviation will be computed.
+- axis: The axis or axes along which to compute the standard deviation, or omitted
+    to use the flattened tensor.
+7 api_usage_example: null
+8 api_shape: ''

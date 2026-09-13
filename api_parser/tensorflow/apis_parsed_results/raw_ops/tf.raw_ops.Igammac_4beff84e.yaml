@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Igammac
+3 api_description: Computes the upper regularized incomplete gamma function Q(a, x),
+  i.e. the normalized tail integral of the gamma function and the complement of Igamma.
+4 api_signature: tf.raw_ops.Igammac(a,x)
+5 api_details: ''
+6 api_parameters:
+- a: The shape parameter for the complemented incomplete gamma function.
+- x: The upper-limit input value at which the complemented incomplete gamma function
+    is evaluated.
+7 api_usage_example: null
+8 api_shape: ''

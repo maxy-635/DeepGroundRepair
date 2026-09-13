@@ -1,0 +1,10 @@
+2 api_name: torch.optim.Adagrad.step
+3 api_description: Performs one Adagrad optimization update on the parameters using
+  accumulated squared gradients.
+4 api_signature: step(closure)
+5 api_details: ''
+6 api_parameters:
+- closure: A callable that recomputes the model, reruns the forward pass, and returns
+    the loss for the optimizer step.
+7 api_usage_example: null
+8 api_shape: null

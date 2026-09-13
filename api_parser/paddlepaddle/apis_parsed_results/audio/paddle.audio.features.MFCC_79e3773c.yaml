@@ -1,0 +1,34 @@
+2 api_name: paddle.audio.features.MFCC
+3 api_description: Computes mel frequency cepstral coefficients from input waveforms
+  for audio feature extraction.
+4 api_signature: paddle.audio.features.MFCC(sr,n_mfcc,n_fft,hop_length,win_length,window,power,center,pad_mode,n_mels,f_min,f_max,htk,norm,dtype)
+5 api_details: ''
+6 api_parameters:
+- sr: Sets the audio sample rate used to interpret the input signal.
+- n_mfcc: Sets the number of MFCC coefficients to compute.
+- n_fft: Sets the FFT size, which determines the frequency resolution of the spectrum.
+- hop_length: Sets the number of samples between adjacent analysis frames.
+- win_length: Sets the length of each analysis window used for the short-time FFT.
+- window: Chooses the window function applied before the Fourier transform to reduce
+    spectral leakage.
+- power: Sets the exponent used when converting the spectrogram magnitude to power.
+- center: Controls whether the signal is padded so frames are centered on their timestamps.
+- pad_mode: Sets the padding mode used when centering and padding the input signal.
+- n_mels: Sets the number of mel-frequency filter bank bins to use.
+- f_min: Sets the lowest frequency included in the mel filter bank.
+- f_max: Sets the highest frequency included in the mel filter bank.
+- htk: Chooses whether to use the HTK mel scale formula instead of the default scale.
+- norm: Sets the normalization method applied to the mel filter bank.
+- dtype: Sets the data type used for the input and window calculations.
+7 api_usage_example:
+- import paddle
+- from paddle.audio.features import MFCC
+- sample_rate = 16000
+- wav_duration = 0.5
+- num_channels = 1
+- num_frames = sample_rate * wav_duration
+- wav_data = paddle.linspace(-1.0, 1.0, int(num_frames)) * 0.1
+- waveform = wav_data.tile([num_channels, 1])
+- feature_extractor = MFCC(sr=sample_rate, n_fft=512, window = 'hann')
+- feats = feature_extractor(waveform)
+8 api_shape: {}

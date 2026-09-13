@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.array_equal
+3 api_description: Compares two arrays elementwise and returns True if they have the
+  same shape and all corresponding values are equal.
+4 api_signature: tf.experimental.numpy.array_equal(a1,a2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

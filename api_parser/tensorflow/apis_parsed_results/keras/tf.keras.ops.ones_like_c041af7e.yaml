@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.ones_like
+3 api_description: Creates a tensor filled with ones that matches the shape and dtype
+  of the input tensor.
+4 api_signature: tf.keras.ops.ones_like(x,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor whose shape is used to create the output tensor.
+- dtype: Sets the data type of the returned tensor instead of matching the input.
+7 api_usage_example: null
+8 api_shape: ''

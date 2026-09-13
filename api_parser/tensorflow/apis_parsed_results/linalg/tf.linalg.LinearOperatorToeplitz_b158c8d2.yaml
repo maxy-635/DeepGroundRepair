@@ -1,0 +1,13 @@
+2 api_name: tensorflow.linalg.LinearOperatorToeplitz
+3 api_description: Represents a batch of Toeplitz matrices as a linear operator, supporting
+  efficient matrix-like actions and broadcasting without materializing the full matrices.
+4 api_signature: tf.linalg.LinearOperatorToeplitz(col,row,name)
+5 api_details: ''
+6 api_parameters:
+- col: Specifies the first column of the Toeplitz operator, including its batch shape
+    and matrix size.
+- row: Specifies the first row of the Toeplitz operator, including its batch shape
+    and matrix size.
+- name: Sets an optional name used to identify the LinearOperator.
+7 api_usage_example: null
+8 api_shape: ''

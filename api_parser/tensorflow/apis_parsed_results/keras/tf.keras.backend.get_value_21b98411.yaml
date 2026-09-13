@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.get_value
+3 api_description: Returns the current value of a backend variable or tensor as a
+  NumPy array or scalar.
+4 api_signature: tf.keras.backend.get_value(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

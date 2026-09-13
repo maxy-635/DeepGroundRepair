@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.geometric.Geometric.log_prob
+3 api_description: Computes the log probability of observed values under a Geometric
+  distribution.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The observed geometric-distributed value whose log probability is being evaluated.
+7 api_usage_example: null
+8 api_shape: null

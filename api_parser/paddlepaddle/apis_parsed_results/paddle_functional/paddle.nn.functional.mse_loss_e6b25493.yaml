@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.functional.mse_loss
+3 api_description: Calculates the mean square error between predicted values and true
+  labels.
+4 api_signature: paddle.nn.functional.mse_loss(input,label,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor for which the mean squared error loss is to be
+    calculated, requiring a data type of float32 or float64.
+- label: Defines the label tensor against which the input tensor is compared, with
+    a data type of float32 or float64.
+- reduction: Determines the method of reduction applied to the output loss, with options
+    'none', 'mean', or 'sum', and defaults to 'mean'.
+7 api_usage_example:
+- import paddle
+- mse_loss = paddle.nn.loss.MSELoss()
+- input = paddle.to_tensor(1.5)
+- label = paddle.to_tensor(1.7)
+- output = mse_loss(input, label)
+- print(output)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.04000002)
+8 api_shape: null

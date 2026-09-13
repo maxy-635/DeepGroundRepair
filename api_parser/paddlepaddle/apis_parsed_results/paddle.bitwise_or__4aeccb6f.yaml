@@ -1,0 +1,8 @@
+2 api_name: paddle.bitwise_or_
+3 api_description: Performs an in-place bitwise OR on x, writing the result back into
+  the output tensor.
+4 api_signature: paddle.bitwise_or_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

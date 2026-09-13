@@ -1,0 +1,12 @@
+2 api_name: tensorflow.sparse.minimum
+3 api_description: Computes the element-wise minimum of two SparseTensors with the
+  same shape, without broadcasting.
+4 api_signature: tf.sparse.minimum(sp_a,sp_b)
+5 api_details: ''
+6 api_parameters:
+- sp_a: The first real-valued SparseTensor operand, with lexicographically ordered
+    indices.
+- sp_b: The second real-valued SparseTensor operand, which must match `sp_a` in shape
+    and index ordering.
+7 api_usage_example: null
+8 api_shape: ''

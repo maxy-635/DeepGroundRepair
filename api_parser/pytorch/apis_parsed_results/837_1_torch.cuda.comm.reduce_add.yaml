@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.comm.reduce_add
+3 api_description: Sums tensors from multiple GPUs into a single tensor.
+4 api_signature: torch.cuda.comm.reduce_add(inputs,destination)
+5 api_details: ''
+6 api_parameters:
+- inputs: Iterable of tensors to sum together.
+- destination: Target device where the summed output tensor is placed.
+7 api_usage_example: null
+8 api_shape: null

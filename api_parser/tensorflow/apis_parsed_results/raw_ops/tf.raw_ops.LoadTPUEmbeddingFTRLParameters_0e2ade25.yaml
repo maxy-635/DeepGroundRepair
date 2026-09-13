@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.LoadTPUEmbeddingFTRLParameters
+3 api_description: Loads FTRL optimization parameters into TPU HBM for embedding tables,
+  typically after configuration and before training begins.
+4 api_signature: tf.raw_ops.LoadTPUEmbeddingFTRLParameters(parameters,accumulators,linears,num_shards,shard_id,table_id)
+5 api_details: ''
+6 api_parameters:
+- parameters: Holds the FTRL parameter values to be loaded.
+- accumulators: Holds the FTRL accumulator values to be loaded.
+- linears: Holds the FTRL linear term values to be loaded.
+- num_shards: Specifies the total number of shards the data is split across.
+- shard_id: Identifies which shard this operation should load.
+- table_id: Optionally specifies which embedding table to load, defaulting to -1.
+7 api_usage_example: null
+8 api_shape: ''

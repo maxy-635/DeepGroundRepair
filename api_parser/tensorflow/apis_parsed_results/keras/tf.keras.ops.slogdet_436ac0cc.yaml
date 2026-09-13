@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.slogdet
+3 api_description: Computes the sign and natural logarithm of a matrix determinant,
+  returning both values in a numerically stable form.
+4 api_signature: tf.keras.ops.slogdet(x)
+5 api_details: ''
+6 api_parameters:
+- x: A 2D square input matrix whose sign and log-determinant are computed.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,27 @@
+2 api_name: torch.nn.AdaptiveAvgPool3d
+3 api_description: Applies 3D adaptive average pooling to reduce the spatial dimensions
+  of a multi-plane input tensor to a specified output size, preserving the average
+  values across the input planes.
+4 api_signature: torch.nn.AdaptiveAvgPool3d(output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the target output dimensions as a tuple of (D, H, W) or a
+    single integer D for a cubic output, with the option for D, H, and W to be None
+    to maintain the corresponding input size.
+7 api_usage_example:
+- ' # target output size of 5x7x9'
+- ' m = nn.AdaptiveAvgPool3d((5, 7, 9))'
+- ' input = torch.randn(1, 64, 8, 9, 10)'
+- ' output = m(input)'
+- ' # target output size of 7x7x7 (cube)'
+- ' m = nn.AdaptiveAvgPool3d(7)'
+- ' input = torch.randn(1, 64, 10, 9, 8)'
+- ' output = m(input)'
+- ' # target output size of 7x9x8'
+- ' m = nn.AdaptiveAvgPool3d((7, None, None))'
+- ' input = torch.randn(1, 64, 10, 9, 8)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, S_0, S_1, S_2)
+  tensor shape transform formulas: {}

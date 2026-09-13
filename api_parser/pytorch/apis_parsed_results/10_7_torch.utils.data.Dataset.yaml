@@ -1,0 +1,9 @@
+2 api_name: torch.utils.data.Dataset
+3 api_description: An abstract interface for datasets that support indexed access
+  and optional batching through subclasses, providing the data source used by PyTorch
+  data loaders.
+4 api_signature: class torch.utils.data.Dataset
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

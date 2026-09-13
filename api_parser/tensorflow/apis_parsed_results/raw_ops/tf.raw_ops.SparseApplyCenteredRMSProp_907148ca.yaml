@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.SparseApplyCenteredRMSProp
+3 api_description: Applies a sparse centered RMSProp update to `var` using the current
+  gradients, maintaining moving averages of squared gradients and gradients for normalization,
+  then updating the momentum term and subtracting it from the variables.
+4 api_signature: tf.raw_ops.SparseApplyCenteredRMSProp(var,grad,indices,lr,rho,momentum,epsilon)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated by the optimizer.
+- mom: The momentum accumulator tensor updated alongside `var`.
+- lr: The scalar learning rate controlling update size.
+- rho: The scalar decay rate used for the running averages.
+- momentum: The scalar momentum coefficient used in the centered RMSProp update.
+- epsilon: The scalar numerical stability term added to the denominator.
+- grad: The gradient tensor used to compute the parameter update.
+- indices: The indices selecting which slices of `var`, `mom`, and `ms` to update.
+7 api_usage_example: null
+8 api_shape: ''

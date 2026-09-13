@@ -1,0 +1,12 @@
+2 api_name: tensorflow.io.write_graph
+3 api_description: Writes a TensorFlow graph proto to a file, in text format by default
+  or binary format when `as_text` is False.
+4 api_signature: tf.io.write_graph(graph_or_graph_def,logdir,name)
+5 api_details: ''
+6 api_parameters:
+- graph_or_graph_def: Specifies the graph or GraphDef to be written.
+- logdir: Specifies the directory where the graph file is saved, including remote
+    filesystems like GCS.
+- name: Specifies the filename to use for the saved graph.
+7 api_usage_example: null
+8 api_shape: ''

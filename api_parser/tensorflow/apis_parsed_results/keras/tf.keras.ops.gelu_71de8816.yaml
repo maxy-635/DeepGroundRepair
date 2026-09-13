@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.gelu
+3 api_description: Applies the GELU activation, smoothly gating inputs with either
+  an approximate tanh-based formula or the exact Gaussian error function.
+4 api_signature: tf.keras.ops.gelu(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the GELU activation to.
+7 api_usage_example:
+- x = np.array([-1., 0., 1.])
+- x_gelu = keras.ops.gelu(x)
+- print(x_gelu)
+8 api_shape: ''

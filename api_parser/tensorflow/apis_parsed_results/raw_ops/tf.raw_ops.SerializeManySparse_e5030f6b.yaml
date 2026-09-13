@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SerializeManySparse
+3 api_description: Serializes a rank-R SparseTensor with minibatch dimension into
+  an [N, 3] tensor of serialized SparseTensor components, one row per minibatch example.
+4 api_signature: tf.raw_ops.SerializeManySparse(sparse_indices,sparse_values,sparse_shape)
+5 api_details: ''
+6 api_parameters:
+- sparse_indices: Specifies the 2-D int64 indices of the minibatch SparseTensor.
+- sparse_values: Provides the 1-D tensor of values associated with the minibatch SparseTensor.
+- sparse_shape: Specifies the 1-D int64 shape of the minibatch SparseTensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.models.resnext101_64x4d
+3 api_description: ResNeXt-101 64x4d is a deep convolutional image classification
+  backbone that uses aggregated residual transformations to extract rich visual features
+  from images.
+4 api_signature: paddle.vision.models.resnext101_64x4d(pretrained,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Loads ImageNet-pretrained weights when set to True.
+- '**kwargs': Passes additional ResNet configuration options.
+7 api_usage_example: []
+8 api_shape: {}

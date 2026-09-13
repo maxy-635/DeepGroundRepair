@@ -1,0 +1,19 @@
+2 api_name: paddle.histogram
+3 api_description: Computes a tensor histogram by binning values into equal-width
+  intervals between min and max, or using the data’s own min and max when both are
+  zero.
+4 api_signature: paddle.histogram(input,bins,min,max)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used to compute the histogram.
+- bins: The number of bins to divide the value range into.
+- min: The inclusive lower bound of the histogram range.
+- max: The inclusive upper bound of the histogram range.
+7 api_usage_example:
+- import paddle
+- inputs = paddle.to_tensor([1, 2, 1])
+- result = paddle.histogram(inputs, bins=4, min=0, max=3)
+- print(result)
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 2, 1, 0])'
+8 api_shape: {}

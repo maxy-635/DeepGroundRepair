@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.multiply
+3 api_description: Returns the element-wise product of x and y, converting non-Tensor
+  inputs to Tensors if needed.
+4 api_signature: tf.math.multiply(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to be multiplied.
+- y: The second input tensor, which must have the same data type as `x`.
+7 api_usage_example:
+- x = tf.ones([1, 2]);
+- y = tf.ones([2, 1]);
+- 'x * y  # Taking advantage of operator overriding'
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.signal.hann_window
+3 api_description: Generates a Hann window tensor for signal processing, with optional
+  periodic or symmetric behavior.
+4 api_signature: tf.signal.hann_window(window_length,periodic)
+5 api_details: ''
+6 api_parameters:
+- window_length: Sets the length of the Hann window to generate.
+- periodic: Chooses between a periodic window for spectral analysis and a symmetric
+    window for filter design.
+7 api_usage_example: null
+8 api_shape: ''

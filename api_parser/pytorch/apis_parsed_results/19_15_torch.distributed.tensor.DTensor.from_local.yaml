@@ -1,0 +1,14 @@
+2 api_name: torch.distributed.tensor.DTensor.from_local
+3 api_description: Creates a distributed DTensor from each rank’s local torch.Tensor,
+  using the given device mesh and placement specs to define how the tensor is sharded
+  or replicated across ranks.
+4 api_signature: staticfrom_local(local_tensor,device_mesh,placements)
+5 api_details: ''
+6 api_parameters:
+- local_tensor: The local `torch.Tensor` held on each rank.
+- device_mesh: The `DeviceMesh` that determines where the DTensor is placed, or `None`
+    if it is taken from the current `DeviceMesh` context.
+- placements: The placement specification describing how the local tensor is distributed
+    across the `DeviceMesh`, with one entry per mesh dimension.
+7 api_usage_example: null
+8 api_shape: null

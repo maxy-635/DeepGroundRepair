@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesQuantileStreamResourceHandleOp
+3 api_description: Creates a resource handle for a boosted trees quantile stream used
+  to accumulate quantile statistics during training or preprocessing.
+4 api_signature: tf.raw_ops.BoostedTreesQuantileStreamResourceHandleOp(container,shared_name)
+5 api_details: ''
+6 api_parameters:
+- container: Optional namespace that groups the resource handle, defaulting to an
+    empty string.
+- shared_name: Optional shared identifier that lets multiple operations reference
+    the same resource, defaulting to an empty string.
+- name: Optional operation name used to label the created TensorFlow op.
+7 api_usage_example: null
+8 api_shape: ''

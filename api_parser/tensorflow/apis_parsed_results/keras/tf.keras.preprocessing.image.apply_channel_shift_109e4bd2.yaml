@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.preprocessing.image.apply_channel_shift
+3 api_description: Shifts the values of each image channel by a specified amount.
+4 api_signature: tf.keras.preprocessing.image.apply_channel_shift(x,intensity)
+5 api_details: ''
+6 api_parameters:
+- x: The 3D input tensor whose image channels will be shifted.
+- intensity: The amount of intensity added to or subtracted from the channels.
+7 api_usage_example: null
+8 api_shape: ''

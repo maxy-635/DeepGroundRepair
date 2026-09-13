@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nn.fractional_avg_pool
+3 api_description: tensorflow.nn.fractional_avg_pool performs fractional average pooling,
+  generating pooling regions like fractional max pooling but using a mean operation
+  instead of max within each region.
+4 api_signature: tf.nn.fractional_avg_pool(value,pooling_ratio)
+5 api_details: ''
+6 api_parameters:
+- value: A 4-D Tensor input representing the data to be pooled, with dimensions [batch,
+    height, width, channels].
+- pooling_ratio: A list of floats specifying the pooling ratio for each dimension,
+    with height and width ratios >= 1.0, and no pooling on batch and channels dimensions.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.det
+3 api_description: Computes the determinant for each square matrix in a tensor of
+  shape [..., M, M], returning a tensor of determinants for all leading batch dimensions.
+4 api_signature: tf.linalg.det(input)
+5 api_details: ''
+6 api_parameters:
+- input: The square matrix tensor whose determinant is computed, with shape [...,
+    M, M].
+7 api_usage_example: null
+8 api_shape: ''

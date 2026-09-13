@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.applications.NASNetLarge
+3 api_description: Builds a NASNetLarge image classification model for ImageNet, optionally
+  loading pretrained ImageNet weights and using the Keras image data format from the
+  user’s config.
+4 api_signature: tf.keras.applications.NASNetLarge(input_shape,weights,classes)
+5 api_details: ''
+6 api_parameters:
+- input_shape: Specifies the input tensor shape when excluding the top classification
+    layer, using a 3-channel image size of at least 32×32.
+- weights: Chooses whether to initialize randomly or load pretrained ImageNet weights,
+    which require a 331×331×3 input shape.
+- classes: Sets the number of output classes when including the top layer and not
+    loading preloaded weights.
+7 api_usage_example: null
+8 api_shape: ''

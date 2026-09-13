@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.CSVDatasetV2
+3 api_description: Creates a dataset from one or more CSV files by parsing rows into
+  tensor columns, with options to configure record defaults, header handling, field
+  delimiters, and other CSV parsing behavior.
+4 api_signature: tf.raw_ops.CSVDatasetV2(filenames,field_delim,record_defaults,header,name)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies the CSV file paths to read from.
+- header: Indicates whether the first row of each file should be treated as a header
+    and skipped.
+- field_delim: Defines the delimiter used to separate fields in each CSV record.
+- record_defaults: Provides default values for missing fields and determines the expected
+    type of each column.
+- name: Optionally assigns a name to the operation for graph identification.
+7 api_usage_example: null
+8 api_shape: ''

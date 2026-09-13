@@ -1,0 +1,13 @@
+2 api_name: tensorflow.foldr
+3 api_description: Applies a function cumulatively from right to left over tensors
+  unpacked along the first dimension, optionally using an initializer and supporting
+  nested input/output structures.
+4 api_signature: tf.foldr(fn,elems,initializer)
+5 api_details: ''
+6 api_parameters:
+- fn: The function applied repeatedly to accumulate results across the elements.
+- elems: The tensor or nested tensor sequence to iterate over, sliced along the first
+    dimension.
+- initializer: The optional starting accumulator value used before folding begins.
+7 api_usage_example: null
+8 api_shape: ''

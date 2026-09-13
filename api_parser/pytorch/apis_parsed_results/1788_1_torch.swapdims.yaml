@@ -1,0 +1,13 @@
+2 api_name: torch.swapdims
+3 api_description: Alias for `torch.transpose()` that swaps two specified tensor dimensions.
+4 api_signature: torch.swapdims(input,dim0,dim1)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example:
+- ' x = torch.tensor([[[0,1],[2,3]],[[4,5],[6,7]]])'
+- ' x'
+- ' torch.swapdims(x, 0, 1)'
+- ' torch.swapdims(x, 0, 2)'
+8 api_shape: null

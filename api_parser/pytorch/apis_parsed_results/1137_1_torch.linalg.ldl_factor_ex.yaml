@@ -1,0 +1,18 @@
+2 api_name: torch.linalg.ldl_factor_ex
+3 api_description: Computes an LDL factorization of a symmetric/Hermitian matrix,
+  optionally checking for errors, and returns the factorization along with LAPACK
+  info codes indicating whether the decomposition succeeded or if a zero diagonal
+  element was found.
+4 api_signature: torch.linalg.ldl_factor_ex(A,*,hermitian,check_errors)
+5 api_details: ''
+6 api_parameters:
+- A: Input symmetric or Hermitian matrix (or batched matrices) to be factorized.
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' A = A @ A.mT # make symmetric'
+- ' A'
+- ' LD, pivots, info = torch.linalg.ldl_factor_ex(A)'
+- ' LD'
+- ' pivots'
+- ' info'
+8 api_shape: null

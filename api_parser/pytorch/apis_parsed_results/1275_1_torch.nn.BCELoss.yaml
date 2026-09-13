@@ -1,0 +1,22 @@
+2 api_name: torch.nn.BCELoss
+3 api_description: BCELoss computes the Binary Cross Entropy loss between predicted
+  probabilities and target labels, measuring the performance of a binary classification
+  model.
+4 api_signature: torch.nn.BCELoss(weight,reduction)
+5 api_details: ''
+6 api_parameters:
+- weight: A Tensor that assigns a manual rescaling weight to the loss of each batch
+    element.
+- reduction: 'Specifies how to reduce the output loss: ''none'' for no reduction,
+    ''mean'' for average loss, and ''sum'' for total loss.'
+7 api_usage_example:
+- ' m = nn.Sigmoid()'
+- ' loss = nn.BCELoss()'
+- ' input = torch.randn(3, 2, requires_grad=True)'
+- ' target = torch.rand(3, 2, requires_grad=False)'
+- ' output = loss(m(input), target)'
+- ' output.backward()'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: scalar. If reduction is 'none', then (*), same shape as input.
+  tensor shape transform formulas: {}

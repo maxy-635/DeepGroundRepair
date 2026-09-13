@@ -1,0 +1,8 @@
+2 api_name: paddle.bitwise_not_
+3 api_description: In-place bitwise NOT that writes the result back into the input
+  tensor.
+4 api_signature: paddle.bitwise_not_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingADAMParameters
+3 api_description: Retrieves ADAM embedding optimization parameters from TPU embedding
+  to host memory, typically for checkpoint saving after embedding host configuration.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingADAMParameters(table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- table_id: Identifies the embedding table to retrieve ADAM optimizer parameters for
+    by numeric ID.
+- table_name: Identifies the embedding table to retrieve ADAM optimizer parameters
+    for by name.
+- config: Provides the serialized configuration needed to locate and interpret the
+    requested embedding table parameters.
+- name: Assigns an optional name to the operation for graph construction and debugging.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.random.stateless_gamma
+3 api_description: Generates deterministic stateless pseudorandom samples from a gamma
+  distribution using concentration (alpha) and inverse scale (beta), with the output
+  shape including the broadcasted parameter shapes.
+4 api_signature: tf.random.stateless_gamma(shape,seed,alpha,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the dimensions of the output tensor.
+- seed: Provides a fixed random seed to make the gamma samples stateless and reproducible.
+- alpha: Sets the gamma distribution’s concentration parameter for the samples.
+- dtype: Specifies the floating-point data type of the input parameters and output
+    samples.
+7 api_usage_example: null
+8 api_shape: ''

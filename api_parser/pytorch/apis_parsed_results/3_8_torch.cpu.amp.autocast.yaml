@@ -1,0 +1,12 @@
+2 api_name: torch.cpu.amp.autocast
+3 api_description: Context manager for automatic mixed-precision on CPU, enabling
+  selected operations to run in lower precision for better performance and reduced
+  memory use; torch.cpu.amp.autocast is deprecated in favor of torch.amp.autocast('cpu',
+  ...).
+4 api_signature: torch.cpu.amp.autocast(enabled,dtype)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

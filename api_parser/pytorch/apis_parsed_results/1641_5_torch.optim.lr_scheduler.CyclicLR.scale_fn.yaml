@@ -1,0 +1,12 @@
+2 api_name: torch.optim.lr_scheduler.CyclicLR.scale_fn
+3 api_description: Returns the scaling function used by CyclicLR to adjust the learning-rate
+  cycle amplitude over time.
+4 api_signature: scale_fn(x)
+5 api_details: ''
+6 api_parameters:
+- scale_fn: A user-defined function that maps the scheduler’s current position or
+    cycle state to a scaling factor for the learning rate.
+- scale_mode: Specifies whether `scale_fn` is applied per cycle or per iteration when
+    computing the learning-rate scale.
+7 api_usage_example: null
+8 api_shape: null

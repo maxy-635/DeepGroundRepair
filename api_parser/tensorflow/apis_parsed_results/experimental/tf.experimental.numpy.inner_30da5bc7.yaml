@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.inner
+3 api_description: Computes the inner product of two arrays along the last axis of
+  the first and the second-to-last axis of the second, following NumPy's `inner` behavior.
+4 api_signature: tf.experimental.numpy.inner(a,b)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

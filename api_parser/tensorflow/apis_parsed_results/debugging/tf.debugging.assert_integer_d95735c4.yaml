@@ -1,0 +1,9 @@
+2 api_name: tensorflow.debugging.assert_integer
+3 api_description: Asserts that x has an integer dtype, raising InvalidArgumentError
+  with x's dtype and an optional message if it does not.
+4 api_signature: tf.debugging.assert_integer(x)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to check for an integer data type.
+7 api_usage_example: null
+8 api_shape: ''

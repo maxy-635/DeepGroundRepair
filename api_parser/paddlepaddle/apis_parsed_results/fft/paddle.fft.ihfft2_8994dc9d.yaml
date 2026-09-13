@@ -1,0 +1,32 @@
+2 api_name: paddle.fft.ihfft2
+3 api_description: Computes the 2D inverse FFT of a real-valued frequency spectrum,
+  returning the corresponding spatial-domain signal.
+4 api_signature: paddle.fft.ihfft2(x,s,axes,norm,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to transform.
+- s: The output shape along the two transformed axes, with cropping or zero-padding
+    applied as needed.
+- axes: The two axes over which to compute the inverse FFT, defaulting to the last
+    two axes.
+- norm: The normalization mode to use for the inverse FFT.
+- out: An optional tensor to store the output result.
+7 api_usage_example:
+- import paddle
+- arr = paddle.arange(5, dtype="float64")
+- x = paddle.meshgrid(arr, arr)[0]
+- print(x)
+- Tensor(shape=[5, 5], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[0., 0., 0., 0., 0.],'
+- '[1., 1., 1., 1., 1.],'
+- '[2., 2., 2., 2., 2.],'
+- '[3., 3., 3., 3., 3.],'
+- '[4., 4., 4., 4., 4.]])'
+- ihfft2_xp = paddle.fft.ihfft2(x)
+- print(ihfft2_xp.numpy())
+- '[[2. +0.j 0. -0.j 0. -0.j]'
+- '[-0.5-0.68819096j 0. +0.j 0. +0.j]'
+- '[-0.5-0.16245985j 0. +0.j 0. +0.j]'
+- '[-0.5+0.16245985j 0. +0.j 0. +0.j]'
+- '[-0.5+0.68819096j 0. +0.j 0. +0.j]]'
+8 api_shape: {}

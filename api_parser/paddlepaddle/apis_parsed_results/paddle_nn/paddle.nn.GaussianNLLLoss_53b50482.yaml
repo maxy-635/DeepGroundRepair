@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.GaussianNLLLoss
+3 api_description: The paddle.nn.GaussianNLLLoss computes the Gaussian negative log
+  likelihood loss between predicted mean and target values, considering a given variance,
+  useful for regression tasks with Gaussian noise.
+4 api_signature: paddle.nn.GaussianNLLLoss(epsilon,reduction)
+5 api_details: ''
+6 api_parameters:
+- epsilon: A value used to clamp variance for numerical stability.
+- reduction: 'Specifies how to reduce the output loss: ''none'' for no reduction,
+    ''mean'' for average loss, and ''sum'' for total loss.'
+7 api_usage_example: []
+8 api_shape: null

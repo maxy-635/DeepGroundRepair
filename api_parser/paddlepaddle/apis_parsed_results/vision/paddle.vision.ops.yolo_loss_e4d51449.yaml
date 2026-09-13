@@ -1,0 +1,34 @@
+2 api_name: paddle.vision.ops.yolo_loss
+3 api_description: Computes YOLOv3 training loss from model predictions and ground-truth
+  boxes.
+4 api_signature: paddle.vision.ops.yolo_loss(x,gt_box,gt_label,anchors,anchor_mask,class
+  _num,ignore_thresh,downsample_ratio)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the YOLOv3 prediction tensor containing box coordinates, confidence
+    scores, and class logits for each anchor.
+- gt_box: Supplies the ground-truth bounding boxes for each image in the batch, normalized
+    to the input image size.
+- gt_label: Supplies the class ID for each ground-truth box.
+- anchors: Defines the anchor box widths and heights used by the loss, interpreted
+    as width-height pairs.
+- anchor_mask: Selects which anchors are used for the current YOLOv3 loss computation.
+- ignore_thresh: Sets the confidence-loss threshold below which predictions are ignored.
+- downsample_ratio: Specifies the network downsampling factor corresponding to this
+    YOLOv3 loss layer.
+7 api_usage_example:
+- import paddle
+- x = paddle.rand([2, 14, 8, 8]).astype('float32')
+- gt_box = paddle.rand([2, 10, 4]).astype('float32')
+- gt_label = paddle.rand([2, 10]).astype('int32')
+- loss = paddle.vision.ops.yolo_loss(x,
+- '                                   gt_box=gt_box,'
+- '                                   gt_label=gt_label,'
+- '                                   anchors=[10, 13, 16, 30],'
+- '                                   anchor_mask=[0, 1],'
+- '                                   class_num=2,'
+- '                                   ignore_thresh=0.7,'
+- '                                   downsample_ratio=8,'
+- '                                   use_label_smooth=True,'
+- '                                   scale_x_y=1.)'
+8 api_shape: {}

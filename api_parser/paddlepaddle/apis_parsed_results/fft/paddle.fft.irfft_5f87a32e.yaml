@@ -1,0 +1,19 @@
+2 api_name: paddle.fft.irfft
+3 api_description: Computes the inverse real FFT, reconstructing a real-valued signal
+  from its half-spectrum frequency representation.
+4 api_signature: paddle.fft.irfft(x,n,axis,norm)
+5 api_details: ''
+6 api_parameters:
+- x: The complex-valued input tensor to be transformed.
+- n: Sets the output length along the transform axis, cropping or zero-padding the
+    input as needed.
+- axis: Specifies which axis to use for the inverse FFT, defaulting to the last axis.
+- norm: Controls the normalization mode applied to the inverse FFT result.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, -1j, -1])
+- irfft_x = paddle.fft.irfft(x)
+- print(irfft_x)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0., 1., 0., 0.])'
+8 api_shape: {}

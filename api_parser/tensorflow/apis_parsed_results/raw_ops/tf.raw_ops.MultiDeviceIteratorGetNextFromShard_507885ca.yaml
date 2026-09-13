@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.MultiDeviceIteratorGetNextFromShard
+3 api_description: Returns the next element from a specified shard of a multi-device
+  iterator.
+4 api_signature: tf.raw_ops.MultiDeviceIteratorGetNextFromShard(multi_device_iterator,shard_num,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- multi_device_iterator: Identifies the MultiDeviceIterator resource to read from.
+- shard_num: Specifies which shard index to fetch data for.
+- output_types: Defines the data types of the values returned by the iterator.
+- output_shapes: Defines the expected shapes of the returned values.
+7 api_usage_example: null
+8 api_shape: ''

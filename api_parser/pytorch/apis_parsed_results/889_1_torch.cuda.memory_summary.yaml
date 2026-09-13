@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.memory_summary
+3 api_description: Returns a human-readable summary of the current CUDA memory allocator
+  statistics for a specified device.
+4 api_signature: torch.cuda.memory_summary(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which CUDA device’s memory summary to return; defaults to the current
+    device.
+7 api_usage_example: null
+8 api_shape: null

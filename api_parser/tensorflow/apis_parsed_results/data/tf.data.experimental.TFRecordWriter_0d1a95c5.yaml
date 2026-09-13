@@ -1,0 +1,9 @@
+2 api_name: tensorflow.data.experimental.TFRecordWriter
+3 api_description: Writes a dataset of scalar string elements to a TFRecord file;
+  for other tensor types, serialize elements to strings first. Deprecated.
+4 api_signature: tf.data.experimental.TFRecordWriter(filename)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the output file path where TFRecord data will be written.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: torch.nn.MultiLabelSoftMarginLoss
+3 api_description: Computes the multi-label soft margin loss, treating each class
+  independently, suitable for multi-label classification tasks.
+4 api_signature: torch.nn.MultiLabelSoftMarginLoss(weight,reduction)
+5 api_details: ''
+6 api_parameters:
+- weight: A tensor that applies a manual rescaling weight to each class for loss calculation.
+- reduction: 'Specifies how to reduce the output loss: ''none'' for no reduction,
+    ''mean'' for average, and ''sum'' for total.'
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in) where N is the batch size and Channel_in is
+    the number of classes.
+  output tensor shape: scalar. If reduction is 'none', then (N).
+  tensor shape transform formulas: {}

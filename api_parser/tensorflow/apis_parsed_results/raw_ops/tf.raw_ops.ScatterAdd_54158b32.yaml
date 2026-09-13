@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ScatterAdd
+3 api_description: Adds sparse update values into a variable at specified indices
+  by adding each update to the existing element.
+4 api_signature: tf.raw_ops.ScatterAdd(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place.
+- indices: The indices selecting which slices of the first dimension of `ref` to add
+    to.
+- updates: The values to add into `ref` at the specified indices.
+7 api_usage_example: null
+8 api_shape: ''

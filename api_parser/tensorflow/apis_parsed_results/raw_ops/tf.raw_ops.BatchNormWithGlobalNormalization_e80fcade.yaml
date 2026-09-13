@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.BatchNormWithGlobalNormalization
+3 api_description: Applies batch normalization using global statistics to scale, shift,
+  and normalize an input tensor.
+4 api_signature: tf.raw_ops.BatchNormWithGlobalNormalization(t,m,v,beta,gamma,variance_epsilon)
+5 api_details: ''
+6 api_parameters:
+- t: The 4D input tensor to be batch-normalized.
+- m: The per-channel mean used to normalize `t`.
+- v: The per-channel variance used to normalize `t`.
+- beta: The per-channel offset added after normalization.
+- gamma: The per-channel scale applied after normalization when enabled.
+- variance_epsilon: A small constant added to the variance to prevent division by
+    zero.
+7 api_usage_example: null
+8 api_shape: ''

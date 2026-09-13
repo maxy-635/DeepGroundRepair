@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ScatterSub
+3 api_description: Subtracts sparse update values from a tensor or variable at the
+  given indices, accumulates duplicate index updates correctly, and returns the updated
+  reference for chaining.
+4 api_signature: tf.raw_ops.ScatterSub(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place by subtracting values at the specified
+    indices.
+- indices: The integer tensor of first-dimension positions in `ref` where updates
+    should be applied.
+- updates: The tensor of values, matching `ref`'s type, to subtract from the corresponding
+    locations in `ref`.
+7 api_usage_example: null
+8 api_shape: ''

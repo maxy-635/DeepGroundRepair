@@ -1,0 +1,14 @@
+2 api_name: paddle.device.cuda.current_stream
+3 api_description: Returns the current CUDA stream for the active device, allowing
+  CUDA operations to be enqueued on the same execution stream.
+4 api_signature: paddle.device.cuda.current_stream(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- s1 = paddle.device.cuda.current_stream()
+- s2 = paddle.device.cuda.current_stream(0)
+- s3 = paddle.device.cuda.current_stream(paddle.CUDAPlace(0))
+8 api_shape: {}

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.pool2d
+3 api_description: Applies 2D pooling to a 4D tensor, using max or average pooling
+  over spatial dimensions with configurable pool size, strides, padding, and data
+  format.
+4 api_signature: tf.keras.backend.pool2d(x,pool_size,strides,padding,pool_mode)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

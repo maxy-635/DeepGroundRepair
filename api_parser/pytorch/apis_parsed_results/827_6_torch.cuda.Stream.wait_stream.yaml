@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.Stream.wait_stream
+3 api_description: Blocks the current CUDA stream until the specified stream has completed
+  its queued work.
+4 api_signature: wait_stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: The stream whose work must be synchronized with the current stream.
+7 api_usage_example: null
+8 api_shape: null

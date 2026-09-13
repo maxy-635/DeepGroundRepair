@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.functional.softsign
+3 api_description: The softsign activation function scales input data to a range between
+  -1 and 1 by dividing each element by the sum of its absolute value and 1.
+4 api_signature: paddle.nn.functional.softsign(x)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input tensor for which the softsign activation function will be
+    applied, and it must be of type float32, float64, complex64, or complex128.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = F.softsign(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.28571430, -0.16666666,  0.09090909,  0.23076925])'
+8 api_shape: null

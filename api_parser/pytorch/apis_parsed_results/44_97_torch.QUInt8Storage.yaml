@@ -1,0 +1,8 @@
+2 api_name: torch.QUInt8Storage
+3 api_description: An unsigned 8-bit storage type for holding raw byte values in a
+  compact tensor-backed storage.
+4 api_signature: '"class torch.QUInt8Storage(dtype,device)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

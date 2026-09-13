@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.geometric.Geometric.expand
+3 api_description: Returns a new Geometric distribution instance expanded to the given
+  batch shape, reusing the existing parameters and broadcasting them as needed.
+4 api_signature: expand(batch_shape)
+5 api_details: ''
+6 api_parameters:
+- batch_shape: The new batch shape to expand the distribution to.
+7 api_usage_example: null
+8 api_shape: null

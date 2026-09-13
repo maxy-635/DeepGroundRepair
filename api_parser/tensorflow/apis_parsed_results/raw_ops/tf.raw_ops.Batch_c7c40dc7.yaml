@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.Batch
+3 api_description: Combines multiple input tensors into nondeterministic batches on
+  the same device, padding or timing out as needed, and emits batch metadata (`id`
+  and `batch_index`) to support unbatching and gradients.
+4 api_signature: tf.raw_ops.Batch(in_tensors,max_batch_size,batch_timeout_micros,allowed_batch_sizes,name)
+5 api_details: ''
+6 api_parameters:
+- in_tensors: The input tensors to be grouped into a batch.
+- max_batch_size: The maximum number of tensors allowed in a single batch.
+- batch_timeout_micros: The maximum time, in microseconds, to wait before forming
+    a batch.
+- allowed_batch_sizes: The batch sizes that are permitted, if restricting batching
+    to specific sizes.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

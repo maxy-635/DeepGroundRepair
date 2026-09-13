@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.TensorArrayGradWithShape
+3 api_description: Creates a TensorArray gradient accumulator with an expanded shape
+  so multiple gradients for the same TensorArray can be stored and computed from the
+  same handle.
+4 api_signature: tf.raw_ops.TensorArrayGradWithShape(handle,flow_in,shape_to_prepend)
+5 api_details: ''
+6 api_parameters:
+- handle: The resource handle for the forward TensorArray whose gradients are being
+    created.
+- flow_in: A float scalar used to preserve correct control-flow ordering between TensorArray
+    operations.
+- shape_to_prepend: An int32 shape vector that is prepended to each TensorArray element’s
+    shape in the gradient accumulator.
+7 api_usage_example: null
+8 api_shape: ''

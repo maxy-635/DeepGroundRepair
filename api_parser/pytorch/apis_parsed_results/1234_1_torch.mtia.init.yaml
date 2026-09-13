@@ -1,0 +1,8 @@
+2 api_name: torch.mtia.init
+3 api_description: Initializes PyTorch MTIA support, preparing the runtime/device
+  backend for MTIA-based execution.
+4 api_signature: torch.mtia.init()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

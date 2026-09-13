@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.LatencyStatsDataset
+3 api_description: Records the time taken to produce elements from an input dataset
+  into a StatsAggregator for latency tracking.
+4 api_signature: tf.raw_ops.LatencyStatsDataset(input_dataset,tag)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset variant to measure latency statistics for.
+- tag: A string label used to identify the latency statistics output.
+7 api_usage_example: null
+8 api_shape: ''

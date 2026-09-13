@@ -1,0 +1,9 @@
+2 api_name: tensorflow.types.experimental.TraceType
+3 api_description: Describes the trace-time type of values for tf.function, allowing
+  TensorFlow to compare, cast, and reuse traces based on structural compatibility.
+4 api_signature: cast(value)
+5 api_details: ''
+6 api_parameters:
+- value: Represents the input value used to construct or compare this TraceType.
+7 api_usage_example: null
+8 api_shape: ''

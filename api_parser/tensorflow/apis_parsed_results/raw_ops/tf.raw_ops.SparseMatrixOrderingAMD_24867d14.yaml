@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixOrderingAMD
+3 api_description: Computes an approximate minimum degree permutation for each sparse
+  square symmetric matrix to reduce fill-in in later decompositions, using only the
+  sparsity pattern and returning a valid row/column reordering.
+4 api_signature: tf.raw_ops.SparseMatrixOrderingAMD(input)
+5 api_details: ''
+6 api_parameters:
+- input: A CSRSparseMatrix stored as a variant tensor that provides the sparse matrix
+    to be reordered.
+7 api_usage_example: null
+8 api_shape: ''

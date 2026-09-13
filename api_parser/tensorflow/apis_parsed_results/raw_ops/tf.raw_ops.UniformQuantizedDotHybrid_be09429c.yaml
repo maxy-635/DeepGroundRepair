@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.UniformQuantizedDotHybrid
+3 api_description: Computes a hybrid quantized matrix dot product by dynamically quantizing
+  the float lhs to per-batch qint8 and then performing a quantized dot with the quantized
+  rhs.
+4 api_signature: tf.raw_ops.UniformQuantizedDotHybrid(lhs,rhs,rhs_scales,rhs_zero_points,Tout)
+5 api_details: ''
+6 api_parameters:
+- lhs: The left-hand input matrix in float32, provided as a 2D tensor.
+- rhs: The right-hand input matrix in int8 quantized form, provided as a 2D tensor.
+- rhs_scales: The scale factor(s) used to interpret the quantized `rhs` values, either
+    one scalar for the whole tensor or one value per output channel.
+- rhs_zero_points: The zero-point offset(s) used to interpret the quantized `rhs`
+    values, matching the shape rules of `rhs_scales`.
+- Tout: The output data type, which is float32.
+7 api_usage_example: null
+8 api_shape: ''

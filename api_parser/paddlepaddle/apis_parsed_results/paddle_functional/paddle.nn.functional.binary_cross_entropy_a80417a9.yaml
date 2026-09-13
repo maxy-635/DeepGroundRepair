@@ -1,0 +1,24 @@
+2 api_name: paddle.nn.functional.binary_cross_entropy
+3 api_description: The paddle.nn.functional.binary_cross_entropy API computes the
+  binary cross-entropy loss between predicted inputs and target labels, quantifying
+  the difference between predicted probabilities and actual binary outcomes.
+4 api_signature: paddle.nn.functional.binary_cross_entropy(input,label,weight,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: The input predictions tensor, which should be the output of a sigmoid function,
+    with shape [N, *] and dtype float16, float32, or float64.
+- label: The target labels tensor with the same shape as input, containing values
+    between 0 and 1, and dtype float16, float32, or float64.
+- weight: An optional tensor for rescaling the loss of each batch element, with size
+    equal to the batch size and dtype float32 or float64.
+- reduction: Specifies the method to average the loss across the batch, with options
+    'none', 'mean', or 'sum', defaulting to 'mean'.
+7 api_usage_example:
+- import paddle
+- input = paddle.to_tensor([0.5, 0.6, 0.7], 'float32')
+- label = paddle.to_tensor([1.0, 0.0, 1.0], 'float32')
+- output = paddle.nn.functional.binary_cross_entropy(input, label)
+- print(output)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.65537095)
+8 api_shape: null

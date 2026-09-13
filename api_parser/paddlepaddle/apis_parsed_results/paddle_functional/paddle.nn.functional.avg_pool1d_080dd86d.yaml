@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.functional.avg_pool1d
+3 api_description: The paddle.nn.functional.avg_pool1d API performs a 1D average pooling
+  operation on input data, reducing its dimensionality by computing the average of
+  elements in specified regions.
+4 api_signature: paddle.nn.functional.avg_pool1d(x,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor for the pooling operation, a 3-D tensor with shape [N, C, L].
+- kernel_size: The size of the pooling window, specified as an integer or a tuple/list
+    containing an integer.
+- stride: The stride size for the pooling operation, specified as an integer or a
+    tuple/list containing an integer.
+- padding: The amount of padding applied to the input, specified as a string, integer,
+    or tuple/list of integers.
+7 api_usage_example: []
+8 api_shape:
+  input tensor shape: (N, Channel_in, Length_in)
+  output tensor shape: (N, Channel_out, Length_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor length: Length_out = floor((Length_in + 2 * padding - kernel_size) / stride
+      + 1)

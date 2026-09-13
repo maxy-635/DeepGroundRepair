@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TopKV2
+3 api_description: Returns the top `k` largest values and their indices along the
+  last dimension of the input tensor.
+4 api_signature: tf.raw_ops.TopKV2(input,k)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose top values are selected along the last dimension.
+- k: A scalar tensor specifying how many of the largest elements to return from each
+    last-dimension slice.
+7 api_usage_example: null
+8 api_shape: ''

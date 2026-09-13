@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.create_symbolic_sizes_strides_storage_offset
+3 api_description: Creates symbolic size, stride, and storage-offset values for a
+  tensor, expressing strides in terms of sizes whenever possible to avoid introducing
+  extra symbolic variables.
+4 api_signature: create_symbolic_sizes_strides_storage_offset(source,symbolic_context)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.preprocessing.text.Tokenizer
+3 api_description: Tokenizes text into word or character indices, builds a vocabulary
+  from texts, and converts texts to sequences or matrices for Keras preprocessing.
+4 api_signature: tf.keras.preprocessing.text.Tokenizer(num_words,oov_token,lower,char_level)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

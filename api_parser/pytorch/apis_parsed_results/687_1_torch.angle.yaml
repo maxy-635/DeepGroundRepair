@@ -1,0 +1,9 @@
+2 api_name: torch.angle
+3 api_description: Returns the element-wise angle of each tensor value in radians.
+4 api_signature: torch.angle(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose element-wise phase angles are computed.
+7 api_usage_example:
+- ' torch.angle(torch.tensor([-1 + 1j, -2 + 2j, 3 - 3j]))*180/3.14159'
+8 api_shape: null

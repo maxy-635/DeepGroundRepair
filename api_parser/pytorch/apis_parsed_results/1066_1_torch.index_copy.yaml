@@ -1,0 +1,8 @@
+2 api_name: torch.index_copy
+3 api_description: Copies values from the source tensor into the destination tensor
+  at the positions specified by the index tensor along the given dimension.
+4 api_signature: torch.index_copy(input:Tensor,dim:int,index:Tensor,source:Tensor)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

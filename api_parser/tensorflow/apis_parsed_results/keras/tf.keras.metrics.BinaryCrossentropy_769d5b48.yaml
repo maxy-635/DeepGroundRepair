@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.metrics.BinaryCrossentropy
+3 api_description: Computes the average binary crossentropy between true labels and
+  predicted probabilities for two-class classification.
+4 api_signature: tf.keras.metrics.BinaryCrossentropy(from_logits,label_smoothing)
+5 api_details: ''
+6 api_parameters:
+- from_logits: Specifies whether the metric input is raw logits instead of probabilities.
+- label_smoothing: Reduces label certainty by smoothing binary targets toward 0.5
+    before computing the loss.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([[0, 1], [0, 0]], [[0.6, 0.4], [0.4, 0.6]],
+- '               sample_weight=[1, 0])'
+- m.result()
+8 api_shape: ''

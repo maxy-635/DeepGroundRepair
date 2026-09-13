@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.MatrixDiagPartV3
+3 api_description: Extracts one or more diagonals from each matrix in a batched tensor
+  and returns them as a lower-rank tensor, with diagonal lengths determined by the
+  specified k range.
+4 api_signature: tf.raw_ops.MatrixDiagPartV3(input,k)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the matrices from which diagonal elements or bands
+    are extracted.
+- k: The diagonal offset or offset range that selects which diagonal, superdiagonal,
+    or subdiagonal band to return.
+7 api_usage_example: null
+8 api_shape: ''

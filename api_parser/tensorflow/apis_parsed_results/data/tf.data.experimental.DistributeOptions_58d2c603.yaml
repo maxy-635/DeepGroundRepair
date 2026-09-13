@@ -1,0 +1,8 @@
+2 api_name: tensorflow.data.experimental.DistributeOptions
+3 api_description: Configures how a tf.data dataset is distributed across workers
+  for parallel data processing.
+4 api_signature: tf.data.experimental.DistributeOptions()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: torch.narrow
+3 api_description: Returns a view of the input tensor narrowed along a given dimension
+  to a specified start and length, sharing the same underlying storage.
+4 api_signature: torch.narrow(input,dim,start,length)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to slice down to a smaller range.
+- dim: The dimension along which the slice is taken.
+- start: The starting index of the narrowed range, allowing negative indexing from
+    the end.
+- length: The size of the narrowed range to return.
+7 api_usage_example:
+- ' x = torch.tensor([[1, 2, 3], [4, 5, 6], [7, 8, 9]])'
+- ' torch.narrow(x, 0, 0, 2)'
+- ' torch.narrow(x, 1, 1, 2)'
+- ' torch.narrow(x, -1, torch.tensor(-1), 1)'
+8 api_shape: null

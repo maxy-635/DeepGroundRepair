@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.metrics.FalsePositives
+3 api_description: Counts false positive predictions, or sums their sample weights
+  when provided, using 1 as the default weight and 0 to mask values.
+4 api_signature: tf.keras.metrics.FalsePositives(thresholds)
+5 api_details: ''
+6 api_parameters:
+- thresholds: Sets one or more cutoff values used to decide whether predictions count
+    as positive, with values at or above the threshold treated as True and values
+    below treated as False.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([0, 1, 0, 0], [0, 0, 1, 1], sample_weight=[0, 0, 1, 0])
+- m.result()
+8 api_shape: ''

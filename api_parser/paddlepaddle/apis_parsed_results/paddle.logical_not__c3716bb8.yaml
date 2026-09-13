@@ -1,0 +1,8 @@
+2 api_name: paddle.logical_not_
+3 api_description: Computes the logical NOT of the input tensor in place, replacing
+  the output with `x`.
+4 api_signature: paddle.logical_not_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

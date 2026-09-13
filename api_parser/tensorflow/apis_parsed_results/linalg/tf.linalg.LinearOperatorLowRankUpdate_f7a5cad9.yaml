@@ -1,0 +1,15 @@
+2 api_name: tensorflow.linalg.LinearOperatorLowRankUpdate
+3 api_description: Represents a batched linear operator formed by adding a low-rank
+  update, A = L + U D V^H, to a base operator and provides efficient matrix operations
+  without materializing the full matrix.
+4 api_signature: tf.linalg.LinearOperatorLowRankUpdate(base_operator,u,diag_update,v)
+5 api_details: ''
+6 api_parameters:
+- base_operator: The base linear operator to which the low-rank update is added.
+- u: The left factor tensor that defines the low-rank update directions.
+- diag_update: The diagonal values of the update matrix, defaulting to the identity
+    if omitted.
+- v: The optional right factor tensor for the update, defaulting to `u` for a symmetric
+    perturbation.
+7 api_usage_example: null
+8 api_shape: ''

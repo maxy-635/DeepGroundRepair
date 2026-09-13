@@ -1,0 +1,21 @@
+2 api_name: tensorflow.nn.max_pool1d
+3 api_description: tensorflow.nn.max_pool1d performs max pooling on 1D input by reshaping
+  it and utilizing a 2D max pooling operation internally.
+4 api_signature: tf.nn.max_pool1d(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the 3-D input tensor to be pooled, formatted according to the data_format.
+- ksize: Defines the size of the pooling window for each dimension of the input tensor,
+    as an int or list of ints.
+- strides: Sets the stride of the pooling window for each dimension of the input tensor,
+    as an int or list of ints.
+- padding: Determines the padding algorithm to use, either 'SAME', 'VALID', or explicit
+    padding values for each dimension.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Length_in, Channel_in)
+  output tensor shape: (N, Length_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor length: If padding = "VALID", Length_out = floor((Length_in - ksize) / strides + 1); 
+                  If padding = "SAME", Length_out = floor((Length_in - 1) / strides + 1)

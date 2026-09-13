@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Squeeze
+3 api_description: Removes dimensions of size 1 from a tensor’s shape, optionally
+  only along specified axes.
+4 api_signature: tf.raw_ops.Squeeze(input,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to remove dimensions of size 1 from.
+- axis: Optional indices of the size-1 dimensions to squeeze; if omitted, all size-1
+    dimensions are removed.
+7 api_usage_example: null
+8 api_shape: ''

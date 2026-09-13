@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nest.assert_same_structure
+3 api_description: Checks that two nested structures have the same shape and nesting
+  pattern, without comparing the types of the leaf values.
+4 api_signature: tf.nest.assert_same_structure(nest1,nest2)
+5 api_details: ''
+6 api_parameters:
+- nest1: The first structure to compare for shape and nesting.
+- nest2: The second structure to compare against `nest1` for matching structure.
+7 api_usage_example:
+- tf.nest.assert_same_structure(
+- '      collections.namedtuple(''bar'', ''a b'')(1, 2),'
+- '      collections.namedtuple(''foo'', ''a b'')(2, 3))'
+8 api_shape: ''

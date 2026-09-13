@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.take
+3 api_description: Returns elements from an array along a given axis at the specified
+  indices, using TensorFlow’s NumPy-compatible take behavior with clip as the default
+  mode and no out argument support.
+4 api_signature: tf.experimental.numpy.take(a,indices,axis,mode)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

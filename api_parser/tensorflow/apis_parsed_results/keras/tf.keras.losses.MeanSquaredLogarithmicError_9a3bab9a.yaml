@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.losses.MeanSquaredLogarithmicError
+3 api_description: Computes the average squared difference between the logarithms
+  of true and predicted values, emphasizing relative error.
+4 api_signature: tf.keras.losses.MeanSquaredLogarithmicError(reduction,name)
+5 api_details: ''
+6 api_parameters:
+- reduction: Controls how individual loss values are aggregated into a single output
+    value.
+- name: Sets an optional name used to identify the loss instance.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.ops.psnr
+3 api_description: Computes the peak signal-to-noise ratio between two signals to
+  measure reconstruction quality, with higher values indicating closer similarity.
+4 api_signature: tf.keras.ops.psnr(x1,x2,max_val)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input signal to compare.
+- x2: The second input signal, which must match `x1` in shape.
+- max_val: The maximum possible signal value used to scale the PSNR calculation.
+7 api_usage_example:
+- x1 = keras.random.normal((2, 4, 4, 3))
+- x2 = keras.random.normal((2, 4, 4, 3))
+- max_val = 1.0
+- keras.ops.nn.psnr(x1, x2, max_val)
+8 api_shape: ''

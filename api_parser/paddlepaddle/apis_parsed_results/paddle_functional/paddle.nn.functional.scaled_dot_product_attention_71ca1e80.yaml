@@ -1,0 +1,26 @@
+2 api_name: paddle.nn.functional.scaled_dot_product_attention
+3 api_description: The paddle.nn.functional.scaled_dot_product_attention API computes
+  the attention scores by scaling the dot product of query and key tensors, applies
+  a softmax to obtain attention weights, and then uses these weights to compute a
+  weighted sum of the value tensors, facilitating efficient attention mechanisms in
+  neural networks.
+4 api_signature: paddle.nn.functional.scaled_dot_product_attention(query,key,value,attn_mask,scale)
+5 api_details: ''
+6 api_parameters:
+- query: The query tensor used in the attention mechanism, determining which elements
+    to focus on.
+- key: The key tensor used in the attention mechanism, providing context for the query.
+- value: The value tensor used in the attention mechanism, representing the information
+    to be attended to.
+- attn_mask: The attention mask tensor that specifies which positions should be included
+    in the attention computation.
+- scale: The scaling factor applied to the attention scores to maintain numerical
+    stability.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- q = paddle.rand((1, 128, 2, 16), dtype=paddle.bfloat16)
+- output = paddle.nn.functional.scaled_dot_product_attention(q, q, q, None, 0.9, False)
+- print(output)
+- '>>>'
+8 api_shape: null

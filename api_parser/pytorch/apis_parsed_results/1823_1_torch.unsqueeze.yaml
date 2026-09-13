@@ -1,0 +1,13 @@
+2 api_name: torch.unsqueeze
+3 api_description: Inserts a size-1 dimension into a tensor at the specified position
+  and returns the new tensor.
+4 api_signature: torch.unsqueeze(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be expanded with a new singleton dimension.
+- dim: The position at which to insert the new size-1 dimension.
+7 api_usage_example:
+- ' x = torch.tensor([1, 2, 3, 4])'
+- ' torch.unsqueeze(x, 0)'
+- ' torch.unsqueeze(x, 1)'
+8 api_shape: null

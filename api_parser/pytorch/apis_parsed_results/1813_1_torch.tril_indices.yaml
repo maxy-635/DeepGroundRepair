@@ -1,0 +1,17 @@
+2 api_name: torch.tril_indices
+3 api_description: Returns row and column index pairs for the lower triangular part
+  of a matrix, ordered by row then column.
+4 api_signature: torch.tril_indices(row,col,offset)
+5 api_details: ''
+6 api_parameters:
+- row: Sets the number of rows in the 2-D matrix.
+- col: Sets the number of columns in the 2-D matrix.
+- offset: Specifies which diagonal to use relative to the main diagonal.
+7 api_usage_example:
+- ' a = torch.tril_indices(3, 3)'
+- ' a'
+- ' a = torch.tril_indices(4, 3, -1)'
+- ' a'
+- ' a = torch.tril_indices(4, 3, 1)'
+- ' a'
+8 api_shape: null

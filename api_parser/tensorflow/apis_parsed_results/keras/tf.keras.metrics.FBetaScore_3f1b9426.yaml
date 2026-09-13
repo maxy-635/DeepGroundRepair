@@ -1,0 +1,24 @@
+2 api_name: tensorflow.keras.metrics.FBetaScore
+3 api_description: Computes the weighted harmonic mean of precision and recall (F-beta
+  score) for multi-class and multi-label classification, with outputs ranging from
+  0 to 1.
+4 api_signature: tf.keras.metrics.FBetaScore(average,beta,threshold)
+5 api_details: ''
+6 api_parameters:
+- average: Controls how per-class FBeta scores are aggregated in multi-class settings,
+    or leaves them separate when set to None.
+- beta: Sets how strongly recall is weighted relative to precision in the FBeta score.
+- threshold: Converts predicted probabilities to binary labels using a cutoff, or
+    uses argmax when no cutoff is provided.
+7 api_usage_example:
+- metric = keras.metrics.FBetaScore(beta=2.0, threshold=0.5)
+- y_true = np.array([[1, 1, 1],
+- '                   [1, 0, 0],'
+- '                   [1, 1, 0]], np.int32)'
+- y_pred = np.array([[0.2, 0.6, 0.7],
+- '                   [0.2, 0.6, 0.6],'
+- '                   [0.6, 0.8, 0.0]], np.float32)'
+- metric.update_state(y_true, y_pred)
+- result = metric.result()
+- result
+8 api_shape: ''

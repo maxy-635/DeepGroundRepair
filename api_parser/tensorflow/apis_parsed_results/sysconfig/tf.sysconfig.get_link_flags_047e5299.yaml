@@ -1,0 +1,8 @@
+2 api_name: tensorflow.sysconfig.get_link_flags
+3 api_description: Returns platform-specific linker flags needed to link against TensorFlow.
+4 api_signature: tf.sysconfig.get_link_flags()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- print(tf.sysconfig.get_link_flags())
+8 api_shape: ''

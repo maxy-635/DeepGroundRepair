@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.utils.Progbar
+3 api_description: Displays a progress bar to track and report the progress of iterative
+  operations.
+4 api_signature: tf.keras.utils.Progbar(target,verbose)
+5 api_details: ''
+6 api_parameters:
+- target: Sets the total number of expected steps, or `None` if the total is unknown.
+- verbose: 'Controls how much progress information is displayed: silent, verbose,
+    or semi-verbose.'
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.losses.MSE
+3 api_description: Computes the average squared difference between true labels and
+  predicted values.
+4 api_signature: tf.keras.losses.MSE(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: The true target values used as the reference for computing the mean squared
+    error.
+- y_pred: The model's predicted values compared against the true targets to compute
+    the mean squared error.
+7 api_usage_example:
+- y_true = np.random.randint(0, 2, size=(2, 3))
+- y_pred = np.random.random(size=(2, 3))
+- loss = keras.losses.mean_squared_error(y_true, y_pred)
+8 api_shape: ''

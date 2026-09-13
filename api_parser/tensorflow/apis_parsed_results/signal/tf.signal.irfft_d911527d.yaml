@@ -1,0 +1,12 @@
+2 api_name: tensorflow.signal.irfft
+3 api_description: Computes the inverse 1D real FFT of an RFFT spectrum along the
+  innermost dimension, inferring or using `fft_length` to crop or zero-pad as needed.
+4 api_signature: tf.signal.irfft(input_tensor,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The complex-valued frequency-domain tensor to be transformed back into the
+    real signal domain.
+- fft_length: A one-element int32 tensor that specifies the length of the inverse
+    FFT.
+7 api_usage_example: null
+8 api_shape: ''

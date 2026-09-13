@@ -1,0 +1,28 @@
+2 api_name: paddle.bernoulli_
+3 api_description: Fills the input tensor in place with random Bernoulli samples.
+4 api_signature: paddle.bernoulli_(x,p)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the output tensor to populate with Bernoulli-sampled random values.
+- p: Sets the success probability for the Bernoulli distribution, either as a single
+    shared float or a broadcastable tensor of per-element probabilities.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- paddle.seed(200)
+- x = paddle.randn([3, 4])
+- x.bernoulli_()
+- print(x)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 1., 0., 1.],'
+- '[1., 1., 0., 1.],'
+- '[0., 1., 0., 0.]])'
+- x = paddle.randn([3, 4])
+- p = paddle.randn([3, 1])
+- x.bernoulli_(p)
+- print(x)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 1., 1., 1.],'
+- '[0., 0., 0., 0.],'
+- '[0., 0., 0., 0.]])'
+8 api_shape: {}

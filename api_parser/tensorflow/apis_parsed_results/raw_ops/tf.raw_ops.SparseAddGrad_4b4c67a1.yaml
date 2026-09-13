@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.SparseAddGrad
+3 api_description: Computes the gradients for `SparseAdd` by splitting the upstream
+  gradient on the summed sparse tensor values into gradients for the non-empty values
+  of the two input sparse tensors `A` and `B`.
+4 api_signature: tf.raw_ops.SparseAddGrad(a_indices,b_indices,sum_indices)
+5 api_details: ''
+6 api_parameters:
+- a_indices: Holds the 2-D int64 indices of SparseTensor A, identifying each nonzero
+    element's position.
+- b_indices: Holds the 2-D int64 indices of SparseTensor B, identifying each nonzero
+    element's position.
+- sum_indices: Holds the 2-D int64 indices of the summed SparseTensor, identifying
+    each nonzero element's position.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: torch.special.erf
+3 api_description: Computes the error function elementwise for the input tensor.
+4 api_signature: torch.special.erf(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used as the input values for the error function.
+7 api_usage_example:
+- ' torch.special.erf(torch.tensor([0, -1., 10.]))'
+8 api_shape: null

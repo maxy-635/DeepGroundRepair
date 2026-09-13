@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.digitize
+3 api_description: Returns bin indices for each value in x based on the provided bin
+  boundaries.
+4 api_signature: '"tf.keras.ops.digitize(x,bins)"'
+5 api_details: ''
+6 api_parameters:
+- x: The input values to assign to bins.
+- bins: A 1D monotonically increasing array that defines the bin boundaries.
+7 api_usage_example:
+- x = np.array([0.0, 1.0, 3.0, 1.6])
+- bins = np.array([0.0, 3.0, 4.5, 7.0])
+- keras.ops.digitize(x, bins)
+8 api_shape: ''

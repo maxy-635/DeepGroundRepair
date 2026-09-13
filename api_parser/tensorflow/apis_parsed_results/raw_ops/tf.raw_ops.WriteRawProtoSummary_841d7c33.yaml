@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.WriteRawProtoSummary
+3 api_description: Writes a serialized proto summary tensor to the summary writer
+  at a given step.
+4 api_signature: tf.raw_ops.WriteRawProtoSummary(writer,step,tensor)
+5 api_details: ''
+6 api_parameters:
+- writer: The resource handle for the summary writer that receives the proto summary.
+- step: The training step number associated with the summary entry.
+- tensor: The serialized protobuf string to be written as the summary value.
+7 api_usage_example: null
+8 api_shape: ''

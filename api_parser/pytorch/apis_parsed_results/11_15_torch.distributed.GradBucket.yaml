@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.GradBucket
+3 api_description: Represents a flattened bucket of gradients for DDP communication
+  hooks, with access to the combined buffer and per-parameter tensors for layer-wise
+  processing.
+4 api_signature: class torch.distributed.GradBucket#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

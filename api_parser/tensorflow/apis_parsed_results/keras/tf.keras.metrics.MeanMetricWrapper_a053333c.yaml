@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.metrics.MeanMetricWrapper
+3 api_description: Wraps a stateless per-sample metric function and tracks its running
+  mean across all seen samples.
+4 api_signature: tf.keras.metrics.MeanMetricWrapper(fn,name,dtype)
+5 api_details: ''
+6 api_parameters:
+- fn: Specifies the metric function to compute values from `y_true` and `y_pred`.
+- name: Sets the optional name used to identify the metric instance.
+- dtype: Sets the optional data type for the metric’s output values.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: torch.fliplr
+3 api_description: Returns a new tensor with elements flipped left-to-right across
+  the last dimension.
+4 api_signature: torch.fliplr(input)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor input to flip left-to-right, and it must have at least
+    2 dimensions.
+7 api_usage_example:
+- ' x = torch.arange(4).view(2, 2)'
+- ' x'
+- ' torch.fliplr(x)'
+8 api_shape: null

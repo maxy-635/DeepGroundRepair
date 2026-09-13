@@ -1,0 +1,16 @@
+2 api_name: torch.dstack
+3 api_description: Stacks tensors depthwise along the third axis to form a single
+  tensor.
+4 api_signature: torch.dstack(tensors,*,out)
+5 api_details: ''
+6 api_parameters:
+- tensors: Sequence of tensors to stack along the third dimension after matching their
+    shapes in the first two dimensions.
+7 api_usage_example:
+- ' a = torch.tensor([1, 2, 3])'
+- ' b = torch.tensor([4, 5, 6])'
+- ' torch.dstack((a,b))'
+- ' a = torch.tensor([[1],[2],[3]])'
+- ' b = torch.tensor([[4],[5],[6]])'
+- ' torch.dstack((a,b))'
+8 api_shape: null

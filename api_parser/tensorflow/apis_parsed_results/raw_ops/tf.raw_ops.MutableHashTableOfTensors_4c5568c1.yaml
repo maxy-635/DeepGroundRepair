@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.MutableHashTableOfTensors
+3 api_description: Creates an empty mutable hash table for tensor keys and vector
+  values, with data added later via insert operations and no initialization support.
+4 api_signature: tf.raw_ops.MutableHashTableOfTensors(key_dtype,value_dtype,name)
+5 api_details: ''
+6 api_parameters:
+- key_dtype: Specifies the data type used for the table keys.
+- value_dtype: Specifies the data type used for the table values.
+- name: Sets an optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

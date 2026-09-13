@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.preprocessing.timeseries_dataset_from_array
+3 api_description: Creates a `tf.data.Dataset` of sliding time-series windows from
+  an array, with configurable sequence length, sampling rate, stride, and optional
+  targets.
+4 api_signature: tf.keras.preprocessing.timeseries_dataset_from_array(data,targets,sequence_length,batch_size)
+5 api_details: ''
+6 api_parameters:
+- data: The input time-series data array or tensor, ordered along the time axis.
+- targets: Optional target values aligned to each possible window start index.
+- sequence_length: The number of timesteps included in each output sequence.
+- batch_size: The number of sequences grouped into each batch, or None for unbatched
+    output.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.DenseToSparseSetOperation
+3 api_description: Computes a set operation on the last dimension between a dense
+  Tensor and a SparseTensor, returning the result as a SparseTensor with the same
+  outer dimensions.
+4 api_signature: tf.raw_ops.DenseToSparseSetOperation(set_operation,validate_indices,name)
+5 api_details: ''
+6 api_parameters:
+- set_operation: Specifies which set operation to perform on the sparse inputs, such
+    as union or intersection.
+- validate_indices: Controls whether the operation checks that the sparse indices
+    are sorted and valid before proceeding.
+- name: Assigns an optional name to the operation for graph construction and debugging.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,21 @@
+2 api_name: paddle.sparse.transpose
+3 api_description: Reorders a sparse tensor’s dimensions without changing its underlying
+  data, supporting SparseCooTensor and SparseCsrTensor inputs.
+4 api_signature: paddle.sparse.transpose(x,perm)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse tensor to transpose.
+- perm: The permutation order used to rearrange the tensor dimensions.
+7 api_usage_example:
+- '>>>'
+- '>>>'
+- import paddle
+- dense_x = paddle.to_tensor([[-2., 0.], [1., 2.]])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.transpose(sparse_x, [1, 0])
+- out
+- Tensor(shape=[2, 2], dtype=paddle.float32, place=Place(gpu:0), stop_gradient=True,
+- indices=[[0, 0]],
+- values=[[-2.,  0.],
+- '[ 1.,  2.]])'
+8 api_shape: {}

@@ -1,0 +1,15 @@
+2 api_name: paddle.incubate.nn.FusedTransformerEncoderLayer
+3 api_description: A fused Transformer encoder layer that applies self-attention and
+  a feedforward network with configurable pre/post processing, including layer normalization,
+  dropout, and residual connections.
+4 api_signature: paddle.incubate.nn.FusedTransformerEncoderLayer(d_model,nhead,dim_feedforward,dropout_rate,activation)
+5 api_details: ''
+6 api_parameters:
+- d_model: Sets the input and output feature dimension of the encoder layer.
+- nhead: Specifies how many attention heads are used in multi-head attention.
+- dim_feedforward: Defines the size of the hidden layer in the feedforward network.
+- dropout_rate: Controls the dropout probability applied around the attention and
+    feedforward sublayers.
+- activation: Chooses the activation function used in the feedforward network.
+7 api_usage_example: []
+8 api_shape: {}

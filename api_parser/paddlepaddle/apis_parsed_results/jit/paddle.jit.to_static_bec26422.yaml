@@ -1,0 +1,33 @@
+2 api_name: paddle.jit.to_static
+3 api_description: Converts dynamic Paddle functions into static graph functions while
+  preserving dynamic Tensor outputs for use in training, inference, and other dynamic
+  operations.
+4 api_signature: paddle.jit.to_static(function,input_spec,build_strategy,backend)
+5 api_details: ''
+6 api_parameters:
+- function: The dynamic-graph function to convert into a static-graph program, or
+    the decorated function if used as a decorator.
+- input_spec: The list or tuple of `InputSpec` objects that define each input tensor’s
+    shape, dtype, and optional name.
+- build_strategy: The compilation options used for the converted program, such as
+    graph fusion and memory optimization.
+- backend: The compilation backend to use, such as `CINN`, to accelerate training
+    and inference.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- from paddle.jit import to_static
+- '@to_static'
+- 'def func(x):'
+- '    if paddle.mean(x) < 0:'
+- '        x_v = x - 1'
+- '    else:'
+- '        x_v = x + 1'
+- '    return x_v'
+- '...'
+- x = paddle.ones([1, 2], dtype='float32')
+- x_v = func(x)
+- print(x_v)
+- Tensor(shape=[1, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[2., 2.]])'
+8 api_shape: {}

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.data.experimental.service.DispatchServer
+3 api_description: Runs an in-process tf.data service dispatcher that coordinates
+  WorkerServers and serves as the central registration point for workers in a tf.data
+  service cluster.
+4 api_signature: tf.data.experimental.service.DispatchServer(config)
+5 api_details: ''
+6 api_parameters:
+- config: Optional dispatcher configuration that controls the DispatchServer’s behavior;
+    defaults are used when omitted.
+7 api_usage_example:
+- dispatcher = tf.data.experimental.service.DispatchServer(start=False)
+- dispatcher.start()
+8 api_shape: ''

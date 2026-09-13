@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ExperimentalMatchingFilesDataset
+3 api_description: Creates a dataset of filenames matching one or more glob patterns,
+  letting input pipelines iterate over matching files.
+4 api_signature: tf.raw_ops.ExperimentalMatchingFilesDataset(patterns)
+5 api_details: ''
+6 api_parameters:
+- patterns: A string tensor containing file path patterns used to match files for
+    the dataset.
+7 api_usage_example: null
+8 api_shape: ''

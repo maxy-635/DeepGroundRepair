@@ -1,0 +1,25 @@
+2 api_name: paddle.incubate.nn.functional.fused_layer_norm
+3 api_description: Applies a fused LayerNorm kernel, optionally combining bias and
+  a scaled residual add into the normalization for better efficiency.
+4 api_signature: paddle.incubate.nn.functional.fused_layer_norm(x,norm_weight,norm_bias,epsilon,begin_norm_axis,bias,residual)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor to be normalized.
+- norm_weight: Learnable scale factor applied after normalization.
+- norm_bias: Learnable shift factor applied after normalization.
+- epsilon: Small constant added for numerical stability to avoid division by zero.
+- begin_norm_axis: Axis from which normalization starts; dimensions before it are
+    left unchanged.
+- bias: Bias tensor from a previous layer to fuse into the computation.
+- residual: Residual tensor to add and fuse into the computation.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- paddle_x = paddle.cast(paddle.randn(shape=[32, 256]), dtype=paddle.float16)
+- paddle_weight = paddle.cast(paddle.randn(shape=[256]), dtype=paddle.float32)
+- paddle_bias = paddle.cast(paddle.randn(shape=[256]), dtype=paddle.float32)
+- epsilon = 1e-6
+- paddle_layernorm = paddle.incubate.nn.functional.fused_layer_norm(paddle_x, paddle_weight,
+  paddle_bias, epsilon, 1)
+8 api_shape: {}

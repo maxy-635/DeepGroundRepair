@@ -1,0 +1,16 @@
+2 api_name: torch.nn.utils.prune.custom_from_mask
+3 api_description: Applies a precomputed mask to the specified parameter in a module,
+  pruning the corresponding tensor.
+4 api_signature: torch.nn.utils.prune.custom_from_mask(module,name,mask)
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the parameter tensor to be pruned.
+- name: The name of the parameter in the module that pruning will target.
+- mask: A binary mask that specifies which parameter values are kept or pruned.
+7 api_usage_example:
+- ' from torch.nn.utils import prune'
+- ' m = prune.custom_from_mask('
+- '...     nn.Linear(5, 3), name="bias", mask=torch.tensor([0, 1, 0])'
+- '... )'
+- ' print(m.bias_mask)'
+8 api_shape: null

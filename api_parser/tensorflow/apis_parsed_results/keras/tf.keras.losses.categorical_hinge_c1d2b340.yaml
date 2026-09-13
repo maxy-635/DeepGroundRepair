@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.losses.categorical_hinge
+3 api_description: Computes the categorical hinge loss by comparing the score of the
+  true class against the highest score among the other classes.
+4 api_signature: '"tf.keras.losses.categorical_hinge(y_true,y_pred)"'
+5 api_details: ''
+6 api_parameters:
+- y_true: Provides the true target labels used to compute the hinge loss, typically
+    as one-hot or {-1, +1} encoded values.
+- y_pred: Provides the model’s predicted scores or values that are compared against
+    the true labels to calculate the loss.
+7 api_usage_example:
+- y_true = np.random.randint(0, 3, size=(2,))
+- y_true = np.eye(np.max(y_true) + 1)[y_true]
+- y_pred = np.random.random(size=(2, 3))
+- loss = keras.losses.categorical_hinge(y_true, y_pred)
+8 api_shape: ''

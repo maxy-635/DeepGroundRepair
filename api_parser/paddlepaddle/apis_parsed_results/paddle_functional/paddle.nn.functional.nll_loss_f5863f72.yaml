@@ -1,0 +1,29 @@
+2 api_name: paddle.nn.functional.nll_loss
+3 api_description: The paddle.nn.functional.nll_loss API computes the negative log
+  likelihood loss between predicted probabilities and target labels, useful for classification
+  tasks.
+4 api_signature: paddle.nn.functional.nll_loss(input,label,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor containing predicted log probabilities for each class, with
+    shape [N, C] or [N, C, d_1, d_2, ..., d_K].
+- label: The tensor containing the true class labels, with shape [N] or [N, d_1, d_2,
+    ..., d_K].
+- reduction: 'Specifies the method to reduce the loss output: ''none'' for no reduction,
+    ''mean'' for averaging, or ''sum'' for summing the losses.'
+7 api_usage_example:
+- import paddle
+- from paddle.nn.functional import nll_loss
+- log_softmax = paddle.nn.LogSoftmax(axis=1)
+- input = paddle.to_tensor([[0.88103855, 0.9908683 , 0.6226845 ],
+- '    [0.53331435, 0.07999352, 0.8549948 ],'
+- '    [0.25879037, 0.39530203, 0.698465  ],'
+- '    [0.73427284, 0.63575995, 0.18827209],'
+- '    [0.05689114, 0.0862954 , 0.6325046 ]], "float32")'
+- log_out = log_softmax(input)
+- label = paddle.to_tensor([0, 2, 1, 1, 0], "int64")
+- result = nll_loss(log_out, label)
+- print(result)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.07202101)
+8 api_shape: null

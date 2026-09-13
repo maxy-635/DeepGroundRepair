@@ -1,0 +1,20 @@
+2 api_name: tensorflow.keras.dtype_policies.QuantizedDTypePolicy
+3 api_description: Defines a Keras dtype policy for quantized layers, controlling
+  the layer’s computation and variable dtypes and supporting use as a layer-specific
+  or global policy.
+4 api_signature: tf.keras.dtype_policies.QuantizedDTypePolicy(name)
+5 api_details: ''
+6 api_parameters:
+- name: Specifies the policy name, which sets the compute and variable dtypes, either
+    to a single dtype like `float32`/`float64` or to mixed precision modes like `mixed_float16`/`mixed_bfloat16`.
+7 api_usage_example:
+- keras.config.set_dtype_policy("mixed_float16")
+- layer1 = keras.layers.Dense(10)
+- 'layer1.dtype_policy  # layer1 will automatically use mixed precision'
+- '# Can optionally override layer to use float32'
+- '# instead of mixed precision.'
+- layer2 = keras.layers.Dense(10, dtype="float32")
+- layer2.dtype_policy
+- '# Set policy back to initial float32.'
+- keras.config.set_dtype_policy('float32')
+8 api_shape: ''

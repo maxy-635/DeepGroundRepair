@@ -1,0 +1,9 @@
+2 api_name: paddle.nn.functional.grid_sample
+3 api_description: The paddle.nn.functional.grid_sample API performs sampling of input
+  data using a grid of coordinates, enabling spatial transformation and interpolation
+  of input tensors.
+4 api_signature: paddle.nn.functional.grid_sample(x,grid,mode,padding_mode,align_corners)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Cos
+3 api_description: Computes the element-wise cosine of the input tensor, returning
+  values in the range [-1, 1].
+4 api_signature: tf.raw_ops.Cos(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose cosine is computed elementwise.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,20 @@
+2 api_name: paddle.vision.transforms.RandomResizedCrop
+3 api_description: Randomly crops an image to a variable size and aspect ratio, then
+  resizes the crop to the target size.
+4 api_signature: paddle.vision.transforms.RandomResizedCrop(size,scale,ratio)
+5 api_details: ''
+6 api_parameters:
+- size: Sets the output image dimensions as a (height, width) target size.
+- scale: Controls the range of crop area sizes relative to the original image before
+    resizing.
+- ratio: Controls the range of aspect ratios used when selecting the crop.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import RandomResizedCrop
+- transform = RandomResizedCrop(224)
+- fake_img = Image.fromarray((np.random.rand(300, 320, 3) * 255.).astype(np.uint8))
+- fake_img = transform(fake_img)
+- print(fake_img.size)
+- (224, 224)
+8 api_shape: {}

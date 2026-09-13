@@ -1,0 +1,17 @@
+2 api_name: torch.fft.ifft
+3 api_description: Computes the 1D inverse discrete Fourier transform, converting
+  frequency-domain input back to the time/domain signal.
+4 api_signature: torch.fft.ifft(input,n,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the frequency-domain data to invert.
+- n: Sets the output signal length, zero-padding or trimming the input as needed before
+    the inverse FFT.
+- dim: Chooses which dimension of the tensor to apply the one-dimensional inverse
+    FFT along.
+- norm: Controls the normalization convention for the inverse transform, such as no
+    normalization, 1/n, or 1/sqrt(n).
+7 api_usage_example:
+- ' t = torch.tensor([ 6.+0.j, -2.+2.j, -2.+0.j, -2.-2.j])'
+- ' torch.fft.ifft(t)'
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: torch.memory_format
+3 api_description: Represents tensor memory layout options such as contiguous, channels_last,
+  or preserve_format, used to control how tensor data is stored and interpreted in
+  memory.
+4 api_signature: class torch.memory_format#
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

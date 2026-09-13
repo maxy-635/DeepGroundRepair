@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SetStatsAggregatorDataset
+3 api_description: Attaches a stats aggregator to a tf.data Dataset pipeline so dataset
+  operations can record and report performance statistics.
+4 api_signature: tf.raw_ops.SetStatsAggregatorDataset(input_dataset,stats_aggregator,tag,counter_prefix)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to which the stats aggregator settings are attached.
+- stats_aggregator: The resource handle for the stats aggregator that will collect
+    dataset statistics.
+- tag: A string label used to identify or namespace the collected statistics.
+- counter_prefix: A string prefix added to generated counters for the dataset statistics.
+7 api_usage_example: null
+8 api_shape: ''

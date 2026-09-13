@@ -1,0 +1,19 @@
+2 api_name: paddle.bitwise_right_shift
+3 api_description: Performs an elementwise bitwise right shift on two tensors, shifting
+  each value in the first tensor by the corresponding value in the second tensor.
+4 api_signature: paddle.bitwise_right_shift(x,y,is_arithmetic)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be shifted right bitwise.
+- y: The input tensor that provides the shift amounts for each element.
+- is_arithmetic: Controls whether the shift preserves the sign bit with an arithmetic
+    shift or uses a logical shift.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[10,20,40,80],[16,17,32,65]])
+- y = paddle.to_tensor([[1,2,3,4,], [2,3,2,1]])
+- paddle.bitwise_right_shift(x, y, is_arithmetic=True)
+- Tensor(shape=[2, 4], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[[5 , 5 , 5 , 5 ],'
+- '[4 , 2 , 8 , 32]])'
+8 api_shape: {}

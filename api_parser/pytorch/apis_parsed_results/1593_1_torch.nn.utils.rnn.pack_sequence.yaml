@@ -1,0 +1,15 @@
+2 api_name: torch.nn.utils.rnn.pack_sequence
+3 api_description: Packs a list of variable-length tensors into a PackedSequence for
+  efficient RNN processing.
+4 api_signature: torch.nn.utils.rnn.pack_sequence(sequences)
+5 api_details: ''
+6 api_parameters:
+- sequences: A list of variable-length sequences, ordered from longest to shortest,
+    that will be packed into a single packed sequence.
+7 api_usage_example:
+- ' from torch.nn.utils.rnn import pack_sequence'
+- ' a = torch.tensor([1, 2, 3])'
+- ' b = torch.tensor([4, 5])'
+- ' c = torch.tensor([6])'
+- ' pack_sequence([a, b, c])'
+8 api_shape: null

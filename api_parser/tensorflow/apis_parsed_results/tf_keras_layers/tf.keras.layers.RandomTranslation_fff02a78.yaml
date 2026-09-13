@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.layers.RandomTranslation
+3 api_description: Randomly translates images during training, filling empty space
+  according to fill_mode, with support for various input pixel value ranges and data
+  types.
+4 api_signature: tf.keras.layers.RandomTranslation(height_factor, width_factor, fill_mode)
+5 api_details: ''
+6 api_parameters:
+- height_factor: Controls the random vertical shifting of the image, allowing for
+    a range of shifts defined by a float or a tuple.
+- width_factor: Controls the random horizontal shifting of the image, allowing for
+    a range of shifts defined by a float or a tuple.
+- fill_mode: Determines how to fill points outside the boundaries of the input image,
+    with options including 'constant', 'nearest', 'wrap', and 'reflect'.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.random.stateless_categorical
+3 api_description: Draws deterministic pseudorandom samples from a categorical distribution
+  using a seed, producing the same results for the same inputs.
+4 api_signature: tf.random.stateless_categorical(logits,num_samples,seed)
+5 api_details: ''
+6 api_parameters:
+- logits: Provides the unnormalized log-probabilities for each class in each batch
+    row.
+- num_samples: Specifies how many independent samples to draw per row.
+- seed: Sets the random seed used to produce stateless, reproducible samples.
+7 api_usage_example: null
+8 api_shape: ''

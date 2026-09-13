@@ -1,0 +1,15 @@
+2 api_name: tensorflow.quantization.quantized_concat
+3 api_description: Concatenates quantized tensors along a specified axis into a single
+  quantized output.
+4 api_signature: tf.quantization.quantized_concat(values,input_mins,input_maxes,concat_dim)
+5 api_details: ''
+6 api_parameters:
+- concat_dim: Specifies the axis along which the input tensors are concatenated.
+- values: Provides the list of quantized tensors to join, which must share rank, type,
+    and matching non-concat dimensions.
+- input_mins: Supplies the minimum scalar quantization range value for each input
+    tensor.
+- input_maxes: Supplies the maximum scalar quantization range value for each input
+    tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: paddle.hsplit
+3 api_description: Splits an input Tensor into multiple sub-Tensors along the horizontal
+  axis.
+4 api_signature: paddle.hsplit(x,num_or_indices)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be split along the horizontal axis, with rank greater than
+    0 and supported numeric or boolean dtypes.
+- num_or_indices: Either an integer number of equal sections to split `x` into, or
+    a list/tuple of indices where `x` should be split.
+7 api_usage_example: []
+8 api_shape: {}

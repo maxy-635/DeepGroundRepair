@@ -1,0 +1,76 @@
+2 api_name: paddle.isin
+3 api_description: Returns a boolean mask indicating whether each element of x is
+  contained in test_x.
+4 api_signature: paddle.isin(x,test_x,invert)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are checked for membership in `test_x`.
+- test_x: The tensor containing the values to test `x` elements against.
+- invert: Whether to invert the boolean result so matching elements become `False`
+    and non-matching elements become `True`.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- x = paddle.to_tensor([-0., -2.1, 2.5, 1.0, -2.1], dtype='float32')
+- test_x = paddle.to_tensor([-2.1, 2.5], dtype='float32')
+- res = paddle.isin(x, test_x)
+- print(res)
+- Tensor(shape=[5], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, True, True, False, True])'
+- x = paddle.to_tensor([-0., -2.1, 2.5, 1.0, -2.1], dtype='float32')
+- test_x = paddle.to_tensor([-2.1, 2.5], dtype='float32')
+- res = paddle.isin(x, test_x, invert=True)
+- print(res)
+- Tensor(shape=[5], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True, False, False, True, False])'
+- '# Set `assume_unique` to True only when `x` and `test_x` contain unique values,
+  otherwise the result may be incorrect.'
+- x = paddle.to_tensor([0., 1., 2.]*20).reshape([20, 3])
+- test_x = paddle.to_tensor([0., 1.]*20)
+- correct_result = paddle.isin(x, test_x, assume_unique=False)
+- print(correct_result)
+- Tensor(shape=[20, 3], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False],'
+- '[True , True , False]])'
+- incorrect_result = paddle.isin(x, test_x, assume_unique=True)
+- print(incorrect_result)
+- Tensor(shape=[20, 3], dtype=bool, place=Place(gpu:0), stop_gradient=True,
+- '[[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , True ],'
+- '[True , True , False]])'
+8 api_shape: {}

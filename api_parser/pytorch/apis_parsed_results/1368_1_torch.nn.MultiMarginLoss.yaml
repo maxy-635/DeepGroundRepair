@@ -1,0 +1,22 @@
+2 api_name: torch.nn.MultiMarginLoss
+3 api_description: Computes the multi-class hinge loss for classification tasks, comparing
+  predicted scores from a 2D input tensor against target class indices in a 1D tensor.
+4 api_signature: torch.nn.MultiMarginLoss(p,margin,weight,reduction)
+5 api_details: ''
+6 api_parameters:
+- p: Specifies the norm degree for the margin; supported values are 111 and 222.
+- margin: Defines the margin value that is used in the loss calculation.
+- weight: Allows for manual rescaling of the loss for each class, requiring a Tensor
+    of size C.
+- reduction: 'Determines how the output loss is aggregated: ''none'', ''mean'', or
+    ''sum''.'
+7 api_usage_example:
+- ' loss = nn.MultiMarginLoss()'
+- ' x = torch.tensor([[0.1, 0.2, 0.4, 0.8]])'
+- ' y = torch.tensor([3])'
+- ' # 0.25 * ((1-(0.8-0.1)) + (1-(0.8-0.2)) + (1-(0.8-0.4)))'
+- ' loss(x, y)'
+8 api_shape:
+  input tensor shape: (N, Channel_in)
+  output tensor shape: scalar. If reduction is 'none', then same shape as the target.
+  tensor shape transform formulas: {}

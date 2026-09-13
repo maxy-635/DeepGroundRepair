@@ -1,0 +1,9 @@
+2 api_name: tensorflow.types.experimental.Callable
+3 api_description: Base class for TensorFlow callable objects, executing immediately
+  in eager mode and building graph ops that return symbolic values in graph mode.
+4 api_signature: '"__call__(*args)"'
+5 api_details: ''
+6 api_parameters:
+- '*args': The positional arguments supplied to the callable.
+7 api_usage_example: null
+8 api_shape: ''

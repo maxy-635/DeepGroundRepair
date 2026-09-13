@@ -1,0 +1,11 @@
+2 api_name: paddle.distributed.QueueDataset
+3 api_description: A distributed dataset queue for static-graph training that feeds
+  data to multiple workers in order, enabling efficient parallel input loading and
+  synchronized iteration across processes.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- dataset = paddle.distributed.QueueDataset()
+8 api_shape: {}

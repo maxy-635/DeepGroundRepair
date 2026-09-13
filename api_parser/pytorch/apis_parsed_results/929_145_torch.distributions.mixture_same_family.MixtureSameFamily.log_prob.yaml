@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.mixture_same_family.MixtureSameFamily.log_prob
+3 api_description: Computes the log probability of values under a mixture distribution
+  by combining the component distributions’ log probabilities with the mixture weights.
+4 api_signature: '"log_prob(x)"'
+5 api_details: ''
+6 api_parameters:
+- value: The input tensor of samples whose log probability under the mixture distribution
+    is computed.
+7 api_usage_example: null
+8 api_shape: null

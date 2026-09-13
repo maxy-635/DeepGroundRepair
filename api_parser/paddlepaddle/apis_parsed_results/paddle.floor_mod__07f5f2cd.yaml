@@ -1,0 +1,8 @@
+2 api_name: paddle.floor_mod_
+3 api_description: In-place computes the floor modulo of `x` by overwriting `x` with
+  the result.
+4 api_signature: paddle.floor_mod_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.expm
+3 api_description: Computes the matrix exponential of one or more square matrices,
+  returning a tensor of the same shape with each inner M x M matrix exponentiated.
+4 api_signature: tf.linalg.expm(input)
+5 api_details: ''
+6 api_parameters:
+- A: Square input tensor whose matrix exponential is computed elementwise over any
+    leading batch dimensions.
+7 api_usage_example: null
+8 api_shape: ''

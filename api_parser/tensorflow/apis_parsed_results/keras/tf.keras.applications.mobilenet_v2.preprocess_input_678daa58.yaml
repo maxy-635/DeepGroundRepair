@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.mobilenet_v2.preprocess_input
+3 api_description: Scales image batches to MobileNetV2’s expected input range by converting
+  pixel values to float and normalizing them to [-1, 1].
+4 api_signature: tf.keras.applications.mobilenet_v2.preprocess_input(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input image data in a 3D or 4D array/tensor with 3 channels and pixel values
+    in the range [0, 255], which is normalized in place when possible.
+7 api_usage_example: null
+8 api_shape: ''

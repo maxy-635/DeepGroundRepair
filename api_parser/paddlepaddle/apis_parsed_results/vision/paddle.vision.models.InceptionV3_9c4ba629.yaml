@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.InceptionV3
+3 api_description: InceptionV3 is a pretrained image classification model that extracts
+  high-level visual features using the Inception v3 architecture for tasks like recognition
+  and transfer learning.
+4 api_signature: paddle.vision.models.InceptionV3(num_class es,with_pool)
+5 api_details: ''
+6 api_parameters:
+- with_pool: Controls whether to apply pooling before the final fully connected layer.
+7 api_usage_example: []
+8 api_shape: {}

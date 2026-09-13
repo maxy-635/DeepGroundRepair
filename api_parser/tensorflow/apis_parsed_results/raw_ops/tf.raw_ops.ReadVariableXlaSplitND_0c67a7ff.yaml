@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ReadVariableXlaSplitND
+3 api_description: Splits a resource variable tensor into row-major slices across
+  all dimensions according to num_splits, optionally padding slices, and returns the
+  resulting pieces.
+4 api_signature: tf.raw_ops.ReadVariableXlaSplitND(resource,num_splits,paddings)
+5 api_details: ''
+6 api_parameters:
+- resource: The resource variable tensor to read and split across dimensions.
+- N: The number of output tensors to produce, which must be at least 1.
+- num_splits: The per-dimension split counts that determine how the tensor is divided,
+    with each dimension required to be evenly divisible.
+- paddings: Optional right-padding amounts applied to each input dimension before
+    splitting so dimensions can become evenly divisible.
+7 api_usage_example: null
+8 api_shape: ''

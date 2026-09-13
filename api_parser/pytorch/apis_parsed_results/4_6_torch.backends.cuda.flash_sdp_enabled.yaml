@@ -1,0 +1,8 @@
+2 api_name: torch.backends.cuda.flash_sdp_enabled
+3 api_description: Returns whether Flash SDP attention is enabled for CUDA, indicating
+  if the Flash Scaled Dot Product Attention kernel may be used.
+4 api_signature: torch.backends.cuda.flash_sdp_enabled()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

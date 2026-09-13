@@ -1,0 +1,28 @@
+2 api_name: paddle.linalg.pinv
+3 api_description: Computes the Moore-Penrose pseudoinverse of a matrix or batch of
+  matrices using singular value decomposition.
+4 api_signature: paddle.linalg.pinv(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor of shape (*, m, n) whose pseudoinverse is computed, with float32/float64
+    or complex64/complex128 dtype.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(15).reshape((3, 5)).astype('float64')
+- input = paddle.to_tensor(x)
+- out = paddle.linalg.pinv(input)
+- print(input)
+- Tensor(shape=[3, 5], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[0. , 1. , 2. , 3. , 4. ],'
+- '[5. , 6. , 7. , 8. , 9. ],'
+- '[10., 11., 12., 13., 14.]])'
+- print(out)
+- Tensor(shape=[5, 3], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[-0.22666667, -0.06666667,  0.09333333],'
+- '[-0.12333333, -0.03333333,  0.05666667],'
+- '[-0.02000000, -0.00000000,  0.02000000],'
+- '[ 0.08333333,  0.03333333, -0.01666667],'
+- '[ 0.18666667,  0.06666667, -0.05333333]])'
+- '# one can verify : x * out * x = x ;'
+- '# or              out * x * out = x ;'
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.debugging.assert_proper_iterable
+3 api_description: Statically verifies that an input is a proper iterable for TensorFlow
+  ops, rejecting values like Tensors, ndarrays, and byte/text types that are iterable
+  but not valid iterables of Tensor.
+4 api_signature: tf.debugging.assert_proper_iterable(values)
+5 api_details: ''
+6 api_parameters:
+- values: The object or objects to verify are proper iterables.
+7 api_usage_example: null
+8 api_shape: ''

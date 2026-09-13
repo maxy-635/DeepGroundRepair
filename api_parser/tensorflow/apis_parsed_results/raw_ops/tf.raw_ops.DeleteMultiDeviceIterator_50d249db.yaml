@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.DeleteMultiDeviceIterator
+3 api_description: Deletes a multi-device iterator resource from its container.
+4 api_signature: tf.raw_ops.DeleteMultiDeviceIterator(multi_device_iterator,iterators)
+5 api_details: ''
+6 api_parameters:
+- multi_device_iterator: Resource handle for the multi-device iterator that will be
+    deleted.
+- iterators: Unused iterator resource handles included to enforce deletion order through
+    automatic control dependencies.
+7 api_usage_example: null
+8 api_shape: ''

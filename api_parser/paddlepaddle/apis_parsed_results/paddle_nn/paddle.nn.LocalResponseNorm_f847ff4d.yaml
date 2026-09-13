@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.LocalResponseNorm
+3 api_description: LocalResponseNorm applies lateral inhibition by normalizing across
+  local input regions to enhance generalization in neural networks.
+4 api_signature: paddle.nn.LocalResponseNorm(size,alpha,beta,k)
+5 api_details: ''
+6 api_parameters:
+- size: Determines the number of adjacent channels to normalize over in the local
+    response normalization.
+- alpha: Acts as a scaling factor to control the impact of the normalization.
+- beta: Defines the power to which the normalization term is raised, affecting the
+    sharpness of the normalization.
+- k: Provides a constant offset to ensure numerical stability during normalization.
+7 api_usage_example: []
+8 api_shape: null

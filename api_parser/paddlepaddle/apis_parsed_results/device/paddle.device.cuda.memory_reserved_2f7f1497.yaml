@@ -1,0 +1,13 @@
+2 api_name: paddle.device.cuda.memory_reserved
+3 api_description: Returns the amount of memory currently reserved by the device allocator.
+4 api_signature: paddle.device.cuda.memory_reserved()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- 'paddle.device.set_device(''gpu'')  # or ''<custom_device>'''
+- memory_reserved_size = paddle.device.cuda.memory_reserved(paddle.CUDAPlace(0))
+- memory_reserved_size = paddle.device.cuda.memory_reserved(0)
+- memory_reserved_size = paddle.device.cuda.memory_reserved("gpu:0")
+8 api_shape: {}

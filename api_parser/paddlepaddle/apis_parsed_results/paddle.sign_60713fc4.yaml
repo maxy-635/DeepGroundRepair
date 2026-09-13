@@ -1,0 +1,17 @@
+2 api_name: paddle.sign
+3 api_description: 'Returns the sign of each element: 1 for positive, -1 for negative,
+  0 for zero, and for complex numbers a unit-magnitude complex value (or 0+0j for
+  zero).'
+4 api_signature: paddle.sign(x,out)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose elements are used to compute the sign of each value.
+- out: Optional output tensor that stores the result instead of creating a new one.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([3.0, 0.0, -2.0, 1.7], dtype='float32')
+- out = paddle.sign(x=x)
+- out
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[ 1.,  0., -1.,  1.])'
+8 api_shape: {}

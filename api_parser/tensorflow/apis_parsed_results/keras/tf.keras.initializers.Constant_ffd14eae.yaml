@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.initializers.Constant
+3 api_description: Creates tensors filled with a single constant scalar value, cast
+  to the requested dtype.
+4 api_signature: tf.keras.initializers.Constant(value)
+5 api_details: ''
+6 api_parameters:
+- value: Specifies the constant value used to initialize all elements of the tensor.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = Constant(10.)
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

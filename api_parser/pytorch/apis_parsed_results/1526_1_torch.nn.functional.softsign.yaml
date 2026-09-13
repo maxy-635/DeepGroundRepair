@@ -1,0 +1,9 @@
+2 api_name: torch.nn.functional.softsign
+3 api_description: Applies the SoftSign activation function element-wise, defined
+  as SoftSign(x) = x / (1 + |x|), to the input tensor.
+4 api_signature: torch.nn.functional.softsign(input)
+5 api_details: ''
+6 api_parameters:
+- input: A tensor to which the Softsign activation function will be applied.
+7 api_usage_example: null
+8 api_shape: null

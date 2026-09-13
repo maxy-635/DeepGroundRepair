@@ -1,0 +1,10 @@
+2 api_name: torch.xpu.Event.record
+3 api_description: Records an event on a specified XPU stream so it can be used for
+  synchronization or timing.
+4 api_signature: record(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: Records the event on the specified XPU stream, defaulting to `torch.xpu.current_stream()`
+    when omitted, and the stream device must match the event device.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,19 @@
+2 api_name: torch.cov
+3 api_description: Estimates the covariance matrix of variables from an input matrix,
+  treating rows as variables and columns as observations.
+4 api_signature: torch.cov(input,correction)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the data whose covariance matrix is computed, either as a 2D matrix
+    of variables and observations or as a scalar/1D vector for a single variable.
+7 api_usage_example:
+- ' x = torch.tensor([[0, 2], [1, 1], [2, 0]]).T'
+- ' x'
+- ' torch.cov(x)'
+- ' torch.cov(x, correction=0)'
+- ' fw = torch.randint(1, 10, (3,))'
+- ' fw'
+- ' aw = torch.rand(3)'
+- ' aw'
+- ' torch.cov(x, fweights=fw, aweights=aw)'
+8 api_shape: null

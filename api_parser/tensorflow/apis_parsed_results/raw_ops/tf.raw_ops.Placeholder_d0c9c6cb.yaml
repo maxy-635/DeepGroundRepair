@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Placeholder
+3 api_description: Creates a placeholder tensor for an input value that must be fed
+  at runtime, enabling shape and type checks without being executed directly.
+4 api_signature: tf.raw_ops.Placeholder(dtype,shape)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the data type of the tensor’s elements.
+- shape: Optionally sets the tensor’s shape, or leaves it unconstrained if omitted
+    or rank-0.
+7 api_usage_example: null
+8 api_shape: ''

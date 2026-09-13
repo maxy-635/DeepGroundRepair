@@ -1,0 +1,20 @@
+2 api_name: tensorflow.keras.metrics.PrecisionAtRecall
+3 api_description: Computes the best precision achievable while keeping recall at
+  or above a specified target, using thresholded predictions and optional class-specific,
+  weighted evaluation.
+4 api_signature: tf.keras.metrics.PrecisionAtRecall(recall,num_thresholds,class_id,name,dtype)
+5 api_details: ''
+6 api_parameters:
+- recall: Sets the target recall level that the metric will try to achieve when computing
+    precision.
+- num_thresholds: Controls how many prediction thresholds are evaluated to approximate
+    the requested recall.
+- class_id: Restricts the metric to a single class in multi-class predictions.
+- name: Assigns a name to the metric instance for display and tracking.
+- dtype: Specifies the data type used for the metric’s result calculations.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([0, 0, 0, 1, 1], [0, 0.3, 0.8, 0.3, 0.8],
+- '               sample_weight=[2, 2, 2, 1, 1])'
+- m.result()
+8 api_shape: ''

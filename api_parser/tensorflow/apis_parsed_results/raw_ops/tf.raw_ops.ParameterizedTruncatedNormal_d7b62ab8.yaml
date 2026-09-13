@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.ParameterizedTruncatedNormal
+3 api_description: Generates random values from a truncated normal distribution, with
+  parameters that can be scalars for the whole output or per-batch vectors matching
+  shape[0].
+4 api_signature: tf.raw_ops.ParameterizedTruncatedNormal(shape,means,stdevs,minvals,maxvals)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the output tensor shape, with batch entries indexed by the first
+    dimension.
+- means: Specifies the mean value for each batch of the truncated normal distribution.
+- stdevs: Specifies the standard deviation for each batch and must be greater than
+    0.
+- minvals: Sets the lower truncation bound for each batch, and may be negative infinity.
+- maxvals: Sets the upper truncation bound for each batch, and may be positive infinity,
+    but must exceed `minvals`.
+7 api_usage_example: null
+8 api_shape: ''

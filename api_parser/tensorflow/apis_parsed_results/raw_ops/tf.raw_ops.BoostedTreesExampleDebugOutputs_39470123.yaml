@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesExampleDebugOutputs
+3 api_description: Traverses boosted trees for each example and returns per-example
+  debugging and interpretability metrics, such as split feature IDs and logits along
+  the decision path.
+4 api_signature: tf.raw_ops.BoostedTreesExampleDebugOutputs(tree_ensemble_handle,bucketized_features)
+5 api_details: ''
+6 api_parameters:
+- tree_ensemble_handle: Resource handle for the boosted trees ensemble used to generate
+    example debug outputs.
+- bucketized_features: Rank-1 int32 tensors containing the bucket IDs for each feature,
+    used as the input features to debug.
+7 api_usage_example: null
+8 api_shape: ''

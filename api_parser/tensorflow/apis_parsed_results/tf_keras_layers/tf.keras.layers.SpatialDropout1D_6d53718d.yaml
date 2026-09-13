@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.layers.SpatialDropout1D
+3 api_description: SpatialDropout1D applies dropout to entire 1D feature maps, promoting
+  independence between feature maps by dropping correlated features, making it more
+  effective than standard dropout in early convolutional layers.
+4 api_signature: tf.keras.layers.SpatialDropout1D(rate)
+5 api_details: ''
+6 api_parameters:
+- rate: Fraction of the input units to drop, specified as a float between 0 and 1.
+7 api_usage_example: null
+8 api_shape: null

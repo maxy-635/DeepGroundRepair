@@ -1,0 +1,9 @@
+2 api_name: torch.xpu.get_device_properties
+3 api_description: Returns the device properties for a specified XPU device as an
+  _XpuDeviceProperties object.
+4 api_signature: torch.xpu.get_device_properties(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the XPU device whose properties should be returned.
+7 api_usage_example: null
+8 api_shape: null

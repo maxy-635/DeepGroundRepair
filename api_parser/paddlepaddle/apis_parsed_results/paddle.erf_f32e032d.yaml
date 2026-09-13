@@ -1,0 +1,16 @@
+2 api_name: paddle.erf
+3 api_description: Computes the error function erf, returning the integral-based probability-style
+  value for a given input.
+4 api_signature: paddle.erf(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are used to compute the elementwise error function,
+    and it must be one of the supported numeric data types.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.erf(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.42839241, -0.22270259,  0.11246292,  0.32862678])'
+8 api_shape: {}

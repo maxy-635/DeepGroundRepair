@@ -1,0 +1,23 @@
+2 api_name: paddle.vision.transforms.pad
+3 api_description: Pads an image or tensor on all sides with a specified padding mode
+  and optional fill value.
+4 api_signature: paddle.vision.transforms.pad(img,padding,padding_mode)
+5 api_details: ''
+6 api_parameters:
+- img: The image to apply padding to.
+- padding: The amount of padding to add on the image borders, either uniformly or
+    specified per side.
+- padding_mode: The mode used to determine how padded pixels are filled.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import functional as F
+- fake_img = (np.random.rand(256, 300, 3) * 255.).astype('uint8')
+- fake_img = Image.fromarray(fake_img)
+- padded_img = F.pad(fake_img, padding=1)
+- print(padded_img.size)
+- (302, 258)
+- padded_img = F.pad(fake_img, padding=(2, 1))
+- print(padded_img.size)
+- (304, 258)
+8 api_shape: {}

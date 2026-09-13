@@ -1,0 +1,24 @@
+2 api_name: torch.nn.utils.stateless.functional_call
+3 api_description: Runs a module with supplied parameters and buffers instead of its
+  own state, without permanently modifying the module.
+4 api_signature: '"torch.nn.utils.stateless.functional_call(module,parameters_and_buffers,args,kwargs,*,tie_weights,strict)"'
+5 api_details: ''
+6 api_parameters:
+- module: The module whose forward call will be executed.
+- parameters_and_buffers: The replacement parameters and buffers to use during the
+    module call.
+- args: Positional arguments passed to the module; a non-tuple is treated as a single
+    argument.
+- kwargs: Keyword arguments passed to the module call.
+- tie_weights: Controls whether originally tied parameters and buffers remain tied
+    in the reparameterized call.
+- strict: Requires the provided parameters and buffers to exactly match the module’s
+    expected keys.
+7 api_usage_example:
+- ' a = {''foo'': torch.zeros(())}'
+- ' mod = Foo()  # does self.foo = self.foo + 1'
+- ' print(mod.foo)  # tensor(0.)'
+- ' functional_call(mod, a, torch.ones(()))'
+- ' print(mod.foo)  # tensor(0.)'
+- ' print(a[''foo''])  # tensor(1.)'
+8 api_shape: null

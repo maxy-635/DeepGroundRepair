@@ -1,0 +1,9 @@
+2 api_name: torch.mps.set_rng_state
+3 api_description: Sets the MPS random number generator to a specified state, restoring
+  deterministic random behavior.
+4 api_signature: torch.mps.set_rng_state(new_state)
+5 api_details: ''
+6 api_parameters:
+- new_state: Sets the MPS random number generator to the specified state.
+7 api_usage_example: null
+8 api_shape: null

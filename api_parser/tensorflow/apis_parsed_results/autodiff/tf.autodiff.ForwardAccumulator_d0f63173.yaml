@@ -1,0 +1,22 @@
+2 api_name: tensorflow.autodiff.ForwardAccumulator
+3 api_description: Computes forward-mode Jacobian-vector products (JVPs) for TensorFlow
+  operations, making it efficient for functions with many outputs and few inputs,
+  and more memory-efficient than reverse-mode autodiff for applicable cases.
+4 api_signature: tf.autodiff.ForwardAccumulator(primals,tangents)
+5 api_details: ''
+6 api_parameters:
+- primals: Tensors to be watched for forward-mode automatic differentiation.
+- tangents: Corresponding tangent vectors used to compute directional derivatives
+    for the primals.
+7 api_usage_example:
+- v = tf.Variable([1., 2.])
+- with tf.autodiff.ForwardAccumulator(
+- '    v,'
+- '    # The "vector" in Hessian-vector product.'
+- '    tf.constant([1., 0.])) as acc:'
+- '  with tf.GradientTape() as tape:'
+- '    y = tf.reduce_sum(v ** 3.)'
+- '  backward = tape.gradient(y, v)'
+- 'backward  # gradient from backprop'
+- 'acc.jvp(backward)  # forward-over-backward Hessian-vector product'
+8 api_shape: ''

@@ -1,0 +1,20 @@
+2 api_name: tensorflow.image.rot90
+3 api_description: Rotates image tensor(s) by 90-degree increments counterclockwise.
+4 api_signature: tf.image.rot90(image,k)
+5 api_details: ''
+6 api_parameters:
+- image: The input image tensor to rotate, either a single image or a batch of images.
+- k: The number of 90-degree rotations to apply to the image tensor.
+7 api_usage_example:
+- a=tf.constant([[[1],[2]],
+- '               [[3],[4]]])'
+- '# rotating `a` counter clockwise by 90 degrees'
+- a_rot=tf.image.rot90(a)
+- print(a_rot[...,0].numpy())
+- '# rotating `a` counter clockwise by 270 degrees'
+- a_rot=tf.image.rot90(a, k=3)
+- print(a_rot[...,0].numpy())
+- '# rotating `a` clockwise by 180 degrees'
+- a_rot=tf.image.rot90(a, k=-2)
+- print(a_rot[...,0].numpy())
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.AdjustContrastv2
+3 api_description: Adjusts the contrast of images by computing each channel’s mean
+  and scaling pixel values around that mean by a contrast factor, independently for
+  each channel and image.
+4 api_signature: tf.raw_ops.AdjustContrastv2(images,contrast_factor)
+5 api_details: ''
+6 api_parameters:
+- images: The input image tensor whose contrast will be adjusted; it must be at least
+    3-D and use half or float32 values.
+- contrast_factor: The float32 multiplier that controls how strongly the image contrast
+    is adjusted.
+7 api_usage_example: null
+8 api_shape: ''

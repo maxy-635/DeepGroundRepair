@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.DummyMemoryCache
+3 api_description: Creates a dummy in-memory cache resource used as a placeholder
+  or compatibility stub for APIs that expect a memory cache object.
+4 api_signature: tf.raw_ops.DummyMemoryCache(name)
+5 api_details: ''
+6 api_parameters:
+- name: Optional name used to label the operation in the graph.
+7 api_usage_example: null
+8 api_shape: ''

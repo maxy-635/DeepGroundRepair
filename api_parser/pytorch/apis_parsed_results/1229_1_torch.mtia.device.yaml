@@ -1,0 +1,10 @@
+2 api_name: torch.mtia.device
+3 api_description: Context manager that temporarily sets the active MTIA device for
+  subsequent torch operations.
+4 api_signature: torch.mtia.device(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects the MTIA device index to use; ignored when set to `None` or a negative
+    integer.
+7 api_usage_example: null
+8 api_shape: null

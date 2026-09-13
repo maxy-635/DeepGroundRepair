@@ -1,0 +1,25 @@
+2 api_name: torch.nn.MaxUnpool3d
+3 api_description: MaxUnpool3d performs the inverse operation of MaxPool3d, allowing
+  for the reconstruction of features by using the indices of the maximum values from
+  the pooling operation.
+4 api_signature: torch.nn.MaxUnpool3d(kernel_size,stride)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Defines the dimensions of the window used for max pooling.
+- stride: Specifies the step size for moving the pooling window, defaulting to the
+    value of kernel_size.
+7 api_usage_example:
+- ' # pool of square window of size=3, stride=2'
+- ' pool = nn.MaxPool3d(3, stride=2, return_indices=True)'
+- ' unpool = nn.MaxUnpool3d(3, stride=2)'
+- ' output, indices = pool(torch.randn(20, 16, 51, 33, 15))'
+- ' unpooled_output = unpool(output, indices)'
+- ' unpooled_output.size()'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor depth: Depth_out = (Depth_in - 1) * stride_depth - 2 * padding_depth + kernel_size_depth
+    tensor height: Height_out = (Height_in - 1) * stride_height - 2 * padding_height + kernel_size_height
+    tensor width: Width_out = (Width_in - 1) * stride_width - 2 * padding_width + kernel_size_width

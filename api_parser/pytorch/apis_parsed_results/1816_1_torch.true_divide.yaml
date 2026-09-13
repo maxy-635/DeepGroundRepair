@@ -1,0 +1,8 @@
+2 api_name: torch.true_divide
+3 api_description: Performs element-wise true division with standard floating-point
+  semantics, equivalent to `torch.div(..., rounding_mode=None)`.
+4 api_signature: torch.true_divide(dividend,divisor)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.InitializeTableFromTextFileV2
+3 api_description: Initializes a lookup table from a text file by reading each line
+  and inserting key-value pairs extracted from the line contents or line number according
+  to the specified delimiter, key_index, and value_index.
+4 api_signature: tf.raw_ops.InitializeTableFromTextFileV2(table_handle,filename,key_index,value_index,vocab_size)
+5 api_details: ''
+6 api_parameters:
+- table_handle: Specifies the resource handle for the table that will be initialized.
+- filename: Specifies the path to the vocabulary text file used to populate the table.
+- key_index: Selects which column in each line provides the table key values.
+- value_index: Selects which column in each line provides the table value values.
+- vocab_size: Optionally declares the number of file elements, or `-1` if the size
+    is unknown.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

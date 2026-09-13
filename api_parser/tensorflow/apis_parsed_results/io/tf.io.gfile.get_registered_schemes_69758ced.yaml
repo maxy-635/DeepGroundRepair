@@ -1,0 +1,8 @@
+2 api_name: tensorflow.io.gfile.get_registered_schemes
+3 api_description: Returns the set of filesystem schemes currently registered for
+  tf.io.gfile, including local and URI-based schemes.
+4 api_signature: '"tf.io.gfile.get_registered_schemes()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

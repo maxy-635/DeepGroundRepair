@@ -1,0 +1,13 @@
+2 api_name: tensorflow.tpu.experimental.embedding.serving_embedding_lookup
+3 api_description: Performs standard embedding lookup using tf.tpu.experimental.embedding
+  config objects for CPU serving, so TPUEmbedding models can be exported without TPU-only
+  lookup logic.
+4 api_signature: tf.tpu.experimental.embedding.serving_embedding_lookup(inputs,tables)
+5 api_details: ''
+6 api_parameters:
+- inputs: The feature tensors, sparse tensors, or ragged tensors to look up embeddings
+    for.
+- tables: A dictionary that maps each `TableConfig` to its corresponding embedding
+    variables.
+7 api_usage_example: null
+8 api_shape: ''

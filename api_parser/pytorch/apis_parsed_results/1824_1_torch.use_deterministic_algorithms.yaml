@@ -1,0 +1,14 @@
+2 api_name: torch.use_deterministic_algorithms
+3 api_description: Controls whether PyTorch uses deterministic algorithms; when enabled,
+  operations prefer deterministic implementations and raise a RuntimeError if only
+  nondeterministic ones are available.
+4 api_signature: torch.use_deterministic_algorithms(mode)
+5 api_details: ''
+6 api_parameters:
+- mode: Enables or disables deterministic behavior for operations that would otherwise
+    be nondeterministic, raising an error when a deterministic alternative is unavailable.
+7 api_usage_example:
+- ' torch.use_deterministic_algorithms(True)'
+- ' torch.nn.AvgPool3d(1)(torch.randn(3, 4, 5, 6, requires_grad=True).cuda()).sum().backward()'
+- '...'
+8 api_shape: null

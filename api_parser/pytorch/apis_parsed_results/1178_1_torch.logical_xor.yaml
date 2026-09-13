@@ -1,0 +1,18 @@
+2 api_name: torch.logical_xor
+3 api_description: Returns the element-wise logical XOR of two tensors, treating zero
+  values as False and nonzero values as True.
+4 api_signature: torch.logical_xor(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose boolean values are compared for exclusive OR.
+- other: The tensor used as the second operand for the exclusive OR comparison.
+7 api_usage_example:
+- ' torch.logical_xor(torch.tensor([True, False, True]), torch.tensor([True, False,
+  False]))'
+- ' a = torch.tensor([0, 1, 10, 0], dtype=torch.int8)'
+- ' b = torch.tensor([4, 0, 1, 0], dtype=torch.int8)'
+- ' torch.logical_xor(a, b)'
+- ' torch.logical_xor(a.double(), b.double())'
+- ' torch.logical_xor(a.double(), b)'
+- ' torch.logical_xor(a, b, out=torch.empty(4, dtype=torch.bool))'
+8 api_shape: null

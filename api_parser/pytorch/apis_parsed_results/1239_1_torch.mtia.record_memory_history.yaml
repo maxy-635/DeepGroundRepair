@@ -1,0 +1,10 @@
+2 api_name: torch.mtia.record_memory_history
+3 api_description: Enables or disables MTIA allocator memory history recording for
+  profiling and debugging memory usage.
+4 api_signature: torch.mtia.record_memory_history(enabled,stacks)
+5 api_details: ''
+6 api_parameters:
+- enabled: Turns memory-history recording on or off for the current device when `device`
+    is not provided.
+7 api_usage_example: null
+8 api_shape: null

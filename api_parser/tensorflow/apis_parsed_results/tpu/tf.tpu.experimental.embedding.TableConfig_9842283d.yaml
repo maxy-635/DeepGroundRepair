@@ -1,0 +1,19 @@
+2 api_name: tensorflow.tpu.experimental.embedding.TableConfig
+3 api_description: Defines the configuration for a single TPU embedding table, including
+  settings that can be shared across multiple feature lookups to create one shared
+  table.
+4 api_signature: tf.tpu.experimental.embedding.TableConfig(vocabulary_size:int,dim:int,initializer,optimizer,combiner:Text,name:Optional[Text]=None)
+5 api_details: ''
+6 api_parameters:
+- vocabulary_size: Sets the number of rows in the embedding table, which determines
+    how many unique IDs can be stored.
+- dim: Sets the width of each embedding vector in the table.
+- initializer: Provides the function used to initialize each table shard's values
+    when it is created.
+- optimizer: Optionally specifies the optimizer settings for this table, overriding
+    the TPUEmbedding global optimizer.
+- combiner: Chooses how to combine multiple embedding lookups for the same row, such
+    as by mean, sum, or sqrtn.
+- name: Optionally assigns a name to the table, and is required when running on SparseCore.
+7 api_usage_example: null
+8 api_shape: ''

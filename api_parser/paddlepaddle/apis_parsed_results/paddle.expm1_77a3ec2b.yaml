@@ -1,0 +1,15 @@
+2 api_name: paddle.expm1
+3 api_description: Computes expm1 element-wise, returning e^x - 1 for each input value.
+4 api_signature: paddle.expm1(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are transformed by applying `expm1`, returning
+    `exp(x) - 1` elementwise.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.expm1(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.32967997, -0.18126924,  0.10517092,  0.34985882])'
+8 api_shape: {}

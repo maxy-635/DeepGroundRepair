@@ -1,0 +1,26 @@
+2 api_name: paddle.nn.LayerNorm
+3 api_description: The paddle.nn.LayerNorm implements layer normalization, which
+  normalizes input data across the features dimension for each mini-batch, improving
+  training stability and performance.
+4 api_signature: paddle.nn.LayerNorm(normalized_shape)
+5 api_details: ''
+6 api_parameters:
+- normalized_shape: Defines the shape over which normalization is performed, typically
+    the last dimension of the input.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- x = paddle.rand((2, 2, 2, 3))
+- layer_norm = paddle.nn.LayerNorm(x.shape[1:])
+- layer_norm_out = layer_norm(x)
+- print(layer_norm_out)
+- Tensor(shape=[2, 2, 2, 3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[[ 0.60520101, -0.67670590, -1.40020895],'
+- '[ 0.46540466, -0.09736638, -0.47771254]],'
+- '[[-0.74365306,  0.63718957, -1.41333175],'
+- '[ 1.44764745, -0.25489068,  1.90842617]]],'
+- '[[[ 1.09773350,  1.49568415, -0.45503747],'
+- '[-1.01755989,  1.08368254, -0.38671425]],'
+- '[[-0.62252408,  0.60490781,  0.13109133],'
+- '[-0.81222653,  0.84285998, -1.96189952]]]])'
+8 api_shape: null

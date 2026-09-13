@@ -1,0 +1,28 @@
+2 api_name: paddle.arange
+3 api_description: Creates a 1-D tensor of evenly spaced values within a specified
+  interval.
+4 api_signature: paddle.arange(start,end,step,dtype)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the beginning of the interval and is included in the generated range.
+- end: Sets the exclusive upper bound of the interval and can be omitted to use `0`
+    to `start`.
+- step: Sets the spacing between consecutive generated values.
+- dtype: Sets the output tensor’s data type, defaulting to `float32` when not specified.
+7 api_usage_example:
+- import paddle
+- out1 = paddle.arange(5)
+- print(out1.numpy())
+- '[0 1 2 3 4]'
+- out2 = paddle.arange(3, 9, 2.0)
+- print(out2.numpy())
+- '[3. 5. 7.]'
+- '# use 4.999 instead of 5.0 to avoid floating point rounding errors'
+- out3 = paddle.arange(4.999, dtype='float32')
+- print(out3.numpy())
+- '[0. 1. 2. 3. 4.]'
+- start_var = paddle.to_tensor(3)
+- out4 = paddle.arange(start_var, 7)
+- print(out4.numpy())
+- '[3 4 5 6]'
+8 api_shape: {}

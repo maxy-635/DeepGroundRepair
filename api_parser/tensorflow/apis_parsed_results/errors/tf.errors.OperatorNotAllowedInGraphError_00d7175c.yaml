@@ -1,0 +1,14 @@
+2 api_name: tensorflow.errors.OperatorNotAllowedInGraphError
+3 api_description: Signals that an unsupported Python operator or control flow was
+  used while executing a TensorFlow graph, such as treating a `tf.Tensor` like a Python
+  boolean or iterating over it.
+4 api_signature: tf.errors.OperatorNotAllowedInGraphError()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '@tf.function'
+- 'def iterate_over(t):'
+- '  a,b,c = t'
+- '  return a'
+- iterate_over(tf.constant([1, 2, 3]))
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorArrayRead
+3 api_description: Reads and returns the tensor at a specified index from a TensorArray,
+  with an optional inferred element shape.
+4 api_signature: tf.raw_ops.TensorArrayRead(handle,index,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource to read from.
+- index: Specifies which element position to read.
+- dtype: Sets the data type of the value being returned.
+7 api_usage_example: null
+8 api_shape: ''

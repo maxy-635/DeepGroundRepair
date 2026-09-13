@@ -1,0 +1,32 @@
+2 api_name: paddle.gcd
+3 api_description: Computes the element-wise greatest common divisor of two integer
+  inputs.
+4 api_signature: paddle.gcd(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor whose element-wise greatest common divisor will be computed.
+- y: The second input tensor used element-wise to compute the greatest common divisor
+    with `x`.
+7 api_usage_example:
+- import paddle
+- x1 = paddle.to_tensor(12)
+- x2 = paddle.to_tensor(20)
+- paddle.gcd(x1, x2)
+- Tensor(shape=[], dtype=int64, place=Place(cpu), stop_gradient=True,
+- 4)
+- x3 = paddle.arange(6)
+- paddle.gcd(x3, x2)
+- Tensor(shape=[6], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[20, 1 , 2 , 1 , 4 , 5])'
+- x4 = paddle.to_tensor(0)
+- paddle.gcd(x4, x2)
+- Tensor(shape=[], dtype=int64, place=Place(cpu), stop_gradient=True,
+- 20)
+- paddle.gcd(x4, x4)
+- Tensor(shape=[], dtype=int64, place=Place(cpu), stop_gradient=True,
+- 0)
+- x5 = paddle.to_tensor(-20)
+- paddle.gcd(x1, x5)
+- Tensor(shape=[], dtype=int64, place=Place(cpu), stop_gradient=True,
+- 4)
+8 api_shape: {}

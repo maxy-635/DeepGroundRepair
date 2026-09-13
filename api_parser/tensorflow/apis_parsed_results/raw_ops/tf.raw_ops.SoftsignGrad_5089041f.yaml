@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.SoftsignGrad
+3 api_description: Computes the gradient of the softsign activation for backpropagation.
+4 api_signature: tf.raw_ops.SoftsignGrad(gradients,features)
+5 api_details: ''
+6 api_parameters:
+- gradients: The incoming gradient values propagated back from the softsign operation.
+- features: The original softsign input features used to compute the gradient.
+7 api_usage_example: null
+8 api_shape: ''

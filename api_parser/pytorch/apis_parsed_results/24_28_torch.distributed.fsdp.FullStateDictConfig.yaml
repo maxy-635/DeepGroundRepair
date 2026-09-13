@@ -1,0 +1,31 @@
+2 api_name: torch.distributed.fsdp.FullStateDictConfig
+3 api_description: Configures FSDP full-state-dict saving, typically with CPU offload
+  and rank-0-only collection to reduce GPU and CPU memory usage.
+4 api_signature: torch.distributed.fsdp.FullStateDictConfig(offload_to_cpu,rank0_only)
+5 api_details: ''
+6 api_parameters:
+- offload_to_cpu: Moves the full state dict to CPU before returning it.
+- rank0_only: Returns the full state dict only on rank 0 to reduce memory usage.
+7 api_usage_example:
+- ' from torch.distributed.fsdp import FullyShardedDataParallel as FSDP'
+- ' fsdp = FSDP(model, auto_wrap_policy=...)'
+- ' cfg = FullStateDictConfig(offload_to_cpu=True, rank0_only=True)'
+- ' with FSDP.state_dict_type(fsdp, StateDictType.FULL_STATE_DICT, cfg):'
+- '     state = fsdp.state_dict()'
+- ' # `state` will be empty on non rank 0 and contain CPU tensors on rank 0.'
+- ' # To reload checkpoint for inference, finetuning, transfer learning, etc:'
+- ' model = model_fn()  # Initialize model in preparation for wrapping with FSDP'
+- ' if dist.get_rank() == 0:'
+- ' # Load checkpoint only on rank 0 to avoid memory redundancy'
+- '     state_dict = torch.load("my_checkpoint.pt")'
+- '     model.load_state_dict(state_dict)'
+- ' # All ranks initialize FSDP module as usual. `sync_module_states` argument'
+- ' # communicates loaded checkpoint states from rank 0 to rest of the world.'
+- ' fsdp = FSDP('
+- '...     model,'
+- '...     device_id=torch.cuda.current_device(),'
+- '...     auto_wrap_policy=...,'
+- '...     sync_module_states=True,'
+- '... )'
+- ' # After this point, all ranks have FSDP model with loaded checkpoint.'
+8 api_shape: null

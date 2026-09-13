@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BitwiseOr
+3 api_description: Computes the elementwise bitwise OR of x and y, setting each output
+  bit when it is set in either input.
+4 api_signature: tf.raw_ops.BitwiseOr(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor containing integer values to be combined with a bitwise
+    OR.
+- y: The second input tensor of the same integer type as `x` to be combined with `x`
+    using bitwise OR.
+7 api_usage_example: null
+8 api_shape: ''

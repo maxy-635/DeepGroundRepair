@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.Fold
+3 api_description: paddle.nn.Fold reconstructs a large tensor from an array of sliding
+  local blocks by summing overlapping block values, similar to the col2im operation
+  for batched 2D image tensors.
+4 api_signature: paddle.nn.Fold(output_sizes,kernel_sizes,strides)
+5 api_details: ''
+6 api_parameters:
+- output_sizes: Specifies the dimensions of the output feature map as either a list
+    [output_size_h, output_size_w] or a single integer for both dimensions.
+- kernel_sizes: Defines the size of the convolution kernel, which can be provided
+    as a list [k_h, k_w] or a single integer for both dimensions.
+- strides: Indicates the step size for moving the convolution kernel, specified as
+    a list [stride_h, stride_w] or a single integer for both dimensions, with a default
+    of [1, 1].
+7 api_usage_example: []
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.replace
+3 api_description: Replaces symbols in a symbolic shape expression with their mapped
+  alternatives, updating the expression accordingly.
+4 api_signature: replace(expr)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

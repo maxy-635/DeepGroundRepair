@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.layers.GlobalAveragePooling1D
+3 api_description: GlobalAveragePooling1D computes the average of each feature across
+  all time steps in a 1D temporal data input, reducing the dimensionality while retaining
+  the essential information.
+4 api_signature: tf.keras.layers.GlobalAveragePooling1D(keepdims)
+5 api_details: ''
+6 api_parameters:
+- keepdims: Determines whether to retain the temporal dimension in the output tensor,
+    with True keeping it and False reducing its rank.
+7 api_usage_example:
+- x = np.random.rand(2, 3, 4)
+- y = keras.layers.GlobalAveragePooling1D()(x)
+- y.shape
+8 api_shape: null

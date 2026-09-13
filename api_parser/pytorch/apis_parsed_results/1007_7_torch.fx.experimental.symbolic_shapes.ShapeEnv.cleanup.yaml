@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.cleanup
+3 api_description: Breaks reference cycles to help release symbolic shape environment
+  resources and avoid lingering object references.
+4 api_signature: cleanup()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

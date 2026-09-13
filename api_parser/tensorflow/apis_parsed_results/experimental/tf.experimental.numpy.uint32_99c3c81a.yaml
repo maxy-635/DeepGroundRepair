@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.uint32
+3 api_description: 32-bit unsigned integer scalar type for NumPy-compatible arrays,
+  representing values from 0 to 4,294,967,295.
+4 api_signature: tf.experimental.numpy.uint32()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

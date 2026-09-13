@@ -1,0 +1,9 @@
+2 api_name: torch.backends.cuda.sdp_kernel
+3 api_description: Context manager to temporarily configure which CUDA scaled dot-product
+  attention kernels are allowed to run, letting you enable or disable flash, math,
+  memory-efficient, and cuDNN backends.
+4 api_signature: torch.backends.cuda.sdp_kernel(enable_flash,enable_math,enable_mem_efficient,enable_cudnn)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

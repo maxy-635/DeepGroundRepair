@@ -1,0 +1,35 @@
+2 api_name: torch.distributed.algorithms.Join
+3 api_description: A context manager for distributed training that detects when a
+  process has finished early and lets custom join hooks run to keep remaining processes
+  synchronized.
+4 api_signature: torch.distributed.algorithms.Join(joinables,enable,throw_on_early_termination)
+5 api_details: ''
+6 api_parameters:
+- joinables: The ordered list of `Joinable` participants whose hooks are processed
+    in sequence.
+- enable: Turns uneven-input detection on or off for the context manager, and should
+    be `False` only when inputs are known to be even.
+- throw_on_early_termination: Controls whether an exception is raised when uneven
+    inputs are detected and early termination occurs.
+7 api_usage_example:
+- ' import os'
+- ' import torch'
+- ' import torch.distributed as dist'
+- ' import torch.multiprocessing as mp'
+- ' import torch.nn.parallel.DistributedDataParallel as DDP'
+- ' import torch.distributed.optim.ZeroRedundancyOptimizer as ZeRO'
+- ' from torch.distributed.algorithms.join import Join'
+- ' # On each spawned worker'
+- ' def worker(rank):'
+- '     dist.init_process_group("nccl", rank=rank, world_size=2)'
+- '     model = DDP(torch.nn.Linear(1, 1).to(rank), device_ids=[rank])'
+- '     optim = ZeRO(model.parameters(), torch.optim.Adam, lr=0.01)'
+- '     # Rank 1 gets one more input than rank 0'
+- '     inputs = [torch.tensor([1.]).to(rank) for _ in range(10 + rank)]'
+- '     with Join([model, optim]):'
+- '         for input in inputs:'
+- '             loss = model(input).sum()'
+- '             loss.backward()'
+- '             optim.step()'
+- '     # All ranks reach here without hanging/erroring'
+8 api_shape: null

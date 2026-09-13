@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.random.randint
+3 api_description: Draws random integer values uniformly from [minval, maxval), including
+  the lower bound and excluding the upper bound, with an integer dtype.
+4 api_signature: tf.keras.random.randint(shape,minval,maxval,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the tensor of random values to generate.
+- minval: Sets the inclusive lower bound for the generated random values.
+- maxval: Sets the exclusive upper bound for the generated random values.
+- dtype: Specifies the output tensor's integer data type, or uses Keras's default
+    float type if omitted.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: paddle.nn.Sigmoid
+3 api_description: The paddle.nn.Sigmoid API constructs a callable object to compute
+  the sigmoid activation function on input data.
+4 api_signature: paddle.nn.Sigmoid()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- m = paddle.nn.Sigmoid()
+- x = paddle.to_tensor([1.0, 2.0, 3.0, 4.0])
+- out = m(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.73105860, 0.88079703, 0.95257413, 0.98201376])'
+8 api_shape: null

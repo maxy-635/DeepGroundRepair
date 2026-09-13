@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.cosh_
+3 api_description: Computes the hyperbolic cosine of each element in the tensor in
+  place, modifying the input tensor directly.
+4 api_signature: paddle.Tensor.cosh_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

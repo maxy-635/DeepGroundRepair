@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.cross
+3 api_description: Computes the pairwise cross product of two same-shaped tensors
+  whose last dimension is 3, treating each 3-element vector independently.
+4 api_signature: tf.linalg.cross(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: Input tensor containing 3-element vectors to be crossed.
+- b: Second tensor of the same type and shape as `a` used to compute the cross product.
+7 api_usage_example: null
+8 api_shape: ''

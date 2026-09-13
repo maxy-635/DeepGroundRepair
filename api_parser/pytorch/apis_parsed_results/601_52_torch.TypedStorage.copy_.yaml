@@ -1,0 +1,7 @@
+2 api_name: torch.TypedStorage.copy_
+3 api_description: Copies data from another storage into this typed storage.
+4 api_signature: copy_(source)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

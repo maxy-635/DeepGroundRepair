@@ -1,0 +1,18 @@
+2 api_name: paddle.geometric.segment_sum
+3 api_description: Computes the sum of values grouped by segment IDs, returning one
+  summed result per segment.
+4 api_signature: paddle.geometric.segment_sum(data,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are grouped and summed by segment.
+- segment_ids: A 1-D tensor of segment labels that matches the first dimension of
+    `data` and determines which segment each element belongs to.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([[1, 2, 3], [3, 2, 1], [4, 5, 6]], dtype='float32')
+- segment_ids = paddle.to_tensor([0, 0, 1], dtype='int32')
+- out = paddle.geometric.segment_sum(data, segment_ids)
+- print(out.numpy())
+- '[[4. 4. 4.]'
+- '[4. 5. 6.]]'
+8 api_shape: {}

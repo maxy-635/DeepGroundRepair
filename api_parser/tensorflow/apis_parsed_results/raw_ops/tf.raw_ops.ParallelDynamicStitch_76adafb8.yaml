@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ParallelDynamicStitch
+3 api_description: Interleaves values from multiple data tensors into one merged tensor,
+  using index tensors to place each value at its corresponding position.
+4 api_signature: tf.raw_ops.ParallelDynamicStitch(indices,data)
+5 api_details: ''
+6 api_parameters:
+- indices: A list of int32 tensors that specify the output positions for the corresponding
+    values in `data`.
+- data: A list of tensors, matched one-to-one with `indices`, containing the values
+    to be stitched into the output tensor.
+7 api_usage_example: null
+8 api_shape: ''

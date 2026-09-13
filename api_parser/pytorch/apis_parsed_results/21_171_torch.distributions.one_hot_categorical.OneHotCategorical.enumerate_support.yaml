@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.one_hot_categorical.OneHotCategorical.enumerate_support
+3 api_description: Returns a tensor containing all one-hot encoded category values
+  in the distribution’s support, optionally expanded across batch dimensions.
+4 api_signature: enumerate_support(expand)
+5 api_details: ''
+6 api_parameters:
+- expand: If `True`, returns the support values expanded to match the batch shape;
+    otherwise returns a minimal set of support values.
+7 api_usage_example: null
+8 api_shape: null

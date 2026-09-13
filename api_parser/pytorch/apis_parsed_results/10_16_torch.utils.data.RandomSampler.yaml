@@ -1,0 +1,13 @@
+2 api_name: torch.utils.data.RandomSampler
+3 api_description: Randomly samples elements from a dataset, either with replacement
+  or as a shuffled order without replacement.
+4 api_signature: torch.utils.data.RandomSampler(data_source,replacement,num_samples)
+5 api_details: ''
+6 api_parameters:
+- data_source: The dataset or data source to sample from, which must define `__len__`.
+- replacement: Whether to draw samples with replacement, meaning items can be selected
+    more than once.
+- num_samples: The total number of samples to draw, defaulting to the length of the
+    dataset.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.LambdaLR.step
+3 api_description: Updates optimizer learning rates by applying a user-defined lambda
+  function to the current step count.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Deprecated optional epoch index that sets `last_epoch` and, when supported,
+    uses the closed-form learning rate computation instead of the default step behavior.
+7 api_usage_example: null
+8 api_shape: null

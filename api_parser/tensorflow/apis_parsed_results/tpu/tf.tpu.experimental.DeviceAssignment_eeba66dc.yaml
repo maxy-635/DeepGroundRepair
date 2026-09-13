@@ -1,0 +1,11 @@
+2 api_name: tensorflow.tpu.experimental.DeviceAssignment
+3 api_description: Maps logical cores in a TPU computation to physical TPU topology,
+  with `DeviceAssignment.build()` as the preferred helper for creating assignments.
+4 api_signature: tf.tpu.experimental.DeviceAssignment(topology,core_assignment)
+5 api_details: ''
+6 api_parameters:
+- topology: Defines the physical TPU topology used to interpret how cores are arranged.
+- core_assignment: Specifies the logical-to-physical mapping of TPU cores as a rank-3
+    numpy array.
+7 api_usage_example: null
+8 api_shape: ''

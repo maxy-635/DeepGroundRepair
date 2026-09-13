@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.adaptive_max_pool3d
+3 api_description: torch.nn.functional.adaptive_max_pool3d applies 3D adaptive max
+  pooling to an input, adjusting the pooling kernel size dynamically to achieve a
+  specified output size.
+4 api_signature: torch.nn.functional.adaptive_max_pool3d(input,output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the desired dimensions of the output after pooling, either
+    as a single integer or a tuple of three integers.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

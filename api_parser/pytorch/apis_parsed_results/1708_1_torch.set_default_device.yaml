@@ -1,0 +1,18 @@
+2 api_name: torch.set_default_device
+3 api_description: Sets the default device for new torch.Tensor allocations, while
+  leaving factory functions with an explicit device argument unchanged.
+4 api_signature: torch.set_default_device(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the device that PyTorch will use as the default for newly created
+    tensors and operations.
+7 api_usage_example:
+- ' torch.get_default_device()'
+- ' torch.set_default_device(''cuda'')  # current device is 0'
+- ' torch.get_default_device()'
+- ' torch.set_default_device(''cuda'')'
+- ' torch.cuda.set_device(''cuda:1'')  # current device is 1'
+- ' torch.get_default_device()'
+- ' torch.set_default_device(''cuda:1'')'
+- ' torch.get_default_device()'
+8 api_shape: null

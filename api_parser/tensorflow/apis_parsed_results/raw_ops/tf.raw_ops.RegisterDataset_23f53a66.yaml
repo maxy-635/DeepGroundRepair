@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.RegisterDataset
+3 api_description: Registers a dataset with the tf.data service so it can be referenced
+  and used by distributed input pipelines.
+4 api_signature: tf.raw_ops.RegisterDataset(dataset,address,protocol,element_spec,name)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset variant tensor to register.
+- address: The string tensor containing the target address for the dataset registration.
+- protocol: The string tensor specifying the communication protocol to use.
+- element_spec: An optional string describing the dataset element specification.
+- name: An optional operation name for identification in the graph.
+7 api_usage_example: null
+8 api_shape: ''

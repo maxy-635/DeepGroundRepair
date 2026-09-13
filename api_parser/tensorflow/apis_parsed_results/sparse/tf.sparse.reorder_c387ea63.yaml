@@ -1,0 +1,9 @@
+2 api_name: tensorflow.sparse.reorder
+3 api_description: Reorders a SparseTensor’s indices and values into canonical row-major
+  order without changing its shape.
+4 api_signature: tf.sparse.reorder(sp_input)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The SparseTensor to reorder into canonical row-major order.
+7 api_usage_example: null
+8 api_shape: ''

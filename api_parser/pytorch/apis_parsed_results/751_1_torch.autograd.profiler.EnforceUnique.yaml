@@ -1,0 +1,7 @@
+2 api_name: torch.autograd.profiler.EnforceUnique
+3 api_description: Raises an error when the same key is encountered more than once.
+4 api_signature: class torch.autograd.profiler.EnforceUnique
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

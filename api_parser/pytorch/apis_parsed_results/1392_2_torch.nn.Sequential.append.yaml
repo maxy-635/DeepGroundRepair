@@ -1,0 +1,9 @@
+2 api_name: torch.nn.Sequential.append
+3 api_description: Adds a specified module to the end of a torch.nn.Sequential container.
+4 api_signature: append(module)
+5 api_details: ''
+6 api_parameters:
+- module: The module that will be added to the Sequential container, allowing for
+    the construction of a neural network by stacking layers.
+7 api_usage_example: null
+8 api_shape: null

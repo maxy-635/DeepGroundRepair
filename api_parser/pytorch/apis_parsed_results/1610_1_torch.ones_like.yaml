@@ -1,0 +1,12 @@
+2 api_name: torch.ones_like
+3 api_description: Creates a tensor of ones with the same shape, dtype, layout, and
+  device as the input tensor.
+4 api_signature: torch.ones_like(input,dtype,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the reference tensor whose shape determines the size of the output
+    tensor.
+7 api_usage_example:
+- ' input = torch.empty(2, 3)'
+- ' torch.ones_like(input)'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.RebatchDataset
+3 api_description: Creates a dataset that rebatches elements by reducing the current
+  batch size by num_workers.
+4 api_signature: tf.raw_ops.RebatchDataset(input_dataset,num_replicas,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Supplies the input dataset to be rebatched.
+- num_replicas: Specifies how many replicas the batch is split across, reducing the
+    effective batch size by that factor.
+- output_types: Defines the data types of the elements produced by the rebatched dataset.
+- output_shapes: Defines the shapes of the elements produced by the rebatched dataset.
+7 api_usage_example: null
+8 api_shape: ''

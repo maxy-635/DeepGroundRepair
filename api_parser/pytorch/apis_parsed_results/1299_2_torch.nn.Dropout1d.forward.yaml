@@ -1,0 +1,8 @@
+2 api_name: torch.nn.Dropout1d.forward
+3 api_description: Applies 1D dropout to the input during training by randomly zeroing
+  entire channels and scaling the remaining activations.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

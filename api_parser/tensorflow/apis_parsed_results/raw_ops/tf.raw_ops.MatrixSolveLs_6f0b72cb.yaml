@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.MatrixSolveLs
+3 api_description: Solves batched linear least-squares problems for real or complex
+  matrices, returning the minimum-norm solution X that best fits A @ X = B; it can
+  use a fast Cholesky-based normal-equations path with optional L2 regularization,
+  or a slower but more numerically robust complete-orthogonal-decomposition path when
+  fast=False.
+4 api_signature: tf.raw_ops.MatrixSolveLs(matrix,rhs,l2_regularizer)
+5 api_details: ''
+6 api_parameters:
+- matrix: The coefficient matrix A in the least-squares system, with shape [..., M,
+    N].
+- rhs: The right-hand-side tensor containing the target values to fit, with shape
+    [..., M, K].
+- l2_regularizer: A scalar L2 regularization term that adds ridge-style stabilization
+    to the least-squares solve.
+7 api_usage_example: null
+8 api_shape: ''

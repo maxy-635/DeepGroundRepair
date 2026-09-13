@@ -1,0 +1,11 @@
+2 api_name: paddle.incubate.nn.functional.fused_linear
+3 api_description: Performs a fully connected linear transformation on input data
+  using CUDA, requiring CUDA 11.6 or later.
+4 api_signature: paddle.incubate.nn.functional.fused_linear(x,weight,bias)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be multiplied.
+- weight: The 2D weight tensor used in the multiplication.
+- bias: The optional bias tensor added to the result, or skipped if `None`.
+7 api_usage_example: []
+8 api_shape: {}

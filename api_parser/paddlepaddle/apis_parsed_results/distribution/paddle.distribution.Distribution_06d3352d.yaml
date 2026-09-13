@@ -1,0 +1,8 @@
+2 api_name: paddle.distribution.Distribution
+3 api_description: Abstract base class for probability distributions that defines
+  the common interface and shared behavior used by concrete distribution implementations.
+4 api_signature: paddle.distribution.Distribution()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

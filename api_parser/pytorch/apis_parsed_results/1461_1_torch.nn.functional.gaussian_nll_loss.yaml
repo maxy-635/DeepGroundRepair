@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.gaussian_nll_loss
+3 api_description: Computes the Gaussian negative log likelihood loss between input
+  and target using a specified variance.
+4 api_signature: torch.nn.functional.gaussian_nll_loss(input,target,var)
+5 api_details: ''
+6 api_parameters:
+- input: This parameter represents the expected values of the Gaussian distribution.
+- target: This parameter is the actual observed samples from the Gaussian distribution.
+- var: This parameter specifies the variance(s) for the Gaussian distribution, which
+    can be a tensor for individual expectations, a single value for all, or a positive
+    scalar.
+7 api_usage_example: null
+8 api_shape: null

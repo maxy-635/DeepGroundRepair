@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.GetOptions
+3 api_description: Returns the tf.data.Options associated with the given input dataset.
+4 api_signature: tf.raw_ops.GetOptions(input_dataset)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant tensor that contains the input dataset whose options
+    are being retrieved.
+7 api_usage_example: null
+8 api_shape: ''

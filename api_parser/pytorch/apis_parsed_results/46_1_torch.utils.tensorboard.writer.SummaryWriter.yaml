@@ -1,0 +1,20 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter
+3 api_description: Writes TensorBoard event data directly to log files in the specified
+  directory for later visualization.
+4 api_signature: torch.utils.tensorboard.writer.SummaryWriter(log_dir)
+5 api_details: ''
+6 api_parameters:
+- log_dir: Specifies the directory where TensorBoard event files are saved for the
+    run.
+7 api_usage_example:
+- from torch.utils.tensorboard import SummaryWriter
+- '# create a summary writer with automatically generated folder name.'
+- writer = SummaryWriter()
+- '# folder location: runs/May04_22-14-54_s-MacBook-Pro.local/'
+- '# create a summary writer using the specified folder name.'
+- writer = SummaryWriter("my_experiment")
+- '# folder location: my_experiment'
+- '# create a summary writer with comment appended.'
+- writer = SummaryWriter(comment="LR_0.1_BATCH_16")
+- '# folder location: runs/May04_22-14-54_s-MacBook-Pro.localLR_0.1_BATCH_16/'
+8 api_shape: null

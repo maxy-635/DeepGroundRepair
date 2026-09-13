@@ -1,0 +1,11 @@
+2 api_name: torch.Generator.set_state
+3 api_description: Sets the generator’s internal state so its random number sequence
+  can be restored or reproduced.
+4 api_signature: set_state(state)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' g_cpu = torch.Generator()'
+- ' g_cpu_other = torch.Generator()'
+- ' g_cpu.set_state(g_cpu_other.get_state())'
+8 api_shape: null

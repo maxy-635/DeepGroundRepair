@@ -1,0 +1,13 @@
+2 api_name: tensorflow.ragged.segment_ids_to_row_splits
+3 api_description: Converts segment IDs into RaggedTensor row_splits by counting how
+  many elements belong to each segment and building cumulative split offsets starting
+  at 0.
+4 api_signature: tf.ragged.segment_ids_to_row_splits(segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- segment_ids: A 1-D integer tensor that assigns each item to a segment.
+- num_segments: A scalar integer specifying how many segments to produce, defaulting
+    to the largest segment id plus one, or zero if `segment_ids` is empty.
+7 api_usage_example:
+- print(tf.ragged.segment_ids_to_row_splits([0, 0, 0, 2, 2, 3, 4, 4, 4]))
+8 api_shape: ''

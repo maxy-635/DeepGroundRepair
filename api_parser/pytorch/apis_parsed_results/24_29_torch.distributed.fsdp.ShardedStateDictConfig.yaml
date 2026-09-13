@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.ShardedStateDictConfig
+3 api_description: Configures `StateDictType.SHARDED_STATE_DICT` to produce a sharded
+  model state dict suitable for distributed checkpointing and efficient memory usage.
+4 api_signature: torch.distributed.fsdp.ShardedStateDictConfig(offload_to_cpu)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

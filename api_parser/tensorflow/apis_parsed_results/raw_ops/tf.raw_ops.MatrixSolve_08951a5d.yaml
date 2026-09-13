@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.MatrixSolve
+3 api_description: Solves batches of square linear systems `matrix * x = rhs`, or
+  `adjoint(matrix) * x = rhs` when `adjoint=True`, and returns the solution with shape
+  `[..., M, K]`.
+4 api_signature: tf.raw_ops.MatrixSolve(matrix,rhs)
+5 api_details: ''
+6 api_parameters:
+- matrix: Square coefficient matrix A used to define the linear system to solve.
+- rhs: Right-hand-side tensor containing the values to solve against, with the same
+    type as `matrix`.
+7 api_usage_example: null
+8 api_shape: ''

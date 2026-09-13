@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.standardize_dtype
+3 api_description: Converts a dtype value into a canonical TensorFlow/Keras dtype
+  string, normalizing supported aliases and validating the input.
+4 api_signature: tf.keras.backend.standardize_dtype(dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

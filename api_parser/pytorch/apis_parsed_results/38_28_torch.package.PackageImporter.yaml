@@ -1,0 +1,14 @@
+2 api_name: torch.package.PackageImporter
+3 api_description: Loads Python code and data from a torch.package archive in isolation
+  from the normal import system, enabling hermetic model deployment and reuse for
+  inference or transfer learning.
+4 api_signature: torch.package.PackageImporter(file_or_buffer,module_allowed)
+5 api_details: ''
+6 api_parameters:
+- file_or_buffer: The package source to load, provided as a file-like object, filename
+    string, or path-like path.
+- module_allowed: A callback that decides whether externally provided modules are
+    permitted to be loaded.
+7 api_usage_example:
+- <torch_package_0>
+8 api_shape: null

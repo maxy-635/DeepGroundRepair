@@ -1,0 +1,40 @@
+2 api_name: paddle.concat
+3 api_description: paddle.concat merges multiple tensors along a specified axis, excluding
+  0-D tensors due to the absence of axes.
+4 api_signature: paddle.concat(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: A list or tuple of Tensors with the same data type, used as input for concatenation.
+- axis: An integer specifying the axis along which the input Tensors are concatenated;
+    defaults to 0 and supports negative indexing.
+7 api_usage_example:
+- import paddle
+- x1 = paddle.to_tensor([[1, 2, 3],
+- '                       [4, 5, 6]])'
+- x2 = paddle.to_tensor([[11, 12, 13],
+- '                       [14, 15, 16]])'
+- x3 = paddle.to_tensor([[21, 22],
+- '                       [23, 24]])'
+- zero = paddle.full(shape=[1], dtype='int32', fill_value=0)
+- '# When the axis is negative, the real axis is (axis + Rank(x))'
+- '# As follow, axis is -1, Rank(x) is 2, the real axis is 1'
+- out1 = paddle.concat(x=[x1, x2, x3], axis=-1)
+- out2 = paddle.concat(x=[x1, x2], axis=0)
+- out3 = paddle.concat(x=[x1, x2], axis=zero)
+- print(out1)
+- Tensor(shape=[2, 8], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1 , 2 , 3 , 11, 12, 13, 21, 22],'
+- '[4 , 5 , 6 , 14, 15, 16, 23, 24]])'
+- print(out2)
+- Tensor(shape=[4, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1 , 2 , 3 ],'
+- '[4 , 5 , 6 ],'
+- '[11, 12, 13],'
+- '[14, 15, 16]])'
+- print(out3)
+- Tensor(shape=[4, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1 , 2 , 3 ],'
+- '[4 , 5 , 6 ],'
+- '[11, 12, 13],'
+- '[14, 15, 16]])'
+8 api_shape: null

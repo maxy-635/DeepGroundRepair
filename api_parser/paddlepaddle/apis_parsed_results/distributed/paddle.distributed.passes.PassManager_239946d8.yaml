@@ -1,0 +1,8 @@
+2 api_name: paddle.distributed.passes.PassManager
+3 api_description: Manages and runs a sequence of distributed passes, coordinating
+  their execution to transform or optimize a Paddle distributed program.
+4 api_signature: paddle.distributed.passes.PassManager(passes,context)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

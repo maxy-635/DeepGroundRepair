@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.MobileNetV2
+3 api_description: Creates a MobileNetV2 image classification model with inverted
+  residual blocks and linear bottlenecks, for efficient feature extraction and prediction.
+4 api_signature: paddle.vision.models.MobileNetV2(scale,num_class es)
+5 api_details: ''
+6 api_parameters:
+- scale: Controls the width of the network by scaling the number of channels in each
+    layer.
+7 api_usage_example: []
+8 api_shape: {}

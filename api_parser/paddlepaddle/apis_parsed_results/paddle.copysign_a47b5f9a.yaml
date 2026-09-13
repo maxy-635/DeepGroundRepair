@@ -1,0 +1,17 @@
+2 api_name: paddle.copysign
+3 api_description: Returns a new floating-point tensor with each element taking the
+  magnitude of x and the sign of y.
+4 api_signature: paddle.copysign(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose magnitudes are used as the values to copy signs onto.
+- y: The tensor providing the sign bits that are applied to the magnitudes in `x`.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, 2, 3], dtype='float64')
+- y = paddle.to_tensor([-1, 1, -1], dtype='float64')
+- out = paddle.copysign(x, y)
+- print(out)
+- Tensor(shape=[3], dtype=float64, place=Place(gpu:0), stop_gradient=True,
+- '[-1.,  2., -3.])'
+8 api_shape: {}

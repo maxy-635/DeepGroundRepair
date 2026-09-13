@@ -1,0 +1,10 @@
+2 api_name: tensorflow.summary.flush
+3 api_description: Forces a summary writer to flush any buffered data to storage and
+  blocks until the flush completes.
+4 api_signature: tf.summary.flush(writer)
+5 api_details: ''
+6 api_parameters:
+- writer: Specifies the SummaryWriter to flush, or uses the current default writer
+    if `None` is provided.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: torch.nn.functional.gumbel_softmax
+3 api_description: torch.nn.functional.gumbel_softmax samples from the Gumbel-Softmax
+  distribution, allowing for differentiable sampling from categorical distributions,
+  with an option to discretize the samples.
+4 api_signature: torch.nn.functional.gumbel_softmax(logits,tau,hard)
+5 api_details: ''
+6 api_parameters:
+- logits: Represents unnormalized log probabilities for each feature.
+- tau: Controls the randomness of the sampling process with a non-negative scalar
+    temperature.
+- hard: Determines if the output should be a discretized one-hot vector while allowing
+    gradient backpropagation through the soft sample.
+7 api_usage_example:
+- ' logits = torch.randn(20, 32)'
+- ' # Sample soft categorical using reparametrization trick:'
+- ' F.gumbel_softmax(logits, tau=1, hard=False)'
+- ' # Sample hard categorical using "Straight-through" trick:'
+- ' F.gumbel_softmax(logits, tau=1, hard=True)'
+8 api_shape: null

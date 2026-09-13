@@ -1,0 +1,10 @@
+2 api_name: tensorflow.image.yuv_to_rgb
+3 api_description: Converts YUV images to RGB with the same tensor shape, assuming
+  Y is scaled to [0,1] and U/V to [-0.5,0.5].
+4 api_signature: tf.image.yuv_to_rgb(images)
+5 api_details: ''
+6 api_parameters:
+- images: Input YUV image data with rank 2 or higher, where the last dimension has
+    size 3 and contains the channels to convert to RGB.
+7 api_usage_example: null
+8 api_shape: ''

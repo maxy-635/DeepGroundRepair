@@ -1,0 +1,10 @@
+2 api_name: torch.nn.functional.logsigmoid
+3 api_description: The torch.nn.functional.logsigmoid function applies the element-wise
+  LogSigmoid activation, which computes the logarithm of the sigmoid function for
+  each element in the input tensor.
+4 api_signature: torch.nn.functional.logsigmoid(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor for which the log-sigmoid function is to be applied.
+7 api_usage_example: null
+8 api_shape: null

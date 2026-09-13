@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.functional.kl_div
+3 api_description: paddle.nn.functional.kl_div computes the Kullback-Leibler divergence
+  loss between log-probabilities (X) and probabilities (Target).
+4 api_signature: paddle.nn.functional.kl_div(input,label,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor with shape [N, *] and data type float32 or float64.
+- label: The label tensor with the same shape and data type as the input tensor.
+- reduction: Specifies the method to average the loss with options 'none', 'batchmean',
+    'mean', or 'sum', defaulting to 'mean'.
+7 api_usage_example: []
+8 api_shape: null

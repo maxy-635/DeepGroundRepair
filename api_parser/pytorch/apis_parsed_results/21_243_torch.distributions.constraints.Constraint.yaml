@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.constraints.Constraint
+3 api_description: Abstract base class for distribution support constraints; defines
+  the interface for validating values against a constraint and for related properties
+  used by transforms and distribution parameter checks.
+4 api_signature: class torch.distributions.constraints.Constraint
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

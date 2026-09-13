@@ -1,0 +1,21 @@
+2 api_name: torch.linalg.lu
+3 api_description: Computes the LU decomposition of a matrix with partial pivoting,
+  returning factors that reconstruct the original matrix.
+4 api_signature: torch.linalg.lu(A,*,pivot)
+5 api_details: ''
+6 api_parameters:
+- A: Input tensor whose last two dimensions are decomposed as a batched matrix of
+    shape (*, m, n).
+- pivot: Chooses whether LU decomposition uses partial pivoting or no pivoting.
+7 api_usage_example:
+- ' A = torch.randn(3, 2)'
+- ' P, L, U = torch.linalg.lu(A)'
+- ' P'
+- ' L'
+- ' U'
+- ' torch.dist(A, P @ L @ U)'
+- ' A = torch.randn(2, 5, 7, device="cuda")'
+- ' P, L, U = torch.linalg.lu(A, pivot=False)'
+- ' P'
+- ' torch.dist(A, L @ U)'
+8 api_shape: null

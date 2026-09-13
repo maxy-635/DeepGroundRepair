@@ -1,0 +1,17 @@
+2 api_name: torch.nn.utils.prune.ln_structured
+3 api_description: Removes the lowest-Ln-norm channels from a tensor along a specified
+  dimension, pruning structured groups rather than individual elements.
+4 api_signature: '"torch.nn.utils.prune.ln_structured(module,name,amount,n,dim)"'
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the tensor to be pruned.
+- name: The name of the parameter in the module that pruning will modify.
+- amount: The number or fraction of parameters to prune.
+- n: The norm order used to compute structured pruning scores.
+- dim: The dimension that defines the channels to prune.
+7 api_usage_example:
+- ' from torch.nn.utils import prune'
+- ' m = prune.ln_structured('
+- '...     nn.Conv2d(5, 3, 2), "weight", amount=0.3, dim=1, n=float("-inf")'
+- '... )'
+8 api_shape: null

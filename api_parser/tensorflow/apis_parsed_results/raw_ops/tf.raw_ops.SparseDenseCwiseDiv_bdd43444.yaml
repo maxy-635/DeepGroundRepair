@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SparseDenseCwiseDiv
+3 api_description: Element-wise divides a SparseTensor by a dense Tensor, broadcasting
+  only the dense input to match the sparse tensor's shape.
+4 api_signature: tf.raw_ops.SparseDenseCwiseDiv(sp_indices,sp_values,sp_shape,dense)
+5 api_details: ''
+6 api_parameters:
+- sp_indices: Specifies the indices of the non-empty entries in the sparse tensor.
+- sp_values: Provides the values for the sparse tensor entries listed in `sp_indices`.
+- sp_shape: Defines the overall shape of the sparse tensor.
+- dense: Supplies the dense tensor to divide the sparse tensor values by elementwise.
+7 api_usage_example: null
+8 api_shape: ''

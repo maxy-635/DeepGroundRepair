@@ -1,0 +1,26 @@
+2 api_name: paddle.distributed.communication.stream.recv
+3 api_description: Receives a tensor from a specified source device into the current
+  device or stream.
+4 api_signature: paddle.distributed.communication.stream.recv(tensor,src)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor object that will be received, supporting float16, float32, float64,
+    int32, int64, int8, uint8, and bool data types.
+- src: The rank of the source device to receive from, defaulting to 0 when not specified.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- local_rank = dist.get_rank()
+- 'if local_rank == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- '    task = dist.stream.send(data, dst=1, sync_op=False)'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- '    task = dist.stream.recv(data, src=0, sync_op=False)'
+- 'task.wait()  # type: ignore[union-attr]'
+- out = data.numpy()
+- print(out)
+- '# [[4, 5, 6], [4, 5, 6]] (2 GPUs)'
+8 api_shape: {}

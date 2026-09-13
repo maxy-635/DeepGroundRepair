@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.MaxPoolGradGrad
+3 api_description: Computes the second-order gradient of max pooling, given the original
+  input, the first-order gradient, and the upstream gradient.
+4 api_signature: tf.raw_ops.MaxPoolGradGrad(orig_input,grad,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- orig_input: The original input tensor used to compute the max-pooling gradient-of-gradient.
+- grad: The gradient-of-gradient tensor flowing back to the input of `max_pool`, matching
+    `orig_input`'s type.
+- ksize: The pooling window size for each input dimension.
+- strides: The stride of the pooling window for each input dimension.
+- padding: The padding mode to apply, either `SAME` or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

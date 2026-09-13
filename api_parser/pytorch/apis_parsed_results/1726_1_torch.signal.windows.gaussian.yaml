@@ -1,0 +1,13 @@
+2 api_name: torch.signal.windows.gaussian
+3 api_description: Generates a Gaussian-shaped window for signal processing, centered
+  with values that taper smoothly toward the edges.
+4 api_signature: torch.signal.windows.gaussian(M,std,sym)
+5 api_details: ''
+6 api_parameters:
+- M: Specifies the number of points in the returned Gaussian window.
+7 api_usage_example:
+- ' # Generates a symmetric gaussian window with a standard deviation of 1.0.'
+- ' torch.signal.windows.gaussian(10)'
+- ' # Generates a periodic gaussian window and standard deviation equal to 0.9.'
+- ' torch.signal.windows.gaussian(10, sym=False,std=0.9)'
+8 api_shape: null

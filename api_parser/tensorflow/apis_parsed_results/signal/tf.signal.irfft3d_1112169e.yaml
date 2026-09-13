@@ -1,0 +1,12 @@
+2 api_name: tensorflow.signal.irfft3d
+3 api_description: Computes the inverse 3D FFT of a real-valued signal from its RFFT3D
+  frequency-domain representation, reconstructing the spatial-domain tensor with optional
+  cropping or zero-padding based on fft_length.
+4 api_signature: tf.signal.irfft3d(input_tensor,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The complex input tensor containing frequency-domain data to be transformed.
+- fft_length: A 3-element int32 tensor specifying the output FFT length for each of
+    the three dimensions.
+7 api_usage_example: null
+8 api_shape: ''

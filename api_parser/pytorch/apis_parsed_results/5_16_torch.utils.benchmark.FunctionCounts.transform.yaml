@@ -1,0 +1,10 @@
+2 api_name: torch.utils.benchmark.FunctionCounts.transform
+3 api_description: Apply a mapping function to every function name in the counts and
+  return the transformed result.
+4 api_signature: transform(map_fn)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

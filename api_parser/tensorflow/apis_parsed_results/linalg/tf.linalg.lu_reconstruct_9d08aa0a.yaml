@@ -1,0 +1,12 @@
+2 api_name: tensorflow.linalg.lu_reconstruct
+3 api_description: Reconstructs one or more matrices from their LU decomposition(s),
+  combining the lower and upper factors to recover the original matrix.
+4 api_signature: tf.linalg.lu_reconstruct(lower_upper,perm)
+5 api_details: ''
+6 api_parameters:
+- lower_upper: The combined LU matrix returned by `tf.linalg.lu`, storing `L` below
+    the diagonal and `U` on and above it.
+- perm: The permutation vector from `tf.linalg.lu` that encodes the row-swapping matrix
+    `P`.
+7 api_usage_example: null
+8 api_shape: ''

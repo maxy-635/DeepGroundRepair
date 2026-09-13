@@ -1,0 +1,10 @@
+2 api_name: tensorflow.types.experimental.PolymorphicFunction
+3 api_description: Base class for graph functions that can vary by input signature,
+  exposing compiler IR for debugging compiled functions.
+4 api_signature: experimental_get_compiler_ir()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- f_concrete(tf.constant(1.0))
+- f_concrete(x=tf.constant(1.0))
+8 api_shape: ''

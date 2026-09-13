@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.MakeIterator
+3 api_description: Creates or resets an iterator from a dataset so it starts at the
+  first element.
+4 api_signature: tf.raw_ops.MakeIterator(dataset,iterator)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset variant tensor that provides the input data to initialize the
+    iterator.
+- iterator: The resource tensor representing the iterator that will be populated from
+    the dataset.
+7 api_usage_example: null
+8 api_shape: ''

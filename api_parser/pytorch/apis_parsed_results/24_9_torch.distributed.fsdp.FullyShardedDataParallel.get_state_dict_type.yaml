@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.get_state_dict_type
+3 api_description: Returns the current FSDP state_dict type and related configuration
+  for the module tree rooted at the given module.
+4 api_signature: '"staticget_state_dict_type(module)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

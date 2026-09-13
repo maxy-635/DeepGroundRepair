@@ -1,0 +1,14 @@
+2 api_name: tensorflow.experimental.BatchableExtensionType
+3 api_description: An ExtensionType designed to support batching and unbatching, so
+  it works naturally with APIs like Keras, tf.data.Dataset, and tf.map_fn.
+4 api_signature: tf.experimental.BatchableExtensionType(*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'class Vehicle(tf.experimental.BatchableExtensionType):'
+- '  top_speed: tf.Tensor'
+- '  mpg: tf.Tensor'
+- batch = Vehicle([120, 150, 80], [30, 40, 12])
+- 'tf.map_fn(lambda vehicle: vehicle.top_speed * vehicle.mpg, batch,'
+- '          fn_output_signature=tf.int32).numpy()'
+8 api_shape: ''

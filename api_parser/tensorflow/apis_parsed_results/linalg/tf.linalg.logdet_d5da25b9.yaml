@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.logdet
+3 api_description: Computes the natural logarithm of the determinant of a Hermitian
+  positive definite matrix.
+4 api_signature: tf.linalg.logdet(matrix)
+5 api_details: ''
+6 api_parameters:
+- matrix: The square input tensor whose determinant’s logarithm is computed, with
+    the operation applied over the last two dimensions.
+7 api_usage_example: null
+8 api_shape: ''

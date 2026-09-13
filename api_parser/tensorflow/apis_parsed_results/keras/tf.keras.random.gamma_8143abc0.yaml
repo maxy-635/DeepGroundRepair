@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.random.gamma
+3 api_description: Draws random samples from a Gamma distribution.
+4 api_signature: tf.keras.random.gamma(shape,alpha,seed)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the random output to generate.
+- alpha: Sets the shape parameter that controls the gamma distribution.
+- seed: Provides a seed for deterministic random number generation.
+7 api_usage_example: null
+8 api_shape: ''

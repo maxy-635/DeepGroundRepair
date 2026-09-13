@@ -1,0 +1,24 @@
+2 api_name: torch.distributed.tensor.experimental.register_sharding
+3 api_description: Registers custom sharding strategies for DTensor-compatible operators,
+  including unsupported custom ops or overrides of existing default strategies.
+4 api_signature: torch.distributed.tensor.experimental.register_sharding(op)
+5 api_details: ''
+6 api_parameters:
+- op: Specifies the operation or operations for which a custom sharding function will
+    be registered.
+7 api_usage_example:
+- ' @register_sharding(aten._softmax.default)'
+- ' def custom_softmax_sharding(x, dim, half_to_float):'
+- '     softmax_dim = dim if dim >= 0 else dim + x.ndim'
+- '     acceptable_shardings = []'
+- '     all_replicate = ([Replicate()], [Replicate(), None, None])'
+- '     acceptable_shardings.append(all_replicate)'
+- '     for sharding_dim in range(x.ndim):'
+- '         if sharding_dim != softmax_dim:'
+- '             all_sharded = ('
+- '                 [Shard(sharding_dim)],'
+- '                 [Shard(sharding_dim), None, None],'
+- '             )'
+- '             acceptable_shardings.append(all_sharded)'
+- '     return acceptable_shardings'
+8 api_shape: null

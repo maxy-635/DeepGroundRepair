@@ -1,0 +1,35 @@
+2 api_name: paddle.sparse.nn.functional.attention
+3 api_description: Computes sparse attention between query, key, and value tensors,
+  using the provided sparse pattern to reduce attention cost while preserving the
+  core transformer attention behavior.
+4 api_signature: paddle.sparse.nn.functional.attention(query,key,value,sparse_mask)
+5 api_details: ''
+6 api_parameters:
+- query: Provides the query tensor used to compute attention.
+- key: Provides the key tensor used to compare against the query.
+- value: Provides the value tensor that is weighted and returned by attention.
+- sparse_mask: Specifies the sparse attention pattern that limits which positions
+    can attend to each other.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- batch_size = 16
+- num_heads = 16
+- seq_len = 512
+- head_dim = 32
+- query = paddle.rand([batch_size, num_heads, seq_len, head_dim])
+- key = paddle.rand([batch_size, num_heads, seq_len, head_dim])
+- value = paddle.rand([batch_size, num_heads, seq_len, head_dim])
+- query.stop_gradient = False
+- key.stop_gradient = False
+- value.stop_gradient = False
+- mask = paddle.nn.functional.dropout(paddle.ones([seq_len, seq_len])).expand([batch_size,
+  num_heads, seq_len, seq_len])
+- sp_mask = mask.reshape([-1, seq_len, seq_len]).to_sparse_csr()
+- kp_mask = paddle.randint(0, 2, [batch_size, seq_len]).astype(paddle.float32)
+- attn_mask = paddle.randint(0, 2, [seq_len, seq_len]).astype(paddle.float32)
+- output = paddle.sparse.nn.functional.attention(query, key, value, sp_mask, kp_mask,
+  attn_mask)
+- output.backward()
+8 api_shape: {}

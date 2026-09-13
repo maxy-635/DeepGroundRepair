@@ -1,0 +1,16 @@
+2 api_name: paddle.vision.ops.deform_conv2d
+3 api_description: Computes 2D deformable convolution on 4D input by sampling from
+  learned, position-dependent offsets to produce the output feature map.
+4 api_signature: paddle.vision.ops.deform_conv2d(x,offset,weight,stride,padding,dilation,deformable_groups,groups)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the image or feature map in NCHW format.
+- offset: Tensor of spatial sampling offsets used to shift convolution positions.
+- weight: Convolution kernel tensor that defines the learned filters.
+- stride: Controls how far the kernel moves between convolution positions.
+- padding: Adds border padding to preserve or adjust spatial coverage.
+- dilation: Spreads kernel elements apart to enlarge the receptive field.
+- deformable_groups: Splits offsets and sampling into separate deformable groups.
+- groups: Splits input and filters into groups for grouped convolution.
+7 api_usage_example: []
+8 api_shape: {}

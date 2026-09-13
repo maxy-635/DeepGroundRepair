@@ -1,0 +1,20 @@
+2 api_name: tensorflow.experimental.tensorrt.Converter
+3 api_description: Offline converter for transforming TensorFlow 2.0 SavedModels with
+  TensorRT (TF-TRT), providing experimental Windows support.
+4 api_signature: tf.experimental.tensorrt.Converter(input_saved_model_dir,precision_mode,minimum_segment_size,max_workspace_size_bytes,use_calibration,allow_build_at_runtime)
+5 api_details: ''
+6 api_parameters:
+- input_saved_model_dir: Path to the SavedModel directory that contains the input
+    graph to transform.
+- max_workspace_size_bytes: Maximum GPU temporary memory available for TensorRT engine
+    building and execution.
+- precision_mode: Selects the TensorRT precision mode to use, such as FP32, FP16,
+    or INT8.
+- minimum_segment_size: Sets the minimum number of nodes a subgraph must have to be
+    converted into a TensorRT engine.
+- use_calibration: Controls INT8 calibration behavior, either creating a calibration
+    graph or requiring all quantization ranges to be present.
+- allow_build_at_runtime: Determines whether TensorRT engines may be built on the
+    fly at runtime when no suitable prebuilt engine exists.
+7 api_usage_example: null
+8 api_shape: ''

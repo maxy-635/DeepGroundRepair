@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.FFT2D
+3 api_description: Computes the 2D discrete Fourier transform over the innermost two
+  dimensions of the input tensor.
+4 api_signature: tf.raw_ops.FFT2D(input)
+5 api_details: ''
+6 api_parameters:
+- input: The complex tensor to transform with a 2D fast Fourier transform.
+7 api_usage_example: null
+8 api_shape: ''

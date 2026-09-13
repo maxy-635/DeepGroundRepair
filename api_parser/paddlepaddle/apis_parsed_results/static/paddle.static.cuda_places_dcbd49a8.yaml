@@ -1,0 +1,14 @@
+2 api_name: paddle.static.cuda_places
+3 api_description: Returns a list of CUDA places for the available GPU devices, optionally
+  filtered by the number of devices.
+4 api_signature: paddle.static.cuda_places(device_ids)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.static as static
+- paddle.device.set_device('gpu')
+- paddle.enable_static()
+- cuda_places = static.cuda_places()
+8 api_shape: {}

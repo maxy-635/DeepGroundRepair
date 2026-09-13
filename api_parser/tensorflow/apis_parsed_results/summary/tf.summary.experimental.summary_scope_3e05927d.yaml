@@ -1,0 +1,10 @@
+2 api_name: tensorflow.summary.experimental.summary_scope
+3 api_description: Creates a summary-specific name scope and returns both the scope
+  name and a readable summary tag derived from the user-provided name.
+4 api_signature: tf.summary.experimental.summary_scope(name,values)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the base name for the summary operation.
+- values: Provides optional values used by `name_scope` when constructing the scope.
+7 api_usage_example: null
+8 api_shape: ''

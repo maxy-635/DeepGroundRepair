@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixAdd
+3 api_description: Computes the sparse CSR matrix sum C = alpha * A + beta * B.
+4 api_signature: tf.raw_ops.SparseMatrixAdd(a,b,alpha,beta)
+5 api_details: ''
+6 api_parameters:
+- a: The first CSRSparseMatrix input to be added.
+- b: The second CSRSparseMatrix input to be added.
+- alpha: Scalar multiplier applied to the first matrix.
+- beta: Scalar multiplier applied to the second matrix.
+7 api_usage_example: null
+8 api_shape: ''

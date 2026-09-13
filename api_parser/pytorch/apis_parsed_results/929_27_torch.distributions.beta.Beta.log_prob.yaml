@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.beta.Beta.log_prob
+3 api_description: Computes the log probability density of values under a Beta distribution
+  parameterized by concentration1 and concentration0.
+4 api_signature: '"log_prob(value)"'
+5 api_details: ''
+6 api_parameters:
+- value: The value at which to evaluate the beta distribution’s log probability.
+7 api_usage_example: null
+8 api_shape: null

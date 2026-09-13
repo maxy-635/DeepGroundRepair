@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.reduce_prod
+3 api_description: Reduces a tensor by multiplying elements across the specified axes,
+  optionally keeping reduced dimensions as size 1.
+4 api_signature: tf.math.reduce_prod(input_tensor,axis)
+5 api_details: ''
+6 api_parameters:
+- input_tensor: The numeric tensor whose values are multiplied together across the
+    specified dimensions.
+- axis: The dimension or dimensions to reduce; if `None`, all dimensions are reduced.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: torch.rand_like
+3 api_description: Returns a new tensor matching the input’s shape, dtype, layout,
+  and device, filled with random values uniformly sampled from [0, 1).
+4 api_signature: torch.rand_like(input)
+5 api_details: ''
+6 api_parameters:
+- input: Uses the shape of the given tensor to determine the output tensor size.
+7 api_usage_example: null
+8 api_shape: null

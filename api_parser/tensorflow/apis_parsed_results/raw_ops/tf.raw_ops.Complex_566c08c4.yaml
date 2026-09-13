@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Complex
+3 api_description: Elementwise combines matching real and imaginary tensors into a
+  complex tensor of a + bj values.
+4 api_signature: tf.raw_ops.Complex(real,imag,Tout)
+5 api_details: ''
+6 api_parameters:
+- real: Supplies the real-valued tensor that forms the real part of the complex output.
+- imag: Supplies the tensor for the imaginary part, and it must match `real` in type.
+- Tout: Selects the complex output dtype, either `tf.complex64` or `tf.complex128`,
+    defaulting to `tf.complex64`.
+7 api_usage_example: null
+8 api_shape: ''

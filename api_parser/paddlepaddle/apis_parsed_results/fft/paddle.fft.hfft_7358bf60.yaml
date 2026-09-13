@@ -1,0 +1,20 @@
+2 api_name: paddle.fft.hfft
+3 api_description: Computes the inverse-style FFT for a Hermitian-symmetric input,
+  producing a real-valued frequency spectrum.
+4 api_signature: paddle.fft.hfft(x,n,axis,norm,out)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the complex input tensor to be transformed.
+- n: Sets the output length along the transform axis, cropping or zero-padding the
+    input as needed.
+- axis: Chooses which axis to compute the FFT along, defaulting to the last axis.
+- norm: Controls the normalization mode used for the forward/backward transform pair.
+- out: Specifies the tensor that receives the output result.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, -1j, -1])
+- hfft_x = paddle.fft.hfft(x)
+- print(hfft_x)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0., 0., 0., 4.])'
+8 api_shape: {}

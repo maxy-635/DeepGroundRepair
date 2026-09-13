@@ -1,0 +1,11 @@
+2 api_name: torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli
+3 api_description: Represents a Bernoulli distribution relaxed to continuous values
+  on the real line via a logistic reparameterization, enabling differentiable sampling
+  with temperature control through logits.
+4 api_signature: torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli(temperature,logits)
+5 api_details: ''
+6 api_parameters:
+- temperature: Controls how smooth or discrete the relaxed Bernoulli samples are.
+- logits: Specifies the log-odds that the distribution samples a value of 1.
+7 api_usage_example: null
+8 api_shape: null

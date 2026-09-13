@@ -1,0 +1,12 @@
+2 api_name: torch.distributed.algorithms.ddp_comm_hooks.default_hooks.bf16_compress_wrapper
+3 api_description: Wraps a DDP communication hook so gradients are compressed to bfloat16
+  before all-reduce and decompressed back afterward, reducing communication bandwidth;
+  experimental and requires NCCL newer than 2.9.6.
+4 api_signature: torch.distributed.algorithms.ddp_comm_hooks.default_hooks.bf16_compress_wrapper(hook)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' state = PowerSGDState(process_group=process_group, matrix_approximation_rank=1,
+  start_powerSGD_iter=10)'
+- ' ddp_model.register_comm_hook(state, bf16_compress_wrapper(powerSGD_hook))'
+8 api_shape: null

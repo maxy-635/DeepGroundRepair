@@ -1,0 +1,11 @@
+2 api_name: paddle.nn.LSTMCell
+3 api_description: paddle.nn.LSTMCell is a recurrent neural network cell that processes
+  input sequences by maintaining and updating hidden and cell states, effectively
+  capturing temporal dependencies in the data.
+4 api_signature: paddle.nn.LSTMCell(input_size,hidden_size)
+5 api_details: ''
+6 api_parameters:
+- input_size: Specifies the number of expected features in the input.
+- hidden_size: Defines the number of features in the hidden state.
+7 api_usage_example: []
+8 api_shape: null

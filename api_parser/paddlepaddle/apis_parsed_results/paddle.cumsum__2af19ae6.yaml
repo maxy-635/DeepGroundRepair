@@ -1,0 +1,8 @@
+2 api_name: paddle.cumsum_
+3 api_description: 'In-place cumulative sum: writes the cumulative sum of the input
+  tensor into the output tensor, reusing the input storage.'
+4 api_signature: paddle.cumsum_(x,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

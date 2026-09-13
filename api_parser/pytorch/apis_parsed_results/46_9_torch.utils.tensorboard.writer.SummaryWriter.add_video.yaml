@@ -1,0 +1,11 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_video
+3 api_description: Logs video data to TensorBoard as a summary, allowing you to visualize
+  video clips during training or evaluation.
+4 api_signature: add_video(vid_tensor,global_step,fps)
+5 api_details: ''
+6 api_parameters:
+- vid_tensor: The video data to log.
+- global_step: The step number to associate with the video in TensorBoard.
+- fps: The playback frame rate for the video.
+7 api_usage_example: null
+8 api_shape: null

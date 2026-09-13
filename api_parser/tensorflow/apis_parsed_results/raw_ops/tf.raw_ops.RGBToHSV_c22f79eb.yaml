@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.RGBToHSV
+3 api_description: Converts RGB images to HSV, returning a tensor of the same shape
+  with hue, saturation, and value in [0,1] for inputs normalized to [0,1].
+4 api_signature: tf.raw_ops.RGBToHSV(images)
+5 api_details: ''
+6 api_parameters:
+- images: Input RGB tensor to convert to HSV; it must have rank 1 or higher, a last
+    dimension of size 3, and a supported floating-point type.
+7 api_usage_example:
+- blue_image = tf.stack([
+- '   tf.zeros([5,5]),'
+- '   tf.zeros([5,5]),'
+- '   tf.ones([5,5])],'
+- '   axis=-1)'
+- blue_hsv_image = tf.image.rgb_to_hsv(blue_image)
+- blue_hsv_image[0,0].numpy()
+8 api_shape: ''

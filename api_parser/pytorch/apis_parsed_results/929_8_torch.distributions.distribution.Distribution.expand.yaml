@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.distribution.Distribution.expand
+3 api_description: Creates a new distribution with expanded batch dimensions by expanding
+  its parameters, without allocating new memory or repeating initialization checks.
+4 api_signature: expand(batch_shape)
+5 api_details: ''
+6 api_parameters:
+- batch_shape: Specifies the target batch shape to expand the distribution to.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: torch.nn.LazyConvTranspose1d
+3 api_description: torch.nn.LazyConvTranspose1d is a 1D transposed convolution layer
+  that defers the specification of the input channels, allowing for dynamic input
+  shapes during initialization.
+4 api_signature: torch.nn.LazyConvTranspose1d(out_channels,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- out_channels: Specifies the number of output channels produced by the transposed
+    convolution.
+- kernel_size: Defines the size of the kernel used for the transposed convolution.
+- stride: Determines the step size at which the convolutional kernel moves across
+    the input.
+- padding: Indicates the amount of zero-padding added to both sides of the input before
+    the convolution.
+7 api_usage_example: null
+8 api_shape: null

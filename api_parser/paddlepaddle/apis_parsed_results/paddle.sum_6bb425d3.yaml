@@ -1,0 +1,68 @@
+2 api_name: paddle.sum
+3 api_description: Computes the sum of tensor elements, optionally along specified
+  axes, with support for keeping reduced dimensions.
+4 api_signature: paddle.sum(x,axis,keepdim,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements will be summed.
+- axis: The axis or axes along which to compute the sum, or `None` to sum all elements.
+- keepdim: Whether to keep the reduced dimensions in the output tensor.
+- out: An optional tensor to store the result.
+7 api_usage_example:
+- import paddle
+- '# x is a Tensor with following elements:'
+- '#    [[0.2, 0.3, 0.5, 0.9]'
+- '#     [0.1, 0.2, 0.6, 0.7]]'
+- '# Each example is followed by the corresponding output tensor.'
+- x = paddle.to_tensor([[0.2, 0.3, 0.5, 0.9],
+- '                      [0.1, 0.2, 0.6, 0.7]])'
+- out1 = paddle.sum(x)
+- out1
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 3.50000000)
+- out2 = paddle.sum(x, axis=0)
+- out2
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.30000001, 0.50000000, 1.10000002, 1.59999990])'
+- out3 = paddle.sum(x, axis=-1)
+- out3
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.89999998, 1.60000002])'
+- out4 = paddle.sum(x, axis=1, keepdim=True)
+- out4
+- Tensor(shape=[2, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1.89999998],'
+- '[1.60000002]])'
+- '# y is a Tensor with shape [2, 2, 2] and elements as below:'
+- '#      [[[1, 2], [3, 4]],'
+- '#      [[5, 6], [7, 8]]]'
+- '# Each example is followed by the corresponding output tensor.'
+- y = paddle.to_tensor([[[1, 2], [3, 4]],
+- '                      [[5, 6], [7, 8]]])'
+- out5 = paddle.sum(y, axis=[1, 2])
+- out5
+- Tensor(shape=[2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[10, 26])'
+- out6 = paddle.sum(y, axis=[0, 1])
+- out6
+- Tensor(shape=[2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[16, 20])'
+- '# x is a Tensor with following elements:'
+- '#    [[True, True, True, True]'
+- '#     [False, False, False, False]]'
+- '# Each example is followed by the corresponding output tensor.'
+- x = paddle.to_tensor([[True, True, True, True],
+- '                      [False, False, False, False]])'
+- out7 = paddle.sum(x)
+- out7
+- Tensor(shape=[], dtype=int64, place=Place(cpu), stop_gradient=True,
+- 4)
+- out8 = paddle.sum(x, axis=0)
+- out8
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[1, 1, 1, 1])'
+- out9 = paddle.sum(x, axis=1)
+- out9
+- Tensor(shape=[2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[4, 0])'
+8 api_shape: {}

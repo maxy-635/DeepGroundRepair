@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.layers.Concatenate
+3 api_description: Concatenates a list of tensors along a specified axis, requiring
+  all tensors to have the same shape except for that axis.
+4 api_signature: tf.keras.layers.Concatenate(axis)
+5 api_details: ''
+6 api_parameters:
+- axis: Specifies the dimension along which the input tensors will be concatenated.
+7 api_usage_example:
+- x1 = keras.layers.Dense(8)(np.arange(10).reshape(5, 2))
+- x2 = keras.layers.Dense(8)(np.arange(10, 20).reshape(5, 2))
+- y = keras.layers.Concatenate()([x1, x2])
+8 api_shape: null

@@ -1,0 +1,34 @@
+2 api_name: torch.asarray
+3 api_description: Converts an input object into a torch tensor.
+4 api_signature: torch.asarray(obj,dtype,device,copy,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- obj: The input data to convert into a PyTorch tensor without unnecessary copying
+    when possible.
+7 api_usage_example:
+- ' a = torch.tensor([1, 2, 3])'
+- ' # Shares memory with tensor ''a'''
+- ' b = torch.asarray(a)'
+- ' a.data_ptr() == b.data_ptr()'
+- ' # Forces memory copy'
+- ' c = torch.asarray(a, copy=True)'
+- ' a.data_ptr() == c.data_ptr()'
+- ' a = torch.tensor([1., 2., 3.], requires_grad=True)'
+- ' b = a + 2'
+- ' b'
+- ' # Shares memory with tensor ''b'', with no grad'
+- ' c = torch.asarray(b)'
+- ' c'
+- ' # Shares memory with tensor ''b'', retaining autograd history'
+- ' d = torch.asarray(b, requires_grad=True)'
+- ' d'
+- ' array = numpy.array([1, 2, 3])'
+- ' # Shares memory with array ''array'''
+- ' t1 = torch.asarray(array)'
+- ' array.__array_interface__[''data''][0] == t1.data_ptr()'
+- ' # Copies memory due to dtype mismatch'
+- ' t2 = torch.asarray(array, dtype=torch.float32)'
+- ' array.__array_interface__[''data''][0] == t2.data_ptr()'
+- ' scalar = numpy.float64(0.5)'
+- ' torch.asarray(scalar)'
+8 api_shape: null

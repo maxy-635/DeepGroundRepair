@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.not_equal
+3 api_description: Returns a boolean tensor indicating element-wise inequality between
+  x1 and x2.
+4 api_signature: tf.keras.ops.not_equal(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first tensor to compare for inequality.
+- x2: The second tensor to compare for inequality.
+7 api_usage_example: null
+8 api_shape: ''

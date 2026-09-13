@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Xlogy
+3 api_description: Computes x * log(y) elementwise, returning 0 when x is 0.
+4 api_signature: tf.raw_ops.Xlogy(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are multiplied by the logarithm of `y`.
+- y: The input tensor used as the logarithm argument, and must have the same type
+    as `x`.
+7 api_usage_example: null
+8 api_shape: ''

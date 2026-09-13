@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.EuclideanNorm
+3 api_description: Computes the Euclidean (L2) norm of a tensor over the specified
+  axes, optionally keeping the reduced dimensions as size 1.
+4 api_signature: tf.raw_ops.EuclideanNorm(input,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose Euclidean norm is computed over the specified dimensions.
+- axis: The dimensions of the tensor to reduce when calculating the norm.
+7 api_usage_example: null
+8 api_shape: ''

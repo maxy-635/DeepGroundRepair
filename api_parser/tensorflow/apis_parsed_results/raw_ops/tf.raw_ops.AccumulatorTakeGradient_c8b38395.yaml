@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.AccumulatorTakeGradient
+3 api_description: Blocks until enough gradients are accumulated, then returns their
+  average, increments the accumulator’s global step, and resets the stored gradients.
+4 api_signature: tf.raw_ops.AccumulatorTakeGradient(handle,num_required,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the accumulator resource from which to take gradients.
+- num_required: Specifies how many gradients must be accumulated before returning
+    an aggregate.
+- dtype: Sets the data type of the accumulated gradients and must match the accumulator's
+    type.
+7 api_usage_example: null
+8 api_shape: ''

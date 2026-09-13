@@ -1,0 +1,26 @@
+2 api_name: torch.jit.fork
+3 api_description: Starts `func` asynchronously and returns a handle to its eventual
+  result.
+4 api_signature: torch.jit.fork(func,*args,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- func: The Python function or `torch.nn.Module` to run, asynchronously in TorchScript
+    and synchronously otherwise.
+- '*args': Positional arguments passed to `func`.
+- '**kwargs': Keyword arguments passed to `func`.
+7 api_usage_example:
+- import torch
+- from torch import Tensor
+- 'def foo(a: Tensor, b: int) -> Tensor:'
+- '    return a + b'
+- 'def bar(a):'
+- '    fut: torch.jit.Future[Tensor] = torch.jit.fork(foo, a, b=2)'
+- '    return torch.jit.wait(fut)'
+- script_bar = torch.jit.script(bar)
+- input = torch.tensor(2)
+- '# only the scripted version executes asynchronously'
+- assert script_bar(input) == bar(input)
+- '# trace is not run asynchronously, but fork is captured in IR'
+- graph = torch.jit.trace(bar, (input,)).graph
+- assert "fork" in str(graph)
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.name_scope
+3 api_description: Creates a named scope for backend ops, grouping related tensor
+  operations under a common prefix for readability and organization; this API is deprecated.
+4 api_signature: tf.keras.backend.name_scope(name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

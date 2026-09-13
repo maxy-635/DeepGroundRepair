@@ -1,0 +1,14 @@
+2 api_name: torch.hstack
+3 api_description: Horizontally concatenate tensors in sequence along columns.
+4 api_signature: torch.hstack(tensors)
+5 api_details: ''
+6 api_parameters:
+- tensors: The sequence of tensors to concatenate horizontally into a single tensor.
+7 api_usage_example:
+- ' a = torch.tensor([1, 2, 3])'
+- ' b = torch.tensor([4, 5, 6])'
+- ' torch.hstack((a,b))'
+- ' a = torch.tensor([[1],[2],[3]])'
+- ' b = torch.tensor([[4],[5],[6]])'
+- ' torch.hstack((a,b))'
+8 api_shape: null

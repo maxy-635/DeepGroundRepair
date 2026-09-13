@@ -1,0 +1,23 @@
+2 api_name: torch.unique_consecutive
+3 api_description: Removes duplicate values that appear consecutively, keeping only
+  the first item in each run of equivalent elements.
+4 api_signature: '"torch.unique_consecutive(input,return_inverse,return_counts,dim)"'
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to process.
+- return_inverse: Also return indices showing where each original element maps in
+    the unique consecutive output.
+- return_counts: Also return the number of times each unique element appears.
+- dim: Apply the operation along a specific dimension; if `None`, flatten the input
+    first.
+7 api_usage_example:
+- ' x = torch.tensor([1, 1, 2, 2, 3, 1, 1, 2])'
+- ' output = torch.unique_consecutive(x)'
+- ' output'
+- ' output, inverse_indices = torch.unique_consecutive(x, return_inverse=True)'
+- ' output'
+- ' inverse_indices'
+- ' output, counts = torch.unique_consecutive(x, return_counts=True)'
+- ' output'
+- ' counts'
+8 api_shape: null

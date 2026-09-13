@@ -1,0 +1,14 @@
+2 api_name: paddle.device.cuda.empty_cache
+3 api_description: Releases unused cached GPU memory held by Paddle’s allocator so
+  it can be used by other applications and shown in `nvidia-smi`.
+4 api_signature: paddle.device.cuda.empty_cache()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- tensor = paddle.randn([512, 512, 512], "float64")
+- del tensor
+- paddle.device.cuda.empty_cache()
+8 api_shape: {}

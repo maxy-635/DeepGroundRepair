@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.InplaceSub
+3 api_description: Subtracts `v` from specified rows of `x` in place and returns the
+  updated tensor.
+4 api_signature: tf.raw_ops.InplaceSub(x,i,v)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose selected slices will be updated in place.
+- i: A vector of row indices into the first dimension of `x` specifying which slices
+    to subtract from.
+- v: A tensor of replacement values, matching `x` except for the first dimension,
+    which must match the length of `i`.
+7 api_usage_example: null
+8 api_shape: ''

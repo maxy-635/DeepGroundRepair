@@ -1,0 +1,13 @@
+2 api_name: tensorflow.signal.inverse_stft_window_fn
+3 api_description: Creates an inverse STFT window function that applies a pointwise
+  amplitude correction to the forward window so inverse_stft can better reconstruct
+  the original signal.
+4 api_signature: tf.signal.inverse_stft_window_fn(frame_step,forward_window_fn)
+5 api_details: ''
+6 api_parameters:
+- frame_step: Sets the hop size, or number of samples between adjacent inverse STFT
+    frames.
+- forward_window_fn: Specifies the window function used in the forward STFT so the
+    inverse can generate a matching reconstruction window.
+7 api_usage_example: null
+8 api_shape: ''

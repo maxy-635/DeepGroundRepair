@@ -1,0 +1,52 @@
+2 api_name: paddle.onnx.export
+3 api_description: Exports a Paddle layer/model to ONNX format for inference with
+  ONNX-compatible runtimes and backends.
+4 api_signature: paddle.onnx.export(layer,path,input_spec)
+5 api_details: ''
+6 api_parameters:
+- layer: Specifies the Paddle `Layer` instance to export as an ONNX model.
+- path: Sets the output path prefix for the exported model; the `.onnx` file is saved
+    using this prefix.
+- input_spec: Defines the model inputs for export, either as `InputSpec` or example
+    tensors, and defaults to all forward inputs if omitted.
+7 api_usage_example:
+- import paddle
+- 'class LinearNet(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(128, 10)'
+- '...'
+- '    def forward(self, x):'
+- '        return self._linear(x)'
+- '...'
+- '# Export model with ''InputSpec'' to support dynamic input shape.'
+- 'def export_linear_net():'
+- '    model = LinearNet()'
+- '    x_spec = paddle.static.InputSpec(shape=[None, 128], dtype=''float32'')'
+- '    paddle.onnx.export(model, ''linear_net'', input_spec=[x_spec])'
+- '...'
+- '>>>'
+- export_linear_net()
+- 'class Logic(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '...'
+- '    def forward(self, x, y, z):'
+- '        if z:'
+- '            return x'
+- '        else:'
+- '            return y'
+- '...'
+- '# Export model with ''Tensor'' to support pruned model by set ''output_spec''.'
+- 'def export_logic():'
+- '    model = Logic()'
+- '    x = paddle.to_tensor([1])'
+- '    y = paddle.to_tensor([2])'
+- '    # Static and run model.'
+- '    paddle.jit.to_static(model)'
+- '    out = model(x, y, z=True)'
+- '    paddle.onnx.export(model, ''pruned'', input_spec=[x, y, True], output_spec=[out],
+  input_names_after_prune=[x.name])'
+- '...'
+- export_logic()
+8 api_shape: {}

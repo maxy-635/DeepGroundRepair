@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RandomGamma
+3 api_description: Generates random samples from one or more Gamma distributions parameterized
+  by alpha using a transformation-rejection method.
+4 api_signature: tf.raw_ops.RandomGamma(shape,alpha)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the 1-D output sample shape, determining how many independent gamma
+    samples to draw.
+- alpha: Provides the gamma distribution shape parameter(s) used to define each sampled
+    distribution.
+7 api_usage_example: null
+8 api_shape: ''

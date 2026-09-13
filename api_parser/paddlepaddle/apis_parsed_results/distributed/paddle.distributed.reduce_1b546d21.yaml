@@ -1,0 +1,24 @@
+2 api_name: paddle.distributed.reduce
+3 api_description: Reduces a tensor from all processes to a specified destination
+  rank, combining values with the given operation so the destination receives the
+  aggregated result.
+4 api_signature: paddle.distributed.reduce(tensor,dst)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to be reduced; it holds the result on the destination rank and
+    serves as the input on other ranks.
+- dst: The rank ID that receives the reduced result.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- dist.reduce(data, dst=0)
+- print(data)
+- '# [[5, 7, 9], [5, 7, 9]] (2 GPUs, out for rank 0)'
+- '# [[1, 2, 3], [1, 2, 3]] (2 GPUs, out for rank 1)'
+8 api_shape: {}

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.CTCBeamSearchDecoder
+3 api_description: Performs beam search decoding on input logits to produce the most
+  likely sequence paths, optionally merging repeated consecutive labels in each beam.
+4 api_signature: tf.raw_ops.CTCBeamSearchDecoder(inputs,sequence_length,beam_width,top_paths)
+5 api_details: ''
+6 api_parameters:
+- inputs: The time-major logits tensor that provides per-class scores for each batch
+    element at each timestep.
+- sequence_length: A batch-sized vector giving the valid length of each input sequence
+    so decoding ignores padded timesteps.
+- beam_width: The number of candidate sequences to keep at each step of the beam search.
+- top_paths: The number of best decoded output paths to return, up to the specified
+    beam width.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.experimental.dtensor.create_tpu_mesh
+3 api_description: Creates a TPU mesh across all available TPU devices, optimized
+  for AllReduce ring reductions, with configurable leading ring axes when enough cores
+  are available.
+4 api_signature: tf.experimental.dtensor.create_tpu_mesh(mesh_dim_names:List[str],mesh_shape:List[int],mesh_name:str,use_xla_spmd:bool)
+5 api_details: ''
+6 api_parameters:
+- mesh_dim_names: Names each dimension of the mesh.
+- mesh_shape: Defines the size and layout of the mesh.
+- mesh_name: Sets a unique mesh name, or auto-generates one if left empty.
+- use_xla_spmd: Chooses XLA SPMD instead of DTensor SPMD when enabled.
+7 api_usage_example: null
+8 api_shape: ''

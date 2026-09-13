@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.isrealobj
+3 api_description: Returns True if the input is a real-valued object, and False if
+  it is complex.
+4 api_signature: tf.experimental.numpy.isrealobj(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

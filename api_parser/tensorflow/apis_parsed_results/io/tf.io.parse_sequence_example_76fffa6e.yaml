@@ -1,0 +1,16 @@
+2 api_name: tensorflow.io.parse_sequence_example
+3 api_description: Parses a batch of serialized SequenceExample protos into dictionaries
+  of context and sequence features, returning Tensors, SparseTensors, or RaggedTensors
+  with batch and shape information, while handling optional defaults, padding, and
+  missing feature validation.
+4 api_signature: tf.io.parse_sequence_example(serialized,context_features,sequence_features)
+5 api_details: ''
+6 api_parameters:
+- serialized: The input 1-D string tensor containing serialized `SequenceExample`
+    protos to parse.
+- context_features: The feature specification mapping for values that describe the
+    `SequenceExample` as a whole.
+- sequence_features: The feature specification mapping for values stored across the
+    `FeatureList` sequence data.
+7 api_usage_example: null
+8 api_shape: ''

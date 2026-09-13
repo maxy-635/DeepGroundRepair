@@ -1,0 +1,10 @@
+2 api_name: tensorflow.distribute.experimental.partitioners.Partitioner
+3 api_description: Base class for TensorFlow partitioners that split a tensor shape
+  into shards and return the partitioning results.
+4 api_signature: __call__(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the tensor shape to be partitioned.
+- dtype: Specifies the data type used for the partitioned value.
+7 api_usage_example: null
+8 api_shape: ''

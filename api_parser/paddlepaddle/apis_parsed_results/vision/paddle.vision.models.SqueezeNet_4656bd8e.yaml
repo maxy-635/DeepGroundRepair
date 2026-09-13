@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.models.SqueezeNet
+3 api_description: SqueezeNet is a lightweight image classification model that delivers
+  AlexNet-level accuracy with far fewer parameters and a very small model size.
+4 api_signature: paddle.vision.models.SqueezeNet(version,num_class es,with_pool)
+5 api_details: ''
+6 api_parameters:
+- version: Selects the SqueezeNet variant to use, either 1.0 or 1.1.
+- with_pool: Controls whether a pooling layer is applied before the final fully connected
+    layer.
+7 api_usage_example: []
+8 api_shape: {}

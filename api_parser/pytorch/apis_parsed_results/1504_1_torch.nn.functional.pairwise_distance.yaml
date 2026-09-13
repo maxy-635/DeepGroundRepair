@@ -1,0 +1,15 @@
+2 api_name: torch.nn.functional.pairwise_distance
+3 api_description: Computes the batchwise pairwise distance between two input tensors
+  using a specified p-norm.
+4 api_signature: torch.nn.functional.pairwise_distance(x1,x2,p)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input tensor to compare.
+- x2: The second input tensor to compare.
+- p: The norm degree for pairwise distance computation; default is 2.
+- eps: A small value to avoid division by zero in gradient computation; default is
+    1e-6.
+- keepdim: A boolean indicating whether to keep the dimensions of the output tensor;
+    default is False.
+7 api_usage_example: null
+8 api_shape: null

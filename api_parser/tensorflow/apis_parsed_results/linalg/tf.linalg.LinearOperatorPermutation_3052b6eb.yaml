@@ -1,0 +1,14 @@
+2 api_name: tensorflow.linalg.LinearOperatorPermutation
+3 api_description: Represents a batch of permutation matrices from integer permutation
+  vectors, applying row reordering by moving each source row v[i] to row i with tf.transpose-like
+  semantics.
+4 api_signature: tf.linalg.LinearOperatorPermutation(perm,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- perm: Specifies the row permutation to apply, using a unique integer vector of indices
+    from `0` to `N-1`.
+- dtype: Sets the numeric data type used by the operator's arguments and computations.
+- name: Assigns an optional name for identifying this `LinearOperatorPermutation`
+    instance.
+7 api_usage_example: null
+8 api_shape: ''

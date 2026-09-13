@@ -1,0 +1,27 @@
+2 api_name: tensorflow.nn.sigmoid_cross_entropy_with_logits
+3 api_description: The tensorflow.nn.sigmoid_cross_entropy_with_logits API computes
+  the sigmoid cross-entropy loss for tasks with binary outcomes, using logits as predictions
+  and labels as ground truth, to measure probability error in scenarios like binary
+  classification or probabilistic regression.
+4 api_signature: tf.nn.sigmoid_cross_entropy_with_logits(labels,logits)
+5 api_details: ''
+6 api_parameters:
+- labels: Represents the true binary classification labels for each instance, with
+    values ranging from 0 to 1.
+- logits: Represents the predicted raw values (logits) from the model, which can be
+    any real number.
+7 api_usage_example:
+- sigmoid_logits = tf.constant([1., -1., 0.])
+- softmax_logits = tf.stack([sigmoid_logits, tf.zeros_like(sigmoid_logits)],
+- '                          axis=-1)'
+- soft_binary_labels = tf.constant([1., 1., 0.])
+- soft_multiclass_labels = tf.stack(
+- '    [soft_binary_labels, 1. - soft_binary_labels], axis=-1)'
+- hard_labels = tf.constant([0, 0, 1])
+- tf.nn.sparse_softmax_cross_entropy_with_logits(
+- '    labels=hard_labels, logits=softmax_logits).numpy()'
+- tf.nn.softmax_cross_entropy_with_logits(
+- '    labels=soft_multiclass_labels, logits=softmax_logits).numpy()'
+- tf.nn.sigmoid_cross_entropy_with_logits(
+- '    labels=soft_binary_labels, logits=sigmoid_logits).numpy()'
+8 api_shape: ''

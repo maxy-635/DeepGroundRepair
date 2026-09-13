@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.WriteSummary
+3 api_description: Writes a tensor summary for a given tag and step using a summary
+  writer.
+4 api_signature: tf.raw_ops.WriteSummary(writer,step,tensor,tag)
+5 api_details: ''
+6 api_parameters:
+- writer: Identifies the summary writer resource that will receive the data.
+- step: Specifies the global step value associated with the summary entry.
+- tensor: Provides the tensor value to be written as the summary data.
+- tag: Names the summary entry so it can be grouped and identified.
+7 api_usage_example: null
+8 api_shape: ''

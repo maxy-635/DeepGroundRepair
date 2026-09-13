@@ -1,0 +1,23 @@
+2 api_name: torch.nn.TripletMarginLoss
+3 api_description: Measures triplet loss to evaluate relative similarity between anchor,
+  positive, and negative samples, ensuring that the anchor is closer to the positive
+  than to the negative by a specified margin.
+4 api_signature: torch.nn.TripletMarginLoss(margin,p,reduction)
+5 api_details: ''
+6 api_parameters:
+- margin: The minimum required distance between positive and negative pairs.
+- p: The degree of the norm used to calculate pairwise distances.
+- reduction: 'Defines how the output loss will be aggregated: no reduction, mean,
+    or sum.'
+7 api_usage_example:
+- ' triplet_loss = nn.TripletMarginLoss(margin=1.0, p=2, eps=1e-7)'
+- ' anchor = torch.randn(100, 128, requires_grad=True)'
+- ' positive = torch.randn(100, 128, requires_grad=True)'
+- ' negative = torch.randn(100, 128, requires_grad=True)'
+- ' output = triplet_loss(anchor, positive, negative)'
+- ' output.backward()'
+8 api_shape:
+  input tensor shape: (N, Depth)
+  output tensor shape: A Tensor of shape (N) if reduction is 'none' and input shape
+    is (N, Depth); a scalar otherwise.
+  tensor shape transform formulas: {}

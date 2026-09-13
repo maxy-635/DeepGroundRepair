@@ -1,0 +1,9 @@
+2 api_name: torch.utils.cpp_extension.BuildExtension
+3 api_description: Custom setuptools build command that compiles and links PyTorch
+  C++/CUDA extensions during package builds, handling build configuration and compiler
+  integration.
+4 api_signature: '"torch.utils.cpp_extension.BuildExtension()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.igamma
+3 api_description: Computes the regularized lower incomplete gamma function, equivalent
+  to torch.special.gammainc().
+4 api_signature: torch.igamma(input,other)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

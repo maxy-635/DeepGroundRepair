@@ -1,0 +1,30 @@
+2 api_name: paddle.nn.functional.hinge_embedding_loss
+3 api_description: The paddle.nn.functional.hinge_embedding_loss API computes the
+  hinge embedding loss between an input tensor and a labels tensor, useful for learning
+  nonlinear embeddings or in semi-supervised learning scenarios.
+4 api_signature: paddle.nn.functional.hinge_embedding_loss(input,label,margin)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor for the loss calculation, which should be of type float32
+    or float64 and have a shape [N, *].
+- label: A tensor of the same shape as input, containing labels of 1 or -1, indicating
+    the desired class for each input.
+- margin: A hyperparameter that defines the threshold for considering negative samples
+    in the loss computation, defaulting to 1.0.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- input = paddle.to_tensor([[1, -2, 3], [0, -1, 2], [1, 0, 1]], dtype=paddle.float32)
+- '# label elements in {1., -1.}'
+- label = paddle.to_tensor([[-1, 1, -1], [1, 1, 1], [1, -1, 1]], dtype=paddle.float32)
+- loss = F.hinge_embedding_loss(input, label, margin=1.0, reduction='none')
+- print(loss)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0., -2.,  0.],'
+- '[ 0., -1.,  2.],'
+- '[ 1.,  1.,  1.]])'
+- loss = F.hinge_embedding_loss(input, label, margin=1.0, reduction='mean')
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.22222222)
+8 api_shape: null

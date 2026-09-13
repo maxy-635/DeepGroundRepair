@@ -1,0 +1,44 @@
+2 api_name: paddle.nn.AdaptiveLogSoftmaxWithLoss
+3 api_description: AdaptiveLogSoftmaxWithLoss is an efficient training strategy for
+  models with large output spaces, optimizing performance on imbalanced label distributions
+  by approximating softmax, particularly effective for tasks like natural language
+  modeling.
+4 api_signature: paddle.nn.AdaptiveLogSoftmaxWithLoss(in_features,n_class
+  es,cutoffs)
+5 api_details: ''
+6 api_parameters:
+- in_features: Defines the number of input features for the tensor to be processed
+    by the adaptive log softmax function.
+- cutoffs: Specifies the threshold values used to divide target classes into different
+    buckets for efficient computation.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- paddle.seed(2024)
+- input = paddle.randn([3, 5], dtype="float32")
+- target = paddle.full((3,), 1, dtype='int64')
+- asfm = nn.AdaptiveLogSoftmaxWithLoss(
+- '    in_features=5,'
+- '    n_classes=3,'
+- '    cutoffs=[2],'
+- '    div_value=2.0,'
+- '    head_bias=False'
+- )
+- out, loss = asfm(input, target)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[-1.04691017, -0.42341536, -1.16909981])'
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=False,
+- 0.87980843)
+- out = asfm.log_prob(input)
+- print(out)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.13710010, -1.04691017, -1.11403584],'
+- '[-1.51841831, -0.42341536, -2.07040048],'
+- '[-4.25405550, -1.16909981, -0.39282480]])'
+- out = asfm.predict(input)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1., 1., 2.])'
+8 api_shape: null

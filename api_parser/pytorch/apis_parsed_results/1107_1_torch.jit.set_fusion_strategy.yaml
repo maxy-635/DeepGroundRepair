@@ -1,0 +1,8 @@
+2 api_name: torch.jit.set_fusion_strategy
+3 api_description: Configures TorchScript fusion by setting how many specialization
+  patterns are allowed during fusion and what types they use.
+4 api_signature: torch.jit.set_fusion_strategy(strategy)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

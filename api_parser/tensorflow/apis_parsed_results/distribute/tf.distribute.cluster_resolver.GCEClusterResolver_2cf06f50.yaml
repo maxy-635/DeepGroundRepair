@@ -1,0 +1,16 @@
+2 api_name: tensorflow.distribute.cluster_resolver.GCEClusterResolver
+3 api_description: Resolves a TensorFlow cluster on Google Compute Engine by querying
+  a specified project, zone, and instance group to collect instance IPs and build
+  a distributed-training cluster configuration.
+4 api_signature: tf.distribute.cluster_resolver.GCEClusterResolver(project,zone,instance_group,port,task_type,task_id)
+5 api_details: ''
+6 api_parameters:
+- project: Identifies the GCE project that contains the managed instance group.
+- zone: Specifies the GCE zone where the instance group resides.
+- instance_group: Names the GCE instance group whose VM members will be resolved.
+- port: Sets the port used by the TensorFlow server on each instance, defaulting to
+    8470.
+- task_type: Defines the TensorFlow job name assigned to this instance group.
+- task_id: Specifies the unique task index of this VM within the instance group.
+7 api_usage_example: null
+8 api_shape: ''

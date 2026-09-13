@@ -1,0 +1,19 @@
+2 api_name: tensorflow.image.stateless_random_brightness
+3 api_description: Deterministically adjusts image brightness by adding a random delta
+  sampled from [-max_delta, max_delta), producing the same result for the same seed
+  regardless of call order or global random seed settings.
+4 api_signature: tf.image.stateless_random_brightness(image,max_delta,seed)
+5 api_details: ''
+6 api_parameters:
+- image: The image or batch of images whose brightness will be adjusted.
+- max_delta: The non-negative maximum amount by which brightness may be randomly changed.
+- seed: A length-2 tensor that seeds the random brightness generator, using int32
+    or int64 values.
+7 api_usage_example:
+- x = [[[1.0, 2.0, 3.0],
+- '      [4.0, 5.0, 6.0]],'
+- '     [[7.0, 8.0, 9.0],'
+- '      [10.0, 11.0, 12.0]]]'
+- seed = (1, 2)
+- tf.image.stateless_random_brightness(x, 0.2, seed)
+8 api_shape: ''

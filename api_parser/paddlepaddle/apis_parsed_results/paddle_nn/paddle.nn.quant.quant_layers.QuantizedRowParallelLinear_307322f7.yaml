@@ -1,0 +1,8 @@
+2 api_name: paddle.nn.quant.quant_layers.QuantizedRowParallelLinear
+3 api_description: QuantizedRowParallelLinear performs linear transformations with
+  quantization support, optimized for row-parallel execution in neural networks.
+4 api_signature: paddle.nn.quant.quant_layers.QuantizedRowParallelLinear(layer,weight_bits,activation_bits)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

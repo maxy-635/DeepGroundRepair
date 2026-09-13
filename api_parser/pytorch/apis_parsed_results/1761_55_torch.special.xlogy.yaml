@@ -1,0 +1,19 @@
+2 api_name: torch.special.xlogy
+3 api_description: Computes input multiplied by the logarithm of other, with special
+  handling for zero-valued inputs.
+4 api_signature: torch.special.xlogy(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first value to multiply, typically used as the coefficient in the `x
+    * log(y)` computation.
+- other: The second value whose logarithm is taken in the `x * log(y)` computation.
+7 api_usage_example:
+- ' x = torch.zeros(5,)'
+- ' y = torch.tensor([-1, 0, 1, float(''inf''), float(''nan'')])'
+- ' torch.special.xlogy(x, y)'
+- ' x = torch.tensor([1, 2, 3])'
+- ' y = torch.tensor([3, 2, 1])'
+- ' torch.special.xlogy(x, y)'
+- ' torch.special.xlogy(x, 4)'
+- ' torch.special.xlogy(2, y)'
+8 api_shape: null

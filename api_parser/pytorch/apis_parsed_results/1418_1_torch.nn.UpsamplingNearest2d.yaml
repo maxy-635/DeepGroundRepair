@@ -1,0 +1,21 @@
+2 api_name: torch.nn.UpsamplingNearest2d
+3 api_description: Upsamples a 2D input tensor using nearest neighbor interpolation,
+  increasing its spatial dimensions while preserving the number of input channels.
+4 api_signature: torch.nn.UpsamplingNearest2d(size,scale_factor)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the desired output spatial dimensions (height, width) for the upsampling.
+- scale_factor: Defines the multiplicative factor by which the input spatial dimensions
+    are scaled.
+7 api_usage_example:
+- ' input = torch.arange(1, 5, dtype=torch.float32).view(1, 1, 2, 2)'
+- ' input'
+- ' m = nn.UpsamplingNearest2d(scale_factor=2)'
+- ' m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: Height_out = floor(Height_in * scale_factor)
+    tensor width: Width_out = floor(Width_in * scale_factor)

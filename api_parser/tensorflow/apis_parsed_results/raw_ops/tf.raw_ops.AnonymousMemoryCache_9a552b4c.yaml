@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.AnonymousMemoryCache
+3 api_description: Creates an anonymous in-memory cache resource for use by TensorFlow
+  ops, with no persistent name or file-backed storage.
+4 api_signature: tf.raw_ops.AnonymousMemoryCache(name)
+5 api_details: ''
+6 api_parameters:
+- name: Optional name for the operation, used to identify it in the TensorFlow graph.
+7 api_usage_example: null
+8 api_shape: ''

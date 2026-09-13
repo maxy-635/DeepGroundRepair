@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SpaceToBatchND
+3 api_description: Rearranges N-D tensor data by splitting spatial dimensions into
+  blocks of a given shape, optionally zero-padding first, and moving block positions
+  into the batch dimension.
+4 api_signature: tf.raw_ops.SpaceToBatchND(input,block_shape,paddings)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be rearranged from spatial dimensions into the batch dimension.
+- block_shape: A 1-D tensor that sets the block size for each spatial dimension.
+- paddings: A 2-D tensor that specifies how much padding to add before and after each
+    spatial dimension.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.erf
+3 api_description: Computes the error function element-wise for a tensor, returning
+  the Gauss erf value for each input.
+4 api_signature: tf.math.erf(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elementwise error function values are computed.
+7 api_usage_example:
+- tf.math.erf([[1.0, 2.0, 3.0], [0.0, -1.0, -2.0]])
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SegmentSumV2
+3 api_description: Computes the sum of `data` values grouped by matching `segment_ids`,
+  producing one output per segment ID and 0 for empty segments; supports `jit_compile=True`
+  only.
+4 api_signature: tf.raw_ops.SegmentSumV2(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose first-dimension slices will be summed into segments.
+- segment_ids: A sorted 1-D tensor of segment labels, matching the first dimension
+    of `data`, that assigns each slice to a segment.
+- num_segments: The total number of output segments to produce.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.quant.llm_int8_linear
+3 api_description: The paddle.nn.quant.llm_int8_linear API performs matrix multiplication
+  of two tensors with optional bias addition, requiring CUDA version >= 11.2.
+4 api_signature: paddle.nn.quant.llm_int8_linear(x,weight,weight_scale)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the first input Tensor for multiplication, which should be of data
+    type float16 or bfloat16.
+- weight: Denotes the second input Tensor for multiplication, required to have a rank
+    of 2.
+- weight_scale: Acts as the scale Tensor for dequantizing the weight, and must have
+    a rank of 1.
+7 api_usage_example: []
+8 api_shape: null

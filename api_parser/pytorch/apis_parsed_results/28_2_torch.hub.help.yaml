@@ -1,0 +1,11 @@
+2 api_name: torch.hub.help
+3 api_description: Displays the docstring for a torch.hub entrypoint model.
+4 api_signature: torch.hub.help(github,model)
+5 api_details: ''
+6 api_parameters:
+- github: Identifies the GitHub repository to load from, optionally including a tag
+    or branch ref.
+- model: Specifies the hubconf.py entrypoint name for the model or function to help.
+7 api_usage_example:
+- ' print(torch.hub.help("pytorch/vision", "resnet18", force_reload=True))'
+8 api_shape: null

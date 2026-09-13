@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.gumbel.Gumbel.expand
+3 api_description: Returns a new Gumbel distribution instance expanded to a target
+  batch shape, sharing the same parameters where possible without copying data.
+4 api_signature: expand(batch_shape)
+5 api_details: ''
+6 api_parameters:
+- batch_shape: The desired new batch shape for the distribution instance.
+7 api_usage_example: null
+8 api_shape: null

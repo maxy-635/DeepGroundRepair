@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.log_sigmoid
+3 api_description: Returns the natural logarithm of the sigmoid of the input, computed
+  as log(1 / (1 + exp(-x))).
+4 api_signature: tf.keras.ops.log_sigmoid(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the log-sigmoid function to.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([-0.541391, 0.0, 0.50, 5.0])
+- keras.ops.log_sigmoid(x)
+8 api_shape: ''

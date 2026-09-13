@@ -1,0 +1,11 @@
+2 api_name: torch.ones
+3 api_description: Creates a tensor of the specified shape filled with ones.
+4 api_signature: torch.ones(*size,out,dtype,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the shape of the output tensor to create, either as separate integers
+    or as a list/tuple of integers.
+7 api_usage_example:
+- ' torch.ones(2, 3)'
+- ' torch.ones(5)'
+8 api_shape: null

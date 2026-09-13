@@ -1,0 +1,17 @@
+2 api_name: torch.nn.TransformerEncoder
+3 api_description: A stack of Transformer encoder layers that processes input representations
+  through repeated self-attention and feedforward transformations to produce context-aware
+  encoded outputs.
+4 api_signature: torch.nn.TransformerEncoder(encoder_layer,num_layers)
+5 api_details: ''
+6 api_parameters:
+- encoder_layer: Defines the base Transformer encoder layer instance that will be
+    stacked repeatedly to form the encoder.
+- num_layers: Specifies how many encoder layers are included in the Transformer encoder
+    stack.
+7 api_usage_example:
+- ' encoder_layer = nn.TransformerEncoderLayer(d_model=512, nhead=8)'
+- ' transformer_encoder = nn.TransformerEncoder(encoder_layer, num_layers=6)'
+- ' src = torch.rand(10, 32, 512)'
+- ' out = transformer_encoder(src)'
+8 api_shape: null

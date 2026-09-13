@@ -1,0 +1,22 @@
+2 api_name: torch.tensordot
+3 api_description: Computes a tensor contraction between `a` and `b` by summing over
+  one or more specified dimensions, producing the remaining unmatched dimensions in
+  the output.
+4 api_signature: torch.tensordot(a,b,dims)
+5 api_details: ''
+6 api_parameters:
+- a: The left tensor whose specified dimensions are contracted.
+- b: The right tensor whose specified dimensions are contracted.
+- dims: The number of dimensions to contract, or explicit dimension lists for `a`
+    and `b`.
+7 api_usage_example:
+- ' a = torch.arange(60.).reshape(3, 4, 5)'
+- ' b = torch.arange(24.).reshape(4, 3, 2)'
+- ' torch.tensordot(a, b, dims=([1, 0], [0, 1]))'
+- ' a = torch.randn(3, 4, 5, device=''cuda'')'
+- ' b = torch.randn(4, 5, 6, device=''cuda'')'
+- ' c = torch.tensordot(a, b, dims=2).cpu()'
+- ' a = torch.randn(3, 5, 4, 6)'
+- ' b = torch.randn(6, 4, 5, 3)'
+- ' torch.tensordot(a, b, dims=([2, 1, 3], [1, 2, 0]))'
+8 api_shape: null

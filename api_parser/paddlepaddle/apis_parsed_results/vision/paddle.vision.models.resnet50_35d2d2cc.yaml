@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.resnet50
+3 api_description: ResNet50 is a 50-layer deep residual neural network for image recognition,
+  using skip connections to train very deep models and produce strong feature representations
+  and classification predictions.
+4 api_signature: paddle.vision.models.resnet50(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+7 api_usage_example: []
+8 api_shape: {}

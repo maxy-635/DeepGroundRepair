@@ -1,0 +1,24 @@
+2 api_name: tensorflow.keras.layers.SimpleRNN
+3 api_description: The tf.keras.layers.SimpleRNN layer implements a fully-connected
+  recurrent neural network where the output from the previous time step is fed back
+  as input for the current time step, allowing it to capture temporal dependencies
+  in sequential data.
+4 api_signature: tf.keras.layers.SimpleRNN(units, activation, return_sequences, return_state,
+  dropout, recurrent_dropout, stateful)
+5 api_details: ''
+6 api_parameters:
+- units: Specifies the number of output dimensions produced by the layer.
+- activation: Defines the activation function applied to the output; defaults to hyperbolic
+    tangent (tanh) if not specified.
+- dropout: Sets the fraction of input units to drop during training for regularization,
+    with a default of 0.
+- recurrent_dropout: Specifies the fraction of recurrent units to drop during training
+    for regularization, also defaulting to 0.
+- return_sequences: Indicates whether to return the full sequence of outputs or just
+    the last output; defaults to returning only the last output.
+- return_state: Determines whether to return the last hidden state in addition to
+    the output; defaults to False.
+- stateful: Indicates whether to maintain the hidden state across batches; defaults
+    to False.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.strings.reduce_join
+3 api_description: Joins strings into one string, either across all elements or along
+  a specified axis.
+4 api_signature: tf.strings.reduce_join(inputs,axis,separator)
+5 api_details: ''
+6 api_parameters:
+- inputs: The string tensor whose elements will be joined together.
+- axis: The axis along which to concatenate strings, or all axes if omitted.
+- separator: The string placed between joined elements.
+7 api_usage_example:
+- tf.strings.reduce_join([['abc','123'],
+- '                        [''def'',''456'']]).numpy()'
+- tf.strings.reduce_join([['abc','123'],
+- '                        [''def'',''456'']], axis=-1).numpy()'
+- tf.strings.reduce_join([['abc','123'],
+- '                        [''def'',''456'']],'
+- '                       axis=-1,'
+- '                       separator=" ").numpy()'
+8 api_shape: ''

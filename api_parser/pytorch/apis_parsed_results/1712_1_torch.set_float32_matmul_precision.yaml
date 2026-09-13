@@ -1,0 +1,9 @@
+2 api_name: torch.set_float32_matmul_precision
+3 api_description: Sets the precision used for float32 matrix multiplications.
+4 api_signature: torch.set_float32_matmul_precision(precision)
+5 api_details: ''
+6 api_parameters:
+- precision: Sets the float32 matrix multiplication precision level to `highest`,
+    `high`, or `medium`.
+7 api_usage_example: null
+8 api_shape: null

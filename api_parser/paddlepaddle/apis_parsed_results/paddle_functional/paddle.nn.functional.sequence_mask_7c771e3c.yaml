@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.functional.sequence_mask
+3 api_description: The paddle.nn.functional.sequence_mask API generates a mask tensor
+  based on specified sequence lengths, where elements within the sequence length are
+  set to 1 and elements beyond are set to 0, useful for handling variable-length sequences
+  in batch processing.
+4 api_signature: paddle.nn.functional.sequence_mask(x,maxlen)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor containing integer elements representing sequence lengths, with
+    a shape of [d_1, d_2, …, d_n].
+- maxlen: The maximum length of the sequence, defaulting to the maximum value in 'x'
+    if not provided.
+7 api_usage_example:
+- import paddle
+- lengths = paddle.to_tensor([10, 9, 8])
+- mask = paddle.nn.functional.sequence_mask(lengths)
+- print(mask)
+- Tensor(shape=[3, 10], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1],'
+- '[1, 1, 1, 1, 1, 1, 1, 1, 1, 0],'
+- '[1, 1, 1, 1, 1, 1, 1, 1, 0, 0]])'
+8 api_shape: null

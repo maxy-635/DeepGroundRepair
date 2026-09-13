@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ResourceAccumulatorSetGlobalStep
+3 api_description: Updates an accumulator’s global step value to a new value, logging
+  a warning if the current value is already higher.
+4 api_signature: tf.raw_ops.ResourceAccumulatorSetGlobalStep(handle,new_global_step)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the accumulator resource whose global step value will be updated.
+- new_global_step: Specifies the new int64 global step value to assign to the accumulator.
+7 api_usage_example: null
+8 api_shape: ''

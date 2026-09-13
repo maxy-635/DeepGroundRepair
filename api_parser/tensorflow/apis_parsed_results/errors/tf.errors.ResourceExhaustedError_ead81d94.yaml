@@ -1,0 +1,8 @@
+2 api_name: tensorflow.errors.ResourceExhaustedError
+3 api_description: Signals that a TensorFlow operation failed because a required resource
+  was exhausted, such as out-of-memory, quota limits, or disk space.
+4 api_signature: tf.errors.ResourceExhaustedError(message)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

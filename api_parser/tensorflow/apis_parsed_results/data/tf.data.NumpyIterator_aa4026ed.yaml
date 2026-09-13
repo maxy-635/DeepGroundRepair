@@ -1,0 +1,8 @@
+2 api_name: tensorflow.data.NumpyIterator
+3 api_description: Iterates over a TensorFlow dataset and yields each element as a
+  NumPy-compatible value.
+4 api_signature: tf.data.NumpyIterator(dataset)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

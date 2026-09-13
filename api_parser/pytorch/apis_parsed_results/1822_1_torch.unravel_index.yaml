@@ -1,0 +1,19 @@
+2 api_name: torch.unravel_index
+3 api_description: Converts flat indices into coordinate tensors for a given shape,
+  so they can be used to index positions in an n-dimensional tensor.
+4 api_signature: torch.unravel_index(indices,shape)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies flattened positions to convert into multi-dimensional coordinates
+    for the given shape.
+- shape: Defines the target tensor shape used to unravel each flattened index into
+    coordinates.
+7 api_usage_example:
+- ' import torch'
+- ' torch.unravel_index(torch.tensor(4), (3, 2))'
+- ' torch.unravel_index(torch.tensor([4, 1]), (3, 2))'
+- ' torch.unravel_index(torch.tensor([0, 1, 2, 3, 4, 5]), (3, 2))'
+- ' torch.unravel_index(torch.tensor([1234, 5678]), (10, 10, 10, 10))'
+- ' torch.unravel_index(torch.tensor([[1234], [5678]]), (10, 10, 10, 10))'
+- ' torch.unravel_index(torch.tensor([[1234], [5678]]), (100, 100))'
+8 api_shape: null

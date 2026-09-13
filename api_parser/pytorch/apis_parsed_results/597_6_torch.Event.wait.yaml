@@ -1,0 +1,13 @@
+2 api_name: torch.Event.wait
+3 api_description: Blocks future work on the specified stream until the event is reached.
+4 api_signature: wait(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: Specifies the stream to synchronize with the event; if omitted, the current
+    stream is used.
+7 api_usage_example:
+- ' s1_cuda = torch.Stream(device=''cuda'')'
+- ' s2_cuda = torch.Stream(device=''cuda'')'
+- ' e_cuda = s1_cuda.record()'
+- ' e_cuda.wait(s2)'
+8 api_shape: null

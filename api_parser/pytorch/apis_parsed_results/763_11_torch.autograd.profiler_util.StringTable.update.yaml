@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.profiler_util.StringTable.update
+3 api_description: Updates the table with mappings or key-value pairs from another
+  iterable, then applies any additional keyword updates.
+4 api_signature: update([E,]F)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

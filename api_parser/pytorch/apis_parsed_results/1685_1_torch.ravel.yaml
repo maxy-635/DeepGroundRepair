@@ -1,0 +1,14 @@
+2 api_name: torch.ravel
+3 api_description: Returns a contiguous 1D view of the tensor when possible, making
+  a copy only if needed.
+4 api_signature: torch.ravel(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be flattened into a contiguous 1D view.
+7 api_usage_example:
+- ' t = torch.tensor([[[1, 2],'
+- '...                    [3, 4]],'
+- '...                   [[5, 6],'
+- '...                    [7, 8]]])'
+- ' torch.ravel(t)'
+8 api_shape: null

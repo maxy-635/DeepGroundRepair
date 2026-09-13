@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SparseApplyProximalAdagrad
+3 api_description: 'Applies sparse Proximal Adagrad updates to selected rows of var
+  and accum: accum is increased by squared gradients, then var is adjusted with learning-rate-scaled
+  gradient steps followed by proximal L1/L2 shrinkage.'
+4 api_signature: SparseApplyProximalAdagrad(var,accum,lr,grad,indices)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated in place by the proximal Adagrad optimizer.
+- accum: The accumulator tensor that stores per-variable historical gradient information
+    for Adagrad updates.
+- lr: The scalar learning-rate tensor that controls the step size of the update.
+- grad: The gradient tensor providing the update values to apply.
+- indices: The vector of row indices indicating which slices of `var` and `accum`
+    should be updated.
+7 api_usage_example: null
+8 api_shape: ''

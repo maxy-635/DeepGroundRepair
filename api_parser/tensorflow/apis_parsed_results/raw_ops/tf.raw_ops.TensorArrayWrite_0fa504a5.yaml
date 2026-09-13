@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorArrayWrite
+3 api_description: Writes a value to a TensorArray at the specified index, storing
+  the tensor in the array for later use.
+4 api_signature: tf.raw_ops.TensorArrayWrite(handle,index,value)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource to write into.
+- index: Specifies the position in the TensorArray where the value will be stored.
+- value: Provides the tensor data to write at the given index.
+7 api_usage_example: null
+8 api_shape: ''

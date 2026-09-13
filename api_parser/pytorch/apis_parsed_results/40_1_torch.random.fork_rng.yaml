@@ -1,0 +1,12 @@
+2 api_name: torch.random.fork_rng
+3 api_description: Temporarily forks the random number generator state and restores
+  the original RNG state when the context exits.
+4 api_signature: torch.random.fork_rng(devices,enabled)
+5 api_details: ''
+6 api_parameters:
+- devices: Specifies which devices’ RNG states to fork; CPU RNG is always forked,
+    and explicitly listing devices suppresses the multi-device warning.
+- enabled: Turns RNG forking on or off; when False, the context manager does nothing
+    and is useful for temporarily disabling it without changing code structure.
+7 api_usage_example: null
+8 api_shape: null

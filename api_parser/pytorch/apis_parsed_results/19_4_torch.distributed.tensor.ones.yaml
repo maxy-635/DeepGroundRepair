@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.tensor.ones
+3 api_description: Creates a DTensor of the requested shape filled with ones.
+4 api_signature: torch.distributed.tensor.ones(*size,dtype,device_mesh,placements)
+5 api_details: ''
+6 api_parameters:
+- size: Defines the shape of the output DTensor as a sequence of integers, either
+    passed as separate arguments or as a single list or tuple.
+7 api_usage_example: null
+8 api_shape: null

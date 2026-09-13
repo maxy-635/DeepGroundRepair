@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.square
+3 api_description: Returns the element-wise square of the input tensor or array.
+4 api_signature: tf.keras.ops.square(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are squared.
+7 api_usage_example: null
+8 api_shape: ''

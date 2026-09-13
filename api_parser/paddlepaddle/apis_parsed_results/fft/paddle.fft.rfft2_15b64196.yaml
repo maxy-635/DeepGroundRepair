@@ -1,0 +1,15 @@
+2 api_name: paddle.fft.rfft2
+3 api_description: Computes the 2D real-input FFT, returning the half-spectrum of
+  a real-valued tensor along the last two dimensions.
+4 api_signature: paddle.fft.rfft2(x,s,axes,norm,name,*,out)
+5 api_details: ''
+6 api_parameters:
+- x: Real-valued input tensor to transform.
+- s: Desired output shape for the two transformed axes, with cropping or zero-padding
+    applied as needed.
+- axes: The two axes along which to compute the FFT, defaulting to the last two axes.
+- norm: Specifies the normalization mode used for the FFT.
+- name: Optional name for the operation, mainly for debugging or graph readability.
+- out: Optional tensor to store the output result.
+7 api_usage_example: []
+8 api_shape: {}

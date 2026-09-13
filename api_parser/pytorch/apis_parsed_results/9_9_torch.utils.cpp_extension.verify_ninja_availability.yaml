@@ -1,0 +1,8 @@
+2 api_name: torch.utils.cpp_extension.verify_ninja_availability
+3 api_description: Raises a RuntimeError when the Ninja build system is unavailable;
+  otherwise, it returns without doing anything.
+4 api_signature: '"torch.utils.cpp_extension.verify_ninja_availability()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

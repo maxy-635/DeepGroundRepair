@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.CSRSparseMatrixComponents
+3 api_description: Extracts the CSR row pointers, column indices, and values for a
+  specified batch index from a sparse matrix, primarily for debugging and testing.
+4 api_signature: tf.raw_ops.CSRSparseMatrixComponents(csr_sparse_matrix,index,type)
+5 api_details: ''
+6 api_parameters:
+- csr_sparse_matrix: The batched CSRSparseMatrix variant tensor to extract components
+    from.
+- index: The batch index selecting which sparse matrix instance to inspect.
+- type: The element data type used for the sparse matrix values.
+7 api_usage_example: null
+8 api_shape: ''

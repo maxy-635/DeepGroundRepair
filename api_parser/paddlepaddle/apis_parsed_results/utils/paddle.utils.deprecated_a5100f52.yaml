@@ -1,0 +1,11 @@
+2 api_name: paddle.utils.deprecated
+3 api_description: Decorates a function to mark it as deprecated.
+4 api_signature: paddle.utils.deprecated(update_to,since,reason,level)
+5 api_details: ''
+6 api_parameters:
+- since: Specifies the version when the decorated API became deprecated.
+- update_to: Names the replacement API that users should switch to.
+- reason: Explains why the API is deprecated.
+- level: Sets how deprecation warnings are handled, from hidden to runtime error.
+7 api_usage_example: []
+8 api_shape: {}

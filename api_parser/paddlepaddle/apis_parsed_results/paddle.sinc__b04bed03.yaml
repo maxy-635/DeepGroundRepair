@@ -1,0 +1,8 @@
+2 api_name: paddle.sinc_
+3 api_description: In-place version of `sinc` that computes the sinc function and
+  writes the result directly into the input tensor `x`.
+4 api_signature: paddle.sinc_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

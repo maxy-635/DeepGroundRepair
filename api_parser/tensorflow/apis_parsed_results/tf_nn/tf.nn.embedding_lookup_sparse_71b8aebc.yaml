@@ -1,0 +1,24 @@
+2 api_name: tensorflow.nn.embedding_lookup_sparse
+3 api_description: The tensorflow.nn.embedding_lookup_sparse API retrieves embeddings
+  for given ids and weights from a dense tensor or list of dense tensors. It uses
+  a 2D SparseTensor or RaggedTensor to specify indices, gathers rows from the input
+  based on these indices, and combines them by summing or averaging, producing an
+  output tensor.
+4 api_signature: tf.nn.embedding_lookup_sparse(params,sp_ids,sp_weights,combiner)
+5 api_details: ''
+6 api_parameters:
+- params: Represents the complete or sharded embedding tensor(s) used for lookup.
+- sp_ids: SparseTensor or RaggedTensor containing the indices of the embeddings to
+    be looked up.
+- combiner: Specifies the method for reducing the embedding results, with options
+    'mean', 'sqrtn', or 'sum'.
+7 api_usage_example:
+- params = tf.constant([[1, 2], [3, 4], [5, 6], [7, 8]], dtype=tf.float32)
+- sp_ids = tf.SparseTensor(indices=[[0, 0], [0, 1], [1, 0], [2, 0]],
+- '                         values=[0, 1, 3, 2], dense_shape=(3, 2))'
+- sparse_weights = tf.SparseTensor(indices=[[0, 0], [0, 1], [1, 0], [2, 0]],
+- '                                 values=[0.1, 1.0, 0.5, 2.0],'
+- '                                 dense_shape=(3, 2))'
+- tf.nn.embedding_lookup_sparse(params, sp_ids, sp_weights=sparse_weights,
+- '                              combiner=''sum'').numpy()'
+8 api_shape: ''

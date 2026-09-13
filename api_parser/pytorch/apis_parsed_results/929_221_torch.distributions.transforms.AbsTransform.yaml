@@ -1,0 +1,7 @@
+2 api_name: torch.distributions.transforms.AbsTransform
+3 api_description: Applies the absolute value transform, mapping each input x to |x|.
+4 api_signature: torch.distributions.transforms.AbsTransform(cache_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

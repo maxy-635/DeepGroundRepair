@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.TensorArrayCloseV3
+3 api_description: Deletes a TensorArray resource from its container so it can be
+  closed and released during a step or run.
+4 api_signature: tf.raw_ops.TensorArrayCloseV3(handle)
+5 api_details: ''
+6 api_parameters:
+- handle: Resource handle identifying the TensorArray to close.
+7 api_usage_example: null
+8 api_shape: ''

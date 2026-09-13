@@ -1,0 +1,16 @@
+2 api_name: paddle.isinf
+3 api_description: Checks whether each element of a tensor is positive or negative
+  infinity.
+4 api_signature: paddle.isinf(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to check for infinite values; it must be of a supported numeric
+    data type.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([float('-inf'), -2, 3.6, float('inf'), 0, float('-nan'), float('nan')])
+- out = paddle.isinf(x)
+- out
+- Tensor(shape=[7], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True , False, False, True , False, False, False])'
+8 api_shape: {}

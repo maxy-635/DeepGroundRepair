@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.async_scope
+3 api_description: Groups async TensorFlow ops/functions so they can return early,
+  then waits at scope exit for all async work to finish and surface any execution
+  errors.
+4 api_signature: tf.experimental.async_scope()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

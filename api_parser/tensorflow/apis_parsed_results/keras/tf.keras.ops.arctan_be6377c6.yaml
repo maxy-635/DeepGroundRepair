@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.arctan
+3 api_description: Computes the element-wise inverse tangent (arctan) of the input
+  tensor.
+4 api_signature: tf.keras.ops.arctan(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are used to compute the arctangent.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([0, 1])
+- keras.ops.arctan(x)
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.LogSoftmax
+3 api_description: Computes the log-softmax of each input batch row, returning log
+  probabilities normalized across classes.
+4 api_signature: tf.raw_ops.LogSoftmax(logits)
+5 api_details: ''
+6 api_parameters:
+- logits: The 2-D input tensor of class scores to convert into log-probabilities along
+    the class dimension.
+7 api_usage_example: null
+8 api_shape: ''

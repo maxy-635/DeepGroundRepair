@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.PropagateUnbackedSymInts.map_nodes_to_values
+3 api_description: Recursively traverses an argument structure and resolves each `torch.fx.Node`
+  to its concrete value from the current execution environment.
+4 api_signature: map_nodes_to_values(n)
+5 api_details: ''
+6 api_parameters:
+- n: The node whose arguments are being mapped to values, used only to produce clearer
+    error messages.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.UnwrapDatasetVariant
+3 api_description: Converts a serialized dataset variant tensor back into its underlying
+  dataset structure for use by TensorFlow dataset operations.
+4 api_signature: tf.raw_ops.UnwrapDatasetVariant(input_handle)
+5 api_details: ''
+6 api_parameters:
+- input_handle: A variant tensor that contains the dataset variant to be unwrapped.
+7 api_usage_example: null
+8 api_shape: ''

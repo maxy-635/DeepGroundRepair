@@ -1,0 +1,10 @@
+2 api_name: torch.mps.set_per_process_memory_fraction
+3 api_description: Limits a process’s MPS memory usage to a specified fraction of
+  the device’s recommended maximum working set size, raising an out-of-memory error
+  if allocations exceed that limit.
+4 api_signature: torch.mps.set_per_process_memory_fraction(fraction)
+5 api_details: ''
+6 api_parameters:
+- fraction: Sets the fraction of total MPS memory the process is allowed to use.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,19 @@
+2 api_name: torch.optim.lr_scheduler.CosineAnnealingWarmRestarts
+3 api_description: Adjusts each parameter group's learning rate with a cosine annealing
+  schedule that periodically restarts.
+4 api_signature: torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer,T_0,T_mult)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be scheduled.
+- T_0: Sets how many iterations occur before the first restart.
+- T_mult: Controls how much the restart period increases after each restart.
+7 api_usage_example:
+- ' optimizer = torch.optim.SGD(model.parameters(), lr=0.05)'
+- ' scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts('
+- '...     optimizer, T_0=20'
+- '... )'
+- ' for epoch in range(100):'
+- '     train(...)'
+- '     validate(...)'
+- '     scheduler.step()'
+8 api_shape: null

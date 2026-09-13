@@ -1,0 +1,11 @@
+2 api_name: paddle.nn.functional.one_hot
+3 api_description: Converts input indices to one-hot encoded vectors with a specified
+  number of classes.
+4 api_signature: paddle.nn.functional.one_hot(x,num_class es)
+5 api_details: ''
+6 api_parameters:
+- x: Tensor with shape \([N_1, N_2, ..., N_k]\) that contains indices to be converted
+    into one-hot encoded format; it must have at least one dimension and be of data
+    type int32 or int64.
+7 api_usage_example: []
+8 api_shape: null

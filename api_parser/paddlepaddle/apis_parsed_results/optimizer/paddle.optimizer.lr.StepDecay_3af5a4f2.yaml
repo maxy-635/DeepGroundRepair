@@ -1,0 +1,23 @@
+2 api_name: paddle.optimizer.lr.StepDecay
+3 api_description: Reduces the optimizer learning rate by multiplying it with gamma
+  every step_size epochs.
+4 api_signature: paddle.optimizer.lr.StepDecay(learning_rate,step_size,gamma)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the initial learning rate used as the starting value for the
+    decay schedule.
+- step_size: Defines how often, in training steps, the learning rate is updated.
+- gamma: Controls the decay factor applied at each update, reducing the learning rate
+    by multiplying it with this value.
+7 api_usage_example:
+- import paddle
+- value = paddle.arange(26, dtype='float32')
+- a = paddle.reshape(value, [2, 13])
+- linear = paddle.nn.Linear(13, 5)
+- adadelta = paddle.optimizer.Adadelta(learning_rate=0.0003, epsilon=1e-06, rho=0.95,
+- '                            parameters = linear.parameters())'
+- out = linear(a)
+- out.backward()
+- adadelta.step()
+- adadelta.clear_grad()
+8 api_shape: {}

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.preprocessing.image.Iterator
+3 api_description: Base class for deprecated image data iterators that generate batches
+  of transformed image samples and require subclasses to implement batch construction.
+4 api_signature: tf.keras.preprocessing.image.Iterator(batch_size,shuffle)
+5 api_details: ''
+6 api_parameters:
+- n: Sets the total number of samples the iterator will loop over.
+- batch_size: Sets how many samples are included in each batch.
+- shuffle: Controls whether the data is shuffled between epochs.
+7 api_usage_example: null
+8 api_shape: ''

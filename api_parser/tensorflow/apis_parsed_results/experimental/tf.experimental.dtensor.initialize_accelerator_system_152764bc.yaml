@@ -1,0 +1,13 @@
+2 api_name: tensorflow.experimental.dtensor.initialize_accelerator_system
+3 api_description: Initializes DTensor accelerator devices and communication fabrics
+  so TensorFlow can run in local or multi-client mode.
+4 api_signature: tf.experimental.dtensor.initialize_accelerator_system(device_type,num_logical_cpu_devices)
+5 api_details: ''
+6 api_parameters:
+- device_type: Selects which accelerator type DTensor should initialize for, defaulting
+    to the preferred device type when not specified.
+- num_logical_cpu_devices: Sets how many logical CPU devices to create per DTensor
+    client, defaulting to the local CPU count on CPU or matching local GPU/TPU devices
+    otherwise.
+7 api_usage_example: null
+8 api_shape: ''

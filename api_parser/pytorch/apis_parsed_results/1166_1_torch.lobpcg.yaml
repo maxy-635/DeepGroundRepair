@@ -1,0 +1,20 @@
+2 api_name: torch.lobpcg
+3 api_description: Computes the k largest or smallest eigenvalues and matching eigenvectors
+  of a symmetric positive definite generalized eigenproblem using a matrix-free LOBPCG
+  iterative method.
+4 api_signature: torch.lobpcg(A,k,B,X,n,iK,niter,tol,largest,method)
+5 api_details: ''
+6 api_parameters:
+- A: The symmetric/Hermitian matrix whose eigenpairs are to be computed.
+- k: The number of eigenpairs to return.
+- B: An optional second matrix for the generalized eigenproblem, or the identity if
+    omitted.
+- X: An optional dense initial guess for the eigenvectors.
+- n: The size of the randomly generated initial approximation when `X` is not provided.
+- iK: An optional preconditioner used to accelerate convergence.
+- niter: The maximum number of iterations before stopping.
+- tol: The residual tolerance used as the convergence stopping criterion.
+- largest: Whether to compute the largest or smallest eigenvalues.
+- method: The LOBPCG variant to use, such as `ortho` by default.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: torch.nn.ParameterList.extend
+3 api_description: Extends a torch.nn.ParameterList by appending elements from a given
+  Python iterable.
+4 api_signature: extend(values)
+5 api_details: ''
+6 api_parameters:
+- values: An iterable containing values that will be appended to the ParameterList.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: paddle.vision.transforms.perspective
+3 api_description: Applies a perspective warp to an image, transforming its view based
+  on specified source and destination points.
+4 api_signature: paddle.vision.transforms.perspective(img,startpoints,endpoints)
+5 api_details: ''
+6 api_parameters:
+- img: The image to transform.
+- startpoints: The four corner points of the original image, given in top-left, top-right,
+    bottom-right, and bottom-left order.
+- endpoints: The four target corner points that define the transformed image, given
+    in top-left, top-right, bottom-right, and bottom-left order.
+7 api_usage_example: []
+8 api_shape: {}

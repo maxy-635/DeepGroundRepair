@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Real
+3 api_description: Returns the real part of each complex number in a tensor as a float
+  tensor.
+4 api_signature: tf.raw_ops.Real(input,Tout)
+5 api_details: ''
+6 api_parameters:
+- input: The complex-valued tensor whose real part will be extracted.
+- Tout: The dtype of the output real tensor, defaulting to `tf.float32`.
+7 api_usage_example: null
+8 api_shape: ''

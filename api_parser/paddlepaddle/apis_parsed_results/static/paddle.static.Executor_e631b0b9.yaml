@@ -1,0 +1,39 @@
+2 api_name: paddle.static.Executor
+3 api_description: Runs a Paddle static graph program by executing compiled graphs
+  on a specified place, managing program execution, feeding inputs, fetching outputs,
+  and supporting device-specific runtime setup.
+4 api_signature: paddle.static.Executor(place)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import numpy
+- import os
+- '# Executor is only used in static graph mode'
+- paddle.enable_static()
+- '# Set place explicitly.'
+- '# use_cuda = True'
+- '# place = paddle.CUDAPlace(0) if use_cuda else paddle.CPUPlace()'
+- '# exe = paddle.static.Executor(place)'
+- '# If you don''t set place, PaddlePaddle sets the default device.'
+- exe = paddle.static.Executor()
+- train_program = paddle.static.Program()
+- startup_program = paddle.static.Program()
+- 'with paddle.static.program_guard(train_program, startup_program):'
+- '    data = paddle.static.data(name=''X'', shape=[None, 1], dtype=''float32'')'
+- '    hidden = paddle.static.nn.fc(data, 10)'
+- '    loss = paddle.mean(hidden)'
+- '    paddle.optimizer.SGD(learning_rate=0.01).minimize(loss)'
+- '...'
+- '# Run the startup program once and only once.'
+- '# Not need to optimize/compile the startup program.'
+- exe.run(startup_program)
+- '# Run the main program directly without compile.'
+- x = numpy.random.random(size=(10, 1)).astype('float32')
+- 'loss_data, = exe.run(train_program, feed={"X": x}, fetch_list=[loss.name])'
+- '# Or, compiled the program and run. See `CompiledProgram`'
+- '# for more details.'
+- compiled_prog = paddle.static.CompiledProgram(
+- '    train_program)'
+- 'loss_data, = exe.run(compiled_prog, feed={"X": x}, fetch_list=[loss.name])'
+8 api_shape: {}

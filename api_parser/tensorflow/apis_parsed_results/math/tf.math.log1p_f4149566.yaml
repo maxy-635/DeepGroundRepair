@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.log1p
+3 api_description: Computes the element-wise natural logarithm of 1 plus each input
+  value.
+4 api_signature: tf.math.log1p(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are transformed by computing log(1 + x).
+7 api_usage_example:
+- x = tf.constant([0, 0.5, 1, 5])
+- tf.math.log1p(x)
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.LRNGrad
+3 api_description: Computes the gradient of local response normalization, propagating
+  derivatives back through an LRN operation for a given input, output, and upstream
+  gradient.
+4 api_signature: tf.raw_ops.LRNGrad(input_grads,input_image,output_image,depth_radius,bias,alpha,beta)
+5 api_details: ''
+6 api_parameters:
+- input_grads: The upstream gradients to backpropagate through the local response
+    normalization operation.
+- input_image: The original input tensor used during the forward LRN pass.
+- output_image: The forward-pass LRN output tensor used to compute the gradient.
+- depth_radius: Sets how many neighboring channels on each side are included in the
+    normalization window.
+- bias: Adds a constant offset to the normalization denominator to keep it nonzero.
+- alpha: Scales the contribution of the summed squared inputs in the normalization
+    term.
+- beta: Controls the exponent applied to the normalization factor.
+7 api_usage_example: null
+8 api_shape: ''

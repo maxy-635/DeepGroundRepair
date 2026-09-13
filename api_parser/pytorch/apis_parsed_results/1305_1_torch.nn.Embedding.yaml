@@ -1,0 +1,25 @@
+2 api_name: torch.nn.Embedding
+3 api_description: torch.nn.Embedding is a module that provides a lookup table for
+  storing and retrieving dense vector representations (embeddings) for a fixed set
+  of discrete input indices.
+4 api_signature: torch.nn.Embedding(num_embeddings,embedding_dim,padding_idx)
+5 api_details: ''
+6 api_parameters:
+- num_embeddings: Specifies the total number of unique embeddings in the dictionary.
+- embedding_dim: Determines the dimensionality of each individual embedding vector.
+- padding_idx: Indicates a specific index whose embedding will not be updated during
+    training, allowing it to serve as a fixed padding vector.
+7 api_usage_example:
+- n, d, m = 3, 5, 7
+- embedding = nn.Embedding(n, d, max_norm=1.0)
+- W = torch.randn((m, d), requires_grad=True)
+- idx = torch.tensor([1, 2])
+- 'a = embedding.weight.clone() @ W.t()  # weight must be cloned for this to be differentiable'
+- 'b = embedding(idx) @ W.t()  # modifies weight in-place'
+- out = (a.unsqueeze(0) + b.unsqueeze(1))
+- loss = out.sigmoid().prod()
+- loss.backward()
+8 api_shape:
+  input tensor shape: (*), IntTensor
+  output tensor shape: (*, Height), where * is the input shape and Height=\text{embedding_dim}
+  tensor shape transform formulas: {}

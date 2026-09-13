@@ -1,0 +1,18 @@
+2 api_name: torch.utils.data.BatchSampler
+3 api_description: Wraps a sampler and groups its yielded indices into mini-batches.
+4 api_signature: torch.utils.data.BatchSampler(sampler,batch_size)
+5 api_details: ''
+6 api_parameters:
+- sampler: Provides the underlying iterable of sample indices or items to group into
+    batches.
+- batch_size: Sets how many samples are included in each mini-batch.
+7 api_usage_example:
+- ' list('
+- '...     BatchSampler('
+- '...         SequentialSampler(range(10)), batch_size=3, drop_last=False'
+- '...     )'
+- '... )'
+- ' list('
+- '...     BatchSampler(SequentialSampler(range(10)), batch_size=3, drop_last=True)'
+- '... )'
+8 api_shape: null

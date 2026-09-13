@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.tensor.full
+3 api_description: Creates a DTensor of the requested size, filled with the given
+  value and distributed across the specified device mesh and placements.
+4 api_signature: torch.distributed.tensor.full(size,fill_value,*,dtype,device_mesh,placements)
+5 api_details: ''
+6 api_parameters:
+- size: Defines the output DTensor shape, accepting either multiple integer arguments
+    or a single sequence such as a list or tuple.
+- fill_value: Specifies the value used to fill every element of the output tensor.
+7 api_usage_example: null
+8 api_shape: null

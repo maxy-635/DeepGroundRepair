@@ -1,0 +1,10 @@
+2 api_name: torch.nansum
+3 api_description: Computes the sum of all elements while treating NaN values as zero.
+4 api_signature: torch.nansum(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are summed, ignoring any NaNs.
+7 api_usage_example:
+- ' a = torch.tensor([1., 2., float(''nan''), 4.])'
+- ' torch.nansum(a)'
+8 api_shape: null

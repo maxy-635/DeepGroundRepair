@@ -1,0 +1,11 @@
+2 api_name: tensorflow.nn.space_to_depth
+3 api_description: tensorflow.nn.space_to_depth rearranges spatial data blocks from
+  height and width dimensions into the depth dimension, using a specified block_size.
+4 api_signature: tf.nn.space_to_depth(input,block_size)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor to be rearranged.
+- block_size: Defines the size of the blocks to divide the spatial dimensions of the
+    input tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.cuda.comm.scatter
+3 api_description: Splits a tensor and distributes the chunks across multiple GPUs.
+4 api_signature: torch.cuda.comm.scatter(tensor,devices,chunk_sizes,dim)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to split and scatter, whether it is on CPU or GPU.
+- devices: The GPU devices that will receive the scattered chunks.
+- chunk_sizes: The sizes of the tensor chunks to place on each device; if omitted,
+    the tensor is split evenly.
+- dim: The dimension of the tensor along which to divide it into chunks.
+7 api_usage_example: null
+8 api_shape: null

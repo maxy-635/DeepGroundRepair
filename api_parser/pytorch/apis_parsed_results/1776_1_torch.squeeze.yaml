@@ -1,0 +1,20 @@
+2 api_name: torch.squeeze
+3 api_description: Removes dimensions of size 1 from a tensor, either all or the specified
+  ones.
+4 api_signature: torch.squeeze(input:Tensor,dim:int|List[int]|None)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to remove dimensions of size 1 from.
+- dim: The dimension or dimensions to squeeze; if provided, only those specified dimensions
+    are removed when their size is 1.
+7 api_usage_example:
+- ' x = torch.zeros(2, 1, 2, 1, 2)'
+- ' x.size()'
+- ' y = torch.squeeze(x)'
+- ' y.size()'
+- ' y = torch.squeeze(x, 0)'
+- ' y.size()'
+- ' y = torch.squeeze(x, 1)'
+- ' y.size()'
+- ' y = torch.squeeze(x, (1, 2, 3))'
+8 api_shape: null

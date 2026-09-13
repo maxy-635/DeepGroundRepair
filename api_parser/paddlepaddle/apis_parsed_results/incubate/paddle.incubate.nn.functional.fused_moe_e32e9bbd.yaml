@@ -1,0 +1,31 @@
+2 api_name: paddle.incubate.nn.functional.fused_moe
+3 api_description: Applies a fused Mixture-of-Experts (MoE) kernel for efficient expert
+  routing and computation on supported GPUs (SM75, SM80, SM86).
+4 api_signature: paddle.incubate.nn.functional.fused_moe(x,gate_weight,ffn1_weight,ffn2_weight,moe_topk,quant_method,norm_topk_prob,group_moe)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the input tensor to be routed through the Mixture-of-Experts layer.
+- gate_weight: Scores experts for each token so the top experts can be selected.
+- ffn1_weight: Holds the first expert feed-forward projection weights.
+- ffn2_weight: Holds the second expert feed-forward projection weights.
+- quant_method: Specifies a quantization method, but this option is currently unsupported.
+- moe_topk: Sets how many top-scoring experts are selected per token.
+- norm_topk_prob: Determines whether the selected expert probabilities are normalized.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- from paddle.incubate.nn.functional import fused_moe
+- paddle.set_device('gpu')
+- paddle.set_default_dtype("float16")
+- x = paddle.randn([10, 128, 1024])
+- gate_weight = paddle.randn([10, 128, 8], dtype=paddle.float32)
+- ffn1_weight = paddle.randn([8, 1024, 4096])
+- ffn1_bias = paddle.randn([8, 1, 4096])
+- ffn2_weight = paddle.randn([8, 2048, 1024])
+- ffn2_bias = paddle.randn([8, 1, 1024])
+- moe_topk = 2
+- out = fused_moe(x, gate_weight, ffn1_weight, ffn2_weight, ffn1_bias, None, ffn2_bias,
+  None, "None", moe_topk, True)
+- print(out.shape)
+- '[10, 128, 1024]'
+8 api_shape: {}

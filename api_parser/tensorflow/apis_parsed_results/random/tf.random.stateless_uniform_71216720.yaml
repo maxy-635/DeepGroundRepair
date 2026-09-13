@@ -1,0 +1,16 @@
+2 api_name: tensorflow.random.stateless_uniform
+3 api_description: Deterministically generates pseudorandom values from a uniform
+  distribution for a given shape and seed, with optional min/max bounds and consistent
+  results across runs on the same hardware.
+4 api_signature: tf.random.stateless_uniform(shape,seed,minval,maxval,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the output tensor.
+- seed: Provides the two-element random seed used to generate stateless random values.
+- minval: Sets the inclusive lower bound of generated values, or `None` for full-range
+    integers.
+- maxval: Sets the exclusive upper bound of generated values, or `None` for full-range
+    integers.
+- dtype: Chooses the data type of the generated random values.
+7 api_usage_example: null
+8 api_shape: ''

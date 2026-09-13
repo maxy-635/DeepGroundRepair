@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.isclose
+3 api_description: Returns a boolean result indicating whether two arrays are elementwise
+  close within a tolerance, following NumPy’s isclose behavior.
+4 api_signature: tf.experimental.numpy.isclose(a,b)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TridiagonalMatMul
+3 api_description: Computes the matrix product where the left operand is a tridiagonal
+  matrix.
+4 api_signature: tf.raw_ops.TridiagonalMatMul(rhs)
+5 api_details: ''
+6 api_parameters:
+- rhs: The right-hand-side tensor to multiply by the tridiagonal matrix, with shape
+    [..., M, N].
+7 api_usage_example: null
+8 api_shape: ''

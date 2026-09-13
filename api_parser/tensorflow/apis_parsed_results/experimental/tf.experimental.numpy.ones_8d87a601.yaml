@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.ones
+3 api_description: Creates a TensorFlow tensor filled with ones, matching NumPy’s
+  ones behavior except that `order` and `like` are not supported.
+4 api_signature: tf.experimental.numpy.ones(shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: paddle.logsumexp
+3 api_description: Computes log(sum(exp(x))) along a specified axis in a numerically
+  stable way.
+4 api_signature: paddle.logsumexp(x,axis,keepdim,out)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the log-sum-exp reduction.
+- axis: Dimension or dimensions to reduce over, or `None` to reduce across all elements.
+- keepdim: Controls whether reduced dimensions are retained in the output with size
+    1.
+7 api_usage_example: []
+8 api_shape: {}

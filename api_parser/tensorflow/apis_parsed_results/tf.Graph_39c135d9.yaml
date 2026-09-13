@@ -1,0 +1,8 @@
+2 api_name: tensorflow.Graph
+3 api_description: Represents a TensorFlow computation as a dataflow graph of operations
+  and tensors, used by tf.function to model and execute computation.
+4 api_signature: tf.Graph()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

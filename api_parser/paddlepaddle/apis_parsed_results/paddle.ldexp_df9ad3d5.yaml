@@ -1,0 +1,25 @@
+2 api_name: paddle.ldexp
+3 api_description: Returns x multiplied by 2 raised to the power y, effectively scaling
+  x by a power of two.
+4 api_signature: paddle.ldexp(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be scaled by powers of 2.
+- y: The tensor of exponents that determines the power-of-2 scaling applied to `x`.
+7 api_usage_example:
+- import paddle
+- '# example1'
+- x = paddle.to_tensor([1, 2, 3], dtype='float32')
+- y = paddle.to_tensor([2, 3, 4], dtype='int32')
+- res = paddle.ldexp(x, y)
+- print(res)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[4. , 16., 48.])'
+- '# example2'
+- x = paddle.to_tensor([1, 2, 3], dtype='float32')
+- y = paddle.to_tensor([2], dtype='int32')
+- res = paddle.ldexp(x, y)
+- print(res)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[4. , 8. , 12.])'
+8 api_shape: {}

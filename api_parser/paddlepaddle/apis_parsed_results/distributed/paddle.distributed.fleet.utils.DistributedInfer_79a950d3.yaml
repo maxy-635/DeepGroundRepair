@@ -1,0 +1,8 @@
+2 api_name: paddle.distributed.fleet.utils.DistributedInfer
+3 api_description: Utility class that helps run PaddlePaddle inference in distributed
+  setups by managing distributed inference-related utilities and workflows.
+4 api_signature: '"paddle.distributed.fleet.utils.DistributedInfer(main_program,startup_program)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

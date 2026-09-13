@@ -1,0 +1,15 @@
+2 api_name: paddle.transpose
+3 api_description: Reorders the dimensions of an input tensor according to a specified
+  permutation.
+4 api_signature: paddle.transpose(x,perm)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be transposed.
+- perm: The permutation order that specifies how to rearrange the input tensor's dimensions.
+7 api_usage_example:
+- import paddle
+- x = paddle.randn([2, 3, 4])
+- x_transposed = paddle.transpose(x, perm=[1, 0, 2])
+- print(x_transposed.shape)
+- '[3, 2, 4]'
+8 api_shape: {}

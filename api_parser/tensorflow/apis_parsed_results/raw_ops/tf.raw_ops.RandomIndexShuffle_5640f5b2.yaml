@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RandomIndexShuffle
+3 api_description: Returns a deterministic bijection that shuffles indices in [0,
+  max_index] and outputs each value’s position in the permutation, with matching first
+  dimensions required for vector or matrix inputs.
+4 api_signature: tf.raw_ops.RandomIndexShuffle(index,seed,max_index)
+5 api_details: ''
+6 api_parameters:
+- index: Specifies the index or indices to shuffle within the valid range.
+- seed: Provides the random seed used to determine the shuffle.
+- max_index: Sets the inclusive upper bound for the allowed index range.
+7 api_usage_example: null
+8 api_shape: ''

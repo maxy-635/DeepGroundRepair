@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.NearestNeighbors
+3 api_description: Finds, for each input point, the k candidate centers with the smallest
+  L2 distance.
+4 api_signature: tf.raw_ops.NearestNeighbors(points,centers,k)
+5 api_details: ''
+6 api_parameters:
+- points: Input point matrix whose rows are the points to query.
+- centers: Center matrix whose rows are the candidate nearest-neighbor points.
+- k: Number of nearest centers to return for each point, capped at the total number
+    of centers.
+7 api_usage_example: null
+8 api_shape: ''

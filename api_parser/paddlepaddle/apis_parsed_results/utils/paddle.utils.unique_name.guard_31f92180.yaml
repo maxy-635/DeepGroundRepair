@@ -1,0 +1,21 @@
+2 api_name: paddle.utils.unique_name.guard
+3 api_description: Context manager that temporarily switches unique-name generation
+  to a new namespace, resetting counters for each key within the with-block.
+4 api_signature: paddle.utils.unique_name.guard(new_generator)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- 'with paddle.utils.unique_name.guard():'
+- '    name_1 = paddle.utils.unique_name.generate(''fc'')'
+- 'with paddle.utils.unique_name.guard():'
+- '    name_2 = paddle.utils.unique_name.generate(''fc'')'
+- print(name_1, name_2)
+- fc_0 fc_0
+- 'with paddle.utils.unique_name.guard(''A''):'
+- '    name_1 = paddle.utils.unique_name.generate(''fc'')'
+- 'with paddle.utils.unique_name.guard(''B''):'
+- '    name_2 = paddle.utils.unique_name.generate(''fc'')'
+- print(name_1, name_2)
+- Afc_0 Bfc_0
+8 api_shape: {}

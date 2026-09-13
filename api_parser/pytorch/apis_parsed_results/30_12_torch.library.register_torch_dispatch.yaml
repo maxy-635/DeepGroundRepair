@@ -1,0 +1,25 @@
+2 api_name: torch.library.register_torch_dispatch
+3 api_description: Registers a torch_dispatch rule for a specific operator and torch_dispatch
+  class.
+4 api_signature: torch.library.register_torch_dispatch(op,func,*,lib)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' import torch'
+- ' @torch.library.custom_op("mylib::foo", mutates_args={})'
+- ' def foo(x: torch.Tensor) -> torch.Tensor:'
+- '     return x.clone()'
+- ' class MyMode(torch.utils._python_dispatch.TorchDispatchMode):'
+- '     def __torch_dispatch__(self, func, types, args=(), kwargs=None):'
+- '         return func(*args, **kwargs)'
+- ' @torch.library.register_torch_dispatch("mylib::foo", MyMode)'
+- ' def _(mode, func, types, args, kwargs):'
+- '     x, = args'
+- '     return x + 1'
+- ' x = torch.randn(3)'
+- ' y = foo(x)'
+- ' assert torch.allclose(y, x)'
+- ' with MyMode():'
+- '     y = foo(x)'
+- ' assert torch.allclose(y, x + 1)'
+8 api_shape: null

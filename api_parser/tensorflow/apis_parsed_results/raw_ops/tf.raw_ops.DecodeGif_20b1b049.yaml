@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.DecodeGif
+3 api_description: Decodes a GIF-encoded image into a uint8 tensor of frames, with
+  support limited to GIFs without frame or transparency compression.
+4 api_signature: tf.raw_ops.DecodeGif(contents)
+5 api_details: ''
+6 api_parameters:
+- contents: The GIF-encoded image data to decode.
+7 api_usage_example: null
+8 api_shape: ''

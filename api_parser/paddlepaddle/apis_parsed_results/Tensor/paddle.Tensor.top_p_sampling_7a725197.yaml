@@ -1,0 +1,38 @@
+2 api_name: paddle.Tensor.top_p_sampling
+3 api_description: Selects the most probable tokens whose cumulative probability reaches
+  top_p and returns their scores and ids for sampling.
+4 api_signature: paddle.Tensor.top_p_sampling(x,ps,threshold,seed,k,mode,return_top)
+5 api_details: ''
+6 api_parameters:
+- x: Input 2-D tensor containing the scores to sample from.
+- ps: 1-D tensor specifying the top-p value for each query.
+- threshold: 1-D tensor used to filter out low-score tokens from sampling.
+- seed: Random seed used to make sampling reproducible.
+- k: Number of top-k scores and ids to return.
+- mode: Sampling mode that controls whether probability truncation is applied at top-p.
+- return_top: Flag indicating whether to return the top-k scores and ids.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- paddle.seed(2023)
+- x = paddle.randn([2,3])
+- print(x)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[-0.32012719, -0.07942779,  0.26011357],'
+- '[ 0.79003978, -0.39958701,  1.42184138]])'
+- paddle.seed(2023)
+- ps = paddle.randn([2])
+- print(ps)
+- Tensor(shape=[2], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[-0.32012719, -0.07942779])'
+- value, index = paddle.tensor.top_p_sampling(x, ps)
+- print(value)
+- Tensor(shape=[2, 1], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[0.26011357],'
+- '[1.42184138]])'
+- print(index)
+- Tensor(shape=[2, 1], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[[2],'
+- '[2]])'
+8 api_shape: {}

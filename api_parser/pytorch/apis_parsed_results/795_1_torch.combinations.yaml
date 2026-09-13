@@ -1,0 +1,18 @@
+2 api_name: torch.combinations
+3 api_description: Returns all length-r combinations of the input tensor’s elements,
+  optionally allowing repeated elements when with_replacement=True.
+4 api_signature: torch.combinations(input:Tensor,r:int)
+5 api_details: ''
+6 api_parameters:
+- input: A 1D vector whose elements are used to generate combinations.
+- r: The number of elements to include in each combination.
+7 api_usage_example:
+- ' a = [1, 2, 3]'
+- ' list(itertools.combinations(a, r=2))'
+- ' list(itertools.combinations(a, r=3))'
+- ' list(itertools.combinations_with_replacement(a, r=2))'
+- ' tensor_a = torch.tensor(a)'
+- ' torch.combinations(tensor_a)'
+- ' torch.combinations(tensor_a, r=3)'
+- ' torch.combinations(tensor_a, with_replacement=True)'
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.ParseExampleDatasetV2
+3 api_description: Parses a dataset of serialized Example protos into tensors or sparse
+  tensors for the requested features.
+4 api_signature: tf.raw_ops.ParseExampleDatasetV2(input_dataset,dense_defaults,sparse_keys,dense_keys,sparse_types,dense_shapes,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Provides the dataset of serialized examples to parse.
+- dense_defaults: Supplies default values for dense features when they are missing.
+- sparse_keys: Identifies which example feature keys should be returned as sparse
+    tensors.
+- dense_keys: Identifies which example feature keys should be returned as dense tensors.
+- sparse_types: Specifies the data types for the sparse features being parsed.
+- dense_shapes: Defines the expected shapes of the dense feature outputs.
+- output_types: Specifies the data types of the operation’s outputs.
+- output_shapes: Specifies the shapes of the operation’s outputs.
+7 api_usage_example: null
+8 api_shape: ''

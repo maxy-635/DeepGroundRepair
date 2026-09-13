@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.cumulative_logsumexp
+3 api_description: Computes the cumulative log-sum-exp of a tensor along an axis,
+  returning an inclusive running log-sum-exp that is numerically more stable than
+  taking log(cumsum(exp(x))).
+4 api_signature: tf.math.cumulative_logsumexp(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the cumulative log-sum-exp.
+- axis: The dimension along which to perform the cumulative log-sum-exp operation,
+    with 0 as the default.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.experimental.function_executor_type
+3 api_description: Context manager that temporarily sets which executor eager-defined
+  tf.defun functions use.
+4 api_signature: tf.experimental.function_executor_type(executor_type)
+5 api_details: ''
+6 api_parameters:
+- executor_type: Specifies which executor implementation TensorFlow should use to
+    run functions created by `tf.contrib.eager.defun`.
+7 api_usage_example: null
+8 api_shape: ''

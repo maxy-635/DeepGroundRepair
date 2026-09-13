@@ -1,0 +1,20 @@
+2 api_name: torch.distributed.rpc.rpc_async
+3 api_description: Asynchronously invokes func on a remote worker and returns a Future
+  immediately without blocking.
+4 api_signature: torch.distributed.rpc.rpc_async(to,func,args,kwargs)
+5 api_details: ''
+6 api_parameters:
+- to: Identifies the destination worker by name, rank, or `WorkerInfo`.
+- func: Specifies the callable to run remotely on the destination worker.
+- args: Provides the positional arguments to pass to `func`.
+- kwargs: Provides the keyword arguments to pass to `func`.
+7 api_usage_example:
+- ' # On worker 0:'
+- ' import torch'
+- ' import torch.distributed.rpc as rpc'
+- ' rpc.init_rpc("worker0", rank=0, world_size=2)'
+- ' fut1 = rpc.rpc_async("worker1", torch.add, args=(torch.ones(2), 3))'
+- ' fut2 = rpc.rpc_async("worker1", min, args=(1, 2))'
+- ' result = fut1.wait() + fut2.wait()'
+- ' rpc.shutdown()'
+8 api_shape: null

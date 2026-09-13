@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.PrelinearizeTuple
+3 api_description: Converts multiple Tensor inputs into a single opaque variant tensor
+  representation for linearized storage or transport.
+4 api_signature: tf.raw_ops.PrelinearizeTuple(inputs,shapes,layouts)
+5 api_details: ''
+6 api_parameters:
+- inputs: The tensor list to be supplied through the infeed mechanism.
+- shapes: The expected shape for each input tensor.
+- layouts: The requested minor-to-major layout for each shape, with `-1` entries letting
+    infeed infer the layout.
+7 api_usage_example: null
+8 api_shape: ''

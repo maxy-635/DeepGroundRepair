@@ -1,0 +1,14 @@
+2 api_name: torch.signbit
+3 api_description: Returns a boolean tensor indicating whether each input element
+  has its sign bit set.
+4 api_signature: torch.signbit(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose sign bits are checked to determine whether each value is
+    negative.
+7 api_usage_example:
+- ' a = torch.tensor([0.7, -1.2, 0., 2.3])'
+- ' torch.signbit(a)'
+- ' a = torch.tensor([-0.0, 0.0])'
+- ' torch.signbit(a)'
+8 api_shape: null

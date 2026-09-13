@@ -1,0 +1,18 @@
+2 api_name: paddle.incubate.distributed.utils.io.dist_save.save_for_auto_inference
+3 api_description: Saves model parameters for auto-parallel inference, supporting
+  dp+mp+pp+sharding stage 1 and dp+sharding stages 2–3, with MoE not yet supported.
+4 api_signature: paddle.incubate.distributed.utils.io.dist_save.save_for_auto_inference(path_prefix,dist_model)
+5 api_details: ''
+6 api_parameters:
+- path_prefix: Prefix or directory used to save the model parameters; if it ends with
+    a path separator, files are saved in that directory as `saved_parameters`, otherwise
+    they are saved with rank-specific `.pdparams` and `.pdattrs` filenames.
+- dist_model: The distributed model instance whose parameters are being saved for
+    auto inference.
+7 api_usage_example:
+- '>>>'
+- from paddle.incubate.distributed.utils.io import save_for_auto_inference
+- 'dist_model = build_distributed_model()  # type: ignore[name-defined]'
+- path_prefix = "path/to/save_infer"
+- save_for_auto_inference(path_prefix, dist_model=dist_model, cvt2cpu=False)
+8 api_shape: {}

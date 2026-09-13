@@ -1,0 +1,8 @@
+2 api_name: torch.mtia.snapshot
+3 api_description: Returns a dictionary containing the MTIA memory allocator’s history
+  snapshot.
+4 api_signature: torch.mtia.snapshot()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

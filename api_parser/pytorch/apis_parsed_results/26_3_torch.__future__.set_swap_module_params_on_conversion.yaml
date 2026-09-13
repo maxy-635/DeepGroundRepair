@@ -1,0 +1,10 @@
+2 api_name: torch.__future__.set_swap_module_params_on_conversion
+3 api_description: Controls whether module conversion and state-dict loading update
+  existing parameters in place via `swap_tensors()` instead of using `.data` assignment
+  or `copy_()`.
+4 api_signature: torch.__future__.set_swap_module_params_on_conversion(value)
+5 api_details: ''
+6 api_parameters:
+- value: Controls whether `swap_tensors()` is used during module parameter conversion.
+7 api_usage_example: null
+8 api_shape: null

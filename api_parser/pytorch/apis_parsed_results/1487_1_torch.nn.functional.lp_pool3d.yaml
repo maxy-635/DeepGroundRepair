@@ -1,0 +1,25 @@
+2 api_name: torch.nn.functional.lp_pool3d
+3 api_description: torch.nn.functional.lp_pool3d performs 3D power-average pooling
+  on multi-plane input signals.
+4 api_signature: torch.nn.functional.lp_pool3d(input,norm_type,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be pooled, typically a 5-dimensional tensor representing
+    a batch of 3D data.
+- norm_type: The exponent value in the Lp norm used for pooling, determining the type
+    of pooling operation.
+- kernel_size: The size of the window to take an Lp norm over, specified as a single
+    number or a tuple of three numbers for depth, height, and width.
+- stride: The stride of the window, controlling the step size for sliding the pooling
+    window across the input tensor, specified as a single number or a tuple.
+- ceil_mode: A boolean that, when True, will use ceil instead of floor to compute
+    the output shape, affecting how the pooling window is applied at the borders.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor depth: Depth_out = floor((Depth_in - kernel_size_depth) / stride_depth + 1)
+    tensor height: Height_out = floor((Height_in - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in - kernel_size_width) / stride_width + 1)

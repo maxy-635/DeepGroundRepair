@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.FractionalAvgPoolGrad
+3 api_description: Computes the gradient of FractionalAvgPool by evenly distributing
+  each output backpropagated value across the input elements in the same pooling cell,
+  using only the original input shape.
+4 api_signature: tf.raw_ops.FractionalAvgPoolGrad(orig_input_tensor_shape,out_backprop,row_pooling_sequence,col_pooling_sequence)
+5 api_details: ''
+6 api_parameters:
+- orig_input_tensor_shape: Specifies the original shape of the input tensor so the
+    gradient can be mapped back correctly.
+- out_backprop: Provides the upstream gradients from fractional_avg_pool’s output
+    in 4-D tensor form.
+- row_pooling_sequence: Defines the row-wise pooling regions used to reconstruct gradients.
+- col_pooling_sequence: Defines the column-wise pooling regions used together with
+    the row sequence to reconstruct gradients.
+7 api_usage_example: null
+8 api_shape: ''

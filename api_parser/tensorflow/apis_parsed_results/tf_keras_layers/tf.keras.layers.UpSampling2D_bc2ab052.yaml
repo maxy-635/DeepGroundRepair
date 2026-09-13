@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.layers.UpSampling2D
+3 api_description: The tf.keras.layers.UpSampling2D layer increases the spatial dimensions
+  of 2D inputs using specified interpolation methods, with options like nearest neighbor
+  for simple row and column repetition.
+4 api_signature: tf.keras.layers.UpSampling2D(size)
+5 api_details: ''
+6 api_parameters:
+- size: Defines the upsampling factors for the height and width dimensions of the
+    input.
+7 api_usage_example:
+- input_shape = (2, 2, 1, 3)
+- x = np.arange(np.prod(input_shape)).reshape(input_shape)
+- print(x)
+- y = keras.layers.UpSampling2D(size=(1, 2))(x)
+- print(y)
+8 api_shape: null

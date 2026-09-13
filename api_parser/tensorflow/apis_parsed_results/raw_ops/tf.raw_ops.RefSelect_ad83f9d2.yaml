@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.RefSelect
+3 api_description: Returns the input tensor at the specified index.
+4 api_signature: tf.raw_ops.RefSelect(index,inputs)
+5 api_details: ''
+6 api_parameters:
+- index: Specifies which input tensor to select and forward to the output.
+- inputs: Provides the list of mutable reference tensors to choose from.
+7 api_usage_example: null
+8 api_shape: ''

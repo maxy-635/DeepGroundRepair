@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.SetSize
+3 api_description: Returns the number of unique elements in the last dimension of
+  a SparseTensor set, ignoring duplicates and optionally validating set indices.
+4 api_signature: tf.raw_ops.SetSize(set_indices,set_values,set_shape)
+5 api_details: ''
+6 api_parameters:
+- set_indices: Specifies the 2D int64 indices that identify the positions of the SparseTensor
+    elements.
+- set_values: Provides the 1D sparse tensor values whose set size will be computed,
+    using one of the supported numeric or string types.
+- set_shape: Supplies the 1D int64 shape of the SparseTensor that defines its overall
+    dimensions.
+7 api_usage_example: null
+8 api_shape: ''

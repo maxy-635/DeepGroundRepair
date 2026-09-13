@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.acos
+3 api_description: Computes the element-wise inverse cosine of a tensor, for inputs
+  in [-1, 1], returning values in [0, pi].
+4 api_signature: tf.math.acos(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose elements are used to compute the element-wise inverse cosine.
+7 api_usage_example:
+- x = tf.constant([1.0, -0.5, 3.4, 0.2, 0.0, -2], dtype = tf.float32)
+- tf.math.acos(x)
+8 api_shape: ''

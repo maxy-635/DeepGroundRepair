@@ -1,0 +1,9 @@
+2 api_name: torch.profiler._KinetoProfile.key_averages
+3 api_description: Groups profiled events by operator name, and optionally by input
+  shapes, stack traces, and overload name, then returns averaged metrics for each
+  group.
+4 api_signature: key_averages(group_by_input_shape,group_by_stack_n)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

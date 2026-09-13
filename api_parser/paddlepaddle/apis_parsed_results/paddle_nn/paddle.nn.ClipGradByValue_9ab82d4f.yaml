@@ -1,0 +1,21 @@
+2 api_name: paddle.nn.ClipGradByValue
+3 api_description: Constrains tensor gradients within a specified range [min, max].
+4 api_signature: paddle.nn.ClipGradByValue(max,min)
+5 api_details: ''
+6 api_parameters:
+- max: Specifies the upper limit for clipping the gradient values.
+- min: Specifies the lower limit for clipping the gradient values; defaults to the
+    negative of 'max' if not set.
+7 api_usage_example:
+- import paddle
+- x = paddle.uniform([10, 10], min=-1.0, max=1.0, dtype='float32')
+- linear = paddle.nn.Linear(in_features=10, out_features=10,
+- '                          weight_attr=paddle.ParamAttr(need_clip=True),'
+- '                          bias_attr=paddle.ParamAttr(need_clip=False))'
+- out = linear(x)
+- loss = paddle.mean(out)
+- loss.backward()
+- clip = paddle.nn.ClipGradByValue(min=-1, max=1)
+- sdg = paddle.optimizer.SGD(learning_rate=0.1, parameters=linear.parameters(), grad_clip=clip)
+- sdg.step()
+8 api_shape: null

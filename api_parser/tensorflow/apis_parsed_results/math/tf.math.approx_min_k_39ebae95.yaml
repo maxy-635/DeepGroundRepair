@@ -1,0 +1,21 @@
+2 api_name: tensorflow.math.approx_min_k
+3 api_description: Returns the approximate k smallest values from the input tensor
+  and their indices, with TPU-optimized performance.
+4 api_signature: tf.math.approx_min_k(operand,k,reduction_dimension)
+5 api_details: ''
+6 api_parameters:
+- operand: The floating-point array to search for the smallest `k` values in.
+- k: The number of minimum values to return.
+- reduction_dimension: The integer axis along which to find the minimum `k` values,
+    defaulting to the last dimension.
+7 api_usage_example:
+- import tensorflow as tf
+- '@tf.function(jit_compile=True)'
+- 'def l2_ann(qy, db, half_db_norms, k=10, recall_target=0.95):'
+- '  dists = half_db_norms - tf.einsum(''ik,jk->ij'', qy, db)'
+- '  return tf.nn.approx_min_k(dists, k=k, recall_target=recall_target)'
+- qy = tf.random.uniform((256,128))
+- db = tf.random.uniform((2048,128))
+- half_db_norms = tf.norm(db, axis=1) / 2
+- dists, neighbors = l2_ann(qy, db, half_db_norms)
+8 api_shape: ''

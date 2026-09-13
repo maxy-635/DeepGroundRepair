@@ -1,0 +1,33 @@
+2 api_name: paddle.static.accuracy
+3 api_description: Computes classification accuracy by comparing predictions with
+  labels and counting a sample as correct when its true label appears in the top-k
+  predicted results.
+4 api_signature: paddle.static.accuracy(input,label,k)
+5 api_details: ''
+6 api_parameters:
+- input: Predicted scores or probabilities for each sample, used to compute accuracy.
+- label: Ground-truth class labels for each sample, used as the reference for accuracy.
+- k: Checks whether the true label appears in the top-k predicted classes.
+7 api_usage_example:
+- import numpy as np
+- import paddle
+- import paddle.static as static
+- import paddle.nn.functional as F
+- paddle.seed(2023)
+- paddle.enable_static()
+- data = static.data(name="input", shape=[-1, 32, 32], dtype="float32")
+- label = static.data(name="label", shape=[-1,1], dtype="int64")
+- fc_out = static.nn.fc(x=data, size=10)
+- predict = F.softmax(x=fc_out)
+- result = static.accuracy(input=predict, label=label, k=5)
+- place = paddle.CPUPlace()
+- exe = static.Executor(place)
+- exe.run(static.default_startup_program())
+- np.random.seed(1107)
+- x = np.random.rand(3, 32, 32).astype("float32")
+- y = np.array([[1],[0],[1]])
+- 'output = exe.run(feed={"input": x,"label": y},'
+- '                 fetch_list=[result])'
+- print(output)
+- '[array(0.33333334, dtype=float32)]'
+8 api_shape: {}

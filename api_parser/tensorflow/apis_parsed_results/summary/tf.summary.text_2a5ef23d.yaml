@@ -1,0 +1,9 @@
+2 api_name: tensorflow.summary.text
+3 api_description: Writes text Tensor values to the current default summary writer
+  for TensorBoard visualization and analysis, associating each text point with a name
+  and step as part of a time series.
+4 api_signature: tf.summary.text(name,data,step)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

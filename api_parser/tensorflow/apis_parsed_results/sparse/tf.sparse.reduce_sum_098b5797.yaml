@@ -1,0 +1,16 @@
+2 api_name: tensorflow.sparse.reduce_sum
+3 api_description: Reduces a SparseTensor by summing elements across specified dimensions,
+  returning either a dense Tensor or a SparseTensor depending on output_is_sparse.
+4 api_signature: tf.sparse.reduce_sum(sp_input,axis)
+5 api_details: ''
+6 api_parameters:
+- sp_input: Specifies the SparseTensor whose numeric values will be reduced.
+- axis: Specifies which dimensions to sum over, or all dimensions if `None`.
+7 api_usage_example:
+- x = tf.sparse.SparseTensor([[0, 0], [0, 2], [1, 1]], [1, 1, 1], [2, 3])
+- tf.sparse.reduce_sum(x)
+- tf.sparse.reduce_sum(x, 0)
+- 'tf.sparse.reduce_sum(x, 1)  # Can also use -1 as the axis'
+- tf.sparse.reduce_sum(x, 1, keepdims=True)
+- tf.sparse.reduce_sum(x, [0, 1])
+8 api_shape: ''

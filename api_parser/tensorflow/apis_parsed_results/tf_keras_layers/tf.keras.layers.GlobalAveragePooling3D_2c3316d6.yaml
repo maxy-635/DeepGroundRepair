@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.layers.GlobalAveragePooling3D
+3 api_description: GlobalAveragePooling3D performs global average pooling on 3D data,
+  reducing the spatial dimensions by computing the average of all values across the
+  depth, height, and width axes, resulting in a single vector per input sample.
+4 api_signature: tf.keras.layers.GlobalAveragePooling3D(keepdims)
+5 api_details: ''
+6 api_parameters:
+- keepdims: Indicates whether to retain the spatial dimensions as length 1 or reduce
+    the rank of the tensor.
+7 api_usage_example:
+- x = np.random.rand(2, 4, 5, 4, 3)
+- y = keras.layers.GlobalAveragePooling3D()(x)
+- y.shape
+8 api_shape: null

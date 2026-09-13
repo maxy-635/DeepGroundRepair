@@ -1,0 +1,14 @@
+2 api_name: tensorflow.nn.ctc_beam_search_decoder
+3 api_description: The tensorflow.nn.ctc_beam_search_decoder API performs beam search
+  decoding on input logits to generate the most likely sequence of labels, using the
+  Connectionist Temporal Classification (CTC) algorithm.
+4 api_signature: tf.nn.ctc_beam_search_decoder(inputs,sequence_length,beam_width)
+5 api_details: ''
+6 api_parameters:
+- inputs: A 3-D tensor representing the logits for each time step, batch, and class.
+- sequence_length: A 1-D vector indicating the valid length of sequences for each
+    batch entry.
+- beam_width: An integer specifying the number of beams to use in the beam search
+    decoding process.
+7 api_usage_example: null
+8 api_shape: ''

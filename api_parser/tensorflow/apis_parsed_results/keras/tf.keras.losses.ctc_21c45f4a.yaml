@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.losses.ctc
+3 api_description: Computes Connectionist Temporal Classification loss for sequence
+  prediction tasks with unaligned inputs and targets, commonly used in speech and
+  handwriting recognition.
+4 api_signature: tf.keras.losses.ctc(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: Provides the ground-truth label sequences as integer-encoded targets, with
+    0 reserved for the blank/mask symbol.
+- y_pred: Provides the model’s unnormalized logit predictions for each timestep and
+    class.
+7 api_usage_example: null
+8 api_shape: ''

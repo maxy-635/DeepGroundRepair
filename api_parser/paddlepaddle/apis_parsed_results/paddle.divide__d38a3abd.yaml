@@ -1,0 +1,8 @@
+2 api_name: paddle.divide_
+3 api_description: Divides x by y elementwise in place, storing the result back into
+  x.
+4 api_signature: paddle.divide_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

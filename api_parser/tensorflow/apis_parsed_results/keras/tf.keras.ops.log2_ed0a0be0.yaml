@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.log2
+3 api_description: Computes the element-wise base-2 logarithm of x.
+4 api_signature: tf.keras.ops.log2(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose base-2 logarithm is computed.
+7 api_usage_example: null
+8 api_shape: ''

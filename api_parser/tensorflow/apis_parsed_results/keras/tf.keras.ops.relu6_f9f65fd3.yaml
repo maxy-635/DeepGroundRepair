@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.relu6
+3 api_description: Applies a clipped ReLU activation that returns values between 0
+  and 6.
+4 api_signature: tf.keras.ops.relu6(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be clipped elementwise to the range [0, 6].
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([-3.0, -2.0, 0.1, 0.2, 6.0, 8.0])
+- keras.ops.relu6(x)
+8 api_shape: ''

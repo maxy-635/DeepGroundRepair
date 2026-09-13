@@ -1,0 +1,64 @@
+2 api_name: paddle.optimizer.AdamW
+3 api_description: AdamW is an Adam-based optimizer that applies decoupled weight
+  decay to improve regularization and avoid the L2 regularization issue in standard
+  Adam.
+4 api_signature: paddle.optimizer.AdamW(learning_rate,beta1,beta2,epsilon,parameters,weight_decay,grad_clip,multi_precision,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update model parameters, either as a fixed
+    float or a learning-rate scheduler.
+- beta1: Controls the decay rate for the first-moment moving average of gradients.
+- beta2: Controls the decay rate for the second-moment moving average of squared gradients.
+- epsilon: Adds a small constant for numerical stability during optimization.
+- parameters: Specifies which parameters to optimize, optionally organized into groups
+    with their own settings.
+- weight_decay: Applies L2-style regularization to reduce overfitting by shrinking
+    parameter values.
+- grad_clip: Limits gradient values using the chosen clipping strategy to improve
+    training stability.
+- multi_precision: Enables mixed-precision-style updates to improve numerical accuracy
+    for low-precision parameters.
+- name: Assigns an optional name to the optimizer instance for identification and
+    debugging.
+7 api_usage_example:
+- import paddle
+- linear = paddle.nn.Linear(10, 10)
+- inp = paddle.rand([10,10], dtype="float32")
+- out = linear(inp)
+- loss = paddle.mean(out)
+- beta1 = paddle.to_tensor([0.9], dtype="float32")
+- beta2 = paddle.to_tensor([0.99], dtype="float32")
+- opt = paddle.optimizer.AdamW(
+- '    learning_rate=0.1,'
+- '    parameters=linear.parameters(),'
+- '    beta1=beta1,'
+- '    beta2=beta2,'
+- '    weight_decay=0.01'
+- )
+- loss.backward()
+- opt.step()
+- opt.clear_grad()
+- '# Note that the learning_rate of linear_2 is 0.01.'
+- linear_1 = paddle.nn.Linear(10, 10)
+- linear_2 = paddle.nn.Linear(10, 10)
+- inp = paddle.uniform(shape=[10, 10], min=-0.1, max=0.1)
+- out = linear_1(inp)
+- out = linear_2(out)
+- loss = paddle.mean(out)
+- opt = paddle.optimizer.AdamW(
+- '    learning_rate=0.1,'
+- '    parameters=[{  # type: ignore'
+- '        ''params'': linear_1.parameters()'
+- '    }, {'
+- '        ''params'': linear_2.parameters(),'
+- '        ''weight_decay'': 0.001,'
+- '        ''learning_rate'': 0.1,'
+- '        ''beta1'': 0.8'
+- '    }],'
+- '    weight_decay=0.01,'
+- '    beta1=0.9'
+- )
+- loss.backward()
+- opt.step()
+- opt.clear_grad()
+8 api_shape: {}

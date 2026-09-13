@@ -1,0 +1,17 @@
+2 api_name: torch.fft.ifftn
+3 api_description: Computes the N-dimensional inverse discrete Fourier transform of
+  an input tensor.
+4 api_signature: torch.fft.ifftn(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to transform with an inverse N-dimensional FFT.
+- s: Optionally sets the transformed signal size, padding or trimming each transformed
+    dimension to match the requested lengths.
+- dim: Specifies which dimensions of the input tensor to apply the inverse transform
+    over.
+- norm: Controls the normalization applied to the inverse FFT, such as no normalization,
+    1/n, or orthonormal scaling.
+7 api_usage_example:
+- ' x = torch.rand(10, 10, dtype=torch.complex64)'
+- ' ifftn = torch.fft.ifftn(x)'
+8 api_shape: null

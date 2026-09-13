@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nondifferentiable_batch_function
+3 api_description: Groups multiple calls to a function into batched executions to
+  improve throughput, but does not support gradient computation.
+4 api_signature: tf.nondifferentiable_batch_function(max_batch_size,batch_timeout_micros,allowed_batch_sizes)
+5 api_details: ''
+6 api_parameters:
+- max_batch_size: Sets the upper limit on how large any batch can be.
+- batch_timeout_micros: Sets how long to wait at most before emitting a batch that
+    is not yet full.
+- allowed_batch_sizes: Optionally defines permitted batch sizes and pads batches up
+    to one of them, ending with `max_batch_size`.
+7 api_usage_example: null
+8 api_shape: ''

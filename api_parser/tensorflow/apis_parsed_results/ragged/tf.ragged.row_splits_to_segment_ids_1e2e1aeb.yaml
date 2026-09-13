@@ -1,0 +1,13 @@
+2 api_name: tensorflow.ragged.row_splits_to_segment_ids
+3 api_description: Converts RaggedTensor row_splits into segment IDs by assigning
+  each element the index of the row segment it belongs to.
+4 api_signature: tf.ragged.row_splits_to_segment_ids(splits,out_type)
+5 api_details: ''
+6 api_parameters:
+- splits: Provides the sorted 1-D row-splits tensor, starting with 0, that is used
+    to compute segment IDs.
+- out_type: Sets the dtype of the returned segment IDs, defaulting to `splits.dtype`
+    or `tf.int64` if `splits` has no dtype.
+7 api_usage_example:
+- print(tf.ragged.row_splits_to_segment_ids([0, 3, 3, 5, 6, 9]))
+8 api_shape: ''

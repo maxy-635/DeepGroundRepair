@@ -1,0 +1,37 @@
+2 api_name: paddle.vision.transforms.erase
+3 api_description: Erase a selected region of an input image by replacing its pixels
+  with a specified value.
+4 api_signature: paddle.vision.transforms.erase(img,i,j,h,w)
+5 api_details: ''
+6 api_parameters:
+- img: The image to modify, provided as a Tensor or NumPy array with the expected
+    channel-first or channel-last shape.
+- i: The y-coordinate of the top-left corner of the region to erase.
+- j: The x-coordinate of the top-left corner of the region to erase.
+- h: The height of the rectangular region to erase.
+- w: The width of the rectangular region to erase.
+- v: The replacement value used to fill the erased region, with NumPy array form required
+    for NumPy array or PIL image inputs.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- fake_img = paddle.randn((3, 2, 4)).astype(paddle.float32)
+- print(fake_img)
+- Tensor(shape=[3, 2, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[ 0.06132207,  1.11349595,  0.41906244, -0.24858207],'
+- '[-1.85169315, -1.50370061,  1.73954511,  0.13331604]],'
+- '[[ 1.66359663, -0.55764782, -0.59911072, -0.57773495],'
+- '[-1.03176904, -0.33741450, -0.29695082, -1.50258386]],'
+- '[[ 0.67233968, -1.07747352,  0.80170447, -0.06695852],'
+- '[-1.85003340, -0.23008066,  0.65083790,  0.75387722]]])'
+- values = paddle.zeros((1,1,1), dtype=paddle.float32)
+- result = paddle.vision.transforms.erase(fake_img, 0, 1, 1, 2, values)
+- print(result)
+- Tensor(shape=[3, 2, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[ 0.06132207,  0.        ,  0.        , -0.24858207],'
+- '[-1.85169315, -1.50370061,  1.73954511,  0.13331604]],'
+- '[[ 1.66359663,  0.        ,  0.        , -0.57773495],'
+- '[-1.03176904, -0.33741450, -0.29695082, -1.50258386]],'
+- '[[ 0.67233968,  0.        ,  0.        , -0.06695852],'
+- '[-1.85003340, -0.23008066,  0.65083790,  0.75387722]]])'
+8 api_shape: {}

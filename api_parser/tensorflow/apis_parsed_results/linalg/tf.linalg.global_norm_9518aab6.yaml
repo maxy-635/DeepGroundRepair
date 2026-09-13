@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.global_norm
+3 api_description: Computes the combined L2 norm of a list or tuple of tensors by
+  taking the square root of the sum of each tensor’s squared L2 norm, ignoring any
+  None entries.
+4 api_signature: tf.linalg.global_norm(t_list)
+5 api_details: ''
+6 api_parameters:
+- t_list: The collection of tensors or indexed slices whose global norm is computed,
+    ignoring any `None` entries.
+7 api_usage_example: null
+8 api_shape: ''

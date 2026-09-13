@@ -1,0 +1,8 @@
+2 api_name: paddle.gammaln_
+3 api_description: Computes the elementwise natural logarithm of the gamma function
+  in place, writing the result back into input `x`.
+4 api_signature: paddle.gammaln_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

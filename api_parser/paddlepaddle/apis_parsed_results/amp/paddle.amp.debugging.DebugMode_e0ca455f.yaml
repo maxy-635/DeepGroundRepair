@@ -1,0 +1,8 @@
+2 api_name: paddle.amp.debugging.DebugMode
+3 api_description: Controls and reports the TensorCheckerConfig state for Paddle AMP
+  debugging, with each mode indicating a specific debugging behavior.
+4 api_signature: paddle.amp.debugging.DebugMode(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

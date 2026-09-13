@@ -1,0 +1,8 @@
+2 api_name: paddle.gcd_
+3 api_description: Computes the greatest common divisor elementwise, in place on input
+  x.
+4 api_signature: paddle.gcd_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

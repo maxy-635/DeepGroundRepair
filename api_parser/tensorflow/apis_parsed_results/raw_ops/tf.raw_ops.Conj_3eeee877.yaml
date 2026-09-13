@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Conj
+3 api_description: Returns the elementwise complex conjugate of a tensor of complex
+  numbers by negating each value’s imaginary part.
+4 api_signature: tf.raw_ops.Conj(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose complex conjugate is returned; for `variant` input, the
+    behavior is defined by the stored variant value.
+7 api_usage_example: null
+8 api_shape: ''

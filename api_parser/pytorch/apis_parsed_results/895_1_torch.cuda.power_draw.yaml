@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.power_draw
+3 api_description: Returns the GPU’s average power draw over the last sample period,
+  matching the value reported by `nvidia-smi` on Fermi-or-newer fully supported devices.
+4 api_signature: torch.cuda.power_draw(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which CUDA device’s power draw to report; defaults to the current
+    device.
+7 api_usage_example: null
+8 api_shape: null

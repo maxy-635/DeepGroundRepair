@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.shape
+3 api_description: Returns the dimensions of a tensor as its shape.
+4 api_signature: '"tf.keras.ops.shape(x)"'
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose shape is returned by reading its shape attribute.
+7 api_usage_example:
+- x = keras.zeros((8, 12))
+- keras.ops.shape(x)
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.copy
+3 api_description: Returns a copy of the input tensor or array.
+4 api_signature: tf.keras.ops.copy(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be copied.
+7 api_usage_example: null
+8 api_shape: ''

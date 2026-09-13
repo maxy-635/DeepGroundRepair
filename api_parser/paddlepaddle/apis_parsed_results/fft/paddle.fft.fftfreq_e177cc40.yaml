@@ -1,0 +1,16 @@
+2 api_name: paddle.fft.fftfreq
+3 api_description: Return the sample frequencies used by the discrete Fourier transform.
+4 api_signature: paddle.fft.fftfreq(n,d,dtype)
+5 api_details: ''
+6 api_parameters:
+- n: Specifies the number of samples along the transform dimension.
+- d: Sets the sample spacing, which determines the frequency step size.
+- dtype: Controls the data type of the returned frequency values.
+7 api_usage_example:
+- import paddle
+- scalar_temp = 0.5
+- fftfreq_xp = paddle.fft.fftfreq(5, d=scalar_temp)
+- print(fftfreq_xp)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0., 0.40000001, 0.80000001, -0.80000001, -0.40000001])'
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.dtypes.DType
+3 api_description: Represents the element type of tensors, used to specify operation
+  output types or inspect existing tensor data types.
+4 api_signature: tf.dtypes.DType(type_enum)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- tf.constant(1, dtype=tf.int64)
+- tf.constant(1.0).dtype
+8 api_shape: ''

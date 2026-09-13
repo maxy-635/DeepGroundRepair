@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.empty
+3 api_description: Creates a tensor of the specified shape and dtype with uninitialized
+  values.
+4 api_signature: tf.keras.ops.empty(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the empty tensor to create.
+- dtype: Sets the data type of the created empty tensor.
+7 api_usage_example: null
+8 api_shape: ''

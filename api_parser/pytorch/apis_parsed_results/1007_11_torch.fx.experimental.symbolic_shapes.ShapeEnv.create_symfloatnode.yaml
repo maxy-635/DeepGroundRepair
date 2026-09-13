@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.create_symfloatnode
+3 api_description: Creates a symbolic floating-point value (`SymFloat`) from a symbolic
+  expression.
+4 api_signature: create_symfloatnode(sym,*,hint)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

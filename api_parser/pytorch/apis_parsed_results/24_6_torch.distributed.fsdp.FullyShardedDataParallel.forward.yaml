@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.forward
+3 api_description: Runs the wrapped module’s forward pass while handling FSDP-specific
+  pre- and post-forward sharding.
+4 api_signature: '"forward"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

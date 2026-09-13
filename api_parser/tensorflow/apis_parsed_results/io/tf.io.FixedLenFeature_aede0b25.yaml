@@ -1,0 +1,9 @@
+2 api_name: tensorflow.io.FixedLenFeature
+3 api_description: Defines a fixed-size feature specification for parsing TensorFlow
+  input data, with an optional default value to fill missing features and treat sparse
+  input as dense.
+4 api_signature: tf.io.FixedLenFeature(shape,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

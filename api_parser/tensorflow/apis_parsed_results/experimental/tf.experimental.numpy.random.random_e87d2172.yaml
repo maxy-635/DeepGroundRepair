@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.random.random
+3 api_description: Generates random samples from a uniform distribution over [0.0,
+  1.0), matching NumPy’s random.random behavior.
+4 api_signature: tf.experimental.numpy.random.random(size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

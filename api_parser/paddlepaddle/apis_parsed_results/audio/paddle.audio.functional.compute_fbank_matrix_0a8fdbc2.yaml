@@ -1,0 +1,20 @@
+2 api_name: paddle.audio.functional.compute_fbank_matrix
+3 api_description: Computes a filter bank (fbank) matrix for audio feature extraction.
+4 api_signature: paddle.audio.functional.compute_fbank_matrix(sr,n_fft,n_mels,f_min,f_max,htk,norm,dtype)
+5 api_details: ''
+6 api_parameters:
+- sr: Sets the audio sample rate used to build the mel filterbank.
+- n_fft: Sets the FFT size and thus the number of frequency bins in the filterbank.
+- n_mels: Sets how many mel bands the filterbank will contain.
+- f_min: Sets the lowest frequency in Hz included in the filterbank.
+- f_max: Sets the highest frequency in Hz included in the filterbank, or uses the
+    default upper limit when `None`.
+- htk: Chooses whether to use HTK-style mel frequency scaling.
+- norm: Specifies the normalization method applied to the mel filters.
+- dtype: Sets the data type of the returned filterbank matrix.
+7 api_usage_example:
+- import paddle
+- sr = 23
+- n_fft = 51
+- fbank = paddle.audio.functional.compute_fbank_matrix(sr, n_fft)
+8 api_shape: {}

@@ -1,0 +1,24 @@
+2 api_name: paddle.optimizer.lr.LinearWarmup
+3 api_description: Linearly increases the learning rate during an initial warmup phase
+  before handing control to the main learning rate scheduler.
+4 api_signature: paddle.optimizer.lr.LinearWarmup(learning_rate,warmup_steps,start_lr,end_lr)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the target learning rate used after the warm-up phase, either
+    as a fixed float or another learning-rate scheduler.
+- warmup_steps: Defines how many training steps the warm-up lasts, and must be a positive
+    integer.
+- start_lr: Specifies the learning rate to begin warm-up with.
+- end_lr: Specifies the learning rate to reach at the end of warm-up.
+7 api_usage_example:
+- import paddle
+- value = paddle.arange(26, dtype='float32')
+- a = paddle.reshape(value, [2, 13])
+- linear = paddle.nn.Linear(13, 5)
+- adadelta = paddle.optimizer.Adadelta(learning_rate=0.0003, epsilon=1e-06, rho=0.95,
+- '                            parameters = linear.parameters())'
+- out = linear(a)
+- out.backward()
+- adadelta.step()
+- adadelta.clear_grad()
+8 api_shape: {}

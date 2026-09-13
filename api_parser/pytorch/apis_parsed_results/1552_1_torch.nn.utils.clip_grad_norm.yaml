@@ -1,0 +1,8 @@
+2 api_name: torch.nn.utils.clip_grad_norm
+3 api_description: Clips gradients of parameters to keep their overall norm below
+  a specified maximum.
+4 api_signature: torch.nn.utils.clip_grad_norm(parameters,max_norm)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

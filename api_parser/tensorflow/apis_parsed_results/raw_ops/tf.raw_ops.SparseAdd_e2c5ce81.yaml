@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.SparseAdd
+3 api_description: Adds two ordered SparseTensor inputs and returns a merged SparseTensor,
+  optionally dropping entries whose summed value magnitude is below a specified threshold.
+4 api_signature: tf.raw_ops.SparseAdd(a_indices,a_values,b_indices,b_values,thresh)
+5 api_details: ''
+6 api_parameters:
+- a_indices: Specifies the row-major indices of nonzero elements in the first sparse
+    tensor.
+- a_values: Provides the values corresponding to the first sparse tensor's indices.
+- b_indices: Specifies the row-major indices of nonzero elements in the second sparse
+    tensor.
+- b_values: Provides the values corresponding to the second sparse tensor's indices.
+- thresh: Sets the magnitude threshold below which an output entry is omitted.
+7 api_usage_example: null
+8 api_shape: ''

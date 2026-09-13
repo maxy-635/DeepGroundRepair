@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.activations.log_softmax
+3 api_description: Applies the log-softmax function to each input vector independently
+  along the specified axis, returning log probabilities.
+4 api_signature: tf.keras.activations.log_softmax(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to which log-softmax is applied.
+7 api_usage_example: null
+8 api_shape: ''

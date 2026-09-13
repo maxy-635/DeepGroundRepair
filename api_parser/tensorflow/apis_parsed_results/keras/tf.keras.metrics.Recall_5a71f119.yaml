@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.metrics.Recall
+3 api_description: Computes recall by measuring true positives over true positives
+  plus false negatives, with support for sample weights, top-k evaluation, and optional
+  per-class recall via class_id.
+4 api_signature: tf.keras.metrics.Recall(thresholds,top_k,class_id)
+5 api_details: ''
+6 api_parameters:
+- thresholds: Sets one or more probability cutoffs used to decide which predictions
+    count as positives when computing recall.
+- top_k: Limits recall calculation to the top-k highest-scoring predictions.
+- class_id: Restricts recall to a single specified class index for binary-style metric
+    computation.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([0, 1, 1, 1], [1, 0, 1, 1], sample_weight=[0, 0, 1, 0])
+- m.result()
+8 api_shape: ''

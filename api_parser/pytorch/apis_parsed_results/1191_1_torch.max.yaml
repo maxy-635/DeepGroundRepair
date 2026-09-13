@@ -1,0 +1,11 @@
+2 api_name: torch.max
+3 api_description: Returns the maximum value among all elements in the input tensor.
+4 api_signature: torch.max(input,*,out)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to compute the maximum value from.
+7 api_usage_example:
+- ' a = torch.randn(1, 3)'
+- ' a'
+- ' torch.max(a)'
+8 api_shape: null

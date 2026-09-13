@@ -1,0 +1,25 @@
+2 api_name: paddle.nn.Dropout
+3 api_description: The paddle.nn.Dropout API implements dropout regularization by
+  randomly setting some neuron outputs to zero and scaling others, based on a specified
+  dropout probability, to reduce overfitting during training.
+4 api_signature: paddle.nn.Dropout(p)
+5 api_details: ''
+6 api_parameters:
+- p: Specifies the probability with which each unit is set to zero during dropout.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- x = paddle.to_tensor([[1, 2, 3], [4, 5, 6]], dtype="float32")
+- m = paddle.nn.Dropout(p=0.5)
+- y_train = m(x)
+- print(y_train)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[2., 4., 0.],'
+- '[8., 0., 0.]])'
+- 'm.eval()  # switch the model to test phase'
+- y_test = m(x)
+- print(y_test)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 2., 3.],'
+- '[4., 5., 6.]])'
+8 api_shape: null

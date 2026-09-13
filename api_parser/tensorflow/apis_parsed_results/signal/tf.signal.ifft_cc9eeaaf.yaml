@@ -1,0 +1,9 @@
+2 api_name: tensorflow.signal.ifft
+3 api_description: Computes the inverse 1D FFT over the innermost dimension of the
+  input.
+4 api_signature: tf.signal.ifft(input)
+5 api_details: ''
+6 api_parameters:
+- input: The complex tensor to transform with the inverse FFT.
+7 api_usage_example: null
+8 api_shape: ''

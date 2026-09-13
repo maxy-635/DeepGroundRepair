@@ -1,0 +1,19 @@
+2 api_name: torch.roll
+3 api_description: Shift tensor elements along specified dimension(s), wrapping overflowed
+  values to the start; if no dims are given, flatten first and restore the original
+  shape afterward.
+4 api_signature: torch.roll(input,shifts,dims)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be rolled.
+- shifts: The number of positions to shift the tensor elements, optionally one per
+    dimension if a tuple is provided.
+- dims: The dimension or dimensions along which to apply the roll.
+7 api_usage_example:
+- ' x = torch.tensor([1, 2, 3, 4, 5, 6, 7, 8]).view(4, 2)'
+- ' x'
+- ' torch.roll(x, 1)'
+- ' torch.roll(x, 1, 0)'
+- ' torch.roll(x, -1, 0)'
+- ' torch.roll(x, shifts=(2, 1), dims=(0, 1))'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.IteratorFromStringHandleV2
+3 api_description: Creates an iterator resource from a serialized string handle, allowing
+  a previously saved iterator to be restored and used in TensorFlow v2.
+4 api_signature: tf.raw_ops.IteratorFromStringHandleV2(string_handle,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- string_handle: Provides the serialized iterator resource handle to reconstruct the
+    iterator.
+- output_types: Specifies the data types of elements the iterator will produce.
+- output_shapes: Specifies the shapes of the elements the iterator will produce.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.initializers.RandomUniform
+3 api_description: Initializes tensors with random values sampled uniformly from a
+  specified range.
+4 api_signature: tf.keras.initializers.RandomUniform(minval,maxval)
+5 api_details: ''
+6 api_parameters:
+- minval: Sets the inclusive lower bound for the random values generated.
+- maxval: Sets the exclusive upper bound for the random values generated.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = RandomUniform(minval=0.0, maxval=1.0)
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

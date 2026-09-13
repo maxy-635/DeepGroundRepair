@@ -1,0 +1,24 @@
+2 api_name: tensorflow.edit_distance
+3 api_description: Computes the Levenshtein edit distance between sparse hypothesis
+  and truth sequences, with optional normalization by the truth length.
+4 api_signature: tf.edit_distance(hypothesis,truth,normalize)
+5 api_details: ''
+6 api_parameters:
+- hypothesis: The predicted sequences to compare against the truth.
+- truth: The reference sequences used as the ground truth for comparison.
+- normalize: Whether to divide the Levenshtein distance by the truth sequence length.
+7 api_usage_example:
+- hypothesis = tf.SparseTensor(
+- '  [[0, 0, 0],'
+- '   [1, 0, 0]],'
+- '  ["a", "b"],'
+- '  (2, 1, 1))'
+- truth = tf.SparseTensor(
+- '  [[0, 1, 0],'
+- '   [1, 0, 0],'
+- '   [1, 0, 1],'
+- '   [1, 1, 0]],'
+- '   ["a", "b", "c", "a"],'
+- '   (2, 2, 2))'
+- tf.edit_distance(hypothesis, truth, normalize=True)
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: torch.stft
+3 api_description: Computes the short-time Fourier transform of a signal by splitting
+  it into overlapping windows and returning the frequency-domain representation for
+  each frame.
+4 api_signature: torch.stft(input,n_fft,hop_length,window,center,return_complex)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose last dimension contains the signal to transform, with
+    an optional batch dimension.
+- n_fft: Sets the FFT window size and thus the frequency resolution of the transform.
+- hop_length: Controls how far the sliding window moves between adjacent frames.
+- window: Provides an optional 1D window function used to taper each frame before
+    the FFT.
+- center: Determines whether the input is padded so each frame is centered on its
+    corresponding time step.
+- return_complex: Specifies whether the STFT output should be returned as a complex
+    tensor or in a real-valued split format.
+7 api_usage_example: null
+8 api_shape: null

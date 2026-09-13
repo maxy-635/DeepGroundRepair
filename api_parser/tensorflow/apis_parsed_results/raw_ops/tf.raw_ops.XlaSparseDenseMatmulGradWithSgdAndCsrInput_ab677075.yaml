@@ -1,0 +1,21 @@
+2 api_name: tensorflow.raw_ops.XlaSparseDenseMatmulGradWithSgdAndCsrInput
+3 api_description: Computes gradients for a sparse-dense matmul with CSR input and
+  applies SGD updates.
+4 api_signature: tf.raw_ops.XlaSparseDenseMatmulGradWithSgdAndCsrInput(row_pointers,sorted_sample_ids,sorted_token_ids,activation_gradients,learning_rate,embedding_table,name)
+5 api_details: ''
+6 api_parameters:
+- row_pointers: Defines the CSR row pointer array that indicates where each row’s
+    nonzero entries begin and end.
+- sorted_sample_ids: Provides the sample IDs corresponding to the sparse entries,
+    sorted to match the CSR structure.
+- sorted_token_ids: Provides the token IDs corresponding to the sparse entries, sorted
+    to align with the CSR ordering.
+- activation_gradients: Supplies the gradients of the output activations used to compute
+    the embedding updates.
+- learning_rate: Sets the step size used by the SGD update when adjusting the embedding
+    table.
+- embedding_table: Contains the embedding weights to be updated by the gradient computation
+    with SGD.
+- name: Optionally assigns a name to the operation for graph organization and debugging.
+7 api_usage_example: null
+8 api_shape: ''

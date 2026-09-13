@@ -1,0 +1,11 @@
+2 api_name: tensorflow.tensor_scatter_nd_min
+3 api_description: Applies the element-wise minimum of updates to specific indices
+  in a tensor, producing a new tensor with the scattered minimum values.
+4 api_signature: tf.tensor_scatter_nd_min(tensor,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor whose selected elements will be updated.
+- indices: The int32 or int64 index locations where updates are applied.
+- updates: The values to scatter into the tensor at the given indices.
+7 api_usage_example: null
+8 api_shape: ''

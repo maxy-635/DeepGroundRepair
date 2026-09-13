@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.DrawBoundingBoxes
+3 api_description: Draws zero or more normalized bounding boxes onto each image in
+  a batch and returns the images with box outlines overlaid.
+4 api_signature: tf.raw_ops.DrawBoundingBoxes(images,boxes)
+5 api_details: ''
+6 api_parameters:
+- images: The batch of input images to which bounding boxes will be drawn.
+- boxes: The set of bounding boxes, organized per image, that will be overlaid on
+    the images.
+7 api_usage_example: null
+8 api_shape: ''

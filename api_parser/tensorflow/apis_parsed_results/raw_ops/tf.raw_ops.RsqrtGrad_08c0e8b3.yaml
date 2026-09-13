@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.RsqrtGrad
+3 api_description: Computes the gradient of `rsqrt(x)` with respect to `x` using `dy
+  * -0.5 * y^3`, where `y = rsqrt(x)`.
+4 api_signature: tf.raw_ops.RsqrtGrad(y,dy)
+5 api_details: ''
+6 api_parameters:
+- y: The forward-pass tensor whose reciprocal square root gradient is being computed.
+- dy: The upstream gradient tensor, matching `y`’s type, used to compute the gradient
+    output.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.layers.SimpleRNNCell
+3 api_description: The tf.keras.layers.SimpleRNNCell class processes a single time
+  step of input in a Simple RNN, allowing for the construction of custom RNN architectures
+  by handling one step of the sequence at a time.
+4 api_signature: tf.keras.layers.SimpleRNNCell(units, activation, use_bias, dropout,
+  recurrent_dropout)
+5 api_details: ''
+6 api_parameters:
+- units: Specifies the number of output dimensions for the RNN cell.
+- activation: Defines the activation function to apply, with a default of tanh.
+- use_bias: Indicates whether to include a bias vector in the layer's computations.
+- dropout: Sets the fraction of input units to drop for regularization during training.
+- recurrent_dropout: Sets the fraction of recurrent units to drop for regularization
+    during training.
+7 api_usage_example: null
+8 api_shape: null

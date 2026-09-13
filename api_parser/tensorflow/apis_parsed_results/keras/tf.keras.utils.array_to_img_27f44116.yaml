@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.utils.array_to_img
+3 api_description: Converts a 3D NumPy array into a PIL Image, typically for visualizing
+  or saving image data.
+4 api_signature: tf.keras.utils.array_to_img(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input data to convert into an image, as any object that can be turned into
+    a NumPy array.
+7 api_usage_example: null
+8 api_shape: ''

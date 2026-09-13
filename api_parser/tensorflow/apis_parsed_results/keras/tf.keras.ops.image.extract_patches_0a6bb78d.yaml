@@ -1,0 +1,23 @@
+2 api_name: tensorflow.keras.ops.image.extract_patches
+3 api_description: Extracts sliding-window patches from one or more images, returning
+  each patch as a flattened local neighborhood.
+4 api_signature: tf.keras.ops.image.extract_patches(image,size,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- image: Specifies the 3D or 4D input image or batch of images to extract patches
+    from.
+- size: Sets the patch height and width used when extracting patches.
+- strides: Controls how far the patch window moves along the height and width, defaulting
+    to the patch size if not provided.
+- padding: Chooses the padding mode, either `same` or `valid`, for patch extraction
+    at the image boundaries.
+7 api_usage_example:
+- image = np.random.random(
+- '    (2, 20, 20, 3)'
+- ').astype("float32") # batch of 2 RGB images'
+- patches = keras.ops.image.extract_patches(image, (5, 5))
+- patches.shape
+- 'image = np.random.random((20, 20, 3)).astype("float32") # 1 RGB image'
+- patches = keras.ops.image.extract_patches(image, (3, 3), (1, 1))
+- patches.shape
+8 api_shape: ''

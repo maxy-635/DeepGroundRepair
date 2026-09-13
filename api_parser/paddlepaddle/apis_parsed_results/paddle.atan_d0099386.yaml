@@ -1,0 +1,15 @@
+2 api_name: paddle.atan
+3 api_description: Computes the element-wise arctangent of the input tensor, returning
+  the angle whose tangent is each value.
+4 api_signature: paddle.atan(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are transformed by the arctangent operation.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.atan(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.38050640, -0.19739556,  0.09966865,  0.29145682])'
+8 api_shape: {}

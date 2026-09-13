@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ResizeArea
+3 api_description: Resizes images to a target size using area interpolation by averaging
+  input pixels weighted by overlap; outputs float tensors and may slightly shift value
+  ranges due to numerical precision.
+4 api_signature: tf.raw_ops.ResizeArea(images,size)
+5 api_details: ''
+6 api_parameters:
+- images: Input 4-D image tensor containing a batch of images to be resized.
+- size: 1-D tensor of two integers specifying the target height and width.
+7 api_usage_example: null
+8 api_shape: ''

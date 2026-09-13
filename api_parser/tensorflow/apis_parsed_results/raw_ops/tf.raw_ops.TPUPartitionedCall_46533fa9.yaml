@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TPUPartitionedCall
+3 api_description: Calls a TensorFlow function on a specified TPU device, with inputs
+  and control dependencies routed through the TPU partitioned call.
+4 api_signature: tf.raw_ops.TPUPartitionedCall(args,Tout,f)
+5 api_details: ''
+6 api_parameters:
+- args: Tensor inputs passed as arguments to the function.
+- Tout: Data types expected for the function’s outputs.
+- f: The @Defun-decorated function to execute.
+7 api_usage_example: null
+8 api_shape: ''

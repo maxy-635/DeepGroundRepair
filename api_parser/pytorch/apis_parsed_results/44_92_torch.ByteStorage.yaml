@@ -1,0 +1,8 @@
+2 api_name: torch.ByteStorage
+3 api_description: A byte-oriented storage container that holds raw 8-bit integer
+  data for low-level tensor memory handling.
+4 api_signature: torch.ByteStorage(wrap_storage,dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

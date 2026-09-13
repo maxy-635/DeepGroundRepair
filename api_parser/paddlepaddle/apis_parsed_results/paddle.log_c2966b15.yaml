@@ -1,0 +1,16 @@
+2 api_name: paddle.log
+3 api_description: Computes the natural logarithm of each element in the input tensor.
+4 api_signature: paddle.log(x,*,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose logarithm is computed.
+- out: An optional tensor to store the result instead of creating a new one.
+7 api_usage_example:
+- import paddle
+- x = [[2, 3, 4], [7, 8, 9]]
+- x = paddle.to_tensor(x, dtype='float32')
+- print(paddle.log(x))
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.69314718, 1.09861231, 1.38629436],'
+- '[1.94591010, 2.07944155, 2.19722462]])'
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.Loss
+3 api_description: Base class for defining Keras loss functions; subclasses implement
+  the loss computation used to compare predictions against targets during training.
+4 api_signature: tf.keras.Loss(name,reduction,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

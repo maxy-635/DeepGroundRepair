@@ -1,0 +1,18 @@
+2 api_name: torch.nn.PReLU
+3 api_description: Applies the Parametric Rectified Linear Unit (PReLU) activation
+  function element-wise, allowing for learnable parameters to adjust the negative
+  slope.
+4 api_signature: torch.nn.PReLU(num_parameters,init)
+5 api_details: ''
+6 api_parameters:
+- num_parameters: Specifies the number of learnable parameters, either 1 for a single
+    parameter or equal to the number of input channels.
+- init: Sets the initial value of the learnable parameter.
+7 api_usage_example:
+- ' m = nn.PReLU()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: ( *) where * means, any number of additional dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

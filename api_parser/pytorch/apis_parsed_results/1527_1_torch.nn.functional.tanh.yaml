@@ -1,0 +1,9 @@
+2 api_name: torch.nn.functional.tanh
+3 api_description: The torch.nn.functional.tanh function applies the hyperbolic tangent
+  activation function element-wise to the input, defined as Tanh(x) = (exp(x) - exp(-x))
+  / (exp(x) + exp(-x)).
+4 api_signature: torch.nn.functional.tanh(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

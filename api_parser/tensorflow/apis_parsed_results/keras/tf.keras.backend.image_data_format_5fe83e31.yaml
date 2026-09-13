@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.image_data_format
+3 api_description: Returns the default image data format, either 'channels_first'
+  or 'channels_last'.
+4 api_signature: tf.keras.backend.image_data_format()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- keras.config.image_data_format()
+8 api_shape: ''

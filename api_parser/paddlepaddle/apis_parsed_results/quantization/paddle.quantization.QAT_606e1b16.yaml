@@ -1,0 +1,13 @@
+2 api_name: paddle.quantization.QAT
+3 api_description: Prepares a model for quantization-aware training using the provided
+  quantization configuration.
+4 api_signature: paddle.quantization.QAT(config)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- from paddle.quantization import QAT, QuantConfig
+- from paddle.quantization.quanters import FakeQuanterWithAbsMaxObserver
+- quanter = FakeQuanterWithAbsMaxObserver(moving_rate=0.9)
+- q_config = QuantConfig(activation=quanter, weight=quanter)
+- qat = QAT(q_config)
+8 api_shape: {}

@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.functional.square_error_cost
+3 api_description: The paddle.nn.functional.square_error_cost API computes the squared
+  error cost between input predictions and target labels.
+4 api_signature: paddle.nn.functional.square_error_cost(input,label)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the predicted values as a float32 tensor.
+- label: Represents the true values as a float32 tensor for comparison.
+7 api_usage_example:
+- import paddle
+- input = paddle.to_tensor([1.1, 1.9])
+- label = paddle.to_tensor([1.0, 2.0])
+- output = paddle.nn.functional.square_error_cost(input, label)
+- print(output)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.01000000, 0.01000000])'
+8 api_shape: null

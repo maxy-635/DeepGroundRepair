@@ -1,0 +1,13 @@
+2 api_name: torch.lu
+3 api_description: Computes the LU factorization of a matrix or batch of matrices,
+  returning the factorization and pivot indices; optional pivoting is controlled by
+  the pivot flag.
+4 api_signature: torch.lu(input,pivot,get_infos)
+5 api_details: ''
+6 api_parameters:
+- pivot: Controls whether to use partial pivoting for the LU decomposition; CPU does
+    not support `pivot=False`.
+- get_infos: When `True`, returns an `info` IntTensor along with the decomposition.
+7 api_usage_example:
+- LU, pivots = torch.linalg.lu_factor(A, compute_pivots)
+8 api_shape: null

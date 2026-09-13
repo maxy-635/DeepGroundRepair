@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.FixedLengthRecordDataset
+3 api_description: Creates a dataset that reads fixed-size binary records from one
+  or more files and emits each record as an element.
+4 api_signature: tf.raw_ops.FixedLengthRecordDataset(filenames,record_bytes)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies the file or files to read from the dataset.
+- record_bytes: Sets the fixed size in bytes of each record to read.
+- name: Optionally names the operation for easier identification.
+7 api_usage_example: null
+8 api_shape: ''

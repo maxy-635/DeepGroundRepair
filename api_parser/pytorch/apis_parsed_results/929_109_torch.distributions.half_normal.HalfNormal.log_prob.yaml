@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.half_normal.HalfNormal.log_prob
+3 api_description: Returns the log probability density of a sample under a HalfNormal
+  distribution.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The observed or sampled value whose log probability under the HalfNormal
+    distribution is computed.
+7 api_usage_example: null
+8 api_shape: null

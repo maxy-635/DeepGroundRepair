@@ -1,0 +1,20 @@
+2 api_name: torch.copysign
+3 api_description: Returns a new tensor with each element taking the magnitude of
+  `input` and the sign of `other`, elementwise.
+4 api_signature: torch.copysign(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the magnitudes that will receive signs.
+- other: Provides the sign values whose sign bits are applied to `input`.
+7 api_usage_example:
+- ' a = torch.randn(5)'
+- ' a'
+- ' torch.copysign(a, 1)'
+- ' a = torch.randn(4, 4)'
+- ' a'
+- ' b = torch.randn(4)'
+- ' torch.copysign(a, b)'
+- ' a = torch.tensor([1.])'
+- ' b = torch.tensor([-0.])'
+- ' torch.copysign(a, b)'
+8 api_shape: null

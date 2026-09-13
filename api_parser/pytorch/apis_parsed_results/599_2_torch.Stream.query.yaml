@@ -1,0 +1,10 @@
+2 api_name: torch.Stream.query
+3 api_description: Returns whether all previously submitted work on the stream has
+  finished executing.
+4 api_signature: '"query()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' s_cuda = torch.Stream(device=''cuda'')'
+- ' s_cuda.query()'
+8 api_shape: null

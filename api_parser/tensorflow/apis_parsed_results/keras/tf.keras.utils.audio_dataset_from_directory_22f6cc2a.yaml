@@ -1,0 +1,30 @@
+2 api_name: tensorflow.keras.utils.audio_dataset_from_directory
+3 api_description: Builds a `tf.data.Dataset` of labeled audio clips from a directory
+  tree, where subdirectory names define class labels, and supports batching, shuffling,
+  validation splitting, and optional resizing/format control for model-ready audio
+  data.
+4 api_signature: tf.keras.utils.audio_dataset_from_directory(directory,labels,label_mode,class_names,batch_size,sampling_rate,output_sequence_length,ragged,shuffle,validation_split,subset)
+5 api_details: ''
+6 api_parameters:
+- directory: Path to the audio data directory; when labels are inferred, it must contain
+    one subdirectory per class.
+- labels: 'Specifies label source: inferred from folders, omitted entirely, or provided
+    as a label list matching the audio files.'
+- label_mode: Defines how labels are encoded, such as categorical, binary, or integer
+    format.
+- class_names: Sets the class order explicitly when labels are inferred, matching
+    the names of the class subdirectories.
+- batch_size: Controls how many samples are grouped into each batch, or returns unbatched
+    samples if set to None.
+- sampling_rate: Resamples audio to the specified number of samples per second.
+- output_sequence_length: Truncates longer clips to this length and pads shorter clips
+    within a batch when needed.
+- ragged: Returns variable-length sequences as a ragged dataset instead of padding
+    them to a common shape.
+- shuffle: Randomizes sample order when True, or preserves alphanumeric ordering when
+    False.
+- validation_split: Reserves the specified fraction of the data for validation.
+- subset: Chooses which portion of the split data to return, such as training, validation,
+    or both.
+7 api_usage_example: null
+8 api_shape: ''

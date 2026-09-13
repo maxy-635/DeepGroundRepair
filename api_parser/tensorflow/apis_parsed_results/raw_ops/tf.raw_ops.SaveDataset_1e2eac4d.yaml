@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.SaveDataset
+3 api_description: Saves a dataset to disk at the given path, writing its elements
+  in TensorFlow's dataset format for later reuse.
+4 api_signature: tf.raw_ops.SaveDataset(input_dataset,path,shard_func,compression,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to be saved, provided as a variant tensor.
+- path: The destination path where the dataset will be written.
+- shard_func: A user-defined function that determines how the dataset is split into
+    shards.
+- compression: An optional compression type to apply when saving the dataset.
+- name: An optional name used to identify the operation.
+7 api_usage_example: null
+8 api_shape: ''

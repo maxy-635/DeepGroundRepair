@@ -1,0 +1,14 @@
+2 api_name: paddle.fft.rfftn
+3 api_description: Computes the N-dimensional FFT of real-valued input, returning
+  the one-sided frequency spectrum for the transformed axes.
+4 api_signature: paddle.fft.rfftn(x,s,axes,norm)
+5 api_details: ''
+6 api_parameters:
+- x: The real-valued input tensor to transform.
+- s: The FFT output shape, cropping or zero-padding the input as needed along the
+    selected axes.
+- axes: The axes along which to compute the FFT, defaulting to the last `len(s)` axes
+    or all axes if `s` is not provided.
+- norm: The normalization mode applied to the transform.
+7 api_usage_example: []
+8 api_shape: {}

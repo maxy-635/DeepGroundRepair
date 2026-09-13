@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.forward_ad.enter_dual_level
+3 api_description: Enter a new forward-mode autodiff level so dual tensors can track
+  and propagate forward gradients at that level.
+4 api_signature: '"torch.autograd.forward_ad.enter_dual_level()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: torch.cpu.Stream
+3 api_description: A CPU stream placeholder for writing device-agnostic code; it represents
+  an execution stream on the CPU and lets code use the same stream-oriented API across
+  devices.
+4 api_signature: torch.cpu.Stream(priority)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

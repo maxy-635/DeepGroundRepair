@@ -1,0 +1,8 @@
+2 api_name: torch.dtype
+3 api_description: Represents a PyTorch tensor data type, such as float32 or int64,
+  used to specify and inspect the numeric format of tensor values.
+4 api_signature: class torch.dtype#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

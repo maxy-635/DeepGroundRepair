@@ -1,0 +1,30 @@
+2 api_name: paddle.callbacks.ProgBarLogger
+3 api_description: Logs training loss and metrics to stdout, with options for silent
+  output, progress bar display, or one-line printing.
+4 api_signature: paddle.callbacks.ProgBarLogger(verbose)
+5 api_details: ''
+6 api_parameters:
+- verbose: Controls how much training progress is displayed, from silent output to
+    detailed per-line progress reporting with timing and throughput.
+7 api_usage_example:
+- import paddle
+- import paddle.vision.transforms as T
+- from paddle.vision.datasets import MNIST
+- from paddle.static import InputSpec
+- inputs = [InputSpec([-1, 1, 28, 28], 'float32', 'image')]
+- labels = [InputSpec([None, 1], 'int64', 'label')]
+- transform = T.Compose([
+- '    T.Transpose(),'
+- '    T.Normalize([127.5], [127.5])'
+- '])'
+- train_dataset = MNIST(mode='train', transform=transform)
+- lenet = paddle.vision.models.LeNet()
+- model = paddle.Model(lenet,
+- '    inputs, labels)'
+- optim = paddle.optimizer.Adam(0.001, parameters=lenet.parameters())
+- model.prepare(optimizer=optim,
+- '            loss=paddle.nn.CrossEntropyLoss(),'
+- '            metrics=paddle.metric.Accuracy())'
+- callback = paddle.callbacks.ProgBarLogger(log_freq=10)
+- model.fit(train_dataset, batch_size=64, callbacks=callback)
+8 api_shape: {}

@@ -1,0 +1,19 @@
+2 api_name: paddle.distributed.new_group
+3 api_description: Creates a new distributed communication group for a specified set
+  of ranks, enabling collective communication among selected processes.
+4 api_signature: paddle.distributed.new_group(ranks,backend,timeout)
+5 api_details: ''
+6 api_parameters:
+- ranks: Specifies the global ranks of the processes that will belong to the new group.
+- backend: Chooses the communication backend used to create the group, currently only
+    `nccl` is supported.
+- timeout: Sets how long to wait for store-related operations before timing out, with
+    a default of 30 minutes.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.distributed.init_parallel_env()
+- tindata = paddle.randn(shape=[2, 3])
+- gp = paddle.distributed.new_group([2, 4, 6])
+- paddle.distributed.all_reduce(tindata, group=gp, sync_op=False)
+8 api_shape: {}

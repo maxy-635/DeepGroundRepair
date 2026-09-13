@@ -1,0 +1,13 @@
+2 api_name: tensorflow.tensordot
+3 api_description: Computes tensor contraction of two tensors along specified axes,
+  summing over matched dimensions; supports matrix multiplication, outer products,
+  and higher-order tensor contractions.
+4 api_signature: tf.tensordot(a,b,axes)
+5 api_details: ''
+6 api_parameters:
+- a: The first input tensor whose specified axes are contracted.
+- b: The second input tensor, matched in type to `a`, whose specified axes are contracted.
+- axes: Specifies which axes to sum over, either by count or by explicit axis pairs,
+    with `0` producing the outer product.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: torch.nn.ModuleDict.update
+3 api_description: Updates a ModuleDict with modules from another mapping, adding
+  new keys and overwriting existing ones.
+4 api_signature: update(modules)
+5 api_details: ''
+6 api_parameters:
+- modules: Provides the modules to add or merge into the `ModuleDict` as key-value
+    pairs.
+7 api_usage_example: null
+8 api_shape: null

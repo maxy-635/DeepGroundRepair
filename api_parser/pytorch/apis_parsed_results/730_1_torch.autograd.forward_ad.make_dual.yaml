@@ -1,0 +1,12 @@
+2 api_name: torch.autograd.forward_ad.make_dual
+3 api_description: Creates a dual tensor by pairing a value tensor with its tangent
+  for forward-mode automatic differentiation.
+4 api_signature: torch.autograd.forward_ad.make_dual(tensor,tangent,level)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' with dual_level():'
+- '...     inp = make_dual(x, v)'
+- '...     out = f(inp)'
+- '...     y, jvp = unpack_dual(out)'
+8 api_shape: null

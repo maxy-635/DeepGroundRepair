@@ -1,0 +1,11 @@
+2 api_name: tensorflow.nn.moments
+3 api_description: tensorflow.nn.moments computes the mean and variance of a tensor
+  across specified axes.
+4 api_signature: tf.nn.moments(x,axes,keepdims)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor for which the mean and variance are computed.
+- axes: Specifies the dimensions along which the mean and variance are calculated.
+- keepdims: Determines whether the output moments retain the input tensor's dimensionality.
+7 api_usage_example: null
+8 api_shape: ''

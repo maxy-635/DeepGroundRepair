@@ -1,0 +1,18 @@
+2 api_name: tensorflow.tpu.experimental.embedding.Adam
+3 api_description: Configures Adam optimization parameters for TPU embeddings when
+  passed to TPUEmbedding as the global optimizer.
+4 api_signature: tf.tpu.experimental.embedding.Adam(learning_rate,beta_1:float,beta_2:float,epsilon:float,lazy_adam:bool,sum_inside_sqrt:bool,use_gradient_accumulation:bool)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Controls the step size used to update the embeddings, and may be
+    a fixed float or a no-argument callable for a dynamic schedule.
+- beta_1: Sets the decay rate for the first-moment estimate used by Adam.
+- beta_2: Sets the decay rate for the second-moment estimate used by Adam.
+- epsilon: Adds a small value for numerical stability during division.
+- lazy_adam: Switches to the faster Lazy Adam variant instead of standard Adam.
+- sum_inside_sqrt: Changes the update rule to place epsilon inside the square root
+    for TPU-friendly training.
+- use_gradient_accumulation: Controls whether embedding gradients are accumulated
+    for more accurate updates or computed faster with less accuracy.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.NonMaxSuppressionV5
+3 api_description: Selects the highest-scoring bounding boxes while removing or down-weighting
+  boxes with high IoU overlap, using score and IoU thresholds, and optionally Soft-NMS
+  with Gaussian weighting.
+4 api_signature: tf.raw_ops.NonMaxSuppressionV5(boxes,scores,max_output_size,iou_threshold,score_threshold)
+5 api_details: ''
+6 api_parameters:
+- boxes: Provides the candidate bounding boxes to be filtered by non-max suppression.
+- scores: Provides the confidence score for each corresponding bounding box.
+- max_output_size: Sets the maximum number of boxes that can be returned.
+- iou_threshold: Sets the overlap threshold above which boxes are considered too similar
+    to keep both.
+- score_threshold: Sets the minimum score a box must have to be considered for selection.
+7 api_usage_example: null
+8 api_shape: ''

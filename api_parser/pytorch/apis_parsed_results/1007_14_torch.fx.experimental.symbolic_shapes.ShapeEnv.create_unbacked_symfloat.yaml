@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.create_unbacked_symfloat
+3 api_description: Creates a symbolic float value with no concrete hint, for representing
+  unknown runtime float shapes or quantities in symbolic shape analysis.
+4 api_signature: create_unbacked_symfloat()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

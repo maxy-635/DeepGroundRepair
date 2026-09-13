@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorMapInsert
+3 api_description: Inserts a key-value pair into a TensorMap, returning the updated
+  map handle.
+4 api_signature: tf.raw_ops.TensorMapInsert(input_handle,key,value)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The variant tensor that identifies the tensor map to insert into.
+- key: The key used to locate the entry within the tensor map.
+- value: The tensor value to store at the specified key.
+7 api_usage_example: null
+8 api_shape: ''

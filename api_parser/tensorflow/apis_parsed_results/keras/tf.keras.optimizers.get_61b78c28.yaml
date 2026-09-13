@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.optimizers.get
+3 api_description: Returns a Keras optimizer instance from a config, identifier, or
+  existing optimizer object.
+4 api_signature: tf.keras.optimizers.get(identifier)
+5 api_details: ''
+6 api_parameters:
+- identifier: Specifies which optimizer to retrieve or construct, using a name, config,
+    or optimizer instance.
+7 api_usage_example: null
+8 api_shape: ''

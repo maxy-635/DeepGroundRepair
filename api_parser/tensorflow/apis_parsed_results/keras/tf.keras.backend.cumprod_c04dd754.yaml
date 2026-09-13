@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.cumprod
+3 api_description: Computes the cumulative product of a tensor along a given axis,
+  with optional exclusive and reverse modes.
+4 api_signature: tf.keras.backend.cumprod(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

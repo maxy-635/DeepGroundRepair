@@ -1,0 +1,21 @@
+2 api_name: tensorflow.keras.layers.ConvLSTM1D
+3 api_description: The tf.keras.layers.ConvLSTM1D layer combines convolutional operations
+  with LSTM's capability to handle sequential data, allowing it to process 1D temporal
+  sequences with spatial hierarchies in the input data.
+4 api_signature: tf.keras.layers.ConvLSTM1D(filters, kernel_size, activation, return_sequences,
+  stateful)
+5 api_details: ''
+6 api_parameters:
+- filters: Defines the number of output filters in the convolution, determining the
+    dimensionality of the output space.
+- kernel_size: Specifies the size of the convolution window, which can be an integer
+    or a tuple/list of one integer.
+- activation: Sets the activation function to be applied, with the default being the
+    hyperbolic tangent function (tanh).
+- return_sequences: Indicates whether to return the full sequence of outputs or just
+    the last output, with the default being False.
+- stateful: Determines if the last state of each sample in a batch will be used as
+    the initial state for the corresponding sample in the next batch, defaulting to
+    False.
+7 api_usage_example: null
+8 api_shape: null

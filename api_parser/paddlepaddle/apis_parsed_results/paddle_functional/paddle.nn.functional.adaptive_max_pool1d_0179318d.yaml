@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.functional.adaptive_max_pool1d
+3 api_description: The paddle.nn.functional.adaptive_max_pool1d API performs a 1D
+  adaptive max pooling operation, adjusting the pooling kernel size to output a specified
+  target size.
+4 api_signature: paddle.nn.functional.adaptive_max_pool1d(x,output_size)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the 3-D input tensor for the pooling operation with dimensions [N,
+    C, L], where N is the batch size, C is the channel count, and L is the feature
+    length.
+- output_size: Defines the size of the output after pooling, specified as an integer
+    or a single-element list/tuple.
+7 api_usage_example: []
+8 api_shape: null

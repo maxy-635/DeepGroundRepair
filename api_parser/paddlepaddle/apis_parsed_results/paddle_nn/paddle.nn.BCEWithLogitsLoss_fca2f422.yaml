@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.BCEWithLogitsLoss
+3 api_description: BCEWithLogitsLoss combines a sigmoid activation with binary cross-entropy
+  loss for stable and efficient binary classification.
+4 api_signature: paddle.nn.BCEWithLogitsLoss(weight,pos_weight)
+5 api_details: ''
+6 api_parameters:
+- weight: This parameter applies a manual rescaling weight to the loss of each batch
+    element, allowing for custom scaling of the loss based on batch-specific needs.
+- pos_weight: This parameter assigns a weight to positive examples, allowing for adjustment
+    of the loss contribution from positive samples, useful in handling imbalance.
+7 api_usage_example:
+- import paddle
+- logit = paddle.to_tensor([5.0, 1.0, 3.0], dtype="float32")
+- label = paddle.to_tensor([1.0, 0.0, 1.0], dtype="float32")
+- bce_logit_loss = paddle.nn.BCEWithLogitsLoss()
+- output = bce_logit_loss(logit, label)
+- print(output)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.45618808)
+8 api_shape: null

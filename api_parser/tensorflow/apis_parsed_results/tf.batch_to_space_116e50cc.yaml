@@ -1,0 +1,13 @@
+2 api_name: tensorflow.batch_to_space
+3 api_description: Rearranges data from the batch dimension into spatial dimensions
+  by dividing batch into blocks, then optionally crops the result to produce an N-D
+  tensor with the same rank as the input.
+4 api_signature: tf.batch_to_space(input,block_shape,crops)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be rearranged from batch into spatial dimensions.
+- block_shape: The per-spatial-dimension block sizes used to split the batch into
+    larger spatial output.
+- crops: The amount to trim from each spatial dimension after the batch-to-space rearrangement.
+7 api_usage_example: null
+8 api_shape: ''

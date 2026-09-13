@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.quantizers.get
+3 api_description: Returns a Keras quantizer object from a given identifier, resolving
+  the specified quantizer for use in Keras models.
+4 api_signature: tf.keras.quantizers.get(identifier)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

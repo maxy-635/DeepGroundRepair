@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.min
+3 api_description: Returns the smallest value in a tensor, or the elementwise minimum
+  along a specified axis.
+4 api_signature: tf.keras.ops.min(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose minimum value is computed.
+- axis: The axis or axes along which to compute the minimum; if omitted, the tensor
+    is flattened first.
+7 api_usage_example: null
+8 api_shape: ''

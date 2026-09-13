@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.reshape
+3 api_description: Returns a tensor with the same data rearranged into a new shape
+  without changing its values.
+4 api_signature: tf.keras.ops.reshape(x,newshape)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be reshaped.
+- newshape: The target shape, which must be compatible with the original shape and
+    may include one `-1` dimension to infer its size.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: torch.nn.parallel.DistributedDataParallel.no_sync
+3 api_description: Context manager that temporarily disables gradient synchronization
+  across DistributedDataParallel processes.
+4 api_signature: no_sync()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' ddp = torch.nn.parallel.DistributedDataParallel(model, pg)'
+- ' with ddp.no_sync():'
+- '     for input in inputs:'
+- '         ddp(input).backward()  # no synchronization, accumulate grads'
+- ' ddp(another_input).backward()  # synchronize grads'
+8 api_shape: null

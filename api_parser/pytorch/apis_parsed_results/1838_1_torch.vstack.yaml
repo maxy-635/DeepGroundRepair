@@ -1,0 +1,15 @@
+2 api_name: torch.vstack
+3 api_description: Stacks tensors vertically along the first dimension, combining
+  them row-wise into a single tensor.
+4 api_signature: torch.vstack(tensors)
+5 api_details: ''
+6 api_parameters:
+- tensors: A sequence of tensors that will be stacked vertically along a new dimension.
+7 api_usage_example:
+- ' a = torch.tensor([1, 2, 3])'
+- ' b = torch.tensor([4, 5, 6])'
+- ' torch.vstack((a,b))'
+- ' a = torch.tensor([[1],[2],[3]])'
+- ' b = torch.tensor([[4],[5],[6]])'
+- ' torch.vstack((a,b))'
+8 api_shape: null

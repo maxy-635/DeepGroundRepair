@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RFFT2D
+3 api_description: Computes the 2D FFT of the innermost two dimensions of a real-valued
+  input, returning only the unique Hermitian-symmetric frequency terms for the last
+  axis, with optional cropping or zero-padding to match `fft_length`.
+4 api_signature: tf.raw_ops.RFFT2D(input,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The real-valued 2D input tensor to transform into the frequency domain.
+- fft_length: A length-2 int32 tensor that specifies the FFT size for each of the
+    two dimensions.
+7 api_usage_example: null
+8 api_shape: ''

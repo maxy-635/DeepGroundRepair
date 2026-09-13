@@ -1,0 +1,13 @@
+2 api_name: torch.ceil
+3 api_description: Returns a new tensor with each element rounded up to the smallest
+  integer greater than or equal to it.
+4 api_signature: torch.ceil(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are rounded up to the smallest integers greater
+    than or equal to them.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.ceil(a)'
+8 api_shape: null

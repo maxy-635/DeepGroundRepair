@@ -1,0 +1,7 @@
+2 api_name: torch.is_grad_enabled
+3 api_description: Returns whether PyTorch gradient mode is currently enabled.
+4 api_signature: torch.is_grad_enabled()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

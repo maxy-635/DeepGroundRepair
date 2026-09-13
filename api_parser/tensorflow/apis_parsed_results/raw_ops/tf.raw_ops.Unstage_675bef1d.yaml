@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.Unstage
+3 api_description: Removes and returns one item from a staging area, providing a fast,
+  lightweight dequeue-like operation optimized for performance.
+4 api_signature: tf.raw_ops.Unstage(dtypes,capacity,memory_limit)
+5 api_details: ''
+6 api_parameters:
+- dtypes: Specifies the data types of the values to unstash, with at least one type
+    required.
+- capacity: Sets the optional queue capacity limit for the staging area, defaulting
+    to 0.
+- memory_limit: Sets the optional memory limit for the staging area, defaulting to
+    0.
+7 api_usage_example: null
+8 api_shape: ''

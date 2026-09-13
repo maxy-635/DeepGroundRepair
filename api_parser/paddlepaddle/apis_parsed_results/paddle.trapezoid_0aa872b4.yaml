@@ -1,0 +1,37 @@
+2 api_name: paddle.trapezoid
+3 api_description: Computes the integral along a specified axis using the composite
+  trapezoidal rule and summation.
+4 api_signature: paddle.trapezoid(y,x,dx,axis)
+5 api_details: ''
+6 api_parameters:
+- y: Tensor of values to integrate along the chosen axis.
+- x: Sample point locations for `y`; if omitted, points are assumed evenly spaced.
+- dx: Spacing between sample points when `x` is not provided.
+- axis: Axis of `y` over which to perform the trapezoidal integration.
+7 api_usage_example:
+- import paddle
+- y = paddle.to_tensor([4, 5, 6], dtype='float32')
+- paddle.trapezoid(y)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 10.)
+- paddle.trapezoid(y, dx=2.)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 20.)
+- y = paddle.to_tensor([4, 5, 6], dtype='float32')
+- x = paddle.to_tensor([1, 2, 3], dtype='float32')
+- paddle.trapezoid(y, x)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 10.)
+- y = paddle.to_tensor([1, 2, 3], dtype='float64')
+- x = paddle.to_tensor([8, 6, 4], dtype='float64')
+- paddle.trapezoid(y, x)
+- Tensor(shape=[], dtype=float64, place=Place(cpu), stop_gradient=True,
+- -8.)
+- y = paddle.arange(6).reshape((2, 3)).astype('float32')
+- paddle.trapezoid(y, axis=0)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.50000000, 2.50000000, 3.50000000])'
+- paddle.trapezoid(y, axis=1)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[2., 8.])'
+8 api_shape: {}

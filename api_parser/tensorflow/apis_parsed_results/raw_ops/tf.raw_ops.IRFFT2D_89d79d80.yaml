@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.IRFFT2D
+3 api_description: Computes the inverse 2D real-valued FFT of the innermost two dimensions,
+  reconstructing a real signal from RFFT2D output with optional FFT length handling,
+  cropping, or zero-padding as needed.
+4 api_signature: tf.raw_ops.IRFFT2D(input,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The complex-valued input tensor to be transformed from the frequency domain.
+- fft_length: A 2-element int32 tensor specifying the FFT length for each dimension
+    of the inverse 2D real FFT.
+7 api_usage_example: null
+8 api_shape: ''

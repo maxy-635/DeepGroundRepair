@@ -1,0 +1,14 @@
+2 api_name: tensorflow.queue.QueueBase
+3 api_description: Base class for TensorFlow queues that store tuples of tensors across
+  steps and provide enqueue and dequeue operations for single elements or batches.
+4 api_signature: tf.queue.QueueBase(dtypes,shapes,queue_ref)
+5 api_details: ''
+6 api_parameters:
+- dtypes: Specifies the data type of each tensor in a queued element, with one type
+    for each tensor.
+- shapes: Specifies the expected shape constraints for each tensor in a queued element,
+    or leaves them unconstrained with `None`.
+- queue_ref: Provides the reference to the queue operation that identifies the queue
+    instance.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,23 @@
+2 api_name: torch.nn.InstanceNorm1d
+3 api_description: Applies Instance Normalization over a 1D input, normalizing each
+  instance independently by adjusting and scaling the features based on their mean
+  and variance.
+4 api_signature: torch.nn.InstanceNorm1d(num_features,eps,affine)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of features or channels in the input data.
+- eps: Ensures numerical stability by preventing division by zero in the normalization
+    process.
+- affine: Determines whether the layer should have learnable parameters for scaling
+    and shifting the normalized output.
+7 api_usage_example:
+- ' # Without Learnable Parameters'
+- ' m = nn.InstanceNorm1d(100)'
+- ' # With Learnable Parameters'
+- ' m = nn.InstanceNorm1d(100, affine=True)'
+- ' input = torch.randn(20, 100, 40)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, L)
+  output tensor shape: (N, Channel_out, L)
+  tensor shape transform formulas: {}

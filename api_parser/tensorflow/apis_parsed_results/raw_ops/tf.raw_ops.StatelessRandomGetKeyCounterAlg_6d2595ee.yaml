@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.StatelessRandomGetKeyCounterAlg
+3 api_description: Selects the best counter-based random algorithm for the device
+  and turns a shape-[2] seed into a key/counter pair for generating random numbers.
+4 api_signature: tf.raw_ops.StatelessRandomGetKeyCounterAlg(seed)
+5 api_details: ''
+6 api_parameters:
+- seed: A 2-element tensor of int32 or int64 values that provides the deterministic
+    seed pair used to generate the stateless random key/counter/algorithm state.
+7 api_usage_example: null
+8 api_shape: ''

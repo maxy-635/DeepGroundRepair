@@ -1,0 +1,9 @@
+2 api_name: torch.geqrf
+3 api_description: Computes the QR factorization of a matrix using LAPACK geqrf and
+  returns the factorized matrix and Householder coefficients (a, tau).
+4 api_signature: torch.geqrf(input)
+5 api_details: ''
+6 api_parameters:
+- input: The matrix to be factorized by QR decomposition.
+7 api_usage_example: null
+8 api_shape: null

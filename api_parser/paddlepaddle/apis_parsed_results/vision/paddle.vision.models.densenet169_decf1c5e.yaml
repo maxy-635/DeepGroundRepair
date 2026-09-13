@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.densenet169
+3 api_description: Builds a 169-layer DenseNet image classification model with densely
+  connected convolutional blocks.
+4 api_signature: paddle.vision.models.densenet169(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights instead
+    of initializing from scratch.
+7 api_usage_example: []
+8 api_shape: {}

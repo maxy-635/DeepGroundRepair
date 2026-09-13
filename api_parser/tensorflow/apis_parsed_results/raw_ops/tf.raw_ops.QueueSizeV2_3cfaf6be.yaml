@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.QueueSizeV2
+3 api_description: Returns the current number of elements stored in the specified
+  queue.
+4 api_signature: tf.raw_ops.QueueSizeV2(handle)
+5 api_details: ''
+6 api_parameters:
+- handle: Resource handle that identifies the queue whose current size will be returned.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.gradients
+3 api_description: Computes the gradients of `loss` with respect to `variables` using
+  the backend graph, returning the derivative tensors for each input. Deprecated in
+  favor of TensorFlow's native automatic differentiation APIs.
+4 api_signature: tf.keras.backend.gradients(loss,variables)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

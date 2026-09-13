@@ -1,0 +1,17 @@
+2 api_name: tensorflow.image.adjust_hue
+3 api_description: Adjusts the hue of an RGB image by converting it to HSV, shifting
+  the hue channel by delta in [-1, 1], then converting back to the original RGB data
+  type.
+4 api_signature: tf.image.adjust_hue(image,delta)
+5 api_details: ''
+6 api_parameters:
+- image: The RGB image or batch of images whose hue will be adjusted; the last dimension
+    must have 3 channels.
+- delta: The amount to add to the hue channel.
+7 api_usage_example:
+- image = [[[1, 2, 3], [4, 5, 6]],
+- '         [[7, 8, 9], [10, 11, 12]],'
+- '         [[13, 14, 15], [16, 17, 18]]]'
+- image = tf.constant(image)
+- tf.image.adjust_hue(image, 0.2)
+8 api_shape: ''

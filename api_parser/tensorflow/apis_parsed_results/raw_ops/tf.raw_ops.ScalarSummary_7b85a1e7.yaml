@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.ScalarSummary
+3 api_description: Creates a Summary protocol buffer containing scalar values for
+  each matching tag-value pair in the input tags and values.
+4 api_signature: tf.raw_ops.ScalarSummary(values,name)
+5 api_details: ''
+6 api_parameters:
+- values: Tensor containing the summary values, with the same shape as `tags`.
+7 api_usage_example: null
+8 api_shape: ''

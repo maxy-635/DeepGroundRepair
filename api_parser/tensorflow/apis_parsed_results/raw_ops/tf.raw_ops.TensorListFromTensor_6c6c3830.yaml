@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TensorListFromTensor
+3 api_description: Creates a TensorList from an input tensor by splitting it into
+  rows, so stacking the list recreates the original tensor.
+4 api_signature: tf.raw_ops.TensorListFromTensor(tensor,element_shape)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor whose elements are split into a TensorList.
+- element_shape: The shape of each tensor element in the resulting TensorList.
+7 api_usage_example: null
+8 api_shape: ''

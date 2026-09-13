@@ -1,0 +1,14 @@
+2 api_name: torch.gather
+3 api_description: Selects values from a tensor along a specified dimension using
+  index values, returning a new tensor with the gathered elements.
+4 api_signature: torch.gather(input,dim,index)
+5 api_details: ''
+6 api_parameters:
+- input: The source tensor that values are gathered from.
+- dim: The dimension along which the indices are applied to collect elements.
+- index: A tensor of indices specifying which elements to gather from the input.
+7 api_usage_example:
+- 'out[i][j][k] = input[index[i][j][k]][j][k]  # if dim == 0'
+- 'out[i][j][k] = input[i][index[i][j][k]][k]  # if dim == 1'
+- 'out[i][j][k] = input[i][j][index[i][j][k]]  # if dim == 2'
+8 api_shape: null

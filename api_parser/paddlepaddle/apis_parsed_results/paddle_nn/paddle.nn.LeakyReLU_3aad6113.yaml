@@ -1,0 +1,18 @@
+2 api_name: paddle.nn.LeakyReLU
+3 api_description: The paddle.nn.LeakyReLU API creates an object to apply the Leaky
+  ReLU activation function, which allows a small, non-zero gradient when the unit
+  is not active, to the input tensor x.
+4 api_signature: paddle.nn.LeakyReLU(negative_slope)
+5 api_details: ''
+6 api_parameters:
+- negative_slope: Defines the slope of the LeakyReLU activation function for negative
+    input values, with a default of 0.01.
+7 api_usage_example:
+- import paddle
+- m = paddle.nn.LeakyReLU()
+- x = paddle.to_tensor([-2.0, 0, 1])
+- out = m(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.02000000,  0.        ,  1.        ])'
+8 api_shape: null

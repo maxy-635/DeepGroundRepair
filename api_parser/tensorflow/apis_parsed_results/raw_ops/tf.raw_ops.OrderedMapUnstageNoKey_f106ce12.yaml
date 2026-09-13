@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.OrderedMapUnstageNoKey
+3 api_description: Removes and returns the smallest-key (key, value) pair from an
+  ordered map, blocking until an element is available if the map is empty.
+4 api_signature: tf.raw_ops.OrderedMapUnstageNoKey(indices,dtypes,capacity)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the int32 index tensor used to identify which ordered-map entry
+    to unstage.
+- dtypes: Lists the data types of the values to retrieve from the map, with at least
+    one dtype required.
+- capacity: Sets the optional nonnegative initial capacity of the ordered map, defaulting
+    to 0.
+7 api_usage_example: null
+8 api_shape: ''

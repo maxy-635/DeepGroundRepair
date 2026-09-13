@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Cumsum
+3 api_description: Computes the cumulative sum of a tensor along a given axis, returning
+  an inclusive running total by default.
+4 api_signature: tf.raw_ops.Cumsum(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are cumulatively summed along the specified axis.
+- axis: The dimension index along which to compute the cumulative sum.
+7 api_usage_example: null
+8 api_shape: ''

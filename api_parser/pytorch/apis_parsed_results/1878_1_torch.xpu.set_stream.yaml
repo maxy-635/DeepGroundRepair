@@ -1,0 +1,10 @@
+2 api_name: torch.xpu.set_stream
+3 api_description: Set the current XPU stream for subsequent operations on the selected
+  device; prefer using the stream context manager instead.
+4 api_signature: torch.xpu.set_stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: The stream to select for subsequent XPU operations; if `None`, the call
+    has no effect.
+7 api_usage_example: null
+8 api_shape: null

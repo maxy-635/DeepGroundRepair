@@ -1,0 +1,34 @@
+2 api_name: paddle.from_dlpack
+3 api_description: Converts a DLPack capsule into a Paddle tensor that shares the
+  source tensor’s memory.
+4 api_signature: paddle.from_dlpack(dlpack,device,copy)
+5 api_details: ''
+6 api_parameters:
+- dlpack: The input DLPack capsule or object that provides the tensor data to convert.
+- device: Specifies the device for the returned tensor, or uses the input DLPack device
+    if not set.
+- copy: Controls whether to always copy, never copy, or copy only when needed while
+    converting the input.
+7 api_usage_example:
+- import paddle
+- '# From DLPack capsule'
+- x = paddle.to_tensor([[0.2, 0.3, 0.5, 0.9],
+- '                      [0.1, 0.2, 0.6, 0.7]], place="cpu")'
+- dlpack = paddle.to_dlpack(x)
+- y = paddle.from_dlpack(dlpack)
+- '# dlpack capsule will be renamed to ''used_dltensor'' after decoded'
+- print(dlpack)
+- '>>>'
+- <capsule object "used_dltensor" at 0x7f6103c681b0>
+- '>>>'
+- print(y)
+- Tensor(shape=[2, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.20000000, 0.30000001, 0.50000000, 0.89999998],'
+- '[0.10000000, 0.20000000, 0.60000002, 0.69999999]])'
+- '# data of tensor x is shared with tensor y'
+- y[0, 0] = 10.0
+- print(x)
+- Tensor(shape=[2, 4], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[10.       , 0.30000001, 0.50000000, 0.89999998],'
+- '[0.10000000, 0.20000000, 0.60000002, 0.69999999]])'
+8 api_shape: {}

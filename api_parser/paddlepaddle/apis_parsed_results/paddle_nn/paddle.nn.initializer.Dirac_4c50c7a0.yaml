@@ -1,0 +1,10 @@
+2 api_name: paddle.nn.initializer.Dirac
+3 api_description: The paddle.nn.initializer.Dirac API initializes 3D, 4D, or 5D tensors
+  using the Dirac delta function, setting a central channel to identity while others
+  are zero.
+4 api_signature: paddle.nn.initializer.Dirac(groups)
+5 api_details: ''
+6 api_parameters:
+- groups: Divides the 0-dimension of the Tensor into equally valued groups.
+7 api_usage_example: []
+8 api_shape: null

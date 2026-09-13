@@ -1,0 +1,20 @@
+2 api_name: torch.utils.data._utils.collate.collate
+3 api_description: Combines a batch of samples into a single batched structure by
+  recursively collating tensors, arrays, numbers, mappings, sequences, and custom
+  types.
+4 api_signature: torch.utils.data._utils.collate.collate(batch,collate_fn_map)
+5 api_details: ''
+6 api_parameters:
+- batch: The batch of samples to combine into a single collated output.
+- collate_fn_map: An optional mapping from element types to custom collate functions,
+    checked in insertion order when no exact type match is found.
+7 api_usage_example:
+- ' def collate_tensor_fn(batch, *, collate_fn_map):'
+- '...     # Extend this function to handle batch of tensors'
+- '...     return torch.stack(batch, 0)'
+- ' def custom_collate(batch):'
+- '...     collate_map = {torch.Tensor: collate_tensor_fn}'
+- '...     return collate(batch, collate_fn_map=collate_map)'
+- ' # Extend `default_collate` by in-place modifying `default_collate_fn_map`'
+- ' default_collate_fn_map.update({torch.Tensor: collate_tensor_fn})'
+8 api_shape: null

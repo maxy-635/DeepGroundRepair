@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.LinearOperatorDiag
+3 api_description: Represents a batch of square diagonal matrices using a vector of
+  diagonal entries, without materializing the full matrices.
+4 api_signature: tf.linalg.LinearOperatorDiag(diag,name)
+5 api_details: ''
+6 api_parameters:
+- diag: The diagonal entries of the operator, provided as a tensor of shape [B1, ...,
+    Bb, N].
+- name: An optional name used to identify the LinearOperator.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.image.random_crop
+3 api_description: Randomly slices a tensor to the requested size from a uniformly
+  chosen valid offset, preserving any dimensions set to their full length.
+4 api_signature: tf.image.random_crop(value,size)
+5 api_details: ''
+6 api_parameters:
+- value: The tensor to crop from.
+- size: A 1-D tensor specifying the output shape to crop to, with length equal to
+    the rank of `value`.
+7 api_usage_example:
+- image = [[1, 2, 3], [4, 5, 6]]
+- result = tf.image.random_crop(value=image, size=(1, 3))
+- result.shape.as_list()
+8 api_shape: ''

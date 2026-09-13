@@ -1,0 +1,7 @@
+2 api_name: torch.autograd.profiler_util.StringTable.copy
+3 api_description: Creates and returns a copy of the string table.
+4 api_signature: '"copy()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

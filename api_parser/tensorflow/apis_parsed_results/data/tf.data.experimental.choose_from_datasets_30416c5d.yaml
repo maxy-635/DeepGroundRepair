@@ -1,0 +1,11 @@
+2 api_name: tensorflow.data.experimental.choose_from_datasets
+3 api_description: Creates a dataset that deterministically selects elements from
+  one of several input datasets according to a choice dataset.
+4 api_signature: tf.data.experimental.choose_from_datasets(datasets,choice_dataset)
+5 api_details: ''
+6 api_parameters:
+- datasets: Provides the non-empty set of compatible datasets to sample from.
+- choice_dataset: Supplies scalar int64 indices that select which dataset to read
+    from next.
+7 api_usage_example: null
+8 api_shape: ''

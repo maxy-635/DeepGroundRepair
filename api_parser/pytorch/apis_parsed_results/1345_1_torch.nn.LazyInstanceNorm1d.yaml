@@ -1,0 +1,17 @@
+2 api_name: torch.nn.LazyInstanceNorm1d
+3 api_description: torch.nn.LazyInstanceNorm1d is a 1D instance normalization layer
+  that defers the specification of the number of features until the first input is
+  received, allowing for flexible model design.
+4 api_signature: torch.nn.LazyInstanceNorm1d(eps,affine,track_running_stats)
+5 api_details: ''
+6 api_parameters:
+- eps: A small value added to the denominator for numerical stability during normalization.
+- affine: If True, the module includes learnable parameters for scaling and shifting
+    the normalized output.
+- track_running_stats: If True, the module maintains running estimates of mean and
+    variance; otherwise, it uses batch statistics.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, L)
+  output tensor shape: (N, Channel_out, L)
+  tensor shape transform formulas: {}

@@ -1,0 +1,22 @@
+2 api_name: torch.linalg.svd
+3 api_description: Computes a matrix’s singular value decomposition, returning factors
+  that reconstruct the original matrix and its singular values.
+4 api_signature: torch.linalg.svd(A,full_matrices)
+5 api_details: ''
+6 api_parameters:
+- A: Input tensor whose last two dimensions form the matrices to decompose, with any
+    leading dimensions treated as batch dimensions.
+- full_matrices: Chooses between full and reduced SVD, which determines the shapes
+    of the returned `U` and `Vh` tensors.
+7 api_usage_example:
+- ' A = torch.randn(5, 3)'
+- ' U, S, Vh = torch.linalg.svd(A, full_matrices=False)'
+- ' U.shape, S.shape, Vh.shape'
+- ' torch.dist(A, U @ torch.diag(S) @ Vh)'
+- ' U, S, Vh = torch.linalg.svd(A)'
+- ' U.shape, S.shape, Vh.shape'
+- ' torch.dist(A, U[:, :3] @ torch.diag(S) @ Vh)'
+- ' A = torch.randn(7, 5, 3)'
+- ' U, S, Vh = torch.linalg.svd(A, full_matrices=False)'
+- ' torch.dist(A, U @ torch.diag_embed(S) @ Vh)'
+8 api_shape: null

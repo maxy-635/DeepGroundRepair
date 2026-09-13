@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.DestroyResourceOp
+3 api_description: Deletes the referenced resource so any later use of its handle
+  fails with a NotFound error.
+4 api_signature: tf.raw_ops.DestroyResourceOp(resource,ignore_lookup_error)
+5 api_details: ''
+6 api_parameters:
+- resource: The resource handle identifying the resource to delete.
+- ignore_lookup_error: Controls whether missing resources are treated as errors or
+    ignored.
+7 api_usage_example: null
+8 api_shape: ''

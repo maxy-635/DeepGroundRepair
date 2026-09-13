@@ -1,0 +1,16 @@
+2 api_name: torch.nn.Softplus
+3 api_description: Applies the Softplus function, which is defined as log(1 + exp(x)),
+  element-wise to the input tensor.
+4 api_signature: torch.nn.Softplus(beta,threshold)
+5 api_details: ''
+6 api_parameters:
+- beta: Controls the steepness of the Softplus function.
+- threshold: Determines the input value above which the output is linear.
+7 api_usage_example:
+- ' m = nn.Softplus()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

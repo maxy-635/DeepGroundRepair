@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.QuantizedReluX
+3 api_description: Applies a quantized ReLU activation by clamping input values to
+  the range [0, max_value].
+4 api_signature: tf.raw_ops.QuantizedReluX(features,max_value,out_type)
+5 api_details: ''
+6 api_parameters:
+- features: The quantized input tensor to be clamped by the ReLU-X operation.
+- max_value: The maximum activation value used to cap the output.
+- out_type: The quantized data type of the output tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: paddle.vision.models.resnet152
+3 api_description: ResNet-152 image classification model that uses deep residual connections
+  to learn robust visual features for recognizing objects in images.
+4 api_signature: paddle.vision.models.resnet152(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+7 api_usage_example: []
+8 api_shape: {}

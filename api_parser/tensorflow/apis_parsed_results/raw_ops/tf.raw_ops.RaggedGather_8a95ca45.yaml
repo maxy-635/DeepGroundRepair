@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.RaggedGather
+3 api_description: Gathers ragged slices from `params` along axis 0 using `indices`,
+  returning a RaggedTensor built from the gathered dense values and nested split metadata.
+4 api_signature: tf.raw_ops.RaggedGather(params_nested_splits,params_dense_values,indices,name)
+5 api_details: ''
+6 api_parameters:
+- params_nested_splits: Provides the nested row-split tensors that describe how the
+    `params` RaggedTensor is partitioned.
+- params_dense_values: Supplies the flat values underlying the `params` RaggedTensor
+    to be gathered from.
+- indices: Specifies which outer-dimension elements of `params` to gather.
+- name: Optionally names the operation for graph construction and debugging.
+7 api_usage_example: null
+8 api_shape: ''

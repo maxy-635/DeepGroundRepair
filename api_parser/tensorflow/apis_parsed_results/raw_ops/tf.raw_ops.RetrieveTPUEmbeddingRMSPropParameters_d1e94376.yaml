@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingRMSPropParameters
+3 api_description: Retrieves TPU embedding RMSProp optimization parameters from embedding
+  memory to host memory, typically before checkpointing, and requires a prior ConfigureTPUEmbeddingHost
+  setup.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingRMSPropParameters(table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- table_id: Specifies the numeric ID of the embedding table to retrieve parameters
+    for.
+- table_name: Specifies the name of the embedding table to retrieve parameters for.
+- config: Supplies the configuration string used to identify or describe the table
+    parameters to retrieve.
+- name: Sets an optional name for the operation in the TensorFlow graph.
+7 api_usage_example: null
+8 api_shape: ''

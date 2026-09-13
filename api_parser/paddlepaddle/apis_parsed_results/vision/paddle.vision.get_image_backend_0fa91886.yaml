@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.get_image_backend
+3 api_description: Returns the image-loading backend package name used by Paddle Vision.
+4 api_signature: paddle.vision.get_image_backend()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- from paddle.vision import get_image_backend
+- backend = get_image_backend()
+- print(backend)
+- pil
+8 api_shape: {}

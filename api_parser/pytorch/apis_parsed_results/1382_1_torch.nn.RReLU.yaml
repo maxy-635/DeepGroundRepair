@@ -1,0 +1,18 @@
+2 api_name: torch.nn.RReLU
+3 api_description: Applies the randomized leaky ReLU activation function element-wise,
+  introducing randomness to the negative slope during training.
+4 api_signature: torch.nn.RReLU(lower,upper)
+5 api_details: ''
+6 api_parameters:
+- lower: The minimum value of the uniform distribution from which the random negative
+    slope is drawn.
+- upper: The maximum value of the uniform distribution from which the random negative
+    slope is drawn.
+7 api_usage_example:
+- ' m = nn.RReLU(0.1, 0.3)'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

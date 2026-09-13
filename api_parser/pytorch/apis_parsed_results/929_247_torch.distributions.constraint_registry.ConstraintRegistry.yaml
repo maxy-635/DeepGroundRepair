@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.constraint_registry.ConstraintRegistry
+3 api_description: Maps constraints to compatible transforms so constrained distributions
+  can be converted to and from unconstrained parameter spaces.
+4 api_signature: class torch.distributions.constraint_registry.ConstraintRegistry
+5 api_details: ''
+6 api_parameters:
+- constraint: The constraint object or `Constraint` subclass to register a transform
+    for.
+7 api_usage_example:
+- '@my_registry.register(MyConstraintClass)'
+- 'def construct_transform(constraint):'
+- '    assert isinstance(constraint, MyConstraint)'
+- '    return MyTransform(constraint.arg_constraints)'
+8 api_shape: null

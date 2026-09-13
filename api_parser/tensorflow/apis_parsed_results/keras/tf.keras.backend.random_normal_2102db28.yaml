@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.random_normal
+3 api_description: Returns a tensor of the given shape filled with samples from a
+  normal (Gaussian) distribution, using the specified mean, standard deviation, dtype,
+  and random seed.
+4 api_signature: tf.keras.backend.random_normal(shape,mean,stddev)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

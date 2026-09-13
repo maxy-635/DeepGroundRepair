@@ -1,0 +1,8 @@
+2 api_name: tensorflow.errors.UnauthenticatedError
+3 api_description: Indicates a request failed because it lacked valid authentication
+  credentials.
+4 api_signature: tf.errors.UnauthenticatedError(message)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

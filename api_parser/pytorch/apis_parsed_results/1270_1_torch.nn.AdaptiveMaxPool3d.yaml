@@ -1,0 +1,26 @@
+2 api_name: torch.nn.AdaptiveMaxPool3d
+3 api_description: Applies adaptive max pooling to 3D input data, allowing for dynamic
+  output size regardless of input dimensions.
+4 api_signature: torch.nn.AdaptiveMaxPool3d(output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the target output size of the pooled output, which can be
+    a tuple of dimensions (Dout, Hout, Wout) or a single integer for a cubic output,
+    with dimensions being adjustable to match the input size if set to None.
+7 api_usage_example:
+- ' # target output size of 5x7x9'
+- ' m = nn.AdaptiveMaxPool3d((5, 7, 9))'
+- ' input = torch.randn(1, 64, 8, 9, 10)'
+- ' output = m(input)'
+- ' # target output size of 7x7x7 (cube)'
+- ' m = nn.AdaptiveMaxPool3d(7)'
+- ' input = torch.randn(1, 64, 10, 9, 8)'
+- ' output = m(input)'
+- ' # target output size of 7x9x8'
+- ' m = nn.AdaptiveMaxPool3d((7, None, None))'
+- ' input = torch.randn(1, 64, 10, 9, 8)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

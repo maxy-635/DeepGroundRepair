@@ -1,0 +1,44 @@
+2 api_name: paddle.full
+3 api_description: Create a tensor of the given shape, filled with the specified value.
+4 api_signature: paddle.full(shape,fill_value,dtype,name,*,out,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor's shape (size) to create.
+- fill_value: Sets the constant value used to initialize every element of the tensor.
+- dtype: Chooses the data type of the returned tensor, defaulting to float32 if not
+    provided.
+- name: Optionally assigns a name to the created tensor for API identification.
+- out: Provides an output tensor to write the result into.
+- device: Selects the device on which the returned tensor is created.
+- requires_grad: Indicates whether autograd should track operations on the returned
+    tensor.
+7 api_usage_example:
+- import paddle
+- '# shape is a list/tuple'
+- data1 = paddle.full(shape=[3, 2], fill_value=1.)
+- print(data1.numpy())
+- '[[1. 1.]'
+- '[1. 1.]'
+- '[1. 1.]]'
+- '# shape is a Tensor'
+- shape = paddle.to_tensor([3, 2])
+- data2 = paddle.full(shape=shape, fill_value=2.)
+- print(data2.numpy())
+- '[[2. 2.]'
+- '[2. 2.]'
+- '[2. 2.]]'
+- '# shape is a Tensor List'
+- shape = [paddle.to_tensor(3), paddle.to_tensor(2)]
+- data3 = paddle.full(shape=shape, fill_value=3.)
+- print(data3.numpy())
+- '[[3. 3.]'
+- '[3. 3.]'
+- '[3. 3.]]'
+- '# fill_value is a Tensor.'
+- val = paddle.full([], 2.0, "float32")
+- data5 = paddle.full(shape=[3, 2], fill_value=val)
+- print(data5.numpy())
+- '[[2. 2.]'
+- '[2. 2.]'
+- '[2. 2.]]'
+8 api_shape: {}

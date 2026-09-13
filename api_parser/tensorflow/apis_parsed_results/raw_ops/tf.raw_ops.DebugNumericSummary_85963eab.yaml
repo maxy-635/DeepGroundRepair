@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.DebugNumericSummary
+3 api_description: Returns a numeric diagnostic summary tensor reporting initialization
+  state, element counts, NaN/inf/zero/negative/positive counts, finite min/max/mean/variance,
+  data type, rank, and shape dimensions.
+4 api_signature: tf.raw_ops.DebugNumericSummary(input,tensor_name,debug_urls,lower_bound,upper_bound,mute_if_healthy,gated_grpc,name)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to summarize and report on.
+- tensor_name: An optional name to label the input tensor in debug output.
+- debug_urls: Optional destinations where debug data should be sent.
+- lower_bound: The lower threshold used when counting values as generalized -inf.
+- upper_bound: The upper threshold used when counting values as generalized +inf.
+- mute_if_healthy: Suppresses debug output unless the tensor appears unhealthy.
+- gated_grpc: Controls whether grpc debug data is actually transmitted only when enabled.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

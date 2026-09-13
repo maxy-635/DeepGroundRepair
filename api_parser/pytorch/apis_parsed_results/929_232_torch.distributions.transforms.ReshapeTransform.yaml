@@ -1,0 +1,11 @@
+2 api_name: torch.distributions.transforms.ReshapeTransform
+3 api_description: Reshapes the rightmost dimensions of a tensor without changing
+  values, using a unit-Jacobian transform.
+4 api_signature: torch.distributions.transforms.ReshapeTransform(in_shape,out_shape)
+5 api_details: ''
+6 api_parameters:
+- in_shape: Specifies the original event shape that the transform expects as input.
+- out_shape: Specifies the target event shape that the transform reshapes the input
+    into.
+7 api_usage_example: null
+8 api_shape: null

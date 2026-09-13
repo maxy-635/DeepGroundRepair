@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.elu
+3 api_description: 'Applies the ELU activation: returns x for nonnegative inputs and
+  alpha * (exp(x) - 1) for negative inputs.'
+4 api_signature: tf.keras.ops.elu(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the ELU activation to.
+7 api_usage_example:
+- x = np.array([-1., 0., 1.])
+- x_elu = keras.ops.elu(x)
+- print(x_elu)
+8 api_shape: ''

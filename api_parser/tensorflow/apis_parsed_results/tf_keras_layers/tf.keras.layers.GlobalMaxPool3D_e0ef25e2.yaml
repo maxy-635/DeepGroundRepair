@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.layers.GlobalMaxPool3D
+3 api_description: GlobalMaxPool3D performs max pooling on 3D data by taking the maximum
+  value across all spatial dimensions, effectively reducing the input volume to a
+  single value per feature map.
+4 api_signature: tf.keras.layers.GlobalMaxPool3D(keepdims)
+5 api_details: ''
+6 api_parameters:
+- keepdims: Determines whether to retain the spatial dimensions of the output tensor,
+    allowing for a rank-preserving output when set to True.
+7 api_usage_example:
+- x = np.random.rand(2, 4, 5, 4, 3)
+- y = keras.layers.GlobalMaxPooling3D()(x)
+- y.shape
+8 api_shape: null

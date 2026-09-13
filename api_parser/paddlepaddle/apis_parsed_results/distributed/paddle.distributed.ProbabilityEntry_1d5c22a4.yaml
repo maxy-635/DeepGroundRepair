@@ -1,0 +1,24 @@
+2 api_name: paddle.distributed.ProbabilityEntry
+3 api_description: Represents a probability-based entry used in distributed paddle
+  workflows, storing the value and its associated likelihood for sampling or selection.
+4 api_signature: paddle.distributed.ProbabilityEntry(probability)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- sparse_feature_dim = 1024
+- embedding_size = 64
+- entry = paddle.distributed.ProbabilityEntry(0.1)
+- input = paddle.static.data(name='ins', shape=[1], dtype='int64')
+- emb = paddle.static.nn.sparse_embedding(
+- '    input=input,'
+- '    size=[sparse_feature_dim, embedding_size],'
+- '    is_test=False,'
+- '    entry=entry,'
+- '    param_attr=paddle.ParamAttr('
+- '        name="SparseFeatFactors",'
+- '        initializer=paddle.nn.initializer.Uniform()'
+- '    )'
+- )
+8 api_shape: {}

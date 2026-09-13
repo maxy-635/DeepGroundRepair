@@ -1,0 +1,10 @@
+2 api_name: tensorflow.summary.create_file_writer
+3 api_description: Creates a summary writer that logs TensorFlow summary data to the
+  specified log directory.
+4 api_signature: tf.summary.create_file_writer(logdir,name)
+5 api_details: ''
+6 api_parameters:
+- logdir: Specifies the directory where event files are written.
+- name: Sets the operation name used when creating the writer.
+7 api_usage_example: null
+8 api_shape: ''

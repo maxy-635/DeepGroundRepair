@@ -1,0 +1,25 @@
+2 api_name: torch.optim.swa_utils.SWALR
+3 api_description: Anneals each optimizer parameter group's learning rate to a fixed
+  target value according to a schedule.
+4 api_signature: torch.optim.swa_utils.SWALR(optimizer,swa_lr,anneal_epochs,anneal_strategy)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be adjusted by SWALR.
+7 api_usage_example:
+- ' loader, optimizer, model = ...'
+- ' lr_lambda = lambda epoch: 0.9'
+- ' scheduler = torch.optim.lr_scheduler.MultiplicativeLR(optimizer,'
+- '        lr_lambda=lr_lambda)'
+- ' swa_scheduler = torch.optim.swa_utils.SWALR(optimizer,'
+- '        anneal_strategy="linear", anneal_epochs=20, swa_lr=0.05)'
+- ' swa_start = 160'
+- ' for i in range(300):'
+- '      for input, target in loader:'
+- '          optimizer.zero_grad()'
+- '          loss_fn(model(input), target).backward()'
+- '          optimizer.step()'
+- '      if i > swa_start:'
+- '          swa_scheduler.step()'
+- '      else:'
+- '          scheduler.step()'
+8 api_shape: null

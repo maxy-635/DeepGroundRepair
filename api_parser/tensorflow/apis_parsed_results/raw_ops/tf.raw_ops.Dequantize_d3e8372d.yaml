@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.Dequantize
+3 api_description: Converts a quantized input tensor into float or bfloat16 values
+  using the provided min and max range, with quantization behavior controlled by the
+  selected mode.
+4 api_signature: tf.raw_ops.Dequantize(input,min_range,max_range,name)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized tensor to be dequantized into a floating-point tensor.
+- min_range: The lower bound of the original real-valued range represented by the
+    quantized input.
+- max_range: The upper bound of the original real-valued range represented by the
+    quantized input.
+- name: An optional name used to label the operation.
+7 api_usage_example: null
+8 api_shape: ''

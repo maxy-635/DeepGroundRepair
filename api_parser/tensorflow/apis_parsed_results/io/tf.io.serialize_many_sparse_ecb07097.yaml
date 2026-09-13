@@ -1,0 +1,12 @@
+2 api_name: tensorflow.io.serialize_many_sparse
+3 api_description: Serializes a rank-2+ `SparseTensor` as N minibatch rows, each containing
+  a rank-(R-1) sparse tensor representation, with batch size taken from `sparse_shape[0]`
+  and entries ordered by the first dimension.
+4 api_signature: tf.io.serialize_many_sparse(sp_input,out_type)
+5 api_details: ''
+6 api_parameters:
+- sp_input: Provides the rank-R SparseTensor input whose sparse values, indices, and
+    shape are serialized.
+- out_type: Specifies the output data type used for the serialized representation.
+7 api_usage_example: null
+8 api_shape: ''

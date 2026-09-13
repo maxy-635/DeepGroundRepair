@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ReaderRestoreState
+3 api_description: Restores a reader to a previously saved state, if the reader type
+  supports restoration.
+4 api_signature: tf.raw_ops.ReaderRestoreState(reader_handle,state)
+5 api_details: ''
+6 api_parameters:
+- reader_handle: The mutable string handle identifying the Reader whose state will
+    be restored.
+- state: The serialized Reader state string produced by `ReaderSerializeState`, used
+    to restore the Reader.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: torch.argsort
+3 api_description: Returns the indices that sort a tensor along a specified dimension
+  in ascending order.
+4 api_signature: torch.argsort(input,dim,descending,stable)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are sorted to produce the index order.
+- dim: The axis along which the values are sorted.
+- descending: Whether to sort in descending order instead of ascending order.
+7 api_usage_example:
+- ' a = torch.randn(4, 4)'
+- ' a'
+- ' torch.argsort(a, dim=1)'
+8 api_shape: null

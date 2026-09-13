@@ -1,0 +1,15 @@
+2 api_name: torch.index_reduce
+3 api_description: Reduces values from a source tensor into a target tensor along
+  a dimension at specified indices, applying a chosen reduction operation and optionally
+  including the original target values.
+4 api_signature: torch.index_reduce(input:Tensor,dim:int,index:Tensor,source:Tensor,reduce:str)
+5 api_details: ''
+6 api_parameters:
+- input: The source tensor whose values are reduced into `self` at the specified indices.
+- dim: The dimension along which to index and reduce values.
+- index: The index tensor that selects which positions in `self` receive reduced values.
+- source: The tensor containing values to be combined into `self`.
+- reduce: The reduction operation to apply when multiple values map to the same index.
+- include_self: Whether to include the existing values of `self` in the reduction.
+7 api_usage_example: null
+8 api_shape: null

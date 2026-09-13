@@ -1,0 +1,13 @@
+2 api_name: torch.nested.to_padded_tensor
+3 api_description: Converts a nested tensor into a regular padded tensor, placing
+  nested data first and filling remaining trailing entries with the specified padding.
+4 api_signature: torch.nested.to_padded_tensor(input,padding,output_size)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the value used to fill any trailing entries in the padded tensor.
+7 api_usage_example:
+- ' nt = torch.nested.nested_tensor([torch.randn((2, 5)), torch.randn((3, 4))])'
+- ' pt_infer = torch.nested.to_padded_tensor(nt, 0.0)'
+- ' pt_large = torch.nested.to_padded_tensor(nt, 1.0, (2, 4, 6))'
+- ' pt_small = torch.nested.to_padded_tensor(nt, 2.0, (2, 2, 2))'
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.metrics.Hinge
+3 api_description: Computes the average hinge metric for binary classification, converting
+  0/1 labels to -1/1 when needed.
+4 api_signature: tf.keras.metrics.Hinge(name,dtype)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the metric instance name used for display and tracking.
+- dtype: Specifies the data type used to compute and return the metric value.
+7 api_usage_example:
+- m = keras.metrics.Hinge()
+- m.update_state([[0, 1], [0, 0]], [[0.6, 0.4], [0.4, 0.6]])
+- m.result()
+- m.reset_state()
+- m.update_state([[0, 1], [0, 0]], [[0.6, 0.4], [0.4, 0.6]],
+- '               sample_weight=[1, 0])'
+- m.result()
+8 api_shape: ''

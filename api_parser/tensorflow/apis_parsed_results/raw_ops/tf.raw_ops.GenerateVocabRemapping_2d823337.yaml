@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.GenerateVocabRemapping
+3 api_description: Compares new and old vocabulary files and returns a remapping from
+  each new entry to its row in the old vocabulary, or -1 if missing, along with the
+  count of matched entries for checkpoint or partitioned-variable vocabulary remapping.
+4 api_signature: tf.raw_ops.GenerateVocabRemapping(new_vocab_file,old_vocab_file,num_new_vocab,old_vocab_size)
+5 api_details: ''
+6 api_parameters:
+- new_vocab_file: Specifies the path to the new vocabulary file whose entries will
+    be remapped.
+- old_vocab_file: Specifies the path to the old vocabulary file used as the remapping
+    source.
+- num_new_vocab: Sets how many entries from the new vocabulary file should be processed
+    for remapping.
+- old_vocab_size: Limits how many entries from the old vocabulary file are considered,
+    or uses the full vocabulary when set to -1.
+7 api_usage_example: null
+8 api_shape: ''

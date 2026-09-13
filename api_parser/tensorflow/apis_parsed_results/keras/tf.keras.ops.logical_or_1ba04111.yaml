@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.logical_or
+3 api_description: Returns the element-wise logical OR of input tensors, treating
+  zero values as False and non-zero values as True.
+4 api_signature: tf.keras.ops.logical_or(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: First input tensor to compare elementwise.
+- x2: Second input tensor to compare elementwise.
+7 api_usage_example: null
+8 api_shape: ''

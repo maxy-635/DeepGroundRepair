@@ -1,0 +1,21 @@
+2 api_name: tensorflow.image.crop_and_resize
+3 api_description: Crops regions from an input image tensor at given box coordinates
+  and resizes each crop to a fixed output size using bilinear or nearest-neighbor
+  interpolation, with corner-aligned resizing.
+4 api_signature: tf.image.crop_and_resize(image,boxes,box_indices,crop_size)
+5 api_details: ''
+6 api_parameters:
+- image: The 4-D input image batch to crop from, shaped `[batch, image_height, image_width,
+    depth]`.
+- boxes: The normalized bounding boxes to crop, one `[y1, x1, y2, x2]` box per output
+    crop.
+- box_indices: The batch indices that map each box to the corresponding image in `image`.
+- crop_size: The target `[crop_height, crop_width]` size each cropped region is resized
+    to.
+7 api_usage_example:
+- image = np.arange(0, 18, 2).astype('float32').reshape(3, 3)
+- result = tf.image.crop_and_resize(
+- '  image[None, :, :, None],'
+- '  np.asarray([[0.5,0.5,1,1]]), [0], [3, 3], method=''nearest'')'
+- result[0][:, :, 0]
+8 api_shape: ''

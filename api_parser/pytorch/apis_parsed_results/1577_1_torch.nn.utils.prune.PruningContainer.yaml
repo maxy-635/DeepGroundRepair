@@ -1,0 +1,8 @@
+2 api_name: torch.nn.utils.prune.PruningContainer
+3 api_description: Holds multiple pruning methods and combines them to apply iterative
+  pruning on the same parameter.
+4 api_signature: '"torch.nn.utils.prune.PruningContainer(*args)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

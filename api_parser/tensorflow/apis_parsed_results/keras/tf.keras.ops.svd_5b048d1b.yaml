@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.svd
+3 api_description: Computes the singular value decomposition of a matrix, returning
+  its singular vectors and singular values.
+4 api_signature: tf.keras.ops.svd(x,compute_uv)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose last two dimensions are decomposed by singular value decomposition.
+7 api_usage_example: null
+8 api_shape: ''

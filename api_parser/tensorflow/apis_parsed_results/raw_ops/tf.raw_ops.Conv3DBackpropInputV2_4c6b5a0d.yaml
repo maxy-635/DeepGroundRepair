@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.Conv3DBackpropInputV2
+3 api_description: Computes the gradient of a 3-D convolution with respect to the
+  input tensor, given the filter, upstream output gradients, and convolution parameters.
+4 api_signature: tf.raw_ops.Conv3DBackpropInputV2(input_sizes,filter,out_backprop,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input_sizes: Specifies the shape of the original 5-D input tensor whose gradient
+    is being computed.
+- filter: Provides the 3D convolution filter used to backpropagate gradients, with
+    channels matching the input.
+- out_backprop: Supplies the gradient flowing from the output of the convolution back
+    into the input.
+- strides: Sets the sliding-window step sizes for each input dimension, with batch
+    and channel strides fixed at 1.
+- padding: Chooses whether the convolution uses `SAME` or `VALID` padding.
+7 api_usage_example: null
+8 api_shape: ''

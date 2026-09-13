@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingAdagradMomentumParameters
+3 api_description: Retrieves Adagrad Momentum TPU embedding parameters from embedding
+  memory to host memory, typically before saving a checkpoint.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingAdagradMomentumParameters(table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- table_id: Identifies the embedding table to retrieve parameters for by numeric ID,
+    or uses -1 when not set.
+- table_name: Identifies the embedding table to retrieve parameters for by name, or
+    uses an empty string when not set.
+- config: Supplies an optional serialized configuration string used by the TPU embedding
+    parameters operation.
+- name: Sets an optional name for the operation to make it easier to reference in
+    the graph.
+7 api_usage_example: null
+8 api_shape: ''

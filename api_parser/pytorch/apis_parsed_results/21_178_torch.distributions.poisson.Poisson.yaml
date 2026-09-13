@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.poisson.Poisson
+3 api_description: Poisson distribution over non-negative integer counts, parameterized
+  by rate `rate`; supports sampling, log probability evaluation, mean/variance properties,
+  CDF-related methods, and standard distribution transforms.
+4 api_signature: '"Poisson(rate)"'
+5 api_details: ''
+6 api_parameters:
+- rate: Sets the Poisson event rate, controlling the expected number of events per
+    interval.
+7 api_usage_example:
+- ' m = Poisson(torch.tensor([4]))'
+- ' m.sample()'
+8 api_shape: null

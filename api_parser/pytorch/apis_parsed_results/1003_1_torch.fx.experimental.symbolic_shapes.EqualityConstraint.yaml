@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.EqualityConstraint
+3 api_description: Represents and evaluates equality relationships between input sources,
+  helping determine whether different symbolic values are constrained to be equal.
+4 api_signature: torch.fx.experimental.symbolic_shapes.EqualityConstraint(source_pairs,derived_equalities)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: torch.select
+3 api_description: Returns a view of the tensor sliced along a выбран dimension at
+  a specific index, removing that dimension from the result.
+4 api_signature: torch.select(input,dim,index)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to select values from.
+- dim: The dimension along which to take the slice.
+- index: The specific index to extract from the выбран dimension.
+7 api_usage_example: null
+8 api_shape: null

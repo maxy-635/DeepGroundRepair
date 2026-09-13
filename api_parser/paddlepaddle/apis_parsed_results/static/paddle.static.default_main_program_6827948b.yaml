@@ -1,0 +1,18 @@
+2 api_name: paddle.static.default_main_program
+3 api_description: Returns the default main static program, which holds the descriptions
+  of operations and tensors for the current Paddle static graph.
+4 api_signature: paddle.static.default_main_program()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- '# Sample Network:'
+- x = paddle.static.data(name='x', shape=[100, 100], dtype='float32')
+- y = paddle.static.data(name='y', shape=[100, 100], dtype='float32')
+- out = paddle.add(x, y)
+- '# print the number of blocks in the program, 1 in this case'
+- 'print(paddle.static.default_main_program().num_blocks) # 1'
+- '# print the default_main_program'
+- print(paddle.static.default_main_program())
+8 api_shape: {}

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.AvgPool3D
+3 api_description: Performs 3D average pooling by sliding a ksize window over the
+  input and replacing each output entry with the mean of the corresponding window.
+4 api_signature: tf.raw_ops.AvgPool3D(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The 5D tensor to apply 3D average pooling to, shaped as [batch, depth, rows,
+    cols, channels].
+- ksize: The pooling window size for each dimension, with batch and channel dimensions
+    fixed at 1.
+- strides: The step size of the sliding pooling window for each dimension, with batch
+    and channel strides fixed at 1.
+- padding: The padding mode that determines how edges are handled during pooling,
+    either `SAME` or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

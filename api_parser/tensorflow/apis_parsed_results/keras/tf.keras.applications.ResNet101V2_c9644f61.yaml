@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.applications.ResNet101V2
+3 api_description: Builds the ResNet101V2 convolutional neural network for image classification,
+  supporting pretrained weights, configurable top layers, and transfer learning/fine-tuning.
+4 api_signature: tf.keras.applications.ResNet101V2(weights,include_top,input_shape,pooling,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Controls whether the model includes the final fully connected classification
+    layer.
+- weights: Chooses the source of pretrained weights, random initialization, or a custom
+    weights file.
+- input_shape: Specifies the input tensor shape when the top classification layer
+    is omitted.
+- pooling: Selects the pooling method used to convert convolutional features into
+    a fixed-size output.
+- classes: Sets the number of output classes when building a top classification layer
+    without pretrained weights.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,45 @@
+2 api_name: paddle.diff
+3 api_description: Computes the n-th discrete forward difference of an array along
+  a specified axis.
+4 api_signature: paddle.diff(x,n,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the forward difference.
+- n: The number of times to apply the difference operation recursively.
+- axis: The axis along which the difference is computed.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, 4, 5, 2])
+- out = paddle.diff(x)
+- out
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[ 3,  1, -3])'
+- x_2 = paddle.to_tensor([1, 4, 5, 2])
+- out = paddle.diff(x_2, n=2)
+- out
+- Tensor(shape=[2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[ -2,  -4])'
+- y = paddle.to_tensor([7, 9])
+- out = paddle.diff(x, append=y)
+- out
+- Tensor(shape=[5], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[ 3,  1, -3,  5,  2])'
+- out = paddle.diff(x, n=2, append=y)
+- out
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[-2, -4,  8, -3])'
+- out = paddle.diff(x, n=3, append=y)
+- out
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[-2 ,  12, -11])'
+- z = paddle.to_tensor([[1, 2, 3], [4, 5, 6]])
+- out = paddle.diff(z, axis=0)
+- out
+- Tensor(shape=[1, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[3, 3, 3]])'
+- out = paddle.diff(z, axis=1)
+- out
+- Tensor(shape=[2, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 1],'
+- '[1, 1]])'
+8 api_shape: {}

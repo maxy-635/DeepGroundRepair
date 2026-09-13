@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.layers.add
+3 api_description: The tf.keras.layers.add layer combines two or more input tensors
+  element-wise by performing a sum operation.
+4 api_signature: tf.keras.layers.add(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of input tensors that must have the same shape, which will be element-wise
+    added together.
+7 api_usage_example:
+- input1 = keras.layers.Input(shape=(16,))
+- x1 = keras.layers.Dense(8, activation='relu')(input1)
+- input2 = keras.layers.Input(shape=(32,))
+- x2 = keras.layers.Dense(8, activation='relu')(input2)
+- added = keras.layers.add([x1, x2])
+- out = keras.layers.Dense(4)(added)
+- model = keras.models.Model(inputs=[input1, input2], outputs=out)
+8 api_shape: null

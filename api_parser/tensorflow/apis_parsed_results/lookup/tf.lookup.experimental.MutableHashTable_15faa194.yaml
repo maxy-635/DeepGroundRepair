@@ -1,0 +1,24 @@
+2 api_name: tensorflow.lookup.experimental.MutableHashTable
+3 api_description: A mutable generic hash table for inserting and removing key-value
+  pairs, with no init-based setup, that uses extra temporary key and value memory
+  during checkpoint and restore.
+4 api_signature: tf.lookup.experimental.MutableHashTable(key_dtype,value_dtype,default_value)
+5 api_details: ''
+6 api_parameters:
+- key_dtype: Specifies the data type of the table keys.
+- value_dtype: Specifies the data type of the table values.
+- default_value: Provides the fallback value returned when a key is not found.
+7 api_usage_example:
+- table = tf.lookup.experimental.MutableHashTable(key_dtype=tf.string,
+- '                                                value_dtype=tf.int64,'
+- '                                                default_value=-1)'
+- keys_tensor = tf.constant(['a', 'b', 'c'])
+- vals_tensor = tf.constant([7, 8, 9], dtype=tf.int64)
+- input_tensor = tf.constant(['a', 'f'])
+- table.insert(keys_tensor, vals_tensor)
+- table.lookup(input_tensor).numpy()
+- table.remove(tf.constant(['c']))
+- table.lookup(keys_tensor).numpy()
+- sorted(table.export()[0].numpy())
+- sorted(table.export()[1].numpy())
+8 api_shape: ''

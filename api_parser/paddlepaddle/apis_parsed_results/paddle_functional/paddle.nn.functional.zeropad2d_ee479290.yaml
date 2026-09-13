@@ -1,0 +1,23 @@
+2 api_name: paddle.nn.functional.zeropad2d
+3 api_description: The paddle.nn.functional.zeropad2d API pads a 2D tensor with zeros
+  on all sides according to specified padding sizes.
+4 api_signature: paddle.nn.functional.zeropad2d(x,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor that requires padding, supporting various data types such as
+    float16, float32, float64, int32, and int64.
+- padding: A tuple specifying the padding sizes for each side of the 2D input tensor,
+    formatted as (pad_left, pad_right, pad_top, pad_bottom).
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x_shape = paddle.to_tensor([1, 1, 2, 3])
+- x = paddle.arange(paddle.prod(x_shape), dtype="float32").reshape(x_shape) + 1
+- y = F.zeropad2d(x, [1, 2, 1, 1])
+- print(y)
+- Tensor(shape=[1, 1, 4, 6], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0., 0., 0., 0., 0., 0.],'
+- '[0., 1., 2., 3., 0., 0.],'
+- '[0., 4., 5., 6., 0., 0.],'
+- '[0., 0., 0., 0., 0., 0.]]]])'
+8 api_shape: null

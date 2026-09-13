@@ -1,0 +1,10 @@
+2 api_name: tensorflow.hessians
+3 api_description: Builds graph ops to compute the Hessian matrices of sum(ys) with
+  respect to each tensor in xs, returning one tensor per input.
+4 api_signature: tf.hessians(ys,xs)
+5 api_details: ''
+6 api_parameters:
+- ys: The tensor or tensors whose second-order derivatives are being computed.
+- xs: The tensor or tensors with respect to which the Hessian is taken.
+7 api_usage_example: null
+8 api_shape: ''

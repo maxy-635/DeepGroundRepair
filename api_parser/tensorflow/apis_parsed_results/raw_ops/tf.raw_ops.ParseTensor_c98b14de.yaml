@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ParseTensor
+3 api_description: Converts a serialized TensorProto into a Tensor of the specified
+  output type.
+4 api_signature: tf.raw_ops.ParseTensor(serialized,out_type)
+5 api_details: ''
+6 api_parameters:
+- serialized: A scalar string holding the serialized TensorProto to parse into a tensor.
+- out_type: The exact data type expected for the deserialized tensor output.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.RequantizationRange
+3 api_description: Computes the min and max range that covers the actual values in
+  a quantized tensor, typically to supply output bounds for requantization.
+4 api_signature: tf.raw_ops.RequantizationRange(input)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized tensor whose value range is analyzed to compute the requantization
+    range.
+7 api_usage_example: null
+8 api_shape: ''

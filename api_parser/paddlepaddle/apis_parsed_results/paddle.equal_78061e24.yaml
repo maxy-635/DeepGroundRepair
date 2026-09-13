@@ -1,0 +1,17 @@
+2 api_name: paddle.equal
+3 api_description: Compares two tensors elementwise and returns a boolean tensor indicating
+  where x equals y.
+4 api_signature: paddle.equal(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to compare elementwise for equality.
+- y: The second input tensor to compare elementwise for equality.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, 2, 3])
+- y = paddle.to_tensor([1, 3, 2])
+- result1 = paddle.equal(x, y)
+- print(result1)
+- Tensor(shape=[3], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True , False, False])'
+8 api_shape: {}

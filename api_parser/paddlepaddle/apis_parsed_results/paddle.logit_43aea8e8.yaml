@@ -1,0 +1,17 @@
+2 api_name: paddle.logit
+3 api_description: Computes the elementwise logit of the input tensor, clamping values
+  to [eps, 1 - eps] when eps is set, and returning NaN for out-of-range values when
+  eps is 0.
+4 api_signature: paddle.logit(x,eps)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are transformed by the logit function.
+- eps: Optional epsilon used to clamp inputs away from 0 and 1 for numerical stability.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([0.2635, 0.0106, 0.2780, 0.2097, 0.8095])
+- out1 = paddle.logit(x)
+- out1
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-1.02785587, -4.53624487, -0.95440406, -1.32673466,  1.44676447])'
+8 api_shape: {}

@@ -1,0 +1,16 @@
+2 api_name: paddle.add
+3 api_description: The paddle.add API performs element-wise addition of two tensors.
+4 api_signature: paddle.add(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor that will be added to.
+- y: The second input tensor that will be added to the first tensor.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([2, 3, 4], 'float64')
+- y = paddle.to_tensor([1, 5, 2], 'float64')
+- z = paddle.add(x, y)
+- print(z)
+- Tensor(shape=[3], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[3., 8., 6.])'
+8 api_shape: null

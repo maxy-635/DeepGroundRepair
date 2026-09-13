@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TensorArrayReadV3
+3 api_description: Reads a single element from a TensorArray at the specified index
+  and returns it as an output tensor.
+4 api_signature: tf.raw_ops.TensorArrayReadV3(handle,index,flow_in,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource to read from.
+- index: Specifies which element index to read from the TensorArray.
+- flow_in: Carries the flow control value to enforce correct operation ordering.
+- dtype: Sets the data type of the element returned by the read operation.
+7 api_usage_example: null
+8 api_shape: ''

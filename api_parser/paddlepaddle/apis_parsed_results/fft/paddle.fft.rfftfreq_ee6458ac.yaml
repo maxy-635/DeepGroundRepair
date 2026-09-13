@@ -1,0 +1,17 @@
+2 api_name: paddle.fft.rfftfreq
+3 api_description: Return the sample frequencies for a real-input discrete Fourier
+  transform.
+4 api_signature: paddle.fft.rfftfreq(n,d,dtype)
+5 api_details: ''
+6 api_parameters:
+- n: Sets the number of input samples used to determine the frequency bins.
+- d: Specifies the spacing between samples, which controls the frequency scale.
+- dtype: Sets the data type of the returned frequency values.
+7 api_usage_example:
+- import paddle
+- scalar_temp = 0.3
+- rfftfreq_xp = paddle.fft.rfftfreq(5, d=scalar_temp)
+- print(rfftfreq_xp)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0., 0.66666669, 1.33333337])'
+8 api_shape: {}

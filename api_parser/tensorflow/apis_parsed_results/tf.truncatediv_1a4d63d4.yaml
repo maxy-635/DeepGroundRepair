@@ -1,0 +1,10 @@
+2 api_name: tensorflow.truncatediv
+3 api_description: Performs element-wise division of x by y, rounding results toward
+  zero.
+4 api_signature: tf.truncatediv(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The numerator tensor whose values will be divided and truncated toward zero.
+- y: The denominator tensor, which must match `x`'s type.
+7 api_usage_example: null
+8 api_shape: ''

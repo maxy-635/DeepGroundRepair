@@ -1,0 +1,17 @@
+2 api_name: tensorflow.scan
+3 api_description: Iteratively applies a function across the first dimension of one
+  or more tensors, carrying forward an accumulated state and returning the sequence
+  of intermediate accumulator results.
+4 api_signature: tf.scan(fn,elems,initializer,reverse,name)
+5 api_details: ''
+6 api_parameters:
+- fn: Defines the step function applied at each scan iteration, taking the running
+    state and the current slice of elements and returning the next state.
+- elems: Provides the sequence or nested sequences of tensors to iterate over, sliced
+    along the first dimension.
+- initializer: Sets the starting accumulator value and the expected structure and
+    type of the function’s output.
+- reverse: Controls iteration direction, scanning from last to first when set to True.
+- name: Assigns an optional name prefix to the returned tensors and operation.
+7 api_usage_example: null
+8 api_shape: ''

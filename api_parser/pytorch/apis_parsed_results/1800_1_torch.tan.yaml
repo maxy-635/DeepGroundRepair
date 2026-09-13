@@ -1,0 +1,12 @@
+2 api_name: torch.tan
+3 api_description: Computes the tangent of each element in a tensor, treating the
+  input values as radians, and returns a new tensor.
+4 api_signature: torch.tan(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose tangent is computed elementwise.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.tan(a)'
+8 api_shape: null

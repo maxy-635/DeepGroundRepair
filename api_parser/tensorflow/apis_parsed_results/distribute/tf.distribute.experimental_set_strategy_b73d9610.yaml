@@ -1,0 +1,10 @@
+2 api_name: tensorflow.distribute.experimental_set_strategy
+3 api_description: Sets the current tf.distribute.Strategy globally without using
+  strategy.scope(), equivalent to entering the strategy scope.
+4 api_signature: tf.distribute.experimental_set_strategy(strategy)
+5 api_details: ''
+6 api_parameters:
+- strategy: Specifies the `tf.distribute.Strategy` to set as the current strategy,
+    or `None` to clear it.
+7 api_usage_example: null
+8 api_shape: ''

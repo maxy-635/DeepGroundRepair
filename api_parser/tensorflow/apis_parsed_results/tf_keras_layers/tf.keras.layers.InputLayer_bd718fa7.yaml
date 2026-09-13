@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.layers.InputLayer
+3 api_description: The tf.keras.layers.InputLayer serves as the foundational layer
+  from which all layers derive, enabling the creation of callable objects that accept
+  and process tensors, defined by the computation in the call() method and maintain
+  state through weight variables.
+4 api_signature: tf.keras.layers.InputLayer(shape, dtype, name)
+5 api_details: ''
+6 api_parameters:
+- name: Specifies the name of the layer for identification purposes.
+- dtype: Defines the data type for the layer's computations and weights, defaulting
+    to the global dtype policy.
+- name: Another specification for the layer's name, ensuring it can be referenced
+    distinctly.
+- dtype: Indicates the data type for the layer's weights, serving as an alias for
+    layer.variable_dtype.
+7 api_usage_example: null
+8 api_shape: null

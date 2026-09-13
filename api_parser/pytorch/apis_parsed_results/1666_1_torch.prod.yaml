@@ -1,0 +1,11 @@
+2 api_name: torch.prod
+3 api_description: Returns the product of all elements in a tensor.
+4 api_signature: torch.prod(input:Tensor,dtype:_dtype|None)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are multiplied together.
+7 api_usage_example:
+- ' a = torch.randn(1, 3)'
+- ' a'
+- ' torch.prod(a)'
+8 api_shape: null

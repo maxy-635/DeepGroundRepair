@@ -1,0 +1,13 @@
+2 api_name: tensorflow.experimental.dtensor.Mesh
+3 api_description: Defines a named, size-aware device mesh for DTensor layouts, describing
+  how devices are arranged and how tensors are placed and communicated across them.
+4 api_signature: tf.experimental.dtensor.Mesh(dim_names:List[str],global_device_ids:np.ndarray,local_devices:List[Union[tf_device.DeviceSpec,str]],use_xla_spmd:bool)
+5 api_details: ''
+6 api_parameters:
+- dim_names: Names the mesh dimensions.
+- global_device_ids: Defines the global device layout and mesh shape using sequential
+    device IDs.
+- local_devices: Lists the devices available on the local client.
+- use_xla_spmd: Optionally enables XLA SPMD for the mesh.
+7 api_usage_example: null
+8 api_shape: ''

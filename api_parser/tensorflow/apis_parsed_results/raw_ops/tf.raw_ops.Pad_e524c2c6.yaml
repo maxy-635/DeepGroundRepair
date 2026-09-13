@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Pad
+3 api_description: Pads a tensor with zeros on each dimension according to the specified
+  before-and-after padding values.
+4 api_signature: tf.raw_ops.Pad(input,paddings)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be padded.
+- paddings: A 2-D tensor of integers that specifies how much padding to add before
+    and after each dimension of `input`.
+7 api_usage_example: null
+8 api_shape: ''

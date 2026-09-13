@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.set_stream
+3 api_description: Sets the current CUDA stream for subsequent operations on the active
+  device, though using the stream context manager is preferred.
+4 api_signature: torch.cuda.set_stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: The CUDA stream to select; if `None`, the call has no effect.
+7 api_usage_example: null
+8 api_shape: null

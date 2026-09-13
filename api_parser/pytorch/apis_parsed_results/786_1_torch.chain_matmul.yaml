@@ -1,0 +1,16 @@
+2 api_name: torch.chain_matmul
+3 api_description: Efficiently multiplies a sequence of 2-D tensors using an optimal
+  matrix chain order, returning the original tensor unchanged if only one is provided.
+4 api_signature: torch.chain_matmul(*matrices)
+5 api_details: ''
+6 api_parameters:
+- matrices: A sequence of two or more 2-D tensors whose matrix product is computed
+    in order.
+7 api_usage_example:
+- ' a = torch.randn(3, 4)'
+- ' b = torch.randn(4, 5)'
+- ' c = torch.randn(5, 6)'
+- ' d = torch.randn(6, 7)'
+- ' # will raise a deprecation warning'
+- ' torch.chain_matmul(a, b, c, d)'
+8 api_shape: null

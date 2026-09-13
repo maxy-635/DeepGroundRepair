@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Spence
+3 api_description: Computes the Spence function, a special mathematical function also
+  known as the dilogarithm-related integral, for the given input tensor.
+4 api_signature: tf.raw_ops.Spence(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose elements are used to compute the Spence (dilogarithm) function.
+7 api_usage_example: null
+8 api_shape: ''

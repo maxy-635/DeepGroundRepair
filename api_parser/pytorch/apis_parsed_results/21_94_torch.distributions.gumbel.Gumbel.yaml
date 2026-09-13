@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.gumbel.Gumbel
+3 api_description: A transformed distribution for Gumbel random variables, providing
+  sampling, log-probability evaluation, and related distribution properties for modeling
+  extreme-value noise.
+4 api_signature: torch.distributions.gumbel.Gumbel(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the distribution's central location, shifting where values are centered.
+- scale: Controls the spread of the distribution, with larger values producing greater
+    variability.
+7 api_usage_example:
+- ' m = Gumbel(torch.tensor([1.0]), torch.tensor([2.0]))'
+- ' m.sample()  # sample from Gumbel distribution with loc=1, scale=2'
+8 api_shape: null

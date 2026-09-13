@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.ListSnapshotChunksDataset
+3 api_description: Lists the chunk files that belong to a TensorFlow snapshot dataset,
+  producing a dataset of snapshot chunk metadata for each snapshot element.
+4 api_signature: tf.raw_ops.ListSnapshotChunksDataset(snapshot_path)
+5 api_details: ''
+6 api_parameters:
+- snapshot_path: Specifies the path to the snapshot whose chunks are being listed.
+7 api_usage_example: null
+8 api_shape: ''

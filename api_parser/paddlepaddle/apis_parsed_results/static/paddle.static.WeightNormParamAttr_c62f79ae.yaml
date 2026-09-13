@@ -1,0 +1,29 @@
+2 api_name: paddle.static.WeightNormParamAttr
+3 api_description: Parameter attribute that applies weight normalization to a layer
+  parameter, decoupling its magnitude and direction to improve training stability
+  and optimization.
+4 api_signature: paddle.static.WeightNormParamAttr(dim,name)
+5 api_details: ''
+6 api_parameters:
+- dim: Specifies which tensor dimension to normalize over; if `None`, the entire weight
+    tensor is normalized.
+- name: Sets the parameter name; if `None`, a name is generated automatically.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- data = paddle.static.data(name="data", shape=[3, 32, 32], dtype="float32")
+- fc = paddle.static.nn.fc(
+- '    x=data,'
+- '    size=1000,'
+- '    weight_attr=paddle.static.WeightNormParamAttr('
+- '        dim=None,'
+- '        name=''weight_norm_param'','
+- '        initializer=paddle.nn.initializer.Constant(1.0),'
+- '        learning_rate=1.0,'
+- '        regularizer=paddle.regularizer.L2Decay(0.1),'
+- '        trainable=True,'
+- '        do_model_average=False,'
+- '        need_clip=True,'
+- '    ),'
+- )
+8 api_shape: {}

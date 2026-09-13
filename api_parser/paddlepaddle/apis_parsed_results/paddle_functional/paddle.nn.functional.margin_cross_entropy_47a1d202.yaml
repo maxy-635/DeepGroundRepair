@@ -1,0 +1,60 @@
+2 api_name: paddle.nn.functional.margin_cross_entropy
+3 api_description: The paddle.nn.functional.margin_cross_entropy API implements the
+  ArcFace loss, which enhances class separability by adding an angular margin to the
+  target class, effectively increasing the decision boundary between classes in the
+  feature space.
+4 api_signature: paddle.nn.functional.margin_cross_entropy(logits,label,margin1,margin2,margin3)
+5 api_details: ''
+6 api_parameters:
+- logits: Represents the predicted outputs with shape [N, local_num_classes], used
+    in model parallel as shard_logits.
+- label: Denotes the ground truth labels with shape [N] or [N, 1] for comparison against
+    logits.
+- margin1: Defines the m1 component of the margin loss, with a default value of 1.0.
+- margin2: Specifies the m2 component of the margin loss, with a default value of
+    0.5.
+- margin3: Indicates the m3 component of the margin loss, with a default value of
+    0.0.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.seed(2023)
+- paddle.device.set_device('gpu')
+- m1 = 1.0
+- m2 = 0.5
+- m3 = 0.0
+- s = 64.0
+- batch_size = 2
+- feature_length = 4
+- num_classes = 4
+- label = paddle.randint(low=0, high=num_classes, shape=[batch_size], dtype='int64')
+- X = paddle.randn(
+- '    shape=[batch_size, feature_length],'
+- '    dtype=''float64'')'
+- X_l2 = paddle.sqrt(paddle.sum(paddle.square(X), axis=1, keepdim=True))
+- X = paddle.divide(X, X_l2)
+- W = paddle.randn(
+- '    shape=[feature_length, num_classes],'
+- '    dtype=''float64'')'
+- W_l2 = paddle.sqrt(paddle.sum(paddle.square(W), axis=0, keepdim=True))
+- W = paddle.divide(W, W_l2)
+- logits = paddle.matmul(X, W)
+- loss, softmax = paddle.nn.functional.margin_cross_entropy(
+- '    logits, label, margin1=m1, margin2=m2, margin3=m3, scale=s, return_softmax=True,
+  reduction=None)'
+- print(logits)
+- Tensor(shape=[2, 4], dtype=float64, place=Place(gpu:0), stop_gradient=True,
+- '[[-0.59561850,  0.32797505,  0.80279214,  0.00144975],'
+- '[-0.16265212,  0.84155098,  0.62008629,  0.79126072]])'
+- print(label)
+- Tensor(shape=[2], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[1, 0])'
+- print(loss)
+- Tensor(shape=[2, 1], dtype=float64, place=Place(gpu:0), stop_gradient=True,
+- '[[61.94391901],'
+- '[93.30853839]])'
+- print(softmax)
+- Tensor(shape=[2, 4], dtype=float64, place=Place(gpu:0), stop_gradient=True,
+- '[[0.00000000, 0.00000000, 1.        , 0.00000000],'
+- '[0.00000000, 0.96152676, 0.00000067, 0.03847257]])'
+8 api_shape: null

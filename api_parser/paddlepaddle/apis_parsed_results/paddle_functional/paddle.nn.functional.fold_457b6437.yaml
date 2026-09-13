@@ -1,0 +1,15 @@
+2 api_name: paddle.nn.functional.fold
+3 api_description: The paddle.nn.functional.fold function reconstructs a large tensor
+  from overlapping sliding local blocks by summing the overlapping values, similar
+  to col2im for 2D image tensors.
+4 api_signature: paddle.nn.functional.fold(x,output_sizes,kernel_sizes)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the 3-D input tensor with shape [N, C, L] and data types float32,
+    float64, complex64, or complex128.
+- output_sizes: Specifies the output dimensions as either [output_size_h, output_size_w]
+    or a single integer treated as [o, o].
+- kernel_sizes: Defines the convolution kernel dimensions as either [k_h, k_w] or
+    a single integer treated as [k, k].
+7 api_usage_example: []
+8 api_shape: null

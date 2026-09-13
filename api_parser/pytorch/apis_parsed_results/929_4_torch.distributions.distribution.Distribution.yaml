@@ -1,0 +1,12 @@
+2 api_name: torch.distributions.distribution.Distribution
+3 api_description: Base class for probability distributions in PyTorch, providing
+  a common interface for sampling, log probabilities, shape handling, and related
+  distribution utilities.
+4 api_signature: torch.distributions.distribution.Distribution(batch_shape,event_shape)
+5 api_details: ''
+6 api_parameters:
+- batch_shape: Specifies the dimensions that index independent batches of distribution
+    parameters.
+- event_shape: Specifies the dimensions of each individual sample drawn from the distribution.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,56 @@
+2 api_name: paddle.amp.decorate
+3 api_description: Prepares models and optimizers for auto mixed precision by leaving
+  O1 unchanged and, at O2, casting model parameters to float16 or bfloat16 except
+  for BatchNorm, InstanceNorm, and LayerNorm.
+4 api_signature: paddle.amp.decorate(models,optimizers,level,dtype,master_weight)
+5 api_details: ''
+6 api_parameters:
+- models: Specifies the model or models to apply automatic mixed precision decoration
+    to.
+- optimizers: Specifies the optimizer or optimizers to apply automatic mixed precision
+    decoration to.
+- level: Sets the AMP mode, either no-op mixed precision (`O1`) or pure low-precision
+    casting (`O2`).
+- dtype: Chooses whether AMP uses `float16` or `bfloat16` as the low-precision data
+    type.
+- master_weight: Controls whether `O2` mode uses multi-precision master weights for
+    optimizer updates.
+7 api_usage_example:
+- '>>>'
+- '# Demo1: single model and optimizer:'
+- import paddle
+- paddle.device.set_device('gpu')
+- model = paddle.nn.Conv2D(3, 2, 3, bias_attr=False)
+- optimizer = paddle.optimizer.SGD(parameters=model.parameters())
+- model, optimizer = paddle.amp.decorate(models=model, optimizers=optimizer, level='O2')
+- data = paddle.rand([10, 3, 32, 32])
+- 'with paddle.amp.auto_cast(enable=True, custom_white_list=None, custom_black_list=None,
+  level=''O2''):'
+- '    output = model(data)'
+- '    print(output.dtype)'
+- paddle.float16
+- '# Demo2: multi models and optimizers:'
+- model2 = paddle.nn.Conv2D(3, 2, 3, bias_attr=False)
+- optimizer2 = paddle.optimizer.Adam(parameters=model2.parameters())
+- models, optimizers = paddle.amp.decorate(models=[model, model2], optimizers=[optimizer,
+  optimizer2], level='O2')
+- data = paddle.rand([10, 3, 32, 32])
+- 'with paddle.amp.auto_cast(enable=True, custom_white_list=None, custom_black_list=None,
+  level=''O2''):'
+- '    output = models[0](data)'
+- '    output2 = models[1](data)'
+- '    print(output.dtype)'
+- '    print(output2.dtype)'
+- paddle.float16
+- paddle.float16
+- '# Demo3: optimizers is None:'
+- model3 = paddle.nn.Conv2D(3, 2, 3, bias_attr=False)
+- optimizer3 = paddle.optimizer.Adam(parameters=model3.parameters())
+- model = paddle.amp.decorate(models=model3, level='O2')
+- data = paddle.rand([10, 3, 32, 32])
+- 'with paddle.amp.auto_cast(enable=True, custom_white_list=None, custom_black_list=None,
+  level=''O2''):'
+- '    output = model(data)'
+- '    print(output.dtype)'
+- paddle.float16
+8 api_shape: {}

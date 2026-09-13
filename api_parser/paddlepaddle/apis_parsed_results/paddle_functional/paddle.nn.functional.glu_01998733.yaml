@@ -1,0 +1,23 @@
+2 api_name: paddle.nn.functional.glu
+3 api_description: The paddle.nn.functional.glu API performs gated linear unit operations
+  by splitting input into content and gate parts, applying a sigmoid to the gate,
+  and returning their elementwise multiplication.
+4 api_signature: paddle.nn.functional.glu(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor with data types float32 or float64 to be processed
+    by the GLU function.
+- axis: Determines the axis along which the input tensor is split, with a default
+    value of -1, allowing for negative indexing.
+7 api_usage_example:
+- import paddle
+- from paddle.nn import functional as F
+- x = paddle.to_tensor(
+- '    [[-0.22014759, -1.76358426,  0.80566144,  0.04241343],'
+- '        [-1.94900405, -1.89956081,  0.17134808, -1.11280477]]'
+- )
+- print(F.glu(x))
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.15216254, -0.90048921],'
+- '[-1.05778778, -0.46985325]])'
+8 api_shape: null

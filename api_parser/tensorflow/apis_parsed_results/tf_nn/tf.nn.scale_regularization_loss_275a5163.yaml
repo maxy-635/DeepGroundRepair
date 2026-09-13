@@ -1,0 +1,11 @@
+2 api_name: tensorflow.nn.scale_regularization_loss
+3 api_description: tensorflow.nn.scale_regularization_loss scales regularization losses
+  by the number of replicas, useful in distributed training to ensure consistent regularization
+  impact across different numbers of replicas.
+4 api_signature: tf.nn.scale_regularization_loss(regularization_loss)
+5 api_details: ''
+6 api_parameters:
+- regularization_loss: This parameter represents the regularization loss that needs
+    to be scaled.
+7 api_usage_example: null
+8 api_shape: ''

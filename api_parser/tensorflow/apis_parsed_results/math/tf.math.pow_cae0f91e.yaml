@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.pow
+3 api_description: Raises each element of one tensor to the corresponding power in
+  another tensor, computing x^y elementwise.
+4 api_signature: tf.math.pow(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The base tensor whose elements will be raised to the given power.
+- y: The exponent tensor applied elementwise to the base tensor.
+7 api_usage_example: null
+8 api_shape: ''

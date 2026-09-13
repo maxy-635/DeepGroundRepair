@@ -1,0 +1,11 @@
+2 api_name: torch.isposinf
+3 api_description: Returns a boolean tensor indicating which input elements are positive
+  infinity.
+4 api_signature: torch.isposinf(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to check for positive infinity values.
+7 api_usage_example:
+- ' a = torch.tensor([-float(''inf''), float(''inf''), 1.2])'
+- ' torch.isposinf(a)'
+8 api_shape: null

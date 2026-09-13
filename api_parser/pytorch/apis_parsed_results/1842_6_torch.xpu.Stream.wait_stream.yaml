@@ -1,0 +1,9 @@
+2 api_name: torch.xpu.Stream.wait_stream
+3 api_description: Waits for another XPU stream to finish its queued work before continuing
+  on the current stream.
+4 api_signature: wait_stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: The stream to synchronize with before continuing execution.
+7 api_usage_example: null
+8 api_shape: null

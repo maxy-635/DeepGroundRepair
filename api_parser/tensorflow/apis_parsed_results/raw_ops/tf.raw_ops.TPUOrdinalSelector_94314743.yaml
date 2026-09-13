@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.TPUOrdinalSelector
+3 api_description: Selects one or more TPU cores for warm-up or inference, providing
+  the core target consumed by TPUPartitionedCall.
+4 api_signature: tf.raw_ops.TPUOrdinalSelector()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

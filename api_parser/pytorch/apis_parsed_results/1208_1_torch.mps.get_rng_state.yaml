@@ -1,0 +1,9 @@
+2 api_name: torch.mps.get_rng_state
+3 api_description: Returns the current MPS random number generator state as a ByteTensor
+  so it can be saved or restored.
+4 api_signature: torch.mps.get_rng_state(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which MPS device’s RNG state to retrieve.
+7 api_usage_example: null
+8 api_shape: null

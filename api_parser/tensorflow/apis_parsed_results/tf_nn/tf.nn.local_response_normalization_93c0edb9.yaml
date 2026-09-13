@@ -1,0 +1,19 @@
+2 api_name: tensorflow.nn.local_response_normalization
+3 api_description: Local Response Normalization normalizes each 1-D vector in a 4-D
+  input tensor by dividing each component by the weighted, squared sum of its neighboring
+  components within a specified depth radius.
+4 api_signature: tf.nn.local_response_normalization(input,depth_radius,bias,alpha,beta)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor for the normalization, which must be a 4-D tensor
+    of type half, bfloat16, or float32.
+- depth_radius: Defines the half-width of the 1-D normalization window, with a default
+    value of 5.
+- bias: Sets an offset to avoid division by zero, with a default positive value of
+    1.
+- alpha: Determines the scale factor for the normalization, defaulting to 1 and typically
+    positive.
+- beta: Specifies the exponent used in the normalization, with a default value of
+    0.5.
+7 api_usage_example: null
+8 api_shape: ''

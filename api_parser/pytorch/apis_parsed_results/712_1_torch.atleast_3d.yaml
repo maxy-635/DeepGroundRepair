@@ -1,0 +1,22 @@
+2 api_name: torch.atleast_3d
+3 api_description: Returns each input tensor as a 3D view by adding singleton dimensions
+  to tensors with fewer than 3 dimensions, and leaves tensors with 3 or more dimensions
+  unchanged.
+4 api_signature: '"torch.atleast_3d(*tensors)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' x = torch.tensor(0.5)'
+- ' x'
+- ' torch.atleast_3d(x)'
+- ' y = torch.arange(4).view(2, 2)'
+- ' y'
+- ' torch.atleast_3d(y)'
+- ' x = torch.tensor(1).view(1, 1, 1)'
+- ' x'
+- ' torch.atleast_3d(x)'
+- ' x = torch.tensor(0.5)'
+- ' y = torch.tensor(1.0)'
+- ' torch.atleast_3d((x, y))'
+- ' torch.atleast_3d()'
+8 api_shape: null

@@ -1,0 +1,20 @@
+2 api_name: tensorflow.linalg.triangular_solve
+3 api_description: Solves linear systems with triangular matrices, using either the
+  lower or upper triangle of each square matrix and optionally the adjoint form.
+4 api_signature: tf.linalg.triangular_solve(matrix,rhs,lower,adjoint)
+5 api_details: ''
+6 api_parameters:
+- matrix: The triangular coefficient matrix used in the solve, with each innermost
+    square matrix treated as lower or upper triangular.
+- rhs: The right-hand-side tensor containing the vectors or matrices to be solved
+    against `matrix`.
+- lower: Specifies whether `matrix` should be interpreted as lower triangular (`True`)
+    or upper triangular (`False`).
+- adjoint: Specifies whether to solve using `matrix` itself or its block-wise adjoint
+    (conjugate transpose).
+7 api_usage_example:
+- b = tf.constant([[4], [2], [4], [2]], dtype=tf.float32)
+- x = tf.linalg.triangular_solve(a, b, lower=True)
+- x
+- tf.matmul(a, x)
+8 api_shape: ''

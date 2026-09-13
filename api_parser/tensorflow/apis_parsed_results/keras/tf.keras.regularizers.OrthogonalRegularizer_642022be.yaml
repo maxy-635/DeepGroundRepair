@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.regularizers.OrthogonalRegularizer
+3 api_description: Penalizes a matrix to encourage orthogonality between its rows
+  or columns by adding a regularization term based on the mean dot products of their
+  L2-normalized vectors.
+4 api_signature: tf.keras.regularizers.OrthogonalRegularizer(factor,mode)
+5 api_details: ''
+6 api_parameters:
+- factor: Scales the regularization penalty applied to encourage orthogonality.
+- mode: Chooses whether to regularize rows or columns of the weight matrix.
+7 api_usage_example:
+- regularizer = OrthogonalRegularizer(factor=0.01)
+- layer = Dense(units=4, kernel_regularizer=regularizer)
+8 api_shape: ''

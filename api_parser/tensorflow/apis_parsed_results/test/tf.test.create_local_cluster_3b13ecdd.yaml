@@ -1,0 +1,11 @@
+2 api_name: tensorflow.test.create_local_cluster
+3 api_description: Starts a local distributed TensorFlow cluster and returns Server
+  objects for the created worker and parameter-server tasks.
+4 api_signature: tf.test.create_local_cluster(num_workers:int,num_ps:int,protocol:str)
+5 api_details: ''
+6 api_parameters:
+- num_workers: Specifies how many worker servers to create.
+- num_ps: Specifies how many parameter server instances to create.
+- protocol: Specifies the communication protocol used by the cluster servers.
+7 api_usage_example: null
+8 api_shape: ''

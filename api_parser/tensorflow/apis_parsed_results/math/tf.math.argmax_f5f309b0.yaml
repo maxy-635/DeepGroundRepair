@@ -1,0 +1,19 @@
+2 api_name: tensorflow.math.argmax
+3 api_description: Returns the index of the maximum value along the specified axis,
+  choosing the smallest index when multiple values are equal.
+4 api_signature: tf.math.argmax(input,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose maximum-value indices are to be found.
+- axis: The axis along which to compute the index of the maximum value, defaulting
+    to 0.
+7 api_usage_example:
+- A = tf.constant([2, 20, 30, 3, 6])
+- 'tf.math.argmax(A)  # A[2] is maximum in tensor A'
+- B = tf.constant([[2, 20, 30, 3, 6], [3, 11, 16, 1, 8],
+- '                 [14, 45, 23, 5, 27]])'
+- tf.math.argmax(B, 0)
+- tf.math.argmax(B, 1)
+- C = tf.constant([0, 0, 0, 0])
+- 'tf.math.argmax(C) # Returns smallest index in case of ties'
+8 api_shape: ''

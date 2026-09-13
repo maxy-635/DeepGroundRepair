@@ -1,0 +1,11 @@
+2 api_name: tensorflow.ones
+3 api_description: Creates a tensor of the specified shape and dtype with every element
+  set to 1.
+4 api_signature: tf.ones(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the output tensor to create.
+- dtype: Specifies the data type of the tensor elements, defaulting to `tf.float32`.
+7 api_usage_example:
+- tf.ones([3, 4], tf.int32)
+8 api_shape: ''

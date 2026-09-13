@@ -1,0 +1,13 @@
+2 api_name: tensorflow.data.experimental.parallel_interleave
+3 api_description: Parallelly maps a function over input elements to create nested
+  datasets, then interleaves their outputs for higher throughput, with an optional
+  sloppy mode that relaxes ordering for better performance.
+4 api_signature: tf.data.experimental.parallel_interleave(map_func,cycle_length,block_length)
+5 api_details: ''
+6 api_parameters:
+- map_func: Maps each input element to a dataset to be interleaved.
+- cycle_length: Sets how many input datasets are interleaved in parallel.
+- block_length: Sets how many consecutive elements are taken from each dataset before
+    switching to the next.
+7 api_usage_example: null
+8 api_shape: ''

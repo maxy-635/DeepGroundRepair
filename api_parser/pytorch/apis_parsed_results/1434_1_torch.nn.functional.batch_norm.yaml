@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.batch_norm
+3 api_description: Applies Batch Normalization to each channel of the input across
+  a batch, normalizing the data to have zero mean and unit variance, and scaling/shifting
+  it using learnable parameters.
+4 api_signature: torch.nn.functional.batch_norm(input,running_mean,running_var)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be batch normalized.
+- running_mean: The running mean used for normalization, which is updated during training.
+- running_var: The running variance used for normalization, which is updated during
+    training.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: paddle.vision.models.mobilenet_v2
+3 api_description: MobileNetV2 builds a lightweight convolutional neural network for
+  image classification using inverted residual blocks and linear bottlenecks, providing
+  an efficient feature extractor and classifier with configurable width, depth, and
+  pretrained weights.
+4 api_signature: paddle.vision.models.mobilenet_v2(pretrained,scale)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+- scale: Sets the channel width multiplier used throughout the network.
+7 api_usage_example: []
+8 api_shape: {}

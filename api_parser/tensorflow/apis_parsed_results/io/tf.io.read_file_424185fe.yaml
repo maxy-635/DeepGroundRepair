@@ -1,0 +1,18 @@
+2 api_name: tensorflow.io.read_file
+3 api_description: Reads a file and returns its raw contents as a tensor without parsing.
+4 api_signature: tf.io.read_file(filename)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the path to the file that will be read.
+- name: Optionally sets a name for the operation.
+7 api_usage_example:
+- '@tf.function'
+- 'def load_image(filename):'
+- '  raw = tf.io.read_file(filename)'
+- '  image = tf.image.decode_png(raw, channels=3)'
+- '  # the `print` executes during tracing.'
+- '  print("Initial shape: ", image.shape)'
+- '  image.set_shape([28, 28, 3])'
+- '  print("Final shape: ", image.shape)'
+- '  return image'
+8 api_shape: ''

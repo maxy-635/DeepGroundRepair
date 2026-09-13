@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.log_normal.LogNormal
+3 api_description: 'A transformed distribution representing a log-normal random variable:
+  samples are positive and formed by exponentiating a normal distribution, with methods
+  for sampling, log probability, and related distribution operations.'
+4 api_signature: torch.distributions.log_normal.LogNormal(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the mean of the underlying normal distribution for the log values.
+- scale: Sets the standard deviation of the underlying normal distribution for the
+    log values.
+7 api_usage_example:
+- X ~ Normal(loc, scale)
+- Y = exp(X) ~ LogNormal(loc, scale)
+8 api_shape: null

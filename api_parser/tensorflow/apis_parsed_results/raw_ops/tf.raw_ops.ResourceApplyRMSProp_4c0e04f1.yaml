@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyRMSProp
+3 api_description: Applies the RMSProp update to a resource variable, adjusting the
+  variable using running mean-square and momentum terms computed from the gradients.
+4 api_signature: tf.raw_ops.ResourceApplyRMSProp(var,ms,mom,lr,grad)
+5 api_details: ''
+6 api_parameters:
+- var: Resource variable being updated by RMSProp.
+- ms: Resource variable storing the running mean-square estimate.
+- mom: Resource variable storing the momentum accumulator.
+- lr: Scalar learning-rate factor that controls the update size.
+- grad: Gradient used to adjust the variables.
+7 api_usage_example: null
+8 api_shape: ''

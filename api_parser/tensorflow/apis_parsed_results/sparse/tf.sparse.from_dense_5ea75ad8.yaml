@@ -1,0 +1,13 @@
+2 api_name: tensorflow.sparse.from_dense
+3 api_description: Converts a dense tensor to a sparse tensor by keeping only nonzero
+  elements, preserving the input's dtype and shape.
+4 api_signature: tf.sparse.from_dense(tensor)
+5 api_details: ''
+6 api_parameters:
+- tensor: The dense tensor input that will be converted into a `SparseTensor`.
+7 api_usage_example:
+- sp = tf.sparse.from_dense([0, 0, 3, 0, 1])
+- sp.shape.as_list()
+- sp.values.numpy()
+- sp.indices.numpy()
+8 api_shape: ''

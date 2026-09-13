@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ScatterNdUpdate
+3 api_description: Updates selected elements or slices of a variable in place using
+  integer indices and corresponding update values.
+4 api_signature: tf.raw_ops.ScatterNdUpdate(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place, typically coming from a variable.
+- indices: Integer tensor giving the locations in `ref` that will be updated.
+- updates: Tensor of new values, matching `ref`'s type, that are written to the indexed
+    positions.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.tpu.experimental.embedding.FeatureConfig
+3 api_description: Configures one embedding feature and maps it to a TPU embedding
+  table via table assignment.
+4 api_signature: tf.tpu.experimental.embedding.FeatureConfig(table,max_sequence_length,validate_weights_and_indices,output_shape,name)
+5 api_details: ''
+6 api_parameters:
+- table: Specifies which embedding table this feature uses for lookup.
+- max_sequence_length: Sets the maximum length for sequence features and truncates
+    longer sequences; `0` means the feature is not a sequence.
+- validate_weights_and_indices: Enables safer serving-time embedding lookup checks
+    to prevent empty rows and require positive ids and weights, at the cost of extra
+    compute.
+- output_shape: Defines the expected activation shape for the feature, if provided,
+    otherwise the shape is inferred or set during build.
+- name: Provides an optional table name, which is required when running on SparseCore.
+7 api_usage_example: null
+8 api_shape: ''

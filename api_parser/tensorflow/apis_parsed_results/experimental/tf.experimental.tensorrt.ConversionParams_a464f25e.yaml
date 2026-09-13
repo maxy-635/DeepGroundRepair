@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.tensorrt.ConversionParams
+3 api_description: Configures key TensorFlow-TensorRT conversion settings such as
+  GPU workspace limit, precision mode, segment size threshold, engine cache size,
+  INT8 calibration behavior, and whether engines may be built at runtime.
+4 api_signature: tf.experimental.tensorrt.ConversionParams(precision_mode,minimum_segment_size,use_calibration)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

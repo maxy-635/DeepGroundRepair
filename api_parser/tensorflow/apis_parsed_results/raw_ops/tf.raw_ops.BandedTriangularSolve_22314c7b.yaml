@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BandedTriangularSolve
+3 api_description: Solves a triangular linear system where the matrix is stored in
+  banded form, using the specified upper/lower triangle, transpose option, and unit-diagonal
+  setting.
+4 api_signature: tf.raw_ops.BandedTriangularSolve(matrix,rhs,lower)
+5 api_details: ''
+6 api_parameters:
+- matrix: The banded triangular coefficient matrix used to solve the linear system.
+- rhs: The right-hand-side tensor containing the values to solve against.
+- lower: Indicates whether the banded triangular matrix is lower triangular; if False,
+    it is treated as upper triangular.
+7 api_usage_example: null
+8 api_shape: ''

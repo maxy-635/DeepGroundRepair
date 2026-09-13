@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SymbolicGradient
+3 api_description: Computes the gradient function of a TensorFlow function by applying
+  backpropagation to its symbolic graph.
+4 api_signature: tf.raw_ops.SymbolicGradient(input,Tout)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensors to the symbolic gradient operation, consisting of N + M
+    tensors.
+- Tout: The output data types for the gradient results, specified as a list with at
+    least one type.
+- f: The @Defun-decorated function whose gradient is being computed.
+7 api_usage_example: null
+8 api_shape: ''

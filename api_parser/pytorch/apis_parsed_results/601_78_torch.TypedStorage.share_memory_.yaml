@@ -1,0 +1,8 @@
+2 api_name: torch.TypedStorage.share_memory_
+3 api_description: Moves the storage into shared memory so it can be accessed by multiple
+  processes, using the same behavior as `UntypedStorage.share_memory_()`.
+4 api_signature: '"share_memory_()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

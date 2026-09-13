@@ -1,0 +1,11 @@
+2 api_name: tensorflow.distribute.cluster_resolver.TFConfigClusterResolver
+3 api_description: Resolves a TensorFlow cluster configuration from the TF_CONFIG
+  environment variable, providing the cluster spec and task information for distributed
+  training.
+4 api_signature: tf.distribute.cluster_resolver.TFConfigClusterResolver(task_type,task_id)
+5 api_details: ''
+6 api_parameters:
+- task_type: Overrides the task type value read from the `TF_CONFIG` environment variable.
+- task_id: Overrides the task index value read from the `TF_CONFIG` environment variable.
+7 api_usage_example: null
+8 api_shape: ''

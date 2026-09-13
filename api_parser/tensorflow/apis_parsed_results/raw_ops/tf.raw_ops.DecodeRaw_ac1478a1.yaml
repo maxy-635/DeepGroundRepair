@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.DecodeRaw
+3 api_description: Reinterprets the bytes in each input string as a vector of numeric
+  values of the specified type.
+4 api_signature: tf.raw_ops.DecodeRaw(bytes,out_type)
+5 api_details: ''
+6 api_parameters:
+- bytes: Contains the raw string-encoded values to decode, with every element required
+    to have the same byte length.
+- out_type: Specifies the data type to convert the decoded bytes into.
+7 api_usage_example: null
+8 api_shape: ''

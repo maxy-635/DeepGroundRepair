@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.CUDAGraph.debug_dump
+3 api_description: Dumps a CUDA graph to the specified path for debugging and inspection.
+4 api_signature: debug_dump(debug_path)
+5 api_details: ''
+6 api_parameters:
+- debug_path: Specifies the path where the graph will be dumped.
+7 api_usage_example: null
+8 api_shape: null

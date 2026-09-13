@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyProximalGradientDescent
+3 api_description: Applies one FOBOS proximal gradient descent update to a resource
+  variable, combining a gradient step with L1 soft-thresholding and L2 shrinkage using
+  a fixed learning rate.
+4 api_signature: tf.raw_ops.ResourceApplyProximalGradientDescent(var,alpha,l1,l2)
+5 api_details: ''
+6 api_parameters:
+- var: The resource variable to be updated in place.
+- alpha: The scalar learning rate or scaling factor for the gradient update.
+- l1: The scalar L1 regularization strength used in the proximal update.
+- l2: The scalar L2 regularization strength used in the proximal update.
+7 api_usage_example: null
+8 api_shape: ''

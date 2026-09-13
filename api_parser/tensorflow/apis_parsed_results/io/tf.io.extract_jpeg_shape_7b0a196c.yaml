@@ -1,0 +1,10 @@
+2 api_name: tensorflow.io.extract_jpeg_shape
+3 api_description: Parses a JPEG image header to return its shape information without
+  fully decoding the image.
+4 api_signature: tf.io.extract_jpeg_shape(contents)
+5 api_details: ''
+6 api_parameters:
+- contents: A 0-D string tensor containing the JPEG-encoded image whose shape will
+    be extracted.
+7 api_usage_example: null
+8 api_shape: ''

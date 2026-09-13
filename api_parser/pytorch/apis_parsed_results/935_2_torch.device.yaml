@@ -1,0 +1,8 @@
+2 api_name: torch.device
+3 api_description: Represents a compute device for PyTorch tensors and operations,
+  such as CPU or GPU, and lets you specify where data and computation run.
+4 api_signature: class torch.device#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

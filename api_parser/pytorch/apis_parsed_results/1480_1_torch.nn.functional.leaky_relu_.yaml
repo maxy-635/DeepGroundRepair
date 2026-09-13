@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.leaky_relu_
+3 api_description: torch.nn.functional.leaky_relu_ applies the leaky ReLU activation
+  function in-place, modifying the input directly without allocating new memory.
+4 api_signature: torch.nn.functional.leaky_relu_(input,negative_slope)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor on which the element-wise Leaky ReLU activation function
+    is applied.
+- negative_slope: The slope of the function for input values less than zero, allowing
+    a small, non-zero gradient when the unit is not active.
+- inplace: A boolean flag that, if set to True, will modify the input tensor in-place,
+    reducing memory usage.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.linalg.LinearOperator
+3 api_description: Represents a batch of linear operators and exposes matrix-like
+  operations—such as matmul, solve, transpose, and determinant-related methods—without
+  materializing the full matrix.
+4 api_signature: tf.linalg.LinearOperator(dtype,is_non_singular,is_self_adjoint,is_positive_definite,is_square,name)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the operator’s data type, which must match the type used by `matmul`
+    and `solve` inputs.
+- is_non_singular: Indicates whether the operator is expected to be invertible.
+- is_self_adjoint: Indicates whether the operator is expected to equal its Hermitian
+    transpose, or be symmetric for real dtypes.
+- is_positive_definite: Indicates whether the operator is expected to be positive
+    definite, with a positive real quadratic form for all nonzero vectors.
+- is_square: Indicates whether the operator is expected to behave like a square matrix,
+    including batch dimensions.
+- name: Sets the name used to identify this `LinearOperator`.
+7 api_usage_example: null
+8 api_shape: ''

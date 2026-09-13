@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.ResourceSparseApplyCenteredRMSProp
+3 api_description: Applies a sparse centered RMSProp update to `var` using `grad`,
+  `mg`, `ms`, and `mom`, adjusting parameters with running mean/variance estimates
+  plus momentum and learning rate.
+4 api_signature: tf.raw_ops.ResourceSparseApplyCenteredRMSProp(var,grad,indices,lr,rho,momentum,epsilon)
+5 api_details: ''
+6 api_parameters:
+- var: Resource variable holding the weights to be updated.
+- mom: Resource variable holding the momentum accumulator to be updated.
+- lr: Scalar learning rate that controls the step size of the update.
+- rho: Scalar decay rate used to compute the running average of squared gradients.
+- momentum: Scalar momentum factor that determines how much past updates influence
+    the current update.
+- epsilon: Scalar ridge term added for numerical stability.
+- grad: Gradient values used to update the selected entries.
+- indices: Indices selecting which rows of `var`, `ms`, and `mom` to update.
+7 api_usage_example: null
+8 api_shape: ''

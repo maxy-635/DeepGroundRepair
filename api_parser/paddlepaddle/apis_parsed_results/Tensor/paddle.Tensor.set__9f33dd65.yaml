@@ -1,0 +1,48 @@
+2 api_name: paddle.Tensor.set_
+3 api_description: Assigns a tensor to share another tensor’s storage, shape, stride,
+  and offset.
+4 api_signature: paddle.Tensor.set_(x,source,shape,stride,offset)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose underlying data/metadata will be used as the base for the new
+    tensor view or assignment.
+- source: The target tensor source to reference when setting the new tensor’s data,
+    dtype, and layout.
+- shape: The dimensions of the target tensor to construct or view.
+- stride: The step size in each dimension used to interpret the target tensor’s layout
+    in memory.
+- offset: The starting position within `x`’s storage from which the target tensor
+    data is taken.
+7 api_usage_example:
+- import paddle
+- src = paddle.to_tensor([[11., 22., 33.]])
+- src2 = paddle.to_tensor([11., 22., 33., 44., 55., 66.])
+- x = paddle.to_tensor([1., 2., 3., 4., 5.])
+- x.set_()
+- print(x)
+- Tensor(shape=[0], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[])'
+- x = paddle.to_tensor([1., 2., 3., 4., 5.])
+- x.set_(src)
+- print(x)
+- Tensor(shape=[1, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[11., 22., 33.]])'
+- print(x._is_shared_buffer_with(src))
+- 'True'
+- x = paddle.to_tensor([1., 2., 3., 4., 5.])
+- x.set_(src, shape=[2, 1])
+- print(x)
+- Tensor(shape=[2, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[11.],'
+- '[22.]])'
+- x = paddle.to_tensor([1., 2., 3., 4., 5.])
+- x.set_(src2, shape=[3], stride=[2])
+- print(x)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[11., 33., 55.])'
+- x = paddle.to_tensor([1., 2., 3., 4., 5.])
+- x.set_(src2, shape=[5], offset=4)
+- print(x)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[22., 33., 44., 55., 66.])'
+8 api_shape: {}

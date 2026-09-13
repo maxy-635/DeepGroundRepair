@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.StackPushV2
+3 api_description: Pushes an element onto a TensorFlow stack, adding it to the top
+  for later retrieval.
+4 api_signature: tf.raw_ops.StackPushV2(handle,elem)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the resource handle for the target stack.
+- elem: Specifies the tensor value to push onto the stack.
+7 api_usage_example: null
+8 api_shape: ''

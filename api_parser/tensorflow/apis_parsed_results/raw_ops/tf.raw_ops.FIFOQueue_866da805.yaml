@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.FIFOQueue
+3 api_description: Creates a FIFO queue that stores elements and returns them in first-in,
+  first-out order.
+4 api_signature: tf.raw_ops.FIFOQueue(component_types,shapes,capacity)
+5 api_details: ''
+6 api_parameters:
+- component_types: Defines the data type of each component in every queue element.
+- shapes: Optionally constrains the shape of each component in queue elements.
+- capacity: Sets the maximum number of elements the queue can hold, or no limit if
+    negative.
+7 api_usage_example: null
+8 api_shape: ''

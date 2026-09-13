@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyGradientDescent
+3 api_description: Subtracts alpha times delta from the resource variable var to perform
+  a gradient descent update.
+4 api_signature: ResourceApplyGradientDescent(var,alpha,delta)
+5 api_details: ''
+6 api_parameters:
+- var: The variable resource to update in place.
+- alpha: The scalar learning-rate or step-size factor used to scale the update.
+- delta: The gradient or update value to subtract from the variable.
+7 api_usage_example: null
+8 api_shape: ''

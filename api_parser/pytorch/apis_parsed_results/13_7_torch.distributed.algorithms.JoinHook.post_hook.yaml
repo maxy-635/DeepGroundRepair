@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.algorithms.JoinHook.post_hook
+3 api_description: Runs after all processes have joined to let the hook finish any
+  final synchronization or cleanup.
+4 api_signature: post_hook(is_last_joiner)
+5 api_details: ''
+6 api_parameters:
+- is_last_joiner: Indicates whether the current rank is among the last ranks to join.
+7 api_usage_example: null
+8 api_shape: null

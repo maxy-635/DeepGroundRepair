@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingProximalYogiParameters
+3 api_description: Returns the current proximal Yogi optimizer parameters used by
+  TPU embedding training.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingProximalYogiParameters(table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- table_id: Identifies which embedding table to read parameters from, using -1 as
+    the default unset value.
+- table_name: Specifies the embedding table by name, using an empty string as the
+    default unset value.
+- config: Provides configuration data for the TPU embedding proximal Yogi parameters
+    as a string, defaulting to empty.
+- name: Assigns an optional operation name for easier graph identification and debugging.
+7 api_usage_example: null
+8 api_shape: ''

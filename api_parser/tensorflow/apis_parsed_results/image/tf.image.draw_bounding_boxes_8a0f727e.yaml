@@ -1,0 +1,21 @@
+2 api_name: tensorflow.image.draw_bounding_boxes
+3 api_description: Draws zero or more normalized bounding boxes onto a batch of images
+  and returns the images with the boxes overlaid, allowing boxes to extend outside
+  the image bounds.
+4 api_signature: tf.image.draw_bounding_boxes(images,boxes,colors)
+5 api_details: ''
+6 api_parameters:
+- images: Input batch of 4-D images on which bounding boxes will be drawn.
+- boxes: Bounding box coordinates for each image in the batch, with one or more boxes
+    per image.
+- colors: RGBA color values used cyclically to draw the bounding boxes.
+7 api_usage_example:
+- '# create an empty image'
+- img = tf.zeros([1, 3, 3, 3])
+- '# draw a box around the image'
+- box = np.array([0, 0, 1, 1])
+- boxes = box.reshape([1, 1, 4])
+- '# alternate between red and blue'
+- colors = np.array([[1.0, 0.0, 0.0], [0.0, 0.0, 1.0]])
+- tf.image.draw_bounding_boxes(img, boxes, colors)
+8 api_shape: ''

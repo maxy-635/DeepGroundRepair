@@ -1,0 +1,9 @@
+2 api_name: torch.optim.lr_scheduler.CosineAnnealingWarmRestarts.state_dict
+3 api_description: Returns a dictionary capturing the scheduler’s current state so
+  it can be saved and later restored to resume cosine annealing warm restarts.
+4 api_signature: '"state_dict()"'
+5 api_details: ''
+6 api_parameters:
+- self: The scheduler instance whose state is being serialized into a dictionary.
+7 api_usage_example: null
+8 api_shape: null

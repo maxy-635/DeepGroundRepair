@@ -1,0 +1,14 @@
+2 api_name: torch.complex
+3 api_description: Creates a complex tensor from real and imaginary parts.
+4 api_signature: torch.complex(real,imag)
+5 api_details: ''
+6 api_parameters:
+- real: Provides the real-valued component used to construct the complex tensor.
+- imag: Provides the imaginary-valued component used to construct the complex tensor.
+7 api_usage_example:
+- ' real = torch.tensor([1, 2], dtype=torch.float32)'
+- ' imag = torch.tensor([3, 4], dtype=torch.float32)'
+- ' z = torch.complex(real, imag)'
+- ' z'
+- ' z.dtype'
+8 api_shape: null

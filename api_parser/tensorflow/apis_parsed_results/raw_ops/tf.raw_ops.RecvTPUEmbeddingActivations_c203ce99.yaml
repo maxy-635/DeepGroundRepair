@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RecvTPUEmbeddingActivations
+3 api_description: Receives TPU-computed embedding activations for each table and
+  exposes them to the TensorFlow graph as output tensors.
+4 api_signature: tf.raw_ops.RecvTPUEmbeddingActivations(config,name)
+5 api_details: ''
+6 api_parameters:
+- config: Provides the serialized TPU embedding configuration that tells the op how
+    to interpret and receive the activations.
+- name: Optionally assigns a name to the operation for easier graph identification
+    and debugging.
+7 api_usage_example: null
+8 api_shape: ''

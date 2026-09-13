@@ -1,0 +1,11 @@
+2 api_name: tensorflow.summary.record_if
+3 api_description: Enables or disables TensorFlow summary recording based on a boolean,
+  scalar boolean Tensor, or callable condition, with callables allowing deferred evaluation
+  in eager mode and inside `@tf.function` traces.
+4 api_signature: tf.summary.record_if(condition)
+5 api_details: ''
+6 api_parameters:
+- condition: Controls whether summary recording is enabled, accepting a boolean, boolean
+    Tensor, or callable that provides one.
+7 api_usage_example: null
+8 api_shape: ''

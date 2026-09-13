@@ -1,0 +1,12 @@
+2 api_name: torch.view_as_real
+3 api_description: Returns a real-valued view of a complex tensor, with the last dimension
+  storing the real and imaginary parts.
+4 api_signature: torch.view_as_real(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be converted into a real-valued view of its complex numbers.
+7 api_usage_example:
+- ' x=torch.randn(4, dtype=torch.cfloat)'
+- ' x'
+- ' torch.view_as_real(x)'
+8 api_shape: null

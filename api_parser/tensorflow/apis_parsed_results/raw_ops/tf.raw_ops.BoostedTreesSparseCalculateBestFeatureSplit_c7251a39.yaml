@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesSparseCalculateBestFeatureSplit
+3 api_description: Computes split gains for each feature and returns the best threshold,
+  gain, and left/right node contributions for each splittable node, along with the
+  node IDs each feature can split.
+4 api_signature: tf.raw_ops.BoostedTreesSparseCalculateBestFeatureSplit(node_id_range,stats_summary_indices,stats_summary_values,stats_summary_shape,logits_dimension,split_type,name)
+5 api_details: ''
+6 api_parameters:
+- node_id_range: Specifies the inclusive-exclusive range of tree node IDs whose split
+    statistics should be processed.
+- stats_summary_indices: Provides the sparse tensor indices for per-node, per-feature,
+    per-bucket gradient and Hessian summary entries.
+- stats_summary_values: Provides the corresponding numeric values for each sparse
+    stats summary entry.
+- stats_summary_shape: Defines the dense shape of the sparse stats summary tensor.
+- logits_dimension: Sets the number of logit dimensions or classes used to interpret
+    the statistics.
+- split_type: Chooses whether the split search uses inequality or equality comparisons.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

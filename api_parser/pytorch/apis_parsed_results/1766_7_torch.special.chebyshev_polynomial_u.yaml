@@ -1,0 +1,11 @@
+2 api_name: torch.special.chebyshev_polynomial_u
+3 api_description: Computes the Chebyshev polynomial of the second kind U_n(input)
+  for a given input tensor and polynomial degree.
+4 api_signature: torch.special.chebyshev_polynomial_u(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor of values at which to evaluate the Chebyshev polynomial of the
+    second kind.
+- n: The degree of the Chebyshev polynomial to compute.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: torch.fft.ihfft2
+3 api_description: Computes the 2D inverse FFT for real-valued input over the last
+  two dimensions by default, equivalent to ihfftn with two transformed axes.
+4 api_signature: torch.fft.ihfft2(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing Hermitian-symmetric frequency-domain data to invert.
+- s: Sets the transformed signal size, padding or trimming each transformed dimension
+    as needed; `-1` leaves a dimension unchanged.
+- dim: Specifies which dimensions the Hermitian inverse FFT is applied to.
+- norm: Controls the normalization convention for the inverse transform, determining
+    whether scaling is applied as none, `1/n`, or `1/sqrt(n)`.
+7 api_usage_example:
+- ' T = torch.rand(10, 10)'
+- ' t = torch.fft.ihfft2(t)'
+- ' t.size()'
+8 api_shape: null

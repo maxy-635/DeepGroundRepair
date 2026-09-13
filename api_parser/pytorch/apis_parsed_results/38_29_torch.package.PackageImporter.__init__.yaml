@@ -1,0 +1,11 @@
+2 api_name: torch.package.PackageImporter.__init__
+3 api_description: Initializes a package importer that opens a file or buffer for
+  loading packaged modules and verifies the package only depends on modules permitted
+  by `module_allowed`.
+4 api_signature: __init__(file_or_buffer)
+5 api_details: ''
+6 api_parameters:
+- file_or_buffer: Specifies the package archive to open, either as a readable/seekable
+    file-like object or as a filename/path.
+7 api_usage_example: null
+8 api_shape: null

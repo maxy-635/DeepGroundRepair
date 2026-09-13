@@ -1,0 +1,37 @@
+2 api_name: paddle.audio.features.LogMelSpectrogram
+3 api_description: Computes a log-mel spectrogram from input audio signals, converting
+  waveforms into time-frequency features on the mel scale.
+4 api_signature: paddle.audio.features.LogMelSpectrogram(sr,n_fft,hop_length,win_length,window,power,center,pad_mode,n_mels,f_min,f_max,htk,norm,ref_value,amin,top_db,dtype)
+5 api_details: ''
+6 api_parameters:
+- sr: Sets the audio sample rate used to interpret the waveform.
+- n_fft: Sets the FFT size, which determines the frequency resolution of each frame.
+- hop_length: Sets the number of samples between adjacent analysis frames.
+- win_length: Sets the length of the window applied to each frame before the FFT.
+- window: Chooses the window function used to taper each frame before spectral analysis.
+- power: Sets the exponent applied to the magnitude spectrogram before converting
+    to mel features.
+- center: Controls whether frames are centered by padding the input signal.
+- pad_mode: Chooses how the input signal is padded when centering is enabled.
+- n_mels: Sets the number of mel frequency bands in the output spectrogram.
+- f_min: Sets the lowest frequency included in the mel filter bank.
+- f_max: Sets the highest frequency included in the mel filter bank.
+- htk: Selects the HTK mel scale formula instead of the default mel scale.
+- norm: Sets the normalization method used when building the mel filter bank.
+- ref_value: Defines the reference level used when converting values to decibels.
+- amin: Sets the minimum magnitude threshold used to avoid taking the log of zero.
+- top_db: Limits the dynamic range of the output in decibels.
+- dtype: Sets the data type used for the input and window computations.
+7 api_usage_example:
+- import paddle
+- from paddle.audio.features import LogMelSpectrogram
+- sample_rate = 16000
+- wav_duration = 0.5
+- num_channels = 1
+- num_frames = sample_rate * wav_duration
+- wav_data = paddle.linspace(-1.0, 1.0, int(num_frames)) * 0.1
+- waveform = wav_data.tile([num_channels, 1])
+- feature_extractor = LogMelSpectrogram(sr=sample_rate, n_fft=512, window = 'hann',
+  power = 1.0)
+- feats = feature_extractor(waveform)
+8 api_shape: {}

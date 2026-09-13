@@ -1,0 +1,12 @@
+2 api_name: tensorflow.nn.collapse_repeated
+3 api_description: tensorflow.nn.collapse_repeated merges consecutive repeated labels
+  into single labels, simplifying sequences by collapsing duplicates.
+4 api_signature: tf.nn.collapse_repeated(labels,seq_length)
+5 api_details: ''
+6 api_parameters:
+- labels: A tensor representing a batch of sequences with each sequence having a maximum
+    length defined by seq_length.
+- seq_length: A tensor that holds the actual length of each sequence in the batch,
+    indicating how many elements are valid in each sequence.
+7 api_usage_example: null
+8 api_shape: ''

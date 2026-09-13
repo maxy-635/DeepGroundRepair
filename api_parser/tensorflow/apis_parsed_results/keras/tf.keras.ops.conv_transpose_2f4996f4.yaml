@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.conv_transpose
+3 api_description: Performs N-D transposed convolution (deconvolution) for 1D, 2D,
+  or 3D inputs to upsample feature maps using learned kernels.
+4 api_signature: tf.keras.ops.conv_transpose(inputs,kernel,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- inputs: The input tensor to be upsampled by the transposed convolution.
+- kernel: The convolution kernel that transforms input channels into output channels.
+- strides: The step size used for the transposed convolution along each spatial dimension.
+- padding: The padding mode that determines how boundary values are handled during
+    the operation.
+7 api_usage_example: null
+8 api_shape: ''

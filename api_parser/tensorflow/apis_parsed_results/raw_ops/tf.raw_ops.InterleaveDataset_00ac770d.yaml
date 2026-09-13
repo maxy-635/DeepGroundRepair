@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.InterleaveDataset
+3 api_description: Applies a function to each input element to produce datasets, then
+  flattens and interleaves up to block_length consecutive elements from multiple inputs
+  into one dataset.
+4 api_signature: tf.raw_ops.InterleaveDataset(input_dataset,cycle_length,block_length,f,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset whose elements are interleaved to produce the output
+    dataset.
+- cycle_length: The number of input dataset branches to cycle through concurrently.
+- block_length: The number of consecutive elements to take from each branch before
+    moving to the next one.
+- f: A function that maps each input element, along with any extra arguments, to a
+    dataset used for interleaving.
+- output_types: The data types of the elements produced by the resulting dataset.
+- output_shapes: The shapes of the elements produced by the resulting dataset.
+7 api_usage_example: null
+8 api_shape: ''

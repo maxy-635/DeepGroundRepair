@@ -1,0 +1,18 @@
+2 api_name: torch.utils.model_zoo.load_url
+3 api_description: Downloads and loads a Torch-serialized object from the specified
+  URL.
+4 api_signature: torch.utils.model_zoo.load_url(url,model_dir,map_location,progress,check_hash,weights_only)
+5 api_details: ''
+6 api_parameters:
+- url: Specifies the URL from which to download the object.
+- model_dir: Sets the directory where the downloaded object is saved.
+- map_location: Controls how storage locations are remapped when loading the object.
+- progress: Toggles display of a download progress bar to stderr.
+- check_hash: Verifies the file contents against the SHA256 hash embedded in the filename.
+- weights_only: Loads only tensor weights, avoiding complex pickled objects for safer
+    loading.
+7 api_usage_example:
+- ' state_dict = torch.hub.load_state_dict_from_url('
+- '...     "https://s3.amazonaws.com/pytorch/models/resnet18-5c106cde.pth"'
+- '... )'
+8 api_shape: null

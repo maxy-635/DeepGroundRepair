@@ -1,0 +1,15 @@
+2 api_name: torch.baddbmm
+3 api_description: Computes a batched matrix multiplication of batch1 and batch2,
+  then adds input to the result.
+4 api_signature: torch.baddbmm(input,batch1,batch2,*,beta,alpha)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor that is added to the batched matrix product as the starting value.
+- batch1: The first batch of matrices that is multiplied with `batch2`.
+- batch2: The second batch of matrices that is multiplied with `batch1`.
+7 api_usage_example:
+- ' M = torch.randn(10, 3, 5)'
+- ' batch1 = torch.randn(10, 3, 4)'
+- ' batch2 = torch.randn(10, 4, 5)'
+- ' torch.baddbmm(M, batch1, batch2).size()'
+8 api_shape: null

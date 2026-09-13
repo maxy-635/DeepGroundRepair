@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.eye
+3 api_description: Returns a 2-D tensor with ones on a specified diagonal and zeros
+  elsewhere, matching NumPy's eye behavior in TensorFlow.
+4 api_signature: tf.experimental.numpy.eye(N,M,k,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

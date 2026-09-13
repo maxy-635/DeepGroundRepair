@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.ops.fori_loop
+3 api_description: Runs a loop body a fixed number of times from a start index to
+  an end index, threading loop variables through each iteration and returning the
+  final values.
+4 api_signature: tf.keras.ops.fori_loop(lower,upper,body_fun,init_val)
+5 api_details: ''
+6 api_parameters:
+- lower: Sets the starting value of the loop variable.
+- upper: Sets the stopping upper bound for the loop variable.
+- body_fun: Defines the loop body that updates and returns the loop state each iteration.
+- init_val: Provides the initial loop state before iteration begins.
+7 api_usage_example:
+- lower = 0
+- upper = 10
+- 'body_fun = lambda i, s: (i + 1, s + i)'
+- init_val = 0
+- keras.ops.fori_loop(lower, upper, body_fun, init_val)
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.image.crop_images
+3 api_description: Crops a batch of images to the specified height and width.
+4 api_signature: tf.keras.ops.image.crop_images(images,target_height,target_width)
+5 api_details: ''
+6 api_parameters:
+- images: Input image(s) to crop, either a 4-D batch or a single 3-D image.
+- target_height: The desired height of each cropped output image.
+- target_width: The desired width of each cropped output image.
+7 api_usage_example:
+- images = np.reshape(np.arange(1, 28, dtype="float32"), [3, 3, 3])
+- 'images[:,:,0] # print the first channel of the images'
+- cropped_images = keras.image.crop_images(images, 0, 0, 2, 2)
+- 'cropped_images[:,:,0] # print the first channel of the cropped images'
+8 api_shape: ''

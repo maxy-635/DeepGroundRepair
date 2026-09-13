@@ -1,0 +1,15 @@
+2 api_name: torch.nn.LazyBatchNorm2d
+3 api_description: torch.nn.LazyBatchNorm2d is a Batch Normalization layer for 2D
+  inputs that initializes its parameters lazily, allowing for dynamic input shapes
+  without requiring predefined dimensions.
+4 api_signature: torch.nn.LazyBatchNorm2d(eps,affine,track_running_stats)
+5 api_details: ''
+6 api_parameters:
+- eps: Ensures numerical stability by preventing division by zero in the normalization
+    process.
+- affine: Determines whether the layer has learnable parameters for scaling and shifting
+    the normalized output.
+- track_running_stats: Controls whether the module maintains running statistics for
+    mean and variance or relies solely on batch statistics.
+7 api_usage_example: null
+8 api_shape: null

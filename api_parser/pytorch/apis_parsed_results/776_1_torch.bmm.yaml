@@ -1,0 +1,14 @@
+2 api_name: torch.bmm
+3 api_description: Computes batched matrix multiplication for pairs of matrices in
+  two 3D tensors, producing one result matrix per batch.
+4 api_signature: torch.bmm(input,mat2)
+5 api_details: ''
+6 api_parameters:
+- input: The first batch of matrices to multiply.
+- mat2: The second batch of matrices to multiply.
+7 api_usage_example:
+- ' input = torch.randn(10, 3, 4)'
+- ' mat2 = torch.randn(10, 4, 5)'
+- ' res = torch.bmm(input, mat2)'
+- ' res.size()'
+8 api_shape: null

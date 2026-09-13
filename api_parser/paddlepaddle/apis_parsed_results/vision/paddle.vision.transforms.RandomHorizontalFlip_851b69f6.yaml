@@ -1,0 +1,23 @@
+2 api_name: paddle.vision.transforms.RandomHorizontalFlip
+3 api_description: Randomly flips the input horizontally with a specified probability.
+4 api_signature: paddle.vision.transforms.RandomHorizontalFlip(prob)
+5 api_details: ''
+6 api_parameters:
+- prob: Controls how likely the input is to be flipped horizontally, using a value
+    between 0 and 1.
+7 api_usage_example:
+- import paddle
+- fake_img = paddle.to_tensor([[[0, 0, 1], [0, 0, 1], [1, 1, 1]]])
+- print(fake_img)
+- Tensor(shape=[1, 3, 3], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[[[0, 0, 1],'
+- '[0, 0, 1],'
+- '[1, 1, 1]]])'
+- transform = paddle.vision.transforms.RandomHorizontalFlip(prob=1)
+- result = transform(fake_img)
+- print(result)
+- Tensor(shape=[1, 3, 3], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[[[1, 0, 0],'
+- '[1, 0, 0],'
+- '[1, 1, 1]]])'
+8 api_shape: {}

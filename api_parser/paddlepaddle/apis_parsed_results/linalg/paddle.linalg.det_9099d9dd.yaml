@@ -1,0 +1,16 @@
+2 api_name: paddle.linalg.det
+3 api_description: Computes the determinant of a square matrix, or of each matrix
+  in a batch of square matrices.
+4 api_signature: paddle.linalg.det(x)
+5 api_details: ''
+6 api_parameters:
+- x: The square matrix or batch of square matrices whose determinant is computed.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- x =  paddle.randn([3,3,3])
+- A = paddle.linalg.det(x)
+- print(A)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-1.29280925,  0.77832544,  0.89754158])'
+8 api_shape: {}

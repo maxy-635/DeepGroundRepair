@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.gamma.Gamma
+3 api_description: Gamma distribution over positive values, parameterized by concentration
+  and rate or scale, with methods for sampling, log probability, entropy, moments,
+  and reparameterized gradients where supported.
+4 api_signature: torch.distributions.gamma.Gamma(concentration,rate)
+5 api_details: ''
+6 api_parameters:
+- concentration: Controls the shape of the Gamma distribution, determining how spread
+    out or skewed the values are.
+- rate: Controls the distribution’s rate (inverse scale), determining how quickly
+    probability density decays.
+7 api_usage_example:
+- ' m = Gamma(torch.tensor([1.0]), torch.tensor([1.0]))'
+- ' m.sample()  # Gamma distributed with concentration=1 and rate=1'
+8 api_shape: null

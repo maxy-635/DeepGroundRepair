@@ -1,0 +1,11 @@
+2 api_name: tensorflow.experimental.numpy.float32
+3 api_description: 32-bit single-precision floating-point scalar type compatible with
+  C float, used for numeric values and exposing standard scalar array-like attributes.
+4 api_signature: '"tf.experimental.numpy.float32"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- np.single(10.0).as_integer_ratio()
+- np.single(0.0).as_integer_ratio()
+- np.single(-.25).as_integer_ratio()
+8 api_shape: ''

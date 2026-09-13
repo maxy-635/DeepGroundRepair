@@ -1,0 +1,47 @@
+2 api_name: paddle.static.ExponentialMovingAverage
+3 api_description: Maintains an exponential moving average of model parameters using
+  a decay factor, updating a smoothed parameter estimate over time.
+4 api_signature: paddle.static.ExponentialMovingAverage(decay,name)
+5 api_details: ''
+6 api_parameters:
+- decay: Controls how quickly the moving average updates, with values close to 1 making
+    it change slowly.
+- name: Sets the optional name of the object, mainly for identification, and is usually
+    left as `None`.
+7 api_usage_example:
+- import numpy
+- import paddle
+- import paddle.static as static
+- from paddle.static import ExponentialMovingAverage
+- paddle.enable_static()
+- data = static.data(name='x', shape=[-1, 5], dtype='float32')
+- hidden = static.nn.fc(x=data, size=10)
+- cost = paddle.mean(hidden)
+- test_program = static.default_main_program().clone(for_test=True)
+- optimizer = paddle.optimizer.Adam(learning_rate=0.001)
+- optimizer.minimize(cost)
+- ema = ExponentialMovingAverage(0.999)
+- ema.update()
+- place = paddle.CPUPlace()
+- exe = static.Executor(place)
+- exe.run(static.default_startup_program())
+- 'for pass_id in range(3):'
+- '    for batch_id in range(6):'
+- '        feed_data = numpy.random.random(size=(10, 5)).astype(''float32'')'
+- '        exe.run(program=static.default_main_program(),'
+- '        feed={''x'': feed_data},'
+- '        fetch_list=[cost.name])'
+- '    # usage 1'
+- '    with ema.apply(exe):'
+- '        feed_data = numpy.random.random(size=(10, 5)).astype(''float32'')'
+- '        exe.run(program=test_program,'
+- '            feed={''x'': feed_data},'
+- '            fetch_list=[hidden.name])'
+- '    # usage 2'
+- '    with ema.apply(exe, need_restore=False):'
+- '        feed_data = numpy.random.random(size=(10, 5)).astype(''float32'')'
+- '        exe.run(program=test_program,'
+- '            feed={''x'': feed_data},'
+- '            fetch_list=[hidden.name])'
+- '    ema.restore(exe)'
+8 api_shape: {}

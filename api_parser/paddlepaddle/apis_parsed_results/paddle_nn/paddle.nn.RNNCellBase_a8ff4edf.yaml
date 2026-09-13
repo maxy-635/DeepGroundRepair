@@ -1,0 +1,8 @@
+2 api_name: paddle.nn.RNNCellBase
+3 api_description: RNNCellBase serves as a foundational for defining the computation
+  process in RNNs, transforming input and state into output and updated state.
+4 api_signature: paddle.nn.RNNCellBase
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

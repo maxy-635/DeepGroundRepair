@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.Resizing
+3 api_description: The tf.keras.layers.Resizing layer resizes input images to a specified
+  target height and width, accepting both batched (4D) and unbatched (3D) tensors
+  in 'channels_last' format.
+4 api_signature: tf.keras.layers.Resizing(height, width, interpolation)
+5 api_details: ''
+6 api_parameters:
+- height: Specifies the desired height of the output image.
+- width: Specifies the desired width of the output image.
+- interpolation: Determines the method used for resizing, with options for various
+    interpolation techniques.
+7 api_usage_example: null
+8 api_shape: null

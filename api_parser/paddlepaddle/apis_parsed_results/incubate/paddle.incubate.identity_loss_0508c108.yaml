@@ -1,0 +1,13 @@
+2 api_name: paddle.incubate.identity_loss
+3 api_description: Marks a tensor as contributing to the loss calculation on IPU.
+4 api_signature: paddle.incubate.identity_loss(x,reduction)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor containing the batch data used to compute the identity loss.
+- reduction: Specifies how to aggregate the loss values, using sum, mean, or no reduction.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- loss = paddle.static.data(name="loss", shape=[-1, 1], dtype="float32")
+- out = paddle.incubate.identity_loss(loss, reduction=1)
+8 api_shape: {}

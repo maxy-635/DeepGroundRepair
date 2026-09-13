@@ -1,0 +1,13 @@
+2 api_name: tensorflow.IndexedSlicesSpec
+3 api_description: Type spec for tf.IndexedSlices, describing the shape, dtype, and
+  indices needed to represent sparse slice values.
+4 api_signature: tf.IndexedSlicesSpec(shape,dtype,indices_dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Sets the expected dense shape of the IndexedSlices, or allows any dense shape
+    when `None`.
+- dtype: Specifies the data type of the values stored in the IndexedSlices.
+- indices_dtype: Specifies the data type of the indices used in the IndexedSlices,
+    either `tf.int32` or `tf.int64`.
+7 api_usage_example: null
+8 api_shape: ''

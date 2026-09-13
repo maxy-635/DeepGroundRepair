@@ -1,0 +1,21 @@
+2 api_name: paddle.Tensor.uniform_
+3 api_description: In-place fills a tensor with random values sampled uniformly from
+  a specified range.
+4 api_signature: paddle.Tensor.uniform_(x,min,max)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to fill with random values.
+- min: The inclusive lower bound of the random value range.
+- max: The exclusive upper bound of the random value range.
+7 api_usage_example:
+- import paddle
+- '# example:'
+- x = paddle.ones(shape=[3, 4])
+- x.uniform_()
+- '>>>'
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.50484276,  0.49580324,  0.33357990, -0.93924278],'
+- '[ 0.39779735,  0.87677515, -0.24377221,  0.06212139],'
+- '[-0.92499518, -0.96244860,  0.79210341, -0.78228098]])'
+- '>>>'
+8 api_shape: {}

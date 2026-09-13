@@ -1,0 +1,19 @@
+2 api_name: paddle.lerp
+3 api_description: Returns a value between x and y by linearly interpolating according
+  to the given weight.
+4 api_signature: paddle.lerp(x,y,weight)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the starting tensor values to interpolate from.
+- y: Provides the ending tensor values to interpolate toward.
+- weight: Controls the interpolation amount between `x` and `y`.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(1., 5., dtype='float32')
+- y = paddle.empty([4], dtype='float32')
+- y.fill_(10.)
+- out = paddle.lerp(x, y, 0.5)
+- out
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[5.50000000, 6.        , 6.50000000, 7.        ])'
+8 api_shape: {}

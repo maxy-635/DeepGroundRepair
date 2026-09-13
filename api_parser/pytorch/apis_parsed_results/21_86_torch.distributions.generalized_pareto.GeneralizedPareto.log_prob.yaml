@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.generalized_pareto.GeneralizedPareto.log_prob
+3 api_description: Computes the log probability density or mass of values under a
+  Generalized Pareto distribution.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The sample value(s) whose log probability under the Generalized Pareto distribution
+    is computed.
+- concentration: The distribution shape parameter that controls tail behavior.
+- scale: The positive scale parameter that sets the spread of the distribution.
+- loc: The location or threshold parameter that shifts the distribution.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.conj_physical
+3 api_description: Returns the element-wise conjugate of a tensor, or the original
+  tensor unchanged for non-complex dtypes.
+4 api_signature: torch.conj_physical(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are physically conjugated.
+7 api_usage_example:
+- ' torch.conj_physical(torch.tensor([-1 + 1j, -2 + 2j, 3 - 3j]))'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.preprocessing.image.random_channel_shift
+3 api_description: Randomly shifts image color channels by a small amount, for data
+  augmentation. Deprecated.
+4 api_signature: tf.keras.preprocessing.image.random_channel_shift(x,intensity_range)
+5 api_details: ''
+6 api_parameters:
+- x: The 3D input image tensor whose channel values will be shifted.
+- intensity_range: The range of values used to randomly shift each channel's intensity.
+7 api_usage_example: null
+8 api_shape: ''

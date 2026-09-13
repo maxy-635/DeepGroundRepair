@@ -1,0 +1,12 @@
+2 api_name: tensorflow.nn.selu
+3 api_description: The tensorflow.nn.selu function applies the Scaled Exponential
+  Linear Unit activation, scaling negative inputs by scale * alpha * (exp(x) - 1)
+  and positive inputs by scale * x, recommended to be used with variance scaling initializer
+  and alpha dropout for self-normalizing neural networks.
+4 api_signature: tf.nn.selu(features)
+5 api_details: ''
+6 api_parameters:
+- features: The input tensor to which the SELU activation function will be applied,
+    and it must be of type half, bfloat16, float32, or float64.
+7 api_usage_example: null
+8 api_shape: ''

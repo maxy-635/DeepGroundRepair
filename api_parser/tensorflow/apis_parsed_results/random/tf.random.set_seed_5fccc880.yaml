@@ -1,0 +1,9 @@
+2 api_name: tensorflow.random.set_seed
+3 api_description: Sets TensorFlow’s global random seed so random operations produce
+  reproducible results by combining this seed with any operation-level seed.
+4 api_signature: tf.random.set_seed(seed)
+5 api_details: ''
+6 api_parameters:
+- seed: Sets the random seed used to make TensorFlow's random number generation deterministic.
+7 api_usage_example: null
+8 api_shape: ''

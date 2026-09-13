@@ -1,0 +1,19 @@
+2 api_name: tensorflow.keras.ops.bincount
+3 api_description: Counts how many times each integer value appears in a tensor and
+  returns the occurrence counts.
+4 api_signature: tf.keras.ops.bincount(x,weights,minlength)
+5 api_details: ''
+6 api_parameters:
+- x: A 1D tensor of non-negative integers to count into bins.
+- weights: An optional tensor of per तत्व weights with the same length as `x` that
+    scales each bin increment.
+- minlength: An optional minimum number of output bins, padding with zeros if needed.
+7 api_usage_example:
+- x = keras.ops.array([1, 2, 2, 3], dtype="uint8")
+- keras.ops.bincount(x)
+- weights = x / 2
+- weights
+- keras.ops.bincount(x, weights=weights)
+- 'minlength = (keras.ops.max(x).numpy() + 1) + 2 # 6'
+- keras.ops.bincount(x, minlength=minlength)
+8 api_shape: ''

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.nn.depthwise_conv2d_backprop_input
+3 api_description: Computes input gradients for a depthwise convolution operation
+  in TensorFlow.
+4 api_signature: tf.nn.depthwise_conv2d_backprop_input(input_sizes,filter,out_backprop,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input_sizes: Specifies the shape of the input tensor as a vector, dependent on the
+    data format used.
+- filter: Defines the filter tensor with dimensions [filter_height, filter_width,
+    in_channels, depthwise_multiplier] for the convolution.
+- out_backprop: Represents the gradient tensor with respect to the output, matching
+    the filter's data type and shaped based on the data format.
+- strides: Indicates the stride length for each dimension of the input tensor during
+    the convolution operation.
+- padding: Determines the padding method for the input tensor, either as a preset
+    string ('SAME' or 'VALID') or as an explicit padding list.
+7 api_usage_example: null
+8 api_shape: ''

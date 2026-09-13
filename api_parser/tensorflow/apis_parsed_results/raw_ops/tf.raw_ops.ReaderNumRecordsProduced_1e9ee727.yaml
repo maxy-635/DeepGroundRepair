@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ReaderNumRecordsProduced
+3 api_description: Returns how many records the reader has produced, matching the
+  count of successful ReaderRead calls.
+4 api_signature: tf.raw_ops.ReaderNumRecordsProduced(reader_handle)
+5 api_details: ''
+6 api_parameters:
+- reader_handle: Handle to the Reader resource whose produced record count will be
+    read.
+7 api_usage_example: null
+8 api_shape: ''

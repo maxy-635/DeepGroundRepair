@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ConvertToCooTensor
+3 api_description: Converts a dense tensor into a sparse COO tensor representation
+  by returning the nonzero values and their coordinates.
+4 api_signature: tf.raw_ops.ConvertToCooTensor(indices_or_row_splits,values,sample_count,name)
+5 api_details: ''
+6 api_parameters:
+- indices_or_row_splits: Provides the row-split or index information used to construct
+    the COO tensor structure.
+- values: Supplies the tensor values that will be placed into the COO tensor.
+- sample_count: Specifies how many samples are represented, and must be at least 1.
+- name: Optionally assigns a name to the operation for graph construction and debugging.
+7 api_usage_example: null
+8 api_shape: ''

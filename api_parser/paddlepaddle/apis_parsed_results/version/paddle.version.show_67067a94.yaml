@@ -1,0 +1,35 @@
+2 api_name: paddle.version.show
+3 api_description: Returns the installed Paddle version when the package is tagged;
+  otherwise returns the corresponding commit ID.
+4 api_signature: paddle.version.show()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- '# Case 1: paddle is tagged with 2.2.0'
+- paddle.version.show()
+- '>>>'
+- 'full_version: 2.2.0'
+- 'major: 2'
+- 'minor: 2'
+- 'patch: 0'
+- 'rc: 0'
+- 'cuda: ''10.2'''
+- 'cudnn: ''7.6.5'''
+- 'xpu_xre: ''4.32.0.1'''
+- 'xpu_xccl: ''1.0.7'''
+- 'xpu_xhpc: ''20231208'''
+- 'cinn: False'
+- '>>>'
+- '# Case 2: paddle is not tagged'
+- paddle.version.show()
+- '>>>'
+- 'commit: cfa357e984bfd2ffa16820e354020529df434f7d'
+- 'cuda: ''10.2'''
+- 'cudnn: ''7.6.5'''
+- 'xpu_xre: ''4.32.0.1'''
+- 'xpu_xccl: ''1.0.7'''
+- 'xpu_xhpc: ''20231208'''
+- 'cinn: False'
+- '>>>'
+8 api_shape: {}

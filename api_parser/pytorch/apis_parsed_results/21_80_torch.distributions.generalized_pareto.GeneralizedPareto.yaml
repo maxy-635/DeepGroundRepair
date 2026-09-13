@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.generalized_pareto.GeneralizedPareto
+3 api_description: A distribution over nonnegative values that models generalized
+  Pareto tails, with configurable concentration, scale, and location parameters, and
+  methods for sampling, computing log probabilities, and accessing distribution statistics.
+4 api_signature: torch.distributions.generalized_pareto.GeneralizedPareto(loc,scale,concentration)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the distribution's starting point or shift on the real line.
+- scale: Controls the spread or stretching of the distribution; must be positive.
+- concentration: Determines the tail shape and heaviness of the distribution.
+7 api_usage_example:
+- ' m = GeneralizedPareto(torch.tensor([0.1]), torch.tensor([2.0]), torch.tensor([0.4]))'
+- ' m.sample()  # sample from a Generalized Pareto distribution with loc=0.1, scale=2.0,
+  and concentration=0.4'
+8 api_shape: null

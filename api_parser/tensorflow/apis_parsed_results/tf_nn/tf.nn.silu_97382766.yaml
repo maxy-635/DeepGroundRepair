@@ -1,0 +1,13 @@
+2 api_name: tensorflow.nn.silu
+3 api_description: The tensorflow.nn.silu API computes the SiLU (Swish) activation
+  function, which is defined as x * sigmoid(beta * x), where beta is a hyperparameter
+  with a default value of 1.0. This activation function was introduced in works by
+  Hendrycks et al. (2016) and Elfwing et al. (2017), and independently discovered
+  as 'swish' by Ramachandran et al. (2017).
+4 api_signature: tf.nn.silu(features)
+5 api_details: ''
+6 api_parameters:
+- features: Represents the input tensor containing the preactivation values to which
+    the SiLU activation function will be applied.
+7 api_usage_example: null
+8 api_shape: ''

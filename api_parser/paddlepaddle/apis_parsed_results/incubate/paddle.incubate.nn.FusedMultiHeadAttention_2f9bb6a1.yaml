@@ -1,0 +1,25 @@
+2 api_name: paddle.incubate.nn.FusedMultiHeadAttention
+3 api_description: Computes fused multi-head attention by jointly attending query
+  vectors over key-value pairs across multiple heads to produce output representations.
+4 api_signature: paddle.incubate.nn.FusedMultiHeadAttention(embed_dim,num_heads,dropout_rate,attn_dropout_rate,kdim,vdim,normalize_before,need_weights,epsilon,name)
+5 api_details: ''
+6 api_parameters:
+- embed_dim: Sets the input and output feature size used by the attention layer.
+- num_heads: Specifies how many attention heads the multi-head attention mechanism
+    uses.
+- dropout_rate: Controls the dropout applied after attention to randomly drop some
+    attention targets.
+- attn_dropout_rate: Controls the dropout applied within attention on attention weights.
+- kdim: Sets the feature size of the key vectors, defaulting to `embed_dim` if not
+    provided.
+- vdim: Sets the feature size of the value vectors, defaulting to `embed_dim` if not
+    provided.
+- normalize_before: Chooses whether layer normalization is applied before attention
+    or after it.
+- need_weights: Indicates whether attention weights should be returned, though only
+    `False` is supported.
+- epsilon: Adds a small constant to the variance to avoid division by zero during
+    normalization.
+- name: Provides an optional name for the layer instance.
+7 api_usage_example: []
+8 api_shape: {}

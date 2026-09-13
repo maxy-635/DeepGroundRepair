@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.FractionalMaxPool2D
+3 api_description: The paddle.nn.FractionalMaxPool2D API performs 2D fractional max
+  pooling on an input tensor, allowing for non-integer downsampling ratios as described
+  in relevant literature.
+4 api_signature: paddle.nn.FractionalMaxPool2D(output_size,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the desired output dimensions (H, W) for the pooling operation,
+    allowing flexibility with integers or maintaining input size with None.
+- kernel_size: Defines the dimensions of the pooling kernel, either as a tuple (kernel_size_Height,
+    kernel_size_Width) or a square of an integer, with None defaulting to non-overlapping
+    mode.
+7 api_usage_example: []
+8 api_shape: null

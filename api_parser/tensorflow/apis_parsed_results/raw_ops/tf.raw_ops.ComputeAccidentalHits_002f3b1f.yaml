@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ComputeAccidentalHits
+3 api_description: Finds which sampled candidate ids match the true labels, returning
+  their positions so matching sampled logits can be adjusted or removed in NCE-style
+  training.
+4 api_signature: tf.raw_ops.ComputeAccidentalHits(true_classes,sampled_candidates,num_true)
+5 api_details: ''
+6 api_parameters:
+- true_classes: The ground-truth class IDs for each context, produced by `UnpackSparseLabels`.
+- sampled_candidates: The candidate class IDs that were randomly sampled, produced
+    by `CandidateSampler`.
+- num_true: The number of true labels associated with each context.
+7 api_usage_example: null
+8 api_shape: ''

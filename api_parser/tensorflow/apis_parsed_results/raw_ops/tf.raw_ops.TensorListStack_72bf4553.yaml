@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorListStack
+3 api_description: Stacks all tensors from a TensorList into a single tensor, requiring
+  matching shapes and optionally using num_elements to specify the list length.
+4 api_signature: tf.raw_ops.TensorListStack(input_handle,element_dtype,num_elements)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The variant tensor that holds the TensorList to be stacked.
+- element_dtype: The data type of the elements expected in the resulting stacked tensor.
+- num_elements: The number of elements to stack, or -1 to use all available elements.
+7 api_usage_example: null
+8 api_shape: ''

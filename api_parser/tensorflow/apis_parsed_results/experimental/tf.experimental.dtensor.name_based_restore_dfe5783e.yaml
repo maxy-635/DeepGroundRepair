@@ -1,0 +1,13 @@
+2 api_name: tensorflow.experimental.dtensor.name_based_restore
+3 api_description: Restores DTensor variables from a checkpoint by matching tensor
+  names, requiring pre-initialized variables with the same shape and dtype, and currently
+  supporting only a single mesh.
+4 api_signature: tf.experimental.dtensor.name_based_restore(mesh,checkpoint_prefix,name_tensor_dict)
+5 api_details: ''
+6 api_parameters:
+- mesh: Specifies the single mesh onto which all tensors are restored.
+- checkpoint_prefix: Specifies the checkpoint prefix used to locate the saved data.
+- name_tensor_dict: Provides an ordered mapping from tensor names to DTensors whose
+    shapes and dtypes must match the saved tensors.
+7 api_usage_example: null
+8 api_shape: ''

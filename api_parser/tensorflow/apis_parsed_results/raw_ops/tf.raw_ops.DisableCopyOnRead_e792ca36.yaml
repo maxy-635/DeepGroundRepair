@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.DisableCopyOnRead
+3 api_description: Disables copy-on-read for a resource variable, with no effect if
+  it is already off.
+4 api_signature: tf.raw_ops.DisableCopyOnRead(resource)
+5 api_details: ''
+6 api_parameters:
+- resource: The resource handle for the variable whose copy-on-read behavior should
+    be disabled.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.PropagateUnbackedSymInts.run
+3 api_description: Interprets a module to propagate unbacked symbolic integers through
+  execution and returns the resulting output.
+4 api_signature: '"run(initial_env,enable_io_processing)"'
+5 api_details: ''
+6 api_parameters:
+- initial_env: Optional starting node-to-value environment used to prepopulate results
+    and enable partial evaluation.
+- enable_io_processing: Whether to run inputs and outputs through the graph’s input/output
+    processing hooks before execution.
+7 api_usage_example: null
+8 api_shape: null

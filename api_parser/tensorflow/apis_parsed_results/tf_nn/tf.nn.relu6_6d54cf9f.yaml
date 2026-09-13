@@ -1,0 +1,14 @@
+2 api_name: tensorflow.nn.relu6
+3 api_description: tensorflow.nn.relu6 applies the Rectified Linear 6 activation function,
+  which computes min(max(features, 0), 6), and is beneficial for low-precision conditions
+  by promoting early sparse feature learning.
+4 api_signature: tf.nn.relu6(features)
+5 api_details: ''
+6 api_parameters:
+- features: The input tensor to which the ReLU6 activation function is applied, supporting
+    various data types such as float, double, int32, int64, uint8, int16, or int8.
+7 api_usage_example:
+- x = tf.constant([-3.0, -1.0, 0.0, 6.0, 10.0], dtype=tf.float32)
+- y = tf.nn.relu6(x)
+- y.numpy()
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.EmptyTensorList
+3 api_description: Creates an empty tensor list for tensors of a specified dtype and
+  compatible element shape.
+4 api_signature: tf.raw_ops.EmptyTensorList(element_shape,max_num_elements,element_dtype)
+5 api_details: ''
+6 api_parameters:
+- element_shape: Specifies the shape of each tensor element stored in the list.
+- max_num_elements: Sets the maximum number of elements the tensor list can hold.
+- element_dtype: Defines the data type of the elements in the tensor list.
+7 api_usage_example: null
+8 api_shape: ''

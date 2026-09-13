@@ -1,0 +1,8 @@
+2 api_name: paddle.nn.Flatten
+3 api_description: The paddle.nn.Flatten API creates an object that flattens a specified
+  range of dimensions in a tensor into a single dimension.
+4 api_signature: paddle.nn.Flatten()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

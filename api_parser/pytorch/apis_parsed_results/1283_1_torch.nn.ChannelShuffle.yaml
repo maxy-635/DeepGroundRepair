@@ -1,0 +1,14 @@
+2 api_name: torch.nn.ChannelShuffle
+3 api_description: torch.nn.ChannelShuffle rearranges the channels of a tensor by
+  dividing them into groups and shuffling the channels within those groups.
+4 api_signature: torch.nn.ChannelShuffle(groups)
+5 api_details: ''
+6 api_parameters:
+- groups: Specifies the number of groups to partition the input channels for shuffling.
+7 api_usage_example:
+- ' channel_shuffle = nn.ChannelShuffle(2)'
+- ' input = torch.arange(1, 17, dtype=torch.float32).view(1, 4, 2, 2)'
+- ' input'
+- ' output = channel_shuffle(input)'
+- ' output'
+8 api_shape: null

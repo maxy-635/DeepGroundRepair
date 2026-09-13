@@ -1,0 +1,12 @@
+2 api_name: paddle.dsplit
+3 api_description: Splits a tensor into multiple sub-tensors along the depth axis
+  (axis=2).
+4 api_signature: paddle.dsplit(x,num_or_indices)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to split, which must have more than 2 dimensions and be one
+    of the supported data types.
+- num_or_indices: Either the number of sections to split the tensor into, or the indices
+    at which to split it.
+7 api_usage_example: []
+8 api_shape: {}

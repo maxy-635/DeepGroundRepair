@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.optimizers.Adam
+3 api_description: Adam is an optimizer that adapts learning rates using first- and
+  second-moment estimates of gradients for efficient stochastic gradient descent.
+4 api_signature: tf.keras.optimizers.Adam(learning_rate,beta_1,beta_2,epsilon,amsgrad)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Controls the step size used to update model weights during optimization.
+- beta_1: Sets how much of the previous first-moment estimate is retained for momentum-like
+    smoothing.
+- beta_2: Sets how much of the previous second-moment estimate is retained for variance
+    smoothing.
+- epsilon: Adds a small value for numerical stability when dividing by the estimated
+    variance.
+- amsgrad: Enables the AMSGrad variant of Adam, which uses a non-increasing second-moment
+    estimate.
+7 api_usage_example: null
+8 api_shape: ''

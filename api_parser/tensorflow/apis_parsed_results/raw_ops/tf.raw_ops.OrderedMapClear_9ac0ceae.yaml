@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.OrderedMapClear
+3 api_description: Removes all elements from the underlying ordered map container.
+4 api_signature: tf.raw_ops.OrderedMapClear(container,shared_name,name)
+5 api_details: ''
+6 api_parameters:
+- container: Identifies the map container instance to clear, allowing multiple ordered
+    maps to coexist without conflict.
+- shared_name: Specifies the shared name used to reference the same ordered map resource
+    across different parts of the graph.
+- name: Sets an optional operation name for easier identification in the graph.
+7 api_usage_example: null
+8 api_shape: ''

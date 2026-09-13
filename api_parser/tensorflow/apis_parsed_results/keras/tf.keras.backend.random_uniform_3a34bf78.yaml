@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.random_uniform
+3 api_description: Returns a tensor of uniformly distributed random values with a
+  specified shape, using the Keras backend random generator. Deprecated in favor of
+  newer random APIs.
+4 api_signature: tf.keras.backend.random_uniform(shape,minval,maxval)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

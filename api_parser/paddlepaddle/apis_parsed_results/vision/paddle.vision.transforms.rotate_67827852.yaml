@@ -1,0 +1,21 @@
+2 api_name: paddle.vision.transforms.rotate
+3 api_description: Rotates an image by the specified angle.
+4 api_signature: paddle.vision.transforms.rotate(img,angle,interpolation,expand,center,fill)
+5 api_details: ''
+6 api_parameters:
+- img: The input image to rotate.
+- angle: The counterclockwise rotation angle in degrees.
+- interpolation: The resampling method used to fill in pixels during rotation.
+- expand: Whether to enlarge the output so the full rotated image fits.
+- center: The rotation pivot point, defaulting to the image center.
+- fill: The pixel value used to fill areas exposed outside the rotated image.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import functional as F
+- fake_img = (np.random.rand(256, 300, 3) * 255.).astype('uint8')
+- fake_img = Image.fromarray(fake_img)
+- rotated_img = F.rotate(fake_img, 90)
+- print(rotated_img.size)
+- (300, 256)
+8 api_shape: {}

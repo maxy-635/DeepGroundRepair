@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.tensor.DTensor.__create_chunk_list__
+3 api_description: Returns ChunkStorageMetadata entries describing the local shard
+  or replica for the current rank in a DTensor, usually as a single-element list.
+4 api_signature: __create_chunk_list__()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

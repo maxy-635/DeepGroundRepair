@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.preprocessing.sequence.skipgrams
+3 api_description: Generates skip-gram word pairs from a sequence of word indices
+  for word embedding training.
+4 api_signature: tf.keras.preprocessing.sequence.skipgrams(sequence,vocabulary_size,window_size,negative_samples)
+5 api_details: ''
+6 api_parameters:
+- sequence: A list of word indices representing the input sentence; index 0 is treated
+    as non-word and skipped.
+- vocabulary_size: The maximum word index plus one, defining the total vocabulary
+    range.
+- window_size: The half-window size used to determine which nearby words are considered
+    context.
+- negative_samples: The fraction of random negative pairs to generate relative to
+    the positive samples.
+7 api_usage_example: null
+8 api_shape: ''

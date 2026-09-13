@@ -1,0 +1,22 @@
+2 api_name: tensorflow.conv
+3 api_description: Performs 1D, 2D, or 3D convolution on batched input tensors using
+  a matching filter kernel.
+4 api_signature: tf.conv(input,filter,strides,padding,data_format,dilations,groups,name)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be convolved, with shape and layout determined by the
+    chosen data format and batch dimensions.
+- filter: The convolution kernel tensor, matching the input type and defining the
+    spatial filtering and output channels.
+- strides: The sliding-window step sizes for each dimension, with batch and channel
+    strides fixed at 1.
+- padding: The padding mode that controls how borders are handled during convolution.
+- data_format: The tensor layout setting that specifies whether channels come first
+    or last.
+- dilations: The spacing between kernel elements in each dimension, allowing atrous
+    or dilated convolution.
+- groups: The number of channel groups to split the input and filters into for separate
+    convolutions.
+- name: An optional name assigned to the operation for identification.
+7 api_usage_example: null
+8 api_shape: ''

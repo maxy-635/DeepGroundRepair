@@ -1,0 +1,11 @@
+2 api_name: paddle.version.cuda
+3 api_description: Returns the CUDA version bundled with the installed Paddle package.
+4 api_signature: paddle.version.cuda()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.version.cuda()
+- '>>>'
+- '''10.2'''
+8 api_shape: {}

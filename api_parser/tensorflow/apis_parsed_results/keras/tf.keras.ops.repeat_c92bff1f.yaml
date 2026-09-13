@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.repeat
+3 api_description: Repeats each tensor element a specified number of times along a
+  given axis, or flattens and repeats when no axis is provided.
+4 api_signature: tf.keras.ops.repeat(x,repeats,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be repeated.
+- repeats: The number of times to repeat each element.
+- axis: The axis to repeat along, or `None` to flatten the input first and return
+    a flat output.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,21 @@
+2 api_name: paddle.optimizer.lr.LambdaDecay
+3 api_description: Sets the learning rate by applying a user-defined function of the
+  epoch.
+4 api_signature: paddle.optimizer.lr.LambdaDecay(learning_rate,lr_lambda)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the initial learning rate as a float value.
+- lr_lambda: Defines a function that computes a per-epoch factor to scale the initial
+    learning rate.
+7 api_usage_example:
+- import paddle
+- value = paddle.arange(26, dtype='float32')
+- a = paddle.reshape(value, [2, 13])
+- linear = paddle.nn.Linear(13, 5)
+- adadelta = paddle.optimizer.Adadelta(learning_rate=0.0003, epsilon=1e-06, rho=0.95,
+- '                            parameters = linear.parameters())'
+- out = linear(a)
+- out.backward()
+- adadelta.step()
+- adadelta.clear_grad()
+8 api_shape: {}

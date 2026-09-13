@@ -1,0 +1,18 @@
+2 api_name: paddle.nn.functional.mish
+3 api_description: The paddle.nn.functional.mish API applies the Mish activation function,
+  which is a smooth, non-monotonic function defined as x * tanh(softplus(x)), to the
+  input tensor.
+4 api_signature: paddle.nn.functional.mish(x)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input tensor that should have a data type of either float32 or
+    float64.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([-5., 0., 5.])
+- out = F.mish(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.03357624,  0.        ,  4.99955177])'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.diagonal
+3 api_description: Returns the diagonal elements of a 2D array or of a specified 2D
+  slice in a higher-dimensional array, with optional offset and axis selection.
+4 api_signature: tf.keras.ops.diagonal(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor from which to extract the diagonal.
+7 api_usage_example:
+- x = ops.arange(8).reshape((2, 2, 2))
+- x
+- x.diagonal(0, 0, 1)
+8 api_shape: ''

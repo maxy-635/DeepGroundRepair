@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.SequentialLR.load_state_dict
+3 api_description: Load and restore a SequentialLR scheduler’s saved state so its
+  internal milestones, sub-scheduler states, and current progression continue from
+  the checkpoint.
+4 api_signature: load_state_dict(state_dict)
+5 api_details: ''
+6 api_parameters:
+- state_dict: Restores the scheduler’s saved state produced by `state_dict()`.
+7 api_usage_example: null
+8 api_shape: null

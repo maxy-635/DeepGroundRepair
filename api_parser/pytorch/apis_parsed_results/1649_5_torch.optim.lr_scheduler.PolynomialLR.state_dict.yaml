@@ -1,0 +1,9 @@
+2 api_name: torch.optim.lr_scheduler.PolynomialLR.state_dict
+3 api_description: Return a dictionary capturing the scheduler’s current state so
+  it can be saved and restored later.
+4 api_signature: '"state_dict()"'
+5 api_details: ''
+6 api_parameters:
+- self: The scheduler instance whose internal state is being serialized.
+7 api_usage_example: null
+8 api_shape: null

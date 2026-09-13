@@ -1,0 +1,25 @@
+2 api_name: paddle.nn.functional.conv2d_transpose
+3 api_description: The paddle.nn.functional.conv2d_transpose API performs a 2D transposed
+  convolution operation on an input tensor with specified filters, dilations, strides,
+  and paddings. It supports input and output in NCHW or NHWC format, and can optionally
+  apply a bias and activation function to the result.
+4 api_signature: paddle.nn.functional.conv2d_transpose(x,weight,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor with dimensions [N, C, H, W] or [N, H, W, C] and data type float32
+    or float64.
+- weight: The convolution kernel tensor with shape [C, M/g, kH, kW], where M is the
+    number of output channels.
+- stride: The stride size for the transposed convolution, specified as a single integer
+    or a tuple (stride_height, stride_width).
+- padding: The padding size for the transposed convolution, which can be specified
+    as a string ('VALID' or 'SAME'), a tuple, or a list with different formats depending
+    on the data format.
+7 api_usage_example: []
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[1]
+    tensor height: Height_out = (Height_in - 1) * stride_height - 2 * padding_height + kernel_size_height + output_padding_height
+    tensor width: Width_out = (Width_in - 1) * stride_width - 2 * padding_width + kernel_size_width + output_padding_width

@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.transforms.ExpTransform
+3 api_description: Applies the exponential function to transform inputs from the real
+  line to positive values.
+4 api_signature: torch.distributions.transforms.ExpTransform(cache_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

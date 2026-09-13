@@ -1,0 +1,17 @@
+2 api_name: tensorflow.GradientTape
+3 api_description: Records operations executed in a context manager for automatic
+  differentiation, watching trainable variables by default and allowing manual watching
+  of tensors to compute gradients.
+4 api_signature: tf.GradientTape(persistent)
+5 api_details: ''
+6 api_parameters:
+- persistent: Controls whether the tape can be reused for multiple `gradient()` calls
+    instead of being single-use.
+7 api_usage_example:
+- x = tf.constant(4.0)
+- 'with tf.GradientTape() as tape:'
+- '  with tape.stop_recording():'
+- '    y = x ** 2'
+- dy_dx = tape.gradient(y, x)
+- print(dy_dx)
+8 api_shape: ''

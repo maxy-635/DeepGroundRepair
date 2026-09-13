@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Gather
+3 api_description: Selects slices from `params` at the positions specified by integer
+  `indices`, returning a tensor shaped like `indices.shape + params.shape[1:]`.
+4 api_signature: tf.raw_ops.Gather(params,indices)
+5 api_details: ''
+6 api_parameters:
+- params: The input tensor to gather values from.
+- indices: The integer index tensor specifying which elements to select.
+7 api_usage_example: null
+8 api_shape: ''

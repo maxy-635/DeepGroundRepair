@@ -1,0 +1,16 @@
+2 api_name: torch.nn.Transformer.forward
+3 api_description: Processes masked source and target sequences with a Transformer
+  to produce sequence-to-sequence outputs.
+4 api_signature: forward(src,tgt,src_mask,tgt_mask,memory_mask)
+5 api_details: ''
+6 api_parameters:
+- src: Input sequence passed to the encoder.
+- tgt: Input sequence passed to the decoder.
+- src_mask: Optional additive mask applied to the source sequence.
+- tgt_mask: Optional additive mask applied to the target sequence.
+- memory_mask: Optional additive mask applied to the encoder output used by the decoder.
+7 api_usage_example:
+- ' output = transformer_model('
+- '...     src, tgt, src_mask=src_mask, tgt_mask=tgt_mask'
+- '... )'
+8 api_shape: null

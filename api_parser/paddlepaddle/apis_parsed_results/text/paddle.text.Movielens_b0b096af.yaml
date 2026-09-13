@@ -1,0 +1,12 @@
+2 api_name: paddle.text.Movielens
+3 api_description: Provides access to the MovieLens 1M dataset, including loading
+  and preparing movie ratings data for use in experiments or analysis.
+4 api_signature: paddle.text.Movielens(data_file,mode,test_ratio)
+5 api_details: ''
+6 api_parameters:
+- data_file: Specifies the path to the data tar file, or `None` to download the dataset.
+- mode: Selects whether to use the training or test split, with `train` as the default.
+- test_ratio: Sets the fraction of samples reserved for the test set, defaulting to
+    0.1.
+7 api_usage_example: []
+8 api_shape: {}

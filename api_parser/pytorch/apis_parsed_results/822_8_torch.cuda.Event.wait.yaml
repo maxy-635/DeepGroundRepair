@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.Event.wait
+3 api_description: Makes the specified CUDA stream wait until this event has occurred
+  before executing later work.
+4 api_signature: wait(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: The CUDA stream to wait on, defaulting to `torch.cuda.current_stream()`
+    when not provided.
+7 api_usage_example: null
+8 api_shape: null

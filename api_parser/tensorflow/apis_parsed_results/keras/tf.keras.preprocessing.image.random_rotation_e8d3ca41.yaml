@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.preprocessing.image.random_rotation
+3 api_description: Randomly rotates a 3D image tensor by a specified angle range,
+  optionally around a given axis, using an affine transform.
+4 api_signature: tf.keras.preprocessing.image.random_rotation(x,rg)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

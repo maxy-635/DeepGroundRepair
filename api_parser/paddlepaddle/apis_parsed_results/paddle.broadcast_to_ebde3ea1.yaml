@@ -1,0 +1,17 @@
+2 api_name: paddle.broadcast_to
+3 api_description: Broadcasts an input tensor to a specified target shape.
+4 api_signature: paddle.broadcast_to(x,shape)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be broadcast.
+- shape: The target broadcast shape, with `-1` preserving the original size of the
+    corresponding dimension.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([1, 2, 3], dtype='int32')
+- out = paddle.broadcast_to(data, shape=[2, 3])
+- print(out)
+- Tensor(shape=[2, 3], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[1, 2, 3],'
+- '[1, 2, 3]])'
+8 api_shape: {}

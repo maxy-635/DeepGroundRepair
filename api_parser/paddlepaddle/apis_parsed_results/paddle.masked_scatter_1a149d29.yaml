@@ -1,0 +1,26 @@
+2 api_name: paddle.masked_scatter
+3 api_description: Copies values from a source tensor into the target tensor at positions
+  where the mask is True.
+4 api_signature: paddle.masked_scatter(x,mask,value)
+5 api_details: ''
+6 api_parameters:
+- x: The target N-D tensor whose selected elements will be replaced.
+- mask: A boolean tensor that marks which positions in `x` should be filled.
+- value: The tensor value used to scatter into the masked positions, with the same
+    supported data types as `x`.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2048)
+- x = paddle.randn([2, 2])
+- print(x)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-1.24725831,  0.03843464],'
+- '[-0.31660911,  0.04793844]])'
+- mask = paddle.to_tensor([[True, True], [False, False]])
+- value = paddle.to_tensor([1, 2, 3, 4, 5,], dtype="float32")
+- out = paddle.masked_scatter(x, mask, value)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1,  2],'
+- '[-0.31660911,  0.04793844]])'
+8 api_shape: {}

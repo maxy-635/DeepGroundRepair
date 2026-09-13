@@ -1,0 +1,19 @@
+2 api_name: tensorflow.keras.utils.get_file
+3 api_description: Downloads a file from a URL into the Keras cache if it is not already
+  present, with optional hash verification and support for extracting common archive
+  formats.
+4 api_signature: tf.keras.utils.get_file(fname,origin,cache_dir,extract,untar,file_hash)
+5 api_details: ''
+6 api_parameters:
+- fname: Sets the local filename or destination path for the downloaded file, or uses
+    the origin filename if `None`.
+- origin: Specifies the URL where the file is downloaded from.
+- untar: Deprecated option that indicates whether the downloaded file should be decompressed.
+- file_hash: Provides the expected SHA256 or MD5 hash used to verify the downloaded
+    file's integrity.
+- extract: Controls whether the downloaded file should be extracted if it is an archive
+    such as tar or zip.
+- cache_dir: Sets the directory used to store cached files, defaulting to `KERAS_HOME`
+    or `~/.keras/`.
+7 api_usage_example: null
+8 api_shape: ''

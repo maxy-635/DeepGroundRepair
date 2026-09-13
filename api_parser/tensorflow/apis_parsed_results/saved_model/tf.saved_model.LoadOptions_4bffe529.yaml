@@ -1,0 +1,10 @@
+2 api_name: tensorflow.saved_model.LoadOptions
+3 api_description: Configuration options for loading a TensorFlow SavedModel with
+  tf.saved_model.load or tf.keras.models.load_model.
+4 api_signature: tf.saved_model.LoadOptions(experimental_load_function_aliases)
+5 api_details: ''
+6 api_parameters:
+- experimental_load_function_aliases: Controls whether loaded SavedModel objects include
+    a `function_aliases` attribute.
+7 api_usage_example: null
+8 api_shape: ''

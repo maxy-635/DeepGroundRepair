@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.get_rng_state_all
+3 api_description: Returns the random number generator state for each CUDA device
+  as a list of ByteTensors.
+4 api_signature: '"torch.cuda.get_rng_state_all()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

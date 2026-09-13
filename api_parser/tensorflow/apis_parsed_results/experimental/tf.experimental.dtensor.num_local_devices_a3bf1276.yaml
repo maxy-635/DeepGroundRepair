@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.dtensor.num_local_devices
+3 api_description: Returns how many local devices of the specified device type are
+  configured on the current client.
+4 api_signature: tf.experimental.dtensor.num_local_devices(device_type)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

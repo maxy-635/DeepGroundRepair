@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.flatten
+3 api_description: Returns a 1D copy of a TensorFlow tensor/array, flattening all
+  dimensions in row-major order.
+4 api_signature: tf.experimental.numpy.flatten(a)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

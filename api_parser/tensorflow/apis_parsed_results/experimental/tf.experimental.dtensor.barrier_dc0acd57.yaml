@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.dtensor.barrier
+3 api_description: Synchronizes all clients on the mesh by waiting for prior operations
+  to complete, using a fully sharded tensor and an all-reduce barrier.
+4 api_signature: tf.experimental.dtensor.barrier(mesh)
+5 api_details: ''
+6 api_parameters:
+- mesh: Specifies the mesh on which to execute the barrier synchronization.
+7 api_usage_example: null
+8 api_shape: ''

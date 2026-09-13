@@ -1,0 +1,16 @@
+2 api_name: tensorflow.saved_model.SaveOptions
+3 api_description: Configures how TensorFlow saves a model to SavedModel format for
+  tf.saved_model.save and tf.keras.models.save_model.
+4 api_signature: tf.saved_model.SaveOptions(namespace_whitelist,experimental_io_device,experimental_variable_policy,experimental_skip_saver)
+5 api_details: ''
+6 api_parameters:
+- namespace_whitelist: Whitelists specific op namespaces that are allowed when saving
+    a model using namespaced ops.
+- experimental_io_device: Specifies which TensorFlow device should be used to access
+    the filesystem when saving in a distributed setup.
+- experimental_variable_policy: Controls how variables are handled and saved according
+    to the selected VariablePolicy.
+- experimental_skip_saver: Disables creation of SavedModel's native checkpointing
+    ops to avoid their serialization cost.
+7 api_usage_example: null
+8 api_shape: ''

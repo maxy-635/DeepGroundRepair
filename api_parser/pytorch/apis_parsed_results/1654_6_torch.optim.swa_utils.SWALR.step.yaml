@@ -1,0 +1,11 @@
+2 api_name: torch.optim.swa_utils.SWALR.step
+3 api_description: Advance the SWA learning-rate scheduler by one step, updating the
+  optimizer’s learning rate according to its configured schedule.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Deprecated; if provided, it sets `last_epoch` to `epoch` and may use the
+    closed-form learning rate computation when available, but `step()` should be called
+    without arguments instead.
+7 api_usage_example: null
+8 api_shape: null

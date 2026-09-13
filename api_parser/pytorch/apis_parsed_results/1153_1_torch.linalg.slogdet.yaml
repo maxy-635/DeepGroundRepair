@@ -1,0 +1,15 @@
+2 api_name: torch.linalg.slogdet
+3 api_description: Returns the determinant’s sign and the natural log of its absolute
+  value for a square matrix.
+4 api_signature: torch.linalg.slogdet(A)
+5 api_details: ''
+6 api_parameters:
+- A: The input square matrix or batch of square matrices whose sign and natural logarithm
+    of the determinant are computed.
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' A'
+- ' torch.linalg.det(A)'
+- ' torch.logdet(A)'
+- ' torch.linalg.slogdet(A)'
+8 api_shape: null

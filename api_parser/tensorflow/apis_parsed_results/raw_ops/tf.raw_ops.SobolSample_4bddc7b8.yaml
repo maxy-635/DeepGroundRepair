@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SobolSample
+3 api_description: Generates `num_results` Sobol sequence samples of dimension `dim`,
+  skipping the first `skip` points.
+4 api_signature: tf.raw_ops.SobolSample(dim,num_results,dtype)
+5 api_details: ''
+6 api_parameters:
+- dim: Sets the dimensionality of each Sobol sample as a positive scalar integer.
+- num_results: Specifies how many Sobol points to generate and return as a positive
+    scalar integer.
+- dtype: Chooses the floating-point type of the output samples, either `tf.float32`
+    or `tf.float64`.
+7 api_usage_example: null
+8 api_shape: ''

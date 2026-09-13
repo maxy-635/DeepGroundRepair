@@ -1,0 +1,15 @@
+2 api_name: torch.nn.functional.prelu
+3 api_description: torch.nn.functional.prelu applies the PReLU activation function,
+  which allows for a learnable parameter to scale negative input values, while passing
+  positive values unchanged.
+4 api_signature: torch.nn.functional.prelu(input,weight)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the PReLU activation function is applied.
+- weight: The learnable weights for the PReLU activation, which determine the slope
+    of the negative part.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: ( *) where * means, any number of additional dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

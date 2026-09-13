@@ -1,0 +1,14 @@
+2 api_name: tensorflow.quantization.fake_quant_with_min_max_vars_per_channel_gradient
+3 api_description: Computes gradients for per-channel fake quantization, propagating
+  approximate training gradients through a FakeQuantWithMinMaxVarsPerChannel operation.
+4 api_signature: tf.quantization.fake_quant_with_min_max_vars_per_channel_gradient(gradients,inputs,min,max)
+5 api_details: ''
+6 api_parameters:
+- gradients: The upstream gradient tensor to be backpropagated through the fake-quantization
+    operation.
+- inputs: The original input tensor that was passed to the fake-quantization operation
+    and whose shape matches `gradients`.
+- min: The lower bound of the per-channel quantization range.
+- max: The upper bound of the per-channel quantization range.
+7 api_usage_example: null
+8 api_shape: ''

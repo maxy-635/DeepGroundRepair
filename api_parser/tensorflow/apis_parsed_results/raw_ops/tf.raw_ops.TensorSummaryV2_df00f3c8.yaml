@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorSummaryV2
+3 api_description: Creates a Summary protocol buffer containing a tensor value and
+  associated per-plugin metadata for logging or visualization.
+4 api_signature: tf.raw_ops.TensorSummaryV2(tensor,serialized_summary_metadata)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor value to serialize into a summary.
+- serialized_summary_metadata: A serialized SummaryMetadata proto containing plugin
+    metadata for the summary.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.DeviceSpec
+3 api_description: Represents and manipulates TensorFlow device placements, letting
+  you parse, validate, merge, and compose partial device specifications for where
+  computations and state are stored.
+4 api_signature: tf.DeviceSpec(device_type,device_index)
+5 api_details: ''
+6 api_parameters:
+- device_type: Specifies the type of device, such as CPU or GPU.
+- device_index: Specifies the device number to target, or any device index if omitted.
+7 api_usage_example: null
+8 api_shape: ''

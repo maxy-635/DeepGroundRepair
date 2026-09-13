@@ -1,0 +1,8 @@
+2 api_name: paddle.distributed.ReduceType
+3 api_description: Defines the reduction operation used by `paddle.distributed.Partial()`
+  to combine distributed values, such as sum or other supported reduction types.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

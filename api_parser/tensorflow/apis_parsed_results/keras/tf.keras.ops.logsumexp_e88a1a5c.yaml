@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.logsumexp
+3 api_description: Computes the log of the sum of exponentials of tensor elements,
+  often used for numerically stable aggregation.
+4 api_signature: tf.keras.ops.logsumexp(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the log-sum-exp.
+- axis: The axis or axes along which to reduce the tensor; if `None`, all elements
+    are reduced.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([1., 2., 3.])
+- logsumexp(x)
+8 api_shape: ''

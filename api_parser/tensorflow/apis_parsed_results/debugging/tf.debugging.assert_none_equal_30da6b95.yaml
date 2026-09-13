@@ -1,0 +1,13 @@
+2 api_name: tensorflow.debugging.assert_none_equal
+3 api_description: Checks element-wise that x and y are not equal, supports broadcasting,
+  and raises InvalidArgumentError with optional summaries if any pair matches.
+4 api_signature: tf.debugging.assert_none_equal(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The Tensor whose elements are checked to ensure none are equal to the corresponding
+    elements in `y`.
+- y: The Tensor compared against `x`, broadcast as needed, to verify that no corresponding
+    elements are equal.
+7 api_usage_example:
+- check_size(tf.ones([2, 3], tf.float32))
+8 api_shape: ''

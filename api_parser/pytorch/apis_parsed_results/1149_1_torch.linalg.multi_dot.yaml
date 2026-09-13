@@ -1,0 +1,18 @@
+2 api_name: torch.linalg.multi_dot
+3 api_description: Efficiently multiplies two or more matrices by choosing the multiplication
+  order that minimizes arithmetic operations.
+4 api_signature: torch.linalg.multi_dot(tensors)
+5 api_details: ''
+6 api_parameters:
+- tensors: Two or more tensors to multiply together, with the first and last allowed
+    to be 1D or 2D and all intermediate tensors required to be 2D.
+7 api_usage_example:
+- ' from torch.linalg import multi_dot'
+- ' multi_dot([torch.tensor([1, 2]), torch.tensor([2, 3])])'
+- ' multi_dot([torch.tensor([[1, 2]]), torch.tensor([2, 3])])'
+- ' multi_dot([torch.tensor([[1, 2]]), torch.tensor([[2], [3]])])'
+- ' A = torch.arange(2 * 3).view(2, 3)'
+- ' B = torch.arange(3 * 2).view(3, 2)'
+- ' C = torch.arange(2 * 2).view(2, 2)'
+- ' multi_dot((A, B, C))'
+8 api_shape: null

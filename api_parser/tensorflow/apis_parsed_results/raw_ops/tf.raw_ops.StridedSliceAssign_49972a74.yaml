@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.StridedSliceAssign
+3 api_description: Assigns `value` to the slice of `ref` selected by the given strided
+  slice parameters, requiring `value` to exactly match the sliced shape.
+4 api_signature: tf.raw_ops.StridedSliceAssign(ref,begin,end,strides,value)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place.
+- begin: The start indices for the strided slice assignment.
+- end: The end indices for the strided slice assignment.
+- strides: The step sizes to use when selecting elements in the slice.
+- value: The tensor values to assign into the specified slice of ref.
+7 api_usage_example: null
+8 api_shape: ''

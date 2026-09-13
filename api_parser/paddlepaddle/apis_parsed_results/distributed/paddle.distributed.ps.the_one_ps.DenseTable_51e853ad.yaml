@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.ps.the_one_ps.DenseTable
+3 api_description: A dense parameter-server table for distributed training that stores
+  and updates parameters centrally, supports lookup and modification operations, and
+  coordinates data access across workers and servers.
+4 api_signature: paddle.distributed.ps.the_one_ps.DenseTable(context,send_ctx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

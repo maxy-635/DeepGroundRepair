@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.MutableHashTableV2
+3 api_description: Creates an empty mutable hash table with specified key and value
+  types for scalar values, supporting inserts but not initialization.
+4 api_signature: tf.raw_ops.MutableHashTableV2(key_dtype,value_dtype,container,shared_name,name)
+5 api_details: ''
+6 api_parameters:
+- key_dtype: Specifies the data type used for keys stored in the hash table.
+- value_dtype: Specifies the data type used for values stored in the hash table.
+- container: Optionally assigns the table to a named container; otherwise, it uses
+    the default container.
+- shared_name: Optionally gives the table a shared name so it can be reused across
+    sessions.
+- name: Sets an optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

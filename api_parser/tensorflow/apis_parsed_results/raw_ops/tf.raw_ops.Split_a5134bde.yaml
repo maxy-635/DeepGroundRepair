@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Split
+3 api_description: Splits a tensor into `num_split` smaller tensors along the specified
+  dimension.
+4 api_signature: tf.raw_ops.Split(axis,value,num_split)
+5 api_details: ''
+6 api_parameters:
+- axis: Specifies the dimension of `value` along which to split the tensor.
+- value: Provides the tensor input that will be divided into parts.
+- num_split: Sets how many equal pieces to split the tensor into.
+7 api_usage_example: null
+8 api_shape: ''

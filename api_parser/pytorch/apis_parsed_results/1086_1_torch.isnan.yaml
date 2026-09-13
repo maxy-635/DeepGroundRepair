@@ -1,0 +1,10 @@
+2 api_name: torch.isnan
+3 api_description: Returns a boolean tensor indicating which input elements are NaN,
+  including complex values when either part is NaN.
+4 api_signature: torch.isnan(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to check for NaN (not-a-number) values.
+7 api_usage_example:
+- ' torch.isnan(torch.tensor([1, float(''nan''), 2]))'
+8 api_shape: null

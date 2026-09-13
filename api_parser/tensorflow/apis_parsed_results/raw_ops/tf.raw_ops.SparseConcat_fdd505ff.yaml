@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.SparseConcat
+3 api_description: Concatenates multiple SparseTensors along a specified dimension,
+  combining their indices, values, and shapes into one SparseTensor with adjusted
+  size on that axis while preserving sorted index order.
+4 api_signature: tf.raw_ops.SparseConcat(indices,values,shapes,concat_dim)
+5 api_details: ''
+6 api_parameters:
+- indices: Supplies the 2-D int64 index tensors for each input SparseTensor.
+- values: Supplies the 1-D value tensors corresponding to each SparseTensor's non-empty
+    entries.
+- shapes: Supplies the 1-D int64 shape tensors describing each input SparseTensor.
+- concat_dim: Specifies the dimension along which to concatenate the input SparseTensors.
+7 api_usage_example: null
+8 api_shape: ''

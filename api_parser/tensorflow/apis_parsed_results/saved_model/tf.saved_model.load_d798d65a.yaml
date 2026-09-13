@@ -1,0 +1,9 @@
+2 api_name: tensorflow.saved_model.load
+3 api_description: Loads a TensorFlow SavedModel from a directory and exposes its
+  exported signatures as callable functions.
+4 api_signature: tf.saved_model.load(export_dir)
+5 api_details: ''
+6 api_parameters:
+- export_dir: Specifies the SavedModel directory to load.
+7 api_usage_example: null
+8 api_shape: ''

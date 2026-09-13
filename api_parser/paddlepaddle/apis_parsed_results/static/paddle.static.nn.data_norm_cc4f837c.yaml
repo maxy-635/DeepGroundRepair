@@ -1,0 +1,20 @@
+2 api_name: paddle.static.nn.data_norm
+3 api_description: Normalizes input data using batch statistics to stabilize and scale
+  features during training.
+4 api_signature: paddle.static.nn.data_norm(input,epsilon,data_layout,in_place,sync_stats,enable_scale_and_shift)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be normalized.
+- epsilon: A small constant added to the variance for numerical stability and to avoid
+    division by zero.
+- data_layout: The input/output data format, either `NCHW` or `NHWC`, with the output
+    matching the input layout.
+- in_place: Controls whether batch norm reuses the input tensor’s memory for the output.
+- sync_stats: Synchronizes batch norm statistics across multiple GPUs using allreduce.
+- enable_scale_and_shift: Applies scale and shift after normalization when enabled.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- x = paddle.randn(shape=[32, 100])
+- hidden2 = paddle.static.nn.data_norm(input=x)
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: torch.clip
+3 api_description: Clips tensor values to a specified minimum and/or maximum, equivalent
+  to torch.clamp().
+4 api_signature: torch.clip(input,min,max)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

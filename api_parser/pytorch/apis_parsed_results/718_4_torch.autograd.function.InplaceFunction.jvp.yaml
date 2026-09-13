@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.function.InplaceFunction.jvp
+3 api_description: Computes the forward-mode Jacobian-vector product for an in-place
+  autograd function, propagating input tangents through `jvp` to produce output tangents.
+4 api_signature: staticjvp(ctx,*grad_inputs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

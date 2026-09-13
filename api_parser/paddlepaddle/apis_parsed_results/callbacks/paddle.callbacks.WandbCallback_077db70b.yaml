@@ -1,0 +1,34 @@
+2 api_name: paddle.callbacks.WandbCallback
+3 api_description: Tracks training progress and system metrics with Weights & Biases
+  logging.
+4 api_signature: paddle.callbacks.WandbCallback(project,entity,name,dir,mode,job_type,**kwargs)
+5 api_details: ''
+6 api_parameters:
+- project: Sets the W&B project name that the run will belong to.
+- entity: Specifies the W&B team or user account that owns the run.
+- name: Assigns a human-readable name to the run.
+- dir: Chooses the directory where run metadata and files are saved.
+- mode: Controls whether the run logs online, offline, or not at all.
+- job_type: Labels the run’s job type to help group related runs together.
+7 api_usage_example:
+- import paddle
+- import paddle.vision.transforms as T
+- from paddle.static import InputSpec
+- inputs = [InputSpec([-1, 1, 28, 28], 'float32', 'image')]
+- labels = [InputSpec([None, 1], 'int64', 'label')]
+- transform = T.Compose([
+- '    T.Transpose(),'
+- '    T.Normalize([127.5], [127.5])'
+- '])'
+- train_dataset = paddle.vision.datasets.MNIST(mode='train', transform=transform)
+- eval_dataset = paddle.vision.datasets.MNIST(mode='test', transform=transform)
+- net = paddle.vision.models.LeNet()
+- model = paddle.Model(net, inputs, labels)
+- optim = paddle.optimizer.Adam(0.001, parameters=net.parameters())
+- model.prepare(optimizer=optim,
+- '            loss=paddle.nn.CrossEntropyLoss(),'
+- '            metrics=paddle.metric.Accuracy())'
+- '## uncomment following lines to fit model with wandb callback function'
+- '# callback = paddle.callbacks.WandbCallback(project=''paddle_mnist'')'
+- '# model.fit(train_dataset, eval_dataset, batch_size=64, callbacks=callback)'
+8 api_shape: {}

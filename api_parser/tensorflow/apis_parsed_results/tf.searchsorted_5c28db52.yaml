@@ -1,0 +1,17 @@
+2 api_name: tensorflow.searchsorted
+3 api_description: Finds the insertion or bucket index for each value in a sorted
+  sequence, commonly used for binning or discretizing.
+4 api_signature: tf.searchsorted(sorted_sequence,values,side)
+5 api_details: ''
+6 api_parameters:
+- sorted_sequence: Provides the sorted tensor to search within.
+- values: Provides the tensor of values whose insertion indices are being found.
+- side: Chooses whether returned indices use the lower bound (`left`) or upper bound
+    (`right`).
+7 api_usage_example:
+- sorted_sequence = [[0., 3., 8., 9., 10.],
+- '                   [1., 2., 3., 4., 5.]]'
+- values = [[9.8, 2.1, 4.3],
+- '          [0.1, 6.6, 4.5, ]]'
+- tf.searchsorted(sorted_sequence, values).numpy()
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: torch.logdet
+3 api_description: Computes the natural logarithm of the determinant of a square matrix
+  or a batch of square matrices.
+4 api_signature: torch.logdet(input)
+5 api_details: ''
+6 api_parameters:
+- input: The square matrix tensor whose logarithmic determinant is computed over the
+    last two dimensions, with any leading dimensions treated as batch dimensions.
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' torch.det(A)'
+- ' torch.logdet(A)'
+- ' A'
+- ' A.det()'
+- ' A.det().log()'
+8 api_shape: null

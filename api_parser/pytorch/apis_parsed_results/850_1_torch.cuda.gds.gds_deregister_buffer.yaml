@@ -1,0 +1,13 @@
+2 api_name: torch.cuda.gds.gds_deregister_buffer
+3 api_description: Unregisters a CUDA device storage buffer from cuFile so it is no
+  longer treated as a registered GDS buffer.
+4 api_signature: torch.cuda.gds.gds_deregister_buffer(s)
+5 api_details: ''
+6 api_parameters:
+- s: The buffer that will be deregistered from GPU Direct Storage.
+7 api_usage_example:
+- ' src = torch.randn(1024, device="cuda")'
+- ' s = src.untyped_storage()'
+- ' gds_register_buffer(s)'
+- ' gds_deregister_buffer(s)'
+8 api_shape: null

@@ -1,0 +1,21 @@
+2 api_name: paddle.unfold
+3 api_description: Creates a view of the input tensor that slides a window along the
+  given axis, returning all fixed-size slices using the specified shape, stride, and
+  offset.
+4 api_signature: paddle.unfold(x,axis,size,step)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose data will be unfolded into slices.
+- axis: The dimension along which to extract the unfolded slices.
+- size: The length of each unfolded slice.
+- step: The stride between the starts of consecutive slices.
+7 api_usage_example:
+- import paddle
+- 'paddle.base.set_flags({"FLAGS_use_stride_kernel": True})'
+- x = paddle.arange(9, dtype="float64")
+- out = paddle.unfold(x, 0, 2, 4)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[0., 1.],'
+- '[4., 5.]])'
+8 api_shape: {}

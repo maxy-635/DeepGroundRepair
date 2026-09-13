@@ -1,0 +1,21 @@
+2 api_name: tensorflow.nn.avg_pool1d
+3 api_description: tensorflow.nn.avg_pool1d performs average pooling on a 1D input,
+  computing the mean over a specified window size, using an underlying 2D operation.
+4 api_signature: tf.nn.avg_pool1d(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: A 3-D Tensor that specifies the input data format to be pooled.
+- ksize: Defines the size of the pooling window, either as a single integer or a list
+    of three integers.
+- strides: Specifies the stride of the pooling window, either as a single integer
+    or a list of three integers.
+- padding: Determines the padding algorithm, either 'VALID' for no padding or 'SAME'
+    for padding to maintain input size.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Length_in, Channel_in)
+  output tensor shape: (N, Length_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor length: If padding = "VALID", Length_out = floor((Length_in - ksize) / strides + 1); 
+                  If padding = "SAME", Length_out = floor((Length_in - 1) / strides + 1)

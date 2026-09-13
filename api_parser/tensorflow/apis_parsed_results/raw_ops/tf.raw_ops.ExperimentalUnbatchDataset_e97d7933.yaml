@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ExperimentalUnbatchDataset
+3 api_description: Splits each batched input element into multiple dataset elements,
+  effectively unbatching the input dataset.
+4 api_signature: tf.raw_ops.ExperimentalUnbatchDataset(input_dataset,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant tensor representing the dataset to unbatch.
+- output_types: The data types of the individual elements produced after unbatching.
+- output_shapes: The shapes of the individual elements produced after unbatching.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.RngSkip
+3 api_description: Advances a counter-based RNG state by skipping ahead as if n random
+  values had been generated, without producing those values.
+4 api_signature: tf.raw_ops.RngSkip(resource,algorithm,delta)
+5 api_details: ''
+6 api_parameters:
+- resource: Holds the RNG state in a resource variable.
+- algorithm: Specifies which RNG algorithm to use.
+- delta: Indicates how far to advance the RNG state.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.constraints.NonNeg
+3 api_description: Constrains weights to be non-negative by clamping them to zero
+  or above, and can be recreated from a configuration dictionary.
+4 api_signature: from_config(config)
+5 api_details: ''
+6 api_parameters:
+- config: A serialized dictionary of the constraint’s configuration used to reconstruct
+    the object via `get_config()`.
+7 api_usage_example: null
+8 api_shape: ''

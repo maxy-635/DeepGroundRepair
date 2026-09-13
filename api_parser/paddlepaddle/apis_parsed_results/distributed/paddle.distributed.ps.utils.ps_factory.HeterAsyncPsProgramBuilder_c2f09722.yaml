@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.ps.utils.ps_factory.HeterAsyncPsProgramBuilder
+3 api_description: Builds and configures a heterogeneous asynchronous parameter-server
+  training program, generating the distributed PS components needed to run PaddlePaddle's
+  async PS workflow.
+4 api_signature: paddle.distributed.ps.utils.ps_factory.HeterAsyncPsProgramBuilder(pass_ctx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

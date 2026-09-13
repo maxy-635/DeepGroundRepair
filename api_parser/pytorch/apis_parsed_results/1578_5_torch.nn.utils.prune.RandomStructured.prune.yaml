@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.prune.RandomStructured.prune
+3 api_description: Randomly removes entire structured groups from a tensor and returns
+  the pruned version.
+4 api_signature: prune(t,importance_scores)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor to prune, which must have the same shape as the default mask.
+- importance_scores: Optional importance values for each element in `t` used to decide
+    which parts to prune; if omitted, `t` itself is used.
+7 api_usage_example: null
+8 api_shape: null

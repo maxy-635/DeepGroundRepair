@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.CudnnRNNParamsSize
+3 api_description: Returns the required parameter buffer size for a cuDNN RNN configuration
+  based on the model’s layers, units, input size, mode, direction, and dropout settings.
+4 api_signature: tf.raw_ops.CudnnRNNParamsSize(num_layers,num_units,input_size,T,S,rnn_mode,input_mode,direction)
+5 api_details: ''
+6 api_parameters:
+- num_layers: Specifies how many stacked RNN layers the parameter size should be computed
+    for.
+- num_units: Sets the number of hidden units in each RNN layer.
+- input_size: Defines the dimensionality of the input features.
+- T: Chooses the floating-point data type used for the RNN parameters and computations.
+- S: Chooses the integer data type used for size-related outputs or bookkeeping values.
+- rnn_mode: Selects which RNN cell type to size for, such as LSTM, GRU, or simple
+    RNN.
+- input_mode: Determines how the input is transformed or combined before being fed
+    into the RNN.
+- direction: Specifies whether the RNN is unidirectional or bidirectional.
+7 api_usage_example: null
+8 api_shape: ''

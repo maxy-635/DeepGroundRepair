@@ -1,0 +1,17 @@
+2 api_name: paddle.sparse.sin
+3 api_description: Computes the elementwise sine of a sparse tensor, accepting only
+  SparseCooTensor or SparseCsrTensor inputs.
+4 api_signature: paddle.sparse.sin(x)
+5 api_details: ''
+6 api_parameters:
+- x: Sparse tensor input whose sine is computed elementwise.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2., 0., 1.])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.sin(sparse_x)
+- out
+- Tensor(shape=[3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 2]],
+- values=[-0.90929741,  0.84147102])
+8 api_shape: {}

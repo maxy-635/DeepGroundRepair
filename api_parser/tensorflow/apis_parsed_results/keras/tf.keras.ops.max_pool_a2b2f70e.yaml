@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.max_pool
+3 api_description: Applies max pooling to an input tensor, downsampling it by taking
+  the maximum value over each sliding window.
+4 api_signature: tf.keras.ops.max_pool(inputs,pool_size,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- inputs: The input tensor to pool over its spatial dimensions.
+- pool_size: The size of the pooling window for each spatial dimension.
+- strides: The step size of the pooling window across each spatial dimension.
+- padding: The padding mode to use, either no padding (`valid`) or size-preserving
+    padding (`same`).
+7 api_usage_example: null
+8 api_shape: ''

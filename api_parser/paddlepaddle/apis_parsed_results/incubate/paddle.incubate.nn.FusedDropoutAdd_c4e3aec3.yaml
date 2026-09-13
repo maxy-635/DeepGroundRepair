@@ -1,0 +1,19 @@
+2 api_name: paddle.incubate.nn.FusedDropoutAdd
+3 api_description: Applies dropout to one input and adds it to another in a single
+  fused operation.
+4 api_signature: paddle.incubate.nn.FusedDropoutAdd(p,mode,name)
+5 api_details: ''
+6 api_parameters:
+- p: The dropout probability that determines how likely units are to be set to zero.
+- mode: Specifies the operation mode used by the fused dropout-add function.
+- name: An optional name assigned to the operation for identification.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- from paddle.incubate.nn.layer.fused_dropout_add import FusedDropoutAdd
+- x = paddle.to_tensor([[1,2,3], [4,5,6]], dtype="float32")
+- y = paddle.to_tensor([[1,2,3], [4,5,6]], dtype="float32")
+- m = FusedDropoutAdd(p=0.5)
+- out = m(x, y)
+8 api_shape: {}

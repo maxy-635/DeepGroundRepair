@@ -1,0 +1,13 @@
+2 api_name: tensorflow.inside_function
+3 api_description: Returns True when called inside a tf.function; otherwise returns
+  False for eager execution.
+4 api_signature: tf.inside_function()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- tf.inside_function()
+- '@tf.function'
+- 'def f():'
+- '  print(tf.inside_function())'
+- f()
+8 api_shape: ''

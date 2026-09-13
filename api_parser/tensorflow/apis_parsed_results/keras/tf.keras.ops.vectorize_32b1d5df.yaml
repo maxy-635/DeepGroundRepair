@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.vectorize
+3 api_description: Converts a function into a vectorized version that applies it elementwise
+  over inputs, enabling efficient batched operations.
+4 api_signature: tf.keras.ops.vectorize(pyfunc,signature)
+5 api_details: ''
+6 api_parameters:
+- pyfunc: A callable that takes a single tensor argument and is applied elementwise
+    or over vectorized inputs.
+- signature: An optional generalized ufunc-style shape signature that defines how
+    core dimensions are mapped for vectorized input and output shapes.
+7 api_usage_example: null
+8 api_shape: ''

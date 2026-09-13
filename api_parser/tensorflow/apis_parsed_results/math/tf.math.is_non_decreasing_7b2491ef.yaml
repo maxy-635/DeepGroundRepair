@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.is_non_decreasing
+3 api_description: Returns True when a tensor’s elements are in non-decreasing order,
+  comparing adjacent values in row-major order.
+4 api_signature: tf.math.is_non_decreasing(x)
+5 api_details: ''
+6 api_parameters:
+- x: The numeric tensor to check for non-decreasing values.
+7 api_usage_example:
+- x1 = tf.constant([1.0, 1.0, 3.0])
+- tf.math.is_non_decreasing(x1)
+- x2 = tf.constant([3.0, 1.0, 2.0])
+- tf.math.is_non_decreasing(x2)
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: paddle.is_floating_point
+3 api_description: 'Checks whether a dtype is a floating-point type: float64, float32,
+  float16, or bfloat16.'
+4 api_signature: paddle.is_floating_point(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(1., 5., dtype='float32')
+- y = paddle.arange(1, 5, dtype='int32')
+- print(paddle.is_floating_point(x))
+- 'True'
+- print(paddle.is_floating_point(y))
+- 'False'
+8 api_shape: {}

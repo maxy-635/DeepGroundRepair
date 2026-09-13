@@ -1,0 +1,22 @@
+2 api_name: paddle.cdist
+3 api_description: Computes pairwise p-norm distances between two collections of inputs.
+4 api_signature: paddle.cdist(x,y,p)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing B batches of P vectors, each of dimension M, to compare
+    against y.
+- y: Input tensor containing B batches of R vectors, each of dimension M, used as
+    the second set of vectors for distance calculation.
+- p: Specifies which p-norm to use when computing the pairwise distances between vectors.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[0.9041,  0.0196], [-0.3108, -2.4423], [-0.4821,  1.059]],
+  dtype=paddle.float32)
+- y = paddle.to_tensor([[-2.1763, -0.4713], [-0.6986,  1.3702]], dtype=paddle.float32)
+- distance = paddle.cdist(x, y)
+- print(distance)
+- Tensor(shape=[3, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[3.11927032, 2.09589314],'
+- '[2.71384072, 3.83217239],'
+- '[2.28300953, 0.37910119]])'
+8 api_shape: {}

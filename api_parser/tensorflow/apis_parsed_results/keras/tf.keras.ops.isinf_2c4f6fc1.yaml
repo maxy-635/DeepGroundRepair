@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.isinf
+3 api_description: Returns a boolean tensor indicating whether each element is positive
+  or negative infinity.
+4 api_signature: tf.keras.ops.isinf(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to check for infinite values.
+7 api_usage_example: null
+8 api_shape: ''

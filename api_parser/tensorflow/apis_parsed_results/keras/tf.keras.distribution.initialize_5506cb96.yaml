@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.distribution.initialize
+3 api_description: Prepares Keras’ distribution backend for multi-host or multi-process
+  execution, typically before any computation, using explicit arguments or environment
+  variables.
+4 api_signature: tf.keras.distribution.initialize(job_addresses,num_processes,process_id)
+5 api_details: ''
+6 api_parameters:
+- job_addresses: Comma-separated addresses for all jobs in the cluster, or `None`
+    when the backend can infer them.
+- num_processes: Total number of workers/processes in the computation cluster, or
+    `None` when the backend can infer it.
+- process_id: ID of the current worker/process, from `0` to `num_processes - 1`, with
+    `0` as the coordinator.
+7 api_usage_example: null
+8 api_shape: ''

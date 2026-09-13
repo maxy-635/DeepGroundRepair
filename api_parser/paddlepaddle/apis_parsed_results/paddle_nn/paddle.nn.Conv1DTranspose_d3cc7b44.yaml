@@ -1,0 +1,25 @@
+2 api_name: paddle.nn.Conv1DTranspose
+3 api_description: paddle.nn.Conv1DTranspose constructs a 1-D transposed convolution
+  layer, transforming input data in 'NCL' or 'NLC' format using specified filters,
+  dilation, stride, and padding. It optionally applies a bias and an activation function
+  to the output.
+4 api_signature: paddle.nn.Conv1DTranspose(in_channels,out_channels,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Specifies the number of input channels for the input image.
+- out_channels: Defines the number of filters, equivalent to the output feature map
+    channels.
+- kernel_size: Sets the size of the convolution filter, which can be an integer or
+    a tuple/list of one integer.
+- stride: Determines the step size for the transposed convolution, specified as an
+    integer or a tuple/list of one integer.
+- padding: Specifies the padding size or algorithm, which can be a string ('VALID'
+    or 'SAME'), or a tuple/list to define specific padding values.
+7 api_usage_example: []
+8 api_shape:
+  input tensor shape: (N, Channel_in, Length_in)
+  output tensor shape: (N, Channel_out, Length_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = out_channels
+    tensor length: Length_out = (Length_in - 1) * stride - 2 * padding + dilation
+      * (kernel_size - 1) + output_padding + 1

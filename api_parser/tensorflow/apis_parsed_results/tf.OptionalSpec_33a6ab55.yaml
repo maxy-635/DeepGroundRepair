@@ -1,0 +1,17 @@
+2 api_name: tensorflow.OptionalSpec
+3 api_description: TypeSpec for tf.experimental.Optional values, used to describe
+  and pass Optional inputs and outputs in tf.function.
+4 api_signature: tf.OptionalSpec(element_spec)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '@tf.function(input_signature=[tf.OptionalSpec('
+- '  tf.TensorSpec(shape=(), dtype=tf.int32, name=None))])'
+- 'def maybe_square(optional):'
+- '  if optional.has_value():'
+- '    x = optional.get_value()'
+- '    return x * x'
+- '  return -1'
+- optional = tf.experimental.Optional.from_value(5)
+- print(maybe_square(optional))
+8 api_shape: ''

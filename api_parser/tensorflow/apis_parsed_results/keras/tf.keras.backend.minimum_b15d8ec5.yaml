@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.minimum
+3 api_description: Returns the element-wise minimum of two tensors, comparing corresponding
+  values and producing a tensor of the same shape by selecting the smaller value at
+  each position.
+4 api_signature: tf.keras.backend.minimum(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

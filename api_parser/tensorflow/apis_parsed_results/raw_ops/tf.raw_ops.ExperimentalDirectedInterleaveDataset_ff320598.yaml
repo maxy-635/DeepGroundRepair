@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ExperimentalDirectedInterleaveDataset
+3 api_description: Creates a dataset that interleaves elements from a fixed list of
+  input datasets in a directed order, acting as a substitute for InterleaveDataset
+  when the set of datasets is known ahead of time.
+4 api_signature: tf.raw_ops.ExperimentalDirectedInterleaveDataset(selector_input_dataset,data_input_datasets)
+5 api_details: ''
+6 api_parameters:
+- selector_input_dataset: Specifies the dataset of int64 selectors that chooses which
+    data input dataset should provide each next output element.
+- data_input_datasets: Provides the list of input datasets to interleave, with the
+    selector values determining which one contributes each output element.
+7 api_usage_example: null
+8 api_shape: ''

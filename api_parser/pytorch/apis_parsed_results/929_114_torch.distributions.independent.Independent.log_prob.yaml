@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.independent.Independent.log_prob
+3 api_description: Computes the log probability of a sample while reinterpreting specified
+  batch dimensions as part of the event, effectively summing log probabilities across
+  those dimensions.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

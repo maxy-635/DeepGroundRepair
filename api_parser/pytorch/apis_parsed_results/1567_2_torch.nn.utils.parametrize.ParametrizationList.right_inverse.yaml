@@ -1,0 +1,9 @@
+2 api_name: torch.nn.utils.parametrize.ParametrizationList.right_inverse
+3 api_description: Applies each parametrization’s right_inverse in reverse registration
+  order to map a constrained value back to the original parameter space.
+4 api_signature: right_inverse(value)
+5 api_details: ''
+6 api_parameters:
+- value: The target value used to initialize the module.
+7 api_usage_example: null
+8 api_shape: null

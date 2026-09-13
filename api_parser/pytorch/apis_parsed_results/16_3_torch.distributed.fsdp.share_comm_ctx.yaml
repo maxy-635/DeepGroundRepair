@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.fsdp.share_comm_ctx
+3 api_description: Shares CUDA communication streams across multiple FSDP modules
+  to reduce stream overhead and coordinate distributed communication.
+4 api_signature: torch.distributed.fsdp.share_comm_ctx(modules)
+5 api_details: ''
+6 api_parameters:
+- modules: The modules whose CUDA streams will be shared through the communication
+    context.
+7 api_usage_example: null
+8 api_shape: null

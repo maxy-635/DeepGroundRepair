@@ -1,0 +1,15 @@
+2 api_name: tensorflow.io.decode_csv
+3 api_description: Converts CSV records into tensors, mapping each column to a tensor
+  and parsing RFC 4180-style CSV with support for leading and trailing spaces in int
+  or float fields.
+4 api_signature: tf.io.decode_csv(records,record_defaults,field_delim)
+5 api_details: ''
+6 api_parameters:
+- records: Provides the CSV row strings to be parsed, with each string representing
+    one record in a consistent format.
+- record_defaults: Supplies per-column default values and required types used to decode
+    each field when data is missing or to enforce column parsing.
+- field_delim: Sets the character used to separate fields within each CSV record,
+    defaulting to a comma.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,23 @@
+2 api_name: torch.nn.functional.max_pool2d
+3 api_description: torch.nn.functional.max_pool2d performs 2D max pooling on input
+  data, reducing its spatial dimensions by selecting the maximum value in each specified
+  window, across multiple input channels.
+4 api_signature: torch.nn.functional.max_pool2d(input,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor representing the data to be pooled, typically shaped as
+    (minibatch, in_channels, iH, iW), with minibatch dimension optional.
+- kernel_size: Specifies the size of the pooling region, which can be a single integer
+    or a tuple (kH, kW) indicating the height and width.
+- stride: Determines the stride or step size of the pooling operation, which can be
+    a single integer or a tuple (sH, sW) for height and width.
+- padding: Defines the implicit negative infinity padding added to both sides, constrained
+    to be between 0 and half of the kernel_size.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1))

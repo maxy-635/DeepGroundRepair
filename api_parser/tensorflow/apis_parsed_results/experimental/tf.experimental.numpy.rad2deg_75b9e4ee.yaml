@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.rad2deg
+3 api_description: Converts angles from radians to degrees elementwise using TensorFlow-compatible
+  NumPy semantics.
+4 api_signature: tf.experimental.numpy.rad2deg(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

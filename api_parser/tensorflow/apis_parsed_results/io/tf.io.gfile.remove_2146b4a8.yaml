@@ -1,0 +1,8 @@
+2 api_name: tensorflow.io.gfile.remove
+3 api_description: Deletes the file or path at the specified location.
+4 api_signature: tf.io.gfile.remove(path)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the file path to remove.
+7 api_usage_example: null
+8 api_shape: ''

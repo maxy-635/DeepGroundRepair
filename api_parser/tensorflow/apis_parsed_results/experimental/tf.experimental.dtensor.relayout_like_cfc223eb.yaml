@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.dtensor.relayout_like
+3 api_description: Changes a tensor’s layout to match another tensor’s mesh and layout,
+  often used in tf.function, and preserves layout consistency in backpropagation via
+  relayout_like.
+4 api_signature: tf.experimental.dtensor.relayout_like(tensor,layout_tensor)
+5 api_details: ''
+6 api_parameters:
+- tensor: The DTensor whose layout will be changed.
+- layout_tensor: A Tensor whose layout is copied to define the result layout, regardless
+    of its shape or type.
+7 api_usage_example: null
+8 api_shape: ''

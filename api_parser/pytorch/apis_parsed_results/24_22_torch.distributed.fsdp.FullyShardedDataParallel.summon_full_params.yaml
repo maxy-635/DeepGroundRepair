@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.summon_full_params
+3 api_description: Context manager that temporarily gathers and exposes each FSDP
+  instance’s full parameters for inspection or modification.
+4 api_signature: staticsummon_full_params(module,recurse,writeback)
+5 api_details: ''
+6 api_parameters:
+- recurse: Recursively gathers full parameters for nested FSDP instances.
+- writeback: Controls whether parameter changes are kept after exiting the context
+    manager.
+7 api_usage_example: null
+8 api_shape: null

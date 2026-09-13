@@ -1,0 +1,22 @@
+2 api_name: torch.cholesky_solve
+3 api_description: Solves linear systems using a Cholesky factorization of a real
+  symmetric or complex Hermitian positive-definite matrix.
+4 api_signature: torch.cholesky_solve(B,L)
+5 api_details: ''
+6 api_parameters:
+- B: The right-hand side tensor to be solved for, with shape (*, n, k).
+- L: The Cholesky factor tensor used to solve the system, with shape (*, n, n).
+7 api_usage_example:
+- ' A = torch.randn(3, 3)'
+- ' A = A @ A.T + torch.eye(3) * 1e-3 # Creates a symmetric positive-definite matrix'
+- ' L = torch.linalg.cholesky(A) # Extract Cholesky decomposition'
+- ' B = torch.randn(3, 2)'
+- ' torch.cholesky_solve(B, L)'
+- ' A.inverse() @  B'
+- ' A = torch.randn(3, 2, 2, dtype=torch.complex64)'
+- ' A = A @ A.mH + torch.eye(2) * 1e-3 # Batch of Hermitian positive-definite matrices'
+- ' L = torch.linalg.cholesky(A)'
+- ' B = torch.randn(2, 1, dtype=torch.complex64)'
+- ' X = torch.cholesky_solve(B, L)'
+- ' torch.dist(X, A.inverse() @ B)'
+8 api_shape: null

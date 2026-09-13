@@ -1,0 +1,8 @@
+2 api_name: torch.BFloat16Storage
+3 api_description: Storage type for tensors backed by 16-bit bfloat16 elements, providing
+  low-level access to raw numeric data in that format.
+4 api_signature: torch.BFloat16Storage(wrap_storage,dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.QuantizedMaxPool
+3 api_description: Computes max pooling on a quantized input tensor, returning the
+  pooled output for quantized data types.
+4 api_signature: tf.raw_ops.QuantizedMaxPool(input,ksize,strides,padding,name)
+5 api_details: ''
+6 api_parameters:
+- input: The 4D quantized tensor to perform max pooling on.
+- ksize: Specifies the window size for pooling across each input dimension.
+- strides: Specifies how far the pooling window moves at each step across each dimension.
+- padding: Chooses whether to use SAME or VALID padding for the pooling operation.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

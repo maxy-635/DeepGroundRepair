@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.SubclassSymbolicContext
+3 api_description: Represents per-attribute symbolic shape contexts for traceable
+  tensor subclasses, allowing inner tensors to use symbolic contexts that differ from
+  the outer subclass context.
+4 api_signature: SymbolicContext(dynamic_sizes,dynamic_strides,constraint_sizes,constraint_strides,specialize_on,view_base_context,inner_contexts)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

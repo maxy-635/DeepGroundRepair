@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.StatsAggregatorHandle
+3 api_description: Creates a resource handle for managing and collecting statistics.
+4 api_signature: tf.raw_ops.StatsAggregatorHandle(shared_name,name)
+5 api_details: ''
+6 api_parameters:
+- shared_name: Sets an optional shared identifier so multiple ops can refer to the
+    same aggregator handle.
+- name: Assigns an optional name to the operation for graph readability and debugging.
+7 api_usage_example: null
+8 api_shape: ''

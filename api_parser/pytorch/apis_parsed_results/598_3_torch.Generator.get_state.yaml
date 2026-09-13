@@ -1,0 +1,10 @@
+2 api_name: torch.Generator.get_state
+3 api_description: Returns the generator’s internal state as a ByteTensor so it can
+  be saved, inspected, or restored later.
+4 api_signature: '"get_state()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' g_cpu = torch.Generator()'
+- ' g_cpu.get_state()'
+8 api_shape: null

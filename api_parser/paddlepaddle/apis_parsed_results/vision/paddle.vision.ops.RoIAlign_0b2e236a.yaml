@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.ops.RoIAlign
+3 api_description: Creates a callable RoIAlign operator that extracts fixed-size feature
+  maps from input feature maps for each region of interest.
+4 api_signature: paddle.vision.ops.RoIAlign(output_size,spatial_scale)
+5 api_details: ''
+6 api_parameters:
+- output_size: Sets the height and width of the pooled RoI feature map.
+- spatial_scale: Scales ROI coordinates to match the feature map resolution used for
+    pooling.
+7 api_usage_example: []
+8 api_shape: {}

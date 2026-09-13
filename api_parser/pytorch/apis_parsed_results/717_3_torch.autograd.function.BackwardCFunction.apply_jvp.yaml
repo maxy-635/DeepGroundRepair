@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.function.BackwardCFunction.apply_jvp
+3 api_description: Runs the custom autograd backward function’s forward-mode JVP to
+  compute Jacobians during forward AD.
+4 api_signature: '"apply_jvp"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

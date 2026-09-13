@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.MaxPool3DGrad
+3 api_description: Computes the gradient of a 3D max pooling operation by propagating
+  `grad` back through the max-pooling locations identified by `orig_input` and `orig_output`.
+4 api_signature: tf.raw_ops.MaxPool3DGrad(orig_input,grad,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- orig_input: The original 3D input tensor used to compute the max-pooling operation.
+- grad: The backpropagated gradient from the pooled output, matching the output shape.
+- ksize: The 5D pooling window size, with the batch and channel dimensions fixed at
+    1.
+- strides: The 5D sliding-window stride, with the batch and channel dimensions fixed
+    at 1.
+- padding: The padding mode that determines how pooling handles borders, either `SAME`
+    or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

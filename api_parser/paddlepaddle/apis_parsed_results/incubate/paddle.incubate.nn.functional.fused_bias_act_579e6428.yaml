@@ -1,0 +1,12 @@
+2 api_name: paddle.incubate.nn.functional.fused_bias_act
+3 api_description: Applies a fused bias-and-activation kernel for efficient neural
+  network computation.
+4 api_signature: paddle.incubate.nn.functional.fused_bias_act(x,bias,act_method)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to which bias and activation are applied.
+- bias: The optional bias tensor added to `x` before activation; if `None`, no bias
+    is added.
+- act_method: The activation function to apply to the biased input.
+7 api_usage_example: []
+8 api_shape: {}

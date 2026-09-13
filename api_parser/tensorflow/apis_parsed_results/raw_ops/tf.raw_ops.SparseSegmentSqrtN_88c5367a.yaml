@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SparseSegmentSqrtN
+3 api_description: Computes the sum of values in each sparse segment and divides the
+  result by the square root of the segment size.
+4 api_signature: tf.raw_ops.SparseSegmentSqrtN(data,indices,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor containing the values to be aggregated by sparse segments.
+- indices: A 1-D tensor that specifies which entries in `data` belong to each segment.
+- segment_ids: A sorted 1-D tensor of segment labels, where repeated values group
+    corresponding `indices` entries into the same segment.
+7 api_usage_example: null
+8 api_shape: ''

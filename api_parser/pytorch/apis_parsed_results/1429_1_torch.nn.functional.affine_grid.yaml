@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.affine_grid
+3 api_description: torch.nn.functional.affine_grid generates a 2D or 3D sampling grid
+  based on a batch of affine transformation matrices, theta, enabling spatial transformations
+  of input data.
+4 api_signature: torch.nn.functional.affine_grid(theta,size)
+5 api_details: ''
+6 api_parameters:
+- theta: Defines the input batch of affine transformation matrices for either 2D or
+    3D transformations.
+- size: Specifies the desired dimensions of the output image after applying the affine
+    transformation, including batch size, channels, and spatial dimensions.
+7 api_usage_example: null
+8 api_shape: null

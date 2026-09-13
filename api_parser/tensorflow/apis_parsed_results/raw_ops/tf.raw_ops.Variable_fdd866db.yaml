@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Variable
+3 api_description: Creates a mutable TensorFlow variable resource backed by a tensor-shaped
+  container for storing and updating model state.
+4 api_signature: tf.raw_ops.Variable(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the dimensions of the variable to create.
+- dtype: Specifies the data type of the variable's values.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.all
+3 api_description: Returns True if all elements along the specified axis evaluate
+  to True; TensorFlow's NumPy-compatible `all` ignores unsupported `out` and `where`
+  arguments.
+4 api_signature: tf.experimental.numpy.all(a,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

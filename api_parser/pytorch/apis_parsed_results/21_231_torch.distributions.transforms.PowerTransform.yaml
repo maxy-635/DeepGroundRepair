@@ -1,0 +1,7 @@
+2 api_name: torch.distributions.transforms.PowerTransform
+3 api_description: Applies a power-law transform that maps inputs via y = x^exponent.
+4 api_signature: '"torch.distributions.transforms.PowerTransform(exponent)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

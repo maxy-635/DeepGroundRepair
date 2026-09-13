@@ -1,0 +1,12 @@
+2 api_name: paddle.optimizer.lr.CosineAnnealingWarmRestarts
+3 api_description: Sets each parameter group’s learning rate with cosine annealing
+  and periodic warm restarts, using the initial lr as the maximum and tracking epochs
+  since the last restart.
+4 api_signature: paddle.optimizer.lr.CosineAnnealingWarmRestarts(learning_rate,T_0,T_mult)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the initial learning rate used at the start of training.
+- T_0: Specifies how many iterations to run before the first warm restart.
+- T_mult: Controls how much the restart period grows after each restart.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,27 @@
+2 api_name: paddle.nn.functional.conv3d_transpose
+3 api_description: The paddle.nn.functional.conv3d_transpose API performs a 3D transposed
+  convolution on input data in NCDHW or NDHWC format using specified filters, dilations,
+  strides, and paddings. It supports adding a bias and applying an activation function
+  to the output.
+4 api_signature: paddle.nn.functional.conv3d_transpose(x,weight,stride,padding,output_padding)
+5 api_details: ''
+6 api_parameters:
+- x: The 5-D input tensor for the transposed convolution operation, with shape either
+    [N, C, D, H, W] or [N, D, H, W, C].
+- weight: The convolution kernel tensor with shape [C, M/g, kD, kH, kW], defining
+    the number of filters and filter dimensions.
+- stride: Defines the stride of the transposed convolution, either as a single integer
+    or a tuple of three integers for each dimension.
+- padding: Specifies the padding scheme, either as a string ('VALID' or 'SAME') or
+    as a list/tuple defining padding for each dimension.
+- output_padding: Additional size added to one side of each dimension in the output
+    shape to control the output size.
+7 api_usage_example: []
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[1]
+    tensor depth: Depth_out = (Depth_in - 1) * stride_depth - 2 * padding_depth + kernel_size_depth + output_padding_depth
+    tensor height: Height_out = (Height_in - 1) * stride_height - 2 * padding_height + kernel_size_height + output_padding_height
+    tensor width: Width_out = (Width_in - 1) * stride_width - 2 * padding_width + kernel_size_width + output_padding_width

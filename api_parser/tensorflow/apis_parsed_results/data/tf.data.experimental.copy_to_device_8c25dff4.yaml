@@ -1,0 +1,8 @@
+2 api_name: tensorflow.data.experimental.copy_to_device
+3 api_description: Copies each dataset element to a specified target device.
+4 api_signature: tf.data.experimental.copy_to_device(target_device)
+5 api_details: ''
+6 api_parameters:
+- target_device: Specifies the device where dataset elements are copied for processing.
+7 api_usage_example: null
+8 api_shape: ''

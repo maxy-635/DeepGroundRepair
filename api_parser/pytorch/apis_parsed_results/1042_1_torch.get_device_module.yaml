@@ -1,0 +1,8 @@
+2 api_name: torch.get_device_module
+3 api_description: Returns the module for a specified device, or the current accelerator
+  module if no device is given, falling back to CPU when none is available.
+4 api_signature: torch.get_device_module(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

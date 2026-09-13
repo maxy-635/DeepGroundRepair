@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.BCELoss
+3 api_description: BCELoss computes the binary cross-entropy loss between input predictions
+  and target labels.
+4 api_signature: paddle.nn.BCELoss()
+5 api_details: ''
+6 api_parameters:
+- weight: A manual rescaling weight given to the loss of each batch element.
+- reduction: 'Specifies the reduction to apply to the output: ''none'', ''mean'',
+    or ''sum''.'
+- name: An optional name for the operation.
+7 api_usage_example:
+- import paddle
+- input = paddle.to_tensor([0.5, 0.6, 0.7])
+- label = paddle.to_tensor([1.0, 0.0, 1.0])
+- bce_loss = paddle.nn.BCELoss()
+- output = bce_loss(input, label)
+- print(output)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.65537095)
+8 api_shape: null

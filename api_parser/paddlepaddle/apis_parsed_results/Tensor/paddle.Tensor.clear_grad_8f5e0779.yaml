@@ -1,0 +1,7 @@
+2 api_name: paddle.Tensor.clear_grad
+3 api_description: Clears the tensor's gradients by aliasing clear_gradient().
+4 api_signature: paddle.Tensor.clear_grad(self)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

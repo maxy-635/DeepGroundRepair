@@ -1,0 +1,18 @@
+2 api_name: tensorflow.config.list_logical_devices
+3 api_description: Returns the runtime’s configured logical devices, which may represent
+  physical or remote devices and can be used for tensor and operation placement.
+4 api_signature: tf.config.list_logical_devices(device_type)
+5 api_details: ''
+6 api_parameters:
+- device_type: Filters the returned logical devices to only those of the specified
+    device type, such as `CPU` or `GPU`.
+7 api_usage_example:
+- logical_devices = tf.config.list_logical_devices('GPU')
+- 'if len(logical_devices) > 0:'
+- '  # Allocate on GPU:0'
+- '  with tf.device(logical_devices[0].name):'
+- '    one = tf.constant(1)'
+- '  # Allocate on GPU:1'
+- '  with tf.device(logical_devices[1].name):'
+- '    two = tf.constant(2)'
+8 api_shape: ''

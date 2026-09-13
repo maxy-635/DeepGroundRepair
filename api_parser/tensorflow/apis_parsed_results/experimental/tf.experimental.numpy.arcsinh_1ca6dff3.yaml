@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.arcsinh
+3 api_description: Computes the inverse hyperbolic sine of each input element, matching
+  NumPy’s arcsinh behavior for TensorFlow tensors.
+4 api_signature: tf.experimental.numpy.arcsinh(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

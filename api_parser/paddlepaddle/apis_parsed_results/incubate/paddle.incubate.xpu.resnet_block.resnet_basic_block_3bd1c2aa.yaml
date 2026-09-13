@@ -1,0 +1,8 @@
+2 api_name: paddle.incubate.xpu.resnet_block.resnet_basic_block
+3 api_description: Builds a basic ResNet block for XPU, applying convolution, batch
+  normalization, and residual connections to transform feature maps.
+4 api_signature: paddle.incubate.xpu.resnet_block.resnet_basic_block(x,filter1,filter2,filter3,stride1,stride2,stride3,padding1,padding2,padding3,data_format,has_shortcut,use_global_stats,training)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

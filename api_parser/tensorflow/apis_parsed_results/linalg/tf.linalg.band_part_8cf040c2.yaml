@@ -1,0 +1,13 @@
+2 api_name: tensorflow.linalg.band_part
+3 api_description: Returns a tensor with the same shape as the input, zeroing out
+  elements outside a specified central band in each innermost matrix.
+4 api_signature: tf.linalg.band_part(input,num_lower,num_upper)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are masked to keep only the specified band.
+- num_lower: The number of lower diagonals to retain, or all lower-triangular entries
+    if negative.
+- num_upper: The number of upper diagonals to retain, or all upper-triangular entries
+    if negative.
+7 api_usage_example: null
+8 api_shape: ''

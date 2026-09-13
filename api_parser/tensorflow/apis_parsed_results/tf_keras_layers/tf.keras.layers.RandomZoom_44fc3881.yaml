@@ -1,0 +1,22 @@
+2 api_name: tensorflow.keras.layers.RandomZoom
+3 api_description: tf.keras.layers.RandomZoom randomly zooms images during training,
+  adjusting each axis independently and filling empty spaces based on fill_mode. It
+  accepts various input pixel value ranges and outputs tensors in the specified shape
+  format.
+4 api_signature: tf.keras.layers.RandomZoom(height_factor, width_factor, fill_mode)
+5 api_details: ''
+6 api_parameters:
+- height_factor: Specifies the zooming factor for the height, allowing for random
+    vertical zooming out (positive value) or zooming in (negative value) within a
+    specified range.
+- width_factor: Specifies the zooming factor for the width, allowing for random horizontal
+    zooming out (positive value) or zooming in (negative value) within a specified
+    range, with None preserving the aspect ratio.
+- fill_mode: Defines how to fill points outside the boundaries of the input image,
+    with options including 'constant', 'nearest', 'wrap', and 'reflect', defaulting
+    to 'constant'.
+7 api_usage_example:
+- input_img = np.random.random((32, 224, 224, 3))
+- layer = keras.layers.RandomZoom(.5, .2)
+- out_img = layer(input_img)
+8 api_shape: null

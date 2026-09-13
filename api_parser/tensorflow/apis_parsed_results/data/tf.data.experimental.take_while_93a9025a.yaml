@@ -1,0 +1,10 @@
+2 api_name: tensorflow.data.experimental.take_while
+3 api_description: Creates a dataset transformation that yields elements only while
+  a predicate remains true, then stops iteration.
+4 api_signature: tf.data.experimental.take_while(predicate)
+5 api_details: ''
+6 api_parameters:
+- predicate: Returns `True` or `False` for each element to decide whether to keep
+    taking elements from the dataset.
+7 api_usage_example: null
+8 api_shape: ''

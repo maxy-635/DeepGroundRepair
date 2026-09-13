@@ -1,0 +1,15 @@
+2 api_name: torch.nn.HuberLoss
+3 api_description: HuberLoss combines L1 and MSE loss; it uses squared loss for small
+  errors and delta-scaled L1 loss for larger errors, making it robust to outliers
+  while maintaining smoothness near zero.
+4 api_signature: torch.nn.HuberLoss(delta)
+5 api_details: ''
+6 api_parameters:
+- delta: Specifies the threshold at which to change between delta-scaled L1 and L2
+    loss; must be a positive value.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*) where * means any number of dimensions.
+  output tensor shape: scalar. If reduction is 'none', then (*), same shape as the
+    input.
+  tensor shape transform formulas: {}

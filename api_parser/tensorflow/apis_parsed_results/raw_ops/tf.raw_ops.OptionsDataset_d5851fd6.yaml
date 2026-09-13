@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.OptionsDataset
+3 api_description: Returns a dataset that applies the given tf.data.Options to an
+  input dataset.
+4 api_signature: tf.raw_ops.OptionsDataset(input_dataset,serialized_options)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to which the options will be applied.
+- serialized_options: A serialized `tf.data.Options` protocol buffer that configures
+    the dataset.
+7 api_usage_example: null
+8 api_shape: ''

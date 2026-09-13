@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingAdadeltaParameters
+3 api_description: Retrieves Adadelta TPU embedding parameters from embedding memory
+  to host memory, typically before checkpointing, after the embedding host has been
+  configured.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingAdadeltaParameters(table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- table_id: Identifies the embedding table by numeric ID, with -1 meaning unspecified.
+- table_name: Identifies the embedding table by name, with an empty string meaning
+    unspecified.
+- config: Carries the serialized configuration string used to retrieve the Adadelta
+    parameters, with an empty string meaning unspecified.
+- name: Sets an optional operation name for easier graph identification.
+7 api_usage_example: null
+8 api_shape: ''

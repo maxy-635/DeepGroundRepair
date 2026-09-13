@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.ConsumeMutexLock
+3 api_description: Consumes a MutexLock tensor to keep the lock alive until it is
+  explicitly released.
+4 api_signature: tf.raw_ops.ConsumeMutexLock(mutex_lock)
+5 api_details: ''
+6 api_parameters:
+- mutex_lock: The mutex lock tensor to consume, typically the handle returned by `MutexLock`.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.transpose
+3 api_description: Reorders a tensor’s dimensions according to `perm` (or reverses
+  them by default), optionally conjugating complex values.
+4 api_signature: tf.transpose(a,perm)
+5 api_details: ''
+6 api_parameters:
+- a: The input tensor whose dimensions will be reordered.
+- perm: A vector that specifies the new order of the tensor’s dimensions.
+7 api_usage_example:
+- tf.transpose(x, perm=[0, 2, 1])
+8 api_shape: ''

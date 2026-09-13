@@ -1,0 +1,9 @@
+2 api_name: torch.TypedStorage.from_file
+3 api_description: Creates a CPU storage backed by a memory-mapped file, allowing
+  tensor data to be stored and accessed directly from disk.
+4 api_signature: from_file(filename)
+5 api_details: ''
+6 api_parameters:
+- filename: The path to the file that will be memory-mapped as storage.
+7 api_usage_example: null
+8 api_shape: null

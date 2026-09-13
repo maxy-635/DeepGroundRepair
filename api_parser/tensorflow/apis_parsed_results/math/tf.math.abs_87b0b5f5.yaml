@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.abs
+3 api_description: Returns the element-wise absolute value of a tensor; preserves
+  integer and floating-point types, and for complex inputs returns the magnitude as
+  float32 or float64.
+4 api_signature: tf.math.abs(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor or sparse tensor whose absolute value is computed elementwise.
+7 api_usage_example:
+- '# complex number'
+- x = tf.constant([[-2.25 + 4.75j], [-3.25 + 5.75j]])
+- tf.abs(x)
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.add
+3 api_description: Adds two inputs element-wise and returns the summed result.
+4 api_signature: tf.keras.ops.add(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first tensor to be added.
+- x2: The second tensor to be added.
+7 api_usage_example:
+- x1 = keras.ops.convert_to_tensor([1, 4])
+- x2 = keras.ops.convert_to_tensor([5, 6])
+- keras.ops.add(x1, x2)
+8 api_shape: ''

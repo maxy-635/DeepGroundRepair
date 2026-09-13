@@ -1,0 +1,19 @@
+2 api_name: paddle.distributed.destroy_process_group
+3 api_description: Destroys a specified distributed communication process group and
+  releases its associated resources.
+4 api_signature: paddle.distributed.destroy_process_group(group)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- group = dist.new_group([0, 1])
+- dist.destroy_process_group(group)
+- print(dist.is_initialized())
+- 'True'
+- dist.destroy_process_group()
+- print(dist.is_initialized())
+- 'False'
+8 api_shape: {}

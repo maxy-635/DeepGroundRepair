@@ -1,0 +1,16 @@
+2 api_name: tensorflow.distribute.experimental.PreemptionCheckpointHandler
+3 api_description: Coordinates synchronous workers to restore from the latest checkpoint,
+  watch for cluster termination signals, save a coordinated checkpoint on preemption,
+  and then either call a configured exit function or exit so the platform can restart
+  training.
+4 api_signature: tf.distribute.experimental.PreemptionCheckpointHandler(cluster_resolver,checkpoint_or_checkpoint_manager,checkpoint_dir)
+5 api_details: ''
+6 api_parameters:
+- cluster_resolver: Provides the cluster information needed to coordinate checkpointing
+    and recovery across distributed workers.
+- checkpoint_or_checkpoint_manager: Supplies the checkpoint object to save and restore,
+    or an existing checkpoint manager if one is already being used.
+- checkpoint_dir: Specifies the directory where checkpoints are stored and from which
+    the latest checkpoint is restored on initialization.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,21 @@
+2 api_name: torch.sparse_csc_tensor
+3 api_description: Creates a sparse tensor in compressed sparse column (CSC) format
+  from column pointers, row indices, and values, enabling efficient sparse matrix
+  storage and multiplication.
+4 api_signature: torch.sparse_csc_tensor(ccol_indices,row_indices,values,size)
+5 api_details: ''
+6 api_parameters:
+- ccol_indices: Encodes the start position of each column's non-zero entries in `values`
+    and `row_indices`, with the last entry giving the total number of non-zeros.
+- row_indices: Stores the row index for each non-zero element in the sparse CSC tensor.
+- values: Provides the initial non-zero data values for the tensor, including any
+    dense dimensions.
+- size: Specifies the full sparse tensor shape, or is inferred automatically if omitted.
+7 api_usage_example:
+- ' ccol_indices = [0, 2, 4]'
+- ' row_indices = [0, 1, 0, 1]'
+- ' values = [1, 2, 3, 4]'
+- ' torch.sparse_csc_tensor(torch.tensor(ccol_indices, dtype=torch.int64),'
+- '...                         torch.tensor(row_indices, dtype=torch.int64),'
+- '...                         torch.tensor(values), dtype=torch.double)'
+8 api_shape: null

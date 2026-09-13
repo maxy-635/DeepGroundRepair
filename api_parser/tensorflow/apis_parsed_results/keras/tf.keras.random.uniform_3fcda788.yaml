@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.random.uniform
+3 api_description: Generates floating-point samples from a uniform distribution in
+  the range [minval, maxval), including minval and excluding maxval, with a default
+  range of [0, 1).
+4 api_signature: tf.keras.random.uniform(shape,minval,maxval,dtype,seed)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the dimensions of the random tensor to generate.
+- minval: Sets the inclusive lower bound for generated values.
+- maxval: Sets the exclusive upper bound for generated values.
+- dtype: Specifies the floating-point type of the output tensor.
+- seed: Controls randomness to make outputs deterministic or reproducible.
+7 api_usage_example: null
+8 api_shape: ''

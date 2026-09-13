@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.async_clear_error
+3 api_description: Clears pending async operations and resets error state after an
+  execution error.
+4 api_signature: tf.experimental.async_clear_error()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

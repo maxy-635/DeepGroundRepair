@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.UnsortedSegmentSum
+3 api_description: Computes the sum of tensor values grouped by segment IDs, allowing
+  unsorted or missing IDs; empty segments return 0 and negative IDs are ignored.
+4 api_signature: tf.raw_ops.UnsortedSegmentSum(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are summed into segments.
+- segment_ids: A tensor of segment indices, aligned to the prefix of `data.shape`,
+    that assigns each `data` slice to a segment.
+- num_segments: The total number of output segments to produce.
+7 api_usage_example:
+- c = [[1,2,3,4], [5,6,7,8], [4,3,2,1]]
+- tf.math.unsorted_segment_sum(c, [0, 1, 0], num_segments=2).numpy()
+8 api_shape: ''

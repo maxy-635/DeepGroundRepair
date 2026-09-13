@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.losses.squared_hinge
+3 api_description: Computes the squared hinge loss between true labels and predicted
+  values, penalizing misclassifications with a squared margin-based hinge term.
+4 api_signature: tf.keras.losses.squared_hinge(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: Supplies the true labels, expected to be -1 or 1, and binary 0/1 labels
+    are converted to -1/1 if needed.
+- y_pred: Provides the model’s predicted values used to compute the squared hinge
+    loss.
+7 api_usage_example:
+- y_true = np.random.choice([-1, 1], size=(2, 3))
+- y_pred = np.random.random(size=(2, 3))
+- loss = keras.losses.squared_hinge(y_true, y_pred)
+8 api_shape: ''

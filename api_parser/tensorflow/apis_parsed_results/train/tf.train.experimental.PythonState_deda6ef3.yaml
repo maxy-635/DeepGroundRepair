@@ -1,0 +1,8 @@
+2 api_name: tensorflow.train.experimental.PythonState
+3 api_description: Mixin for saving and restoring custom Python state in object-based
+  TensorFlow checkpoints by providing callback-based deserialization.
+4 api_signature: deserialize(string_value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

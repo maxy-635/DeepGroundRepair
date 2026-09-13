@@ -1,0 +1,16 @@
+2 api_name: torch.clamp
+3 api_description: Clamps every element of the input tensor to lie within the specified
+  [min, max] range.
+4 api_signature: torch.clamp(input,min,max)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be clamped.
+- min: The minimum allowed value; values below it are raised to this bound.
+- max: The maximum allowed value; values above it are lowered to this bound.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.clamp(a, min=-0.5, max=0.5)'
+- ' min = torch.linspace(-1, 1, steps=4)'
+- ' torch.clamp(a, min=min)'
+8 api_shape: null

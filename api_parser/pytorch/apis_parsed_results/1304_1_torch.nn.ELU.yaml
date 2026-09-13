@@ -1,0 +1,16 @@
+2 api_name: torch.nn.ELU
+3 api_description: Applies the Exponential Linear Unit (ELU) activation function element-wise
+  to input tensors.
+4 api_signature: torch.nn.ELU(alpha)
+5 api_details: ''
+6 api_parameters:
+- alpha: the α value that controls the value to which an ELU saturates for negative
+    inputs.
+7 api_usage_example:
+- ' m = nn.ELU()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

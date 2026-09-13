@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SpaceToBatch
+3 api_description: Zero-pads a 4-D tensor if needed, then rearranges spatial blocks
+  from height and width into the batch dimension using a block size greater than 1.
+4 api_signature: tf.raw_ops.SpaceToBatch(input,paddings,block_size)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D input tensor [batch, height, width, depth] to be spatially rearranged.
+- paddings: A 2-D tensor of non-negative integers that specifies how much zero-padding
+    to add to the height and width dimensions.
+- block_size: An integer greater than or equal to 2 that sets the spatial block size
+    for the rearrangement.
+7 api_usage_example: null
+8 api_shape: ''

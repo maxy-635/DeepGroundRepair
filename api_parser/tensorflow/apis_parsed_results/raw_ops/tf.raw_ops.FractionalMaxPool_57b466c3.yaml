@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.FractionalMaxPool
+3 api_description: Applies fractional max pooling to an input tensor, reducing its
+  spatial dimensions by pooling over randomly generated, fairly uniform regions instead
+  of fixed-size windows.
+4 api_signature: tf.raw_ops.FractionalMaxPool(value,pooling_ratio,overlapping,name)
+5 api_details: ''
+6 api_parameters:
+- value: The 4-D input tensor to be fractionally max-pooled over the height and width
+    dimensions.
+- pooling_ratio: Specifies the pooling scale for each tensor dimension, with 1.0 for
+    batch and channels and values greater than or equal to 1.0 for height and width.
+- overlapping: Controls whether adjacent pooling regions share boundary values during
+    max pooling.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

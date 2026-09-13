@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Digamma
+3 api_description: Computes the digamma (Psi) function element-wise, returning the
+  derivative of `Lgamma` for each input value.
+4 api_signature: tf.raw_ops.Digamma(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose element-wise digamma (psi) function is computed.
+7 api_usage_example: null
+8 api_shape: ''

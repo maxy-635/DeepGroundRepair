@@ -1,0 +1,14 @@
+2 api_name: torch.chunk
+3 api_description: Splits a tensor into a specified number of chunk views along a
+  dimension.
+4 api_signature: torch.chunk(input:Tensor,chunks:int,dim:int)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor that will be divided into multiple chunks.
+- chunks: The number of chunks to split the tensor into.
+- dim: The dimension along which the tensor is split.
+7 api_usage_example:
+- ' torch.arange(11).chunk(6)'
+- ' torch.arange(12).chunk(6)'
+- ' torch.arange(13).chunk(6)'
+8 api_shape: null

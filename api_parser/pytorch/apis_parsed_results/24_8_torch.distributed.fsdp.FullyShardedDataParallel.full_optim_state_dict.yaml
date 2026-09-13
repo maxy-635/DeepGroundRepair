@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.full_optim_state_dict
+3 api_description: Gather and return the optimizer state dict in full, consolidated
+  form from an FSDP-wrapped model.
+4 api_signature: staticfull_optim_state_dict(model,optim)
+5 api_details: ''
+6 api_parameters:
+- model: The root module whose parameters were used to build the optimizer state.
+- optim: The optimizer managing the model’s parameters.
+7 api_usage_example: null
+8 api_shape: null

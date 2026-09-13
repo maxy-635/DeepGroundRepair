@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.StatelessRandomGammaV3
+3 api_description: Generates deterministic pseudorandom samples from a gamma distribution
+  based on the provided inputs.
+4 api_signature: tf.raw_ops.StatelessRandomGammaV3(shape,key,counter,alg,alpha)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor shape to generate.
+- key: Provides the RNG key used by the counter-based random number generator.
+- counter: Sets the initial RNG counter state for generating random values.
+- alg: Selects which random number generation algorithm to use.
+- alpha: Defines the gamma distribution concentration parameter, matching the rightmost
+    dimensions of the output shape.
+7 api_usage_example: null
+8 api_shape: ''

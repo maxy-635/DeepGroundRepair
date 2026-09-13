@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.optimizers.schedules.serialize
+3 api_description: Converts a Keras learning rate schedule into a JSON-compatible
+  dictionary for saving or transmission.
+4 api_signature: tf.keras.optimizers.schedules.serialize(learning_rate_schedule)
+5 api_details: ''
+6 api_parameters:
+- learning_rate_schedule: The learning-rate schedule object to convert into a serializable
+    representation.
+7 api_usage_example:
+- lr_schedule = keras.optimizers.schedules.ExponentialDecay(
+- '    0.1, decay_steps=100000, decay_rate=0.96, staircase=True)'
+- keras.optimizers.schedules.serialize(lr_schedule)
+8 api_shape: ''

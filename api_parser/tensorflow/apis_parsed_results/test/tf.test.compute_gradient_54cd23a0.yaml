@@ -1,0 +1,20 @@
+2 api_name: tensorflow.test.compute_gradient
+3 api_description: Computes both the analytical and numerical Jacobians of a function's
+  outputs with respect to its inputs for gradient checking.
+4 api_signature: tf.test.compute_gradient(f,x)
+5 api_details: ''
+6 api_parameters:
+- f: Specifies the function whose gradients are being computed.
+- x: Provides the input arguments to the function as a list or tuple of values convertible
+    to tensors.
+7 api_usage_example:
+- '@tf.function'
+- 'def test_func(x):'
+- '  return x*x'
+- 'class MyTest(tf.test.TestCase):'
+- '  def test_gradient_of_test_func(self):'
+- '    theoretical, numerical = tf.test.compute_gradient(test_func, [1.0])'
+- '    # ((array([[2.]], dtype=float32),),'
+- '    #  (array([[2.000004]], dtype=float32),))'
+- '    self.assertAllClose(theoretical, numerical)'
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.RandomPoissonV2
+3 api_description: Generates random samples from Poisson distributions defined by
+  the given rate, using Hormann's transformation-rejection method for rates >= 10
+  and Knuth's multiplicative method for smaller rates.
+4 api_signature: tf.raw_ops.RandomPoissonV2(shape,rate,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the 1-D output sample shape drawn independently for each Poisson
+    distribution in `rate`.
+- rate: Provides the Poisson rate parameter(s) that define the distribution for each
+    scalar input.
+- dtype: Sets the data type of the generated samples, defaulting to `tf.int64`.
+7 api_usage_example: null
+8 api_shape: ''

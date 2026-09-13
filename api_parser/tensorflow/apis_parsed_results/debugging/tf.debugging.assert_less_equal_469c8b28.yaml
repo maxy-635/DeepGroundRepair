@@ -1,0 +1,14 @@
+2 api_name: tensorflow.debugging.assert_less_equal
+3 api_description: Checks that x is element-wise less than or equal to y, raising
+  InvalidArgumentError with a message and summarized values if the condition fails.
+4 api_signature: tf.debugging.assert_less_equal(x,y,message)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose values are checked to ensure they are less than or equal to
+    `y`.
+- y: The comparison tensor that `x` must be less than or equal to, with a compatible
+    shape and dtype.
+- message: An optional string added to the front of the default assertion error message.
+7 api_usage_example:
+- check_size(tf.ones([2, 3], tf.float32))
+8 api_shape: ''

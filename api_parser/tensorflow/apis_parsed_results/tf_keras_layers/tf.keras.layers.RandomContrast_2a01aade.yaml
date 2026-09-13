@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.RandomContrast
+3 api_description: tf.keras.layers.RandomContrast is a preprocessing layer that randomly
+  adjusts the contrast of images during training by applying a random contrast factor
+  independently to each channel, ensuring variability in the dataset.
+4 api_signature: tf.keras.layers.RandomContrast(factor)
+5 api_details: ''
+6 api_parameters:
+- factor: Determines the contrast adjustment factor, either as a single positive float
+    or a tuple representing the range of lower and upper bounds for random selection.
+7 api_usage_example: null
+8 api_shape: null

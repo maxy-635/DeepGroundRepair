@@ -1,0 +1,12 @@
+2 api_name: tensorflow.sets.intersection
+3 api_description: Returns the unique elements common to the last dimension of `a`
+  and `b`, requiring all other dimensions to match.
+4 api_signature: tf.sets.intersection(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: Provides the first tensor or sparse tensor whose elements are intersected with
+    `b`.
+- b: Provides the second tensor or sparse tensor whose elements are intersected with
+    `a`.
+7 api_usage_example: null
+8 api_shape: ''

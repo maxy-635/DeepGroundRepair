@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.XlaSparseCoreAdagrad
+3 api_description: Applies the Adagrad optimization update for XLA sparse core embeddings,
+  using sparse gradient inputs to adjust variables and accumulate squared gradients.
+4 api_signature: tf.raw_ops.XlaSparseCoreAdagrad(indices,gradient,learning_rate,accumulator,embedding_table)
+5 api_details: ''
+6 api_parameters:
+- indices: Integer indices identifying which sparse rows or embedding entries to update.
+- gradient: The float32 gradient values used to compute the Adagrad update.
+- learning_rate: The float32 step size controlling how large each update is.
+- accumulator: The float32 accumulator storing the running sum of squared gradients
+    for Adagrad.
+- embedding_table: The float32 embedding table or model weights to be updated in place.
+7 api_usage_example: null
+8 api_shape: ''

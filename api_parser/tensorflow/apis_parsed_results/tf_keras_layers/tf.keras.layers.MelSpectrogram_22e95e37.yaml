@@ -1,0 +1,25 @@
+2 api_name: tensorflow.keras.layers.MelSpectrogram
+3 api_description: The tf.keras.layers.MelSpectrogram layer converts raw audio signals
+  into Mel spectrograms using Short-Time Fourier Transform and Mel scaling, producing
+  2D or 3D tensor outputs suitable for audio processing tasks.
+4 api_signature: tf.keras.layers.MelSpectrogram(fft_length, sampling_rate, num_mel_bins,
+  min_freq, max_freq)
+5 api_details: ''
+6 api_parameters:
+- fft_length: Specifies the size of the Fast Fourier Transform (FFT) window used for
+    converting the time-domain signal into the frequency domain.
+- sampling_rate: Defines the sample rate of the input audio signal, which is critical
+    for accurate frequency representation.
+- num_mel_bins: Indicates the number of mel frequency bins to be generated, affecting
+    the resolution of the spectrogram.
+- min_freq: Sets the minimum frequency for the mel scale, determining the lower bound
+    of the frequency range.
+- max_freq: Sets the maximum frequency for the mel scale; if not specified, it defaults
+    to half the sampling rate.
+7 api_usage_example:
+- layer = keras.layers.MelSpectrogram(num_mel_bins=80,
+- '                                    sampling_rate=8000,'
+- '                                    sequence_stride=128,'
+- '                                    fft_length=2048)'
+- layer(keras.random.uniform(shape=(2, 16000))).shape
+8 api_shape: null

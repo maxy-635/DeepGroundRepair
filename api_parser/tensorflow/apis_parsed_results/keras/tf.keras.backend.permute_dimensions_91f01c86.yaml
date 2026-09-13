@@ -1,0 +1,7 @@
+2 api_name: tensorflow.keras.backend.permute_dimensions
+3 api_description: Reorders the dimensions of a tensor according to a specified permutation.
+4 api_signature: tf.keras.backend.permute_dimensions(x,pattern)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

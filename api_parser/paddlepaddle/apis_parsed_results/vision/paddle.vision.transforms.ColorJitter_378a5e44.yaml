@@ -1,0 +1,20 @@
+2 api_name: paddle.vision.transforms.ColorJitter
+3 api_description: Randomly adjusts an image’s brightness, contrast, saturation, and
+  hue for data augmentation.
+4 api_signature: paddle.vision.transforms.ColorJitter(brightness,contrast,saturation,hue)
+5 api_details: ''
+6 api_parameters:
+- brightness: Controls the random amount of brightness adjustment applied to the image.
+- contrast: Controls the random amount of contrast adjustment applied to the image.
+- saturation: Controls the random amount of saturation adjustment applied to the image.
+- hue: Controls the random amount of hue shift applied to the image.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import ColorJitter
+- transform = ColorJitter(0.4, 0.4, 0.4, 0.4)
+- fake_img = Image.fromarray((np.random.rand(224, 224, 3) * 255.).astype(np.uint8))
+- fake_img = transform(fake_img)
+- print(fake_img.size)
+- (224, 224)
+8 api_shape: {}

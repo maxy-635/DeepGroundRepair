@@ -1,0 +1,8 @@
+2 api_name: torch.HalfStorage
+3 api_description: Legacy storage type for half-precision (16-bit) floating-point
+  values, used to hold and manage raw tensor memory for `torch.float16` data.
+4 api_signature: torch.HalfStorage(*args,dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

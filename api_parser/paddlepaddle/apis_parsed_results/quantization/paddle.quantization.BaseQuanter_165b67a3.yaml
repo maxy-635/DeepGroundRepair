@@ -1,0 +1,33 @@
+2 api_name: paddle.quantization.BaseQuanter
+3 api_description: BaseQuanter defines the common interface for quantization modules
+  in Paddle, requiring built-in and custom quanters to extend it and implement the
+  abstract methods that perform quantization behavior.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(1, 1)'
+- '        w_tmp = self.create_parameter([1,1])'
+- '        self.add_parameter("w_tmp", w_tmp)'
+- '...'
+- '    def forward(self, input):'
+- '        return self._linear(input)'
+- '...'
+- mylayer = MyLayer()
+- 'for name, param in mylayer.named_parameters():'
+- '    print(name, param)'
+- 'w_tmp Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.01448846]])'
+- '_linear.weight Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0.18551230]])'
+- '_linear.bias Parameter containing:'
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[0.])'
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.OutfeedDequeue
+3 api_description: Blocks until data is available, then retrieves a single tensor
+  from the computation outfeed.
+4 api_signature: tf.raw_ops.OutfeedDequeue(dtype,shape)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the data type of the tensor elements to dequeue.
+- shape: Specifies the expected shape of the dequeued tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: torch.nn.AlphaDropout
+3 api_description: AlphaDropout is a regularization technique that randomly sets a
+  fraction of input units to a specified value while maintaining the mean and variance
+  of the inputs, promoting robustness in neural networks.
+4 api_signature: torch.nn.AlphaDropout(p)
+5 api_details: ''
+6 api_parameters:
+- p: The probability of an element to be dropped during training.
+7 api_usage_example:
+- ' m = nn.AlphaDropout(p=0.2)'
+- ' input = torch.randn(20, 16)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*). Input can be of any shape
+  output tensor shape: (*). Output is of the same shape as input
+  tensor shape transform formulas: {}

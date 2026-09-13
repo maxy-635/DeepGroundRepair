@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.UpperBound
+3 api_description: Finds, for each row, the insertion indices of `values` in a sorted
+  last dimension using upper-bound/right-side search, returning per-row positions
+  rather than global tensor indices.
+4 api_signature: tf.raw_ops.UpperBound(sorted_inputs,values)
+5 api_details: ''
+6 api_parameters:
+- sorted_inputs: A 2-D tensor with each row sorted, used as the ordered input to search
+    against.
+- values: A 2-D tensor of values to look up, with the same type as `sorted_inputs`
+    and the same number of rows as the search values.
+7 api_usage_example: null
+8 api_shape: ''

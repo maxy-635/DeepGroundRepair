@@ -1,0 +1,16 @@
+2 api_name: paddle.increment
+3 api_description: Increments a single-value input tensor by a specified amount and
+  returns the result.
+4 api_signature: paddle.increment(x,value)
+5 api_details: ''
+6 api_parameters:
+- x: A single-element tensor whose value will be incremented.
+- value: The amount to add to `x`.
+7 api_usage_example:
+- import paddle
+- data = paddle.zeros(shape=[1], dtype='float32')
+- counter = paddle.increment(data)
+- counter
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.])'
+8 api_shape: {}

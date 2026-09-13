@@ -1,0 +1,14 @@
+2 api_name: tensorflow.nn.elu
+3 api_description: The tensorflow.nn.elu function computes the Exponential Linear
+  Unit (ELU) activation, which applies a transformation to input data where positive
+  values remain unchanged and negative values are scaled exponentially.
+4 api_signature: tf.nn.elu(features)
+5 api_details: ''
+6 api_parameters:
+- features: 'The input tensor to which the Exponential Linear Unit (ELU) activation
+    function is applied, supporting types: half, bfloat16, float32, or float64.'
+7 api_usage_example:
+- tf.nn.elu(1.0)
+- tf.nn.elu(0.0)
+- tf.nn.elu(-1000.0)
+8 api_shape: ''

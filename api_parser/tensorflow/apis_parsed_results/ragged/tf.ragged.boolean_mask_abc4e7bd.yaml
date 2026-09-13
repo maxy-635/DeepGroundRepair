@@ -1,0 +1,14 @@
+2 api_name: tensorflow.ragged.boolean_mask
+3 api_description: Filters data by a boolean mask without flattening, preserving masked
+  dimensions and returning a potentially ragged tensor of the kept elements.
+4 api_signature: tf.ragged.boolean_mask(data,mask)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor whose values will be filtered by the boolean mask.
+- mask: A boolean tensor that selects which elements or substructures of `data` to
+    keep, with a shape that must prefix `data`'s shape.
+7 api_usage_example:
+- 'tf.ragged.boolean_mask(  # Mask rows of a 2D RaggedTensor.'
+- '    tf.ragged.constant([[1, 2, 3], [4], [5, 6]]),'
+- '    tf.ragged.constant([True, False, True])).to_list()'
+8 api_shape: ''

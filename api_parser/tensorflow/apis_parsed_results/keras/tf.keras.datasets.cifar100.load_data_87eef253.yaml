@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.datasets.cifar100.load_data
+3 api_description: Loads the CIFAR-100 image dataset with 50,000 training and 10,000
+  test 32x32 color images, labeled into 100 fine-grained classes grouped into 20 coarse
+  classes.
+4 api_signature: tf.keras.datasets.cifar100.load_data(label_mode)
+5 api_details: ''
+6 api_parameters:
+- label_mode: Controls whether labels are returned as fine-grained class labels ("fine")
+    or coarse superclass labels ("coarse").
+7 api_usage_example: null
+8 api_shape: ''

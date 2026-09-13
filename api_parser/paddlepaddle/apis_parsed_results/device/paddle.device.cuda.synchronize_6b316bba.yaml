@@ -1,0 +1,13 @@
+2 api_name: paddle.device.cuda.synchronize
+3 api_description: Blocks execution until all queued CUDA operations on the current
+  device finish, ensuring GPU work is complete before continuing.
+4 api_signature: paddle.device.cuda.synchronize(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.cuda.synchronize()
+- paddle.device.cuda.synchronize(0)
+- paddle.device.cuda.synchronize(paddle.CUDAPlace(0))
+8 api_shape: {}

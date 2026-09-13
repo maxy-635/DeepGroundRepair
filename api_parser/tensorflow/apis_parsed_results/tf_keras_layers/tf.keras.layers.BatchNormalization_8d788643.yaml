@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.BatchNormalization
+3 api_description: BatchNormalization normalizes inputs to maintain a mean of 0 and
+  standard deviation of 1, using batch statistics during training and moving averages
+  during inference.
+4 api_signature: tf.keras.layers.BatchNormalization(axis)
+5 api_details: ''
+6 api_parameters:
+- axis: Specifies the axis of the input tensor that will be normalized, typically
+    the features axis.
+7 api_usage_example: null
+8 api_shape: null

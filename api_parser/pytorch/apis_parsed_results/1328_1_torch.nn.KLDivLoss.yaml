@@ -1,0 +1,20 @@
+2 api_name: torch.nn.KLDivLoss
+3 api_description: Computes the Kullback-Leibler divergence loss between two probability
+  distributions.
+4 api_signature: torch.nn.KLDivLoss(reduction,log_target)
+5 api_details: ''
+6 api_parameters:
+- reduction: Determines how the output loss is aggregated, with options like 'none',
+    'mean', or 'sum'.
+- log_target: Indicates if the target values are provided in logarithmic form, affecting
+    the computation of the loss.
+7 api_usage_example:
+- 'if not log_target: # default'
+- '    loss_pointwise = target * (target.log() - input)'
+- 'else:'
+- '    loss_pointwise = target.exp() * (target - input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: scalar by default. If reduction is ‘none’, then (*), same shape
+    as the input.
+  tensor shape transform formulas: {}

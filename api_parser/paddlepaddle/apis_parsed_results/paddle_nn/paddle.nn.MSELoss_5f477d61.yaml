@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.MSELoss
+3 api_description: paddle.nn.MSELoss computes the mean squared error between input
+  predictions and target labels, measuring the squared L2 norm.
+4 api_signature: paddle.nn.MSELoss(reduction)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- mse_loss = paddle.nn.loss.MSELoss()
+- input = paddle.to_tensor([1.5])
+- label = paddle.to_tensor([1.7])
+- output = mse_loss(input, label)
+- print(output)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.04000002)
+8 api_shape: null

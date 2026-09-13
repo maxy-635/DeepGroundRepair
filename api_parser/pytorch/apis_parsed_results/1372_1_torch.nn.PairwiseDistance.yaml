@@ -1,0 +1,17 @@
+2 api_name: torch.nn.PairwiseDistance
+3 api_description: Computes the pairwise distance between input vectors or columns
+  of matrices.
+4 api_signature: torch.nn.PairwiseDistance(p)
+5 api_details: ''
+6 api_parameters:
+- p: Specifies the degree of the norm used to compute the pairwise distance, allowing
+    for both positive and negative values.
+7 api_usage_example:
+- ' pdist = nn.PairwiseDistance(p=2)'
+- ' input1 = torch.randn(100, 128)'
+- ' input2 = torch.randn(100, 128)'
+- ' output = pdist(input1, input2)'
+8 api_shape:
+  input tensor shape: null
+  output tensor shape: (N)
+  tensor shape transform formulas: {}

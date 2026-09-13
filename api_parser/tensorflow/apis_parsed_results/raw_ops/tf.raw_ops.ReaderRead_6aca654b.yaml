@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ReaderRead
+3 api_description: Reads and returns the next key-value record from a reader, dequeuing
+  new input as needed when moving to the next file.
+4 api_signature: tf.raw_ops.ReaderRead(reader_handle,queue_handle)
+5 api_details: ''
+6 api_parameters:
+- reader_handle: Handle to the Reader object used to read data.
+- queue_handle: Handle to the queue that supplies string work items for the reader.
+7 api_usage_example: null
+8 api_shape: ''

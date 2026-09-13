@@ -1,0 +1,28 @@
+2 api_name: tensorflow.distribute.DistributedIterator
+3 api_description: Iterates over a distributed dataset and returns the next input
+  for all replicas.
+4 api_signature: get_next()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- strategy = tf.distribute.MirroredStrategy(["GPU:0", "GPU:1"])
+- global_batch_size = 2
+- steps_per_loop = 2
+- dataset = tf.data.Dataset.range(10).batch(global_batch_size)
+- distributed_iterator = iter(
+- '    strategy.experimental_distribute_dataset(dataset))'
+- 'def step_fn(x):'
+- '  # train the model with inputs'
+- '  return x'
+- '@tf.function'
+- 'def train_fn(distributed_iterator):'
+- '  for _ in tf.range(steps_per_loop):'
+- '    optional_data = distributed_iterator.get_next_as_optional()'
+- '    if not optional_data.has_value():'
+- '      break'
+- '    per_replica_results = strategy.run(step_fn, args=(optional_data.get_value(),))'
+- '    tf.print(strategy.experimental_local_results(per_replica_results))'
+- train_fn(distributed_iterator)
+- '# ([0 1], [2 3])'
+- '# ([4], [])'
+8 api_shape: ''

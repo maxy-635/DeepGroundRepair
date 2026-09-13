@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.ps.utils.ps_factory.FlPsProgramBuilder
+3 api_description: Builds parameter-server training programs for Fleet PS, assembling
+  the distributed startup and main program logic needed by PaddlePaddle’s `paddle.distributed.ps.utils.ps_factory`
+  workflow.
+4 api_signature: paddle.distributed.ps.utils.ps_factory.FlPsProgramBuilder(pass_ctx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

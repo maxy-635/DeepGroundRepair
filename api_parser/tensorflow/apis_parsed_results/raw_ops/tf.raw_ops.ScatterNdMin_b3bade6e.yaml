@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ScatterNdMin
+3 api_description: Updates a tensor by taking the element-wise minimum at the specified
+  indices, using ScatterNd to apply the minimum reduction.
+4 api_signature: tf.raw_ops.ScatterNdMin(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place at the specified index locations.
+- indices: The integer index tensor that identifies which elements or slices of `ref`
+    to update.
+- updates: The tensor of replacement values, matching `ref`'s type, used to compute
+    the minimum updates.
+7 api_usage_example: null
+8 api_shape: ''

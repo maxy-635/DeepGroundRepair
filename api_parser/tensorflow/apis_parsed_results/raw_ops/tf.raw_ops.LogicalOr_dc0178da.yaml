@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.LogicalOr
+3 api_description: Returns the element-wise logical OR of two boolean tensors, supporting
+  same-shape or broadcast-compatible inputs.
+4 api_signature: tf.raw_ops.LogicalOr(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first boolean tensor to compare elementwise.
+- y: The second boolean tensor to compare elementwise.
+7 api_usage_example:
+- tf.logical_or([[True, False]], [[True], [False]])
+8 api_shape: ''

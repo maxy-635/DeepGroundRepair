@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.unsorted_segment_sqrt_n
+3 api_description: Computes per-segment sums of a tensor, then divides each segment
+  total by the square root of that segment’s element count; missing segments return
+  0 and negative segment IDs are ignored.
+4 api_signature: tf.math.unsorted_segment_sqrt_n(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: Provides the values to be aggregated by segment.
+- segment_ids: Specifies which segment each entry in `data` belongs to.
+- num_segments: Sets the total number of output segments to produce.
+7 api_usage_example: null
+8 api_shape: ''

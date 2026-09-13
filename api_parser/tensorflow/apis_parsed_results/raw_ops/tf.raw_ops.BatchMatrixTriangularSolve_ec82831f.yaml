@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BatchMatrixTriangularSolve
+3 api_description: Solves a batch of triangular linear systems A @ x = b for x, using
+  one triangular matrix per batch and optionally transposing, conjugating, or assuming
+  unit diagonal.
+4 api_signature: tf.raw_ops.BatchMatrixTriangularSolve(matrix,rhs,lower)
+5 api_details: ''
+6 api_parameters:
+- matrix: The batch of triangular coefficient matrices used to solve the system.
+- rhs: The batch of right-hand-side matrices or vectors to be solved against `matrix`.
+- lower: Specifies whether `matrix` is lower triangular (`True`) or upper triangular
+    (`False`).
+7 api_usage_example: null
+8 api_shape: ''

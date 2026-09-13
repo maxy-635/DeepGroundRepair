@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.FixedLengthRecordDatasetV2
+3 api_description: Creates a dataset from a file or filenames by reading fixed-length
+  records, optionally skipping headers and footers, and controlling buffering, compression,
+  and record size.
+4 api_signature: tf.raw_ops.FixedLengthRecordDatasetV2(filenames,record_bytes)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies the file paths to read fixed-length records from.
+- record_bytes: Sets the number of bytes in each record to read.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

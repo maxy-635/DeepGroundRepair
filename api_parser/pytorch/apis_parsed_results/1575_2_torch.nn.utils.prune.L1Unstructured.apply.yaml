@@ -1,0 +1,13 @@
+2 api_name: torch.nn.utils.prune.L1Unstructured.apply
+3 api_description: Applies unstructured L1 pruning to a tensor by zeroing the smallest-magnitude
+  weights and reparameterizing the module so pruning is tracked during training.
+4 api_signature: apply(module,amount,importance_scores)
+5 api_details: ''
+6 api_parameters:
+- module: The module whose tensor parameter will be pruned.
+- amount: Specifies how many parameters to prune, either as a fraction of the total
+    or as an absolute count.
+- importance_scores: Provides optional importance values used to choose which parameters
+    are pruned instead of using the parameter itself.
+7 api_usage_example: null
+8 api_shape: null

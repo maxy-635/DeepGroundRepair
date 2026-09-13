@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.complex64
+3 api_description: Single-precision complex scalar type representing a complex number
+  with real and imaginary parts stored as 32-bit floats.
+4 api_signature: tf.experimental.numpy.complex64()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

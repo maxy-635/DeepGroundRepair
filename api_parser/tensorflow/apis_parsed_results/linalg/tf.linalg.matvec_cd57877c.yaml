@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.matvec
+3 api_description: Multiplies a matrix by a vector with optional transpose or adjoint
+  on the matrix, supporting broadcasted batch dimensions and same-type numeric tensors;
+  sparse hints can speed up rank-2/1 float32 or bfloat16 inputs.
+4 api_signature: tf.linalg.matvec(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: Matrix or higher-rank tensor to be multiplied by the vector.
+- b: Vector or compatible tensor to multiply with `a`.
+7 api_usage_example: null
+8 api_shape: ''

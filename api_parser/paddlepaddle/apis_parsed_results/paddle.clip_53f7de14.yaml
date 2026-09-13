@@ -1,0 +1,23 @@
+2 api_name: paddle.clip
+3 api_description: Clips every element of the input tensor to lie within the specified
+  [min, max] range and returns the clipped tensor.
+4 api_signature: paddle.clip(x,min,max)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be clipped.
+- min: The minimum allowed value; values below this bound are raised to it.
+- max: The maximum allowed value; values above this bound are lowered to it.
+7 api_usage_example:
+- import paddle
+- x1 = paddle.to_tensor([[1.2, 3.5], [4.5, 6.4]], 'float32')
+- out1 = paddle.clip(x1, min=3.5, max=5.0)
+- out1
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[3.50000000, 3.50000000],'
+- '[4.50000000, 5.        ]])'
+- out2 = paddle.clip(x1, min=2.5)
+- out2
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[2.50000000, 3.50000000],'
+- '[4.50000000, 6.40000010]])'
+8 api_shape: {}

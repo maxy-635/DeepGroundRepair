@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SparseSegmentSumWithNumSegments
+3 api_description: Sums data into sparse segments for each segment id, allowing missing
+  segment ids and filling those output positions with zeros.
+4 api_signature: tf.raw_ops.SparseSegmentSumWithNumSegments(data,indices,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The values to be summed within each sparse segment.
+- indices: The positions in `data` that map to each segment.
+- segment_ids: The sorted segment ID for each index, allowing repeated IDs.
+- num_segments: The total number of output segments to produce.
+7 api_usage_example: null
+8 api_shape: ''

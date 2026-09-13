@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.floordiv
+3 api_description: Elementwise divides x by y and rounds the result down to the nearest
+  integer, matching floor(x / y) and Python's // behavior.
+4 api_signature: tf.math.floordiv(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The numerator tensor to be floor-divided.
+- y: The denominator tensor used to divide `x`.
+7 api_usage_example: null
+8 api_shape: ''

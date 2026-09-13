@@ -1,0 +1,20 @@
+2 api_name: paddle.vision.transforms.crop
+3 api_description: Crops the input image to a specified region.
+4 api_signature: paddle.vision.transforms.crop(img,top,left,height,width)
+5 api_details: ''
+6 api_parameters:
+- img: The image to crop, with the origin at the top-left corner.
+- top: The vertical position of the crop box’s top-left corner.
+- left: The horizontal position of the crop box’s top-left corner.
+- height: The crop box height.
+- width: The crop box width.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import functional as F
+- fake_img = (np.random.rand(256, 300, 3) * 255.).astype('uint8')
+- fake_img = Image.fromarray(fake_img)
+- cropped_img = F.crop(fake_img, 56, 150, 200, 100)
+- print(cropped_img.size)
+- (100, 200)
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.proxy_tensor.get_proxy_mode
+3 api_description: Returns the currently active proxy tracing mode, including pre-dispatch
+  tracing, or None when no proxy tracing is active.
+4 api_signature: '"torch.fx.experimental.proxy_tensor.get_proxy_mode()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

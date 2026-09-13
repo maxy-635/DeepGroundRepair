@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.InplaceUpdate
+3 api_description: Replaces the specified rows of `x` with `v` and returns the updated
+  copy of `x`.
+4 api_signature: tf.raw_ops.InplaceUpdate(x,i,v)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to be updated in place.
+- i: A vector of row indices selecting which entries in the first dimension of `x`
+    to replace.
+- v: The tensor containing replacement values, matching `x`'s type and shape except
+    for the first dimension, which matches the length of `i`.
+7 api_usage_example: null
+8 api_shape: ''

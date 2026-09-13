@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SdcaOptimizerV2
+3 api_description: Optimizes a linear model with L1/L2 regularization using distributed
+  SDCA, updating one uniformly sampled example at a time via dual-coordinate ascent
+  for fast, learning-rate-free convergence.
+4 api_signature: tf.raw_ops.SdcaOptimizerV2(dense_features,example_labels,dense_weights,example_state_data,loss_type,l1,l2)
+5 api_details: ''
+6 api_parameters:
+- dense_features: Supplies the dense input feature matrices used by the optimizer.
+- example_labels: Provides the target label for each training example.
+- dense_weights: Supplies the per-feature-group weight vectors for the dense features.
+- example_state_data: Provides per-example state vectors maintained by the optimizer.
+- loss_type: Selects the primal loss function used for optimization.
+- l1: Sets the symmetric L1 regularization strength.
+- l2: Sets the symmetric L2 regularization strength.
+7 api_usage_example: null
+8 api_shape: ''

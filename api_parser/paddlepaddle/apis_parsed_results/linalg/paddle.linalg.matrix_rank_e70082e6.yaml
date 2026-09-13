@@ -1,0 +1,13 @@
+2 api_name: paddle.linalg.matrix_rank
+3 api_description: Computes the rank of a matrix by returning the number of linearly
+  independent rows or columns.
+4 api_signature: paddle.linalg.matrix_rank(x,tol,hermitian)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing one or more matrices whose rank is to be computed.
+- tol: Optional tolerance threshold used to decide which singular values count toward
+    the rank.
+- hermitian: Specifies whether the input matrix is Hermitian, enabling a specialized
+    rank computation.
+7 api_usage_example: []
+8 api_shape: {}

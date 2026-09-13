@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.binomial.Binomial
+3 api_description: Represents a binomial distribution over the number of successes
+  in a fixed number of independent Bernoulli trials, with methods for sampling, evaluating
+  probabilities/log probabilities, and computing basic distribution properties.
+4 api_signature: torch.distributions.binomial.Binomial(total_count,probs)
+5 api_details: ''
+6 api_parameters:
+- total_count: Sets the number of Bernoulli trials to perform.
+- probs: Sets the probability of success for each trial.
+7 api_usage_example:
+- ' m = Binomial(100, torch.tensor([0 , .2, .8, 1]))'
+- ' x = m.sample()'
+- ' m = Binomial(torch.tensor([[5.], [10.]]), torch.tensor([0.5, 0.8]))'
+- ' x = m.sample()'
+8 api_shape: null

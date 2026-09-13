@@ -1,0 +1,24 @@
+2 api_name: paddle.static.set_program_state
+3 api_description: Loads a program’s parameters and buffers from a state dictionary,
+  restoring the program state.
+4 api_signature: paddle.static.set_program_state(program,state_dict)
+5 api_details: ''
+6 api_parameters:
+- program: The program whose parameters and optimizer state will be restored or set.
+- state_dict: A dictionary containing parameter values and optimizer information to
+    load into the program.
+7 api_usage_example:
+- import paddle
+- import paddle.static as static
+- paddle.enable_static()
+- x = static.data(name="x", shape=[10, 10], dtype='float32')
+- y = static.nn.fc(x, 10)
+- z = static.nn.fc(y, 10)
+- place = paddle.CPUPlace()
+- exe = static.Executor(place)
+- exe.run(static.default_startup_program())
+- prog = static.default_main_program()
+- static.save(prog, "./temp")
+- program_state = static.load_program_state("./temp")
+- static.set_program_state(prog, program_state)
+8 api_shape: {}

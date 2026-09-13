@@ -1,0 +1,9 @@
+2 api_name: tensorflow.errors.OutOfRangeError
+3 api_description: Signals that an operation iterated or accessed past the valid range,
+  often during dataset iteration or range-based access, and may be resolved if system
+  state changes.
+4 api_signature: tf.errors.OutOfRangeError(message)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

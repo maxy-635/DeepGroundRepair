@@ -1,0 +1,12 @@
+2 api_name: tensorflow.distribute.StrategyExtended
+3 api_description: Provides distribution-aware helper APIs for `tf.distribute.Strategy`,
+  enabling algorithms to inspect replicas, coordinate cross-replica and replica-local
+  execution, and manage distributed values and reductions.
+4 api_signature: tf.distribute.StrategyExtended()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- strategy = tf.distribute.MirroredStrategy()
+- v = tf.Variable(1.)
+- strategy.extended.variable_created_in_scope(v)
+8 api_shape: ''

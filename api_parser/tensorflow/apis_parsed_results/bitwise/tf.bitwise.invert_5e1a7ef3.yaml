@@ -1,0 +1,9 @@
+2 api_name: tensorflow.bitwise.invert
+3 api_description: Flips every bit in each element of a supported tensor type, returning
+  the bitwise inverse of the input values.
+4 api_signature: tf.bitwise.invert(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose bits are inverted elementwise.
+7 api_usage_example: null
+8 api_shape: ''

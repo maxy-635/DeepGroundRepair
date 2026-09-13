@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.algorithms.ddp_comm_hooks.powerSGD_hook.PowerSGDState.__getstate__
+3 api_description: Returns a picklable dictionary of the PowerSGD state for saving
+  and later restoration.
+4 api_signature: '"__getstate__()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

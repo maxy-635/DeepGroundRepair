@@ -1,0 +1,13 @@
+2 api_name: torch.linalg.vander
+3 api_description: Creates a Vandermonde matrix from an input tensor, with columns
+  formed by successive powers of the input values.
+4 api_signature: torch.linalg.vander(x,N)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose last dimension contains the vector elements used to build
+    the Vandermonde matrix, with any leading dimensions treated as batch dimensions.
+7 api_usage_example:
+- ' x = torch.tensor([1, 2, 3, 5])'
+- ' linalg.vander(x)'
+- ' linalg.vander(x, N=3)'
+8 api_shape: null

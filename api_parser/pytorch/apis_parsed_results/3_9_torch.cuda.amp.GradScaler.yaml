@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.amp.GradScaler
+3 api_description: Scales loss values for mixed-precision training on CUDA to help
+  prevent underflow, automatically adjusts the scale during training, and should be
+  used via torch.amp.GradScaler('cuda', ...) instead of the deprecated torch.cuda.amp.GradScaler.
+4 api_signature: torch.cuda.amp.GradScaler(init_scale,enabled)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

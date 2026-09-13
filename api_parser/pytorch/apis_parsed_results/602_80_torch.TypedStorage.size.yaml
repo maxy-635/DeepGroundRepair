@@ -1,0 +1,7 @@
+2 api_name: torch.TypedStorage.size
+3 api_description: Returns the number of elements currently stored in the TypedStorage.
+4 api_signature: size()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.ops.fft2
+3 api_description: Computes the 2D Fast Fourier Transform of the input along its last
+  two axes.
+4 api_signature: '"tf.keras.ops.fft2(x)"'
+5 api_details: ''
+6 api_parameters:
+- x: A tuple containing the real and imaginary floating-point parts of the input tensor
+    to transform.
+7 api_usage_example:
+- x = (
+- '    keras.ops.convert_to_tensor([[1., 2.], [2., 1.]]),'
+- '    keras.ops.convert_to_tensor([[0., 1.], [1., 0.]]),'
+- )
+- fft2(x)
+8 api_shape: ''

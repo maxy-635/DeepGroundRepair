@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.IRFFT3D
+3 api_description: Computes the inverse 3D real FFT of the innermost 3 dimensions
+  of a tensor produced by `RFFT3D`, reconstructing a real-valued signal with optional
+  FFT length inference, cropping, or zero-padding as needed.
+4 api_signature: tf.raw_ops.IRFFT3D(input,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The complex-valued frequency-domain tensor to be transformed back into a
+    real 3D signal.
+- fft_length: A 3-element int32 tensor that specifies the output FFT length for each
+    of the three dimensions.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: torch.stack
+3 api_description: Stacks a sequence of tensors along a new dimension, creating a
+  single tensor with an added axis.
+4 api_signature: torch.stack(tensors,dim)
+5 api_details: ''
+6 api_parameters:
+- tensors: The tensors to stack into a single new tensor.
+- dim: The axis along which to insert the new dimension for stacking.
+7 api_usage_example:
+- ' x = torch.randn(2, 3)'
+- ' x'
+- ' torch.stack((x, x)) # same as torch.stack((x, x), dim=0)'
+- ' torch.stack((x, x)).size()'
+- ' torch.stack((x, x), dim=1)'
+- ' torch.stack((x, x), dim=2)'
+- ' torch.stack((x, x), dim=-1)'
+8 api_shape: null

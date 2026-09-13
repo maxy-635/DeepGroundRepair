@@ -1,0 +1,11 @@
+2 api_name: tensorflow.quantization.fake_quant_with_min_max_vars
+3 api_description: Simulates quantization by clamping float inputs to a global min/max
+  range and returning a same-shape float tensor.
+4 api_signature: tf.quantization.fake_quant_with_min_max_vars(inputs,min,max)
+5 api_details: ''
+6 api_parameters:
+- inputs: The float32 tensor to be fake-quantized.
+- min: The float32 lower bound used for quantization range clipping.
+- max: The float32 upper bound used for quantization range clipping.
+7 api_usage_example: null
+8 api_shape: ''

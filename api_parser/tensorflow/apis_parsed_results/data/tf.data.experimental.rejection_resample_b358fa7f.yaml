@@ -1,0 +1,13 @@
+2 api_name: tensorflow.data.experimental.rejection_resample
+3 api_description: Resamples a dataset to match a target class distribution by probabilistically
+  rejecting or keeping examples; deprecated.
+4 api_signature: tf.data.experimental.rejection_resample(class_func,target_dist,initial_dist)
+5 api_details: ''
+6 api_parameters:
+- class_func: Maps each input element to its class label as an integer in the range
+    `[0, num_classes)`.
+- target_dist: Specifies the desired class distribution to sample toward.
+- initial_dist: Optionally provides the starting class distribution estimate; if omitted,
+    it is learned incrementally from the data.
+7 api_usage_example: null
+8 api_shape: ''

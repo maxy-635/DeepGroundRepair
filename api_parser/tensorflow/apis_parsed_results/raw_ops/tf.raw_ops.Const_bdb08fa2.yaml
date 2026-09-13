@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Const
+3 api_description: Returns a tensor with a fixed constant value.
+4 api_signature: tf.raw_ops.Const(value,dtype)
+5 api_details: ''
+6 api_parameters:
+- value: Specifies the TensorProto that contains the constant tensor to return.
+- dtype: Specifies the data type of the returned tensor.
+7 api_usage_example: null
+8 api_shape: ''

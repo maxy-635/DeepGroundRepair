@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.constant
+3 api_description: Creates a constant tensor from a Python value, NumPy array, or
+  tensor-like input, optionally setting its dtype and shape.
+4 api_signature: tf.keras.backend.constant(value,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

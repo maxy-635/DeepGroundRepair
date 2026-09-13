@@ -1,0 +1,13 @@
+2 api_name: torch.nn.utils.parametrize.register_parametrization
+3 api_description: Registers a parametrization module on a tensor in an `nn.Module`,
+  so the tensor is accessed through a constrained or transformed representation instead
+  of being stored and used directly.
+4 api_signature: torch.nn.utils.parametrize.register_parametrization(module,tensor_name,parametrization)
+5 api_details: ''
+6 api_parameters:
+- module: The module whose parameter or buffer will be wrapped by the parametrization.
+- tensor_name: The name of the parameter or buffer to parametrize.
+- parametrization: The parametrization module or callable to apply to the выбран tensor.
+7 api_usage_example:
+- 'def right_inverse(self, X: Tensor) -> Union[Tensor, Sequence[Tensor]]'
+8 api_shape: null

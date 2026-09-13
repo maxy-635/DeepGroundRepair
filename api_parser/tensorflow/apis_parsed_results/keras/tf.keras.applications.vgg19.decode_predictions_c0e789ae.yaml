@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.vgg19.decode_predictions
+3 api_description: Converts an ImageNet model’s prediction scores into human-readable
+  class labels and probabilities.
+4 api_signature: tf.keras.applications.vgg19.decode_predictions(preds)
+5 api_details: ''
+6 api_parameters:
+- preds: A NumPy array containing a batch of prediction scores to decode into human-readable
+    class labels.
+7 api_usage_example: null
+8 api_shape: ''

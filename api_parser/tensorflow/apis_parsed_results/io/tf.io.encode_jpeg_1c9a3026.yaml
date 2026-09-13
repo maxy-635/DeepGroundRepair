@@ -1,0 +1,17 @@
+2 api_name: tensorflow.io.encode_jpeg
+3 api_description: Encodes a 3-D uint8 image tensor into JPEG format, optionally overriding
+  the output color format with the `format` attribute.
+4 api_signature: tf.io.encode_jpeg(image,quality,progressive,optimize_size,chroma_downsampling)
+5 api_details: ''
+6 api_parameters:
+- image: The input uint8 image tensor to be encoded as a JPEG.
+- quality: Sets JPEG compression quality from 0 to 100, with higher values giving
+    better quality and larger files.
+- progressive: If true, produces a progressive JPEG that displays in passes from coarse
+    to fine.
+- optimize_size: If true, uses extra CPU and memory to reduce the output file size
+    without changing quality.
+- chroma_downsampling: If true, applies chroma subsampling to reduce file size by
+    lowering color resolution.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesCalculateBestFeatureSplit
+3 api_description: Computes the best split threshold, gain, and left/right node contributions
+  for each feature and splittable node, along with the node IDs each feature can split.
+4 api_signature: tf.raw_ops.BoostedTreesCalculateBestFeatureSplit(stats_summary,split_type,name)
+5 api_details: ''
+6 api_parameters:
+- stats_summary: Provides the accumulated gradient/hessian statistics for each candidate
+    split, which the op uses to evaluate and choose the best feature split per node.
+- split_type: Specifies whether the split search should use inequality or equality
+    rules when evaluating candidate splits.
+- name: Optionally assigns a name to the operation for graph organization and debugging.
+7 api_usage_example: null
+8 api_shape: ''

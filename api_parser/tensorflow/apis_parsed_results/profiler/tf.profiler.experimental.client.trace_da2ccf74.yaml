@@ -1,0 +1,13 @@
+2 api_name: tensorflow.profiler.experimental.client.trace
+3 api_description: Blocks while sending gRPC profiling requests to one or more TensorFlow
+  profiler servers, collects their responses, and saves the results to the specified
+  TensorBoard log directory for later analysis.
+4 api_signature: tf.profiler.experimental.client.trace(logdir,duration_ms)
+5 api_details: ''
+6 api_parameters:
+- logdir: Specifies the shared TensorBoard log directory where profile data will be
+    saved.
+- duration_ms: Sets how long to trace or monitor, in milliseconds, and must be greater
+    than zero.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.log2
+3 api_description: Computes the base-2 logarithm of each element in the input tensor
+  and returns a new tensor.
+4 api_signature: torch.log2(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose base-2 logarithm is computed elementwise.
+7 api_usage_example:
+- ' a = torch.rand(5)'
+- ' a'
+- ' torch.log2(a)'
+8 api_shape: null

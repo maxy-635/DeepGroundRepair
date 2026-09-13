@@ -1,0 +1,19 @@
+2 api_name: tensorflow.data.experimental.index_table_from_dataset
+3 api_description: Builds an index lookup table from a dataset of keys, mapping known
+  tokens to indices and routing out-of-vocabulary tokens to hash-based OOV buckets
+  or a default value.
+4 api_signature: tf.data.experimental.index_table_from_dataset(dataset,vocab_size,default_value,key_dtype)
+5 api_details: ''
+6 api_parameters:
+- dataset: Supplies the dataset containing the vocabulary keys to index.
+- vocab_size: Specifies how many elements are in the vocabulary when that size is
+    known.
+- default_value: Sets the fallback index used for values that are not found in the
+    vocabulary, defaulting to -1.
+- key_dtype: Defines the data type of the keys used by the dataset.
+7 api_usage_example:
+- 'ds = tf.data.Dataset.range(100).map(lambda x: tf.strings.as_string(x * 2))'
+- table = tf.data.experimental.index_table_from_dataset(
+- '                                    ds, key_dtype=dtypes.int64)'
+- table.lookup(tf.constant(['0', '2', '4'], dtype=tf.string)).numpy()
+8 api_shape: ''

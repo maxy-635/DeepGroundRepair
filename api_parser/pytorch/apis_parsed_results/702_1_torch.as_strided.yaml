@@ -1,0 +1,16 @@
+2 api_name: torch.as_strided
+3 api_description: Creates a tensor view over the same storage with custom size, stride,
+  and storage_offset, without copying data.
+4 api_signature: torch.as_strided(input,size,stride)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to create a strided view from.
+- size: The shape of the resulting output tensor.
+- stride: The step size between elements along each dimension of the output tensor.
+7 api_usage_example:
+- ' x = torch.randn(3, 3)'
+- ' x'
+- ' t = torch.as_strided(x, (2, 2), (1, 2))'
+- ' t'
+- ' t = torch.as_strided(x, (2, 2), (1, 2), 1)'
+8 api_shape: null

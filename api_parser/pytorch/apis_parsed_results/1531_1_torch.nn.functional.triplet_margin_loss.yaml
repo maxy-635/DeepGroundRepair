@@ -1,0 +1,25 @@
+2 api_name: torch.nn.functional.triplet_margin_loss
+3 api_description: torch.nn.functional.triplet_margin_loss computes the triplet loss
+  for input tensors, enforcing a margin between positive and negative pairs.
+4 api_signature: torch.nn.functional.triplet_margin_loss(anchor,positive,negative,margin,p,reduction)
+5 api_details: ''
+6 api_parameters:
+- anchor: The anchor input tensor for the triplet loss computation.
+- positive: The positive input tensor that should be closer to the anchor than the
+    negative.
+- negative: The negative input tensor that should be farther from the anchor than
+    the positive.
+- margin: A non-negative margin value that defines the minimum distance between the
+    anchor-positive and anchor-negative pairs.
+- p: The norm degree for pairwise distance computation, typically 2 for Euclidean
+    distance.
+- eps: A small value added to distances to prevent division by zero errors.
+- swap: A boolean indicating whether to use the 'swapped' distance for more stable
+    training.
+- size_average: Deprecated (see 'reduction'); whether to average the loss over the
+    batch.
+- reduce: Deprecated (see 'reduction'); whether to sum the loss over the batch.
+- reduction: 'Specifies the reduction method to apply to the output: ''none'', ''mean'',
+    or ''sum''.'
+7 api_usage_example: null
+8 api_shape: null

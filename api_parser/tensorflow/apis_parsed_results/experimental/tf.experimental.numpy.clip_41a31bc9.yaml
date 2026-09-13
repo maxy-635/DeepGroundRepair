@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.clip
+3 api_description: Clips values in a tensor to a specified minimum and/or maximum,
+  returning a TensorFlow NumPy-compatible result. Supports the NumPy clip behavior
+  except for `out` and extra keyword arguments.
+4 api_signature: tf.experimental.numpy.clip(a,a_min,a_max)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

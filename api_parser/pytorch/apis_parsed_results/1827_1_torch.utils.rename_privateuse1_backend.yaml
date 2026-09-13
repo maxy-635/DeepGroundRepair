@@ -1,0 +1,11 @@
+2 api_name: torch.utils.rename_privateuse1_backend
+3 api_description: Renames the PrivateUse1 backend so it can be referenced by a custom,
+  user-friendly device name in PyTorch APIs.
+4 api_signature: torch.utils.rename_privateuse1_backend(backend_name)
+5 api_details: ''
+6 api_parameters:
+- backend_name: The new backend name to register for the PrivateUse1 device type.
+7 api_usage_example:
+- ' torch.utils.rename_privateuse1_backend("foo")'
+- ' a = torch.ones(2, device="foo")'
+8 api_shape: null

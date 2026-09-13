@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.ops.count_nonzero
+3 api_description: Counts non-zero values in a tensor, optionally along a specified
+  axis; if no axis is given, counts all non-zero elements.
+4 api_signature: tf.keras.ops.count_nonzero(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose non-zero values will be counted.
+- axis: The axis or axes along which to count non-zero elements; if `None`, counts
+    across the entire tensor.
+7 api_usage_example:
+- x = keras.ops.array([[0, 1, 7, 0], [3, 0, 2, 19]])
+- keras.ops.count_nonzero(x)
+- keras.ops.count_nonzero(x, axis=0)
+- keras.ops.count_nonzero(x, axis=1)
+8 api_shape: ''

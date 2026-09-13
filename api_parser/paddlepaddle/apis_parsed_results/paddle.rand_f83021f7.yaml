@@ -1,0 +1,47 @@
+2 api_name: paddle.rand
+3 api_description: Creates a tensor of the specified shape and dtype filled with random
+  values drawn uniformly from [0, 1).
+4 api_signature: paddle.rand(shape,dtype,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor’s shape, either as a size list/tuple, a 1-D Tensor
+    of dimensions, or variable-length integer arguments.
+- dtype: Sets the output tensor’s data type, supporting `float32` and `float64`; if
+    omitted, the global default dtype is used.
+- device: Chooses the device on which the returned tensor is created.
+- requires_grad: Indicates whether autograd should track operations on the returned
+    tensor.
+7 api_usage_example:
+- import paddle
+- '# example 1: attr shape is a list which doesn''t contain Tensor.'
+- out1 = paddle.rand(shape=[2, 3])
+- print(out1)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.68532258, 0.69431782, 0.44835982],'
+- '[0.13204314, 0.48128194, 0.36574543]])'
+- '>>>'
+- '# example 2: attr shape is a list which contains Tensor.'
+- dim1 = paddle.to_tensor(2, 'int64')
+- dim2 = paddle.to_tensor(3, 'int32')
+- out2 = paddle.rand(shape=[dim1, dim2, 2])
+- print(out2)
+- '>>>'
+- Tensor(shape=[2, 3, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[0.62102991, 0.45255184],'
+- '[0.81386960, 0.22463219],'
+- '[0.87946558, 0.28097662]],'
+- '[[0.36565998, 0.63203937],'
+- '[0.58640617, 0.92696166],'
+- '[0.85060406, 0.38138932]]])'
+- '>>>'
+- '# example 3: attr shape is a Tensor, the data type must be int64 or int32.'
+- shape_tensor = paddle.to_tensor([2, 3])
+- out3 = paddle.rand(shape_tensor)
+- print(out3)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.77650446, 0.12870903, 0.05153799],'
+- '[0.27029657, 0.03963696, 0.42487794]])'
+- '>>>'
+8 api_shape: {}

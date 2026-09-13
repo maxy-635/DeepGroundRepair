@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.sparse_categorical_crossentropy
+3 api_description: Computes the sparse categorical crossentropy loss between labels
+  and predictions for integer class targets.
+4 api_signature: tf.keras.backend.sparse_categorical_crossentropy(target,output)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

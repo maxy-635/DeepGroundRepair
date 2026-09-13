@@ -1,0 +1,8 @@
+2 api_name: torch.matrix_exp
+3 api_description: Computes the matrix exponential of a square matrix, returning exp(A)
+  using the linear algebra matrix exponential implementation.
+4 api_signature: torch.matrix_exp(A)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

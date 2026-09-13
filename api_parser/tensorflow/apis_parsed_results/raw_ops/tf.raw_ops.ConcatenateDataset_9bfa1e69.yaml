@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ConcatenateDataset
+3 api_description: Creates a new dataset by appending another dataset to the end of
+  an input dataset.
+4 api_signature: tf.raw_ops.ConcatenateDataset(input_dataset,another_dataset,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The first dataset to concatenate.
+- another_dataset: The second dataset to append to the first.
+- output_types: The data types of the elements produced by the concatenated dataset.
+- output_shapes: The shapes of the elements produced by the concatenated dataset.
+7 api_usage_example: null
+8 api_shape: ''

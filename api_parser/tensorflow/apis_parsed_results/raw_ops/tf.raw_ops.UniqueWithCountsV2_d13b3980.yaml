@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.UniqueWithCountsV2
+3 api_description: Returns the unique elements of a tensor along an axis in first-occurrence
+  order, plus indices mapping each input element to its unique value and counts of
+  each unique value.
+4 api_signature: tf.raw_ops.UniqueWithCountsV2(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose unique elements, inverse indices, and counts are computed.
+- axis: The axis along which to find unique elements in the tensor.
+7 api_usage_example: null
+8 api_shape: ''

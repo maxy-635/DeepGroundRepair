@@ -1,0 +1,23 @@
+2 api_name: paddle.set_grad_enabled
+3 api_description: Context manager that temporarily enables or disables dygraph gradient
+  calculation.
+4 api_signature: paddle.set_grad_enabled(mode)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1.], stop_gradient=False)
+- is_train = False
+- 'with paddle.set_grad_enabled(is_train):'
+- '    y = x * 2'
+- print(y.stop_gradient)
+- 'True'
+- paddle.set_grad_enabled(True)
+- y = x * 2
+- print(y.stop_gradient)
+- 'False'
+- paddle.set_grad_enabled(False)
+- y = x * 2
+- print(y.stop_gradient)
+- 'True'
+8 api_shape: {}

@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.half_normal.HalfNormal
+3 api_description: A non-negative continuous distribution representing the absolute
+  value of a Normal(0, scale) random variable; it supports sampling, log-probability
+  evaluation, and common distribution methods via a transformed distribution.
+4 api_signature: HalfNormal(scale)
+5 api_details: ''
+6 api_parameters:
+- scale: Sets the standard deviation of the underlying Normal distribution before
+    taking its absolute value.
+7 api_usage_example:
+- X ~ Normal(0, scale)
+- Y = |X| ~ HalfNormal(scale)
+8 api_shape: null

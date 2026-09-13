@@ -1,0 +1,56 @@
+2 api_name: paddle.put_along_axis
+3 api_description: Places values into a destination array at positions specified by
+  an index matrix along a chosen axis.
+4 api_signature: paddle.put_along_axis(arr,indices,values,axis,reduce)
+5 api_details: ''
+6 api_parameters:
+- arr: The target tensor that will be updated in place.
+- indices: The positions along the specified axis where values will be placed.
+- values: The data to insert into `arr` at the given indices.
+- axis: The dimension of `arr` along which the 1D slices are written.
+- reduce: The method used to combine new values with existing ones at the indexed
+    positions.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[10, 30, 20], [60, 40, 50]])
+- index = paddle.to_tensor([[0]])
+- value = 99
+- axis = 0
+- result = paddle.put_along_axis(x, index, value, axis)
+- print(result)
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[99, 99, 99],'
+- '[60, 40, 50]])'
+- index = paddle.zeros((2,2)).astype("int32")
+- value=paddle.to_tensor([[1,2],[3,4]]).astype(x.dtype)
+- result = paddle.put_along_axis(x, index, value, 0, "add", True, False)
+- print(result)
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[14, 36, 20],'
+- '[60, 40, 50]])'
+- result = paddle.put_along_axis(x, index, value, 0, "mul", True, False)
+- print(result)
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[30 , 240, 20 ],'
+- '[60 , 40 , 50 ]])'
+- result = paddle.put_along_axis(x, index, value, 0, "mean", True, False)
+- print(result)
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[4 , 12, 20],'
+- '[60, 40, 50]])'
+- result = paddle.put_along_axis(x, index, value, 0, "amin", True, False)
+- print(result)
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1 , 2 , 20],'
+- '[60, 40, 50]])'
+- result = paddle.put_along_axis(x, index, value, 0, "amax", True, False)
+- print(result)
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[10, 30, 20],'
+- '[60, 40, 50]])'
+- result = paddle.put_along_axis(x, index, value, 0, "add", False, False)
+- print(result)
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[4 , 6 , 20],'
+- '[60, 40, 50]])'
+8 api_shape: {}

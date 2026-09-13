@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.lkj_cholesky.LKJCholesky.sample
+3 api_description: Draws random Cholesky factors of correlation matrices from the
+  LKJ distribution, with concentration controlled by `concentration`.
+4 api_signature: '"sample(sample_shape)"'
+5 api_details: ''
+6 api_parameters:
+- sample_shape: Specifies the shape of the sample to draw from the LKJ Cholesky distribution.
+7 api_usage_example: null
+8 api_shape: null

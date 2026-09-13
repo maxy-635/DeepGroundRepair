@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.MatrixDiagV2
+3 api_description: Constructs a batched matrix (or matrices) with values placed on
+  one or more specified diagonals and all other entries filled with padding, inferring
+  output size when needed.
+4 api_signature: tf.raw_ops.MatrixDiagV2(diagonal,k)
+5 api_details: ''
+6 api_parameters:
+- diagonal: Provides the values that will be placed onto one diagonal or a band of
+    diagonals in the output matrix.
+- k: Specifies which diagonal, or range of diagonals, to fill using an offset or offset
+    pair relative to the main diagonal.
+7 api_usage_example: null
+8 api_shape: ''

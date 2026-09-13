@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.BatchMatMulV3
+3 api_description: Performs batched matrix multiplication on matching slices of two
+  tensors, with optional adjoint (transpose and conjugate) of either input before
+  multiplying.
+4 api_signature: tf.raw_ops.BatchMatMulV3(x,y,adj_x,adj_y,name)
+5 api_details: ''
+6 api_parameters:
+- x: The left-hand input tensor containing one or more matrices to be batch-multiplied.
+- y: The right-hand input tensor containing one or more matrices to be batch-multiplied
+    with `x`.
+- adj_x: Specifies whether to take the adjoint of each matrix slice in `x` before
+    multiplication.
+- adj_y: Specifies whether to take the adjoint of each matrix slice in `y` before
+    multiplication.
+- name: An optional name used to label the operation.
+7 api_usage_example: null
+8 api_shape: ''

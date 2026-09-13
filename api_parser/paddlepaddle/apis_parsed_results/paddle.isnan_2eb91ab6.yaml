@@ -1,0 +1,16 @@
+2 api_name: paddle.isnan
+3 api_description: Checks whether each element in a tensor is NaN and returns a boolean
+  result.
+4 api_signature: paddle.isnan(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose elements are checked for NaN values; supported dtypes include
+    float16, float32, float64, int32, int64, complex64, and complex128.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([float('-inf'), -2, 3.6, float('inf'), 0, float('-nan'), float('nan')])
+- out = paddle.isnan(x)
+- out
+- Tensor(shape=[7], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, False, False, False, False, True , True ])'
+8 api_shape: {}

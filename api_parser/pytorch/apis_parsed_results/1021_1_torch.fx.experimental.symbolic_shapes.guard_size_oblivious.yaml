@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.guard_size_oblivious
+3 api_description: Checks a symbolic boolean in a size-oblivious way, avoiding guards
+  on unknown data-dependent values even if behavior may differ from regular PyTorch
+  semantics.
+4 api_signature: torch.fx.experimental.symbolic_shapes.guard_size_oblivious(expr)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.fishersnedecor.FisherSnedecor
+3 api_description: Represents the Fisher-Snedecor F distribution, a continuous probability
+  distribution over positive values. Provides methods for sampling, log probability
+  evaluation, entropy, mean/variance-related properties when defined, and supports
+  batched parameters.
+4 api_signature: torch.distributions.fishersnedecor.FisherSnedecor(df1,df2)
+5 api_details: ''
+6 api_parameters:
+- df1: Controls the numerator degrees of freedom, shaping the distribution's form.
+- df2: Controls the denominator degrees of freedom, shaping the distribution's tail
+    behavior.
+7 api_usage_example:
+- ' m = FisherSnedecor(torch.tensor([1.0]), torch.tensor([2.0]))'
+- ' m.sample()  # Fisher-Snedecor-distributed with df1=1 and df2=2'
+8 api_shape: null

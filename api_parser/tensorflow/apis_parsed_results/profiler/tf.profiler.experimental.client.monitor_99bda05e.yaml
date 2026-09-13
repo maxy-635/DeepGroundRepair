@@ -1,0 +1,9 @@
+2 api_name: tensorflow.profiler.experimental.client.monitor
+3 api_description: Blocks until it sends a gRPC request to a Cloud TPU profiler server
+  and receives a lightweight on-demand performance summary of model execution.
+4 api_signature: tf.profiler.experimental.client.monitor(service_addr)
+5 api_details: ''
+6 api_parameters:
+- service_addr: Specifies the gRPC address of the profiler service to connect to.
+7 api_usage_example: null
+8 api_shape: ''

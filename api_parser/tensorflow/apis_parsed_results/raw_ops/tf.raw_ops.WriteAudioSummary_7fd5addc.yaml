@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.WriteAudioSummary
+3 api_description: Writes encoded audio data as a summary at a given step and tag
+  using a summary writer, with the specified sample rate in Hz.
+4 api_signature: tf.raw_ops.WriteAudioSummary(writer,step,tag,tensor,sample_rate)
+5 api_details: ''
+6 api_parameters:
+- writer: Resource handle for the summary writer that records the audio event.
+- step: Training or global step value associated with the audio summary.
+- tag: String label used to name the audio summary.
+- tensor: Float32 audio data to be written in the summary.
+- sample_rate: Float32 sampling rate of the audio data in hertz.
+7 api_usage_example: null
+8 api_shape: ''

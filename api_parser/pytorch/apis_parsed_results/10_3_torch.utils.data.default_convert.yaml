@@ -1,0 +1,20 @@
+2 api_name: torch.utils.data.default_convert
+3 api_description: Converts NumPy array elements in a sample to torch.Tensor objects
+  while leaving other data unchanged.
+4 api_signature: torch.utils.data.default_convert(data)
+5 api_details: ''
+6 api_parameters:
+- data: The single data point to convert into a standard Python or tensor-compatible
+    form.
+7 api_usage_example:
+- ' # Example with `int`'
+- ' default_convert(0)'
+- ' # Example with NumPy array'
+- ' default_convert(np.array([0, 1]))'
+- ' # Example with NamedTuple'
+- ' Point = namedtuple("Point", ["x", "y"])'
+- ' default_convert(Point(0, 0))'
+- ' default_convert(Point(np.array(0), np.array(0)))'
+- ' # Example with List'
+- ' default_convert([np.array([0, 1]), np.array([2, 3])])'
+8 api_shape: null

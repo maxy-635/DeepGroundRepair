@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.device_memory_used
+3 api_description: Returns the current used GPU device memory in bytes.
+4 api_signature: torch.cuda.device_memory_used(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which CUDA device to query; if omitted, uses the current device.
+7 api_usage_example: null
+8 api_shape: null

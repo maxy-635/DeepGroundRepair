@@ -1,0 +1,19 @@
+2 api_name: paddle.static.nn.prelu
+3 api_description: Applies a parametric ReLU activation, using a learnable slope for
+  negative inputs while keeping positive inputs unchanged.
+4 api_signature: paddle.static.nn.prelu(x,mode,param_attr)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor containing the data to which PReLU is applied.
+- mode: Specifies how the learnable alpha weights are shared.
+- param_attr: Defines the learnable alpha parameter's attributes, such as how it is
+    created and initialized.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data(name="x", shape=[None, 5, 10, 10], dtype="float32")
+- mode = 'channel'
+- output = paddle.static.nn.prelu(
+- '    x,mode,param_attr=paddle.ParamAttr(name=''alpha''))'
+8 api_shape: {}

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.image.stateless_random_hue
+3 api_description: Deterministically adjusts RGB image hue by a random delta in [-max_delta,
+  max_delta), using the provided seed and producing the same result for the same inputs
+  regardless of global random state.
+4 api_signature: tf.image.stateless_random_hue(image,seed)
+5 api_details: ''
+6 api_parameters:
+- image: The RGB image or batch of images to adjust, with a last dimension size of
+    3.
+- seed: A two-element integer tensor used to deterministically seed the random hue
+    shift.
+7 api_usage_example:
+- x = [[[1.0, 2.0, 3.0],
+- '      [4.0, 5.0, 6.0]],'
+- '     [[7.0, 8.0, 9.0],'
+- '      [10.0, 11.0, 12.0]]]'
+- seed = (1, 2)
+- tf.image.stateless_random_hue(x, 0.2, seed)
+8 api_shape: ''

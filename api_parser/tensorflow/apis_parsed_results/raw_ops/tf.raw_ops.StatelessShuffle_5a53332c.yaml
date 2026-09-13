@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.StatelessShuffle
+3 api_description: Deterministically shuffles a tensor along its first dimension,
+  mapping each input element to exactly one output position.
+4 api_signature: tf.raw_ops.StatelessShuffle(value,key)
+5 api_details: ''
+6 api_parameters:
+- value: The tensor whose elements are shuffled without changing their values.
+- key: A 1-element uint64 seed used to drive the counter-based random shuffle.
+7 api_usage_example: null
+8 api_shape: ''

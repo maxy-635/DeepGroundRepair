@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ExtractImagePatches
+3 api_description: Extracts sliding-window patches from each image and stacks the
+  flattened patch values into the depth dimension.
+4 api_signature: tf.raw_ops.ExtractImagePatches(images,ksizes,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- images: The 4-D input tensor containing the image batch from which patches are extracted.
+- ksizes: The sliding-window size for each dimension, defining the patch dimensions.
+- strides: The step size between adjacent patch centers, with batch and channel strides
+    fixed at 1.
+- padding: The padding mode that determines how borders are handled when extracting
+    patches.
+7 api_usage_example: null
+8 api_shape: ''

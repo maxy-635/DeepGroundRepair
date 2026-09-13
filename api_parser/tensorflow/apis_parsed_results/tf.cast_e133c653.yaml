@@ -1,0 +1,13 @@
+2 api_name: tensorflow.cast
+3 api_description: Casts a tensor, or the values of a sparse tensor/indexed slices,
+  to a specified dtype.
+4 api_signature: tf.cast(x,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor-like value whose numeric elements will be converted to another
+    type.
+- dtype: The target data type to cast the input value to.
+7 api_usage_example:
+- x = tf.constant([1.8, 2.2], dtype=tf.float32)
+- tf.dtypes.cast(x, tf.int32)
+8 api_shape: ''

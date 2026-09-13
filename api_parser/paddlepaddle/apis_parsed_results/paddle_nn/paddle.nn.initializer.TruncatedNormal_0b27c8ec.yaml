@@ -1,0 +1,40 @@
+2 api_name: paddle.nn.initializer.TruncatedNormal
+3 api_description: The paddle.nn.initializer.TruncatedNormal API initializes tensor
+  values from a truncated normal distribution, ensuring values fall within a specified
+  range to avoid extreme values.
+4 api_signature: paddle.nn.initializer.TruncatedNormal(mean,std)
+5 api_details: ''
+6 api_parameters:
+- mean: Specifies the center or average value of the normal distribution used for
+    initialization.
+- std: Defines the spread or variability of the normal distribution, affecting the
+    range of values generated.
+- a: Sets the lower bound for the values generated, truncating the normal distribution
+    below this threshold.
+7 api_usage_example:
+- import paddle
+- data = paddle.ones(shape=[3, 1, 2], dtype='float32')
+- weight_attr = paddle.framework.ParamAttr(
+- '    name="linear_weight",'
+- '    initializer=paddle.nn.initializer.TruncatedNormal(mean=0.0, std=2.0))'
+- bias_attr = paddle.framework.ParamAttr(
+- '    name="linear_bias",'
+- '    initializer=paddle.nn.initializer.TruncatedNormal(mean=0.0, std=2.0))'
+- '>>>'
+- linear = paddle.nn.Linear(2, 2, weight_attr=weight_attr, bias_attr=bias_attr)
+- print(linear.weight)
+- 'Parameter containing:'
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.0981836  1.4140984],'
+- '[ 3.1390522 -2.8266568]])'
+- print(linear.bias)
+- 'Parameter containing:'
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[ -2.1546738  -1.6570673])'
+- res = linear(data)
+- print(res)
+- Tensor(shape=[3, 1, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[-0.11380529 -3.0696259 ]],'
+- '[[-0.11380529 -3.0696259 ]],'
+- '[[-0.11380529 -3.0696259 ]]])'
+8 api_shape: null

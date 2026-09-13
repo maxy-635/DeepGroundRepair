@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.DecodeBase64
+3 api_description: Decodes web-safe Base64 strings, accepting optional end padding
+  and using -/_ instead of +/.
+4 api_signature: tf.raw_ops.DecodeBase64(input)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the base64-encoded string tensor that will be decoded into raw bytes.
+7 api_usage_example: null
+8 api_shape: ''

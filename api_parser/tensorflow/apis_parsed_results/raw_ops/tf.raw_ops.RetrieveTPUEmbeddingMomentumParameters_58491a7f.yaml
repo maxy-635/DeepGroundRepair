@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingMomentumParameters
+3 api_description: Retrieves TPU embedding momentum optimization parameters from embedding
+  memory to host memory, typically for checkpointing after TPU embedding host configuration.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingMomentumParameters(table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- table_id: Specifies the numeric ID of the embedding table to retrieve parameters
+    for, if provided.
+- table_name: Specifies the embedding table by name, if provided, instead of using
+    its numeric ID.
+- config: Provides the TPU embedding configuration string used to identify or interpret
+    the parameters to retrieve.
+- name: Sets an optional name for the operation in the TensorFlow computation graph.
+7 api_usage_example: null
+8 api_shape: ''

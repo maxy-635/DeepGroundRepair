@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.L2Loss
+3 api_description: Computes half the sum of squares of a tensor’s elements, without
+  taking the square root.
+4 api_signature: tf.raw_ops.L2Loss(t)
+5 api_details: ''
+6 api_parameters:
+- t: The input tensor whose values are used to compute the L2 loss.
+7 api_usage_example: null
+8 api_shape: ''

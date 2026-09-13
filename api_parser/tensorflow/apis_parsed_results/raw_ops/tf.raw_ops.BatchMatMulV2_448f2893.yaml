@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.BatchMatMulV2
+3 api_description: Batched matrix multiplication for corresponding slices of two 2-D-or-higher
+  tensors, with optional adjoint (transpose/conjugate) of either input before multiplication.
+4 api_signature: tf.raw_ops.BatchMatMulV2(x,y,adj_x,adj_y)
+5 api_details: ''
+6 api_parameters:
+- x: The left-hand input tensor, with shape [..., r_x, c_x], whose slices are batched-multiplied.
+- y: The right-hand input tensor, matching `x` in type and shaped [..., r_y, c_y],
+    whose slices are batched-multiplied with `x`.
+- adj_x: If True, use the adjoint (conjugate transpose) of each slice of `x` before
+    multiplication.
+- adj_y: If True, use the adjoint (conjugate transpose) of each slice of `y` before
+    multiplication.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.from_numpy
+3 api_description: Creates a PyTorch tensor that shares memory with a NumPy ndarray.
+4 api_signature: torch.from_numpy(ndarray)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' a = numpy.array([1, 2, 3])'
+- ' t = torch.from_numpy(a)'
+- ' t'
+- ' t[0] = -1'
+- ' a'
+8 api_shape: null

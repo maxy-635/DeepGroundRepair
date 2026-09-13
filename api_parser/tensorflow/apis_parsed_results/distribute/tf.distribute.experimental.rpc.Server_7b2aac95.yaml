@@ -1,0 +1,14 @@
+2 api_name: tensorflow.distribute.experimental.rpc.Server
+3 api_description: Creates a TensorFlow RPC server at a given address, accepts incoming
+  RPCs, and dispatches them to registered `tf.function`s.
+4 api_signature: create(address)
+5 api_details: ''
+6 api_parameters:
+- address: Specifies the network address where the RPC server listens for requests.
+7 api_usage_example:
+- port = portpicker.pick_unused_port()
+- address = "localhost:{}".format(port)
+- server = tf.distribute.experimental.rpc.Server.create("grpc", address)
+- server.register("addition", remote_fn)
+- server.start()
+8 api_shape: ''

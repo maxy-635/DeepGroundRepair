@@ -1,0 +1,20 @@
+2 api_name: torch.cuda.gds.GdsFile
+3 api_description: Wraps cuFile to provide GPU Direct Storage file access, letting
+  CUDA applications read and write files directly between storage and GPU memory.
+4 api_signature: torch.cuda.gds.GdsFile(filename)
+5 api_details: ''
+6 api_parameters:
+- filename: Specifies the name of the file to open.
+7 api_usage_example:
+- ' src1 = torch.randn(1024, device="cuda")'
+- ' src2 = torch.randn(2, 1024, device="cuda")'
+- ' file = torch.cuda.gds.GdsFile(f, os.O_CREAT | os.O_RDWR)'
+- ' file.save_storage(src1.untyped_storage(), offset=0)'
+- ' file.save_storage(src2.untyped_storage(), offset=src1.nbytes)'
+- ' dest1 = torch.empty(1024, device="cuda")'
+- ' dest2 = torch.empty(2, 1024, device="cuda")'
+- ' file.load_storage(dest1.untyped_storage(), offset=0)'
+- ' file.load_storage(dest2.untyped_storage(), offset=src1.nbytes)'
+- ' torch.equal(src1, dest1)'
+- ' torch.equal(src2, dest2)'
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: torch.nn.attention.flex_attention.BlockMask.as_tuple
+3 api_description: Returns the BlockMask attributes as a tuple.
+4 api_signature: as_tuple(flatten)
+5 api_details: ''
+6 api_parameters:
+- flatten: Controls whether the returned block-size tuple is flattened into a single
+    tuple.
+7 api_usage_example: null
+8 api_shape: null

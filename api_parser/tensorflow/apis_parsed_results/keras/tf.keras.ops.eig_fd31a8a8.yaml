@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.eig
+3 api_description: Computes the eigenvalues and eigenvectors of a square matrix.
+4 api_signature: '"tf.keras.ops.eig(x)"'
+5 api_details: ''
+6 api_parameters:
+- x: The square input tensor whose eigenvalues and eigenvectors are computed.
+7 api_usage_example: null
+8 api_shape: ''

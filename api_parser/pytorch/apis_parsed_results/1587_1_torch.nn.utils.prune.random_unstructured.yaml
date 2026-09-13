@@ -1,0 +1,12 @@
+2 api_name: torch.nn.utils.prune.random_unstructured
+3 api_description: Randomly removes a specified amount or fraction of currently unpruned
+  elements from a tensor for pruning.
+4 api_signature: torch.nn.utils.prune.random_unstructured(module,name)
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the parameter tensor to be pruned.
+- name: The name of the parameter within the module that pruning will be applied to.
+7 api_usage_example:
+- ' m = prune.random_unstructured(nn.Linear(2, 3), "weight", amount=1)'
+- ' torch.sum(m.weight_mask == 0)'
+8 api_shape: null

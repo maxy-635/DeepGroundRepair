@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TensorListConcatLists
+3 api_description: Concatenates multiple TensorList inputs into a single TensorList
+  by combining their elements in order.
+4 api_signature: tf.raw_ops.TensorListConcatLists(input_a,input_b)
+5 api_details: ''
+6 api_parameters:
+- input_a: The first TensorList variant input whose lists are concatenated.
+- input_b: The second TensorList variant input whose lists are concatenated with `input_a`.
+7 api_usage_example: null
+8 api_shape: ''

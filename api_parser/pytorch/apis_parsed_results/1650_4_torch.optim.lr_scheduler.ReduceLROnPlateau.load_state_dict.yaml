@@ -1,0 +1,9 @@
+2 api_name: torch.optim.lr_scheduler.ReduceLROnPlateau.load_state_dict
+3 api_description: Load a ReduceLROnPlateau scheduler’s saved state so it can resume
+  with the same internal settings and learning-rate reduction progress.
+4 api_signature: load_state_dict(state_dict)
+5 api_details: ''
+6 api_parameters:
+- state_dict: A dictionary containing the scheduler state to restore.
+7 api_usage_example: null
+8 api_shape: null

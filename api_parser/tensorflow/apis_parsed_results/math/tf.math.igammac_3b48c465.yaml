@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.igammac
+3 api_description: Computes the upper regularized incomplete gamma function Q(a, x),
+  returning 1 - P(a, x) for given shape a and value x.
+4 api_signature: tf.math.igammac(a,x)
+5 api_details: ''
+6 api_parameters:
+- a: The shape parameter of the incomplete gamma function, provided as a floating-point
+    tensor.
+- x: The input tensor at which to evaluate the complemented incomplete gamma function,
+    with the same floating-point type as `a`.
+7 api_usage_example: null
+8 api_shape: ''

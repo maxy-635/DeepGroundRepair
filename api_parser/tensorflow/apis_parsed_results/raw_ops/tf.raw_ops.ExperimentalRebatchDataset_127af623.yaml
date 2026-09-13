@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ExperimentalRebatchDataset
+3 api_description: Creates a dataset that rebatches elements by reducing the current
+  batch size according to the number of replicas.
+4 api_signature: tf.raw_ops.ExperimentalRebatchDataset(input_dataset,num_replicas)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Specifies the input dataset to be rebatched, provided as a variant
+    tensor.
+- num_replicas: Sets how many replicas to split each batch across, reducing the effective
+    batch size accordingly.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.dynamic_decode
+3 api_description: The paddle.nn.dynamic_decode API repeatedly calls decoder.step()
+  until all sequences are marked as finished or a specified maximum number of steps
+  is reached.
+4 api_signature: paddle.nn.dynamic_decode(decoder,inits,max_step_num)
+5 api_details: ''
+6 api_parameters:
+- decoder: Specifies the Decoder instance responsible for the decoding process.
+- inits: Optional initial arguments passed to the decoder's initialize method.
+- max_step_num: Limits the decoding process to a maximum number of steps unless decoding
+    is completed earlier.
+7 api_usage_example: []
+8 api_shape: null

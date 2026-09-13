@@ -1,0 +1,9 @@
+2 api_name: torch.mtia.set_stream
+3 api_description: Sets the current MTIA stream for subsequent operations on the device,
+  though using the stream context manager is preferred.
+4 api_signature: torch.mtia.set_stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: Selects the stream to make current; if `None`, the call does nothing.
+7 api_usage_example: null
+8 api_shape: null

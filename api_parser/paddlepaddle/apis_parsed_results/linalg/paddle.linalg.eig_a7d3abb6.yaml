@@ -1,0 +1,26 @@
+2 api_name: paddle.linalg.eig
+3 api_description: Computes the eigenvalues and eigenvectors of a square matrix or
+  batch of square matrices.
+4 api_signature: paddle.linalg.eig(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input square tensor whose eigenvalues and eigenvectors are computed.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1.6707249, 7.2249975, 6.5045543],
+- '                      [9.956216,  8.749598,  6.066444 ],'
+- '                      [4.4251957, 1.7983172, 0.370647 ]])'
+- w, v = paddle.linalg.eig(x)
+- print(v)
+- Tensor(shape=[3, 3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[[ (0.5061365365982056+0j) ,  (0.7971761226654053+0j) ,'
+- (0.1851806491613388+0j) ],
+- '[ (0.8308236598968506+0j) , (-0.3463813066482544+0j) ,'
+- (-0.6837005615234375+0j) ],
+- '[ (0.23142573237419128+0j), (-0.49449989199638367+0j),'
+- (0.7058765292167664+0j) ]])
+- print(w)
+- Tensor(shape=[3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[ (16.50470733642578+0j)  , (-5.503481388092041+0j)  ,'
+- (-0.21026138961315155+0j)])
+8 api_shape: {}

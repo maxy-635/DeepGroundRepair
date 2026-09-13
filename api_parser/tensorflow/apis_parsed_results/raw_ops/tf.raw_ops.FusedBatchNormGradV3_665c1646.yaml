@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.FusedBatchNormGradV3
+3 api_description: Computes the gradient of fused batch normalization for the input,
+  scale, offset, mean, and variance tensors in NHWC or NCHW format.
+4 api_signature: tf.raw_ops.FusedBatchNormGradV3(y_backprop,x,scale,reserve_space_1,reserve_space_2,reserve_space_3)
+5 api_details: ''
+6 api_parameters:
+- y_backprop: Gradient tensor flowing back from the output y.
+- x: Input activation tensor used to compute the batch-norm gradients.
+- scale: Per-channel scale factor (gamma) applied to the normalized input.
+- reserve_space_1: Saved batch mean or population mean reused during gradient computation.
+- reserve_space_2: Saved batch variance or population variance reused during gradient
+    computation.
+- reserve_space_3: Saved intermediate values needed for gradient computation, or an
+    empty placeholder when not training.
+7 api_usage_example: null
+8 api_shape: ''

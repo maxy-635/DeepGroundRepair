@@ -1,0 +1,12 @@
+2 api_name: tensorflow.ones_like
+3 api_description: Returns a tensor of ones with the same shape as the input tensor,
+  optionally using a specified dtype.
+4 api_signature: tf.ones_like(input,dtype)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose shape is used to create an output tensor of ones.
+- dtype: The data type of the returned tensor.
+7 api_usage_example:
+- tensor = tf.constant([[1, 2, 3], [4, 5, 6]])
+- tf.ones_like(tensor)
+8 api_shape: ''

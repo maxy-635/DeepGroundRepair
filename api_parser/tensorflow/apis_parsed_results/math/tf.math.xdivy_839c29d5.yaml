@@ -1,0 +1,15 @@
+2 api_name: tensorflow.math.xdivy
+3 api_description: Computes x / y elementwise, returning 0 when x is 0 to avoid division
+  issues.
+4 api_signature: tf.math.xdivy(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The numerator tensor whose values are divided by `y`, with zero-handling behavior
+    specific to `xdivy`.
+- y: The denominator tensor used to divide `x`, determining the elementwise result.
+7 api_usage_example:
+- tf.math.xdivy(1., 2.)
+- tf.math.xdivy(0., 1.)
+- tf.math.xdivy(0., 0.)
+- tf.math.xdivy(1., 0.)
+8 api_shape: ''

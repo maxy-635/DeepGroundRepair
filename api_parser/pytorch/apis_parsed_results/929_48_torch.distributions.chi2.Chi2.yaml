@@ -1,0 +1,12 @@
+2 api_name: torch.distributions.chi2.Chi2
+3 api_description: Chi2 represents the chi-square distribution, a Gamma-based distribution
+  over nonnegative values parameterized by degrees of freedom, and provides sampling,
+  log-probability evaluation, and related distribution utilities.
+4 api_signature: torch.distributions.chi2.Chi2(df)
+5 api_details: ''
+6 api_parameters:
+- df: Sets the chi-square distribution’s degrees of freedom, controlling its shape.
+7 api_usage_example:
+- ' m = Chi2(torch.tensor([1.0]))'
+- ' m.sample()  # Chi2 distributed with shape df=1'
+8 api_shape: null

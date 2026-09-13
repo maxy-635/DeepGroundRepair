@@ -1,0 +1,19 @@
+2 api_name: torch.distributed.rpc.shutdown
+3 api_description: Shuts down and destroys the local RPC agent, stopping new requests
+  and RPC threads; optionally waits for all processes and outstanding work to finish
+  when graceful=True.
+4 api_signature: torch.distributed.rpc.shutdown(graceful,timeout)
+5 api_details: ''
+6 api_parameters:
+- graceful: Controls whether shutdown waits for pending RPC work and messages to finish
+    before exiting.
+7 api_usage_example:
+- ' # On worker 0:'
+- ' import torch'
+- ' import torch.distributed.rpc as rpc'
+- ' rpc.init_rpc("worker0", rank=0, world_size=2)'
+- ' # do some work'
+- ' result = rpc.rpc_sync("worker1", torch.add, args=(torch.ones(1), 1))'
+- ' # ready to shutdown'
+- ' rpc.shutdown()'
+8 api_shape: null

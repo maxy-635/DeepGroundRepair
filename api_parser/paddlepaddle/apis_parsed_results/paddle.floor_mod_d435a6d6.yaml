@@ -1,0 +1,24 @@
+2 api_name: paddle.floor_mod
+3 api_description: Computes the element-wise floor modulus of two tensors.
+4 api_signature: paddle.floor_mod(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor used as the dividend for the floor modulus operation.
+- y: The second input tensor used as the divisor for the floor modulus operation.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([2, 3, 8, 7])
+- y = paddle.to_tensor([1, 5, 3, 3])
+- z = paddle.remainder(x, y)
+- print(z)
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 3, 2, 1])'
+- z = paddle.floor_mod(x, y)
+- print(z)
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 3, 2, 1])'
+- z = paddle.mod(x, y)
+- print(z)
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 3, 2, 1])'
+8 api_shape: {}

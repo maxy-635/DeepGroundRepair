@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesUpdateEnsemble
+3 api_description: Updates a boosted trees ensemble by adding to the current tree
+  or starting a new tree.
+4 api_signature: tf.raw_ops.BoostedTreesUpdateEnsemble(tree_ensemble_handle,gains,thresholds,learning_rate,pruning_mode)
+5 api_details: ''
+6 api_parameters:
+- tree_ensemble_handle: Identifies the ensemble variable to update.
+- gains: Provides the gain values for each candidate split in the new tree.
+- thresholds: Provides the split threshold values corresponding to the candidate splits.
+- learning_rate: Sets the shrinkage factor applied to each new tree update.
+- pruning_mode: Selects the pruning strategy to use when updating the ensemble.
+7 api_usage_example: null
+8 api_shape: ''

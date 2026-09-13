@@ -1,0 +1,43 @@
+2 api_name: paddle.linalg.matrix_norm
+3 api_description: Computes the p-order norm of a tensor treated as a matrix over
+  specified dimensions.
+4 api_signature: paddle.linalg.matrix_norm(x,p,axis,keepdim)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose matrix norm is computed.
+- p: The norm type to use, with `'fro'` as the default.
+- axis: The two dimensions over which to compute the matrix norm, defaulting to the
+    last two dimensions.
+- keepdim: Whether to keep the reduced dimensions in the output, defaulting to `False`.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(24, dtype="float32").reshape([2, 3, 4]) - 12
+- print(x)
+- Tensor(shape=[2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[-12., -11., -10., -9. ],'
+- '[-8. , -7. , -6. , -5. ],'
+- '[-4. , -3. , -2. , -1. ]],'
+- '[[ 0. ,  1. ,  2. ,  3. ],'
+- '[ 4. ,  5. ,  6. ,  7. ],'
+- '[ 8. ,  9. ,  10.,  11.]]])'
+- out_matrix_norm = paddle.linalg.matrix_norm(x=x,p=2,axis=[0,1],keepdim=False)
+- print(out_matrix_norm)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[15.75857544, 14.97978878, 14.69693947, 14.97978973])'
+- out_matrix_norm = paddle.linalg.matrix_norm(x=x,p='fro',axis=[0,1],keepdim=False)
+- print(out_matrix_norm)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[17.43559647, 16.91153526, 16.73320007, 16.91153526])'
+- out_matrix_norm = paddle.linalg.matrix_norm(x=x,p=float('inf'),axis=[1,2],keepdim=False)
+- print(out_matrix_norm)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[42., 38.])'
+- out_matrix_norm = paddle.linalg.matrix_norm(x=x,p=-1,axis=[0,1],keepdim=False)
+- print(out_matrix_norm)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[12., 12., 12., 12.])'
+- out_matrix_norm = paddle.linalg.matrix_norm(x=x,p='nuc',axis=[0,1],keepdim=False)
+- print(out_matrix_norm)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[23.21962357, 22.82873154, 22.69693947, 22.82873154])'
+8 api_shape: {}

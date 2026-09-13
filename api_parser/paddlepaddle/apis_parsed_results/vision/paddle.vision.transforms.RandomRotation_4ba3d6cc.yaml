@@ -1,0 +1,23 @@
+2 api_name: paddle.vision.transforms.RandomRotation
+3 api_description: Randomly rotates an image by a specified angle.
+4 api_signature: paddle.vision.transforms.RandomRotation(degrees,interpolation,expand,center,fill,keys)
+5 api_details: ''
+6 api_parameters:
+- degrees: Defines the rotation angle range to sample from, or a symmetric range around
+    zero when given a single number.
+- interpolation: Chooses the resampling method used when rotating the image.
+- expand: Controls whether the output canvas is expanded to fit the entire rotated
+    image.
+- center: Sets the rotation pivot point, defaulting to the image center.
+- keys: Specifies which fields the transform should apply to, following BaseTransform
+    behavior.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import RandomRotation
+- transform = RandomRotation(90)
+- fake_img = Image.fromarray((np.random.rand(200, 150, 3) * 255.).astype(np.uint8))
+- fake_img = transform(fake_img)
+- print(fake_img.size)
+- (150, 200)
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.LocalStateDictConfig
+3 api_description: Configures FSDP to produce a local state dict containing only the
+  parameters for each shard, rather than a full consolidated checkpoint.
+4 api_signature: class torch.distributed.fsdp.LocalStateDictConfig(offload_to_cpu:bool)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

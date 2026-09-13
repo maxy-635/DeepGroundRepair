@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.rsqrt_
+3 api_description: Computes the reciprocal square root of a tensor in place, modifying
+  the input tensor directly.
+4 api_signature: paddle.Tensor.rsqrt_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.DebugIdentityV2
+3 api_description: Returns the input tensor unchanged while logging its contents to
+  DebugEventsWriter for debugging, with the logged data determined by tensor_debug_mode.
+4 api_signature: tf.raw_ops.DebugIdentityV2(input,tensor_debug_mode,debug_urls,circular_buffer_size)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to pass through unchanged for debugging.
+- tensor_debug_mode: Selects the debug event format or mode used for inspecting the
+    tensor.
+- debug_urls: Specifies one or more debug destinations where tensor data should be
+    written.
+- circular_buffer_size: Sets the size of the circular buffer used to retain debug
+    data.
+7 api_usage_example: null
+8 api_shape: ''

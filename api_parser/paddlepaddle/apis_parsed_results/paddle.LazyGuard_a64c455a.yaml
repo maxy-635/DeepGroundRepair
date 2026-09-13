@@ -1,0 +1,18 @@
+2 api_name: paddle.LazyGuard
+3 api_description: Wraps an nn.Layer to forward its construct call while providing
+  access to lazy parameter initialization and the startup program needed to trigger
+  it.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- from paddle import LazyGuard
+- from paddle.nn import Linear
+- 'with LazyGuard():'
+- '    # w and b are initialized lazily and have no memory.'
+- '    net = Linear(10, 10)'
+- '...'
+- 'for param in net.parameters():'
+- '    # Initialize param and allocate memory explicitly.'
+- '    param.initialize()'
+8 api_shape: {}

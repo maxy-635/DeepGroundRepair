@@ -1,0 +1,21 @@
+2 api_name: tensorflow.raw_ops.Conv
+3 api_description: Computes an N-D convolution over batched input tensors using a
+  matching N+2-D filter.
+4 api_signature: tf.raw_ops.Conv(input,filter,strides,padding,data_format,dilations,groups)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be convolved, shaped according to the chosen data format
+    and batch dimensions.
+- filter: The convolution kernel tensor, matching the input type and containing the
+    spatial filter dimensions plus input and output channels.
+- strides: The sliding-window step sizes for each dimension, with batch and channel
+    strides fixed to 1.
+- padding: The padding mode that determines how the input is padded before convolution.
+- data_format: The layout of the input and output channels in the tensor, such as
+    channels last or channels first.
+- dilations: The spacing between kernel elements along each dimension, with batch
+    and depth dilations required to be 1.
+- groups: The number of channel groups to split the input and filters into for separate
+    convolutions.
+7 api_usage_example: null
+8 api_shape: ''

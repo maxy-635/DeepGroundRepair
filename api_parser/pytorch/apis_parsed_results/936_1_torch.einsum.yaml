@@ -1,0 +1,33 @@
+2 api_name: torch.einsum
+3 api_description: Computes tensor contractions by multiplying input operands and
+  summing over specified dimensions using Einstein notation.
+4 api_signature: torch.einsum(equation,*operands)
+5 api_details: ''
+6 api_parameters:
+- equation: Specifies the Einstein summation notation that defines how the operands
+    are combined.
+- operands: Provides the tensors that are included in the Einstein summation computation.
+7 api_usage_example:
+- ' # trace'
+- ' torch.einsum(''ii'', torch.randn(4, 4))'
+- ' # diagonal'
+- ' torch.einsum(''ii->i'', torch.randn(4, 4))'
+- ' # outer product'
+- ' x = torch.randn(5)'
+- ' y = torch.randn(4)'
+- ' torch.einsum(''i,j->ij'', x, y)'
+- ' # batch matrix multiplication'
+- ' As = torch.randn(3, 2, 5)'
+- ' Bs = torch.randn(3, 5, 4)'
+- ' torch.einsum(''bij,bjk->bik'', As, Bs)'
+- ' # with sublist format and ellipsis'
+- ' torch.einsum(As, [..., 0, 1], Bs, [..., 1, 2], [..., 0, 2])'
+- ' # batch permute'
+- ' A = torch.randn(2, 3, 4, 5)'
+- ' torch.einsum(''...ij->...ji'', A).shape'
+- ' # equivalent to torch.nn.functional.bilinear'
+- ' A = torch.randn(3, 5, 4)'
+- ' l = torch.randn(2, 5)'
+- ' r = torch.randn(2, 4)'
+- ' torch.einsum(''bn,anm,bm->ba'', l, A, r)'
+8 api_shape: null

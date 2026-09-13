@@ -1,0 +1,15 @@
+2 api_name: torch.amax
+3 api_description: Returns the maximum value along the specified dimension(s) of a
+  tensor.
+4 api_signature: torch.amax(input,dim,keepdim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be reduced to compute the maximum.
+- dim: The dimension or dimensions along which to find the maximum, or all dimensions
+    if `None`.
+- keepdim: Whether to keep the reduced dimensions in the output tensor.
+7 api_usage_example:
+- ' a = torch.randn(4, 4)'
+- ' a'
+- ' torch.amax(a, 1)'
+8 api_shape: null

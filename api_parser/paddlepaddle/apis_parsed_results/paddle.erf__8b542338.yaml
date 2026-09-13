@@ -1,0 +1,8 @@
+2 api_name: paddle.erf_
+3 api_description: In-place computes the error function `erf` on `x`, overwriting
+  the input tensor with the result.
+4 api_signature: paddle.erf_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

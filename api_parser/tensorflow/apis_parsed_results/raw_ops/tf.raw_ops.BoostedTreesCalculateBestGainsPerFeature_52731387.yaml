@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesCalculateBestGainsPerFeature
+3 api_description: Computes the best split gain, threshold, and left/right node contributions
+  for each feature and each splittable node, returning per-feature node lists for
+  later selection of the overall best split.
+4 api_signature: tf.raw_ops.BoostedTreesCalculateBestGainsPerFeature(node_id_range,stats_summary_list,l1,l2,tree_complexity,min_node_weight,max_splits)
+5 api_details: ''
+6 api_parameters:
+- node_id_range: Specifies the inclusive-exclusive range of node IDs whose split gains
+    should be computed.
+- stats_summary_list: Provides per-feature accumulated gradient and hessian statistics
+    for each node and bucket.
+- l1: Sets the L1 regularization strength applied to leaf weight calculations.
+- l2: Sets the L2 regularization strength applied to leaf weight calculations.
+- tree_complexity: Adds a complexity penalty to split gain for each leaf.
+- min_node_weight: Sets the minimum average hessian required for a node to be eligible
+    for splitting.
+- max_splits: Defines the maximum number of splittable nodes in the tree and the output
+    tensor dimensions.
+7 api_usage_example: null
+8 api_shape: ''

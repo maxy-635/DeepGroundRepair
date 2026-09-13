@@ -1,0 +1,24 @@
+2 api_name: torch.nn.functional.lp_pool2d
+3 api_description: torch.nn.functional.lp_pool2d applies 2D power-average pooling
+  to multi-channel input data, computing the average of input elements raised to a
+  specified power, and then taking the root of the result.
+4 api_signature: torch.nn.functional.lp_pool2d(input,norm_type,kernel_size,stride)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor that the pooling operation will be applied to.
+- norm_type: The order of the norm used in the pooling operation, typically a positive
+    number.
+- kernel_size: The size of the window to take a norm over, can be a single number
+    or a tuple of two numbers.
+- stride: The stride of the window, can be a single number or a tuple of two numbers,
+    and defaults to kernel_size.
+- ceil_mode: When set to True, will use ceil instead of floor to compute the output
+    shape.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: Height_out = floor((Height_in - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in - kernel_size_width) / stride_width + 1)

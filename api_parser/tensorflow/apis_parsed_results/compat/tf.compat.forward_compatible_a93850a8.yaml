@@ -1,0 +1,12 @@
+2 api_name: tensorflow.compat.forward_compatible
+3 api_description: Returns whether TensorFlow's forward-compatibility window has expired
+  for loading models built with newer TensorFlow versions.
+4 api_signature: tf.compat.forward_compatible(year,month,day)
+5 api_details: ''
+6 api_parameters:
+- year: Specifies the year used to determine compatibility behavior.
+- month: Specifies the month within the given year used to determine compatibility
+    behavior.
+- day: Specifies the day within the given month used to determine compatibility behavior.
+7 api_usage_example: null
+8 api_shape: ''

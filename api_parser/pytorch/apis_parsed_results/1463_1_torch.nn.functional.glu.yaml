@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.glu
+3 api_description: The GLU function splits the input tensor into two halves, applies
+  a sigmoid activation to one half, and multiplies it with the other half, effectively
+  gating the linear transformation.
+4 api_signature: torch.nn.functional.glu(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the gated linear unit (GLU) activation is applied.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (\ast_1, N, \ast_2) where * means, any number of additional
+    dimensions
+  output tensor shape: (\ast_1, M, \ast_2) where M=N/2
+  tensor shape transform formulas: {}

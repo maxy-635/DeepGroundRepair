@@ -1,0 +1,24 @@
+2 api_name: paddle.nn.functional.label_smooth
+3 api_description: The paddle.nn.functional.label_smooth API applies label smoothing
+  regularization to reduce model overfitting by encouraging less confident predictions,
+  thus enhancing adaptability.
+4 api_signature: paddle.nn.functional.label_smooth(label,prior_dist,epsilon)
+5 api_details: ''
+6 api_parameters:
+- label: Specifies the input tensor containing one-hot encoded label data with a shape
+    of [N_1, ..., Depth], where Depth is the number of classes.
+- prior_dist: Defines the prior distribution used for smoothing the labels, defaulting
+    to a uniform distribution if not provided, and has a shape of [1, class_num].
+- epsilon: Indicates the mixing weight between the original labels and the prior distribution,
+    with a default value of 0.1.
+7 api_usage_example:
+- import paddle
+- paddle.disable_static()
+- x = paddle.to_tensor([[[0, 1, 0],
+- '                    [ 1,  0, 1]]], dtype="float32", stop_gradient=False)'
+- output = paddle.nn.functional.label_smooth(x)
+- print(output)
+- Tensor(shape=[1, 2, 3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[0.03333334, 0.93333334, 0.03333334],'
+- '[0.93333334, 0.03333334, 0.93333334]]])'
+8 api_shape: null

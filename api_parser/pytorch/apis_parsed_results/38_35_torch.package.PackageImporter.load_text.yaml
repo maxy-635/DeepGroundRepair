@@ -1,0 +1,9 @@
+2 api_name: torch.package.PackageImporter.load_text
+3 api_description: Loads and returns the text content of a packaged file as a string.
+4 api_signature: load_text(package,resource)
+5 api_details: ''
+6 api_parameters:
+- package: Specifies the module package that contains the text resource to load.
+- resource: Specifies the unique resource name to read as text from the package.
+7 api_usage_example: null
+8 api_shape: null

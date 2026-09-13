@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.losses.sparse_categorical_crossentropy
+3 api_description: Computes the sparse categorical crossentropy loss between true
+  integer class labels and predicted class probabilities or logits.
+4 api_signature: tf.keras.losses.sparse_categorical_crossentropy(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: Provides the true class labels for each sample as the ground truth.
+- y_pred: Provides the model’s predicted class probabilities or logits for each sample.
+7 api_usage_example:
+- y_true = [1, 2]
+- y_pred = [[0.05, 0.95, 0], [0.1, 0.8, 0.1]]
+- loss = keras.losses.sparse_categorical_crossentropy(y_true, y_pred)
+- assert loss.shape == (2,)
+- loss
+8 api_shape: ''

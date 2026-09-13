@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseSliceGrad
+3 api_description: Computes the gradient for SparseSlice by mapping upstream gradients
+  on sliced non-empty values back to the corresponding non-empty values of the input
+  SparseTensor.
+4 api_signature: tf.raw_ops.SparseSliceGrad(backprop_val_grad,input_indices,input_start,output_indices)
+5 api_details: ''
+6 api_parameters:
+- backprop_val_grad: Gradient values for the non-empty entries of the sliced SparseTensor.
+- input_indices: Indices of the original input SparseTensor.
+- input_start: Start position of the slice in the input tensor.
+- output_indices: Indices of the sliced SparseTensor output.
+7 api_usage_example: null
+8 api_shape: ''

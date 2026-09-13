@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.SimpleRNN
+3 api_description: paddle.nn.SimpleRNN is a multilayer Elman network that processes
+  input sequences with optional initial states, producing output sequences and final
+  states.
+4 api_signature: paddle.nn.SimpleRNN(input_size,hidden_size,num_layers,activation)
+5 api_details: ''
+6 api_parameters:
+- input_size: Specifies the dimensionality of the input data for the first layer's
+    cell.
+- hidden_size: Defines the number of features in the hidden state for each layer's
+    cell.
+- num_layers: Indicates the number of stacked recurrent layers, defaulting to one.
+- activation: Determines the activation function (tanh or relu) used in each SimpleRNN
+    cell, with tanh as the default.
+7 api_usage_example: []
+8 api_shape: null

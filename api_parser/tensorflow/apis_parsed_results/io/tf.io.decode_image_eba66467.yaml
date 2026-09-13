@@ -1,0 +1,13 @@
+2 api_name: tensorflow.io.decode_image
+3 api_description: Decodes image bytes by detecting BMP, GIF, JPEG, or PNG format
+  and converting them into a tensor of the specified dtype.
+4 api_signature: tf.io.decode_image(contents,channels,dtype,expand_animations)
+5 api_details: ''
+6 api_parameters:
+- contents: Provides the encoded image bytes to decode.
+- channels: Sets the number of output color channels.
+- dtype: Specifies the data type of the returned tensor.
+- expand_animations: Controls whether animated GIFs are returned as full 4-D tensors
+    or truncated to a single 3-D frame.
+7 api_usage_example: null
+8 api_shape: ''

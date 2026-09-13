@@ -1,0 +1,20 @@
+2 api_name: torch.linalg.ldl_solve
+3 api_description: Solves linear systems using a precomputed LDL factorization, returning
+  the solution for one or more right-hand sides.
+4 api_signature: torch.linalg.ldl_solve(LD,pivots,B)
+5 api_details: ''
+6 api_parameters:
+- LD: Provides the LDL factorization matrix or batch of matrices used to solve the
+    linear system.
+- pivots: Supplies the pivot information that encodes how the LDL factorization was
+    computed.
+- B: Provides the right-hand side tensor whose solution is computed.
+7 api_usage_example:
+- ' A = torch.randn(2, 3, 3)'
+- ' A = A @ A.mT # make symmetric'
+- ' LD, pivots, info = torch.linalg.ldl_factor_ex(A)'
+- ' B = torch.randn(2, 3, 4)'
+- ' X = torch.linalg.ldl_solve(LD, pivots, B)'
+- ' torch.linalg.norm(A @ X - B)'
+- ' tensor(0.0001)'
+8 api_shape: null

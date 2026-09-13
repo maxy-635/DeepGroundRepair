@@ -1,0 +1,20 @@
+2 api_name: tensorflow.keras.metrics.AUC
+3 api_description: Computes an approximate ROC-AUC or PR-AUC for binary classification
+  by bucketing predictions across thresholds and integrating the resulting precision/recall
+  or true/false positive rates; supports custom thresholds, sample weights, and different
+  summation methods to trade off accuracy and approximation bounds.
+4 api_signature: tf.keras.metrics.AUC(curve,thresholds,multi_label,from_logits)
+5 api_details: ''
+6 api_parameters:
+- curve: Chooses whether to compute ROC AUC or Precision-Recall AUC.
+- thresholds: Sets the custom threshold values used to discretize the curve, overriding
+    `num_thresholds`.
+- multi_label: Controls whether AUC is computed per label and averaged for multilabel
+    data, or whether all labels are flattened into one set.
+- from_logits: Indicates whether predictions are sigmoid logits rather than probabilities.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([0, 0, 1, 1], [0, 0.5, 0.3, 0.9],
+- '               sample_weight=[1, 0, 0, 1])'
+- m.result()
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.data.experimental.snapshot
+3 api_description: Persists a dataset’s preprocessed output to disk so it can be reused
+  in later runs, reducing repeated computation and allowing custom control over how
+  data is read, written, and sharded.
+4 api_signature: tf.data.experimental.snapshot(path,reader_func,shard_func)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the directory used to save or load the snapshot.
+- reader_func: Defines how snapshot shards are read back into the dataset.
+- shard_func: Defines how data is partitioned into shards when writing the snapshot.
+7 api_usage_example: null
+8 api_shape: ''

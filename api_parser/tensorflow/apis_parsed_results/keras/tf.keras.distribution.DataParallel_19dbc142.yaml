@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.distribution.DataParallel
+3 api_description: Provides data-parallel distribution by building a 1D device mesh
+  from a supplied DeviceMesh, an explicit device list, or available devices, with
+  the first mesh axis used for data parallelism if multiple axes are present.
+4 api_signature: tf.keras.distribution.DataParallel(device_mesh,devices)
+5 api_details: ''
+6 api_parameters:
+- device_mesh: An optional `DeviceMesh` that defines how computation and data are
+    distributed across devices.
+- devices: An optional list of device identifiers to use for data parallel execution.
+7 api_usage_example: null
+8 api_shape: ''

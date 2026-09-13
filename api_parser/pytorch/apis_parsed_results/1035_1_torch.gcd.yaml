@@ -1,0 +1,15 @@
+2 api_name: torch.gcd
+3 api_description: Computes the element-wise greatest common divisor of two inputs.
+4 api_signature: '"torch.gcd(input,other)"'
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor whose values are used to compute the greatest common divisor.
+- other: The second tensor whose values are used to compute the greatest common divisor
+    with `input`.
+7 api_usage_example:
+- ' a = torch.tensor([5, 10, 15])'
+- ' b = torch.tensor([3, 4, 5])'
+- ' torch.gcd(a, b)'
+- ' c = torch.tensor([3])'
+- ' torch.gcd(a, c)'
+8 api_shape: null

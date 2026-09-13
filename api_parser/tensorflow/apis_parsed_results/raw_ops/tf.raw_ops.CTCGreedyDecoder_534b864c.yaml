@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.CTCGreedyDecoder
+3 api_description: Decodes CTC logits greedily by selecting the highest-probability
+  class at each time step, skipping blank labels and optionally collapsing repeated
+  consecutive predictions when merge_repeated is True.
+4 api_signature: tf.raw_ops.CTCGreedyDecoder(inputs,sequence_length,merge_repeated,blank_index)
+5 api_details: ''
+6 api_parameters:
+- inputs: The 3-D logits tensor of shape `(max_time, batch_size, num_classes)` used
+    as the decoder input.
+- sequence_length: A vector of `int32` values giving the valid time steps for each
+    batch item.
+- merge_repeated: If `True`, collapses repeated class predictions in the decoded output.
+- blank_index: Specifies which class index should be treated as the blank label, defaulting
+    to `-1`.
+7 api_usage_example: null
+8 api_shape: ''

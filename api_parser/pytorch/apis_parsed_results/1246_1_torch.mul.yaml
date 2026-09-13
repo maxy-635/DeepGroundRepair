@@ -1,0 +1,17 @@
+2 api_name: torch.mul
+3 api_description: Element-wise multiplies the input by another value or tensor.
+4 api_signature: torch.mul(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be multiplied.
+- other: The tensor or scalar used as the multiplier.
+7 api_usage_example:
+- ' a = torch.randn(3)'
+- ' a'
+- ' torch.mul(a, 100)'
+- ' b = torch.randn(4, 1)'
+- ' b'
+- ' c = torch.randn(1, 4)'
+- ' c'
+- ' torch.mul(b, c)'
+8 api_shape: null

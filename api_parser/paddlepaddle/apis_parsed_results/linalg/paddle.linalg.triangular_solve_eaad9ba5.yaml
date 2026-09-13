@@ -1,0 +1,29 @@
+2 api_name: paddle.linalg.triangular_solve
+3 api_description: Solves triangular linear systems for one or more right-hand sides.
+4 api_signature: paddle.linalg.triangular_solve(x,y,upper,transpose,unitriangular)
+5 api_details: ''
+6 api_parameters:
+- x: The triangular coefficient matrix used as the left-hand side of the linear system.
+- y: The right-hand side matrix containing one or more systems to solve.
+- upper: Selects whether `x` is treated as an upper-triangular or lower-triangular
+    matrix.
+- transpose: Indicates whether `x` should be transposed before solving the system.
+- unitriangular: Specifies that `x` has an implicit unit diagonal, so diagonal values
+    are assumed to be 1.
+7 api_usage_example:
+- '# a square system of linear equations:'
+- '# x1 +   x2  +   x3 = 0'
+- '#      2*x2  +   x3 = -9'
+- '#               -x3 = 5'
+- import paddle
+- x = paddle.to_tensor([[1, 1, 1],
+- '                      [0, 2, 1],'
+- '                      [0, 0,-1]], dtype="float64")'
+- y = paddle.to_tensor([[0], [-9], [5]], dtype="float64")
+- out = paddle.linalg.triangular_solve(x, y, upper=True)
+- print(out)
+- Tensor(shape=[3, 1], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[ 7.],'
+- '[-2.],'
+- '[-5.]])'
+8 api_shape: {}

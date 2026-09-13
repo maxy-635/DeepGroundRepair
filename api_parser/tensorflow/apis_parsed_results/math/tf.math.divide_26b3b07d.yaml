@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.divide
+3 api_description: Performs Python-style division of x by y, returning the quotient.
+4 api_signature: tf.math.divide(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The numerator tensor to be divided.
+- y: The denominator tensor used to divide `x`.
+7 api_usage_example:
+- x = tf.constant([16, 12, 11])
+- y = tf.constant([4, 6, 2])
+- tf.divide(x,y)
+8 api_shape: ''

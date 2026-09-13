@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.fsdp.ShardedOptimStateDictConfig
+3 api_description: Configures how optimizer state is saved and distributed when using
+  `StateDictType.SHARDED_STATE_DICT` in FSDP.
+4 api_signature: torch.distributed.fsdp.ShardedOptimStateDictConfig(offload_to_cpu,use_dtensor)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

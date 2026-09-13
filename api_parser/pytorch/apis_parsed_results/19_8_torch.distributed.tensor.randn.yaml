@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.tensor.randn
+3 api_description: Creates a DTensor with the specified shape, filled with random
+  values drawn from a standard normal distribution (mean 0, variance 1).
+4 api_signature: torch.distributed.tensor.randn(*size,device_mesh,placements)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the output DTensor shape as a sequence of integers, either as separate
+    arguments or as a list/tuple.
+7 api_usage_example: null
+8 api_shape: null

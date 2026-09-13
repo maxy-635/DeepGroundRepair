@@ -1,0 +1,12 @@
+2 api_name: tensorflow.summary.trace_on
+3 api_description: Starts TensorFlow tracing in eager mode to record computation graphs
+  and profiling data across the runtime for later export to TensorBoard.
+4 api_signature: tf.summary.trace_on(graph,profiler)
+5 api_details: ''
+6 api_parameters:
+- graph: Enables collection of executed graphs, including those from `tf.function`
+    and legacy graph mode.
+- profiler: Enables the advanced profiler and implicitly turns on graph collection,
+    but may use significant memory.
+7 api_usage_example: null
+8 api_shape: ''

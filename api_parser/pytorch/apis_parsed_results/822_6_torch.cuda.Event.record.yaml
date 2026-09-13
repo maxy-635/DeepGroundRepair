@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.Event.record
+3 api_description: Records the event on a specified CUDA stream so it can be used
+  for synchronization or timing.
+4 api_signature: record(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: Records the event on the specified CUDA stream, defaulting to `torch.cuda.current_stream()`,
+    and requires the stream to be on the same device as the event.
+7 api_usage_example: null
+8 api_shape: null

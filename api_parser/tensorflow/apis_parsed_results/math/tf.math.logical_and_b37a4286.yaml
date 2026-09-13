@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.logical_and
+3 api_description: Computes the element-wise logical AND of x and y, supporting same-shape
+  or broadcast-compatible inputs.
+4 api_signature: tf.math.logical_and(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first boolean tensor to evaluate elementwise in the logical AND operation.
+- y: The second boolean tensor to combine elementwise with `x` using logical AND.
+7 api_usage_example:
+- tf.logical_and([[True, False]], [[True], [False]])
+8 api_shape: ''

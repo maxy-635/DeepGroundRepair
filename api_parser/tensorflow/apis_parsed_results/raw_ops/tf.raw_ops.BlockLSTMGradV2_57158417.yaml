@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.BlockLSTMGradV2
+3 api_description: Computes the backward pass for a full LSTM sequence, returning
+  gradients for BlockLSTMV2 inputs and states over all time steps.
+4 api_signature: tf.raw_ops.BlockLSTMGradV2(x,h,cs_grad,h_grad,w,b,use_peephole,name)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the input sequence tensor for the LSTM across all time steps.
+- w: Provides the LSTM weight matrix used in the backward computation.
+- b: Provides the LSTM bias vector used in the backward computation.
+- cs: Provides the cell state values before the tanh activation for the full sequence.
+- f: Provides the forget gate activations for the full sequence.
+- o: Provides the output gate activations for the full sequence.
+- h: Provides the output hidden-state values for the full sequence.
+- cs_grad: Provides the gradient of the cell state used to backpropagate through time.
+- h_grad: Provides the gradient of the hidden-state output used in backpropagation.
+- use_peephole: Specifies whether peephole connections are included in the LSTM gradients.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

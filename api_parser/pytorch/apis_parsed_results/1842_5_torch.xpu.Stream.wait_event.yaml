@@ -1,0 +1,9 @@
+2 api_name: torch.xpu.Stream.wait_event
+3 api_description: Blocks future operations on the stream until the specified event
+  has occurred.
+4 api_signature: wait_event(event)
+5 api_details: ''
+6 api_parameters:
+- event: The event whose completion the stream waits for.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.LookupTableFind
+3 api_description: Looks up each key in a table and returns the matching value, or
+  the provided scalar default value when a key is missing.
+4 api_signature: tf.raw_ops.LookupTableFind(table_handle,keys,default_value)
+5 api_details: ''
+6 api_parameters:
+- table_handle: Identifies the lookup table to search.
+- keys: Specifies the keys whose values should be retrieved from the table.
+- default_value: Provides the value to return for any key that is not found.
+7 api_usage_example: null
+8 api_shape: ''

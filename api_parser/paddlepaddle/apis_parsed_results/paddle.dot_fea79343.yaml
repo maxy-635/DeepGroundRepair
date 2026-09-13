@@ -1,0 +1,26 @@
+2 api_name: paddle.dot
+3 api_description: Computes the inner product of two vectors.
+4 api_signature: paddle.dot(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor, which must be 1-D or 2-D and contain numeric or complex
+    values.
+- y: The second input tensor, which must be 1-D or 2-D and contain numeric or complex
+    values.
+7 api_usage_example:
+- import paddle
+- '# 1-D Tensor * 1-D Tensor'
+- x = paddle.to_tensor([1, 2, 3])
+- y = paddle.to_tensor([4, 5, 6])
+- z = paddle.dot(x, y)
+- print(z)
+- Tensor(shape=[], dtype=int64, place=Place(cpu), stop_gradient=True,
+- 32)
+- '# 2-D Tensor * 2-D Tensor'
+- x = paddle.to_tensor([[1, 2, 3], [2, 4, 6]])
+- y = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])
+- z = paddle.dot(x, y)
+- print(z)
+- Tensor(shape=[2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[32, 64])'
+8 api_shape: {}

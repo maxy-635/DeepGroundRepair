@@ -1,0 +1,18 @@
+2 api_name: tensorflow.quantization.quantize
+3 api_description: Quantizes a float input tensor into a tensor of type T using the
+  provided min and max range, with mode and rounding settings controlling how values
+  are mapped and rounded.
+4 api_signature: tf.quantization.quantize(input,min_range,max_range,T,mode,round_mode)
+5 api_details: ''
+6 api_parameters:
+- input: The float32 tensor to be quantized.
+- min_range: The lower bound of the quantization range, which may be adjusted by the
+    op and returned via `output_min`.
+- max_range: The upper bound of the quantization range, which may be adjusted by the
+    op and returned via `output_max`.
+- T: The quantized output data type to use, chosen from the supported TensorFlow quantized
+    dtypes.
+- mode: The quantization algorithm to apply.
+- round_mode: The rounding rule used when mapping values to quantized integers.
+7 api_usage_example: null
+8 api_shape: ''

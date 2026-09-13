@@ -1,0 +1,15 @@
+2 api_name: torch.special.logit
+3 api_description: Computes the logit (inverse sigmoid) of each input element, clamping
+  values to [eps, 1 - eps] when eps is set and returning NaN for inputs outside [0,
+  1] when eps is None.
+4 api_signature: torch.special.logit(input,eps)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose values are transformed by the logit function.
+- eps: An optional epsilon used to clamp input values to a safe range before applying
+    logit.
+7 api_usage_example:
+- ' a = torch.rand(5)'
+- ' a'
+- ' torch.special.logit(a, eps=1e-6)'
+8 api_shape: null

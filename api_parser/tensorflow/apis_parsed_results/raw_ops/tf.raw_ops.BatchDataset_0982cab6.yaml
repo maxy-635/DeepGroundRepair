@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.BatchDataset
+3 api_description: Creates a new dataset that groups consecutive elements from an
+  input dataset into batches of the specified size.
+4 api_signature: tf.raw_ops.BatchDataset(input_dataset,batch_size)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to read elements from and batch.
+- batch_size: The scalar batch size that determines how many elements to group together
+    per batch.
+7 api_usage_example: null
+8 api_shape: ''

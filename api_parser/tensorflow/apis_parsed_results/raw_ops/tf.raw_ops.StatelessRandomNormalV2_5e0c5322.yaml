@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.StatelessRandomNormalV2
+3 api_description: Generates deterministic pseudorandom samples from a standard normal
+  distribution using shape, key, counter, and algorithm as inputs.
+4 api_signature: tf.raw_ops.StatelessRandomNormalV2(shape,key,counter,alg,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the output tensor to generate.
+- key: Provides the RNG key used by the counter-based random number generator.
+- counter: Sets the initial counter value for the counter-based RNG stream.
+- alg: Chooses which random number generation algorithm to use.
+- dtype: Determines the data type of the generated random values.
+7 api_usage_example: null
+8 api_shape: ''

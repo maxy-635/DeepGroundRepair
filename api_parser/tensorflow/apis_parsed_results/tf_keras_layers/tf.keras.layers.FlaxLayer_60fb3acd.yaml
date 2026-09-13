@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.layers.FlaxLayer
+3 api_description: The tf.keras.layers.FlaxLayer allows integration of Flax modules
+  into Keras, enabling the use of flax.linen.Module instances with JAX as the backend.
+  It supports specifying the forward pass method, defaulting to __call__, and requires
+  specific argument names for the method.
+4 api_signature: tf.keras.layers.FlaxLayer(module, method)
+5 api_details: ''
+6 api_parameters:
+- module: An instance of a flax.linen.Module or its subclass that defines the model
+    architecture.
+- method: The specific method to invoke on the Module, defaulting to __call__ if not
+    specified, and can also be a standalone function taking the Module as the first
+    argument.
+7 api_usage_example: null
+8 api_shape: null

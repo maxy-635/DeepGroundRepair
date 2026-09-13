@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.CollectiveBcastRecv
+3 api_description: Receives a tensor broadcast from another device in a collective
+  communication group.
+4 api_signature: tf.raw_ops.CollectiveBcastRecv(T,group_size,group_key,instance_key,shape)
+5 api_details: ''
+6 api_parameters:
+- T: Specifies the data type of the tensor being received.
+- group_size: Sets the number of participating devices in the collective group.
+- group_key: Identifies the collective group this receive belongs to.
+- instance_key: Uniquely identifies this specific broadcast receive operation within
+    the group.
+- shape: Defines the expected shape of the received tensor.
+7 api_usage_example: null
+8 api_shape: ''

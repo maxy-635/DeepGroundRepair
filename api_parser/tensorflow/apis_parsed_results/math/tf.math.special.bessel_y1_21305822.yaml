@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.special.bessel_y1
+3 api_description: Computes the Bessel Y1 function element-wise for each value in
+  x.
+4 api_signature: tf.math.special.bessel_y1(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the values at which to compute the Bessel function of
+    the second kind, order 1.
+7 api_usage_example:
+- tf.math.special.bessel_y1([0.5, 1., 2., 4.]).numpy()
+8 api_shape: ''

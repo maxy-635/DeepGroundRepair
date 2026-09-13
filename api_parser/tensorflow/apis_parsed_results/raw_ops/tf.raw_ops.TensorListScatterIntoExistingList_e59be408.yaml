@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorListScatterIntoExistingList
+3 api_description: Scatters rows from a tensor into an existing TensorList at the
+  specified indices, producing an updated TensorList.
+4 api_signature: tf.raw_ops.TensorListScatterIntoExistingList(input_handle,tensor,indices)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The existing tensor list variant to scatter values into.
+- tensor: The tensor containing values to place into the list.
+- indices: The int32 indices indicating where each value should be written.
+7 api_usage_example: null
+8 api_shape: ''

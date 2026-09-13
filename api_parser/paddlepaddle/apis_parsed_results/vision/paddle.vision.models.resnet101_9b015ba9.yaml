@@ -1,0 +1,9 @@
+2 api_name: paddle.vision.models.resnet101
+3 api_description: ResNet-101 image classification model that applies a 101-layer
+  deep residual network to extract features and predict visual categories.
+4 api_signature: paddle.vision.models.resnet101(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+7 api_usage_example: []
+8 api_shape: {}

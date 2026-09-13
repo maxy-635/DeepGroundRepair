@@ -1,0 +1,16 @@
+2 api_name: torch.nn.utils.parametrizations.weight_norm
+3 api_description: Applies weight normalization to a module parameter by reparameterizing
+  its weight as a normalized vector with a separate magnitude, helping stabilize and
+  speed up training.
+4 api_signature: torch.nn.utils.parametrizations.weight_norm(module,name,dim)
+5 api_details: ''
+6 api_parameters:
+- module: The module whose weight parameter will be reparameterized with weight normalization.
+- name: The name of the weight parameter to apply weight normalization to.
+- dim: The dimension along which the weight norm is computed.
+7 api_usage_example:
+- ' m = weight_norm(nn.Linear(20, 40), name=''weight'')'
+- ' m'
+- ' m.parametrizations.weight.original0.size()'
+- ' m.parametrizations.weight.original1.size()'
+8 api_shape: null

@@ -1,0 +1,27 @@
+2 api_name: torch.nn.attention.flex_attention.flex_attention
+3 api_description: Computes scaled dot product attention while allowing a custom function
+  to modify attention scores, enabling flexible attention patterns.
+4 api_signature: torch.nn.attention.flex_attention.flex_attention(query,key,value,score_mod,block_mask,scale,enable_gqa,return_lse)
+5 api_details: ''
+6 api_parameters:
+- query: Provides the query tensor used to compute attention outputs.
+- key: Provides the key tensor that attention compares against the query.
+- value: Provides the value tensor whose information is combined by attention weights.
+- score_mod: Optionally modifies raw attention scores before softmax is applied.
+- block_mask: Specifies the block-sparse attention pattern to restrict which tokens
+    can attend.
+- scale: Sets the multiplicative scaling factor applied to attention scores before
+    softmax.
+- enable_gqa: Enables grouped query attention by broadcasting key and value heads
+    across query heads.
+- return_lse: Controls whether the log-sum-exp of attention scores is returned as
+    an auxiliary output.
+7 api_usage_example:
+- def score_mod(
+- '    score: Tensor,'
+- '    batch: Tensor,'
+- '    head: Tensor,'
+- '    q_idx: Tensor,'
+- '    k_idx: Tensor'
+- ') -> Tensor:'
+8 api_shape: null

@@ -1,0 +1,20 @@
+2 api_name: tensorflow.keras.layers.SeparableConv1D
+3 api_description: The SeparableConv1D layer performs depthwise convolution on each
+  channel independently, followed by pointwise convolution to combine channels, with
+  optional bias and activation.
+4 api_signature: tf.keras.layers.SeparableConv1D(filters, kernel_size, strides, padding,
+  activation)
+5 api_details: ''
+6 api_parameters:
+- filters: Defines the number of output filters in the pointwise convolution.
+- kernel_size: Specifies the size of the convolution window for the depthwise convolution.
+- strides: Determines the stride length for the depthwise convolution, affecting how
+    the filter moves across the input.
+- padding: Specifies the padding method, either 'valid' for no padding or 'same' for
+    preserving input size.
+- activation: Sets the activation function to apply, with None indicating no activation.
+7 api_usage_example:
+- x = np.random.rand(4, 10, 12)
+- y = keras.layers.SeparableConv1D(3, 4, 3, 2, activation='relu')(x)
+- print(y.shape)
+8 api_shape: null

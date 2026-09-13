@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.fleet.HybridCommunicateGroup
+3 api_description: Manages hybrid distributed communication groups for Paddle Fleet,
+  organizing ranks into data, model, pipeline, and sharding parallel groups and providing
+  access to their process-group configuration.
+4 api_signature: paddle.distributed.fleet.HybridCommunicateGroup(topology)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

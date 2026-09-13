@@ -1,0 +1,11 @@
+2 api_name: torch.distributions.lkj_cholesky.LKJCholesky.log_prob
+3 api_description: Computes the log probability of a lower-triangular Cholesky factor
+  under the LKJ distribution, returning how likely a given correlation matrix factor
+  is for the specified concentration.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The lower-triangular Cholesky factor whose log probability under the LKJ-Cholesky
+    distribution is being computed.
+7 api_usage_example: null
+8 api_shape: null

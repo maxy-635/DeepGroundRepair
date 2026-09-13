@@ -1,0 +1,8 @@
+2 api_name: torch._foreach_neg_
+3 api_description: In-place negates each tensor in the input list by applying torch.neg()
+  elementwise to every tensor.
+4 api_signature: torch._foreach_neg_(self)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

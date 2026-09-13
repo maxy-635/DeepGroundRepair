@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli.log_prob
+3 api_description: Computes the log probability of a value under the LogitRelaxedBernoulli
+  distribution.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The sample or value whose log probability under the distribution is computed.
+- temperature: The relaxation temperature controlling how close the relaxed Bernoulli
+    is to a discrete Bernoulli.
+- probs: The Bernoulli success probability parameter, used to define the underlying
+    distribution.
+- logits: The log-odds parameter of the Bernoulli distribution, used as an alternative
+    to `probs`.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: paddle.asinh
+3 api_description: Computes the inverse hyperbolic sine elementwise as an activation
+  function.
+4 api_signature: paddle.asinh(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are transformed by the inverse hyperbolic sine
+    operation.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.asinh(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.39003533, -0.19869010,  0.09983408,  0.29567307])'
+8 api_shape: {}

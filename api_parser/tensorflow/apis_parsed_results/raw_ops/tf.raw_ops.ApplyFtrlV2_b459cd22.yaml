@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.ApplyFtrlV2
+3 api_description: Applies the Ftrl-Proximal optimizer update to a variable using
+  the current gradient, accumulator, and linear terms, with optional L1/L2 regularization
+  and L2 shrinkage.
+4 api_signature: tf.raw_ops.ApplyFtrlV2(var,accum,linear,grad,lr,l1,l2,l2_shrinkage)
+5 api_details: ''
+6 api_parameters:
+- var: The model variable to be updated by the FTRL optimizer.
+- accum: The accumulated squared-gradient state used to adapt learning rates.
+- linear: The linear accumulator state used to compute the parameter update.
+- grad: The gradient tensor applied to update the variable.
+- lr: The scalar learning-rate factor that scales the update step.
+- l1: The scalar L1 regularization strength used to encourage sparsity.
+- l2: The scalar L2 regularization strength used to shrink weights.
+- l2_shrinkage: The scalar L2 shrinkage regularization applied to the update rule.
+7 api_usage_example: null
+8 api_shape: ''

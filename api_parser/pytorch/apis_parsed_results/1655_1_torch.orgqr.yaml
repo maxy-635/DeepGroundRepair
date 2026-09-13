@@ -1,0 +1,8 @@
+2 api_name: torch.orgqr
+3 api_description: Computes the orthogonal/unitary matrix product from a QR decomposition’s
+  Householder reflectors.
+4 api_signature: torch.orgqr(input,tau)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.nn.utils.prune.Identity.remove
+3 api_description: Remove the pruning reparameterization from a module, restoring
+  the original parameter by making the pruned weight a permanent part of the module.
+4 api_signature: remove(module)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,29 @@
+2 api_name: paddle.incubate.autograd.jvp
+3 api_description: Computes the Jacobian-vector product of a function at given inputs,
+  using tangent vectors to evaluate how the outputs change locally.
+4 api_signature: paddle.incubate.autograd.jvp(func,xs,v)
+5 api_details: ''
+6 api_parameters:
+- func: The function to differentiate, which accepts Tensor inputs and returns a Tensor
+    or sequence of Tensors.
+- xs: The input Tensor or sequence of Tensors passed positionally to `func` for evaluation.
+- v: The tangent vector for the JVP computation, matching the shape of `xs`, or all
+    ones if omitted.
+7 api_usage_example:
+- import paddle
+- 'def func(x):'
+- '    return paddle.matmul(x, x)'
+- '...'
+- x = paddle.ones(shape=[2, 2], dtype='float32')
+- _, jvp_result = paddle.incubate.autograd.jvp(func, x)
+- print(jvp_result)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(gpu:0), stop_gradient=False,
+- '[[4., 4.],'
+- '[4., 4.]])'
+- v = paddle.to_tensor([[1.0, 0.0], [0.0, 0.0]])
+- _, jvp_result = paddle.incubate.autograd.jvp(func, x, v)
+- print(jvp_result)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(gpu:0), stop_gradient=False,
+- '[[2., 1.],'
+- '[1., 0.]])'
+8 api_shape: {}

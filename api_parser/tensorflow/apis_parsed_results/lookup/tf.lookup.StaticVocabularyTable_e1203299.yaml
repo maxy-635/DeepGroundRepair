@@ -1,0 +1,20 @@
+2 api_name: tensorflow.lookup.StaticVocabularyTable
+3 api_description: Maps string keys to integer ids using a fixed vocabulary, and sends
+  out-of-vocabulary keys to hashed fallback buckets.
+4 api_signature: tf.lookup.StaticVocabularyTable(initializer,num_oov_buckets)
+5 api_details: ''
+6 api_parameters:
+- initializer: Provides the table data used to initialize the vocabulary lookup table;
+    if None, the table uses only out-of-vocabulary buckets.
+- num_oov_buckets: Sets how many out-of-vocabulary buckets to create for unseen keys,
+    and must be greater than zero.
+7 api_usage_example:
+- init = tf.lookup.KeyValueTensorInitializer(
+- '    keys=tf.constant(["emerson", "lake", "palmer"]),'
+- '    values=tf.constant([1, 2, 3], dtype=tf.int64))'
+- table = tf.lookup.StaticVocabularyTable(
+- '    init,'
+- '    num_oov_buckets=1)'
+- input_tensor = tf.constant(["emerson", "lake", "palmer", "king"])
+- table[input_tensor].numpy()
+8 api_shape: ''

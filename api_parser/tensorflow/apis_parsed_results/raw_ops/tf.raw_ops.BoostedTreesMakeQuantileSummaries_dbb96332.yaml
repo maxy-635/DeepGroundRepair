@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesMakeQuantileSummaries
+3 api_description: Builds per-feature quantile summaries from a batch of input tensors
+  for use in boosted trees.
+4 api_signature: tf.raw_ops.BoostedTreesMakeQuantileSummaries(float_values,example_weights,epsilon)
+5 api_details: ''
+6 api_parameters:
+- float_values: Rank-1 float tensors containing the per-feature values used to build
+    quantile summaries.
+- example_weights: Rank-1 float tensor giving the weight of each training example.
+- epsilon: Float tensor specifying the maximum allowed approximation error for the
+    quantile summaries.
+7 api_usage_example: null
+8 api_shape: ''

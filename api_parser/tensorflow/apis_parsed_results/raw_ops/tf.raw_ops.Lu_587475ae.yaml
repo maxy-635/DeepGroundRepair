@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Lu
+3 api_description: Computes the LU decomposition of one or more invertible square
+  matrices, returning combined LU factors and permutation indices such that P_mat
+  * input = L * U.
+4 api_signature: tf.raw_ops.Lu(input,output_idx_type)
+5 api_details: ''
+6 api_parameters:
+- A: The square input tensor to factorize into LU decomposition, with inner dimensions
+    forming each [M, M] matrix.
+- output_idx_type: The integer dtype used for the permutation indices returned by
+    the operation.
+7 api_usage_example: null
+8 api_shape: ''

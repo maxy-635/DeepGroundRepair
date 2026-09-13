@@ -1,0 +1,8 @@
+2 api_name: paddle.cos_
+3 api_description: Computes the cosine of each element in `x` in place, overwriting
+  the input tensor with the result.
+4 api_signature: paddle.cos_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

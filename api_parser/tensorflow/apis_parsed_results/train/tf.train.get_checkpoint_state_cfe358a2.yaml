@@ -1,0 +1,10 @@
+2 api_name: tensorflow.train.get_checkpoint_state
+3 api_description: Reads the checkpoint file in a directory and returns the stored
+  `CheckpointState` proto when it is valid.
+4 api_signature: tf.train.get_checkpoint_state(checkpoint_dir)
+5 api_details: ''
+6 api_parameters:
+- checkpoint_dir: Specifies the directory where checkpoint files are stored and from
+    which the latest checkpoint state is read.
+7 api_usage_example: null
+8 api_shape: ''

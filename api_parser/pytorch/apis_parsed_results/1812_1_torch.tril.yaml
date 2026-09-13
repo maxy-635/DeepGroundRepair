@@ -1,0 +1,18 @@
+2 api_name: torch.tril
+3 api_description: Returns the lower triangular part of a 2-D tensor or batch of tensors,
+  zeroing all elements above the main diagonal.
+4 api_signature: torch.tril(input,diagonal)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose lower triangular part is returned.
+- diagonal: The diagonal offset that determines which diagonals are included in the
+    lower triangular part.
+7 api_usage_example:
+- ' a = torch.randn(3, 3)'
+- ' a'
+- ' torch.tril(a)'
+- ' b = torch.randn(4, 6)'
+- ' b'
+- ' torch.tril(b, diagonal=1)'
+- ' torch.tril(b, diagonal=-1)'
+8 api_shape: null

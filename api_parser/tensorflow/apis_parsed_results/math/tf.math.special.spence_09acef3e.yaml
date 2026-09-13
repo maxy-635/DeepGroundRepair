@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.special.spence
+3 api_description: Computes Spence's integral element-wise for non-negative real inputs.
+4 api_signature: tf.math.special.spence(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor or sparse tensor whose Spence's function (dilogarithm) is computed
+    elementwise.
+7 api_usage_example:
+- tf.math.special.spence([0.5, 1., 2., 3.]).numpy()
+8 api_shape: ''

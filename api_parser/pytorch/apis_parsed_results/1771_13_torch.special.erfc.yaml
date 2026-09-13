@@ -1,0 +1,11 @@
+2 api_name: torch.special.erfc
+3 api_description: Computes the complementary error function for each element of the
+  input tensor.
+4 api_signature: torch.special.erfc(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are passed to `erfc` to compute the complementary
+    error function elementwise.
+7 api_usage_example:
+- ' torch.special.erfc(torch.tensor([0, -1., 10.]))'
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.InputSpec
+3 api_description: Defines and enforces expected input rank, dtype, and shape for
+  layer inputs, enabling compatibility checks for tensor structure and dimensions,
+  with None acting as a wildcard.
+4 api_signature: tf.keras.InputSpec(shape,ndim,axes,name)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the expected full input shape, including batch size, allowing None
+    for dynamic dimensions.
+- ndim: Specifies the expected number of dimensions in the input tensor.
+- axes: Constrains specific axis indices to fixed dimension values.
+- name: Specifies the expected dictionary key for this input when data is provided
+    as a mapping.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: torch.Generator.graphsafe_set_state
+3 api_description: Sets a generator’s state to a specified value in a CUDA graph-safe
+  way so it can be captured and reused during graph capture.
+4 api_signature: graphsafe_set_state(state)
+5 api_details: ''
+6 api_parameters:
+- state: The generator state to restore, usually one previously saved with `graphsafe_get_state`.
+7 api_usage_example:
+- ' g_cuda = torch.Generator(device=''cuda'')'
+- ' g_cuda_other = torch.Generator(device=''cuda'')'
+- ' current_state = g_cuda_other.graphsafe_get_state()'
+- ' g_cuda.graphsafe_set_state(current_state)'
+8 api_shape: null

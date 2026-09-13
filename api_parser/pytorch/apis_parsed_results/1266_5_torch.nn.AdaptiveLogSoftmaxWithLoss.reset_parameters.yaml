@@ -1,0 +1,8 @@
+2 api_name: torch.nn.AdaptiveLogSoftmaxWithLoss.reset_parameters
+3 api_description: Reinitializes the module’s weights and biases using the same initialization
+  scheme as in `__init__`.
+4 api_signature: reset_parameters()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

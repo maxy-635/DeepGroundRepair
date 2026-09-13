@@ -1,0 +1,14 @@
+2 api_name: tensorflow.image.ssim
+3 api_description: Computes the Structural Similarity Index (SSIM) between two images
+  to measure perceptual similarity in image quality.
+4 api_signature: tf.image.ssim(img1,img2,max_val)
+5 api_details: ''
+6 api_parameters:
+- img1: The first batch of images to compare, provided as a 4-D tensor shaped [batch,
+    height, width, channels] with positive pixel values.
+- img2: The second batch of images to compare against `img1`, provided as a 4-D tensor
+    shaped [batch, height, width, channels] with positive pixel values.
+- max_val: The images' dynamic range, used to scale the SSIM calculation based on
+    the allowed difference between minimum and maximum pixel values.
+7 api_usage_example: null
+8 api_shape: ''

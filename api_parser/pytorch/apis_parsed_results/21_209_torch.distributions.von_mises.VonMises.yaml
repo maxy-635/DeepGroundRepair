@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.von_mises.VonMises
+3 api_description: A circular probability distribution on the unit circle, parameterized
+  by mean direction `loc` and concentration `concentration`, with methods for sampling,
+  computing log probabilities, and evaluating distribution properties.
+4 api_signature: '"VonMises(loc,concentration)"'
+5 api_details: ''
+6 api_parameters:
+- loc: Specifies the mean direction of the distribution as an angle in radians.
+- concentration: Controls how tightly the distribution is clustered around the mean
+    direction.
+7 api_usage_example:
+- ' m = VonMises(torch.tensor([1.0]), torch.tensor([1.0]))'
+- ' m.sample()  # von Mises distributed with loc=1 and concentration=1'
+8 api_shape: null

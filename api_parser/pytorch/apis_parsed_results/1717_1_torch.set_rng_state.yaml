@@ -1,0 +1,9 @@
+2 api_name: torch.set_rng_state
+3 api_description: Sets the generator state for PyTorch's random number generator,
+  controlling the sequence of random numbers produced.
+4 api_signature: torch.set_rng_state(new_state)
+5 api_details: ''
+6 api_parameters:
+- new_state: Sets the RNG state to the specified state.
+7 api_usage_example: null
+8 api_shape: null

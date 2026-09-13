@@ -1,0 +1,30 @@
+2 api_name: paddle.optimizer.lr.MultiplicativeDecay
+3 api_description: Multiplies the optimizer’s learning rate by a user-defined factor
+  each update.
+4 api_signature: paddle.optimizer.lr.MultiplicativeDecay(learning_rate,lr_lambda,last_epoch)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the starting learning rate as a Python float.
+- lr_lambda: Provides a function that computes the per-epoch decay factor to multiply
+    the current learning rate.
+- last_epoch: Records the last completed epoch index and can be used to resume or
+    restart training.
+7 api_usage_example:
+- import paddle
+- '# train on default dynamic graph mode'
+- linear = paddle.nn.Linear(10, 10)
+- scheduler = paddle.optimizer.lr.MultiplicativeDecay(learning_rate=0.5, lr_lambda=lambda
+  x:0.95, verbose=True)
+- sgd = paddle.optimizer.SGD(learning_rate=scheduler, parameters=linear.parameters())
+- 'for epoch in range(20):'
+- '    for batch_id in range(5):'
+- '        x = paddle.uniform([10, 10])'
+- '        out = linear(x)'
+- '        loss = paddle.mean(out)'
+- '        loss.backward()'
+- '        sgd.step()'
+- '        sgd.clear_gradients()'
+- '        scheduler.step()    # If you update learning rate each step'
+- '    # scheduler.step()        # If you update learning rate each epoch'
+- '...'
+8 api_shape: {}

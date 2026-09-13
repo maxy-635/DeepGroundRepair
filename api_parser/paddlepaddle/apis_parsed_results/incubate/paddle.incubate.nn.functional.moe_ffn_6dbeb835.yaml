@@ -1,0 +1,25 @@
+2 api_name: paddle.incubate.nn.functional.moe_ffn
+3 api_description: Applies each expert’s feed-forward network to its dispatched tokens
+  in a mixture-of-experts layer.
+4 api_signature: paddle.incubate.nn.functional.moe_ffn(permute_input,token_nums_per_expert,ffn1_weight,ffn2_weight)
+5 api_details: ''
+6 api_parameters:
+- permute_input: The dispatched token embeddings arranged for expert processing.
+- token_nums_per_expert: The count of tokens routed to each expert.
+- ffn1_weight: The first-layer expert weight matrix used to project inputs to the
+    hidden FFN space.
+- ffn2_weight: The second-layer expert weight matrix used to project FFN outputs back
+    to the model dimension.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- from paddle.incubate.nn.functional import moe_ffn
+- permute_input = paddle.randn([7680, 768])
+- token_nums_per_expert = paddle.to_tensor([48], dtype='int64')
+- ffn1_weight = paddle.randn([48, 768, 6144])
+- ffn2_weight = paddle.randn([48, 3072, 768])
+- out = moe_ffn(permute_input, token_nums_per_expert, ffn1_weight, ffn2_weight, None,
+  None)
+- print(out.shape)
+- '[7680, 768]'
+8 api_shape: {}

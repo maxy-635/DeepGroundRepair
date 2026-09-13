@@ -1,0 +1,23 @@
+2 api_name: tensorflow.distribute.experimental.partitioners.MaxSizePartitioner
+3 api_description: Partitions variables into as few shards as possible while keeping
+  each shard at or below max_shard_bytes, unless max_shards limits force larger shards.
+4 api_signature: tf.distribute.experimental.partitioners.MaxSizePartitioner(max_shard_bytes,max_shards)
+5 api_details: ''
+6 api_parameters:
+- max_shard_bytes: Sets the maximum allowed size for each shard.
+- max_shards: Sets the maximum number of shards and overrides `max_shard_bytes` when
+    provided.
+7 api_usage_example:
+- partitioner = MaxSizePartitioner(max_shard_bytes=4)
+- partitions = partitioner(tf.TensorShape([6, 1]), tf.float32)
+- '[6, 1]'
+- partitioner = MaxSizePartitioner(max_shard_bytes=4, max_shards=2)
+- partitions = partitioner(tf.TensorShape([6, 1]), tf.float32)
+- '[2, 1]'
+- partitioner = MaxSizePartitioner(max_shard_bytes=1024)
+- partitions = partitioner(tf.TensorShape([6, 1]), tf.float32)
+- '[1, 1]'
+- '# use in ParameterServerStrategy'
+- '# strategy = tf.distribute.experimental.ParameterServerStrategy('
+- '#   cluster_resolver=cluster_resolver, variable_partitioner=partitioner)'
+8 api_shape: ''

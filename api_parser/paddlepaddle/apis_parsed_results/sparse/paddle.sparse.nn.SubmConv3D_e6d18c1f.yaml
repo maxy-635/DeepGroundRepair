@@ -1,0 +1,42 @@
+2 api_name: paddle.sparse.nn.SubmConv3D
+3 api_description: Performs 3D submanifold sparse convolution on SparseCooTensor inputs,
+  computing outputs from the input features and convolution parameters while preserving
+  sparse structure and optionally adding bias.
+4 api_signature: paddle.sparse.nn.SubmConv3D(in_channels,out_channels,kernel_size,stride,padding,dilation,groups,key)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Specifies how many channels the input feature map has.
+- out_channels: Sets how many channels the convolution outputs.
+- kernel_size: Defines the 3D convolution kernel size.
+- stride: Controls the step size the kernel moves by in each spatial dimension.
+- padding: Adds padding around the input to control output size and boundary handling.
+- dilation: Sets the spacing between kernel elements to expand the receptive field.
+- groups: Splits channels into groups so convolution is applied separately within
+    each group.
+- key: Provides an identifier for reusing or saving the same rulebook.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(1, 1)'
+- '        w_tmp = self.create_parameter([1,1])'
+- '        self.add_parameter("w_tmp", w_tmp)'
+- '...'
+- '    def forward(self, input):'
+- '        return self._linear(input)'
+- '...'
+- mylayer = MyLayer()
+- 'for name, param in mylayer.named_parameters():'
+- '    print(name, param)'
+- 'w_tmp Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.01448846]])'
+- '_linear.weight Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0.18551230]])'
+- '_linear.bias Parameter containing:'
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[0.])'
+8 api_shape: {}

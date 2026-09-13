@@ -1,0 +1,15 @@
+2 api_name: tensorflow.nn.compute_accidental_hits
+3 api_description: The tensorflow.nn.compute_accidental_hits API identifies and reports
+  'accidental hits' where true target classes match sampled classes in candidate sampling,
+  outputting triples (index, id, weight) to adjust logits and mitigate the effect
+  of sampling true classes as noise.
+4 api_signature: tf.nn.compute_accidental_hits(true_classes,sampled_candidates,num_true)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Represents the actual target classes for each training example, shaped
+    as [batch_size, num_true].
+- sampled_candidates: Contains the indices of the candidate classes sampled for negative
+    sampling, shaped as [num_sampled].
+- num_true: Specifies the number of target classes associated with each training example.
+7 api_usage_example: null
+8 api_shape: ''

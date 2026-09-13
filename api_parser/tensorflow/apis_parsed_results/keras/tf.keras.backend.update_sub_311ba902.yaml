@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.update_sub
+3 api_description: Adds a value to a variable or tensor slice in place, updating the
+  selected subarray and returning the updated variable.
+4 api_signature: tf.keras.backend.update_sub(x,decrement)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

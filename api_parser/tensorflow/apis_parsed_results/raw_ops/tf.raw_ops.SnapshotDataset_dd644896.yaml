@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.SnapshotDataset
+3 api_description: Creates a dataset that reuses an existing snapshot at the given
+  path when available, otherwise processes the input dataset normally and saves a
+  new snapshot for future reads.
+4 api_signature: tf.raw_ops.SnapshotDataset(input_dataset,path,output_types,output_shapes,compression,mode,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: Supplies the input dataset to snapshot or restore.
+- path: Specifies the filesystem path where snapshot data is written or read.
+- output_types: Defines the data types of the elements produced by the dataset.
+- output_shapes: Defines the shapes of the elements produced by the dataset.
+- compression: Optionally sets the compression algorithm used for snapshot storage.
+- mode: Controls whether the operation writes, reads, or automatically chooses snapshot
+    behavior.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,24 @@
+2 api_name: paddle.static.nn.sequence_softmax
+3 api_description: Applies softmax across each sequence independently, using the `lod_level`
+  to treat variable-length sequences separately and return normalized probabilities
+  for each element within its sequence.
+4 api_signature: paddle.static.nn.sequence_softmax(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor containing the sequence scores to be normalized with softmax
+    along each sequence.
+7 api_usage_example:
+- '>>>'
+- '# set env var before import paddle to disable pir mode, following example code
+  use os module.'
+- import os
+- os.environ['FLAGS_enable_pir_api'] = '0'
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data(name='x', shape=[7, 1],
+- '    dtype=''float32'', lod_level=1)'
+- x_sequence_softmax_1 = paddle.static.nn.sequence_softmax(input=x)
+- y = paddle.static.data(name='y', shape=[7],
+- '    dtype=''float32'', lod_level=1)'
+- x_sequence_softmax_2 = paddle.static.nn.sequence_softmax(input=y)
+8 api_shape: {}

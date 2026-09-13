@@ -1,0 +1,9 @@
+2 api_name: torch.ComplexDoubleStorage
+3 api_description: A storage class for holding complex double-precision scalar values
+  (`torch.cdouble`) in a contiguous low-level storage container, mainly used for tensor
+  memory management and interoperability.
+4 api_signature: torch.ComplexDoubleStorage(wrap_storage,dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

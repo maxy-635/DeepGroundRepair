@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.SparseSoftmaxCrossEntropyWithLogits
+3 api_description: Computes softmax cross-entropy loss and gradients from logits and
+  one label per row, treating each label as having probability 1.0.
+4 api_signature: tf.raw_ops.SparseSoftmaxCrossEntropyWithLogits(features,labels)
+5 api_details: ''
+6 api_parameters:
+- features: The matrix of logits or scores for each example across all classes.
+- labels: The class index for each example, indicating the correct label in the batch.
+7 api_usage_example: null
+8 api_shape: ''

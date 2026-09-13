@@ -1,0 +1,22 @@
+2 api_name: paddle.diagonal_scatter
+3 api_description: Embeds the values of tensor y into tensor x along the diagonal
+  defined by axis1 and axis2.
+4 api_signature: paddle.diagonal_scatter(x,y,offset,axis1,axis2)
+5 api_details: ''
+6 api_parameters:
+- x: The base Tensor to update, which must have at least two dimensions.
+- y: The Tensor whose values are placed into the selected diagonal of `x`.
+- offset: The diagonal index to target, where `0` is the main diagonal and nonzero
+    values select shifted diagonals.
+- axis1: The first axis used to define the diagonal plane.
+- axis2: The second axis used to define the diagonal plane.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(6.0).reshape((2, 3))
+- y = paddle.ones((2,))
+- out = x.diagonal_scatter(y)
+- print(out)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[1., 1., 2.],'
+- '[3., 1., 5.]])'
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.exp_
+3 api_description: In-place exponentiation that replaces the tensor’s values with
+  their elementwise exponential.
+4 api_signature: paddle.Tensor.exp_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

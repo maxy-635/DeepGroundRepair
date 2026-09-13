@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Bucketize
+3 api_description: Assigns each input value to a bucket index based on sorted boundary
+  thresholds.
+4 api_signature: tf.raw_ops.Bucketize(input,boundaries)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor of numeric values to be bucketized into intervals.
+- boundaries: The sorted float boundaries that define the bucket edges.
+7 api_usage_example: null
+8 api_shape: ''

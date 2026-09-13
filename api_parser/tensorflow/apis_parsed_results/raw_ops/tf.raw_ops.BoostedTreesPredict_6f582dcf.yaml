@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesPredict
+3 api_description: Computes prediction logits by applying all trees in a boosted regression
+  ensemble to each input instance and summing their additive scores.
+4 api_signature: tf.raw_ops.BoostedTreesPredict(tree_ensemble_handle,bucketized_features,logits_dimension)
+5 api_details: ''
+6 api_parameters:
+- tree_ensemble_handle: Resource handle to the boosted trees ensemble used for prediction.
+- bucketized_features: List of 1D int32 tensors containing the bucket IDs for each
+    feature.
+- logits_dimension: Scalar specifying the logits dimension used to shape partial prediction
+    outputs.
+7 api_usage_example: null
+8 api_shape: ''

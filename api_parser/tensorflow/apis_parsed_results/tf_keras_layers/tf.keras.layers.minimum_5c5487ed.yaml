@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.layers.minimum
+3 api_description: The tf.keras.layers.Minimum layer computes the element-wise minimum
+  of two input tensors.
+4 api_signature: tf.keras.layers.minimum(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of input tensors that must all have the same shape, which will be
+    element-wise compared to produce a tensor containing the minimum values.
+7 api_usage_example:
+- input1 = keras.layers.Input(shape=(16,))
+- x1 = keras.layers.Dense(8, activation='relu')(input1)
+- input2 = keras.layers.Input(shape=(32,))
+- x2 = keras.layers.Dense(8, activation='relu')(input2)
+- y = keras.layers.minimum([x1, x2])
+- out = keras.layers.Dense(4)(y)
+- model = keras.models.Model(inputs=[input1, input2], outputs=out)
+8 api_shape: null

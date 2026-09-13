@@ -1,0 +1,10 @@
+2 api_name: torch.TypedStorage.is_pinned
+3 api_description: Returns whether a CPU TypedStorage is already pinned in device
+  memory for faster host-to-device transfer.
+4 api_signature: is_pinned(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects the device context used to pin the storage’s memory, with `cuda`
+    as the default, though this argument is discouraged and may be deprecated.
+7 api_usage_example: null
+8 api_shape: null

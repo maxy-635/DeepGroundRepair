@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.functional.gaussian_nll_loss
+3 api_description: Computes the Gaussian negative log likelihood loss between predicted
+  values and target values, accounting for variance in predictions.
+4 api_signature: paddle.nn.functional.gaussian_nll_loss(input,label,variance)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor representing the expectation of the Gaussian distribution
+    with flexible dimensions and float32 or float64 data type.
+- label: The target label tensor representing a sample from the Gaussian distribution,
+    matching the input's shape or allowing for broadcasting, with float32 or float64
+    data type.
+- variance: A tensor of positive variances, matching the input's shape or allowing
+    for broadcasting, representing either heteroscedastic or homoscedastic variances,
+    with float32 or float64 data type.
+7 api_usage_example: []
+8 api_shape: null

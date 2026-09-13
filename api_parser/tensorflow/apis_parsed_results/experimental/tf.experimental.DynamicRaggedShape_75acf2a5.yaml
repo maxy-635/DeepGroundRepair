@@ -1,0 +1,16 @@
+2 api_name: tensorflow.experimental.DynamicRaggedShape
+3 api_description: Represents the shape of a ragged or dense tensor using a static
+  outer shape and dynamic row-partition information, enabling shape inspection and
+  manipulation for tensors with irregular dimensions.
+4 api_signature: tf.experimental.DynamicRaggedShape(row_partitions,inner_shape,dtype,validate)
+5 api_details: ''
+6 api_parameters:
+- row_partitions: Defines how the ragged dimensions are partitioned into rows.
+- inner_shape: Specifies the shape of the flat values, or the tensor shape when there
+    are no row partitions.
+- dtype: Sets the preferred integer dtype for the shape values, such as `tf.int64`
+    or `tf.int32`.
+- validate: Enables runtime validation to check that the shape is dynamically consistent
+    and valid.
+7 api_usage_example: null
+8 api_shape: ''

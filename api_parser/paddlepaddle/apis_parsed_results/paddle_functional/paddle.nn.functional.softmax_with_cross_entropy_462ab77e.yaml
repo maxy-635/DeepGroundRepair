@@ -1,0 +1,23 @@
+2 api_name: paddle.nn.functional.softmax_with_cross_entropy
+3 api_description: The paddle.nn.functional.softmax_with_cross_entropy API computes
+  the softmax activation followed by the cross-entropy loss between the predicted
+  logits and the true labels in a single operation, optimizing the performance for
+  classification tasks.
+4 api_signature: paddle.nn.functional.softmax_with_cross_entropy(logits,label,soft_label)
+5 api_details: ''
+6 api_parameters:
+- logits: Represents the input tensor containing unscaled log probabilities, with
+    a data type of float32 or float64.
+- label: Denotes the ground truth tensor with the same data type as logits, and its
+    shape depends on the soft_label flag.
+- soft_label: Indicates whether the labels are to be treated as soft labels, with
+    a default value of False.
+7 api_usage_example:
+- import paddle
+- logits = paddle.to_tensor([0.4, 0.6, 0.9], dtype="float32")
+- label = paddle.to_tensor([1], dtype="int64")
+- out = paddle.nn.functional.softmax_with_cross_entropy(logits=logits, label=label)
+- print(out)
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.15328646])'
+8 api_shape: null

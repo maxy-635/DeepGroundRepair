@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Add
+3 api_description: Element-wise adds two input tensors and returns their sum.
+4 api_signature: tf.raw_ops.Add(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to add.
+- y: The second input tensor to add, with the same type as `x`.
+7 api_usage_example: null
+8 api_shape: ''

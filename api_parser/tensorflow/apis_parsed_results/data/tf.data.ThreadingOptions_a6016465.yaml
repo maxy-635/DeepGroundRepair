@@ -1,0 +1,8 @@
+2 api_name: tensorflow.data.ThreadingOptions
+3 api_description: Configures tf.data dataset threading behavior, letting you control
+  how input pipeline threads are used.
+4 api_signature: tf.data.ThreadingOptions()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

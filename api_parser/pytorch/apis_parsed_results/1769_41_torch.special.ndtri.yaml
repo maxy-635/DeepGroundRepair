@@ -1,0 +1,11 @@
+2 api_name: torch.special.ndtri
+3 api_description: Computes the inverse standard normal CDF elementwise, returning
+  the x value whose left-tail Gaussian area matches each input probability.
+4 api_signature: torch.special.ndtri(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor containing values for which to compute the inverse standard
+    normal cumulative distribution function.
+7 api_usage_example:
+- ' torch.special.ndtri(torch.tensor([0, 0.25, 0.5, 0.75, 1]))'
+8 api_shape: null

@@ -1,0 +1,27 @@
+2 api_name: tensorflow.keras.layers.DepthwiseConv2D
+3 api_description: The tf.keras.layers.DepthwiseConv2D layer performs depthwise convolution,
+  applying separate kernels to each input channel, which allows for efficient feature
+  extraction while reducing the number of parameters compared to standard convolution.
+4 api_signature: tf.keras.layers.DepthwiseConv2D(kernel_size, strides, padding, depth_multiplier, activation)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Specifies the size of the depthwise convolution window.
+- strides: Specifies the stride length of the depthwise convolution.
+- padding: Determines the padding method, either 'valid' (no padding) or 'same' (equal
+    padding to maintain output size).
+- depth_multiplier: Defines the number of output channels generated for each input
+    channel.
+- activation: Specifies the activation function to be applied to the output.
+7 api_usage_example:
+- x = np.random.rand(4, 10, 10, 12)
+- y = keras.layers.DepthwiseConv2D(3, 3, activation='relu')(x)
+- print(y.shape)
+8 api_shape:
+  input tensor shape: (N, Height_in, Width_in, Channel_in)
+  output tensor shape: (N, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in * depth_multiplier
+    tensor height: If padding = "valid", Height_out = floor((Height_in - kernel_height) / strides_height + 1); 
+                  If padding = "same", Height_out = floor((Height_in - 1) / strides_height + 1)
+    tensor width: If padding = "valid", Width_out = floor((Width_in - kernel_width) / strides_width + 1); 
+                  If padding = "same", Width_out = floor((Width_in - 1) / strides_width + 1)

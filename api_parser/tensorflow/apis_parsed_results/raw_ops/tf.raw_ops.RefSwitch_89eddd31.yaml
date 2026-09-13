@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.RefSwitch
+3 api_description: Routes a reference tensor to one of two outputs based on a boolean
+  predicate, forwarding the data to `output_true` when `pred` is true and to `output_false`
+  otherwise.
+4 api_signature: tf.raw_ops.RefSwitch(data,pred)
+5 api_details: ''
+6 api_parameters:
+- data: The mutable ref tensor that will be routed to one of the outputs.
+- pred: A boolean scalar that decides which output receives the input tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: torch.result_type
+3 api_description: Returns the dtype that PyTorch would use for an arithmetic operation
+  on the given input tensors, based on type promotion rules.
+4 api_signature: torch.result_type(tensor1,tensor2)
+5 api_details: ''
+6 api_parameters:
+- tensor1: First input used to determine the resulting data type.
+- tensor2: Second input used together with the first to determine the resulting data
+    type.
+7 api_usage_example:
+- ' torch.result_type(torch.tensor([1, 2], dtype=torch.int), 1.0)'
+- ' torch.result_type(torch.tensor([1, 2], dtype=torch.uint8), torch.tensor(1))'
+8 api_shape: null

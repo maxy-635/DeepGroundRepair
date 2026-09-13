@@ -1,0 +1,9 @@
+2 api_name: torch.ger
+3 api_description: Computes the outer product of two 1-D tensors, returning a matrix
+  where each element is the product of one element from the first tensor and one from
+  the second.
+4 api_signature: torch.ger(input,vec2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

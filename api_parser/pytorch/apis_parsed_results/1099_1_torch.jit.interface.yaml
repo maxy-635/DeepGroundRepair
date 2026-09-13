@@ -1,0 +1,33 @@
+2 api_name: torch.jit.interface
+3 api_description: Declares a TorchScript interface for classes or modules with different
+  implementations, enabling type-checked polymorphism in `torch.jit`.
+4 api_signature: torch.jit.interface(obj)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import torch
+- from typing import List
+- '@torch.jit.interface'
+- 'class InterfaceType:'
+- '    def run(self, x: torch.Tensor) -> torch.Tensor:'
+- '        pass'
+- '# implements InterfaceType'
+- '@torch.jit.script'
+- 'class Impl1:'
+- '    def run(self, x: torch.Tensor) -> torch.Tensor:'
+- '        return x.relu()'
+- 'class Impl2(torch.nn.Module):'
+- '    def __init__(self) -> None:'
+- '        super().__init__()'
+- '        self.val = torch.rand(())'
+- '    @torch.jit.export'
+- '    def run(self, x: torch.Tensor) -> torch.Tensor:'
+- '        return x + self.val'
+- 'def user_fn(impls: List[InterfaceType], idx: int, val: torch.Tensor) -> torch.Tensor:'
+- '    return impls[idx].run(val)'
+- user_fn_jit = torch.jit.script(user_fn)
+- impls = [Impl1(), torch.jit.script(Impl2())]
+- val = torch.rand(4, 4)
+- user_fn_jit(impls, 0, val)
+- user_fn_jit(impls, 1, val)
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.strings.unicode_decode_with_offsets
+3 api_description: Decodes each string into Unicode code points and returns the start
+  byte offset for each character in the original string.
+4 api_signature: tf.strings.unicode_decode_with_offsets(input,input_encoding)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor to decode, potentially ragged, with a statically known
+    rank.
+- input_encoding: The Unicode encoding used to interpret and decode each string in
+    the tensor.
+7 api_usage_example:
+- input = [s.encode('utf8') for s in (u'G\xf6\xf6dnight', u'\U0001f60a')]
+- result = tf.strings.unicode_decode_with_offsets(input, 'UTF-8')
+- 'result[0].to_list()  # codepoints'
+- 'result[1].to_list()  # offsets'
+8 api_shape: ''

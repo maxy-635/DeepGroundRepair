@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TFRecordReaderV2
+3 api_description: Reads records sequentially from a TFRecord file using TensorFlow's
+  low-level record reader.
+4 api_signature: tf.raw_ops.TFRecordReaderV2(shared_name,compression_type)
+5 api_details: ''
+6 api_parameters:
+- shared_name: Sets the shared bucket name used to identify and reuse this reader
+    across sessions when provided; otherwise the node name is used.
+- compression_type: Specifies the compression format of the input data, or leaves
+    it uncompressed when set to an empty string.
+- name: Assigns an optional name to the operation for graph readability and debugging.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,31 @@
+2 api_name: tensorflow.data.FixedLengthRecordDataset
+3 api_description: Creates a dataset by reading fixed-length records from one or more
+  binary files, optionally skipping fixed-size headers and footers in each file.
+4 api_signature: tf.data.FixedLengthRecordDataset(filenames,record_bytes)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies one or more input files to read fixed-length records from.
+- record_bytes: Sets the size in bytes of each record in the dataset.
+- name: Optionally assigns a name to the TensorFlow data operation.
+7 api_usage_example:
+- '# The datasets or nested structure of datasets `*args` argument'
+- '# determines the structure of elements in the resulting dataset.'
+- 'a = tf.data.Dataset.range(1, 4)  # ==> [ 1, 2, 3 ]'
+- 'b = tf.data.Dataset.range(4, 7)  # ==> [ 4, 5, 6 ]'
+- ds = tf.data.Dataset.zip(a, b)
+- list(ds.as_numpy_iterator())
+- ds = tf.data.Dataset.zip(b, a)
+- list(ds.as_numpy_iterator())
+- '# The `datasets` argument may contain an arbitrary number of datasets.'
+- 'c = tf.data.Dataset.range(7, 13).batch(2)  # ==> [ [7, 8],'
+- '                                           #       [9, 10],'
+- '                                           #       [11, 12] ]'
+- ds = tf.data.Dataset.zip(a, b, c)
+- 'for element in ds.as_numpy_iterator():'
+- '  print(element)'
+- '# The number of elements in the resulting dataset is the same as'
+- '# the size of the smallest dataset in `datasets`.'
+- 'd = tf.data.Dataset.range(13, 15)  # ==> [ 13, 14 ]'
+- ds = tf.data.Dataset.zip(a, d)
+- list(ds.as_numpy_iterator())
+8 api_shape: ''

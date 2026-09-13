@@ -1,0 +1,8 @@
+2 api_name: torch.utils.benchmark.FunctionCounts.denoise
+3 api_description: Removes known noisy instructions from function count data to yield
+  a cleaner benchmark signal.
+4 api_signature: '"denoise()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

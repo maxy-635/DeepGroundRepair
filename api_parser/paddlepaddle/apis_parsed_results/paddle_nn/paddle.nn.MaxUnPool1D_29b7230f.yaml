@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.MaxUnPool1D
+3 api_description: paddle.nn.MaxUnPool1D performs the inverse operation of MaxPool1D,
+  reconstructing the original input size from pooled indices and values.
+4 api_signature: paddle.nn.MaxUnPool1D(kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Defines the size of the window to take a single unpooling step, must
+    be an integer or a tuple/list containing an integer.
+- stride: Specifies the step size for moving the unpooling window, must be an integer
+    or a tuple/list containing an integer.
+- padding: Indicates the amount of padding added to the input before unpooling.
+7 api_usage_example: []
+8 api_shape: null

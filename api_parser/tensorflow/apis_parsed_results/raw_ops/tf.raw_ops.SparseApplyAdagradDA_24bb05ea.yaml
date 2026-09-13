@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SparseApplyAdagradDA
+3 api_description: Applies a proximal Adagrad update to sparse variable entries, adjusting
+  `var` and `accum` using the provided gradients, learning rate, regularization, and
+  clipping parameters.
+4 api_signature: tf.raw_ops.SparseApplyAdagradDA(var,grad,indices,lr,l1,l2,global_step)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated in place by the optimizer.
+- grad: The gradient values corresponding to the selected slices of `var`.
+- indices: The row indices in `var` and `accum` that identify which slices to update.
+- lr: The scalar learning rate controlling the update size.
+- l1: The scalar L1 regularization strength used in the update.
+- l2: The scalar L2 regularization strength used in the update.
+- global_step: The scalar training step used to adjust the AdagradDA update.
+7 api_usage_example: null
+8 api_shape: ''

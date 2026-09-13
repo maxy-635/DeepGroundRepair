@@ -1,0 +1,11 @@
+2 api_name: torch.distributions.transforms.StackTransform
+3 api_description: Applies a sequence of transforms to stacked tensor components along
+  a given dimension, in a way that remains compatible with `torch.stack()`.
+4 api_signature: torch.distributions.transforms.StackTransform(tseq,dim)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- x = torch.stack([torch.range(1, 10), torch.range(1, 10)], dim=1)
+- t = StackTransform([ExpTransform(), identity_transform], dim=1)
+- y = t(x)
+8 api_shape: null

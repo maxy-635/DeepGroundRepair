@@ -1,0 +1,8 @@
+2 api_name: tensorflow.errors.DeadlineExceededError
+3 api_description: Signals that an operation could not finish before its deadline
+  expired, exposing standard TensorFlow error details when it occurs.
+4 api_signature: tf.errors.DeadlineExceededError(message)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

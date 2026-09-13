@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.layers.Cropping2D
+3 api_description: The Cropping2D layer in tf.keras allows for cropping of 2D input
+  images along the height and width dimensions, enabling the removal of unwanted borders
+  or focusing on specific areas of the image.
+4 api_signature: tf.keras.layers.Cropping2D(cropping)
+5 api_details: ''
+6 api_parameters:
+- cropping: Specifies the number of pixels to crop from the height and width of the
+    input tensor, which can be defined as a single integer (same for both sides),
+    a tuple of two integers (different for top/bottom and left/right), or a tuple
+    of two tuples (specifying cropping for each side individually).
+7 api_usage_example:
+- input_shape = (2, 28, 28, 3)
+- x = np.arange(np.prod(input_shape)).reshape(input_shape)
+- y = keras.layers.Cropping2D(cropping=((2, 2), (4, 4)))(x)
+- y.shape
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.nn.softsign
+3 api_description: The tensorflow.nn.softsign function computes the softsign activation
+  by dividing each element in the input tensor by the sum of its absolute value and
+  1.
+4 api_signature: tf.nn.softsign(features)
+5 api_details: ''
+6 api_parameters:
+- features: 'A tensor input for the softsign activation function, which can be of
+    types: half, bfloat16, float32, or float64.'
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Range
+3 api_description: Creates a sequence of numbers from start to just before limit,
+  stepping by delta.
+4 api_signature: tf.raw_ops.Range(start,limit,delta)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the first value in the generated sequence.
+- limit: Sets the exclusive upper bound where the sequence stops.
+- delta: Sets the step size used to increment each successive value.
+7 api_usage_example: null
+8 api_shape: ''

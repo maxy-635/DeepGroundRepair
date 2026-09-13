@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.optim.ZeroRedundancyOptimizer.join_hook
+3 api_description: Returns the join hook used by ZeroRedundancyOptimizer to coordinate
+  distributed training when some ranks finish early.
+4 api_signature: '"join_hook()"'
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

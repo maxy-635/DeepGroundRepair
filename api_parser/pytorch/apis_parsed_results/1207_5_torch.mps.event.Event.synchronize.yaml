@@ -1,0 +1,8 @@
+2 api_name: torch.mps.event.Event.synchronize
+3 api_description: Blocks the CPU until all work recorded in the event has finished
+  executing.
+4 api_signature: '"synchronize()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

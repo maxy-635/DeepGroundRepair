@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.densenet161
+3 api_description: DenseNet-161 is a densely connected convolutional neural network
+  for image feature extraction and classification, using repeated feature reuse across
+  layers to improve efficiency and accuracy.
+4 api_signature: paddle.vision.models.densenet161(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+7 api_usage_example: []
+8 api_shape: {}

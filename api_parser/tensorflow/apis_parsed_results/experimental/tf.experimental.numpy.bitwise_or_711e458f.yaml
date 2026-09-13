@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.bitwise_or
+3 api_description: Computes the element-wise bitwise OR of two inputs, following NumPy
+  semantics, and does not support extra NumPy arguments like out, where, casting,
+  order, dtype, subok, signature, or extobj.
+4 api_signature: tf.experimental.numpy.bitwise_or(x1,x2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

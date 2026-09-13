@@ -1,0 +1,9 @@
+2 api_name: tensorflow.data.experimental.OptimizationOptions
+3 api_description: Configures tf.data dataset optimization behavior by enabling or
+  disabling specific performance transformations, such as parallelism, fusion, map
+  and batching optimizations, to improve input pipeline efficiency.
+4 api_signature: tf.data.experimental.OptimizationOptions()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

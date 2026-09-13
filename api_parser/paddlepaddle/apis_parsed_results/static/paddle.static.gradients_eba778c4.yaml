@@ -1,0 +1,21 @@
+2 api_name: paddle.static.gradients
+3 api_description: Computes gradients of target tensors with respect to specified
+  input tensors in Paddle static graph mode.
+4 api_signature: paddle.static.gradients(targets,inputs)
+5 api_details: ''
+6 api_parameters:
+- targets: Specifies the target tensors whose gradients will be computed.
+- inputs: Specifies the input tensors with respect to which gradients are calculated.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.nn.functional as F
+- paddle.enable_static()
+- x = paddle.static.data(name='x', shape=[None, 2, 8, 8], dtype='float32')
+- x.stop_gradient=False
+- y = paddle.static.nn.conv2d(x, 4, 1, bias_attr=False)
+- y = F.relu(y)
+- z = paddle.static.gradients([y], x)
+- print(z)
+- '[var x@GRAD : DENSE_TENSOR.shape(-1, 2, 8, 8).dtype(float32).stop_gradient(False)]'
+8 api_shape: {}

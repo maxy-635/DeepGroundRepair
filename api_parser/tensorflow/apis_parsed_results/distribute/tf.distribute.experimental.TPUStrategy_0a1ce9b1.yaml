@@ -1,0 +1,18 @@
+2 api_name: tensorflow.distribute.experimental.TPUStrategy
+3 api_description: Synchronous distributed training strategy for running TensorFlow
+  models on TPUs and TPU Pods.
+4 api_signature: tf.distribute.experimental.TPUStrategy(tpu_cluster_resolver)
+5 api_details: ''
+6 api_parameters:
+- tpu_cluster_resolver: Provides TPU cluster details so the strategy can locate and
+    connect to the TPU cluster.
+7 api_usage_example:
+- strategy = tf.distribute.MirroredStrategy(["GPU:0", "GPU:1"])
+- '# Variable created inside scope:'
+- 'with strategy.scope():'
+- '  mirrored_variable = tf.Variable(1.)'
+- mirrored_variable
+- '# Variable created outside scope:'
+- regular_variable = tf.Variable(1.)
+- regular_variable
+8 api_shape: ''

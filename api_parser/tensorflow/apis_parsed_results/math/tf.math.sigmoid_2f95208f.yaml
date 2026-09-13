@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.sigmoid
+3 api_description: Computes the element-wise sigmoid activation, mapping each input
+  value to a number between 0 and 1 using 1 / (1 + exp(-x)).
+4 api_signature: tf.math.sigmoid(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are passed through the sigmoid function.
+7 api_usage_example:
+- x = tf.constant([-128.0, 0.0, 128.0], dtype=tf.float32)
+- tf.sigmoid(x)
+8 api_shape: ''

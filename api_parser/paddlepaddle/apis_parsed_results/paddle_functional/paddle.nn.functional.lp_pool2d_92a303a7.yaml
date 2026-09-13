@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.functional.lp_pool2d
+3 api_description: paddle.nn.functional.lp_pool2d performs 2D power-average pooling,
+  allowing for adjustable pooling behavior by specifying the power parameter.
+4 api_signature: paddle.nn.functional.lp_pool2d(x,norm_type,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor, a 4-D tensor in either NCHW or NHWC format, with data type
+    float32 or float64.
+- norm_type: Specifies the power to which each element is raised in the pooling operation.
+- kernel_size: Defines the size of the pooling window, either as a single integer
+    for a square window or a tuple/list of two integers for rectangular windows.
+- stride: Determines the step size for moving the pooling window, either as a single
+    integer or a tuple/list of two integers.
+- padding: Specifies the padding applied to the input, which can be 'valid', 'same',
+    an integer, or a list/tuple of integers defining padding dimensions.
+7 api_usage_example: []
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.device_of
+3 api_description: Context manager that temporarily sets the current CUDA device to
+  match the device of a given object.
+4 api_signature: torch.cuda.device_of(obj)
+5 api_details: ''
+6 api_parameters:
+- obj: An object already on the target device, used to select that device for the
+    context.
+7 api_usage_example: null
+8 api_shape: null

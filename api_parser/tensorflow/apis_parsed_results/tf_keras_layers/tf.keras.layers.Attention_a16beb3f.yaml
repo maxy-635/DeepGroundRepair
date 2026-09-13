@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.Attention
+3 api_description: The tf.keras.layers.Attention API implements dot-product attention,
+  allowing for the calculation of attention scores between input sequences. It takes
+  2 or 3 input tensors, enabling the modeling of dependencies in tasks such as machine
+  translation and text summarization.
+4 api_signature: tf.keras.layers.Attention(use_scale, score_mode)
+5 api_details: ''
+6 api_parameters:
+- use_scale: Determines whether to scale the attention scores with a learnable scalar.
+- score_mode: Specifies the method for computing attention scores, either through
+    dot product or concatenation.
+7 api_usage_example: null
+8 api_shape: null

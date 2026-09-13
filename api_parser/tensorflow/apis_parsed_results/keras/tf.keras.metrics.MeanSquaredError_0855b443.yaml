@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.metrics.MeanSquaredError
+3 api_description: Computes the average squared difference between true and predicted
+  values.
+4 api_signature: tf.keras.metrics.MeanSquaredError(dtype)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the data type used for the metric result.
+7 api_usage_example:
+- m = keras.metrics.MeanSquaredError()
+- m.update_state([[0, 1], [0, 0]], [[1, 1], [0, 0]])
+- m.result()
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.segment_prod
+3 api_description: Computes the product of values in `data` for each segment ID, returning
+  1 for any empty segment.
+4 api_signature: tf.math.segment_prod(data,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are multiplied within each segment.
+- segment_ids: A 1-D sorted tensor of segment labels, with one id per first-dimension
+    entry in `data`, that determines which values are multiplied together.
+7 api_usage_example:
+- c = tf.constant([[1,2,3,4], [4, 3, 2, 1], [5,6,7,8]])
+- tf.math.segment_prod(c, tf.constant([0, 0, 1])).numpy()
+8 api_shape: ''

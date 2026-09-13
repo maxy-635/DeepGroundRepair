@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ConfigureDistributedTPU
+3 api_description: Initializes the centralized configuration and coordination structures
+  needed to set up a distributed TPU system.
+4 api_signature: tf.raw_ops.ConfigureDistributedTPU(tpu_embedding_config,is_global_init,name)
+5 api_details: ''
+6 api_parameters:
+- embedding_config: Reserved optional string parameter that defaults to an empty string
+    and should not be used.
+- tpu_embedding_config: Optional serialized TPUEmbeddingConfiguration string that
+    describes the program's embedding lookups.
+- is_global_init: Reserved optional boolean flag that defaults to False and should
+    not be used.
+- name: Optional name used to label the operation.
+7 api_usage_example: null
+8 api_shape: ''

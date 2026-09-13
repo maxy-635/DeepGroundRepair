@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.FixedLengthRecordReader
+3 api_description: Reads fixed-length records from a file and returns them one record
+  at a time.
+4 api_signature: tf.raw_ops.FixedLengthRecordReader(record_bytes,header_bytes,footer_bytes,hop_bytes)
+5 api_details: ''
+6 api_parameters:
+- record_bytes: Sets the fixed size, in bytes, of each record to read.
+- header_bytes: Specifies how many bytes at the start of the file to skip as header
+    data.
+- footer_bytes: Specifies how many bytes at the end of the file to skip as footer
+    data.
+- hop_bytes: Sets the byte stride between records; if 0, it uses `record_bytes`.
+7 api_usage_example: null
+8 api_shape: ''

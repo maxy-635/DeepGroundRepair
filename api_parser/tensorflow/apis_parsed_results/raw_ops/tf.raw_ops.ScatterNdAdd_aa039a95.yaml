@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ScatterNdAdd
+3 api_description: Adds sparse updates to a variable at the specified integer indices,
+  supporting updates to individual elements or slices.
+4 api_signature: tf.raw_ops.ScatterNdAdd(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place.
+- indices: The index tensor that specifies where to add updates within `ref`.
+- updates: The values to add into `ref` at the given indices.
+7 api_usage_example: null
+8 api_shape: ''

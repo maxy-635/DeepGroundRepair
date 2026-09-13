@@ -1,0 +1,57 @@
+2 api_name: paddle.standard_normal
+3 api_description: Creates a tensor of the specified shape and dtype, filled with
+  random samples from a standard normal distribution (mean 0, standard deviation 1).
+4 api_signature: paddle.standard_normal(shape,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the tensor to create and can be given as integers,
+    0-D tensors, or a 1-D tensor of sizes.
+- dtype: Sets the output tensor’s data type, or uses the global default dtype if omitted.
+- name: Assigns an optional name to the operation.
+7 api_usage_example:
+- import paddle
+- '>>>'
+- '# example 1: attr shape is a list which doesn''t contain Tensor.'
+- out1 = paddle.standard_normal(shape=[2, 3])
+- print(out1)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.33719197, -0.25688133, -0.42868865],'
+- '[-0.27804616, -0.25058213, -0.28209466]])'
+- '>>>'
+- '# example 2: attr shape is a list which contains Tensor.'
+- dim1 = paddle.to_tensor(2, 'int64')
+- dim2 = paddle.to_tensor(3, 'int32')
+- out2 = paddle.standard_normal(shape=[dim1, dim2, 2])
+- print(out2)
+- '>>>'
+- Tensor(shape=[2, 3, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[ 0.81888396, -0.64831746],'
+- '[ 1.28911388, -1.88154876],'
+- '[-0.03271919, -0.32410008]],'
+- '[[-0.20224631,  0.46683890],'
+- '[ 1.91947734,  0.71657443],'
+- '[ 0.33410960, -0.64256823]]])'
+- '>>>'
+- '# example 3: attr shape is a Tensor, the data type must be int64 or int32.'
+- shape_tensor = paddle.to_tensor([2, 3])
+- out3 = paddle.standard_normal(shape_tensor)
+- print(out3)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.01182475, -0.44895259, -1.79227340],'
+- '[ 1.52022707, -0.83830303,  0.05261501]])'
+- '>>>'
+- '# example 4: attr dtype is complex64.'
+- paddle.seed(200)
+- shape_tensor = paddle.to_tensor([2, 3])
+- out4 = paddle.standard_normal(shape_tensor, dtype='complex64')
+- print(out4)
+- Tensor(shape=[2, 3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[[ (0.1375531256198883+0.0932074561715126j) ,'
+- (0.7955012917518616-0.41801896691322327j),
+- (-0.6730020642280579-0.09163688868284225j)],
+- '[ (0.17453041672706604-0.9002832770347595j),'
+- (0.16270922124385834-1.3086302280426025j),
+- (0.9428746104240417+0.06869460642337799j)]])
+8 api_shape: {}

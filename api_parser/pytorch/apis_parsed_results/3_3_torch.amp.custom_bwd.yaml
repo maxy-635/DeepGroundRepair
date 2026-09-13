@@ -1,0 +1,10 @@
+2 api_name: torch.amp.custom_bwd
+3 api_description: Decorator for custom autograd backward methods that runs them under
+  AMP state tracking consistent with the corresponding custom forward.
+4 api_signature: torch.amp.custom_bwd(bwd,device_type)
+5 api_details: ''
+6 api_parameters:
+- device_type: Specifies which device type the custom backward function should use
+    for automatic mixed precision, such as `cuda` or `cpu`.
+7 api_usage_example: null
+8 api_shape: null

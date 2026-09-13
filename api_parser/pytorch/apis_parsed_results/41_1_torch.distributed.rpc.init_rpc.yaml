@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.rpc.init_rpc
+3 api_description: Initializes PyTorch RPC primitives, including the local RPC agent
+  and distributed autograd, so the process can immediately send and receive RPCs.
+4 api_signature: torch.distributed.rpc.init_rpc(name,backend,rank)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the globally unique identifier for this RPC node.
+- backend: Selects the RPC backend implementation to use.
+- rank: Assigns the globally unique rank for this node.
+7 api_usage_example: null
+8 api_shape: null

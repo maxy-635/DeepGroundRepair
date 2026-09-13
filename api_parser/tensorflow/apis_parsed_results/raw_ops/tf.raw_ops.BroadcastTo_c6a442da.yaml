@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BroadcastTo
+3 api_description: Broadcasts an input tensor to a specified compatible shape by expanding
+  dimensions of size 1 as needed.
+4 api_signature: tf.raw_ops.BroadcastTo(input,shape)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to expand and broadcast to the target shape.
+- shape: The 1-D int32 or int64 tensor that specifies the desired output shape.
+7 api_usage_example:
+- 'x = tf.constant([1, 2, 3])   # Shape (3,)'
+- y = tf.broadcast_to(x, [2, 3])
+8 api_shape: ''

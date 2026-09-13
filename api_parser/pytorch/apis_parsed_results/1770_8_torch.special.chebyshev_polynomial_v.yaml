@@ -1,0 +1,11 @@
+2 api_name: torch.special.chebyshev_polynomial_v
+3 api_description: Computes the Chebyshev polynomial of the third kind V_n(input)
+  for the given input and degree.
+4 api_signature: torch.special.chebyshev_polynomial_v(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used as the input to the Chebyshev polynomial
+    computation.
+- n: The degree of the Chebyshev polynomial to evaluate.
+7 api_usage_example: null
+8 api_shape: null

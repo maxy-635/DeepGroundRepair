@@ -1,0 +1,8 @@
+2 api_name: paddle.static.nn.embedding
+3 api_description: Creates and looks up embeddings in Paddle static graphs, mapping
+  integer IDs to dense vector representations via a learnable embedding table.
+4 api_signature: paddle.static.nn.embedding(input,size,padding_idx,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

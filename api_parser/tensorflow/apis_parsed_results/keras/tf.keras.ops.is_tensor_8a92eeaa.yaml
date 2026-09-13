@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.is_tensor
+3 api_description: Returns True if the input is a tensor object, otherwise False.
+4 api_signature: tf.keras.ops.is_tensor(x)
+5 api_details: ''
+6 api_parameters:
+- x: The value to check for being a tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: paddle.linalg.corrcoef
+3 api_description: Computes the correlation coefficient matrix for input variables,
+  showing how each pair of variables is correlated.
+4 api_signature: paddle.linalg.corrcoef(x,rowvar)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing one or more variables and their observations.
+- rowvar: Indicates whether each row of `x` is treated as a variable (`True`) or each
+    column is treated as a variable (`False`).
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- xt = paddle.rand((3,4))
+- print(paddle.linalg.corrcoef(xt))
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.99999988, -0.47689581, -0.89559376],'
+- '[-0.47689593,  1.        ,  0.16345492],'
+- '[-0.89559382,  0.16345496,  1.        ]])'
+8 api_shape: {}

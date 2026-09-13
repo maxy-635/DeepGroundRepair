@@ -1,0 +1,9 @@
+2 api_name: torch.nn.Dropout3d.forward
+3 api_description: Applies 3D dropout to an input tensor during training by randomly
+  zeroing entire channels with probability `p`, and leaves the input unchanged during
+  evaluation.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

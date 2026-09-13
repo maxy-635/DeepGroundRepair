@@ -1,0 +1,10 @@
+2 api_name: torch.backends.cuda.SDPAParams
+3 api_description: Container for scaled dot-product attention inputs and related options
+  used to configure and validate CUDA backend attention dispatch.
+4 api_signature: class torch.backends.cuda.SDPAParams#
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

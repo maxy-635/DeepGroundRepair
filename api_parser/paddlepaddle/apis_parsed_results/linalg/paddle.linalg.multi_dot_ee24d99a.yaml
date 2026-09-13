@@ -1,0 +1,9 @@
+2 api_name: paddle.linalg.multi_dot
+3 api_description: Computes the matrix product of two or more arrays in an efficient
+  order to minimize intermediate computation cost.
+4 api_signature: paddle.linalg.multi_dot(x)
+5 api_details: ''
+6 api_parameters:
+- x: A list of input tensors to be multiplied together in sequence.
+7 api_usage_example: []
+8 api_shape: {}

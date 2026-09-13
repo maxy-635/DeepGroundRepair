@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ConfigureTPUEmbedding
+3 api_description: Configures TPU embedding for a distributed TPU system by setting
+  up the embedding infrastructure and related runtime parameters.
+4 api_signature: tf.raw_ops.ConfigureTPUEmbedding(config)
+5 api_details: ''
+6 api_parameters:
+- config: Provides the serialized TPU embedding configuration describing the program’s
+    embedding lookups.
+7 api_usage_example: null
+8 api_shape: ''

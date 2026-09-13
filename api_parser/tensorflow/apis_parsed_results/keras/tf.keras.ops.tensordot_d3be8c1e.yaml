@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.tensordot
+3 api_description: Computes the tensor dot product of two tensors along specified
+  axes, generalizing matrix multiplication to higher dimensions.
+4 api_signature: tf.keras.ops.tensordot(x1,x2,axes)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input tensor to be contracted.
+- x2: The second input tensor to be contracted with the first.
+- axes: The axes along which the two tensors are summed over during the tensor dot
+    product.
+7 api_usage_example: null
+8 api_shape: ''

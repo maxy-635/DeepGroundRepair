@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sets.difference
+3 api_description: Returns the set difference of the last-dimension elements in `a`
+  minus `b`, requiring all earlier dimensions to match.
+4 api_signature: tf.sets.difference(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: Provides the first tensor or sparse tensor whose elements are compared against
+    `b`.
+- b: Provides the second tensor or sparse tensor whose elements are removed from `a`.
+7 api_usage_example: null
+8 api_shape: ''

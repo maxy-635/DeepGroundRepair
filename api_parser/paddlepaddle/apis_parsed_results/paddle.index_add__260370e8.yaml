@@ -1,0 +1,8 @@
+2 api_name: paddle.index_add_
+3 api_description: In-place adds values from a source tensor into the input tensor
+  at the specified indices along a given axis.
+4 api_signature: paddle.index_add_(x,index,axis,value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

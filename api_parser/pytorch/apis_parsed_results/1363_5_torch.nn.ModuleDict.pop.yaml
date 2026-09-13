@@ -1,0 +1,9 @@
+2 api_name: torch.nn.ModuleDict.pop
+3 api_description: Remove the specified key from a ModuleDict and return the associated
+  module.
+4 api_signature: pop(key)
+5 api_details: ''
+6 api_parameters:
+- key: The key identifying which module to remove and return from the ModuleDict.
+7 api_usage_example: null
+8 api_shape: null

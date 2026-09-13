@@ -1,0 +1,10 @@
+2 api_name: torch.package.PackageImporter.import_module
+3 api_description: Loads a module from the package once and returns it, keeping the
+  module local to the importer in `self.modules` instead of `sys.modules`.
+4 api_signature: import_module(name)
+5 api_details: ''
+6 api_parameters:
+- Fully qualified name of the module to load.: Specifies the exact module name to
+    import from the package.
+7 api_usage_example: null
+8 api_shape: null

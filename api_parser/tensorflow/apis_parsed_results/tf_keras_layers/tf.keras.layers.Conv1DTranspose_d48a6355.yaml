@@ -1,0 +1,27 @@
+2 api_name: tensorflow.keras.layers.Conv1DTranspose
+3 api_description: The tf.keras.layers.Conv1DTranspose layer performs 1D transposed
+  convolution, reversing the operation of a standard convolution to upsample input
+  data while preserving spatial relationships.
+4 api_signature: tf.keras.layers.Conv1DTranspose(filters, kernel_size, strides, padding,
+  activation)
+5 api_details: ''
+6 api_parameters:
+- filters: Defines the number of output filters in the transposed convolution.
+- kernel_size: Specifies the size of the convolution window used in the transposed
+    operation.
+- strides: Determines the step size for moving the convolution window across the input.
+- padding: Specifies the type of padding to apply, either 'valid' (no padding) or
+    'same' (padding to maintain dimensions).
+- activation: Defines the activation function to apply to the output, or None for
+    no activation.
+7 api_usage_example:
+- x = np.random.rand(4, 10, 128)
+- y = keras.layers.Conv1DTranspose(32, 3, 2, activation='relu')(x)
+- print(y.shape)
+8 api_shape:
+  input tensor shape: (N, Length_in, Channel_in)
+  output tensor shape: (N, Length_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filters
+    tensor length: If padding = "valid", Length_out = (Length_in - 1) * strides + kernel_size; 
+                  If padding = "same", Length_out = Length_in * strides

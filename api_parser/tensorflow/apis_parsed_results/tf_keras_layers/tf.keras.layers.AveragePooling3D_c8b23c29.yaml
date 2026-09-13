@@ -1,0 +1,24 @@
+2 api_name: tensorflow.keras.layers.AveragePooling3D
+3 api_description: AveragePooling3D downsamples 3D data by averaging values in a defined
+  window across depth, height, and width dimensions, using specified strides.
+4 api_signature: tf.keras.layers.AveragePooling3D(pool_size, strides, padding)
+5 api_details: ''
+6 api_parameters:
+- pool_size: Defines the size of the pooling window for downscaling the input across
+    the three dimensions.
+- strides: Specifies the step size for moving the pooling window; if None, defaults
+    to the pool_size.
+- padding: Determines the padding method used, either 'valid' for no padding or 'same'
+    for equal padding to maintain output dimensions.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Depth_in, Height_in, Width_in, Channel_in)
+  output tensor shape: (N, Depth_out, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor depth: If padding = "valid", Depth_out = floor((Depth_in - pool_size_depth) / strides_depth + 1); 
+                  If padding = "same", Depth_out = floor((Depth_in - 1) / strides_depth + 1)
+    tensor height: If padding = "valid", Height_out = floor((Height_in - pool_size_height) / strides_height + 1); 
+                  If padding = "same", Height_out = floor((Height_in - 1) / strides_height + 1)
+    tensor width: If padding = "valid", Width_out = floor((Width_in - pool_size_width) / strides_width + 1); 
+                  If padding = "same", Width_out = floor((Width_in - 1) / strides_width + 1)

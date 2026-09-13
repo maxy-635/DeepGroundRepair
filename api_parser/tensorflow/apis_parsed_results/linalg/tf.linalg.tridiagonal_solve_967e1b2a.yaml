@@ -1,0 +1,17 @@
+2 api_name: tensorflow.linalg.tridiagonal_solve
+3 api_description: Solves tridiagonal linear systems from matrix, sequence, or compact
+  diagonal inputs, using the specified diagonal format to compute the solution efficiently.
+4 api_signature: tf.linalg.tridiagonal_solve(diagonals,rhs,diagonals_format,transpose_rhs,conjugate_rhs,partial_pivoting,perturb_singular)
+5 api_details: ''
+6 api_parameters:
+- diagonals: Specifies the tridiagonal left-hand-side matrix data to solve against.
+- rhs: Provides the right-hand-side vector or matrix in the linear system.
+- diagonals_format: Chooses how the tridiagonal coefficients are laid out in the input.
+- transpose_rhs: Transposes the right-hand side before solving when needed.
+- conjugate_rhs: Conjugates the right-hand side before solving.
+- partial_pivoting: Controls whether partial pivoting is used for improved numerical
+    stability.
+- perturb_singular: Controls whether near-zero pivots are perturbed so singular systems
+    return finite results.
+7 api_usage_example: null
+8 api_shape: ''

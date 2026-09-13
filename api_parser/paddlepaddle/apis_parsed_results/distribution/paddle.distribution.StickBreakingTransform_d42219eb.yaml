@@ -1,0 +1,21 @@
+2 api_name: paddle.distribution.StickBreakingTransform
+3 api_description: Transforms an unconstrained vector into a simplex-valued vector
+  with one extra dimension using stick-breaking, producing valid probabilities that
+  sum to 1.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1.,2.,3.])
+- t = paddle.distribution.StickBreakingTransform()
+- print(t.forward(x))
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.47536686, 0.41287899, 0.10645414, 0.00530004])'
+- print(t.inverse(t.forward(x)))
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.99999988, 2.        , 2.99999881])'
+- print(t.forward_log_det_jacobian(x))
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- -9.10835075)
+8 api_shape: {}

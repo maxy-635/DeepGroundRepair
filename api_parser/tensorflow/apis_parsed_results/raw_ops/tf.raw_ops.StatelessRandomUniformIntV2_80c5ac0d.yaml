@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.StatelessRandomUniformIntV2
+3 api_description: Generates deterministic pseudorandom integers uniformly in [minval,
+  maxval) based on shape, key, counter, and algorithm.
+4 api_signature: tf.raw_ops.StatelessRandomUniformIntV2(shape,key,counter,minval,maxval)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the shape of the random integer output tensor.
+- key: Provides the RNG key used by the counter-based random number generator.
+- counter: Provides the initial counter state for the counter-based random number
+    generator.
+- minval: Sets the inclusive lower bound for generated random integers.
+- maxval: Sets the exclusive upper bound for generated random integers.
+7 api_usage_example: null
+8 api_shape: ''

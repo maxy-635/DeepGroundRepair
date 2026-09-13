@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.lu_solve
+3 api_description: Solves linear systems A X = RHS using a precomputed LU factorization
+  of A.
+4 api_signature: tf.linalg.lu_solve(lower_upper,perm,rhs)
+5 api_details: ''
+6 api_parameters:
+- lower_upper: The combined LU factorization of the matrix, as returned by `tf.linalg.lu`.
+- perm: The permutation indices from `tf.linalg.lu` that encode the row-pivoting order.
+- rhs: The right-hand-side matrix of target values to solve against in `A X = RHS`.
+7 api_usage_example: null
+8 api_shape: ''

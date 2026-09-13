@@ -1,0 +1,10 @@
+2 api_name: torch.bitwise_not
+3 api_description: Returns the bitwise NOT of an integral tensor, or logical NOT for
+  a boolean tensor.
+4 api_signature: torch.bitwise_not(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose bits are inverted elementwise.
+7 api_usage_example:
+- ' torch.bitwise_not(torch.tensor([-1, -2, 3], dtype=torch.int8))'
+8 api_shape: null

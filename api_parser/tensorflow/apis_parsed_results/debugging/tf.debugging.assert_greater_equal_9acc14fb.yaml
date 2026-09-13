@@ -1,0 +1,13 @@
+2 api_name: tensorflow.debugging.assert_greater_equal
+3 api_description: Checks element-wise that x is greater than or equal to y, raising
+  InvalidArgumentError with optional summaries if the condition fails.
+4 api_signature: tf.debugging.assert_greater_equal(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose values are checked to be greater than or equal to the corresponding
+    values in `y`.
+- y: The tensor of comparison values that `x` is asserted to be greater than or equal
+    to, with a compatible shape and dtype.
+7 api_usage_example:
+- check_size(tf.ones([2, 3], tf.float32))
+8 api_shape: ''

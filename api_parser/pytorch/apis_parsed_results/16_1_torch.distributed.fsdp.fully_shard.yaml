@@ -1,0 +1,18 @@
+2 api_name: torch.distributed.fsdp.fully_shard
+3 api_description: Applies fully sharded data parallelism to a module by splitting
+  its parameters, gradients, and optimizer states across data-parallel workers to
+  reduce memory usage, with added communication overhead.
+4 api_signature: torch.distributed.fsdp.fully_shard(module,*,mesh,reshard_after_forward,mp_policy,reduce_dtype,output_dtype,ignored_params)
+5 api_details: ''
+6 api_parameters:
+- module: Specifies the module or modules to shard with FSDP and group for communication.
+- mesh: Defines the data-parallel mesh used for sharding and communication device
+    placement.
+- reshard_after_forward: Controls whether parameters are resharded after forward to
+    trade memory for communication efficiency.
+- mp_policy: Sets the mixed-precision policy for parameter and reduction computation
+    in this module.
+- ignored_params: Lists parameters that FSDP should leave unsharded, unmoved, and
+    unreduced.
+7 api_usage_example: null
+8 api_shape: null

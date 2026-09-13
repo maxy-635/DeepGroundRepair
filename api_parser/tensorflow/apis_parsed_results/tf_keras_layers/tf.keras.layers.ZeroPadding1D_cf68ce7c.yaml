@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.layers.ZeroPadding1D
+3 api_description: ZeroPadding1D adds padding to the beginning and/or end of 1D input
+  sequences, allowing for control over the input dimensions in temporal data processing.
+4 api_signature: tf.keras.layers.ZeroPadding1D(padding)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the number of zeros to add to both sides of the input, which
+    can be an integer for symmetric padding, a tuple of two integers for asymmetric
+    padding, or a dictionary for specifying padding per dimension.
+7 api_usage_example:
+- input_shape = (2, 2, 3)
+- x = np.arange(np.prod(input_shape)).reshape(input_shape)
+- x
+- y = keras.layers.ZeroPadding1D(padding=2)(x)
+- y
+8 api_shape: null

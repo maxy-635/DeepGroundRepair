@@ -1,0 +1,11 @@
+2 api_name: torch.nn.parameter.Buffer
+3 api_description: A Tensor wrapper for module state that is not treated as a learnable
+  parameter, so it is saved with the model and moved with the module but excluded
+  from optimization.
+4 api_signature: torch.nn.parameter.Buffer(data,persistent)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor value to store as the module buffer.
+- persistent: Whether the buffer should be included in the module’s `state_dict`.
+7 api_usage_example: null
+8 api_shape: null

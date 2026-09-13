@@ -1,0 +1,11 @@
+2 api_name: tensorflow.experimental.numpy.unicode_
+3 api_description: Represents a Unicode string type that automatically strips trailing
+  null codepoints.
+4 api_signature: tf.experimental.numpy.unicode_()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- m = memoryview(np.str_("abc"))
+- m.format
+- m.tobytes()
+8 api_shape: ''

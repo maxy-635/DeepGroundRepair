@@ -1,0 +1,8 @@
+2 api_name: paddle.t_
+3 api_description: Performs the API operation in place, writing the result into the
+  input tensor’s storage instead of allocating a new output tensor.
+4 api_signature: paddle.t_(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

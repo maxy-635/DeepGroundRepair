@@ -1,0 +1,16 @@
+2 api_name: torch.distributed.rpc.PyRRef
+3 api_description: A remote reference handle that keeps an object alive on another
+  worker and lets you access it from distributed RPC code, with lifecycle managed
+  by reference tracking and graceful shutdown.
+4 api_signature: class torch.distributed.rpc.PyRRef(RRef)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example:
+- ' import torch'
+- ' import torch.distributed.rpc as rpc'
+- ' rref = rpc.remote("worker1", torch.add, args=(torch.ones(2), 3))'
+- ' # get a copy of value from the RRef'
+- ' x = rref.to_here()'
+8 api_shape: null

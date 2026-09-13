@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ResourceGather
+3 api_description: Gathers slices from a resource variable at the given integer indices,
+  returning a tensor shaped like indices.shape plus the variable’s remaining dimensions.
+4 api_signature: tf.raw_ops.ResourceGather(resource,indices,batch_dims)
+5 api_details: ''
+6 api_parameters:
+- resource: The resource handle to the tensor or variable that will be gathered from.
+- indices: The index tensor specifying which elements to retrieve from the resource.
+- batch_dims: The number of leading dimensions in `indices` that are treated as batch
+    dimensions.
+7 api_usage_example: null
+8 api_shape: ''

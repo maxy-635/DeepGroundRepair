@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.amin
+3 api_description: Returns the minimum value in an array or along a specified axis.
+4 api_signature: tf.keras.ops.amin(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose minimum value will be computed.
+- axis: The axis or axes along which to find the minimum; if `None`, the minimum is
+    computed over the entire tensor.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([[1, 6, 8], [7, 5, 3]])
+- keras.ops.amin(x, axis=1, keepdims=True)
+8 api_shape: ''

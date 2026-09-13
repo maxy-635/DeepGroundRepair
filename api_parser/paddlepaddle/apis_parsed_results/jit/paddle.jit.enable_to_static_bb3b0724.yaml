@@ -1,0 +1,23 @@
+2 api_name: paddle.jit.enable_to_static
+3 api_description: Globally enables or disables ProgramTranslator conversion from
+  imperative execution to static graph mode.
+4 api_signature: paddle.jit.enable_to_static(enable_to_static_bool)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- '@paddle.jit.to_static'
+- 'def func(x):'
+- '    if paddle.mean(x) > 0:'
+- '        x_v = x - 1'
+- '    else:'
+- '        x_v = x + 1'
+- '    return x_v'
+- '...'
+- paddle.jit.enable_to_static(False)
+- x = paddle.ones([1, 2])
+- '# ProgramTranslator is disabled so the func is run in dygraph'
+- print(func(x))
+- Tensor(shape=[1, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0., 0.]])'
+8 api_shape: {}

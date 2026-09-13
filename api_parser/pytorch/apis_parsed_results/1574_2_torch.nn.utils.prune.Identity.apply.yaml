@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.prune.Identity.apply
+3 api_description: Applies identity pruning to a tensor by adding a pruning reparametrization
+  without changing its values.
+4 api_signature: '"apply(module,name)"'
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the parameter tensor to be pruned.
+- name: The name of the parameter within the module that pruning will act on.
+7 api_usage_example: null
+8 api_shape: null

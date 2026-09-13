@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesMakeStatsSummary
+3 api_description: Aggregates per-example gradients and hessians into node- and bucket-level
+  statistics for a batch, producing the summary used by boosted trees training.
+4 api_signature: tf.raw_ops.BoostedTreesMakeStatsSummary(node_ids,gradients,hessians,bucketized_features_list,max_splits,num_buckets)
+5 api_details: ''
+6 api_parameters:
+- node_ids: Identifies which tree node each example currently belongs to for the target
+    layer.
+- gradients: Provides the per-example gradient values used to build the statistics
+    summary.
+- hessians: Provides the per-example hessian values used to build the statistics summary.
+- bucketized_features_list: Supplies the bucketized feature values for each feature
+    column as input to the summary computation.
+- max_splits: Sets the maximum number of splits allowed in the entire tree.
+- num_buckets: Sets the total number of possible bucket values for the bucketized
+    features.
+7 api_usage_example: null
+8 api_shape: ''

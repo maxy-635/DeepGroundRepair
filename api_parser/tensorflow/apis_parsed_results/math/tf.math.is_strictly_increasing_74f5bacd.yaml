@@ -1,0 +1,14 @@
+2 api_name: tensorflow.math.is_strictly_increasing
+3 api_description: Returns True when a tensor’s elements, read in row-major order,
+  are strictly increasing, meaning each element is less than the next; tensors with
+  fewer than two elements return True.
+4 api_signature: tf.math.is_strictly_increasing(x)
+5 api_details: ''
+6 api_parameters:
+- x: The numeric tensor to check for strict increase along its innermost dimension.
+7 api_usage_example:
+- x1 = tf.constant([1.0, 2.0, 3.0])
+- tf.math.is_strictly_increasing(x1)
+- x2 = tf.constant([3.0, 1.0, 2.0])
+- tf.math.is_strictly_increasing(x2)
+8 api_shape: ''

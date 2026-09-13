@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.erfinv
+3 api_description: Computes the element-wise inverse error function, mapping values
+  back from the error function domain.
+4 api_signature: '"tf.keras.ops.erfinv(x)"'
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elementwise inverse error function is computed.
+7 api_usage_example:
+- x = np.array([-0.5, -0.2, -0.1, 0.0, 0.3])
+- keras.ops.erfinv(x)
+8 api_shape: ''

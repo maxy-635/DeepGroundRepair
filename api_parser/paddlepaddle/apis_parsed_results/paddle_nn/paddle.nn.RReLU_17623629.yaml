@@ -1,0 +1,31 @@
+2 api_name: paddle.nn.RReLU
+3 api_description: RReLU is a randomized leaky ReLU activation function that introduces
+  randomness in the negative slope during training, helping to mitigate overfitting.
+4 api_signature: paddle.nn.RReLU(lower,upper)
+5 api_details: ''
+6 api_parameters:
+- lower: Defines the minimum value for the random slope in the negative part of the
+    RReLU activation.
+- upper: Defines the maximum value for the random slope in the negative part of the
+    RReLU activation.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- input_tensor = paddle.to_tensor([[[[-2.0,  3.0, -4.0,  5.0],
+- '                                   [ 3.0, -4.0,  5.0, -6.0],'
+- '                                   [-7.0, -8.0,  8.0,  9.0]],'
+- '                                  [[ 1.0, -2.0, -3.0,  4.0],'
+- '                                   [-5.0,  6.0,  7.0, -8.0],'
+- '                                   [ 6.0,  7.0,  8.0,  9.0]]]], dtype=''float32'')'
+- '...'
+- rrelu_layer = paddle.nn.RReLU(0.1, 0.3)
+- out = rrelu_layer(input_tensor)
+- print(out)
+- Tensor(shape=[1, 2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[-0.54633451,  3.        , -0.81611776,  5.        ],'
+- '[ 3.        , -0.60768753,  5.        , -1.68630385],'
+- '[-1.29360127, -1.45026064,  8.        ,  9.        ]],'
+- '[[ 1.        , -0.58808362, -0.74662417,  4.        ],'
+- '[-1.01785135,  6.        ,  7.        , -1.97268605],'
+- '[ 6.        ,  7.        ,  8.        ,  9.        ]]]])'
+8 api_shape: null

@@ -1,0 +1,29 @@
+2 api_name: paddle.distributed.communication.stream.all_reduce
+3 api_description: Performs a specified reduction operation, such as sum or max, across
+  tensors on multiple devices.
+4 api_signature: paddle.distributed.communication.stream.all_reduce(tensor,op,group)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to be reduced on each rank, with the result written back into
+    the same tensor.
+- op: The reduction operation to apply across ranks, defaulting to `ReduceOp.SUM`
+    if not specified.
+- group: The communication group to perform the all-reduce within, defaulting to the
+    global group if not specified.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- local_rank = dist.get_rank()
+- data = None
+- 'if local_rank == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- task = dist.stream.all_reduce(data, sync_op=False)
+- 'task.wait()  # type: ignore[union-attr]'
+- out = data
+- print(out)
+- '[[5, 7, 9], [5, 7, 9]]'
+8 api_shape: {}

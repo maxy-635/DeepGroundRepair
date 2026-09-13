@@ -1,0 +1,27 @@
+2 api_name: paddle.histogramdd
+3 api_description: Computes an N-dimensional histogram by binning tensor values into
+  specified ranges and counting the samples in each multidimensional bin.
+4 api_signature: paddle.histogramdd(x,bins,ranges,density)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the input tensor whose values are binned into a histogram.
+- bins: Specifies either the bin edges directly or the number of equal-width bins
+    to use in each dimension.
+- ranges: Sets the minimum and maximum edges for each dimension, or uses the data
+    minimum and maximum when omitted.
+- density: Controls whether the histogram returns raw counts or a normalized density
+    per bin.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[0., 1.], [1., 0.], [2.,0.], [2., 2.]])
+- bins = [3,3]
+- weights = paddle.to_tensor([1., 2., 4., 8.])
+- paddle.histogramdd(x, bins=bins, weights=weights)
+- (Tensor(shape=[3, 3], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[0., 1., 0.],'
+- '[2., 0., 0.],'
+- '[4., 0., 8.]]), [Tensor(shape=[4], dtype=float32, place=Place(gpu:0), stop_gradient=True,'
+- '[0.        , 0.66666669, 1.33333337, 2.        ]), Tensor(shape=[4], dtype=float32,
+  place=Place(gpu:0), stop_gradient=True,'
+- '[0.        , 0.66666669, 1.33333337, 2.        ])])'
+8 api_shape: {}

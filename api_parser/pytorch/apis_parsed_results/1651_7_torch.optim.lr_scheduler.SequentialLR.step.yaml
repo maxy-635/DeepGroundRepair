@@ -1,0 +1,8 @@
+2 api_name: torch.optim.lr_scheduler.SequentialLR.step
+3 api_description: Advance the active scheduler in sequence, switching to the next
+  one at each milestone while updating the learning rate.
+4 api_signature: step()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.continuous_bernoulli.ContinuousBernoulli.sample
+3 api_description: Draws samples from a Continuous Bernoulli distribution, returning
+  values in the distribution’s support with the specified sample shape.
+4 api_signature: sample(sample_shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

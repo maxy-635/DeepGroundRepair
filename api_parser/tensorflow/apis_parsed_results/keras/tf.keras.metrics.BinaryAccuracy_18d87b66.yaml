@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.metrics.BinaryAccuracy
+3 api_description: Computes binary accuracy by tracking matches between `y_true` and
+  `y_pred` and returning the weighted fraction of correct predictions.
+4 api_signature: tf.keras.metrics.BinaryAccuracy(threshold)
+5 api_details: ''
+6 api_parameters:
+- threshold: Sets the cutoff used to convert predicted values into binary class labels
+    (1 or 0).
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([[1], [1], [0], [0]], [[0.98], [1], [0], [0.6]],
+- '               sample_weight=[1, 0, 0, 1])'
+- m.result()
+8 api_shape: ''

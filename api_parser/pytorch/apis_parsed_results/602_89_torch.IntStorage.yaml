@@ -1,0 +1,9 @@
+2 api_name: torch.IntStorage
+3 api_description: IntStorage is a low-level PyTorch storage type for storing and
+  managing contiguous integer values, providing direct tensor-backed memory access
+  and storage operations.
+4 api_signature: torch.IntStorage(dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

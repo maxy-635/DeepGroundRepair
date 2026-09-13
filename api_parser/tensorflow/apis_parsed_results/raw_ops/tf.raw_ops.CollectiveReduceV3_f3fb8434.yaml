@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.CollectiveReduceV3
+3 api_description: Synchronously reduces matching tensors across multiple participants
+  into a single result, preserving the same type and shape.
+4 api_signature: tf.raw_ops.CollectiveReduceV3(input,communicator,group_assignment,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be reduced collectively across the specified
+    group.
+- communicator: A resource handle that identifies the collective communication context
+    to use.
+- group_assignment: An int32 tensor that specifies which devices or participants belong
+    to each collective group.
+- reduction: A string that selects the reduction operation to apply, such as Min,
+    Max, Mul, or Add.
+7 api_usage_example: null
+8 api_shape: ''

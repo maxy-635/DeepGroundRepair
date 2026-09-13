@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.applications.NASNetMobile
+3 api_description: Builds a Mobile NASNet image classification model, optionally with
+  ImageNet-pretrained weights, using the Keras data format configured in the user’s
+  Keras settings.
+4 api_signature: tf.keras.applications.NASNetMobile(input_shape,weights,include_top,classes)
+5 api_details: ''
+6 api_parameters:
+- input_shape: Sets the input tensor shape when `include_top` is False, with 3 channels
+    and minimum spatial size of 32.
+- include_top: Controls whether the model includes the final fully connected classification
+    layer.
+- weights: Chooses the weight initialization source, either random initialization
+    or pretrained ImageNet weights.
+- classes: Specifies the number of output classes when using the top layer without
+    pretrained weights.
+7 api_usage_example: null
+8 api_shape: ''

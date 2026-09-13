@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.dtensor.call_with_layout
+3 api_description: Runs a function in DTensor scope when a layout is provided so inputs
+  and outputs are DTensors; otherwise, it runs the function on regular TensorFlow
+  tensors.
+4 api_signature: tf.experimental.dtensor.call_with_layout(fn,layout,*args)
+5 api_details: ''
+6 api_parameters:
+- fn: The TensorFlow function to invoke with DTensor layout handling.
+- layout: The optional output layout to apply to the returned DTensor.
+- '*args': Positional arguments passed through to the function.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.QueueEnqueueManyV2
+3 api_description: Slices each input tensor along its first dimension into queue elements
+  and enqueues zero or more matching tuples into a queue, blocking if the queue is
+  full until space is available or an optional timeout expires.
+4 api_signature: tf.raw_ops.QueueEnqueueManyV2(handle,components,timeout_ms)
+5 api_details: ''
+6 api_parameters:
+- handle: Specifies the resource handle for the target queue.
+- components: Provides the tensors whose values will be enqueued into the queue.
+- timeout_ms: Sets how long to wait if the queue is full before blocking times out,
+    though this option is not currently supported.
+7 api_usage_example: null
+8 api_shape: ''

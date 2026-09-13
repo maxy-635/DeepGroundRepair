@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.RepeatDataset
+3 api_description: Creates a dataset that repeats the elements of an input dataset
+  a specified number of times.
+4 api_signature: tf.raw_ops.RepeatDataset(input_dataset,count)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to repeat.
+- count: The number of times to repeat the dataset, or -1 to repeat it indefinitely.
+7 api_usage_example: null
+8 api_shape: ''

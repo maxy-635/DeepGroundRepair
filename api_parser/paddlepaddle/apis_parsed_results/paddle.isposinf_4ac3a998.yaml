@@ -1,0 +1,16 @@
+2 api_name: paddle.isposinf
+3 api_description: Returns a boolean result for each input element, indicating whether
+  it is positive infinity.
+4 api_signature: paddle.isposinf(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor to check for positive infinity values.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- x = paddle.to_tensor([-0., float('inf'), -2.1, -float('inf'), 2.5], dtype='float32')
+- res = paddle.isposinf(x)
+- print(res)
+- Tensor(shape=[5], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, True, False, False, False])'
+8 api_shape: {}

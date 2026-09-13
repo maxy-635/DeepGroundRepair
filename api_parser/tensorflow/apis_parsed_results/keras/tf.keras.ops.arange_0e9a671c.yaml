@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.arange
+3 api_description: Return evenly spaced values within a specified interval, with optional
+  start, stop, and step arguments.
+4 api_signature: tf.keras.ops.arange(start,stop,step)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the inclusive beginning of the generated range.
+- stop: Sets the exclusive end of the generated range.
+- step: Sets the spacing between consecutive values in the range.
+7 api_usage_example:
+- keras.ops.arange(3, 7, 2)
+8 api_shape: ''

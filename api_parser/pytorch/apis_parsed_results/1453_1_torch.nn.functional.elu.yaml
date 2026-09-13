@@ -1,0 +1,17 @@
+2 api_name: torch.nn.functional.elu
+3 api_description: The torch.nn.functional.elu function applies the Exponential Linear
+  Unit (ELU) activation function element-wise to input data, enhancing model learning
+  by allowing for negative values and smoothing the activation landscape.
+4 api_signature: torch.nn.functional.elu(input,alpha)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the ELU activation function is applied.
+- alpha: A scaling factor for the negative section of the ELU function, default is
+    1.0.
+- inplace: A boolean that, if set to True, modifies the input tensor in-place, saving
+    memory.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.ops.image.pad_images
+3 api_description: Pads image tensors with zeros to the requested height and width.
+4 api_signature: tf.keras.ops.image.pad_images(images,top_padding,left_padding,target_height,target_width)
+5 api_details: ''
+6 api_parameters:
+- images: The input image tensor to be padded, either as a single 3D image or a batch
+    of 4D images.
+- top_padding: The number of zero rows to add above the image.
+- left_padding: The number of zero columns to add to the left side of the image.
+- target_height: The desired height of the padded output image.
+- target_width: The desired width of the padded output image.
+7 api_usage_example:
+- batch_images = np.random.random((2, 15, 25, 3))
+- padded_batch = keras.ops.image.pad_images(
+- '    batch_images, 2, 3, target_height=20, target_width=30'
+- )
+- padded_batch.shape
+8 api_shape: ''

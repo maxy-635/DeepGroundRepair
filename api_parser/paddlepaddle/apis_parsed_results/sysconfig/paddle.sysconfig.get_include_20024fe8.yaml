@@ -1,0 +1,10 @@
+2 api_name: paddle.sysconfig.get_include
+3 api_description: Returns the include directory path for PaddlePaddle C++ header
+  files.
+4 api_signature: paddle.sysconfig.get_include()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- include_dir = paddle.sysconfig.get_include()
+8 api_shape: {}

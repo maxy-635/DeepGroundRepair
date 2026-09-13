@@ -1,0 +1,21 @@
+2 api_name: torch.nn.LSTMCell
+3 api_description: The torch.nn.LSTMCell is a building block for LSTM networks, designed
+  to process sequences by maintaining a hidden state and cell state across time steps,
+  enabling the model to capture long-term dependencies in data.
+4 api_signature: torch.nn.LSTMCell(input_size,hidden_size)
+5 api_details: ''
+6 api_parameters:
+- input_size: Specifies the dimensionality of the input data fed into the LSTM cell.
+- hidden_size: Determines the dimensionality of the hidden state output by the LSTM
+    cell.
+7 api_usage_example:
+- ' rnn = nn.LSTMCell(10, 20)  # (input_size, hidden_size)'
+- ' input = torch.randn(2, 3, 10)  # (time_steps, batch, input_size)'
+- ' hx = torch.randn(3, 20)  # (batch, hidden_size)'
+- ' cx = torch.randn(3, 20)'
+- ' output = []'
+- ' for i in range(input.size()[0]):'
+- '...     hx, cx = rnn(input[i], (hx, cx))'
+- '...     output.append(hx)'
+- ' output = torch.stack(output, dim=0)'
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.io.match_filenames_once
+3 api_description: Computes a filename pattern once and saves the resulting matching
+  file list for reuse.
+4 api_signature: tf.io.match_filenames_once(pattern)
+5 api_details: ''
+6 api_parameters:
+- pattern: Specifies the file glob pattern, or a 1D tensor of patterns, to match filenames
+    against.
+- name: Optionally sets the operation name for easier graph inspection and debugging.
+7 api_usage_example: null
+8 api_shape: ''

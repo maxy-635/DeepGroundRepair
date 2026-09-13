@@ -1,0 +1,13 @@
+2 api_name: torch.nn.utils.prune.RandomStructured.apply
+3 api_description: Apply structured random pruning to a tensor by removing entire
+  channels or blocks on the fly, while reparameterizing the parameter so the pruned
+  tensor remains usable during training.
+4 api_signature: apply(module,name,amount)
+5 api_details: ''
+6 api_parameters:
+- module: The module that owns the tensor and will have pruning applied.
+- name: The name of the parameter in the module to prune.
+- amount: How much of the parameter to prune, either as a fraction or an absolute
+    count.
+7 api_usage_example: null
+8 api_shape: null

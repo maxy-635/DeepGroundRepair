@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.QuantizedConv2DWithBiasAndRequantize
+3 api_description: Performs a quantized 2D convolution with bias, then requantizes
+  the result to a new quantized output type.
+4 api_signature: tf.raw_ops.QuantizedConv2DWithBiasAndRequantize(input,filter,bias,strides,padding,out_type,dilations,name)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized input tensor to be convolved.
+- filter: The quantized convolution kernel tensor.
+- bias: The bias tensor added to the convolution output before requantization.
+- strides: The stride values to use for the convolution along each dimension.
+- padding: The padding algorithm to apply, either `SAME` or `VALID`.
+- out_type: The quantized data type of the output tensor after requantization.
+- dilations: The dilation rates to apply to the convolution kernel.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

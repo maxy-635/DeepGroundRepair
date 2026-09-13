@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.functional.pixel_shuffle
+3 api_description: The paddle.nn.functional.pixel_shuffle API rearranges elements
+  in a tensor of shape (C*r^2, H, W) to a tensor of shape (C, H*r, W*r) by upscaling
+  the spatial resolution by a factor of r.
+4 api_signature: paddle.nn.functional.pixel_shuffle(x,upscale_factor)
+5 api_details: ''
+6 api_parameters:
+- x: A 4-D tensor input whose spatial resolution will be increased, with the data
+    type being either float32 or float64.
+- upscale_factor: An integer factor by which the spatial resolution of the input tensor
+    will be increased.
+7 api_usage_example: []
+8 api_shape: null

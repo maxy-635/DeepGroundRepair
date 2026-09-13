@@ -1,0 +1,15 @@
+2 api_name: paddle.fft.fft2
+3 api_description: Computes the 2-D discrete Fourier transform of an input tensor.
+4 api_signature: paddle.fft.fft2(x,s,axes,norm,name,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be transformed.
+- s: Specifies the output size along the two transformed axes, with cropping or zero-padding
+    applied as needed.
+- axes: Specifies the two axes over which the 2D FFT is computed, defaulting to the
+    last two axes.
+- norm: Controls the normalization mode used for scaling the FFT and its inverse pair.
+- name: An optional name for the output tensor, mainly used for API naming purposes.
+- out: An optional tensor to store the output result.
+7 api_usage_example: []
+8 api_shape: {}

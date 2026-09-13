@@ -1,0 +1,8 @@
+2 api_name: torch.utils.benchmark.Measurement
+3 api_description: Represents the result of a `Timer` benchmark measurement, including
+  timing statistics and run details.
+4 api_signature: torch.utils.benchmark.Measurement(number_per_run,raw_times,task_spec)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

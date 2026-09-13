@@ -1,0 +1,12 @@
+2 api_name: torch.nn.TransformerDecoderLayer.forward
+3 api_description: Applies a Transformer decoder layer to target inputs using the
+  memory from the encoder, with optional attention masks and key padding masks.
+4 api_signature: forward(tgt,memory,tgt_mask,memory_mask)
+5 api_details: ''
+6 api_parameters:
+- tgt: Input sequence passed to the decoder layer.
+- memory: Encoder output sequence used as context for the decoder.
+- tgt_mask: Optional mask applied to the target sequence.
+- memory_mask: Optional mask applied to the encoder memory sequence.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: paddle.incubate.nn.functional.fused_bias_dropout_residual_layer_norm
+3 api_description: Fuses bias addition, dropout, residual connection, and layer normalization
+  into one efficient operation.
+4 api_signature: paddle.incubate.nn.functional.fused_bias_dropout_residual_layer_norm(x,residual,bias,dropout_rate,training)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the main input tensor to be normalized and combined with the residual
+    path.
+- residual: Supplies the residual tensor that is added to the transformed input.
+- bias: Optionally adds a bias vector to the linear output before dropout and normalization.
+- dropout_rate: Controls the probability of dropping attention targets during dropout,
+    with 0 disabling dropout.
+- training: Indicates whether the operation should apply training-time behavior such
+    as dropout.
+7 api_usage_example: []
+8 api_shape: {}

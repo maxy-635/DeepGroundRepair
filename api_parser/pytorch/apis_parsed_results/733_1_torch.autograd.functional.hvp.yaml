@@ -1,0 +1,17 @@
+2 api_name: torch.autograd.functional.hvp
+3 api_description: Computes the Hessian-vector product of a scalar function at a given
+  input point with respect to a specified vector.
+4 api_signature: torch.autograd.functional.hvp(func,inputs,v)
+5 api_details: ''
+6 api_parameters:
+- func: The function whose Hessian-vector product is being computed.
+- inputs: The tensor inputs passed to `func`.
+- v: The vector used to compute the Hessian-vector product, matching the size of `func`'s
+    input and defaulting to a tensor containing `1` for single-element inputs.
+7 api_usage_example:
+- ' def pow_reducer(x):'
+- '...     return x.pow(3).sum()'
+- ' inputs = torch.rand(2, 2)'
+- ' v = torch.ones(2, 2)'
+- ' hvp(pow_reducer, inputs, v)'
+8 api_shape: null

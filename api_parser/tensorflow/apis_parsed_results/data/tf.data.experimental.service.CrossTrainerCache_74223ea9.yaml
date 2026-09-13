@@ -1,0 +1,10 @@
+2 api_name: tensorflow.data.experimental.service.CrossTrainerCache
+3 api_description: Configures tf.data service cross-trainer caching to let multiple
+  trainers share and reuse cached dataset elements when distributing input data.
+4 api_signature: tf.data.experimental.service.CrossTrainerCache(trainer_id)
+5 api_details: ''
+6 api_parameters:
+- trainer_id: Identifies a unique training job so cached data can be reused by different
+    jobs, but not by requests with the same trainer ID.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.trunc
+3 api_description: Returns a new tensor with each element truncated to its integer
+  part.
+4 api_signature: torch.trunc(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are truncated toward zero elementwise.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.trunc(a)'
+8 api_shape: null

@@ -1,0 +1,7 @@
+2 api_name: torch.autograd.forward_ad.UnpackedDualTensor.index
+3 api_description: Return the first index of a given value.
+4 api_signature: index(value,start,stop)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

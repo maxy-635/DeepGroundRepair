@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.PrefetchDataset
+3 api_description: Creates a dataset that asynchronously buffers and preloads elements
+  from an input dataset to improve pipeline throughput.
+4 api_signature: tf.raw_ops.PrefetchDataset(input_dataset,buffer_size,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to read from and prefetch.
+- buffer_size: The maximum number of elements to keep buffered ahead of consumption.
+- output_types: The data types of the dataset elements produced by the operation.
+- output_shapes: The shapes of the dataset elements produced by the operation.
+7 api_usage_example: null
+8 api_shape: ''

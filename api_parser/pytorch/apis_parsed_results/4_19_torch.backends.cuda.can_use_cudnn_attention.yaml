@@ -1,0 +1,11 @@
+2 api_name: torch.backends.cuda.can_use_cudnn_attention
+3 api_description: Checks whether cuDNN-backed attention can be used for scaled dot
+  product attention.
+4 api_signature: torch.backends.cuda.can_use_cudnn_attention(params)
+5 api_details: ''
+6 api_parameters:
+- params: Holds the query, key, and value tensors plus optional attention mask, dropout
+    rate, and causal-attention flag used to determine whether cuDNN attention can
+    be used.
+7 api_usage_example: null
+8 api_shape: null

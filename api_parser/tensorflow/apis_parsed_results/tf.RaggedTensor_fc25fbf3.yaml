@@ -1,0 +1,14 @@
+2 api_name: tensorflow.RaggedTensor
+3 api_description: Represents a ragged tensor with non-uniform row lengths and provides
+  its tight bounding box shape.
+4 api_signature: bounding_shape(axis)
+5 api_details: ''
+6 api_parameters:
+- axis: Specifies which axis or axes to include in the returned bounding box, or returns
+    the full bounding box when omitted.
+7 api_usage_example:
+- x = tf.ragged.constant([[1]])
+- 'r = (x == 1)  # tf.RaggedTensor [[True]]'
+- 'if r:  # Evaluate r as a bool value.'
+- '  pass'
+8 api_shape: ''

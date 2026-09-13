@@ -1,0 +1,9 @@
+2 api_name: paddle.vision.models.shufflenet_v2_x2_0
+3 api_description: Builds a ShuffleNetV2 2.0x convolutional neural network for efficient
+  image feature extraction and classification.
+4 api_signature: paddle.vision.models.shufflenet_v2_x2_0(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Loads ImageNet-pretrained weights for the model when set to True.
+7 api_usage_example: []
+8 api_shape: {}

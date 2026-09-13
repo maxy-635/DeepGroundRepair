@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.metrics.TrueNegatives
+3 api_description: Counts true negatives, or their weighted sum when sample_weight
+  is provided, using 1 by default and 0 to mask values.
+4 api_signature: tf.keras.metrics.TrueNegatives(thresholds)
+5 api_details: ''
+6 api_parameters:
+- thresholds: Sets one or more cutoff values used to decide whether predicted scores
+    count as positive or negative when computing true negatives.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([0, 1, 0, 0], [1, 1, 0, 0], sample_weight=[0, 0, 1, 0])
+- m.result()
+8 api_shape: ''

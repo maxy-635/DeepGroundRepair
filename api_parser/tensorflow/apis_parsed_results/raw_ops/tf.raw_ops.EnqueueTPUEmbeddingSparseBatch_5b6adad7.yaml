@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.EnqueueTPUEmbeddingSparseBatch
+3 api_description: Enqueues sparse TPU embedding lookup indices from SparseTensor
+  inputs for TPU training, with matching table, sample, and embedding indices shaped
+  consistently for each lookup.
+4 api_signature: tf.raw_ops.EnqueueTPUEmbeddingSparseBatch(sample_indices,embedding_indices,aggregation_weights,mode_override)
+5 api_details: ''
+6 api_parameters:
+- sample_indices: Specifies, for each sparse sample, which training example and feature
+    the corresponding embedding values belong to.
+- embedding_indices: Provides the sparse embedding table indices for each sample.
+- aggregation_weights: Provides the per-sample weights used to aggregate embedding
+    lookups.
+- mode_override: Overrides the TPU embedding configuration mode, or uses the configured
+    mode when set to 'unspecified'.
+7 api_usage_example: null
+8 api_shape: ''

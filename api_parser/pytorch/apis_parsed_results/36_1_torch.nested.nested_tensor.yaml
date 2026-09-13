@@ -1,0 +1,14 @@
+2 api_name: torch.nested.nested_tensor
+3 api_description: Creates a nested tensor from a list of tensors without autograd
+  history, producing a leaf tensor.
+4 api_signature: torch.nested.nested_tensor(tensor_list,dtype,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- tensor_list: Specifies the tensors or tensor-convertible inputs to combine into
+    a nested tensor.
+7 api_usage_example:
+- ' a = torch.arange(3, dtype=torch.float, requires_grad=True)'
+- ' b = torch.arange(5, dtype=torch.float, requires_grad=True)'
+- ' nt = torch.nested.nested_tensor([a, b], requires_grad=True)'
+- ' nt.is_leaf'
+8 api_shape: null

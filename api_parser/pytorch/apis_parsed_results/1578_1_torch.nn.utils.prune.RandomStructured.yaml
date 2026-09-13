@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.prune.RandomStructured
+3 api_description: Randomly removes entire unpruned channels from a tensor.
+4 api_signature: torch.nn.utils.prune.RandomStructured(amount,dim)
+5 api_details: ''
+6 api_parameters:
+- amount: Specifies how many parameters to prune, either as a fraction of the total
+    or as an absolute count.
+- dim: Selects the tensor dimension used to group channels for structured pruning.
+7 api_usage_example: null
+8 api_shape: null

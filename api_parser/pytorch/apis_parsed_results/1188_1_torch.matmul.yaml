@@ -1,0 +1,30 @@
+2 api_name: torch.matmul
+3 api_description: Computes the matrix product of two tensors, supporting vector,
+  matrix, and higher-dimensional batched multiplication.
+4 api_signature: torch.matmul(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor to multiply, providing the left-hand operand.
+- other: The second tensor to multiply, providing the right-hand operand.
+7 api_usage_example:
+- ' # vector x vector'
+- ' tensor1 = torch.randn(3)'
+- ' tensor2 = torch.randn(3)'
+- ' torch.matmul(tensor1, tensor2).size()'
+- ' # matrix x vector'
+- ' tensor1 = torch.randn(3, 4)'
+- ' tensor2 = torch.randn(4)'
+- ' torch.matmul(tensor1, tensor2).size()'
+- ' # batched matrix x broadcasted vector'
+- ' tensor1 = torch.randn(10, 3, 4)'
+- ' tensor2 = torch.randn(4)'
+- ' torch.matmul(tensor1, tensor2).size()'
+- ' # batched matrix x batched matrix'
+- ' tensor1 = torch.randn(10, 3, 4)'
+- ' tensor2 = torch.randn(10, 4, 5)'
+- ' torch.matmul(tensor1, tensor2).size()'
+- ' # batched matrix x broadcasted matrix'
+- ' tensor1 = torch.randn(10, 3, 4)'
+- ' tensor2 = torch.randn(4, 5)'
+- ' torch.matmul(tensor1, tensor2).size()'
+8 api_shape: null

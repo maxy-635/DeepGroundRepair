@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.pipelining.microbatch.split_args_kwargs_into_chunks
+3 api_description: Splits input args and kwargs into the requested number of microbatches
+  according to their chunking specs.
+4 api_signature: torch.distributed.pipelining.microbatch.split_args_kwargs_into_chunks(args,kwargs,chunks)
+5 api_details: ''
+6 api_parameters:
+- args: The positional arguments to be split into smaller chunks.
+- kwargs: The keyword arguments to be split into smaller chunks.
+- chunks: The number of chunks to divide the arguments and keyword arguments into.
+7 api_usage_example: null
+8 api_shape: null

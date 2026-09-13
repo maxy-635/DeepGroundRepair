@@ -1,0 +1,41 @@
+2 api_name: paddle.nn.functional.softmax
+3 api_description: The paddle.nn.functional.softmax API computes the softmax activation
+  function, which normalizes input data into a probability distribution across specified
+  dimensions.
+4 api_signature: paddle.nn.functional.softmax(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor for the softmax computation, supporting data types
+    bfloat16, float16, float32, and float64.
+- axis: Defines the axis along which the softmax operation is performed, with values
+    ranging from -D to D-1, where D is the rank of the input tensor.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([[[2.0, 3.0, 4.0, 5.0],
+- '                       [3.0, 4.0, 5.0, 6.0],'
+- '                       [7.0, 8.0, 8.0, 9.0]],'
+- '                      [[1.0, 2.0, 3.0, 4.0],'
+- '                       [5.0, 6.0, 7.0, 8.0],'
+- '                       [6.0, 7.0, 8.0, 9.0]]],dtype=''float32'')'
+- out1 = F.softmax(x)
+- out2 = F.softmax(x, dtype='float64')
+- '#out1''s data type is float32; out2''s data type is float64'
+- '#out1 and out2''s value is as follows:'
+- print(out1)
+- print(out2)
+- Tensor(shape=[2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[0.03205860, 0.08714432, 0.23688284, 0.64391428],'
+- '[0.03205860, 0.08714432, 0.23688284, 0.64391428],'
+- '[0.07232949, 0.19661194, 0.19661194, 0.53444666]],'
+- '[[0.03205860, 0.08714432, 0.23688284, 0.64391428],'
+- '[0.03205860, 0.08714432, 0.23688284, 0.64391428],'
+- '[0.03205860, 0.08714432, 0.23688284, 0.64391428]]])'
+- Tensor(shape=[2, 3, 4], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[[0.03205860, 0.08714432, 0.23688282, 0.64391426],'
+- '[0.03205860, 0.08714432, 0.23688282, 0.64391426],'
+- '[0.07232949, 0.19661193, 0.19661193, 0.53444665]],'
+- '[[0.03205860, 0.08714432, 0.23688282, 0.64391426],'
+- '[0.03205860, 0.08714432, 0.23688282, 0.64391426],'
+- '[0.03205860, 0.08714432, 0.23688282, 0.64391426]]])'
+8 api_shape: null

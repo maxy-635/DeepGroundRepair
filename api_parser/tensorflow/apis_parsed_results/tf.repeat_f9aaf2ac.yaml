@@ -1,0 +1,13 @@
+2 api_name: tensorflow.repeat
+3 api_description: Repeats elements of an input tensor along a specified axis, with
+  each element repeated the given number of times.
+4 api_signature: tf.repeat(input,repeats,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements will be repeated.
+- repeats: Specifies how many times to repeat each element, broadcast as needed along
+    the chosen axis.
+- axis: Selects the axis to repeat along; if `None`, repeats over the flattened tensor.
+7 api_usage_example:
+- repeat([[1,2], [3,4]], repeats=2)
+8 api_shape: ''

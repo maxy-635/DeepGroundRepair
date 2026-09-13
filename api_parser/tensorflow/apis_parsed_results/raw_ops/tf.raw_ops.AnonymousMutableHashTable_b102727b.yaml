@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.AnonymousMutableHashTable
+3 api_description: Creates a new anonymous mutable hash table resource with specified
+  key/value dtypes, where values are scalars, and returns its handle for later insertion
+  and lookup.
+4 api_signature: tf.raw_ops.AnonymousMutableHashTable(key_dtype,value_dtype)
+5 api_details: ''
+6 api_parameters:
+- key_dtype: Specifies the data type used for keys stored in the hash table.
+- value_dtype: Specifies the data type used for values stored in the hash table.
+7 api_usage_example: null
+8 api_shape: ''

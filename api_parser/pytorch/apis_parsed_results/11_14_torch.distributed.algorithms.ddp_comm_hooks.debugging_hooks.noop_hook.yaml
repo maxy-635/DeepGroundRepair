@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.algorithms.ddp_comm_hooks.debugging_hooks.noop_hook
+3 api_description: Returns a future that directly wraps the input tensor, performing
+  no communication or modification.
+4 api_signature: '"noop_hook(bucket)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' ddp_model.register_comm_hook(None, noop_hook)'
+8 api_shape: null

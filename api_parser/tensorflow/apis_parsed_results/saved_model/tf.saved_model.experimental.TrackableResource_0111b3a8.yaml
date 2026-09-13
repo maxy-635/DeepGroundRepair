@@ -1,0 +1,30 @@
+2 api_name: tensorflow.saved_model.experimental.TrackableResource
+3 api_description: Represents an initialized stateful Tensor resource that tf.function
+  can capture, track, and save as part of an object graph; subclasses override methods
+  to create, initialize, and export the resource.
+4 api_signature: tf.saved_model.experimental.TrackableResource(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the device on which the resource must be created, or leaves placement
+    flexible when blank.
+7 api_usage_example:
+- 'class DemoResource(tf.saved_model.experimental.TrackableResource):'
+- '  def __init__(self):'
+- '    super().__init__()'
+- '    self._initialize()'
+- '  def _create_resource(self):'
+- '    return tf.raw_ops.VarHandleOp(dtype=tf.float32, shape=[2])'
+- '  def _initialize(self):'
+- '    tf.raw_ops.AssignVariableOp('
+- '        resource=self.resource_handle, value=tf.ones([2]))'
+- '  def _destroy_resource(self):'
+- '    tf.raw_ops.DestroyResourceOp(resource=self.resource_handle)'
+- 'class DemoModule(tf.Module):'
+- '  def __init__(self):'
+- '    self.resource = DemoResource()'
+- '  def increment(self, tensor):'
+- '    return tensor + tf.raw_ops.ReadVariableOp('
+- '        resource=self.resource.resource_handle, dtype=tf.float32)'
+- demo = DemoModule()
+- demo.increment([5, 1])
+8 api_shape: ''

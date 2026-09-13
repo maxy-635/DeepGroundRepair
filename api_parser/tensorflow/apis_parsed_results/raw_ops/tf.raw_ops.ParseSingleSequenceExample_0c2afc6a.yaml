@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.ParseSingleSequenceExample
+3 api_description: Parses a single SequenceExample string into typed context, feature-list,
+  and optional sparse or dense tensors.
+4 api_signature: tf.raw_ops.ParseSingleSequenceExample(serialized,context_dense_keys,feature_list_dense_keys,context_dense_defaults,context_sparse_keys,feature_list_sparse_keys)
+5 api_details: ''
+6 api_parameters:
+- serialized: The serialized `SequenceExample` proto to parse.
+- context_sparse_keys: Names of context features to extract as sparse values.
+- context_dense_keys: Names of context features to extract as dense values.
+- feature_list_sparse_keys: Names of feature lists to extract as sparse sequence values.
+- feature_list_dense_keys: Names of feature lists to extract as dense sequence values.
+- context_dense_defaults: Default tensors used when a requested context dense feature
+    is missing.
+7 api_usage_example: null
+8 api_shape: ''

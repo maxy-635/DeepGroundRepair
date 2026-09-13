@@ -1,0 +1,16 @@
+2 api_name: tensorflow.image.crop_to_bounding_box
+3 api_description: Crops an image tensor to a rectangular bounding box defined by
+  the given top-left offsets and target height and width.
+4 api_signature: tf.image.crop_to_bounding_box(image,target_height,target_width)
+5 api_details: ''
+6 api_parameters:
+- image: The input image tensor to crop from, shaped either as a single image or a
+    batch of images.
+- target_height: The desired height of the cropped bounding box.
+- target_width: The desired width of the cropped bounding box.
+7 api_usage_example:
+- image = tf.constant(np.arange(1, 28, dtype=np.float32), shape=[3, 3, 3])
+- 'image[:,:,0] # print the first channel of the 3-D tensor'
+- cropped_image = tf.image.crop_to_bounding_box(image, 0, 0, 2, 2)
+- 'cropped_image[:,:,0] # print the first channel of the cropped 3-D tensor'
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.QuantizedDepthwiseConv2D
+3 api_description: Performs a quantized depthwise 2D convolution on input and filter
+  tensors, producing a quantized output for efficient inference.
+4 api_signature: tf.raw_ops.QuantizedDepthwiseConv2D(input,filter,strides,padding,out_type,name)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the quantized input tensor to be convolved.
+- filter: Specifies the quantized depthwise convolution filter tensor.
+- strides: Sets the stride values used when sliding the filter across the input.
+- padding: Determines how the input is padded, using either `SAME` or `VALID`.
+- out_type: Chooses the data type of the operation’s output tensor.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

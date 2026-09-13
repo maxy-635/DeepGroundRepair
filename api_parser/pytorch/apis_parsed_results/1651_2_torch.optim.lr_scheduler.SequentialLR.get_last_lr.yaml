@@ -1,0 +1,7 @@
+2 api_name: torch.optim.lr_scheduler.SequentialLR.get_last_lr
+3 api_description: Return the latest learning rates produced by the scheduler.
+4 api_signature: '"get_last_lr()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

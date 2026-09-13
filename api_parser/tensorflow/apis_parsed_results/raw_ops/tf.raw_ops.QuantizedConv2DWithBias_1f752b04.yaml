@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.QuantizedConv2DWithBias
+3 api_description: Performs quantized 2D convolution on an input tensor, adds a bias,
+  and returns the result in a quantized output format.
+4 api_signature: tf.raw_ops.QuantizedConv2DWithBias(input,filter,bias,strides,padding,out_type,dilations,name)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized input tensor to be convolved.
+- filter: The quantized convolution kernel tensor.
+- bias: The float32 bias tensor added to the convolution output.
+- strides: The stride values that control how the convolution window moves across
+    the input.
+- padding: The padding mode that determines how borders are handled during convolution.
+- out_type: The optional quantized data type of the output tensor.
+- dilations: The optional dilation rates that space out kernel elements during convolution.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

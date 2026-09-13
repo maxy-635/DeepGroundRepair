@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.adaptive_max_pool2d
+3 api_description: Applies 2D adaptive max pooling to adjust input size to a target
+  output size by selecting maximum values over input regions.
+4 api_signature: torch.nn.functional.adaptive_max_pool2d(input,output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the desired dimensions of the output after applying adaptive
+    max pooling, either as a single integer or a tuple of two integers.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.Metric
+3 api_description: Represents a stateful Keras metric that accumulates values over
+  time, updates internal state with new data, computes a final result, and can be
+  reset between evaluations.
+4 api_signature: tf.keras.Metric(dtype,name)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the metric’s display name and identifier.
+- dtype: Specifies the numeric type used for the metric’s result.
+7 api_usage_example: null
+8 api_shape: ''

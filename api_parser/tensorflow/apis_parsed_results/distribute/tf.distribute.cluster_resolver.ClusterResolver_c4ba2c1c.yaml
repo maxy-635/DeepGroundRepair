@@ -1,0 +1,8 @@
+2 api_name: tensorflow.distribute.cluster_resolver.ClusterResolver
+3 api_description: Abstract base class for cluster resolvers that dynamically fetch
+  the current cluster state and return an up-to-date `tf.train.ClusterSpec` when queried.
+4 api_signature: cluster_spec()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixMul
+3 api_description: Element-wise multiplies a sparse matrix by a dense tensor or scalar,
+  broadcasting a [batch_size, 1, 1] dense tensor across a rank-3 SparseMatrix and
+  returning a sparse matrix.
+4 api_signature: tf.raw_ops.SparseMatrixMul(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: The CSRSparseMatrix operand to multiply.
+- b: The dense tensor operand to multiply with the sparse matrix.
+7 api_usage_example: null
+8 api_shape: ''

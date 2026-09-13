@@ -1,0 +1,8 @@
+2 api_name: torch.overrides.get_overridable_functions
+3 api_description: Returns the set of PyTorch functions that support __torch_function__
+  overriding.
+4 api_signature: torch.overrides.get_overridable_functions()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

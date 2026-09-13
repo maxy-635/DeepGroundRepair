@@ -1,0 +1,25 @@
+2 api_name: paddle.vision.transforms.Normalize
+3 api_description: Normalizes each input channel by subtracting its mean and dividing
+  by its standard deviation.
+4 api_signature: paddle.vision.transforms.Normalize(mean,std,data_format)
+5 api_details: ''
+6 api_parameters:
+- mean: Sets the per-channel mean values used to normalize the image.
+- std: Sets the per-channel standard deviation values used to scale the normalized
+    image.
+- data_format: Specifies whether the image data is arranged in HWC or CHW format.
+7 api_usage_example:
+- import paddle
+- from paddle.vision.transforms import Normalize
+- paddle.seed(2023)
+- normalize = Normalize(mean=[127.5, 127.5, 127.5],
+- '                        std=[127.5, 127.5, 127.5],'
+- '                        data_format=''HWC'')'
+- '...'
+- fake_img = paddle.rand([300,320,3]).numpy() * 255.
+- fake_img = normalize(fake_img)
+- print(fake_img.shape)
+- (300, 320, 3)
+- print(fake_img.max(), fake_img.min())
+- 0.99999464 -0.9999929
+8 api_shape: {}

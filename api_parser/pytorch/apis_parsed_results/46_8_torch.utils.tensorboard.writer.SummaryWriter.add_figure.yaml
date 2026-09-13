@@ -1,0 +1,11 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_figure
+3 api_description: Renders a Matplotlib figure as an image and logs it to TensorBoard
+  summaries.
+4 api_signature: add_figure(tag,figure,global_step)
+5 api_details: ''
+6 api_parameters:
+- tag: Names the figure entry in TensorBoard so it can be identified and grouped.
+- figure: Specifies the matplotlib figure, or list of figures, to log as image data.
+- global_step: Records the figure at a particular training step for time-based tracking.
+7 api_usage_example: null
+8 api_shape: null

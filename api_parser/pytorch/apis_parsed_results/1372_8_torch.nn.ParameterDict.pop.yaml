@@ -1,0 +1,9 @@
+2 api_name: torch.nn.ParameterDict.pop
+3 api_description: Remove a parameter by key from the ParameterDict and return the
+  removed parameter.
+4 api_signature: pop(key)
+5 api_details: ''
+6 api_parameters:
+- key: Specifies the key of the parameter to remove and return from the `ParameterDict`.
+7 api_usage_example: null
+8 api_shape: null

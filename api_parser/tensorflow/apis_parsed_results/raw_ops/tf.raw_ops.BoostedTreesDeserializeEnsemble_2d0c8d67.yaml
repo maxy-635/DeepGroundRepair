@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesDeserializeEnsemble
+3 api_description: Deserializes a serialized boosted trees ensemble config and replaces
+  the current tree ensemble with it.
+4 api_signature: tf.raw_ops.BoostedTreesDeserializeEnsemble(tree_ensemble_handle,tree_ensemble_serialized)
+5 api_details: ''
+6 api_parameters:
+- tree_ensemble_handle: Resource handle to the tree ensemble object that will receive
+    the deserialized data.
+- tree_ensemble_serialized: Serialized string representation of the ensemble proto
+    to load into the tree ensemble.
+7 api_usage_example: null
+8 api_shape: ''

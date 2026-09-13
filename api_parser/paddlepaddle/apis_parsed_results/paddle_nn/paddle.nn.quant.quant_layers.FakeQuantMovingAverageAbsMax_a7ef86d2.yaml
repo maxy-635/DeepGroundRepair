@@ -1,0 +1,29 @@
+2 api_name: paddle.nn.quant.quant_layers.FakeQuantMovingAverageAbsMax
+3 api_description: The FakeQuantMovingAverageAbsMax layer performs quantization and
+  dequantization using a moving average of absolute maximum values, optimizing the
+  representation of floating-point numbers in a reduced precision format.
+4 api_signature: paddle.nn.quant.quant_layers.FakeQuantMovingAverageAbsMax(moving_rate,quant_bits)
+5 api_details: ''
+6 api_parameters:
+- name: A string specifying the name of the layer.
+- moving_rate: A float representing the decay rate for the moving average, used to
+    update the quantization scale.
+- bit_length: An integer that determines the number of bits to use for quantization.
+- dtype: The data type for the output of the quantized layer, typically 'float32'
+    or 'int8'.
+- quant_on_cpu: A boolean indicating whether to perform quantization on the CPU instead
+    of the default device.
+- quant_bits: An integer specifying the number of bits used for quantization, typically
+    8 or 16.
+- name: A string specifying the name of the layer.
+- moving_rate: A float representing the decay rate for the moving average, used to
+    update the quantization scale.
+- bit_length: An integer that determines the number of bits to use for quantization.
+- dtype: The data type for the output of the quantized layer, typically 'float32'
+    or 'int8'.
+- quant_on_cpu: A boolean indicating whether to perform quantization on the CPU instead
+    of the default device.
+- quant_bits: An integer specifying the number of bits used for quantization, typically
+    8 or 16.
+7 api_usage_example: []
+8 api_shape: null

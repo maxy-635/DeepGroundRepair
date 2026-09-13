@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Copy
+3 api_description: Deep-copies a tensor within the same device type (CPU-to-CPU or
+  GPU-to-GPU), unless disabled debug ops cause it to forward the input unchanged.
+4 api_signature: tf.raw_ops.Copy(input,tensor_name)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be copied.
+- tensor_name: An optional name identifying the input tensor.
+- name: An optional operation name.
+7 api_usage_example: null
+8 api_shape: ''

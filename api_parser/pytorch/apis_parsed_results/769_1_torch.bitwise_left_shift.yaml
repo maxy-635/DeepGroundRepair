@@ -1,0 +1,12 @@
+2 api_name: torch.bitwise_left_shift
+3 api_description: Left-shifts each integral input element by the corresponding number
+  of bits in other, with broadcasting and type promotion support.
+4 api_signature: torch.bitwise_left_shift(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are shifted left bitwise.
+- other: The tensor providing the bit-shift amounts for each element.
+7 api_usage_example:
+- ' torch.bitwise_left_shift(torch.tensor([-1, -2, 3], dtype=torch.int8), torch.tensor([1,
+  0, 3], dtype=torch.int8))'
+8 api_shape: null

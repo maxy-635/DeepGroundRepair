@@ -1,0 +1,11 @@
+2 api_name: paddle.stack
+3 api_description: Stacks tensors along a new axis; all inputs must share the same
+  shape and dtype.
+4 api_signature: paddle.stack(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies a list or tuple of same-shaped, same-dtype tensors to be stacked together.
+- axis: Chooses the dimension along which the tensors are stacked, with negative values
+    counted from the end.
+7 api_usage_example: []
+8 api_shape: {}

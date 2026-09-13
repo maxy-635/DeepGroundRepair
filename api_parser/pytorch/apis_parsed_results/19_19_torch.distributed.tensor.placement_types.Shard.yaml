@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.tensor.placement_types.Shard
+3 api_description: Shards a DTensor across a chosen tensor dimension so each DeviceMesh
+  rank holds one chunk, using torch.chunk-like semantics that may assign empty trailing
+  shards when the dimension size is not evenly divisible.
+4 api_signature: class torch.distributed.tensor.placement_types.Shard
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.LeftShift
+3 api_description: Performs an elementwise bitwise left shift of `x` by `y`; shifting
+  by a negative amount or by at least the bit width of `x` yields implementation-defined
+  results.
+4 api_signature: tf.raw_ops.LeftShift(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The integer tensor whose values will be shifted left.
+- y: The tensor that specifies how many bits to shift each corresponding value in
+    `x`.
+7 api_usage_example: null
+8 api_shape: ''

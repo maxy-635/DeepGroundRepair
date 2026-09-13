@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.zero_fraction
+3 api_description: Computes the fraction of elements in `value` that are zero, returning
+  `nan` for an empty input.
+4 api_signature: tf.math.zero_fraction(value)
+5 api_details: ''
+6 api_parameters:
+- value: The input tensor whose zero-valued elements are counted to compute the fraction
+    of zeros.
+7 api_usage_example: null
+8 api_shape: ''

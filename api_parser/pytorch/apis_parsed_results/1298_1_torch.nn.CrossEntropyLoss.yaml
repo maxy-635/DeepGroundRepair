@@ -1,0 +1,30 @@
+2 api_name: torch.nn.CrossEntropyLoss
+3 api_description: Computes the cross entropy loss between input logits and target
+  labels for multi-class classification.
+4 api_signature: torch.nn.CrossEntropyLoss(weight,ignore_index,reduction)
+5 api_details: ''
+6 api_parameters:
+- weight: A tensor of size C that applies a manual scaling factor to each class in
+    the loss computation.
+- ignore_index: A target value that is excluded from the loss calculation and gradient
+    updates.
+- reduction: 'Specifies how the output loss should be aggregated: ''none'', ''mean'',
+    or ''sum''.'
+7 api_usage_example:
+- ' # Example of target with class indices'
+- ' loss = nn.CrossEntropyLoss()'
+- ' input = torch.randn(3, 5, requires_grad=True)'
+- ' target = torch.empty(3, dtype=torch.long).random_(5)'
+- ' output = loss(input, target)'
+- ' output.backward()'
+- ' # Example of target with class probabilities'
+- ' input = torch.randn(3, 5, requires_grad=True)'
+- ' target = torch.randn(3, 5).softmax(dim=1)'
+- ' output = loss(input, target)'
+- ' output.backward()'
+8 api_shape:
+  input tensor shape: Shape (Channel_in), (N, Channel_in)
+  output tensor shape: If reduction is ‘none’, shape (), (N)
+  tensor shape transform formulas:
+    \begin{aligned} Channel: \begin{aligned} Channel ={} & number of classes \\ N
+      ={} & batch size \\ \end{aligned}

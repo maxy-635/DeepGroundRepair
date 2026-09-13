@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.repeat
+3 api_description: Repeats each element of a tensor `n` times along a new second axis,
+  producing a tensor of shape `(samples, n, features)` from a 2D input.
+4 api_signature: tf.keras.backend.repeat(x,n)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

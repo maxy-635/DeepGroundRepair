@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.ps.utils.ps_factory.PsProgramBuilder
+3 api_description: Builds a parameter-server program for Paddle distributed training
+  by assembling the startup and execution graph, wiring worker/parameter-server roles,
+  and generating the runtime artifacts needed to launch and coordinate PS jobs.
+4 api_signature: class paddle.distributed.ps.utils.ps_factory.PsProgramBuilder(pass_ctx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

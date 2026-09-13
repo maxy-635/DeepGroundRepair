@@ -1,0 +1,11 @@
+2 api_name: torch.scatter
+3 api_description: Returns a new tensor by scattering values from a source tensor
+  or scalar into specified indices along a given dimension, without modifying the
+  input tensor in place.
+4 api_signature: torch.scatter(input,dim,index,src)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

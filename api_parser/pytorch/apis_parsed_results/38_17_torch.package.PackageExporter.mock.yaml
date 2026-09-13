@@ -1,0 +1,13 @@
+2 api_name: torch.package.PackageExporter.mock
+3 api_description: Replaces specified required modules with mock modules that return
+  fake objects for any accessed attribute, allowing unused dependencies to be excluded
+  without modifying the original code.
+4 api_signature: mock(include,exclude)
+5 api_details: ''
+6 api_parameters:
+- include: Specifies the modules or module patterns to replace with mocks, including
+    any matching required dependencies.
+- exclude: Specifies an optional pattern of matching modules that should not be mocked
+    even if they match `include`.
+7 api_usage_example: null
+8 api_shape: null

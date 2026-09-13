@@ -1,0 +1,16 @@
+2 api_name: torch.bitwise_or
+3 api_description: Computes the elementwise bitwise OR of two tensors; for boolean
+  inputs, it performs logical OR.
+4 api_signature: torch.bitwise_or(input,other,out)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor whose elements are bitwise-ORed with the corresponding elements
+    of `other`.
+- other: The second tensor whose elements are bitwise-ORed with the corresponding
+    elements of `input`.
+7 api_usage_example:
+- ' torch.bitwise_or(torch.tensor([-1, -2, 3], dtype=torch.int8), torch.tensor([1,
+  0, 3], dtype=torch.int8))'
+- ' torch.bitwise_or(torch.tensor([True, True, False]), torch.tensor([False, True,
+  False]))'
+8 api_shape: null

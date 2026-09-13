@@ -1,0 +1,11 @@
+2 api_name: paddle.distribution.Multinomial
+3 api_description: Represents a multinomial distribution parameterized by `total_count`
+  and `probs`, used to model counts from repeated categorical trials.
+4 api_signature: paddle.distribution.Multinomial(total_count,probs)
+5 api_details: ''
+6 api_parameters:
+- total_count: Sets the number of trials to perform.
+- probs: Specifies the per-category probabilities for each trial, normalized across
+    the last axis if needed.
+7 api_usage_example: []
+8 api_shape: {}

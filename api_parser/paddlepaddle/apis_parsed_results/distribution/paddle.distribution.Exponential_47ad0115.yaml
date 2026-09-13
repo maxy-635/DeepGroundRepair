@@ -1,0 +1,19 @@
+2 api_name: paddle.distribution.Exponential
+3 api_description: Represents an exponential probability distribution parameterized
+  by rate, used to model time between events in a Poisson process.
+4 api_signature: paddle.distribution.Exponential(rate)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- expon = paddle.distribution.Exponential(paddle.to_tensor([0.5]))
+- print(expon.mean)
+- Tensor(shape=[1], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[2.])'
+- print(expon.variance)
+- Tensor(shape=[1], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[4.])'
+- print(expon.entropy())
+- Tensor(shape=[1], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[1.69314718])'
+8 api_shape: {}

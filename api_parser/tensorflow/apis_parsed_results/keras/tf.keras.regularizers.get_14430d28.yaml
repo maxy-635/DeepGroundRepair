@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.regularizers.get
+3 api_description: Returns a Keras regularizer instance from a given identifier, such
+  as a config, string name, or existing regularizer object.
+4 api_signature: tf.keras.regularizers.get(identifier)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

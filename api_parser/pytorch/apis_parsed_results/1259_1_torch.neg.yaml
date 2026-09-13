@@ -1,0 +1,12 @@
+2 api_name: torch.neg
+3 api_description: Returns a new tensor containing the negated values of the input
+  tensor.
+4 api_signature: torch.neg(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements will be negated.
+7 api_usage_example:
+- ' a = torch.randn(5)'
+- ' a'
+- ' torch.neg(a)'
+8 api_shape: null

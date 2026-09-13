@@ -1,0 +1,17 @@
+2 api_name: paddle.sparse.nn.functional.conv3d
+3 api_description: Performs 3D sparse convolution on `SparseCooTensor` inputs with
+  configurable strides, paddings, dilations, and groups, and optionally adds a bias
+  to produce a sparse 5D output shaped [N, D, H, W, C].
+4 api_signature: paddle.sparse.nn.functional.conv3d(x,weight,stride,padding,dilation,groups)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse 5-D input tensor to be convolved, shaped [N, D, H, W, C].
+- weight: The 3D convolution kernel tensor that determines the output channels and
+    filter size.
+- stride: The step size the kernel moves across depth, height, and width.
+- padding: The amount and mode of zero-padding applied around the input dimensions.
+- dilation: The spacing between kernel elements along depth, height, and width.
+- groups: The number of channel groups used to split the convolution into separate
+    connections.
+7 api_usage_example: []
+8 api_shape: {}

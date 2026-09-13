@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.MatrixLogarithm
+3 api_description: Computes the matrix logarithm of each square matrix in a tensor,
+  returning the same-shaped tensor of logarithms for complex-valued inputs using the
+  Schur-Parlett algorithm.
+4 api_signature: tf.raw_ops.MatrixLogarithm(input)
+5 api_details: ''
+6 api_parameters:
+- input: The square complex tensor whose matrix logarithm is computed elementwise
+    over any leading batch dimensions.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.TensorArray
+3 api_description: Creates and manages a TensorArray, a dynamic array-like container
+  for tensors used in TensorFlow control flow and loops.
+4 api_signature: tf.raw_ops.TensorArray(size,dtype,dynamic_size,clear_after_read)
+5 api_details: ''
+6 api_parameters:
+- size: Sets the initial number of elements the TensorArray can hold.
+- dtype: Specifies the data type of tensors stored in the TensorArray.
+- dynamic_size: Allows the TensorArray to grow beyond its initial size if needed.
+- clear_after_read: Controls whether an element is cleared after it is read.
+7 api_usage_example: null
+8 api_shape: ''

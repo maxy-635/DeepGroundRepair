@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.identity
+3 api_description: Returns a 2D identity matrix with ones on the main diagonal and
+  zeros elsewhere.
+4 api_signature: tf.experimental.numpy.identity(n)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

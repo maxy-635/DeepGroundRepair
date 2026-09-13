@@ -1,0 +1,10 @@
+2 api_name: tensorflow.TensorArraySpec
+3 api_description: Type specification for a tf.TensorArray, describing its element
+  type and shape for use in TensorFlow APIs.
+4 api_signature: tf.TensorArraySpec(element_shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- element_shape: Specifies the shape of each TensorArray element.
+- dtype: Specifies the data type of the TensorArray elements.
+7 api_usage_example: null
+8 api_shape: ''

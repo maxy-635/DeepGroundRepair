@@ -1,0 +1,19 @@
+2 api_name: torch.utils.cpp_extension.load_inline
+3 api_description: JIT-compiles and loads a PyTorch C++ extension directly from provided
+  source strings, making the compiled module available to Python at runtime.
+4 api_signature: torch.utils.cpp_extension.load_inline(name,cpp_sources,cuda_sources,functions,with_cuda,is_python_module)
+5 api_details: ''
+6 api_parameters:
+- cpp_sources: Provides the C++ source code to compile, as a string or list of strings.
+- cuda_sources: Provides the CUDA source code to compile, as a string or list of strings.
+- functions: Specifies which functions to expose as Python bindings, optionally with
+    custom docstrings.
+- with_cuda: Controls whether CUDA headers and libraries are included in the build,
+    or auto-detects this from `cuda_sources`.
+7 api_usage_example:
+- ' from torch.utils.cpp_extension import load_inline'
+- ' source = """'
+- ' module = load_inline(name=''inline_extension'','
+- '...                      cpp_sources=[source],'
+- '...                      functions=[''sin_add''])'
+8 api_shape: null

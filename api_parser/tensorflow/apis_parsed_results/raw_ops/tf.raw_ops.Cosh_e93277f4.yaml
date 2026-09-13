@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.Cosh
+3 api_description: Computes the hyperbolic cosine of each element in the input tensor,
+  producing values in the range [1, inf].
+4 api_signature: tf.raw_ops.Cosh(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose element-wise hyperbolic cosine is computed.
+7 api_usage_example: null
+8 api_shape: ''

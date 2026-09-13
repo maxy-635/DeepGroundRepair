@@ -1,0 +1,13 @@
+2 api_name: tensorflow.feature_column.weighted_categorical_column
+3 api_description: Creates a weighted categorical feature by pairing each category
+  ID with a corresponding weight value, so sparse inputs can contribute proportionally
+  to downstream feature processing.
+4 api_signature: tf.feature_column.weighted_categorical_column(categorical_column,weight_feature_key)
+5 api_details: ''
+6 api_parameters:
+- categorical_column: Specifies the categorical feature column whose values will be
+    weighted.
+- weight_feature_key: Identifies the feature key used to read the corresponding weight
+    values.
+7 api_usage_example: null
+8 api_shape: ''

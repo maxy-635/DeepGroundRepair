@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.ResourceSparseApplyRMSProp
+3 api_description: Applies sparse RMSProp updates to a variable using indexed gradients,
+  maintaining running mean-square and momentum accumulators to adjust only the specified
+  entries of `var`.
+4 api_signature: ResourceSparseApplyRMSProp(var,ms,mom,lr,rho,momentum,epsilon,grad,indices)
+5 api_details: ''
+6 api_parameters:
+- var: Resource variable containing the parameters to be updated.
+- ms: Resource variable holding the running mean-square accumulators.
+- mom: Resource variable holding the momentum accumulators.
+- lr: Scalar learning rate that controls the update step size.
+- rho: Scalar decay rate for the mean-square moving average.
+- momentum: Scalar momentum factor used in the update rule.
+- epsilon: Scalar ridge term added for numerical stability.
+- grad: Gradient values used to update the selected variable entries.
+- indices: Indices selecting which rows in `var`, `ms`, and `mom` to update.
+7 api_usage_example: null
+8 api_shape: ''

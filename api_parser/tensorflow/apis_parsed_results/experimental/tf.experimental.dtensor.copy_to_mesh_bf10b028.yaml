@@ -1,0 +1,11 @@
+2 api_name: tensorflow.experimental.dtensor.copy_to_mesh
+3 api_description: Copies a regular tf.Tensor to a DTensor on the layout’s mesh, supporting
+  replicated layouts and one-to-one copies for sharded layouts.
+4 api_signature: tf.experimental.dtensor.copy_to_mesh(tensor,layout)
+5 api_details: ''
+6 api_parameters:
+- tensor: The regular `tf.Tensor` input to copy onto the DTensor mesh.
+- layout: The target DTensor layout, including the mesh and sharding specification
+    for the result.
+7 api_usage_example: null
+8 api_shape: ''

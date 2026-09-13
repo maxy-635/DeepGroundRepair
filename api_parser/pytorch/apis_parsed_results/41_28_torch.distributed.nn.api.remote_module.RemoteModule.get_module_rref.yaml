@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.nn.api.remote_module.RemoteModule.get_module_rref
+3 api_description: Returns an RRef that points to the remote nn.Module, allowing access
+  to the remote module instance.
+4 api_signature: '"get_module_rref()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: torch.autograd.functional.jacobian
+3 api_description: Computes the Jacobian matrix of a function by evaluating all output-input
+  partial derivatives with respect to the function’s inputs.
+4 api_signature: torch.autograd.functional.jacobian(func,inputs)
+5 api_details: ''
+6 api_parameters:
+- func: The function whose Jacobian is being computed from the given inputs.
+- inputs: The tensor input or inputs passed to the function to evaluate its Jacobian.
+7 api_usage_example:
+- ' def exp_reducer(x):'
+- '...     return x.exp().sum(dim=1)'
+- ' inputs = torch.rand(2, 2)'
+- ' jacobian(exp_reducer, inputs)'
+8 api_shape: null

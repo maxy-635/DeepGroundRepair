@@ -1,0 +1,8 @@
+2 api_name: torch.nn.MaxUnpool1d.forward
+3 api_description: Reconstructs a 1D tensor by unpooling values from a previous max-pooling
+  operation back into their original positions using the provided indices.
+4 api_signature: forward(input,indices)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

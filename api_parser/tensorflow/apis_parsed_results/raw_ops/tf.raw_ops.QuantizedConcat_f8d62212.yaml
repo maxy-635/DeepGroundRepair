@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.QuantizedConcat
+3 api_description: Concatenates multiple quantized tensors along a specified axis,
+  preserving quantization parameters in the output.
+4 api_signature: tf.raw_ops.QuantizedConcat(values,concat_dim)
+5 api_details: ''
+6 api_parameters:
+- concat_dim: Specifies the axis along which the input tensors are concatenated.
+- values: Provides the list of two or more matching tensors to join together.
+7 api_usage_example: null
+8 api_shape: ''

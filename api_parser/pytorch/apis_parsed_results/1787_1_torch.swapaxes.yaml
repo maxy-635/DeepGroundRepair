@@ -1,0 +1,12 @@
+2 api_name: torch.swapaxes
+3 api_description: Returns a view of a tensor with two axes exchanged, equivalent
+  to torch.transpose().
+4 api_signature: torch.swapaxes(input,axis0,axis1)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' x = torch.tensor([[[0,1],[2,3]],[[4,5],[6,7]]])'
+- ' x'
+- ' torch.swapaxes(x, 0, 1)'
+- ' torch.swapaxes(x, 0, 2)'
+8 api_shape: null

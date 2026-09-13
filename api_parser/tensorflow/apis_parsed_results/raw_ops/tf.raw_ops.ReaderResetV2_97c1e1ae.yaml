@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.ReaderResetV2
+3 api_description: Resets a ReaderV2 resource back to its initial clean state, clearing
+  any prior read progress or internal state.
+4 api_signature: tf.raw_ops.ReaderResetV2(reader_handle)
+5 api_details: ''
+6 api_parameters:
+- reader_handle: Resource handle identifying the Reader instance to reset.
+7 api_usage_example: null
+8 api_shape: ''

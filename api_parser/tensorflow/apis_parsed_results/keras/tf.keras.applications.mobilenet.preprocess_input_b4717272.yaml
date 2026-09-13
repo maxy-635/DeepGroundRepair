@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.mobilenet.preprocess_input
+3 api_description: Preprocesses image batches for MobileNet by scaling pixel values
+  to the format expected by the model.
+4 api_signature: tf.keras.applications.mobilenet.preprocess_input(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input image tensor or NumPy array with pixel values in [0, 255] that is preprocessed
+    in place when possible.
+7 api_usage_example: null
+8 api_shape: ''

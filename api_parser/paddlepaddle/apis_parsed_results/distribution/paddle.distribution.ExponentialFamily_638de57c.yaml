@@ -1,0 +1,9 @@
+2 api_name: paddle.distribution.ExponentialFamily
+3 api_description: Base class for exponential-family probability distributions, providing
+  shared structure for probability mass/density functions and common distribution
+  behavior.
+4 api_signature: paddle.distribution.ExponentialFamily(batch_shape,event_shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: torch.nn.ZeroPad3d.extra_repr
+3 api_description: Returns a concise string describing the module’s 3D zero-padding
+  settings.
+4 api_signature: '"extra_repr()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.qr
+3 api_description: Computes the QR decomposition of a tensor, returning orthonormal
+  Q and upper-triangular R factors.
+4 api_signature: tf.keras.ops.qr(x,mode)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to decompose into orthogonal and triangular factors.
+- mode: The QR decomposition mode that controls which factors are returned.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([[1., 2.], [3., 4.], [5., 6.]])
+- q, r = qr(x)
+- print(q)
+8 api_shape: ''

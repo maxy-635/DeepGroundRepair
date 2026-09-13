@@ -1,0 +1,9 @@
+2 api_name: tensorflow.config.optimizer.get_experimental_options
+3 api_description: Returns the currently configured experimental TensorFlow optimizer
+  options as a dictionary; these options affect graph-mode execution within `tf.function`
+  and may change over time.
+4 api_signature: tf.config.optimizer.get_experimental_options()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

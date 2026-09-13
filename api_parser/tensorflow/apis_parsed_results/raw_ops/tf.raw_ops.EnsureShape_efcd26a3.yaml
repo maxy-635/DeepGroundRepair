@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.EnsureShape
+3 api_description: Validates that a tensor has the expected shape and returns it unchanged,
+  raising an error if the actual shape does not match.
+4 api_signature: tf.raw_ops.EnsureShape(input,shape)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose shape is checked against the expected shape.
+- shape: The expected shape specification used to validate the input tensor.
+7 api_usage_example: null
+8 api_shape: ''

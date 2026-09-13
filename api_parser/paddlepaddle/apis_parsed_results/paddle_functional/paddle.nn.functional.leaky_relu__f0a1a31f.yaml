@@ -1,0 +1,8 @@
+2 api_name: paddle.nn.functional.leaky_relu_
+3 api_description: The paddle.nn.functional.leaky_relu_ API performs an in-place leaky
+  ReLU activation on the input tensor, modifying it directly.
+4 api_signature: paddle.nn.functional.leaky_relu_(x,negative_slope)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

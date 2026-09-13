@@ -1,0 +1,13 @@
+2 api_name: torch.nn.attention.flex_attention.BlockMask
+3 api_description: BlockMask stores block-sparse attention patterns in a structured,
+  efficient form for flex_attention, enabling compact mask representation and fast
+  masked attention computation.
+4 api_signature: '"class torch.nn.attention.flex_attention.BlockMask(BLOCK_SIZE,mask_mod)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- dense_mask = torch.zeros(ROWS, COLS)
+- 'for row in range(ROWS):'
+- '    for block_idx in range(num_blocks_in_row[row]):'
+- '        dense_mask[row, col_indices[row, block_idx]] = 1'
+8 api_shape: null

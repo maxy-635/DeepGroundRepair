@@ -1,0 +1,8 @@
+2 api_name: torch.nn.RReLU.forward
+3 api_description: Applies randomized leaky ReLU to the input during training, using
+  random negative slopes and a fixed average slope during evaluation.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

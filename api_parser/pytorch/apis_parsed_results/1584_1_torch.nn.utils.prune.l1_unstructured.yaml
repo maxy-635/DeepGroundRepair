@@ -1,0 +1,13 @@
+2 api_name: torch.nn.utils.prune.l1_unstructured
+3 api_description: Prunes a tensor by zeroing the entries with the smallest absolute
+  values, removing the specified fraction or count of parameters based on L1 norm.
+4 api_signature: torch.nn.utils.prune.l1_unstructured(module,name,amount)
+5 api_details: ''
+6 api_parameters:
+- module: The module whose tensor will be pruned.
+- name: The name of the parameter in the module to prune.
+- amount: The number or fraction of parameters to remove.
+7 api_usage_example:
+- ' m = prune.l1_unstructured(nn.Linear(2, 3), "weight", amount=0.2)'
+- ' m.state_dict().keys()'
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: torch.signal.windows.hamming
+3 api_description: Returns a Hamming window, a tapered weighting function used to
+  reduce spectral leakage in signal processing.
+4 api_signature: torch.signal.windows.hamming(M,sym)
+5 api_details: ''
+6 api_parameters:
+- M: Specifies the window length, i.e. the number of points in the returned Hamming
+    window.
+7 api_usage_example:
+- ' # Generates a symmetric Hamming window.'
+- ' torch.signal.windows.hamming(10)'
+- ' # Generates a periodic Hamming window.'
+- ' torch.signal.windows.hamming(10, sym=False)'
+8 api_shape: null

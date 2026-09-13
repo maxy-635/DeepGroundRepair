@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.GetElementAtIndex
+3 api_description: Returns the dataset element at a given index.
+4 api_signature: tf.raw_ops.GetElementAtIndex(dataset,index,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- dataset: The variant tensor containing the dataset to read from.
+- index: The int64 tensor specifying which element to retrieve from the dataset.
+- output_types: The list of data types for the tensors returned by the operation.
+- output_shapes: The list of expected shapes for each returned tensor.
+7 api_usage_example: null
+8 api_shape: ''

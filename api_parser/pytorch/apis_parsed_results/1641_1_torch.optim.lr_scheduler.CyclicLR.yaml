@@ -1,0 +1,30 @@
+2 api_name: torch.optim.lr_scheduler.CyclicLR
+3 api_description: Adjusts each parameter group’s learning rate cyclically between
+  a lower and upper bound to follow a repeating learning rate schedule during training.
+4 api_signature: torch.optim.lr_scheduler.CyclicLR(optimizer,base_lr,max_lr,step_size_up,step_size_down,mode,cycle_momentum)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be adjusted by the scheduler.
+- base_lr: The minimum learning rate used as the lower bound of each cycle.
+- max_lr: The maximum learning rate used as the upper bound and cycle amplitude reference.
+- step_size_up: The number of iterations spent increasing the learning rate in each
+    cycle.
+- step_size_down: The number of iterations spent decreasing the learning rate in each
+    cycle, defaulting to `step_size_up` if omitted.
+- mode: The cycle scaling policy to use, unless a custom `scale_fn` is provided.
+- cycle_momentum: Whether to cycle momentum inversely with learning rate between `base_momentum`
+    and `max_momentum`.
+7 api_usage_example:
+- ' optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9)'
+- ' scheduler = torch.optim.lr_scheduler.CyclicLR('
+- '...     optimizer,'
+- '...     base_lr=0.01,'
+- '...     max_lr=0.1,'
+- '...     step_size_up=10,'
+- '... )'
+- ' data_loader = torch.utils.data.DataLoader(...)'
+- ' for epoch in range(10):'
+- '     for batch in data_loader:'
+- '         train_batch(...)'
+- '         scheduler.step()'
+8 api_shape: null

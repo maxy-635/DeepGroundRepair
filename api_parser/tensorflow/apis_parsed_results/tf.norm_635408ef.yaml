@@ -1,0 +1,13 @@
+2 api_name: tensorflow.norm
+3 api_description: Computes vector, matrix, and tensor norms, including common p-norms
+  such as 1, 2, and infinity norms, as well as Frobenius and related matrix norms.
+4 api_signature: tf.norm(tensor,ord,axis)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor whose values are used to compute the norm.
+- ord: Specifies the norm order, such as Euclidean, Frobenius, p-norm, or other supported
+    norm types.
+- axis: Selects which axis or axes to reduce over, determining whether the norm is
+    computed for a vector, batch of vectors, or batch of matrices.
+7 api_usage_example: null
+8 api_shape: ''

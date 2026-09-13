@@ -1,0 +1,10 @@
+2 api_name: tensorflow.distribute.HierarchicalCopyAllReduce
+3 api_description: Cross-device all-reduce for GPUs that reduces tensors through a
+  hierarchical copy path to one GPU and broadcasts them back, with batch packing for
+  efficiency; optimized for DGX-1-style interconnects and falling back to ReductionToOneDevice
+  for non-all-reduce cases.
+4 api_signature: tf.distribute.HierarchicalCopyAllReduce()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

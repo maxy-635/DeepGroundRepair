@@ -1,0 +1,7 @@
+2 api_name: torch.arcsin
+3 api_description: Computes the element-wise inverse sine of a tensor.
+4 api_signature: torch.arcsin(input:Tensor)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

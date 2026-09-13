@@ -1,0 +1,25 @@
+2 api_name: torch.utils.benchmark.Timer.adaptive_autorange
+3 api_description: Repeatedly benchmarks a statement until the measurement variability
+  is low enough or a time limit is reached, using iqr/median as the stability check.
+4 api_signature: adaptive_autorange(threshold,*,min_run_time,max_run_time)
+5 api_details: ''
+6 api_parameters:
+- threshold: Sets the IQR-to-median ratio cutoff used to decide when benchmarking
+    has converged and can stop.
+- min_run_time: Specifies the minimum total measurement time required before the stopping
+    threshold is evaluated.
+- max_run_time: Sets the maximum total measurement time allowed for all runs, even
+    if the stopping threshold is not met.
+7 api_usage_example:
+- '`setup`'
+- times = []
+- while times.sum < max_run_time
+- '    start = timer()'
+- '    for _ in range(block_size):'
+- '        `stmt`'
+- '    times.append(timer() - start)'
+- '    enough_data = len(times)>3 and times.sum > min_run_time'
+- '    small_iqr=times.iqr/times.mean<threshold'
+- '    if enough_data and small_iqr:'
+- '        break'
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.transpose
+3 api_description: Returns a view of the input array with its axes permuted according
+  to the given order, using TensorFlow’s NumPy-compatible transpose behavior.
+4 api_signature: tf.experimental.numpy.transpose(a)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

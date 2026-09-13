@@ -1,0 +1,15 @@
+2 api_name: torch.aminmax
+3 api_description: Returns the minimum and maximum values of a tensor in a single
+  operation.
+4 api_signature: torch.aminmax(input,dim,keepdim,out)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to compute the minimum and maximum values from.
+7 api_usage_example:
+- ' torch.aminmax(torch.tensor([1, -3, 5]))'
+- ' # aminmax propagates NaNs'
+- ' torch.aminmax(torch.tensor([1, -3, 5, torch.nan]))'
+- ' t = torch.arange(10).view(2, 5)'
+- ' t'
+- ' t.aminmax(dim=0, keepdim=True)'
+8 api_shape: null

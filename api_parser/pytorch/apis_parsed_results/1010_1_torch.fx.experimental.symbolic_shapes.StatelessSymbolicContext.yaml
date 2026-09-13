@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.StatelessSymbolicContext
+3 api_description: Determines symbolic sizes, strides, and storage offset from a symbolic
+  context using DimDynamic and DimConstraint, allocating fresh symbols as needed.
+4 api_signature: torch.fx.experimental.symbolic_shapes.StatelessSymbolicContext(dynamic_sizes,dynamic_strides,constraint_sizes,constraint_strides)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

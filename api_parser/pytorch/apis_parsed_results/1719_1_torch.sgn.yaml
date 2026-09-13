@@ -1,0 +1,11 @@
+2 api_name: torch.sgn
+3 api_description: Returns the element-wise sign of a tensor, preserving each complex
+  value’s angle with unit magnitude and matching `torch.sign()` for non-complex tensors.
+4 api_signature: torch.sgn(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose sign is computed elementwise.
+7 api_usage_example:
+- ' t = torch.tensor([3+4j, 7-24j, 0, 1+2j])'
+- ' t.sgn()'
+8 api_shape: null

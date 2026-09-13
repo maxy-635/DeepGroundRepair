@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.PlaceholderWithDefault
+3 api_description: Returns the provided default input unless a feed overrides it at
+  runtime.
+4 api_signature: tf.raw_ops.PlaceholderWithDefault(input,shape)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the default tensor value used when no feed is supplied for the placeholder.
+- shape: Specifies the tensor’s expected shape, which may be partially defined.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: paddle.vsplit
+3 api_description: Splits a tensor into multiple sub-tensors along the vertical axis
+  (axis 0), equivalent to `tensor_split` with `axis=0`.
+4 api_signature: paddle.vsplit(x,num_or_indices)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to split along its vertical axis, and it must have more than
+    one dimension.
+- num_or_indices: Either the number of equal sections to split `x` into, or the integer
+    split points that determine where to divide `x`.
+7 api_usage_example: []
+8 api_shape: {}

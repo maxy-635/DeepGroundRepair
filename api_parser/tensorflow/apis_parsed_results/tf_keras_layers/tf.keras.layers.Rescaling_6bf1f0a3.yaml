@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.layers.Rescaling
+3 api_description: The tf.keras.layers.Rescaling layer rescales input values by multiplying
+  by a specified scale and adding an offset, typically used for preprocessing image
+  data.
+4 api_signature: tf.keras.layers.Rescaling(scale, offset)
+5 api_details: ''
+6 api_parameters:
+- scale: The factor by which to multiply the input values.
+- offset: The value to be added to the input values after scaling.
+7 api_usage_example: null
+8 api_shape: null

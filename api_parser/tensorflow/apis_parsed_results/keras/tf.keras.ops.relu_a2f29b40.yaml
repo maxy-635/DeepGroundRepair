@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.relu
+3 api_description: Applies the rectified linear unit activation by returning the input
+  value when it is positive and 0 otherwise.
+4 api_signature: tf.keras.ops.relu(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the ReLU activation to.
+7 api_usage_example:
+- x1 = keras.ops.convert_to_tensor([-1.0, 0.0, 1.0, 0.2])
+- keras.ops.relu(x1)
+8 api_shape: ''

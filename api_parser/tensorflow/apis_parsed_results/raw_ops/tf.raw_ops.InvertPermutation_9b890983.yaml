@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.InvertPermutation
+3 api_description: Returns the inverse of a 1-D integer permutation tensor by swapping
+  each index with its value, producing y such that y[x[i]] = i.
+4 api_signature: tf.raw_ops.InvertPermutation(x)
+5 api_details: ''
+6 api_parameters:
+- x: A 1-D int32 or int64 tensor representing a permutation to invert.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.nn.sufficient_statistics
+3 api_description: The tensorflow.nn.sufficient_statistics API calculates the sufficient
+  statistics for mean and variance of a tensor x using a one-pass algorithm, optionally
+  on shifted data, to facilitate efficient computation of these statistics.
+4 api_signature: tf.nn.sufficient_statistics(x,axes,shift)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input data as a Tensor for which sufficient statistics are to
+    be computed.
+- axes: Specifies the dimensions over which to calculate the mean and variance of
+    the input data.
+- shift: Indicates an optional Tensor value used to adjust the data for enhanced numerical
+    stability during computation.
+7 api_usage_example: null
+8 api_shape: ''

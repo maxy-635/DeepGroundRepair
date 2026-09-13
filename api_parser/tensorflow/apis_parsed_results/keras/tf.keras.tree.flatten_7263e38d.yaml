@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.tree.flatten
+3 api_description: Flattens a nested structure into a deterministic list, using dict
+  values sorted by key and preserving OrderedDict order, so it can be reliably reversed
+  with unflatten_as.
+4 api_signature: '"tf.keras.tree.flatten(structure)"'
+5 api_details: ''
+6 api_parameters:
+- structure: The nested input structure to flatten into a list of leaf values.
+7 api_usage_example:
+- keras.tree.flatten([[1, 2, 3], [4, [5], [[6]]]])
+- keras.tree.flatten(None)
+- keras.tree.flatten(1)
+- 'keras.tree.flatten({100: ''world!'', 6: ''Hello''})'
+8 api_shape: ''

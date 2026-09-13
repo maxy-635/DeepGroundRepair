@@ -1,0 +1,32 @@
+2 api_name: torch.library.register_kernel
+3 api_description: Registers a device-specific kernel implementation for an operator.
+4 api_signature: torch.library.register_kernel(op,device_types,func,*,lib)
+5 api_details: ''
+6 api_parameters:
+- op: Specifies which operator the implementation will be registered for.
+- device_types: Specifies the device types the implementation applies to, or all device
+    types if `None`.
+- func: Provides the function that will be used as the operator implementation.
+- lib: Optionally ties the registration’s lifetime to the provided library.
+7 api_usage_example:
+- ' import torch'
+- ' from torch import Tensor'
+- ' from torch.library import custom_op'
+- ' import numpy as np'
+- ' # Create a custom op that works on cpu'
+- ' @custom_op("mylib::numpy_sin", mutates_args=(), device_types="cpu")'
+- ' def numpy_sin(x: Tensor) -> Tensor:'
+- '     x_np = x.numpy()'
+- '     y_np = np.sin(x_np)'
+- '     return torch.from_numpy(y_np)'
+- ' # Add implementations for the cuda device'
+- ' @torch.library.register_kernel("mylib::numpy_sin", "cuda")'
+- ' def _(x):'
+- '     x_np = x.cpu().numpy()'
+- '     y_np = np.sin(x_np)'
+- '     return torch.from_numpy(y_np).to(device=x.device)'
+- ' x_cpu = torch.randn(3)'
+- ' x_cuda = x_cpu.cuda()'
+- ' assert torch.allclose(numpy_sin(x_cpu), x_cpu.sin())'
+- ' assert torch.allclose(numpy_sin(x_cuda), x_cuda.sin())'
+8 api_shape: null

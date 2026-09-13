@@ -1,0 +1,9 @@
+2 api_name: torch.xpu.get_device_capability
+3 api_description: Returns the capability of an XPU device.
+4 api_signature: '"torch.xpu.get_device_capability(device)"'
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which XPU device to query for its capability; if omitted, the
+    current device is used, and negative integers make the call a no-op.
+7 api_usage_example: null
+8 api_shape: null

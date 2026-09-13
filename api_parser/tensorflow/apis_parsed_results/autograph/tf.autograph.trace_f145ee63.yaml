@@ -1,0 +1,9 @@
+2 api_name: tensorflow.autograph.trace
+3 api_description: Logs argument information during TensorFlow AutoGraph compilation/tracing
+  for debugging, and runs only while the graph is being built.
+4 api_signature: tf.autograph.trace(*args)
+5 api_details: ''
+6 api_parameters:
+- '*args': Prints the provided arguments to `sys.stdout`.
+7 api_usage_example: null
+8 api_shape: ''

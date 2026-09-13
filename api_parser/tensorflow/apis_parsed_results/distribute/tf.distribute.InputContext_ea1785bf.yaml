@@ -1,0 +1,12 @@
+2 api_name: tensorflow.distribute.InputContext
+3 api_description: Provides input-function context for distributed training, including
+  replica and input-pipeline information so data can be sharded and per-replica batch
+  sizes computed correctly.
+4 api_signature: tf.distribute.InputContext(num_input_pipelines,input_pipeline_id)
+5 api_details: ''
+6 api_parameters:
+- num_input_pipelines: Specifies how many input pipelines are in the cluster.
+- input_pipeline_id: Identifies the current input pipeline by its zero-based id within
+    the valid range.
+7 api_usage_example: null
+8 api_shape: ''

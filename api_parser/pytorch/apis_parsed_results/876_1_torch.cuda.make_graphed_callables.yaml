@@ -1,0 +1,15 @@
+2 api_name: torch.cuda.make_graphed_callables
+3 api_description: Creates CUDA graph-backed versions of functions or nn.Modules so
+  repeated calls can run with lower overhead on GPU.
+4 api_signature: torch.cuda.make_graphed_callables(callables,sample_args,num_warmup_iters)
+5 api_details: ''
+6 api_parameters:
+- callables: The function or functions to capture into CUDA graphs, in the same execution
+    order they will use at runtime.
+- sample_args: The example argument tensors used to run each callable during graph
+    capture and warmup, shaped as a single tuple or a tuple of tuples depending on
+    how many callables are provided.
+- num_warmup_iters: The number of warmup iterations to run before capture, which helps
+    the callables reach a stable state for graphing.
+7 api_usage_example: null
+8 api_shape: null

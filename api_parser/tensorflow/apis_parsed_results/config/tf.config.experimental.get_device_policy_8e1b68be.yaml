@@ -1,0 +1,8 @@
+2 api_name: tensorflow.config.experimental.get_device_policy
+3 api_description: Returns the current thread’s device policy, which controls how
+  ops handle inputs placed on different devices.
+4 api_signature: tf.config.experimental.get_device_policy()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

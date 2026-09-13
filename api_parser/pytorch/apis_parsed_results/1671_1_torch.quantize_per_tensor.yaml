@@ -1,0 +1,19 @@
+2 api_name: torch.quantize_per_tensor
+3 api_description: Converts a floating-point tensor into a quantized tensor using
+  a specified scale and zero point.
+4 api_signature: torch.quantize_per_tensor(input,scale,zero_point)
+5 api_details: ''
+6 api_parameters:
+- input: The floating-point tensor or list of tensors to be quantized.
+- scale: The scaling factor used to convert floating-point values into quantized integer
+    values.
+- zero_point: The integer offset that represents the floating-point value zero in
+    the quantized range.
+7 api_usage_example:
+- ' torch.quantize_per_tensor(torch.tensor([-1.0, 0.0, 1.0, 2.0]), 0.1, 10, torch.quint8)'
+- ' torch.quantize_per_tensor(torch.tensor([-1.0, 0.0, 1.0, 2.0]), 0.1, 10, torch.quint8).int_repr()'
+- ' torch.quantize_per_tensor([torch.tensor([-1.0, 0.0]), torch.tensor([-2.0, 2.0])],'
+- ' torch.tensor([0.1, 0.2]), torch.tensor([10, 20]), torch.quint8)'
+- ' torch.quantize_per_tensor(torch.tensor([-1.0, 0.0, 1.0, 2.0]), torch.tensor(0.1),
+  torch.tensor(10), torch.quint8)'
+8 api_shape: null

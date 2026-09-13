@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.callbacks.ReduceLROnPlateau
+3 api_description: Reduces the learning rate when a monitored metric stops improving
+  for a set number of epochs.
+4 api_signature: tf.keras.callbacks.ReduceLROnPlateau(monitor,factor,patience,verbose,mode)
+5 api_details: ''
+6 api_parameters:
+- monitor: Specifies the metric to watch for improvement.
+- factor: Sets how much to multiply the learning rate by when reducing it.
+- patience: Sets how many stagnant epochs to wait before lowering the learning rate.
+- verbose: Controls whether the callback prints update messages.
+- mode: Chooses whether improvement means decreasing, increasing, or is inferred automatically.
+7 api_usage_example: null
+8 api_shape: ''

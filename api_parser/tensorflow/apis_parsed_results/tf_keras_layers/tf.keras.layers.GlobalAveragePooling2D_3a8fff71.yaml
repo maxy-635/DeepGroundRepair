@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.GlobalAveragePooling2D
+3 api_description: GlobalAveragePooling2D reduces each feature map to a single value
+  by computing the average, effectively summarizing spatial information for 2D data.
+4 api_signature: tf.keras.layers.GlobalAveragePooling2D(keepdims)
+5 api_details: ''
+6 api_parameters:
+- keepdims: Determines whether to retain the spatial dimensions of the output tensor
+    as length 1 or reduce the rank by removing them.
+7 api_usage_example:
+- x = np.random.rand(2, 4, 5, 3)
+- y = keras.layers.GlobalAveragePooling2D()(x)
+- y.shape
+8 api_shape: null

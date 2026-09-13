@@ -1,0 +1,10 @@
+2 api_name: torch.optim.Adafactor.register_step_post_hook
+3 api_description: Registers a callback to run after each optimizer step, allowing
+  custom post-step actions.
+4 api_signature: register_step_post_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: Registers a user-defined callback to run after each optimizer step.
+7 api_usage_example:
+- hook(optimizer, args, kwargs) -> None
+8 api_shape: null

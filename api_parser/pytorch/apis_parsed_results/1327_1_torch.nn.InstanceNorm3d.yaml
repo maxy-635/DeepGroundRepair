@@ -1,0 +1,23 @@
+2 api_name: torch.nn.InstanceNorm3d
+3 api_description: Applies Instance Normalization across 3D input data, normalizing
+  each instance independently to improve training stability and performance.
+4 api_signature: torch.nn.InstanceNorm3d(num_features,affine,track_running_stats)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of channels (C) in the input tensor, which is
+    required for normalization.
+- affine: Determines whether the layer will have learnable parameters for scaling
+    and shifting the normalized output.
+- track_running_stats: Indicates if the module should maintain running estimates of
+    the mean and variance for normalization during training.
+7 api_usage_example:
+- ' # Without Learnable Parameters'
+- ' m = nn.InstanceNorm3d(100)'
+- ' # With Learnable Parameters'
+- ' m = nn.InstanceNorm3d(100, affine=True)'
+- ' input = torch.randn(20, 100, 35, 45, 10)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth, Height, Width)
+  output tensor shape: (N, Channel_out, Depth, Height, Width)
+  tensor shape transform formulas: {}

@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal
+3 api_description: Represents a multivariate normal distribution with covariance defined
+  as a low-rank factor plus diagonal noise, enabling efficient sampling, log probability
+  evaluation, and access to mean, covariance, variance, and related distribution properties.
+4 api_signature: '"LowRankMultivariateNormal(loc,cov_factor,cov_diag)"'
+5 api_details: ''
+6 api_parameters:
+- loc: Specifies the distribution’s mean vector.
+- cov_factor: Provides the low-rank factor that captures covariance structure.
+- cov_diag: Provides the diagonal variances that complete the covariance matrix.
+7 api_usage_example:
+- covariance_matrix = cov_factor @ cov_factor.T + cov_diag
+8 api_shape: null

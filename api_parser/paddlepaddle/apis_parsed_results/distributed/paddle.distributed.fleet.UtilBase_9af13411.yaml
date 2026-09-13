@@ -1,0 +1,37 @@
+2 api_name: paddle.distributed.fleet.UtilBase
+3 api_description: Performs an all-reduce operation across a specified collection
+  of distributed inputs, combining values so each participant receives the reduced
+  result.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- '# Save the following code in `train.py` , and then execute the command `fleetrun
+  --server_num 2 --worker_num 2 train.py` .'
+- import paddle.distributed.fleet as fleet
+- from paddle.distributed.fleet import PaddleCloudRoleMaker
+- import sys
+- import numpy as np
+- import os
+- os.environ["PADDLE_WITH_GLOO"] = "2"
+- 'def train():'
+- '    role = PaddleCloudRoleMaker('
+- '        is_collective=False,'
+- '        init_gloo=True,'
+- '        path="./tmp_gloo")'
+- '    fleet.init(role)'
+- '...'
+- '    if fleet.is_server():'
+- '        input = np.array([1, 2])'
+- '        output = fleet.util.all_reduce(input, "sum", "server")'
+- '        print(output) # [2, 4]'
+- '    elif fleet.is_worker():'
+- '        input = np.array([3, 4])'
+- '        output = fleet.util.all_reduce(input, "sum", "worker")'
+- '        print(output) # [6, 8]'
+- '    output = fleet.util.all_reduce(input, "sum", "all")'
+- '    print(output) # [8, 12]'
+- 'if __name__ == "__main__":'
+- '    train()'
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.cholesky_solve
+3 api_description: Solves linear systems A X = RHS using a Cholesky factorization
+  A = L L^T, returning X.
+4 api_signature: tf.linalg.cholesky_solve(chol,rhs)
+5 api_details: ''
+6 api_parameters:
+- chol: Lower-triangular Cholesky factor of the matrix A, used to solve the system.
+- rhs: Right-hand-side tensor to solve against, with the same type as `chol`.
+7 api_usage_example: null
+8 api_shape: ''

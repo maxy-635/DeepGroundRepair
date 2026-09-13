@@ -1,0 +1,39 @@
+2 api_name: paddle.nn.functional.conv1d
+3 api_description: The paddle.nn.functional.conv1d API performs a 1D convolution operation
+  on input data in NCL format using specified filters, strides, paddings, dilations,
+  and groups, producing output in the same format. It supports bias addition and activation
+  functions.
+4 api_signature: paddle.nn.functional.conv1d(x,weight,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor with shape [N, C, L] and data type of float16, float32, or float64.
+- weight: The convolution kernel tensor with shape [M, C/g, K], defining the number
+    of output channels, groups, and kernel size.
+- stride: The stride size, which can be an integer or a tuple containing one integer,
+    defining the step size for the convolution.
+- padding: The padding configuration, which can be a string, integer, or list/tuple,
+    defining how the input tensor is padded.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([[[4, 8, 1, 9],
+- '                       [7, 2, 0, 9],'
+- '                       [6, 9, 2, 6]]], dtype="float32")'
+- w = paddle.to_tensor([[[9, 3, 4],
+- '                       [0, 0, 7],'
+- '                       [2, 5, 6]],'
+- '                      [[0, 3, 4],'
+- '                       [2, 9, 7],'
+- '                       [5, 6, 8]]], dtype="float32")'
+- y = F.conv1d(x, w)
+- print(y)
+- Tensor(shape=[1, 2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[133., 238.],'
+- '[160., 211.]]])'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Length_in)
+  output tensor shape: (N, Channel_out, Length_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[0]
+    tensor length: Length_out = floor((Length_in + 2 * padding - dilation * (kernel_size
+      - 1) - 1) / stride + 1)

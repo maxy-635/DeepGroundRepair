@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.InitializeTableFromTextFile
+3 api_description: Loads a table by reading a text file line by line and inserting
+  key-value pairs, using the whole line, split fields, or line numbers as specified
+  by the key and value indices.
+4 api_signature: tf.raw_ops.InitializeTableFromTextFile(table_handle,filename,key_index,value_index,vocab_size)
+5 api_details: ''
+6 api_parameters:
+- table_handle: Handle to the table that will be initialized from the text file.
+- filename: Path to the vocabulary text file to read from.
+- key_index: Zero-based column index to use for each row's key value, or -1/-2 for
+    special handling.
+- value_index: Zero-based column index to use for each row's value, or -1/-2 for special
+    handling.
+- vocab_size: Optional expected number of entries in the file, or -1 if unknown.
+- name: Optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

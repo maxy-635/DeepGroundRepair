@@ -1,0 +1,13 @@
+2 api_name: torch.nn.Sequential.insert
+3 api_description: Inserts a module into a Sequential container at the specified position,
+  shifting later modules to the right.
+4 api_signature: '"insert(index)"'
+5 api_details: ''
+6 api_parameters:
+- index: Specifies the position in the `Sequential` container where the new module
+    will be inserted.
+7 api_usage_example:
+- ' import torch.nn as nn'
+- ' n = nn.Sequential(nn.Linear(1, 2), nn.Linear(2, 3))'
+- ' n.insert(0, nn.Linear(3, 4))'
+8 api_shape: null

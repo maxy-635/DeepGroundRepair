@@ -1,0 +1,19 @@
+2 api_name: torch.linalg.eig
+3 api_description: Computes the eigenvalue decomposition of a square matrix, returning
+  its eigenvalues and eigenvectors when the decomposition exists.
+4 api_signature: torch.linalg.eig(A)
+5 api_details: ''
+6 api_parameters:
+- A: Input tensor containing one or more square, diagonalizable matrices whose eigenvalues
+    and eigenvectors are computed.
+7 api_usage_example:
+- ' A = torch.randn(2, 2, dtype=torch.complex128)'
+- ' A'
+- ' L, V = torch.linalg.eig(A)'
+- ' L'
+- ' V'
+- ' torch.dist(V @ torch.diag(L) @ torch.linalg.inv(V), A)'
+- ' A = torch.randn(3, 2, 2, dtype=torch.float64)'
+- ' L, V = torch.linalg.eig(A)'
+- ' torch.dist(V @ torch.diag_embed(L) @ torch.linalg.inv(V), A)'
+8 api_shape: null

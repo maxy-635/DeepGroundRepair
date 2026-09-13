@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.meshgrid
+3 api_description: Creates coordinate grids from 1D input arrays, matching NumPy meshgrid
+  behavior for supported arguments.
+4 api_signature: tf.experimental.numpy.meshgrid(*xi)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

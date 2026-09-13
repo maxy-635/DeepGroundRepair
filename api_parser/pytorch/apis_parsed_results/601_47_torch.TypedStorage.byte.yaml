@@ -1,0 +1,8 @@
+2 api_name: torch.TypedStorage.byte
+3 api_description: Returns a byte-typed view of the storage by casting its underlying
+  data to byte storage.
+4 api_signature: byte()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

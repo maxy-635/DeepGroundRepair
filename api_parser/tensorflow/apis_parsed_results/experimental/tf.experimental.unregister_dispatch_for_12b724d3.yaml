@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.unregister_dispatch_for
+3 api_description: Removes a previously registered dispatch function for testing or
+  cleanup.
+4 api_signature: tf.experimental.unregister_dispatch_for(dispatch_target)
+5 api_details: ''
+6 api_parameters:
+- dispatch_target: Specifies the function whose dispatch registration should be removed.
+7 api_usage_example:
+- '# Unregister the dispatcher, so `tf.abs` no longer calls `my_abs`.'
+- unregister_dispatch_for(my_abs)
+- tf.abs(MyTensor(5))
+8 api_shape: ''

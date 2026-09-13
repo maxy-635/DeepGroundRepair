@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.kron
+3 api_description: Computes the Kronecker product of two tensors, matching NumPy’s
+  `kron` behavior.
+4 api_signature: tf.experimental.numpy.kron(a,b)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

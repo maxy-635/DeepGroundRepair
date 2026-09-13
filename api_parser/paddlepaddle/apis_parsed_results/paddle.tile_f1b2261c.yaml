@@ -1,0 +1,29 @@
+2 api_name: paddle.tile
+3 api_description: Repeats a tensor along each dimension according to `repeat_times`,
+  producing an output whose shape is `x.shape[i] * repeat_times[i]` for each dimension.
+4 api_signature: paddle.tile(x,repeat_times)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor to be repeated, supporting the listed numeric and
+    boolean data types.
+- repeat_times: Specifies how many times to repeat the input along each dimension,
+    using integers or 1-D int32 tensors.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([1, 2, 3], dtype='int32')
+- out = paddle.tile(data, repeat_times=[2, 1])
+- print(out)
+- Tensor(shape=[2, 3], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[1, 2, 3],'
+- '[1, 2, 3]])'
+- out = paddle.tile(data, repeat_times=(2, 2))
+- print(out)
+- Tensor(shape=[2, 6], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[1, 2, 3, 1, 2, 3],'
+- '[1, 2, 3, 1, 2, 3]])'
+- repeat_times = paddle.to_tensor([1, 2], dtype='int32')
+- out = paddle.tile(data, repeat_times=repeat_times)
+- print(out)
+- Tensor(shape=[1, 6], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[1, 2, 3, 1, 2, 3]])'
+8 api_shape: {}

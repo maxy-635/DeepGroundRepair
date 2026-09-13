@@ -1,0 +1,8 @@
+2 api_name: paddle.nn.functional.hardtanh_
+3 api_description: paddle.nn.functional.hardtanh_ performs an in-place hard tanh activation
+  on the input tensor, modifying the input tensor directly.
+4 api_signature: paddle.nn.functional.hardtanh_(x,min,max)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

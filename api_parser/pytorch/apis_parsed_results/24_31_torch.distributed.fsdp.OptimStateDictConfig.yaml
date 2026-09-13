@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.fsdp.OptimStateDictConfig
+3 api_description: Base configuration for FSDP optimizer state dict settings; users
+  should use a specific subclass to control the behavior of the corresponding optim_state_dict
+  type.
+4 api_signature: torch.distributed.fsdp.OptimStateDictConfig(offload_to_cpu)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

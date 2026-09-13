@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.FractionalMaxPool3D
+3 api_description: paddle.nn.FractionalMaxPool3D performs 3D fractional max pooling
+  on an input tensor, allowing for non-integer pooling ratios to reduce the spatial
+  dimensions of the input.
+4 api_signature: paddle.nn.FractionalMaxPool3D(output_size,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the desired dimensions of the output, which can be set to
+    match the input size if None.
+- kernel_size: Defines the size of the pooling window, which can be a tuple of three
+    integers or an integer for a cubic window, with a default of None for non-overlapping
+    pooling.
+7 api_usage_example: []
+8 api_shape: null

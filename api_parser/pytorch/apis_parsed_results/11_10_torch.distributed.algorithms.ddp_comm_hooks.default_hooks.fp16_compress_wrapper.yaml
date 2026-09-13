@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.algorithms.ddp_comm_hooks.default_hooks.fp16_compress_wrapper
+3 api_description: Wraps a DDP communication hook to cast gradients to float16 before
+  the hook runs and convert the hook’s result back to the original input dtype.
+4 api_signature: torch.distributed.algorithms.ddp_comm_hooks.default_hooks.fp16_compress_wrapper(hook)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' state = PowerSGDState(process_group=process_group, matrix_approximation_rank=1,
+  start_powerSGD_iter=10)'
+- ' ddp_model.register_comm_hook(state, fp16_compress_wrapper(powerSGD_hook))'
+8 api_shape: null

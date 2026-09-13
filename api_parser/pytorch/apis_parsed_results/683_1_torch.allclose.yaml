@@ -1,0 +1,17 @@
+2 api_name: torch.allclose
+3 api_description: Returns True when two tensors are elementwise close within given
+  tolerances, otherwise False.
+4 api_signature: torch.allclose(input:Tensor,other:Tensor,atol:float,rtol:float)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor used as the reference for comparison.
+- other: The second tensor being compared against the first tensor.
+- atol: The maximum allowed absolute difference between corresponding tensor elements.
+- rtol: The maximum allowed relative difference between corresponding tensor elements.
+7 api_usage_example:
+- ' torch.allclose(torch.tensor([10000., 1e-07]), torch.tensor([10000.1, 1e-08]))'
+- ' torch.allclose(torch.tensor([10000., 1e-08]), torch.tensor([10000.1, 1e-09]))'
+- ' torch.allclose(torch.tensor([1.0, float(''nan'')]), torch.tensor([1.0, float(''nan'')]))'
+- ' torch.allclose(torch.tensor([1.0, float(''nan'')]), torch.tensor([1.0, float(''nan'')]),
+  equal_nan=True)'
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.transpose
+3 api_description: Returns the tensor transpose by permuting its axes; if no permutation
+  is given, it reverses the dimensions.
+4 api_signature: tf.keras.backend.transpose(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

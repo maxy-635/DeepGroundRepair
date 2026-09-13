@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.transforms.AffineTransform
+3 api_description: Applies a pointwise affine transform, mapping inputs as y = loc
+  + scale * x.
+4 api_signature: torch.distributions.transforms.AffineTransform(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Shifts the input by adding an offset to it.
+- scale: Scales the input by multiplying it by a factor.
+7 api_usage_example: null
+8 api_shape: null

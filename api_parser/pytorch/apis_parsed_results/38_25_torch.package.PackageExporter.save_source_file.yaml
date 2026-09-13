@@ -1,0 +1,12 @@
+2 api_name: torch.package.PackageExporter.save_source_file
+3 api_description: Packages a local source file or directory into the export so it
+  can provide the code for the specified module.
+4 api_signature: save_source_file(module_name,file_or_directory)
+5 api_details: ''
+6 api_parameters:
+- module_name: Specifies the package or module name that the saved source code will
+    provide.
+- file_or_directory: Specifies the source file or directory of Python code to copy
+    into the package, recursively including all `.py` files in a directory.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.functional.log_loss
+3 api_description: Computes the negative log loss between predicted probabilities
+  and target labels, often used for binary classification tasks.
+4 api_signature: paddle.nn.functional.log_loss(input,label,epsilon)
+5 api_details: ''
+6 api_parameters:
+- input: The predicted probabilities tensor with shape [N x 1] for each batch.
+- label: The actual ground truth labels tensor with shape [N x 1] for each batch.
+- epsilon: A small constant added for numerical stability to prevent division by zero.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- label = paddle.randn((10,1))
+- prob = paddle.randn((10,1))
+- cost = F.log_loss(input=prob, label=label)
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: torch.square
+3 api_description: Returns a new tensor containing the element-wise squares of the
+  input.
+4 api_signature: torch.square(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are squared elementwise.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.square(a)'
+8 api_shape: null

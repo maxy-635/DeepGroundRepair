@@ -1,0 +1,16 @@
+2 api_name: torch.nn.Dropout1d
+3 api_description: torch.nn.Dropout1d randomly sets entire channels to zero during
+  training to prevent overfitting.
+4 api_signature: torch.nn.Dropout1d(p)
+5 api_details: ''
+6 api_parameters:
+- p: The probability of an element to be set to zero during training, helping to prevent
+    overfitting.
+7 api_usage_example:
+- ' m = nn.Dropout1d(p=0.2)'
+- ' input = torch.randn(20, 16, 32)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, L)
+  output tensor shape: (N, Channel_out, L)
+  tensor shape transform formulas: {}

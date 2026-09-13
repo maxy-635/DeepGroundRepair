@@ -1,0 +1,11 @@
+2 api_name: tensorflow.experimental.dtensor.DVariable
+3 api_description: A DTensor-aware variable class that replaces tf.Variable, preserving
+  initial placement for initialization and supporting save/restore, with a fallback
+  to normal tf.Variable when the initial value is not a DTensor.
+4 api_signature: tf.experimental.dtensor.DVariable(initial_value,dtype)
+5 api_details: ''
+6 api_parameters:
+- value: The Tensor to assign as the variable’s new value.
+7 api_usage_example:
+- np.array(tf.Variable([1.0]))
+8 api_shape: ''

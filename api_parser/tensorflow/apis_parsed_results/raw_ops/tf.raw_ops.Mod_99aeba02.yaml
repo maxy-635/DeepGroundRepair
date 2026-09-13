@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Mod
+3 api_description: Computes the element-wise remainder from truncating division, following
+  C-style mod semantics so that truncated quotient times divisor plus remainder equals
+  the original value.
+4 api_signature: tf.raw_ops.Mod(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The dividend tensor whose values will be reduced modulo `y`.
+- y: The divisor tensor that `x` is divided by to compute the remainder.
+7 api_usage_example: null
+8 api_shape: ''

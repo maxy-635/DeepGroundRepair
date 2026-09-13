@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.functional.hardswish
+3 api_description: paddle.nn.functional.hardswish is an activation function from MobileNetV3
+  that offers improved computational stability and efficiency over the swish function.
+4 api_signature: paddle.nn.functional.hardswish(x)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input tensor that should have a data type of either float32 or
+    float64.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([-4., 5., 1.])
+- out = F.hardswish(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-0.       , 5.        , 0.66666669])'
+8 api_shape: null

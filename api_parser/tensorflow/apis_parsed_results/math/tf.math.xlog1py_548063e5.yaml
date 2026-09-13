@@ -1,0 +1,15 @@
+2 api_name: tensorflow.math.xlog1py
+3 api_description: Computes x * log1p(y) with safe handling that returns 0 when x
+  is 0, regardless of y.
+4 api_signature: tf.math.xlog1py(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor input, representing the value to multiply by the logarithm of
+    one plus the second tensor.
+- y: The second tensor input, whose values are used inside the `log1p` term.
+7 api_usage_example:
+- tf.math.xlog1py(0., 1.)
+- tf.math.xlog1py(1., 1.)
+- tf.math.xlog1py(2., 2.)
+- tf.math.xlog1py(0., -1.)
+8 api_shape: ''

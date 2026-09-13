@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.GetSessionHandle
+3 api_description: Stores an input tensor in the current session state and returns
+  a handle for later retrieval.
+4 api_signature: tf.raw_ops.GetSessionHandle(value)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to be stored in a session handle for later retrieval.
+7 api_usage_example: null
+8 api_shape: ''

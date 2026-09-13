@@ -1,0 +1,23 @@
+2 api_name: tensorflow.TensorArray
+3 api_description: A dynamic-sized per-time-step tensor container for iterative workflows
+  like while_loop and map_fn, supporting indexed reads/writes and gradient flow, with
+  undefined behavior if the same array is reused unsafely after reads when clear_after_read
+  is False.
+4 api_signature: tf.TensorArray(dtype,size,dynamic_size,infer_shape,element_shape,name)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the data type for values stored in the TensorArray.
+- size: Sets the initial number of elements in the TensorArray.
+- dynamic_size: Allows the TensorArray to grow beyond its initial size when written
+    to.
+- infer_shape: Controls whether TensorFlow checks that all elements have the same
+    shape.
+- element_shape: Constrains the expected shape of each TensorArray element.
+- name: Assigns an optional name to the TensorArray operation.
+7 api_usage_example:
+- ta = tf.TensorArray(tf.int32, size=3)
+- ta = ta.write(0, tf.constant([1, 2]))
+- ta = ta.write(1, tf.constant([3, 4]))
+- ta = ta.write(2, tf.constant([5, 6]))
+- ta.stack()
+8 api_shape: ''

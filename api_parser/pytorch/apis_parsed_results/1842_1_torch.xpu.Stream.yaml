@@ -1,0 +1,12 @@
+2 api_name: torch.xpu.Stream
+3 api_description: Represents and manages an XPU execution stream for scheduling and
+  coordinating asynchronous device operations.
+4 api_signature: torch.xpu.Stream(device,priority)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the device on which to allocate the stream; if omitted, `None`,
+    or negative, the current device is used.
+- priority: Sets the stream priority, where lower values mean higher priority; out-of-range
+    values are clamped to the nearest valid priority.
+7 api_usage_example: null
+8 api_shape: null

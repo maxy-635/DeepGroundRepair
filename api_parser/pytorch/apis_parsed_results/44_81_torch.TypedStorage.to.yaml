@@ -1,0 +1,8 @@
+2 api_name: torch.TypedStorage.to
+3 api_description: Returns a copy of the storage moved to device memory.
+4 api_signature: to(*,device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the device to move the typed storage to.
+7 api_usage_example: null
+8 api_shape: null

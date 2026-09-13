@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.MapDefun
+3 api_description: Applies a stateless function independently and concurrently to
+  each slice of the input tensors along dimension 0, with configurable limits on intra-op
+  parallelism.
+4 api_signature: tf.raw_ops.MapDefun(arguments,captured_inputs,output_types,output_shapes,f)
+5 api_details: ''
+6 api_parameters:
+- arguments: The input tensors to map the function over, matching the function’s expected
+    argument types.
+- captured_inputs: External tensors captured by the defun and supplied as additional
+    fixed inputs.
+- output_types: The data types of the tensors returned by the mapped function.
+- output_shapes: The shapes of the tensors returned by the mapped function.
+- f: The `@Defun`-decorated function to apply across the provided arguments.
+7 api_usage_example: null
+8 api_shape: ''

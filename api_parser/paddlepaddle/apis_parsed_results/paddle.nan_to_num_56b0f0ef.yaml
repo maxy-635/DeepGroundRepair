@@ -1,0 +1,43 @@
+2 api_name: paddle.nan_to_num
+3 api_description: Replaces NaN and infinite values in a tensor with finite numbers.
+4 api_signature: paddle.nan_to_num(x,nan,posinf,neginf)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose NaN and infinity values will be replaced.
+- nan: The replacement value to use for NaN entries.
+- posinf: The replacement value for positive infinity, or the largest finite value
+    of the input dtype if None.
+- neginf: The replacement value for negative infinity, or the smallest finite value
+    of the input dtype if None.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([float('nan'), 0.3, float('+inf'), float('-inf')], dtype='float32')
+- out1 = paddle.nan_to_num(x)
+- out1
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[ 0.                                      ,'
+- 0.30000001                              ,
+- 340282346638528859811704183484516925440.,
+- -340282346638528859811704183484516925440.])
+- out2 = paddle.nan_to_num(x, nan=1)
+- out2
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[ 1.                                      ,'
+- 0.30000001                              ,
+- 340282346638528859811704183484516925440.,
+- -340282346638528859811704183484516925440.])
+- out3 = paddle.nan_to_num(x, posinf=5)
+- out3
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[ 0.                                      ,'
+- 0.30000001                              ,
+- 5.                                      ,
+- -340282346638528859811704183484516925440.])
+- out4 = paddle.nan_to_num(x, nan=10, neginf=-99)
+- out4
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[ 10.                                    ,'
+- 0.30000001                             ,
+- 340282346638528859811704183484516925440.,
+- -99.                                    ])
+8 api_shape: {}

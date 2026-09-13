@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.MatchingFiles
+3 api_description: Returns a deterministic list of filenames matching one or more
+  glob patterns, with wildcards allowed only in the basename portion of each pattern.
+4 api_signature: tf.raw_ops.MatchingFiles(pattern)
+5 api_details: ''
+6 api_parameters:
+- pattern: Specifies one or more shell wildcard patterns used to match file paths.
+7 api_usage_example: null
+8 api_shape: ''

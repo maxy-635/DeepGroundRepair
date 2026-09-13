@@ -1,0 +1,13 @@
+2 api_name: tensorflow.queue.RandomShuffleQueue
+3 api_description: A queue that stores elements and dequeues them in random order,
+  providing standard QueueBase operations.
+4 api_signature: tf.queue.RandomShuffleQueue(capacity,min_after_dequeue,dtypes,shapes)
+5 api_details: ''
+6 api_parameters:
+- capacity: Sets the maximum number of elements the queue can hold.
+- min_after_dequeue: Specifies the minimum number of elements to keep in the queue
+    after a dequeue operation to preserve shuffling.
+- dtypes: Defines the data types for each tensor in every queue element.
+- shapes: Optionally constrains each tensor in queue elements to a fully defined shape.
+7 api_usage_example: null
+8 api_shape: ''

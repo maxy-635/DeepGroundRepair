@@ -1,0 +1,19 @@
+2 api_name: tensorflow.random.uniform
+3 api_description: Returns random values from a uniform distribution over [minval,
+  maxval), using [0, 1) by default for floats and requiring an explicit maxval for
+  ints.
+4 api_signature: tf.random.uniform(shape,minval,maxval,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the output tensor.
+- minval: Sets the inclusive lower bound for generated random values.
+- maxval: Sets the exclusive upper bound for generated random values.
+- dtype: Determines the data type of the returned random tensor.
+7 api_usage_example:
+- tf.random.set_seed(5)
+- tf.random.uniform(shape=[], maxval=3, dtype=tf.int32, seed=10)
+- tf.random.uniform(shape=[], maxval=3, dtype=tf.int32, seed=10)
+- tf.random.set_seed(5)
+- tf.random.uniform(shape=[], maxval=3, dtype=tf.int32, seed=10)
+- tf.random.uniform(shape=[], maxval=3, dtype=tf.int32, seed=10)
+8 api_shape: ''

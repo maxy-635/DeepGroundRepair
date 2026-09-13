@@ -1,0 +1,38 @@
+2 api_name: torch.library.impl
+3 api_description: Registers a device-specific kernel implementation for an operator.
+4 api_signature: torch.library.impl(lib,name)
+5 api_details: ''
+6 api_parameters:
+- lib: Binds the implementation’s registration lifetime to the given `Library` object
+    when provided.
+7 api_usage_example:
+- ' import torch'
+- ' import numpy as np'
+- ' # Example 1: Register function.'
+- ' # Define the operator'
+- ' torch.library.define("mylib::mysin", "(Tensor x) -> Tensor")'
+- ' # Add implementations for the cpu device'
+- ' @torch.library.impl("mylib::mysin", "cpu")'
+- ' def f(x):'
+- '     return torch.from_numpy(np.sin(x.numpy()))'
+- ' x = torch.randn(3)'
+- ' y = torch.ops.mylib.mysin(x)'
+- ' assert torch.allclose(y, x.sin())'
+- ' # Example 2: Register function with decorator.'
+- ' def custom_decorator(func):'
+- '     def wrapper(*args, **kwargs):'
+- '         return func(*args, **kwargs) + 1'
+- '     return wrapper'
+- ' # Define the operator'
+- ' torch.library.define("mylib::sin_plus_one", "(Tensor x) -> Tensor")'
+- ' # Add implementations for the operator'
+- ' @torch.library.impl("mylib::sin_plus_one", "cpu")'
+- ' @custom_decorator'
+- ' def f(x):'
+- '     return torch.from_numpy(np.sin(x.numpy()))'
+- ' # Call the new operator from torch.ops.'
+- ' x = torch.randn(3)'
+- ' y1 = torch.ops.mylib.sin_plus_one(x)'
+- ' y2 = torch.sin(x) + 1'
+- ' assert torch.allclose(y1, y2)'
+8 api_shape: null

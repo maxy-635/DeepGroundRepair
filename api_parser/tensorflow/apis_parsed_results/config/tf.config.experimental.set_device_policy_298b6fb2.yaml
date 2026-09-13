@@ -1,0 +1,10 @@
+2 api_name: tensorflow.config.experimental.set_device_policy
+3 api_description: Sets the current thread’s device policy for handling inputs placed
+  on different devices, controlling how cross-device operations behave.
+4 api_signature: tf.config.experimental.set_device_policy(device_policy)
+5 api_details: ''
+6 api_parameters:
+- device_policy: Sets how TensorFlow handles operations that involve tensors on different
+    devices.
+7 api_usage_example: null
+8 api_shape: ''

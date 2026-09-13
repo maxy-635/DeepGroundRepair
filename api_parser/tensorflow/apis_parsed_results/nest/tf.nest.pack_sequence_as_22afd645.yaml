@@ -1,0 +1,21 @@
+2 api_name: tensorflow.nest.pack_sequence_as
+3 api_description: Rebuilds a nested structure from a flat sequence, using sorted
+  dict keys for deterministic packing and requiring a single value when the target
+  is an atom.
+4 api_signature: tf.nest.pack_sequence_as(structure,flat_sequence)
+5 api_details: ''
+6 api_parameters:
+- structure: Defines the target nested layout that the flat values will be repacked
+    into.
+- flat_sequence: Provides the flat values to insert into the nested structure in order.
+7 api_usage_example:
+- 'structure = { "foo": tf.ragged.constant([[1., 2.], [3.]]),'
+- '              "bar": tf.constant([[5.]]) }'
+- tensors = tf.nest.flatten(structure, expand_composites=True)
+- print(tensors)
+- 'verified_tensors = [tf.debugging.check_numerics(t, ''invalid tensor: '')'
+- '                    if t.dtype==tf.float32 else t'
+- '                    for t in tensors]'
+- tf.nest.pack_sequence_as(structure, verified_tensors,
+- '                         expand_composites=True)'
+8 api_shape: ''

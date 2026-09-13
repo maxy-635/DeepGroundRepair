@@ -1,0 +1,7 @@
+2 api_name: torch.jit.enable_onednn_fusion
+3 api_description: Enables or disables TorchScript oneDNN JIT fusion.
+4 api_signature: torch.jit.enable_onednn_fusion(enabled)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

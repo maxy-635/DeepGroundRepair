@@ -1,0 +1,12 @@
+2 api_name: torch.jit.strict_fusion
+3 api_description: Enforces that every node is fused during inference or symbolically
+  differentiated during training, and raises an error if any remain unfused or undifferentiated.
+4 api_signature: class torch.jit.strict_fusion[source]
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '@torch.jit.script'
+- 'def foo(x):'
+- '    with torch.jit.strict_fusion():'
+- '        return x + x + x'
+8 api_shape: null

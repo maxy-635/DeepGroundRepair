@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.utils.clip_grad_norm_
+3 api_description: The paddle.nn.utils.clip_grad_norm_ API limits the gradient norm
+  of parameters to prevent exploding gradients.
+4 api_signature: paddle.nn.utils.clip_grad_norm_(parameters,max_norm)
+5 api_details: ''
+6 api_parameters:
+- parameters: Specifies the tensors or a single tensor whose gradients will be subjected
+    to normalization.
+- max_norm: Defines the maximum allowable norm for the gradients, beyond which they
+    will be clipped.
+7 api_usage_example:
+- import paddle
+- x = paddle.uniform([10, 10], min=-1.0, max=1.0, dtype='float32')
+- max_norm = float(5.0)
+- linear = paddle.nn.Linear(in_features=10, out_features=10)
+- out = linear(x)
+- loss = paddle.mean(out)
+- loss.backward()
+- paddle.nn.utils.clip_grad_norm_(linear.parameters(), max_norm)
+- sdg = paddle.optimizer.SGD(learning_rate=0.1, parameters=linear.parameters())
+- sdg.step()
+8 api_shape: null

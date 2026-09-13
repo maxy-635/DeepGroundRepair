@@ -1,0 +1,8 @@
+2 api_name: torch.__config__.show
+3 api_description: Returns a human-readable string summarizing the current PyTorch
+  build and configuration.
+4 api_signature: '"torch.__config__.show()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.applications.Xception
+3 api_description: Builds the Xception convolutional neural network for image classification
+  and transfer learning, with a default 299x299 input size.
+4 api_signature: tf.keras.applications.Xception(weights,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- weights: 'Selects the model initialization: random, ImageNet-pretrained, or a custom
+    weights file.'
+- input_shape: Sets the input tensor shape when excluding the top classification layer,
+    with 3 channels and minimum spatial size constraints.
+- classes: Specifies the number of output classes when using the top classification
+    layer and no pretrained weights.
+7 api_usage_example: null
+8 api_shape: ''

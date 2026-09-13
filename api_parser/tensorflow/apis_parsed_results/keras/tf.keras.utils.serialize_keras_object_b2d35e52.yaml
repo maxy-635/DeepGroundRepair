@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.utils.serialize_keras_object
+3 api_description: Serializes a Keras object into a Python config dictionary that
+  can later be used to reconstruct the object.
+4 api_signature: tf.keras.utils.serialize_keras_object(obj)
+5 api_details: ''
+6 api_parameters:
+- obj: Specifies the Keras object to be converted into a serializable representation.
+7 api_usage_example: null
+8 api_shape: ''

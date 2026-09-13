@@ -1,0 +1,16 @@
+2 api_name: torch.resolve_conj
+3 api_description: Returns the input tensor unchanged unless its conjugate bit is
+  set, in which case it returns a new tensor with conjugation materialized and the
+  conjugate bit cleared.
+4 api_signature: torch.resolve_conj(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose conjugate flag is resolved.
+7 api_usage_example:
+- ' x = torch.tensor([-1 + 1j, -2 + 2j, 3 - 3j])'
+- ' y = x.conj()'
+- ' y.is_conj()'
+- ' z = y.resolve_conj()'
+- ' z'
+- ' z.is_conj()'
+8 api_shape: null

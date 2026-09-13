@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.PReLU
+3 api_description: The PReLU layer applies a parametric rectified linear unit activation
+  function, where the slope for negative inputs is a learnable parameter, allowing
+  for adaptive activation behavior.
+4 api_signature: tf.keras.layers.PReLU(alpha_initializer, shared_axes)
+5 api_details: ''
+6 api_parameters:
+- alpha_initializer: Specifies the method to initialize the weights for the PReLU
+    activation function.
+- shared_axes: Defines which axes to share the learnable parameters across, allowing
+    for parameter sharing among certain dimensions of the input.
+7 api_usage_example: null
+8 api_shape: null

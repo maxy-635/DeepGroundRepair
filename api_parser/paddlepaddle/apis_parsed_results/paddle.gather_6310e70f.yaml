@@ -1,0 +1,20 @@
+2 api_name: paddle.gather
+3 api_description: Collects and concatenates tensors from all or selected processes
+  into one result, with optional support for variable-sized inputs and choosing a
+  root destination.
+4 api_signature: paddle.gather(x,index,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are gathered from along a specified axis.
+- index: The tensor of indices that selects which elements or slices to gather.
+- axis: The axis in `x` along which to gather values, defaulting to 0 if not provided.
+7 api_usage_example:
+- import paddle
+- input = paddle.to_tensor([[1,2],[3,4],[5,6]])
+- index = paddle.to_tensor([0,1])
+- output = paddle.gather(input, index, axis=0)
+- print(output)
+- Tensor(shape=[2, 2], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 2],'
+- '[3, 4]])'
+8 api_shape: {}

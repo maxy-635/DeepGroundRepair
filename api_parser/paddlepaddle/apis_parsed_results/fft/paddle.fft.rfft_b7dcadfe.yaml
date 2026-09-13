@@ -1,0 +1,15 @@
+2 api_name: paddle.fft.rfft
+3 api_description: Computes the one-dimensional FFT of real-valued input, returning
+  the non-redundant complex frequency components.
+4 api_signature: paddle.fft.rfft(x,n,axis,norm,out)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the real-valued input tensor to transform.
+- n: Sets the number of points to use along the transform axis, cropping or zero-padding
+    the input as needed.
+- axis: Chooses the axis along which to compute the FFT, with the last axis used by
+    default.
+- norm: Controls the normalization mode applied to the FFT result.
+- out: Provides a tensor to store the output of the operation.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,39 @@
+2 api_name: paddle.static.nn.fc
+3 api_description: Creates fully connected outputs by multiplying one tensor or a
+  list of tensors with learned weights, summing results when multiple inputs are provided,
+  then optionally adding bias and applying an activation.
+4 api_signature: paddle.static.nn.fc(x,size,activation,name)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor or list/tuple of tensors used as the layer input, with at least
+    2 dimensions and float16/float32/float64 data type.
+- size: Specifies the number of output units, which determines the output feature
+    dimension.
+- activation: Applies an activation function to the layer output, such as tanh, softmax,
+    sigmoid, or relu.
+- name: Optional layer name, usually left as None unless a specific name is needed.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.enable_static()
+- '# When input is a single tensor'
+- x = paddle.static.data(name="x", shape=[1, 2, 2], dtype="float32")
+- out = paddle.static.nn.fc(
+- '    x=x,'
+- '    size=1,'
+- '    num_flatten_dims=2,'
+- '    weight_attr=paddle.ParamAttr(initializer=paddle.nn.initializer.Constant(value=0.5)),'
+- '    bias_attr=paddle.ParamAttr(initializer=paddle.nn.initializer.Constant(value=1.0)))'
+- print(out)
+- 'var fc_0.tmp_1 : DENSE_TENSOR.shape(1, 2, 1).dtype(float32).stop_gradient(False)'
+- '# When input is multiple tensors'
+- x0 = paddle.static.data(name="x0", shape=[1, 2, 2], dtype="float32")
+- x1 = paddle.static.data(name="x1", shape=[1, 1, 3], dtype="float32")
+- out = paddle.static.nn.fc(
+- '    x=[x0, x1],'
+- '    size=2,'
+- '    weight_attr=paddle.ParamAttr(initializer=paddle.nn.initializer.Constant(value=0.5)),'
+- '    bias_attr=paddle.ParamAttr(initializer=paddle.nn.initializer.Constant(value=1.0)))'
+- print(out)
+- 'var fc_1.tmp_3 : DENSE_TENSOR.shape(1, 2).dtype(float32).stop_gradient(False)'
+8 api_shape: {}

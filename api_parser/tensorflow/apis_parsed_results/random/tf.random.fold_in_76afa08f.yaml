@@ -1,0 +1,18 @@
+2 api_name: tensorflow.random.fold_in
+3 api_description: Combines a seed with additional data to create a new reproducible
+  RNG seed, enabling distinct random streams such as per-replica seeds in distributed
+  training.
+4 api_signature: tf.random.fold_in(seed,data)
+5 api_details: ''
+6 api_parameters:
+- seed: The base RNG seed to combine with additional data, given as a 2-element int32
+    or int64 tensor.
+- data: A scalar int32 or int64 value to mix into the seed.
+7 api_usage_example:
+- master_seed = [1, 2]
+- replica_id = 3
+- replica_seed = tf.random.experimental.stateless_fold_in(
+- '  master_seed, replica_id)'
+- print(replica_seed)
+- tf.random.stateless_normal(shape=[3], seed=replica_seed)
+8 api_shape: ''

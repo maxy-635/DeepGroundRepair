@@ -1,0 +1,16 @@
+2 api_name: torch.distributed.autograd.backward
+3 api_description: Starts a distributed autograd backward pass from the given roots,
+  using FAST mode to assume all RPC messages in the same context are part of the autograd
+  graph.
+4 api_signature: torch.distributed.autograd.backward(context_id,roots)
+5 api_details: ''
+6 api_parameters:
+- context_id: Specifies the autograd context whose gradients should be retrieved.
+- roots: Provides the scalar root tensors that start the autograd computation.
+7 api_usage_example:
+- ' import torch.distributed.autograd as dist_autograd'
+- ' with dist_autograd.context() as context_id:'
+- '     pred = model.forward()'
+- '     loss = loss_func(pred, loss)'
+- '     dist_autograd.backward(context_id, loss)'
+8 api_shape: null

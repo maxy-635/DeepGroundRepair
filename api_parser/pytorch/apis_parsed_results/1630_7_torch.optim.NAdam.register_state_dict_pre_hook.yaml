@@ -1,0 +1,11 @@
+2 api_name: torch.optim.NAdam.register_state_dict_pre_hook
+3 api_description: Registers a hook that runs before `state_dict()` to let you inspect
+  or modify the optimizer state export process.
+4 api_signature: register_state_dict_pre_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: Registers a user-defined callback that runs before the optimizer's state dict
+    is saved.
+7 api_usage_example:
+- hook(optimizer) -> None
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.optimizers.schedules.LearningRateSchedule
+3 api_description: Base class for defining learning rate schedules that can be serialized
+  from config and used to generate a learning rate value during training.
+4 api_signature: from_config(config)
+5 api_details: ''
+6 api_parameters:
+- config: Serialized configuration returned by `get_config()` that captures the schedule's
+    settings for reconstruction.
+7 api_usage_example: null
+8 api_shape: ''

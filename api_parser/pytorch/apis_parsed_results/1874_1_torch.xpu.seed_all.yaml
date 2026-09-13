@@ -1,0 +1,8 @@
+2 api_name: torch.xpu.seed_all
+3 api_description: Sets the random seed across all GPUs for reproducible random number
+  generation.
+4 api_signature: torch.xpu.seed_all()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

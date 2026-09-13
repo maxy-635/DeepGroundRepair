@@ -1,0 +1,33 @@
+2 api_name: paddle.cumsum
+3 api_description: Returns the cumulative sum of elements along a specified axis.
+4 api_signature: paddle.cumsum(x,axis,dtype,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be cumulatively summed.
+- axis: The dimension to accumulate along, or `None` to cumsum over the flattened
+    tensor.
+- dtype: The output data type to cast to before summing, which can help avoid overflow.
+- out: An optional tensor to store the result in.
+7 api_usage_example:
+- import paddle
+- data = paddle.arange(12)
+- data = paddle.reshape(data, (3, 4))
+- y = paddle.cumsum(data)
+- y
+- Tensor(shape=[12], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0 , 1 , 3 , 6 , 10, 15, 21, 28, 36, 45, 55, 66])'
+- y = paddle.cumsum(data, axis=0)
+- y
+- Tensor(shape=[3, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0 , 1 , 2 , 3 ],'
+- '[4 , 6 , 8 , 10],'
+- '[12, 15, 18, 21]])'
+- y = paddle.cumsum(data, axis=-1)
+- y
+- Tensor(shape=[3, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0 , 1 , 3 , 6 ],'
+- '[4 , 9 , 15, 22],'
+- '[8 , 17, 27, 38]])'
+- y = paddle.cumsum(data, dtype='float64')
+- assert y.dtype == paddle.float64
+8 api_shape: {}

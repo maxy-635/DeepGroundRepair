@@ -1,0 +1,17 @@
+2 api_name: torch.fft.rfftn
+3 api_description: Computes the N-dimensional FFT of real-valued input and returns
+  the non-redundant half of the spectrum.
+4 api_signature: torch.fft.rfftn(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to transform with an N-dimensional real FFT.
+- s: The target sizes for the transformed dimensions, used to pad or trim each one
+    before computing the FFT.
+- dim: The dimensions along which to compute the transform.
+- norm: The normalization strategy for the FFT output, controlling how the transform
+    is scaled.
+7 api_usage_example:
+- ' t = torch.rand(10, 10)'
+- ' rfftn = torch.fft.rfftn(t)'
+- ' rfftn.size()'
+8 api_shape: null

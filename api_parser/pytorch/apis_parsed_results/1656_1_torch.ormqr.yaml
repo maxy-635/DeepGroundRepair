@@ -1,0 +1,15 @@
+2 api_name: torch.ormqr
+3 api_description: Applies a sequence of Householder reflectors to a matrix, multiplying
+  an orthogonal/unitary factor with a general matrix.
+4 api_signature: torch.ormqr(input,tau,other,left,transpose)
+5 api_details: ''
+6 api_parameters:
+- input: Contains the Householder vectors that define the orthogonal or unitary matrix
+    Q.
+- tau: Contains the scalar factors needed to reconstruct the matrix Q from the Householder
+    vectors.
+- other: Provides the matrix to be multiplied by Q.
+- left: Selects whether Q is applied on the left or the right of `other`.
+- transpose: Selects whether to apply Q normally or as its conjugate transpose.
+7 api_usage_example: null
+8 api_shape: null

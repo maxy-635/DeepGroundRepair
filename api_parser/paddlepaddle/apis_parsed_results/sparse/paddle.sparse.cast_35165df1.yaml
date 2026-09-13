@@ -1,0 +1,20 @@
+2 api_name: paddle.sparse.cast
+3 api_description: Casts a sparse tensor’s non-zero indices and values to the specified
+  dtypes, and only supports SparseCooTensor or SparseCsrTensor inputs.
+4 api_signature: paddle.sparse.cast(x,index_dtype,value_dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input sparse tensor whose index and/or value data types will be cast.
+- index_dtype: The target data type for the sparse tensor indices (or crows/cols in
+    CSR format).
+- value_dtype: The target data type for the sparse tensor values.
+7 api_usage_example:
+- import paddle
+- dense_x = paddle.to_tensor([-2, 0, 1])
+- sparse_x = dense_x.to_sparse_coo(1)
+- out = paddle.sparse.cast(sparse_x, 'int32', 'float64')
+- out
+- Tensor(shape=[3], dtype=paddle.float64, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 2]],
+- values=[-2.,  1.])
+8 api_shape: {}

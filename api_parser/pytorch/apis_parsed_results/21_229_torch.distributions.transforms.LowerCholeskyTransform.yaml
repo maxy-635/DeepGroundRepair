@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.transforms.LowerCholeskyTransform
+3 api_description: Transforms unconstrained matrices into lower-triangular matrices
+  with nonnegative diagonal entries.
+4 api_signature: torch.distributions.transforms.LowerCholeskyTransform(cache_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.backend.set_epsilon
+3 api_description: Sets the small numeric fuzz factor used to improve stability in
+  calculations.
+4 api_signature: tf.keras.backend.set_epsilon(value)
+5 api_details: ''
+6 api_parameters:
+- value: Sets the new epsilon value used for numerical stability.
+7 api_usage_example:
+- '# Set it back to the default value.'
+- keras.config.set_epsilon(1e-7)
+8 api_shape: ''

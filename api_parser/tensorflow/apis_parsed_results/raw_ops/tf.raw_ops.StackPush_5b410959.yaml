@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.StackPush
+3 api_description: Pushes a value onto a stack resource; this deprecated API should
+  be replaced by StackPushV2.
+4 api_signature: tf.raw_ops.StackPush(handle,elem)
+5 api_details: ''
+6 api_parameters:
+- handle: The mutable string tensor that identifies the stack to push into.
+- elem: The tensor element to push onto the stack.
+7 api_usage_example: null
+8 api_shape: ''

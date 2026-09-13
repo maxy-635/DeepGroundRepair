@@ -1,0 +1,21 @@
+2 api_name: paddle.nn.functional.celu
+3 api_description: The paddle.nn.functional.celu API applies the Continuously Differentiable
+  Exponential Linear Unit (CELU) activation function to the input tensor, introducing
+  non-linearity by scaling negative values with an exponential function.
+4 api_signature: paddle.nn.functional.celu(x,alpha)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor for the CELU activation function, which must be of
+    data type float16, float32, or float64.
+- alpha: Defines the 'alpha' parameter in the CELU activation formula, with a default
+    value of 1.0.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([[-1., 6.], [1., 15.6]])
+- out = F.celu(x, alpha=0.2)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.19865242,  6.        ],'
+- '[ 1.        , 15.60000038]])'
+8 api_shape: null

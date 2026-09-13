@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.confusion_matrix
+3 api_description: Builds a 2D confusion matrix from 1D true and predicted labels,
+  with rows for actual classes and columns for predicted classes, optionally weighted
+  and sized by the number of classes.
+4 api_signature: tf.math.confusion_matrix(labels,predictions,num_classes)
+5 api_details: ''
+6 api_parameters:
+- labels: The true class labels used to build the confusion matrix.
+- predictions: The predicted class labels to compare against the true labels.
+- num_classes: The total number of classes to include in the matrix, inferred from
+    labels and predictions if omitted.
+7 api_usage_example: null
+8 api_shape: ''

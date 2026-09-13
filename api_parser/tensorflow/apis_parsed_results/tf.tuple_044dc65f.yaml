@@ -1,0 +1,24 @@
+2 api_name: tensorflow.tuple
+3 api_description: Groups tensors so they are computed together only after all inputs
+  have been computed, while preserving their values.
+4 api_signature: tf.tuple(tensors,control_inputs)
+5 api_details: ''
+6 api_parameters:
+- tensors: Specifies the tensors or IndexedSlices to group together, allowing some
+    entries to be omitted with `None`.
+- control_inputs: Specifies extra operations that must complete before the tuple returns.
+7 api_usage_example:
+- 'with tf.Graph().as_default():'
+- '  with tf.compat.v1.Session() as sess:'
+- '    v = tf.Variable(0.0)'
+- '    a = tf.constant(1.0)'
+- '    sess.run(tf.compat.v1.global_variables_initializer())'
+- '    for i in range(5):'
+- '      update_op = v.assign_add(1.0)'
+- '      calc = [a + v]'
+- '      # `tf.tuple` ensures `update_op` is run before `b`'
+- '      b = tf.tuple(calc, [tf.group(update_op)])'
+- '      res_b = sess.run(b)'
+- '      res_v = sess.run(v)'
+- '      print(res_v)'
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Stage
+3 api_description: Stores values in a fast, lightweight staging buffer for later retrieval,
+  similar to a simplified high-performance queue.
+4 api_signature: tf.raw_ops.Stage(values,capacity,memory_limit)
+5 api_details: ''
+6 api_parameters:
+- values: The tensor values to insert into the staging area.
+- capacity: The maximum number of elements the staging area can hold before inserts
+    block.
+- memory_limit: The maximum total bytes allowed for tensors in the staging area before
+    inserts block.
+7 api_usage_example: null
+8 api_shape: ''

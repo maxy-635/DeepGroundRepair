@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.utils.normalize
+3 api_description: Scales vectors or arrays to unit norm along a specified axis, returning
+  the same array/tensor type as the input.
+4 api_signature: '"tf.keras.utils.normalize(x)"'
+5 api_details: ''
+6 api_parameters:
+- x: The input array or tensor to be normalized.
+7 api_usage_example: null
+8 api_shape: ''

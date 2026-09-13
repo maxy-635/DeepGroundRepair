@@ -1,0 +1,11 @@
+2 api_name: torch.get_default_dtype
+3 api_description: Returns the current default floating-point `torch.dtype` used for
+  new floating-point tensors.
+4 api_signature: '"torch.get_default_dtype()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' torch.get_default_dtype()  # initial default for floating point is torch.float32'
+- ' torch.set_default_dtype(torch.float64)'
+- ' torch.get_default_dtype()  # default is now changed to torch.float64'
+8 api_shape: null

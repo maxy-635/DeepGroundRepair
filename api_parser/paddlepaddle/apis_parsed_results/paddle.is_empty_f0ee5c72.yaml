@@ -1,0 +1,14 @@
+2 api_name: paddle.is_empty
+3 api_description: Returns whether a Tensor contains no elements.
+4 api_signature: paddle.is_empty(x)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose contents are checked to determine whether it is empty.
+7 api_usage_example:
+- import paddle
+- input = paddle.rand(shape=[4, 32, 32], dtype='float32')
+- res = paddle.is_empty(x=input)
+- print(res)
+- Tensor(shape=[], dtype=bool, place=Place(cpu), stop_gradient=True,
+- False)
+8 api_shape: {}

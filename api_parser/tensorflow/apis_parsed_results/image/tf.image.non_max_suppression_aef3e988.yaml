@@ -1,0 +1,12 @@
+2 api_name: tensorflow.image.non_max_suppression
+3 api_description: Selects the highest-scoring bounding boxes while suppressing boxes
+  with excessive IoU overlap, returning the indices of the kept boxes.
+4 api_signature: tf.image.non_max_suppression(boxes,scores,max_output_size,iou_threshold)
+5 api_details: ''
+6 api_parameters:
+- boxes: Specifies the candidate bounding boxes to evaluate for suppression.
+- scores: Provides the confidence score for each box used to rank selections.
+- max_output_size: Limits how many boxes can be returned after suppression.
+- iou_threshold: Sets the maximum IoU overlap allowed before a box is suppressed.
+7 api_usage_example: null
+8 api_shape: ''

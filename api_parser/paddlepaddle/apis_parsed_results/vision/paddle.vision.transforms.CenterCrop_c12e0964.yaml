@@ -1,0 +1,16 @@
+2 api_name: paddle.vision.transforms.CenterCrop
+3 api_description: Crops the input data to a centered region.
+4 api_signature: paddle.vision.transforms.CenterCrop(size)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the desired output crop size as (height, width).
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import CenterCrop
+- transform = CenterCrop(224)
+- fake_img = Image.fromarray((np.random.rand(300, 320, 3) * 255.).astype(np.uint8))
+- fake_img = transform(fake_img)
+- print(fake_img.size)
+- (224, 224)
+8 api_shape: {}

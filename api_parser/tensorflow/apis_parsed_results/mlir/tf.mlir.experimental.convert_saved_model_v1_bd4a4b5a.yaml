@@ -1,0 +1,13 @@
+2 api_name: tensorflow.mlir.experimental.convert_saved_model_v1
+3 api_description: Converts a TensorFlow SavedModel v1 into an MLIR module representation.
+4 api_signature: tf.mlir.experimental.convert_saved_model_v1(saved_model_path,exported_names,tags,lift_variables)
+5 api_details: ''
+6 api_parameters:
+- saved_model_path: Specifies the filesystem path to the SavedModel to convert.
+- exported_names: Specifies which exported function or signature names to include
+    in the conversion.
+- tags: Identifies the SavedModel MetaGraphDef to load using the provided tag set.
+- lift_variables: Controls whether tf.VarHandleOp variables are promoted to resource
+    arguments during conversion.
+7 api_usage_example: null
+8 api_shape: ''

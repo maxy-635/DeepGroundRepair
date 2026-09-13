@@ -1,0 +1,19 @@
+2 api_name: torch.nn.Linear
+3 api_description: Applies a linear transformation to input data by computing y =
+  xA^T + b, where x is the input, A is the weight matrix, and b is the bias vector.
+4 api_signature: torch.nn.Linear(in_features,out_features)
+5 api_details: ''
+6 api_parameters:
+- in_features: Specifies the number of input features each sample must have.
+- out_features: Defines the number of output features each sample will produce.
+7 api_usage_example:
+- ' m = nn.Linear(20, 30)'
+- ' input = torch.randn(128, 20)'
+- ' output = m(input)'
+- ' print(output.size())'
+8 api_shape:
+  input tensor shape: (*, H_\text{in}) where * means any number of dimensions including
+    none and H_\text{in} = \text{in_features}.
+  output tensor shape: (*, H_\text{out}) where all but the last dimension are the
+    same shape as the input and H_\text{out} = \text{out_features}.
+  tensor shape transform formulas: {}

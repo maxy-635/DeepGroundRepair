@@ -1,0 +1,17 @@
+2 api_name: paddle.distributed.unshard_dtensor
+3 api_description: Converts a distributed tensor into a dense `paddle.Tensor` by first
+  making it replicated across all processes, effectively reversing `shard_tensor`.
+4 api_signature: paddle.distributed.unshard_dtensor(dist_tensor)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- from paddle.distributed import Replicate, Shard
+- '>>>'
+- mesh = dist.ProcessMesh([0, 1], dim_names=["x"])
+- original_tensor = paddle.rand([4, 1024, 512])
+- dist_tensor = dist.shard_tensor(original_tensor, mesh, [Shard(0)])
+- '# dense_tensor''s shape is the same as original_tensor'
+- dense_tensor = dist.unshard_dtensor(dist_tensor)
+8 api_shape: {}

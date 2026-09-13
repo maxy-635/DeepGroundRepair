@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.Dilation2D
+3 api_description: Computes grayscale 2D dilation on NHWC 4-D inputs using a 3-D filter,
+  applying each depth channel independently and producing an output whose spatial
+  size depends on padding.
+4 api_signature: tf.raw_ops.Dilation2D(input,filter,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D input tensor to be dilated, with shape `[batch, in_height, in_width,
+    depth]`.
+- filter: The 3-D dilation kernel applied to the input, with shape `[filter_height,
+    filter_width, depth]` and the same type as `input`.
+- strides: The sliding-window stride values, specified as `[1, stride_height, stride_width,
+    1]`.
+- padding: The padding mode to use for the operation, either `SAME` or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

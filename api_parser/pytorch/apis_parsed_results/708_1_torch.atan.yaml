@@ -1,0 +1,12 @@
+2 api_name: torch.atan
+3 api_description: Computes the element-wise arctangent of a tensor, returning angles
+  in radians.
+4 api_signature: torch.atan(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are used to compute the elementwise arctangent.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.atan(a)'
+8 api_shape: null

@@ -1,0 +1,7 @@
+2 api_name: torch.backends.mha.set_fastpath_enabled
+3 api_description: Enables or disables the MHA fast path implementation.
+4 api_signature: torch.backends.mha.set_fastpath_enabled(value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

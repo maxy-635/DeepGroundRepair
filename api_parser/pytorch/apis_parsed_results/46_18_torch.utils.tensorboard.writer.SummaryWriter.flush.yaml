@@ -1,0 +1,8 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.flush
+3 api_description: Writes any buffered TensorBoard event data to disk so it is saved
+  immediately.
+4 api_signature: flush()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.Maximum
+3 api_description: Returns the element-wise maximum of x and y, using broadcast semantics
+  when their shapes differ.
+4 api_signature: tf.raw_ops.Maximum(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor whose values are compared elementwise.
+- y: The second input tensor of the same type as `x` used for the elementwise maximum
+    comparison.
+7 api_usage_example:
+- x = tf.constant([-5., 0., 0., 0.])
+- y = tf.constant([-3.])
+- tf.math.maximum(x, y)
+8 api_shape: ''

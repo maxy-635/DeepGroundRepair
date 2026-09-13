@@ -1,0 +1,9 @@
+2 api_name: torch.xpu.Event
+3 api_description: Represents an XPU event for recording, synchronization, timing,
+  and querying completion status in torch.xpu.
+4 api_signature: torch.xpu.Event(enable_timing)
+5 api_details: ''
+6 api_parameters:
+- enable_timing: Controls whether the event records timing information.
+7 api_usage_example: null
+8 api_shape: null

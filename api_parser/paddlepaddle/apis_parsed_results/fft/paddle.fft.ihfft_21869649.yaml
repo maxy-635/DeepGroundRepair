@@ -1,0 +1,16 @@
+2 api_name: paddle.fft.ihfft
+3 api_description: Computes the inverse FFT of a Hermitian-symmetric frequency-domain
+  signal, returning the corresponding real-valued time-domain sequence.
+4 api_signature: paddle.fft.ihfft(x,n,axis,norm,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to transform.
+- n: Specifies how many points along the transform axis to use, cropping or zero-padding
+    the input as needed.
+- axis: Selects the axis along which to compute the inverse FFT, defaulting to the
+    last axis.
+- norm: Chooses the normalization mode for scaling the transform, using backward,
+    ortho, or forward.
+- out: Provides an optional tensor to store the output.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.layers.average
+3 api_description: The tf.keras.layers.average API provides a functional interface
+  to compute the average of multiple input tensors, allowing for the combination of
+  predictions or features in a neural network.
+4 api_signature: tf.keras.layers.average(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of input tensors that must all have the same shape, which will be
+    averaged element-wise.
+7 api_usage_example:
+- input1 = keras.layers.Input(shape=(16,))
+- x1 = keras.layers.Dense(8, activation='relu')(input1)
+- input2 = keras.layers.Input(shape=(32,))
+- x2 = keras.layers.Dense(8, activation='relu')(input2)
+- y = keras.layers.average([x1, x2])
+- out = keras.layers.Dense(4)(y)
+- model = keras.models.Model(inputs=[input1, input2], outputs=out)
+8 api_shape: null

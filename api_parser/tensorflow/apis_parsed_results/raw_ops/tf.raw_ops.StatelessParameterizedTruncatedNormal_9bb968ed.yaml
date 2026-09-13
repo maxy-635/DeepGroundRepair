@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.StatelessParameterizedTruncatedNormal
+3 api_description: Generates a truncated normal random tensor from a stateless seed
+  using per-element mean, standard deviation, minimum, and maximum parameters.
+4 api_signature: tf.raw_ops.StatelessParameterizedTruncatedNormal(shape,seed,means,stddevs,minvals,maxvals)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor's shape.
+- seed: Provides two integer seed values for deterministic randomness.
+- means: Sets the mean value for each batch of the truncated normal distribution.
+- stddevs: Sets the standard deviation for each batch and must be greater than 0.
+- minvals: Sets the lower truncation bound for each batch, allowing negative infinity.
+- maxvals: Sets the upper truncation bound for each batch, allowing positive infinity
+    and requiring it to exceed the minimum bound.
+7 api_usage_example: null
+8 api_shape: ''

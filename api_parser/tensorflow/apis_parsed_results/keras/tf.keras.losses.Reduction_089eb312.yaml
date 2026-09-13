@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.losses.Reduction
+3 api_description: Specifies how a loss function reduces per-example losses to a final
+  value, such as averaging, summing, or leaving losses unreduced.
+4 api_signature: '"all()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

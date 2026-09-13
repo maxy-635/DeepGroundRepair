@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.is_concrete_float
+3 api_description: Returns True when the input is a concrete float value, and also
+  treats plain integers as concrete.
+4 api_signature: torch.fx.experimental.symbolic_shapes.is_concrete_float(a)
+5 api_details: ''
+6 api_parameters:
+- a: The object to test for whether it is a float.
+7 api_usage_example: null
+8 api_shape: null

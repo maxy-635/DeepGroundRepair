@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.layers.Maximum
+3 api_description: Computes the element-wise maximum from a list of tensors with the
+  same shape, returning a single tensor of the same shape.
+4 api_signature: tf.keras.layers.Maximum()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- input1 = keras.layers.Input(shape=(16,))
+- x1 = keras.layers.Dense(8, activation='relu')(input1)
+- input2 = keras.layers.Input(shape=(32,))
+- x2 = keras.layers.Dense(8, activation='relu')(input2)
+- '# equivalent to `y = keras.layers.maximum([x1, x2])`'
+- y = keras.layers.Maximum()([x1, x2])
+- out = keras.layers.Dense(4)(y)
+- model = keras.models.Model(inputs=[input1, input2], outputs=out)
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.BatchSelfAdjointEig
+3 api_description: Computes eigenvalues and eigenvectors for a batch of self-adjoint
+  matrices.
+4 api_signature: tf.raw_ops.BatchSelfAdjointEig(input)
+5 api_details: ''
+6 api_parameters:
+- input: The batch of self-adjoint matrices whose eigenvalues and eigenvectors are
+    computed.
+7 api_usage_example: null
+8 api_shape: ''

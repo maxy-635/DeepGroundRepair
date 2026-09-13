@@ -1,0 +1,46 @@
+2 api_name: torch.library.custom_op
+3 api_description: Registers a Python function as a custom PyTorch operator.
+4 api_signature: torch.library.custom_op(name,fn,*,schema)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the custom operator’s stable namespace-qualified identifier, such as
+    `mylib::my_linear`.
+- schema: Defines the operator’s input/output signature, or can be left `None` to
+    infer it from type annotations.
+7 api_usage_example:
+- ' import torch'
+- ' from torch import Tensor'
+- ' from torch.library import custom_op'
+- ' import numpy as np'
+- ' @custom_op("mylib::numpy_sin", mutates_args=())'
+- ' def numpy_sin(x: Tensor) -> Tensor:'
+- '     x_np = x.cpu().numpy()'
+- '     y_np = np.sin(x_np)'
+- '     return torch.from_numpy(y_np).to(device=x.device)'
+- ' x = torch.randn(3)'
+- ' y = numpy_sin(x)'
+- ' assert torch.allclose(y, x.sin())'
+- ' # Example of a custom op that only works for one device type.'
+- ' @custom_op("mylib::numpy_sin_cpu", mutates_args=(), device_types="cpu")'
+- ' def numpy_sin_cpu(x: Tensor) -> Tensor:'
+- '     x_np = x.numpy()'
+- '     y_np = np.sin(x_np)'
+- '     return torch.from_numpy(y_np)'
+- ' x = torch.randn(3)'
+- ' y = numpy_sin_cpu(x)'
+- ' assert torch.allclose(y, x.sin())'
+- ' # Example of a custom op that mutates an input'
+- ' @custom_op("mylib::numpy_sin_inplace", mutates_args={"x"}, device_types="cpu")'
+- ' def numpy_sin_inplace(x: Tensor) -> None:'
+- '     x_np = x.numpy()'
+- '     np.sin(x_np, out=x_np)'
+- ' x = torch.randn(3)'
+- ' expected = x.sin()'
+- ' numpy_sin_inplace(x)'
+- ' assert torch.allclose(x, expected)'
+- ' # Example of a factory function'
+- ' @torch.library.custom_op("mylib::bar", mutates_args={}, device_types="cpu")'
+- ' def bar(device: torch.device) -> Tensor:'
+- '     return torch.ones(3)'
+- ' bar("cpu")'
+8 api_shape: null

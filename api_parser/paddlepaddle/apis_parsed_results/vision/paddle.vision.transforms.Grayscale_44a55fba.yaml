@@ -1,0 +1,17 @@
+2 api_name: paddle.vision.transforms.Grayscale
+3 api_description: Converts an image to grayscale.
+4 api_signature: '"paddle.vision.transforms.Grayscale(num_output_channels)"'
+5 api_details: ''
+6 api_parameters:
+- num_output_channels: Sets how many channels the grayscale output image should have,
+    either 1 or 3.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import Grayscale
+- transform = Grayscale()
+- fake_img = Image.fromarray((np.random.rand(224, 224, 3) * 255.).astype(np.uint8))
+- fake_img = transform(fake_img)
+- print(np.array(fake_img).shape)
+- (224, 224)
+8 api_shape: {}

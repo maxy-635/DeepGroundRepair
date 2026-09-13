@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ZipDataset
+3 api_description: Creates a dataset by zipping corresponding elements from multiple
+  input datasets, stopping at the smallest dataset length without error if sizes differ.
+4 api_signature: tf.raw_ops.ZipDataset(input_datasets,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_datasets: Specifies one or more input dataset variants to combine into a single
+    zipped dataset.
+- output_types: Defines the data types of the elements produced by the zipped dataset.
+- output_shapes: Defines the shapes of the elements produced by the zipped dataset.
+7 api_usage_example: null
+8 api_shape: ''

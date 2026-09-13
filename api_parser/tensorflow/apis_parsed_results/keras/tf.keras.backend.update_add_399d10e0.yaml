@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.update_add
+3 api_description: Adds a value to an existing backend variable or tensor in place
+  and returns the updated value.
+4 api_signature: tf.keras.backend.update_add(x,increment)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

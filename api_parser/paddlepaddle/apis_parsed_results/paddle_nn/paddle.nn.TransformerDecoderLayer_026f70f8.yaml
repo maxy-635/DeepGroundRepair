@@ -1,0 +1,16 @@
+2 api_name: paddle.nn.TransformerDecoderLayer
+3 api_description: TransformerDecoderLayer consists of self-attention, cross-attention,
+  and feedforward sub-layers with optional pre-normalization and post-processing using
+  dropout, residual connections, and layer normalization.
+4 api_signature: paddle.nn.TransformerDecoderLayer(d_model,nhead,dim_feedforward,dropout,activation)
+5 api_details: ''
+6 api_parameters:
+- d_model: Defines the size of the input and output feature vectors.
+- nhead: Specifies the number of attention heads in the multi-head attention mechanism.
+- dim_feedforward: Sets the size of the hidden layer in the feedforward network.
+- dropout: Determines the dropout rate applied during the processing of MHA and FFN
+    layers.
+- activation: Chooses the activation function used within the feedforward network,
+    defaulting to ReLU.
+7 api_usage_example: []
+8 api_shape: null

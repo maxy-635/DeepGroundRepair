@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.ResizeBicubicGrad
+3 api_description: Computes gradients for bicubic image resize, propagating the output
+  gradient back to the input image.
+4 api_signature: tf.raw_ops.ResizeBicubicGrad(grads,original_image,align_corners,half_pixel_centers)
+5 api_details: ''
+6 api_parameters:
+- grads: The gradient tensor from the resized image, used as the incoming backpropagation
+    signal.
+- original_image: The original image tensor that was resized, which provides the target
+    input shape for computing gradients.
+- align_corners: Controls whether the corner pixels of the input and output tensors
+    are aligned during gradient calculation.
+- half_pixel_centers: Controls whether pixel centers are treated as half-integer positions
+    when computing the bicubic resize gradient.
+7 api_usage_example: null
+8 api_shape: ''

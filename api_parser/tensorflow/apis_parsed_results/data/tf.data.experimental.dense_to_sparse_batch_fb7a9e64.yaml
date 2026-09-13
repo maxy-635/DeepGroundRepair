@@ -1,0 +1,9 @@
+2 api_name: tensorflow.data.experimental.dense_to_sparse_batch
+3 api_description: Batches consecutive variable-shaped dataset elements into tf.sparse.SparseTensors
+  with a specified per-row dense shape.
+4 api_signature: tf.data.experimental.dense_to_sparse_batch(batch_size)
+5 api_details: ''
+6 api_parameters:
+- batch_size: The number of consecutive dataset elements to combine into each batch.
+7 api_usage_example: null
+8 api_shape: ''

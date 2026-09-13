@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.CollectiveAllToAllV2
+3 api_description: Mutually exchanges multiple same-shaped tensors across a collective
+  group, using stateless execution with runtime-unique keys to distinguish groups.
+4 api_signature: tf.raw_ops.CollectiveAllToAllV2(input,group_size,group_key,instance_key,name)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are exchanged across the all-to-all collective operation.
+- group_size: Specifies how many devices or participants are in the collective group.
+- group_key: Identifies which collective group this operation belongs to.
+- instance_key: Distinguishes this specific all-to-all instance within the group.
+- name: Optionally assigns a name to the operation for graph readability and debugging.
+7 api_usage_example: null
+8 api_shape: ''

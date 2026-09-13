@@ -1,0 +1,39 @@
+2 api_name: paddle.linalg.lu
+3 api_description: Computes the LU factorization of an N-D tensor (N>=2), decomposing
+  each matrix into lower and upper triangular factors.
+4 api_signature: paddle.linalg.lu(x,pivot)
+5 api_details: ''
+6 api_parameters:
+- pivot: Determines whether LU decomposition uses pivoting.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]).astype('float64')
+- lu,p,info = paddle.linalg.lu(x, get_infos=True)
+- print(lu)
+- Tensor(shape=[3, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[5.        , 6.        ],'
+- '[0.20000000, 0.80000000],'
+- '[0.60000000, 0.50000000]])'
+- print(p)
+- Tensor(shape=[2], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[3, 3])'
+- print(info)
+- Tensor(shape=[], dtype=int32, place=Place(cpu), stop_gradient=True,
+- 0)
+- P,L,U = paddle.linalg.lu_unpack(lu,p)
+- print(P)
+- Tensor(shape=[3, 3], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[0., 1., 0.],'
+- '[0., 0., 1.],'
+- '[1., 0., 0.]])'
+- print(L)
+- Tensor(shape=[3, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[1.        , 0.        ],'
+- '[0.20000000, 1.        ],'
+- '[0.60000000, 0.50000000]])'
+- print(U)
+- Tensor(shape=[2, 2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[5.        , 6.        ],'
+- '[0.        , 0.80000000]])'
+- '# one can verify : X = P @ L @ U ;'
+8 api_shape: {}

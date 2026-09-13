@@ -1,0 +1,19 @@
+2 api_name: paddle.incubate.nn.functional.fused_multi_transformer
+3 api_description: Fused GPU-only operator that computes multiple Transformer layers
+  in one pass, combining the core transformer operations for improved efficiency.
+4 api_signature: paddle.incubate.nn.functional.fused_multi_transformer(x,qkv_weights,linear_weights,ffn1_weights,ffn2_weights,pre_layer_norm,epsilon,cache_kvs,seq_lens,attn_mask,dropout_rate,activation,training,mode,norm_type,name)
+5 api_details: ''
+6 api_parameters:
+- x: Input 3-D tensor of shape [batch_size, sequence_length, d_model] and type float16.
+- pre_layer_norm: Chooses whether layer normalization is applied before attention
+    and feed-forward blocks or after them.
+- epsilon: Adds a small value to the layer norm denominator for numerical stability.
+- seq_lens: Provides the valid sequence lengths for each batch item.
+- attn_mask: Masks unwanted attention positions such as padding tokens or future tokens.
+- dropout_rate: Sets the probability of dropping units during dropout.
+- activation: Specifies the activation function used in the transformer block.
+- training: Indicates whether the function runs in training mode or inference mode.
+- mode: Selects the transformer computation mode or variant.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: []
+8 api_shape: {}

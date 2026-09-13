@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.OutfeedEnqueue
+3 api_description: Enqueues a Tensor onto the computation outfeed for later retrieval
+  by the host or another consumer.
+4 api_signature: tf.raw_ops.OutfeedEnqueue(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to insert into the outfeed queue.
+7 api_usage_example: null
+8 api_shape: ''

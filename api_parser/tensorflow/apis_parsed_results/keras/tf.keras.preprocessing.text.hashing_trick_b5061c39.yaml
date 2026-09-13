@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.preprocessing.text.hashing_trick
+3 api_description: Converts text into a sequence of integer token IDs by hashing words
+  or n-grams into a fixed-size vocabulary, optionally supporting a custom hash function
+  and a chosen text split mode.
+4 api_signature: tf.keras.preprocessing.text.hashing_trick(text,n)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

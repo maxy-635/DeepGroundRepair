@@ -1,0 +1,30 @@
+2 api_name: paddle.nn.functional.conv2d
+3 api_description: The paddle.nn.functional.conv2d API performs a 2D convolution operation
+  on input data using specified filters, strides, paddings, dilations, and groups,
+  supporting input/output formats of NCHW or NHWC. It calculates the convolution output,
+  optionally adds bias, and applies an activation function if specified.
+4 api_signature: paddle.nn.functional.conv2d(x,weight,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor with shape [N, C, H, W] and data type float16, float32, or float64.
+- weight: The convolution kernel tensor with shape [M, C/g, kH, kW] defining the number
+    of output channels, groups, and filter dimensions.
+- stride: The stride size for the convolution, specified as a single integer or a
+    tuple (stride_height, stride_width).
+- padding: The padding size for the convolution, specified as a string ('VALID' or
+    'SAME'), or as a list/tuple defining the padding dimensions.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x_var = paddle.randn((2, 3, 8, 8), dtype='float32')
+- w_var = paddle.randn((6, 3, 3, 3), dtype='float32')
+- y_var = F.conv2d(x_var, w_var)
+- print(y_var.shape)
+- '[2, 6, 6, 6]'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[0]
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

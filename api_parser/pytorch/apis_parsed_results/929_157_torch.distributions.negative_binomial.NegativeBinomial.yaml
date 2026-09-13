@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.negative_binomial.NegativeBinomial
+3 api_description: Represents a negative binomial distribution, modeling the number
+  of failures before a fixed number of successes with configurable total_count and
+  either probs or logits, and provides sampling, log-probability evaluation, and distribution
+  statistics.
+4 api_signature: NegativeBinomial(total_count,probs)
+5 api_details: ''
+6 api_parameters:
+- total_count: Sets how many negative Bernoulli failures are accumulated before the
+    distribution stops, and can be a real non-negative value.
+- probs: Sets the success probability for each trial, constrained to the interval
+    [0, 1).
+7 api_usage_example: null
+8 api_shape: null

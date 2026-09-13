@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.functional.class_center_sample
+3 api_description: The paddle.nn.functional.class_center_sample API samples a subset
+  of class centers as proposed in the PartialFC paper, optimizing the training process
+  by focusing on a reduced set of class centers.
+4 api_signature: paddle.nn.functional.class _center_sample(label,num_class es,num_samples)
+5 api_details: ''
+6 api_parameters:
+- label: Specifies a 1-D tensor containing labels for each sample, where each label
+    is an integer in the range [0, num_classes).
+- num_samples: Defines the number of class centers to be sampled as a positive integer.
+7 api_usage_example: []
+8 api_shape: null

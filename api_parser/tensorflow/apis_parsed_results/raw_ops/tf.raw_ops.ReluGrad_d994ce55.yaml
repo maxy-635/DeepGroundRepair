@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ReluGrad
+3 api_description: Computes the gradient of a ReLU activation by passing through upstream
+  gradients where the original activation was positive, and zeroing them where it
+  was not.
+4 api_signature: tf.raw_ops.ReluGrad(gradients,features)
+5 api_details: ''
+6 api_parameters:
+- gradients: Contains the upstream gradient values to propagate backward through the
+    corresponding ReLU operation.
+- features: Contains the original ReLU inputs or outputs used to determine where gradients
+    should pass through unchanged.
+7 api_usage_example: null
+8 api_shape: ''

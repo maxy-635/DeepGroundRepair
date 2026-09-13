@@ -1,0 +1,11 @@
+2 api_name: torch.nn.utils.prune.CustomFromMask.prune
+3 api_description: Creates a pruned tensor by applying a user-provided mask to the
+  input, keeping masked entries and removing the rest.
+4 api_signature: prune(t,importance_scores)
+5 api_details: ''
+6 api_parameters:
+- t: The tensor to prune, which must have the same shape as `default_mask`.
+- importance_scores: Optional importance values used to compute the pruning mask for
+    `t`; if omitted, `t` itself is used.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: paddle.autograd.ir_backward.calc_gradient
+3 api_description: Computes the gradient of an input by performing backward IR-based
+  autograd calculation.
+4 api_signature: paddle.autograd.ir_backward.calc_gradient(outputs,inputs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.nextafter
+3 api_description: Returns the next representable value after x1 toward x2, element-wise,
+  including subnormal results.
+4 api_signature: tf.math.nextafter(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The starting tensor whose values are moved to the next representable floating-point
+    values.
+- x2: The direction tensor that determines which neighboring floating-point values
+    to step toward.
+7 api_usage_example: null
+8 api_shape: ''

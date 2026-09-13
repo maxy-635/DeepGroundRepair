@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.EnqueueTPUEmbeddingArbitraryTensorBatch
+3 api_description: Enqueues a batch of arbitrary TPU embedding tensors, preserving
+  per-feature sample, embedding, and weight alignment to support sparse embedding
+  lookups on TPU.
+4 api_signature: tf.raw_ops.EnqueueTPUEmbeddingArbitraryTensorBatch(sample_indices_or_row_splits,embedding_indices,aggregation_weights)
+5 api_details: ''
+6 api_parameters:
+- sample_indices_or_row_splits: Specifies, for each embedding index and weight tensor,
+    which training example it belongs to, or provides row-split boundaries when grouping
+    by sample.
+- embedding_indices: Contains the embedding table indices to enqueue for each corresponding
+    training example.
+- aggregation_weights: Provides the per-example weights used to aggregate the embeddings
+    for each corresponding training example.
+7 api_usage_example: null
+8 api_shape: ''

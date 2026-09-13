@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ArgMax
+3 api_description: Returns the index of the maximum value along a specified axis of
+  a tensor; ties are not guaranteed to return a consistent index.
+4 api_signature: tf.raw_ops.ArgMax(input,dimension)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to search for the maximum values and return their indices from.
+- dimension: The axis along which to compute the argmax reduction.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.geometric.Geometric
+3 api_description: A discrete distribution over the number of Bernoulli trials needed
+  to get the first success, parameterized by success probability `probs` or log-odds
+  `logits`; it supports sampling, log-probability evaluation, mean/variance, entropy,
+  CDF/ICDF, and related distribution utilities.
+4 api_signature: torch.distributions.geometric.Geometric(probs,logits)
+5 api_details: ''
+6 api_parameters:
+- probs: Specifies the probability of sampling 1, and must be in the range (0, 1].
+- logits: Specifies the log-odds of sampling 1.
+7 api_usage_example:
+- ' m = Geometric(torch.tensor([0.3]))'
+- ' m.sample()  # underlying Bernoulli has 30% chance 1; 70% chance 0'
+8 api_shape: null

@@ -1,0 +1,32 @@
+2 api_name: torch.nested.nested_tensor_from_jagged
+3 api_description: Builds a jagged-layout nested tensor from a packed values buffer
+  plus matching offsets or lengths metadata that splits the jagged dimension into
+  batch elements on the same device.
+4 api_signature: torch.nested.nested_tensor_from_jagged(values,offsets,lengths)
+5 api_details: ''
+6 api_parameters:
+- values: The packed data buffer containing all jagged elements and trailing dimensions.
+- offsets: Boundary indices that mark where each batch element starts and ends in
+    the jagged dimension.
+- lengths: The per-batch element sizes along the jagged dimension.
+7 api_usage_example:
+- ' values = torch.randn(12, 5)'
+- ' offsets = torch.tensor([0, 3, 5, 6, 10, 12])'
+- ' nt = nested_tensor_from_jagged(values, offsets)'
+- ' # 3D shape with the middle dimension jagged'
+- ' nt.shape'
+- ' # Length of each item in the batch:'
+- ' offsets.diff()'
+- ' values = torch.randn(6, 5)'
+- ' offsets = torch.tensor([0, 2, 3, 6])'
+- ' lengths = torch.tensor([1, 1, 2])'
+- ' # NT with holes'
+- ' nt = nested_tensor_from_jagged(values, offsets, lengths)'
+- ' a, b, c = nt.unbind()'
+- ' # Batch item 1 consists of indices [0, 1)'
+- ' torch.equal(a, values[0:1, :])'
+- ' # Batch item 2 consists of indices [2, 3)'
+- ' torch.equal(b, values[2:3, :])'
+- ' # Batch item 3 consists of indices [3, 5)'
+- ' torch.equal(c, values[3:5, :])'
+8 api_shape: null

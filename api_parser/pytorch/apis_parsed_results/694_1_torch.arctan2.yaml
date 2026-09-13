@@ -1,0 +1,8 @@
+2 api_name: torch.arctan2
+3 api_description: Computes the element-wise arctangent of y/x using the signs of
+  both inputs to determine the correct quadrant.
+4 api_signature: torch.arctan2(input,other)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

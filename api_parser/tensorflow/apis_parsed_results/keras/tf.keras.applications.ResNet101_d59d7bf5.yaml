@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.applications.ResNet101
+3 api_description: Builds the ResNet101 deep convolutional neural network for image
+  classification and transfer learning, with optional pretrained weights.
+4 api_signature: tf.keras.applications.ResNet101(weights,include_top,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Controls whether the model includes the final fully connected classification
+    layer.
+- weights: Specifies the source of pretrained weights to load, or uses random initialization
+    if set to None.
+- input_shape: Sets the input tensor shape when excluding the top layer, with 3 channels
+    and minimum spatial size requirements.
+- classes: Defines the number of output classes when using the top layer without pretrained
+    weights.
+7 api_usage_example: null
+8 api_shape: ''

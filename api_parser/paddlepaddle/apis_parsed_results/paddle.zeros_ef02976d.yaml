@@ -1,0 +1,35 @@
+2 api_name: paddle.zeros
+3 api_description: Creates a tensor with the given shape and dtype, filled with zeros.
+4 api_signature: paddle.zeros(shape,dtype,out,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the tensor shape to create, and can be given as an int, list, tuple,
+    or 1-D Tensor.
+- dtype: Specifies the output tensor’s data type.
+- out: Provides an existing tensor to store the result.
+- device: Selects the device where the returned tensor will be placed.
+- requires_grad: Indicates whether autograd should track operations on the returned
+    tensor.
+7 api_usage_example:
+- import paddle
+- '# shape is a list/tuple'
+- data1 = paddle.zeros(shape=[3, 2])
+- print(data1.numpy())
+- '[[0. 0.]'
+- '[0. 0.]'
+- '[0. 0.]]'
+- '# shape is a Tensor'
+- shape = paddle.to_tensor([3, 2])
+- data2 = paddle.zeros(shape=shape)
+- print(data2.numpy())
+- '[[0. 0.]'
+- '[0. 0.]'
+- '[0. 0.]]'
+- '# shape is a Tensor List'
+- shape = [paddle.to_tensor(3), paddle.to_tensor(2)]
+- data3 = paddle.zeros(shape=shape)
+- print(data3.numpy())
+- '[[0. 0.]'
+- '[0. 0.]'
+- '[0. 0.]]'
+8 api_shape: {}

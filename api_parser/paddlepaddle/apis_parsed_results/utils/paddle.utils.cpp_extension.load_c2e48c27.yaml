@@ -1,0 +1,12 @@
+2 api_name: paddle.utils.cpp_extension.load
+3 api_description: Automatically compiles C++/CUDA source files just-in-time and returns
+  a callable Python extension for custom Paddle operators.
+4 api_signature: paddle.utils.cpp_extension.load(name,sources,verbose)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the shared library’s base filename without the `.so` or `.dll` suffix.
+- sources: Lists the operator source files to compile, supporting `.cc`, `.cpp`, and
+    `.cu` files.
+- verbose: Controls whether detailed compilation logs are shown; defaults to `False`.
+7 api_usage_example: []
+8 api_shape: {}

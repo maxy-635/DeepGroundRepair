@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.ZeroPad1D
+3 api_description: paddle.nn.ZeroPad1D pads the boundaries of a 1D input tensor with
+  zeros.
+4 api_signature: paddle.nn.ZeroPad1D(padding)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the size of padding applied to the left and right sides, either
+    as a single integer or a tuple/list of two integers for asymmetric padding.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- input_shape = (1, 2, 3)
+- pad = [1, 2]
+- data = paddle.arange(paddle.prod(paddle.to_tensor(input_shape)), dtype="float32").reshape(input_shape)
+  + 1
+- my_pad = nn.ZeroPad1D(padding=pad)
+- result = my_pad(data)
+- print(result)
+- Tensor(shape=[1, 2, 6], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[0., 1., 2., 3., 0., 0.],'
+- '[0., 4., 5., 6., 0., 0.]]])'
+8 api_shape: null

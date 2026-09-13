@@ -1,0 +1,25 @@
+2 api_name: torch.jit.Attribute
+3 api_description: Marks a class attribute in `__init__` with an explicit TorchScript
+  type and returns the value unchanged for compiler type inference.
+4 api_signature: torch.jit.Attribute(value,type)
+5 api_details: ''
+6 api_parameters:
+- value: Sets the attribute’s initial value.
+- type: Specifies the Python type of the attribute.
+7 api_usage_example:
+- import torch
+- from typing import Dict
+- 'class AttributeModule(torch.jit.ScriptModule):'
+- '    def __init__(self) -> None:'
+- '        super().__init__()'
+- '        self.foo = torch.jit.Attribute(0.1, float)'
+- '        # we should be able to use self.foo as a float here'
+- '        assert 0.0 < self.foo'
+- '        self.names_ages = torch.jit.Attribute({}, Dict[str, int])'
+- '        self.names_ages["someone"] = 20'
+- '        assert isinstance(self.names_ages["someone"], int)'
+- m = AttributeModule()
+- '# m will contain two attributes'
+- '# 1. foo of type float'
+- '# 2. names_ages of type Dict[str, int]'
+8 api_shape: null

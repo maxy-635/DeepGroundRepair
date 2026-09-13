@@ -1,0 +1,13 @@
+2 api_name: torch.set_flush_denormal
+3 api_description: Disables CPU denormal floating-point numbers so operations flush
+  tiny subnormal values to zero.
+4 api_signature: torch.set_flush_denormal(mode)
+5 api_details: ''
+6 api_parameters:
+- mode: Enables or disables flush denormal mode.
+7 api_usage_example:
+- ' torch.set_flush_denormal(True)'
+- ' torch.tensor([1e-323], dtype=torch.float64)'
+- ' torch.set_flush_denormal(False)'
+- ' torch.tensor([1e-323], dtype=torch.float64)'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TPUPartitionedOutput
+3 api_description: Demultiplexes an XLA-sharded tensor into a list of partitioned
+  outputs outside the XLA computation.
+4 api_signature: tf.raw_ops.TPUPartitionedOutput(inputs,num_splits,partition_dim)
+5 api_details: ''
+6 api_parameters:
+- inputs: Provides the tensor whose full shape is used to define the partitioned outputs.
+- num_splits: Specifies how many partitions to split the tensor into, with at least
+    one split required.
+- partition_dim: Indicates which dimension of the tensor is partitioned, defaulting
+    to the first dimension.
+7 api_usage_example: null
+8 api_shape: ''

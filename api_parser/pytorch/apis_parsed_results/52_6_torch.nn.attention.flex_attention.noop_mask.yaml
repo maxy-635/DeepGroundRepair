@@ -1,0 +1,8 @@
+2 api_name: torch.nn.attention.flex_attention.noop_mask
+3 api_description: Returns a mask_mod that performs no masking, leaving attention
+  scores unchanged.
+4 api_signature: torch.nn.attention.flex_attention.noop_mask(token_q,token_kv)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

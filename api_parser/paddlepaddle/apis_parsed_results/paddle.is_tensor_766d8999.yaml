@@ -1,0 +1,17 @@
+2 api_name: paddle.is_tensor
+3 api_description: Returns True if the input object is a paddle.Tensor; otherwise
+  returns False.
+4 api_signature: paddle.is_tensor(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- input1 = paddle.rand(shape=[2, 3, 5], dtype='float32')
+- check = paddle.is_tensor(input1)
+- print(check)
+- 'True'
+- input3 = [1, 4]
+- check = paddle.is_tensor(input3)
+- print(check)
+- 'False'
+8 api_shape: {}

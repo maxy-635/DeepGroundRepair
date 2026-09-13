@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.mobilenet_v3.decode_predictions
+3 api_description: Decodes ImageNet model predictions into human-readable class labels
+  with confidence scores.
+4 api_signature: tf.keras.applications.mobilenet_v3.decode_predictions(preds)
+5 api_details: ''
+6 api_parameters:
+- preds: Holds the batch of model prediction scores to be decoded into human-readable
+    class labels.
+7 api_usage_example: null
+8 api_shape: ''

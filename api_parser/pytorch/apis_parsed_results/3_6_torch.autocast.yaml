@@ -1,0 +1,25 @@
+2 api_name: torch.autocast
+3 api_description: A context manager or decorator that runs specified code regions
+  in mixed precision for improved performance and reduced memory use.
+4 api_signature: torch.autocast(device_type,dtype,enabled)
+5 api_details: ''
+6 api_parameters:
+- device_type: Specifies which device type autocast should apply to, such as CUDA
+    or CPU.
+- enabled: Turns autocasting on or off within the region.
+- dtype: Sets the mixed-precision data type used for autocast operations, or uses
+    the default if not provided.
+7 api_usage_example:
+- '# Creates model and optimizer in default precision'
+- model = Net().cuda()
+- optimizer = optim.SGD(model.parameters(), ...)
+- 'for input, target in data:'
+- '    optimizer.zero_grad()'
+- '    # Enables autocasting for the forward pass (model + loss)'
+- '    with torch.autocast(device_type="cuda"):'
+- '        output = model(input)'
+- '        loss = loss_fn(output, target)'
+- '    # Exits the context manager before backward()'
+- '    loss.backward()'
+- '    optimizer.step()'
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.ragged.cross_hashed
+3 api_description: Hashes combinations of values across equally sized rank-2 input
+  tensors row by row, returning a RaggedTensor of all cross-feature pairs formed from
+  each row's values.
+4 api_signature: tf.ragged.cross_hashed(inputs,num_buckets,hash_key)
+5 api_details: ''
+6 api_parameters:
+- inputs: The ragged, dense, or sparse tensors whose elements are combined and hashed.
+- num_buckets: The number of hash buckets to map the hashed result into, using modulo
+    when nonzero.
+- hash_key: An optional integer seed used to control the hashing behavior.
+7 api_usage_example:
+- tf.ragged.cross_hashed([tf.ragged.constant([['a'], ['b', 'c']]),
+- '                        tf.ragged.constant([[''d''], [''e'']]),'
+- '                        tf.ragged.constant([[''f''], [''g'']])],'
+- '                       num_buckets=100)'
+8 api_shape: ''

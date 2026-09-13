@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RaggedTensorToSparse
+3 api_description: Converts a RaggedTensor into an equivalent SparseTensor by preserving
+  its values and computing matching sparse indices and dense shape.
+4 api_signature: tf.raw_ops.RaggedTensorToSparse(rt_nested_splits,rt_dense_values)
+5 api_details: ''
+6 api_parameters:
+- rt_nested_splits: Describes how the ragged tensor is partitioned into rows and nested
+    ragged dimensions.
+- rt_dense_values: Contains the flattened values stored at the leaves of the ragged
+    tensor.
+7 api_usage_example: null
+8 api_shape: ''

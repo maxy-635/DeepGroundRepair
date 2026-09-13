@@ -1,0 +1,10 @@
+2 api_name: torch.quasirandom.SobolEngine.draw
+3 api_description: Draws n dependent points from a Sobol quasi-random sequence in
+  the engine’s dimension.
+4 api_signature: draw(n,out)
+5 api_details: ''
+6 api_parameters:
+- n: Specifies how many Sobol sequence points to generate and return.
+- out: Provides a tensor to write the generated points into.
+7 api_usage_example: null
+8 api_shape: null

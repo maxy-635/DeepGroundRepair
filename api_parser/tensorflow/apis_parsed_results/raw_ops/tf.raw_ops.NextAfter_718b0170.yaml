@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.NextAfter
+3 api_description: Returns the next representable value after x1 in the direction
+  of x2, element-wise, matching std::nextafter and allowing subnormal results.
+4 api_signature: tf.raw_ops.NextAfter(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The starting floating-point tensor whose values are moved toward the corresponding
+    values in x2.
+- x2: The target floating-point tensor that x1 values step toward.
+7 api_usage_example: null
+8 api_shape: ''

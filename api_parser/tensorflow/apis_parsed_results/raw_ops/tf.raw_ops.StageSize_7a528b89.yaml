@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.StageSize
+3 api_description: Returns the number of elements currently stored in the underlying
+  container.
+4 api_signature: tf.raw_ops.StageSize(capacity,memory_limit)
+5 api_details: ''
+6 api_parameters:
+- capacity: Sets the maximum number of elements the stage can hold.
+- memory_limit: Sets the maximum memory the stage can use.
+7 api_usage_example: null
+8 api_shape: ''

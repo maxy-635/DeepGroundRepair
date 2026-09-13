@@ -1,0 +1,18 @@
+2 api_name: torch.tensor
+3 api_description: Creates a new leaf tensor by copying the input data, with no autograd
+  history.
+4 api_signature: torch.tensor(data,dtype,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- data: Supplies the initial values used to construct the tensor, such as a list,
+    tuple, NumPy array, scalar, or similar input.
+7 api_usage_example:
+- ' torch.tensor([[0.1, 1.2], [2.2, 3.1], [4.9, 5.2]])'
+- ' torch.tensor([0, 1])  # Type inference on data'
+- ' torch.tensor([[0.11111, 0.222222, 0.3333333]],'
+- '...              dtype=torch.float64,'
+- '...              device=torch.device(''cuda:0''))  # creates a double tensor on
+  a CUDA device'
+- ' torch.tensor(3.14159)  # Create a zero-dimensional (scalar) tensor'
+- ' torch.tensor([])  # Create an empty tensor (of size (0,))'
+8 api_shape: null

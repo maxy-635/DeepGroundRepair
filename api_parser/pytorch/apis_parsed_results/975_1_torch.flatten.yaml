@@ -1,0 +1,15 @@
+2 api_name: torch.flatten
+3 api_description: Reshapes a tensor into 1D, or flattens only the specified dimension
+  range, without changing element order.
+4 api_signature: torch.flatten(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to flatten.
+7 api_usage_example:
+- ' t = torch.tensor([[[1, 2],'
+- '...                    [3, 4]],'
+- '...                   [[5, 6],'
+- '...                    [7, 8]]])'
+- ' torch.flatten(t)'
+- ' torch.flatten(t, start_dim=1)'
+8 api_shape: null

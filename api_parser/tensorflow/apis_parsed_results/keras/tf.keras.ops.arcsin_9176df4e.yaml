@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.arcsin
+3 api_description: Computes the element-wise inverse sine (arcsin) of input values.
+4 api_signature: '"tf.keras.ops.arcsin(x)"'
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements the function computes the arcsine for.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([1, -1, 0])
+- keras.ops.arcsin(x)
+8 api_shape: ''

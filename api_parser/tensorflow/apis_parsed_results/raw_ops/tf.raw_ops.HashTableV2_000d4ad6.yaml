@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.HashTableV2
+3 api_description: Creates a hash table with specified key and value types that must
+  be initialized before use and becomes immutable after initialization.
+4 api_signature: tf.raw_ops.HashTableV2(key_dtype,value_dtype,name)
+5 api_details: ''
+6 api_parameters:
+- key_dtype: Specifies the data type used for the hash table's keys.
+- value_dtype: Specifies the data type used for the hash table's values.
+- name: Optionally assigns a name to the operation for identification in the TensorFlow
+    graph.
+7 api_usage_example: null
+8 api_shape: ''

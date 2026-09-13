@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.efficientnet_v2.preprocess_input
+3 api_description: Placeholder for backward compatibility; it performs no preprocessing
+  because EfficientNetV2 handles input normalization internally.
+4 api_signature: preprocess_input(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input image data to be preprocessed before being passed to an EfficientNetV2
+    model.
+7 api_usage_example: null
+8 api_shape: ''

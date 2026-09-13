@@ -1,0 +1,24 @@
+2 api_name: paddle.quantization.quanter
+3 api_description: Annotation that marks a factory class used to create quantizer
+  instances.
+4 api_signature: paddle.quantization.quanter(class _name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '# type: ignore'
+- '>>>'
+- '# Given codes in ./customized_quanter.py'
+- from paddle.quantization import quanter
+- from paddle.quantization import BaseQuanter
+- '@quanter("CustomizedQuanter")'
+- 'class CustomizedQuanterLayer(BaseQuanter):'
+- '    def __init__(self, arg1, kwarg1=None):'
+- '        pass'
+- '# Used in ./test.py'
+- '# from .customized_quanter import CustomizedQuanter'
+- from paddle.quantization import QuantConfig
+- arg1_value = "test"
+- kwarg1_value = 20
+- quanter = CustomizedQuanter(arg1_value, kwarg1=kwarg1_value)
+- q_config = QuantConfig(activation=quanter, weight=quanter)
+8 api_shape: {}

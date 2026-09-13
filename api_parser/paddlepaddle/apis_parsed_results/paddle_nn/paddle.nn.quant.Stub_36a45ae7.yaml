@@ -1,0 +1,39 @@
+2 api_name: paddle.nn.quant.Stub
+3 api_description: The paddle.nn.quant.Stub API acts as a placeholder for observers
+  to facilitate quantization in PTQ or QAT by being inserted before functional API
+  calls within a layer's forward method.
+4 api_signature: paddle.nn.quant.Stub
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- from paddle.nn.quant import Stub
+- from paddle.quantization.quanters import FakeQuanterWithAbsMaxObserver
+- from paddle.nn import Conv2D
+- from paddle.quantization import QAT, QuantConfig
+- quanter = FakeQuanterWithAbsMaxObserver(moving_rate=0.9)
+- 'Model(paddle.nn.Layer):'
+- '    def __init__(self, num_classes=10):'
+- '        super().__init__()'
+- '        self.conv = Conv2D(3, 6, 3, stride=1, padding=1)'
+- '        self.quant = Stub(quanter)'
+- '...'
+- '    def forward(self, inputs):'
+- '        out = self.conv(inputs)'
+- '        out = self.quant(out)'
+- '        return paddle.nn.functional.relu(out)'
+- model = Model()
+- q_config = QuantConfig(activation=quanter, weight=quanter)
+- qat = QAT(q_config)
+- quant_model = qat.quantize(model)
+- print(quant_model)
+- Model(
+- '(conv): QuantedConv2D('
+- '(weight_quanter): FakeQuanterWithAbsMaxObserverLayer()'
+- '(activation_quanter): FakeQuanterWithAbsMaxObserverLayer()'
+- )
+- '(quant): QuanterStub('
+- '(_observer): FakeQuanterWithAbsMaxObserverLayer()'
+- )
+- )
+8 api_shape: null

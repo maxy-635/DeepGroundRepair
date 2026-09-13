@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.evaluate_sym_node
+3 api_description: Evaluates a SymNode’s symbolic expression and adds any necessary
+  guards to ensure the result is valid.
+4 api_signature: evaluate_sym_node(sym_node,fallback_value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

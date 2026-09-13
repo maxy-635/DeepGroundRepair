@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.categorical.Categorical
+3 api_description: Represents a categorical distribution over a finite set of classes,
+  supporting probability/logit-based initialization, sampling, and evaluation of log
+  probabilities, entropy, and related statistics.
+4 api_signature: '"Categorical(probs,logits)"'
+5 api_details: ''
+6 api_parameters:
+- probs: Specifies the event probabilities for each category.
+- logits: Specifies the unnormalized event log probabilities for each category.
+7 api_usage_example:
+- ' m = Categorical(torch.tensor([ 0.25, 0.25, 0.25, 0.25 ]))'
+- ' m.sample()  # equal probability of 0, 1, 2, 3'
+8 api_shape: null

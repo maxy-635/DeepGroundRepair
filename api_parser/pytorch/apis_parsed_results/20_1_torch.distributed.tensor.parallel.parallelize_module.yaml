@@ -1,0 +1,20 @@
+2 api_name: torch.distributed.tensor.parallel.parallelize_module
+3 api_description: Parallelizes a module or selected submodules according to a user-defined
+  tensor parallel plan, distributing computation and parameters across devices.
+4 api_signature: torch.distributed.tensor.parallel.parallelize_module(module,device_mesh,parallelize_plan)
+5 api_details: ''
+6 api_parameters:
+- module: The module to transform for tensor parallel execution.
+- device_mesh: The device mesh that defines how devices are arranged for DTensor parallelism,
+    or is taken from the current DeviceMesh context if omitted.
+- parallelize_plan: The parallelization strategy, either as a ParallelStyle or a mapping
+    from module FQNs to ParallelStyle objects, used to prepare inputs and outputs
+    for tensor parallelism.
+7 api_usage_example:
+- ' from torch.distributed.tensor.parallel import parallelize_module, ColwiseParallel'
+- ' from torch.distributed.device_mesh import init_device_mesh'
+- ' # Define the module.'
+- ' m = Model(...)'
+- ' tp_mesh = init_device_mesh("cuda", (8,))'
+- ' m = parallelize_module(m, tp_mesh, {"w1": ColwiseParallel(), "w2": RowwiseParallel()})'
+8 api_shape: null

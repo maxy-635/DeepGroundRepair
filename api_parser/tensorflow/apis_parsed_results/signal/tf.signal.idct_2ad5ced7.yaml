@@ -1,0 +1,14 @@
+2 api_name: tensorflow.signal.idct
+3 api_description: Computes the 1D inverse discrete cosine transform of a tensor,
+  supporting DCT types I–IV, with Type III/II as inverses and optional orthonormal
+  normalization.
+4 api_signature: tf.signal.idct(input,type,n,axis,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor containing the signal values to transform.
+- type: Selects which inverse DCT variant to compute (1, 2, 3, or 4).
+- n: Reserved for future use and must currently be `None`.
+- axis: Reserved for future use and must currently be `-1`.
+- norm: Chooses whether to apply no normalization or orthonormal normalization (`'ortho'`).
+7 api_usage_example: null
+8 api_shape: ''

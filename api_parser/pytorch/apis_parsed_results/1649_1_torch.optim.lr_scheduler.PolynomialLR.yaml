@@ -1,0 +1,22 @@
+2 api_name: torch.optim.lr_scheduler.PolynomialLR
+3 api_description: Decays each parameter group's learning rate following a polynomial
+  schedule over a specified number of iterations.
+4 api_signature: torch.optim.lr_scheduler.PolynomialLR(optimizer,total_iters,power)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be scheduled.
+- total_iters: The number of update steps over which the learning rate is decayed.
+- power: The exponent that controls the shape of the polynomial decay.
+7 api_usage_example:
+- ' # Assuming optimizer uses lr = 0.05 for all groups'
+- ' # lr = 0.0490   if epoch == 0'
+- ' # lr = 0.0481   if epoch == 1'
+- ' # lr = 0.0472   if epoch == 2'
+- ' # ...'
+- ' # lr = 0.0      if epoch >= 50'
+- ' scheduler = PolynomialLR(optimizer, total_iters=50, power=0.9)'
+- ' for epoch in range(100):'
+- '     train(...)'
+- '     validate(...)'
+- '     scheduler.step()'
+8 api_shape: null

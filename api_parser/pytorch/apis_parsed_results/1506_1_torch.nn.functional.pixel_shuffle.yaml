@@ -1,0 +1,21 @@
+2 api_name: torch.nn.functional.pixel_shuffle
+3 api_description: The torch.nn.functional.pixel_shuffle function rearranges elements
+  in a tensor to increase spatial resolution by a factor of r, transforming a tensor
+  of shape (*, C×r², H, W) into a tensor of shape (*, C, H×r, W×r).
+4 api_signature: torch.nn.functional.pixel_shuffle(input,upscale_factor)
+5 api_details: ''
+6 api_parameters:
+- input: A tensor that serves as the input to the pixel shuffle operation.
+- upscale_factor: An integer factor by which the spatial resolution of the input tensor
+    is increased.
+7 api_usage_example:
+- ' input = torch.randn(1, 9, 4, 4)'
+- ' output = torch.nn.functional.pixel_shuffle(input, 3)'
+- ' print(output.size())'
+8 api_shape:
+  input tensor shape: (*, Channel_in, Height_in, Width_in), where * is zero
+  output tensor shape: (*, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in \div upscale_factor^2
+    tensor height: Height_out = Height_in * upscale_factor
+    tensor width: Width_out = Width_in * upscale_factor

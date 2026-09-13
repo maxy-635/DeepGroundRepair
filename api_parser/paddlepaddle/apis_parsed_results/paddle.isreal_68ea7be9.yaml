@@ -1,0 +1,26 @@
+2 api_name: paddle.isreal
+3 api_description: Returns a boolean result for each input element, indicating whether
+  it is a real number.
+4 api_signature: paddle.isreal(x)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to check for real-valued elements.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- x = paddle.to_tensor([-0., -2.1, 2.5], dtype='float32')
+- res = paddle.isreal(x)
+- print(res)
+- Tensor(shape=[3], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[True, True, True])'
+- x = paddle.to_tensor([(-0.+1j), (-2.1+0.2j), (2.5-3.1j)])
+- res = paddle.isreal(x)
+- print(res)
+- Tensor(shape=[3], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, False, False])'
+- x = paddle.to_tensor([(-0.+1j), (-2.1+0j), (2.5-0j)])
+- res = paddle.isreal(x)
+- print(res)
+- Tensor(shape=[3], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, True, True])'
+8 api_shape: {}

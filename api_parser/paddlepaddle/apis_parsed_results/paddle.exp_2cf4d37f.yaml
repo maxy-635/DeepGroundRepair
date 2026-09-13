@@ -1,0 +1,14 @@
+2 api_name: paddle.exp
+3 api_description: Computes the element-wise exponential of x using e as the base.
+4 api_signature: paddle.exp(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are exponentiated elementwise by the Exp operator.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.exp(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.67032003, 0.81873077, 1.10517097, 1.34985888])'
+8 api_shape: {}

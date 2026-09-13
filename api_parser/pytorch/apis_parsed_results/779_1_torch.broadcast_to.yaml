@@ -1,0 +1,12 @@
+2 api_name: torch.broadcast_to
+3 api_description: Expands a tensor to a target shape by broadcasting its dimensions
+  without copying data.
+4 api_signature: torch.broadcast_to(input,shape)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be broadcasted to a new shape.
+- shape: The target shape that the input tensor should be expanded to.
+7 api_usage_example:
+- ' x = torch.tensor([1, 2, 3])'
+- ' torch.broadcast_to(x, (3, 3))'
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.IdentityReaderV2
+3 api_description: Reads queued string work items and returns each item as both the
+  key and the value.
+4 api_signature: tf.raw_ops.IdentityReaderV2(name)
+5 api_details: ''
+6 api_parameters:
+- name: An optional name used to label the operation.
+7 api_usage_example: null
+8 api_shape: ''

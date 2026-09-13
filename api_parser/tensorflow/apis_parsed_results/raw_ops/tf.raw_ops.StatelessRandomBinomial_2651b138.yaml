@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.StatelessRandomBinomial
+3 api_description: Generates deterministic pseudorandom samples from a binomial distribution
+  based on the provided shape, seed, counts, and probabilities.
+4 api_signature: tf.raw_ops.StatelessRandomBinomial(shape,seed,counts,probs,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor shape.
+- seed: Provides the two-element random seed used to generate stateless samples.
+- counts: Sets the binomial trial count and must broadcast with `probs` and the output
+    shape.
+- probs: Sets the success probability for the binomial distribution and must broadcast
+    with `counts` and the output shape.
+- dtype: Chooses the data type of the output tensor, defaulting to `tf.int64`.
+7 api_usage_example: null
+8 api_shape: ''

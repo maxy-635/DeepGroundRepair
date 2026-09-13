@@ -1,0 +1,16 @@
+2 api_name: torch.multinomial
+3 api_description: Samples indices from each row of a probability tensor according
+  to the multinomial distribution.
+4 api_signature: torch.multinomial(input,num_samples,replacement)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the tensor of probabilities used to sample values from.
+- num_samples: Specifies how many samples to draw from the input distribution.
+- replacement: Controls whether samples can be drawn more than once.
+7 api_usage_example:
+- ' weights = torch.tensor([0, 10, 3, 0], dtype=torch.float) # create a tensor of
+  weights'
+- ' torch.multinomial(weights, 2)'
+- ' torch.multinomial(weights, 5) # ERROR!'
+- ' torch.multinomial(weights, 4, replacement=True)'
+8 api_shape: null

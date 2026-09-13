@@ -1,0 +1,16 @@
+2 api_name: torch.nn.functional.upsample_bilinear
+3 api_description: Upsamples the input tensor using bilinear interpolation to increase
+  its spatial dimensions.
+4 api_signature: torch.nn.functional.upsample_bilinear(input,size)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor that needs to be upsampled using bilinear interpolation.
+- size: The desired output spatial size to which the input tensor should be upsampled.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: Height_out = floor(Height_in * scale_factor)
+    tensor width: Width_out = floor(Width_in * scale_factor)

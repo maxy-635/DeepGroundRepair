@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.applications.ConvNeXtBase
+3 api_description: Builds the ConvNeXt Base image classification model, with optional
+  pretrained weights for transfer learning and fine-tuning.
+4 api_signature: tf.keras.applications.ConvNeXtBase(weights,input_tensor,input_shape,pooling,classes)
+5 api_details: ''
+6 api_parameters:
+- weights: Specifies whether to initialize the model randomly, load ImageNet-pretrained
+    weights, or load weights from a given file.
+- input_tensor: Sets an optional existing Keras tensor to use as the model's input.
+- input_shape: Defines the optional input image shape when `include_top` is False,
+    with exactly 3 channels.
+- pooling: Chooses an optional global pooling mode for feature extraction when `include_top`
+    is False.
+- classes: Sets the number of output classes for classification when `include_top`
+    is True and no pretrained weights are used.
+7 api_usage_example: null
+8 api_shape: ''

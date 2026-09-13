@@ -1,0 +1,11 @@
+2 api_name: torch.optim.Adadelta.register_state_dict_post_hook
+3 api_description: Registers a hook that runs after `state_dict()` and can modify
+  or inspect the optimizer state dict before it is returned.
+4 api_signature: register_state_dict_post_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: Registers a user-defined callback that runs after `state_dict()` is created
+    so it can inspect or modify the optimizer state.
+7 api_usage_example:
+- hook(optimizer, state_dict) -> state_dict or None
+8 api_shape: null

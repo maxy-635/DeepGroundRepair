@@ -1,0 +1,12 @@
+2 api_name: tensorflow.tensor_scatter_nd_update
+3 api_description: Returns a new tensor by applying sparse updates at the specified
+  indices to an existing tensor, like index assignment.
+4 api_signature: tf.tensor_scatter_nd_update(tensor,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor whose specified elements will be copied and updated.
+- indices: The index locations in the tensor where updates will be applied.
+- updates: The values that will replace the tensor elements at the given indices.
+7 api_usage_example:
+- tf.tensor_scatter_nd_update(tensor, indices, updates).numpy()
+8 api_shape: ''

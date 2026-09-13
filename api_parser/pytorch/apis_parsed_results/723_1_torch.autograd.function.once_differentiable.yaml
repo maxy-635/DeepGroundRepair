@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.function.once_differentiable
+3 api_description: Decorator for autograd functions that marks backward outputs as
+  non-differentiable, preventing higher-order gradients through the wrapped method.
+4 api_signature: torch.autograd.function.once_differentiable(fn)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

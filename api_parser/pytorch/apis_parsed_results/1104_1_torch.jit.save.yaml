@@ -1,0 +1,26 @@
+2 api_name: torch.jit.save
+3 api_description: Saves a TorchScript module to disk so it can be loaded and used
+  in another process later.
+4 api_signature: torch.jit.save(m,f)
+5 api_details: ''
+6 api_parameters:
+- m: The ScriptModule instance to serialize and save.
+- f: The destination file path or writable file-like object where the module is saved.
+7 api_usage_example:
+- import torch
+- import io
+- 'class MyModule(torch.nn.Module):'
+- '    def forward(self, x):'
+- '        return x + 10'
+- m = torch.jit.script(MyModule())
+- '# Save to file'
+- torch.jit.save(m, 'scriptmodule.pt')
+- '# This line is equivalent to the previous'
+- m.save("scriptmodule.pt")
+- '# Save to io.BytesIO buffer'
+- buffer = io.BytesIO()
+- torch.jit.save(m, buffer)
+- '# Save with extra files'
+- 'extra_files = {''foo.txt'': b''bar''}'
+- torch.jit.save(m, 'scriptmodule.pt', _extra_files=extra_files)
+8 api_shape: null

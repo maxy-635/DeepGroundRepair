@@ -1,0 +1,11 @@
+2 api_name: torch.special.gammaln
+3 api_description: Computes the natural log of the absolute gamma function value for
+  each input element.
+4 api_signature: torch.special.gammaln(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose element-wise log gamma values are computed.
+7 api_usage_example:
+- ' a = torch.arange(0.5, 2, 0.5)'
+- ' torch.special.gammaln(a)'
+8 api_shape: null

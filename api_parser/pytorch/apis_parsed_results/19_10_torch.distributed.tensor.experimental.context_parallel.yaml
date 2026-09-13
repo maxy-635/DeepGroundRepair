@@ -1,0 +1,14 @@
+2 api_name: torch.distributed.tensor.experimental.context_parallel
+3 api_description: Experimental context parallelism API that patches scaled_dot_product_attention
+  for CP and shards buffers across the sequence dimension so each rank keeps its corresponding
+  mesh shard.
+4 api_signature: torch.distributed.tensor.experimental.context_parallel(mesh,buffers,buffer_seq_dims)
+5 api_details: ''
+6 api_parameters:
+- mesh: Specifies the device mesh used to configure context parallelism.
+- buffers: Lists sequence-dependent buffers that are sharded in place during the context
+    and restored afterward unless excluded.
+- buffer_seq_dims: Indicates which dimension of each buffer corresponds to the sequence
+    dimension for sharding.
+7 api_usage_example: null
+8 api_shape: null

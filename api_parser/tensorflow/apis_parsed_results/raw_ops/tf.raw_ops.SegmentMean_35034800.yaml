@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SegmentMean
+3 api_description: Computes the mean of `data` values grouped by `segment_ids`, producing
+  one output per segment ID and returning 0 for empty segments.
+4 api_signature: tf.raw_ops.SegmentMean(data,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose first dimension is grouped and reduced by segment.
+- segment_ids: A 1-D tensor of sorted segment labels, matching the first dimension
+    of `data`, that defines which rows are averaged together.
+7 api_usage_example:
+- c = tf.constant([[1.0,2,3,4], [4, 3, 2, 1], [5,6,7,8]])
+- tf.math.segment_mean(c, tf.constant([0, 0, 1])).numpy()
+8 api_shape: ''

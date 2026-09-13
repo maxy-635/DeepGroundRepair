@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.StringSplitV2
+3 api_description: Splits each string in `source` by `sep`, ignores empty tokens,
+  and returns the tokens as a `SparseTensor`.
+4 api_signature: tf.raw_ops.StringSplitV2(input,sep,maxsplit)
+5 api_details: ''
+6 api_parameters:
+- input: The 1-D string tensor containing the strings to be split.
+- sep: The scalar string delimiter used to split each input string.
+- maxsplit: The maximum number of splits to perform when greater than 0; otherwise
+    all possible splits are made.
+7 api_usage_example: null
+8 api_shape: ''

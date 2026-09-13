@@ -1,0 +1,8 @@
+2 api_name: tensorflow.debugging.is_traceback_filtering_enabled
+3 api_description: Returns whether TensorFlow traceback filtering is currently enabled,
+  meaning internal TensorFlow frames are hidden from exception tracebacks.
+4 api_signature: '"tf.debugging.is_traceback_filtering_enabled()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

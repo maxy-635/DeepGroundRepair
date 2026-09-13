@@ -1,0 +1,16 @@
+2 api_name: tensorflow.random.fixed_unigram_candidate_sampler
+3 api_description: Samples candidate class IDs from a fixed base distribution over
+  [0, range_max), optionally with or without replacement and with distribution distortion,
+  and returns the sampled IDs plus expected counts for true and sampled classes used
+  by candidate sampling algorithms.
+4 api_signature: tf.random.fixed_unigram_candidate_sampler(true_classes,num_true,num_sampled,unique,range_max,unigrams)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Specifies the target class IDs for each training example.
+- num_true: Sets how many true target classes are provided per example.
+- num_sampled: Sets how many negative classes to sample randomly.
+- unique: Controls whether sampled classes in each batch must be unique.
+- range_max: Defines the total number of possible class IDs to sample from.
+- unigrams: Provides unigram counts or probabilities for the class sampling distribution.
+7 api_usage_example: null
+8 api_shape: ''

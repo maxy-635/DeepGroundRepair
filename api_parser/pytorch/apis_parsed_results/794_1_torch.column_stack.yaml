@@ -1,0 +1,15 @@
+2 api_name: torch.column_stack
+3 api_description: Stacks tensors horizontally into a new tensor by concatenating
+  them column-wise.
+4 api_signature: torch.column_stack(tensors)
+5 api_details: ''
+6 api_parameters:
+- tensors: Sequence of tensors to stack as columns into a single tensor.
+7 api_usage_example:
+- ' a = torch.tensor([1, 2, 3])'
+- ' b = torch.tensor([4, 5, 6])'
+- ' torch.column_stack((a, b))'
+- ' a = torch.arange(5)'
+- ' b = torch.arange(10).reshape(5, 2)'
+- ' torch.column_stack((a, b, b))'
+8 api_shape: null

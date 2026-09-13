@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.quantizers.deserialize
+3 api_description: Deserializes a Keras quantizer from its config and returns the
+  corresponding quantizer object.
+4 api_signature: tf.keras.quantizers.deserialize(config)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

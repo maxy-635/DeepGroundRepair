@@ -1,0 +1,20 @@
+2 api_name: paddle.static.BuildStrategy
+3 api_description: Controls how Paddle builds the SSA graph for a CompiledProgram
+  by configuring graph-building behavior through its properties.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import paddle.static as static
+- paddle.enable_static()
+- data = static.data(name="x", shape=[None, 1], dtype="float32")
+- hidden = static.nn.fc(data, size=10)
+- loss = paddle.mean(hidden)
+- paddle.optimizer.SGD(learning_rate=0.01).minimize(loss)
+- build_strategy = static.BuildStrategy()
+- build_strategy.enable_inplace = True
+- build_strategy.memory_optimize = True
+- build_strategy.reduce_strategy = static.BuildStrategy.ReduceStrategy.Reduce
+- program = static.CompiledProgram(static.default_main_program(), build_strategy=build_strategy)
+8 api_shape: {}

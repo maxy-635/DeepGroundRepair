@@ -1,0 +1,28 @@
+2 api_name: paddle.static.nn.sequence_pool
+3 api_description: Builds a sequence pooling layer that aggregates variable-length
+  sequence inputs into fixed-size representations using a specified pooling strategy.
+4 api_signature: paddle.static.nn.sequence_pool(input,pool_type,pad_value)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the input tensor to be pooled, with lod_level at most 2 and data
+    type float32 or float64.
+- pool_type: Selects the pooling method to apply, such as average, sum, sqrt, max,
+    last, or first.
+- pad_value: Sets the value used to pad the pooled output when the input sequence
+    is empty.
+7 api_usage_example:
+- '>>>'
+- '# set env var before import paddle to disable pir mode, following example code
+  use os module.'
+- import os
+- os.environ['FLAGS_enable_pir_api'] = '0'
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data(name='x', shape=[None, 10], dtype='float32', lod_level=1)
+- avg_x = paddle.static.nn.sequence_pool(input=x, pool_type='average')
+- sum_x = paddle.static.nn.sequence_pool(input=x, pool_type='sum')
+- sqrt_x = paddle.static.nn.sequence_pool(input=x, pool_type='sqrt')
+- max_x = paddle.static.nn.sequence_pool(input=x, pool_type='max')
+- last_x = paddle.static.nn.sequence_pool(input=x, pool_type='last')
+- first_x = paddle.static.nn.sequence_pool(input=x, pool_type='first')
+8 api_shape: {}

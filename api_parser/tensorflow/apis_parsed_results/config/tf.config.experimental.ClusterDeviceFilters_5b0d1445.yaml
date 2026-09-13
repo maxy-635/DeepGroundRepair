@@ -1,0 +1,9 @@
+2 api_name: tensorflow.config.experimental.ClusterDeviceFilters
+3 api_description: Sets per-worker device filters in a remote TensorFlow cluster so
+  each worker only sees devices matching its filters, with partial filter strings
+  supported.
+4 api_signature: tf.config.experimental.ClusterDeviceFilters()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

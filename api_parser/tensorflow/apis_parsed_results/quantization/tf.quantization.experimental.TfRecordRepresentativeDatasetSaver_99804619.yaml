@@ -1,0 +1,11 @@
+2 api_name: tensorflow.quantization.experimental.TfRecordRepresentativeDatasetSaver
+3 api_description: Saves representative datasets for quantization calibration as TFRecord
+  files of serialized RepresentativeDataSample records and returns a signature-key-to-file
+  map for use with QuantizationOptions.
+4 api_signature: tf.quantization.experimental.TfRecordRepresentativeDatasetSaver(path_map)
+5 api_details: ''
+6 api_parameters:
+- path_map: Maps signature-def keys to TFRecord file paths where the corresponding
+    representative datasets will be saved.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.layers.RandomHeight
+3 api_description: tf.keras.layers.RandomHeight is a deprecated layer that randomly
+  alters the height of input images during training, enhancing data augmentation.
+4 api_signature: tf.keras.layers.RandomHeight(factor)
+5 api_details: ''
+6 api_parameters:
+- height_factor: A float or tuple specifying the range of random height scaling as
+    a fraction of the original image height.
+- seed: An optional integer to seed the random number generator for reproducibility.
+- interpolation: A string that defines the interpolation method used for resizing
+    the images, such as 'bilinear' or 'nearest'.
+- fill_mode: A string that determines how to fill in newly created pixels after the
+    height is adjusted, options include 'constant', 'nearest', etc.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.preprocessing.image.ImageDataGenerator
+3 api_description: Deprecated image data generator for real-time tensor augmentation
+  and batching from image files or arrays, with support for preprocessing, rescaling,
+  and labels.
+4 api_signature: tf.keras.preprocessing.image.ImageDataGenerator(rotation_range,width_shift_range,height_shift_range,zoom_range,horizontal_flip,vertical_flip,rescale,preprocessing_function,validation_split,dtype)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: ''

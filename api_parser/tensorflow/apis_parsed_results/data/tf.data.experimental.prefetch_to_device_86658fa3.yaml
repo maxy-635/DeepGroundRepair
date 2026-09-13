@@ -1,0 +1,10 @@
+2 api_name: tensorflow.data.experimental.prefetch_to_device
+3 api_description: Prefetches dataset elements to a specified device ahead of time
+  to overlap input transfer with computation.
+4 api_signature: tf.data.experimental.prefetch_to_device(device,buffer_size)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the target device where input elements are prefetched.
+- buffer_size: Sets how many elements to keep buffered on the device before consumption.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,18 @@
+2 api_name: paddle.vision.transforms.center_crop
+3 api_description: Crops the center of an image and resizes it to the desired size.
+4 api_signature: paddle.vision.transforms.center_crop(img,output_size)
+5 api_details: ''
+6 api_parameters:
+- img: The image that will be center-cropped.
+- output_size: The crop size as `(height, width)`, or a single integer used for both
+    dimensions.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import functional as F
+- fake_img = (np.random.rand(256, 300, 3) * 255.).astype('uint8')
+- fake_img = Image.fromarray(fake_img)
+- cropped_img = F.center_crop(fake_img, (150, 100))
+- print(cropped_img.size)
+- (100, 150)
+8 api_shape: {}

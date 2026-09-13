@@ -1,0 +1,13 @@
+2 api_name: tensorflow.distribute.DistributedDataset
+3 api_description: A dataset distributed across devices and machines, with an iterator
+  for consuming it via the Python Iterator protocol.
+4 api_signature: '"__iter__()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- global_batch_size = 4
+- strategy = tf.distribute.MirroredStrategy(["GPU:0", "GPU:1"])
+- dataset = tf.data.Dataset.from_tensor_slices([1, 2, 3, 4]).repeat().batch(global_batch_size)
+- distributed_iterator = iter(strategy.experimental_distribute_dataset(dataset))
+- print(next(distributed_iterator))
+8 api_shape: ''

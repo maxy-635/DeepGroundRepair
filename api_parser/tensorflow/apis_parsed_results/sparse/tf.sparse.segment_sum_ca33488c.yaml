@@ -1,0 +1,15 @@
+2 api_name: tensorflow.sparse.segment_sum
+3 api_description: Sums values in sparse segments of a tensor, using segment_ids to
+  select a subset of the first dimension and filling missing segment ids with zeros
+  when num_segments is provided.
+4 api_signature: tf.sparse.segment_sum(data,indices,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: Provides the input tensor whose selected values will be grouped and summed
+    into the output.
+- indices: Specifies which entries in `data` correspond to each segment and must match
+    the rank of `segment_ids`.
+- segment_ids: Identifies the output segment for each value, with sorted values allowed
+    to repeat.
+7 api_usage_example: null
+8 api_shape: ''

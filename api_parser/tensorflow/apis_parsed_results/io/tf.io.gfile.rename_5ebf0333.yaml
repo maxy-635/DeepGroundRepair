@@ -1,0 +1,9 @@
+2 api_name: tensorflow.io.gfile.rename
+3 api_description: Renames or moves a file or directory to a new path.
+4 api_signature: tf.io.gfile.rename(src,dst)
+5 api_details: ''
+6 api_parameters:
+- src: The source file path to rename or move.
+- dst: The destination file path to move the source file to.
+7 api_usage_example: null
+8 api_shape: ''

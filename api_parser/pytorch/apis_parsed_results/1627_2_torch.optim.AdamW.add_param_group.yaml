@@ -1,0 +1,10 @@
+2 api_name: torch.optim.AdamW.add_param_group
+3 api_description: Adds a new parameter group to the optimizer so its parameters can
+  be managed and updated separately with their own hyperparameters.
+4 api_signature: add_param_group(param_group)
+5 api_details: ''
+6 api_parameters:
+- param_group: Specifies which tensors to add to the optimizer, along with any group-specific
+    optimization settings.
+7 api_usage_example: null
+8 api_shape: null

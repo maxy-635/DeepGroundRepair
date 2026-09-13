@@ -1,0 +1,12 @@
+2 api_name: torch.cuda.comm.gather
+3 api_description: Collects tensors from multiple GPU devices and combines them onto
+  a specified destination device.
+4 api_signature: torch.cuda.comm.gather(tensors,destination)
+5 api_details: ''
+6 api_parameters:
+- tensors: Iterable of tensors to combine into a single gathered result along the
+    specified dimension, with all non-gather dimensions matching.
+- destination: Device where the gathered output is placed; it can be either a CPU
+    or CUDA device.
+7 api_usage_example: null
+8 api_shape: null

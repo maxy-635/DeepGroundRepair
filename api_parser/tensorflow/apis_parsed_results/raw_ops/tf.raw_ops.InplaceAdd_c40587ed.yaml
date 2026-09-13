@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.InplaceAdd
+3 api_description: Adds the values in v into the specified rows of x in place.
+4 api_signature: tf.raw_ops.InplaceAdd(x,i,v)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor to be updated in place.
+- i: A vector of int32 indices selecting rows in the first dimension of `x`.
+- v: The tensor of values to add into `x` at the specified indices, matching `x` in
+    type and remaining dimensions.
+7 api_usage_example: null
+8 api_shape: ''

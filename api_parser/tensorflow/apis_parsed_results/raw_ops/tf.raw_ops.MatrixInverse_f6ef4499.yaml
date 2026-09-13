@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.MatrixInverse
+3 api_description: Computes the inverse (or adjoint inverse) of each square matrix
+  in a batched tensor, returning a tensor of the same shape; non-invertible matrices
+  may fail or produce undefined results.
+4 api_signature: tf.raw_ops.MatrixInverse(input)
+5 api_details: ''
+6 api_parameters:
+- A: The square input tensor to invert, with shape [..., M, M] and supported floating-point
+    or complex types.
+7 api_usage_example: null
+8 api_shape: ''

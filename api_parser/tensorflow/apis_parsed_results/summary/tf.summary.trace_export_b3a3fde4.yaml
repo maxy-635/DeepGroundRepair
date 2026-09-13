@@ -1,0 +1,10 @@
+2 api_name: tensorflow.summary.trace_export
+3 api_description: Stops the active trace and exports the collected trace metadata
+  to the default SummaryWriter as a summary and/or profile file.
+4 api_signature: tf.summary.trace_export(name,profiler_outdir)
+5 api_details: ''
+6 api_parameters:
+- name: Names the summary being written.
+- profiler_outdir: No-ops here; set this in `trace_on()` instead.
+7 api_usage_example: null
+8 api_shape: ''

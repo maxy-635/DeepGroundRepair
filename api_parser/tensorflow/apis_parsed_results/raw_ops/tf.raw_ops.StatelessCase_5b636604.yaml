@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.StatelessCase
+3 api_description: Selects and executes exactly one branch function from multiple
+  options based on a provided index, without using mutable state.
+4 api_signature: tf.raw_ops.StatelessCase(branch_index,input,Tout,branches)
+5 api_details: ''
+6 api_parameters:
+- branch_index: Selects which branch function to execute.
+- input: Provides the tensor inputs passed into the chosen branch function.
+- Tout: Specifies the expected data types of the branch outputs.
+- branches: Defines the candidate branch functions that can be chosen and executed.
+7 api_usage_example: null
+8 api_shape: ''

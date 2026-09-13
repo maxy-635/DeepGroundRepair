@@ -1,0 +1,15 @@
+2 api_name: paddle.reciprocal
+3 api_description: Computes the elementwise reciprocal activation, returning 1/x for
+  each input value.
+4 api_signature: paddle.reciprocal(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose element-wise reciprocal is computed.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.reciprocal(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-2.50000000, -5.        ,  10.       ,  3.33333325])'
+8 api_shape: {}

@@ -1,0 +1,52 @@
+2 api_name: paddle.incubate.graph_reindex
+3 api_description: Rebuilds graph indexes for a Paddle graph, updating reindex mappings
+  to keep node and edge relationships consistent after structural changes.
+4 api_signature: paddle.incubate.graph_reindex(x,neighbors)
+5 api_details: ''
+6 api_parameters:
+- x: The input node IDs whose neighbors are sampled.
+- neighbors: The neighbor node IDs corresponding to `x`, using the same data type
+    as `x`.
+7 api_usage_example:
+- import paddle
+- x = [0, 1, 2]
+- neighbors_e1 = [8, 9, 0, 4, 7, 6, 7]
+- count_e1 = [2, 3, 2]
+- x = paddle.to_tensor(x, dtype="int64")
+- neighbors_e1 = paddle.to_tensor(neighbors_e1, dtype="int64")
+- count_e1 = paddle.to_tensor(count_e1, dtype="int32")
+- 'reindex_src, reindex_dst, out_nodes = paddle.incubate.graph_reindex(  # type: ignore[operator]'
+- '    x,'
+- '    neighbors_e1,'
+- '    count_e1,'
+- )
+- print(reindex_src)
+- Tensor(shape=[7], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[3, 4, 0, 5, 6, 7, 6])'
+- print(reindex_dst)
+- Tensor(shape=[7], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 0, 1, 1, 1, 2, 2])'
+- print(out_nodes)
+- Tensor(shape=[8], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 1, 2, 8, 9, 4, 7, 6])'
+- neighbors_e2 = [0, 2, 3, 5, 1]
+- count_e2 = [1, 3, 1]
+- neighbors_e2 = paddle.to_tensor(neighbors_e2, dtype="int64")
+- count_e2 = paddle.to_tensor(count_e2, dtype="int32")
+- neighbors = paddle.concat([neighbors_e1, neighbors_e2])
+- count = paddle.concat([count_e1, count_e2])
+- 'reindex_src, reindex_dst, out_nodes = paddle.incubate.graph_reindex(  # type: ignore[operator]'
+- '    x,'
+- '    neighbors,'
+- '    count,'
+- )
+- print(reindex_src)
+- Tensor(shape=[12], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[3, 4, 0, 5, 6, 7, 6, 0, 2, 8, 9, 1])'
+- print(reindex_dst)
+- Tensor(shape=[12], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 0, 1, 1, 1, 2, 2, 0, 1, 1, 1, 2])'
+- print(out_nodes)
+- Tensor(shape=[10], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 1, 2, 8, 9, 4, 7, 6, 3, 5])'
+8 api_shape: {}

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.rint
+3 api_description: Rounds each element to the nearest integer, choosing the even value
+  when the result is exactly halfway between two representable values.
+4 api_signature: tf.math.rint(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are rounded to the nearest integer, with ties to
+    even.
+7 api_usage_example: null
+8 api_shape: ''

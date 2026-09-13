@@ -1,0 +1,22 @@
+2 api_name: torch.nested.masked_select
+3 api_description: Creates a nested tensor from a strided input and boolean mask,
+  keeping only values where the mask is True while preserving the mask’s dimensional
+  structure as a jagged layout.
+4 api_signature: torch.nested.masked_select(tensor,mask)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' tensor = torch.randn(3, 3)'
+- ' mask = torch.tensor([[False, False, True], [True, False, True], [False, False,
+  True]])'
+- ' nt = torch.nested.masked_select(tensor, mask)'
+- ' nt.shape'
+- ' # Length of each item in the batch:'
+- ' nt.offsets().diff()'
+- ' tensor = torch.randn(6, 5)'
+- ' mask = torch.tensor([False])'
+- ' nt = torch.nested.masked_select(tensor, mask)'
+- ' nt.shape'
+- ' # Length of each item in the batch:'
+- ' nt.offsets().diff()'
+8 api_shape: null

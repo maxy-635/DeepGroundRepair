@@ -1,0 +1,15 @@
+2 api_name: tensorflow.nn.softmax_cross_entropy_with_logits
+3 api_description: Computes the softmax cross entropy loss between predicted logits
+  and true labels for mutually exclusive classification tasks.
+4 api_signature: tf.nn.softmax_cross_entropy_with_logits(labels,logits)
+5 api_details: ''
+6 api_parameters:
+- labels: A tensor where each vector along the class dimension contains a valid probability
+    distribution for the true class labels.
+- logits: A tensor of raw, unnormalized scores (logits) for each class, typically
+    the output of a neural network layer before applying softmax.
+7 api_usage_example:
+- logits = [[4.0, 2.0, 1.0], [0.0, 5.0, 1.0]]
+- labels = [[1.0, 0.0, 0.0], [0.0, 0.8, 0.2]]
+- tf.nn.softmax_cross_entropy_with_logits(labels=labels, logits=logits)
+8 api_shape: ''

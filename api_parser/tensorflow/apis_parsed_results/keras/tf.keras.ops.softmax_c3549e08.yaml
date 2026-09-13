@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.softmax
+3 api_description: Applies the softmax activation independently along the specified
+  axis, converting values into a probability distribution that sums to 1.
+4 api_signature: tf.keras.ops.softmax(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are converted into probabilities.
+- axis: The axis along which softmax is computed.
+7 api_usage_example:
+- x = np.array([-1., 0., 1.])
+- x_softmax = keras.ops.softmax(x)
+- print(x_softmax)
+8 api_shape: ''

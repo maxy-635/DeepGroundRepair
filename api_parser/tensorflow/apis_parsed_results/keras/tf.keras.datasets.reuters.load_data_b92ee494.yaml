@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.datasets.reuters.load_data
+3 api_description: Loads the Reuters newswire text classification dataset as integer-encoded
+  word sequences with 46 topic labels, supporting optional filtering by vocabulary
+  size, test split, and other preprocessing parameters.
+4 api_signature: tf.keras.datasets.reuters.load_data(num_words,test_split,seed)
+5 api_details: ''
+6 api_parameters:
+- num_words: Limits the vocabulary to the most frequent words, replacing rarer words
+    with the out-of-vocabulary token.
+- test_split: Sets the fraction of the dataset reserved for testing.
+- seed: Controls the random shuffling so the dataset split is reproducible.
+7 api_usage_example: null
+8 api_shape: ''

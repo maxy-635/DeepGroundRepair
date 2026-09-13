@@ -1,0 +1,21 @@
+2 api_name: paddle.fft.ifftshift
+3 api_description: 'Inverse fftshift: moves the zero-frequency component back to its
+  original position, restoring the input ordering (with special handling for odd-length
+  arrays).'
+4 api_signature: paddle.fft.ifftshift(x,axes)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor to be shifted; can contain real or complex values.
+- axes: Axis or axes along which to apply the inverse shift; defaults to all axes
+    when None.
+7 api_usage_example:
+- import paddle
+- fftfreq_xp = paddle.fft.fftfreq(5, d=0.3)
+- print(fftfreq_xp)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0., 0.66666669, 1.33333337, -1.33333337, -0.66666669])'
+- res = paddle.fft.ifftshift(fftfreq_xp)
+- print(res)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.33333337, -1.33333337, -0.66666669, 0., 0.66666669])'
+8 api_shape: {}

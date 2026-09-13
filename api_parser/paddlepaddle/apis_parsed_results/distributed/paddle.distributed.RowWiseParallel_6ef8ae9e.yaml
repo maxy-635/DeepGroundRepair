@@ -1,0 +1,24 @@
+2 api_name: paddle.distributed.RowWiseParallel
+3 api_description: Splits a layer’s weights across the first dimension for row-wise
+  model parallelism, primarily supporting `paddle.nn.Linear` and `paddle.nn.Embedding`,
+  and falls back to splitting `layer.weight` for other layers that have it.
+4 api_signature: paddle.distributed.RowWiseParallel(is_input_parallel)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- 'class MLP(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self.fc1 = paddle.nn.Linear(8, 8)'
+- '        self.fc2 = paddle.nn.Linear(8, 8)'
+- '...'
+- '    def forward(self, input):'
+- '        return self.fc2(self.fc1(input))'
+- '>>>'
+- layer = MLP()
+- mp_config = {
+- '    ''fc1'': dist.RowWiseParallel()'
+- '}'
+8 api_shape: {}

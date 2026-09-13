@@ -1,0 +1,10 @@
+2 api_name: tensorflow.io.parse_tensor
+3 api_description: Converts a serialized TensorProto string back into a Tensor.
+4 api_signature: tf.io.parse_tensor(serialized,out_type)
+5 api_details: ''
+6 api_parameters:
+- serialized: The scalar string input containing the serialized TensorProto to parse.
+- out_type: The expected dtype of the parsed tensor, which must exactly match the
+    serialized tensor type.
+7 api_usage_example: null
+8 api_shape: ''

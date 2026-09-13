@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.cumsum
+3 api_description: Computes the cumulative sum of a tensor along a specified axis,
+  using inclusive cumsum by default.
+4 api_signature: tf.math.cumsum(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are cumulatively summed.
+- axis: The axis along which to compute the cumulative sum.
+7 api_usage_example:
+- '# tf.cumsum([a, b, c], exclusive=True, reverse=True)  # [b + c, c, 0]'
+- x = tf.constant([2, 4, 6, 8])
+- tf.cumsum(x, exclusive=True, reverse=True)
+8 api_shape: ''

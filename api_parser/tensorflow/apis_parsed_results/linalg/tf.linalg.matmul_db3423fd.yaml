@@ -1,0 +1,17 @@
+2 api_name: tensorflow.linalg.matmul
+3 api_description: Multiplies two tensors as matrices with optional transposition,
+  adjoint, or sparse optimization, supporting batched rank-2+ inputs of matching numeric
+  types.
+4 api_signature: tf.linalg.matmul(a,b,transpose_a,transpose_b,adjoint_a,adjoint_b)
+5 api_details: ''
+6 api_parameters:
+- a: The first input tensor to be multiplied.
+- b: The second input tensor to be multiplied with `a`.
+- transpose_a: Transposes `a` before performing the matrix multiplication.
+- transpose_b: Transposes `b` before performing the matrix multiplication.
+- adjoint_a: Conjugates and transposes `a` before performing the matrix multiplication.
+- adjoint_b: Conjugates and transposes `b` before performing the matrix multiplication.
+7 api_usage_example:
+- d = a @ b @ [[10], [11]]
+- d = tf.matmul(tf.matmul(a, b), [[10], [11]])
+8 api_shape: ''

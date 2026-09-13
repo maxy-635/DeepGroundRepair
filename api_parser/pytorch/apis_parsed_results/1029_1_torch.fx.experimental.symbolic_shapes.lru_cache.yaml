@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.lru_cache
+3 api_description: Caches the results of a callable with an LRU eviction policy, returning
+  a wrapper that reuses recent outputs for repeated inputs.
+4 api_signature: torch.fx.experimental.symbolic_shapes.lru_cache(maxsize)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.list_gpu_processes
+3 api_description: Returns a human-readable listing of processes using a specified
+  GPU device, including each process’s GPU memory usage.
+4 api_signature: torch.cuda.list_gpu_processes(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which GPU device to inspect; defaults to the current device if `None`.
+7 api_usage_example: null
+8 api_shape: null

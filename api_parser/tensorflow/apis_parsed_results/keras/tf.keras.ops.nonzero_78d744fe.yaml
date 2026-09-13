@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.nonzero
+3 api_description: Returns the indices of all non-zero elements in the input tensor.
+4 api_signature: tf.keras.ops.nonzero(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose nonzero element indices are returned.
+7 api_usage_example: null
+8 api_shape: ''

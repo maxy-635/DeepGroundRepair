@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.DecodeProtoV2
+3 api_description: Decodes a batch of serialized Protocol Buffer messages into dense
+  TensorFlow tensors for requested fields, converting values to specified output types
+  and padding repeated fields while also returning their per-example sizes.
+4 api_signature: tf.raw_ops.DecodeProtoV2(bytes,message_type,field_names,output_types)
+5 api_details: ''
+6 api_parameters:
+- bytes: Serialized protobuf tensors to decode, with batch-shaped string elements.
+- message_type: Proto message type name that tells the op which schema to decode.
+- field_names: Field names to extract from the protos, including full names for extension
+    fields.
+- output_types: TensorFlow dtypes corresponding to each requested field in `field_names`.
+- name: Optional name used to label the operation.
+7 api_usage_example:
+- tf.RaggedTensor.from_tensor(simple_value, lengths=sizes[:, 0]).to_list()
+8 api_shape: ''

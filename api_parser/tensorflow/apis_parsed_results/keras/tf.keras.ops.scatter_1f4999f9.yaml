@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.ops.scatter
+3 api_description: Creates a tensor of the given shape, fills it with zeros, then
+  scatters the provided updates into the specified indices.
+4 api_signature: tf.keras.ops.scatter(indices,values,shape)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the positions where the provided values will be placed in the
+    output tensor.
+- values: Provides the data that will be written into the output tensor at the given
+    indices.
+- shape: Defines the size and dimensionality of the output tensor to create.
+7 api_usage_example:
+- indices = [[0, 1], [1, 1]]
+- values = np.array([1., 1.])
+- keras.ops.scatter(indices, values, shape=(2, 2))
+8 api_shape: ''

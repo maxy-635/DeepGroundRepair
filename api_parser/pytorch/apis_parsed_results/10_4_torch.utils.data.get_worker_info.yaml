@@ -1,0 +1,8 @@
+2 api_name: torch.utils.data.get_worker_info
+3 api_description: Returns details about the current DataLoader worker process, or
+  None when not running inside a worker.
+4 api_signature: '"torch.utils.data.get_worker_info()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: paddle.lgamma
+3 api_description: Computes the element-wise natural logarithm of the absolute value
+  of the gamma function for each input tensor value.
+4 api_signature: paddle.lgamma(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elementwise log-gamma values are computed.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = paddle.lgamma(x)
+- out
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1.31452453, 1.76149762, 2.25271273, 1.09579790])'
+8 api_shape: {}

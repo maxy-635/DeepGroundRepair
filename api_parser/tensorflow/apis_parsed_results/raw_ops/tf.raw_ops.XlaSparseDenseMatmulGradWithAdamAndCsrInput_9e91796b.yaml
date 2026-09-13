@@ -1,0 +1,30 @@
+2 api_name: tensorflow.raw_ops.XlaSparseDenseMatmulGradWithAdamAndCsrInput
+3 api_description: Computes gradients for XLA sparse-dense matrix multiplication with
+  Adam optimizer updates using a CSR-formatted sparse input.
+4 api_signature: tf.raw_ops.XlaSparseDenseMatmulGradWithAdamAndCsrInput(row_pointers,sorted_sample_ids,sorted_token_ids,sorted_gains,activation_gradients,learning_rate,embedding_table,momenta,velocity,num_minibatches_per_physical_sparse_core,use_sum_inside_sqrt,beta1,beta2,epsilon,table_name,clip_weight_min,clip_weight_max,name)
+5 api_details: ''
+6 api_parameters:
+- row_pointers: CSR row pointer array that defines the start of each sparse row.
+- sorted_sample_ids: Sorted sample IDs identifying the sparse examples to use in the
+    update.
+- sorted_token_ids: Sorted token IDs corresponding to the sparse features being processed.
+- sorted_gains: Sorted gain values that weight the sparse feature contributions.
+- activation_gradients: Gradients of the activations flowing back into this sparse
+    dense matmul.
+- learning_rate: Step size used by the Adam optimizer update.
+- embedding_table: Current embedding or dense weight table to be updated.
+- momenta: Adam first-moment accumulator for the embedding parameters.
+- velocity: Adam second-moment accumulator for the embedding parameters.
+- num_minibatches_per_physical_sparse_core: Number of minibatches mapped to each physical
+    sparse core.
+- use_sum_inside_sqrt: Controls whether the Adam denominator uses the summed second
+    moment inside the square root.
+- beta1: Exponential decay rate for the first-moment estimate.
+- beta2: Exponential decay rate for the second-moment estimate.
+- epsilon: Small constant added for numerical stability in Adam.
+- table_name: Name of the embedding table being updated.
+- clip_weight_min: Minimum allowed value for clipping updated weights.
+- clip_weight_max: Maximum allowed value for clipping updated weights.
+- name: Optional operation name used to label the generated op.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.mem_get_info
+3 api_description: Returns the amount of free and total GPU memory for a specified
+  CUDA device.
+4 api_signature: torch.cuda.mem_get_info(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which CUDA device’s free and total memory information to return;
+    if omitted or invalid, the current device is used.
+7 api_usage_example: null
+8 api_shape: null

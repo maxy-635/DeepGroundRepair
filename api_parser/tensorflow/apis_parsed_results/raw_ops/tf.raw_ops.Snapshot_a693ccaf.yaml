@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.Snapshot
+3 api_description: Creates a snapshot copy of the input tensor and returns it unchanged.
+4 api_signature: tf.raw_ops.Snapshot(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be written to the snapshot.
+7 api_usage_example: null
+8 api_shape: ''

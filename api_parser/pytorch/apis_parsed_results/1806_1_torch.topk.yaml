@@ -1,0 +1,16 @@
+2 api_name: torch.topk
+3 api_description: Returns the k largest values and their indices from a tensor along
+  a specified dimension.
+4 api_signature: torch.topk(input,k,dim,largest,sorted)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to search for the top-k elements in.
+- k: The number of top elements to return.
+- dim: The dimension along which to select the top-k elements.
+- largest: Determines whether to return the largest or smallest elements.
+- sorted: Determines whether the returned elements are sorted.
+7 api_usage_example:
+- ' x = torch.arange(1., 6.)'
+- ' x'
+- ' torch.topk(x, 3)'
+8 api_shape: null

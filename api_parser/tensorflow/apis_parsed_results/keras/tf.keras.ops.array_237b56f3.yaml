@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.array
+3 api_description: Creates a tensor from input data, optionally with a specified dtype.
+4 api_signature: tf.keras.ops.array(x,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor to be returned or converted into a Keras tensor.
+- dtype: Specifies the target data type for the resulting tensor.
+7 api_usage_example:
+- keras.ops.array([1, 2, 3], dtype="float32")
+8 api_shape: ''

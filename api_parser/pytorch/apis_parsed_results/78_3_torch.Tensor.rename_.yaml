@@ -1,0 +1,8 @@
+2 api_name: torch.Tensor.rename_
+3 api_description: Renames a tensor’s dimensions in place by assigning new names to
+  its axes.
+4 api_signature: rename_(*names,**rename_map)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

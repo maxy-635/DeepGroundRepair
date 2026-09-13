@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.NonMaxSuppressionWithOverlaps
+3 api_description: Selects the highest-scoring boxes while suppressing boxes whose
+  custom overlap with a chosen box exceeds a threshold, returning the indices of the
+  boxes kept.
+4 api_signature: tf.raw_ops.NonMaxSuppressionWithOverlaps(overlaps,scores,max_output_size,overlap_threshold)
+5 api_details: ''
+6 api_parameters:
+- overlaps: Provides the pairwise overlap matrix used to determine which boxes suppress
+    each other.
+- scores: Provides the confidence score for each box so higher-scoring boxes are preferred.
+- max_output_size: Sets the maximum number of boxes that can be selected after suppression.
+- overlap_threshold: Sets the overlap cutoff above which a box is considered too overlapping
+    to keep.
+7 api_usage_example: null
+8 api_shape: ''

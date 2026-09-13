@@ -1,0 +1,17 @@
+2 api_name: torch.nn.FeatureAlphaDropout
+3 api_description: torch.nn.FeatureAlphaDropout randomly masks out entire channels
+  in a neural network to prevent overfitting while maintaining the mean and variance
+  of the input.
+4 api_signature: torch.nn.FeatureAlphaDropout(p)
+5 api_details: ''
+6 api_parameters:
+- p: The probability with which each element of the input tensor is set to zero during
+    dropout.
+7 api_usage_example:
+- ' m = nn.FeatureAlphaDropout(p=0.2)'
+- ' input = torch.randn(20, 16, 4, 32, 32)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth, Height, Width)
+  output tensor shape: (N, Channel_out, Depth, Height, Width)
+  tensor shape transform formulas: {}

@@ -1,0 +1,8 @@
+2 api_name: paddle.reshape_
+3 api_description: In-place reshapes tensor `x` to the specified shape, replacing
+  the output tensor with `x`.
+4 api_signature: paddle.reshape_(x,shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

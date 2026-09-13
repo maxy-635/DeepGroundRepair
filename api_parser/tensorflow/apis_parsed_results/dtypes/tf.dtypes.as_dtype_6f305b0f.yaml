@@ -1,0 +1,10 @@
+2 api_name: tensorflow.dtypes.as_dtype
+3 api_description: Converts a type value such as a tf.DType, DataType enum, string
+  name, or numpy.dtype into a TensorFlow tf.DType.
+4 api_signature: tf.dtypes.as_dtype(type_value)
+5 api_details: ''
+6 api_parameters:
+- type_value: The value to convert into a `tf.DType` object.
+7 api_usage_example:
+- tf.as_dtype(np.int32)
+8 api_shape: ''

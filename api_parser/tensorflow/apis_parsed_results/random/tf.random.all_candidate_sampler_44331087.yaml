@@ -1,0 +1,12 @@
+2 api_name: tensorflow.random.all_candidate_sampler
+3 api_description: Deterministically returns the set of all possible classes, mainly
+  for testing.
+4 api_signature: tf.random.all_candidate_sampler(true_classes,num_sampled,unique)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Specifies the target class ids for each example in the batch.
+- num_sampled: Sets how many candidate classes to sample.
+- unique: Indicates whether sampled classes should be unique, though this parameter
+    is ignored.
+7 api_usage_example: null
+8 api_shape: ''

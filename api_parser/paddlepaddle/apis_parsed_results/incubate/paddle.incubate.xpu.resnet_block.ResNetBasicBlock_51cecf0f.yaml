@@ -1,0 +1,47 @@
+2 api_name: paddle.incubate.xpu.resnet_block.ResNetBasicBlock
+3 api_description: Optimized ResNet basic block for SSD that fuses the main convolution,
+  batch normalization, and ReLU operations into a single unit, with optional shortcut
+  handling; when no shortcut is used, it preserves the input shape.
+4 api_signature: paddle.incubate.xpu.resnet_block.ResNetBasicBlock(num_channels1,num_filter1,filter1_size,num_channels2,num_filter2,filter2_size,stride1,stride2,stride3,act,momentum,eps,data_format,has_shortcut,use_global_stats,is_test)
+5 api_details: ''
+6 api_parameters:
+- num_channels: Sets the number of input channels in the block.
+- num_filter: Sets the number of output filters, which also determines the output
+    channels.
+- stride: Controls the convolution stride for spatial downsampling.
+- act: Chooses the activation function, or disables activation when set to `None`.
+- momentum: Sets the moving average momentum used to update batch normalization statistics.
+- eps: Adds a small value for numerical stability in normalization denominators.
+- data_format: Specifies the input and output tensor layout, currently supported as
+    `NCHW`.
+- has_shortcut: Determines whether to include the third convolution and batch normalization
+    in the shortcut path.
+- use_global_stats: Controls whether batch normalization uses global mean and variance
+    statistics.
+- is_test: Indicates whether the block is running in test or inference mode.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(1, 1)'
+- '        w_tmp = self.create_parameter([1,1])'
+- '        self.add_parameter("w_tmp", w_tmp)'
+- '...'
+- '    def forward(self, input):'
+- '        return self._linear(input)'
+- '...'
+- mylayer = MyLayer()
+- 'for name, param in mylayer.named_parameters():'
+- '    print(name, param)'
+- 'w_tmp Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.01448846]])'
+- '_linear.weight Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0.18551230]])'
+- '_linear.bias Parameter containing:'
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[0.])'
+8 api_shape: {}

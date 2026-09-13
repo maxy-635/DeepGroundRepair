@@ -1,0 +1,19 @@
+2 api_name: torch.nn.LocalResponseNorm
+3 api_description: Applies local response normalization to an input signal, enhancing
+  the model's ability to generalize by normalizing the responses of nearby neurons.
+4 api_signature: torch.nn.LocalResponseNorm(size,alpha)
+5 api_details: ''
+6 api_parameters:
+- size: Defines the number of neighboring channels that contribute to the normalization
+    process.
+- alpha: A scaling factor that adjusts the strength of the normalization.
+7 api_usage_example:
+- ' lrn = nn.LocalResponseNorm(2)'
+- ' signal_2d = torch.randn(32, 5, 24, 24)'
+- ' signal_4d = torch.randn(16, 5, 7, 7, 7, 7)'
+- ' output_2d = lrn(signal_2d)'
+- ' output_4d = lrn(signal_4d)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, *)
+  output tensor shape: (N, Channel_out, *) (same shape as input)
+  tensor shape transform formulas: {}

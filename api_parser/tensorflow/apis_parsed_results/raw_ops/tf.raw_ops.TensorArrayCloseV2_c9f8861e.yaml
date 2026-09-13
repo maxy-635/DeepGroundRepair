@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.TensorArrayCloseV2
+3 api_description: Closes a TensorArray resource, releasing its handle and preventing
+  further use.
+4 api_signature: tf.raw_ops.TensorArrayCloseV2(handle)
+5 api_details: ''
+6 api_parameters:
+- handle: The string tensor that identifies the TensorArray resource to close.
+7 api_usage_example: null
+8 api_shape: ''

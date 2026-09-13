@@ -1,0 +1,17 @@
+2 api_name: tensorflow.linalg.experimental.conjugate_gradient
+3 api_description: Iteratively solves A*x = rhs for self-adjoint, positive definite
+  matrices using a matrix-free conjugate gradient method, stopping when the residual
+  falls below the tolerance or max_iter is reached.
+4 api_signature: tf.linalg.experimental.conjugate_gradient(operator,rhs,preconditioner,tol,max_iter)
+5 api_details: ''
+6 api_parameters:
+- operator: The self-adjoint positive-definite linear operator representing the system
+    matrix to solve against.
+- rhs: The right-hand-side vector or batched vectors for the linear system.
+- preconditioner: An optional approximate inverse operator used to speed convergence
+    by improving the conditioning of the system.
+- x: The initial guess for the solution vector or batched solution vectors.
+- tol: The convergence tolerance used to decide when the iterative solver has succeeded.
+- max_iter: The maximum number of iterations the solver is allowed to perform.
+7 api_usage_example: null
+8 api_shape: ''

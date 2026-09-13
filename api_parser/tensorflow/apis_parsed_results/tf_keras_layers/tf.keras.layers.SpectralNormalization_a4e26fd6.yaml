@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.layers.SpectralNormalization
+3 api_description: Applies spectral normalization to a layer's weights, controlling
+  their spectral norm to stabilize GAN training.
+4 api_signature: tf.keras.layers.SpectralNormalization(layer)
+5 api_details: ''
+6 api_parameters:
+- layer: A Keras layer instance that contains a kernel or embeddings attribute, which
+    is subject to spectral normalization.
+7 api_usage_example: null
+8 api_shape: null

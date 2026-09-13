@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseReduceMax
+3 api_description: Computes the maximum of a SparseTensor across the specified axes
+  and returns a dense tensor, optionally keeping reduced dimensions.
+4 api_signature: tf.raw_ops.SparseReduceMax(input_values,reduction_axes,keep_dims)
+5 api_details: ''
+6 api_parameters:
+- input_values: Provides the non-empty sparse values to be reduced.
+- reduction_axes: Specifies which axes to reduce over.
+- keep_dims: Controls whether reduced axes are kept as size-1 dimensions.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.LoadTPUEmbeddingAdadeltaParameters
+3 api_description: Loads Adadelta optimizer embedding parameters into TPU HBM after
+  configuration, typically to restore checkpointed values before training.
+4 api_signature: tf.raw_ops.LoadTPUEmbeddingAdadeltaParameters(parameters,accumulators,updates,num_shards,shard_id)
+5 api_details: ''
+6 api_parameters:
+- parameters: The Adadelta parameter values to be loaded.
+- accumulators: The Adadelta accumulator values to be loaded.
+- updates: The Adadelta update values to be loaded.
+- num_shards: The total number of TPU embedding shards.
+- shard_id: The specific shard index this operation applies to.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,36 @@
+2 api_name: paddle.bucketize
+3 api_description: Returns the index positions where each value in x would be inserted
+  into a sorted 1D sequence along the innermost dimension.
+4 api_signature: paddle.bucketize(x,sorted_sequence,right,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values will be bucketized.
+- sorted_sequence: The 1-D monotonically increasing boundary tensor used to define
+    bucket ranges.
+- right: Controls whether bucketize returns lower or upper bounds for each value.
+- out: An optional tensor that stores the output bucket indices.
+7 api_usage_example:
+- import paddle
+- sorted_sequence = paddle.to_tensor([2, 4, 8, 16], dtype='int32')
+- x = paddle.to_tensor([[0, 8, 4, 16], [-1, 2, 8, 4]], dtype='int32')
+- out1 = paddle.bucketize(x, sorted_sequence)
+- print(out1)
+- Tensor(shape=[2, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 2, 1, 3],'
+- '[0, 0, 2, 1]])'
+- out2 = paddle.bucketize(x, sorted_sequence, right=True)
+- print(out2)
+- Tensor(shape=[2, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 3, 2, 4],'
+- '[0, 1, 3, 2]])'
+- out3 = x.bucketize(sorted_sequence)
+- print(out3)
+- Tensor(shape=[2, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 2, 1, 3],'
+- '[0, 0, 2, 1]])'
+- out4 = x.bucketize(sorted_sequence, right=True)
+- print(out4)
+- Tensor(shape=[2, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 3, 2, 4],'
+- '[0, 1, 3, 2]])'
+8 api_shape: {}

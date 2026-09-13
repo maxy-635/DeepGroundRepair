@@ -1,0 +1,27 @@
+2 api_name: tensorflow.nn.conv3d
+3 api_description: The tensorflow.nn.conv3d function performs a 3-D convolution operation
+  on 5-D input and filter tensors, implementing cross-correlation to measure the similarity
+  between the input and filters.
+4 api_signature: tf.nn.conv3d(input,filters,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor with defined shape and type for the 3D convolution
+    operation.
+- filters: Defines the filter tensor with the same type as input, determining the
+    convolutional kernels applied.
+- strides: Indicates the stride length for each dimension, controlling the step size
+    of the convolution, with constraints on the first and last dimensions.
+- padding: Specifies the padding algorithm, either 'SAME' or 'VALID', to determine
+    how the input boundaries are handled during convolution.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Depth_in, Height_in, Width_in, Channel_in)
+  output tensor shape: (N, Depth_out, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filter
+    tensor depth: If padding = "VALID", Depth_out = floor((Depth_in - filter_depth) / stride_depth + 1); 
+                  If padding = "SAME", Depth_out = floor((Depth_in - 1) / stride_depth + 1)
+    tensor height: If padding = "VALID", Height_out = floor((Height_in - filter_height) / strides_height + 1); 
+                  If padding = "SAME", Height_out = floor((Height_in - 1) / strides_height + 1)
+    tensor width: If padding = "VALID", Width_out = floor((Width_in - filter_width) / strides_width + 1); 
+                  If padding = "SAME", Width_out = floor((Width_in - 1) / strides_width + 1)

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.math.accumulate_n
+3 api_description: Element-wise sums a list of tensors, with optional shape and dtype
+  checks when not inferred.
+4 api_signature: tf.math.accumulate_n(inputs,shape)
+5 api_details: ''
+6 api_parameters:
+- inputs: The tensors to add together, all of which must have the same shape and type.
+- shape: Optionally specifies the expected element shape and output shape; if `None`,
+    the shape is inferred from the input tensors.
+7 api_usage_example:
+- '# Explicitly pass shape and type'
+- tf.math.accumulate_n(
+- '    [a, b, a], shape=[2, 2], tensor_dtype=tf.int32).numpy()'
+8 api_shape: ''

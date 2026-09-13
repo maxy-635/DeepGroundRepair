@@ -1,0 +1,12 @@
+2 api_name: tensorflow.case
+3 api_description: Selects and returns outputs from the first true predicate/function
+  pair, or a default function if none match, with optional exclusive checking and
+  support for matching nested TensorFlow nest structures.
+4 api_signature: tf.case(pred_fn_pairs,default)
+5 api_details: ''
+6 api_parameters:
+- pred_fn_pairs: Supplies condition-function pairs, where each boolean predicate selects
+    a callable that returns tensors.
+- default: Provides a fallback callable that returns tensors when no predicate matches.
+7 api_usage_example: null
+8 api_shape: ''

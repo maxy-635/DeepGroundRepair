@@ -1,0 +1,28 @@
+2 api_name: torch.nn.functional.conv3d
+3 api_description: torch.nn.functional.conv3d applies a 3D convolution operation on
+  an input tensor, processing multiple input planes to produce an output tensor.
+4 api_signature: torch.nn.functional.conv3d(input,weight,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor with dimensions corresponding to batch size, number of input
+    channels, and 3D spatial dimensions (depth, height, width).
+- weight: The convolutional filters with dimensions corresponding to the number of
+    output channels, input channels per group, and kernel size in 3D (depth, height,
+    width).
+- stride: The step size for sliding the convolutional kernel over the input, specified
+    as a single number or a tuple for each 3D dimension (depth, height, width).
+- padding: The amount of implicit zero-padding added to both sides of the input, specified
+    as a single number, a tuple, or using strings 'valid' or 'same' for automatic
+    calculation.
+7 api_usage_example:
+- ' filters = torch.randn(33, 16, 3, 3, 3)'
+- ' inputs = torch.randn(20, 16, 50, 10, 20)'
+- ' F.conv3d(inputs, filters)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[0]
+    tensor depth: Depth_out = floor((Depth_in + 2 * padding_depth - kernel_size_depth) / stride_depth + 1)
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

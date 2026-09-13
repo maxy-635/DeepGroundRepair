@@ -1,0 +1,48 @@
+2 api_name: paddle.amp.auto_cast
+3 api_description: Creates a dynamic-graph context that automatically chooses float32,
+  float16, or bfloat16 for operators to enable mixed-precision execution and improve
+  performance.
+4 api_signature: paddle.amp.auto_cast(enable,level,dtype)
+5 api_details: ''
+6 api_parameters:
+- enable: Turns automatic mixed-precision casting on or off.
+- level: Selects the mixed-precision strategy to use for operator and parameter casting.
+- dtype: Chooses whether mixed-precision computations use `float16` or `bfloat16`.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- conv2d = paddle.nn.Conv2D(3, 2, 3, bias_attr=False)
+- data = paddle.rand([10, 3, 32, 32])
+- 'with paddle.amp.auto_cast():'
+- '    conv = conv2d(data)'
+- '    print(conv.dtype)'
+- '>>>'
+- paddle.float16
+- '>>>'
+- 'with paddle.amp.auto_cast(enable=False):'
+- '    conv = conv2d(data)'
+- '    print(conv.dtype)'
+- '>>>'
+- paddle.float32
+- '>>>'
+- 'with paddle.amp.auto_cast(custom_black_list={''conv2d''}):'
+- '    conv = conv2d(data)'
+- '    print(conv.dtype)'
+- '>>>'
+- paddle.float32
+- '>>>'
+- a = paddle.rand([2, 3])
+- b = paddle.rand([2, 3])
+- 'with paddle.amp.auto_cast(custom_white_list={''elementwise_add''}):'
+- '    c = a + b'
+- '    print(c.dtype)'
+- '>>>'
+- paddle.float16
+- '>>>'
+- 'with paddle.amp.auto_cast(custom_white_list={''elementwise_add''}, level=''O2''):'
+- '    d = a + b'
+- '    print(d.dtype)'
+- '>>>'
+- paddle.float16
+- '>>>'
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: paddle.hypot_
+3 api_description: Computes the hypotenuse elementwise and writes the result in place
+  into input x.
+4 api_signature: paddle.hypot_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

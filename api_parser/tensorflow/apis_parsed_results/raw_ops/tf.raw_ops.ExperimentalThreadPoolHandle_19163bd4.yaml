@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ExperimentalThreadPoolHandle
+3 api_description: Creates a handle for a custom thread pool used to process a dataset’s
+  input computations.
+4 api_signature: tf.raw_ops.ExperimentalThreadPoolHandle(num_threads,max_intra_op_parallelism)
+5 api_details: ''
+6 api_parameters:
+- num_threads: Sets how many threads the thread pool contains.
+- max_intra_op_parallelism: Limits how much parallelism operations can use when running
+    on this thread pool.
+7 api_usage_example: null
+8 api_shape: ''

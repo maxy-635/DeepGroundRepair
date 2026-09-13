@@ -1,0 +1,15 @@
+2 api_name: torch.utils.generate_methods_for_privateuse1_backend
+3 api_description: Automatically adds backend-specific attributes and methods for
+  a renamed PrivateUse1 custom backend.
+4 api_signature: torch.utils.generate_methods_for_privateuse1_backend(for_tensor,for_module)
+5 api_details: ''
+6 api_parameters:
+- for_tensor: Controls whether private-use backend methods are added to `torch.Tensor`.
+- for_module: Controls whether private-use backend methods are added to `torch.nn.Module`.
+7 api_usage_example:
+- ' torch.utils.rename_privateuse1_backend("foo")'
+- ' torch.utils.generate_methods_for_privateuse1_backend()'
+- ' a = torch.tensor(2).foo()'
+- ' a.is_foo'
+- ' hasattr(torch.nn.Module, ''foo'')'
+8 api_shape: null

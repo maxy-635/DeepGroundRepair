@@ -1,0 +1,54 @@
+2 api_name: paddle.static.nn.sequence_expand
+3 api_description: Broadcasts a sequence-level tensor to match the length of each
+  selected sequence in another LoDTensor, expanding each item along the time dimension
+  according to the provided reference sequence lengths.
+4 api_signature: paddle.static.nn.sequence_expand(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The source tensor to be expanded along the sequence information from `y`.
+- y: The reference tensor whose LoD sequence structure is used to expand `x`.
+7 api_usage_example:
+- '>>>'
+- '# set env var before import paddle to disable pir mode, following example code
+  use os module.'
+- import os
+- os.environ['FLAGS_enable_pir_api'] = '0'
+- import paddle
+- from paddle import base
+- paddle.enable_static()
+- import numpy as np
+- x = paddle.static.data(name='x', shape=[4, 1], dtype='float32')
+- y = paddle.static.data(name='y', shape=[8, 1],
+- '            dtype=''float32'', lod_level=1)'
+- out = paddle.static.nn.sequence_expand(x=x, y=y, ref_level=0)
+- exe = paddle.static.Executor(base.CPUPlace())
+- place = paddle.CPUPlace()
+- np_data = np.array([[1], [2], [3], [4]]).astype('float32')
+- x_lod_tensor = base.create_lod_tensor(np_data, [[2, 2]], place)
+- print(x_lod_tensor)
+- '- lod: {{0, 2, 4}}'
+- '- place: Place(cpu)'
+- '- shape: [4, 1]'
+- '- layout: NCHW'
+- '- dtype: float32'
+- '- data: [1 2 3 4]'
+- np_data = np.array([[1], [2], [3], [4], [5], [6], [7], [8]]).astype('float32')
+- y_lod_tensor = base.create_lod_tensor(np_data, [[2, 2], [3,3,1,1]], place)
+- print(y_lod_tensor)
+- '- lod: {{0, 2, 4}{0, 3, 6, 7, 8}}'
+- '- place: Place(cpu)'
+- '- shape: [8, 1]'
+- '- layout: NCHW'
+- '- dtype: float32'
+- '- data: [1 2 3 4 5 6 7 8]'
+- out_main = exe.run(base.default_main_program(),
+- '                feed={''x'': x_lod_tensor, ''y'': y_lod_tensor},'
+- '                fetch_list=[out], return_numpy=False)'
+- print(out_main[0])
+- '- lod: {{0, 2, 4, 6, 8}}'
+- '- place: Place(cpu)'
+- '- shape: [8, 1]'
+- '- layout: NCHW'
+- '- dtype: float32'
+- '- data: [1 2 1 2 3 4 3 4]'
+8 api_shape: {}

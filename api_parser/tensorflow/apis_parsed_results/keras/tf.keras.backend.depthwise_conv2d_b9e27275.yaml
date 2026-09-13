@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.depthwise_conv2d
+3 api_description: Performs a 2D depthwise convolution on input tensors, applying
+  a separate filter to each input channel and optionally adjusting strides, padding,
+  dilation, and data format.
+4 api_signature: tf.keras.backend.depthwise_conv2d(x,depthwise_kernel,strides,padding)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

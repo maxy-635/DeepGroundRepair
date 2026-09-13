@@ -1,0 +1,17 @@
+2 api_name: paddle.vision.ops.roi_align
+3 api_description: Extracts fixed-size feature maps from variable-sized RoIs using
+  bilinear interpolation, preserving spatial alignment for detection and segmentation
+  models.
+4 api_signature: paddle.vision.ops.roi_align(x,boxes,output_size,spatial_scale,aligned)
+5 api_details: ''
+6 api_parameters:
+- x: The input feature map to be pooled, shaped as [N, C, H, W].
+- boxes: The RoI boxes to pool over, given as a 2D tensor of [x1, y1, x2, y2] coordinates.
+- output_size: The height and width of each pooled RoI output, or a single int used
+    for both dimensions.
+- spatial_scale: The factor used to scale ROI coordinates to match the feature map
+    resolution.
+- aligned: Whether to use the aligned RoIAlign variant that shifts coordinates by
+    -0.5 for better pixel alignment.
+7 api_usage_example: []
+8 api_shape: {}

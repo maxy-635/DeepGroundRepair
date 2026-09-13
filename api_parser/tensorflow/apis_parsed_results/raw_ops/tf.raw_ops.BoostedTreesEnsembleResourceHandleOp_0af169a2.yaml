@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesEnsembleResourceHandleOp
+3 api_description: Creates a resource handle for a boosted trees ensemble.
+4 api_signature: tf.raw_ops.BoostedTreesEnsembleResourceHandleOp(container,shared_name)
+5 api_details: ''
+6 api_parameters:
+- container: Names the resource container used to store and share the handle, with
+    an empty string as the default.
+- shared_name: Assigns a shared identifier for the resource handle so it can be reused
+    across sessions or graphs, defaulting to an empty string.
+- name: Sets the optional operation name used to label this TensorFlow op.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,17 @@
+2 api_name: paddle.static.create_global_var
+3 api_description: Create a tensor variable in the global block (block 0) and initialize
+  it with a value.
+4 api_signature: paddle.static.create_global_var(shape,value,dtype,persistable,name)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the variable’s dimensions.
+- value: Sets the initial contents used to fill the new variable.
+- dtype: Specifies the variable’s data type.
+- persistable: Marks whether the variable should be saved and kept across runs.
+- name: Optionally assigns a name to the variable, otherwise it is auto-generated.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- var = paddle.static.create_global_var(shape=[2,3], value=1.0, dtype='float32',
+- '                               persistable=True, force_cpu=True, name=''new_var'')'
+8 api_shape: {}

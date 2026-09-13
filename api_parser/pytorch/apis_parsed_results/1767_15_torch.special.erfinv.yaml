@@ -1,0 +1,10 @@
+2 api_name: torch.special.erfinv
+3 api_description: Computes the inverse error function for inputs in the range (-1,
+  1).
+4 api_signature: torch.special.erfinv(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing values for which to compute the inverse error function.
+7 api_usage_example:
+- ' torch.special.erfinv(torch.tensor([0, 0.5, -1.]))'
+8 api_shape: null

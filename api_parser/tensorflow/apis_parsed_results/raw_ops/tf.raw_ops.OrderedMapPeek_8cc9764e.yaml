@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.OrderedMapPeek
+3 api_description: Blocks until the specified key exists in the ordered map, then
+  returns the associated value(s) efficiently.
+4 api_signature: tf.raw_ops.OrderedMapPeek(key,indices,dtypes)
+5 api_details: ''
+6 api_parameters:
+- key: Identifies which entry in the ordered map to peek at.
+- indices: Specifies the location(s) within the selected map entry to read.
+- dtypes: Defines the data types of the values returned by the peek operation.
+7 api_usage_example: null
+8 api_shape: ''

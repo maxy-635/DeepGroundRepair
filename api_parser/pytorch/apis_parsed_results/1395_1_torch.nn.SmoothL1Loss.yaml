@@ -1,0 +1,16 @@
+2 api_name: torch.nn.SmoothL1Loss
+3 api_description: SmoothL1Loss combines L1 and L2 loss, using L2 loss for small errors
+  and L1 loss for larger errors, making it robust to outliers.
+4 api_signature: torch.nn.SmoothL1Loss(reduction,beta)
+5 api_details: ''
+6 api_parameters:
+- reduction: Determines how the loss output is aggregated, with options for no reduction,
+    mean reduction, or sum reduction.
+- beta: Sets the threshold for switching between L1 and L2 loss, where the value must
+    be non-negative.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: scalar. If reduction is 'none', then (*), same shape as the
+    input.
+  tensor shape transform formulas: {}

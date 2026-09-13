@@ -1,0 +1,16 @@
+2 api_name: torch.all
+3 api_description: Returns True if every element in the input evaluates to True, otherwise
+  returns False.
+4 api_signature: torch.all(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are checked to see whether all are nonzero (or
+    true).
+7 api_usage_example:
+- ' a = torch.rand(1, 2).bool()'
+- ' a'
+- ' torch.all(a)'
+- ' a = torch.arange(0, 3)'
+- ' a'
+- ' torch.all(a)'
+8 api_shape: null

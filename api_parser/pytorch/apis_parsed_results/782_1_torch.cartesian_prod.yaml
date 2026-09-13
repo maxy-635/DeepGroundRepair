@@ -1,0 +1,16 @@
+2 api_name: torch.cartesian_prod
+3 api_description: Returns the Cartesian product of input tensors, producing all combinations
+  of their elements like itertools.product.
+4 api_signature: torch.cartesian_prod(*tensors)
+5 api_details: ''
+6 api_parameters:
+- '*tensors': Any number of 1D tensors whose Cartesian product will be computed.
+7 api_usage_example:
+- ' import itertools'
+- ' a = [1, 2, 3]'
+- ' b = [4, 5]'
+- ' list(itertools.product(a, b))'
+- ' tensor_a = torch.tensor(a)'
+- ' tensor_b = torch.tensor(b)'
+- ' torch.cartesian_prod(tensor_a, tensor_b)'
+8 api_shape: null

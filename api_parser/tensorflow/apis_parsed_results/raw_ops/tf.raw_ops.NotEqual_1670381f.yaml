@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.NotEqual
+3 api_description: Computes element-wise inequality between x and y, returning true
+  where the values differ.
+4 api_signature: tf.raw_ops.NotEqual(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to compare.
+- y: The second input tensor to compare against `x`; it must have the same type.
+7 api_usage_example: null
+8 api_shape: ''

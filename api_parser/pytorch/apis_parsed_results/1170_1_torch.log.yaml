@@ -1,0 +1,12 @@
+2 api_name: torch.log
+3 api_description: Returns a new tensor containing the natural logarithm of each element
+  in the input tensor.
+4 api_signature: torch.log(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose natural logarithm is computed elementwise.
+7 api_usage_example:
+- ' a = torch.rand(5) * 5'
+- ' a'
+- ' torch.log(a)'
+8 api_shape: null

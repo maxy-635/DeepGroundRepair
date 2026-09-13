@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.MergeSummary
+3 api_description: Combines multiple Summary inputs into one Summary protobuf, returning
+  an error if any tags are duplicated.
+4 api_signature: tf.raw_ops.MergeSummary(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A list of one or more string tensors containing serialized Summary protocol
+    buffers to be merged.
+7 api_usage_example: null
+8 api_shape: ''

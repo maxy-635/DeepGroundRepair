@@ -1,0 +1,10 @@
+2 api_name: torch.xpu.memory_reserved
+3 api_description: Returns the amount of GPU memory currently reserved by the caching
+  allocator for a specified device, in bytes.
+4 api_signature: torch.xpu.memory_reserved(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which XPU device to query for reserved memory; defaults to the current
+    device if not provided.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.experimental.register_filesystem_plugin
+3 api_description: Loads and registers a TensorFlow filesystem plugin so TensorFlow
+  can access custom file systems.
+4 api_signature: tf.experimental.register_filesystem_plugin(plugin_location)
+5 api_details: ''
+6 api_parameters:
+- plugin_location: Specifies the relative or absolute path to the dynamic library
+    containing the filesystem plugin.
+7 api_usage_example: null
+8 api_shape: ''

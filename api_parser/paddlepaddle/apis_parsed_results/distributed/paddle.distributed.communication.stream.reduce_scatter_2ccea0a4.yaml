@@ -1,0 +1,28 @@
+2 api_name: paddle.distributed.communication.stream.reduce_scatter
+3 api_description: Reduces tensors across devices, then scatters the reduced chunks
+  so each device receives a different portion of the result.
+4 api_signature: paddle.distributed.communication.stream.reduce_scatter(tensor,tensor_or_tensor_list,op,group)
+5 api_details: ''
+6 api_parameters:
+- tensor: Receives the reduced-scatter output on each rank and is overwritten in place.
+- tensor_or_tensor_list: Provides the per-rank input tensors to be scattered and reduced.
+- op: Specifies which reduction operation to apply, defaulting to sum if omitted.
+- group: Selects the communication group to use, defaulting to the global group if
+    omitted.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data1 = paddle.to_tensor([0, 1])'
+- '    data2 = paddle.to_tensor([2, 3])'
+- 'else:'
+- '    data1 = paddle.to_tensor([4, 5])'
+- '    data2 = paddle.to_tensor([6, 7])'
+- dist.stream.reduce_scatter(data1, [data1, data2])
+- out = data1.numpy()
+- print(out)
+- '# [4, 6]  (2 GPUs, out for rank 0)'
+- '# [8, 10] (2 GPUs, out for rank 1)'
+8 api_shape: {}

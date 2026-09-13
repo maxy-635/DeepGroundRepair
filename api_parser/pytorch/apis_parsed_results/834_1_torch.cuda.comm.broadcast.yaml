@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.comm.broadcast
+3 api_description: Broadcasts a tensor from one GPU to one or more specified GPU devices.
+4 api_signature: torch.cuda.comm.broadcast(tensor,devices)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to be broadcast, either from CPU or GPU memory.
+- devices: The GPU devices that will receive the broadcasted tensor.
+7 api_usage_example: null
+8 api_shape: null

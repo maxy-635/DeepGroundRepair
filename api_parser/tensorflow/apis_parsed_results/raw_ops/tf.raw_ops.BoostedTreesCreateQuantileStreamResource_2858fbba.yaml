@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesCreateQuantileStreamResource
+3 api_description: Creates and returns a resource used to track quantile streams for
+  boosted tree training.
+4 api_signature: tf.raw_ops.BoostedTreesCreateQuantileStreamResource(quantile_stream_resource_handle,epsilon)
+5 api_details: ''
+6 api_parameters:
+- quantile_stream_resource_handle: Identifies the resource handle used to create and
+    refer to the quantile stream resource.
+- epsilon: Sets the maximum approximation error tolerated by the quantile stream resource.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.extension_type.as_dict
+3 api_description: Converts an ExtensionType instance’s top-level attributes into
+  a dictionary without recursively expanding nested ExtensionType values.
+4 api_signature: '"tf.experimental.extension_type.as_dict(value)"'
+5 api_details: ''
+6 api_parameters:
+- value: The ExtensionType object to convert into a nested dictionary.
+7 api_usage_example: null
+8 api_shape: ''

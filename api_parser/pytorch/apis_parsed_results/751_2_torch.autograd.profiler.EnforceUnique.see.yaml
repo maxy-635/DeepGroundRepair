@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.profiler.EnforceUnique.see
+3 api_description: Tracks seen keys and raises an error if the same key appears more
+  than once.
+4 api_signature: '"see(*key)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

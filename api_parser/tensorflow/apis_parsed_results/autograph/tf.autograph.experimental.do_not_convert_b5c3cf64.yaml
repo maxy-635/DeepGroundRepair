@@ -1,0 +1,9 @@
+2 api_name: tensorflow.autograph.experimental.do_not_convert
+3 api_description: Decorator that prevents TensorFlow AutoGraph from converting a
+  function, leaving it to run as written.
+4 api_signature: tf.autograph.experimental.do_not_convert(func)
+5 api_details: ''
+6 api_parameters:
+- func: The function to decorate so it is excluded from AutoGraph conversion.
+7 api_usage_example: null
+8 api_shape: ''

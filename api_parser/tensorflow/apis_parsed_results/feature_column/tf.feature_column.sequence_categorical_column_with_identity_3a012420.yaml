@@ -1,0 +1,12 @@
+2 api_name: tensorflow.feature_column.sequence_categorical_column_with_identity
+3 api_description: Creates a sequence feature column for integer IDs, intended for
+  use with embedding or indicator columns to convert sequential categorical data into
+  dense inputs for sequence models.
+4 api_signature: tf.feature_column.sequence_categorical_column_with_identity(key,num_buckets)
+5 api_details: ''
+6 api_parameters:
+- key: Identifies the input feature with a unique string name.
+- num_buckets: Sets the valid input range to integer values from 0 up to, but not
+    including, num_buckets.
+7 api_usage_example: null
+8 api_shape: ''

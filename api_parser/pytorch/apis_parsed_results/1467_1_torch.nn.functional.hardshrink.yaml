@@ -1,0 +1,15 @@
+2 api_name: torch.nn.functional.hardshrink
+3 api_description: Applies a hard shrinkage function to each element of the input
+  tensor, setting elements to zero if their absolute value is less than a specified
+  threshold.
+4 api_signature: torch.nn.functional.hardshrink(input,lambd)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be processed by the hardshrink function.
+- lambd: The threshold value below which elements are set to zero; elements with absolute
+    value less than this are shrunk to zero.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

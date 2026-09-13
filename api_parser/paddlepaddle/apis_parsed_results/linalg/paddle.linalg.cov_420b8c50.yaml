@@ -1,0 +1,20 @@
+2 api_name: paddle.linalg.cov
+3 api_description: Estimates the covariance matrix of input variables from data, optionally
+  using weights, to measure how the variables vary together.
+4 api_signature: paddle.linalg.cov(x,rowvar,ddof)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor of variables and observations used to compute the covariance matrix.
+- rowvar: Controls whether each row or each column is treated as a variable.
+- ddof: Chooses between an unbiased covariance estimate and a simple average estimate.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- xt = paddle.rand((3, 4))
+- paddle.linalg.cov(xt)
+- print(xt)
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.86583614, 0.52014720, 0.25960937, 0.90525323],'
+- '[0.42400089, 0.40641287, 0.97020894, 0.74437362],'
+- '[0.51785129, 0.73292869, 0.97786582, 0.04315904]])'
+8 api_shape: {}

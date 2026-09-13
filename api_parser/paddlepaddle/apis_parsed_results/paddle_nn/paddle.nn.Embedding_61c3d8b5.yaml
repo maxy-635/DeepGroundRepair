@@ -1,0 +1,42 @@
+2 api_name: paddle.nn.Embedding
+3 api_description: The paddle.nn.Embedding API constructs an embedding layer to map
+  input IDs to their corresponding embedding vectors by creating a 2D embedding matrix
+  defined by num_embeddings and embedding_dim.
+4 api_signature: paddle.nn.Embedding(num_embeddings,embedding_dim,padding_idx,max_norm,norm_type,device,dtype)
+5 api_details: ''
+6 api_parameters:
+- num_embeddings: Specifies the size of the dictionary of embeddings.
+- embedding_dim: Specifies the size of each embedding vector.
+- padding_idx: Determines the index for padding, outputting zero vectors when encountered,
+    and is not updated during training.
+- max_norm: Renormalizes the embedding vectors to not exceed the specified norm value.
+- norm_type: Specifies the type of p-norm used for the max_norm option.
+- device: Indicates the device for computation when weight attributes are set.
+- dtype: Defines the data type of the weights when weight attributes are set.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[0], [1], [3]], dtype="int64", stop_gradient=False)
+- embedding = paddle.nn.Embedding(4, 3, sparse=True)
+- w0 = paddle.to_tensor([[0., 0., 0.],
+- '                       [1., 1., 1.],'
+- '                       [2., 2., 2.],'
+- '                       [3., 3., 3.]], dtype="float32")'
+- embedding.weight.set_value(w0)
+- print(embedding.weight)
+- 'Parameter containing:'
+- Tensor(shape=[4, 3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0., 0., 0.],'
+- '[1., 1., 1.],'
+- '[2., 2., 2.],'
+- '[3., 3., 3.]])'
+- adam = paddle.optimizer.Adam(parameters=[embedding.weight], learning_rate=0.01)
+- adam.clear_grad()
+- out = embedding(x)
+- print(out)
+- Tensor(shape=[3, 1, 3], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[0., 0., 0.]],'
+- '[[1., 1., 1.]],'
+- '[[3., 3., 3.]]])'
+- out.backward()
+- adam.step()
+8 api_shape: null

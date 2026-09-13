@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Relu6Grad
+3 api_description: Computes the gradient of ReLU6 by passing upstream gradients through
+  where the input was between 0 and 6, and zeroing them elsewhere.
+4 api_signature: tf.raw_ops.Relu6Grad(gradients,features)
+5 api_details: ''
+6 api_parameters:
+- gradients: Holds the upstream gradient values to propagate backward through the
+    corresponding ReLU6 operation.
+- features: Provides the original ReLU6 input or output values used to determine where
+    gradients should pass through unchanged.
+7 api_usage_example: null
+8 api_shape: ''

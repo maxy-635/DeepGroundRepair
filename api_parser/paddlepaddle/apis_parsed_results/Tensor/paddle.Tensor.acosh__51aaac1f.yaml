@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.acosh_
+3 api_description: Computes the inverse hyperbolic cosine of each element in-place,
+  modifying the input tensor.
+4 api_signature: paddle.Tensor.acosh_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

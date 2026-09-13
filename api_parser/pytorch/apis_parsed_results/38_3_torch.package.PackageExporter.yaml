@@ -1,0 +1,14 @@
+2 api_name: torch.package.PackageExporter
+3 api_description: Creates self-contained Python packages by exporting code, pickled
+  data, and binary or text resources into a package archive.
+4 api_signature: torch.package.PackageExporter(f,importer)
+5 api_details: ''
+6 api_parameters:
+- f: Specifies the destination to export the package to, either as a filename/Path
+    or a binary I/O object.
+- importer: Specifies the importer(s) used to search for modules, creating an OrderedImporter
+    when multiple importers are provided.
+7 api_usage_example:
+- 'with PackageExporter("file.zip") as e:'
+- '    ...'
+8 api_shape: null

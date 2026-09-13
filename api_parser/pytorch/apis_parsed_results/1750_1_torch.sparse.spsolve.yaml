@@ -1,0 +1,13 @@
+2 api_name: torch.sparse.spsolve
+3 api_description: Solves a square linear system with a unique solution using a sparse
+  CSR matrix.
+4 api_signature: torch.sparse.spsolve(input,other,left)
+5 api_details: ''
+6 api_parameters:
+- input: The sparse CSR coefficient matrix of the linear system, with shape `(n, n)`.
+- other: The dense right-hand-side vector or matrix to be solved against, with shape
+    `(n,)`.
+- left: A flag indicating whether to solve `input @ out = other`; only `left=True`
+    is supported.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: torch.nn.functional.smooth_l1_loss
+3 api_description: Computes the Smooth L1 loss, a combination of L1 and L2 loss, used
+  for regression tasks to reduce sensitivity to outliers.
+4 api_signature: torch.nn.functional.smooth_l1_loss(input,target,reduction,beta)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the predicted values for which the loss will be calculated against
+    the target values.
+- target: Represents the ground truth values that the predictions are compared to
+    in the loss calculation.
+- reduction: 'Determines how the calculated loss values are reduced to a single value:
+    ''none'' for no reduction, ''mean'' for averaging, and ''sum'' for summation.'
+- beta: Sets the threshold value that dictates when to switch from a squared difference
+    to an L1 difference in the loss calculation.
+7 api_usage_example: null
+8 api_shape: null

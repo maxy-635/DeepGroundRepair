@@ -1,0 +1,19 @@
+2 api_name: paddle.vision.transforms.RandomAffine
+3 api_description: Applies a random affine transform to an image, such as rotation,
+  translation, scaling, and shearing, to augment data.
+4 api_signature: paddle.vision.transforms.RandomAffine(degrees,translate,scale,shear,interpolation,fill,center,keys)
+5 api_details: ''
+6 api_parameters:
+- degrees: Sets the random rotation range applied to the image.
+- translate: Controls the maximum random horizontal and vertical shift as a fraction
+    of image size.
+- scale: Sets the random scaling range for resizing the image.
+- shear: Defines the random shear range to apply along the x-axis and optionally the
+    y-axis.
+- interpolation: Chooses the interpolation method used when resampling the transformed
+    image.
+- fill: Specifies the pixel value used to fill empty areas created by the transform.
+- center: Sets the rotation center point, defaulting to the image center.
+- keys: Specifies which data fields the transform is applied to.
+7 api_usage_example: []
+8 api_shape: {}

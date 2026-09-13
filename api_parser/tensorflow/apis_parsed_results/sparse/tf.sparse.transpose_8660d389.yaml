@@ -1,0 +1,12 @@
+2 api_name: tensorflow.sparse.transpose
+3 api_description: Transposes a SparseTensor by reordering its dimensions according
+  to perm, defaulting to reversing the axes.
+4 api_signature: tf.sparse.transpose(sp_input,perm)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The sparse tensor to transpose.
+- perm: The dimension order used to permute the sparse tensor axes.
+7 api_usage_example:
+- x_transpose = tf.sparse.transpose(x, perm=[0, 2, 1])
+- print('x_transpose =', tf.sparse.to_dense(x_transpose))
+8 api_shape: ''

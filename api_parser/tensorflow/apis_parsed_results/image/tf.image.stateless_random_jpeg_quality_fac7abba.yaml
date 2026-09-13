@@ -1,0 +1,19 @@
+2 api_name: tensorflow.image.stateless_random_jpeg_quality
+3 api_description: Deterministically applies a random JPEG quality within a valid
+  range to induce JPEG noise, producing the same output for the same seed regardless
+  of call order or global random seed.
+4 api_signature: tf.image.stateless_random_jpeg_quality(image,seed)
+5 api_details: ''
+6 api_parameters:
+- image: The input 3D image whose JPEG quality is adjusted; its last dimension must
+    be 1 or 3.
+- seed: A length-2 tensor that seeds the random number generator, with dtype int32
+    or int64 (int32 only when using XLA).
+7 api_usage_example:
+- x = tf.constant([[[1, 2, 3],
+- '                  [4, 5, 6]],'
+- '                 [[7, 8, 9],'
+- '                  [10, 11, 12]]], dtype=tf.uint8)'
+- seed = (1, 2)
+- tf.image.stateless_random_jpeg_quality(x, 75, 95, seed)
+8 api_shape: ''

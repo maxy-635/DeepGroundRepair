@@ -1,0 +1,12 @@
+2 api_name: torch.positive
+3 api_description: Returns the input tensor unchanged, but raises a runtime error
+  if the input is a bool tensor.
+4 api_signature: torch.positive(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose positive values are to be returned.
+7 api_usage_example:
+- ' t = torch.randn(5)'
+- ' t'
+- ' torch.positive(t)'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.cholesky
+3 api_description: Computes the Cholesky decomposition of a positive semi-definite
+  matrix, returning a lower-triangular factor whose product with its transpose reconstructs
+  the input.
+4 api_signature: '"tf.keras.ops.cholesky(x)"'
+5 api_details: ''
+6 api_parameters:
+- x: The square matrix tensor to factorize with Cholesky decomposition.
+7 api_usage_example: null
+8 api_shape: ''

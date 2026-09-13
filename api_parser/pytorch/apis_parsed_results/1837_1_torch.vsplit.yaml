@@ -1,0 +1,15 @@
+2 api_name: torch.vsplit
+3 api_description: Splits a tensor with at least two dimensions into vertical views
+  according to a specified number of sections or indices.
+4 api_signature: torch.vsplit(input,indices_or_sections)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be split into vertical chunks.
+- indices_or_sections: The split points or number of sections to use, as defined by
+    `torch.tensor_split()`.
+7 api_usage_example:
+- ' t = torch.arange(16.0).reshape(4,4)'
+- ' t'
+- ' torch.vsplit(t, 2)'
+- ' torch.vsplit(t, [3, 6])'
+8 api_shape: null

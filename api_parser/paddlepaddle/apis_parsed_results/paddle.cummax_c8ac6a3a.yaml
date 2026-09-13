@@ -1,0 +1,41 @@
+2 api_name: paddle.cummax
+3 api_description: Returns the running maximum of a tensor’s values along a specified
+  axis.
+4 api_signature: paddle.cummax(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor to compute the cumulative maximum on.
+- axis: Dimension to accumulate along; `-1` uses the last dimension and `None` computes
+    over the flattened tensor.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([-1, 5, 0, -2, -3, 2])
+- data = paddle.reshape(data, (2, 3))
+- value, indices = paddle.cummax(data)
+- value
+- Tensor(shape=[6], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[-1,  5,  5,  5,  5,  5])'
+- indices
+- Tensor(shape=[6], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 1, 1, 1, 1, 1])'
+- value, indices = paddle.cummax(data, axis=0)
+- value
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[-1,  5,  0],'
+- '[-1,  5,  2]])'
+- indices
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 0, 0],'
+- '[0, 0, 1]])'
+- value, indices = paddle.cummax(data, axis=-1)
+- value
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[-1,  5,  5],'
+- '[-2, -2,  2]])'
+- indices
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 1, 1],'
+- '[0, 0, 2]])'
+- value, indices = paddle.cummax(data, dtype='int64')
+- assert indices.dtype == paddle.int64
+8 api_shape: {}

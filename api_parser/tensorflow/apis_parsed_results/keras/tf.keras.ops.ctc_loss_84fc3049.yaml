@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.ctc_loss
+3 api_description: Computes the Connectionist Temporal Classification loss for sequence-to-sequence
+  prediction, aligning unsegmented label sequences with model outputs using blank
+  tokens.
+4 api_signature: tf.keras.ops.ctc_loss(target,output,target_length,output_length)
+5 api_details: ''
+6 api_parameters:
+- target: Provides the ground-truth label sequences as integer-encoded tensors.
+- output: Provides the model’s logits for each timestep and class.
+- target_length: Specifies the valid length of each target label sequence.
+- output_length: Specifies the valid length of each model output sequence.
+7 api_usage_example: null
+8 api_shape: ''

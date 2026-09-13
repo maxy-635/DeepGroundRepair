@@ -1,0 +1,30 @@
+2 api_name: tensorflow.keras.layers.TextVectorization
+3 api_description: The tf.keras.layers.TextVectorization layer transforms batches
+  of text strings into integer sequences or dense representations, allowing for preprocessing
+  of natural language inputs. It can learn a vocabulary from the dataset through the
+  adapt() method, with options for vocabulary size management.
+4 api_signature: tf.keras.layers.TextVectorization(max_tokens, standardize, split,
+  output_mode, output_sequence_length, vocabulary, sparse, ragged)
+5 api_details: ''
+6 api_parameters:
+- max_tokens: Specifies the maximum size of the vocabulary, which affects the effective
+    number of tokens used.
+- standardize: Defines the standardization process to apply to the input text.
+- split: Indicates how to split the input text into tokens.
+- output_mode: Determines the format of the output, such as integers, multi-hot, counts,
+    or tf-idf.
+- output_sequence_length: Sets a fixed length for the output sequences in INT mode,
+    padding or truncating as necessary.
+- vocabulary: Allows for a predefined set of vocabulary terms to be used instead of
+    adapting from the input data.
+- ragged: Specifies whether to return a RaggedTensor for variable-length sequences
+    in INT mode.
+- sparse: Indicates whether to return a SparseTensor instead of a dense Tensor in
+    certain output modes.
+7 api_usage_example:
+- '# Because we''ve passed the vocabulary directly, we don''t need to adapt'
+- '# the layer - the vocabulary is already set. The vocabulary contains the'
+- '# padding token ('''') and OOV token (''[UNK]'')'
+- '# as well as the passed tokens.'
+- vectorize_layer.get_vocabulary()
+8 api_shape: null

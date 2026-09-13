@@ -1,0 +1,8 @@
+2 api_name: torch.profiler.ProfilerActivity
+3 api_description: Defines the profiler execution activities that `torch.profiler`
+  can record, such as CPU and CUDA work, to control what performance data is collected.
+4 api_signature: class torch.profiler.ProfilerActivity#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

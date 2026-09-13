@@ -1,0 +1,8 @@
+2 api_name: tensorflow.get_current_name_scope
+3 api_description: Returns the current full TensorFlow name scope set by nested tf.name_scope
+  contexts.
+4 api_signature: tf.get_current_name_scope()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

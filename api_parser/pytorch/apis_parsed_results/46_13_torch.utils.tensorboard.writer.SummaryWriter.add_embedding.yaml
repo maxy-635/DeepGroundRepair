@@ -1,0 +1,29 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_embedding
+3 api_description: Adds embedding data and optional metadata to TensorBoard summary
+  files for visualization in the Embedding Projector.
+4 api_signature: add_embedding(mat,metadata,global_step,tag)
+5 api_details: ''
+6 api_parameters:
+- mat: Provides the feature matrix, with each row representing one data point’s embedding
+    vector.
+- metadata: Supplies labels or annotations for each row, converted to strings for
+    display.
+- global_step: Records the embedding at a specific training step for tracking over
+    time.
+- tag: Sets the name used to identify the embedding in TensorBoard.
+7 api_usage_example:
+- import keyword
+- import torch
+- meta = []
+- 'while len(meta)<100:'
+- '    meta = meta+keyword.kwlist # get some strings'
+- meta = meta[:100]
+- 'for i, v in enumerate(meta):'
+- '    meta[i] = v+str(i)'
+- label_img = torch.rand(100, 3, 10, 32)
+- 'for i in range(100):'
+- '    label_img[i]*=i/100.0'
+- writer.add_embedding(torch.randn(100, 5), metadata=meta, label_img=label_img)
+- writer.add_embedding(torch.randn(100, 5), label_img=label_img)
+- writer.add_embedding(torch.randn(100, 5), metadata=meta)
+8 api_shape: null

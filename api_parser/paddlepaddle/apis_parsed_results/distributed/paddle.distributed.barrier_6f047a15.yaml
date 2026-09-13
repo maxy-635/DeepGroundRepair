@@ -1,0 +1,14 @@
+2 api_name: paddle.distributed.barrier
+3 api_description: Blocks until all processes in the distributed group reach the barrier,
+  synchronizing participation across the group.
+4 api_signature: paddle.distributed.barrier(group)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- from paddle.distributed import init_parallel_env
+- paddle.set_device(f'gpu:{paddle.distributed.ParallelEnv().dev_id}')
+- init_parallel_env()
+- paddle.distributed.barrier()
+8 api_shape: {}

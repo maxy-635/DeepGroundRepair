@@ -1,0 +1,13 @@
+2 api_name: torch.nextafter
+3 api_description: Returns the next representable floating-point value after each
+  input element in the direction of other.
+4 api_signature: torch.nextafter(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor containing the values to move from.
+- other: The second tensor containing the target values to move toward.
+7 api_usage_example:
+- ' eps = torch.finfo(torch.float32).eps'
+- ' torch.nextafter(torch.tensor([1.0, 2.0]), torch.tensor([2.0, 1.0])) == torch.tensor([eps
+  + 1, 2 - eps])'
+8 api_shape: null

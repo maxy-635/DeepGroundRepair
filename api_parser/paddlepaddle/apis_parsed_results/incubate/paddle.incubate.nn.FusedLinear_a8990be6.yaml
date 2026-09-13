@@ -1,0 +1,11 @@
+2 api_name: paddle.incubate.nn.FusedLinear
+3 api_description: Applies a linear transformation to the last dimension of an input
+  tensor, using a weight matrix and optional bias, and returns an output with the
+  same leading dimensions and a new feature dimension.
+4 api_signature: paddle.incubate.nn.FusedLinear(in_features,out_features)
+5 api_details: ''
+6 api_parameters:
+- in_features: Specifies how many input units the linear layer expects.
+- out_features: Specifies how many output units the linear layer produces.
+7 api_usage_example: []
+8 api_shape: {}

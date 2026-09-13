@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.callbacks.RemoteMonitor
+3 api_description: Streams epoch-end callback events to a server via HTTP POST, optionally
+  as JSON.
+4 api_signature: tf.keras.callbacks.RemoteMonitor(root,path,field)
+5 api_details: ''
+6 api_parameters:
+- root: Base URL of the server that will receive the callback events.
+- path: Endpoint path appended to the root URL for sending the events.
+- field: Form field name used to wrap the JSON payload when sending data as a form
+    instead of raw JSON.
+7 api_usage_example: null
+8 api_shape: ''

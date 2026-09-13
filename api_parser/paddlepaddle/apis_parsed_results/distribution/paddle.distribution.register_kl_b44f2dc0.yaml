@@ -1,0 +1,14 @@
+2 api_name: paddle.distribution.register_kl
+3 api_description: Registers a KL divergence implementation function for a pair of
+  distributions via a decorator.
+4 api_signature: paddle.distribution.register_kl(cls_p,cls_q)
+5 api_details: ''
+6 api_parameters:
+- cls_p: The distribution class for instance p.
+- cls_q: The distribution class for instance q.
+7 api_usage_example:
+- import paddle
+- '@paddle.distribution.register_kl(paddle.distribution.Beta, paddle.distribution.Beta)'
+- 'def kl_beta_beta():'
+- '    pass # insert implementation here'
+8 api_shape: {}

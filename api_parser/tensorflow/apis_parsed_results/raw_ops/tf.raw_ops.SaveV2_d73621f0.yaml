@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SaveV2
+3 api_description: Saves one or more named tensors to a TensorFlow V2 checkpoint,
+  optionally writing specified slices instead of full tensors.
+4 api_signature: tf.raw_ops.SaveV2(prefix,tensor_names,tensors,name)
+5 api_details: ''
+6 api_parameters:
+- prefix: Specifies the checkpoint file prefix where the tensors will be saved.
+- tensor_names: Lists the names to assign to the tensors being saved.
+- tensors: Provides the tensor values that will be written to the checkpoint.
+- name: Optionally sets the operation name.
+7 api_usage_example: null
+8 api_shape: ''

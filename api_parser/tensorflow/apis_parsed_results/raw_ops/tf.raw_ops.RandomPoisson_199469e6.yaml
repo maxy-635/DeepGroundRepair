@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.RandomPoisson
+3 api_description: Generates samples from a Poisson distribution with the given rate
+  parameter, using the specified shape and a random seed.
+4 api_signature: tf.raw_ops.RandomPoisson(shape,rate)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the output tensor shape for the generated Poisson samples.
+- rate: Specifies the Poisson rate parameter (lambda) used to generate samples.
+7 api_usage_example: null
+8 api_shape: ''

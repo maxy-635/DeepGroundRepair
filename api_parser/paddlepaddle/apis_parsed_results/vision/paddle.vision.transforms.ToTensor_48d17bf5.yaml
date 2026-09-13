@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.transforms.ToTensor
+3 api_description: Converts a PIL Image or NumPy array into a Paddle tensor.
+4 api_signature: paddle.vision.transforms.ToTensor(data_format,keys)
+5 api_details: ''
+6 api_parameters:
+- data_format: Specifies whether the output tensor uses HWC or CHW layout.
+- keys: Indicates which input keys the transform should be applied to, matching BaseTransform
+    behavior.
+7 api_usage_example: []
+8 api_shape: {}

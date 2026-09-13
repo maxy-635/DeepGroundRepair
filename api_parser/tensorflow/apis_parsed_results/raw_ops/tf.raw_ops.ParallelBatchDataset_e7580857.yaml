@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ParallelBatchDataset
+3 api_description: Creates a dataset that batches elements from one or more input
+  datasets in parallel, with a specified batch size and output shape/type metadata.
+4 api_signature: tf.raw_ops.ParallelBatchDataset(input_dataset,batch_size,num_parallel_calls,drop_remainder)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to be batched in parallel.
+- batch_size: The number of elements to include in each batch.
+- num_parallel_calls: The number of parallel calls to use when batching.
+- drop_remainder: Whether to drop the final batch if it has fewer than `batch_size`
+    elements.
+7 api_usage_example: null
+8 api_shape: ''

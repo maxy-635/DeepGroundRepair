@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.LPPool2D
+3 api_description: The paddle.nn.LPPool2D API performs 2D power-average pooling on
+  input features in NCHW format, using specified kernel size, stride, and padding
+  parameters.
+4 api_signature: paddle.nn.LPPool2D(norm_type,kernel_size,stride)
+5 api_details: ''
+6 api_parameters:
+- norm_type: Specifies the power to which each element is raised during pooling.
+- kernel_size: Defines the dimensions of the pooling window, either as a square or
+    as a specific height and width.
+- stride: Determines the step size for moving the pooling window across the input,
+    defaulting to the kernel size if not specified.
+7 api_usage_example: []
+8 api_shape: null

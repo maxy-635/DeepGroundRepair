@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.Sinh
+3 api_description: Computes the element-wise hyperbolic sine of a tensor.
+4 api_signature: tf.raw_ops.Sinh(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose hyperbolic sine is computed elementwise.
+7 api_usage_example: null
+8 api_shape: ''

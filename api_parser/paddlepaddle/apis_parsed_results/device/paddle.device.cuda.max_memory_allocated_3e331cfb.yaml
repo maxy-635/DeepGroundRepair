@@ -1,0 +1,14 @@
+2 api_name: paddle.device.cuda.max_memory_allocated
+3 api_description: Returns the peak tensor memory allocated on the specified CUDA
+  device.
+4 api_signature: paddle.device.cuda.max_memory_allocated(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- 'paddle.device.set_device(''gpu'')  # or ''<custom_device>'''
+- max_memory_allocated_size = paddle.device.cuda.max_memory_allocated(paddle.CUDAPlace(0))
+- max_memory_allocated_size = paddle.device.cuda.max_memory_allocated(0)
+- max_memory_allocated_size = paddle.device.cuda.max_memory_allocated("gpu:0")
+8 api_shape: {}

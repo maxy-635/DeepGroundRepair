@@ -1,0 +1,9 @@
+2 api_name: torch.linalg.lu_factor_ex
+3 api_description: Computes an LU factorization of a matrix, optionally skips error
+  checks, and returns the factorization along with LAPACK getrf info.
+4 api_signature: torch.linalg.lu_factor_ex(A,pivot,check_errors,out)
+5 api_details: ''
+6 api_parameters:
+- A: Input tensor of shape `(*, m, n)` to be LU-factorized, with optional batch dimensions.
+7 api_usage_example: null
+8 api_shape: null

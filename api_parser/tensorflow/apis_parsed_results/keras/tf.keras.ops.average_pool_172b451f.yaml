@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.average_pool
+3 api_description: Performs average pooling over spatial dimensions of an input tensor,
+  optionally using a specified pool size, strides, and padding.
+4 api_signature: tf.keras.ops.average_pool(inputs,pool_size,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- inputs: The input tensor to average-pool over its spatial dimensions.
+- pool_size: The size of the pooling window for each spatial dimension.
+- strides: The step size the pooling window moves across each spatial dimension.
+- padding: The padding mode to use, either no padding (`valid`) or evenly distributed
+    padding to preserve size (`same`) when possible.
+7 api_usage_example: null
+8 api_shape: ''

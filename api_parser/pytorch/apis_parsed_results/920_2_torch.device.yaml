@@ -1,0 +1,8 @@
+2 api_name: torch.device
+3 api_description: Represents the device on which a tensor or operation runs, such
+  as a CPU or GPU, and lets you specify, query, and move computation between devices.
+4 api_signature: class torch.device#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

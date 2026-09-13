@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.minimum
+3 api_description: Computes the element-wise minimum of two inputs, returning the
+  smaller value at each position.
+4 api_signature: tf.keras.ops.minimum(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first tensor to compare elementwise.
+- x2: The second tensor to compare elementwise.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.config.experimental.enable_op_determinism
+3 api_description: Enables deterministic TensorFlow op execution so repeated runs
+  with the same inputs and hardware produce identical outputs, which helps debugging
+  but may reduce performance.
+4 api_signature: tf.config.experimental.enable_op_determinism()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.config.experimental.enable_mlir_bridge
+3 api_description: Enables TensorFlow's experimental MLIR-based compiler bridge to
+  translate supported graph parts into an intermediate form for backend compilers
+  like XLA.
+4 api_signature: tf.config.experimental.enable_mlir_bridge()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

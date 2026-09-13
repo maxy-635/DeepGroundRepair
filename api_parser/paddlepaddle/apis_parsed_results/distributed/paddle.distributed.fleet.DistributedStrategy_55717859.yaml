@@ -1,0 +1,14 @@
+2 api_name: paddle.distributed.fleet.DistributedStrategy
+3 api_description: Serializes the current DistributedStrategy to a string and writes
+  it to the specified output file.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle.distributed.fleet as fleet
+- strategy = fleet.DistributedStrategy()
+- strategy.dgc = True
+- strategy.recompute = True
+- 'strategy.recompute_configs = {"checkpoints": ["x"]}'
+- strategy.save_to_prototxt("dist_strategy.prototxt")
+8 api_shape: {}

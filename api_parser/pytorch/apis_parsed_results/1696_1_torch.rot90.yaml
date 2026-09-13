@@ -1,0 +1,17 @@
+2 api_name: torch.rot90
+3 api_description: Rotates a tensor by 90 degrees in the specified plane, with direction
+  controlled by k.
+4 api_signature: torch.rot90(input,k,dims)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be rotated.
+- k: How many 90-degree rotations to apply; defaults to 1.
+- dims: The pair of axes that define the plane of rotation; defaults to [0, 1].
+7 api_usage_example:
+- ' x = torch.arange(4).view(2, 2)'
+- ' x'
+- ' torch.rot90(x, 1, [0, 1])'
+- ' x = torch.arange(8).view(2, 2, 2)'
+- ' x'
+- ' torch.rot90(x, 1, [1, 2])'
+8 api_shape: null

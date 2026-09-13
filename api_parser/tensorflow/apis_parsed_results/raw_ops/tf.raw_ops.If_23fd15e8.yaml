@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.If
+3 api_description: Runs either then_branch or else_branch on the input depending on
+  cond, and returns the selected branch's output.
+4 api_signature: tf.raw_ops.If(cond,input,then_branch,else_branch)
+5 api_details: ''
+6 api_parameters:
+- cond: Determines which branch to execute by evaluating a scalar or tensor as a boolean
+    condition.
+- input: Supplies the tensors that are passed into the selected branch function.
+- then_branch: Defines the function run when the condition is true, returning tensors
+    of the expected output types.
+- else_branch: Defines the function run when the condition is false, returning tensors
+    matching the then branch output types.
+7 api_usage_example: null
+8 api_shape: ''

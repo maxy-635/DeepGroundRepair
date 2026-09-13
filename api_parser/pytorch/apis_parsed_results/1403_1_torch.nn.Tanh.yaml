@@ -1,0 +1,14 @@
+2 api_name: torch.nn.Tanh
+3 api_description: Applies the hyperbolic tangent function element-wise to each input
+  value.
+4 api_signature: torch.nn.Tanh()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' m = nn.Tanh()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

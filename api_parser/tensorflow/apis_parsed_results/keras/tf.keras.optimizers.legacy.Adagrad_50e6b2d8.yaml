@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.optimizers.legacy.Adagrad
+3 api_description: Legacy Adagrad optimizer that adapts each parameter’s learning
+  rate using the sum of past squared gradients, making larger updates for infrequent
+  features and smaller updates for frequent ones.
+4 api_signature: tf.keras.optimizers.legacy.Adagrad(learning_rate)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

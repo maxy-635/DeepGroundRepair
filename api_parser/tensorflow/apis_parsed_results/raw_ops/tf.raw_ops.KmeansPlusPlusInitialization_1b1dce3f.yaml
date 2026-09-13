@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.KmeansPlusPlusInitialization
+3 api_description: Selects a specified number of input rows as KMeans++ centroids,
+  choosing the first at random and each next row with probability proportional to
+  its squared distance from the nearest selected row.
+4 api_signature: tf.raw_ops.KmeansPlusPlusInitialization(points,num_to_sample,seed)
+5 api_details: ''
+6 api_parameters:
+- points: Provides the input point matrix whose rows are the data points used to initialize
+    k-means++ centers.
+- num_to_sample: Specifies how many rows to randomly sample for initialization, and
+    must be no greater than the number of points.
+- seed: Sets the random number generator seed to make the sampling initialization
+    reproducible.
+7 api_usage_example: null
+8 api_shape: ''

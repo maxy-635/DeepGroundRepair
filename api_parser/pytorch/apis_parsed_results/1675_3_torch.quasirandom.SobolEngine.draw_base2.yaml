@@ -1,0 +1,10 @@
+2 api_name: torch.quasirandom.SobolEngine.draw_base2
+3 api_description: Draws 2**m dependent points from a Sobol sequence, returning a
+  tensor of shape (2**m, dimension).
+4 api_signature: draw_base2(m,out)
+5 api_details: ''
+6 api_parameters:
+- m: Specifies the base-2 exponent that determines how many points to draw.
+- out: Provides the tensor that will be filled with the generated points.
+7 api_usage_example: null
+8 api_shape: null

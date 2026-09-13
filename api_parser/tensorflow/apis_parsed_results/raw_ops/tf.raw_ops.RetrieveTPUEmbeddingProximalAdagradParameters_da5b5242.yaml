@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.RetrieveTPUEmbeddingProximalAdagradParameters
+3 api_description: Retrieves TPU embedding proximal Adagrad parameters from embedding
+  memory to host memory, typically for checkpointing, and requires prior host embedding
+  configuration.
+4 api_signature: tf.raw_ops.RetrieveTPUEmbeddingProximalAdagradParameters(table_id,table_name,config)
+5 api_details: ''
+6 api_parameters:
+- table_id: Identifies the embedding table to retrieve parameters for by numeric ID.
+- table_name: Identifies the embedding table to retrieve parameters for by name.
+- config: Supplies the TPU embedding configuration needed to locate and interpret
+    the parameters.
+- name: Assigns an optional operation name for easier graph labeling and debugging.
+7 api_usage_example: null
+8 api_shape: ''

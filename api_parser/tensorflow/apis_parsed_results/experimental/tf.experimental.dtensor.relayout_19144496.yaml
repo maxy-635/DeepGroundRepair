@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.dtensor.relayout
+3 api_description: Changes a tensor’s DTensor layout to guide SPMD propagation, supporting
+  only replicated↔sharded conversions per mesh dimension and 'match' as a no-op spec;
+  it is implemented via Split/AllToAll ops, with sharded-to-replicated changes potentially
+  incurring communication cost.
+4 api_signature: tf.experimental.dtensor.relayout(tensor,layout)
+5 api_details: ''
+6 api_parameters:
+- tensor: The DTensor whose layout is being changed.
+- layout: The Layout that defines how the DTensor should be sharded or placed.
+7 api_usage_example: null
+8 api_shape: ''

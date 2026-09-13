@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.logaddexp
+3 api_description: Computes the logarithm of exp(x1) + exp(x2) in a numerically stable
+  way.
+4 api_signature: tf.keras.ops.logaddexp(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input tensor whose values are combined with `x2` using a numerically
+    stable log-add-exp operation.
+- x2: The second input tensor whose values are combined with `x1` using a numerically
+    stable log-add-exp operation.
+7 api_usage_example: null
+8 api_shape: ''

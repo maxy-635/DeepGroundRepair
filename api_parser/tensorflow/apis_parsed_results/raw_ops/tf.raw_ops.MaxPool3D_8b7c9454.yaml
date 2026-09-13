@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.MaxPool3D
+3 api_description: Applies 3D max pooling to an input tensor, downsampling spatial
+  dimensions by taking the maximum value in each pooling window.
+4 api_signature: tf.raw_ops.MaxPool3D(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The 5D tensor to apply 3D max pooling to.
+- ksize: Defines the pooling window size for each dimension, with batch and channel
+    dimensions fixed at 1.
+- strides: Defines how far the pooling window moves for each dimension, with batch
+    and channel strides fixed at 1.
+- padding: Specifies whether to use `SAME` or `VALID` padding for the pooling operation.
+7 api_usage_example: null
+8 api_shape: ''

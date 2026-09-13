@@ -1,0 +1,31 @@
+2 api_name: paddle.repeat_interleave
+3 api_description: Returns a new tensor with elements repeated along a specified dimension
+  according to integer or tensor repeat counts.
+4 api_signature: paddle.repeat_interleave(x,repeats,axis)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose elements will be repeated.
+- repeats: Specifies how many times each element is repeated, broadcast to match the
+    chosen axis.
+- axis: Selects the dimension along which the repetition is applied.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1, 2, 3], [4, 5, 6]])
+- repeats = paddle.to_tensor([3, 2, 1], dtype='int32')
+- out = paddle.repeat_interleave(x, repeats, 1)
+- print(out)
+- Tensor(shape=[2, 6], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 1, 1, 2, 2, 3],'
+- '[4, 4, 4, 5, 5, 6]])'
+- out = paddle.repeat_interleave(x, 2, 0)
+- print(out)
+- Tensor(shape=[4, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 2, 3],'
+- '[1, 2, 3],'
+- '[4, 5, 6],'
+- '[4, 5, 6]])'
+- out = paddle.repeat_interleave(x, 2, None)
+- print(out)
+- Tensor(shape=[12], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6])'
+8 api_shape: {}

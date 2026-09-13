@@ -1,0 +1,23 @@
+2 api_name: paddle.vision.image_load
+3 api_description: Loads an image for use in Paddle Vision.
+4 api_signature: paddle.vision.image_load(path)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the file path to the image to be loaded.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision import image_load, set_image_backend
+- fake_img = Image.fromarray((np.random.random((32, 32, 3)) * 255).astype('uint8'))
+- path = 'temp.png'
+- fake_img.save(path)
+- set_image_backend('pil')
+- 'pil_img = image_load(path).convert(''RGB'')  # type: ignore'
+- print(type(pil_img))
+- <class 'PIL.Image.Image'>
+- '# use opencv as backend'
+- set_image_backend('cv2')
+- np_img = image_load(path)
+- print(type(np_img))
+- <class 'numpy.ndarray'>
+8 api_shape: {}

@@ -1,0 +1,19 @@
+2 api_name: tensorflow.cond
+3 api_description: Returns the outputs of true_fn() when pred is true, otherwise false_fn(),
+  with both branches producing the same non-zero number and types of tensors.
+4 api_signature: tf.cond(pred,true_fn,false_fn)
+5 api_details: ''
+6 api_parameters:
+- pred: A scalar condition that selects which branch to execute.
+- true_fn: The function called when `pred` is true.
+- false_fn: The function called when `pred` is false.
+7 api_usage_example:
+- x = tf.constant(2)
+- y = tf.constant(5)
+- 'def f1(): return tf.multiply(x, 7)'
+- 'def f2(): return tf.add(y, 3)'
+- r = tf.cond(tf.less(x, y), f1, f2)
+- '# r is set to f1().'
+- '# Operations in f2 (e.g., tf.add) are not executed.'
+- r.numpy()
+8 api_shape: ''

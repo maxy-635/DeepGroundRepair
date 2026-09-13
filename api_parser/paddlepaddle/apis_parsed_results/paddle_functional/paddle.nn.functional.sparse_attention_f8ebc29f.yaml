@@ -1,0 +1,19 @@
+2 api_name: paddle.nn.functional.sparse_attention
+3 api_description: The paddle.nn.functional.sparse_attention API reduces memory and
+  computation in Transformer models by sparsifying the Attention matrix using CSR
+  format with offset and columns parameters.
+4 api_signature: paddle.nn.functional.sparse_attention(query,key,value,sparse_csr_offset,sparse_csr_columns)
+5 api_details: ''
+6 api_parameters:
+- query: The query tensor used in the Attention module to represent the input queries
+    for attention computation.
+- key: The key tensor used in the Attention module to represent the input keys for
+    attention computation.
+- value: The value tensor used in the Attention module to represent the input values
+    for attention computation.
+- sparse_csr_offset: Represents the row-wise non-zero element count in CSR format
+    for sparse attention computation.
+- sparse_csr_columns: Represents the column indices of non-zero elements in CSR format
+    for sparse attention computation.
+7 api_usage_example: []
+8 api_shape: null

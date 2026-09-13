@@ -1,0 +1,15 @@
+2 api_name: tensorflow.strings.unicode_decode
+3 api_description: Decodes each input string into a sequence of Unicode code points
+  using the specified encoding.
+4 api_signature: tf.strings.unicode_decode(input,input_encoding,errors)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor to decode, where each element is interpreted as an encoded
+    Unicode string.
+- input_encoding: The Unicode encoding used to interpret and convert each input string.
+- errors: The policy for handling strings that cannot be decoded with the specified
+    encoding.
+7 api_usage_example:
+- input = [s.encode('utf8') for s in (u'G\xf6\xf6dnight', u'\U0001f60a')]
+- tf.strings.unicode_decode(input, 'UTF-8').to_list()
+8 api_shape: ''

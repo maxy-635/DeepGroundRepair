@@ -1,0 +1,13 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.flatten_sharded_optim_state_dict
+3 api_description: Converts a sharded optimizer state dict into a flattened form suitable
+  for FSDP use, reorganizing optimizer state across sharded parameters.
+4 api_signature: '"staticflatten_sharded_optim_state_dict(sharded_optim_state_dict,model,optim)"'
+5 api_details: ''
+6 api_parameters:
+- sharded_optim_state_dict: The sharded optimizer state dict for the model's unflattened
+    parameters.
+- model: The model whose parameters are used to determine how the optimizer state
+    is flattened.
+- optim: The optimizer associated with the model's parameters.
+7 api_usage_example: null
+8 api_shape: null

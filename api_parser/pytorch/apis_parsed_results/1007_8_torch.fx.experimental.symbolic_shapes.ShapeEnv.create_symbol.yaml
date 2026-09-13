@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.create_symbol
+3 api_description: Creates and registers a new symbolic shape variable in the ShapeEnv
+  so it can be tracked and reasoned about during symbolic shape analysis.
+4 api_signature: create_symbol(val,dynamic_dim,constraint_dim,symbolic_context)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

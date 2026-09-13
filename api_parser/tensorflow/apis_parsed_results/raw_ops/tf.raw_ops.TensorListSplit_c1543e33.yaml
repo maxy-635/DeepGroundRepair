@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TensorListSplit
+3 api_description: Splits a tensor into a list of tensors along the first dimension,
+  using `lengths` to तय how many rows each list element contains.
+4 api_signature: tf.raw_ops.TensorListSplit(tensor,lengths)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor to be split into a TensorList.
+- lengths: An int64 tensor specifying the lengths of each split segment.
+7 api_usage_example: null
+8 api_shape: ''

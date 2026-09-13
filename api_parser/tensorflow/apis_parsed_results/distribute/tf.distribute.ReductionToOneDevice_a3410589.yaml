@@ -1,0 +1,10 @@
+2 api_name: tensorflow.distribute.ReductionToOneDevice
+3 api_description: Copies values to a single device for reduction, then broadcasts
+  the reduced result back to the target devices; simple but not optimized for batching.
+4 api_signature: tf.distribute.ReductionToOneDevice(reduce_to_device)
+5 api_details: ''
+6 api_parameters:
+- reduce_to_device: Specifies the intermediate device used to perform the reduction,
+    or defaults to the first destination device if not set.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,29 @@
+2 api_name: paddle.incubate.autotune.set_config
+3 api_description: Sets auto-tuning configuration for kernel, layout, and dataloader
+  selection.
+4 api_signature: paddle.incubate.autotune.set_config(config)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import json
+- '# config is a dict.'
+- config = {
+- '    "kernel": {'
+- '        "enable": True,'
+- '        "tuning_range": [1, 5],'
+- '    },'
+- '    "layout": {'
+- '        "enable": True,'
+- '    },'
+- '    "dataloader": {'
+- '        "enable": True,'
+- '    }'
+- '}'
+- 'paddle.incubate.autotune.set_config(config) # type: ignore[arg-type]'
+- '# config is the path of json file.'
+- config_json = json.dumps(config)
+- 'with open(''config.json'', ''w'') as json_file:'
+- '    json_file.write(config_json)'
+- paddle.incubate.autotune.set_config('config.json')
+8 api_shape: {}

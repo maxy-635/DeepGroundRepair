@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TensorArrayGrad
+3 api_description: Creates a gradient TensorArray for backpropagation, returning a
+  handle to the TensorArray used to accumulate gradients for a matching TensorArray.
+4 api_signature: tf.raw_ops.TensorArrayGrad(handle,flow_in)
+5 api_details: ''
+6 api_parameters:
+- handle: String tensor identifying the TensorArray to accumulate gradients for.
+- flow_in: Float32 tensor carrying the input flow state used to control gradient execution.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.passes.PassContext
+3 api_description: Provides a distributed pass context for configuring and sharing
+  pass-related settings, attributes, and execution state across Paddle distributed
+  transformations.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

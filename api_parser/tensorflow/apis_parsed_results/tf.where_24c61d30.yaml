@@ -1,0 +1,20 @@
+2 api_name: tensorflow.where
+3 api_description: Returns the indices of non-zero elements, or selects elements from
+  x and y based on a condition.
+4 api_signature: tf.where(condition,x,y)
+5 api_details: ''
+6 api_parameters:
+- condition: Specifies which elements to keep or select based on boolean values, and
+    must be boolean when `x` and `y` are given.
+- x: Provides the values to select from where `condition` is true, matching `y`'s
+    type and a broadcastable shape.
+- y: Provides the values to select from where `condition` is false, matching `x`'s
+    type and a broadcastable shape.
+7 api_usage_example:
+- x = tf.constant(0., dtype=tf.float32)
+- 'with tf.GradientTape() as tape:'
+- '  tape.watch(x)'
+- '  safe_x = tf.where(tf.equal(x, 0.), 1., x)'
+- '  y = tf.where(x < 1., 0., 1. / safe_x)'
+- print(tape.gradient(y, x))
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: paddle.where_
+3 api_description: In-place conditional selection that copies values from `x` into
+  the output tensor, following `where` semantics.
+4 api_signature: paddle.where_(condition,x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

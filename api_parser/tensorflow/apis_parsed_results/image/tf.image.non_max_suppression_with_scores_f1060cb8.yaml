@@ -1,0 +1,17 @@
+2 api_name: tensorflow.image.non_max_suppression_with_scores
+3 api_description: Selects the highest-scoring bounding boxes and suppresses boxes
+  with excessive IoU overlap, returning the indices of the kept boxes.
+4 api_signature: tf.image.non_max_suppression_with_scores(boxes,scores,max_output_size,iou_threshold,score_threshold,soft_nms_sigma)
+5 api_details: ''
+6 api_parameters:
+- boxes: Provides the candidate bounding boxes to be filtered by non-max suppression.
+- scores: Provides a score for each box so higher-scoring boxes are preferred.
+- max_output_size: Limits the maximum number of boxes returned after suppression.
+- iou_threshold: Sets the overlap level above which boxes are considered duplicates
+    and suppressed.
+- score_threshold: Removes boxes whose scores fall below this cutoff before or during
+    suppression.
+- soft_nms_sigma: Controls how strongly scores are decayed in Soft NMS instead of
+    using hard suppression.
+7 api_usage_example: null
+8 api_shape: ''

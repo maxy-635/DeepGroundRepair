@@ -1,0 +1,8 @@
+2 api_name: torch.backends.cuda.preferred_linalg_library
+3 api_description: Overrides PyTorch’s default heuristic for selecting cuSOLVER or
+  MAGMA for CUDA linear algebra operations.
+4 api_signature: torch.backends.cuda.preferred_linalg_library(backend)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: paddle.vision.models.ShuffleNetV2
+3 api_description: ShuffleNetV2 is a lightweight image classification model that implements
+  the ShuffleNet V2 architecture for efficient CNN inference, using channel split,
+  pointwise/group convolutions, and channel shuffle to balance speed and accuracy.
+4 api_signature: '"class paddle.vision.models.ShuffleNetV2(scale,num_class es,with_pool)"'
+5 api_details: ''
+6 api_parameters:
+- scale: Controls the width of the network by scaling the number of output channels.
+- with_pool: Determines whether to apply pooling before the final fully connected
+    layer.
+7 api_usage_example: []
+8 api_shape: {}

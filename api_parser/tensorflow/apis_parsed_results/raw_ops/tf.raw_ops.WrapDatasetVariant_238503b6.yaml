@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.WrapDatasetVariant
+3 api_description: Wraps a variant dataset tensor so it can be passed through graph
+  operations as a DatasetVariant input/output.
+4 api_signature: tf.raw_ops.WrapDatasetVariant(input_handle)
+5 api_details: ''
+6 api_parameters:
+- input_handle: A variant tensor containing the dataset variant to be wrapped.
+7 api_usage_example: null
+8 api_shape: ''

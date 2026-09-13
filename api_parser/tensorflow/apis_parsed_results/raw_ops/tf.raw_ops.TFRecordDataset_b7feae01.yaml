@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TFRecordDataset
+3 api_description: Creates a dataset that reads and emits records from one or more
+  TFRecord files.
+4 api_signature: tf.raw_ops.TFRecordDataset(filenames,compression_type,buffer_size)
+5 api_details: ''
+6 api_parameters:
+- filenames: Specifies the file or files to read TFRecord data from.
+- compression_type: Selects the compression format for the input files, or disables
+    compression with an empty string.
+- buffer_size: Sets how many bytes to buffer while reading, with 0 disabling buffering.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

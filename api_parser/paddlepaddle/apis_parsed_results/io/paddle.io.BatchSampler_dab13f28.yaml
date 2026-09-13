@@ -1,0 +1,50 @@
+2 api_name: paddle.io.BatchSampler
+3 api_description: Yields batches of sample indices for `paddle.io.DataLoader`, grouping
+  dataset indices into mini-batch-sized lists or tuples for iterative batch loading.
+4 api_signature: paddle.io.BatchSampler(dataset,batch_size,shuffle,drop_last)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset to sample from; if provided, its length is used to generate
+    index ranges.
+- shuffle: Controls whether the sample indices are shuffled before batches are formed.
+- batch_size: Sets how many sample indices are included in each mini-batch.
+- drop_last: Determines whether to discard the final incomplete batch.
+7 api_usage_example:
+- import numpy as np
+- from paddle.io import RandomSampler, BatchSampler, Dataset
+- np.random.seed(2023)
+- '# init with dataset'
+- 'class RandomDataset(Dataset):  # type: ignore[type-arg]'
+- '    def __init__(self, num_samples):'
+- '        self.num_samples = num_samples'
+- '...'
+- '    def __getitem__(self, idx):'
+- '        image = np.random.random([784]).astype(''float32'')'
+- '        label = np.random.randint(0, 9, (1, )).astype(''int64'')'
+- '        return image, label'
+- '...'
+- '    def __len__(self):'
+- '        return self.num_samples'
+- '...'
+- bs = BatchSampler(dataset=RandomDataset(100),
+- '                    shuffle=False,'
+- '                    batch_size=16,'
+- '                    drop_last=False)'
+- '...'
+- 'for batch_indices in bs:'
+- '    print(batch_indices)'
+- '[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]'
+- '...'
+- '[96, 97, 98, 99]'
+- '# init with sampler'
+- sampler = RandomSampler(RandomDataset(100))
+- bs = BatchSampler(sampler=sampler,
+- '                    batch_size=8,'
+- '                    drop_last=True)'
+- '...'
+- 'for batch_indices in bs:'
+- '    print(batch_indices)'
+- '[56, 12, 68, 0, 82, 66, 91, 44]'
+- '...'
+- '[53, 17, 22, 86, 52, 3, 92, 33]'
+8 api_shape: {}

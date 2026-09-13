@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.gamma.Gamma.log_prob
+3 api_description: Computes the log probability density of values under a Gamma distribution
+  with the given concentration and rate parameters.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The input value whose log probability under the Gamma distribution is computed.
+7 api_usage_example: null
+8 api_shape: null

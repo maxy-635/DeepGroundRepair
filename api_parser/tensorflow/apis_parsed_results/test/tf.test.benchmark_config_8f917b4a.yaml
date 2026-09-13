@@ -1,0 +1,8 @@
+2 api_name: tensorflow.test.benchmark_config
+3 api_description: Returns a TensorFlow ConfigProto configured to disable the dependency
+  optimizer.
+4 api_signature: tf.test.benchmark_config()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

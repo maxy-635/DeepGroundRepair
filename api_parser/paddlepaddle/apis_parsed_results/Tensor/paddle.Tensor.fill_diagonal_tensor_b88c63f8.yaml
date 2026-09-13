@@ -1,0 +1,18 @@
+2 api_name: paddle.Tensor.fill_diagonal_tensor
+3 api_description: Fills the diagonal of tensor x with values from tensor y.
+4 api_signature: paddle.Tensor.fill_diagonal_tensor(x,y,offset,dim1,dim2)
+5 api_details: ''
+6 api_parameters:
+- x: The original tensor whose diagonal values will be filled.
+- y: The tensor used to fill the selected diagonal positions in `x`.
+- dim1: The first dimension used to define the diagonal.
+- dim2: The second dimension used to define the diagonal.
+- offset: The diagonal offset relative to the main diagonal.
+7 api_usage_example:
+- import paddle
+- x = paddle.ones((4, 3)) * 2
+- y = paddle.ones((3,))
+- nx = x.fill_diagonal_tensor(y)
+- print(nx.tolist())
+- '[[1.0, 2.0, 2.0], [2.0, 1.0, 2.0], [2.0, 2.0, 1.0], [2.0, 2.0, 2.0]]'
+8 api_shape: {}

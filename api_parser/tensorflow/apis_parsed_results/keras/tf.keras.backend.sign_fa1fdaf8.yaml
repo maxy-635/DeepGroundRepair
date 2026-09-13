@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.sign
+3 api_description: 'Returns the element-wise sign of a tensor: -1 for negative values,
+  0 for zero, and 1 for positive values.'
+4 api_signature: tf.keras.backend.sign(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

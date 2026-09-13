@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.reduce_sum
+3 api_description: Reduces a tensor by summing elements along one or more axes, optionally
+  keeping reduced dimensions.
+4 api_signature: tf.math.reduce_sum(input_tensor,axis)
+5 api_details: ''
+6 api_parameters:
+- input_tensor: The numeric tensor whose values are summed over the specified dimensions.
+- axis: The dimension or dimensions to reduce, or `None` to reduce across all dimensions.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.losses.SquaredHinge
+3 api_description: Computes the squared hinge loss for binary classification, expecting
+  labels of -1 or 1 and converting 0/1 labels to -1/1 when needed.
+4 api_signature: tf.keras.losses.SquaredHinge()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

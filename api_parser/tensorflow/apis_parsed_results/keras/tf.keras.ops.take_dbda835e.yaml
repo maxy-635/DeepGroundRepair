@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.take
+3 api_description: Returns elements from a tensor at specified indices along a given
+  axis.
+4 api_signature: tf.keras.ops.take(x,indices,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The source tensor to take values from.
+- indices: The positions of the values to extract from the source tensor.
+- axis: The dimension along which to select values, or flattened input if omitted.
+7 api_usage_example: null
+8 api_shape: ''

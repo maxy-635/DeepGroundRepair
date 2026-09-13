@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.Bitcast
+3 api_description: Reinterprets a tensor’s raw bits as another dtype without copying
+  data, reshaping to account for element-size differences.
+4 api_signature: tf.raw_ops.Bitcast(input,type)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose raw bytes are reinterpreted as another type without changing
+    the underlying data.
+- type: The target data type to bitcast the input tensor into.
+7 api_usage_example:
+- x = [1., 2., 3.]
+- y = [0., 2., 3.]
+- equality= tf.equal(x,y)
+- equality_cast = tf.cast(equality,tf.float32)
+- equality_bitcast = tf.bitcast(equality_cast,tf.uint8)
+- print(equality)
+- print(equality_cast)
+- print(equality_bitcast)
+8 api_shape: ''

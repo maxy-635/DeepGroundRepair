@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.OrderedMapSize
+3 api_description: Returns the number of elements currently stored in the underlying
+  ordered map container.
+4 api_signature: tf.raw_ops.OrderedMapSize(container,shared_name,name)
+5 api_details: ''
+6 api_parameters:
+- container: Selects the map container instance to use, allowing multiple distinct
+    resources to coexist.
+- shared_name: Identifies a shared resource name so the same map can be accessed across
+    different op instances.
+- name: Assigns an optional operation name for graph readability and debugging.
+7 api_usage_example: null
+8 api_shape: ''

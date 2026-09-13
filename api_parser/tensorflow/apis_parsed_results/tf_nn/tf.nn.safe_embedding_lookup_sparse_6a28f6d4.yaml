@@ -1,0 +1,18 @@
+2 api_name: tensorflow.nn.safe_embedding_lookup_sparse
+3 api_description: The tensorflow.nn.safe_embedding_lookup_sparse API performs sparse
+  embedding lookups while handling invalid IDs and empty features. It prunes IDs that
+  are negative or have non-positive weights and returns a default embedding or zero
+  vector for entries with no features. It supports multi-dimensional SparseTensors
+  or RaggedTensors, and partitions IDs across multiple embedding weights using a 'div'
+  strategy.
+4 api_signature: tf.nn.safe_embedding_lookup_sparse(embedding_weights,sparse_ids,combiner)
+5 api_details: ''
+6 api_parameters:
+- embedding_weights: Represents the complete embedding tensor or a list of sharded
+    tensors for partitioned embeddings.
+- sparse_ids: A SparseTensor or RaggedTensor containing the ids to be looked up in
+    the embeddings, typically shaped with the first dimension as batch size.
+- combiner: Specifies the method to combine the embedding results for each entry,
+    with options 'mean', 'sqrtn', and 'sum' available.
+7 api_usage_example: null
+8 api_shape: ''

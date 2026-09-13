@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TensorArrayReadV2
+3 api_description: Reads and returns the element at a specified index from a TensorArray
+  (V2), with support for dynamic sizing and control-flow use; deprecated in favor
+  of TensorArrayReadV3.
+4 api_signature: tf.raw_ops.TensorArrayReadV2(handle,index,flow_in,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource to read from.
+- index: Specifies which element of the TensorArray to read.
+- flow_in: Carries the TensorArray flow state to preserve operation ordering.
+- dtype: Sets the data type of the value being read.
+7 api_usage_example: null
+8 api_shape: ''

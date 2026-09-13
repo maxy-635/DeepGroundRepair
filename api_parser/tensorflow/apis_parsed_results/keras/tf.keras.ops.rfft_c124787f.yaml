@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.rfft
+3 api_description: Computes the real-valued 1D FFT along the last axis, returning
+  only the unique nonredundant frequency components and cropping or zero-padding to
+  match fft_length.
+4 api_signature: tf.keras.ops.rfft(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to transform with the real FFT.
+7 api_usage_example:
+- rfft(x, 3)
+8 api_shape: ''

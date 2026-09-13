@@ -1,0 +1,29 @@
+2 api_name: tensorflow.keras.metrics.OneHotMeanIoU
+3 api_description: Computes mean IoU for one-hot encoded segmentation or classification
+  labels by argmaxing labels and predictions, building a weighted confusion matrix,
+  and averaging per-class IoU; use `MeanIoU` for single-channel data and ensure `num_classes`
+  matches the label classes.
+4 api_signature: tf.keras.metrics.OneHotMeanIoU(num_classes,ignore_class,sparse_y_pred,axis)
+5 api_details: ''
+6 api_parameters:
+- num_classes: Specifies how many distinct labels the metric should evaluate.
+- ignore_class: Excludes a specific class ID from the metric calculation.
+- sparse_y_pred: Indicates whether predictions are class IDs or probability vectors.
+- axis: Sets the axis that contains the class logits or probabilities.
+7 api_usage_example:
+- y_true = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0], [1, 0, 0]])
+- y_pred = np.array([[0.2, 0.3, 0.5], [0.1, 0.2, 0.7], [0.5, 0.3, 0.1],
+- '                      [0.1, 0.4, 0.5]])'
+- sample_weight = [0.1, 0.2, 0.3, 0.4]
+- m = keras.metrics.OneHotMeanIoU(num_classes=3)
+- m.update_state(
+- '    y_true=y_true, y_pred=y_pred, sample_weight=sample_weight)'
+- '# cm = [[0, 0, 0.2+0.4],'
+- '#       [0.3, 0, 0],'
+- '#       [0, 0, 0.1]]'
+- '# sum_row = [0.3, 0, 0.7], sum_col = [0.6, 0.3, 0.1]'
+- '# true_positives = [0, 0, 0.1]'
+- '# single_iou = true_positives / (sum_row + sum_col - true_positives))'
+- '# mean_iou = (0 + 0 + 0.1 / (0.7 + 0.1 - 0.1)) / 3'
+- m.result()
+8 api_shape: ''

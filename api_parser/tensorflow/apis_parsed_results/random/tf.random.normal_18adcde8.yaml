@@ -1,0 +1,14 @@
+2 api_name: tensorflow.random.normal
+3 api_description: Generates random values drawn from a normal (Gaussian) distribution,
+  producing new samples each time it is called.
+4 api_signature: tf.random.normal(shape,mean,stddev)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the size and dimensions of the output tensor.
+- mean: Sets the mean value of the normal distribution used to generate samples.
+- stddev: Sets the standard deviation of the normal distribution used to generate
+    samples.
+7 api_usage_example:
+- tf.random.set_seed(5);
+- tf.random.normal([2,2], 0, 1, tf.float32, seed=1)
+8 api_shape: ''

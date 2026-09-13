@@ -1,0 +1,14 @@
+2 api_name: tensorflow.nn.dropout
+3 api_description: tensorflow.nn.dropout randomly sets elements of a tensor to zero
+  with a specified probability to prevent overfitting and scales the remaining elements
+  to maintain the expected value, promoting independent node usefulness in DNN models.
+4 api_signature: tf.nn.dropout(x,rate)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the input tensor to which dropout will be applied.
+- rate: Defines the probability of dropping each element in the input tensor.
+7 api_usage_example:
+- tf.random.set_seed(0)
+- x = tf.ones([3,10])
+- tf.nn.dropout(x, rate = 2/3, noise_shape=[1,10], seed=1).numpy()
+8 api_shape: ''

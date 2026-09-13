@@ -1,0 +1,7 @@
+2 api_name: torch.get_float32_matmul_precision
+3 api_description: Returns the current float32 matrix multiplication precision setting.
+4 api_signature: '"torch.get_float32_matmul_precision()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

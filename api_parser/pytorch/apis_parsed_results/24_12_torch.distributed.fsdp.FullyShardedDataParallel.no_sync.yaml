@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.no_sync
+3 api_description: Context manager that temporarily disables gradient synchronization
+  across FSDP modules during backward passes.
+4 api_signature: no_sync()
+5 api_details: ''
+6 api_parameters:
+- {}
+7 api_usage_example: null
+8 api_shape: null

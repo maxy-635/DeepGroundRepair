@@ -1,0 +1,8 @@
+2 api_name: torch.ShortStorage
+3 api_description: Deprecated storage class for 16-bit signed integers used to hold
+  and manipulate raw tensor data in low-level PyTorch internals.
+4 api_signature: torch.ShortStorage(*args,dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: paddle.nn.quant.quant_layers.MovingAverageAbsMaxScale
+3 api_description: The MovingAverageAbsMaxScale API computes a scaling factor using
+  the moving average of the absolute maximum values of a tensor, which is essential
+  for quantization processes in neural networks.
+4 api_signature: paddle.nn.quant.quant_layers.MovingAverageAbsMaxScale(moving_rate,reduce_type)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

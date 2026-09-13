@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SparseMatMul
+3 api_description: Multiplies two 2D dense tensors as matrices, with optimized performance
+  when at least one input is sparse; the inner dimension of a must match the outer
+  dimension of b.
+4 api_signature: tf.raw_ops.SparseMatMul(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: The first input matrix or tensor used in the sparse matrix multiplication.
+- b: The second input matrix or tensor used in the sparse matrix multiplication.
+7 api_usage_example: null
+8 api_shape: ''

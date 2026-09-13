@@ -1,0 +1,15 @@
+2 api_name: paddle.hub.help
+3 api_description: Displays help information for a model.
+4 api_signature: paddle.hub.help(repo_dir,model,source,force_reload)
+5 api_details: ''
+6 api_parameters:
+- repo_dir: Specifies the repository directory to use.
+- model: Identifies the model to help with.
+- source: 'Selects the model source location: GitHub, Gitee, or local, with GitHub
+    as the default.'
+- force_reload: Controls whether to reload the resource even if it is already available,
+    with False as the default.
+7 api_usage_example:
+- import paddle
+- paddle.hub.help('lyuwenyu/paddlehub_demo:main', model='MM', source='github')
+8 api_shape: {}

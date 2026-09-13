@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.losses.categorical_focal_crossentropy
+3 api_description: Computes categorical crossentropy with focal weighting to down-weight
+  easy examples and focus training on hard, misclassified classes.
+4 api_signature: tf.keras.losses.categorical_focal_crossentropy(y_true,y_pred,alpha,gamma)
+5 api_details: ''
+6 api_parameters:
+- y_true: Provides the one-hot encoded ground-truth class labels.
+- y_pred: Provides the model’s predicted class probabilities or logits.
+- alpha: Sets the class-balancing weight to emphasize or de-emphasize classes.
+- gamma: Controls how strongly easy examples are down-weighted to focus training on
+    hard examples.
+7 api_usage_example:
+- y_true = [[0, 1, 0], [0, 0, 1]]
+- y_pred = [[0.05, 0.9, 0.05], [0.1, 0.85, 0.05]]
+- loss = keras.losses.categorical_focal_crossentropy(y_true, y_pred)
+- assert loss.shape == (2,)
+- loss
+8 api_shape: ''

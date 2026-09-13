@@ -1,0 +1,9 @@
+2 api_name: tensorflow.data.experimental.AutotuneOptions
+3 api_description: Configures TensorFlow dataset autotuning by enabling or disabling
+  it and setting the algorithm, CPU budget, and RAM budget used to automatically optimize
+  input pipeline performance.
+4 api_signature: tf.data.experimental.AutotuneOptions()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

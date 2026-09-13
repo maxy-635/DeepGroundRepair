@@ -1,0 +1,18 @@
+2 api_name: torch.pca_lowrank
+3 api_description: Computes a low-rank PCA approximation of a dense, batched, or sparse
+  matrix using linear PCA methods.
+4 api_signature: torch.pca_lowrank(A,q,center)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor to decompose, with shape (*, m, n).
+- q: An approximate target rank for the low-rank PCA computation, typically set slightly
+    above the true rank.
+- center: Whether to center the input tensor before computing PCA; if False, the input
+    is treated as already centered.
+7 api_usage_example:
+- '- Nathan Halko, Per-Gunnar Martinsson, and Joel Tropp, Finding'
+- '  structure with randomness: probabilistic algorithms for'
+- '  constructing approximate matrix decompositions,'
+- '  arXiv:0909.4061 [math.NA; math.PR], 2009 (available at'
+- '  `arXiv <http://arxiv.org/abs/0909.4061>`_).'
+8 api_shape: null

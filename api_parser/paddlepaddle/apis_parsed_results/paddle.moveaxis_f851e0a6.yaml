@@ -1,0 +1,12 @@
+2 api_name: paddle.moveaxis
+3 api_description: Moves a tensor axis from one position to another, reordering dimensions
+  without changing data.
+4 api_signature: paddle.moveaxis(x,source,destination)
+5 api_details: ''
+6 api_parameters:
+- x: The input N-D Tensor whose axes will be rearranged.
+- source: The original axis positions to move, each unique and integer-valued.
+- destination: The target axis positions where the moved axes should be placed, each
+    unique and integer-valued.
+7 api_usage_example: []
+8 api_shape: {}

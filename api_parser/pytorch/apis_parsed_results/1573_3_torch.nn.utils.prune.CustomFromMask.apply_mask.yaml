@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.prune.CustomFromMask.apply_mask
+3 api_description: Applies a pruning mask to a parameter by multiplying the parameter
+  elementwise with the mask.
+4 api_signature: apply_mask(module)
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the tensor to be pruned and will have the mask
+    applied.
+7 api_usage_example: null
+8 api_shape: null

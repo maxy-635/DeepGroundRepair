@@ -1,0 +1,25 @@
+2 api_name: torch.nn.functional.conv_transpose1d
+3 api_description: torch.nn.functional.conv_transpose1d performs a 1D transposed convolution,
+  often called deconvolution, to expand input signals across several input planes.
+4 api_signature: torch.nn.functional.conv_transpose1d(input,weight,stride,padding,output_padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor with shape (minibatch, in_channels, iW) representing the
+    data to be processed.
+- weight: The filters with shape (in_channels, out_channels/groups, kW) used for the
+    transposed convolution operation.
+- stride: The step size for traversing the input, specified as a single number or
+    a tuple.
+- padding: The amount of zero-padding added to both sides of the input.
+- output_padding: Additional size added to one side of the output shape to control
+    the output size, specified as a single nusmber or a tuple (out_padW).
+7 api_usage_example:
+- ' inputs = torch.randn(20, 16, 50)'
+- ' weights = torch.randn(16, 33, 5)'
+- ' F.conv_transpose1d(inputs, weights)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, L_in)
+  output tensor shape: (N, Channel_out, L_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = weight.shape[1]
+    L_out: L_out = (L_in - 1) * stride - 2 * padding + kernel_size + output_padding

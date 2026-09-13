@@ -1,0 +1,37 @@
+2 api_name: paddle.distributed.shard_scaler
+3 api_description: Wraps a global GradScaler for distributed training, exposing a
+  shard-aware view so scaling and unscaling behavior works correctly across distributed
+  parameters.
+4 api_signature: paddle.distributed.shard_scaler(scaler)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- mesh = dist.ProcessMesh([0, 1], dim_names=["x"])
+- 'class MLP(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self.fc1 = paddle.nn.Linear(8, 8)'
+- '        self.fc2 = paddle.nn.Linear(8, 8)'
+- '...'
+- '    def forward(self, input):'
+- '        return self.fc2(self.fc1(input))'
+- layer = MLP()
+- batch = paddle.rand(shape=[8, 8])
+- opt = paddle.optimizer.AdamW(parameters=layer.parameters())
+- layer, opt = paddle.amp.decorate(layer, opt, level='O2')
+- scaler = paddle.amp.GradScaler(init_loss_scaling=1024)
+- scaler = dist.shard_scaler(scaler)
+- opt = dist.shard_optimizer(opt)
+- 'for _ in range(5):'
+- '    with paddle.amp.auto_cast(True):'
+- '        loss = layer(batch)'
+- '    scaled = scaler.scale(loss)'
+- '    scaled.backward()'
+- '    scaler.step(opt)'
+- '    scaler.update()'
+- '    opt.clear_grad()'
+- '# This case need to be executed in multi-card environment'
+- '# python -m paddle.distributed.launch --gpus=0,1 {test_case}.py'
+8 api_shape: {}

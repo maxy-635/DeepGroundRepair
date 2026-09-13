@@ -1,0 +1,13 @@
+2 api_name: tensorflow.train.CheckpointManager
+3 api_description: Manages a set of TensorFlow checkpoints by saving new ones, keeping
+  only the most relevant or recent checkpoints, deleting unneeded checkpoints, and
+  persisting its own state across restarts so a single manager can control a directory.
+4 api_signature: tf.train.CheckpointManager(checkpoint,directory,max_to_keep)
+5 api_details: ''
+6 api_parameters:
+- checkpoint: The checkpoint object whose save and restore state the manager tracks.
+- directory: The directory where checkpoint files and the manager state file are written.
+- max_to_keep: The maximum number of recent checkpoints to retain before older ones
+    are deleted, or all checkpoints if set to None.
+7 api_usage_example: null
+8 api_shape: ''

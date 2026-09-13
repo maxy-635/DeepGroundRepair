@@ -1,0 +1,16 @@
+2 api_name: tensorflow.linalg.LinearOperatorBlockLowerTriangular
+3 api_description: Builds a square block lower-triangular LinearOperator from a nested
+  list of LinearOperators, placing operators on and below the diagonal and zero blocks
+  elsewhere.
+4 api_signature: tf.linalg.LinearOperatorBlockLowerTriangular(operators,name)
+5 api_details: ''
+6 api_parameters:
+- operators: Defines the lower-triangular block operators arranged by rows to build
+    the full block matrix.
+- name: Assigns an optional name to the LinearOperator instance.
+7 api_usage_example:
+- x0 = [[1., 6.], [-3., 4.]]
+- x1 = [[0., 2.], [4., 0.]]
+- 'x = tf.concat([x0, x1], 0)  # Shape [2, 4] Tensor'
+- operator.matmul(x)
+8 api_shape: ''

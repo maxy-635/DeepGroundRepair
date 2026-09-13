@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.softplus
+3 api_description: Applies the softplus activation, computing log(exp(x) + 1) as a
+  smooth, nonnegative approximation to ReLU.
+4 api_signature: tf.keras.ops.softplus(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to which the softplus activation is applied.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor([-0.555, 0.0, 0.555])
+- keras.ops.softplus(x)
+8 api_shape: ''

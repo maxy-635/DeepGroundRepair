@@ -1,0 +1,20 @@
+2 api_name: torch.utils.cpp_extension.SyclExtension
+3 api_description: Creates a setuptools Extension configured to build SYCL/C++ source
+  files as a native extension.
+4 api_signature: torch.utils.cpp_extension.SyclExtension(name,sources,*args,**kwargs)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' from torch.utils.cpp_extension import BuildExtension, SyclExtension'
+- ' setup('
+- '...     name=''xpu_extension'','
+- '...     ext_modules=['
+- '...     SyclExtension('
+- '...                 name=''xpu_extension'','
+- '...                 sources=[''extension.cpp'', ''extension_kernel.cpp''],'
+- '...                 extra_compile_args={''cxx'': [''-g'', ''-std=c++20'', ''-fPIC'']})'
+- '...     ],'
+- '...     cmdclass={'
+- '...         ''build_ext'': BuildExtension'
+- '...     })'
+8 api_shape: null

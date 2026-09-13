@@ -1,0 +1,33 @@
+2 api_name: paddle.amp.debugging.TensorCheckerConfig
+3 api_description: Configures NaN/Inf tensor checks for modules or operators, collecting
+  options that control how Paddle AMP debugging validates tensor values.
+4 api_signature: paddle.amp.debugging.TensorCheckerConfig(enable,debug_mode,output_dir,checked_op_list,skipped_op_list,debug_step,stack_height_limit)
+5 api_details: ''
+6 api_parameters:
+- enable: Turns NaN/Inf tensor detection on or off.
+- debug_mode: Selects the debugging behavior used when issues are detected.
+- output_dir: Sets where collected debug data is saved, or prints it to the terminal
+    if `None`.
+- checked_op_list: Limits checking to the specified operators.
+- skipped_op_list: Excludes the specified operators from NaN/Inf checking.
+- debug_step: Restricts NaN/Inf checks to the specified training iterations.
+- stack_height_limit: Controls whether call stack information is printed and how deep
+    it can be.
+7 api_usage_example:
+- import paddle
+- checker_config = paddle.amp.debugging.TensorCheckerConfig(enable=True, debug_mode=paddle.amp.debugging.DebugMode.CHECK_NAN_INF)
+- paddle.amp.debugging.enable_tensor_checker(checker_config)
+- x = paddle.to_tensor([1, 0, 3], place=paddle.CPUPlace(), dtype='float32', stop_gradient=False)
+- y = paddle.to_tensor([0.2, 0, 0.5], place=paddle.CPUPlace(), dtype='float32')
+- res = paddle.pow(x, y)
+- paddle.autograd.backward(res, retain_graph=True)
+- paddle.amp.debugging.disable_tensor_checker()
+- '# [PRECISION] [ERROR] in [device=cpu, op=elementwise_pow_grad, tensor=, dtype=fp32],
+  numel=3, num_nan=1, num_inf=0, num_zero=0, max=2.886751e-01, min=2.000000e-01, mean=-nan'
+- '# when DebugMode.CHECK_NAN_INF_AND_ABORT and stack_height_limit = 1'
+- '# Traceback (most recent call last):'
+- '#     res = paddle.pow(x, y)'
+- '#   File "/usr/local/lib/python3.8/dist-packages/paddle/tensor/math.py", line 447,
+  in pow'
+- '#     return _C_ops.elementwise_pow(x, y)'
+8 api_shape: {}

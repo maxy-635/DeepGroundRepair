@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.QueueDequeue
+3 api_description: Removes and returns one tuple of tensors from a queue, blocking
+  until an element is available or an optional timeout expires.
+4 api_signature: tf.raw_ops.QueueDequeue(handle,component_types)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the queue to dequeue from.
+- component_types: Specifies the data types of the tuple components to be removed
+    from the queue.
+7 api_usage_example: null
+8 api_shape: ''

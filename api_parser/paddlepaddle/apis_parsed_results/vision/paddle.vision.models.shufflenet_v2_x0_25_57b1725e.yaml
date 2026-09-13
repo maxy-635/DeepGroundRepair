@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.shufflenet_v2_x0_25
+3 api_description: ShuffleNetV2 with 0.25x output channels is a lightweight convolutional
+  neural network model for efficient image feature extraction and classification,
+  designed to deliver low-computation inference with minimal memory use.
+4 api_signature: paddle.vision.models.shufflenet_v2_x0_25(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+7 api_usage_example: []
+8 api_shape: {}

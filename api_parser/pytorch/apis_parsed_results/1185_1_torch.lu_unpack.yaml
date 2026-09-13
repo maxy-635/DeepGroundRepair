@@ -1,0 +1,24 @@
+2 api_name: torch.lu_unpack
+3 api_description: Unpacks a LU factorization into separate permutation, lower-triangular,
+  and upper-triangular matrices.
+4 api_signature: torch.lu_unpack(LU_data,LU_pivots,*,out)
+5 api_details: ''
+6 api_parameters:
+- LU_data: Contains the packed LU factorization values used to reconstruct the matrix
+    factors.
+- LU_pivots: Contains the pivot indices produced during LU factorization for row permutations.
+7 api_usage_example:
+- ' A = torch.randn(2, 3, 3)'
+- ' LU, pivots = torch.linalg.lu_factor(A)'
+- ' P, L, U = torch.lu_unpack(LU, pivots)'
+- ' # We can recover A from the factorization'
+- ' A_ = P @ L @ U'
+- ' torch.allclose(A, A_)'
+- ' # LU factorization of a rectangular matrix:'
+- ' A = torch.randn(2, 3, 2)'
+- ' LU, pivots = torch.linalg.lu_factor(A)'
+- ' P, L, U = torch.lu_unpack(LU, pivots)'
+- ' # P, L, U are the same as returned by linalg.lu'
+- ' P_, L_, U_ = torch.linalg.lu(A)'
+- ' torch.allclose(P, P_) and torch.allclose(L, L_) and torch.allclose(U, U_)'
+8 api_shape: null

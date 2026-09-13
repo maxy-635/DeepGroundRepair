@@ -1,0 +1,17 @@
+2 api_name: torch.linalg.eigvalsh
+3 api_description: Computes and returns the eigenvalues of a real symmetric or complex
+  Hermitian matrix.
+4 api_signature: torch.linalg.eigvalsh(A,*,out)
+5 api_details: ''
+6 api_parameters:
+- A: The input symmetric or Hermitian matrix (or batch of matrices) whose eigenvalues
+    are computed.
+7 api_usage_example:
+- ' A = torch.randn(2, 2, dtype=torch.complex128)'
+- ' A = A + A.T.conj()  # creates a Hermitian matrix'
+- ' A'
+- ' torch.linalg.eigvalsh(A)'
+- ' A = torch.randn(3, 2, 2, dtype=torch.float64)'
+- ' A = A + A.mT  # creates a batch of symmetric matrices'
+- ' torch.linalg.eigvalsh(A)'
+8 api_shape: null

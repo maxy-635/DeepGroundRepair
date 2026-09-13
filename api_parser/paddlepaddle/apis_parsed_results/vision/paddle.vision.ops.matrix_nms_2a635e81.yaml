@@ -1,0 +1,27 @@
+2 api_name: paddle.vision.ops.matrix_nms
+3 api_description: Applies Matrix NMS to filter bounding boxes by score, optionally
+  preselects top candidates, decays remaining scores using the Matrix NMS scheme,
+  and keeps at most keep_top_k boxes per image.
+4 api_signature: paddle.vision.ops.matrix_nms(bboxes,scores,score_threshold,post_threshold,nms_top_k,keep_top_k)
+5 api_details: ''
+6 api_parameters:
+- bboxes: Input bounding boxes for each image in the batch, with each box given as
+    [xmin, ymin, xmax, ymax].
+- scores: Input class confidence scores for each bounding box in each image.
+- score_threshold: Removes boxes whose initial confidence score is below this threshold.
+- post_threshold: Removes boxes whose decayed confidence score falls below this threshold.
+- nms_top_k: Limits how many high-confidence boxes are considered before applying
+    NMS.
+- keep_top_k: Limits how many final boxes are kept per image after NMS, or keeps all
+    when set to -1.
+7 api_usage_example:
+- import paddle
+- from paddle.vision.ops import matrix_nms
+- boxes = paddle.rand([4, 1, 4])
+- boxes[..., 2] = boxes[..., 0] + boxes[..., 2]
+- boxes[..., 3] = boxes[..., 1] + boxes[..., 3]
+- scores = paddle.rand([4, 80, 1])
+- out = matrix_nms(bboxes=boxes, scores=scores, background_label=0,
+- '                        score_threshold=0.5, post_threshold=0.1,'
+- '                        nms_top_k=400, keep_top_k=200, normalized=False)'
+8 api_shape: {}

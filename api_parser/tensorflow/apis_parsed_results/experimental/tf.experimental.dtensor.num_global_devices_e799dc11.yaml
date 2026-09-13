@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.dtensor.num_global_devices
+3 api_description: Returns how many devices of the specified device type exist in
+  the current DTensor cluster.
+4 api_signature: tf.experimental.dtensor.num_global_devices(device_type)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

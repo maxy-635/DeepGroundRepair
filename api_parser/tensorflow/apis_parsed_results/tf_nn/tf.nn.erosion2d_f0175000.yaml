@@ -1,0 +1,18 @@
+2 api_name: tensorflow.nn.erosion2d
+3 api_description: tensorflow.nn.erosion2d performs grayscale erosion on 4-D input
+  tensors using 3-D filter tensors, processing each input channel independently. The
+  output shape is determined by the padding algorithm, with only 'NHWC' data format
+  supported.
+4 api_signature: tf.nn.erosion2d(value,filters,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- value: The input tensor, which is a 4-D array with dimensions [batch, in_height,
+    in_width, depth].
+- filters: The filter tensor, a 3-D array with dimensions [filters_height, filters_width,
+    depth], used for the erosion operation.
+- strides: A list of four integers specifying the stride of the sliding window for
+    each input dimension, formatted as [1, strides_height, strides_width, 1].
+- padding: A string indicating the padding algorithm to use, either 'SAME' or 'VALID',
+    which determines how the input is padded.
+7 api_usage_example: null
+8 api_shape: ''

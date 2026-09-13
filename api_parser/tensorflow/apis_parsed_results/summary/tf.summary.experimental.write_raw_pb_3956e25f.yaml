@@ -1,0 +1,10 @@
+2 api_name: tensorflow.summary.experimental.write_raw_pb
+3 api_description: Writes TensorBoard summaries directly from raw tf.compat.v1.Summary
+  protocol buffers.
+4 api_signature: tf.summary.experimental.write_raw_pb(tensor,step)
+5 api_details: ''
+6 api_parameters:
+- tensor: A string tensor containing one or more serialized Summary protobufs to write.
+- step: The explicit monotonic int64-compatible step value for the summary.
+7 api_usage_example: null
+8 api_shape: ''

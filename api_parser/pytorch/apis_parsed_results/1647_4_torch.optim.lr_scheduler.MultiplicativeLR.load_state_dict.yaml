@@ -1,0 +1,9 @@
+2 api_name: torch.optim.lr_scheduler.MultiplicativeLR.load_state_dict
+3 api_description: Loads a MultiplicativeLR scheduler’s saved state so it can resume
+  with the same learning-rate schedule.
+4 api_signature: load_state_dict(state_dict)
+5 api_details: ''
+6 api_parameters:
+- state_dict: Restores the scheduler’s saved state from a `state_dict()` snapshot.
+7 api_usage_example: null
+8 api_shape: null

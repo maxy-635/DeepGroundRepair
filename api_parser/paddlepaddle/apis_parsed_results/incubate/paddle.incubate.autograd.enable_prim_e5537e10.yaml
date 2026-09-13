@@ -1,0 +1,14 @@
+2 api_name: paddle.incubate.autograd.enable_prim
+3 api_description: Enables primitive-based automatic differentiation, allowing Paddle
+  to use prim operators for autograd computation.
+4 api_signature: paddle.incubate.autograd.enable_prim()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- from paddle.incubate.autograd import enable_prim, prim_enabled
+- paddle.enable_static()
+- enable_prim()
+- print(prim_enabled())
+- 'True'
+8 api_shape: {}

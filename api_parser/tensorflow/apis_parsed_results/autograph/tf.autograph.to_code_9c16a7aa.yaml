@@ -1,0 +1,18 @@
+2 api_name: tensorflow.autograph.to_code
+3 api_description: Converts a Python function into AutoGraph-generated source code
+  and returns it as a string.
+4 api_signature: tf.autograph.to_code(entity,recursive)
+5 api_details: ''
+6 api_parameters:
+- entity: The Python callable or class whose source code is converted to TensorFlow
+    AutoGraph code.
+- recursive: Controls whether functions called by the target are also recursively
+    converted.
+7 api_usage_example:
+- '@tf.function'
+- 'def f(x):'
+- '  if x < 0:'
+- '    x = -x'
+- '  return x'
+- tf.autograph.to_code(f.python_function)
+8 api_shape: ''

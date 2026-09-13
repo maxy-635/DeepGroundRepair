@@ -1,0 +1,8 @@
+2 api_name: paddle.nan_to_num_
+3 api_description: In-place replaces NaN and infinite values in a tensor with specified
+  finite numbers.
+4 api_signature: paddle.nan_to_num_(x,nan,posinf,neginf)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,18 @@
+2 api_name: torch.atleast_2d
+3 api_description: Returns each input tensor as a 2D view, adding dimensions to 0D
+  or 1D tensors while leaving tensors with 2 or more dimensions unchanged.
+4 api_signature: '"torch.atleast_2d(*tensors)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' x = torch.tensor(1.)'
+- ' x'
+- ' torch.atleast_2d(x)'
+- ' x = torch.arange(4).view(2, 2)'
+- ' x'
+- ' torch.atleast_2d(x)'
+- ' x = torch.tensor(0.5)'
+- ' y = torch.tensor(1.)'
+- ' torch.atleast_2d((x, y))'
+- ' torch.atleast_2d()'
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.package.PackageExporter.interned_modules
+3 api_description: Returns the set of modules that have been marked as interned for
+  inclusion in the package.
+4 api_signature: interned_modules()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

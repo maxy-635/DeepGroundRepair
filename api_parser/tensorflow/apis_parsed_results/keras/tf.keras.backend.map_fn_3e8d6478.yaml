@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.map_fn
+3 api_description: Applies a function to each element of one or more tensors along
+  the first axis, stacks the results into a single tensor, and can run in parallel
+  with optional batching behavior.
+4 api_signature: tf.keras.backend.map_fn(fn,elems)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

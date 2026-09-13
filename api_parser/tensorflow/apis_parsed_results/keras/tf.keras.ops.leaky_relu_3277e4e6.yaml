@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.leaky_relu
+3 api_description: Applies the leaky ReLU activation, returning x for nonnegative
+  values and alpha * x for negative values to preserve a small gradient.
+4 api_signature: tf.keras.ops.leaky_relu(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the leaky ReLU activation to.
+7 api_usage_example:
+- x = np.array([-1., 0., 1.])
+- x_leaky_relu = keras.ops.leaky_relu(x)
+- print(x_leaky_relu)
+8 api_shape: ''

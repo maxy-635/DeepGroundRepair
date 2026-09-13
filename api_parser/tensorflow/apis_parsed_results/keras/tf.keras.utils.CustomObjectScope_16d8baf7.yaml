@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.utils.CustomObjectScope
+3 api_description: Context manager that temporarily registers custom Keras classes
+  and functions so model loading and config deserialization can resolve them.
+4 api_signature: tf.keras.utils.CustomObjectScope(custom_objects)
+5 api_details: ''
+6 api_parameters:
+- custom_objects: Provides a mapping from object names to custom Python objects so
+    Keras can resolve them within the scope.
+7 api_usage_example: null
+8 api_shape: ''

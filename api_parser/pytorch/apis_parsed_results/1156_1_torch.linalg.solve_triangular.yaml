@@ -1,0 +1,22 @@
+2 api_name: torch.linalg.solve_triangular
+3 api_description: Solves a triangular linear system for the unknown matrix or vector,
+  assuming the coefficient matrix is triangular and the solution is unique.
+4 api_signature: torch.linalg.solve_triangular(A,B,upper,left,unitriangular)
+5 api_details: ''
+6 api_parameters:
+- A: Triangular coefficient matrix used to solve the linear system.
+- B: Right-hand side tensor containing the values to solve against.
+7 api_usage_example:
+- ' A = torch.randn(3, 3).triu_()'
+- ' B = torch.randn(3, 4)'
+- ' X = torch.linalg.solve_triangular(A, B, upper=True)'
+- ' torch.allclose(A @ X, B)'
+- ' A = torch.randn(2, 3, 3).tril_()'
+- ' B = torch.randn(2, 3, 4)'
+- ' X = torch.linalg.solve_triangular(A, B, upper=False)'
+- ' torch.allclose(A @ X, B)'
+- ' A = torch.randn(2, 4, 4).tril_()'
+- ' B = torch.randn(2, 3, 4)'
+- ' X = torch.linalg.solve_triangular(A, B, upper=False, left=False)'
+- ' torch.allclose(X @ A, B)'
+8 api_shape: null

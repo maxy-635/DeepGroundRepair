@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.stack
+3 api_description: Stacks a sequence of tensors along a new axis at the specified
+  position.
+4 api_signature: tf.keras.ops.stack(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The tensors to combine into a new stacked tensor.
+- axis: The axis position where the tensors are stacked.
+7 api_usage_example: null
+8 api_shape: ''

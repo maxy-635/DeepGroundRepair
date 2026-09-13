@@ -1,0 +1,15 @@
+2 api_name: torch.nn.functional.kl_div
+3 api_description: torch.nn.functional.kl_div computes the Kullback-Leibler divergence
+  loss between two probability distributions, typically used in tasks involving probabilistic
+  models.
+4 api_signature: torch.nn.functional.kl_div(input,target,reduction,log_target)
+5 api_details: ''
+6 api_parameters:
+- input: A tensor representing log-probabilities with an arbitrary shape.
+- target: A tensor of the same shape as input, representing the target distribution.
+- reduction: 'Determines how the output should be reduced: none, batchmean, sum, or
+    mean.'
+- log_target: Indicates if the target tensor is provided in log space to prevent numerical
+    issues.
+7 api_usage_example: null
+8 api_shape: null

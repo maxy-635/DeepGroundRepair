@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.depthwise_conv
+3 api_description: Performs 1D or 2D depthwise convolution, applying a separate spatial
+  filter to each input channel and producing per-channel feature maps.
+4 api_signature: tf.keras.ops.depthwise_conv(inputs,kernel,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- inputs: The input tensor to convolve, shaped by batch, spatial dimensions, and channels.
+- kernel: The depthwise convolution filter tensor, with one kernel per input channel
+    and multiplier.
+- strides: The step size of the convolution along each spatial dimension.
+- padding: The padding mode that controls whether the input is left unpadded or padded
+    to preserve size.
+7 api_usage_example: null
+8 api_shape: ''

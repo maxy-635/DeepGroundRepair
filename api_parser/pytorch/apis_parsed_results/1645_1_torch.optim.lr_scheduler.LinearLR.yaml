@@ -1,0 +1,27 @@
+2 api_name: torch.optim.lr_scheduler.LinearLR
+3 api_description: Linearly adjusts each parameter group's learning rate by scaling
+  it with a multiplicative factor over time.
+4 api_signature: torch.optim.lr_scheduler.LinearLR(optimizer,start_factor,end_factor,total_iters)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be scheduled.
+- start_factor: The initial multiplier applied to the learning rate at the start of
+    scheduling.
+- end_factor: The final multiplier applied to the learning rate after the linear warmup
+    or decay period.
+- total_iters: The number of iterations over which the multiplier changes linearly
+    from start_factor to end_factor.
+7 api_usage_example:
+- ' # Assuming optimizer uses lr = 0.05 for all groups'
+- ' # lr = 0.003687  if epoch == 0'
+- ' # lr = 0.004875  if epoch == 1'
+- ' # lr = 0.006062  if epoch == 2'
+- ' # lr = 0.00725   if epoch == 3'
+- ' # ...'
+- ' # lr = 0.05      if epoch >= 40'
+- ' scheduler = LinearLR(optimizer, start_factor=0.05, total_iters=40)'
+- ' for epoch in range(100):'
+- '     train(...)'
+- '     validate(...)'
+- '     scheduler.step()'
+8 api_shape: null

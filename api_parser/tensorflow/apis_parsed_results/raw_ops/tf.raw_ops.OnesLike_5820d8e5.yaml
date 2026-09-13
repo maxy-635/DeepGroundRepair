@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.OnesLike
+3 api_description: Returns a tensor filled with ones that matches the shape and data
+  type of the input tensor.
+4 api_signature: tf.raw_ops.OnesLike(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose shape and dtype are used to create an output tensor filled
+    with ones.
+7 api_usage_example: null
+8 api_shape: ''

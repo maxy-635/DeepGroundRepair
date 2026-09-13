@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TextLineReaderV2
+3 api_description: Reads a text file line by line, returning each line as a record
+  separated by newline characters.
+4 api_signature: tf.raw_ops.TextLineReaderV2(skip_header_lines,name)
+5 api_details: ''
+6 api_parameters:
+- skip_header_lines: Skips the specified number of lines from the start of each file
+    before reading begins.
+- name: Sets an optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

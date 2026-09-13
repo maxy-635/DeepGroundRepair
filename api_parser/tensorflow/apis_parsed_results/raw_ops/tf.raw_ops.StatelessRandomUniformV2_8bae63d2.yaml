@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.StatelessRandomUniformV2
+3 api_description: Generates deterministic pseudorandom uniform values in the range
+  [0, 1) from the given shape, key, counter, and algorithm.
+4 api_signature: tf.raw_ops.StatelessRandomUniformV2(shape,key,counter,alg,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the dimensions of the output tensor to generate.
+- key: Provides the 64-bit RNG key used to seed the counter-based random generator.
+- counter: Provides the initial 64-bit counter value used by the counter-based RNG
+    algorithm.
+- alg: Selects which RNG algorithm implementation to use.
+- dtype: Sets the data type of the random values produced by the operation.
+7 api_usage_example: null
+8 api_shape: ''

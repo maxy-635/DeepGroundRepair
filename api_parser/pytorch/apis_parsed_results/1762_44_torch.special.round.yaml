@@ -1,0 +1,7 @@
+2 api_name: torch.special.round
+3 api_description: Rounds each input element to the nearest integer, using torch.round().
+4 api_signature: torch.special.round(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

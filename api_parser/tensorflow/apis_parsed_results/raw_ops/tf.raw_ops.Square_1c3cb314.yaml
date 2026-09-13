@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Square
+3 api_description: Returns the element-wise square of x by multiplying each value
+  by itself.
+4 api_signature: tf.raw_ops.Square(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are squared elementwise.
+7 api_usage_example:
+- tf.math.square([-2., 0., 3.])
+8 api_shape: ''

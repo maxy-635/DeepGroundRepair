@@ -1,0 +1,16 @@
+2 api_name: tensorflow.feature_column.numeric_column
+3 api_description: Creates a feature column for real-valued numeric inputs, optionally
+  shaped and typed, so tensors like features `a` and `b` can be used directly in TensorFlow
+  models.
+4 api_signature: tf.feature_column.numeric_column(key,shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- key: Names the input feature and serves as the lookup key for parsing configs, tensors,
+    and feature columns.
+- shape: Sets the tensor’s dimensions, with the final output shaped as [batch_size]
+    + shape.
+- dtype: Specifies the numeric data type of the feature values, defaulting to tf.float32.
+7 api_usage_example:
+- feature_layer = tf.keras.layers.DenseFeatures([a_buckets, b])
+- print(feature_layer(data))
+8 api_shape: ''

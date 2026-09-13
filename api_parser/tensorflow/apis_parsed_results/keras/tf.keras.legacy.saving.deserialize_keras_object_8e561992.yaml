@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.legacy.saving.deserialize_keras_object
+3 api_description: Deserializes a Keras object config into a live object using a provided
+  module_objects lookup, with support for preserving shared objects when used inside
+  SharedObjectLoadingScope.
+4 api_signature: tf.keras.legacy.saving.deserialize_keras_object(identifier,custom_objects)
+5 api_details: ''
+6 api_parameters:
+- identifier: The serialized object representation to deserialize.
+- custom_objects: A dictionary of user-provided custom classes or functions to resolve
+    names during deserialization.
+7 api_usage_example: null
+8 api_shape: ''

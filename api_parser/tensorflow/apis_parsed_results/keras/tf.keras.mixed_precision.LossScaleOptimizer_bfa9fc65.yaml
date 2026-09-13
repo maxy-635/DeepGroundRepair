@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.mixed_precision.LossScaleOptimizer
+3 api_description: Wraps another optimizer and automatically scales, unscales, and
+  adjusts the loss scale during training to prevent float16 gradient underflow.
+4 api_signature: tf.keras.mixed_precision.LossScaleOptimizer(inner_optimizer)
+5 api_details: ''
+6 api_parameters:
+- inner_optimizer: The optimizer instance that is wrapped and used for the actual
+    parameter updates.
+7 api_usage_example: null
+8 api_shape: ''

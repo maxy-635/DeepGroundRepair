@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.layers.GlobalMaxPool1D
+3 api_description: GlobalMaxPool1D performs max pooling across the temporal dimension
+  of input data, reducing the input's dimensionality by returning the maximum value
+  from each feature map.
+4 api_signature: tf.keras.layers.GlobalMaxPool1D(keepdims)
+5 api_details: ''
+6 api_parameters:
+- keepdims: Determines whether to retain the temporal dimension in the output tensor,
+    either reducing its rank (False) or keeping it with length 1 (True).
+7 api_usage_example:
+- x = np.random.rand(2, 3, 4)
+- y = keras.layers.GlobalMaxPooling1D()(x)
+- y.shape
+8 api_shape: null

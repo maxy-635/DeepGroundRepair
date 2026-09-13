@@ -1,0 +1,34 @@
+2 api_name: torch.optim.ASGD
+3 api_description: Implements averaged stochastic gradient descent, updating parameters
+  with SGD and maintaining a running average of weights for improved stability and
+  convergence.
+4 api_signature: torch.optim.ASGD(params,lr,weight_decay,maximize)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies the model parameters or parameter groups to optimize.
+- lr: Sets the step size used to update parameters during optimization.
+- weight_decay: Adds L2 regularization to penalize large parameter values.
+- maximize: Tells the optimizer to maximize the objective instead of minimizing it.
+7 api_usage_example:
+- ' model = torch.nn.Linear(10, 10)'
+- ' optim = torch.optim.SGD(model.parameters(), lr=3e-4)'
+- ' scheduler1 = torch.optim.lr_scheduler.LinearLR('
+- '...     optim,'
+- '...     start_factor=0.1,'
+- '...     end_factor=1,'
+- '...     total_iters=20,'
+- '... )'
+- ' scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR('
+- '...     optim,'
+- '...     T_max=80,'
+- '...     eta_min=3e-5,'
+- '... )'
+- ' lr = torch.optim.lr_scheduler.SequentialLR('
+- '...     optim,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' lr.load_state_dict(torch.load("./save_seq.pt"))'
+- ' # now load the optimizer checkpoint after loading the LRScheduler'
+- ' optim.load_state_dict(torch.load("./save_optim.pt"))'
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.isposinf
+3 api_description: Returns a boolean tensor indicating which elements are positive
+  infinity.
+4 api_signature: '"tf.experimental.numpy.isposinf(x)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

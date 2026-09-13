@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.distribution.DeviceMesh
+3 api_description: Defines a global cluster of computation devices used to organize
+  and coordinate distributed computation across the available devices.
+4 api_signature: tf.keras.distribution.DeviceMesh(shape,axis_names,devices)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the dimensions and topology of the device mesh used for distributed
+    training.
+- axis_names: Assigns logical names to each mesh axis so layouts can map data and
+    variables correctly.
+- devices: Specifies the physical devices to place in the mesh, defaulting to all
+    locally available devices.
+7 api_usage_example: null
+8 api_shape: ''

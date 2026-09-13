@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.MaxPoolWithArgmax
+3 api_description: Applies max pooling to an input tensor and returns both the pooled
+  maximum values and their argmax indices, with indices flattened according to the
+  chosen batch-index setting.
+4 api_signature: tf.raw_ops.MaxPoolWithArgmax(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D input tensor to perform max pooling on.
+- ksize: The window size used to compute each pooled output value.
+- strides: The step size the pooling window moves across the input.
+- padding: The padding algorithm to apply when the window extends beyond the input
+    bounds.
+7 api_usage_example: null
+8 api_shape: ''

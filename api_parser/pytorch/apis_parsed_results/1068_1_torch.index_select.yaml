@@ -1,0 +1,16 @@
+2 api_name: torch.index_select
+3 api_description: Selects elements from a tensor along a specified dimension using
+  the provided index tensor, returning a new tensor.
+4 api_signature: torch.index_select(input,dim,index)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to select values from.
+- dim: The dimension along which to gather elements.
+- index: A 1-D tensor of indices specifying which elements to pick.
+7 api_usage_example:
+- ' x = torch.randn(3, 4)'
+- ' x'
+- ' indices = torch.tensor([0, 2])'
+- ' torch.index_select(x, 0, indices)'
+- ' torch.index_select(x, 1, indices)'
+8 api_shape: null

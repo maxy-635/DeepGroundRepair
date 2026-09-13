@@ -1,0 +1,8 @@
+2 api_name: torch.monitor.register_event_handler
+3 api_description: Registers a callback that runs whenever `log_event` records an
+  event, so you can react to monitor events without blocking training.
+4 api_signature: torch.monitor.register_event_handler(callback)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

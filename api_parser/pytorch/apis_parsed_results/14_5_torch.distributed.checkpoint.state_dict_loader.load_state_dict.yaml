@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.checkpoint.state_dict_loader.load_state_dict
+3 api_description: Deprecated API that loads a checkpoint state dict into the provided
+  model and optimizers, restoring distributed training state from storage.
+4 api_signature: torch.distributed.checkpoint.state_dict_loader.load_state_dict(state_dict,storage_reader,process_group)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

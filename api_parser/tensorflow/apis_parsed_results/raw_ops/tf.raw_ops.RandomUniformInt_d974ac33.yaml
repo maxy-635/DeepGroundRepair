@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.RandomUniformInt
+3 api_description: Generates random integers uniformly in the range [minval, maxval)
+  with the specified shape.
+4 api_signature: tf.raw_ops.RandomUniformInt(shape,minval,maxval)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the output tensor's shape.
+- minval: Sets the inclusive minimum integer value that can be generated.
+- maxval: Sets the exclusive maximum integer value that can be generated.
+7 api_usage_example: null
+8 api_shape: ''

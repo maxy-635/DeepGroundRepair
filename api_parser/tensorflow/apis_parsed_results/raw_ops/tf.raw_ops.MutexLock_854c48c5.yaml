@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.MutexLock
+3 api_description: Acquires a mutex lock resource and returns a lock tensor that blocks
+  other MutexLock calls on the same mutex until it is released, enabling critical
+  sections.
+4 api_signature: tf.raw_ops.MutexLock(mutex)
+5 api_details: ''
+6 api_parameters:
+- mutex: The resource mutex to acquire a lock on.
+7 api_usage_example: null
+8 api_shape: ''

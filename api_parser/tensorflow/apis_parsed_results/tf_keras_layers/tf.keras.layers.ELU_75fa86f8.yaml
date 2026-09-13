@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.layers.ELU
+3 api_description: Applies the Exponential Linear Unit (ELU) activation function,
+  which outputs values as is for positive inputs and applies an exponential function
+  for negative inputs, helping to mitigate the vanishing gradient problem.
+4 api_signature: tf.keras.layers.ELU(alpha)
+5 api_details: ''
+6 api_parameters:
+- alpha: The slope of the negative section of the ELU activation function, which determines
+    how quickly the output approaches zero for negative input values; defaults to
+    1.0.
+7 api_usage_example: null
+8 api_shape: null

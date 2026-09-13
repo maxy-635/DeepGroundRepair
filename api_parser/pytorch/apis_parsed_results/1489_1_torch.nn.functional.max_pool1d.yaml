@@ -1,0 +1,20 @@
+2 api_name: torch.nn.functional.max_pool1d
+3 api_description: torch.nn.functional.max_pool1d performs 1D max pooling on input
+  data, reducing its dimensionality by taking the maximum value over specified intervals
+  along each input plane.
+4 api_signature: torch.nn.functional.max_pool1d(input,kernel_size,stride)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the input tensor with dimensions for minibatch, input channels,
+    and width.
+- kernel_size: Defines the size of the pooling window, either as a single integer
+    or a tuple.
+- stride: Determines the step size of the pooling window, either as a single integer
+    or a tuple.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, L_in)
+  output tensor shape: (N, Channel_out, L_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    L_out: L_out = \lceil (L_in + 2 * padding - kernel_size  + (stride - 1)) / stride\rceil + 1

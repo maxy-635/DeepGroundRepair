@@ -1,0 +1,12 @@
+2 api_name: torch.package.PackageExporter.deny
+3 api_description: Blocks imports from modules whose names match glob patterns; if
+  a package dependency matches, packaging fails with a PackagingError.
+4 api_signature: '"deny(include,exclude)"'
+5 api_details: ''
+6 api_parameters:
+- include: Specifies the modules to extern, either by exact module name(s) or by glob-style
+    pattern.
+- exclude: Removes matching modules from the include set using an optional exclusion
+    pattern.
+7 api_usage_example: null
+8 api_shape: null

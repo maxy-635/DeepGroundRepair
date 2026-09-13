@@ -1,0 +1,12 @@
+2 api_name: tensorflow.train.CheckpointView
+3 api_description: Creates a structured view of a TensorFlow checkpoint to gather,
+  serialize, compare, and selectively load matching module components.
+4 api_signature: tf.train.CheckpointView(save_path)
+5 api_details: ''
+6 api_parameters:
+- save_path: Specifies the checkpoint file path to load or inspect.
+7 api_usage_example:
+- checkpoint_view_match = checkpoint_view.match(root2).items()
+- 'for item in checkpoint_view_match:'
+- '  print(item)'
+8 api_shape: ''

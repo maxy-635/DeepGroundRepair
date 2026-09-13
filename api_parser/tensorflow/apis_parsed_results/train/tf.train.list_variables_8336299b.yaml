@@ -1,0 +1,9 @@
+2 api_name: tensorflow.train.list_variables
+3 api_description: Lists the variable keys and tensor shapes stored in a checkpoint.
+4 api_signature: tf.train.list_variables(ckpt_dir_or_file)
+5 api_details: ''
+6 api_parameters:
+- ckpt_dir_or_file: Specifies the checkpoint directory or checkpoint file path to
+    inspect for variable names and shapes.
+7 api_usage_example: null
+8 api_shape: ''

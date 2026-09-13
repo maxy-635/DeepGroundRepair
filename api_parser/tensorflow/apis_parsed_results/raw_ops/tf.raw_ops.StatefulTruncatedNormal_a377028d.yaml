@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.StatefulTruncatedNormal
+3 api_description: Generates random values from a truncated normal distribution, resampling
+  values more than 2 standard deviations from the mean.
+4 api_signature: tf.raw_ops.StatefulTruncatedNormal(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor’s shape.
+- dtype: Sets the data type of the generated output values.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.identity_n
+3 api_description: Returns a list of tensors that are identical in shape and values
+  to the inputs, and can be used to override gradients during backpropagation.
+4 api_signature: tf.identity_n(input)
+5 api_details: ''
+6 api_parameters:
+- input: A list of tensors to return unchanged.
+7 api_usage_example: null
+8 api_shape: ''

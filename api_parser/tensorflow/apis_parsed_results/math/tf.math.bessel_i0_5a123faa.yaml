@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.bessel_i0
+3 api_description: Computes the modified Bessel function of the first kind of order
+  0 for each element of x, with i0e recommended for better numerical stability.
+4 api_signature: tf.math.bessel_i0(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the modified Bessel function of
+    the first kind, order 0.
+7 api_usage_example:
+- tf.math.special.bessel_i0([-1., -0.5, 0.5, 1.]).numpy()
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.preprocessing.text.one_hot
+3 api_description: Converts text to integer tokens by hashing each word into a fixed-size
+  vocabulary, producing a list of word indices suitable for simple one-hot-style encoding.
+4 api_signature: tf.keras.preprocessing.text.one_hot(input_text,n)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

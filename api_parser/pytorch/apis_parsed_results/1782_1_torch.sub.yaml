@@ -1,0 +1,12 @@
+2 api_name: torch.sub
+3 api_description: Subtracts `other` multiplied by `alpha` from `input`.
+4 api_signature: torch.sub(input,other,*,alpha)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be reduced by subtraction.
+- other: The tensor or scalar value to subtract from `input`.
+7 api_usage_example:
+- ' a = torch.tensor((1, 2))'
+- ' b = torch.tensor((0, 1))'
+- ' torch.sub(a, b, alpha=2)'
+8 api_shape: null

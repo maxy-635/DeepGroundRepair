@@ -1,0 +1,14 @@
+2 api_name: paddle.device.cuda.max_memory_reserved
+3 api_description: Returns the peak memory reserved by the allocator on the specified
+  CUDA device.
+4 api_signature: paddle.device.cuda.max_memory_reserved(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- 'paddle.device.set_device(''gpu'')  # or ''<custom_device>'''
+- max_memory_reserved_size = paddle.device.cuda.max_memory_reserved(paddle.CUDAPlace(0))
+- max_memory_reserved_size = paddle.device.cuda.max_memory_reserved(0)
+- max_memory_reserved_size = paddle.device.cuda.max_memory_reserved("gpu:0")
+8 api_shape: {}

@@ -1,0 +1,25 @@
+2 api_name: torch.nn.AvgPool2d
+3 api_description: Applies 2D average pooling to reduce the spatial dimensions of
+  input planes by computing the average value of each pooling window.
+4 api_signature: torch.nn.AvgPool2d(kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Defines the dimensions of the window used for averaging the input tensor.
+- stride: Specifies the step size for moving the window across the input tensor, defaulting
+    to the value of kernel_size if not provided.
+- padding: Indicates the amount of implicit zero padding to be added to both sides
+    of the input tensor before applying the pooling operation.
+7 api_usage_example:
+- ' # pool of square window of size=3, stride=2'
+- ' m = nn.AvgPool2d(3, stride=2)'
+- ' # pool of non-square window'
+- ' m = nn.AvgPool2d((3, 2), stride=(2, 1))'
+- ' input = torch.randn(20, 16, 50, 32)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

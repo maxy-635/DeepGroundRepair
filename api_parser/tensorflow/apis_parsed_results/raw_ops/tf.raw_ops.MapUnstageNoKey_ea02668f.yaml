@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.MapUnstageNoKey
+3 api_description: Removes and returns a random key-value pair from the container,
+  blocking until an element is available.
+4 api_signature: tf.raw_ops.MapUnstageNoKey(indices,dtypes,capacity)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies which map entries to unstage, using int32 index values.
+- dtypes: Defines the data types of the tensors to retrieve from the map.
+- capacity: Sets the optional maximum number of entries the map can hold, defaulting
+    to 0.
+7 api_usage_example: null
+8 api_shape: ''

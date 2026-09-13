@@ -1,0 +1,15 @@
+2 api_name: torch.nn.functional.grid_sample
+3 api_description: torch.nn.functional.grid_sample performs sampling of input tensors
+  using a grid of coordinates, allowing for operations like spatial transformations
+  and warping.
+4 api_signature: torch.nn.functional.grid_sample(input,grid,mode)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor containing the data to be sampled, with dimensions depending
+    on whether it is 4-D or 5-D.
+- grid: The flow-field tensor that defines the sampling grid, with dimensions indicating
+    the desired output size and sampling coordinates.
+- mode: The interpolation mode used to compute the output values, which can be 'bilinear',
+    'nearest', or 'bicubic'.
+7 api_usage_example: null
+8 api_shape: null

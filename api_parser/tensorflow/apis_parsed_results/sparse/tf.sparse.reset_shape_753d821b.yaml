@@ -1,0 +1,11 @@
+2 api_name: tensorflow.sparse.reset_shape
+3 api_description: Resets a SparseTensor’s shape without changing its indices or values,
+  either to its tight bounding box or to a larger provided shape.
+4 api_signature: tf.sparse.reset_shape(sp_input,new_shape)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The SparseTensor whose shape will be reset.
+- new_shape: The new shape to assign to the returned SparseTensor, or `None` to leave
+    it unspecified.
+7 api_usage_example: null
+8 api_shape: ''

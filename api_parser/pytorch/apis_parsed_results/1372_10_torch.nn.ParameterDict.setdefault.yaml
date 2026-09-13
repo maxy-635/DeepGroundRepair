@@ -1,0 +1,10 @@
+2 api_name: torch.nn.ParameterDict.setdefault
+3 api_description: Returns the parameter for a key if it exists; otherwise inserts
+  the provided default `Parameter` and returns it.
+4 api_signature: setdefault(key,default)
+5 api_details: ''
+6 api_parameters:
+- key: Specifies the dictionary key to look up or insert.
+- default: Provides the parameter to store if the key is missing.
+7 api_usage_example: null
+8 api_shape: null

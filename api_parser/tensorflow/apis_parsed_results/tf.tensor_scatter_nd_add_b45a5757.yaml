@@ -1,0 +1,19 @@
+2 api_name: tensorflow.tensor_scatter_nd_add
+3 api_description: Adds sparse updates to an existing tensor at the specified indices,
+  returning a new tensor with those values added.
+4 api_signature: tf.tensor_scatter_nd_add(tensor,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to be copied and updated.
+- indices: The integer index tensor that specifies where to apply each update.
+- updates: The tensor of values to scatter into the copied tensor at the given indices.
+7 api_usage_example:
+- indices = tf.constant([[0], [2]])
+- updates = tf.constant([[[5, 5, 5, 5], [6, 6, 6, 6],
+- '                        [7, 7, 7, 7], [8, 8, 8, 8]],'
+- '                       [[5, 5, 5, 5], [6, 6, 6, 6],'
+- '                        [7, 7, 7, 7], [8, 8, 8, 8]]])'
+- tensor = tf.ones([4, 4, 4],dtype=tf.int32)
+- updated = tf.tensor_scatter_nd_add(tensor, indices, updates)
+- updated
+8 api_shape: ''

@@ -1,0 +1,32 @@
+2 api_name: tensorflow.nn.max_pool2d
+3 api_description: tensorflow.nn.max_pool2d performs max pooling on 4D tensors representing
+  2D spatial data, reducing the spatial dimensions by taking the maximum value within
+  a defined window (ksize), shifted by specified strides. It supports padding strategies
+  like VALID, which excludes windows extending outside input boundaries.
+4 api_signature: tf.nn.max_pool2d(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the 4-D input tensor in the format defined by data_format.
+- ksize: Defines the size of the pooling window for each dimension of the input tensor,
+    with options for uniform or selective dimension application.
+- strides: Determines the stride of the sliding window for each dimension, with options
+    for uniform or selective dimension application.
+- padding: Indicates the padding strategy, either 'SAME', 'VALID', or explicit padding,
+    affecting the output size.
+7 api_usage_example:
+- x = tf.constant([[1., 2., 3., 4.],
+- '                 [5., 6., 7., 8.],'
+- '                 [9., 10., 11., 12.]])'
+- x = x[tf.newaxis, :, :, tf.newaxis]
+- result = tf.nn.max_pool2d(x, ksize=(2, 2), strides=(2, 2),
+- '                          padding=[[0, 0], [1, 1], [1, 1], [0, 0]])'
+- result[0, :, :, 0]
+8 api_shape:
+  input tensor shape: (N, Height_in, Width_in, Channel_in)
+  output tensor shape: (N, Height_out, Width_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor height: If padding = "VALID", Height_out = floor((Height_in - ksize_height) / strides_height + 1); 
+                  If padding = "SAME", Height_out = floor((Height_in - 1) / strides_height + 1)
+    tensor width: If padding = "VALID", Width_out = floor((Width_in - ksize_width) / strides_width + 1); 
+                  If padding = "SAME", Width_out = floor((Width_in - 1) / strides_width + 1)

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.errors.AbortedError
+3 api_description: Signals that an operation was aborted, usually because a concurrent
+  action interrupted it or made it invalid to continue.
+4 api_signature: tf.errors.AbortedError(message)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

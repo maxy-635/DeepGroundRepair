@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.XlaSparseDenseMatmulWithCsrInput
+3 api_description: Computes a sparse-dense matrix multiplication using CSR-formatted
+  sparse input via XLA acceleration.
+4 api_signature: tf.raw_ops.XlaSparseDenseMatmulWithCsrInput(row_pointers,sorted_sample_ids,sorted_token_ids,sorted_gains,embedding_table)
+5 api_details: ''
+6 api_parameters:
+- row_pointers: Defines the CSR row offsets that indicate where each sparse row begins
+    and ends.
+- sorted_sample_ids: Provides the sample IDs for the sparse entries in sorted order.
+- sorted_token_ids: Provides the token IDs for the sparse entries in sorted order.
+- sorted_gains: Provides the gain values or weights associated with each sparse entry
+    in sorted order.
+- embedding_table: Supplies the dense embedding matrix used to look up and multiply
+    token embeddings.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.image.non_max_suppression_overlaps
+3 api_description: Selects the highest-scoring bounding boxes while suppressing boxes
+  with excessive overlap, returning the indices of the chosen boxes.
+4 api_signature: tf.image.non_max_suppression_overlaps(overlaps,scores,max_output_size,overlap_threshold)
+5 api_details: ''
+6 api_parameters:
+- overlaps: Provides the pairwise box overlap matrix used to determine which boxes
+    suppress each other.
+- scores: Supplies the confidence score for each box so higher-scoring boxes are preferred.
+- max_output_size: Sets the maximum number of boxes the suppression step is allowed
+    to return.
+- overlap_threshold: Defines the overlap cutoff above which boxes are considered too
+    overlapping to keep together.
+7 api_usage_example: null
+8 api_shape: ''

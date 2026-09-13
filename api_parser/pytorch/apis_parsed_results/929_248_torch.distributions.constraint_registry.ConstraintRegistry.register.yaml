@@ -1,0 +1,14 @@
+2 api_name: torch.distributions.constraint_registry.ConstraintRegistry.register
+3 api_description: Registers a `Constraint` subclass with the registry so transforms
+  can be looked up and applied for that constraint.
+4 api_signature: register(constraint)
+5 api_details: ''
+6 api_parameters:
+- constraint: The constraint object or constraint class to associate with a transform
+    or handler.
+7 api_usage_example:
+- '@my_registry.register(MyConstraintClass)'
+- 'def construct_transform(constraint):'
+- '    assert isinstance(constraint, MyConstraint)'
+- '    return MyTransform(constraint.arg_constraints)'
+8 api_shape: null

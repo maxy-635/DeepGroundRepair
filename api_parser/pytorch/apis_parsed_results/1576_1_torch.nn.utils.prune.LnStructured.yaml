@@ -1,0 +1,12 @@
+2 api_name: torch.nn.utils.prune.LnStructured
+3 api_description: Prunes whole unpruned channels from a tensor by ranking them with
+  their Ln norm and removing the least important ones along a specified dimension.
+4 api_signature: torch.nn.utils.prune.LnStructured(amount,n,dim)
+5 api_details: ''
+6 api_parameters:
+- amount: Specifies how many channels to prune, either as a fraction of channels when
+    given as a float or as an absolute count when given as an int.
+- n: Sets the norm order used to rank channels for pruning.
+- dim: Chooses the dimension along which channels are defined for structured pruning.
+7 api_usage_example: null
+8 api_shape: null

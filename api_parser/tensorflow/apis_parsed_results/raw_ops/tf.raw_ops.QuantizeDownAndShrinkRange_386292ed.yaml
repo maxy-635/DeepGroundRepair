@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.QuantizeDownAndShrinkRange
+3 api_description: Shrinks a quantized tensor to a lower bit depth by using the data’s
+  actual min and max values to rescale the output range and preserve as much precision
+  as possible.
+4 api_signature: tf.raw_ops.QuantizeDownAndShrinkRange(input,input_min,input_max,out_type)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized tensor to be re-quantized into a lower-bit-depth range.
+- input_min: The floating-point value represented by the input tensor's minimum quantized
+    value.
+- input_max: The floating-point value represented by the input tensor's maximum quantized
+    value.
+- out_type: The desired output quantized dtype, which should use fewer bits than the
+    input type.
+7 api_usage_example: null
+8 api_shape: ''

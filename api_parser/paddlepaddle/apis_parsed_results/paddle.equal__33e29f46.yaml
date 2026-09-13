@@ -1,0 +1,8 @@
+2 api_name: paddle.equal_
+3 api_description: Compares x and y elementwise for equality, returning a Tensor;
+  this in-place variant writes the result into x.
+4 api_signature: paddle.equal_(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

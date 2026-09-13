@@ -1,0 +1,14 @@
+2 api_name: paddle.device.current_stream
+3 api_description: Returns the active stream for the current device.
+4 api_signature: paddle.device.current_stream(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.set_device('custom_cpu')
+- s1 = paddle.device.current_stream()
+- s2 = paddle.device.current_stream("custom_cpu:0")
+- place = paddle.CustomPlace('custom_cpu', 0)
+- s3 = paddle.device.current_stream(place)
+8 api_shape: {}

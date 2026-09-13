@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.StringToHashBucketStrong
+3 api_description: Hashes each input string deterministically with a keyed strong
+  hash and maps the result into one of a fixed number of buckets, providing better
+  resistance to adversarial collisions than faster hash options.
+4 api_signature: tf.raw_ops.StringToHashBucketStrong(input,num_buckets,key)
+5 api_details: ''
+6 api_parameters:
+- input: Strings to be hashed into buckets.
+- num_buckets: Number of hash buckets to assign the strings to.
+- key: Two-element uint64 seed used to initialize the hash function.
+7 api_usage_example:
+- tf.strings.to_hash_bucket_strong(["Hello", "TF"], 3, [1, 2]).numpy()
+8 api_shape: ''

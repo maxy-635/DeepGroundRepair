@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.HistogramFixedWidth
+3 api_description: Computes a 1D histogram by counting how many values fall into each
+  equal-width bin over a specified range.
+4 api_signature: tf.raw_ops.HistogramFixedWidth(values,value_range,nbins)
+5 api_details: ''
+6 api_parameters:
+- values: The numeric tensor whose elements are counted into histogram bins.
+- value_range: A length-2 tensor that sets the lower and upper bounds for binning,
+    clamping values below or above the range to the edge bins.
+- nbins: A scalar int32 tensor specifying how many bins to use in the histogram.
+7 api_usage_example: null
+8 api_shape: ''

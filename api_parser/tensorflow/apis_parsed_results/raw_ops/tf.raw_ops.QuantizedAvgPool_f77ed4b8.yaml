@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.QuantizedAvgPool
+3 api_description: Computes average pooling on a quantized input tensor and returns
+  a quantized output.
+4 api_signature: tf.raw_ops.QuantizedAvgPool(input,ksize,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D quantized input tensor to be average pooled over batch, height, width,
+    and channels.
+- ksize: Specifies the pooling window size for each of the 4 input dimensions.
+- strides: Specifies the sliding-window step size for each of the 4 input dimensions.
+- padding: Chooses how to pad the input at the borders, using `SAME` or `VALID`.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.relu
+3 api_description: Applies the ReLU activation function, setting negative values to
+  zero while keeping positive values unchanged.
+4 api_signature: torch.nn.functional.relu(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the ReLU activation function is applied.
+- inplace: If set to True, modifies the input tensor in-place without allocating new
+    memory.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

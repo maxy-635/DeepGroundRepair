@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.DataServiceDatasetV2
+3 api_description: Creates a dataset that consumes elements from the tf.data service.
+4 api_signature: tf.raw_ops.DataServiceDatasetV2(dataset_id,processing_mode,address,output_types,output_shapes,name)
+5 api_details: ''
+6 api_parameters:
+- dataset_id: Specifies the integer ID of the dataset to read from the tf.data service.
+- processing_mode: Indicates how the data service should distribute or process the
+    dataset.
+- address: Provides the string address of the tf.data service worker or dispatcher
+    to connect to.
+- output_types: Defines the data types of the dataset elements produced by the operation.
+- output_shapes: Defines the shapes of the dataset elements produced by the operation.
+- name: Optionally assigns a name to the operation for graph construction and debugging.
+7 api_usage_example: null
+8 api_shape: ''

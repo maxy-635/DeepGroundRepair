@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.constrain_unify
+3 api_description: Constrain two SymInts to be equal, for simple symbolic integers
+  only.
+4 api_signature: '"constrain_unify(a,b)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

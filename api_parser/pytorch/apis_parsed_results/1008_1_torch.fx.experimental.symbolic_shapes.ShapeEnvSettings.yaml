@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnvSettings
+3 api_description: Groups ShapeEnv configuration that can affect FakeTensor dispatch
+  so it can be included in dispatch cache keys.
+4 api_signature: torch.fx.experimental.symbolic_shapes.ShapeEnvSettings(assume_static_by_default,specialize_zero_one,duck_shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

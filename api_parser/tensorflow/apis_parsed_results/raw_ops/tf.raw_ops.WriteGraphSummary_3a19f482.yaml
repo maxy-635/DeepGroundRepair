@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.WriteGraphSummary
+3 api_description: Writes a TensorFlow graph summary at a given step using a summary
+  writer.
+4 api_signature: tf.raw_ops.WriteGraphSummary(writer,step,tensor)
+5 api_details: ''
+6 api_parameters:
+- writer: The resource handle for the writer used to record the graph summary.
+- step: The training step value associated with the summary event.
+- tensor: The serialized graph summary data to be written.
+7 api_usage_example: null
+8 api_shape: ''

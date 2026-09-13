@@ -1,0 +1,9 @@
+2 api_name: paddle.t
+3 api_description: Returns the input tensor unchanged if it is 0-D or 1-D; for 2-D
+  tensors, it swaps the first two dimensions like `paddle.transpose`.
+4 api_signature: paddle.t(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the input data to be processed.
+7 api_usage_example: []
+8 api_shape: {}

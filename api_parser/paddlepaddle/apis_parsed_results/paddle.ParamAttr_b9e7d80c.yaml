@@ -1,0 +1,25 @@
+2 api_name: paddle.ParamAttr
+3 api_description: Defines parameter attributes for Paddle variables, such as name,
+  initializer, learning-rate multiplier, regularizer, and gradient settings, to control
+  how model parameters are created and updated.
+4 api_signature: paddle.ParamAttr(name,initializer,learning_rate,regularizer,trainable)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the parameter name, or lets Paddle auto-generate one if None.
+- initializer: Specifies how the parameter is initialized, defaulting to Xavier for
+    weights and zero for bias.
+- learning_rate: Scales this parameter’s effective learning rate during optimization.
+- regularizer: Applies optional L1 or L2 regularization to the parameter.
+- trainable: Controls whether the parameter is updated during training.
+7 api_usage_example:
+- import paddle
+- weight_attr = paddle.ParamAttr(
+- '    name="weight",'
+- '    learning_rate=0.5,'
+- '    regularizer=paddle.regularizer.L2Decay(1.0),'
+- '    trainable=True,'
+- )
+- print(weight_attr.name)
+- weight
+- paddle.nn.Linear(3, 4, weight_attr=weight_attr)
+8 api_shape: {}

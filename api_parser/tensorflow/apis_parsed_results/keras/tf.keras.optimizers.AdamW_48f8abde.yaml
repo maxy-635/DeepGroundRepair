@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.optimizers.AdamW
+3 api_description: Adaptive optimizer that combines Adam’s first- and second-moment
+  gradient estimates with decoupled weight decay for efficient training and improved
+  regularization.
+4 api_signature: tf.keras.optimizers.AdamW(learning_rate,weight_decay,beta_1,beta_2,epsilon,amsgrad)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update model weights during optimization.
+- beta_1: Controls how quickly the first-moment estimate of gradients decays over
+    time.
+- beta_2: Controls how quickly the second-moment estimate of squared gradients decays
+    over time.
+- epsilon: Adds a small constant to improve numerical stability during division.
+- amsgrad: Enables the AMSGrad variant, which uses a nondecreasing second-moment estimate
+    for updates.
+- weight_decay: Applies weight decay to gradually shrink model weights during training.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: paddle.full_like
+3 api_description: Create a tensor with the same shape as `x`, filled with `fill_value`,
+  using `x`'s dtype unless `dtype` is specified.
+4 api_signature: paddle.full_like(x,fill_value,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the reference tensor whose shape and data type determine the output
+    tensor.
+- fill_value: Specifies the value used to fill every element of the output tensor.
+- dtype: Sets the output tensor’s data type, or defaults to the input tensor’s data
+    type when `None`.
+7 api_usage_example:
+- import paddle
+- input = paddle.full(shape=[2, 3], fill_value=0.0, dtype='float32', name='input')
+- output = paddle.full_like(input, 2.0)
+- print(output.numpy())
+- '[[2. 2. 2.]'
+- '[2. 2. 2.]]'
+8 api_shape: {}

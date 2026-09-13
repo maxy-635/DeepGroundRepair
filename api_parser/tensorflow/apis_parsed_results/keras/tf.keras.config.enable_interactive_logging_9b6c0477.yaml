@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.config.enable_interactive_logging
+3 api_description: Enables Keras interactive logging so training logs are printed
+  to stdout for a better experience in shells and notebooks.
+4 api_signature: tf.keras.config.enable_interactive_logging()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

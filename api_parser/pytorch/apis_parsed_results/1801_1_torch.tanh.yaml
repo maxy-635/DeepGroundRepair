@@ -1,0 +1,12 @@
+2 api_name: torch.tanh
+3 api_description: Computes the hyperbolic tangent of each element in the input tensor
+  and returns a new tensor.
+4 api_signature: torch.tanh(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are passed through the hyperbolic tangent function.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.tanh(a)'
+8 api_shape: null

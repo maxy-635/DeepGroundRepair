@@ -1,0 +1,20 @@
+2 api_name: torch.nn.functional.binary_cross_entropy
+3 api_description: The torch.nn.functional.binary_cross_entropy function computes
+  the binary cross-entropy loss between input probabilities and target labels, measuring
+  the dissimilarity between predicted probabilities and true binary outcomes.
+4 api_signature: torch.nn.functional.binary_cross_entropy(input,target,weight,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: A tensor representing predicted probabilities with arbitrary shape.
+- target: A tensor of the same shape as input, containing target values between 0
+    and 1.
+- weight: An optional tensor for rescaling the loss, repeated to match the input tensor
+    shape if provided.
+- reduction: 'Specifies how to reduce the output: ''none'' for no reduction, ''mean''
+    for averaging, or ''sum'' for summation.'
+7 api_usage_example:
+- ' input = torch.randn(3, 2, requires_grad=True)'
+- ' target = torch.rand(3, 2, requires_grad=False)'
+- ' loss = F.binary_cross_entropy(torch.sigmoid(input), target)'
+- ' loss.backward()'
+8 api_shape: null

@@ -1,0 +1,21 @@
+2 api_name: tensorflow.keras.layers.ConvLSTM2D
+3 api_description: ConvLSTM2D is a layer that combines convolutional operations with
+  LSTM functionality, allowing it to process spatiotemporal data by applying convolutional
+  filters to both input data and hidden states, making it suitable for tasks like
+  video analysis.
+4 api_signature: tf.keras.layers.ConvLSTM2D(filters, kernel_size, padding, activation,
+  return_sequences, stateful)
+5 api_details: ''
+6 api_parameters:
+- filters: Defines the number of filters in the convolution, determining the dimensionality
+    of the output.
+- kernel_size: Specifies the height and width of the 2D convolution window.
+- padding: Determines the padding method used, either 'valid' for no padding or 'same'
+    for equal padding to maintain input dimensions.
+- activation: Specifies the activation function to apply, with tanh as the default.
+- return_sequences: Indicates whether to return the full sequence of outputs or just
+    the last output.
+- stateful: Indicates if the last state of each sample in a batch should be used as
+    the initial state for the next batch.
+7 api_usage_example: null
+8 api_shape: null

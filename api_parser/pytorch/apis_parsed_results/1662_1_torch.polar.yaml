@@ -1,0 +1,17 @@
+2 api_name: torch.polar
+3 api_description: Creates a complex tensor from magnitude and phase, converting polar
+  coordinates to Cartesian form.
+4 api_signature: torch.polar(abs,angle)
+5 api_details: ''
+6 api_parameters:
+- abs: Specifies the magnitude of the complex tensor, and must be a float or double
+    tensor.
+- angle: Specifies the phase angle of the complex tensor, and must have the same dtype
+    as `abs`.
+7 api_usage_example:
+- ' import numpy as np'
+- ' abs = torch.tensor([1, 2], dtype=torch.float64)'
+- ' angle = torch.tensor([np.pi / 2, 5 * np.pi / 4], dtype=torch.float64)'
+- ' z = torch.polar(abs, angle)'
+- ' z'
+8 api_shape: null

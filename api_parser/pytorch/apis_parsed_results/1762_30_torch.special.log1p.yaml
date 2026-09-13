@@ -1,0 +1,8 @@
+2 api_name: torch.special.log1p
+3 api_description: Computes the natural logarithm of 1 plus each element in the input
+  tensor.
+4 api_signature: torch.special.log1p(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

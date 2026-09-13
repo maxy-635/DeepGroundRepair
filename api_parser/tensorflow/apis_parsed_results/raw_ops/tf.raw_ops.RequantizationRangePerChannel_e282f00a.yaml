@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RequantizationRangePerChannel
+3 api_description: Computes per-channel requantization min and max values for a tensor,
+  based on its input range and scaling factors.
+4 api_signature: tf.raw_ops.RequantizationRangePerChannel(input,input_min,input_max)
+5 api_details: ''
+6 api_parameters:
+- input: The original quantized input tensor whose values will be analyzed for requantization
+    range computation.
+- input_min: The floating-point minimum value associated with the input tensor.
+- input_max: The floating-point maximum value associated with the input tensor.
+7 api_usage_example: null
+8 api_shape: ''

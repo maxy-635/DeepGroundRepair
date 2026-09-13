@@ -1,0 +1,18 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_histogram
+3 api_description: Logs a histogram of numeric values to TensorBoard for visualizing
+  their distribution over time.
+4 api_signature: add_histogram(tag,values,global_step)
+5 api_details: ''
+6 api_parameters:
+- tag: Names the histogram data being logged.
+- values: Provides the numeric values used to construct the histogram.
+- global_step: Records the training step or iteration associated with the histogram.
+7 api_usage_example:
+- from torch.utils.tensorboard import SummaryWriter
+- import numpy as np
+- writer = SummaryWriter()
+- 'for i in range(10):'
+- '    x = np.random.random(1000)'
+- '    writer.add_histogram(''distribution centers'', x + i, i)'
+- writer.close()
+8 api_shape: null

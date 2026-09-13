@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.PriorityQueueV2
+3 api_description: Creates a priority queue that orders elements by an int64 scalar
+  first component, with enqueue/dequeue operations requiring one extra priority value
+  alongside the declared component types.
+4 api_signature: tf.raw_ops.PriorityQueueV2(shapes,component_types,capacity)
+5 api_details: ''
+6 api_parameters:
+- shapes: Specifies the shape of each component in queued values, or leaves values
+    unconstrained if empty.
+- component_types: Specifies the data type of each component in queued values.
+- capacity: Sets the maximum number of elements the queue can hold, with negative
+    values meaning unlimited capacity.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.hub.list
+3 api_description: Lists all callable entrypoints exposed by a GitHub repo via `torch.hub`,
+  helping you discover available model or utility functions you can load and run.
+4 api_signature: torch.hub.list(github,force_reload)
+5 api_details: ''
+6 api_parameters:
+- github: Specifies the GitHub repository to load from, with an optional ref such
+    as a tag or branch.
+- force_reload: Forces a fresh download by ignoring any existing cached copy.
+7 api_usage_example:
+- ' entrypoints = torch.hub.list("pytorch/vision", force_reload=True)'
+8 api_shape: null

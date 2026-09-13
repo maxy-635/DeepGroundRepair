@@ -1,0 +1,10 @@
+2 api_name: tensorflow.experimental.dlpack.from_dlpack
+3 api_description: Converts a DLPack capsule from another framework into a TensorFlow
+  eager tensor that shares the capsule’s underlying memory.
+4 api_signature: tf.experimental.dlpack.from_dlpack(dlcapsule)
+5 api_details: ''
+6 api_parameters:
+- dlcapsule: A PyCapsule containing a DLPack tensor (`dltensor`) to convert into a
+    TensorFlow tensor.
+7 api_usage_example: null
+8 api_shape: ''

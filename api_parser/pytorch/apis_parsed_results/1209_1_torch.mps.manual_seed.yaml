@@ -1,0 +1,9 @@
+2 api_name: torch.mps.manual_seed
+3 api_description: Sets the random seed for PyTorch MPS operations to make random
+  number generation reproducible.
+4 api_signature: torch.mps.manual_seed(seed)
+5 api_details: ''
+6 api_parameters:
+- seed: Sets the desired seed for PyTorch's MPS random number generators.
+7 api_usage_example: null
+8 api_shape: null

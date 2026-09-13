@@ -1,0 +1,10 @@
+2 api_name: paddle.meshgrid
+3 api_description: Creates N-dimensional coordinate grids from a list of 1D input
+  tensors.
+4 api_signature: paddle.meshgrid(args,indexing)
+5 api_details: ''
+6 api_parameters:
+- indexing: 'Chooses the output coordinate ordering: `xy` swaps the first two dimensions
+    for Cartesian-style grids, while `ij` keeps dimensions in input order.'
+7 api_usage_example: []
+8 api_shape: {}

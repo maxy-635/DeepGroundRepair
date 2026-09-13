@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.DimConstraints.add
+3 api_description: Adds a new symbolic shape expression to the constraint set for
+  later validation or reasoning.
+4 api_signature: add(expr)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

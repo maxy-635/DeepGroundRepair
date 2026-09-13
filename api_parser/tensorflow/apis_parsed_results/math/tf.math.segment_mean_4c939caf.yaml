@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.segment_mean
+3 api_description: Computes the mean of data values within each segment ID, returning
+  0 for segments with no values.
+4 api_signature: tf.math.segment_mean(data,segment_ids)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are grouped and averaged by segment.
+- segment_ids: A 1-D tensor of sorted, possibly repeated segment labels that assigns
+    each row of `data` to a segment.
+7 api_usage_example:
+- c = tf.constant([[1.0,2,3,4], [4, 3, 2, 1], [5,6,7,8]])
+- tf.math.segment_mean(c, tf.constant([0, 0, 1])).numpy()
+8 api_shape: ''

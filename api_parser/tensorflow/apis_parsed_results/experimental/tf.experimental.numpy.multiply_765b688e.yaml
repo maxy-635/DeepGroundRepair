@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.multiply
+3 api_description: Element-wise multiplies two inputs, following NumPy semantics,
+  and returns the product as a TensorFlow tensor.
+4 api_signature: tf.experimental.numpy.multiply(x1,x2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

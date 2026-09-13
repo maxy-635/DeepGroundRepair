@@ -1,0 +1,30 @@
+2 api_name: paddle.argmax
+3 api_description: Returns the indices of the maximum values in a tensor along the
+  specified axis.
+4 api_signature: paddle.argmax(x,axis,keepdim,dtype)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose maximum values’ indices will be found.
+- axis: The axis along which to compute the index of the maximum value, or flatten
+    the tensor when `None`.
+- keepdim: Controls whether the reduced axis is retained as a size-1 dimension in
+    the output.
+- dtype: Specifies the integer type of the output indices tensor.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[5,8,9,5],
+- '                      [0,0,1,7],'
+- '                      [6,9,2,4]])'
+- out1 = paddle.argmax(x)
+- print(out1.numpy())
+- '2'
+- out2 = paddle.argmax(x, axis=0)
+- print(out2.numpy())
+- '[2 2 0 1]'
+- out3 = paddle.argmax(x, axis=-1)
+- print(out3.numpy())
+- '[2 3 1]'
+- out4 = paddle.argmax(x, axis=0, keepdim=True)
+- print(out4.numpy())
+- '[[2 2 0 1]]'
+8 api_shape: {}

@@ -1,0 +1,19 @@
+2 api_name: paddle.static.nn.row_conv
+3 api_description: Applies a row convolution over a sequence by sliding a fixed-size
+  window across time steps, combining neighboring rows to produce an output feature
+  map in Paddle's static graph.
+4 api_signature: paddle.static.nn.row_conv(input,future_context_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- '# for DenseTensor inputs'
+- import paddle
+- paddle.enable_static()
+- x = paddle.static.data(name='x', shape=[9, 16],
+- '                    dtype=''float32'', lod_level=1)'
+- out_x = paddle.static.nn.row_conv(input=x, future_context_size=2)
+- '# for Tensor inputs'
+- y = paddle.static.data(name='y', shape=[9, 4, 16], dtype='float32')
+- out_y = paddle.static.nn.row_conv(input=y, future_context_size=2)
+8 api_shape: {}

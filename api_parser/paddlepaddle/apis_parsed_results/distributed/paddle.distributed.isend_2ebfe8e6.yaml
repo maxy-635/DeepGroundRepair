@@ -1,0 +1,23 @@
+2 api_name: paddle.distributed.isend
+3 api_description: Asynchronously sends a tensor to another process and returns immediately
+  without waiting for the transfer to complete.
+4 api_signature: paddle.distributed.isend(tensor,dst)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor whose data is sent to another rank.
+- dst: The rank that will receive the tensor.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data = paddle.to_tensor([7, 8, 9])'
+- '    task = dist.isend(data, dst=1)'
+- 'else:'
+- '    data = paddle.to_tensor([1, 2, 3])'
+- '    task = dist.irecv(data, src=0)'
+- 'task.wait()  # type: ignore[union-attr]'
+- print(data)
+- '# [7, 8, 9] (2 GPUs)'
+8 api_shape: {}

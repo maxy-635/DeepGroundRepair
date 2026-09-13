@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.EncodeWav
+3 api_description: Encodes a 2-D float audio tensor and sample rate into 16-bit PCM
+  WAV file data, clamping samples to the -1.0 to 1.0 range.
+4 api_signature: tf.raw_ops.EncodeWav(audio,sample_rate)
+5 api_details: ''
+6 api_parameters:
+- audio: The 2-D float32 audio data to encode, organized as [length, channels].
+- sample_rate: The scalar int32 sample rate that specifies the audio’s sampling frequency.
+7 api_usage_example: null
+8 api_shape: ''

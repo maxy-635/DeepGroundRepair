@@ -1,0 +1,22 @@
+2 api_name: tensorflow.raw_ops.ParseExampleV2
+3 api_description: Parses a batch of serialized tf.Example protos into typed tensors
+  based on provided feature descriptions, producing sparse, dense, and ragged outputs.
+4 api_signature: tf.raw_ops.ParseExampleV2(serialized,sparse_keys,dense_keys,ragged_keys,dense_defaults,sparse_types,ragged_value_types,ragged_split_types,dense_shapes)
+5 api_details: ''
+6 api_parameters:
+- serialized: Binary serialized `Example` protos to parse, provided as a scalar or
+    vector string tensor.
+- sparse_keys: Feature keys whose values should be extracted as sparse outputs.
+- dense_keys: Feature keys whose values should be extracted as dense outputs.
+- ragged_keys: Feature keys whose values should be extracted as ragged outputs.
+- dense_defaults: Default tensors for dense features when a key is missing, and they
+    also define the inferred input dtype.
+- sparse_types: Data types of the sparse feature values to parse for each sparse key.
+- ragged_value_types: Data types of the ragged feature values to parse for each ragged
+    key.
+- ragged_split_types: Data types of the row-split tensors used to represent each ragged
+    feature.
+- dense_shapes: Shapes of each dense feature, which determine the shape of the parsed
+    dense output tensors.
+7 api_usage_example: null
+8 api_shape: ''

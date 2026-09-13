@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.UniformRequantize
+3 api_description: Requantizes a quantized tensor from one set of scales, zero points,
+  and quantization bounds to another by rescaling, re-centering, and clipping the
+  values.
+4 api_signature: tf.raw_ops.UniformRequantize(input,input_scales,input_zero_points,output_scales,output_zero_points,Tout,name)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized tensor to be requantized.
+- input_scales: The scale values that describe how the input tensor was originally
+    quantized.
+- input_zero_points: The zero-point values that describe how the input tensor was
+    originally quantized.
+- output_scales: The scale values to use for the new quantization format.
+- output_zero_points: The zero-point values to use for the new quantization format.
+- Tout: The data type of the output quantized tensor.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

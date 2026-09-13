@@ -1,0 +1,18 @@
+2 api_name: torch.futures.collect_all
+3 api_description: Combines multiple Future objects into one Future that completes
+  when all of them finish.
+4 api_signature: torch.futures.collect_all(futures)
+5 api_details: ''
+6 api_parameters:
+- futures: The list of Future objects to wait on and collect into a single future
+    result.
+7 api_usage_example:
+- ' fut0 = torch.futures.Future()'
+- ' fut1 = torch.futures.Future()'
+- ' fut = torch.futures.collect_all([fut0, fut1])'
+- ' fut0.set_result(0)'
+- ' fut1.set_result(1)'
+- ' fut_list = fut.wait()'
+- ' print(f"fut0 result = {fut_list[0].wait()}")'
+- ' print(f"fut1 result = {fut_list[1].wait()}")'
+8 api_shape: null

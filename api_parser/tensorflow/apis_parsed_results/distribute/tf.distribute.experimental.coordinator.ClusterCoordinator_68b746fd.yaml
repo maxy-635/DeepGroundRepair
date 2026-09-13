@@ -1,0 +1,12 @@
+2 api_name: tensorflow.distribute.experimental.coordinator.ClusterCoordinator
+3 api_description: Coordinates asynchronous, fault-tolerant execution of tf.function
+  tasks across workers for tf.distribute.experimental.ParameterServerStrategy, using
+  schedule/join to queue work remotely, return RemoteValues immediately, and continue
+  training through worker or coordinator failures with checkpoint-based recovery.
+4 api_signature: tf.distribute.experimental.coordinator.ClusterCoordinator(strategy)
+5 api_details: ''
+6 api_parameters:
+- strategy: The distributed strategy instance used to coordinate and schedule work,
+    currently limited to `tf.distribute.experimental.ParameterServerStrategy`.
+7 api_usage_example: null
+8 api_shape: ''

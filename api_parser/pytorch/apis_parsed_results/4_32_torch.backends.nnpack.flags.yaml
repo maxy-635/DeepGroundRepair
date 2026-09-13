@@ -1,0 +1,8 @@
+2 api_name: torch.backends.nnpack.flags
+3 api_description: Context manager that temporarily enables or disables NNPACK globally
+  within its scope.
+4 api_signature: torch.backends.nnpack.flags(enabled)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

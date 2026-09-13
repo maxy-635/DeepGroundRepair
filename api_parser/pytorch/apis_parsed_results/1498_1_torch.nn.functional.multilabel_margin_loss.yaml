@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.multilabel_margin_loss
+3 api_description: torch.nn.functional.multilabel_margin_loss computes the multilabel
+  margin loss between input and target tensors, enforcing a margin between correct
+  and incorrect class scores for multilabel classification tasks.
+4 api_signature: torch.nn.functional.multilabel_margin_loss(input,target,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the predicted values for the multilabel classification task.
+- target: Represents the ground truth labels for the multilabel classification task.
+- reduction: 'Determines how the output loss is aggregated: ''none'' for no reduction,
+    ''mean'' for averaging, and ''sum'' for summing the losses.'
+7 api_usage_example: null
+8 api_shape: null

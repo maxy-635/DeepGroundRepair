@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.MergeV2Checkpoints
+3 api_description: Merges the metadata for sharded TensorFlow v2 checkpoints into
+  one logical checkpoint, optionally deleting the original directories and tolerating
+  missing files if configured.
+4 api_signature: tf.raw_ops.MergeV2Checkpoints(checkpoint_prefixes,destination_prefix)
+5 api_details: ''
+6 api_parameters:
+- checkpoint_prefixes: A string tensor listing the prefixes of the V2 checkpoints
+    that should be merged.
+- destination_prefix: A scalar string tensor specifying the final checkpoint prefix
+    to write the merged result to, and it may match one of the input prefixes.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,22 @@
+2 api_name: paddle.distribution.AffineTransform
+3 api_description: Applies an affine transform that maps x to y = loc + scale * x,
+  shifting by loc and scaling by scale.
+4 api_signature: paddle.distribution.AffineTransform(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the additive offset applied to the input.
+- scale: Sets the multiplicative factor applied to the input.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1., 2.])
+- affine = paddle.distribution.AffineTransform(paddle.to_tensor(0.), paddle.to_tensor(1.))
+- print(affine.forward(x))
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1., 2.])'
+- print(affine.inverse(affine.forward(x)))
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1., 2.])'
+- print(affine.forward_log_det_jacobian(x))
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.)
+8 api_shape: {}

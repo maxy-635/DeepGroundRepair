@@ -1,0 +1,11 @@
+2 api_name: torch.optim.lr_scheduler.CosineAnnealingWarmRestarts.load_state_dict
+3 api_description: Restore the scheduler’s internal state from a saved state dictionary
+  so training can resume with the same restart cycle, step count, and learning-rate
+  schedule.
+4 api_signature: load_state_dict(state_dict)
+5 api_details: ''
+6 api_parameters:
+- state_dict: Restores the scheduler’s internal state from a previously saved `state_dict()`
+    object.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: torch.distributed.checkpoint.state_dict.set_model_state_dict
+3 api_description: Loads a model’s state dict from checkpoint data into the model,
+  using distributed checkpoint utilities to map and apply parameters correctly.
+4 api_signature: torch.distributed.checkpoint.state_dict.set_model_state_dict(model,model_state_dict,*,options)
+5 api_details: ''
+6 api_parameters:
+- model: The target `nn.Module` whose weights and submodules will be updated from
+    the provided state dict.
+- model_state_dict: The state dictionary to load into the model, optionally including
+    submodule entries whose prefixes are applied during loading.
+- options: Configuration controlling how the model and optimizer state dicts are loaded.
+7 api_usage_example: null
+8 api_shape: null

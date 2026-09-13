@@ -1,0 +1,15 @@
+2 api_name: torch.distributed.algorithms.ddp_comm_hooks.powerSGD_hook.powerSGD_hook
+3 api_description: Implements the PowerSGD communication hook for DDP by compressing
+  gradient tensors with low-rank approximations to reduce communication overhead during
+  distributed training.
+4 api_signature: powerSGD_hook(state,bucket)
+5 api_details: ''
+6 api_parameters:
+- state: Holds PowerSGD hook settings and runtime state such as compression rate,
+    error feedback, warm start, and related tuning parameters.
+- bucket: Contains the flattened gradient tensor for a DDP bucket, which in this single-tensor
+    mode is the tensor to be compressed and communicated.
+7 api_usage_example:
+- ' state = PowerSGDState(process_group=process_group, matrix_approximation_rank=1,'
+- ' ddp_model.register_comm_hook(state, powerSGD_hook)'
+8 api_shape: null

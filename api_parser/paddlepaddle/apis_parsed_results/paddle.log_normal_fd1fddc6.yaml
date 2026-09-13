@@ -1,0 +1,31 @@
+2 api_name: paddle.log_normal
+3 api_description: Returns a Tensor of random values sampled from a log-normal distribution
+  parameterized by mean and std.
+4 api_signature: paddle.log_normal(mean,std,shape)
+5 api_details: ''
+6 api_parameters:
+- mean: Sets the mean of the normal distribution used to generate the tensor values,
+    either as a single shared float or per-element tensor values.
+- std: Sets the standard deviation of the normal distribution used to generate the
+    tensor values, either as a single shared float or per-element tensor values.
+- shape: Specifies the output tensor shape, unless `mean` or `std` is a tensor in
+    which case that tensor’s shape is used instead.
+7 api_usage_example:
+- import paddle
+- paddle.seed(200)
+- out1 = paddle.log_normal(shape=[2, 3])
+- print(out1)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[4.01107359 , 3.53824377 , 25.79078865],'
+- '[0.83332109 , 0.40513405 , 2.09763741 ]])'
+- mean_tensor = paddle.to_tensor([1.0, 2.0, 3.0])
+- out2 = paddle.log_normal(mean=mean_tensor)
+- print(out2)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[4.45330524 , 0.57903880 , 31.82369995])'
+- std_tensor = paddle.to_tensor([1.0, 2.0, 3.0])
+- out3 = paddle.log_normal(mean=mean_tensor, std=std_tensor)
+- print(out3)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[10.31321430, 8.97369766 , 35.76752090])'
+8 api_shape: {}

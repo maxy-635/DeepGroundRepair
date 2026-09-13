@@ -1,0 +1,12 @@
+2 api_name: torch.mtia.Stream.wait_event
+3 api_description: Blocks future work on a stream until the specified event has occurred.
+4 api_signature: wait_event(event)
+5 api_details: ''
+6 api_parameters:
+- event: The event object to wait on until it has been recorded or signaled.
+7 api_usage_example:
+- ' s1_cuda = torch.Stream(device=''cuda'')'
+- ' s2_cuda = torch.Stream(device=''cuda'')'
+- ' e_cuda = s1_cuda.record_event()'
+- ' s2_cuda.wait_event(e_cuda)'
+8 api_shape: null

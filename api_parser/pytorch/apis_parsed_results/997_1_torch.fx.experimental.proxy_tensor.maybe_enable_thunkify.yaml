@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.proxy_tensor.maybe_enable_thunkify
+3 api_description: Context manager that lazily thunkifies SymNode computations during
+  make_fx tracing, avoiding tracing them into the graph unless needed; useful as a
+  workaround for proxy-tracking bugs, but can create deep thunk chains.
+4 api_signature: '"torch.fx.experimental.proxy_tensor.maybe_enable_thunkify()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.image.rgb_to_grayscale
+3 api_description: Converts RGB images to grayscale for 3D or 4D tensors by transforming
+  the last channel dimension into a single grayscale channel.
+4 api_signature: tf.keras.ops.image.rgb_to_grayscale(image)
+5 api_details: ''
+6 api_parameters:
+- image: Provides the RGB image or batch of RGB images to convert to grayscale.
+7 api_usage_example:
+- x = np.random.random((2, 3, 4, 4))
+- y = ops.image.rgb_to_grayscale(x, data_format="channels_first")
+- y.shape
+8 api_shape: ''

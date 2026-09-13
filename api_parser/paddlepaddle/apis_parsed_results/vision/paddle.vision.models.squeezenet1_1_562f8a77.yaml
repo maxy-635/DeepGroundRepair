@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.squeezenet1_1
+3 api_description: Loads the PaddlePaddle SqueezeNet v1.1 image classification model
+  for efficient CNN-based feature extraction and prediction with very small parameter
+  and model size.
+4 api_signature: paddle.vision.models.squeezenet1_1(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet-pretrained weights.
+7 api_usage_example: []
+8 api_shape: {}

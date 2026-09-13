@@ -1,0 +1,34 @@
+2 api_name: paddle.static.nn.conv2d
+3 api_description: Applies a 2D convolution to an NCHW or NHWC input tensor using
+  learnable filters, with optional bias, stride, padding, dilation, groups, and data
+  format control.
+4 api_signature: paddle.static.nn.conv2d(input,num_filters,filter_size,stride,padding,groups,bias_attr,use_cudnn,act,name,data_format)
+5 api_details: ''
+6 api_parameters:
+- input: 4-D input tensor in NCHW or NHWC format containing the data to convolve.
+- num_filters: Sets the number of convolution filters and therefore the output channel
+    count.
+- filter_size: Specifies the height and width of the convolution kernel.
+- stride: Specifies how far the kernel moves each step during convolution.
+- padding: Specifies zero-padding around the input, either by algorithm name or explicit
+    pad sizes.
+- groups: Divides input and filters into groups for grouped convolution.
+- bias_attr: Controls whether and how the convolution bias parameter is created and
+    initialized.
+- use_cudnn: Chooses whether to use cuDNN acceleration when available.
+- act: Applies an optional activation function after convolution.
+- name: Assigns an optional name to the operator or layer.
+- data_format: Defines the layout of input and output tensor dimensions.
+7 api_usage_example:
+- '>>>'
+- '# set env var before import paddle to disable pir mode, following example code
+  use os module.'
+- import os
+- os.environ['FLAGS_enable_pir_api'] = '0'
+- import paddle
+- paddle.enable_static()
+- data = paddle.static.data(name='data', shape=[None, 3, 32, 32], dtype='float32')
+- conv2d = paddle.static.nn.conv2d(input=data, num_filters=2, filter_size=3, act="relu")
+- print(conv2d.shape)
+- (-1, 2, 30, 30)
+8 api_shape: {}

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.image.extract_patches
+3 api_description: Extracts sliding, possibly dilated, image patches and stacks each
+  flattened patch in the last dimension of a 4D output tensor, with padding controlling
+  which patch positions are included.
+4 api_signature: tf.image.extract_patches(images,sizes,strides,rates,padding)
+5 api_details: ''
+6 api_parameters:
+- images: The input 4-D image tensor from which patches are extracted.
+- sizes: Specifies the patch height and width to extract, with batch and depth dimensions
+    fixed at 1.
+- strides: Specifies how far apart the centers of neighboring patches are in the input
+    image.
+- rates: Specifies the dilation rate for sampling within each patch, effectively spacing
+    patch elements farther apart.
+- padding: Chooses the padding mode used when patches extend beyond the image boundaries.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: torch.package.PackageExporter.extern
+3 api_description: Marks a module as external so the package won’t bundle it, and
+  the importer will load it directly from the normal Python import system at runtime.
+4 api_signature: extern(include,exclude)
+5 api_details: ''
+6 api_parameters:
+- include: Specifies which module names or glob patterns should be marked as external.
+- exclude: Optionally removes matching modules from the set selected by `include`.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,22 @@
+2 api_name: paddle.polar
+3 api_description: Converts polar-form complex tensor components (magnitude and angle)
+  into their corresponding Cartesian complex coordinates.
+4 api_signature: paddle.polar(abs,angle,out)
+5 api_details: ''
+6 api_parameters:
+- abs: Provides the magnitude values used to construct the complex output.
+- angle: Provides the phase values used to construct the complex output, matching
+    the dtype of `abs`.
+- out: Optionally supplies a tensor to store the result instead of creating a new
+    one.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- abs = paddle.to_tensor([1, 2], dtype=paddle.float64)
+- angle = paddle.to_tensor([np.pi / 2, 5 * np.pi / 4], dtype=paddle.float64)
+- out = paddle.polar(abs, angle)
+- print(out)
+- Tensor(shape=[2], dtype=complex128, place=Place(cpu), stop_gradient=True,
+- '[ (6.123233995736766e-17+1j)             ,'
+- (-1.4142135623730954-1.414213562373095j)])
+8 api_shape: {}

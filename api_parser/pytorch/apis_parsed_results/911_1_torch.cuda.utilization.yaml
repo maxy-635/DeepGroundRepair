@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.utilization
+3 api_description: Returns the GPU’s recent kernel execution utilization percentage,
+  matching nvidia-smi.
+4 api_signature: torch.cuda.utilization(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which CUDA device to query; if `None`, uses the current device.
+7 api_usage_example: null
+8 api_shape: null

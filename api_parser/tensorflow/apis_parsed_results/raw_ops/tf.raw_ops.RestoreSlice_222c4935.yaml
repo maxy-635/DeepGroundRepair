@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.RestoreSlice
+3 api_description: Restores a tensor slice from checkpoint files into its position
+  within a larger tensor using the provided full shape and slice specification.
+4 api_signature: tf.raw_ops.RestoreSlice(file_pattern,tensor_name,shape_and_slice,dt)
+5 api_details: ''
+6 api_parameters:
+- file_pattern: Specifies the checkpoint file pattern to read the tensor from.
+- tensor_name: Identifies the name of the tensor to restore.
+- shape_and_slice: Provides the shape and slice specification used to restore a sliced
+    tensor.
+- dt: Sets the data type of the tensor being restored.
+- name: Optionally names the operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,26 @@
+2 api_name: paddle.imag
+3 api_description: Returns a new tensor containing the imaginary part of each element
+  in the input tensor.
+4 api_signature: paddle.imag(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose complex values are used to compute the imaginary part.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor(
+- '    [[1 + 6j, 2 + 5j, 3 + 4j], [4 + 3j, 5 + 2j, 6 + 1j]])'
+- print(x)
+- Tensor(shape=[2, 3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[[(1+6j), (2+5j), (3+4j)],'
+- '[(4+3j), (5+2j), (6+1j)]])'
+- imag_res = paddle.imag(x)
+- print(imag_res)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[6., 5., 4.],'
+- '[3., 2., 1.]])'
+- imag_t = x.imag()
+- print(imag_t)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[6., 5., 4.],'
+- '[3., 2., 1.]])'
+8 api_shape: {}

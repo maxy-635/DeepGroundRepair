@@ -1,0 +1,25 @@
+2 api_name: paddle.sparse.isnan
+3 api_description: Checks whether all elements in a sparse COO or CSR tensor are NaN.
+4 api_signature: paddle.sparse.isnan(x)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the sparse input tensor to check for NaN values.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- format = "coo"
+- np_x = np.asarray([[[0., 0], [1., 2.]], [[0., 0], [3., float('nan')]]])
+- dense_x = paddle.to_tensor(np_x)
+- 'if format == "coo":'
+- '    sparse_x = dense_x.to_sparse_coo(len(np_x.shape))'
+- 'else:'
+- '    sparse_x = dense_x.to_sparse_csr()'
+- '...'
+- sparse_out = paddle.sparse.isnan(sparse_x)
+- print(sparse_out)
+- Tensor(shape=[2, 2, 2], dtype=paddle.bool, place=Place(gpu:0), stop_gradient=True,
+- indices=[[0, 0, 1, 1],
+- '[1, 1, 1, 1],'
+- '[0, 1, 0, 1]],'
+- values=[False, False, False, True ])
+8 api_shape: {}

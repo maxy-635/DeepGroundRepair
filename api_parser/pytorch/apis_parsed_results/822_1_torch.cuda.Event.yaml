@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.Event
+3 api_description: A CUDA event wrapper for recording and synchronizing GPU operations,
+  measuring elapsed time, and coordinating execution across streams.
+4 api_signature: torch.cuda.Event(enable_timing,blocking)
+5 api_details: ''
+6 api_parameters:
+- enable_timing: Enables the event to record elapsed time measurements.
+- blocking: Makes wait() block until the event completes.
+7 api_usage_example: null
+8 api_shape: null

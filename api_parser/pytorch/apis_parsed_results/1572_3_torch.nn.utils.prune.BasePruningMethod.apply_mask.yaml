@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.prune.BasePruningMethod.apply_mask
+3 api_description: Multiplies the pruned parameter by its mask to apply the pruning
+  effect.
+4 api_signature: apply_mask(module)
+5 api_details: ''
+6 api_parameters:
+- module: The module that contains the parameter or buffer being pruned and whose
+    mask is applied.
+7 api_usage_example: null
+8 api_shape: null

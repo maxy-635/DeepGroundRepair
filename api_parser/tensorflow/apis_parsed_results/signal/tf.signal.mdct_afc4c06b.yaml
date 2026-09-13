@@ -1,0 +1,14 @@
+2 api_name: tensorflow.signal.mdct
+3 api_description: Computes the modified discrete cosine transform of signals with
+  TPU/GPU-compatible ops and gradient support.
+4 api_signature: tf.signal.mdct(signals,frame_length,window_fn,pad_end)
+5 api_details: ''
+6 api_parameters:
+- signals: Real-valued input tensors containing the audio or signal samples to transform.
+- frame_length: The number of samples per analysis frame; must be divisible by 4.
+- window_fn: A function that returns the analysis window for each frame, or `None`
+    to use a scaled rectangular window.
+- pad_end: A flag indicating whether to zero-pad signals so partially overlapping
+    final frames can be included.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesFlushQuantileSummaries
+3 api_description: Outputs and clears the quantile summaries stored in a boosted trees
+  quantile stream resource, returning rank-2 per-feature summary tensors with value,
+  weight, min_rank, and max_rank.
+4 api_signature: tf.raw_ops.BoostedTreesFlushQuantileSummaries(quantile_stream_resource_handle,num_features)
+5 api_details: ''
+6 api_parameters:
+- quantile_stream_resource_handle: References the QuantileStreamResource whose quantile
+    summaries will be flushed.
+- num_features: Specifies how many features the quantile summaries cover.
+7 api_usage_example: null
+8 api_shape: ''

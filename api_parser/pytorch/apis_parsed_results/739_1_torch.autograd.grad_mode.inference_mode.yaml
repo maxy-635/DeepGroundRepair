@@ -1,0 +1,32 @@
+2 api_name: torch.autograd.grad_mode.inference_mode
+3 api_description: Context manager that toggles PyTorch inference mode to run operations
+  without autograd tracking for faster, lower-overhead inference.
+4 api_signature: torch.autograd.grad_mode.inference_mode(mode)
+5 api_details: ''
+6 api_parameters:
+- mode: Turns inference mode on or off, or acts as a decorator to run a function with
+    inference mode enabled.
+7 api_usage_example:
+- ' import torch'
+- ' x = torch.ones(1, 2, 3, requires_grad=True)'
+- ' with torch.inference_mode():'
+- '...     y = x * x'
+- ' y.requires_grad'
+- 'False'
+- ' y._version'
+- 'Traceback (most recent call last):'
+- File "<stdin>", line 1, in <module>
+- 'RuntimeError: Inference tensors do not track version counter.'
+- ' @torch.inference_mode()'
+- '... def func(x):'
+- '...     return x * x'
+- ' out = func(x)'
+- ' out.requires_grad'
+- 'False'
+- ' @torch.inference_mode()'
+- '... def doubler(x):'
+- '...     return x * 2'
+- ' out = doubler(x)'
+- ' out.requires_grad'
+- 'False'
+8 api_shape: null

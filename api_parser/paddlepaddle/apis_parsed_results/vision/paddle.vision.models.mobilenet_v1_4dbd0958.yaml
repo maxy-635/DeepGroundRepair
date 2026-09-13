@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.models.mobilenet_v1
+3 api_description: Builds the MobileNetV1 convolutional neural network for mobile
+  vision tasks using depthwise separable convolutions, with configurable class count
+  and width multiplier for efficient image classification.
+4 api_signature: paddle.vision.models.mobilenet_v1(pretrained,scale)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+- scale: Sets the channel width multiplier for each layer.
+7 api_usage_example: []
+8 api_shape: {}

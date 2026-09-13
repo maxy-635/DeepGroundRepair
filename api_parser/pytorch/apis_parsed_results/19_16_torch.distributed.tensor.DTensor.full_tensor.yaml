@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.tensor.DTensor.full_tensor
+3 api_description: Gather local shards from all ranks in the DeviceMesh and concatenate
+  them into the complete tensor.
+4 api_signature: full_tensor(*,grad_placements)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

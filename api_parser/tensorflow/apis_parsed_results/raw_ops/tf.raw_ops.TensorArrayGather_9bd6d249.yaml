@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.TensorArrayGather
+3 api_description: Gathers elements from a TensorArray at the specified indices and
+  returns them as a single tensor.
+4 api_signature: tf.raw_ops.TensorArrayGather(handle,indices,flow_in,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: The mutable string tensor that identifies the TensorArray to gather values
+    from.
+- indices: The int32 tensor of positions to read from the TensorArray.
+- flow_in: The float32 flow-control tensor that preserves correct operation ordering.
+- dtype: The TensorFlow data type of the gathered output values.
+7 api_usage_example: null
+8 api_shape: ''

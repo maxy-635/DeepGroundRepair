@@ -1,0 +1,11 @@
+2 api_name: torch.autograd.function.NestedIOFunction.setup_context
+3 api_description: Defines how an autograd.Function saves inputs/outputs and prepares
+  the context needed for backward, especially for functions with nested or multiple
+  inputs and outputs.
+4 api_signature: staticsetup_context(ctx,inputs)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

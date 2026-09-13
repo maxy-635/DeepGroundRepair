@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.get_device_capability
+3 api_description: Returns a CUDA device’s compute capability as a (major, minor)
+  tuple.
+4 api_signature: torch.cuda.get_device_capability(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which device’s CUDA capability to return; if None, uses the current
+    device, and if negative, the call does nothing.
+7 api_usage_example: null
+8 api_shape: null

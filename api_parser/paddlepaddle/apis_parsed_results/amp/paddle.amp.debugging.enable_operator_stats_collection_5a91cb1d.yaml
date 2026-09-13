@@ -1,0 +1,27 @@
+2 api_name: paddle.amp.debugging.enable_operator_stats_collection
+3 api_description: Enable collection of operator counts by data type (float32, float16,
+  bfloat16, and others) for AMP debugging, to be used with the matching disable function.
+4 api_signature: paddle.amp.debugging.enable_operator_stats_collection()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- conv = paddle.nn.Conv2D(3, 2, 3)
+- x = paddle.rand([10, 3, 32, 32])
+- paddle.amp.debugging.enable_operator_stats_collection()
+- '# AMP list including cast, conv2d, elementwise_add, reshape'
+- 'with paddle.amp.auto_cast(enable=True, level=''O2''):'
+- '    out = conv(x)'
+- '# Print to the standard output.'
+- paddle.amp.debugging.disable_operator_stats_collection()
+- '# <------------------------------------------------------- op list -------------------------------------------------------->'
+- '# <--------------- Op Name ---------------- | -- FP16 Calls --- | -- BF16 Calls
+  --- | --- FP32 Calls--- | -- Other Calls -->'
+- '#   cast                                    |  1                |  0                |  2                |  0'
+- '#   conv2d                                  |  1                |  0                |  0                |  0'
+- '#   elementwise_add                         |  0                |  0                |  1                |  0'
+- '#   reshape                                 |  0                |  0                |  1                |  0'
+- '# <----------------------------------------------------- op count: 4 ------------------------------------------------------>'
+8 api_shape: {}

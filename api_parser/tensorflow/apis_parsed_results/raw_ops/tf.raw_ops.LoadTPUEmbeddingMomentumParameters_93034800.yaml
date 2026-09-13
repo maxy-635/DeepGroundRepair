@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.LoadTPUEmbeddingMomentumParameters
+3 api_description: Loads momentum optimizer embedding parameters into TPU HBM after
+  embedding configuration, typically to restore checkpointed values before training.
+4 api_signature: tf.raw_ops.LoadTPUEmbeddingMomentumParameters(parameters,momenta,num_shards,shard_id,table_id)
+5 api_details: ''
+6 api_parameters:
+- parameters: The float32 parameter values to load for the momentum optimizer.
+- momenta: The float32 momentum values to load for the momentum optimizer.
+- num_shards: The total number of shards the embedding parameters are split across.
+- shard_id: The ID of the current shard to load.
+- table_id: The optional table identifier to load, with -1 meaning the default or
+    unspecified table.
+7 api_usage_example: null
+8 api_shape: ''

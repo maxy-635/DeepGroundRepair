@@ -1,0 +1,17 @@
+2 api_name: paddle.static.ctr_metric_bundle
+3 api_description: Computes and bundles CTR-related evaluation metrics for Paddle
+  static graphs.
+4 api_signature: paddle.static.ctr_metric_bundle(input,label)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the model’s top-k probability scores for each example.
+- label: Supplies the true class label for each example in the batch.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.enable_static()
+- data = paddle.static.data(name="data", shape=[-1, 32], dtype="float32")
+- label = paddle.static.data(name="label", shape=[-1, 1], dtype="int32")
+- predict = paddle.nn.functional.sigmoid(paddle.static.nn.fc(x=data, size=1))
+- auc_out = paddle.static.ctr_metric_bundle(input=predict, label=label)
+8 api_shape: {}

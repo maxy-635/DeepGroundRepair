@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ExperimentalScanDataset
+3 api_description: Builds a dataset by applying a running reduction function over
+  the elements of an input dataset.
+4 api_signature: tf.raw_ops.ExperimentalScanDataset(input_dataset,initial_state,f,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The variant dataset to scan over as the input source.
+- initial_state: The initial tensor values used as the scan function’s starting state.
+- f: The user-defined function applied repeatedly to update state and produce outputs
+    for each dataset element.
+- output_types: The data types of the tensors returned by the scan function.
+- output_shapes: The expected shapes of the tensors returned by the scan function.
+7 api_usage_example: null
+8 api_shape: ''

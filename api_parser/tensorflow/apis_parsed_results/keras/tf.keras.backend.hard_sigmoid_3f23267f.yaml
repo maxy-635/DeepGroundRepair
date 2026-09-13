@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.hard_sigmoid
+3 api_description: Applies the hard sigmoid activation, a fast piecewise-linear approximation
+  of sigmoid that maps inputs into the 0 to 1 range.
+4 api_signature: tf.keras.backend.hard_sigmoid(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

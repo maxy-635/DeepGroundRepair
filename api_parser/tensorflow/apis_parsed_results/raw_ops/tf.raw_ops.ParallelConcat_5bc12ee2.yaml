@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ParallelConcat
+3 api_description: Concatenates multiple tensors along the first axis, requiring each
+  input tensor to have size 1 in that dimension.
+4 api_signature: tf.raw_ops.ParallelConcat(values,shape)
+5 api_details: ''
+6 api_parameters:
+- values: The tensors to concatenate, all of the same type and identical shape except
+    for a first dimension of size 1.
+- shape: The output tensor shape, matching the input tensor shape with the first dimension
+    set to the number of input tensors.
+7 api_usage_example: null
+8 api_shape: ''

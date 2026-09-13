@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.ctc_batch_cost
+3 api_description: Computes the CTC loss for a batch of predicted sequences against
+  ground-truth labels, using per-sample input and label lengths.
+4 api_signature: tf.keras.backend.ctc_batch_cost(y_true,y_pred)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

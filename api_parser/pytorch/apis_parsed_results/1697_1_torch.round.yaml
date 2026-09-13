@@ -1,0 +1,18 @@
+2 api_name: torch.round
+3 api_description: Rounds each element of the input tensor to the nearest integer.
+4 api_signature: torch.round(input,decimals)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are rounded.
+- decimals: Controls how many decimal places to round to, with negative values rounding
+    to positions left of the decimal point.
+7 api_usage_example:
+- ' torch.round(torch.tensor((4.7, -2.3, 9.1, -7.7)))'
+- ' # Values equidistant from two integers are rounded towards the'
+- ' #   the nearest even value (zero is treated as even)'
+- ' torch.round(torch.tensor([-0.5, 0.5, 1.5, 2.5]))'
+- ' # A positive decimals argument rounds to the to that decimal place'
+- ' torch.round(torch.tensor([0.1234567]), decimals=3)'
+- ' # A negative decimals argument rounds to the left of the decimal'
+- ' torch.round(torch.tensor([1200.1234567]), decimals=-3)'
+8 api_shape: null

@@ -1,0 +1,24 @@
+2 api_name: paddle.reduce_as
+3 api_description: Reduces a tensor by summing elements so the result matches the
+  target shape.
+4 api_signature: paddle.reduce_as(x,target)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are reduced to match the target shape.
+- target: The tensor that defines the shape to reduce `x` down to.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[1, 2, 3, 4], [5, 6, 7, 8]])
+- x
+- Tensor(shape=[2, 4], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[[1, 2, 3, 4],'
+- '[5, 6, 7, 8]])'
+- target = paddle.to_tensor([1, 2, 3, 4])
+- target
+- Tensor(shape=[4], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[1, 2, 3, 4])'
+- res = paddle.reduce_as(x, target)
+- res
+- Tensor(shape=[4], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+- '[6 , 8 , 10, 12])'
+8 api_shape: {}

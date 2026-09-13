@@ -1,0 +1,12 @@
+2 api_name: tensorflow.math.conj
+3 api_description: Returns the elementwise complex conjugate of a tensor of complex
+  numbers, negating each value’s imaginary part.
+4 api_signature: tf.math.conj(x)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose complex conjugate is computed; it must be numeric or variant
+    type.
+7 api_usage_example:
+- x = tf.constant([-2.25, 3.25])
+- tf.math.conj(x)
+8 api_shape: ''

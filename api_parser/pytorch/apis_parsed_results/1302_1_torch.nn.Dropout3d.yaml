@@ -1,0 +1,16 @@
+2 api_name: torch.nn.Dropout3d
+3 api_description: torch.nn.Dropout3d randomly zeroes out entire channels in 3D input
+  tensors during training to prevent overfitting.
+4 api_signature: torch.nn.Dropout3d(p)
+5 api_details: ''
+6 api_parameters:
+- p: The probability of an element being set to zero during training, effectively
+    dropping out random elements to prevent overfitting.
+7 api_usage_example:
+- ' m = nn.Dropout3d(p=0.2)'
+- ' input = torch.randn(20, 16, 4, 32, 32)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth, Height, Width)
+  output tensor shape: (N, Channel_out, Depth, Height, Width)
+  tensor shape transform formulas: {}

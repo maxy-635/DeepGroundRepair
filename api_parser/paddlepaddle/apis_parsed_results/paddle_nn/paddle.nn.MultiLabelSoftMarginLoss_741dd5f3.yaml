@@ -1,0 +1,32 @@
+2 api_name: paddle.nn.MultiLabelSoftMarginLoss
+3 api_description: The paddle.nn.MultiLabelSoftMarginLoss API computes a multi-class
+  multi-label hinge loss between input predictions and target labels, optimizing classification
+  performance by penalizing incorrect predictions with a margin-based approach.
+4 api_signature: paddle.nn.MultiLabelSoftMarginLoss()
+5 api_details: ''
+6 api_parameters:
+- input: The predicted scores for each class, typically the output from a neural network.
+- label: The ground truth binary labels for each class, indicating the presence or
+    absence of each class.
+- weight: Optional tensor that assigns a weight to each class, influencing the loss
+    contribution of each class.
+- reduction: Specifies the method to reduce the loss to a scalar, options include
+    'none', 'mean', or 'sum'.
+- name: An optional name for the operation, useful for identifying operations in a
+    complex model.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- input = paddle.to_tensor([[1, -2, 3], [0, -1, 2], [1, 0, 1]], dtype=paddle.float32)
+- label = paddle.to_tensor([[-1, 1, -1], [1, 1, 1], [1, -1, 1]], dtype=paddle.float32)
+- multi_label_soft_margin_loss = nn.MultiLabelSoftMarginLoss(reduction='none')
+- loss = multi_label_soft_margin_loss(input, label)
+- print(loss)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[3.49625897, 0.71111226, 0.43989015])'
+- multi_label_soft_margin_loss = nn.MultiLabelSoftMarginLoss(reduction='mean')
+- loss = multi_label_soft_margin_loss(input, label)
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.54908717)
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.RaggedCountSparseOutput
+3 api_description: Counts occurrences of values in a ragged tensor and returns the
+  result in sparse-output bin-count form.
+4 api_signature: tf.raw_ops.RaggedCountSparseOutput(values,weights,binary_output,minlength,maxlength)
+5 api_details: ''
+6 api_parameters:
+- values: The sparse tensor values to be counted.
+- weights: Optional per-value weights to apply when counting occurrences.
+- binary_output: If true, each counted value is output as 1 instead of its total count.
+- minlength: Sets the minimum value to include in the output count range, or -1 for
+    no minimum.
+- maxlength: Sets the maximum value to include in the output count range, or -1 for
+    no maximum.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.load_op_library
+3 api_description: Dynamically loads a TensorFlow plugin library so its custom ops
+  and kernels become available in the current process.
+4 api_signature: tf.load_op_library(library_filename)
+5 api_details: ''
+6 api_parameters:
+- library_filename: Specifies the path to the dynamic library file containing the
+    TensorFlow plugin to load.
+7 api_usage_example: null
+8 api_shape: ''

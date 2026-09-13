@@ -1,0 +1,14 @@
+2 api_name: paddle.nn.LPPool1D
+3 api_description: paddle.nn.LPPool1D performs 1D power-average pooling on input data
+  in NCL format, producing an output tensor with shape [N, C, output_size].
+4 api_signature: paddle.nn.LPPool1D(norm_type,kernel_size,stride)
+5 api_details: ''
+6 api_parameters:
+- norm_type: Determines the power to which each element is raised during the pooling
+    operation.
+- kernel_size: Specifies the size of the pooling window, which can be an integer or
+    a tuple/list containing an integer.
+- stride: Defines the step size for moving the pooling window across the input, defaulting
+    to the kernel_size if not specified.
+7 api_usage_example: []
+8 api_shape: null

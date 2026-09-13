@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ResourceGatherNd
+3 api_description: Gathers slices from a resource variable at the specified N-D indices
+  and returns them as a tensor.
+4 api_signature: tf.raw_ops.ResourceGatherNd(resource,indices,dtype)
+5 api_details: ''
+6 api_parameters:
+- resource: Identifies the resource variable or tensor to read values from.
+- indices: Specifies the index positions used to gather elements from the resource.
+- dtype: Sets the data type of the gathered output tensor.
+7 api_usage_example: null
+8 api_shape: ''

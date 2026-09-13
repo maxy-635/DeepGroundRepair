@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.UnbatchGrad
+3 api_description: Computes the gradient for `Unbatch` by re-batching `grad` using
+  the original batch index and id so gradients flow back to the same session that
+  produced the forward pass.
+4 api_signature: tf.raw_ops.UnbatchGrad(grad,id,batch_index)
+5 api_details: ''
+6 api_parameters:
+- batch_index: Identifies which batch element each gradient belongs to.
+- grad: Contains the gradient values to be redistributed back to the original inputs.
+- id: Specifies the original element identifier used to map gradients back correctly.
+7 api_usage_example: null
+8 api_shape: ''

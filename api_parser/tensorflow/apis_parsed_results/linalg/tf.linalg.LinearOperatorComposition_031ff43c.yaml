@@ -1,0 +1,12 @@
+2 api_name: tensorflow.linalg.LinearOperatorComposition
+3 api_description: Composes one or more LinearOperators into a single operator whose
+  action is the matrix product of the component operators, applying them in sequence.
+4 api_signature: tf.linalg.LinearOperatorComposition(operators,name)
+5 api_details: ''
+6 api_parameters:
+- operators: The LinearOperator objects to compose in sequence, all sharing the same
+    dtype and compatible shapes.
+- name: An optional name for the composed LinearOperator, defaulting to the component
+    operator names joined with `_o_`.
+7 api_usage_example: null
+8 api_shape: ''

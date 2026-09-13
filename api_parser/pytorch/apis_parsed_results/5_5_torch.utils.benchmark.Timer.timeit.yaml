@@ -1,0 +1,8 @@
+2 api_name: torch.utils.benchmark.Timer.timeit
+3 api_description: Runs the benchmarked statement a specified number of times and
+  returns the total execution time, matching `timeit.Timer.timeit()` semantics.
+4 api_signature: timeit(number)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

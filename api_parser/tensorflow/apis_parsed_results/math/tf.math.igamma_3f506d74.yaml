@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.igamma
+3 api_description: Computes the lower regularized incomplete gamma function P(a, x),
+  which gives the normalized integral of t^(a-1) * exp(-t) from 0 to x and equals
+  1 - Igammac(a, x).
+4 api_signature: tf.math.igamma(a,x)
+5 api_details: ''
+6 api_parameters:
+- a: The shape parameter of the incomplete gamma function.
+- x: The input value at which the incomplete gamma function is evaluated.
+7 api_usage_example: null
+8 api_shape: ''

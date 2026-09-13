@@ -1,0 +1,11 @@
+2 api_name: torch.optim.lr_scheduler.LRScheduler.step
+3 api_description: Advances the learning rate scheduler by one step, updating optimizer
+  learning rates according to the configured schedule.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Deprecated argument that sets `last_epoch` to the given value and, if available,
+    uses the scheduler's closed-form learning rate computation instead of the standard
+    step behavior.
+7 api_usage_example: null
+8 api_shape: null

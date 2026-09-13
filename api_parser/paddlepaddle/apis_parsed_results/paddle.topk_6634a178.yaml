@@ -1,0 +1,48 @@
+2 api_name: paddle.topk
+3 api_description: Returns the top k largest or smallest values and their indices
+  along a specified axis, or in the whole 1-D tensor.
+4 api_signature: paddle.topk(x,k,axis,largest,sorted)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor from which the top elements are selected.
+- k: The number of top elements to retrieve along the specified axis.
+- axis: The dimension along which top-k values and indices are computed.
+- largest: Determines whether to select the largest values or the smallest values.
+- sorted: Specifies whether the returned top-k results should be ordered.
+7 api_usage_example:
+- import paddle
+- data_1 = paddle.to_tensor([1, 4, 5, 7])
+- value_1, indices_1 = paddle.topk(data_1, k=1)
+- print(value_1)
+- Tensor(shape=[1], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[7])'
+- print(indices_1)
+- Tensor(shape=[1], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[3])'
+- data_2 = paddle.to_tensor([[1, 4, 5, 7], [2, 6, 2, 5]])
+- value_2, indices_2 = paddle.topk(data_2, k=1)
+- print(value_2)
+- Tensor(shape=[2, 1], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[7],'
+- '[6]])'
+- print(indices_2)
+- Tensor(shape=[2, 1], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[3],'
+- '[1]])'
+- value_3, indices_3 = paddle.topk(data_2, k=1, axis=-1)
+- print(value_3)
+- Tensor(shape=[2, 1], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[7],'
+- '[6]])'
+- print(indices_3)
+- Tensor(shape=[2, 1], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[3],'
+- '[1]])'
+- value_4, indices_4 = paddle.topk(data_2, k=1, axis=0)
+- print(value_4)
+- Tensor(shape=[1, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[2, 6, 5, 7]])'
+- print(indices_4)
+- Tensor(shape=[1, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 1, 0, 0]])'
+8 api_shape: {}

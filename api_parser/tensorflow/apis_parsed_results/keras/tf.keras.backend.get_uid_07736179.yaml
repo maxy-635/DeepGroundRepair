@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.backend.get_uid
+3 api_description: Returns a unique integer ID for a given string prefix by incrementing
+  and tracking a counter.
+4 api_signature: tf.keras.backend.get_uid(prefix)
+5 api_details: ''
+6 api_parameters:
+- prefix: Specifies the string prefix used to generate and index a unique integer
+    ID.
+7 api_usage_example:
+- get_uid('dense')
+- get_uid('dense')
+8 api_shape: ''

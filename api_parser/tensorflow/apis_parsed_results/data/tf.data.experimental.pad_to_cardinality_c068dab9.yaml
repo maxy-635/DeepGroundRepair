@@ -1,0 +1,13 @@
+2 api_name: tensorflow.data.experimental.pad_to_cardinality
+3 api_description: Pads a finite dictionary-element dataset with fake entries to a
+  target cardinality and adds a boolean mask key to mark real versus padded elements.
+4 api_signature: tf.data.experimental.pad_to_cardinality(cardinality)
+5 api_details: ''
+6 api_parameters:
+- cardinality: Specifies the target number of elements the dataset should be padded
+    up to.
+7 api_usage_example:
+- 'ds = tf.data.Dataset.from_tensor_slices({''a'': [1, 2]})'
+- ds = ds.apply(tf.data.experimental.pad_to_cardinality(3))
+- list(ds.as_numpy_iterator())
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.profiler_util.MemRecordsAcc.in_interval
+3 api_description: Returns all memory records whose timestamps fall within the specified
+  interval.
+4 api_signature: in_interval(start_ns,end_ns)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

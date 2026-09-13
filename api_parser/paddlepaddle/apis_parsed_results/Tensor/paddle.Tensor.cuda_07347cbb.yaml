@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.cuda
+3 api_description: Returns a copy of the tensor on a CUDA device, optionally selecting
+  the target device and sharing semantics.
+4 api_signature: paddle.Tensor.cuda(self,device_id)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

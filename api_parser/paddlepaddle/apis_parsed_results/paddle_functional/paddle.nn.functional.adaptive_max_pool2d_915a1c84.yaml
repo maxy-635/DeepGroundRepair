@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.functional.adaptive_max_pool2d
+3 api_description: The paddle.nn.functional.adaptive_max_pool2d API performs 2D adaptive
+  max pooling on an input tensor, adjusting the pooling window size dynamically to
+  achieve a specified output size.
+4 api_signature: paddle.nn.functional.adaptive_max_pool2d(x,output_size)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor for the adaptive max pool2d operation, which must be a 4-D tensor
+    with specified data types.
+- output_size: The desired output size of the pooling operation, specified as a tuple
+    or list with two elements, which can be integers or None to match the input size.
+7 api_usage_example: []
+8 api_shape: null

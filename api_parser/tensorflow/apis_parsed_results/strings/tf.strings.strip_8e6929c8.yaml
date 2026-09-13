@@ -1,0 +1,10 @@
+2 api_name: tensorflow.strings.strip
+3 api_description: Removes leading and trailing whitespace from each string in the
+  tensor.
+4 api_signature: tf.strings.strip(input)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor whose leading and trailing whitespace is removed elementwise.
+7 api_usage_example:
+- tf.strings.strip(["\nTensorFlow", "     The python library    "]).numpy()
+8 api_shape: ''

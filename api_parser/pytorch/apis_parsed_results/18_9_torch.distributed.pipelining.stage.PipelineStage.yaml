@@ -1,0 +1,15 @@
+2 api_name: torch.distributed.pipelining.stage.PipelineStage
+3 api_description: Represents one pipeline-parallel stage, managing its assigned model
+  partition, input/output tensors, and communication/synchronization with adjacent
+  stages during forward and backward execution.
+4 api_signature: torch.distributed.pipelining.stage.PipelineStage(submodule,stage_index,num_stages,device,input_args,output_args)
+5 api_details: ''
+6 api_parameters:
+- submodule: Specifies the PyTorch module that this pipeline stage executes.
+- stage_index: Identifies this stage’s position within the pipeline.
+- num_stages: Sets the total number of pipeline stages in the full model.
+- device: Chooses the device on which this stage runs.
+- input_args: Provides the expected input arguments for the stage’s submodule.
+- output_args: Provides the expected output arguments produced by the stage’s submodule.
+7 api_usage_example: null
+8 api_shape: null

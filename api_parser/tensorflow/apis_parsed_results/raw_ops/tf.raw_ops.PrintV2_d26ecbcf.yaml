@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.PrintV2
+3 api_description: Prints a string scalar to the specified output stream.
+4 api_signature: tf.raw_ops.PrintV2(input,output_stream,end)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor to be printed.
+- output_stream: The destination stream or logging level for the printed output, defaulting
+    to stderr.
+- end: The string appended after printing, defaulting to a newline.
+7 api_usage_example: null
+8 api_shape: ''

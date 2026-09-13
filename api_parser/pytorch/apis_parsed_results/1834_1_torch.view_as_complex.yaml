@@ -1,0 +1,12 @@
+2 api_name: torch.view_as_complex
+3 api_description: Creates a complex tensor view from a real tensor whose last dimension
+  stores the real and imaginary parts.
+4 api_signature: torch.view_as_complex(input)
+5 api_details: ''
+6 api_parameters:
+- input: The real-valued tensor to be interpreted as a complex-valued tensor.
+7 api_usage_example:
+- ' x=torch.randn(4, 2)'
+- ' x'
+- ' torch.view_as_complex(x)'
+8 api_shape: null

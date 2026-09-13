@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ExperimentalSlidingWindowDataset
+3 api_description: Creates a dataset of fixed-size sliding windows over the elements
+  of an input dataset.
+4 api_signature: tf.raw_ops.ExperimentalSlidingWindowDataset(input_dataset,window_size)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input `Dataset` variant to build sliding windows from.
+- window_size: The scalar number of elements to include in each sliding window.
+7 api_usage_example: null
+8 api_shape: ''

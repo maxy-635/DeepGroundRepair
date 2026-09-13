@@ -1,0 +1,8 @@
+2 api_name: torch.backends.cuda.preferred_rocm_fa_library
+3 api_description: Overrides which Flash Attention backend PyTorch uses on ROCm, allowing
+  you to choose AOTriton or CK.
+4 api_signature: torch.backends.cuda.preferred_rocm_fa_library(backend)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

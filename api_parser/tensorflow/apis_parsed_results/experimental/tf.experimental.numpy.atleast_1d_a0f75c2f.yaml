@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.atleast_1d
+3 api_description: Converts inputs to at least 1D TensorFlow tensors, returning scalars
+  as 1D arrays and leaving higher-dimensional inputs unchanged.
+4 api_signature: '"tf.experimental.numpy.atleast_1d(*arys)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

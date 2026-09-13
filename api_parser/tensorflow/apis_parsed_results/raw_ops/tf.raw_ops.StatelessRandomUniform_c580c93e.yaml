@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.StatelessRandomUniform
+3 api_description: Generates deterministic pseudorandom uniform values in [0, 1) from
+  a given shape and seed.
+4 api_signature: tf.raw_ops.StatelessRandomUniform(shape,seed,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor dimensions.
+- seed: Provides a 2-element seed tensor for deterministic random number generation.
+- dtype: Sets the data type of the generated random values.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.nn.relu
+3 api_description: The tensorflow.nn.relu function applies the Rectified Linear Unit
+  (ReLU) activation, outputting the maximum of the input features and zero, effectively
+  setting negative values to zero.
+4 api_signature: tf.nn.relu(features)
+5 api_details: ''
+6 api_parameters:
+- features: The 'features' parameter is a Tensor input that the ReLU activation function
+    will be applied to, and it supports various data types including float, int, and
+    quantized types.
+7 api_usage_example: null
+8 api_shape: ''

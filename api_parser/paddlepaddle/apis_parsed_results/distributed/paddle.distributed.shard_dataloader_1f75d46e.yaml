@@ -1,0 +1,103 @@
+2 api_name: paddle.distributed.shard_dataloader
+3 api_description: Converts a dataloader into a ShardDataloader that can shard batches
+  by `shard_dim` for data parallelism and/or reshard outputs into distributed tensors;
+  if `is_dataset_splitted` is True, it only reshards, and if it is False, sharding
+  happens only when `shard_dims` is not None.
+4 api_signature: paddle.distributed.shard_dataloader(dataloader,meshes,input_keys,shard_dims)
+5 api_details: ''
+6 api_parameters:
+- dataloader: The dataloader to shard, whose output must be a 2-element list or dict
+    of paddle.Tensor values representing inputs and labels.
+- meshes: The mesh or mesh list that indicates which process mesh each input belongs
+    to; if only one mesh is provided, all inputs are placed on the same mesh.
+- input_keys: The keys of the dataloader output dict, used to map each tensor to a
+    corresponding mesh in one-to-one order with `meshes`.
+7 api_usage_example:
+- import os
+- import numpy as np
+- import paddle
+- import paddle.distributed as dist
+- from paddle.io import BatchSampler, DataLoader, Dataset
+- '>>>'
+- mesh0 = dist.ProcessMesh([[0, 1], [2, 3]], dim_names=['x', 'y'])
+- mesh1 = dist.ProcessMesh([[4, 5], [6, 7]], dim_names=['x', 'y'])
+- paddle.seed(1024)
+- np.random.seed(1024)
+- 'class RandomDataset(Dataset): # type: ignore[type-arg]'
+- '    def __init__(self, seq_len, hidden, num_samples=8):'
+- '        super().__init__()'
+- '        self.seq_len = seq_len'
+- '        self.hidden = hidden'
+- '        self.num_samples = num_samples'
+- '        self.inputs = [np.random.uniform(size=[self.seq_len, self.hidden]).astype("float32")
+  for _ in range(num_samples)]'
+- '        self.labels = [np.array(index, dtype="float32") for index in range(num_samples)]'
+- '    def __getitem__(self, index):'
+- '        return self.inputs[index], self.labels[index]'
+- '    def __len__(self):'
+- '        return self.num_samples'
+- 'class MlpModel(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super(MlpModel, self).__init__()'
+- '        self.w0 = dist.shard_tensor('
+- '            self.create_parameter(shape=[8, 8]),'
+- '            mesh0, [dist.Replicate(), dist.Shard(1)])'
+- '        self.w1 = dist.shard_tensor('
+- '            self.create_parameter(shape=[8, 8]),'
+- '            mesh1, [dist.Replicate(), dist.Shard(0)])'
+- '    def forward(self, x):'
+- '        y = paddle.matmul(x, self.w0)'
+- '        y = dist.reshard(y, mesh1, [dist.Shard(0), dist.Shard(2)])'
+- '        z = paddle.matmul(y, self.w1)'
+- '        return z'
+- model = MlpModel()
+- dataset = RandomDataset(4, 8)
+- sampler = BatchSampler(
+- '    dataset,'
+- '    batch_size=2,'
+- )
+- dataloader = DataLoader(
+- '    dataset,'
+- '    batch_sampler=sampler,'
+- )
+- dist_dataloader = dist.shard_dataloader(
+- '    dataloader=dataloader,'
+- '    meshes=[mesh0, mesh1],'
+- '    shard_dims="x"'
+- )
+- opt = paddle.optimizer.AdamW(learning_rate=0.001, parameters=model.parameters())
+- dist_opt = dist.shard_optimizer(opt)
+- 'def loss_fn(logits, label):'
+- '    # logits: [bs, seq_len, hidden], label: [bs]'
+- '    loss = paddle.nn.MSELoss(reduction="sum")'
+- '    logits = paddle.sum(logits, axis=[1, 2])'
+- '    return loss(logits, label)'
+- RUN_STATIC = eval(os.environ['RUN_STATIC'])
+- 'def run_dynamic():'
+- '    for step, (input, label) in enumerate(dist_dataloader()):'
+- '        logits = model(input)'
+- '        loss = loss_fn(logits, label)'
+- '        print("step:{}, loss:{}".format(step, loss))'
+- '        loss.backward()'
+- '        dist_opt.step()'
+- '        dist_opt.clear_grad()'
+- 'def run_static():'
+- '    dist_model = dist.to_static('
+- '        model, dist_dataloader, loss_fn, opt'
+- '    )'
+- '    dist_model.train()'
+- '    for step, (input, label) in enumerate(dist_dataloader()):'
+- '        print("label:", label)'
+- '        loss = dist_model(input, label)'
+- '        print("step:{}, loss:{}".format(step, loss))'
+- 'if RUN_STATIC == 0:'
+- '    run_dynamic()'
+- 'else:'
+- '    run_static()'
+- '# This case need to be executed in multi-card environment'
+- '# export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7'
+- '# RUN_STATIC=1 python -u -m paddle.distributed.launch --gpus "0,1,2,3,4,5,6,7"
+  {test_case}.py'
+- '# RUN_STATIC=0 python -u -m paddle.distributed.launch --gpus "0,1,2,3,4,5,6,7"
+  {test_case}.py'
+8 api_shape: {}

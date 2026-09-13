@@ -1,0 +1,9 @@
+2 api_name: torch.sym_not
+3 api_description: Returns the logical negation of a SymInt-aware value, preserving
+  symbolic integer compatibility.
+4 api_signature: torch.sym_not(a)
+5 api_details: ''
+6 api_parameters:
+- a: The object whose logical negation is returned.
+7 api_usage_example: null
+8 api_shape: null

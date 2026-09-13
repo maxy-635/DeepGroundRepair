@@ -1,0 +1,17 @@
+2 api_name: tensorflow.map_fn
+3 api_description: Applies a function to each element of an input tensor sequence
+  along axis 0, then stacks the results back into a single tensor.
+4 api_signature: tf.map_fn(fn,elems,dtype,name,fn_output_signature)
+5 api_details: ''
+6 api_parameters:
+- fn: Defines the function to apply to each slice of `elems`.
+- elems: Provides the tensors or nested tensors to iterate over along the first dimension.
+- dtype: Deprecated alias for `fn_output_signature` that specifies the output type.
+- name: Sets an optional name prefix for the returned tensors.
+- fn_output_signature: Describes the expected output structure, type, and tensor specs
+    produced by `fn`.
+7 api_usage_example:
+- elems = np.array([1, 2, 3])
+- 'tf.map_fn(lambda x: (x, -x), elems,'
+- '         fn_output_signature=(tf.int64, tf.int64))'
+8 api_shape: ''

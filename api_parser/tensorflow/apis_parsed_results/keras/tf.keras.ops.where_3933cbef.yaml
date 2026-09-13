@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.where
+3 api_description: Selects elements from x1 or x2 based on a condition.
+4 api_signature: tf.keras.ops.where(condition,x1,x2)
+5 api_details: ''
+6 api_parameters:
+- condition: Controls which elements are taken from `x1` versus `x2` based on whether
+    it is True or False.
+- x1: Provides the values selected wherever `condition` is True.
+- x2: Provides the values selected wherever `condition` is False.
+7 api_usage_example: null
+8 api_shape: ''

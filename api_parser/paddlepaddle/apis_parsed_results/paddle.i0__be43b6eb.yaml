@@ -1,0 +1,8 @@
+2 api_name: paddle.i0_
+3 api_description: Computes the modified Bessel function of the first kind, order
+  0, in place by overwriting the input tensor with the result.
+4 api_signature: paddle.i0_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

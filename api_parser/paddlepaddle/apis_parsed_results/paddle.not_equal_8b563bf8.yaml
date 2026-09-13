@@ -1,0 +1,17 @@
+2 api_name: paddle.not_equal
+3 api_description: Elementwise compares two inputs and returns a boolean tensor indicating
+  where they are not equal.
+4 api_signature: paddle.not_equal(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor to compare for elementwise inequality.
+- y: The second tensor to compare against elementwise inequality.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, 2, 3])
+- y = paddle.to_tensor([1, 3, 2])
+- result1 = paddle.not_equal(x, y)
+- print(result1)
+- Tensor(shape=[3], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, True , True ])'
+8 api_shape: {}

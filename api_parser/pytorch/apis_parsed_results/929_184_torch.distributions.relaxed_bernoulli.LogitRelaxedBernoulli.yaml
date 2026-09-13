@@ -1,0 +1,12 @@
+2 api_name: torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli
+3 api_description: A reparameterized Bernoulli relaxation that represents a Bernoulli
+  variable with continuous Logistic-distributed logits, allowing differentiable sampling
+  and log-probability evaluation for use in gradient-based optimization.
+4 api_signature: LogitRelaxedBernoulli(temperature,probs,logits)
+5 api_details: ''
+6 api_parameters:
+- temperature: Controls how sharp or smooth the relaxed Bernoulli samples are.
+- probs: Sets the probability that a sample is 1.
+- logits: Sets the log-odds that a sample is 1.
+7 api_usage_example: null
+8 api_shape: null

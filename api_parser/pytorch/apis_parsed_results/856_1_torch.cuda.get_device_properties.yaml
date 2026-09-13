@@ -1,0 +1,10 @@
+2 api_name: torch.cuda.get_device_properties
+3 api_description: Returns a CUDA device’s hardware properties, such as name, total
+  memory, and compute capability.
+4 api_signature: torch.cuda.get_device_properties(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which CUDA device's properties to return, or uses the current
+    device if `None`.
+7 api_usage_example: null
+8 api_shape: null

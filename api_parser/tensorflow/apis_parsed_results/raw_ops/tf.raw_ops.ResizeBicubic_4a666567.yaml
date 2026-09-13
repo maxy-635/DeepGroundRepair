@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ResizeBicubic
+3 api_description: Resizes images to the specified size using bicubic interpolation,
+  returning float output images.
+4 api_signature: tf.raw_ops.ResizeBicubic(images,size)
+5 api_details: ''
+6 api_parameters:
+- images: The input 4-D batch of images to be resized bicubically.
+- size: A 2-element int32 tensor specifying the output height and width.
+7 api_usage_example: null
+8 api_shape: ''

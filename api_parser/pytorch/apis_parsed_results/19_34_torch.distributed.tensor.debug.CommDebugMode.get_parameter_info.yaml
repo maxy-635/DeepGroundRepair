@@ -1,0 +1,11 @@
+2 api_name: torch.distributed.tensor.debug.CommDebugMode.get_parameter_info
+3 api_description: Returns a dictionary of parameter metadata keyed by parameter name,
+  with each entry containing detailed information about that parameter used for distributed
+  tensor communication debugging.
+4 api_signature: '"get_parameter_info()"'
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

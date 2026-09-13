@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.tree.assert_same_structure
+3 api_description: Asserts that two nested structures have the same shape and nesting
+  pattern, optionally checking types; namedtuples with matching names and fields are
+  still treated as different structures.
+4 api_signature: tf.keras.tree.assert_same_structure(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: The first nested structure to compare.
+- b: The second nested structure to compare against the first.
+7 api_usage_example:
+- Foo = collections.namedtuple('Foo', ['a', 'b'])
+- AlsoFoo = collections.namedtuple('Foo', ['a', 'b'])
+- keras.tree.assert_same_structure(Foo(0, 1), Foo(2, 3))
+- keras.tree.assert_same_structure(Foo(0, 1), AlsoFoo(2, 3))
+8 api_shape: ''

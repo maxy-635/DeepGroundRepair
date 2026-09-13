@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorListGetItem
+3 api_description: Retrieves and returns the tensor list element at the specified
+  index.
+4 api_signature: tf.raw_ops.TensorListGetItem(input_handle,index,element_dtype)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The variant tensor that holds the TensorList to read from.
+- index: The int32 position of the element to retrieve from the TensorList.
+- element_dtype: The data type of the tensor element to return.
+7 api_usage_example: null
+8 api_shape: ''

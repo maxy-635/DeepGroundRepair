@@ -1,0 +1,13 @@
+2 api_name: torch.nn.functional.soft_margin_loss
+3 api_description: torch.nn.functional.soft_margin_loss computes the soft margin loss
+  between input predictions and target labels, which is a smooth approximation of
+  the hinge loss, useful for binary classification tasks.
+4 api_signature: torch.nn.functional.soft_margin_loss(input,target,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the predicted values from the model.
+- target: Represents the ground truth or actual values to compare against predictions.
+- reduction: 'Determines how the loss output is aggregated: ''none'' for no reduction,
+    ''mean'' for averaging, and ''sum'' for total summation.'
+7 api_usage_example: null
+8 api_shape: null

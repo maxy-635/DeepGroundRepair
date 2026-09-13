@@ -1,0 +1,18 @@
+2 api_name: tensorflow.data.experimental.cardinality
+3 api_description: Returns the dataset’s number of elements when it can be determined,
+  or reports infinite/unknown cardinality when the dataset is unbounded or cannot
+  be analyzed.
+4 api_signature: tf.data.experimental.cardinality(dataset)
+5 api_details: ''
+6 api_parameters:
+- dataset: The `tf.data.Dataset` whose cardinality is being determined.
+7 api_usage_example:
+- dataset = tf.data.Dataset.range(42)
+- print(tf.data.experimental.cardinality(dataset).numpy())
+- dataset = dataset.repeat()
+- cardinality = tf.data.experimental.cardinality(dataset)
+- print((cardinality == tf.data.experimental.INFINITE_CARDINALITY).numpy())
+- 'dataset = dataset.filter(lambda x: True)'
+- cardinality = tf.data.experimental.cardinality(dataset)
+- print((cardinality == tf.data.experimental.UNKNOWN_CARDINALITY).numpy())
+8 api_shape: ''

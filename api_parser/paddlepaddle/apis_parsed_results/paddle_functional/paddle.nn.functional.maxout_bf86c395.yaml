@@ -1,0 +1,31 @@
+2 api_name: paddle.nn.functional.maxout
+3 api_description: The paddle.nn.functional.maxout API applies the maxout activation
+  function, which divides input into groups and computes the maximum value within
+  each group, enhancing model capacity for complex patterns.
+4 api_signature: paddle.nn.functional.maxout(x,groups)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor with dimensions [N, C, H, W] or [N, H, W, C] and data types
+    float16, float32, or float64.
+- groups: The number of groups for the maxout operation, which must divide the number
+    of features in the channel dimension.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- paddle.seed(2023)
+- x = paddle.rand([1, 2, 3, 4])
+- print(x)
+- Tensor(shape=[1, 2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0.86583614, 0.52014720, 0.25960937, 0.90525323],'
+- '[0.42400089, 0.40641287, 0.97020894, 0.74437362],'
+- '[0.51785129, 0.73292869, 0.97786582, 0.04315904]],'
+- '[[0.42639419, 0.71958369, 0.20811461, 0.19731510],'
+- '[0.38424349, 0.14603184, 0.22713774, 0.44607511],'
+- '[0.21657862, 0.67685395, 0.46460176, 0.92382854]]]])'
+- out = F.maxout(x, groups=2)
+- print(out)
+- Tensor(shape=[1, 1, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0.86583614, 0.71958369, 0.25960937, 0.90525323],'
+- '[0.42400089, 0.40641287, 0.97020894, 0.74437362],'
+- '[0.51785129, 0.73292869, 0.97786582, 0.92382854]]]])'
+8 api_shape: null

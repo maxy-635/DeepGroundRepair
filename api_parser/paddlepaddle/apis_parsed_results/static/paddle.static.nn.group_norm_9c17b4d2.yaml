@@ -1,0 +1,20 @@
+2 api_name: paddle.static.nn.group_norm
+3 api_description: Applies group normalization to a tensor by dividing channels into
+  groups and normalizing each group using learned scale and bias parameters.
+4 api_signature: paddle.static.nn.group_norm(input,groups,epsilon,act)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be group-normalized, with rank greater than 1 and dtype
+    float32 or float64.
+- groups: The number of channel groups used to split the input for normalization.
+- epsilon: A small constant added to the variance to avoid division by zero during
+    normalization.
+- act: An optional activation function applied to the normalized output.
+7 api_usage_example:
+- import paddle
+- paddle.enable_static()
+- data = paddle.static.data(name='data', shape=[2, 8, 32, 32], dtype='float32')
+- x = paddle.static.nn.group_norm(input=data, groups=4)
+- print(x.shape)
+- (2, 8, 32, 32)
+8 api_shape: {}

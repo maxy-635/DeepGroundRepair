@@ -1,0 +1,14 @@
+2 api_name: torch.nn.functional.multi_margin_loss
+3 api_description: Computes multi-class margin-based loss with optional class weighting,
+  supporting L1 and L2 margin loss variants.
+4 api_signature: torch.nn.functional.multi_margin_loss(input,target,p,margin,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the predicted values from the model.
+- target: Represents the ground truth or actual values.
+- p: Specifies the norm degree, with supported values of 1 or 2, defaulting to 1.
+- margin: Sets the margin value for the loss calculation, with a default of 1.
+- reduction: 'Determines the method of reducing the loss output: ''none'', ''mean'',
+    or ''sum''.'
+7 api_usage_example: null
+8 api_shape: null

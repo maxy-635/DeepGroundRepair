@@ -1,0 +1,16 @@
+2 api_name: torch.special.gammaincc
+3 api_description: Computes the regularized upper incomplete gamma function for the
+  given inputs.
+4 api_signature: torch.special.gammaincc(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first non-negative input tensor, serving as the `a` parameter of the
+    incomplete gamma complement.
+- other: The second non-negative input tensor, serving as the `x` parameter at which
+    the complemented incomplete gamma function is evaluated.
+7 api_usage_example:
+- ' a1 = torch.tensor([4.0])'
+- ' a2 = torch.tensor([3.0, 4.0, 5.0])'
+- ' a = torch.special.gammaincc(a1, a2)'
+- ' b = torch.special.gammainc(a1, a2) + torch.special.gammaincc(a1, a2)'
+8 api_shape: null

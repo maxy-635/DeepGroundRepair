@@ -1,0 +1,11 @@
+2 api_name: torch.triangular_solve
+3 api_description: Solves linear systems with an invertible square upper or lower
+  triangular matrix and one or more right-hand sides.
+4 api_signature: torch.triangular_solve(b,A)
+5 api_details: ''
+6 api_parameters:
+- b: The right-hand side tensor containing one or more systems to solve.
+- A: The triangular coefficient matrix used to solve the linear system.
+7 api_usage_example:
+- X = torch.linalg.solve_triangular(A, B)
+8 api_shape: null

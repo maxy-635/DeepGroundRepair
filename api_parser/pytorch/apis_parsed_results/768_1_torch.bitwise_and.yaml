@@ -1,0 +1,16 @@
+2 api_name: torch.bitwise_and
+3 api_description: Computes the elementwise bitwise AND of two tensors; for boolean
+  tensors, it performs logical AND.
+4 api_signature: torch.bitwise_and(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor whose values are used as the left operand in the bitwise
+    AND operation.
+- other: The second tensor whose values are used as the right operand in the bitwise
+    AND operation.
+7 api_usage_example:
+- ' torch.bitwise_and(torch.tensor([-1, -2, 3], dtype=torch.int8), torch.tensor([1,
+  0, 3], dtype=torch.int8))'
+- ' torch.bitwise_and(torch.tensor([True, True, False]), torch.tensor([False, True,
+  False]))'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.MatrixSetDiagV2
+3 api_description: Returns a tensor like `input` but with the specified diagonal or
+  band of diagonals in each innermost matrix replaced by values from `diagonal`.
+4 api_signature: tf.raw_ops.MatrixSetDiagV2(input,diagonal,k)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose selected diagonal or band will be replaced.
+- diagonal: The tensor containing values to write into the specified diagonal or diagonal
+    band.
+- k: The diagonal offset or offset range that determines which diagonal(s) in the
+    input are updated.
+7 api_usage_example: null
+8 api_shape: ''

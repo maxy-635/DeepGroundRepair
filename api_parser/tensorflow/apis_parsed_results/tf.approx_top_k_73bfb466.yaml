@@ -1,0 +1,17 @@
+2 api_name: tensorflow.approx_top_k
+3 api_description: Approximates the top-k minimum or maximum values of an input tensor
+  and returns those values with their indices, with TPU-optimized performance.
+4 api_signature: tf.approx_top_k(input,k,reduction_dimension,recall_target,is_max_k,aggregate_to_topk,name)
+5 api_details: ''
+6 api_parameters:
+- input: The floating-point tensor to search for the approximate top or bottom k values.
+- k: The number of largest or smallest values to return.
+- reduction_dimension: The dimension along which to compute the approximate top-k
+    search.
+- recall_target: The desired recall level used to control the approximation quality.
+- is_max_k: Chooses whether to find the largest k values or the smallest k values.
+- aggregate_to_topk: Determines whether approximate results are reduced to exactly
+    top-k or returned in approximate form.
+- name: An optional operation name.
+7 api_usage_example: null
+8 api_shape: ''

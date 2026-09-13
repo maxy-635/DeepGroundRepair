@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.Softmax2D
+3 api_description: The paddle.nn.Softmax2D API applies the Softmax function across
+  the channel dimension of a 3D or 4D tensor, ensuring that the sum of values at each
+  spatial location is one.
+4 api_signature: paddle.nn.Softmax2D()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- x = paddle.rand([1, 2, 3, 4])
+- m = paddle.nn.Softmax2D()
+- out = m(x)
+- print(out)
+- Tensor(shape=[1, 2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0.42608523, 0.32081410, 0.39483935, 0.55642301],'
+- '[0.38131708, 0.45118359, 0.44891062, 0.46053308],'
+- '[0.35746980, 0.60766530, 0.38638926, 0.70425135]],'
+- '[[0.57391477, 0.67918587, 0.60516071, 0.44357699],'
+- '[0.61868292, 0.54881644, 0.55108935, 0.53946698],'
+- '[0.64253020, 0.39233473, 0.61361068, 0.29574865]]]])'
+8 api_shape: null

@@ -1,0 +1,41 @@
+2 api_name: paddle.static.nn.static_pylayer
+3 api_description: Builds a static Python layer by wrapping custom forward and backward
+  functions, returning the forward result while creating separate sub-blocks for both
+  passes and storing them in a pylayer operator.
+4 api_signature: paddle.static.nn.static_pylayer(forward_fn,inputs,backward_fn)
+5 api_details: ''
+6 api_parameters:
+- forward_fn: Defines the callable executed during the forward pass.
+- inputs: Supplies the input Variables passed to `forward_fn`.
+- backward_fn: Defines the callable executed during the backward pass.
+7 api_usage_example:
+- import paddle
+- import numpy as np
+- paddle.enable_static()
+- 'def forward_fn(x):'
+- '    return paddle.exp(x)'
+- 'def backward_fn(dy):'
+- '    return 2 * paddle.exp(dy)'
+- main_program = paddle.static.Program()
+- start_program = paddle.static.Program()
+- place = paddle.CPUPlace()
+- exe = paddle.static.Executor(place)
+- 'with paddle.static.program_guard(main_program, start_program):'
+- '    data = paddle.static.data(name="X", shape=[None, 5], dtype="float32")'
+- '    data.stop_gradient = False'
+- '    ret = paddle.static.nn.static_pylayer(forward_fn, [data], backward_fn)'
+- '    data_grad = paddle.static.gradients([ret], data)[0]'
+- exe.run(start_program)
+- x = np.array([[1.0, 2.0, 3.0, 4.0, 5.0]], dtype=np.float32)
+- x, x_grad, y = exe.run(
+- '    main_program,'
+- '    feed={"X": x},'
+- '    fetch_list=[data, data_grad, ret],'
+- )
+- print(x)
+- '[[1. 2. 3. 4. 5.]]'
+- print(x_grad)
+- '[[5.4365635 5.4365635 5.4365635 5.4365635 5.4365635]]'
+- print(y)
+- '[[  2.7182817   7.389056   20.085537   54.59815   148.41316  ]]'
+8 api_shape: {}

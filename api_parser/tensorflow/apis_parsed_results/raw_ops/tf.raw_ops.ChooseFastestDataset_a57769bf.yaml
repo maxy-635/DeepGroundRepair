@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ChooseFastestDataset
+3 api_description: Selects the first input dataset that can be processed most efficiently,
+  then uses that dataset as the output.
+4 api_signature: tf.raw_ops.ChooseFastestDataset(input_datasets,num_experiments)
+5 api_details: ''
+6 api_parameters:
+- input_datasets: A list of at least two variant Tensor objects representing candidate
+    datasets to choose from.
+- num_experiments: The number of experimental runs used to evaluate and select the
+    fastest dataset.
+7 api_usage_example: null
+8 api_shape: ''

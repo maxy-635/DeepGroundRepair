@@ -1,0 +1,11 @@
+2 api_name: torch.package.PackageExporter.register_intern_hook
+3 api_description: Registers a callback that decides which module or package names
+  should be interned by the package exporter.
+4 api_signature: register_intern_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example:
+- 'hook(exporter: PackageExporter, module_name: str) -> None'
+8 api_shape: null

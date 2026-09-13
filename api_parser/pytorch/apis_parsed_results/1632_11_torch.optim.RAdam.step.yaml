@@ -1,0 +1,10 @@
+2 api_name: torch.optim.RAdam.step
+3 api_description: Updates model parameters by performing one RAdam optimization step
+  using stored gradients and optimizer state.
+4 api_signature: step(closure)
+5 api_details: ''
+6 api_parameters:
+- closure: A function that recomputes the model output and loss for the current parameters,
+    typically used for line search or certain optimization workflows.
+7 api_usage_example: null
+8 api_shape: null

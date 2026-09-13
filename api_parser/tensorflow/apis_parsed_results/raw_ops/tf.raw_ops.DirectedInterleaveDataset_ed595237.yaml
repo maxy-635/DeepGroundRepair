@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.DirectedInterleaveDataset
+3 api_description: Creates a dataset by interleaving elements from a fixed list of
+  input datasets in a directed order.
+4 api_signature: tf.raw_ops.DirectedInterleaveDataset(selector_input_dataset,data_input_datasets,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- selector_input_dataset: Provides the selector dataset whose scalar int64 values
+    choose which input dataset yields each next element.
+- data_input_datasets: Provides the list of input datasets to be interleaved, with
+    the selector deciding among them.
+- output_types: Specifies the data types of the elements produced by the resulting
+    interleaved dataset.
+- output_shapes: Specifies the shapes of the elements produced by the resulting interleaved
+    dataset.
+7 api_usage_example: null
+8 api_shape: ''

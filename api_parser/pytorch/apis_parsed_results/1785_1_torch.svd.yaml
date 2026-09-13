@@ -1,0 +1,16 @@
+2 api_name: torch.svd
+3 api_description: Computes the singular value decomposition of a matrix or batch
+  of matrices, returning U, S, and V such that the input is reconstructed as U diag(S)
+  V^H.
+4 api_signature: torch.svd(input,some,compute_uv)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to decompose, containing one or more matrices of shape `(*, m,
+    n)`.
+- some: Chooses reduced or full SVD, which determines the shapes of the returned `U`
+    and `V`.
+- compute_uv: Specifies whether to compute and return the `U` and `V` matrices.
+7 api_usage_example:
+- U, S, Vh = torch.linalg.svd(A, full_matrices=not some)
+- V = Vh.mH
+8 api_shape: null

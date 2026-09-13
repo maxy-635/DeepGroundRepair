@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.QuantizedConv2DAndRequantize
+3 api_description: Performs a quantized 2D convolution, then requantizes the result
+  to a specified output range and type.
+4 api_signature: tf.raw_ops.QuantizedConv2DAndRequantize(input,filter,strides,padding,out_type)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized input tensor to be convolved.
+- filter: The quantized convolution kernel tensor used to scan the input.
+- strides: The step sizes for sliding the convolution window across the input.
+- padding: The padding mode that controls how borders are handled during convolution.
+- out_type: The quantized data type to use for the requantized output tensor.
+7 api_usage_example: null
+8 api_shape: ''

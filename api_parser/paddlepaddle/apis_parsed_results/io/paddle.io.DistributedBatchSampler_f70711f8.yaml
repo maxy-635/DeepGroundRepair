@@ -1,0 +1,33 @@
+2 api_name: paddle.io.DistributedBatchSampler
+3 api_description: Partitions dataset indices across distributed workers so each process
+  loads a distinct batch subset, enabling parallel training without duplicating data.
+4 api_signature: paddle.io.DistributedBatchSampler(dataset,batch_size,shuffle,drop_last)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset or length-aware object used to determine sample indices.
+- batch_size: The number of samples to include in each mini-batch.
+- shuffle: Whether to randomize the order of indices before forming batches.
+- drop_last: Whether to discard the final batch if it contains fewer than `batch_size`
+    samples.
+7 api_usage_example:
+- import numpy as np
+- from paddle.io import Dataset, DistributedBatchSampler
+- '# init with dataset'
+- 'class RandomDataset(Dataset):  # type: ignore[type-arg]'
+- '    def __init__(self, num_samples):'
+- '        self.num_samples = num_samples'
+- '...'
+- '    def __getitem__(self, idx):'
+- '        image = np.random.random([784]).astype(''float32'')'
+- '        label = np.random.randint(0, 9, (1, )).astype(''int64'')'
+- '        return image, label'
+- '...'
+- '    def __len__(self):'
+- '        return self.num_samples'
+- '...'
+- dataset = RandomDataset(100)
+- sampler = DistributedBatchSampler(dataset, batch_size=64)
+- 'for data in sampler:'
+- '    # do something'
+- '    break'
+8 api_shape: {}

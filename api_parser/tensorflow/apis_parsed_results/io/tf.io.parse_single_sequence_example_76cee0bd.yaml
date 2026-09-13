@@ -1,0 +1,14 @@
+2 api_name: tensorflow.io.parse_single_sequence_example
+3 api_description: Parses one serialized SequenceExample into context and sequence
+  feature dictionaries, converting supported feature types into Tensors, SparseTensors,
+  or RaggedTensors with optional defaults and missing-field handling.
+4 api_signature: tf.io.parse_single_sequence_example(serialized,context_features,sequence_features)
+5 api_details: ''
+6 api_parameters:
+- serialized: The serialized input contains one binary SequenceExample proto to parse.
+- context_features: Specifies the whole-example features to extract from the SequenceExample
+    context section.
+- sequence_features: Specifies the per-timestep or FeatureList features to extract
+    from the SequenceExample sequence data.
+7 api_usage_example: null
+8 api_shape: ''

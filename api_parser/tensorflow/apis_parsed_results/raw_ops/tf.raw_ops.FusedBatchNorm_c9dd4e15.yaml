@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.FusedBatchNorm
+3 api_description: Applies fused batch normalization to a 4D tensor using per-channel
+  scale, offset, mean, and variance, with data format NHWC or NCHW.
+4 api_signature: tf.raw_ops.FusedBatchNorm(x,scale,offset,epsilon,data_format,is_training,name)
+5 api_details: ''
+6 api_parameters:
+- x: Input 4D float32 tensor containing the data to be batch-normalized.
+- scale: 1D float32 tensor that scales the normalized values.
+- offset: 1D float32 tensor that shifts the normalized values.
+- epsilon: Small float added to the variance for numerical stability.
+- data_format: String specifying the tensor layout, either `NHWC` or `NCHW`.
+- is_training: Boolean indicating whether to run in training mode or inference mode.
+- name: Optional operation name.
+7 api_usage_example: null
+8 api_shape: ''

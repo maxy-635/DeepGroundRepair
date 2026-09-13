@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.expand_dims
+3 api_description: Insert a new dimension of size 1 at the specified axis in a tensor's
+  shape.
+4 api_signature: tf.keras.ops.expand_dims(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be expanded with one or more new dimensions.
+- axis: The position or positions where the new axis or axes are inserted.
+7 api_usage_example: null
+8 api_shape: ''

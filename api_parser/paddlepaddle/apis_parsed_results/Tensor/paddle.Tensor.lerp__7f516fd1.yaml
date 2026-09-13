@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.lerp_
+3 api_description: In-place linearly interpolates the tensor toward another tensor
+  or value, updating the original tensor.
+4 api_signature: paddle.Tensor.lerp_(x,y,weight)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

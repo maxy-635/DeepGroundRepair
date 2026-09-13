@@ -1,0 +1,11 @@
+2 api_name: tensorflow.image.resize_with_pad
+3 api_description: Resizes an image to the target size while preserving aspect ratio,
+  then pads with zeros as needed to fit the exact dimensions.
+4 api_signature: tf.image.resize_with_pad(image,target_height,target_width)
+5 api_details: ''
+6 api_parameters:
+- image: The input image tensor to resize and pad, either 3-D or 4-D.
+- target_height: The desired output height in pixels.
+- target_width: The desired output width in pixels.
+7 api_usage_example: null
+8 api_shape: ''

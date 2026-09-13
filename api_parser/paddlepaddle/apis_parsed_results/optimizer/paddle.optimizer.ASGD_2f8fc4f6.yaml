@@ -1,0 +1,27 @@
+2 api_name: paddle.optimizer.ASGD
+3 api_description: Implements the ASGD optimizer to minimize finite-sum objectives
+  using stochastic averaging, maintaining and updating parameter states to support
+  efficient convergence.
+4 api_signature: paddle.optimizer.ASGD(learning_rate,parameters,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update model parameters during optimization.
+- parameters: Specifies which tensors or model parameters the optimizer should update.
+- name: Assigns an optional name to the optimizer instance for identification.
+7 api_usage_example:
+- import paddle
+- inp = paddle.uniform(min=-0.1, max=0.1, shape=[10, 10], dtype='float32')
+- linear = paddle.nn.Linear(10, 10)
+- inp = paddle.to_tensor(inp)
+- out = linear(inp)
+- loss = paddle.mean(out)
+- asgd = paddle.optimizer.ASGD(
+- '    learning_rate=0.001,'
+- '    batch_num=10,'
+- '    parameters=linear.parameters(),'
+- '    weight_decay=0.01'
+- )
+- out.backward()
+- asgd.step()
+- asgd.clear_grad()
+8 api_shape: {}

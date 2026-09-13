@@ -1,0 +1,13 @@
+2 api_name: paddle.nn.GRU
+3 api_description: paddle.nn.GRU is a multilayer gated recurrent unit that processes
+  input sequences and initial states to produce output sequences and final states.
+4 api_signature: paddle.nn.GRU(input_size,hidden_size,num_layers)
+5 api_details: ''
+6 api_parameters:
+- input_size: Specifies the dimensionality of the input features for the first layer
+    of the GRU.
+- hidden_size: Defines the dimensionality of the hidden state in each GRU layer.
+- num_layers: Indicates the total number of stacked GRU layers in the model, with
+    a default of one layer.
+7 api_usage_example: []
+8 api_shape: null

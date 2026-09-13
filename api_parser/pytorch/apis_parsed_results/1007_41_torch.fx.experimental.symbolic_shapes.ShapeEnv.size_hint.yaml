@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.size_hint
+3 api_description: Returns an estimated concrete size for a symbolic shape expression
+  without adding a guard, for safe use in shape-independent decisions like optimizations.
+4 api_signature: size_hint(expr,allow_none)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

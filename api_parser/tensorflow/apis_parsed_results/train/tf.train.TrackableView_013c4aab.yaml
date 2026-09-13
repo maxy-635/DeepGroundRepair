@@ -1,0 +1,13 @@
+2 api_name: tensorflow.train.TrackableView
+3 api_description: Builds and serializes a view of trackable objects, exposing the
+  named children directly linked to a given root.
+4 api_signature: tf.train.TrackableView(root)
+5 api_details: ''
+6 api_parameters:
+- root: The Trackable object that serves as the starting point for recursively collecting
+    variables from itself and its dependencies for saving.
+7 api_usage_example:
+- root = SimpleModule(name="root")
+- root.leaf = SimpleModule(name="leaf")
+- trackable_view = tf.train.TrackableView(root)
+8 api_shape: ''

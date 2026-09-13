@@ -1,0 +1,25 @@
+2 api_name: torch.nn.functional.embedding
+3 api_description: Embeds input indices using a fixed-size lookup table with learnable
+  weights.
+4 api_signature: torch.nn.functional.embedding(input,weight)
+5 api_details: ''
+6 api_parameters:
+- input: A tensor that provides indices to look up vectors in the embedding matrix.
+- weight: A 2-D tensor representing the embedding matrix where each row corresponds
+    to a vector for a specific index.
+7 api_usage_example:
+- ' # a batch of 2 samples of 4 indices each'
+- ' input = torch.tensor([[1, 2, 4, 5], [4, 3, 2, 9]])'
+- ' # an embedding matrix containing 10 tensors of size 3'
+- ' embedding_matrix = torch.rand(10, 3)'
+- ' F.embedding(input, embedding_matrix)'
+- ' # example with padding_idx'
+- ' weights = torch.rand(10, 3)'
+- ' weights[0, :].zero_()'
+- ' embedding_matrix = weights'
+- ' input = torch.tensor([[0, 2, 0, 5]])'
+- ' F.embedding(input, embedding_matrix, padding_idx=0)'
+8 api_shape:
+  input tensor shape: (*), IntTensor
+  output tensor shape: (*, Height), where * is the input shape and Height=\text{embedding_dim}
+  tensor shape transform formulas: {}

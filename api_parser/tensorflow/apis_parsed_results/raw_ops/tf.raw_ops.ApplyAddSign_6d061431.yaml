@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ApplyAddSign
+3 api_description: Applies the AddSign optimization update to a variable using the
+  current gradient and accumulator, scaling the gradient by a term based on the signs
+  of the gradient and momentum before subtracting the learning-rate-weighted update
+  from the variable.
+4 api_signature: tf.raw_ops.ApplyAddSign(var,m,lr,grad)
+5 api_details: ''
+6 api_parameters:
+- var: The variable to be updated in place.
+- m: The accumulator or moment estimate used in the update.
+- lr: The scalar learning-rate factor controlling update size.
+- grad: The gradient tensor used to compute the update.
+7 api_usage_example: null
+8 api_shape: ''

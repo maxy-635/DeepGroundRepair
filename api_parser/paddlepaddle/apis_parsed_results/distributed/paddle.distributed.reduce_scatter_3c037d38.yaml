@@ -1,0 +1,27 @@
+2 api_name: paddle.distributed.reduce_scatter
+3 api_description: Reduces a list of tensors across the group, then scatters the reduced
+  results so each process receives its assigned tensor shard.
+4 api_signature: paddle.distributed.reduce_scatter(tensor,tensor_list,op,group)
+5 api_details: ''
+6 api_parameters:
+- tensor: Stores the reduced, scattered result on each rank and is overwritten by
+    the communication.
+- tensor_list: Provides the tensors to be reduced and scattered across ranks.
+- op: Specifies the reduction operation to apply, defaulting to sum.
+- group: Specifies which communication group to use, defaulting to the global group.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data1 = paddle.to_tensor([0, 1])'
+- '    data2 = paddle.to_tensor([2, 3])'
+- 'else:'
+- '    data1 = paddle.to_tensor([4, 5])'
+- '    data2 = paddle.to_tensor([6, 7])'
+- dist.reduce_scatter(data1, [data1, data2])
+- print(data1)
+- '# [4, 6] (2 GPUs, out for rank 0)'
+- '# [8, 10] (2 GPUs, out for rank 1)'
+8 api_shape: {}

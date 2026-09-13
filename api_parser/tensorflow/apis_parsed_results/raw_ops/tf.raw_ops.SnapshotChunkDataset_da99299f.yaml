@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SnapshotChunkDataset
+3 api_description: Creates a dataset of serialized snapshot chunks by reading snapshot
+  metadata and chunk files, enabling restoration or iteration over chunked snapshot
+  data.
+4 api_signature: tf.raw_ops.SnapshotChunkDataset(chunk_file,output_types,output_shapes)
+5 api_details: ''
+6 api_parameters:
+- chunk_file: Specifies the file path to the snapshot chunk that contains the dataset
+    data to read.
+- output_types: Defines the data types of the components produced by the dataset elements.
+- output_shapes: Defines the shapes of the components produced by the dataset elements.
+7 api_usage_example: null
+8 api_shape: ''

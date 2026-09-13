@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.isinf
+3 api_description: Returns a boolean array or tensor indicating which elements are
+  positive or negative infinity.
+4 api_signature: tf.experimental.numpy.isinf(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

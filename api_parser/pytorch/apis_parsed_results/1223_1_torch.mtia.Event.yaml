@@ -1,0 +1,15 @@
+2 api_name: torch.mtia.Event
+3 api_description: Records and queries stream events to track dependencies, synchronize
+  work, and measure timing.
+4 api_signature: torch.mtia.Event(device,enable_timing,blocking,interprocess)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which device the Event is created for, defaulting to the current
+    accelerator type if omitted.
+- enable_timing: Enables timing measurement for the event when set to True.
+- blocking: Makes wait() block until the event is complete when set to True.
+- interprocess: Allows the event to be shared across processes when set to True.
+7 api_usage_example:
+- ' event = torch.Event()'
+- ' e_cuda = torch.Event(device=''cuda'')'
+8 api_shape: null

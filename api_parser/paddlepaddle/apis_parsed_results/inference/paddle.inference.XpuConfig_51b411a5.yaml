@@ -1,0 +1,9 @@
+2 api_name: paddle.inference.XpuConfig
+3 api_description: Configures Paddle Inference to run on XPU devices by setting XPU-related
+  execution parameters, tuning performance options, and controlling device-specific
+  behavior for inference.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

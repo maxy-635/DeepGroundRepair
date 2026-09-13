@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.metrics.TruePositives
+3 api_description: Counts the number of true positive predictions, or the weighted
+  sum of true positives when `sample_weight` is provided.
+4 api_signature: tf.keras.metrics.TruePositives(thresholds)
+5 api_details: ''
+6 api_parameters:
+- thresholds: Sets the cutoff value(s) used to decide whether a prediction counts
+    as positive, with one result computed per threshold.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([0, 1, 1, 1], [1, 0, 1, 1], sample_weight=[0, 0, 1, 0])
+- m.result()
+8 api_shape: ''

@@ -1,0 +1,43 @@
+2 api_name: paddle.nn.GELU
+3 api_description: The paddle.nn.GELU API implements the Gaussian Error Linear Unit
+  activation function, which applies a non-linear transformation to input data to
+  improve the model's capacity to learn complex patterns.
+4 api_signature: paddle.nn.GELU(approximate:bool)
+5 api_details: ''
+6 api_parameters:
+- approximate: Determines if approximation is enabled, with the default setting being
+    False.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[-1, 0.5],[1, 1.5]])
+- m = paddle.nn.GELU()
+- out = m(x)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.15865529,  0.34573123],'
+- '[ 0.84134471,  1.39978933]])'
+- m = paddle.nn.GELU(False)
+- out = m(x)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.15865529,  0.34573123],'
+- '[ 0.84134471,  1.39978933]])'
+- m = paddle.nn.GELU("none")
+- out = m(x)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.15865529,  0.34573123],'
+- '[ 0.84134471,  1.39978933]])'
+- m = paddle.nn.GELU("tanh")
+- out = m(x)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.15880796,  0.34571400],'
+- '[ 0.84119201,  1.39957154]])'
+- m = paddle.nn.GELU(True)
+- out = m(x)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.15880796,  0.34571400],'
+- '[ 0.84119201,  1.39957154]])'
+8 api_shape: null

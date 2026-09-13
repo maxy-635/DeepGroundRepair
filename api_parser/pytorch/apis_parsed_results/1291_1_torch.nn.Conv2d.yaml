@@ -1,0 +1,28 @@
+2 api_name: torch.nn.Conv2d
+3 api_description: Applies a 2D convolution operation to input data with multiple
+  channels, enabling feature extraction from spatial data like images.
+4 api_signature: torch.nn.Conv2d(in_channels,out_channels,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Specifies the number of input channels in the image, such as RGB channels.
+- out_channels: Determines the number of output channels produced by the convolution
+    operation.
+- kernel_size: Defines the dimensions of the filter used for the convolution.
+- stride: Sets the step size at which the filter moves across the input image.
+- padding: Specifies the amount of zero-padding added to the input image on all sides.
+7 api_usage_example:
+- ' # With square kernels and equal stride'
+- ' m = nn.Conv2d(16, 33, 3, stride=2)'
+- ' # non-square kernels and unequal stride and with padding'
+- ' m = nn.Conv2d(16, 33, (3, 5), stride=(2, 1), padding=(4, 2))'
+- ' # non-square kernels and unequal stride and with padding and dilation'
+- ' m = nn.Conv2d(16, 33, (3, 5), stride=(2, 1), padding=(4, 2), dilation=(3, 1))'
+- ' input = torch.randn(20, 16, 50, 100)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = out_channels
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

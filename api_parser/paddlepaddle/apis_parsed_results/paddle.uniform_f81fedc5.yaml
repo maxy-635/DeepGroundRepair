@@ -1,0 +1,44 @@
+2 api_name: paddle.uniform
+3 api_description: Creates a tensor of the specified shape and dtype, filled with
+  random values sampled uniformly from the range [min, max).
+4 api_signature: paddle.uniform(shape,dtype,min,max)
+5 api_details: ''
+6 api_parameters:
+- shape: Defines the tensor dimensions to create.
+- dtype: Sets the output tensor’s data type, or uses the default dtype if not provided.
+- min: Specifies the inclusive lower bound of the random value range.
+- max: Specifies the exclusive upper bound of the random value range.
+7 api_usage_example:
+- import paddle
+- '# example 1:'
+- '# attr shape is a list which doesn''t contain Tensor.'
+- out1 = paddle.uniform(shape=[3, 4])
+- print(out1)
+- '>>>'
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.38170254, -0.47945309,  0.39794648, -0.94233936],'
+- '[-0.85296679, -0.76094693,  0.10565400,  0.59155810],'
+- '[ 0.11681318, -0.42144555, -0.81596589,  0.62113667]])'
+- '>>>'
+- '# example 2:'
+- '# attr shape is a list which contains Tensor.'
+- dim1 = paddle.to_tensor(2, 'int64')
+- dim2 = paddle.to_tensor(3, 'int32')
+- out2 = paddle.uniform(shape=[dim1, dim2])
+- print(out2)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.00294012, -0.07210171, -0.44236207],'
+- '[ 0.70089281,  0.21500075, -0.22084606]])'
+- '>>>'
+- '# example 3:'
+- '# attr shape is a Tensor, the data type must be int64 or int32.'
+- shape_tensor = paddle.to_tensor([2, 3])
+- out3 = paddle.uniform(shape_tensor)
+- print(out3)
+- '>>>'
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.60801756,  0.32448411,  0.90269291],'
+- '[-0.66421294, -0.95218551, -0.51022208]])'
+- '>>>'
+8 api_shape: {}

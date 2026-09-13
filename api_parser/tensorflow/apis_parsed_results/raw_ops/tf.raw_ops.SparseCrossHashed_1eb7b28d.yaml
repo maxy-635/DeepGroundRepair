@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.SparseCrossHashed
+3 api_description: Generates batchwise sparse feature crosses from sparse and dense
+  inputs, returning a 2D SparseTensor of hashed cross combinations.
+4 api_signature: tf.raw_ops.SparseCrossHashed(indices,values,dense_inputs,num_buckets,strong_hash,salt)
+5 api_details: ''
+6 api_parameters:
+- indices: Provides the row/entry positions for each sparse tensor input so the operation
+    can align sparse elements.
+- values: Provides the actual sparse values to combine, using int64 or string data.
+- dense_inputs: Provides dense feature columns that will be crossed with the sparse
+    inputs.
+- num_buckets: Sets the hash bucket count used to map crossed features into a bounded
+    output space when hashing is enabled.
+- strong_hash: Chooses a stronger salted SipHash-based hashing method instead of FarmHash
+    when true.
+- salt: Supplies the salt values used by SipHash when strong hashing is enabled.
+7 api_usage_example: null
+8 api_shape: ''

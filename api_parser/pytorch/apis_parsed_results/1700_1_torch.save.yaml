@@ -1,0 +1,16 @@
+2 api_name: torch.save
+3 api_description: Serializes a PyTorch object and writes it to a file on disk for
+  later loading.
+4 api_signature: torch.save(obj,f)
+5 api_details: ''
+6 api_parameters:
+- obj: The object to be serialized and saved.
+- f: The destination file or file-like object where the object will be written.
+7 api_usage_example:
+- ' # Save to file'
+- ' x = torch.tensor([0, 1, 2, 3, 4])'
+- ' torch.save(x, "tensor.pt")'
+- ' # Save to io.BytesIO buffer'
+- ' buffer = io.BytesIO()'
+- ' torch.save(x, buffer)'
+8 api_shape: null

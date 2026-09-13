@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesSerializeEnsemble
+3 api_description: Serializes a boosted trees ensemble into a protocol buffer representation
+  for storage or transfer.
+4 api_signature: tf.raw_ops.BoostedTreesSerializeEnsemble(tree_ensemble_handle)
+5 api_details: ''
+6 api_parameters:
+- tree_ensemble_handle: Resource handle to the tree ensemble that will be serialized.
+7 api_usage_example: null
+8 api_shape: ''

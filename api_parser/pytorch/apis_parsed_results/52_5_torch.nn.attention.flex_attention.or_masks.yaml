@@ -1,0 +1,10 @@
+2 api_name: torch.nn.attention.flex_attention.or_masks
+3 api_description: Returns a combined mask_mod that accepts positions allowed by any
+  of the provided mask_mods.
+4 api_signature: torch.nn.attention.flex_attention.or_masks(*mask_mods)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,25 @@
+2 api_name: tensorflow.keras.layers.Conv1D
+3 api_description: The tf.keras.layers.Conv1D layer performs 1D convolution on input
+  data, applying a convolution kernel along a single spatial or temporal dimension,
+  with optional bias and activation functions.
+4 api_signature: tf.keras.layers.Conv1D(filters, kernel_size, strides, padding, activation)
+5 api_details: ''
+6 api_parameters:
+- filters: Specifies the number of output filters in the convolution.
+- kernel_size: Defines the size of the convolutional window.
+- strides: Determines the step size of the convolution operation.
+- padding: Controls the padding method used around the input (valid, same, or causal).
+- activation: Specifies the activation function to be applied to the output.
+7 api_usage_example:
+- '# The inputs are 128-length vectors with 10 timesteps, and the'
+- '# batch size is 4.'
+- x = np.random.rand(4, 10, 128)
+- y = keras.layers.Conv1D(32, 3, activation='relu')(x)
+- print(y.shape)
+8 api_shape:
+  input tensor shape: (N, Length_in, Channel_in)
+  output tensor shape: (N, Length_out, Channel_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = filters
+    tensor length: If padding = "valid", Length_out = floor((Length_in - kernel_size) / strides + 1); 
+                  If padding = "same", Length_out = floor((Length_in - 1) / strides + 1)

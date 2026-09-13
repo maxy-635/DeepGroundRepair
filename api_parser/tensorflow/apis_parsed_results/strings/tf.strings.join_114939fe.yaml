@@ -1,0 +1,17 @@
+2 api_name: tensorflow.strings.join
+3 api_description: Element-wise concatenates a list of same-shaped string tensors
+  into a single string tensor.
+4 api_signature: tf.strings.join(inputs,separator)
+5 api_details: ''
+6 api_parameters:
+- inputs: The string tensors to concatenate element-wise.
+- separator: The string inserted between joined strings.
+7 api_usage_example:
+- tf.strings.join(['abc','def']).numpy()
+- tf.strings.join([['abc','123'],
+- '                 [''def'',''456''],'
+- '                 [''ghi'',''789'']]).numpy()'
+- tf.strings.join([['abc','123'],
+- '                 [''def'',''456'']],'
+- '                 separator=" ").numpy()'
+8 api_shape: ''

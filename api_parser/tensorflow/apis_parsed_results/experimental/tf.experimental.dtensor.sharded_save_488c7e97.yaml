@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.dtensor.sharded_save
+3 api_description: Saves named tensor slices as a sharded checkpoint in a multi-client-safe
+  way, using barriers to ensure all files are written and metadata is fully merged
+  before completion.
+4 api_signature: tf.experimental.dtensor.sharded_save(mesh,file_prefix,tensors)
+5 api_details: ''
+6 api_parameters:
+- mesh: Specifies the mesh that holds the tensors being saved.
+- file_prefix: Sets the checkpoint file prefix to write the save data to.
+- tensors: Provides the tensors to save, in the same order as `tensor_names`.
+7 api_usage_example: null
+8 api_shape: ''

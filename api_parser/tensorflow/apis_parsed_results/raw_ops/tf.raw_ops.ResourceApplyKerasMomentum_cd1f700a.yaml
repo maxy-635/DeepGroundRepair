@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyKerasMomentum
+3 api_description: Applies Keras momentum updates to a variable using a gradient,
+  learning rate, and momentum accumulator, with optional Nesterov momentum.
+4 api_signature: tf.raw_ops.ResourceApplyKerasMomentum(var,accum,lr,grad,momentum,use_nesterov,name)
+5 api_details: ''
+6 api_parameters:
+- var: The resource variable to update.
+- accum: The resource accumulator that stores the momentum state.
+- lr: The scalar learning rate that scales the gradient step.
+- grad: The gradient value applied to the variable, matching the learning-rate type.
+- momentum: The scalar momentum coefficient controlling accumulation.
+- use_nesterov: If true, applies Nesterov-style momentum updates instead of standard
+    momentum.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

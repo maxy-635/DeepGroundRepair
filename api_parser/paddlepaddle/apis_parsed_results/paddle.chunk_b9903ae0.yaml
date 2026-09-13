@@ -1,0 +1,24 @@
+2 api_name: paddle.chunk
+3 api_description: Splits a tensor into multiple sub-tensors along a specified axis,
+  returning the resulting chunks.
+4 api_signature: paddle.chunk(x,chunks,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be split into multiple chunks.
+- chunks: The number of chunks to divide the tensor into along the selected axis.
+- axis: The dimension along which the tensor is split; negative values are counted
+    from the end.
+7 api_usage_example:
+- import paddle
+- x = paddle.rand([3, 9, 5])
+- out0, out1, out2 = paddle.chunk(x, chunks=3, axis=1)
+- '# out0.shape [3, 3, 5]'
+- '# out1.shape [3, 3, 5]'
+- '# out2.shape [3, 3, 5]'
+- '# axis is negative, the real axis is (rank(x) + axis) which real'
+- '# value is 1.'
+- out0, out1, out2 = paddle.chunk(x, chunks=3, axis=-2)
+- '# out0.shape [3, 3, 5]'
+- '# out1.shape [3, 3, 5]'
+- '# out2.shape [3, 3, 5]'
+8 api_shape: {}

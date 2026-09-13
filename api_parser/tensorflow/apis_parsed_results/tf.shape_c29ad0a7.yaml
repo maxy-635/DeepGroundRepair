@@ -1,0 +1,12 @@
+2 api_name: tensorflow.shape
+3 api_description: Returns a 1-D integer tensor with the input tensor’s shape, or
+  an empty vector for a scalar.
+4 api_signature: tf.shape(input,out_type)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor or sparse tensor whose shape is being computed.
+- out_type: The integer type used for the returned shape values, either `int32` or
+    `int64`.
+7 api_usage_example:
+- a.shape
+8 api_shape: ''

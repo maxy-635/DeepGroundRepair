@@ -1,0 +1,8 @@
+2 api_name: tensorflow.debugging.enable_traceback_filtering
+3 api_description: Re-enables TensorFlow’s filtering of internal stack frames in exceptions
+  so tracebacks stay shorter, clearer, and focused on user code.
+4 api_signature: tf.debugging.enable_traceback_filtering()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

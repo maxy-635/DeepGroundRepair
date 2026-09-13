@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.FusedResizeAndPadConv2D
+3 api_description: Fuses resizing and padding into the Conv2D preprocessing step to
+  avoid intermediate tensors, reduce memory use, and improve latency in NHWC format.
+4 api_signature: tf.raw_ops.FusedResizeAndPadConv2D(input,size,filter,mode,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D input image batch to be resized, padded, and convolved.
+- size: The target height and width to resize the images to before convolution.
+- filter: The 4-D convolution kernel used to process the resized and padded input.
+- mode: The padding mode used when extending the image boundaries, either reflect
+    or symmetric.
+- strides: The sliding-window stride values for the convolution across each input
+    dimension.
+- padding: The convolution padding algorithm to apply, either SAME or VALID.
+7 api_usage_example: null
+8 api_shape: ''

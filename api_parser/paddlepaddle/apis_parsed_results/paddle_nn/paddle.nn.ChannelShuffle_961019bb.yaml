@@ -1,0 +1,33 @@
+2 api_name: paddle.nn.ChannelShuffle
+3 api_description: The paddle.nn.ChannelShuffle API divides a tensor's channels into
+  groups, transposes them, and rearranges them back to the original shape to enhance
+  channel interaction and feature utilization.
+4 api_signature: paddle.nn.ChannelShuffle(groups)
+5 api_details: ''
+6 api_parameters:
+- groups: Specifies the number of groups to divide the input channels into for the
+    channel shuffle operation.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- x = paddle.arange(0, 0.6, 0.1, 'float32')
+- x = paddle.reshape(x, [1, 6, 1, 1])
+- print(x)
+- Tensor(shape=[1, 6, 1, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0.        ]],'
+- '[[0.10000000]],'
+- '[[0.20000000]],'
+- '[[0.30000001]],'
+- '[[0.40000001]],'
+- '[[0.50000000]]]])'
+- channel_shuffle = nn.ChannelShuffle(3)
+- y = channel_shuffle(x)
+- print(y)
+- Tensor(shape=[1, 6, 1, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0.        ]],'
+- '[[0.20000000]],'
+- '[[0.40000001]],'
+- '[[0.10000000]],'
+- '[[0.30000001]],'
+- '[[0.50000000]]]])'
+8 api_shape: null

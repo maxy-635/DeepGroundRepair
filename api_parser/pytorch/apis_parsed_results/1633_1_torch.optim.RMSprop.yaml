@@ -1,0 +1,34 @@
+2 api_name: torch.optim.RMSprop
+3 api_description: Implements the RMSprop optimization algorithm for updating model
+  parameters using a running average of squared gradients.
+4 api_signature: torch.optim.RMSprop(params,lr,alpha,eps,momentum)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies which model parameters or parameter groups RMSprop should optimize.
+- lr: Sets the step size used to update parameters during optimization.
+- alpha: Controls how much past squared gradients are smoothed into the running average.
+- eps: Adds a small value for numerical stability when dividing by the root mean square.
+- momentum: Applies momentum to smooth and accelerate parameter updates.
+7 api_usage_example:
+- ' model = torch.nn.Linear(10, 10)'
+- ' optim = torch.optim.SGD(model.parameters(), lr=3e-4)'
+- ' scheduler1 = torch.optim.lr_scheduler.LinearLR('
+- '...     optim,'
+- '...     start_factor=0.1,'
+- '...     end_factor=1,'
+- '...     total_iters=20,'
+- '... )'
+- ' scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR('
+- '...     optim,'
+- '...     T_max=80,'
+- '...     eta_min=3e-5,'
+- '... )'
+- ' lr = torch.optim.lr_scheduler.SequentialLR('
+- '...     optim,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' lr.load_state_dict(torch.load("./save_seq.pt"))'
+- ' # now load the optimizer checkpoint after loading the LRScheduler'
+- ' optim.load_state_dict(torch.load("./save_optim.pt"))'
+8 api_shape: null

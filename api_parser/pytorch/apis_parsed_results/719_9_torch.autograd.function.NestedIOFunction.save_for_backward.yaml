@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.function.NestedIOFunction.save_for_backward
+3 api_description: Saves tensors needed for backward computation, so they can be retrieved
+  later during the backward pass.
+4 api_signature: save_for_backward()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

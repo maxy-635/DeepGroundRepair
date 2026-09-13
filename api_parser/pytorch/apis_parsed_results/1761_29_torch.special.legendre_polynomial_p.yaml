@@ -1,0 +1,11 @@
+2 api_name: torch.special.legendre_polynomial_p
+3 api_description: Computes the Legendre polynomial Pn of the input tensor for a given
+  order n.
+4 api_signature: torch.special.legendre_polynomial_p(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used as the points at which the Legendre polynomial
+    is evaluated.
+- n: The degree of the Legendre polynomial to compute.
+7 api_usage_example: null
+8 api_shape: null

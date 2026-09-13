@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.SegmentMaxV2
+3 api_description: Returns the maximum value for each segment ID in `data`, using
+  `segment_ids` to group elements and filling empty segments with the lowest representable
+  value for the tensor type.
+4 api_signature: tf.raw_ops.SegmentMaxV2(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The input tensor whose values are reduced by segment to compute the maximum
+    for each segment.
+- segment_ids: A sorted 1-D tensor that assigns each element in the first dimension
+    of `data` to a segment.
+- num_segments: The total number of output segments to produce.
+7 api_usage_example:
+- '@tf.function(jit_compile=True)'
+- 'def test(c):'
+- '  return tf.raw_ops.SegmentMaxV2(data=c, segment_ids=tf.constant([0, 0, 1]), num_segments=2)'
+- c = tf.constant([[1,2,3,4], [4, 3, 2, 1], [5,6,7,8]])
+- test(c).numpy()
+8 api_shape: ''

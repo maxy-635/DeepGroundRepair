@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.uint16
+3 api_description: 16-bit unsigned integer scalar type for TensorFlow NumPy, representing
+  values from 0 to 65,535 and exposing standard scalar/ndarray-style attributes.
+4 api_signature: tf.experimental.numpy.uint16(*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

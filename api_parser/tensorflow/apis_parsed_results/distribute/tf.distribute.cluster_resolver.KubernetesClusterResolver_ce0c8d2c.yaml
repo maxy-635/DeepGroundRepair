@@ -1,0 +1,12 @@
+2 api_name: tensorflow.distribute.cluster_resolver.KubernetesClusterResolver
+3 api_description: Resolves a TensorFlow cluster on Kubernetes by finding running
+  pods that match a namespace and label selector, collecting their IP addresses, and
+  building a ClusterSpec from that information.
+4 api_signature: tf.distribute.cluster_resolver.KubernetesClusterResolver(job_to_label_mapping,tf_server_port)
+5 api_details: ''
+6 api_parameters:
+- job_to_label_mapping: Maps TensorFlow job names to Kubernetes label selectors so
+    each job can target the appropriate set of pods.
+- tf_server_port: Specifies the port on which the TensorFlow server listens.
+7 api_usage_example: null
+8 api_shape: ''

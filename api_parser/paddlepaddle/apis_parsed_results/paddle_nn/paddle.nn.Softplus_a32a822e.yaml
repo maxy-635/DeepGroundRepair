@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.Softplus
+3 api_description: 'The paddle.nn.Softplus API implements the Softplus activation
+  function, which smooths the ReLU function by applying the formula: log(1 + exp(x)),
+  providing a differentiable approximation that avoids the zero gradient issue.'
+4 api_signature: paddle.nn.Softplus(beta,threshold)
+5 api_details: ''
+6 api_parameters:
+- beta: Controls the sharpness of the Softplus function's transition from linear to
+    exponential behavior.
+- threshold: Determines the point at which the function switches to a linear approximation
+    to avoid overflow.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3], dtype='float32')
+- m = paddle.nn.Softplus()
+- out = m(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.51301527, 0.59813893, 0.74439669, 0.85435522])'
+8 api_shape: null

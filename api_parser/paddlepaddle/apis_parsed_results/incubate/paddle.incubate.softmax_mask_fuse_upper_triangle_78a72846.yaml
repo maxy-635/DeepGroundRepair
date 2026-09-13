@@ -1,0 +1,29 @@
+2 api_name: paddle.incubate.softmax_mask_fuse_upper_triangle
+3 api_description: Applies softmax to x while masking out the upper-triangular elements.
+4 api_signature: paddle.incubate.softmax_mask_fuse_upper_triangle(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.incubate as incubate
+- paddle.seed(1)
+- paddle.set_device("gpu")
+- x = paddle.rand((1, 1, 32, 32))
+- 'rst = incubate.softmax_mask_fuse_upper_triangle(x) # type: ignore[operator]'
+- print(rst)
+- Tensor(shape=[1, 1, 32, 32], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[[[1.        , 0.        , 0.        , ..., 0.        ,'
+- 0.        , 0.        ],
+- '[0.49575609, 0.50424391, 0.        , ..., 0.        ,'
+- 0.        , 0.        ],
+- '[0.26035303, 0.25114325, 0.48850375, ..., 0.        ,'
+- 0.        , 0.        ],
+- '...,'
+- '[0.04379999, 0.04194880, 0.05150032, ..., 0.02721255,'
+- 0.        , 0.        ],
+- '[0.02348574, 0.01959674, 0.02609110, ..., 0.04046615,'
+- 0.02248267, 0.        ],
+- '[0.02280738, 0.03144657, 0.02892209, ..., 0.03885521,'
+- 0.03342311, 0.02842640]]]])
+8 api_shape: {}

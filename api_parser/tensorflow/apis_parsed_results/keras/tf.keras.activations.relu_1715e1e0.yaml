@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.activations.relu
+3 api_description: Applies the ReLU activation, returning max(x, 0) by default, with
+  options to set a threshold, cap the maximum value, or use a scaled negative slope
+  below the threshold.
+4 api_signature: tf.keras.activations.relu(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the ReLU activation to.
+7 api_usage_example:
+- x = [-10, -5, 0.0, 5, 10]
+- keras.activations.relu(x)
+- keras.activations.relu(x, negative_slope=0.5)
+- keras.activations.relu(x, max_value=5.)
+- keras.activations.relu(x, threshold=5.)
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.multinomial.Multinomial.sample
+3 api_description: Draws samples from a multinomial distribution, returning counts
+  for each class over a fixed number of trials.
+4 api_signature: '"sample(sample_shape)"'
+5 api_details: ''
+6 api_parameters:
+- sample_shape: Shape of the sample to draw; determines how many independent samples
+    to generate.
+7 api_usage_example: null
+8 api_shape: null

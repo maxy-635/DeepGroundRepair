@@ -1,0 +1,29 @@
+2 api_name: paddle.nn.Pad3D
+3 api_description: The paddle.nn.Pad3D API is used to create a callable object for
+  padding a 3D tensor based on specified 'pad', 'mode', and 'value' parameters, with
+  constraints on pad values when using 'reflect' mode.
+4 api_signature: paddle.nn.Pad3D(padding,mode,value)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the size of the padding to be applied to each side of the 3D
+    input tensor.
+- mode: Determines the padding mode to be used, such as constant, reflect, or replicate.
+- value: Defines the constant value to be used for padding when the mode is set to
+    'constant'; defaults to 0.0.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- input_shape = (1, 1, 1, 2, 3)
+- pad = [1, 0, 1, 2, 0, 0]
+- data = paddle.arange(paddle.prod(paddle.to_tensor(input_shape)), dtype="float32").reshape(input_shape)
+  + 1
+- my_pad = nn.Pad3D(padding=pad, mode="constant")
+- result = my_pad(data)
+- print(result)
+- Tensor(shape=[1, 1, 1, 5, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[[0., 0., 0., 0.],'
+- '[0., 1., 2., 3.],'
+- '[0., 4., 5., 6.],'
+- '[0., 0., 0., 0.],'
+- '[0., 0., 0., 0.]]]]])'
+8 api_shape: null

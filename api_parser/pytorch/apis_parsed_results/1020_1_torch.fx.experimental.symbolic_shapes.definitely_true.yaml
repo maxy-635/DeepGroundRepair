@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.definitely_true
+3 api_description: Determines whether a symbolic boolean can be proven true, adding
+  a guard if needed, and may return false when the result depends on unbacked symbolic
+  integers.
+4 api_signature: torch.fx.experimental.symbolic_shapes.definitely_true(a)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

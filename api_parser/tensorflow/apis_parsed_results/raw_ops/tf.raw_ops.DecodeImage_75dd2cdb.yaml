@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.DecodeImage
+3 api_description: Detects BMP, GIF, JPEG, or PNG image bytes and decodes them into
+  a Tensor of the requested dtype.
+4 api_signature: tf.raw_ops.DecodeImage(contents,channels,dtype)
+5 api_details: ''
+6 api_parameters:
+- contents: Contains the raw encoded image bytes to be decoded.
+- channels: Specifies how many color channels the decoded image should have.
+- dtype: Sets the data type of the returned decoded image tensor.
+7 api_usage_example: null
+8 api_shape: ''

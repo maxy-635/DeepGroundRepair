@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.isfinite
+3 api_description: Returns a boolean tensor indicating which elements are finite (neither
+  infinity nor NaN).
+4 api_signature: '"tf.experimental.numpy.isfinite(x)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

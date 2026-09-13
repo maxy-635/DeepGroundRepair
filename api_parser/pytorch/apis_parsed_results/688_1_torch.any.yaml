@@ -1,0 +1,15 @@
+2 api_name: torch.any
+3 api_description: Returns True if any element in the input tensor evaluates to True;
+  otherwise returns False.
+4 api_signature: torch.any(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to check for any `True`/non-zero values.
+7 api_usage_example:
+- ' a = torch.rand(1, 2).bool()'
+- ' a'
+- ' torch.any(a)'
+- ' a = torch.arange(0, 3)'
+- ' a'
+- ' torch.any(a)'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.dot
+3 api_description: Computes the dot product of two tensors, contracting their last
+  axis and corresponding dimensions to produce a tensor of pairwise products and sums.
+4 api_signature: tf.keras.ops.dot(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The first input tensor or array to be multiplied.
+- x2: The second input tensor or array to be multiplied with the first.
+7 api_usage_example: null
+8 api_shape: ''

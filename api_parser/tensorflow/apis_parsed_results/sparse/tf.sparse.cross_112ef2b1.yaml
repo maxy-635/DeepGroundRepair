@@ -1,0 +1,15 @@
+2 api_name: tensorflow.sparse.cross
+3 api_description: Generates sparse feature crosses from a mix of sparse and dense
+  tensors, producing crossed combinations as sparse outputs.
+4 api_signature: tf.sparse.cross(inputs,separator)
+5 api_details: ''
+6 api_parameters:
+- inputs: The tensors or sparse tensors to combine into crossed feature strings.
+- separator: The string inserted between joined values when forming each crossed feature,
+    defaulting to 'X'.
+7 api_usage_example:
+- inp_0 = tf.constant([['a'], ['b']])
+- inp_1 = tf.constant([['c'], ['d']])
+- output = tf.sparse.cross([inp_0, inp_1], separator='_Y_')
+- output.values
+8 api_shape: ''

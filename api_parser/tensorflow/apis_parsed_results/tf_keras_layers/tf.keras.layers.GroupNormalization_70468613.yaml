@@ -1,0 +1,20 @@
+2 api_name: tensorflow.keras.layers.GroupNormalization
+3 api_description: GroupNormalization normalizes input features by dividing channels
+  into groups, computing mean and variance within each group, providing stable accuracy
+  for small batch sizes. It behaves like Layer Normalization with one group and like
+  Instance Normalization with the number of groups equal to the number of channels.
+4 api_signature: tf.keras.layers.GroupNormalization(groups, axis, epsilon, center,
+  scale)
+5 api_details: ''
+6 api_parameters:
+- groups: Specifies the number of groups for normalization, which must divide the
+    input dimension.
+- axis: Determines the axis or axes to normalize, typically the feature axes, with
+    the option to exclude batch axes.
+- epsilon: A small value added to the variance to prevent division by zero during
+    normalization.
+- center: Indicates whether to add a learnable offset to the normalized output.
+- scale: Specifies whether to multiply the normalized output by a learnable scale
+    factor.
+7 api_usage_example: null
+8 api_shape: null

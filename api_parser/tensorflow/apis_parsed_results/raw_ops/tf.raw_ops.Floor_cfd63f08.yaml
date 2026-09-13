@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Floor
+3 api_description: Rounds each element of x down to the greatest integer less than
+  or equal to it.
+4 api_signature: tf.raw_ops.Floor(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are rounded down elementwise to the greatest integer
+    less than or equal to each value.
+7 api_usage_example: null
+8 api_shape: ''

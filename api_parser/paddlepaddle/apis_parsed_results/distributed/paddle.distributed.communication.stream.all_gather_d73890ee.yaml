@@ -1,0 +1,28 @@
+2 api_name: paddle.distributed.communication.stream.all_gather
+3 api_description: Gathers tensors from all devices into a correctly sized output
+  tensor or tensor list.
+4 api_signature: paddle.distributed.communication.stream.all_gather(tensor_or_tensor_list,tensor,group)
+5 api_details: ''
+6 api_parameters:
+- tensor_or_tensor_list: Receives the gathered outputs from all ranks, either as one
+    correctly sized tensor or as a list that is empty or already sized appropriately.
+- tensor: Provides the local input tensor to be gathered, and its contents are overwritten
+    after communication completes.
+- group: Specifies the communication group to use, defaulting to the global group
+    when omitted.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- local_rank = dist.get_rank()
+- 'tensor_list = [] # type: ignore'
+- 'if local_rank == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- task = dist.stream.all_gather(tensor_list, data, sync_op=False)
+- 'task.wait()  # type: ignore[union-attr]'
+- print(tensor_list)
+- '[[[4, 5, 6], [4, 5, 6]], [[1, 2, 3], [1, 2, 3]]] (2 GPUs)'
+8 api_shape: {}

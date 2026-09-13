@@ -1,0 +1,19 @@
+2 api_name: paddle.nn.functional.hardshrink
+3 api_description: Applies the hard shrinkage activation function, setting values
+  within a threshold to zero and leaving others unchanged.
+4 api_signature: paddle.nn.functional.hardshrink(x,threshold)
+5 api_details: ''
+6 api_parameters:
+- x: Specifies the input tensor for the hardshrink function, which must be of data
+    type float32 or float64.
+- threshold: Defines the threshold value for the hardshrink operation, with a default
+    setting of 0.5.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([-1, 0.3, 2.5])
+- out = F.hardshrink(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-1.       ,  0.       , 2.50000000])'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.random.categorical
+3 api_description: Samples class indices from each row of a 2D logits tensor, returning
+  independent categorical draws for every batch item.
+4 api_signature: tf.keras.random.categorical(logits,num_samples,seed)
+5 api_details: ''
+6 api_parameters:
+- logits: Specifies the unnormalized log-probabilities for each class in each batch
+    row to sample from.
+- num_samples: Sets how many independent samples to draw per input row.
+- seed: Controls the random seed for deterministic sampling behavior.
+7 api_usage_example: null
+8 api_shape: ''

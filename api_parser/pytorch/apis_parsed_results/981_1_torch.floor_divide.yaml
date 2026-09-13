@@ -1,0 +1,14 @@
+2 api_name: torch.floor_divide
+3 api_description: Divides two tensors or a tensor and a scalar elementwise and rounds
+  the result down toward negative infinity.
+4 api_signature: torch.floor_divide(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The value to be divided.
+- other: The value to divide by.
+7 api_usage_example:
+- ' a = torch.tensor([4.0, 3.0])'
+- ' b = torch.tensor([2.0, 2.0])'
+- ' torch.floor_divide(a, b)'
+- ' torch.floor_divide(a, 1.4)'
+8 api_shape: null

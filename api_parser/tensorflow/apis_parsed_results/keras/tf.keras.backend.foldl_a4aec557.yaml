@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.foldl
+3 api_description: Applies a function cumulatively to the elements of a tensor along
+  the first axis, threading an accumulator through each step and returning the final
+  result.
+4 api_signature: tf.keras.backend.foldl(fn,elems,initializer)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

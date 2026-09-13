@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.batch_flatten
+3 api_description: Flattens each input tensor in a batch into a 2D tensor, preserving
+  the batch dimension and collapsing all remaining dimensions into a single vector
+  per example.
+4 api_signature: tf.keras.backend.batch_flatten(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

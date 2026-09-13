@@ -1,0 +1,8 @@
+2 api_name: torch.set_num_interop_threads
+3 api_description: Sets how many CPU threads PyTorch uses for interop parallelism,
+  such as JIT interpreter work.
+4 api_signature: torch.set_num_interop_threads(int)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

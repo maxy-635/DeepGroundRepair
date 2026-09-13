@@ -1,0 +1,11 @@
+2 api_name: paddle.version.nccl
+3 api_description: Returns the NCCL version used by the Paddle package.
+4 api_signature: paddle.version.nccl()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.version.nccl()
+- '>>>'
+- '''2804'''
+8 api_shape: {}

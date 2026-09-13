@@ -1,0 +1,18 @@
+2 api_name: tensorflow.keras.layers.ZeroPadding2D
+3 api_description: The tf.keras.layers.ZeroPadding2D layer adds zero-padding to the
+  borders of 2D input tensors, such as images, by specifying the number of rows and
+  columns to be added at the top, bottom, left, and right.
+4 api_signature: tf.keras.layers.ZeroPadding2D(padding)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the number of pixels to add to the height and width of the input
+    tensor, which can be a single integer for uniform padding, a tuple of two integers
+    for asymmetric padding, or a tuple of two tuples of two integers for specifying
+    padding for each side separately.
+7 api_usage_example:
+- input_shape = (1, 1, 2, 2)
+- x = np.arange(np.prod(input_shape)).reshape(input_shape)
+- x
+- y = keras.layers.ZeroPadding2D(padding=1)(x)
+- y
+8 api_shape: null

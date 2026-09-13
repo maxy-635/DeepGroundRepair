@@ -1,0 +1,18 @@
+2 api_name: torch.slice_scatter
+3 api_description: Returns a new tensor with values from src embedded into input along
+  the specified dimension, without creating a view.
+4 api_signature: torch.slice_scatter(input,src,dim,start,end)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor that will be updated by replacing a slice with new values.
+- src: The tensor containing the values to insert into the input slice.
+- dim: The dimension along which the slice is selected and replaced.
+- start: The starting index of the slice to be replaced.
+- end: The ending index of the slice to be replaced.
+7 api_usage_example:
+- ' a = torch.zeros(8, 8)'
+- ' b = torch.ones(2, 8)'
+- ' a.slice_scatter(b, start=6)'
+- ' b = torch.ones(8, 2)'
+- ' a.slice_scatter(b, dim=1, start=2, end=6, step=2)'
+8 api_shape: null

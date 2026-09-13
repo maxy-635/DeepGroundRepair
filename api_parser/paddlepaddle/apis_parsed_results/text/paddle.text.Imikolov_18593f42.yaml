@@ -1,0 +1,41 @@
+2 api_name: paddle.text.Imikolov
+3 api_description: Provides the Imikolov text dataset implementation for loading and
+  working with the dataset used in language modeling tasks.
+4 api_signature: paddle.text.Imikolov(data_file,data_type,window_size,mode)
+5 api_details: ''
+6 api_parameters:
+- data_file: Specifies the path to the data tar file, or can be left as None when
+    downloading the data automatically.
+- data_type: Chooses the input data format, either 'NGRAM' or 'SEQ'.
+- window_size: Sets the sliding window size used for 'NGRAM' data processing.
+- mode: Selects whether the dataset or loader operates in 'train' or 'test' mode.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- from paddle.text.datasets import Imikolov
+- 'class SimpleNet(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '...'
+- '    def forward(self, src, trg):'
+- '        return paddle.sum(src), paddle.sum(trg)'
+- imikolov = Imikolov(mode='train', data_type='SEQ', window_size=2)
+- 'for i in range(10):'
+- '    src, trg = imikolov[i]'
+- '    src = paddle.to_tensor(src)'
+- '    trg = paddle.to_tensor(trg)'
+- '...'
+- '    model = SimpleNet()'
+- '    src, trg = model(src, trg)'
+- '    print(src.item(), trg.item())'
+- 2076 2075
+- 2076 2075
+- 675 674
+- 4 3
+- 464 463
+- 2076 2075
+- 865 864
+- 2076 2075
+- 2076 2075
+- 1793 1792
+8 api_shape: {}

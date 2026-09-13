@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.applications.EfficientNetB1
+3 api_description: Builds the EfficientNetB1 image classification model, with optional
+  ImageNet pretrained weights for transfer learning or fine-tuning.
+4 api_signature: tf.keras.applications.EfficientNetB1(weights,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- weights: 'Controls how the model is initialized: use pretrained ImageNet weights,
+    random initialization, or load weights from a file.'
+- input_shape: Specifies the input tensor shape when not using the classification
+    top, with exactly three channels.
+- classes: Sets the number of output classes when using the classification top and
+    no pretrained weights are loaded.
+7 api_usage_example: null
+8 api_shape: ''

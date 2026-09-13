@@ -1,0 +1,41 @@
+2 api_name: paddle.sparse.nn.SubmConv2D
+3 api_description: Performs a 2D submanifold sparse convolution that updates features
+  only at existing active spatial locations, preserving the sparse pattern while applying
+  learned convolution filters.
+4 api_signature: paddle.sparse.nn.SubmConv2D(in_channels,out_channels,kernel_size,stride,padding,dilation,groups)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Sets how many channels the input image has.
+- out_channels: Sets how many feature channels the convolution outputs.
+- kernel_size: Defines the height and width of the convolution kernel.
+- stride: Sets how far the kernel moves each step across the input.
+- padding: Adds extra border pixels around the input before convolution.
+- dilation: Sets the spacing between kernel elements during convolution.
+- groups: Splits channels into groups so convolution is applied separately within
+    each group.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(1, 1)'
+- '        w_tmp = self.create_parameter([1,1])'
+- '        self.add_parameter("w_tmp", w_tmp)'
+- '...'
+- '    def forward(self, input):'
+- '        return self._linear(input)'
+- '...'
+- mylayer = MyLayer()
+- 'for name, param in mylayer.named_parameters():'
+- '    print(name, param)'
+- 'w_tmp Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.01448846]])'
+- '_linear.weight Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0.18551230]])'
+- '_linear.bias Parameter containing:'
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[0.])'
+8 api_shape: {}

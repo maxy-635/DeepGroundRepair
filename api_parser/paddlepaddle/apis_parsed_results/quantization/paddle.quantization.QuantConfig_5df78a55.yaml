@@ -1,0 +1,19 @@
+2 api_name: paddle.quantization.QuantConfig
+3 api_description: Defines quantization settings for a model or model భాగ, mapping
+  layers to SingleLayerConfig instances and letting you choose different quantization
+  strategies.
+4 api_signature: paddle.quantization.QuantConfig(activation,weight)
+5 api_details: ''
+6 api_parameters:
+- activation: Defines the global quantizer applied to activations.
+- weight: Defines the global quantizer applied to weights.
+7 api_usage_example:
+- from paddle.quantization import QuantConfig
+- from paddle.quantization.quanters import FakeQuanterWithAbsMaxObserver
+- quanter = FakeQuanterWithAbsMaxObserver(moving_rate=0.9)
+- q_config = QuantConfig(activation=quanter, weight=quanter)
+- print(q_config)
+- 'Global config:'
+- 'activation: FakeQuanterWithAbsMaxObserver(name=None,moving_rate=0.9,bit_length=8,dtype=float32)'
+- 'weight: FakeQuanterWithAbsMaxObserver(name=None,moving_rate=0.9,bit_length=8,dtype=float32)'
+8 api_shape: {}

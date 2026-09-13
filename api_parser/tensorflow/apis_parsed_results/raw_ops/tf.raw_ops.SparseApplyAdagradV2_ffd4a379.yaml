@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.SparseApplyAdagradV2
+3 api_description: 'Updates sparse variable rows and their accumulators using the
+  Adagrad rule: accumulate squared gradients, then adjust the corresponding variable
+  entries by a learning-rate-scaled gradient divided by the square root of the updated
+  accumulator.'
+4 api_signature: tf.raw_ops.SparseApplyAdagradV2(var,accum,lr,epsilon,grad,indices)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor whose selected rows will be updated in place.
+- accum: The accumulator tensor that stores the running sum of squared gradients for
+    `var`.
+- lr: The scalar learning rate used to scale the Adagrad update.
+- epsilon: A scalar constant added for numerical stability in the Adagrad denominator.
+- grad: The gradient tensor providing the update values for the selected indices.
+- indices: The vector of row indices in `var` and `accum` to update.
+7 api_usage_example: null
+8 api_shape: ''

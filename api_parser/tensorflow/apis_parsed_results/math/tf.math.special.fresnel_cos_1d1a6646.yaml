@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.special.fresnel_cos
+3 api_description: Computes the element-wise Fresnel cosine integral of x, an odd
+  real-valued function defined as the integral of cos(t^2) from 0 to x.
+4 api_signature: tf.math.special.fresnel_cos(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the values at which to compute the Fresnel cosine integral;
+    must be float32 or float64, and may be a Tensor or SparseTensor.
+7 api_usage_example: null
+8 api_shape: ''

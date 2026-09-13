@@ -1,0 +1,16 @@
+2 api_name: paddle.distributed.DistAttr
+3 api_description: Describes how a tensor is distributed or sliced across a ProcessMesh,
+  capturing its placement and sharding rules.
+4 api_signature: paddle.distributed.DistAttr(mesh,sharding_specs)
+5 api_details: ''
+6 api_parameters:
+- mesh: Defines the process mesh topology used to map computations across distributed
+    processes.
+- sharding_specs: Specifies how the tensor is partitioned or sharded across the mesh.
+7 api_usage_example:
+- import paddle
+- import paddle.distributed as dist
+- mesh = dist.ProcessMesh([[2, 4, 5], [0, 1, 3]], dim_names=['x', 'y'])
+- dist_attr = dist.DistAttr(mesh=mesh, sharding_specs=['x', 'y'])
+- print(dist_attr)
+8 api_shape: {}

@@ -1,0 +1,18 @@
+2 api_name: paddle.amp.debugging.check_numerics
+3 api_description: Checks a tensor for NaNs, Infs, and zeros to help debug numerical
+  issues.
+4 api_signature: paddle.amp.debugging.check_numerics(tensor,debug_mode)
+5 api_details: ''
+6 api_parameters:
+- tensor: Specifies the tensor to inspect for numerical issues.
+- debug_mode: Sets how the numeric check behaves, with a default mode that checks
+    for NaN and Inf and aborts on detection.
+7 api_usage_example:
+- import paddle
+- checker_config = paddle.amp.debugging.TensorCheckerConfig(
+- '    enable=True, debug_mode=paddle.amp.debugging.DebugMode.CHECK_NAN_INF)'
+- x = paddle.to_tensor([1, 0, 3], place=paddle.CPUPlace(), dtype='float32')
+- y = paddle.to_tensor([0.2, 0, 0.5], place=paddle.CPUPlace(), dtype='float32')
+- res = paddle.pow(x, y)
+- paddle.amp.debugging.check_numerics(res, "pow", "res")
+8 api_shape: {}

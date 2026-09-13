@@ -1,0 +1,29 @@
+2 api_name: paddle.vision.ops.yolo_box
+3 api_description: Converts YOLOv3 network outputs into detection boxes by decoding
+  predictions into bounding boxes, scores, and class labels.
+4 api_signature: paddle.vision.ops.yolo_box(x,img_size,anchors,class _num,conf_thresh,downsample_ratio,clip_bbox)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the YOLO network output tensor containing box coordinates, confidence
+    scores, and class predictions.
+- img_size: Specifies the height and width of each input image so boxes can be scaled
+    back to the original image size.
+- anchors: Defines the anchor box widths and heights used to decode predicted boxes.
+- conf_thresh: Sets the minimum confidence score required for a detection box to be
+    kept.
+- downsample_ratio: Indicates how much the network input was downsampled before this
+    YOLO box layer.
+- clip_bbox: Controls whether predicted bounding boxes are clipped to the image boundaries.
+7 api_usage_example:
+- import paddle
+- x = paddle.rand([2, 14, 8, 8]).astype('float32')
+- img_size = paddle.ones((2, 2)).astype('int32')
+- boxes, scores = paddle.vision.ops.yolo_box(x,
+- '                                            img_size=img_size,'
+- '                                            anchors=[10, 13, 16, 30],'
+- '                                            class_num=2,'
+- '                                            conf_thresh=0.01,'
+- '                                            downsample_ratio=8,'
+- '                                            clip_bbox=True,'
+- '                                            scale_x_y=1.)'
+8 api_shape: {}

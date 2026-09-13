@@ -1,0 +1,12 @@
+2 api_name: torch.special.softmax
+3 api_description: Computes softmax by converting input values into normalized probabilities
+  along a specified dimension.
+4 api_signature: torch.special.softmax(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor of values to transform into probabilities with softmax.
+- dim: The dimension along which to apply softmax normalization.
+7 api_usage_example:
+- ' t = torch.ones(2, 2)'
+- ' torch.special.softmax(t, 0)'
+8 api_shape: null

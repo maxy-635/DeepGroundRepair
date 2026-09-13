@@ -1,0 +1,12 @@
+2 api_name: tensorflow.distribute.cluster_resolver.SimpleClusterResolver
+3 api_description: A flexible ClusterResolver that lets you directly provide cluster
+  attributes for use with tf.distribute.Strategy, especially when you want to specify
+  only some or all resolver details yourself.
+4 api_signature: tf.distribute.cluster_resolver.SimpleClusterResolver(cluster_spec,master,task_type,task_id)
+5 api_details: ''
+6 api_parameters:
+- task_type: Specifies the TensorFlow task type for the master, if provided.
+- task_id: Specifies the TensorFlow task index for the master, if provided.
+- task_type: Unused and ignored by the API.
+7 api_usage_example: null
+8 api_shape: ''

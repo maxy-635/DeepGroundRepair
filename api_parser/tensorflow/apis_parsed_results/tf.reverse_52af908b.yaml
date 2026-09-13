@@ -1,0 +1,11 @@
+2 api_name: tensorflow.reverse
+3 api_description: Reverses the elements of a tensor along the specified axes, with
+  each listed dimension flipped independently and duplicate axes rejected as invalid.
+4 api_signature: tf.reverse(tensor,axis)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor whose elements will be reversed along the specified dimensions.
+- axis: A 1-D tensor listing the dimension indices along which to reverse the input
+    tensor.
+7 api_usage_example: null
+8 api_shape: ''

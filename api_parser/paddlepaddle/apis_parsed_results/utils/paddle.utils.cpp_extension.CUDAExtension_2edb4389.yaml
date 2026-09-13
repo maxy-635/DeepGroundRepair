@@ -1,0 +1,10 @@
+2 api_name: paddle.utils.cpp_extension.CUDAExtension
+3 api_description: Configures and builds custom operator kernel extensions with support
+  for both CPU and GPU source files; use `CppExtension` instead when compiling CPU-only
+  kernels.
+4 api_signature: '"paddle.utils.cpp_extension.CUDAExtension(sources)"'
+5 api_details: ''
+6 api_parameters:
+- sources: Lists the C++/CUDA source files used to build the custom operator extension.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,8 @@
+2 api_name: torch.jit.ScriptFunction.save
+3 api_description: Saves a TorchScript function to a file or file-like object so it
+  can be loaded and executed later.
+4 api_signature: save(filename:str,_extra_files:dict[str,str]={})
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

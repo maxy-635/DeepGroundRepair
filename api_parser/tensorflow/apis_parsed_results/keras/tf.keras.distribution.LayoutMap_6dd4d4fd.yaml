@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.distribution.LayoutMap
+3 api_description: Dict-like mapping from string patterns to TensorLayout objects,
+  where string keys are matched as regular expressions on lookup and axis-name tuples/lists
+  can be inserted as shorthand for TensorLayout.
+4 api_signature: tf.keras.distribution.LayoutMap(device_mesh)
+5 api_details: ''
+6 api_parameters:
+- device_mesh: Optional device mesh used to fill in `TensorLayout.device_mesh` when
+    it is not already set.
+7 api_usage_example: null
+8 api_shape: ''

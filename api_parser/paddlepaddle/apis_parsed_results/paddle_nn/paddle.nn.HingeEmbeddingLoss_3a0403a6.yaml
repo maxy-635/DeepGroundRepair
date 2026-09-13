@@ -1,0 +1,27 @@
+2 api_name: paddle.nn.HingeEmbeddingLoss
+3 api_description: HingeEmbeddingLoss calculates the loss between input tensor x and
+  label tensor y, useful for learning nonlinear embeddings and semi-supervised learning.
+4 api_signature: paddle.nn.HingeEmbeddingLoss(margin)
+5 api_details: ''
+6 api_parameters:
+- margin: Specifies the margin hyperparameter for determining the threshold in hinge_embedding_loss,
+    with a default value of 1.0.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- input = paddle.to_tensor([[1, -2, 3], [0, -1, 2], [1, 0, 1]], dtype=paddle.float32)
+- '# label elements in {1., -1.}'
+- label = paddle.to_tensor([[-1, 1, -1], [1, 1, 1], [1, -1, 1]], dtype=paddle.float32)
+- hinge_embedding_loss = nn.HingeEmbeddingLoss(margin=1.0, reduction='none')
+- loss = hinge_embedding_loss(input, label)
+- print(loss)
+- Tensor(shape=[3, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0., -2.,  0.],'
+- '[ 0., -1.,  2.],'
+- '[ 1.,  1.,  1.]])'
+- hinge_embedding_loss = nn.HingeEmbeddingLoss(margin=1.0, reduction='mean')
+- loss = hinge_embedding_loss(input, label)
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.22222222)
+8 api_shape: null

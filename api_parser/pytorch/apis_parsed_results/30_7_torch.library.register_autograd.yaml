@@ -1,0 +1,48 @@
+2 api_name: torch.library.register_autograd
+3 api_description: Registers a custom backward formula for a torch.library-defined
+  operator so autograd can compute gradients during backpropagation.
+4 api_signature: torch.library.register_autograd(op,backward,setup_context)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example:
+- ' import torch'
+- ' import numpy as np'
+- ' from torch import Tensor'
+- ' @torch.library.custom_op("mylib::numpy_sin", mutates_args=())'
+- ' def numpy_sin(x: Tensor) -> Tensor:'
+- '     x_np = x.cpu().numpy()'
+- '     y_np = np.sin(x_np)'
+- '     return torch.from_numpy(y_np).to(device=x.device)'
+- ' def setup_context(ctx, inputs, output) -> Tensor:'
+- '     x, = inputs'
+- '     ctx.save_for_backward(x)'
+- ' def backward(ctx, grad):'
+- '     x, = ctx.saved_tensors'
+- '     return grad * x.cos()'
+- ' torch.library.register_autograd('
+- '...     "mylib::numpy_sin", backward, setup_context=setup_context'
+- '... )'
+- ' x = torch.randn(3, requires_grad=True)'
+- ' y = numpy_sin(x)'
+- ' (grad_x,) = torch.autograd.grad(y, x, torch.ones_like(y))'
+- ' assert torch.allclose(grad_x, x.cos())'
+- ' # Example with a keyword-only arg'
+- ' @torch.library.custom_op("mylib::numpy_mul", mutates_args=())'
+- ' def numpy_mul(x: Tensor, *, val: float) -> Tensor:'
+- '     x_np = x.cpu().numpy()'
+- '     y_np = x_np * val'
+- '     return torch.from_numpy(y_np).to(device=x.device)'
+- ' def setup_context(ctx, inputs, keyword_only_inputs, output) -> Tensor:'
+- '     ctx.val = keyword_only_inputs["val"]'
+- ' def backward(ctx, grad):'
+- '     return grad * ctx.val'
+- ' torch.library.register_autograd('
+- '...     "mylib::numpy_mul", backward, setup_context=setup_context'
+- '... )'
+- ' x = torch.randn(3, requires_grad=True)'
+- ' y = numpy_mul(x, val=3.14)'
+- ' (grad_x,) = torch.autograd.grad(y, x, torch.ones_like(y))'
+- ' assert torch.allclose(grad_x, torch.full_like(x, 3.14))'
+8 api_shape: null

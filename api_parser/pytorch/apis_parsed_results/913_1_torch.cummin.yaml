@@ -1,0 +1,13 @@
+2 api_name: torch.cummin
+3 api_description: Computes the cumulative minimum along a given dimension and returns
+  both the running minimum values and the indices where they occur.
+4 api_signature: torch.cummin(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose cumulative minimum values are computed.
+- dim: The dimension along which to perform the cumulative minimum operation.
+7 api_usage_example:
+- ' a = torch.randn(10)'
+- ' a'
+- ' torch.cummin(a, dim=0)'
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.resnext152_64x4d
+3 api_description: ResNeXt-152 64x4d is a deep convolutional image classification
+  backbone that uses aggregated residual transformations with split-cardinality blocks
+  to extract rich visual features.
+4 api_signature: paddle.vision.models.resnext152_64x4d(pretrained)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet-pretrained weights.
+7 api_usage_example: []
+8 api_shape: {}

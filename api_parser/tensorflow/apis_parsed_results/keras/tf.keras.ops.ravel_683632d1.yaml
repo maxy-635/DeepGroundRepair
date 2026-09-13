@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.ravel
+3 api_description: Flatten the input into a contiguous 1-D tensor containing all elements.
+4 api_signature: tf.keras.ops.ravel(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to flatten into a one-dimensional view.
+7 api_usage_example: null
+8 api_shape: ''

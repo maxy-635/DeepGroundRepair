@@ -1,0 +1,23 @@
+2 api_name: tensorflow.data.experimental.make_csv_dataset
+3 api_description: Creates a batched TensorFlow dataset from one or more CSV files,
+  returning feature dictionaries and optional label tensors, with support for headers,
+  custom column names, shuffling, and repeated epochs.
+4 api_signature: tf.data.experimental.make_csv_dataset(file_pattern,batch_size,column_names,column_defaults,label_name,select_columns,field_delim,header,num_epochs,shuffle,compression_type,ignore_errors)
+5 api_details: ''
+6 api_parameters:
+- file_pattern: Specifies the CSV files or glob patterns to read from.
+- batch_size: Sets how many CSV records are grouped into each batch.
+- column_names: Provides the CSV column names, which become the feature keys.
+- column_defaults: Defines default values and required/optional behavior for each
+    selected column.
+- label_name: Names the column to return separately as the label tensor.
+- select_columns: Chooses a subset of CSV columns to parse and return.
+- field_delim: Sets the character used to separate fields in each CSV row.
+- header: Indicates whether the first row of each file contains column names.
+- num_epochs: Sets how many times to repeat the dataset, or repeats forever if `None`.
+- shuffle: Controls whether the input rows are randomly shuffled.
+- compression_type: Specifies the file compression format, if any.
+- ignore_errors: Determines whether malformed rows are skipped instead of raising
+    an error.
+7 api_usage_example: null
+8 api_shape: ''

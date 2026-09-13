@@ -1,0 +1,12 @@
+2 api_name: torch.nn.utils.parametrize.cached
+3 api_description: Context manager that temporarily caches parametrized tensors, avoiding
+  repeated recomputation of registered parametrizations while it is active.
+4 api_signature: torch.nn.utils.parametrize.cached()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import torch.nn.utils.parametrize as P
+- '...'
+- 'with P.cached():'
+- '    output = model(inputs)'
+8 api_shape: null

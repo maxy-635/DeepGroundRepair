@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.ops.norm
+3 api_description: Computes vector or matrix norms for tensors, supporting multiple
+  norm types via `ord` and optional axis selection.
+4 api_signature: tf.keras.ops.norm(x,ord,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose norm is computed.
+- ord: Specifies the norm order to use, with the default being `None`.
+- axis: Chooses the axis or axes along which to compute vector or matrix norms.
+7 api_usage_example:
+- x = keras.ops.reshape(keras.ops.arange(9, dtype="float32") - 4, (3, 3))
+- keras.ops.linalg.norm(x)
+8 api_shape: ''

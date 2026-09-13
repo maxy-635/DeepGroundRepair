@@ -1,0 +1,11 @@
+2 api_name: paddle.amp.is_bfloat16_supported
+3 api_description: Checks whether the current place supports bfloat16 for auto mixed-precision
+  training.
+4 api_signature: paddle.amp.is_bfloat16_supported(device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- 'paddle.amp.is_bfloat16_supported() # True or False'
+- 'True'
+8 api_shape: {}

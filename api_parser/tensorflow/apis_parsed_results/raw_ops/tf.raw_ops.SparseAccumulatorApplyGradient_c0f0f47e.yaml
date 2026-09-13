@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseAccumulatorApplyGradient
+3 api_description: Applies a sparse gradient update to an accumulator only when the
+  local step is at least the accumulator’s global step.
+4 api_signature: tf.raw_ops.SparseAccumulatorApplyGradient(handle,gradient_indices,gradient_values)
+5 api_details: ''
+6 api_parameters:
+- handle: The accumulator resource to which the sparse gradient is applied.
+- gradient_indices: The vector of int64 indices identifying which gradient slices
+    are non-zero.
+- gradient_values: The non-zero gradient values corresponding to the provided indices,
+    with a matching first dimension.
+7 api_usage_example: null
+8 api_shape: ''

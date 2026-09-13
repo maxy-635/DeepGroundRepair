@@ -1,0 +1,9 @@
+2 api_name: tensorflow.is_tensor
+3 api_description: Returns whether x is a TensorFlow-native tensor-like object that
+  can be used directly by TF ops without conversion.
+4 api_signature: tf.is_tensor(x)
+5 api_details: ''
+6 api_parameters:
+- x: The Python object to test for whether it is a TensorFlow tensor.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.LeakyReluGrad
+3 api_description: Computes the gradient of a LeakyReLU activation by passing positive
+  upstream gradients through unchanged and scaling negative ones by alpha.
+4 api_signature: tf.raw_ops.LeakyReluGrad(gradients,features,alpha)
+5 api_details: ''
+6 api_parameters:
+- gradients: Supplies the upstream gradient from the LeakyRelu operation for backpropagation.
+- features: Provides the LeakyRelu input or output tensor used to determine how the
+    gradient is scaled.
+- alpha: Sets the negative-slope scaling factor applied to gradients where the activation
+    was negative.
+7 api_usage_example: null
+8 api_shape: ''

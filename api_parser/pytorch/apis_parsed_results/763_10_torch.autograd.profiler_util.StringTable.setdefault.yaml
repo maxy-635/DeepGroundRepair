@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.profiler_util.StringTable.setdefault
+3 api_description: Returns the existing value for a key, or inserts and returns the
+  default value if the key is missing.
+4 api_signature: setdefault(key,default,/)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

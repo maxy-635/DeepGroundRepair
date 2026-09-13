@@ -1,0 +1,10 @@
+2 api_name: tensorflow.lite.TFLiteConverter
+3 api_description: Converts a TensorFlow model into a TensorFlow Lite model for deployment
+  on mobile, edge, and embedded devices.
+4 api_signature: tf.lite.TFLiteConverter(trackable_obj)
+5 api_details: ''
+6 api_parameters:
+- trackable_obj: Keeps a reference to the associated `tf.AutoTrackable` object so
+    variables used by converter functions are not garbage collected.
+7 api_usage_example: null
+8 api_shape: ''

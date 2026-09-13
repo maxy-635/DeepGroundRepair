@@ -1,0 +1,16 @@
+2 api_name: torch.nn.SELU
+3 api_description: Applies the Scaled Exponential Linear Unit (SELU) activation function
+  element-wise to the input tensor.
+4 api_signature: torch.nn.SELU(inplace)
+5 api_details: ''
+6 api_parameters:
+- inplace: If set to True, the operation will modify the input tensor directly instead
+    of creating a new tensor.
+7 api_usage_example:
+- ' m = nn.SELU()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

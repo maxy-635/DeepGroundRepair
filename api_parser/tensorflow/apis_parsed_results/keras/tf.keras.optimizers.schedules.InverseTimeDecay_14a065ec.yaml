@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.optimizers.schedules.InverseTimeDecay
+3 api_description: Returns a learning-rate schedule that decays the initial rate over
+  optimizer steps using inverse time decay, reducing the rate as training progresses.
+4 api_signature: tf.keras.optimizers.schedules.InverseTimeDecay(initial_learning_rate,decay_steps,decay_rate)
+5 api_details: ''
+6 api_parameters:
+- initial_learning_rate: Sets the starting learning rate before any decay is applied.
+- decay_steps: Defines the step interval at which the learning rate decay is applied.
+- decay_rate: Sets how strongly the learning rate decreases at each decay step.
+7 api_usage_example: null
+8 api_shape: ''

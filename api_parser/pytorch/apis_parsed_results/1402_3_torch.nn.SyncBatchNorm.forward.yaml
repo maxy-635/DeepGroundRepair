@@ -1,0 +1,9 @@
+2 api_name: torch.nn.SyncBatchNorm.forward
+3 api_description: Applies synchronized batch normalization across multiple devices
+  during the forward pass, using distributed statistics in training and stored running
+  stats in evaluation.
+4 api_signature: forward(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

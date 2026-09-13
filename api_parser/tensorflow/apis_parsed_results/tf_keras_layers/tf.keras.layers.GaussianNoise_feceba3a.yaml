@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.layers.GaussianNoise
+3 api_description: Applies additive zero-centered Gaussian noise to inputs during
+  training to help mitigate overfitting, serving as a form of random data augmentation.
+4 api_signature: tf.keras.layers.GaussianNoise(stddev)
+5 api_details: ''
+6 api_parameters:
+- stddev: Specifies the standard deviation of the Gaussian noise added to the inputs,
+    controlling the amount of noise introduced during training.
+7 api_usage_example: null
+8 api_shape: null

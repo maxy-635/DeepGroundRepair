@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.TPUPartitionedOutputV2
+3 api_description: Splits an XLA-sharded tensor into a list of partitioned outputs
+  outside the XLA computation, supporting ND sharding.
+4 api_signature: tf.raw_ops.TPUPartitionedOutputV2(inputs,num_splits,partition_dims)
+5 api_details: ''
+6 api_parameters:
+- inputs: Specifies the tensor that contains the full shape information for the partitioned
+    outputs.
+- num_splits: Sets how many partitions the output is divided into, with at least one
+    split required.
+- partition_dims: Defines how each dimension is split across partitions; an empty
+    list means the inputs are replicated.
+7 api_usage_example: null
+8 api_shape: ''

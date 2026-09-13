@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.NcclReduce
+3 api_description: Reduces tensors from multiple devices into a single result on one
+  device using the specified reduction operation.
+4 api_signature: tf.raw_ops.NcclReduce(input,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor list to be reduced, containing at least one tensor of the same
+    supported dtype.
+- reduction: The reduction operation to apply across the tensors, such as minimum,
+    maximum, product, or sum.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,42 @@
+2 api_name: paddle.vstack
+3 api_description: Stacks tensors along the vertical axis into a single tensor, requiring
+  all inputs to have the same dtype.
+4 api_signature: paddle.vstack(x)
+5 api_details: ''
+6 api_parameters:
+- x: A list or tuple of tensors to stack vertically, all with the same shape and dtype.
+7 api_usage_example:
+- import paddle
+- '# vstack with 0-D tensors'
+- x1 = paddle.to_tensor(1.0)
+- x2 = paddle.to_tensor(2.0)
+- out = paddle.vstack((x1, x2))
+- print(out)
+- Tensor(shape=[2, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1.],'
+- '[2.]])'
+- '# vstack with 1-D tensors'
+- x1 = paddle.to_tensor([1.0, 2.0, 3.0])
+- x2 = paddle.to_tensor([3.0, 4.0, 5.0])
+- out = paddle.vstack((x1, x2))
+- print(out)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 2., 3.],'
+- '[3., 4., 5.]])'
+- '# vstack mix with 1-D & 2-D tensors'
+- x1 = paddle.to_tensor([1.0, 2.0, 3.0])
+- x2 = paddle.to_tensor([[3.0, 4.0, 5.0]])
+- out = paddle.vstack((x1, x2))
+- print(out)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 2., 3.],'
+- '[3., 4., 5.]])'
+- '# vstack with 2-D tensors'
+- x1 = paddle.to_tensor([[1.0, 2.0, 3.0]])
+- x2 = paddle.to_tensor([[3.0, 4.0, 5.0]])
+- out = paddle.vstack((x1, x2))
+- print(out)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 2., 3.],'
+- '[3., 4., 5.]])'
+8 api_shape: {}

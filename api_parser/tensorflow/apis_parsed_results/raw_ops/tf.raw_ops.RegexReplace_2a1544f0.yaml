@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.RegexReplace
+3 api_description: Replaces substrings in the input that match a regular expression
+  pattern with a specified replacement string using RE2 syntax.
+4 api_signature: tf.raw_ops.RegexReplace(input,pattern,rewrite)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

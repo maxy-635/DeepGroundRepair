@@ -1,0 +1,16 @@
+2 api_name: torch.distributed.rpc.PyRRef.backward
+3 api_description: Starts a backward pass from an RRef scalar tensor, either locally
+  on the owner or distributed via a provided autograd context ID, with gradients retrieved
+  through get_gradients() in the distributed case.
+4 api_signature: '"backward(dist_autograd_ctx_id,retain_graph)"'
+5 api_details: ''
+6 api_parameters:
+- dist_autograd_ctx_id: Specifies which distributed autograd context to use when retrieving
+    gradients.
+- retain_graph: Keeps the computation graph after backward so you can run backward
+    again; otherwise the graph is freed.
+7 api_usage_example:
+- ' import torch.distributed.autograd as dist_autograd'
+- ' with dist_autograd.context() as context_id:'
+- '     rref.backward(context_id)'
+8 api_shape: null

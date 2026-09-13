@@ -1,0 +1,41 @@
+2 api_name: paddle.vision.ops.nms
+3 api_description: Suppresses overlapping bounding boxes by keeping the highest-scoring
+  box among those with IoU above the threshold.
+4 api_signature: paddle.vision.ops.nms(boxes,iou_threshold,scores)
+5 api_details: ''
+6 api_parameters:
+- boxes: Provides the candidate bounding boxes that NMS will evaluate for overlap
+    and suppression.
+- iou_threshold: Sets the IoU cutoff used to decide when two boxes are considered
+    overlapping enough to suppress one.
+- scores: Provides the confidence score for each box so NMS can keep the highest-scoring
+    boxes first.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- boxes = paddle.rand([4, 4]).astype('float32')
+- boxes[:, 2] = boxes[:, 0] + boxes[:, 2]
+- boxes[:, 3] = boxes[:, 1] + boxes[:, 3]
+- print(boxes)
+- Tensor(shape=[4, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.86583614, 0.52014720, 1.12544549, 1.42540050],'
+- '[0.42400089, 0.40641287, 1.39420986, 1.15078652],'
+- '[0.51785129, 0.73292869, 1.49571705, 0.77608776],'
+- '[0.42639419, 0.71958369, 0.63450879, 0.91689879]])'
+- out = paddle.vision.ops.nms(boxes, 0.1)
+- print(out)
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 2, 3])'
+- scores = paddle.to_tensor([0.6, 0.7, 0.4, 0.233])
+- categories = [0, 1, 2, 3]
+- category_idxs = paddle.to_tensor([2, 0, 0, 3], dtype="int64")
+- out = paddle.vision.ops.nms(boxes,
+- '                            0.1,'
+- '                            paddle.to_tensor(scores),'
+- '                            paddle.to_tensor(category_idxs),'
+- '                            categories,'
+- '                            4)'
+- print(out)
+- Tensor(shape=[4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[1, 0, 2, 3])'
+8 api_shape: {}

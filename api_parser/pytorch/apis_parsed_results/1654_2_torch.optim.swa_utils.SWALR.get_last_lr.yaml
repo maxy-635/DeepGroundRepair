@@ -1,0 +1,9 @@
+2 api_name: torch.optim.swa_utils.SWALR.get_last_lr
+3 api_description: Returns the latest learning rate values computed by the SWALR scheduler.
+4 api_signature: '"get_last_lr()"'
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

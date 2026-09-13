@@ -1,0 +1,12 @@
+2 api_name: tensorflow.linalg.LinearOperatorHouseholder
+3 api_description: Represents a batch of implicit N×N Householder reflection matrices
+  built from a vector, supporting linear-operator behavior without materializing the
+  matrices.
+4 api_signature: tf.linalg.LinearOperatorHouseholder(reflection_axis,name)
+5 api_details: ''
+6 api_parameters:
+- reflection_axis: Defines the axis vector used to construct the Householder reflection
+    hyperplane.
+- name: Sets an optional name for the LinearOperator instance.
+7 api_usage_example: null
+8 api_shape: ''

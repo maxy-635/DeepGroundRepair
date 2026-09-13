@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.SparseBincount
+3 api_description: Counts occurrences of integer values in `arr` into a length-`size`
+  vector, optionally summing matching `weights` for each value; out-of-range values
+  are ignored.
+4 api_signature: tf.raw_ops.SparseBincount(indices,values,dense_shape,size,weights)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the coordinates of the sparse input elements in the dense output
+    shape.
+- values: Provides the bin values for each sparse element to be counted.
+- dense_shape: Defines the full shape of the sparse tensor being binned.
+- size: Sets the number of bins in the output histogram.
+- weights: Supplies optional per-element weights for the counts, or defaults to 1
+    when empty.
+7 api_usage_example: null
+8 api_shape: ''

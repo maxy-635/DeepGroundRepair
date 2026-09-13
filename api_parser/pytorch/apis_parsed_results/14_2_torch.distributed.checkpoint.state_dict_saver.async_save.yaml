@@ -1,0 +1,14 @@
+2 api_name: torch.distributed.checkpoint.state_dict_saver.async_save
+3 api_description: Asynchronously saves a state_dict by first staging it to the default
+  staging storage (typically CPU), then performing the save in a separate thread.
+4 api_signature: torch.distributed.checkpoint.state_dict_saver.async_save(state_dict,*,checkpoint_id,storage_writer)
+5 api_details: ''
+6 api_parameters:
+- state_dict: The model or training state data to be saved into a checkpoint.
+- checkpoint_id: The identifier or storage location for the checkpoint, such as a
+    path or key.
+- storage_writer: The storage writer responsible for staging and saving the checkpoint
+    data.
+7 api_usage_example:
+- ' my_model = MyModule()'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: torch.transpose
+3 api_description: Returns a transposed tensor with the two specified dimensions swapped.
+4 api_signature: torch.transpose(input,dim0,dim1)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose dimensions will be swapped.
+- dim0: The first dimension to exchange.
+- dim1: The second dimension to exchange.
+7 api_usage_example:
+- ' x = torch.randn(2, 3)'
+- ' x'
+- ' torch.transpose(x, 0, 1)'
+8 api_shape: null

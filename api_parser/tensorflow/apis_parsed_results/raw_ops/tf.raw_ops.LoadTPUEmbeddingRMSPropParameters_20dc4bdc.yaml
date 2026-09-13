@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.LoadTPUEmbeddingRMSPropParameters
+3 api_description: Loads RMSProp optimization parameters into TPU HBM for embedding
+  tables after the embedding configuration has been set.
+4 api_signature: tf.raw_ops.LoadTPUEmbeddingRMSPropParameters(parameters,ms,mom,num_shards,shard_id,table_id)
+5 api_details: ''
+6 api_parameters:
+- parameters: Holds the RMSProp parameter values to be loaded or updated.
+- ms: Holds the running mean-square values used by RMSProp.
+- mom: Holds the momentum values used by RMSProp.
+- num_shards: Specifies how many shards the TPU embedding parameters are split across.
+- shard_id: Identifies which shard this operation applies to.
+- table_id: Optionally selects the embedding table to load; defaults to -1 when unspecified.
+7 api_usage_example: null
+8 api_shape: ''

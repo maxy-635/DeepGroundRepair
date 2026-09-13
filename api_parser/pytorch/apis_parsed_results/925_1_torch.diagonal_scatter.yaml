@@ -1,0 +1,14 @@
+2 api_name: torch.diagonal_scatter
+3 api_description: Scatters src values into input along the specified diagonal between
+  dim1 and dim2, returning a tensor with those diagonal elements replaced.
+4 api_signature: torch.diagonal_scatter(input,src)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to update, which must be at least 2-dimensional.
+- src: The tensor whose values are scattered into the diagonal of `input`.
+7 api_usage_example:
+- ' a = torch.zeros(3, 3)'
+- ' a'
+- ' torch.diagonal_scatter(a, torch.ones(3), 0)'
+- ' torch.diagonal_scatter(a, torch.ones(2), 1)'
+8 api_shape: null

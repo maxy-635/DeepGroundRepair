@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.AllCandidateSampler
+3 api_description: Samples a shared set of candidate labels for each batch using a
+  learned unigram distribution, to support efficient candidate sampling in training.
+4 api_signature: tf.raw_ops.AllCandidateSampler(true_classes,num_true,num_sampled,unique,seed,seed2)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Holds the batch of true class IDs, with each row listing the target
+    class IDs for one example.
+- num_true: Specifies how many true labels are provided per example.
+- num_sampled: Sets the number of candidate classes to sample.
+- unique: Controls whether sampled candidates must be unique within each batch.
+- seed: Provides the primary random seed for reproducible sampling when non-zero.
+- seed2: Provides a secondary random seed to help avoid seed collisions when non-zero.
+7 api_usage_example: null
+8 api_shape: ''

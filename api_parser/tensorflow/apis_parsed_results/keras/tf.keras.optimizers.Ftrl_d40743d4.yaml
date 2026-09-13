@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.optimizers.Ftrl
+3 api_description: Keras optimizer implementing FTRL for sparse, shallow models, with
+  support for online L2 regularization and shrinkage-style L2 penalties.
+4 api_signature: tf.keras.optimizers.Ftrl(learning_rate,l1_regularization_strength,l2_regularization_strength,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update model weights during optimization.
+- l1_regularization_strength: Controls the strength of L1 regularization to encourage
+    sparse weights.
+- l2_regularization_strength: Controls the strength of L2 regularization to penalize
+    large weights.
+- name: Specifies the base name used for the optimizer’s internal accumulator variables.
+7 api_usage_example: null
+8 api_shape: ''

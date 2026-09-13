@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ExperimentalDenseToSparseBatchDataset
+3 api_description: Batches input dataset elements into a SparseTensor representation.
+4 api_signature: tf.raw_ops.ExperimentalDenseToSparseBatchDataset(input_dataset,batch_size,row_shape)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset handle to read elements from and convert into sparse
+    batched output.
+- batch_size: The scalar number of dataset elements to accumulate into each batch.
+- row_shape: The dense row shape to use for each SparseTensor output, with -1 allowing
+    a dimension to expand to the maximum size in the batch.
+7 api_usage_example: null
+8 api_shape: ''

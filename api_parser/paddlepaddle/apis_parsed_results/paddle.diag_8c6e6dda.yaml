@@ -1,0 +1,34 @@
+2 api_name: paddle.diag
+3 api_description: Returns a square 2-D tensor with a 1-D input vector placed on its
+  diagonal.
+4 api_signature: paddle.diag(x,offset)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor to take the diagonal from, supporting 1-D or 2-D tensors of the
+    listed numeric and complex types.
+- offset: Diagonal index to select, where positive values choose superdiagonals, zero
+    chooses the main diagonal, and negative values choose subdiagonals.
+7 api_usage_example:
+- import paddle
+- paddle.disable_static()
+- x = paddle.to_tensor([1, 2, 3])
+- y = paddle.diag(x)
+- print(y)
+- Tensor(shape=[3, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 0, 0],'
+- '[0, 2, 0],'
+- '[0, 0, 3]])'
+- y = paddle.diag(x, offset=1)
+- print(y)
+- Tensor(shape=[4, 4], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 1, 0, 0],'
+- '[0, 0, 2, 0],'
+- '[0, 0, 0, 3],'
+- '[0, 0, 0, 0]])'
+- y = paddle.diag(x, padding_value=6)
+- print(y)
+- Tensor(shape=[3, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[1, 6, 6],'
+- '[6, 2, 6],'
+- '[6, 6, 3]])'
+8 api_shape: {}

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.reduce_min
+3 api_description: Returns the minimum value(s) of a tensor across specified axis
+  or across all dimensions, optionally keeping reduced dimensions with length 1.
+4 api_signature: tf.math.reduce_min(input_tensor,axis)
+5 api_details: ''
+6 api_parameters:
+- input_tensor: The tensor whose minimum values will be computed over the specified
+    dimensions.
+- axis: The dimension or dimensions to reduce; if `None`, all dimensions are reduced.
+7 api_usage_example:
+- tf.reduce_min(a, keepdims=True)
+- tf.math.reduce_min(a, axis=0, keepdims=True)
+8 api_shape: ''

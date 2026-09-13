@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.logm
+3 api_description: Computes the matrix logarithm of one or more square matrices, returning
+  a tensor of the same shape with the logarithm of each matrix, using the Schur-Parlett
+  algorithm and supporting complex inputs.
+4 api_signature: tf.linalg.logm(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input square matrix or batch of square matrices whose matrix logarithm
+    is computed.
+7 api_usage_example: null
+8 api_shape: ''

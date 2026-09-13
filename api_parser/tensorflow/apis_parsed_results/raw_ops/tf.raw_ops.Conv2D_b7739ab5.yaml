@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.Conv2D
+3 api_description: Performs a 2D convolution on a 4D input tensor using a 4D filter
+  tensor, producing feature maps across the batch.
+4 api_signature: tf.raw_ops.Conv2D(input,filter,strides,padding,data_format,dilations,name)
+5 api_details: ''
+6 api_parameters:
+- input: The 4-D input tensor to be convolved, with its layout determined by `data_format`.
+- filter: The 4-D convolution kernel tensor shaped `[filter_height, filter_width,
+    in_channels, out_channels]`.
+- strides: The sliding-window step sizes for each input dimension.
+- padding: The padding mode to apply around the input before convolution.
+- data_format: The layout of the input and output tensors, either `NHWC` or `NCHW`.
+- dilations: The spacing between kernel elements along each dimension of the input.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

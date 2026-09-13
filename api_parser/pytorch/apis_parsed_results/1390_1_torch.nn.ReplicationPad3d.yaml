@@ -1,0 +1,18 @@
+2 api_name: torch.nn.ReplicationPad3d
+3 api_description: Pads a 3D input tensor by replicating the values at its boundaries.
+4 api_signature: torch.nn.ReplicationPad3d(padding)
+5 api_details: ''
+6 api_parameters:
+- padding: Specifies the size of the padding, which can be an integer for uniform
+    padding on all sides or a 6-tuple for different padding values on each boundary.
+7 api_usage_example:
+- ' m = nn.ReplicationPad3d(3)'
+- ' input = torch.randn(16, 3, 8, 320, 480)'
+- ' output = m(input)'
+- ' # using different paddings for different sides'
+- ' m = nn.ReplicationPad3d((3, 3, 6, 6, 1, 1))'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

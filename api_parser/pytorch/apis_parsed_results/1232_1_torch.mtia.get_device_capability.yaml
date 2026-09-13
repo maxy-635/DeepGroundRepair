@@ -1,0 +1,10 @@
+2 api_name: torch.mtia.get_device_capability
+3 api_description: Returns the specified MTIA device’s capability as a (major, minor)
+  version tuple.
+4 api_signature: torch.mtia.get_device_capability(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which device to query for capability statistics; defaults to the
+    current device when `None`.
+7 api_usage_example: null
+8 api_shape: null

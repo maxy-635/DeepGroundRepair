@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.UniformQuantizedConvolutionHybrid
+3 api_description: Performs hybrid quantized convolution by dynamically quantizing
+  the float lhs per batch to match rhs, then running a quantized convolution on the
+  quantized lhs and quantized rhs tensors of the same rank.
+4 api_signature: tf.raw_ops.UniformQuantizedConvolutionHybrid(lhs,rhs,rhs_scales,rhs_zero_points,Tout,padding,window_strides,dimension_numbers,name)
+5 api_details: ''
+6 api_parameters:
+- lhs: The floating-point input tensor to be convolved.
+- rhs: The quantized filter/kernel tensor used in the convolution.
+- rhs_scales: Scale factor(s) used to dequantize the `rhs` tensor.
+- rhs_zero_points: Zero-point value(s) used to dequantize the `rhs` tensor.
+- Tout: The dtype of the convolution output tensor.
+- padding: The padding algorithm to apply to the convolution window.
+- window_strides: The stride values for the convolution window over the spatial dimensions.
+- dimension_numbers: A serialized description of the tensor dimension layout for the
+    convolution.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

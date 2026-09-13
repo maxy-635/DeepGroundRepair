@@ -1,0 +1,8 @@
+2 api_name: paddle.unsqueeze_
+3 api_description: In-place inserts a new singleton dimension into a tensor at the
+  specified axis.
+4 api_signature: paddle.unsqueeze_(x,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

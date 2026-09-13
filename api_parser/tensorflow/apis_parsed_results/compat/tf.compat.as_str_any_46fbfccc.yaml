@@ -1,0 +1,9 @@
+2 api_name: tensorflow.compat.as_str_any
+3 api_description: Converts a value to a Python str, using str() for most inputs and
+  decoding bytes with as_str.
+4 api_signature: tf.compat.as_str_any(value)
+5 api_details: ''
+6 api_parameters:
+- value: The object to convert into a string.
+7 api_usage_example: null
+8 api_shape: ''

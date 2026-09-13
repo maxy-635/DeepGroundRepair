@@ -1,0 +1,9 @@
+2 api_name: torch.special.exp2
+3 api_description: Computes 2 raised to the power of each input element.
+4 api_signature: torch.special.exp2(input)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose elements are used as exponents of 2.
+7 api_usage_example:
+- ' torch.special.exp2(torch.tensor([0, math.log2(2.), 3, 4]))'
+8 api_shape: null

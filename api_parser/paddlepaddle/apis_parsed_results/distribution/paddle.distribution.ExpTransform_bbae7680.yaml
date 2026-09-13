@@ -1,0 +1,22 @@
+2 api_name: paddle.distribution.ExpTransform
+3 api_description: Applies the exponential transform, mapping input x to output y
+  = exp(x).
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- exp = paddle.distribution.ExpTransform()
+- print(exp.forward(paddle.to_tensor([1., 2., 3.])))
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[2.71828175 , 7.38905621 , 20.08553696])'
+- print(exp.inverse(paddle.to_tensor([1., 2., 3.])))
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 0.69314718, 1.09861231])'
+- print(exp.forward_log_det_jacobian(paddle.to_tensor([1., 2., 3.])))
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1., 2., 3.])'
+- print(exp.inverse_log_det_jacobian(paddle.to_tensor([1., 2., 3.])))
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[ 0.        , -0.69314718, -1.09861231])'
+8 api_shape: {}

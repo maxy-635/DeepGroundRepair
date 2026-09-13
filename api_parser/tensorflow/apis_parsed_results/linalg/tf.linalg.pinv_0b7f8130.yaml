@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.pinv
+3 api_description: Computes the Moore-Penrose pseudo-inverse of one or more matrices
+  using SVD, keeping singular values above a threshold to solve least-squares systems.
+4 api_signature: tf.linalg.pinv(a,rcond)
+5 api_details: ''
+6 api_parameters:
+- a: The matrix or batch of matrices to pseudo-invert.
+- rcond: The singular-value threshold below which values are treated as zero when
+    computing the pseudo-inverse.
+7 api_usage_example: null
+8 api_shape: ''

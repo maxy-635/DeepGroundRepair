@@ -1,0 +1,16 @@
+2 api_name: torch.cuda.jiterator._create_jit_fn
+3 api_description: Creates a JIT-compiled CUDA kernel for an elementwise operation.
+4 api_signature: torch.cuda.jiterator._create_jit_fn(code_string)
+5 api_details: ''
+6 api_parameters:
+- code_string: Provides the CUDA source code that jiterator compiles into a callable
+    functor, which must return its result by value.
+7 api_usage_example:
+- code_string = "template <typename T> T my_kernel(T x, T y, T alpha) { return -x
+  + alpha * y; }"
+- jitted_fn = create_jit_fn(code_string, alpha=1.0)
+- a = torch.rand(3, device="cuda")
+- b = torch.rand(3, device="cuda")
+- '# invoke jitted function like a regular python function'
+- result = jitted_fn(a, b, alpha=3.14)
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.preprocessing.image.random_shift
+3 api_description: Randomly shifts image rows and columns by a specified fraction
+  or range of the image size, with optional fill mode and constant fill value.
+4 api_signature: tf.keras.preprocessing.image.random_shift(x,wrg,hrg)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

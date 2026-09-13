@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorListPushBackBatch
+3 api_description: Appends each tensor in a batch to the corresponding TensorList
+  element, growing the lists by one item per batch entry.
+4 api_signature: tf.raw_ops.TensorListPushBackBatch(input_handles,tensor)
+5 api_details: ''
+6 api_parameters:
+- input_handles: A variant tensor containing the TensorList handles to which the new
+    values will be appended.
+- tensor: The tensor holding the batch of values to push back into the TensorLists.
+7 api_usage_example: null
+8 api_shape: ''

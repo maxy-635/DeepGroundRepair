@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.SkipDataset
+3 api_description: Creates a dataset by dropping the first count elements from the
+  input dataset.
+4 api_signature: tf.raw_ops.SkipDataset(input_dataset,count)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to read from and skip elements in.
+- count: The number of elements to skip, or `-1` to skip all elements.
+7 api_usage_example: null
+8 api_shape: ''

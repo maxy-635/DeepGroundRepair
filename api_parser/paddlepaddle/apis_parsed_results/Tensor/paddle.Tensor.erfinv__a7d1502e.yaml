@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.erfinv_
+3 api_description: In-place computes the inverse error function of each element in
+  the input tensor, replacing the tensor’s values with the result.
+4 api_signature: paddle.Tensor.erfinv_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

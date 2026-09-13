@@ -1,0 +1,15 @@
+2 api_name: paddle.audio.functional.power_to_db
+3 api_description: Convert a power spectrogram to decibel units by computing 10 *
+  log10(x / ref) in a numerically stable way.
+4 api_signature: paddle.audio.functional.power_to_db(spect,top_db)
+5 api_details: ''
+6 api_parameters:
+- spect: The input STFT power spectrogram to convert into decibel values.
+- top_db: Limits the output dynamic range by clipping values more than `top_db` below
+    the peak.
+7 api_usage_example:
+- import paddle
+- val = 3.0
+- decibel_paddle = paddle.audio.functional.power_to_db(
+- '    paddle.to_tensor(val))'
+8 api_shape: {}

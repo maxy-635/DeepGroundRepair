@@ -1,0 +1,22 @@
+2 api_name: torch.optim.lr_scheduler.ReduceLROnPlateau
+3 api_description: Reduces the learning rate when a monitored metric stops improving,
+  helping training continue with smaller steps.
+4 api_signature: torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer,mode,factor,patience)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be adjusted by the scheduler.
+- mode: Chooses whether to reduce LR when the monitored metric stops decreasing (`min`)
+    or stops increasing (`max`).
+- factor: Scales the current learning rate down by multiplying it with this value
+    when a reduction is triggered.
+- patience: Sets how many epochs without improvement are tolerated before the learning
+    rate is reduced.
+7 api_usage_example:
+- ' optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9)'
+- ' scheduler = ReduceLROnPlateau(optimizer, "min")'
+- ' for epoch in range(10):'
+- '     train(...)'
+- '     val_loss = validate(...)'
+- ' # Note that step should be called after validate()'
+- '     scheduler.step(val_loss)'
+8 api_shape: null

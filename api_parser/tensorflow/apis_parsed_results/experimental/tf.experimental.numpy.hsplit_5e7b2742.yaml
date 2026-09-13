@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.hsplit
+3 api_description: Splits an array into multiple sub-arrays horizontally along the
+  second axis, matching NumPy's `hsplit` behavior.
+4 api_signature: tf.experimental.numpy.hsplit(ary,indices_or_sections)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

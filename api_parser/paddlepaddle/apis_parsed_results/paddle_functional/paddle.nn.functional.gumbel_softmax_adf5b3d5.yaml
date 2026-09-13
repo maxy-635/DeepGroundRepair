@@ -1,0 +1,28 @@
+2 api_name: paddle.nn.functional.gumbel_softmax
+3 api_description: The paddle.nn.functional.gumbel_softmax API samples from the Gumbel-Softmax
+  distribution, allowing for optional discretization, controlled by a temperature
+  parameter t.
+4 api_signature: paddle.nn.functional.gumbel_softmax(x,temperature,hard)
+5 api_details: ''
+6 api_parameters:
+- x: Represents an N-D Tensor where the first N-1 dimensions index into a batch of
+    distributions and the last dimension is a vector of probabilities.
+- temperature: A non-negative scalar that controls the randomness of the sampling
+    process, with a default value of 1.0.
+- hard: Determines if the output samples should be discretized as one-hot vectors
+    while maintaining differentiability as soft samples in autograd, with a default
+    value of False.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- paddle.seed(2023)
+- logits = paddle.randn([4, 6])
+- temperature = 0.01
+- gumbel_softmax = F.gumbel_softmax(logits, temperature)
+- print(gumbel_softmax)
+- Tensor(shape=[4, 6], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.00000000, 1.        , 0.00000000, 0.00000000, 0.00000000, 0.00000000],'
+- '[0.00000000, 0.00000000, 1.        , 0.00000000, 0.00000000, 0.00000000],'
+- '[0.00000000, 0.00000004, 0.00000000, 0.00000000, 1.        , 0.00000000],'
+- '[0.00000000, 1.        , 0.00000000, 0.00000000, 0.00000000, 0.00000000]])'
+8 api_shape: null

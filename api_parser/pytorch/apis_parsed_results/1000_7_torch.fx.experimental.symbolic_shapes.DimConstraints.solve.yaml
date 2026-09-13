@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.DimConstraints.solve
+3 api_description: Solves a system of symbolic shape constraints and returns simplified
+  constraints that satisfy the equations.
+4 api_signature: solve()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

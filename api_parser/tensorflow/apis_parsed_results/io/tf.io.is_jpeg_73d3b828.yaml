@@ -1,0 +1,9 @@
+2 api_name: tensorflow.io.is_jpeg
+3 api_description: Returns True if the given contents encode a JPEG image, otherwise
+  False.
+4 api_signature: tf.io.is_jpeg(contents)
+5 api_details: ''
+6 api_parameters:
+- contents: The encoded image bytes to check for JPEG format.
+7 api_usage_example: null
+8 api_shape: ''

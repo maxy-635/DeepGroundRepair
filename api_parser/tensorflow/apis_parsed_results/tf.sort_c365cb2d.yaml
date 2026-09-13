@@ -1,0 +1,17 @@
+2 api_name: tensorflow.sort
+3 api_description: Sorts tensor values along a specified axis, with the default sorting
+  the innermost axis.
+4 api_signature: tf.sort(values,axis,direction)
+5 api_details: ''
+6 api_parameters:
+- values: The tensor containing the numeric values to sort.
+- axis: The dimension along which the sorting is performed, with `-1` meaning the
+    last axis.
+- direction: The sort order to use, either ascending or descending.
+7 api_usage_example:
+- mat = [[3,2,1],
+- '       [2,1,3],'
+- '       [1,3,2]]'
+- tf.sort(mat, axis=-1).numpy()
+- tf.sort(mat, axis=0).numpy()
+8 api_shape: ''

@@ -1,0 +1,28 @@
+2 api_name: paddle.io.ConcatDataset
+3 api_description: Combines multiple datasets into one dataset, exposing them as a
+  single contiguous sequence.
+4 api_signature: paddle.io.ConcatDataset(datasets)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import numpy as np
+- import paddle
+- from paddle.io import Dataset, ConcatDataset
+- '# define a random dataset'
+- 'class RandomDataset(Dataset):  # type: ignore[type-arg]'
+- '    def __init__(self, num_samples):'
+- '        self.num_samples = num_samples'
+- '...'
+- '    def __getitem__(self, idx):'
+- '        image = np.random.random([32]).astype(''float32'')'
+- '        label = np.random.randint(0, 9, (1, )).astype(''int64'')'
+- '        return image, label'
+- '...'
+- '    def __len__(self):'
+- '        return self.num_samples'
+- '...'
+- 'dataset = ConcatDataset([RandomDataset(10), RandomDataset(10)])  # type: ignore[var-annotated]'
+- 'for i in range(len(dataset)):'
+- '    image, label = dataset[i]'
+- '    # do something'
+8 api_shape: {}

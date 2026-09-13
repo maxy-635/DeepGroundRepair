@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.PaddedBatchDatasetV2
+3 api_description: Creates a batched dataset by grouping input elements into fixed-size
+  batches and padding them to a uniform shape.
+4 api_signature: tf.raw_ops.PaddedBatchDatasetV2(input_dataset,batch_size,padded_shapes,padding_values,drop_remainder)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset to read elements from and batch.
+- batch_size: The number of elements to accumulate into each batch.
+- padded_shapes: The target padded shapes for each output component, with -1 indicating
+    a dimension should be padded to the maximum size in the batch.
+- padding_values: The scalar padding values to use for each corresponding output component.
+- drop_remainder: Whether to discard the final batch if it contains fewer elements
+    than `batch_size`.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: paddle.distributed.ps.the_one_ps.SparseTable
+3 api_description: A sparse parameter server table for distributed PaddlePaddle training
+  that stores and updates sparse embeddings or other keyed parameters, supports lookup
+  and incremental access by IDs, and manages sharded data across workers/servers.
+4 api_signature: paddle.distributed.ps.the_one_ps.SparseTable(context,send_ctx)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

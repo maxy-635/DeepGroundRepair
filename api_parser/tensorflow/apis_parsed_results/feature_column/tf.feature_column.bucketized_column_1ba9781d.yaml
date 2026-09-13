@@ -1,0 +1,10 @@
+2 api_name: tensorflow.feature_column.bucketized_column
+3 api_description: Converts a dense numeric feature into discrete buckets using boundary
+  values, where each bucket includes the left edge and excludes the right edge.
+4 api_signature: tf.feature_column.bucketized_column(source_column,boundaries)
+5 api_details: ''
+6 api_parameters:
+- source_column: The numeric input column to bucketize into discrete intervals.
+- boundaries: The ordered cutoff values that define the bucket ranges.
+7 api_usage_example: null
+8 api_shape: ''

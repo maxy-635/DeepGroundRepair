@@ -1,0 +1,8 @@
+2 api_name: torch.cuda.can_device_access_peer
+3 api_description: Returns whether two CUDA devices can directly access each other's
+  memory via peer-to-peer access.
+4 api_signature: torch.cuda.can_device_access_peer(device,peer_device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

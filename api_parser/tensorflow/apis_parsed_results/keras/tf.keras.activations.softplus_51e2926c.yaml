@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.activations.softplus
+3 api_description: Applies the softplus activation, smoothly mapping inputs to positive
+  values using log(exp(x) + 1).
+4 api_signature: tf.keras.activations.softplus(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the softplus activation to.
+7 api_usage_example: null
+8 api_shape: ''

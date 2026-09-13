@@ -1,0 +1,14 @@
+2 api_name: torch.nn.LogSigmoid
+3 api_description: Applies the log-sigmoid activation element-wise, returning log(1
+  / (1 + exp(-x))) for each input value.
+4 api_signature: torch.nn.LogSigmoid()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' m = nn.LogSigmoid()'
+- ' input = torch.randn(2)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

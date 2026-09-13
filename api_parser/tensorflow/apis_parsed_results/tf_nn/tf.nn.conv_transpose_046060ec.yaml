@@ -1,0 +1,19 @@
+2 api_name: tensorflow.nn.conv_transpose
+3 api_description: The tensorflow.nn.conv_transpose function performs the transpose
+  of a convolution operation, often referred to as 'deconvolution', which computes
+  the gradient of a 3D convolution rather than an actual deconvolution.
+4 api_signature: tf.nn.conv_transpose(input,filters,output_shape,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor with shape determined by batch size, spatial dimensions,
+    and channel configuration.
+- filters: The filter tensor with shape defined by spatial dimensions, input channels,
+    and output channels.
+- output_shape: A tensor specifying the desired shape of the output after the deconvolution
+    operation.
+- strides: The step size for sliding the filter across the input dimensions, specified
+    as an integer or list.
+- padding: Specifies the padding algorithm to use, either 'VALID' or 'SAME', affecting
+    output size.
+7 api_usage_example: null
+8 api_shape: ''

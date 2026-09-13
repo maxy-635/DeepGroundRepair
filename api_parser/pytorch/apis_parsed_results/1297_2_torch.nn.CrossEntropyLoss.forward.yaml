@@ -1,0 +1,8 @@
+2 api_name: torch.nn.CrossEntropyLoss.forward
+3 api_description: Computes the cross-entropy loss between input logits and target
+  labels during the forward pass.
+4 api_signature: forward(input,target)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

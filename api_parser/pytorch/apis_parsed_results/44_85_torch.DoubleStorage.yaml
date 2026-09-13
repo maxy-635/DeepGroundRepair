@@ -1,0 +1,8 @@
+2 api_name: torch.DoubleStorage
+3 api_description: A double-precision storage container for Torch tensors, used to
+  hold and manage contiguous numeric data as 64-bit floating-point values.
+4 api_signature: '"class torch.DoubleStorage(dtype,device)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

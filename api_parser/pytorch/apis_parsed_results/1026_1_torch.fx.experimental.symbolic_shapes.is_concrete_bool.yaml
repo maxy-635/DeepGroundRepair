@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.is_concrete_bool
+3 api_description: Returns True when a SymBool or integer represents a concrete, non-symbolic
+  boolean value.
+4 api_signature: torch.fx.experimental.symbolic_shapes.is_concrete_bool(a)
+5 api_details: ''
+6 api_parameters:
+- a: The object to check for whether it can be treated as a concrete boolean value.
+7 api_usage_example: null
+8 api_shape: null

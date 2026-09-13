@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.ExtensionTypeSpec
+3 api_description: Base TypeSpec for tf.ExtensionType values, describing their structure
+  and providing proto serialization for TensorFlow type specifications.
+4 api_signature: experimental_as_proto()
+5 api_details: ''
+6 api_parameters:
+- proto: Serialized form of the extension type spec produced by `experimental_as_proto`.
+7 api_usage_example: null
+8 api_shape: ''

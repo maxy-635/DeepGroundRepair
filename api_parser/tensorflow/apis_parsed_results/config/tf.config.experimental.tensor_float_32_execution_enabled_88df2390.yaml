@@ -1,0 +1,7 @@
+2 api_name: tensorflow.config.experimental.tensor_float_32_execution_enabled
+3 api_description: Returns whether TensorFloat-32 execution is currently enabled.
+4 api_signature: tf.config.experimental.tensor_float_32_execution_enabled()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

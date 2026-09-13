@@ -1,0 +1,19 @@
+2 api_name: tensorflow.constant_initializer
+3 api_description: Returns an initializer that fills tensors with a constant value,
+  broadcasting scalars to any requested shape and requiring lists to match the target
+  tensor size.
+4 api_signature: tf.constant_initializer(value)
+5 api_details: ''
+6 api_parameters:
+- value: Sets every element of the initialized variable to the provided scalar, sequence,
+    or N-dimensional NumPy array value.
+7 api_usage_example:
+- value = [0, 1, 2, 3, 4, 5, 6, 7]
+- init = tf.constant_initializer(value)
+- '# Fitting shape'
+- tf.Variable(init(shape=[2, 4], dtype=tf.float32))
+- '# Larger shape'
+- tf.Variable(init(shape=[3, 4], dtype=tf.float32))
+- '# Smaller shape'
+- tf.Variable(init(shape=[2, 3], dtype=tf.float32))
+8 api_shape: ''

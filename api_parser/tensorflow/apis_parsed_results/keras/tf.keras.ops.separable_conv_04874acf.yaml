@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.ops.separable_conv
+3 api_description: Performs 1D or 2D separable convolution by applying a depthwise
+  convolution followed by a pointwise convolution.
+4 api_signature: tf.keras.ops.separable_conv(inputs,depthwise_kernel,pointwise_kernel,strides,padding)
+5 api_details: ''
+6 api_parameters:
+- inputs: The input tensor to convolve, with shape depending on the data format and
+    spatial dimensions.
+- depthwise_kernel: The depthwise filter tensor that is applied separately to each
+    input channel.
+- pointwise_kernel: The 1x1-like filter tensor that mixes depthwise output channels
+    into the final output channels.
+- strides: The step size used by the convolution along each spatial dimension.
+- padding: The padding mode that controls whether the input is left unchanged or padded
+    to preserve size with stride 1.
+7 api_usage_example: null
+8 api_shape: ''

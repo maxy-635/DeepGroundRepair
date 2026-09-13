@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixMatMul
+3 api_description: Multiplies a sparse CSR matrix by a dense matrix and returns the
+  result as a dense matrix, with optional transposition of the inputs or output.
+4 api_signature: tf.raw_ops.SparseMatrixMatMul(a,b,transpose_a,transpose_b,transpose_output)
+5 api_details: ''
+6 api_parameters:
+- a: The sparse CSR matrix to use as the left-hand operand.
+- b: The dense tensor to use as the right-hand operand.
+- transpose_a: Whether to transpose the sparse matrix before multiplication.
+- transpose_b: Whether to transpose the dense tensor before multiplication.
+- transpose_output: Whether to transpose the resulting product tensor.
+7 api_usage_example: null
+8 api_shape: ''

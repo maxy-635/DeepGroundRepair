@@ -1,0 +1,10 @@
+2 api_name: torch.xpu.synchronize
+3 api_description: Blocks until all kernels across every stream on the specified XPU
+  device have finished executing.
+4 api_signature: torch.xpu.synchronize(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which device to synchronize; if omitted, the current device is
+    used.
+7 api_usage_example: null
+8 api_shape: null

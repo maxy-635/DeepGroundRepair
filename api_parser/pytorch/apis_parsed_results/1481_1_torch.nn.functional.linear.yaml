@@ -1,0 +1,16 @@
+2 api_name: torch.nn.functional.linear
+3 api_description: torch.nn.functional.linear applies a linear transformation to input
+  data using a weight matrix and an optional bias.
+4 api_signature: torch.nn.functional.linear(input,weight)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to be transformed by the linear layer.
+- weight: The weight matrix that will be applied to the input tensor.
+- bias: The optional bias tensor that will be added to the output.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*, H_\text{in}) where * means any number of dimensions including
+    none and H_\text{in} = \text{in_features}.
+  output tensor shape: (*, H_\text{out}) where all but the last dimension are the
+    same shape as the input and H_\text{out} = \text{out_features}.
+  tensor shape transform formulas: {}

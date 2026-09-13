@@ -1,0 +1,22 @@
+2 api_name: paddle.fft.hfftn
+3 api_description: Computes the N-D FFT of Hermitian-symmetric complex input to produce
+  a real-valued spectrum.
+4 api_signature: paddle.fft.hfftn(x,s,axes,norm,name,*,out)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the data to transform.
+- s: Specifies the output transform sizes for each axis, cropping or zero-padding
+    the input as needed.
+- axes: Specifies which axes to compute the inverse FFT over, defaulting to the last
+    `len(s)` axes or all axes if `s` is omitted.
+- norm: Controls the normalization mode used for scaling the FFT and inverse FFT pair.
+- name: Optional name attribute for the operation, usually left as `None`.
+- out: Optional output tensor to store the result.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([(2+2j), (2+2j), (3+3j)])
+- hfftn_x = paddle.fft.hfftn(x)
+- print(hfftn_x)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[9., 3., 1., -5.])'
+8 api_shape: {}

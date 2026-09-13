@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.hstack
+3 api_description: Stacks arrays horizontally by concatenating them along the second
+  axis for 2D inputs, or along the first axis for 1D inputs, matching NumPy hstack
+  behavior without supporting dtype or casting arguments.
+4 api_signature: tf.experimental.numpy.hstack(tup)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

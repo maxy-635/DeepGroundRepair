@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.StackPop
+3 api_description: Pops and returns the top element from a TensorFlow stack resource;
+  deprecated in favor of StackPopV2.
+4 api_signature: tf.raw_ops.StackPop(handle,elem_type)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the mutable string stack resource to pop an element from.
+- elem_type: Specifies the data type of the value stored in the stack elements.
+7 api_usage_example: null
+8 api_shape: ''

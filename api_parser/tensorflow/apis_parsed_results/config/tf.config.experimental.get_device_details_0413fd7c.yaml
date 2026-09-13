@@ -1,0 +1,13 @@
+2 api_name: tensorflow.config.experimental.get_device_details
+3 api_description: Returns a dictionary of supported details for a given physical
+  device returned by `tf.config.list_physical_devices`.
+4 api_signature: tf.config.experimental.get_device_details(device)
+5 api_details: ''
+6 api_parameters:
+- device: The physical device to query for implementation-specific details.
+7 api_usage_example:
+- gpu_devices = tf.config.list_physical_devices('GPU')
+- 'if gpu_devices:'
+- '  details = tf.config.experimental.get_device_details(gpu_devices[0])'
+- '  details.get(''device_name'', ''Unknown GPU'')'
+8 api_shape: ''

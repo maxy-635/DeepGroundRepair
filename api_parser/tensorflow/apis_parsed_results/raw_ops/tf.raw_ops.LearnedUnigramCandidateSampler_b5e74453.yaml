@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.LearnedUnigramCandidateSampler
+3 api_description: Samples a batch-wide set of candidate labels from a learned unigram
+  distribution for candidate sampling.
+4 api_signature: tf.raw_ops.LearnedUnigramCandidateSampler(true_classes,num_true,num_sampled,unique,range_max)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Provides the batch of true class IDs, with each row listing the target
+    classes for one example.
+- num_true: Specifies how many true labels are associated with each context.
+- num_sampled: Sets how many candidate classes to randomly draw.
+- unique: Controls whether sampled candidates must be unique within each batch by
+    using rejection sampling.
+- range_max: Defines the exclusive upper bound of the integer range to sample from.
+7 api_usage_example: null
+8 api_shape: ''

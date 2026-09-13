@@ -1,0 +1,9 @@
+2 api_name: tensorflow.summary.audio
+3 api_description: Writes an audio summary for TensorBoard from audio clips shaped
+  [k, t, c], using a positive sample rate and optional step, max outputs, encoding,
+  and description; emits up to max_outputs clips and returns True if written.
+4 api_signature: tf.summary.audio(name,data,sample_rate,step)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

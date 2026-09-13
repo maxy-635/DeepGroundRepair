@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.DecodeJpeg
+3 api_description: Decodes a JPEG-encoded image into a uint8 tensor, with the `channels`
+  attribute controlling the number of output color channels.
+4 api_signature: tf.raw_ops.DecodeJpeg(contents,channels,ratio)
+5 api_details: ''
+6 api_parameters:
+- contents: The JPEG-encoded image data to decode.
+- channels: The number of color channels to produce in the decoded image.
+- ratio: The factor by which to downscale the image during decoding.
+7 api_usage_example: null
+8 api_shape: ''

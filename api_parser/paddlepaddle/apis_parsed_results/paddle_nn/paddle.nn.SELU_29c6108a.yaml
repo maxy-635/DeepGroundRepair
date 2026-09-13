@@ -1,0 +1,20 @@
+2 api_name: paddle.nn.SELU
+3 api_description: SELU is an activation function that scales inputs to maintain mean
+  and variance, promoting self-normalizing neural networks.
+4 api_signature: paddle.nn.SELU(scale,alpha)
+5 api_details: ''
+6 api_parameters:
+- scale: Defines the scaling factor for the SELU activation, which must be greater
+    than 1.0, with a default value of approximately 1.051.
+- alpha: Specifies the alpha parameter for the SELU activation, which must be non-negative,
+    with a default value of approximately 1.673.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[0.0, 1.0],[2.0, 3.0]])
+- m = paddle.nn.SELU()
+- out = m(x)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.        , 1.05070102],'
+- '[2.10140204, 3.15210295]])'
+8 api_shape: null

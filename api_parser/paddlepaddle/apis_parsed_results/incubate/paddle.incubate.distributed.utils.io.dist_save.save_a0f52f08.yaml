@@ -1,0 +1,29 @@
+2 api_name: paddle.incubate.distributed.utils.io.dist_save.save
+3 api_description: Saves a state dict to a given path, handling both distributed and
+  single-card environments.
+4 api_signature: paddle.incubate.distributed.utils.io.dist_save.save(state_dict,path,**configs)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies where to save the object, using the given path or buffer, and if
+    it points to the current directory, the path string becomes the file name.
+- '**configs': Accepts additional save configuration options.
+7 api_usage_example:
+- '>>>'
+- '# type: ignore'
+- import paddle
+- paddle.distributed.init_process_group(backend='nccl')
+- paddle.distributed.fleet.init(is_collective=True)
+- model = build_model()
+- optimizer = build_optimizer(model)
+- dist_optimizer = paddle.distributed_optimizer(optimizer)
+- dist_model = paddle.distributed_optimizer(model)
+- '# gather params to rank 0 and then save'
+- paddle.incubate.distributed.utils.io.save(model.state_dict(), path="path/to/save.pdparams",
+  gather_to=[0], state_type="params")
+- '# save whole params on all ranks'
+- paddle.incubate.distributed.utils.io.save(model.state_dict(), path="path/to/save.pdparams",
+  gather_to=[0,1], state_type="params")
+- '# save optimizer state dict on rank 0'
+- paddle.incubate.distributed.utils.io.save(optimizer.state_dict(), path="path/to/save.pdopt",
+  gather=0, state_type="opt")
+8 api_shape: {}

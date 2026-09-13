@@ -1,0 +1,26 @@
+2 api_name: torch.utils.data.Sampler
+3 api_description: Base class for data samplers that define how to iterate over dataset
+  indices, typically controlling the order and subset of samples returned to a DataLoader.
+4 api_signature: class torch.utils.data.Sampler
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' class AccedingSequenceLengthSampler(Sampler[int]):'
+- '     def __init__(self, data: List[str]) -> None:'
+- '         self.data = data'
+- '     def __len__(self) -> int:'
+- '         return len(self.data)'
+- '     def __iter__(self) -> Iterator[int]:'
+- '         sizes = torch.tensor([len(x) for x in self.data])'
+- '         yield from torch.argsort(sizes).tolist()'
+- ' class AccedingSequenceLengthBatchSampler(Sampler[List[int]]):'
+- '     def __init__(self, data: List[str], batch_size: int) -> None:'
+- '         self.data = data'
+- '         self.batch_size = batch_size'
+- '     def __len__(self) -> int:'
+- '         return (len(self.data) + self.batch_size - 1) // self.batch_size'
+- '     def __iter__(self) -> Iterator[List[int]]:'
+- '         sizes = torch.tensor([len(x) for x in self.data])'
+- '         for batch in torch.chunk(torch.argsort(sizes), len(self)):'
+- '             yield batch.tolist()'
+8 api_shape: null

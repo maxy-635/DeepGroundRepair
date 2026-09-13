@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.int16
+3 api_description: 16-bit signed integer scalar type for TensorFlow NumPy, matching
+  C short and supporting standard scalar/array attributes.
+4 api_signature: tf.experimental.numpy.int16
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

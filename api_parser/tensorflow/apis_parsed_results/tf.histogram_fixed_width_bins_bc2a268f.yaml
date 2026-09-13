@@ -1,0 +1,18 @@
+2 api_name: tensorflow.histogram_fixed_width_bins
+3 api_description: Assigns each value to an equal-width histogram bin index based
+  on a specified value range and number of bins.
+4 api_signature: tf.histogram_fixed_width_bins(values,value_range,nbins)
+5 api_details: ''
+6 api_parameters:
+- values: The numeric tensor whose elements are assigned to histogram bins.
+- value_range: A two-element tensor that sets the lower and upper bounds for binning,
+    clamping values outside the range to the first or last bin.
+- nbins: The number of bins to divide the value range into.
+7 api_usage_example:
+- '# Bins will be:  (-inf, 1), [1, 2), [2, 3), [3, 4), [4, inf)'
+- nbins = 5
+- value_range = [0.0, 5.0]
+- new_values = [-1.0, 0.0, 1.5, 2.0, 5.0, 15]
+- indices = tf.histogram_fixed_width_bins(new_values, value_range, nbins=5)
+- indices.numpy()
+8 api_shape: ''

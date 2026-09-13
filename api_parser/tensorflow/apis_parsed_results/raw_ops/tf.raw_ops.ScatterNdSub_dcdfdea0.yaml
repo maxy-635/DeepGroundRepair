@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ScatterNdSub
+3 api_description: Subtracts update values or slices from a variable at the positions
+  specified by integer indices.
+4 api_signature: tf.raw_ops.ScatterNdSub(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place by subtracting values at the specified
+    indices.
+- indices: The integer indices that specify which locations in `ref` will be subtracted
+    from.
+- updates: The values to subtract from `ref` at the positions indicated by `indices`.
+7 api_usage_example: null
+8 api_shape: ''

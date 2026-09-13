@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.callbacks.SwapEMAWeights
+3 api_description: Temporarily swaps the model’s weights with the optimizer’s EMA
+  weights before evaluation, then restores the original weights afterward.
+4 api_signature: tf.keras.callbacks.SwapEMAWeights(swap_on_epoch)
+5 api_details: ''
+6 api_parameters:
+- swap_on_epoch: Controls whether EMA weights are swapped in at the start of each
+    epoch and swapped back out at the end, which is useful when other callbacks should
+    see the EMA weights.
+7 api_usage_example: null
+8 api_shape: ''

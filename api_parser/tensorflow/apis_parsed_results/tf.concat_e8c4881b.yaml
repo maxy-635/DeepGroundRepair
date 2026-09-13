@@ -1,0 +1,13 @@
+2 api_name: tensorflow.concat
+3 api_description: Concatenates a list of tensors along a specified axis to form one
+  tensor with the combined size on that dimension.
+4 api_signature: tf.concat(values,axis)
+5 api_details: ''
+6 api_parameters:
+- values: The tensors to be concatenated into a single tensor.
+- axis: The dimension index along which the tensors are joined.
+7 api_usage_example:
+- t1 = [[[1, 2], [2, 3]], [[4, 4], [5, 3]]]
+- t2 = [[[7, 4], [8, 4]], [[2, 10], [15, 11]]]
+- tf.concat([t1, t2], -1)
+8 api_shape: ''

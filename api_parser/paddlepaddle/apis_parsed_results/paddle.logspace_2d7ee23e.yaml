@@ -1,0 +1,20 @@
+2 api_name: paddle.logspace
+3 api_description: Returns a fixed number of values spaced evenly on a logarithmic
+  scale between base**start and base**stop.
+4 api_signature: paddle.logspace(start,stop,num,base)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the starting exponent for the first value in the generated log-spaced
+    sequence.
+- stop: Sets the ending exponent for the last value in the generated log-spaced sequence.
+- num: Specifies how many values to generate in the sequence.
+- base: Defines the logarithmic base used to compute the sequence values.
+7 api_usage_example:
+- import paddle
+- data = paddle.logspace(0, 10, 5, 2, 'float32')
+- print(data.numpy())
+- '[1.0000000e+00 5.6568542e+00 3.2000000e+01 1.8101933e+02 1.0240000e+03]'
+- data = paddle.logspace(0, 10, 1, 2, 'float32')
+- print(data.numpy())
+- '[1.]'
+8 api_shape: {}

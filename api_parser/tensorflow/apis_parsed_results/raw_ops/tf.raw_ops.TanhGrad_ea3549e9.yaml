@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TanhGrad
+3 api_description: Computes the gradient of tanh by multiplying the upstream gradient
+  dy by (1 - y^2), where y is tanh(x).
+4 api_signature: tf.raw_ops.TanhGrad(y,dy)
+5 api_details: ''
+6 api_parameters:
+- y: The forward-pass `tanh` output tensor used to compute the gradient.
+- dy: The upstream gradient tensor with the same type as `y`.
+7 api_usage_example: null
+8 api_shape: ''

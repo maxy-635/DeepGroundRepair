@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.log1p_
+3 api_description: Applies log1p in place to tensor x, modifying it directly and returning
+  the same tensor.
+4 api_signature: paddle.Tensor.log1p_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

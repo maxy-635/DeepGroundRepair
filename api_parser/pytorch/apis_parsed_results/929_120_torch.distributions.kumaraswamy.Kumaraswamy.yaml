@@ -1,0 +1,16 @@
+2 api_name: torch.distributions.kumaraswamy.Kumaraswamy
+3 api_description: A transformed distribution for the Kumaraswamy distribution on
+  the unit interval, supporting sampling, log probability evaluation, and reparameterized-friendly
+  operations through a base uniform distribution and inverse-transform-style behavior.
+4 api_signature: '"Kumaraswamy(concentration1,concentration0)"'
+5 api_details: ''
+6 api_parameters:
+- concentration1: Controls the first shape parameter (alpha) of the Kumaraswamy distribution,
+    influencing how probability is distributed across the interval.
+- concentration0: Controls the second shape parameter (beta) of the Kumaraswamy distribution,
+    shaping the distribution’s curvature and tail behavior.
+7 api_usage_example:
+- ' m = Kumaraswamy(torch.tensor([1.0]), torch.tensor([1.0]))'
+- ' m.sample()  # sample from a Kumaraswamy distribution with concentration alpha=1
+  and beta=1'
+8 api_shape: null

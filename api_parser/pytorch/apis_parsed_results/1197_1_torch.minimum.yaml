@@ -1,0 +1,13 @@
+2 api_name: torch.minimum
+3 api_description: Returns the element-wise minimum of two inputs, comparing each
+  pair of values and keeping the smaller one.
+4 api_signature: torch.minimum(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to compare elementwise.
+- other: The second tensor to compare elementwise against the input.
+7 api_usage_example:
+- ' a = torch.tensor((1, 2, -1))'
+- ' b = torch.tensor((3, 0, 4))'
+- ' torch.minimum(a, b)'
+8 api_shape: null

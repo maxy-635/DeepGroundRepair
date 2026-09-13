@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.activations.gelu
+3 api_description: Applies the GELU activation, smoothly scaling each input by its
+  Gaussian-based probability weight.
+4 api_signature: tf.keras.activations.gelu(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to apply the GELU activation to.
+7 api_usage_example: null
+8 api_shape: ''

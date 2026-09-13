@@ -1,0 +1,11 @@
+2 api_name: tensorflow.debugging.assert_positive
+3 api_description: Checks that every element of x is greater than 0, raising InvalidArgumentError
+  and printing a message plus sample values if any element is non-positive.
+4 api_signature: tf.debugging.assert_positive(x,message,name)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose values are checked to ensure they are all positive.
+- message: An optional prefix string added to the default assertion error message.
+- name: An optional operation name used to label this assert_positive check.
+7 api_usage_example: null
+8 api_shape: ''

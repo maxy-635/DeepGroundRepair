@@ -1,0 +1,12 @@
+2 api_name: tensorflow.foldl
+3 api_description: Applies a function cumulatively from left to right over tensors
+  unpacked from `elems` along dimension 0, using an optional initializer and supporting
+  nested input/output structures.
+4 api_signature: tf.foldl(fn,elems,initializer)
+5 api_details: ''
+6 api_parameters:
+- fn: The function applied cumulatively to each slice to update the accumulator.
+- elems: The tensor or nested tensors to iterate over along the first dimension.
+- initializer: The starting value for the accumulator before folding begins.
+7 api_usage_example: null
+8 api_shape: ''

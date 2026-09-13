@@ -1,0 +1,15 @@
+2 api_name: tensorflow.saved_model.save
+3 api_description: Exports a Trackable tf.Module (or subclass) as a SavedModel for
+  later loading and serving.
+4 api_signature: tf.saved_model.save(obj,export_dir,signatures)
+5 api_details: ''
+6 api_parameters:
+- obj: The trackable TensorFlow object to export as a SavedModel.
+- export_dir: The directory where the SavedModel is written.
+- signatures: Optional export signatures that define the model's callable interfaces.
+7 api_usage_example:
+- x = tf.keras.layers.Input((4,), name="x")
+- y = tf.keras.layers.Dense(5, name="out")(x)
+- model = tf.keras.Model(x, y)
+- tf.saved_model.save(model, '/tmp/saved_model/')
+8 api_shape: ''

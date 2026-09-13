@@ -1,0 +1,16 @@
+2 api_name: torch.Tensor.refine_names
+3 api_description: Refines a tensor’s dimension names to the specified names, enabling
+  named dimensions without changing the underlying data.
+4 api_signature: '"refine_names(*names)"'
+5 api_details: ''
+6 api_parameters:
+- names: Specifies the desired dimension names for the output tensor, allowing at
+    most one ellipsis to preserve unspecified names.
+7 api_usage_example:
+- ' imgs = torch.randn(32, 3, 128, 128)'
+- ' named_imgs = imgs.refine_names(''N'', ''C'', ''H'', ''W'')'
+- ' named_imgs.names'
+- ' tensor = torch.randn(2, 3, 5, 7, 11)'
+- ' tensor = tensor.refine_names(''A'', ..., ''B'', ''C'')'
+- ' tensor.names'
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: paddle.frac
+3 api_description: Returns the fractional part of each input element.
+4 api_signature: paddle.frac(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are divided into their fractional part, with supported
+    dtypes int32, int64, float32, and float64.
+7 api_usage_example:
+- import paddle
+- input = paddle.to_tensor([[12.22000003, -1.02999997],
+- '                          [-0.54999995, 0.66000003]])'
+- output = paddle.frac(input)
+- output
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.22000003, -0.02999997],'
+- '[-0.54999995,  0.66000003]])'
+8 api_shape: {}

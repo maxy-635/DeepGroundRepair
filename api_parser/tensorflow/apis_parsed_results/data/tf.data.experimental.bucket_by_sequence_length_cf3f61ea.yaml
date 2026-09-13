@@ -1,0 +1,19 @@
+2 api_name: tensorflow.data.experimental.bucket_by_sequence_length
+3 api_description: Groups variable-length dataset elements into length-based buckets,
+  then pads and batches each bucket to reduce padding and improve training efficiency.
+4 api_signature: tf.data.experimental.bucket_by_sequence_length(element_length_func,bucket_boundaries,bucket_batch_sizes,padded_shapes,padding_values)
+5 api_details: ''
+6 api_parameters:
+- element_length_func: Computes the sequence length for each dataset element so it
+    can be assigned to the appropriate bucket.
+- bucket_boundaries: Defines the upper length limits that separate the sequence buckets.
+- bucket_batch_sizes: Sets the batch size to use for each bucket, with one size per
+    bucket interval.
+- padded_shapes: Specifies the padded tensor shapes used when batching variable-length
+    elements.
+- padding_values: Specifies the values used to pad elements up to the target padded
+    shapes.
+7 api_usage_example:
+- 'for elem in dataset.as_numpy_iterator():'
+- '  print(elem)'
+8 api_shape: ''

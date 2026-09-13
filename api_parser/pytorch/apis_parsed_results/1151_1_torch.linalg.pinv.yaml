@@ -1,0 +1,10 @@
+2 api_name: torch.linalg.pinv
+3 api_description: Computes the Moore-Penrose pseudoinverse of a matrix.
+4 api_signature: torch.linalg.pinv(A,*,hermitian)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor whose Moore-Penrose pseudoinverse is computed across its last
+    two dimensions.
+7 api_usage_example:
+- torch.linalg.lstsq(A, B).solution == A.pinv() @ B
+8 api_shape: null

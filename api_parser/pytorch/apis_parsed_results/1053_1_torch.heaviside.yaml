@@ -1,0 +1,17 @@
+2 api_name: torch.heaviside
+3 api_description: Applies the Heaviside step function elementwise, returning 0 for
+  negative inputs, `values` for zero inputs, and 1 for positive inputs.
+4 api_signature: torch.heaviside(input,values)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose elements are evaluated to determine the heaviside
+    output.
+- values: The tensor or value used to fill the output where the input elements are
+    zero.
+7 api_usage_example:
+- ' input = torch.tensor([-1.5, 0, 2.0])'
+- ' values = torch.tensor([0.5])'
+- ' torch.heaviside(input, values)'
+- ' values = torch.tensor([1.2, -2.0, 3.5])'
+- ' torch.heaviside(input, values)'
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.proxy_tensor.make_fx
+3 api_description: Traces a function by running it with valid inputs and returns an
+  FX GraphModule capturing the operations performed.
+4 api_signature: torch.fx.experimental.proxy_tensor.make_fx(f,decomposition_table,tracing_mode,*,pre_dispatch,record_module_stack)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,20 @@
+2 api_name: paddle.is_complex
+3 api_description: Checks whether a tensor has a complex data type (`complex64` or
+  `complex128`).
+4 api_signature: paddle.is_complex(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are checked to determine whether it has a complex data
+    type.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1 + 2j, 3 + 4j])
+- print(paddle.is_complex(x))
+- 'True'
+- x = paddle.to_tensor([1.1, 1.2])
+- print(paddle.is_complex(x))
+- 'False'
+- x = paddle.to_tensor([1, 2, 3])
+- print(paddle.is_complex(x))
+- 'False'
+8 api_shape: {}

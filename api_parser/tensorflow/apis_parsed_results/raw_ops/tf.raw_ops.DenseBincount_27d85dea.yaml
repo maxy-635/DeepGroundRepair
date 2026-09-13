@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.DenseBincount
+3 api_description: Counts integer values in `arr` into a length-`size` vector, optionally
+  summing matching `weights` for each bin and ignoring out-of-range values.
+4 api_signature: tf.raw_ops.DenseBincount(input,size,weights)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the 1D or 2D integer values to be counted into bins.
+- size: Specifies the number of bins to produce, as a non-negative scalar integer.
+- weights: Supplies optional per-element weights for the counts, or defaults to 1
+    for all elements when empty.
+7 api_usage_example: null
+8 api_shape: ''

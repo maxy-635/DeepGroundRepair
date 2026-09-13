@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.dtensor.run_on
+3 api_description: Creates a DTensor device scope so enclosed ops and tf.functions
+  run on the provided mesh and small constants are replicated as DTensors.
+4 api_signature: tf.experimental.dtensor.run_on(mesh)
+5 api_details: ''
+6 api_parameters:
+- mesh: Specifies the Mesh instance used to derive the default mesh for execution.
+7 api_usage_example: null
+8 api_shape: ''

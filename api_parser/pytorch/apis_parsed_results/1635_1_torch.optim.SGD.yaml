@@ -1,0 +1,18 @@
+2 api_name: torch.optim.SGD
+3 api_description: Implements stochastic gradient descent to update parameters using
+  gradients, with optional momentum for smoother, more stable optimization.
+4 api_signature: torch.optim.SGD(params,lr,momentum,weight_decay,nesterov)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies the parameters or parameter groups to optimize, optionally using
+    named parameters if all groups are named.
+- lr: Sets the step size used to update model parameters during optimization.
+- momentum: Adds momentum to accelerate updates by smoothing gradients across steps.
+- weight_decay: Applies L2 regularization to penalize large weights during optimization.
+- nesterov: Enables Nesterov accelerated gradient updates when momentum is enabled.
+7 api_usage_example:
+- ' optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9)'
+- ' optimizer.zero_grad()'
+- ' loss_fn(model(input), target).backward()'
+- ' optimizer.step()'
+8 api_shape: null

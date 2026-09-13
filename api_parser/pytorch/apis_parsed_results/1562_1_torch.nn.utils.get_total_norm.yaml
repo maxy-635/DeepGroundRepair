@@ -1,0 +1,10 @@
+2 api_name: torch.nn.utils.get_total_norm
+3 api_description: Computes the combined norm of an iterable of tensors.
+4 api_signature: torch.nn.utils.get_total_norm(tensors,norm_type)
+5 api_details: ''
+6 api_parameters:
+- tensors: Specifies the tensor or iterable of tensors whose total norm will be computed.
+- norm_type: Specifies which p-norm to use for the total norm calculation, including
+    `inf` for infinity norm.
+7 api_usage_example: null
+8 api_shape: null

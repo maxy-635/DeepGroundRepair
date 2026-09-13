@@ -1,0 +1,15 @@
+2 api_name: torch.logical_not
+3 api_description: Returns the element-wise logical NOT of a tensor, treating zeros
+  as False and non-zeros as True for non-bool inputs, and producing a bool output
+  by default.
+4 api_signature: torch.logical_not(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are logically negated elementwise.
+7 api_usage_example:
+- ' torch.logical_not(torch.tensor([True, False]))'
+- ' torch.logical_not(torch.tensor([0, 1, -10], dtype=torch.int8))'
+- ' torch.logical_not(torch.tensor([0., 1.5, -10.], dtype=torch.double))'
+- ' torch.logical_not(torch.tensor([0., 1., -10.], dtype=torch.double), out=torch.empty(3,
+  dtype=torch.int16))'
+8 api_shape: null

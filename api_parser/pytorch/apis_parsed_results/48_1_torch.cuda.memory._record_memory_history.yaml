@@ -1,0 +1,18 @@
+2 api_name: torch.cuda.memory._record_memory_history
+3 api_description: Records stack traces for CUDA memory allocations so `_snapshot()`
+  can show what allocated each piece of memory.
+4 api_signature: torch.cuda.memory._record_memory_history(enabled,device,clear_history)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- if (record_history) {
+- '  if (alloc_trace->size() < alloc_trace_max_entries_) {'
+- '    alloc_trace->emplace_back(te);'
+- '  } else {'
+- '    (*alloc_trace)[alloc_trace_next++] = te;'
+- '    if (alloc_trace_next == alloc_trace_max_entries_) {'
+- '      alloc_trace_next = 0;'
+- '    }'
+- '  }'
+- '}'
+8 api_shape: null

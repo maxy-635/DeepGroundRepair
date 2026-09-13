@@ -1,0 +1,27 @@
+2 api_name: paddle.vision.transforms.RandomErasing
+3 api_description: Randomly erases a rectangular region in an image by replacing its
+  pixels.
+4 api_signature: paddle.vision.transforms.RandomErasing(prob,scale,ratio,value,inplace)
+5 api_details: ''
+6 api_parameters:
+- prob: Sets the likelihood that the transform will erase the input image.
+- scale: Defines the range of the erased region’s area as a fraction of the image
+    area.
+- ratio: Defines the allowed aspect ratio range for the erased region.
+- value: Specifies what pixel values to fill the erased area with, either a constant,
+    per-channel RGB values, or random values.
+- inplace: Controls whether the input is modified in place or a new result is returned.
+7 api_usage_example:
+- import paddle
+- fake_img = paddle.randn((1, 5, 5)).astype(paddle.float32)
+- transform = paddle.vision.transforms.RandomErasing()
+- result = transform(fake_img)
+- '>>>'
+- print(result)
+- Tensor(shape=[1, 5, 5], dtype=float32, place=Place(gpu:0), stop_gradient=True,
+- '[[[-0.22141267, -0.71004093,  1.71224928,  2.99622107, -0.82959402],'
+- '[ 0.36916021, -0.25601348,  0.86669374,  1.27504587, -0.56462914],'
+- '[-0.45704395, -0.87613666,  1.12195814, -0.87974882,  0.04902615],'
+- '[-0.91549885, -0.15066874,  1.26381516,  0.        ,  0.        ],'
+- '[ 0.87887472, -1.59914243, -0.73970413,  0.        ,  0.        ]]])'
+8 api_shape: {}

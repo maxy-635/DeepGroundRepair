@@ -1,0 +1,13 @@
+2 api_name: tensorflow.linalg.lstsq
+3 api_description: Solves batched linear least-squares systems A X ≈ B, returning
+  the least-squares or minimum-norm solution depending on the `fast` mode. `fast=True`
+  uses a Cholesky-based normal-equations method with optional L2 regularization, while
+  `fast=False` uses a more robust complete orthogonal decomposition and ignores regularization.
+4 api_signature: tf.linalg.lstsq(matrix,rhs)
+5 api_details: ''
+6 api_parameters:
+- matrix: The coefficient matrix in the linear system, with shape [..., M, N].
+- rhs: The right-hand-side tensor containing the target values to solve against, with
+    shape [..., M, K].
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.broadcast_to
+3 api_description: Broadcasts a tensor to a specified shape, following NumPy-style
+  broadcasting rules.
+4 api_signature: '"tf.experimental.numpy.broadcast_to(array,shape)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

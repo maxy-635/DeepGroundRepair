@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.applications.MobileNet
+3 api_description: Builds the MobileNet image classification model, with optional
+  ImageNet pretrained weights for classification or transfer learning.
+4 api_signature: tf.keras.applications.MobileNet(input_shape,alpha,include_top,weights,pooling,classes)
+5 api_details: ''
+6 api_parameters:
+- input_shape: Sets the input image dimensions when not using the top classification
+    layer.
+- alpha: Scales the model width by controlling the number of filters in each layer.
+- include_top: Chooses whether to include the final classification layers.
+- weights: Specifies which pretrained weights to load, or none for random initialization.
+- pooling: Defines the global pooling mode used to convert feature maps into vectors.
+- classes: Sets the number of output classes for the final classification layer.
+7 api_usage_example: null
+8 api_shape: ''

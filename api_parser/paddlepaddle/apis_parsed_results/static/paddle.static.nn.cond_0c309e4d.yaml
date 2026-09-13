@@ -1,0 +1,44 @@
+2 api_name: paddle.static.nn.cond
+3 api_description: Conditionally executes `true_fn` or `false_fn` based on `pred`,
+  returning the selected callable’s result and allowing either branch to be `None`.
+4 api_signature: paddle.static.nn.cond(pred,true_fn,false_fn)
+5 api_details: ''
+6 api_parameters:
+- pred: A boolean tensor that decides which branch to execute.
+- true_fn: A callable that runs when `pred` is true.
+- false_fn: A callable that runs when `pred` is false.
+7 api_usage_example:
+- import paddle
+- '# pseudocode:'
+- '# if 0.1 < 0.23:'
+- '#     return 1, True'
+- '# else:'
+- '#     return 3, 2'
+- 'def true_func():'
+- '    return paddle.full(shape=[1, 2],'
+- '                       dtype=''int32'','
+- '                       fill_value=1'
+- '        ), paddle.full(shape=[2, 3],'
+- '                       dtype=''bool'','
+- '                       fill_value=True'
+- '        )'
+- 'def false_func():'
+- '    return paddle.full(shape=[3, 4],'
+- '                       dtype=''float32'','
+- '                       fill_value=3'
+- '        ), paddle.full(shape=[4, 5],'
+- '                       dtype=''int64'','
+- '                       fill_value=2'
+- '        )'
+- x = paddle.full(shape=[1], dtype='float32', fill_value=0.1)
+- y = paddle.full(shape=[1], dtype='float32', fill_value=0.23)
+- pred = paddle.less_than(x=x, y=y, name=None)
+- a, b = paddle.static.nn.cond(pred, true_func, false_func)
+- print(a)
+- Tensor(shape=[1, 2], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[[1, 1]])'
+- print(b)
+- Tensor(shape=[2, 3], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[[True, True, True],'
+- '[True, True, True]])'
+8 api_shape: {}

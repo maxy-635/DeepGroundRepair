@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.DynamicPartition
+3 api_description: Splits `data` into `num_partitions` tensors using `partitions`
+  as routing indices, placing each slice into the output tensor for its partition
+  in lexicographic order.
+4 api_signature: tf.raw_ops.DynamicPartition(data,partitions,num_partitions)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor whose values will be split into partitions.
+- partitions: An int32 tensor that assigns each element of `data` to a partition index
+    in `[0, num_partitions)`.
+- num_partitions: The total number of output partitions to produce, which must be
+    at least 1.
+7 api_usage_example: null
+8 api_shape: ''

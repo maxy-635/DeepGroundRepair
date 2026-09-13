@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.cross
+3 api_description: Computes the cross product of two 2D or 3D vectors, treating missing
+  z-components as zero and returning the z-component when both inputs are 2D.
+4 api_signature: tf.keras.ops.cross(x1,x2,axis)
+5 api_details: ''
+6 api_parameters:
+- x1: The first vector or batch of vectors whose components are used to compute the
+    cross product.
+- x2: The second vector or batch of vectors whose components are used to compute the
+    cross product.
+- axis: The axis that identifies the vector dimension in `x1`, `x2`, and the result,
+    overriding `axisa`, `axisb`, and `axisc`.
+7 api_usage_example: null
+8 api_shape: ''

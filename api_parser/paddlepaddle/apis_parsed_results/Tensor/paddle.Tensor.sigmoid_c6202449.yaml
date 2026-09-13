@@ -1,0 +1,16 @@
+2 api_name: paddle.Tensor.sigmoid
+3 api_description: Applies the sigmoid activation elementwise, transforming each tensor
+  value into a number between 0 and 1.
+4 api_signature: paddle.Tensor.sigmoid(x,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements are passed through the sigmoid function.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([-0.4, -0.2, 0.1, 0.3])
+- out = F.sigmoid(x)
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.40131235, 0.45016602, 0.52497917, 0.57444251])'
+8 api_shape: {}

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BatchToSpaceND
+3 api_description: Redistributes batch elements into spatial dimensions by reshaping
+  the batch axis into blocks, interleaving them across N-D spatial axes, and optionally
+  cropping the result; this is the inverse of SpaceToBatch.
+4 api_signature: tf.raw_ops.BatchToSpaceND(input,block_shape,crops)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be rearranged from batch into spatial dimensions.
+- block_shape: A 1-D tensor that sets the upscaling factor for each spatial dimension.
+- crops: A 2-D tensor that specifies how much to crop from each spatial dimension
+    after rearranging.
+7 api_usage_example: null
+8 api_shape: ''

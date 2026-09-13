@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.XlaSparseCoreSgd
+3 api_description: Applies SGD updates to sparse XLA sparse core variables, using
+  sparse gradients to adjust selected entries in place.
+4 api_signature: tf.raw_ops.XlaSparseCoreSgd(indices,gradient,learning_rate,embedding_table)
+5 api_details: ''
+6 api_parameters:
+- indices: Specifies the int32 positions of the sparse rows or entries to update.
+- gradient: Provides the float32 gradient values used to compute the SGD update.
+- learning_rate: Sets the float32 step size that controls how large each update is.
+- embedding_table: Contains the float32 embedding values that are updated in place
+    by SGD.
+7 api_usage_example: null
+8 api_shape: ''

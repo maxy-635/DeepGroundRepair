@@ -1,0 +1,16 @@
+2 api_name: tensorflow.tpu.experimental.embedding.SGD
+3 api_description: Configures stochastic gradient descent optimization for TPU embeddings,
+  providing the global optimizer and its parameters for use with `tf.tpu.experimental.embedding.TPUEmbedding`.
+4 api_signature: tf.tpu.experimental.embedding.SGD(learning_rate,use_gradient_accumulation:bool,weight_decay_factor:Optional[float]=None,clipvalue:Optional[ClipValueType]=None)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update the embeddings, either as a fixed
+    floating-point value or a no-argument callable for a dynamic rate.
+- use_gradient_accumulation: Controls whether embedding gradients are accumulated
+    for more accurate updates, with `False` trading some accuracy for faster computation.
+- weight_decay_factor: Applies weight decay to the embeddings by multiplying weights
+    by this factor each step, or leaves weights unchanged when set to `None`.
+- clipvalue: Enables gradient clipping with either a single positive limit or separate
+    min/max bounds, and may reduce performance by turning on gradient accumulation.
+7 api_usage_example: null
+8 api_shape: ''

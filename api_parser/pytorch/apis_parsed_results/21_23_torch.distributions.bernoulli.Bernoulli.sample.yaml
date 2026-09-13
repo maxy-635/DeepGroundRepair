@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.bernoulli.Bernoulli.sample
+3 api_description: Samples binary outcomes (0 or 1) from a Bernoulli distribution
+  according to the distribution’s specified probabilities.
+4 api_signature: sample(sample_shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

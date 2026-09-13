@@ -1,0 +1,11 @@
+2 api_name: paddle.nn.AdaptiveMaxPool1D
+3 api_description: paddle.nn.AdaptiveMaxPool1D performs 1D adaptive max pooling on
+  input signals, adjusting the pooling window size to achieve a specified output size
+  for each channel in the input, returning the pooled output in NCL format.
+4 api_signature: paddle.nn.AdaptiveMaxPool1D(output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the desired output size of the pooled data, which can be
+    an integer or a list/tuple with a single integer indicating the pool kernel size.
+7 api_usage_example: []
+8 api_shape: null

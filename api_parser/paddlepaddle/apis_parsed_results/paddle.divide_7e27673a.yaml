@@ -1,0 +1,16 @@
+2 api_name: paddle.divide
+3 api_description: Element-wise divides two tensors and returns the quotient.
+4 api_signature: paddle.divide(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be divided.
+- y: The input tensor used as the divisor.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([2, 3, 4], dtype='float64')
+- y = paddle.to_tensor([1, 5, 2], dtype='float64')
+- z = paddle.divide(x, y)
+- print(z)
+- Tensor(shape=[3], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[2.        , 0.60000000, 2.        ])'
+8 api_shape: {}

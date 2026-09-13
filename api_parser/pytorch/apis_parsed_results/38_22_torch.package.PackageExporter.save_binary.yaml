@@ -1,0 +1,10 @@
+2 api_name: torch.package.PackageExporter.save_binary
+3 api_description: Save raw binary data into a torch.package archive under a specified
+  package-relative name.
+4 api_signature: save_binary(package,binary)
+5 api_details: ''
+6 api_parameters:
+- package: Specifies the module package where the binary resource will be stored.
+- binary: Provides the binary data to be saved.
+7 api_usage_example: null
+8 api_shape: null

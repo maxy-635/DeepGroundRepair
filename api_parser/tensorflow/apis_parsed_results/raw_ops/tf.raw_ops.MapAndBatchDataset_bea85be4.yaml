@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.MapAndBatchDataset
+3 api_description: Fuses mapping and batching by applying a function to dataset elements,
+  then batching the results while running multiple map calls in parallel for better
+  throughput.
+4 api_signature: tf.raw_ops.MapAndBatchDataset(input_dataset,batch_size,num_parallel_calls,drop_remainder,f)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to read elements from and transform into batched
+    outputs.
+- batch_size: The number of elements to collect into each batch and the level of parallel
+    processing tied to each batch.
+- num_parallel_calls: The maximum number of `map_fn` calls to run in parallel.
+- drop_remainder: Whether to discard the final batch if it has fewer than `batch_size`
+    elements.
+- f: The function applied to each element from `input_dataset` before batching.
+7 api_usage_example: null
+8 api_shape: ''

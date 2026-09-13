@@ -1,0 +1,12 @@
+2 api_name: paddle.scatter_nd_add
+3 api_description: Adds values sparsely to selected tensor elements or slices at specified
+  indices.
+4 api_signature: paddle.scatter_nd_add(x,index,updates)
+5 api_details: ''
+6 api_parameters:
+- x: The base tensor to be updated by adding values at the specified indices.
+- index: The index tensor that specifies where in `x` the updates should be applied.
+- updates: The tensor of values to add into `x` at the indexed locations, matching
+    `x`'s dtype and required shape.
+7 api_usage_example: []
+8 api_shape: {}

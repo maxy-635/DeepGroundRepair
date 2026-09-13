@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.BatchFFT2D
+3 api_description: Computes the 2D FFT for each input in a batch of complex tensors.
+4 api_signature: tf.raw_ops.BatchFFT2D(input)
+5 api_details: ''
+6 api_parameters:
+- input: The complex64 tensor to transform with a 2D FFT batch operation.
+7 api_usage_example: null
+8 api_shape: ''

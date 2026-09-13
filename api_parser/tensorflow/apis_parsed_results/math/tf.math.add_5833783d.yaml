@@ -1,0 +1,15 @@
+2 api_name: tensorflow.math.add
+3 api_description: Returns the element-wise sum of x and y, supporting scalar and
+  tensor/list inputs.
+4 api_signature: tf.math.add(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor input whose values are used as the left-hand operand in the
+    addition.
+- y: The second tensor input, which must match `x` in type and supplies the right-hand
+    operand in the addition.
+7 api_usage_example:
+- x = np.ones([1, 2, 1, 4])
+- y = np.ones([3, 4])
+- tf.add(x, y).shape.as_list()
+8 api_shape: ''

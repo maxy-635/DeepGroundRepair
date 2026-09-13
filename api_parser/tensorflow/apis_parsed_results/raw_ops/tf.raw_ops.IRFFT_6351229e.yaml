@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.IRFFT
+3 api_description: Computes the inverse 1D real FFT of the innermost dimension from
+  RFFT-style frequency data, inferring or using fft_length to reconstruct the original
+  real signal with optional cropping or zero-padding.
+4 api_signature: tf.raw_ops.IRFFT(input,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The complex FFT input tensor to be transformed back into the real domain.
+- fft_length: A one-element int32 tensor specifying the length of the inverse FFT.
+7 api_usage_example: null
+8 api_shape: ''

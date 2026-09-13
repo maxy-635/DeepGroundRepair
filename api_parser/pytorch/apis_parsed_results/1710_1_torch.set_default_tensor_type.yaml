@@ -1,0 +1,13 @@
+2 api_name: torch.set_default_tensor_type
+3 api_description: Sets the default floating-point tensor type for newly created tensors,
+  affecting both CPU and CUDA tensor defaults depending on the specified type.
+4 api_signature: torch.set_default_tensor_type(t)
+5 api_details: ''
+6 api_parameters:
+- t: Specifies the floating-point tensor type, or its name, to use as the default
+    tensor type.
+7 api_usage_example:
+- ' torch.tensor([1.2, 3]).dtype    # initial default for floating point is torch.float32'
+- ' torch.set_default_tensor_type(torch.DoubleTensor)'
+- ' torch.tensor([1.2, 3]).dtype    # a new floating point tensor'
+8 api_shape: null

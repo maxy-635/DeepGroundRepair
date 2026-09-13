@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.EnqueueTPUEmbeddingIntegerBatch
+3 api_description: Queues a list of integer batch tensors for TPU embedding processing.
+4 api_signature: tf.raw_ops.EnqueueTPUEmbeddingIntegerBatch(batch,mode_override,device_ordinal)
+5 api_details: ''
+6 api_parameters:
+- batch: Provides one or more 1D int32 tensors of embedding indices, one per embedding
+    table.
+- mode_override: Sets the TPU embedding execution mode, overriding the configured
+    mode unless left unspecified.
+- device_ordinal: Selects which TPU device core to use, or leaves it at the default
+    when set to -1.
+7 api_usage_example: null
+8 api_shape: ''

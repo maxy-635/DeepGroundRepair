@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.QuantizedDepthwiseConv2DWithBias
+3 api_description: Performs a quantized depthwise 2D convolution and adds a bias term
+  to the result.
+4 api_signature: tf.raw_ops.QuantizedDepthwiseConv2DWithBias(input,filter,bias,strides,padding,out_type,name)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the quantized input tensor to be depthwise convolved.
+- filter: Provides the quantized depthwise filter tensor used in the convolution.
+- bias: Provides the float32 bias tensor added to the convolution output.
+- strides: Specifies the stride values that control how the filter moves across the
+    input.
+- padding: Chooses the padding scheme, either `SAME` or `VALID`, for the convolution.
+- out_type: Sets the data type of the output tensor.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

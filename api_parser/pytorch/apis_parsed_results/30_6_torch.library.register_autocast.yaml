@@ -1,0 +1,26 @@
+2 api_name: torch.library.register_autocast
+3 api_description: Registers an autocast-specific dispatch rule so a custom operator
+  runs with the correct mixed-precision behavior under autocast.
+4 api_signature: torch.library.register_autocast(op,device_type,cast_inputs)
+5 api_details: ''
+6 api_parameters:
+- op: Identifies the operator that will receive the autocast dispatch rule.
+- device_type: Specifies whether the registration applies to `cuda` or `cpu` autocast.
+- cast_inputs: Controls whether floating-point inputs are cast to the target dtype
+    before the custom op runs with autocast disabled.
+- lib: Optionally ties the registration’s lifetime to the provided library object.
+7 api_usage_example:
+- ' import torch'
+- ' from torch import Tensor'
+- ' from torch.library import custom_op'
+- ' # Create a custom op that works on cuda'
+- ' @torch.library.custom_op("mylib::my_sin", mutates_args=())'
+- ' def my_sin(x: Tensor) -> Tensor:'
+- '     return torch.sin(x)'
+- ' # Register autocast dispatch rule for the cuda device'
+- ' torch.library.register_autocast("mylib::my_sin", "cuda", torch.float16)'
+- ' x = torch.randn(3, dtype=torch.float32, device="cuda")'
+- ' with torch.autocast("cuda", dtype=torch.float16):'
+- '     y = torch.ops.mylib.my_sin(x)'
+- ' assert y.dtype == torch.float16'
+8 api_shape: null

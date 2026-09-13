@@ -1,0 +1,9 @@
+2 api_name: torch.distributed.fsdp.FullyShardedDataParallel.clip_grad_norm_
+3 api_description: Clips the gradients of all FSDP-managed parameters so their overall
+  norm stays within a specified limit.
+4 api_signature: clip_grad_norm_(max_norm)
+5 api_details: ''
+6 api_parameters:
+- max_norm: Sets the maximum allowed norm for the gradients before clipping.
+7 api_usage_example: null
+8 api_shape: null

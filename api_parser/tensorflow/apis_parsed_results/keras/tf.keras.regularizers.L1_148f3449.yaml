@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.regularizers.L1
+3 api_description: Applies L1 regularization by adding a penalty proportional to the
+  sum of absolute values of weights or activations.
+4 api_signature: tf.keras.regularizers.L1(l1)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- dense = Dense(3, kernel_regularizer='l1')
+8 api_shape: ''

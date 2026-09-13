@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.wishart.Wishart.log_prob
+3 api_description: Computes the log probability density of a positive-definite matrix
+  under a Wishart distribution.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The positive definite matrix or batch of matrices whose log probability is
+    being evaluated under the Wishart distribution.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.mod
+3 api_description: Returns the element-wise remainder after division.
+4 api_signature: tf.keras.ops.mod(x1,x2)
+5 api_details: ''
+6 api_parameters:
+- x1: The tensor whose values will be reduced by the modulus operation.
+- x2: The tensor used as the divisor in the modulus operation.
+7 api_usage_example: null
+8 api_shape: ''

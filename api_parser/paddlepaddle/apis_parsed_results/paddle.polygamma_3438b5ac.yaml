@@ -1,0 +1,16 @@
+2 api_name: paddle.polygamma
+3 api_description: Computes the polygamma function element-wise for each value in
+  the input tensor.
+4 api_signature: paddle.polygamma(x,n)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose polygamma values are computed.
+- n: The integral order of the derivative to evaluate.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([2, 3, 25.5], dtype='float32')
+- res = paddle.polygamma(data, 1)
+- print(res)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.64493412,  0.39493406,  0.03999467])'
+8 api_shape: {}

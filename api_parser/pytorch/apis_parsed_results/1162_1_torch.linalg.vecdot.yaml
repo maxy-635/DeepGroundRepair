@@ -1,0 +1,14 @@
+2 api_name: torch.linalg.vecdot
+3 api_description: Computes the dot product of corresponding vectors in two batches
+  along a specified dimension.
+4 api_signature: torch.linalg.vecdot(x,y,*,dim)
+5 api_details: ''
+6 api_parameters:
+- x: The first batch of vectors to be dot-multiplied, with shape (*, n).
+- y: The second batch of vectors to be dot-multiplied, with shape (*, n).
+7 api_usage_example:
+- ' v1 = torch.randn(3, 2)'
+- ' v2 = torch.randn(3, 2)'
+- ' linalg.vecdot(v1, v2)'
+- ' torch.vdot(v1[0], v2[0])'
+8 api_shape: null

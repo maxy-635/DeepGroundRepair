@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.rpc.PyRRef.to_here
+3 api_description: Blocks until it fetches and returns the RRef’s value from its owner;
+  if called on the owner, it returns the local value.
+4 api_signature: to_here(timeout)
+5 api_details: ''
+6 api_parameters:
+- timeout: Sets how long `to_here` waits before raising a timeout exception if the
+    RPC does not complete.
+7 api_usage_example: null
+8 api_shape: null

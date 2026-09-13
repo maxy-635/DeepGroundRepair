@@ -1,0 +1,11 @@
+2 api_name: tensorflow.strings.to_hash_bucket
+3 api_description: Hashes each input string into a deterministic bucket index within
+  the current process, using a specified number of buckets.
+4 api_signature: tf.strings.to_hash_bucket(input,num_buckets)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor whose values will be hashed into buckets.
+- num_buckets: The total number of hash buckets to map the input values into.
+7 api_usage_example:
+- tf.strings.to_hash_bucket(["Hello", "TensorFlow", "2.x"], 3)
+8 api_shape: ''

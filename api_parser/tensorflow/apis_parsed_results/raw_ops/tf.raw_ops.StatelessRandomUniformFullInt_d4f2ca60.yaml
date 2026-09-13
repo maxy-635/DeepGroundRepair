@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.StatelessRandomUniformFullInt
+3 api_description: Generates deterministic pseudorandom integers with a uniform distribution
+  across the full dtype range, using only the provided shape and seed.
+4 api_signature: tf.raw_ops.StatelessRandomUniformFullInt(shape,seed,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor dimensions.
+- seed: Provides a 2-element stateless seed to generate deterministic random values.
+- dtype: Sets the integer type of the generated output values.
+7 api_usage_example: null
+8 api_shape: ''

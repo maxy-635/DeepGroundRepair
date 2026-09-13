@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.optimizers.SGD
+3 api_description: Stochastic gradient descent optimizer that updates model parameters
+  using gradients, with optional momentum to accelerate convergence and reduce oscillation.
+4 api_signature: tf.keras.optimizers.SGD(learning_rate,momentum,nesterov,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Sets the step size used to update model weights during optimization.
+- momentum: Adds momentum to gradient updates to speed convergence and reduce oscillation.
+- nesterov: Enables Nesterov momentum for a lookahead update that can improve optimization.
+- name: Sets the name used for the optimizer and its internal momentum accumulator
+    weights.
+7 api_usage_example: null
+8 api_shape: ''

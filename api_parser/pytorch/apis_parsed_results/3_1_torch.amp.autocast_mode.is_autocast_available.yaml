@@ -1,0 +1,10 @@
+2 api_name: torch.amp.autocast_mode.is_autocast_available
+3 api_description: Returns whether autocast is supported for the specified device
+  type.
+4 api_signature: torch.amp.autocast_mode.is_autocast_available(device_type)
+5 api_details: ''
+6 api_parameters:
+- device_type: Specifies the device type to check for autocast support, such as `cuda`,
+    `cpu`, `mtia`, `maia`, or `xpu`.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: torch.mtia.memory_stats
+3 api_description: Returns a dictionary of MTIA memory allocator statistics for the
+  specified device.
+4 api_signature: torch.mtia.memory_stats(device)
+5 api_details: ''
+6 api_parameters:
+- device: Selects which device’s memory statistics to return; defaults to the current
+    device if omitted.
+7 api_usage_example: null
+8 api_shape: null

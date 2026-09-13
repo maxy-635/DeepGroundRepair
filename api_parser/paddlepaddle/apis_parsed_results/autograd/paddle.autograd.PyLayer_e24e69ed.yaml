@@ -1,0 +1,33 @@
+2 api_name: paddle.autograd.PyLayer
+3 api_description: Defines a Python custom operator by subclassing `PyLayer`, implementing
+  `forward` and `backward` to integrate custom autograd logic into PaddlePaddle.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- from paddle.autograd import PyLayer
+- 'class cus_tanh(PyLayer):'
+- '    @staticmethod'
+- '    def forward(ctx, x):'
+- '        y = paddle.tanh(x)'
+- '        # Pass tensors to backward.'
+- '        ctx.save_for_backward(y)'
+- '        return y'
+- '...'
+- '    @staticmethod'
+- '    def backward(ctx, dy):'
+- '        # Get the tensors passed by forward.'
+- '        y, = ctx.saved_tensor()'
+- '        grad = dy * (1 - paddle.square(y))'
+- '        return grad'
+- paddle.seed(2023)
+- data = paddle.randn([2, 3], dtype="float64")
+- data.stop_gradient = False
+- z = cus_tanh.apply(data)
+- z.mean().backward()
+- print(data.grad)
+- Tensor(shape=[2, 3], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[[0.16604150, 0.05858341, 0.14051214],'
+- '[0.15677770, 0.01564609, 0.02991660]])'
+8 api_shape: {}

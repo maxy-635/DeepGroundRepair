@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.less
+3 api_description: Returns a boolean tensor indicating whether each element of x is
+  less than the corresponding element of y, using element-wise comparison.
+4 api_signature: tf.keras.backend.less(x,y)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

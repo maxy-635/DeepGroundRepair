@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.solve_triangular
+3 api_description: Solves a triangular linear system a x = b for x, using a triangular
+  matrix `a` and right-hand side `b`.
+4 api_signature: tf.keras.ops.solve_triangular(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: The triangular coefficient matrix used to define the linear system.
+- b: The right-hand side tensor containing the values to solve for.
+7 api_usage_example: null
+8 api_shape: ''

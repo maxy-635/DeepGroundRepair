@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.AdaptiveMaxPool2D
+3 api_description: paddle.nn.AdaptiveMaxPool2D performs 2D adaptive max pooling on
+  an input tensor, adjusting the output tensor's height and width based on the specified
+  output_size.
+4 api_signature: paddle.nn.AdaptiveMaxPool2D(output_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Defines the desired output size of the pooling layer, which can be
+    a tuple or list with two elements (H, W), where each element can be an integer
+    or None to match the input size.
+7 api_usage_example: []
+8 api_shape: null

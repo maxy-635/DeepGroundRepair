@@ -1,0 +1,16 @@
+2 api_name: tensorflow.data.IteratorSpec
+3 api_description: Type spec for `tf.data.Iterator` inputs, used to describe and pass
+  dataset iterators through `tf.function` signatures.
+4 api_signature: tf.data.IteratorSpec(element_spec)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '@tf.function(input_signature=[tf.data.IteratorSpec('
+- '  tf.TensorSpec(shape=(), dtype=tf.int32, name=None))])'
+- 'def square(iterator):'
+- '  x = iterator.get_next()'
+- '  return x * x'
+- dataset = tf.data.Dataset.from_tensors(5)
+- iterator = iter(dataset)
+- print(square(iterator))
+8 api_shape: ''

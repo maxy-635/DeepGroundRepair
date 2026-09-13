@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.ResourceSparseApplyAdagradV2
+3 api_description: Applies sparse Adagrad updates to selected rows of `var` and `accum`
+  using the provided gradients and learning rate.
+4 api_signature: ResourceSparseApplyAdagradV2(var,accum,lr,grad,indices)
+5 api_details: ''
+6 api_parameters:
+- var: The resource variable whose selected rows are updated by the optimizer.
+- accum: The resource variable that stores the running accumulator for Adagrad updates.
+- lr: The scalar learning rate used to scale the update step.
+- grad: The gradient tensor providing the update values, matching the type of `lr`.
+- indices: A vector of row indices indicating which entries in `var` and `accum` to
+    update.
+7 api_usage_example: null
+8 api_shape: ''

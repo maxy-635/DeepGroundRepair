@@ -1,0 +1,39 @@
+2 api_name: paddle.cumulative_trapezoid
+3 api_description: Compute the cumulative integral along a specified axis using the
+  composite trapezoidal rule, returning successive area sums via cumulative summation.
+4 api_signature: paddle.cumulative_trapezoid(y,x,dx,axis)
+5 api_details: ''
+6 api_parameters:
+- y: Provides the tensor values to be integrated.
+- x: Specifies the sample points for `y`, or `None` to use evenly spaced points.
+- dx: Sets the spacing between sample points when `x` is not provided.
+- axis: Chooses the axis of `y` along which the cumulative trapezoidal integration
+    is performed.
+7 api_usage_example:
+- import paddle
+- y = paddle.to_tensor([4, 5, 6], dtype='float32')
+- paddle.cumulative_trapezoid(y)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[4.50000000, 10.       ])'
+- paddle.cumulative_trapezoid(y, dx=2.)
+- '# Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,'
+- '#        [9. , 20.])'
+- y = paddle.to_tensor([4, 5, 6], dtype='float32')
+- x = paddle.to_tensor([1, 2, 3], dtype='float32')
+- paddle.cumulative_trapezoid(y, x)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[4.50000000, 10.       ])'
+- y = paddle.to_tensor([1, 2, 3], dtype='float64')
+- x = paddle.to_tensor([8, 6, 4], dtype='float64')
+- paddle.cumulative_trapezoid(y, x)
+- Tensor(shape=[2], dtype=float64, place=Place(cpu), stop_gradient=True,
+- '[-3., -8.])'
+- y = paddle.arange(6).reshape((2, 3)).astype('float32')
+- paddle.cumulative_trapezoid(y, axis=0)
+- Tensor(shape=[1, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1.50000000, 2.50000000, 3.50000000]])'
+- paddle.cumulative_trapezoid(y, axis=1)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.50000000, 2.        ],'
+- '[3.50000000, 8.        ]])'
+8 api_shape: {}

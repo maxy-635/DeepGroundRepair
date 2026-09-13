@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.metrics.Sum
+3 api_description: Computes the weighted sum of input values and stores the result
+  in a single `total` variable.
+4 api_signature: tf.keras.metrics.Sum(name,dtype)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the metric instance's name for identification in logs and reports.
+- dtype: Sets the data type used for the metric's result values.
+7 api_usage_example:
+- m = metrics.Sum()
+- m.update_state([1, 3, 5, 7], sample_weight=[1, 1, 0, 0])
+- m.result()
+8 api_shape: ''

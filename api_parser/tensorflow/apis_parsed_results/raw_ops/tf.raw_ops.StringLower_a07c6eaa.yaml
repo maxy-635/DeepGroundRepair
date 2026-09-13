@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.StringLower
+3 api_description: Converts all uppercase characters in a string to their lowercase
+  equivalents.
+4 api_signature: tf.raw_ops.StringLower(input,encoding)
+5 api_details: ''
+6 api_parameters:
+- input: String tensor to convert to lowercase.
+- encoding: Optional character encoding for the input string; empty means ASCII, and
+    `utf-8` is also allowed.
+7 api_usage_example:
+- tf.strings.lower("CamelCase string and ALL CAPS")
+8 api_shape: ''

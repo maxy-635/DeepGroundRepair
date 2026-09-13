@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.RaggedBincount
+3 api_description: Counts occurrences of integer values in `arr` up to `size`, optionally
+  summing matching `weights` instead of counting, and ignores values outside `[0,
+  size)`.
+4 api_signature: tf.raw_ops.RaggedBincount(values,size,weights,binary_output)
+5 api_details: ''
+6 api_parameters:
+- values: 2D integer tensor containing the ragged bin values to be counted.
+- size: Non-negative scalar integer tensor specifying the number of bins.
+- weights: Optional tensor of per-value weights, or empty to treat all values as weight
+    1.
+- binary_output: If True, counts whether each bin appears at least once instead of
+    counting all occurrences.
+7 api_usage_example: null
+8 api_shape: ''

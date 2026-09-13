@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.LinearLR.state_dict
+3 api_description: Returns a dictionary capturing the scheduler’s current state for
+  saving and later restoring.
+4 api_signature: state_dict()
+5 api_details: ''
+6 api_parameters:
+- state_dict: Returns a dictionary containing the scheduler’s internal state for saving
+    and later restoration.
+7 api_usage_example: null
+8 api_shape: null

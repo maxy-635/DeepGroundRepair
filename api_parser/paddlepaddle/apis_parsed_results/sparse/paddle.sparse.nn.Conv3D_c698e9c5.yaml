@@ -1,0 +1,38 @@
+2 api_name: paddle.sparse.nn.Conv3D
+3 api_description: Performs 3D sparse convolution on `SparseCooTensor` inputs with
+  shape `[N, D, H, W, C]`, producing an output tensor using the given filter, strides,
+  paddings, dilations, and groups, and optionally adds a bias.
+4 api_signature: paddle.sparse.nn.Conv3D(in_channels,out_channels,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Sets the number of input feature channels the convolution expects.
+- out_channels: Sets the number of output feature channels produced by the convolution.
+- kernel_size: Defines the size of the 3D convolution kernel.
+- stride: Controls how far the kernel moves along each spatial dimension at each step.
+- padding: Adds zero-padding around the input to control output size and edge handling.
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- 'class MyLayer(paddle.nn.Layer):'
+- '    def __init__(self):'
+- '        super().__init__()'
+- '        self._linear = paddle.nn.Linear(1, 1)'
+- '        w_tmp = self.create_parameter([1,1])'
+- '        self.add_parameter("w_tmp", w_tmp)'
+- '...'
+- '    def forward(self, input):'
+- '        return self._linear(input)'
+- '...'
+- mylayer = MyLayer()
+- 'for name, param in mylayer.named_parameters():'
+- '    print(name, param)'
+- 'w_tmp Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-1.01448846]])'
+- '_linear.weight Parameter containing:'
+- Tensor(shape=[1, 1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[0.18551230]])'
+- '_linear.bias Parameter containing:'
+- Tensor(shape=[1], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[0.])'
+8 api_shape: {}

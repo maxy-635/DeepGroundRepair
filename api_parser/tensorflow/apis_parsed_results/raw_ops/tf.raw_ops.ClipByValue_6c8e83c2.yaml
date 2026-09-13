@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ClipByValue
+3 api_description: Clips tensor values to a specified minimum and maximum, returning
+  a tensor of the same shape and type with out-of-range values clamped to the given
+  bounds.
+4 api_signature: tf.raw_ops.ClipByValue(t,clip_value_min,clip_value_max)
+5 api_details: ''
+6 api_parameters:
+- t: The input tensor whose values will be clipped to lie within the specified range.
+- clip_value_min: The minimum bound used to clip values in `t`.
+- clip_value_max: The maximum bound used to clip values in `t`.
+7 api_usage_example: null
+8 api_shape: ''

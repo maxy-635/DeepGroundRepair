@@ -1,0 +1,9 @@
+2 api_name: torch.mps.event.Event
+3 api_description: Wraps a Metal Performance Shaders event object for synchronization
+  and coordination on Apple Silicon GPUs.
+4 api_signature: torch.mps.event.Event(enable_timing)
+5 api_details: ''
+6 api_parameters:
+- enable_timing: Enables timing measurements for the event.
+7 api_usage_example: null
+8 api_shape: null

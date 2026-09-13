@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.BatchMatrixBandPart
+3 api_description: Keeps only the band around the main diagonal for each matrix in
+  a batch, zeroing out entries outside the specified lower and upper bandwidths.
+4 api_signature: tf.raw_ops.BatchMatrixBandPart(input,num_lower,num_upper)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose batched matrices will be banded.
+- num_lower: The number of lower diagonals to keep in each matrix.
+- num_upper: The number of upper diagonals to keep in each matrix.
+7 api_usage_example: null
+8 api_shape: ''

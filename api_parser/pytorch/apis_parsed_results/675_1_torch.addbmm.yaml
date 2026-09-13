@@ -1,0 +1,16 @@
+2 api_name: torch.addbmm
+3 api_description: Computes a batched matrix-matrix product by multiplying corresponding
+  matrices in two batches, summing the results across the batch dimension, and adding
+  the input tensor to the final output.
+4 api_signature: torch.addbmm(input,batch1,batch2)
+5 api_details: ''
+6 api_parameters:
+- input: The matrix that is added to the result of the batch matrix multiplication.
+- batch1: The first batch of matrices used in the batched matrix multiplication.
+- batch2: The second batch of matrices used in the batched matrix multiplication.
+7 api_usage_example:
+- ' M = torch.randn(3, 5)'
+- ' batch1 = torch.randn(10, 3, 4)'
+- ' batch2 = torch.randn(10, 4, 5)'
+- ' torch.addbmm(M, batch1, batch2)'
+8 api_shape: null

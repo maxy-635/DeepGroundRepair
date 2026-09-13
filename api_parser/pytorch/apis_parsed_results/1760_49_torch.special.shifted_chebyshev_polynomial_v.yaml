@@ -1,0 +1,10 @@
+2 api_name: torch.special.shifted_chebyshev_polynomial_v
+3 api_description: Computes the shifted Chebyshev polynomial of the third kind Vn*
+  for the given input and polynomial degree.
+4 api_signature: torch.special.shifted_chebyshev_polynomial_v(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values the shifted Chebyshev polynomial is evaluated on.
+- n: The polynomial degree that determines which shifted Chebyshev polynomial is computed.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.applications.VGG16
+3 api_description: Builds the VGG16 convolutional neural network for image classification,
+  with a default 224x224 input size and support for transfer learning and fine-tuning.
+4 api_signature: tf.keras.applications.VGG16(weights,include_top,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- include_top: Includes or excludes the model's final fully connected classification
+    layers.
+- weights: 'Chooses the weight source: random initialization, ImageNet pretrained
+    weights, or a custom weights file.'
+- input_shape: Sets the input image shape when `include_top` is False, with 3 channels
+    and minimum size constraints.
+- classes: Specifies the number of output classes when using the top layers and no
+    preloaded weights.
+7 api_usage_example: null
+8 api_shape: ''

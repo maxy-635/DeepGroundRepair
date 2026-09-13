@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesCenterBias
+3 api_description: Computes the initial bias from training data, writes the logits
+  prior into the first node, and returns whether centering should continue.
+4 api_signature: tf.raw_ops.BoostedTreesCenterBias(tree_ensemble_handle,mean_gradients,mean_hessians)
+5 api_details: ''
+6 api_parameters:
+- tree_ensemble_handle: Identifies the tree ensemble resource whose bias will be centered.
+- mean_gradients: Provides the mean gradient values for the first node, used to compute
+    the bias adjustment.
+- mean_hessians: Provides the mean hessian values for the first node, used to compute
+    the bias adjustment.
+7 api_usage_example: null
+8 api_shape: ''

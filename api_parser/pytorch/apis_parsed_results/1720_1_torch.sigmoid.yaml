@@ -1,0 +1,8 @@
+2 api_name: torch.sigmoid
+3 api_description: Computes the sigmoid function elementwise, mapping each input to
+  a value between 0 and 1.
+4 api_signature: torch.sigmoid(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: paddle.distributed.get_rank
+3 api_description: Returns the current trainer’s rank within a specified group, or
+  the global group by default.
+4 api_signature: paddle.distributed.get_rank(group)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- '# Execute this script using distributed launch with one card configs.'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- print("The rank is %d" % dist.get_rank())
+- The rank is 0
+8 api_shape: {}

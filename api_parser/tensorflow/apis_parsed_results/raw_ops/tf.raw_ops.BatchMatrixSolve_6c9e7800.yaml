@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.BatchMatrixSolve
+3 api_description: Solves batches of linear systems A x = b for matrices in `matrix`
+  and right-hand sides in `rhs`, returning the batched solutions.
+4 api_signature: tf.raw_ops.BatchMatrixSolve(matrix,rhs)
+5 api_details: ''
+6 api_parameters:
+- matrix: The batch of coefficient matrices used to solve the linear systems.
+- rhs: The batch of right-hand-side matrices or vectors to be solved against `matrix`.
+7 api_usage_example: null
+8 api_shape: ''

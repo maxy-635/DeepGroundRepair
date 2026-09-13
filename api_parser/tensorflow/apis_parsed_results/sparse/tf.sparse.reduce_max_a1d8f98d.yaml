@@ -1,0 +1,14 @@
+2 api_name: tensorflow.sparse.reduce_max
+3 api_description: Reduces a SparseTensor by taking the maximum across specified dimensions,
+  returning either a dense Tensor or a SparseTensor.
+4 api_signature: tf.sparse.reduce_max(sp_input,axis)
+5 api_details: ''
+6 api_parameters:
+- sp_input: Specifies the numeric `SparseTensor` whose values will be reduced to compute
+    the maximum.
+- axis: Specifies which dimensions to reduce, or all dimensions if `None`.
+7 api_usage_example:
+- y = tf.sparse.SparseTensor([[0, 0,], [1, 0], [1, 1]], [-7, 4, 3],
+- '[3, 2])'
+- tf.sparse.reduce_max(y, 1)
+8 api_shape: ''

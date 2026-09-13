@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.tril
+3 api_description: Returns the lower triangular part of a tensor by zeroing elements
+  above a specified diagonal.
+4 api_signature: tf.experimental.numpy.tril(m,k)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

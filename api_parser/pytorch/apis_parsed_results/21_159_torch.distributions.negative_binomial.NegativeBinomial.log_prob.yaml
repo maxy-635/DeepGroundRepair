@@ -1,0 +1,12 @@
+2 api_name: torch.distributions.negative_binomial.NegativeBinomial.log_prob
+3 api_description: Computes the log probability of each value under a Negative Binomial
+  distribution with the given parameters.
+4 api_signature: log_prob(value)
+5 api_details: ''
+6 api_parameters:
+- value: The observed count or sample value whose log probability is being computed.
+- total_count: The total number of successful outcomes parameterizing the negative
+    binomial distribution.
+- logits: The unnormalized log-odds of success used to define the distribution.
+7 api_usage_example: null
+8 api_shape: null

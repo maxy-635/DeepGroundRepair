@@ -1,0 +1,19 @@
+2 api_name: tensorflow.keras.layers.Hashing
+3 api_description: The tf.keras.layers.Hashing layer transforms categorical inputs
+  (ints or strings) into hashed integers within a fixed range using a stable hash
+  function, ensuring consistent output across platforms. It utilizes FarmHash64 by
+  default and can obfuscate the output with an optional random salt, switching to
+  the SipHash64 function.
+4 api_signature: tf.keras.layers.Hashing(num_bins, output_mode)
+5 api_details: ''
+6 api_parameters:
+- num_bins: Defines the total number of hash bins, including the mask_value bin, impacting
+    the effective number of bins used.
+- output_mode: Determines the format of the output from the layer, allowing for different
+    representations such as integer indices, one-hot encodings, multi-hot encodings,
+    or counts.
+7 api_usage_example:
+- layer = keras.layers.Hashing(num_bins=3, salt=133)
+- inp = [['A'], ['B'], ['C'], ['D'], ['E']]
+- layer(inp)
+8 api_shape: null

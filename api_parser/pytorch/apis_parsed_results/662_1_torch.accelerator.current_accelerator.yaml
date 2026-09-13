@@ -1,0 +1,14 @@
+2 api_name: torch.accelerator.current_accelerator
+3 api_description: Returns the accelerator device available at compile time, or None
+  if no accelerator was available.
+4 api_signature: torch.accelerator.current_accelerator(check_available)
+5 api_details: ''
+6 api_parameters:
+- check_available: Also performs a runtime availability check in addition to the compile-time
+    check.
+7 api_usage_example:
+- ' # If an accelerator is available, sent the model to it'
+- ' model = torch.nn.Linear(2, 2)'
+- ' if (current_device := current_accelerator(check_available=True)) is not None:'
+- '     model.to(current_device)'
+8 api_shape: null

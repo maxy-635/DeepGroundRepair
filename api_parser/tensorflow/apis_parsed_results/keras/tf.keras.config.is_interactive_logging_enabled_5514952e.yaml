@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.config.is_interactive_logging_enabled
+3 api_description: Returns whether Keras interactive logging is enabled for stdout-style
+  output instead of absl.logging.
+4 api_signature: tf.keras.config.is_interactive_logging_enabled()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

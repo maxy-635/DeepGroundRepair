@@ -1,0 +1,11 @@
+2 api_name: tensorflow.linalg.lu_matrix_inverse
+3 api_description: Computes matrix inverses from one or more LU decompositions.
+4 api_signature: tf.linalg.lu_matrix_inverse(lower_upper,perm)
+5 api_details: ''
+6 api_parameters:
+- lower_upper: The combined LU decomposition matrix returned by `tf.linalg.lu`, containing
+    both the lower and upper triangular factors.
+- perm: The permutation vector returned by `tf.linalg.lu`, representing the row-pivot
+    order of the decomposition.
+7 api_usage_example: null
+8 api_shape: ''

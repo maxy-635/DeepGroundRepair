@@ -1,0 +1,11 @@
+2 api_name: tensorflow.roll
+3 api_description: Shifts tensor elements along one or more axes by a specified offset,
+  wrapping values around at the ends.
+4 api_signature: tf.roll(input,shift,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements will be circularly shifted.
+- shift: The amount to roll the tensor along the specified axis or axes.
+- axis: The dimension or dimensions along which to apply the shift.
+7 api_usage_example: null
+8 api_shape: ''

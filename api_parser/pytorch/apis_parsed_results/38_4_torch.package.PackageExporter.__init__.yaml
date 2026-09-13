@@ -1,0 +1,12 @@
+2 api_name: torch.package.PackageExporter.__init__
+3 api_description: Create a package exporter that collects Python modules and resources
+  into a self-contained package for later import or deployment.
+4 api_signature: __init__(importer,debug)
+5 api_details: ''
+6 api_parameters:
+- importer: Specifies the module importer or importers used to locate modules when
+    packaging, combining multiple importers into an OrderedImporter if needed.
+- debug: Enables inclusion of broken module paths in `PackagingErrors` when set to
+    `True`.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: torch.take
+3 api_description: Returns a new tensor containing elements from the input selected
+  by the given indices, treating the input as a flattened 1-D tensor and matching
+  the indices' shape.
+4 api_signature: torch.take(input,index)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be gathered from.
+- index: A tensor of indices specifying which elements to take from the input.
+7 api_usage_example:
+- ' src = torch.tensor([[4, 3, 5],'
+- '...                     [6, 7, 8]])'
+- ' torch.take(src, torch.tensor([0, 2, 5]))'
+8 api_shape: null

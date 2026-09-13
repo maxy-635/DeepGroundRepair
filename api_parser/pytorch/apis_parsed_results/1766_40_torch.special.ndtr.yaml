@@ -1,0 +1,11 @@
+2 api_name: torch.special.ndtr
+3 api_description: Computes the standard normal cumulative distribution function elementwise,
+  returning the area under the Gaussian curve from negative infinity to each input.
+4 api_signature: torch.special.ndtr(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing values to compute the standard normal cumulative distribution
+    function for.
+7 api_usage_example:
+- ' torch.special.ndtr(torch.tensor([-3., -2, -1, 0, 1, 2, 3]))'
+8 api_shape: null

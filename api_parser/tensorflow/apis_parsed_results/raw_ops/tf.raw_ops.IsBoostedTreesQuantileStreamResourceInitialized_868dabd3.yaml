@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.IsBoostedTreesQuantileStreamResourceInitialized
+3 api_description: Checks whether a boosted trees quantile stream resource has been
+  initialized.
+4 api_signature: tf.raw_ops.IsBoostedTreesQuantileStreamResourceInitialized(quantile_stream_resource_handle)
+5 api_details: ''
+6 api_parameters:
+- quantile_stream_resource_handle: Resource handle that identifies the quantile stream
+    resource to check for initialization.
+7 api_usage_example: null
+8 api_shape: ''

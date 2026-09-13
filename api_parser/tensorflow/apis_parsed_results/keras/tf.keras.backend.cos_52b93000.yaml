@@ -1,0 +1,7 @@
+2 api_name: tensorflow.keras.backend.cos
+3 api_description: Returns the element-wise cosine of a tensor.
+4 api_signature: tf.keras.backend.cos(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

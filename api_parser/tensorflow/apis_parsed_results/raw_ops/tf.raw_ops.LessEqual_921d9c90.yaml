@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.LessEqual
+3 api_description: Computes the element-wise comparison x <= y and returns a boolean
+  tensor indicating where the condition is true.
+4 api_signature: '"tf.raw_ops.LessEqual(x,y)"'
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor to compare element-wise.
+- y: The second tensor to compare element-wise against `x`.
+7 api_usage_example: null
+8 api_shape: ''

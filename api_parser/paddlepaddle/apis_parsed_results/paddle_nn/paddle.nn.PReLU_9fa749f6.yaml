@@ -1,0 +1,31 @@
+2 api_name: paddle.nn.PReLU
+3 api_description: The paddle.nn.PReLU API implements the Parametric Rectified Linear
+  Unit (PReLU) activation function, which allows a small, learnable slope for negative
+  input values, enabling the model to adaptively learn the appropriate activation
+  for different inputs.
+4 api_signature: paddle.nn.PReLU(num_parameters,init)
+5 api_details: ''
+6 api_parameters:
+- num_parameters: Specifies the number of learnable alpha parameters, with options
+    for a single shared alpha or one per input channel.
+- init: Sets the initial value for the learnable weight alpha, defaulting to 0.25.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([[[[-2.0,  3.0, -4.0,  5.0],
+- '                           [ 3.0, -4.0,  5.0, -6.0],'
+- '                           [-7.0, -8.0,  8.0,  9.0]],'
+- '                          [[ 1.0, -2.0, -3.0,  4.0],'
+- '                           [-5.0,  6.0,  7.0, -8.0],'
+- '                           [ 6.0,  7.0,  8.0,  9.0]]]])'
+- '...'
+- m = paddle.nn.PReLU(1, 0.25)
+- out = m(data)
+- print(out)
+- Tensor(shape=[1, 2, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[[-0.50000000,  3.        , -1.        ,  5.        ],'
+- '[ 3.        , -1.        ,  5.        , -1.50000000],'
+- '[-1.75000000, -2.        ,  8.        ,  9.        ]],'
+- '[[ 1.        , -0.50000000, -0.75000000,  4.        ],'
+- '[-1.25000000,  6.        ,  7.        , -2.        ],'
+- '[ 6.        ,  7.        ,  8.        ,  9.        ]]]])'
+8 api_shape: null

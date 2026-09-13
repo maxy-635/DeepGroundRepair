@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.transforms.SoftmaxTransform
+3 api_description: Maps unconstrained inputs to a probability simplex by exponentiating
+  and normalizing them so the outputs are nonnegative and sum to 1.
+4 api_signature: torch.distributions.transforms.SoftmaxTransform(cache_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.ExperimentalIteratorGetDevice
+3 api_description: Returns the device name where the iterator resource is placed.
+4 api_signature: tf.raw_ops.ExperimentalIteratorGetDevice(resource)
+5 api_details: ''
+6 api_parameters:
+- resource: The iterator resource handle whose associated device name is retrieved.
+7 api_usage_example: null
+8 api_shape: ''

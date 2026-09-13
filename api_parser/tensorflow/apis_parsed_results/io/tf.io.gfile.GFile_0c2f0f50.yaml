@@ -1,0 +1,15 @@
+2 api_name: tensorflow.io.gfile.GFile
+3 api_description: Provides TensorFlow file I/O wrappers for reading, writing, and
+  managing files and directories across local and remote filesystems, without thread
+  locking.
+4 api_signature: tf.io.gfile.GFile(name,mode)
+5 api_details: ''
+6 api_parameters:
+- n: Reads the specified number of bytes from the file, or the rest of the file when
+    set to -1.
+7 api_usage_example:
+- 'with tf.io.gfile.GFile("/tmp/x", "w") as f:'
+- '  f.write("asdf\n")'
+- '  f.write("qwer\n")'
+- '# implicit f.close() at the end of the block'
+8 api_shape: ''

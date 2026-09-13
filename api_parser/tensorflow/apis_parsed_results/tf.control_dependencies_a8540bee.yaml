@@ -1,0 +1,12 @@
+2 api_name: tensorflow.control_dependencies
+3 api_description: Creates a context that enforces execution order by adding control
+  dependencies on the default graph.
+4 api_signature: tf.control_dependencies(control_inputs)
+5 api_details: ''
+6 api_parameters:
+- control_inputs: Operations or tensors that must run first; `None` clears existing
+    control dependencies, and in eager mode callable inputs are invoked.
+7 api_usage_example:
+- '# Error raised in `assert`'
+- my_assert_func_2(tf.ones((2, 5)), tf.ones((2, 7)))
+8 api_shape: ''

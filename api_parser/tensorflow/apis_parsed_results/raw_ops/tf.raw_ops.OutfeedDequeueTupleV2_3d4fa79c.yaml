@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.OutfeedDequeueTupleV2
+3 api_description: Blocks until data is available, then dequeues and returns multiple
+  outfed values as the corresponding XLA tuple elements for a given device ordinal.
+4 api_signature: tf.raw_ops.OutfeedDequeueTupleV2(dtypes,shapes)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

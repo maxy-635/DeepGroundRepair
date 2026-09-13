@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.ops.hard_sigmoid
+3 api_description: 'Applies the hard sigmoid activation: returns 0 for inputs below
+  -2.5, 1 for inputs above 2.5, and a linear 0.2x + 0.5 mapping in between.'
+4 api_signature: tf.keras.ops.hard_sigmoid(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be transformed by the hard sigmoid activation.
+7 api_usage_example:
+- x = np.array([-1., 0., 1.])
+- x_hard_sigmoid = keras.ops.hard_sigmoid(x)
+- print(x_hard_sigmoid)
+8 api_shape: ''

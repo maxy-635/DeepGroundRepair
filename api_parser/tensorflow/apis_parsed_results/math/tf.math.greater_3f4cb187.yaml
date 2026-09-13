@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.greater
+3 api_description: Returns a boolean tensor indicating element-wise whether x is greater
+  than y.
+4 api_signature: tf.math.greater(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor of values to compare.
+- y: The second tensor of values to compare against, with the same type as `x`.
+7 api_usage_example: null
+8 api_shape: ''

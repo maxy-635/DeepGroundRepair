@@ -1,0 +1,24 @@
+2 api_name: torch.nn.functional.max_pool3d
+3 api_description: torch.nn.functional.max_pool3d applies 3D max pooling to reduce
+  the spatial dimensions of a multi-channel 3D input by selecting the maximum value
+  in each pooling region.
+4 api_signature: torch.nn.functional.max_pool3d(input,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor for the operation with dimensions including minibatch, channels,
+    and 3D spatial dimensions (depth, height, width).
+- kernel_size: Defines the size of the 3D pooling region, specified as a single number
+    or a tuple for depth, height, and width.
+- stride: Specifies the stride of the pooling operation, which can be a single number
+    or a tuple for depth, height, and width.
+- padding: Specifies the amount of implicit padding added on both sides of the input,
+    with constraints relative to the kernel size.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    tensor depth: Depth_out = floor((Depth_in + 2 * padding_depth - kernel_size_depth) / stride_depth + 1)
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1))

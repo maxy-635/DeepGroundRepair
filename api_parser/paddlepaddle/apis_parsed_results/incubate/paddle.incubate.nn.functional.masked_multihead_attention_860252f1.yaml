@@ -1,0 +1,29 @@
+2 api_name: paddle.incubate.nn.functional.masked_multihead_attention
+3 api_description: Computes masked multi-head attention for transformer-based text
+  summarization on GPU, fusing the attention operation with masking.
+4 api_signature: paddle.incubate.nn.functional.masked_multihead_attention(x,cache_kv,src_mask,seq_len,rotary_emb_dims,use_neox_rotary_style)
+5 api_details: ''
+6 api_parameters:
+- x: Provides the packed query, key, and value input tensor for masked multi-head
+    attention.
+- cache_kv: Supplies the key/value cache used to reuse past states during generation.
+- src_mask: Provides the source attention mask that controls which positions can be
+    attended to.
+- seq_len: Specifies the input sequence length used for processing the attention input.
+- rotary_emb_dims: Sets how many dimensions use rotary positional embeddings.
+- use_neox_rotary_style: Indicates whether to apply the NeoX-style rotary embedding
+    layout.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.incubate.nn.functional as F
+- paddle.device.set_device('gpu')
+- '# input: [batch_size, 3 * num_head * dim_head]'
+- x = paddle.rand(shape=(2, 3 * 32 * 128), dtype="float32")
+- '# src_mask: [batch_size, 1, 1, sequence_length]'
+- src_mask = paddle.rand(shape=(2, 1, 1, 10), dtype="float32")
+- '# cache_kv: [2, batch_size, num_head, max_seq_len, dim_head]'
+- cache_kv = paddle.rand(shape=(2, 2, 32, 64, 128), dtype="float32")
+- output = F.masked_multihead_attention(
+- '    x, src_mask=src_mask, cache_kv=cache_kv)'
+8 api_shape: {}

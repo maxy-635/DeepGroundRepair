@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.RaggedTensorToVariant
+3 api_description: Encodes a RaggedTensor into a variant Tensor for later decoding,
+  optionally handling batched inputs by encoding each example separately and stacking
+  the results.
+4 api_signature: tf.raw_ops.RaggedTensorToVariant(rt_nested_splits,rt_dense_values)
+5 api_details: ''
+6 api_parameters:
+- rt_nested_splits: Provides the row-split tensors that define the ragged tensor’s
+    nested structure.
+- rt_dense_values: Provides the flat tensor of stored values contained in the ragged
+    tensor.
+7 api_usage_example: null
+8 api_shape: ''

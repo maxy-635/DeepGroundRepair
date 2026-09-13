@@ -1,0 +1,12 @@
+2 api_name: tensorflow.clip_by_global_norm
+3 api_description: Clips a list of tensors by their combined global norm, returning
+  the scaled tensors and the computed global norm.
+4 api_signature: tf.clip_by_global_norm(t_list,clip_norm)
+5 api_details: ''
+6 api_parameters:
+- t_list: The tensors or indexed slices to be clipped by their global norm, with `None`
+    values ignored.
+- clip_norm: The positive scalar threshold used to scale down the values when the
+    global norm exceeds it.
+7 api_usage_example: null
+8 api_shape: ''

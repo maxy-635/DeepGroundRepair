@@ -1,0 +1,12 @@
+2 api_name: torch.special.log_softmax
+3 api_description: Applies softmax to the input and returns the logarithm of the normalized
+  probabilities.
+4 api_signature: torch.special.log_softmax(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor whose values are transformed into log-probabilities.
+- dim: The dimension along which to compute the log-softmax operation.
+7 api_usage_example:
+- ' t = torch.ones(2, 2)'
+- ' torch.special.log_softmax(t, 0)'
+8 api_shape: null

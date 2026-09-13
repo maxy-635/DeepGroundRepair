@@ -1,0 +1,30 @@
+2 api_name: paddle.triu_indices
+3 api_description: Returns row and column indices for the upper triangular part of
+  a 2-D matrix, ordered by row then column, including the diagonal.
+4 api_signature: paddle.triu_indices(row,col,offset)
+5 api_details: ''
+6 api_parameters:
+- row: Specifies the number of rows in the matrix to generate upper-triangular indices
+    for.
+- col: Specifies the number of columns in the matrix; if omitted, it defaults to `row`
+    for a square matrix.
+- offset: Sets the diagonal offset that determines which diagonal and upper-triangular
+    elements are included.
+7 api_usage_example:
+- import paddle
+- '# example 1, default offset value'
+- data1 = paddle.triu_indices(4,4,0)
+- print(data1.numpy())
+- '[[0 0 0 0 1 1 1 2 2 3]'
+- '[0 1 2 3 1 2 3 2 3 3]]'
+- '# example 2, positive offset value'
+- data2 = paddle.triu_indices(4,4,2)
+- print(data2.numpy())
+- '[[0 0 1]'
+- '[2 3 3]]'
+- '# example 3, negative offset value'
+- data3 = paddle.triu_indices(4,4,-1)
+- print(data3.numpy())
+- '[[0 0 0 0 1 1 1 1 2 2 2 3 3]'
+- '[0 1 2 3 0 1 2 3 1 2 3 2 3]]'
+8 api_shape: {}

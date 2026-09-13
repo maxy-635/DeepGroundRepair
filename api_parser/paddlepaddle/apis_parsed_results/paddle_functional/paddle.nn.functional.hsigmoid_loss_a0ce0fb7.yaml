@@ -1,0 +1,43 @@
+2 api_name: paddle.nn.functional.hsigmoid_loss
+3 api_description: The paddle.nn.functional.hsigmoid_loss API implements hierarchical
+  sigmoid loss, organizing classes into a binary tree to reduce computational complexity
+  and accelerate model training, particularly for language models.
+4 api_signature: paddle.nn.functional.hsigmoid_loss(input,label,num_class es,weight,bias)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the feature tensor for the mini-batch with a shape of [N, D].
+- label: Contains the labels for the training data with a shape of [N, 1] and data
+    type int64.
+- weight: Specifies the weight tensor with a shape of (num_classes - 1, D) used in
+    the computation.
+- bias: Optional bias tensor with shape (num_classes - 1, 1) added to the computation
+    if provided.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- paddle.set_device('cpu')
+- paddle.seed(2023)
+- input = paddle.uniform([4, 3])
+- print(input)
+- Tensor(shape=[4, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0.73167229,  0.04029441, -0.48078126],'
+- '[ 0.81050646, -0.15199822, -0.18717426],'
+- '[ 0.94041789,  0.48874724,  0.03570259],'
+- '[ 0.46585739,  0.95573163, -0.91368192]])'
+- label = paddle.to_tensor([0, 1, 4, 5])
+- num_classes = 5
+- weight = paddle.uniform([num_classes - 1, 3])
+- print(weight)
+- Tensor(shape=[4, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[-0.14721161,  0.43916738, -0.58377075],'
+- '[-0.60536981, -0.23151302, -0.70793629],'
+- '[-0.54572451, -0.10784978, -0.56684279],'
+- '[ 0.35370791, -0.07079649,  0.84765708]])'
+- out = F.hsigmoid_loss(input, label, num_classes, weight)
+- print(out)
+- Tensor(shape=[4, 1], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[2.23681736],'
+- '[1.97140026],'
+- '[1.66425037],'
+- '[2.54727197]])'
+8 api_shape: null

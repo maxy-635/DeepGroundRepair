@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ShardDataset
+3 api_description: Returns a dataset containing only one shard of the input dataset,
+  selected by shard index out of the total number of shards.
+4 api_signature: tf.raw_ops.ShardDataset(input_dataset,num_shards,index)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset to be split into shards.
+- num_shards: The total number of parallel shards to divide the dataset into.
+- index: The zero-based index of the current shard or worker.
+7 api_usage_example: null
+8 api_shape: ''

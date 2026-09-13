@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.distribution.ModelParallel
+3 api_description: Shards model variables across a device mesh, along with input data,
+  using a LayoutMap to define how tensors are placed.
+4 api_signature: tf.keras.distribution.ModelParallel(device_mesh,layout_map)
+5 api_details: ''
+6 api_parameters:
+- device_mesh: Defines the physical devices and how they are logically arranged for
+    model parallelism.
+- layout_map: Maps variable paths to tensor layouts whose axis names must match the
+    device mesh axis names.
+7 api_usage_example: null
+8 api_shape: ''

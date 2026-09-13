@@ -1,0 +1,16 @@
+2 api_name: torch.resolve_neg
+3 api_description: Returns the input tensor unchanged unless its negative bit is set,
+  in which case it materializes the negation and clears the negative bit.
+4 api_signature: torch.resolve_neg(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose negative values are resolved.
+7 api_usage_example:
+- ' x = torch.tensor([-1 + 1j, -2 + 2j, 3 - 3j])'
+- ' y = x.conj()'
+- ' z = y.imag'
+- ' z.is_neg()'
+- ' out = z.resolve_neg()'
+- ' out'
+- ' out.is_neg()'
+8 api_shape: null

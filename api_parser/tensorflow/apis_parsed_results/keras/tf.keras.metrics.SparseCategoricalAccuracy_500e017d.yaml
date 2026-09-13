@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.metrics.SparseCategoricalAccuracy
+3 api_description: Computes the fraction of times predicted class indices match integer
+  labels, using argmax over logits or probabilities and optional sample weights.
+4 api_signature: tf.keras.metrics.SparseCategoricalAccuracy(name,dtype)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the metric instance's display name.
+- dtype: Controls the data type used for the metric's result.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([[2], [1]], [[0.1, 0.6, 0.3], [0.05, 0.95, 0]],
+- '               sample_weight=[0.7, 0.3])'
+- m.result()
+8 api_shape: ''

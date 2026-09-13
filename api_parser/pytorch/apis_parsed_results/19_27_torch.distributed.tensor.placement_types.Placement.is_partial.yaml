@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.tensor.placement_types.Placement.is_partial
+3 api_description: Returns whether this placement represents partial, unreduced tensor
+  data.
+4 api_signature: '"is_partial(self,reduce_op)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.create_unspecified_symint_and_symbol
+3 api_description: Creates and returns a SymInt backed by a new unspecified symbolic
+  integer.
+4 api_signature: create_unspecified_symint_and_symbol(value,dynamic_dim)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: torch.nn.functional.poisson_nll_loss
+3 api_description: Computes the negative log likelihood loss for a Poisson distribution,
+  useful for modeling count data.
+4 api_signature: torch.nn.functional.poisson_nll_loss(input,target,log_input,reduction)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the expected value of the underlying Poisson distribution.
+- target: Represents the observed data drawn from a Poisson distribution with the
+    given input as the mean.
+- log_input: Determines whether the input is interpreted as a logarithm of the rate
+    parameter or as the rate parameter itself.
+- reduction: 'Specifies the method to aggregate the loss values: no reduction, mean,
+    or sum.'
+7 api_usage_example: null
+8 api_shape: null

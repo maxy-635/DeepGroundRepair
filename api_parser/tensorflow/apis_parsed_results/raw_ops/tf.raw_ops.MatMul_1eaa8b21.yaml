@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.MatMul
+3 api_description: Multiplies two 2D matrices, with optional transposition of either
+  input before performing matrix multiplication.
+4 api_signature: tf.raw_ops.MatMul(a,b,transpose_a,transpose_b)
+5 api_details: ''
+6 api_parameters:
+- a: The left-hand input tensor to be multiplied.
+- b: The right-hand input tensor to be multiplied, with the same data type as `a`.
+- transpose_a: Whether to transpose `a` before performing the matrix multiplication.
+- transpose_b: Whether to transpose `b` before performing the matrix multiplication.
+7 api_usage_example: null
+8 api_shape: ''

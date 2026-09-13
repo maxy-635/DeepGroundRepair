@@ -1,0 +1,7 @@
+2 api_name: torch.TypedStorage.int
+3 api_description: Returns a view of the storage cast to int type.
+4 api_signature: '"int()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

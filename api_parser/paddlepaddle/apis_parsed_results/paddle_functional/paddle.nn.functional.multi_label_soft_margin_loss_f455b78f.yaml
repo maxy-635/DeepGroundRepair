@@ -1,0 +1,26 @@
+2 api_name: paddle.nn.functional.multi_label_soft_margin_loss
+3 api_description: Calculates the multi-class multi-label hinge loss between predicted
+  scores and target labels, using margin-based loss for each sample in a mini-batch.
+4 api_signature: paddle.nn.functional.multi_label_soft_margin_loss(input,label)
+5 api_details: ''
+6 api_parameters:
+- input: The 'input' parameter is a tensor containing the predicted scores for each
+    class, with a shape of (N, C) or higher dimensions, and a data type of float32
+    or float64.
+- label: The 'label' parameter is a tensor containing the true binary labels for each
+    class, matching the shape and data type of the 'input' tensor.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- input = paddle.to_tensor([[1, -2, 3], [0, -1, 2], [1, 0, 1]], dtype=paddle.float32)
+- '# label elements in {1., -1.}'
+- label = paddle.to_tensor([[-1, 1, -1], [1, 1, 1], [1, -1, 1]], dtype=paddle.float32)
+- loss = F.multi_label_soft_margin_loss(input, label, reduction='none')
+- print(loss)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[3.49625897, 0.71111226, 0.43989015])'
+- loss = F.multi_label_soft_margin_loss(input, label, reduction='mean')
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.54908717)
+8 api_shape: null

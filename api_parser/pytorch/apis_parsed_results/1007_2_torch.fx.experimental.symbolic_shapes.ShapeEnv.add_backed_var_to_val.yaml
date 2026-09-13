@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.add_backed_var_to_val
+3 api_description: Adds a backed symbolic variable to the shape environment, associating
+  a new symbol with a concrete value for symbolic shape tracking.
+4 api_signature: add_backed_var_to_val(expr)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

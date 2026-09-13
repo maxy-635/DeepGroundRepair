@@ -1,0 +1,18 @@
+2 api_name: torch.Event
+3 api_description: Provides a synchronization event for streams to query completion,
+  control dependencies, and measure elapsed timing.
+4 api_signature: torch.Event(device,*,enable_timing,blocking,interprocess)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies which device the event should use; defaults to the current accelerator
+    type if omitted.
+- enable_timing: Controls whether the event records timing information, defaulting
+    to False.
+- blocking: Determines whether `wait()` blocks until the event is complete, defaulting
+    to False.
+- interprocess: Allows the event to be shared between processes when set to True,
+    defaulting to False.
+7 api_usage_example:
+- ' event = torch.Event()'
+- ' e_cuda = torch.Event(device=''cuda'')'
+8 api_shape: null

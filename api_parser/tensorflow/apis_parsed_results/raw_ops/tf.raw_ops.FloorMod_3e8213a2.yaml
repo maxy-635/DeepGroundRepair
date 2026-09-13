@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.FloorMod
+3 api_description: Computes the element-wise modulo using floor-division semantics,
+  so the remainder satisfies floor(x / y) * y + floor_mod(x, y) = x for all signs.
+4 api_signature: tf.raw_ops.FloorMod(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose elements will be used as the dividend in the floor-mod
+    operation.
+- y: The input tensor of the same type as `x` whose elements are used as the divisor
+    in the floor-mod operation.
+7 api_usage_example: null
+8 api_shape: ''

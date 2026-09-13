@@ -1,0 +1,20 @@
+2 api_name: torch.triu
+3 api_description: Returns the upper triangular part of a 2D matrix or batched matrices,
+  setting all other elements to 0.
+4 api_signature: torch.triu(input,diagonal)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose upper triangular portion is extracted.
+- diagonal: The diagonal offset that determines which diagonal is treated as the main
+    cutoff.
+7 api_usage_example:
+- ' a = torch.randn(3, 3)'
+- ' a'
+- ' torch.triu(a)'
+- ' torch.triu(a, diagonal=1)'
+- ' torch.triu(a, diagonal=-1)'
+- ' b = torch.randn(4, 6)'
+- ' b'
+- ' torch.triu(b, diagonal=1)'
+- ' torch.triu(b, diagonal=-1)'
+8 api_shape: null

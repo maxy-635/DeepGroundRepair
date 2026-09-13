@@ -1,0 +1,9 @@
+2 api_name: tensorflow.math.angle
+3 api_description: Returns the phase angle of each element in a complex tensor as
+  a float tensor; for real inputs, returns all zeros.
+4 api_signature: tf.math.angle(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose element-wise angle (in radians) is computed.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: tensorflow.strings.unicode_transcode
+3 api_description: Transcodes a string tensor from one encoding to another, preserving
+  shape and producing valid Unicode, with configurable handling for invalid input
+  and optional BOM consumption based on encoding endianness.
+4 api_signature: tf.strings.unicode_transcode(input,input_encoding,output_encoding,errors,replacement_char)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor to convert, in any shape.
+- input_encoding: The source text encoding of the input strings.
+- output_encoding: The target Unicode encoding for the output strings.
+- errors: The policy for handling invalid input formatting.
+- replacement_char: The Unicode codepoint used to replace invalid input when `errors='replace'`.
+7 api_usage_example:
+- tf.strings.unicode_transcode(["Hello", "TensorFlow", "2.x"], "UTF-8", "UTF-16-BE")
+- tf.strings.unicode_transcode(["A", "B", "C"], "US ASCII", "UTF-8").numpy()
+8 api_shape: ''

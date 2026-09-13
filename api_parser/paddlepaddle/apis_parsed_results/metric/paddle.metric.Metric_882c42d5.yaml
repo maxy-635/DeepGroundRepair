@@ -1,0 +1,17 @@
+2 api_name: paddle.metric.Metric
+3 api_description: Base class for defining metrics, encapsulating metric state, update/reset
+  logic, and APIs for accumulating and retrieving evaluation results during training
+  or inference.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- 'def compute(pred, label):'
+- '    # sort prediction and slice the top-5 scores'
+- '    pred = paddle.argsort(pred, descending=True)[:, :5]'
+- '    # calculate whether the predictions are correct'
+- '    correct = pred == label'
+- '    return paddle.cast(correct, dtype=''float32'')'
+- '...'
+8 api_shape: {}

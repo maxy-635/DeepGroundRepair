@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.gumbel.Gumbel
+3 api_description: A transformed distribution representing the Gumbel (Type I extreme
+  value) distribution, used to model the maximum of samples and to generate random
+  values with specified location and scale.
+4 api_signature: '"Gumbel(loc,scale)"'
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the distribution’s location, shifting where the Gumbel distribution is
+    centered.
+- scale: Sets the distribution’s scale, controlling how spread out the Gumbel values
+    are.
+7 api_usage_example:
+- ' m = Gumbel(torch.tensor([1.0]), torch.tensor([2.0]))'
+- ' m.sample()  # sample from Gumbel distribution with loc=1, scale=2'
+8 api_shape: null

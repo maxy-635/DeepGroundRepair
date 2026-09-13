@@ -1,0 +1,14 @@
+2 api_name: tensorflow.io.decode_json_example
+3 api_description: Converts JSON-encoded tf.train.Example records into binary-serialized
+  protocol buffer strings for use with tf.io.parse_example.
+4 api_signature: tf.io.decode_json_example(json_examples)
+5 api_details: ''
+6 api_parameters:
+- json_examples: Provides the JSON-serialized `tf.Example` protos to be decoded into
+    example tensors.
+7 api_usage_example:
+- tf.io.parse_example(
+- '  serialized=[example_binary.numpy(),'
+- '             example.SerializeToString()],'
+- '  features = {''a'': tf.io.FixedLenFeature(shape=[3], dtype=tf.int64)})'
+8 api_shape: ''

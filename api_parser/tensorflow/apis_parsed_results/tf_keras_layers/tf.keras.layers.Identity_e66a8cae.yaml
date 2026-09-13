@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.layers.Identity
+3 api_description: The Identity layer in tf.keras.layers serves as a placeholder that
+  returns its input tensor(s) as output without performing any operations.
+4 api_signature: tf.keras.layers.Identity()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

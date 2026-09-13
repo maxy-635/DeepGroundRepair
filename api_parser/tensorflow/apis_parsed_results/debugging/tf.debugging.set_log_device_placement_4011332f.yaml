@@ -1,0 +1,17 @@
+2 api_name: tensorflow.debugging.set_log_device_placement
+3 api_description: Enables or disables logging of TensorFlow device placement decisions
+  so you can see where operations run for debugging performance and device-related
+  issues.
+4 api_signature: tf.debugging.set_log_device_placement(enabled)
+5 api_details: ''
+6 api_parameters:
+- enabled: Controls whether TensorFlow logs where operations are placed on devices.
+7 api_usage_example:
+- tf.debugging.set_log_device_placement(True)
+- tf.ones([])
+- '# [...] op Fill in device /job:localhost/replica:0/task:0/device:GPU:0'
+- 'with tf.device("CPU"):'
+- ' tf.ones([])'
+- '# [...] op Fill in device /job:localhost/replica:0/task:0/device:CPU:0'
+- tf.debugging.set_log_device_placement(False)
+8 api_shape: ''

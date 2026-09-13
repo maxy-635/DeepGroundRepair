@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Polygamma
+3 api_description: Computes the polygamma function, the nth derivative of the digamma
+  function, for non-negative integer orders.
+4 api_signature: '"tf.raw_ops.Polygamma(a,x)"'
+5 api_details: ''
+6 api_parameters:
+- a: The order of the polygamma function to compute, provided as a float32 or float64
+    tensor.
+- x: The input tensor at which to evaluate the polygamma function, matching the type
+    of `a`.
+7 api_usage_example: null
+8 api_shape: ''

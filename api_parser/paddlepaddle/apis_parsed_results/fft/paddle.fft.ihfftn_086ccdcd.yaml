@@ -1,0 +1,16 @@
+2 api_name: paddle.fft.ihfftn
+3 api_description: Computes the inverse n-dimensional FFT for Hermitian-symmetric
+  inputs, reconstructing the corresponding real-valued signal in the spatial domain.
+4 api_signature: paddle.fft.ihfftn(x,s,axes,norm,out)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be transformed.
+- s: The target shape along each transformed axis, with cropping or zero-padding applied
+    as needed.
+- axes: The axes over which to compute the inverse FFT, defaulting to the last axis
+    if omitted.
+- norm: The normalization mode that controls scaling for the forward/backward transform
+    pair.
+- out: An optional tensor to store the output.
+7 api_usage_example: []
+8 api_shape: {}

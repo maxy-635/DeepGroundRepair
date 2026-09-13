@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.mixture_same_family.MixtureSameFamily.cdf
+3 api_description: Computes the cumulative distribution function of a mixture distribution
+  by combining the CDFs of its component distributions with the mixture probabilities.
+4 api_signature: cdf(x)
+5 api_details: ''
+6 api_parameters:
+- value: The values at which to evaluate the cumulative distribution function.
+7 api_usage_example: null
+8 api_shape: null

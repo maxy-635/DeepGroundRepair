@@ -1,0 +1,22 @@
+2 api_name: tensorflow.keras.metrics.BinaryIoU
+3 api_description: Computes binary IoU by thresholding logits into class 0/1, accumulating
+  a weighted confusion matrix, and returning the mean IoU over the specified target
+  classes.
+4 api_signature: tf.keras.metrics.BinaryIoU(target_class_ids,threshold)
+5 api_details: ''
+6 api_parameters:
+- target_class_ids: Selects which class or classes to compute IoU for, returning class
+    0, class 1, or their mean.
+- threshold: Sets the cutoff used to turn prediction logits into class 0 or class
+    1 labels.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([0, 1, 0, 1], [0.1, 0.2, 0.4, 0.7],
+- '               sample_weight=[0.2, 0.3, 0.4, 0.1])'
+- '# cm = [[0.2, 0.4],'
+- '#        [0.3, 0.1]]'
+- '# sum_row = [0.6, 0.4], sum_col = [0.5, 0.5],'
+- '# true_positives = [0.2, 0.1]'
+- '# iou = [0.222, 0.125]'
+- m.result()
+8 api_shape: ''

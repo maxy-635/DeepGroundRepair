@@ -1,0 +1,9 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.RelaxedUnspecConstraint
+3 api_description: Represents a relaxed symbolic-shape constraint where no explicit
+  bound is set; the valid values are implicitly determined by guards inferred during
+  tracing.
+4 api_signature: torch.fx.experimental.symbolic_shapes.RelaxedUnspecConstraint(warn_only)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

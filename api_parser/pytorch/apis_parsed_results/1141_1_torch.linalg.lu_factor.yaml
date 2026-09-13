@@ -1,0 +1,18 @@
+2 api_name: torch.linalg.lu_factor
+3 api_description: Computes a compact LU factorization with partial pivoting, returning
+  the combined LU factors and pivot information for a matrix.
+4 api_signature: torch.linalg.lu_factor(A)
+5 api_details: ''
+6 api_parameters:
+- A: The input tensor to factorize into LU form, with optional leading batch dimensions
+    and trailing matrix dimensions `m x n`.
+7 api_usage_example:
+- ' A = torch.randn(2, 3, 3)'
+- ' B1 = torch.randn(2, 3, 4)'
+- ' B2 = torch.randn(2, 3, 7)'
+- ' LU, pivots = torch.linalg.lu_factor(A)'
+- ' X1 = torch.linalg.lu_solve(LU, pivots, B1)'
+- ' X2 = torch.linalg.lu_solve(LU, pivots, B2)'
+- ' torch.allclose(A @ X1, B1)'
+- ' torch.allclose(A @ X2, B2)'
+8 api_shape: null

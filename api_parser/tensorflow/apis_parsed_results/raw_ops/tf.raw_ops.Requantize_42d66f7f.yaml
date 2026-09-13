@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.Requantize
+3 api_description: Requantizes a quantized tensor to a lower-precision type by remapping
+  its input range to a requested output range.
+4 api_signature: tf.raw_ops.Requantize(input,input_min,input_max,requested_output_min,requested_output_max,out_type)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized tensor to be requantized.
+- input_min: The float value represented by the minimum value in the input tensor.
+- input_max: The float value represented by the maximum value in the input tensor.
+- requested_output_min: The float value that should correspond to the minimum value
+    of the output tensor.
+- requested_output_max: The float value that should correspond to the maximum value
+    of the output tensor.
+- out_type: The quantized dtype to convert the output tensor to, using a lower bit
+    depth than the input type.
+7 api_usage_example: null
+8 api_shape: ''

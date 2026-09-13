@@ -1,0 +1,27 @@
+2 api_name: paddle.distribution.Binomial
+3 api_description: Represents a Binomial distribution parameterized by total_count
+  and probs, used to model the number of successes in a fixed number of Bernoulli
+  trials.
+4 api_signature: paddle.distribution.Binomial(probs)
+5 api_details: ''
+6 api_parameters:
+- probs: Specifies the success probability for each Bernoulli trial in the Binomial
+    distribution, constrained to the range [0, 1], and is converted to a 1-D Tensor
+    if provided as a float.
+7 api_usage_example:
+- import paddle
+- from paddle.distribution import Binomial
+- paddle.set_device('cpu')
+- paddle.seed(100)
+- rv = Binomial(100, paddle.to_tensor([0.3, 0.6, 0.9]))
+- print(rv.sample([2]))
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[31., 62., 93.],'
+- '[29., 54., 91.]])'
+- print(rv.mean)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[30.00000191, 60.00000381, 90.        ])'
+- print(rv.entropy())
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[2.94053698, 3.00781751, 2.51124287])'
+8 api_shape: {}

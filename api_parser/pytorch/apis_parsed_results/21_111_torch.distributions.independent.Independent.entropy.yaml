@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.independent.Independent.entropy
+3 api_description: Computes the entropy of the underlying base distribution and sums
+  it over the reinterpreted batch dimensions.
+4 api_signature: entropy()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

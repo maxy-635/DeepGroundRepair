@@ -1,0 +1,17 @@
+2 api_name: tensorflow.keras.metrics.LogCoshError
+3 api_description: Computes the average log-cosh loss, measuring prediction error
+  with reduced sensitivity to outliers.
+4 api_signature: tf.keras.metrics.LogCoshError(name,dtype)
+5 api_details: ''
+6 api_parameters:
+- name: Sets the metric instance’s display name.
+- dtype: Specifies the data type used for the metric’s result.
+7 api_usage_example:
+- m = keras.metrics.LogCoshError()
+- m.update_state([[0, 1], [0, 0]], [[1, 1], [0, 0]])
+- m.result()
+- m.reset_state()
+- m.update_state([[0, 1], [0, 0]], [[1, 1], [0, 0]],
+- '               sample_weight=[1, 0])'
+- m.result()
+8 api_shape: ''

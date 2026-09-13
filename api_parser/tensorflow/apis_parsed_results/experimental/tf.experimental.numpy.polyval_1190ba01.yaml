@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.polyval
+3 api_description: Evaluates a polynomial at given values using TensorFlow tensors,
+  matching NumPy's polyval behavior.
+4 api_signature: tf.experimental.numpy.polyval(p,x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

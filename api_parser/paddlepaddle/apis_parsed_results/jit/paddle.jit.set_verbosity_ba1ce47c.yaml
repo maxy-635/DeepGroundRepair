@@ -1,0 +1,17 @@
+2 api_name: paddle.jit.set_verbosity
+3 api_description: Sets the logging verbosity for dygraph-to-static graph conversion,
+  with an option to also print logs to stdout.
+4 api_signature: paddle.jit.set_verbosity(level)
+5 api_details: ''
+6 api_parameters:
+- level: Sets how much logging detail Paddle JIT outputs, with higher values producing
+    more verbose logs and 0 disabling logging.
+7 api_usage_example:
+- import os
+- import paddle
+- paddle.jit.set_verbosity(1)
+- '# The verbosity level is now 1'
+- os.environ['TRANSLATOR_VERBOSITY'] = '3'
+- '# The verbosity level is now 3, but it has no effect because it has a lower priority
+  than `set_verbosity`'
+8 api_shape: {}

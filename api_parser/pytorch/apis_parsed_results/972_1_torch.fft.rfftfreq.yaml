@@ -1,0 +1,11 @@
+2 api_name: torch.fft.rfftfreq
+3 api_description: Returns the frequency bins for a real-input FFT of length n, giving
+  the non-negative sample frequencies used by rfft().
+4 api_signature: torch.fft.rfftfreq(n,d)
+5 api_details: ''
+6 api_parameters:
+- n: Sets the number of points in the real FFT, determining the frequency-bin resolution.
+- d: Sets the sample spacing so the returned frequencies are scaled to physical units.
+7 api_usage_example:
+- f = torch.arange((n + 1) // 2) / (d * n)
+8 api_shape: null

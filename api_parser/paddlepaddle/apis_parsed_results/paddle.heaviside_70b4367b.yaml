@@ -1,0 +1,22 @@
+2 api_name: paddle.heaviside
+3 api_description: Computes the elementwise Heaviside step function for x, using the
+  corresponding values in y to determine the output at x = 0.
+4 api_signature: paddle.heaviside(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to apply the Heaviside step function.
+- y: Tensor that supplies the step value used to determine the Heaviside output.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-0.5, 0, 0.5])
+- y = paddle.to_tensor([0.1])
+- paddle.heaviside(x, y)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[0.        , 0.10000000, 1.        ])'
+- x = paddle.to_tensor([[-0.5, 0, 0.5], [-0.5, 0.5, 0]])
+- y = paddle.to_tensor([0.1, 0.2, 0.3])
+- paddle.heaviside(x, y)
+- Tensor(shape=[2, 3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.        , 0.20000000, 1.        ],'
+- '[0.        , 1.        , 0.30000001]])'
+8 api_shape: {}

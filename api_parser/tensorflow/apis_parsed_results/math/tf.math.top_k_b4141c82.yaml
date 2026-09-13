@@ -1,0 +1,13 @@
+2 api_name: tensorflow.math.top_k
+3 api_description: Returns the k largest values in the last dimension of a tensor,
+  along with their indices.
+4 api_signature: tf.math.top_k(input,k)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to search for the top values in along its last dimension.
+- k: The number of largest elements to return from each row or last dimension.
+7 api_usage_example:
+- result = tf.math.top_k([1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0],
+- '                       k=3, index_type=tf.int16)'
+- result.indices.numpy()
+8 api_shape: ''

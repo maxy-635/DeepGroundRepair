@@ -1,0 +1,15 @@
+2 api_name: tensorflow.image.transpose
+3 api_description: Swaps the height and width dimensions of one or more images, effectively
+  transposing each image.
+4 api_signature: tf.image.transpose(image)
+5 api_details: ''
+6 api_parameters:
+- image: The input image tensor to be transposed, either a 3-D [height, width, channels]
+    image or a 4-D [batch, height, width, channels] batch of images.
+7 api_usage_example:
+- image = [[[1, 2], [3, 4]],
+- '        [[5, 6], [7, 8]],'
+- '        [[9, 10], [11, 12]]]'
+- image = tf.constant(image)
+- tf.image.transpose(image)
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.FresnelCos
+3 api_description: Computes the Fresnel cosine integral elementwise for a tensor of
+  input values.
+4 api_signature: tf.raw_ops.FresnelCos(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the Fresnel cosine integral.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,31 @@
+2 api_name: torch.optim.lr_scheduler.SequentialLR
+3 api_description: Chains multiple learning rate schedulers so they run one after
+  another during training, switching at specified milestones.
+4 api_signature: torch.optim.lr_scheduler.SequentialLR(optimizer,schedulers,milestones)
+5 api_details: ''
+6 api_parameters:
+- optimizer: The optimizer whose learning rate will be controlled by the chained schedulers.
+- schedulers: The list of learning rate schedulers to run in sequence.
+- milestones: The iteration or epoch boundaries at which to switch from one scheduler
+    to the next.
+7 api_usage_example:
+- ' # Assuming optimizer uses lr = 0.05 for all groups'
+- ' # lr = 0.005     if epoch == 0'
+- ' # lr = 0.005     if epoch == 1'
+- ' # lr = 0.005     if epoch == 2'
+- ' # ...'
+- ' # lr = 0.05      if epoch == 20'
+- ' # lr = 0.045     if epoch == 21'
+- ' # lr = 0.0405    if epoch == 22'
+- ' scheduler1 = ConstantLR(optimizer, factor=0.1, total_iters=20)'
+- ' scheduler2 = ExponentialLR(optimizer, gamma=0.9)'
+- ' scheduler = SequentialLR('
+- '...     optimizer,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' for epoch in range(100):'
+- '     train(...)'
+- '     validate(...)'
+- '     scheduler.step()'
+8 api_shape: null

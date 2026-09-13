@@ -1,0 +1,12 @@
+2 api_name: tensorflow.nn.batch_normalization
+3 api_description: The tensorflow.nn.batch_normalization function normalizes a tensor
+  using its mean and variance, and optionally applies a scale (gamma) and offset (beta)
+  to produce a transformed output.
+4 api_signature: tf.nn.batch_normalization(x,mean,variance)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be normalized, which can have any dimensionality.
+- mean: The tensor representing the mean used for normalization.
+- variance: The tensor representing the variance used for normalization.
+7 api_usage_example: null
+8 api_shape: ''

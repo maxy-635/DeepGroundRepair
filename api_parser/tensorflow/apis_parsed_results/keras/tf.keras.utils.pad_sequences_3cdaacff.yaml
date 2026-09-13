@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.utils.pad_sequences
+3 api_description: Pads a list of integer sequences into a 2D NumPy array of uniform
+  length, using optional maxlen, padding value, and pre/post padding or truncation
+  settings.
+4 api_signature: tf.keras.utils.pad_sequences(sequences,maxlen,padding,truncating)
+5 api_details: ''
+6 api_parameters:
+- sequences: The input list of integer sequences to be padded or truncated.
+- maxlen: Sets the target maximum sequence length; if omitted, uses the longest sequence
+    length.
+- padding: Chooses whether padding is added before or after each sequence.
+- truncating: Chooses whether values are removed from the start or end when sequences
+    exceed `maxlen`.
+7 api_usage_example:
+- keras.utils.pad_sequences(sequence, maxlen=2)
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.ReverseV2
+3 api_description: Reverses a tensor along the specified axes, flipping each listed
+  dimension and raising an error if any axis is repeated.
+4 api_signature: tf.raw_ops.ReverseV2(tensor,axis)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor whose elements are reversed along the specified dimensions.
+- axis: A 1-D tensor listing the dimension indices to reverse, using valid axes for
+    the input tensor rank.
+7 api_usage_example: null
+8 api_shape: ''

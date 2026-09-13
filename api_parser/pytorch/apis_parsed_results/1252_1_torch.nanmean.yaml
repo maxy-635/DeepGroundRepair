@@ -1,0 +1,19 @@
+2 api_name: torch.nanmean
+3 api_description: Computes the mean of non-NaN values along specified dimensions
+  for floating-point or complex tensors.
+4 api_signature: torch.nanmean(input,dim,keepdim,*,dtype)
+5 api_details: ''
+6 api_parameters:
+- input: Specifies the tensor whose non-NaN values will be averaged.
+- dim: Chooses which dimension or dimensions to reduce; if `None`, averages over all
+    dimensions.
+- keepdim: Controls whether the reduced dimensions are kept as size-1 dimensions in
+    the output.
+7 api_usage_example:
+- ' x = torch.tensor([[torch.nan, 1, 2], [1, 2, 3]])'
+- ' x.mean()'
+- ' x.nanmean()'
+- ' x.mean(dim=0)'
+- ' x.nanmean(dim=0)'
+- ' torch.tensor([torch.nan]).nanmean()'
+8 api_shape: null

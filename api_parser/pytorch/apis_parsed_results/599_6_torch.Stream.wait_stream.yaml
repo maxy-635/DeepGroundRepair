@@ -1,0 +1,12 @@
+2 api_name: torch.Stream.wait_stream
+3 api_description: Makes the current stream wait for all previously submitted work
+  on another stream to finish before continuing.
+4 api_signature: wait_stream(stream)
+5 api_details: ''
+6 api_parameters:
+- stream: The stream to synchronize with, ensuring its work is waited on before continuing.
+7 api_usage_example:
+- ' s1_cuda = torch.Stream(device=''cuda'')'
+- ' s2_cuda = torch.Stream(device=''cuda'')'
+- ' s2_cuda.wait_stream(s1_cuda)'
+8 api_shape: null

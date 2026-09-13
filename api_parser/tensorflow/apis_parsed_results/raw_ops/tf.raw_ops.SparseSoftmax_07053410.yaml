@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.SparseSoftmax
+3 api_description: Computes softmax over each batched sparse [B, C] submatrix while
+  ignoring implicit zeros, then renormalizes the non-zero values and preserves the
+  input sparse indices and shape.
+4 api_signature: tf.raw_ops.SparseSoftmax(sp_indices,sp_values,sp_shape)
+5 api_details: ''
+6 api_parameters:
+- sp_indices: Specifies the canonical 2-D indices of all non-empty entries in the
+    sparse tensor.
+- sp_values: Provides the 1-D values for those non-empty entries to be normalized
+    by sparse softmax.
+- sp_shape: Defines the full shape of the input sparse tensor.
+7 api_usage_example: null
+8 api_shape: ''

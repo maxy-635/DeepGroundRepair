@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.QueueEnqueue
+3 api_description: Enqueues a tuple of tensors into a queue, blocking if the queue
+  is full until space is available or an optional timeout occurs.
+4 api_signature: tf.raw_ops.QueueEnqueue(handle,components)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the queue to enqueue tensors into.
+- components: Provides the tensors that will be placed into the queue.
+7 api_usage_example: null
+8 api_shape: ''

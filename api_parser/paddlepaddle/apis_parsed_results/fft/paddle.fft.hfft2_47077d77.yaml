@@ -1,0 +1,23 @@
+2 api_name: paddle.fft.hfft2
+3 api_description: Computes the 2-D inverse FFT of a Hermitian complex input, returning
+  the corresponding real-valued spectrum.
+4 api_signature: paddle.fft.hfft2(x,s,axes,norm,name,out)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the data to transform.
+- s: Desired output shape for the two transformed axes, with smaller input cropped
+    and larger input zero-padded.
+- axes: The two axes along which to compute the FFT, defaulting to the last two axes.
+- norm: Normalization mode that controls scaling of the forward/backward transform
+    pair.
+- name: Optional name for the output tensor, usually left as None.
+- out: Tensor to store the output result.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[3.+3.j, 2.+2.j, 3.+3.j], [2.+2.j, 2.+2.j, 3.+3.j]])
+- hfft2_x = paddle.fft.hfft2(x)
+- print(hfft2_x)
+- Tensor(shape=[2, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[19., 7., 3., -9.],'
+- '[1., 1., 1., 1.]])'
+8 api_shape: {}

@@ -1,0 +1,9 @@
+2 api_name: torch.frac
+3 api_description: Returns the fractional part of each input element, preserving the
+  sign.
+4 api_signature: torch.frac(input)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' torch.frac(torch.tensor([1, 2.5, -3.2]))'
+8 api_shape: null

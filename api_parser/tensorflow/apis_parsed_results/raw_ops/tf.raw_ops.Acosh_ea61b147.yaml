@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.Acosh
+3 api_description: Computes the element-wise inverse hyperbolic cosine of a tensor,
+  returning nan for values outside the valid input range [1, inf].
+4 api_signature: tf.raw_ops.Acosh(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose values are used to compute the elementwise inverse hyperbolic
+    cosine.
+7 api_usage_example: null
+8 api_shape: ''

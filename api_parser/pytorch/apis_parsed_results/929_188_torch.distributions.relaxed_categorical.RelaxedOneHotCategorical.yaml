@@ -1,0 +1,15 @@
+2 api_name: torch.distributions.relaxed_categorical.RelaxedOneHotCategorical
+3 api_description: A differentiable relaxation of a one-hot categorical distribution
+  that samples soft one-hot vectors from a temperature-controlled Concrete/Gumbel-Softmax
+  distribution, useful for gradient-based optimization.
+4 api_signature: '"RelaxedOneHotCategorical(temperature,probs,logits)"'
+5 api_details: ''
+6 api_parameters:
+- temperature: Controls how soft or peaked the relaxed one-hot samples are.
+- probs: Specifies the probabilities for each categorical event.
+- logits: Specifies unnormalized log probabilities for each categorical event.
+7 api_usage_example:
+- ' m = RelaxedOneHotCategorical(torch.tensor([2.2]),'
+- '...                              torch.tensor([0.1, 0.2, 0.3, 0.4]))'
+- ' m.sample()'
+8 api_shape: null

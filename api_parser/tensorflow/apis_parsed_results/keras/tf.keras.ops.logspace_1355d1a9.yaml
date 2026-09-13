@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.ops.logspace
+3 api_description: Returns evenly spaced values on a logarithmic scale between base**start
+  and base**stop.
+4 api_signature: tf.keras.ops.logspace(start,stop,num,base,dtype)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the initial value of the log-spaced sequence.
+- stop: Sets the ending value of the sequence, or the endpoint used to define the
+    interval if `endpoint` is false.
+- num: Specifies how many samples to generate, defaulting to 50.
+- base: Specifies the logarithmic base used to space the values, defaulting to 10.
+- dtype: Specifies the output tensor’s data type.
+7 api_usage_example: null
+8 api_shape: ''

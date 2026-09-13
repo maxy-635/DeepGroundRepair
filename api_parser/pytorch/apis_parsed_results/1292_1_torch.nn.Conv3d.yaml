@@ -1,0 +1,29 @@
+2 api_name: torch.nn.Conv3d
+3 api_description: torch.nn.Conv3d applies 3D convolution to input data with multiple
+  channels, allowing for spatial feature extraction in three dimensions.
+4 api_signature: torch.nn.Conv3d(in_channels,out_channels,kernel_size,stride,padding)
+5 api_details: ''
+6 api_parameters:
+- in_channels: Specifies the number of input channels in the 3D input data.
+- out_channels: Defines the number of output channels produced by the convolution
+    operation.
+- kernel_size: Indicates the dimensions of the convolving kernel used to process the
+    input.
+- stride: Determines the step size at which the kernel moves across the input volume.
+- padding: Specifies the number of zero-padding layers added to each side of the input
+    volume.
+7 api_usage_example:
+- ' # With square kernels and equal stride'
+- ' m = nn.Conv3d(16, 33, 3, stride=2)'
+- ' # non-square kernels and unequal stride and with padding'
+- ' m = nn.Conv3d(16, 33, (3, 5, 2), stride=(2, 1, 1), padding=(4, 2, 0))'
+- ' input = torch.randn(20, 16, 10, 50, 100)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Depth_out, Height_out, Width_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = out_channels
+    tensor depth: Depth_out = floor((Depth_in + 2 * padding_depth - kernel_size_depth) / stride_depth + 1)
+    tensor height: Height_out = floor((Height_in + 2 * padding_height - kernel_size_height) / stride_height + 1)
+    tensor width: Width_out = floor((Width_in + 2 * padding_width - kernel_size_width) / stride_width + 1)

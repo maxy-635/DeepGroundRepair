@@ -1,0 +1,12 @@
+2 api_name: tensorflow.keras.initializers.get
+3 api_description: Returns a Keras initializer instance from an identifier, such as
+  a case-sensitive string name, function, or class.
+4 api_signature: tf.keras.initializers.get(identifier)
+5 api_details: ''
+6 api_parameters:
+- identifier: Specifies the initializer by name, config dict, or initializer instance
+    to retrieve or construct.
+7 api_usage_example:
+- 'cfg = {''class_name'': ''Ones'', ''config'': {} }'
+- keras.initializers.deserialize(cfg)
+8 api_shape: ''

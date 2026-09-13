@@ -1,0 +1,21 @@
+2 api_name: tensorflow.data.experimental.Counter
+3 api_description: Creates an infinite dataset that yields a sequence of numbers starting
+  at `start` and increasing by `step`.
+4 api_signature: tf.data.experimental.Counter(start,step)
+5 api_details: ''
+6 api_parameters:
+- start: Sets the initial value the counter begins from.
+- step: Sets how much the counter increases at each step.
+7 api_usage_example:
+- dataset = tf.data.experimental.Counter().take(5)
+- list(dataset.as_numpy_iterator())
+- dataset.element_spec
+- dataset = tf.data.experimental.Counter(dtype=tf.int32)
+- dataset.element_spec
+- dataset = tf.data.experimental.Counter(start=2).take(5)
+- list(dataset.as_numpy_iterator())
+- dataset = tf.data.experimental.Counter(start=2, step=5).take(5)
+- list(dataset.as_numpy_iterator())
+- dataset = tf.data.experimental.Counter(start=10, step=-1).take(5)
+- list(dataset.as_numpy_iterator())
+8 api_shape: ''

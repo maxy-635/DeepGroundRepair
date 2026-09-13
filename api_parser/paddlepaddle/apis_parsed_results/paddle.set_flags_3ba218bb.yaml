@@ -1,0 +1,9 @@
+2 api_name: paddle.set_flags
+3 api_description: Sets Paddle’s GFlags configuration value.
+4 api_signature: paddle.set_flags(flags)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- 'paddle.set_flags({''FLAGS_eager_delete_tensor_gb'': 1.0})'
+8 api_shape: {}

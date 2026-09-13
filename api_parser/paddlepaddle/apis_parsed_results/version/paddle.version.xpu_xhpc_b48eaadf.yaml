@@ -1,0 +1,11 @@
+2 api_name: paddle.version.xpu_xhpc
+3 api_description: Returns the Paddle package’s XPU XHPC version.
+4 api_signature: paddle.version.xpu_xhpc()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- paddle.version.xpu_xhpc()
+- '>>>'
+- '''20231208'''
+8 api_shape: {}

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.preprocessing.image.random_zoom
+3 api_description: Randomly zooms images by applying independent width and height
+  zoom factors within a specified range, with optional nearest fill handling for newly
+  exposed areas.
+4 api_signature: tf.keras.preprocessing.image.random_zoom(x,zoom_range)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

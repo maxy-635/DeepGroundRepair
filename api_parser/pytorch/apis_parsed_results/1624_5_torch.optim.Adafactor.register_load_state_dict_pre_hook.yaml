@@ -1,0 +1,11 @@
+2 api_name: torch.optim.Adafactor.register_load_state_dict_pre_hook
+3 api_description: Registers a hook that runs before load_state_dict() to modify or
+  inspect the optimizer state being loaded.
+4 api_signature: register_load_state_dict_pre_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: Registers a user-defined function to run before `load_state_dict`, allowing
+    the state dict to be modified or validated during loading.
+7 api_usage_example:
+- hook(optimizer, state_dict) -> state_dict or None
+8 api_shape: null

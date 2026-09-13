@@ -1,0 +1,19 @@
+2 api_name: paddle.distributed.ReduceOp
+3 api_description: Defines the element-wise reduction operation to use in distributed
+  collectives, such as sum, product, min, or max.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- dist.all_reduce(data, op=dist.ReduceOp.SUM)
+- print(data)
+- '# [[5, 7, 9], [5, 7, 9]] (2 GPUs)'
+8 api_shape: {}

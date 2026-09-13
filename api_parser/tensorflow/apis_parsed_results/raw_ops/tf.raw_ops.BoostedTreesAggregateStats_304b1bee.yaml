@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.BoostedTreesAggregateStats
+3 api_description: Aggregates accumulated gradient and hessian statistics for each
+  node, feature dimension, and bucket in a batch.
+4 api_signature: tf.raw_ops.BoostedTreesAggregateStats(node_ids,gradients,hessians,feature)
+5 api_details: ''
+6 api_parameters:
+- node_ids: Identifies which tree node each example belongs to so its statistics can
+    be aggregated correctly.
+- gradients: Provides the per-example gradient values used to compute aggregated training
+    statistics.
+- hessians: Provides the per-example hessian values used to compute second-order aggregated
+    training statistics.
+- feature: Supplies the feature values for each example that are used during statistics
+    aggregation.
+7 api_usage_example: null
+8 api_shape: ''

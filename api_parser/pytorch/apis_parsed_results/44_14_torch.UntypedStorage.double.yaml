@@ -1,0 +1,7 @@
+2 api_name: torch.UntypedStorage.double
+3 api_description: Returns a version of the storage cast to double precision.
+4 api_signature: double()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

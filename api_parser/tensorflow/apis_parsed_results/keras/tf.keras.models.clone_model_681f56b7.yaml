@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.models.clone_model
+3 api_description: Creates a new Functional or Sequential Keras model with the same
+  architecture as the original, but with freshly initialized layers and weights instead
+  of sharing the existing ones.
+4 api_signature: tf.keras.models.clone_model(model)
+5 api_details: ''
+6 api_parameters:
+- model: The Keras model instance to clone and return as a new model with the same
+    architecture.
+7 api_usage_example: null
+8 api_shape: ''

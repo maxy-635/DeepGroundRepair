@@ -1,0 +1,27 @@
+2 api_name: paddle.io.WeightedRandomSampler
+3 api_description: Samples indices randomly according to provided weights, returning
+  values in [0, len(weights) - 1]; with replacement enabled, the same index may be
+  drawn multiple times.
+4 api_signature: paddle.io.WeightedRandomSampler(weights,num_samples,replacement)
+5 api_details: ''
+6 api_parameters:
+- weights: Specifies the relative sampling probability for each item.
+- num_samples: Sets how many samples to draw from the sampler.
+- replacement: Controls whether samples are drawn with replacement.
+7 api_usage_example:
+- import numpy as np
+- from paddle.io import WeightedRandomSampler
+- np.random.seed(2023)
+- sampler = WeightedRandomSampler(
+- '    weights=[0.1, 0.3, 0.5, 0.7, 0.2],'
+- '    num_samples=5,'
+- '    replacement=True'
+- )
+- 'for index in sampler:'
+- '    print(index)'
+- '2'
+- '4'
+- '3'
+- '1'
+- '1'
+8 api_shape: {}

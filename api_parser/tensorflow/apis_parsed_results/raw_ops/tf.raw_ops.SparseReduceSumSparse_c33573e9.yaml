@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.SparseReduceSumSparse
+3 api_description: Computes the sum of a SparseTensor along specified axes and returns
+  the result as a SparseTensor, optionally keeping reduced dimensions with size 1.
+4 api_signature: tf.raw_ops.SparseReduceSumSparse(input_indices,input_values,input_shape,reduction_axes)
+5 api_details: ''
+6 api_parameters:
+- input_indices: Specifies the coordinates of the non-empty entries in the sparse
+    tensor.
+- input_values: Provides the values corresponding to each non-empty sparse tensor
+    entry.
+- input_shape: Gives the full shape of the input sparse tensor.
+- reduction_axes: Identifies the axes along which to compute the sparse sum reduction.
+7 api_usage_example: null
+8 api_shape: ''

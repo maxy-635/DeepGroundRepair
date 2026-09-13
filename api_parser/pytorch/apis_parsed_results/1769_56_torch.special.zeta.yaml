@@ -1,0 +1,13 @@
+2 api_name: torch.special.zeta
+3 api_description: Computes the Hurwitz zeta function elementwise for input tensors.
+4 api_signature: torch.special.zeta(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: Tensor of x values at which to evaluate the zeta function.
+- other: Tensor of q values used as the second argument to the zeta function.
+7 api_usage_example:
+- ' x = torch.tensor([2., 4.])'
+- ' torch.special.zeta(x, 1)'
+- ' torch.special.zeta(x, torch.tensor([1., 2.]))'
+- ' torch.special.zeta(2, torch.tensor([1., 2.]))'
+8 api_shape: null

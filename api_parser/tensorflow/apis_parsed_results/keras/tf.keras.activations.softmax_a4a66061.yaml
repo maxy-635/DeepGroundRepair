@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.activations.softmax
+3 api_description: Converts input values into a probability distribution by applying
+  softmax along a specified axis, producing outputs in [0, 1] that sum to 1.
+4 api_signature: tf.keras.activations.softmax(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to transform into a probability distribution via softmax.
+7 api_usage_example: null
+8 api_shape: ''

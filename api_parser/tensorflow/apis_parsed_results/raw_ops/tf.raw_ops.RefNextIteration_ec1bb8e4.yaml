@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.RefNextIteration
+3 api_description: Makes a tensor available as the input for the next loop iteration.
+4 api_signature: tf.raw_ops.RefNextIteration(data)
+5 api_details: ''
+6 api_parameters:
+- data: The mutable tensor to pass forward so it can be available in the next iteration.
+7 api_usage_example: null
+8 api_shape: ''

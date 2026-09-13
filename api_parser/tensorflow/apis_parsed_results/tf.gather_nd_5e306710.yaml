@@ -1,0 +1,15 @@
+2 api_name: tensorflow.gather_nd
+3 api_description: Gathers slices from `params` at N-D index positions given by the
+  last dimension of `indices`, returning a tensor of the selected slices.
+4 api_signature: tf.gather_nd(params,indices)
+5 api_details: ''
+6 api_parameters:
+- params: The source tensor that values are gathered from.
+- indices: An int32 or int64 index tensor that specifies which elements to gather.
+7 api_usage_example:
+- tf.gather_nd(
+- '    batch_dims = 1,'
+- '    indices = [[[1, 0]], [[0, 1]]],'
+- '    params = [[[''a0'', ''b0''], [''c0'', ''d0'']],'
+- '              [[''a1'', ''b1''], [''c1'', ''d1'']]]).numpy()'
+8 api_shape: ''

@@ -1,0 +1,21 @@
+2 api_name: torch.jit.freeze
+3 api_description: Optimizes a ScriptModule by freezing submodules and attribute values
+  into constants, enabling inlining and simplifying the TorchScript model.
+4 api_signature: torch.jit.freeze(mod,preserved_attrs)
+5 api_details: ''
+6 api_parameters:
+- mod: The module to freeze.
+- preserved_attrs: Attributes and preserved methods that should remain available and
+    keep their modified state when the module is frozen.
+7 api_usage_example:
+- '    def forward(self, input):'
+- '        output = self.weight.mm(input)'
+- '        output = self.linear(output)'
+- '        return output'
+- scripted_module = torch.jit.script(MyModule(2, 3).eval())
+- frozen_module = torch.jit.freeze(scripted_module)
+- '# parameters have been removed and inlined into the Graph as constants'
+- assert len(list(frozen_module.named_parameters())) == 0
+- '# See the compiled graph as Python code'
+- print(frozen_module.code)
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: torch.fft.fft2
+3 api_description: Computes the 2D discrete Fourier transform of an input tensor,
+  applying FFTs over the last two dimensions by default.
+4 api_signature: torch.fft.fft2(input,s,dim,norm)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to transform.
+- s: Sets the FFT length in each transformed dimension, padding or trimming as needed.
+- dim: Specifies which dimensions of the input are transformed.
+- norm: Controls FFT normalization, choosing between no scaling, 1/n scaling, or orthonormal
+    scaling.
+7 api_usage_example:
+- ' x = torch.rand(10, 10, dtype=torch.complex64)'
+- ' fft2 = torch.fft.fft2(x)'
+8 api_shape: null

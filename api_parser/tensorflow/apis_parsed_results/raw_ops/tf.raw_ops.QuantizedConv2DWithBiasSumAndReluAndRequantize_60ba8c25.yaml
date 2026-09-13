@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize
+3 api_description: Performs quantized 2D convolution with bias addition, elementwise
+  summation with a third tensor, ReLU activation, and requantization to a new quantized
+  output type.
+4 api_signature: tf.raw_ops.QuantizedConv2DWithBiasSumAndReluAndRequantize(input,filter,bias,strides,padding,out_type,dilations,name)
+5 api_details: ''
+6 api_parameters:
+- input: The quantized input tensor to be convolved.
+- filter: The quantized convolution filter tensor.
+- bias: The bias tensor added to the convolution result.
+- strides: The stride lengths for the convolution operation.
+- padding: The padding mode to apply, either `SAME` or `VALID`.
+- out_type: The quantized dtype of the output tensor, defaulting to `tf.quint8`.
+- dilations: The dilation rates for the convolution kernel, defaulting to `[1, 1,
+    1, 1]`.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,16 @@
+2 api_name: paddle.distributed.wait
+3 api_description: Synchronizes the current stream with a distributed process group,
+  waiting for pending collective work to complete.
+4 api_signature: paddle.distributed.wait(tensor,group)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor to wait on before synchronization starts.
+- group: The communication group used to perform the synchronization.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.distributed.init_parallel_env()
+- tindata = paddle.randn(shape=[2, 3])
+- paddle.distributed.all_reduce(tindata, sync_op=True)
+- paddle.distributed.wait(tindata)
+8 api_shape: {}

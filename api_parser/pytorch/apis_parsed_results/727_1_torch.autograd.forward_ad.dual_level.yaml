@@ -1,0 +1,19 @@
+2 api_name: torch.autograd.forward_ad.dual_level
+3 api_description: Context manager that enables forward-mode automatic differentiation,
+  requiring all forward AD operations to run within its scope.
+4 api_signature: class torch.autograd.forward_ad.dual_level
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' x = torch.tensor([1])'
+- ' x_t = torch.tensor([1])'
+- ' with dual_level():'
+- '...     inp = make_dual(x, x_t)'
+- '...     # Do computations with inp'
+- '...     out = your_fn(inp)'
+- '...     _, grad = unpack_dual(out)'
+- ' grad is None'
+- ' # After exiting the level, the grad is deleted'
+- ' _, grad_after = unpack_dual(out)'
+- ' grad is None'
+8 api_shape: null

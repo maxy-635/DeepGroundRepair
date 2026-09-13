@@ -1,0 +1,10 @@
+2 api_name: tensorflow.data.experimental.make_saveable_from_iterator
+3 api_description: Creates a SaveableObject so a tf.data iterator’s state can be saved
+  and restored with Saver.
+4 api_signature: tf.data.experimental.make_saveable_from_iterator(iterator)
+5 api_details: ''
+6 api_parameters:
+- iterator: The iterator whose state is made saveable so it can be checkpointed and
+    restored.
+7 api_usage_example: null
+8 api_shape: ''

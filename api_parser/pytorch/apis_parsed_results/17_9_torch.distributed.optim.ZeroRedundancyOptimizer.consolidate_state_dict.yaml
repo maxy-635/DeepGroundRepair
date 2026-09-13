@@ -1,0 +1,10 @@
+2 api_name: torch.distributed.optim.ZeroRedundancyOptimizer.consolidate_state_dict
+3 api_description: Gathers each rank’s optimizer state_dict and consolidates them
+  onto the target rank for centralized access or saving.
+4 api_signature: consolidate_state_dict(to)
+5 api_details: ''
+6 api_parameters:
+- to: Specifies the destination rank that gathers the consolidated optimizer state
+    dict, defaulting to rank 0.
+7 api_usage_example: null
+8 api_shape: null

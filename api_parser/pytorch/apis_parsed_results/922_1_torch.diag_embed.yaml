@@ -1,0 +1,12 @@
+2 api_name: torch.diag_embed
+3 api_description: Creates a tensor with the input values placed along specified 2D
+  plane diagonals, defaulting to the last two dimensions for batched diagonal matrices.
+4 api_signature: torch.diag_embed(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are placed along the diagonal of the output tensor.
+7 api_usage_example:
+- ' a = torch.randn(2, 3)'
+- ' torch.diag_embed(a)'
+- ' torch.diag_embed(a, offset=1, dim1=0, dim2=2)'
+8 api_shape: null

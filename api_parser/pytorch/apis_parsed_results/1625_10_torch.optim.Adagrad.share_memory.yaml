@@ -1,0 +1,8 @@
+2 api_name: torch.optim.Adagrad.share_memory
+3 api_description: Shares the optimizer’s accumulated sum state tensors across processes
+  by moving them into shared memory.
+4 api_signature: share_memory()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

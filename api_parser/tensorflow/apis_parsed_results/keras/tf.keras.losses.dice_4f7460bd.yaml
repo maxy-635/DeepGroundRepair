@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.losses.dice
+3 api_description: Computes the Dice loss between `y_true` and `y_pred`, measuring
+  how well the predicted and true labels overlap.
+4 api_signature: tf.keras.losses.dice(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: The ground-truth target tensor used to compute the Dice loss.
+- y_pred: The model's predicted target tensor compared against `y_true`.
+7 api_usage_example: null
+8 api_shape: ''

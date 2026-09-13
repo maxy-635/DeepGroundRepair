@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.RandomStandardNormal
+3 api_description: Generates random values from a standard normal distribution with
+  mean 0 and standard deviation 1.
+4 api_signature: tf.raw_ops.RandomStandardNormal(shape,dtype)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor dimensions.
+- dtype: Specifies the data type of the generated random values.
+7 api_usage_example: null
+8 api_shape: ''

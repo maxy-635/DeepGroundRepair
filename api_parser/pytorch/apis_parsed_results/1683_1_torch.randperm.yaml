@@ -1,0 +1,9 @@
+2 api_name: torch.randperm
+3 api_description: Returns a random permutation of the integers from 0 to n - 1.
+4 api_signature: torch.randperm(n,*,device,dtype,generator)
+5 api_details: ''
+6 api_parameters:
+- n: Sets the exclusive upper bound for the range of integers to permute.
+7 api_usage_example:
+- ' torch.randperm(4)'
+8 api_shape: null

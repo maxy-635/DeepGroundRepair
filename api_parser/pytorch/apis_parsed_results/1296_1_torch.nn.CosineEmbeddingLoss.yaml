@@ -1,0 +1,22 @@
+2 api_name: torch.nn.CosineEmbeddingLoss
+3 api_description: CosineEmbeddingLoss measures the loss between two input tensors
+  based on their cosine similarity, using labels to indicate whether to maximize (y=1)
+  or minimize (y=-1) the similarity.
+4 api_signature: torch.nn.CosineEmbeddingLoss(margin,reduction)
+5 api_details: ''
+6 api_parameters:
+- margin: Defines a threshold for determining whether the cosine similarity between
+    two inputs should be considered similar or dissimilar.
+- reduction: 'Specifies how the output loss should be aggregated: ''none'' for no
+    aggregation, ''mean'' for averaging, and ''sum'' for total summation.'
+7 api_usage_example:
+- ' loss = nn.CosineEmbeddingLoss()'
+- ' input1 = torch.randn(3, 5, requires_grad=True)'
+- ' input2 = torch.randn(3, 5, requires_grad=True)'
+- ' target = torch.ones(3)'
+- ' output = loss(input1, input2, target)'
+- ' output.backward()'
+8 api_shape:
+  input tensor shape: null
+  output tensor shape: If reduction is 'none', then (N), otherwise scalar.
+  tensor shape transform formulas: {}

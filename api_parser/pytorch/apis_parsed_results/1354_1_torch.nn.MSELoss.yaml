@@ -1,0 +1,17 @@
+2 api_name: torch.nn.MSELoss
+3 api_description: Measures the mean squared error between input and target tensors.
+4 api_signature: torch.nn.MSELoss(reduction)
+5 api_details: ''
+6 api_parameters:
+- reduction: 'Specifies how the output loss should be aggregated: ''none'' for no
+    reduction, ''mean'' for averaging the loss, and ''sum'' for summing the losses.'
+7 api_usage_example:
+- ' loss = nn.MSELoss()'
+- ' input = torch.randn(3, 5, requires_grad=True)'
+- ' target = torch.randn(3, 5)'
+- ' output = loss(input, target)'
+- ' output.backward()'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: null
+  tensor shape transform formulas: {}

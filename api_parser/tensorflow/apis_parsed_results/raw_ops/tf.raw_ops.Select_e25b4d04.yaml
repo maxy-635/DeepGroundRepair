@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.Select
+3 api_description: Returns a tensor built by choosing values from x or y based on
+  condition, using condition as a boolean mask over scalars, rows, or elements depending
+  on its shape.
+4 api_signature: tf.raw_ops.Select(condition,x,y)
+5 api_details: ''
+6 api_parameters:
+- condition: A boolean tensor that determines, element by element, whether to take
+    values from `x` or `y`.
+- x: The tensor supplying values where `condition` is true, matching `y` in type and
+    shape and following the shape rules described.
+- y: The tensor supplying values where `condition` is false, matching `x` in type
+    and shape.
+7 api_usage_example: null
+8 api_shape: ''

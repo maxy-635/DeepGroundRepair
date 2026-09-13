@@ -1,0 +1,23 @@
+2 api_name: paddle.distributed.recv
+3 api_description: Receives a tensor from another process in a distributed paddle
+  program.
+4 api_signature: paddle.distributed.recv(tensor,src)
+5 api_details: ''
+6 api_parameters:
+- tensor: Specifies the tensor that will receive the incoming data, and it must use
+    a supported dtype.
+- src: Specifies the rank ID of the source process sending the data.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    data = paddle.to_tensor([7, 8, 9])'
+- '    dist.send(data, dst=1)'
+- 'else:'
+- '    data = paddle.to_tensor([1, 2, 3])'
+- '    dist.recv(data, src=0)'
+- print(data)
+- '# [7, 8, 9] (2 GPUs)'
+8 api_shape: {}

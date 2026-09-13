@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.asanyarray
+3 api_description: Converts input to a TensorFlow array-like object while preserving
+  subclasses when possible, matching NumPy asanyarray behavior.
+4 api_signature: tf.experimental.numpy.asanyarray(a,dtype)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,21 @@
+2 api_name: tensorflow.experimental.StructuredTensor
+3 api_description: Represents a multidimensional collection of same-schema structured
+  records, enabling TensorFlow-style storage and manipulation of nested, heterogeneous
+  fields across arbitrary shapes.
+4 api_signature: tf.experimental.StructuredTensor(fields,ragged_shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- shoes_us = tf.experimental.StructuredTensor.from_pyval([
+- '   {"age": 12, "nicknames": ["Josaphine"],'
+- '      "shoes": {"sizes": [8.0, 7.5, 7.5]} },'
+- '   {"age": 82, "nicknames": ["Bob", "Bobby"],'
+- '       "shoes": {"sizes": [11.0, 11.5, 12.0]} },'
+- '   {"age": 42, "nicknames": ["Elmo"],'
+- '       "shoes": {"sizes": [9.0, 9.5, 10.0]} }])'
+- 'def us_to_europe(t):'
+- '  return tf.round(t * 2.54 + 17.0)  # Rough approximation.'
+- shoe_sizes_key = ("shoes", "sizes")
+- 'shoes_eu = shoes_us.with_updates({shoe_sizes_key: us_to_europe})'
+- shoes_eu.field_value(shoe_sizes_key)
+8 api_shape: ''

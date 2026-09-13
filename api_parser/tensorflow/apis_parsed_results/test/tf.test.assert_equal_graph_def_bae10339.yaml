@@ -1,0 +1,11 @@
+2 api_name: tensorflow.test.assert_equal_graph_def
+3 api_description: Compares two GraphDefs for near-equality, ignoring versions and
+  ordering differences in nodes, attrs, and control inputs while matching nodes by
+  name.
+4 api_signature: tf.test.assert_equal_graph_def(expected,actual)
+5 api_details: ''
+6 api_parameters:
+- expected: The GraphDef that serves as the expected reference for comparison.
+- actual: The GraphDef that is being checked against the expected reference.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.io.parse_example
+3 api_description: Parses a batch of serialized Example protos into a dict of tensors,
+  SparseTensors, and RaggedTensors according to a feature spec, handling fixed-length,
+  variable-length, sparse, and ragged fields with optional defaults and padding.
+4 api_signature: tf.io.parse_example(serialized,features)
+5 api_details: ''
+6 api_parameters:
+- serialized: A 1-D tensor of serialized Example protos to parse as a batch.
+- features: A dictionary that defines how each feature key should be decoded.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.GatherNd
+3 api_description: Gathers slices from `params` at the multi-dimensional positions
+  given by `indices` and returns them as a new tensor.
+4 api_signature: tf.raw_ops.GatherNd(params,indices)
+5 api_details: ''
+6 api_parameters:
+- params: The input tensor that values are gathered from.
+- indices: The integer index tensor that specifies which elements or slices to retrieve.
+7 api_usage_example: null
+8 api_shape: ''

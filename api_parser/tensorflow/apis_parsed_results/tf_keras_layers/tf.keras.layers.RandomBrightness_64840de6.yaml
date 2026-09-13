@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.layers.RandomBrightness
+3 api_description: Randomly adjusts the brightness of input RGB images during training,
+  while output remains unchanged during inference.
+4 api_signature: tf.keras.layers.RandomBrightness(factor, value_range)
+5 api_details: ''
+6 api_parameters:
+- factor: Determines the range of brightness adjustment applied to the image, where
+    a float or a range of floats between -1.0 and 1.0 is used to randomly select a
+    brightness factor.
+- value_range: Specifies the lower and upper limits of the input data values to ensure
+    the brightness adjustment is scaled appropriately, with a default range of [0.0,
+    255.0] for unscaled image data.
+7 api_usage_example: null
+8 api_shape: null

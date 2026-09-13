@@ -1,0 +1,32 @@
+2 api_name: tensorflow.keras.callbacks.BackupAndRestore
+3 api_description: Backs up training state at the end of each epoch to a temporary
+  checkpoint and restores it when `Model.fit` restarts after interruption, helping
+  resume training from the latest saved epoch; the backup is deleted when training
+  finishes.
+4 api_signature: tf.keras.callbacks.BackupAndRestore(backup_dir)
+5 api_details: ''
+6 api_parameters:
+- backup_dir: Directory path used to save training state so the model can be restored
+    after interruption, and it must be reserved exclusively for this callback.
+7 api_usage_example:
+- 'class InterruptingCallback(keras.callbacks.Callback):'
+- '  def on_epoch_begin(self, epoch, logs=None):'
+- '    if epoch == 4:'
+- '      raise RuntimeError(''Interrupting!'')'
+- callback = keras.callbacks.BackupAndRestore(backup_dir="/tmp/backup")
+- model = keras.models.Sequential([keras.layers.Dense(10)])
+- model.compile(keras.optimizers.SGD(), loss='mse')
+- 'try:'
+- '  model.fit(np.arange(100).reshape(5, 20), np.zeros(5), epochs=10,'
+- '            batch_size=1, callbacks=[callback, InterruptingCallback()],'
+- '            verbose=0)'
+- 'except:'
+- '  pass'
+- history = model.fit(np.arange(100).reshape(5, 20), np.zeros(5),
+- '                    epochs=10, batch_size=1, callbacks=[callback],'
+- '                    verbose=0)'
+- '# Only 6 more epochs are run, since first training got interrupted at'
+- '# zero-indexed epoch 4, second training will continue from 4 to 9.'
+- len(history.history['loss'])
+- '6'
+8 api_shape: ''

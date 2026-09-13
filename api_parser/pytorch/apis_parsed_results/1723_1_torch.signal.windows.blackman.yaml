@@ -1,0 +1,13 @@
+2 api_name: torch.signal.windows.blackman
+3 api_description: Computes a Blackman window of a given length for signal processing,
+  producing a smooth taper to reduce spectral leakage.
+4 api_signature: torch.signal.windows.blackman(M,sym)
+5 api_details: ''
+6 api_parameters:
+- M: Sets the window length, i.e. the number of points in the returned Blackman window.
+7 api_usage_example:
+- ' # Generates a symmetric Blackman window.'
+- ' torch.signal.windows.blackman(5)'
+- ' # Generates a periodic Blackman window.'
+- ' torch.signal.windows.blackman(5, sym=False)'
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.tensor.debug.visualize_sharding
+3 api_description: Prints a terminal visualization of how a DTensor is sharded across
+  devices, supporting 1D and 2D sharding layouts.
+4 api_signature: torch.distributed.tensor.debug.visualize_sharding(dtensor)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

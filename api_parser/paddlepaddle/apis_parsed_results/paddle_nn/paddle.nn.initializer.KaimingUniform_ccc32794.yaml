@@ -1,0 +1,18 @@
+2 api_name: paddle.nn.initializer.KaimingUniform
+3 api_description: KaimingUniform initializes weights with values drawn from a uniform
+  distribution, scaled to maintain variance based on the number of input units, promoting
+  stable gradients in deep networks.
+4 api_signature: paddle.nn.initializer.KaimingUniform(fan_in,nonlinearity)
+5 api_details: ''
+6 api_parameters:
+- fan_in: Specifies the fan_in (in_features) of the tensor, which can be set manually
+    or inferred automatically if not provided.
+- nonlinearity: Defines the non-linear activation function to be used, defaulting
+    to ReLU if not specified.
+7 api_usage_example:
+- import paddle
+- import paddle.nn as nn
+- linear = nn.Linear(2, 4, weight_attr=nn.initializer.KaimingUniform())
+- data = paddle.rand([30, 10, 2], dtype='float32')
+- res = linear(data)
+8 api_shape: null

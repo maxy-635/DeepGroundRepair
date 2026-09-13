@@ -1,0 +1,9 @@
+2 api_name: tensorflow.test.with_eager_op_as_function
+3 api_description: Temporarily returns the same class unchanged while eager ops are
+  run as functions; intended for removal after all usages are gone.
+4 api_signature: tf.test.with_eager_op_as_function(only_as_function:bool)
+5 api_details: ''
+6 api_parameters:
+- only_as_function: Unused argument.
+7 api_usage_example: null
+8 api_shape: ''

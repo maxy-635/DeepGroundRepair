@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.int_shape
+3 api_description: Returns the shape of a Keras tensor as a tuple of integers and
+  `None` values, where `None` represents unknown dimensions.
+4 api_signature: tf.keras.backend.int_shape(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

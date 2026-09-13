@@ -1,0 +1,22 @@
+2 api_name: tensorflow.raw_ops.EncodeJpeg
+3 api_description: JPEG-encodes a 3-D uint8 image tensor, optionally overriding the
+  output color format via the `format` attribute.
+4 api_signature: tf.raw_ops.EncodeJpeg(image,format,quality,progressive,optimize_size,chroma_downsampling,x_density,y_density)
+5 api_details: ''
+6 api_parameters:
+- image: The input uint8 image tensor to be encoded as JPEG, with shape `[height,
+    width, channels]`.
+- format: Specifies the pixel format to interpret the image as, such as grayscale
+    or RGB.
+- quality: Sets the JPEG compression quality level from 0 to 100, with higher values
+    giving better quality and slower compression.
+- progressive: Controls whether to create a progressive JPEG that loads in multiple
+    passes from coarse to fine.
+- optimize_size: Enables extra CPU and memory use to reduce the JPEG file size without
+    changing image quality.
+- chroma_downsampling: Controls whether chroma subsampling is applied to reduce color
+    detail for smaller JPEGs.
+- x_density: Sets the horizontal pixel density value stored in the JPEG metadata.
+- y_density: Sets the vertical pixel density value stored in the JPEG metadata.
+7 api_usage_example: null
+8 api_shape: ''

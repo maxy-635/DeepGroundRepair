@@ -1,0 +1,15 @@
+2 api_name: tensorflow.image.stateless_random_flip_left_right
+3 api_description: Deterministically flips an image horizontally based on a seed,
+  producing the same result for the same seed regardless of call order or global random
+  settings.
+4 api_signature: tf.image.stateless_random_flip_left_right(image,seed)
+5 api_details: ''
+6 api_parameters:
+- image: The input image or batch of images to randomly flip left-to-right.
+- seed: A 2-element integer tensor that seeds the random flip operation for reproducible
+    results.
+7 api_usage_example:
+- image = np.array([[[1], [2]], [[3], [4]]])
+- seed = (2, 3)
+- tf.image.stateless_random_flip_left_right(image, seed).numpy().tolist()
+8 api_shape: ''

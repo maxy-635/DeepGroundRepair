@@ -1,0 +1,14 @@
+2 api_name: tensorflow.data.experimental.group_by_window
+3 api_description: Groups dataset elements by key, batches up to a key-based window
+  size, and applies a reduce function to each grouped window.
+4 api_signature: tf.data.experimental.group_by_window(key_func,reduce_func,window_size)
+5 api_details: ''
+6 api_parameters:
+- key_func: Computes a scalar int64 key for each input element so matching elements
+    can be grouped together.
+- reduce_func: Takes each key and its grouped window of elements and returns a dataset
+    for that group.
+- window_size: Sets how many consecutive elements with the same key are collected
+    into each window before calling `reduce_func`.
+7 api_usage_example: null
+8 api_shape: ''

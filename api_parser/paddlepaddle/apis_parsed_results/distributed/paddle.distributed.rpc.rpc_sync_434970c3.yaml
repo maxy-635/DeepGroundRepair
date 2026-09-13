@@ -1,0 +1,22 @@
+2 api_name: paddle.distributed.rpc.rpc_sync
+3 api_description: Synchronously invoke a function on a remote worker and block until
+  the result is returned.
+4 api_signature: paddle.distributed.rpc.rpc_sync(to,fn,args,kwargs,timeout)
+5 api_details: ''
+6 api_parameters:
+- to: Specifies the destination worker that will receive and execute the RPC.
+- fn: Names the callable to run remotely on the destination worker.
+- args: Provides the positional arguments tuple to pass to the callable.
+- kwargs: Provides the keyword arguments dictionary to pass to the callable.
+- timeout: Sets how long to wait for the RPC before raising a timeout error, with
+    nonpositive values meaning no timeout.
+7 api_usage_example:
+- '>>>'
+- import paddle.distributed.rpc as rpc
+- 'def add(a, b):'
+- '    return a + b'
+- rpc.init_rpc("worker0", rank=0, world_size=1,
+- '        master_endpoint="127.0.0.1:8002")'
+- ret = rpc.rpc_sync("worker0", add, args=(2, 3))
+- rpc.shutdown()
+8 api_shape: {}

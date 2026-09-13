@@ -1,0 +1,24 @@
+2 api_name: paddle.distributed.communication.stream.broadcast
+3 api_description: Broadcasts a tensor from one source device to all other devices
+  in the distributed group.
+4 api_signature: paddle.distributed.communication.stream.broadcast(tensor,src)
+5 api_details: ''
+6 api_parameters:
+- tensor: The tensor whose value is broadcast to all participating devices.
+- src: The rank of the device that provides the source tensor value.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- local_rank = dist.get_rank()
+- 'if local_rank == 0:'
+- '    data = paddle.to_tensor([[4, 5, 6], [4, 5, 6]])'
+- 'else:'
+- '    data = paddle.to_tensor([[1, 2, 3], [1, 2, 3]])'
+- task = dist.stream.broadcast(data, src=1, sync_op=False)
+- 'task.wait()  # type: ignore[union-attr]'
+- out = data.numpy()
+- print(out)
+- '# [[1, 2, 3], [1, 2, 3]] (2 GPUs)'
+8 api_shape: {}

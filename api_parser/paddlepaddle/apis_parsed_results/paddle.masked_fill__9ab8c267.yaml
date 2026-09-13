@@ -1,0 +1,8 @@
+2 api_name: paddle.masked_fill_
+3 api_description: In-place fills elements of the tensor where the mask is true with
+  a specified value.
+4 api_signature: paddle.masked_fill_(x,mask,value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

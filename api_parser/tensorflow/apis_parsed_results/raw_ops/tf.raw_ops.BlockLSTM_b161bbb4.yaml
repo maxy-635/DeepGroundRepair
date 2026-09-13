@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.BlockLSTM
+3 api_description: Runs forward propagation of an LSTM cell across all time steps
+  for a sequence, equivalent to applying `LSTMBlockCell` repeatedly in a loop.
+4 api_signature: tf.raw_ops.BlockLSTM(x,w,b,seq_len_max,h_prev,cs_prev)
+5 api_details: ''
+6 api_parameters:
+- seq_len_max: Specifies the maximum valid time steps in the input sequence and controls
+    zero-padding of outputs beyond that length.
+- x: Provides the input sequence to the LSTM over time, with shape `(timelen, batch_size,
+    num_inputs)`.
+- cs_prev: Supplies the initial cell state for the LSTM before processing the sequence.
+- h_prev: Supplies the initial hidden/output state used by the LSTM, including peephole
+    connections.
+- w: Contains the learned weight matrix used to transform inputs and recurrent state.
+- b: Contains the bias vector added during the LSTM gate computations.
+7 api_usage_example: null
+8 api_shape: ''

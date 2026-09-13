@@ -1,0 +1,11 @@
+2 api_name: torch.isreal
+3 api_description: Returns a boolean tensor indicating whether each input element
+  is real-valued, treating all real types as real and complex values as real only
+  when their imaginary part is zero.
+4 api_signature: torch.isreal(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to check for real-valued elements.
+7 api_usage_example:
+- ' torch.isreal(torch.tensor([1, 1+1j, 2+0j]))'
+8 api_shape: null

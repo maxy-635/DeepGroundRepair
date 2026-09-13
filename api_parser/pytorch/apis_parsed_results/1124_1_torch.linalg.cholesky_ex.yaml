@@ -1,0 +1,16 @@
+2 api_name: torch.linalg.cholesky_ex
+3 api_description: Computes the Cholesky factorization of a real symmetric or complex
+  Hermitian positive-definite matrix, returning the factor and an info flag.
+4 api_signature: torch.linalg.cholesky_ex(A,upper)
+5 api_details: ''
+6 api_parameters:
+- A: The Hermitian matrix or batch of Hermitian matrices to be factorized by Cholesky
+    decomposition.
+7 api_usage_example:
+- ' A = torch.randn(2, 2, dtype=torch.complex128)'
+- ' A = A @ A.t().conj()  # creates a Hermitian positive-definite matrix'
+- ' L, info = torch.linalg.cholesky_ex(A)'
+- ' A'
+- ' L'
+- ' info'
+8 api_shape: null

@@ -1,0 +1,15 @@
+2 api_name: torch.overrides.wrap_torch_function
+3 api_description: Wraps a function so tensor subclasses can override it via __torch_function__
+  dispatch.
+4 api_signature: torch.overrides.wrap_torch_function(dispatcher)
+5 api_details: ''
+6 api_parameters:
+- dispatcher: Returns the Tensor-like arguments from the wrapped function so Torch
+    can decide whether to dispatch through a `__torch_function__` override.
+7 api_usage_example:
+- ' def dispatcher(a):  # Must have the same signature as func'
+- '...     return (a,)'
+- ' @torch.overrides.wrap_torch_function(dispatcher)'
+- ' def func(a):  # This will make func dispatchable by __torch_function__'
+- '...     return a + 0'
+8 api_shape: null

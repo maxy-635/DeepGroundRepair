@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.backend.ctc_label_dense_to_sparse
+3 api_description: Converts a dense label tensor into a sparse tensor format for CTC
+  loss and decoding, using sequence lengths to ignore padded label positions.
+4 api_signature: tf.keras.backend.ctc_label_dense_to_sparse(labels,label_lengths)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,15 @@
+2 api_name: torch.argmin
+3 api_description: Returns the index of the smallest value in a tensor, either across
+  the whole flattened tensor or along a specified dimension.
+4 api_signature: torch.argmin(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements are examined to find the index of the minimum value.
+- dim: The dimension along which to compute the argmin reduction.
+7 api_usage_example:
+- ' a = torch.randn(4, 4)'
+- ' a'
+- ' torch.argmin(a)'
+- ' torch.argmin(a, dim=1)'
+- ' torch.argmin(a, dim=1, keepdim=True)'
+8 api_shape: null

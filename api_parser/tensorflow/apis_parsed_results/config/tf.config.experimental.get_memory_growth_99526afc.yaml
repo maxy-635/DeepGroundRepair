@@ -1,0 +1,16 @@
+2 api_name: tensorflow.config.experimental.get_memory_growth
+3 api_description: Returns whether memory growth is enabled for a physical device,
+  indicating if TensorFlow will avoid preallocating all device memory.
+4 api_signature: tf.config.experimental.get_memory_growth(device)
+5 api_details: ''
+6 api_parameters:
+- device: The physical device whose memory growth setting you want to query.
+7 api_usage_example:
+- physical_devices = tf.config.list_physical_devices('GPU')
+- 'try:'
+- '  tf.config.experimental.set_memory_growth(physical_devices[0], True)'
+- '  assert tf.config.experimental.get_memory_growth(physical_devices[0])'
+- 'except:'
+- '  # Invalid device or cannot modify virtual devices once initialized.'
+- '  pass'
+8 api_shape: ''

@@ -1,0 +1,19 @@
+2 api_name: paddle.conj
+3 api_description: Returns the elementwise complex conjugate of a tensor.
+4 api_signature: paddle.conj(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing the complex numbers to be processed.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([[1+1j, 2+2j, 3+3j], [4+4j, 5+5j, 6+6j]])
+- data
+- Tensor(shape=[2, 3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[[(1+1j), (2+2j), (3+3j)],'
+- '[(4+4j), (5+5j), (6+6j)]])'
+- conj_data = paddle.conj(data)
+- conj_data
+- Tensor(shape=[2, 3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[[(1-1j), (2-2j), (3-3j)],'
+- '[(4-4j), (5-5j), (6-6j)]])'
+8 api_shape: {}

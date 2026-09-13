@@ -1,0 +1,11 @@
+2 api_name: torch.optim.lr_scheduler.CyclicLR.step
+3 api_description: Updates the learning rate according to the cyclic schedule for
+  each step, advancing the scheduler state.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Deprecated optional epoch index that, if provided, sets `last_epoch` to that
+    value and may use the scheduler’s closed-form learning rate calculation instead
+    of the standard step behavior.
+7 api_usage_example: null
+8 api_shape: null

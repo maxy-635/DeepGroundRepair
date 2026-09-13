@@ -1,0 +1,26 @@
+2 api_name: torch.nn.functional.pad
+3 api_description: The torch.nn.functional.pad function adds padding to a tensor on
+  specified dimensions, with options for different padding modes like constant, reflect,
+  and replicate.
+4 api_signature: torch.nn.functional.pad(input,pad,mode)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the N-dimensional tensor to which padding is to be applied.
+- pad: Specifies the number of elements to pad on each side, defined by a tuple with
+    an even number of elements, where half the tuple length should not exceed twice
+    the number of input dimensions.
+- mode: Determines the padding mode to use, which can be 'constant', 'reflect', 'replicate',
+    or 'circular'.
+7 api_usage_example:
+- ' t4d = torch.empty(3, 3, 4, 2)'
+- ' p1d = (1, 1) # pad last dim by 1 on each side'
+- ' out = F.pad(t4d, p1d, "constant", 0)  # effectively zero padding'
+- ' print(out.size())'
+- ' p2d = (1, 1, 2, 2) # pad last dim by (1, 1) and 2nd to last by (2, 2)'
+- ' out = F.pad(t4d, p2d, "constant", 0)'
+- ' print(out.size())'
+- ' t4d = torch.empty(3, 3, 4, 2)'
+- ' p3d = (0, 1, 2, 1, 3, 3) # pad by (0, 1), (2, 1), and (3, 3)'
+- ' out = F.pad(t4d, p3d, "constant", 0)'
+- ' print(out.size())'
+8 api_shape: null

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.ragged.stack_dynamic_partitions
+3 api_description: Groups tensor or ragged tensor slices by partition id and stacks
+  each group into a ragged output in row-major order.
+4 api_signature: tf.ragged.stack_dynamic_partitions(data,partitions,num_partitions)
+5 api_details: ''
+6 api_parameters:
+- data: The values to be split and stacked into ragged partitions.
+- partitions: The partition index for each slice of `data`, indicating where it should
+    be placed.
+- num_partitions: The total number of output partitions, which sets the number of
+    rows in the result.
+7 api_usage_example:
+- data           = ['a', 'b', 'c', 'd', 'e']
+- partitions     = [  3,   0,   2,   2,   3]
+- num_partitions = 5
+- tf.ragged.stack_dynamic_partitions(data, partitions, num_partitions)
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.optim.lr_scheduler.CyclicLR.get_lr
+3 api_description: Compute and return the next learning rate values for each optimizer
+  parameter group according to the CyclicLR schedule.
+4 api_signature: get_lr()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

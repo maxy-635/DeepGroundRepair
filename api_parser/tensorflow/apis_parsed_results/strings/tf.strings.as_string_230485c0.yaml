@@ -1,0 +1,20 @@
+2 api_name: tensorflow.strings.as_string
+3 api_description: Converts each element of a tensor into its string representation,
+  supporting numeric and boolean types.
+4 api_signature: tf.strings.as_string(input,precision,scientific,shortest,width,fill)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to convert into string form.
+- precision: Sets the number of digits after the decimal point for floating-point
+    values when greater than -1.
+- scientific: Formats floating-point values in scientific notation when set to True.
+- shortest: Uses the shortest available floating-point representation, scientific
+    or standard, when set to True.
+- width: Pads numbers on the left to reach the specified minimum width when greater
+    than -1.
+- fill: Specifies the single-character fill used for padding when width is enabled,
+    defaulting to spaces.
+7 api_usage_example:
+- tf.strings.as_string([3, 2])
+- tf.strings.as_string([3.1415926, 2.71828], precision=2).numpy()
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: tensorflow.io.gfile.rmtree
+3 api_description: Recursively deletes all files and subdirectories under the specified
+  path.
+4 api_signature: tf.io.gfile.rmtree(path)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the path to the file or directory to remove recursively.
+7 api_usage_example: null
+8 api_shape: ''

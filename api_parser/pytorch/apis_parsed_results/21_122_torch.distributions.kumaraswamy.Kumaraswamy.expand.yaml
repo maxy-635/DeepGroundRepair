@@ -1,0 +1,10 @@
+2 api_name: torch.distributions.kumaraswamy.Kumaraswamy.expand
+3 api_description: Returns a new Kumaraswamy distribution with the same parameters
+  expanded to the requested batch shape.
+4 api_signature: expand(batch_shape)
+5 api_details: ''
+6 api_parameters:
+- batch_shape: New batch shape to expand the distribution parameters to, without changing
+    the event shape.
+7 api_usage_example: null
+8 api_shape: null

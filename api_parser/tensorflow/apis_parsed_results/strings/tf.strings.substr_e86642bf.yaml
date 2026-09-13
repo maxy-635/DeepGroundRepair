@@ -1,0 +1,12 @@
+2 api_name: tensorflow.strings.substr
+3 api_description: Returns substrings from each input string tensor element using
+  a start position and length, handling out-of-range, negative, and truncated cases
+  per the provided rules.
+4 api_signature: tf.strings.substr(input,pos,len)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor to extract substrings from.
+- pos: The starting character position for each substring.
+- len: The number of characters to include in each substring.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.set_sync_debug_mode
+3 api_description: Sets how CUDA synchronizing operations report or handle debug behavior.
+4 api_signature: torch.cuda.set_sync_debug_mode(debug_mode)
+5 api_details: ''
+6 api_parameters:
+- debug_mode: Controls whether synchronizing CUDA operations are ignored, warned about,
+    or treated as errors.
+7 api_usage_example: null
+8 api_shape: null

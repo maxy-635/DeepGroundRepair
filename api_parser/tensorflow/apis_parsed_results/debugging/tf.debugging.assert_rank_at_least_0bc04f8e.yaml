@@ -1,0 +1,10 @@
+2 api_name: tensorflow.debugging.assert_rank_at_least
+3 api_description: Checks that `x` has at least the specified rank and raises `InvalidArgumentError`
+  with a message and shape details if it does not.
+4 api_signature: tf.debugging.assert_rank_at_least(x,rank)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose rank is checked.
+- rank: The minimum rank that `x` is expected to have.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.cbrt
+3 api_description: Computes the elementwise cube root of a tensor, matching NumPy’s
+  cbrt behavior for supported inputs.
+4 api_signature: tf.experimental.numpy.cbrt(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

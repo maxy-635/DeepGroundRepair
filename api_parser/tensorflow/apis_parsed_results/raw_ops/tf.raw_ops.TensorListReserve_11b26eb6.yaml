@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorListReserve
+3 api_description: Creates an empty TensorList reserved to a specified size, with
+  a given element shape and dtype.
+4 api_signature: tf.raw_ops.TensorListReserve(element_shape,num_elements,element_dtype)
+5 api_details: ''
+6 api_parameters:
+- element_shape: Defines the shape of each tensor element stored in the reserved TensorList.
+- num_elements: Specifies how many elements the TensorList should reserve space for.
+- element_dtype: Sets the data type of the tensors that will be stored in the TensorList.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,27 @@
+2 api_name: paddle.distributed.communication.stream.gather
+3 api_description: Collect tensors from all participating ranks and gather them to
+  the target rank.
+4 api_signature: paddle.distributed.communication.stream.gather(tensor,dst,group,sync_op,use_calc_stream)
+5 api_details: ''
+6 api_parameters:
+- tensor: The input tensor to be gathered from participating ranks.
+- dst: The destination rank that receives the gathered tensors.
+- group: The communication group to use, or `None` for the default global group.
+- sync_op: Whether to execute the operation synchronously.
+- use_calc_stream: Whether to perform the communication on the calculation stream.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'gather_list = [] # type: ignore[var-annotated]'
+- 'if dist.get_rank() == 0:'
+- '    data = paddle.to_tensor([1, 2, 3])'
+- '    dist.stream.gather(data, gather_list, dst=0)'
+- 'else:'
+- '    data = paddle.to_tensor([4, 5, 6])'
+- '    dist.stream.gather(data, gather_list, dst=0)'
+- print(gather_list)
+- '# [[1, 2, 3], [4, 5, 6]] (2 GPUs, out for rank 0)'
+- '# [] (2 GPUs, out for rank 1)'
+8 api_shape: {}

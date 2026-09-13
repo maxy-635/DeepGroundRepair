@@ -1,0 +1,21 @@
+2 api_name: paddle.nn.utils.clip_grad_value_
+3 api_description: The paddle.nn.utils.clip_grad_value_ API clips gradients of parameters
+  to a specified value in dynamic graph mode, modifying them in place.
+4 api_signature: paddle.nn.utils.clip_grad_value_(parameters,clip_value)
+5 api_details: ''
+6 api_parameters:
+- parameters: Specifies the tensors or a single tensor whose gradients will be normalized.
+- clip_value: Defines the maximum allowed value for the gradients, clipping them within
+    the specified range.
+7 api_usage_example:
+- import paddle
+- x = paddle.uniform([10, 10], min=-10.0, max=10.0, dtype='float32')
+- clip_value = float(5.0)
+- linear = paddle.nn.Linear(in_features=10, out_features=10)
+- out = linear(x)
+- loss = paddle.mean(out)
+- loss.backward()
+- paddle.nn.utils.clip_grad_value_(linear.parameters(), clip_value)
+- sdg = paddle.optimizer.SGD(learning_rate=0.1, parameters=linear.parameters())
+- sdg.step()
+8 api_shape: null

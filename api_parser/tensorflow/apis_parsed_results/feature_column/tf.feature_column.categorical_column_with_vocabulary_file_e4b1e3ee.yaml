@@ -1,0 +1,15 @@
+2 api_name: tensorflow.feature_column.categorical_column_with_vocabulary_file
+3 api_description: Creates a categorical feature column backed by a vocabulary file,
+  mapping string or integer inputs to IDs from the file and optionally sending out-of-vocabulary
+  values to default or hashed OOV buckets.
+4 api_signature: tf.feature_column.categorical_column_with_vocabulary_file(key,vocabulary_file,vocabulary_size,dtype,default_value)
+5 api_details: ''
+6 api_parameters:
+- key: Names the feature and serves as the lookup key for parsing and feature columns.
+- vocabulary_file: Specifies the file that contains the vocabulary entries.
+- vocabulary_size: Sets how many vocabulary items to use, optionally truncating the
+    file contents.
+- dtype: Defines the feature value type, which must be string or integer.
+- default_value: Provides the ID to use for out-of-vocabulary values when allowed.
+7 api_usage_example: null
+8 api_shape: ''

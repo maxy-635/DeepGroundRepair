@@ -1,0 +1,34 @@
+2 api_name: torch.library.opcheck
+3 api_description: Checks that a registered operator is correctly defined and wired
+  by running validation tests against sample arguments.
+4 api_signature: torch.library.opcheck(op,args,kwargs)
+5 api_details: ''
+6 api_parameters:
+- op: The operator to check, either a `torch.library.custom_op` function or a `torch.ops.*`
+    overload.
+- args: Positional arguments to pass to the operator.
+- kwargs: Keyword arguments to pass to the operator.
+7 api_usage_example:
+- ' @torch.library.custom_op("mylib::numpy_mul", mutates_args=())'
+- ' def numpy_mul(x: Tensor, y: float) -> Tensor:'
+- '     x_np = x.numpy(force=True)'
+- '     z_np = x_np * y'
+- '     return torch.from_numpy(z_np).to(x.device)'
+- ' @numpy_mul.register_fake'
+- ' def _(x, y):'
+- '     return torch.empty_like(x)'
+- ' def setup_context(ctx, inputs, output):'
+- '     y, = inputs'
+- '     ctx.y = y'
+- ' def backward(ctx, grad):'
+- '     return grad * ctx.y, None'
+- ' numpy_mul.register_autograd(backward, setup_context=setup_context)'
+- ' sample_inputs = ['
+- '     (torch.randn(3), 3.14),'
+- '     (torch.randn(2, 3, device=''cuda''), 2.718),'
+- '     (torch.randn(1, 10, requires_grad=True), 1.234),'
+- '     (torch.randn(64, 64, device=''cuda'', requires_grad=True), 90.18),'
+- ' ]'
+- ' for args in sample_inputs:'
+- '     torch.library.opcheck(numpy_mul, args)'
+8 api_shape: null

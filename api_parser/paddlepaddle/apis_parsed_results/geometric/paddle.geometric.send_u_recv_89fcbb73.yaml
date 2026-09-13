@@ -1,0 +1,40 @@
+2 api_name: paddle.geometric.send_u_recv
+3 api_description: Performs graph message passing by sending node or edge features
+  along graph structure and then receiving and aggregating the propagated messages.
+4 api_signature: paddle.geometric.send_u_recv(x,src_index,dst_index,reduce_op)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor to be communicated, supporting float32, float64, int32, int64, and
+    float16 on GPU.
+- src_index: 1-D tensor of source indices, supporting int32 and int64.
+- dst_index: 1-D tensor of destination indices with the same shape as `src_index`,
+    supporting int32 and int64.
+- reduce_op: Reduction operation to apply, such as sum, mean, max, or min, with sum
+    as the default.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([[0, 2, 3], [1, 4, 5], [2, 6, 7]], dtype="float32")
+- indexes = paddle.to_tensor([[0, 1], [1, 2], [2, 1], [0, 0]], dtype="int32")
+- src_index, dst_index = indexes[:, 0], indexes[:, 1]
+- out = paddle.geometric.send_u_recv(x, src_index, dst_index, reduce_op="sum")
+- print(out.numpy())
+- '[[ 0. 2. 3.]'
+- '[ 2. 8. 10.]'
+- '[ 1. 4. 5.]]'
+- x = paddle.to_tensor([[0, 2, 3], [1, 4, 5], [2, 6, 7]], dtype="float32")
+- indexes = paddle.to_tensor([[0, 1], [2, 1], [0, 0]], dtype="int32")
+- src_index, dst_index = indexes[:, 0], indexes[:, 1]
+- out_size = paddle.max(dst_index) + 1
+- out = paddle.geometric.send_u_recv(x, src_index, dst_index, reduce_op="sum", out_size=out_size)
+- print(out.numpy())
+- '[[ 0. 2. 3.]'
+- '[ 2. 8. 10.]]'
+- x = paddle.to_tensor([[0, 2, 3], [1, 4, 5], [2, 6, 7]], dtype="float32")
+- indexes = paddle.to_tensor([[0, 1], [2, 1], [0, 0]], dtype="int32")
+- src_index, dst_index = indexes[:, 0], indexes[:, 1]
+- out = paddle.geometric.send_u_recv(x, src_index, dst_index, reduce_op="sum")
+- print(out.numpy())
+- '[[ 0. 2. 3.]'
+- '[ 2. 8. 10.]'
+- '[ 0. 0. 0.]]'
+8 api_shape: {}

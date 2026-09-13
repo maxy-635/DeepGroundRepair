@@ -1,0 +1,12 @@
+2 api_name: tensorflow.vectorized_map
+3 api_description: Applies a function to each element in the batch dimension of `elems`
+  in parallel, using graph vectorization for faster execution than `tf.map_fn` at
+  the cost of higher memory use.
+4 api_signature: tf.vectorized_map(fn,elems)
+5 api_details: ''
+6 api_parameters:
+- fn: Defines the function to apply independently to each slice of the input elements.
+- elems: Provides the batched tensor or nested tensors to be unpacked along the first
+    dimension and fed to `fn` slice by slice.
+7 api_usage_example: null
+8 api_shape: ''

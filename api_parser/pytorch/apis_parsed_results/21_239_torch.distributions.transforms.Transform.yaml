@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.transforms.Transform
+3 api_description: Abstract base for invertible transforms that map samples between
+  spaces, provide forward and inverse operations, and compute log-det Jacobians for
+  use in transformed distributions.
+4 api_signature: '"torch.distributions.transforms.Transform(cache_size)"'
+5 api_details: ''
+6 api_parameters:
+- cache_size: Controls how many recent values the transform caches; 0 disables caching
+    and 1 caches only the latest value.
+7 api_usage_example:
+- y = t(x)
+- 't.log_abs_det_jacobian(x, y).backward()  # x will receive gradients.'
+8 api_shape: null

@@ -1,0 +1,19 @@
+2 api_name: paddle.complex
+3 api_description: Creates a complex tensor from separate real and imaginary components.
+4 api_signature: paddle.complex(real,imag,out)
+5 api_details: ''
+6 api_parameters:
+- real: Provides the real part of the complex tensor as a float32 or float64 tensor.
+- imag: Provides the imaginary part of the complex tensor and must match the real
+    tensor’s data type.
+- out: Stores the resulting output tensor.
+7 api_usage_example:
+- import paddle
+- x = paddle.arange(2, dtype=paddle.float32).unsqueeze(-1)
+- y = paddle.arange(3, dtype=paddle.float32)
+- z = paddle.complex(x, y)
+- print(z)
+- Tensor(shape=[2, 3], dtype=complex64, place=Place(cpu), stop_gradient=True,
+- '[[0j    , 1j    , 2j    ],'
+- '[(1+0j), (1+1j), (1+2j)]])'
+8 api_shape: {}

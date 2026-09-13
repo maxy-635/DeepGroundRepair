@@ -1,0 +1,9 @@
+2 api_name: tensorflow.raw_ops.GuaranteeConst
+3 api_description: Marks a value tensor as constant so TensorFlow can optimize it,
+  while returning the input unchanged.
+4 api_signature: tf.raw_ops.GuaranteeConst(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be treated as constant by the op.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: torch.kaiser_window
+3 api_description: Creates a Kaiser window of the specified length using the beta
+  shape parameter.
+4 api_signature: torch.kaiser_window(window_length,beta)
+5 api_details: ''
+6 api_parameters:
+- window_length: Sets the number of samples in the Kaiser window.
+- beta: Controls the window’s shape, especially the tradeoff between main-lobe width
+    and side-lobe attenuation.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.TensorShape
+3 api_description: Represents a tensor’s static shape, including fully specified or
+  partially unknown dimensions, and is used to describe and compare shapes during
+  eager execution and tf.function tracing.
+4 api_signature: tf.TensorShape
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- cf2 = get_dynamic_shape.get_concrete_function(tf.TensorSpec(shape=None))
+- cf2(tf.constant([[[[[1., 0]]]]])).numpy()
+8 api_shape: ''

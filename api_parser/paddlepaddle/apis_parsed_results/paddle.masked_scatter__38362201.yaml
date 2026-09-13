@@ -1,0 +1,8 @@
+2 api_name: paddle.masked_scatter_
+3 api_description: In-place version of masked_scatter that fills the tensor’s masked
+  positions with values from x.
+4 api_signature: paddle.masked_scatter_(x,mask,value)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

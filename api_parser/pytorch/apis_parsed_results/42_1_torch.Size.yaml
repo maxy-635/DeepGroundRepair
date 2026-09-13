@@ -1,0 +1,12 @@
+2 api_name: torch.Size
+3 api_description: Counts how many times a given value appears in a tensor.
+4 api_signature: torch.Size(iterable)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' x=torch.ones(10, 10)'
+- ' s=x.size()'
+- ' s'
+- ' s.numel()'
+- ' x.numel() == s.numel()'
+8 api_shape: null

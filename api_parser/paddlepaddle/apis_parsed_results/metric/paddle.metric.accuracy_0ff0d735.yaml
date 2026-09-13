@@ -1,0 +1,19 @@
+2 api_name: paddle.metric.accuracy
+3 api_description: Computes classification accuracy by measuring how often predicted
+  labels match the true labels.
+4 api_signature: paddle.metric.accuracy(input,label,k)
+5 api_details: ''
+6 api_parameters:
+- input: Provides the model’s prediction scores used to compute accuracy.
+- label: Supplies the true class labels to compare against the predictions.
+- k: Sets how many of the top predicted classes to consider when checking accuracy.
+7 api_usage_example:
+- import paddle
+- predictions = paddle.to_tensor([[0.2, 0.1, 0.4, 0.1, 0.1], [0.2, 0.3, 0.1, 0.15,
+  0.25]], dtype='float32')
+- label = paddle.to_tensor([[2], [0]], dtype="int64")
+- result = paddle.metric.accuracy(input=predictions, label=label, k=1)
+- print(result)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.50000000)
+8 api_shape: {}

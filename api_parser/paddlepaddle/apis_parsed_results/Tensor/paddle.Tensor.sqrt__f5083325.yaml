@@ -1,0 +1,8 @@
+2 api_name: paddle.Tensor.sqrt_
+3 api_description: Computes the square root of each element in the tensor in place,
+  modifying the input tensor directly.
+4 api_signature: paddle.Tensor.sqrt_(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,9 @@
+2 api_name: paddle.nn.functional.gelu
+3 api_description: The paddle.nn.functional.gelu API applies the Gaussian Error Linear
+  Unit (GELU) activation function to the input tensor, which enables smoother gradients
+  and improved model performance compared to ReLU.
+4 api_signature: paddle.nn.functional.gelu(x,approximate)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: null

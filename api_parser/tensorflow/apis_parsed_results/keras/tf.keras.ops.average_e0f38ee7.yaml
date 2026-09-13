@@ -1,0 +1,22 @@
+2 api_name: tensorflow.keras.ops.average
+3 api_description: Computes the weighted average of input values along a specified
+  axis, using optional weights.
+4 api_signature: tf.keras.ops.average(x,axis,weights)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor of values to average.
+- axis: The axis to average over, or all elements if `None`.
+- weights: Optional weights that scale each value when computing the average.
+7 api_usage_example:
+- data = keras.ops.arange(6).reshape((3, 2))
+- data
+- keras.ops.average(
+- '    data,'
+- '    axis=1,'
+- '    weights=keras.ops.array([1./4, 3./4])'
+- )
+- keras.ops.average(
+- '    data,'
+- '    weights=keras.ops.array([1./4, 3./4])'
+- )
+8 api_shape: ''

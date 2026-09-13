@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BatchMatrixSolveLs
+3 api_description: Solves a batch of linear least-squares problems for matrices A
+  and B, optionally using fast QR-based methods, and returns the solution X for each
+  batch.
+4 api_signature: tf.raw_ops.BatchMatrixSolveLs(matrix,rhs,l2_regularizer)
+5 api_details: ''
+6 api_parameters:
+- matrix: The batch of coefficient matrices `A` used in the least-squares solve.
+- rhs: The batch of right-hand-side matrices or vectors to be fit against `matrix`.
+- l2_regularizer: The L2 regularization strength used to stabilize the least-squares
+    solution.
+7 api_usage_example: null
+8 api_shape: ''

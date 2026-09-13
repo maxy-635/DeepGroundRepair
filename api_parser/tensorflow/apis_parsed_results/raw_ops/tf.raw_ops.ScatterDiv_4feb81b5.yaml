@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ScatterDiv
+3 api_description: Divides selected variable elements by sparse update values at the
+  given indices.
+4 api_signature: tf.raw_ops.ScatterDiv(ref,indices,updates)
+5 api_details: ''
+6 api_parameters:
+- ref: The mutable tensor to be updated in place by dividing selected elements by
+    the provided values.
+- indices: The index tensor that specifies which entries along the first dimension
+    of `ref` should be divided.
+- updates: The tensor of divisor values applied to the corresponding स्थानs in `ref`.
+7 api_usage_example: null
+8 api_shape: ''

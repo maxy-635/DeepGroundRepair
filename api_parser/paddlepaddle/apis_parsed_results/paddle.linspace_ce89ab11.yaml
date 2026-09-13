@@ -1,0 +1,31 @@
+2 api_name: paddle.linspace
+3 api_description: Generates a fixed number of evenly spaced values over a specified
+  interval without gradient computation.
+4 api_signature: paddle.linspace(start,stop,num,dtype,name,*,out,device,requires_grad)
+5 api_details: ''
+6 api_parameters:
+- start: Specifies the beginning of the value range.
+- stop: Specifies the end of the value range.
+- num: Specifies how many evenly spaced values to generate.
+- dtype: Sets the data type of the output tensor.
+- name: Assigns an optional name to the operation.
+- out: Provides an optional tensor to store the result.
+- device: Chooses the device where the output tensor is created.
+- requires_grad: Enables gradient tracking for the output tensor.
+7 api_usage_example:
+- import paddle
+- data = paddle.linspace(0, 10, 5, 'float32')
+- print(data.numpy())
+- '[0. 2.5 5. 7.5 10.]'
+- data = paddle.linspace(0, 10, 1, 'float32')
+- print(data.numpy())
+- '[0.]'
+- '# Using device parameter'
+- data = paddle.linspace(0, 10, 5, device='cpu')
+- print(data.numpy())
+- '[0. 2.5 5. 7.5 10.]'
+- '# Using requires_grad parameter'
+- data = paddle.linspace(0, 10, 5, requires_grad=True)
+- print(data.stop_gradient)
+- 'False'
+8 api_shape: {}

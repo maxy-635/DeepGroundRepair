@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.initializers.LecunNormal
+3 api_description: Initializes weights by drawing values from a truncated normal distribution
+  centered at 0 with standard deviation sqrt(1 / fan_in), where fan_in is the number
+  of input units.
+4 api_signature: tf.keras.initializers.LecunNormal(seed)
+5 api_details: ''
+6 api_parameters:
+- seed: Controls the random seed used to make the initializer's output deterministic,
+    or to generate different values across calls when using a `SeedGenerator`.
+7 api_usage_example:
+- '# Usage in a Keras layer:'
+- initializer = LecunNormal()
+- layer = Dense(3, kernel_initializer=initializer)
+8 api_shape: ''

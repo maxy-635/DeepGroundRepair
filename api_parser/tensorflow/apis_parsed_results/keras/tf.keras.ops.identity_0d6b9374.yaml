@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.ops.identity
+3 api_description: Returns a square tensor with ones on the main diagonal and zeros
+  elsewhere.
+4 api_signature: tf.keras.ops.identity(n)
+5 api_details: ''
+6 api_parameters:
+- n: Specifies the size of the square identity tensor by setting both its rows and
+    columns.
+7 api_usage_example: null
+8 api_shape: ''

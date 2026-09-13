@@ -1,0 +1,8 @@
+2 api_name: torch.sym_max
+3 api_description: Returns the maximum of two int/float values in a SymInt-safe way
+  without branching on a < b, promoting to float when any input is float.
+4 api_signature: torch.sym_max(a,b)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

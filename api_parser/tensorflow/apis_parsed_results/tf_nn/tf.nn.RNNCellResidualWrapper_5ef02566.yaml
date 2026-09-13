@@ -1,0 +1,20 @@
+2 api_name: tensorflow.nn.RNNCellResidualWrapper
+3 api_description: RNNCellResidualWrapper is a TensorFlow wrapper for RNN cells that
+  adds the cell inputs to its outputs, now deprecated.
+4 api_signature: tf.nn.RNNCellResidualWrapper(cell)
+5 api_details: ''
+6 api_parameters:
+- cell: An instance of RNNCell that the residual wrapper will wrap, adding residual
+    connections to it.
+7 api_usage_example:
+- layer_a = tf.keras.layers.Dense(1,
+- '  kernel_initializer=tf.constant_initializer(1.))'
+- a_out = layer_a(tf.convert_to_tensor([[1., 2., 3.]]))
+- layer_a.get_weights()
+- layer_b = tf.keras.layers.Dense(1,
+- '  kernel_initializer=tf.constant_initializer(2.))'
+- b_out = layer_b(tf.convert_to_tensor([[10., 20., 30.]]))
+- layer_b.get_weights()
+- layer_b.set_weights(layer_a.get_weights())
+- layer_b.get_weights()
+8 api_shape: ''

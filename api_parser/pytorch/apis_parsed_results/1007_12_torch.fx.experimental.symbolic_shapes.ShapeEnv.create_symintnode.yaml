@@ -1,0 +1,10 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.create_symintnode
+3 api_description: Creates a SymInt representing a symbolic expression, enabling symbolic
+  shape values to be used like integers.
+4 api_signature: create_symintnode(sym,hint,source)
+5 api_details: ''
+6 api_parameters:
+- param1: summary1
+- param2: summary2
+7 api_usage_example: null
+8 api_shape: null

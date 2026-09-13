@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.FakeParam
+3 api_description: Placeholder op for If branch functions that does not produce a
+  valid runtime output and must be removed or kept unused.
+4 api_signature: tf.raw_ops.FakeParam(dtype,shape)
+5 api_details: ''
+6 api_parameters:
+- dtype: Specifies the data type of the output tensor.
+- shape: Specifies the expected output shape for inference purposes, possibly as a
+    partial shape.
+7 api_usage_example: null
+8 api_shape: ''

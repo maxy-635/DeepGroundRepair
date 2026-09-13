@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.optimizers.Adafactor
+3 api_description: Adafactor is a memory-efficient optimizer for training models,
+  especially in NLP, that updates weights using factored second-moment estimates to
+  reduce accumulator storage, with separate handling for the last two dimensions of
+  higher-rank gradients.
+4 api_signature: tf.keras.optimizers.Adafactor(learning_rate,weight_decay,name)
+5 api_details: ''
+6 api_parameters:
+- learning_rate: Controls the step size used to update model weights during optimization.
+- name: Sets the optimizer’s name, which is used to label its internal accumulator
+    weights.
+- weight_decay: Applies regularization by decaying model weights during optimization
+    when enabled.
+7 api_usage_example: null
+8 api_shape: ''

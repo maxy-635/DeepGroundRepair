@@ -1,0 +1,13 @@
+2 api_name: torch.signal.windows.hann
+3 api_description: Returns a Hann window tensor with values shaped by a cosine taper,
+  commonly used for smooth windowing in signal processing.
+4 api_signature: torch.signal.windows.hann(M,sym)
+5 api_details: ''
+6 api_parameters:
+- M: Specifies the number of points in the Hann window to generate.
+7 api_usage_example:
+- ' # Generates a symmetric Hann window.'
+- ' torch.signal.windows.hann(10)'
+- ' # Generates a periodic Hann window.'
+- ' torch.signal.windows.hann(10, sym=False)'
+8 api_shape: null

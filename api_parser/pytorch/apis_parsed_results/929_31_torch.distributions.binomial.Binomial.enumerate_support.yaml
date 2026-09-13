@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.binomial.Binomial.enumerate_support
+3 api_description: Returns all values in the binomial distribution’s discrete support,
+  i.e. the possible counts of successes from 0 to total_count.
+4 api_signature: enumerate_support(expand)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

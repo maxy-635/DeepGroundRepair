@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.LookupTableExportV2
+3 api_description: Exports all keys and values currently stored in the lookup table.
+4 api_signature: tf.raw_ops.LookupTableExportV2(table_handle,Tkeys,Tvalues)
+5 api_details: ''
+6 api_parameters:
+- table_handle: Resource handle identifying the lookup table to export.
+- Tkeys: Data type of the exported table keys.
+- Tvalues: Data type of the exported table values.
+7 api_usage_example: null
+8 api_shape: ''

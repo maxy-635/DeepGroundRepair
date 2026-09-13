@@ -1,0 +1,13 @@
+2 api_name: paddle.distributed.get_backend
+3 api_description: Returns the backend name used by a specified distributed process
+  group.
+4 api_signature: paddle.distributed.get_backend(group)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.distributed.init_parallel_env()
+- paddle.distributed.get_backend()
+- NCCL
+8 api_shape: {}

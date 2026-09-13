@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.regularizers.L1L2
+3 api_description: Applies both L1 and L2 penalties to a tensor, adding regularization
+  loss based on the sum of absolute values and the sum of squared values.
+4 api_signature: tf.keras.regularizers.L1L2(l1,l2)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- dense = Dense(3, kernel_regularizer='l1_l2')
+8 api_shape: ''

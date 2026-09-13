@@ -1,0 +1,15 @@
+2 api_name: paddle.fft.ifftn
+3 api_description: Computes the N-dimensional inverse discrete Fourier transform,
+  converting frequency-domain input back into the spatial/time domain.
+4 api_signature: paddle.fft.ifftn(x,s,axes,norm,out)
+5 api_details: ''
+6 api_parameters:
+- x: The complex input tensor to transform.
+- s: The output shape for each transformed axis, with smaller sizes cropping and larger
+    sizes zero-padding the input.
+- axes: The axes along which to compute the inverse FFT, defaulting to the last `len(s)`
+    axes or all axes if `s` is omitted.
+- norm: The normalization mode that controls scaling between forward and inverse transforms.
+- out: The tensor that receives the output of the operation.
+7 api_usage_example: []
+8 api_shape: {}

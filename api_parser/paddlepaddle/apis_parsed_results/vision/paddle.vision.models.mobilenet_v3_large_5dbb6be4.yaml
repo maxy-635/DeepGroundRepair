@@ -1,0 +1,11 @@
+2 api_name: paddle.vision.models.mobilenet_v3_large
+3 api_description: Builds a MobileNetV3 Large image classification backbone from the
+  Searching for MobileNetV3 architecture, providing a lightweight, efficient convolutional
+  network for visual feature extraction and prediction.
+4 api_signature: paddle.vision.models.mobilenet_v3_large(pretrained,scale)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet-pretrained weights.
+- scale: Adjusts the channel width multiplier used throughout the network.
+7 api_usage_example: []
+8 api_shape: {}

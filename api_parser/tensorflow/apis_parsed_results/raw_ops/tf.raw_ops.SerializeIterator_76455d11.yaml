@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SerializeIterator
+3 api_description: Serializes an iterator resource handle into a variant tensor so
+  it can be saved, transferred, or later restored.
+4 api_signature: tf.raw_ops.SerializeIterator(resource_handle,external_state_policy)
+5 api_details: ''
+6 api_parameters:
+- resource_handle: Identifies the iterator resource to serialize.
+- external_state_policy: Controls how any external state is handled during serialization,
+    with 0 as the default policy.
+7 api_usage_example: null
+8 api_shape: ''

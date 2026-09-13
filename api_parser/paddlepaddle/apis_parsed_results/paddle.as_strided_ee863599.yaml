@@ -1,0 +1,14 @@
+2 api_name: paddle.as_strided
+3 api_description: Create a view of a tensor with a specified shape, strides, and
+  offset into the original data.
+4 api_signature: paddle.as_strided(x,shape,stride,offset)
+5 api_details: ''
+6 api_parameters:
+- x: The input N-D tensor whose underlying data is reinterpreted into a new strided
+    view.
+- shape: The desired output tensor shape, with each dimension specified as an integer.
+- stride: The stride for each dimension, defining how many elements to step through
+    the input data.
+- offset: The starting offset from the input tensor’s underlying storage holder.
+7 api_usage_example: []
+8 api_shape: {}

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ConcatV2
+3 api_description: Concatenates a list of tensors along a specified axis into a single
+  tensor.
+4 api_signature: tf.raw_ops.ConcatV2(values,axis)
+5 api_details: ''
+6 api_parameters:
+- values: A list of at least two tensors of the same type, rank, and compatible shapes
+    to be concatenated.
+- axis: A scalar int32 or int64 tensor that specifies which dimension to concatenate
+    along.
+7 api_usage_example: null
+8 api_shape: ''

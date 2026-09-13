@@ -1,0 +1,20 @@
+2 api_name: tensorflow.raw_ops.GeneratorDataset
+3 api_description: Creates a dataset by repeatedly calling a function to generate
+  elements, producing dataset items on demand.
+4 api_signature: tf.raw_ops.GeneratorDataset(init_func,next_func,finalize_func,output_types,output_shapes,name)
+5 api_details: ''
+6 api_parameters:
+- init_func: Defines the initialization logic used to set up the dataset generator
+    state before iteration begins.
+- next_func: Defines the function that produces the next element or batch from the
+    generator during iteration.
+- finalize_func: Defines the cleanup logic that runs after iteration ends to release
+    generator resources or finalize state.
+- output_types: Specifies the data types of the dataset elements that the generator
+    will emit.
+- output_shapes: Specifies the expected shapes of the dataset elements that the generator
+    will emit.
+- name: Optionally assigns a name to the operation for easier identification in the
+    graph.
+7 api_usage_example: null
+8 api_shape: ''

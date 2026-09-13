@@ -1,0 +1,12 @@
+2 api_name: tensorflow.debugging.assert_equal
+3 api_description: Checks that x and y are equal element-wise, with broadcasting allowed,
+  and raises InvalidArgumentError with a message and value summaries if any mismatch
+  is found.
+4 api_signature: tf.debugging.assert_equal(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The tensor whose values are checked for equality.
+- y: The tensor to compare against `x`, broadcastable to `x` and the same dtype.
+7 api_usage_example:
+- check_size(tf.ones([2, 3], tf.float32))
+8 api_shape: ''

@@ -1,0 +1,12 @@
+2 api_name: torch.special.ndtr
+3 api_description: Computes the standard normal cumulative distribution function (CDF)
+  elementwise, returning the probability mass from negative infinity up to each input
+  value.
+4 api_signature: torch.special.ndtr(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are transformed by the standard normal cumulative
+    distribution function.
+7 api_usage_example:
+- ' torch.special.ndtr(torch.tensor([-3., -2, -1, 0, 1, 2, 3]))'
+8 api_shape: null

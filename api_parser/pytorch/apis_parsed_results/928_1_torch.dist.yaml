@@ -1,0 +1,19 @@
+2 api_name: torch.dist
+3 api_description: Computes the p-norm distance between two tensors by returning the
+  norm of their elementwise difference.
+4 api_signature: torch.dist(input,other,p)
+5 api_details: ''
+6 api_parameters:
+- input: The first tensor whose distance to `other` is computed.
+- other: The second tensor used as the reference for the distance calculation.
+- p: The norm degree used to compute the distance between the two tensors.
+7 api_usage_example:
+- ' x = torch.randn(4)'
+- ' x'
+- ' y = torch.randn(4)'
+- ' y'
+- ' torch.dist(x, y, 3.5)'
+- ' torch.dist(x, y, 3)'
+- ' torch.dist(x, y, 0)'
+- ' torch.dist(x, y, 1)'
+8 api_shape: null

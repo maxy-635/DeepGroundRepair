@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.empty
+3 api_description: Creates an uninitialized tensor with the given shape and dtype,
+  matching NumPy's empty behavior.
+4 api_signature: tf.experimental.numpy.empty(shape)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.random.create_rng_state
+3 api_description: Creates a random number generator state from an integer seed or
+  a seed vector.
+4 api_signature: tf.random.create_rng_state(seed)
+5 api_details: ''
+6 api_parameters:
+- seed: Sets the initial random seed as either an integer or a 1-D NumPy array.
+7 api_usage_example:
+- tf.random.create_rng_state(
+- '    1234, "philox")'
+- tf.random.create_rng_state(
+- '    [12, 34], "threefry")'
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.data.experimental.group_by_reducer
+3 api_description: Groups dataset elements by a key and applies a reducer to each
+  group, using init, reduce, and finalize functions to produce one output per key.
+4 api_signature: tf.data.experimental.group_by_reducer(key_func,reducer)
+5 api_details: ''
+6 api_parameters:
+- key_func: Maps each input element to an int64 key used to group elements for reduction.
+- reducer: Defines how grouped elements are initialized, accumulated, and finalized
+    during reduction.
+7 api_usage_example: null
+8 api_shape: ''

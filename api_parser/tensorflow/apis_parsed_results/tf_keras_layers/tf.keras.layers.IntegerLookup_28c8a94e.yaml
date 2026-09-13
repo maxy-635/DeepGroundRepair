@@ -1,0 +1,27 @@
+2 api_name: tensorflow.keras.layers.IntegerLookup
+3 api_description: The tf.keras.layers.IntegerLookup layer maps arbitrary integer
+  input tokens to indexed integer outputs via a vocabulary lookup, allowing for encoding
+  options such as 'int', 'multi_hot', 'count', or 'tf_idf'. It can learn a vocabulary
+  from data, handle out-of-vocabulary tokens, and supports masking. The output indices
+  are arranged contiguously, with fixed positions for mask and OOV tokens.
+4 api_signature: tf.keras.layers.IntegerLookup(max_tokens, num_oov_indices, oov_token,
+  vocabulary)
+5 api_details: ''
+6 api_parameters:
+- max_tokens: Limits the vocabulary size for the layer, including OOV and mask tokens,
+    and defaults to None for no cap.
+- num_oov_indices: Specifies the count of out-of-vocabulary tokens, with a default
+    of 1, affecting how OOV inputs are handled.
+- oov_token: Defines the token returned for OOV indices when invert is True, with
+    a default value of -1.
+- vocabulary: Allows the specification of an integer array or a file path for the
+    vocabulary, eliminating the need to adapt the layer if provided.
+7 api_usage_example:
+- vocab = [12, 36, 1138, 42]
+- data = np.array([[12, 1138, 42], [42, 1000, 36]])
+- layer = IntegerLookup(vocabulary=vocab)
+- i_layer = IntegerLookup(
+- '    vocabulary=layer.get_vocabulary(), invert=True)'
+- int_data = layer(data)
+- i_layer(int_data)
+8 api_shape: null

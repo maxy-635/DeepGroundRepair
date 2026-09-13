@@ -1,0 +1,12 @@
+2 api_name: tensorflow.train.CheckpointOptions
+3 api_description: Configures how a TensorFlow checkpoint is saved or restored, such
+  as controlling where I/O operations run.
+4 api_signature: tf.train.CheckpointOptions(enable_async,experimental_io_device)
+5 api_details: ''
+6 api_parameters:
+- experimental_io_device: Specifies the TensorFlow device used to access the filesystem
+    for checkpoint I/O in distributed settings.
+- enable_async: Enables asynchronous checkpoint writing so training can continue while
+    checkpoint files are saved in the background.
+7 api_usage_example: null
+8 api_shape: ''

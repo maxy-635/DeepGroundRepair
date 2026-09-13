@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.functional.selu
+3 api_description: The paddle.nn.functional.selu API applies the Scaled Exponential
+  Linear Unit (SELU) activation function to input data, which helps in maintaining
+  the mean and variance of the input, promoting self-normalizing neural networks.
+4 api_signature: paddle.nn.functional.selu(x,scale,alpha)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor which must have a data type of either float32 or float64.
+- scale: A scaling factor for the selu function, which must be greater than 1.0; default
+    is approximately 1.0507.
+- alpha: A parameter for the selu function that must be zero or greater, with a default
+    value of approximately 1.6732.
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.to_tensor([[0.0, 1.0],[2.0, 3.0]])
+- out = F.selu(x)
+- print(out)
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[0.        , 1.05070102],'
+- '[2.10140204, 3.15210295]])'
+8 api_shape: null

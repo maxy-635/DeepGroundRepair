@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.Unbatch
+3 api_description: Splits one element back out of a batched Tensor, coordinating with
+  matching Unbatch calls to wait for or finalize the shared batch and return each
+  instance’s corresponding output.
+4 api_signature: tf.raw_ops.Unbatch(batched_tensor,batch_index,id,timeout_micros)
+5 api_details: ''
+6 api_parameters:
+- batched_tensor: The input tensor containing batched elements to be unbatched.
+- batch_index: An int64 tensor that indicates the batch position for each element.
+- id: An int64 tensor that identifies the unbatching stream or request.
+- timeout_micros: The maximum time to wait for an element, in microseconds.
+7 api_usage_example: null
+8 api_shape: ''

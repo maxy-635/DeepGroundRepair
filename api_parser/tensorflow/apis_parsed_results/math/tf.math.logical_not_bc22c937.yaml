@@ -1,0 +1,10 @@
+2 api_name: tensorflow.math.logical_not
+3 api_description: 'Element-wise logical negation: returns the boolean NOT of each
+  input value.'
+4 api_signature: tf.math.logical_not(x)
+5 api_details: ''
+6 api_parameters:
+- x: A boolean tensor whose values are logically negated.
+7 api_usage_example:
+- tf.math.logical_not(tf.constant([True, False]))
+8 api_shape: ''

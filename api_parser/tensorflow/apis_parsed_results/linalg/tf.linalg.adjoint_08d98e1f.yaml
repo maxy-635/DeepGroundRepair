@@ -1,0 +1,10 @@
+2 api_name: tensorflow.linalg.adjoint
+3 api_description: Returns the conjugate transpose of a tensor by swapping its last
+  two dimensions and conjugating its elements.
+4 api_signature: tf.linalg.adjoint(matrix)
+5 api_details: ''
+6 api_parameters:
+- matrix: The square input tensor whose conjugate transpose is returned; it must have
+    shape [..., M, M] and be one of the supported real or complex floating-point types.
+7 api_usage_example: null
+8 api_shape: ''

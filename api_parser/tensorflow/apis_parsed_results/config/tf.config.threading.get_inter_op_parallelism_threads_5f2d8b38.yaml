@@ -1,0 +1,8 @@
+2 api_name: tensorflow.config.threading.get_inter_op_parallelism_threads
+3 api_description: Returns the number of threads TensorFlow uses to run independent
+  operations in parallel; 0 lets the system choose.
+4 api_signature: tf.config.threading.get_inter_op_parallelism_threads()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

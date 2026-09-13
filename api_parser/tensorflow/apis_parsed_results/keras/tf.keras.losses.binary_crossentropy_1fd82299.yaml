@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.losses.binary_crossentropy
+3 api_description: Computes the binary crossentropy loss between true labels and predicted
+  probabilities for binary classification.
+4 api_signature: tf.keras.losses.binary_crossentropy(y_true,y_pred)
+5 api_details: ''
+6 api_parameters:
+- y_true: Provides the ground-truth binary labels used to compute the loss.
+- y_pred: Provides the model’s predicted values that are compared against the ground
+    truth.
+7 api_usage_example:
+- y_true = [[0, 1], [0, 0]]
+- y_pred = [[0.6, 0.4], [0.4, 0.6]]
+- loss = keras.losses.binary_crossentropy(y_true, y_pred)
+- assert loss.shape == (2,)
+- loss
+8 api_shape: ''

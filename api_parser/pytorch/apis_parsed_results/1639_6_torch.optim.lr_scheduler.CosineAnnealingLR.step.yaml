@@ -1,0 +1,10 @@
+2 api_name: torch.optim.lr_scheduler.CosineAnnealingLR.step
+3 api_description: Advance the cosine annealing learning-rate schedule by one step,
+  updating optimizer learning rates toward the configured minimum.
+4 api_signature: step(epoch)
+5 api_details: ''
+6 api_parameters:
+- epoch: Optional deprecated epoch index that, if provided, sets `last_epoch` to that
+    value and uses the closed-form learning rate calculation when available.
+7 api_usage_example: null
+8 api_shape: null

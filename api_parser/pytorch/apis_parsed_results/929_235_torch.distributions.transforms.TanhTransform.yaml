@@ -1,0 +1,16 @@
+2 api_name: torch.distributions.transforms.TanhTransform
+3 api_description: Applies the tanh function elementwise to map real-valued inputs
+  to values in (-1, 1), providing a smooth, invertible transform for distribution
+  parameterization.
+4 api_signature: TanhTransform(cache_size)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ComposeTransform(
+- '    ['
+- '        AffineTransform(0.0, 2.0),'
+- '        SigmoidTransform(),'
+- '        AffineTransform(-1.0, 2.0),'
+- '    ]'
+- )
+8 api_shape: null

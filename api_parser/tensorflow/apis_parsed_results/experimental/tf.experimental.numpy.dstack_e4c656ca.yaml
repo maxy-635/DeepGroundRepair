@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.dstack
+3 api_description: Stacks a sequence of arrays depth-wise (along the third axis),
+  after promoting 1D and 2D inputs to have at least three dimensions.
+4 api_signature: tf.experimental.numpy.dstack(tup)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

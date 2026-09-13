@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorListConcat
+3 api_description: Concatenates all tensors in a tensor list along the first dimension,
+  requiring matching shapes except for that dimension, and returns the concatenated
+  tensor plus the original first-dimension lengths for gradient computation.
+4 api_signature: tf.raw_ops.TensorListConcat(input_handle,element_dtype)
+5 api_details: ''
+6 api_parameters:
+- input_handle: The variant tensor that holds the TensorList to be concatenated.
+- element_dtype: The data type of the tensor elements stored in the TensorList.
+7 api_usage_example: null
+8 api_shape: ''

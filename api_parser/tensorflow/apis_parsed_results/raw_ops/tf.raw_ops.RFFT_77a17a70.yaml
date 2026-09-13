@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.RFFT
+3 api_description: Computes the 1D FFT of a real-valued signal along the innermost
+  dimension, returning only the unique nonnegative-frequency components, with the
+  input cropped or zero-padded to match fft_length.
+4 api_signature: tf.raw_ops.RFFT(input,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The real-valued input tensor to transform with the FFT.
+- fft_length: A 1-element int32 tensor specifying the length of the FFT to compute.
+7 api_usage_example: null
+8 api_shape: ''

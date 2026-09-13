@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.EncodePng
+3 api_description: Encodes a 3-D uint8 or uint16 image tensor as a PNG, with channel
+  count determining grayscale, RGB, or RGBA output.
+4 api_signature: tf.raw_ops.EncodePng(image)
+5 api_details: ''
+6 api_parameters:
+- image: The image tensor to encode as a PNG, given as a 3-D `uint8` or `uint16` array
+    shaped `[height, width, channels]`.
+7 api_usage_example: null
+8 api_shape: ''

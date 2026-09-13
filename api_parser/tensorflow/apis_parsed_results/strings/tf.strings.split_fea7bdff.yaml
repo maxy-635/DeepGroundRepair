@@ -1,0 +1,12 @@
+2 api_name: tensorflow.strings.split
+3 api_description: Splits each input string on a separator into tokens and returns
+  them as a RaggedTensor, ignoring empty tokens.
+4 api_signature: tf.strings.split(input,sep)
+5 api_details: ''
+6 api_parameters:
+- input: The string tensor whose elements will be split.
+- sep: The delimiter string used to split each input string.
+7 api_usage_example:
+- tf.strings.split('hello world').numpy()
+- tf.strings.split(['hello world', 'a b c'])
+8 api_shape: ''

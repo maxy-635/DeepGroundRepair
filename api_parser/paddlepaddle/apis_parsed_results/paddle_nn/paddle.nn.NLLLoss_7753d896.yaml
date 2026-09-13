@@ -1,0 +1,27 @@
+2 api_name: paddle.nn.NLLLoss
+3 api_description: paddle.nn.NLLLoss computes the negative log likelihood loss for
+  classification tasks with multiple classes.
+4 api_signature: paddle.nn.NLLLoss(ignore_index,reduction)
+5 api_details: ''
+6 api_parameters:
+- ignore_index: This parameter specifies a target value that should be ignored in
+    the computation of the input gradient.
+- reduction: This parameter determines how the loss is averaged, with options 'none',
+    'mean', or 'sum', affecting whether no reduction, mean reduction, or sum reduction
+    is applied.
+7 api_usage_example:
+- import paddle
+- nll_loss = paddle.nn.loss.NLLLoss()
+- log_softmax = paddle.nn.LogSoftmax(axis=1)
+- input = paddle.to_tensor([[0.88103855, 0.9908683 , 0.6226845 ],
+- '                          [0.53331435, 0.07999352, 0.8549948 ],'
+- '                          [0.25879037, 0.39530203, 0.698465  ],'
+- '                          [0.73427284, 0.63575995, 0.18827209],'
+- '                          [0.05689114, 0.0862954 , 0.6325046 ]], "float32")'
+- log_out = log_softmax(input)
+- label = paddle.to_tensor([0, 2, 1, 1, 0], "int64")
+- result = nll_loss(log_out, label)
+- print(result)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.07202101)
+8 api_shape: null

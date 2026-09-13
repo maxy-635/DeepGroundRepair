@@ -1,0 +1,23 @@
+2 api_name: torch.nn.functional.fold
+3 api_description: torch.nn.functional.fold reconstructs a large tensor from sliding
+  local blocks by specifying output size, kernel size, and stride.
+4 api_signature: torch.nn.functional.fold(input,output_size,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- output_size: Specifies the spatial dimensions (height, width) of the output tensor
+    after folding.
+- kernel_size: Defines the size of the sliding blocks (height, width) that are folded
+    into the output tensor.
+- stride: Determines the step size (height, width) between consecutive sliding blocks.
+- padding: Indicates the number of pixels added to each side of the input tensor before
+    folding.
+- dilation: Specifies the spacing between elements within each sliding block (height,
+    width).
+- input: The input tensor containing the unfurled (unfolded) data to be folded back
+    into the output tensor.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in \times \prod(\text{kernel_size}), L)
+  output tensor shape: (N, Channel_out, \text{output_size}[0], \text{output_size}[1],
+    \dots)
+  tensor shape transform formulas: {}

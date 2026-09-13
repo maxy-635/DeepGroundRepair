@@ -1,0 +1,8 @@
+2 api_name: torch.overrides.resolve_name
+3 api_description: Returns a human-readable name for a function passed to `__torch_function__`.
+4 api_signature: '"torch.overrides.resolve_name(f)"'
+5 api_details: ''
+6 api_parameters:
+- f: The function whose fully qualified name should be resolved.
+7 api_usage_example: null
+8 api_shape: null

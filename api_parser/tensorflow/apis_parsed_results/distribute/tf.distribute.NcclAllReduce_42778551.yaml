@@ -1,0 +1,11 @@
+2 api_name: tensorflow.distribute.NcclAllReduce
+3 api_description: Cross-device all-reduce for distributed training using NVIDIA NCCL,
+  with batching for efficient tensor transfer and fallback to ReductionToOneDevice
+  for non-all-reduce reductions.
+4 api_signature: tf.distribute.NcclAllReduce(num_packs)
+5 api_details: ''
+6 api_parameters:
+- num_packs: Specifies how many packs to split values into for all-reduce communication,
+    with 0 meaning no packing.
+7 api_usage_example: null
+8 api_shape: ''

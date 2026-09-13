@@ -1,0 +1,9 @@
+2 api_name: torch.nn.attention.flex_attention.BlockMask.to
+3 api_description: Moves a BlockMask to the specified device and returns the moved
+  mask.
+4 api_signature: to(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the target device where the BlockMask should be moved.
+7 api_usage_example: null
+8 api_shape: null

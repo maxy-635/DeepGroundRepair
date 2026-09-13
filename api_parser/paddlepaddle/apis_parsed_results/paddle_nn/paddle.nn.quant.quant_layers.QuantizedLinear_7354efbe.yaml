@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.quant.quant_layers.QuantizedLinear
+3 api_description: QuantizedLinear performs linear transformations with inputs that
+  are fake quantized, maintaining the same computational logic as the standard Linear
+  layer.
+4 api_signature: paddle.nn.quant.quant_layers.QuantizedLinear(layer,weight_bits,activation_bits,weight_quantize_type,activation_quantize_type)
+5 api_details: ''
+6 api_parameters:
+- in_features: The number of input features to the linear layer.
+- out_features: The number of output features from the linear layer.
+- weight_attr: An attribute that specifies the weight initialization and regularization.
+- bias_attr: An attribute that specifies the bias initialization and regularization.
+- activation: The activation function to be applied after the linear transformation.
+- dtype: The data type for the layer's parameters and computations.
+- weight_quantizer: The quantizer used for the weights in the linear layer.
+- activation_quantizer: The quantizer used for the activations in the linear layer.
+7 api_usage_example: []
+8 api_shape: null

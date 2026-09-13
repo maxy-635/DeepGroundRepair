@@ -1,0 +1,18 @@
+2 api_name: torch.utils.data.DataLoader
+3 api_description: Combines a dataset with a sampler to provide an iterable that loads
+  data in batches.
+4 api_signature: torch.utils.data.DataLoader(dataset,batch_size,shuffle,num_workers,collate_fn,pin_memory,drop_last)
+5 api_details: ''
+6 api_parameters:
+- dataset: The dataset to load data from.
+- batch_size: The number of samples to include in each batch.
+- shuffle: Whether to reshuffle the data at the start of every epoch.
+- num_workers: The number of subprocesses to use for loading data, with 0 meaning
+    loading happens in the main process.
+- collate_fn: A function that combines a list of samples into a single mini-batch.
+- pin_memory: Whether to copy tensors into pinned memory before returning them for
+    faster transfer to CUDA devices.
+- drop_last: Whether to discard the final incomplete batch when the dataset size is
+    not divisible by the batch size.
+7 api_usage_example: null
+8 api_shape: null

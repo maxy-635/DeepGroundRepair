@@ -1,0 +1,19 @@
+2 api_name: torch.nn.BatchNorm3d
+3 api_description: BatchNorm3d normalizes 5D input data across the batch dimension,
+  improving training stability and performance by reducing internal covariate shift.
+4 api_signature: torch.nn.BatchNorm3d(num_features)
+5 api_details: ''
+6 api_parameters:
+- num_features: Specifies the number of features (channels) in the input tensor, which
+    is expected to have the shape (N, C, D, H, W).
+7 api_usage_example:
+- ' # With Learnable Parameters'
+- ' m = nn.BatchNorm3d(100)'
+- ' # Without Learnable Parameters'
+- ' m = nn.BatchNorm3d(100, affine=False)'
+- ' input = torch.randn(20, 100, 35, 45, 10)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth, Height, Width)
+  output tensor shape: (N, Channel_out, Depth, Height, Width) (same shape as input)
+  tensor shape transform formulas: {}

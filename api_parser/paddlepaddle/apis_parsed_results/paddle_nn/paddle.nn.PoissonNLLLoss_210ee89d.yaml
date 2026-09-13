@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.PoissonNLLLoss
+3 api_description: The PoissonNLLLoss API computes the Poisson negative log likelihood
+  loss between predicted expectations and actual samples from a Poisson distribution.
+4 api_signature: paddle.nn.PoissonNLLLoss(log_input,full,reduction)
+5 api_details: ''
+6 api_parameters:
+- log_input: Determines if the input tensor is treated as log input, affecting the
+    computation formula for the loss.
+- full: Specifies whether to include the Stirling approximation term in the loss calculation.
+- reduction: Defines the method to reduce the loss output, choosing from 'none', 'mean',
+    or 'sum', with 'mean' as the default.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- poisson_nll_loss = paddle.nn.loss.PoissonNLLLoss()
+- input = paddle.randn([5, 2], dtype=paddle.float32)
+- label = paddle.randn([5, 2], dtype=paddle.float32)
+- loss = poisson_nll_loss(input, label)
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.52983975)
+8 api_shape: null

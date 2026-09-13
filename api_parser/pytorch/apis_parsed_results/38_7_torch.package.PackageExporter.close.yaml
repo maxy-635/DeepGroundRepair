@@ -1,0 +1,10 @@
+2 api_name: torch.package.PackageExporter.close
+3 api_description: Writes the package to the filesystem and finalizes the exporter
+  so no further calls are valid; using a resource guard is preferred.
+4 api_signature: close()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'with PackageExporter("file.zip") as e:'
+- '    ...'
+8 api_shape: null

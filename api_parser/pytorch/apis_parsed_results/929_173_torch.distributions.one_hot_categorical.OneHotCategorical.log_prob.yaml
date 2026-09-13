@@ -1,0 +1,9 @@
+2 api_name: torch.distributions.one_hot_categorical.OneHotCategorical.log_prob
+3 api_description: Computes the log probability of a one-hot encoded sample under
+  a categorical distribution.
+4 api_signature: '"log_prob(value)"'
+5 api_details: ''
+6 api_parameters:
+- value: The one-hot encoded sample whose log probability is being computed.
+7 api_usage_example: null
+8 api_shape: null

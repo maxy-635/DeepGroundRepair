@@ -1,0 +1,36 @@
+2 api_name: torch.optim.Adam
+3 api_description: Implements the Adam optimization algorithm for updating parameters
+  using adaptive learning rates and first- and second-moment estimates of gradients.
+4 api_signature: torch.optim.Adam(params,lr,betas,eps,weight_decay,amsgrad)
+5 api_details: ''
+6 api_parameters:
+- params: Specifies the parameters or parameter groups that Adam will optimize.
+- lr: Sets the step size used to update parameters during optimization.
+- betas: Defines the decay rates for the moving averages of gradients and squared
+    gradients.
+- eps: Adds a small value to the denominator for numerical stability.
+- weight_decay: Applies L2 regularization to penalize large parameter values.
+- amsgrad: Enables the AMSGrad variant of Adam for potentially improved convergence.
+7 api_usage_example:
+- ' model = torch.nn.Linear(10, 10)'
+- ' optim = torch.optim.SGD(model.parameters(), lr=3e-4)'
+- ' scheduler1 = torch.optim.lr_scheduler.LinearLR('
+- '...     optim,'
+- '...     start_factor=0.1,'
+- '...     end_factor=1,'
+- '...     total_iters=20,'
+- '... )'
+- ' scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR('
+- '...     optim,'
+- '...     T_max=80,'
+- '...     eta_min=3e-5,'
+- '... )'
+- ' lr = torch.optim.lr_scheduler.SequentialLR('
+- '...     optim,'
+- '...     schedulers=[scheduler1, scheduler2],'
+- '...     milestones=[20],'
+- '... )'
+- ' lr.load_state_dict(torch.load("./save_seq.pt"))'
+- ' # now load the optimizer checkpoint after loading the LRScheduler'
+- ' optim.load_state_dict(torch.load("./save_optim.pt"))'
+8 api_shape: null

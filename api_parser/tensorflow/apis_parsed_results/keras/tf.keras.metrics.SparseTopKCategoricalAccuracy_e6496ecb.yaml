@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.metrics.SparseTopKCategoricalAccuracy
+3 api_description: Measures the fraction of times the true integer label appears among
+  the model’s top K predicted classes.
+4 api_signature: tf.keras.metrics.SparseTopKCategoricalAccuracy(k,name,dtype)
+5 api_details: ''
+6 api_parameters:
+- k: Sets how many of the highest-scoring predicted classes to consider when computing
+    accuracy.
+- name: Assigns an optional name for the metric instance.
+- dtype: Sets an optional data type for the metric’s result.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([2, 1], [[0.1, 0.9, 0.8], [0.05, 0.95, 0]],
+- '               sample_weight=[0.7, 0.3])'
+- m.result()
+8 api_shape: ''

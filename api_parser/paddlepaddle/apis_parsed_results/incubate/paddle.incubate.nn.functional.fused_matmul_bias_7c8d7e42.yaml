@@ -1,0 +1,12 @@
+2 api_name: paddle.incubate.nn.functional.fused_matmul_bias
+3 api_description: Performs a CUDA-only fused matrix multiplication with optional
+  bias addition on the result.
+4 api_signature: paddle.incubate.nn.functional.fused_matmul_bias(x,y,bias)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to multiply.
+- y: The second input tensor to multiply; it must be rank 2.
+- bias: An optional bias tensor that is added to the matrix multiplication result,
+    or omitted if `None`.
+7 api_usage_example: []
+8 api_shape: {}

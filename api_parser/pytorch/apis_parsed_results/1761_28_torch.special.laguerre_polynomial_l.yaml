@@ -1,0 +1,11 @@
+2 api_name: torch.special.laguerre_polynomial_l
+3 api_description: Computes the Laguerre polynomial L_n(input) for a given input tensor
+  and nonnegative integer degree n.
+4 api_signature: torch.special.laguerre_polynomial_l(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are used as the input at which the Laguerre polynomial
+    is evaluated.
+- n: The polynomial degree, specifying which Laguerre polynomial to compute.
+7 api_usage_example: null
+8 api_shape: null

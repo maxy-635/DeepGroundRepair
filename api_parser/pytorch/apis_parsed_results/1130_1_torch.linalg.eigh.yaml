@@ -1,0 +1,17 @@
+2 api_name: torch.linalg.eigh
+3 api_description: Computes the eigenvalues and eigenvectors of a real symmetric or
+  complex Hermitian matrix.
+4 api_signature: torch.linalg.eigh(A,*,out)
+5 api_details: ''
+6 api_parameters:
+- A: The symmetric or Hermitian input tensor whose eigenvalues and eigenvectors are
+    computed.
+7 api_usage_example:
+- ' A = torch.randn(2, 2, dtype=torch.complex128)'
+- ' A = A + A.T.conj()  # creates a Hermitian matrix'
+- ' A'
+- ' L, Q = torch.linalg.eigh(A)'
+- ' L'
+- ' Q'
+- ' torch.dist(Q @ torch.diag(L.cdouble()) @ Q.T.conj(), A)'
+8 api_shape: null

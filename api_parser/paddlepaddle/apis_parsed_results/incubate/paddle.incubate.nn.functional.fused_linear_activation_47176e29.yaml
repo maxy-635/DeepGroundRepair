@@ -1,0 +1,12 @@
+2 api_name: paddle.incubate.nn.functional.fused_linear_activation
+3 api_description: Applies a fused fully connected linear transformation followed
+  by an activation on CUDA, requiring CUDA 11.6 or newer.
+4 api_signature: paddle.incubate.nn.functional.fused_linear_activation(x,y,bias,activation)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor that is multiplied by the weight matrix.
+- y: 2D weight tensor used in the matrix multiplication.
+- bias: Bias tensor added to the matrix multiplication result.
+- activation: Activation applied to the bias-added output, currently gelu or relu.
+7 api_usage_example: []
+8 api_shape: {}

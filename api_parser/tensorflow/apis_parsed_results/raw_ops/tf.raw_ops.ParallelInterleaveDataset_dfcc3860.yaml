@@ -1,0 +1,22 @@
+2 api_name: tensorflow.raw_ops.ParallelInterleaveDataset
+3 api_description: Creates a dataset that interleaves elements from mapped input datasets
+  in parallel, skipping slow sources to avoid blocking and improve throughput; results
+  may be nondeterministic when sloppy=True.
+4 api_signature: tf.raw_ops.ParallelInterleaveDataset(input_dataset,cycle_length,block_length,sloppy,f,output_types,output_shapes,name)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The dataset supplying input elements that are fed into `f` to create
+    interleaved datasets.
+- cycle_length: The number of mapped datasets to keep open and cycle through in round-robin
+    order.
+- block_length: The number of consecutive elements to take from each dataset before
+    switching to the next one.
+- sloppy: Controls whether results may be returned as soon as they are available,
+    even out of order, or must stay deterministic.
+- f: The function that maps each input element, plus any extra arguments, to a dataset
+    to interleave.
+- output_types: The data types of the elements produced by the resulting dataset.
+- output_shapes: The shapes of the elements produced by the resulting dataset.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

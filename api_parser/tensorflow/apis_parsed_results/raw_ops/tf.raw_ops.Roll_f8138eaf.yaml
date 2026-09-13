@@ -1,0 +1,14 @@
+2 api_name: tensorflow.raw_ops.Roll
+3 api_description: Shifts tensor elements along one or more axes by the given offsets,
+  wrapping values around at the boundaries.
+4 api_signature: tf.raw_ops.Roll(input,shift,axis)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose elements will be rolled.
+- shift: The amount to shift elements along each specified axis, with positive values
+    moving elements toward larger indices and negative values moving them in the opposite
+    direction.
+- axis: The dimension or dimensions along which to apply each corresponding shift,
+    combining repeated axes by summing their shifts.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.BatchSvd
+3 api_description: Computes the singular value decomposition of each matrix in a batch,
+  returning singular vectors and singular values for every input matrix.
+4 api_signature: tf.raw_ops.BatchSvd(input,compute_uv,full_matrices)
+5 api_details: ''
+6 api_parameters:
+- input: The batched input tensor to decompose with SVD.
+- compute_uv: Whether to compute the singular vectors in addition to the singular
+    values.
+- full_matrices: Whether to return full-sized singular vector matrices instead of
+    reduced ones.
+7 api_usage_example: null
+8 api_shape: ''

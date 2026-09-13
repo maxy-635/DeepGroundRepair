@@ -1,0 +1,15 @@
+2 api_name: paddle.distribution.Laplace
+3 api_description: Creates a Laplace distribution defined by `loc` and `scale` parameters.
+4 api_signature: paddle.distribution.Laplace(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Sets the center (mean) of the Laplace distribution.
+- scale: Controls the spread of the Laplace distribution.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- m = paddle.distribution.Laplace(paddle.to_tensor(0.0), paddle.to_tensor(1.0))
+- 'm.sample()  # Laplace distributed with loc=0, scale=1'
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 1.31554604)
+8 api_shape: {}

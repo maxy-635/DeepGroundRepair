@@ -1,0 +1,13 @@
+2 api_name: tensorflow.argsort
+3 api_description: Returns the indices that would sort a tensor along a specified
+  axis, preserving the input shape for higher-dimensional tensors.
+4 api_signature: tf.argsort(values,axis,direction,stable)
+5 api_details: ''
+6 api_parameters:
+- values: The tensor whose elements are sorted.
+- axis: The dimension to sort along, with `-1` meaning the last axis.
+- direction: The sort order to use, either ascending or descending.
+- stable: Whether to preserve the original order of equal elements in the result.
+7 api_usage_example:
+- tf.gather(mat, indices, batch_dims=-1).numpy()
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.profiler_util.StringTable.pop
+3 api_description: Remove and return the value for a key, using a default if provided;
+  otherwise raise KeyError when the key is missing.
+4 api_signature: pop(k,d)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

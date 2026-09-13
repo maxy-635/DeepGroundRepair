@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.metrics.SpecificityAtSensitivity
+3 api_description: Computes the highest specificity achievable while keeping sensitivity
+  at or above a target value, using local true/false positive/negative counts and
+  optional sample weights or class filtering.
+4 api_signature: tf.keras.metrics.SpecificityAtSensitivity(sensitivity,num_thresholds)
+5 api_details: ''
+6 api_parameters:
+- sensitivity: Sets the target recall level that the metric tries to achieve.
+- num_thresholds: Controls how many decision thresholds are evaluated when searching
+    for the threshold that matches the target sensitivity.
+7 api_usage_example:
+- m.reset_state()
+- m.update_state([0, 0, 0, 1, 1], [0, 0.3, 0.8, 0.3, 0.8],
+- '               sample_weight=[1, 1, 2, 2, 2])'
+- m.result()
+8 api_shape: ''

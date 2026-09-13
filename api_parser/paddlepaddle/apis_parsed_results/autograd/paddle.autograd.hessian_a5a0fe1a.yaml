@@ -1,0 +1,10 @@
+2 api_name: paddle.autograd.hessian
+3 api_description: Computes the Hessian matrix by evaluating second-order derivatives
+  of a dependent variable with respect to an independent variable.
+4 api_signature: paddle.autograd.hessian(ys,xs)
+5 api_details: ''
+6 api_parameters:
+- ys: The scalar output tensor whose Hessian is computed with respect to `xs`.
+- xs: The input tensor or tuple of input tensors to differentiate `ys` against.
+7 api_usage_example: []
+8 api_shape: {}

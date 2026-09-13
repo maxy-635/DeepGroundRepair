@@ -1,0 +1,14 @@
+2 api_name: tensorflow.math.sqrt
+3 api_description: Computes the element-wise square root of a tensor.
+4 api_signature: tf.math.sqrt(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose element-wise square root is computed.
+7 api_usage_example:
+- x = tf.constant([[4.0], [16.0]])
+- tf.sqrt(x)
+- y = tf.constant([[-4.0], [16.0]])
+- tf.sqrt(y)
+- z = tf.constant([[-1.0], [16.0]], dtype=tf.complex128)
+- tf.sqrt(z)
+8 api_shape: ''

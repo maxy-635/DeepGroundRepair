@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.distribution.list_devices
+3 api_description: Returns all available devices for a specified device type.
+4 api_signature: tf.keras.distribution.list_devices(device_type)
+5 api_details: ''
+6 api_parameters:
+- device_type: 'Specifies which kind of devices to list: CPU, GPU, or TPU, with a
+    default preference for GPU or TPU when available.'
+7 api_usage_example: null
+8 api_shape: ''

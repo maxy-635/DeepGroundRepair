@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TruncateMod
+3 api_description: Computes the element-wise remainder from truncating division, matching
+  C-style semantics.
+4 api_signature: tf.raw_ops.TruncateMod(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The dividend tensor whose values are reduced by the truncated modulus operation.
+- y: The divisor tensor, which must match `x` in type and supplies the modulus values.
+7 api_usage_example: null
+8 api_shape: ''

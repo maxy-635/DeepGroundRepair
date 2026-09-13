@@ -1,0 +1,16 @@
+2 api_name: paddle.device.cuda.stream_guard
+3 api_description: Temporarily switches the current CUDA stream within a guarded scope,
+  restoring the previous stream when the guard exits.
+4 api_signature: paddle.device.cuda.stream_guard(stream)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- paddle.device.set_device('gpu')
+- s = paddle.device.cuda.Stream()
+- data1 = paddle.ones(shape=[20])
+- data2 = paddle.ones(shape=[20])
+- 'with paddle.device.cuda.stream_guard(s):'
+- '    data3 = data1 + data2'
+8 api_shape: {}

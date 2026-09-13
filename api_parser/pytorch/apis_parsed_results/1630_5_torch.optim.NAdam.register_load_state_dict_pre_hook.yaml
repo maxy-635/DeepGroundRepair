@@ -1,0 +1,11 @@
+2 api_name: torch.optim.NAdam.register_load_state_dict_pre_hook
+3 api_description: Registers a pre-hook that runs before `load_state_dict()` to inspect
+  or modify the optimizer state being loaded.
+4 api_signature: register_load_state_dict_pre_hook(hook)
+5 api_details: ''
+6 api_parameters:
+- hook: The callback function to run before loading the optimizer state dict, allowing
+    the user to modify or validate the incoming state.
+7 api_usage_example:
+- hook(optimizer, state_dict) -> state_dict or None
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: torch.maximum
+3 api_description: Returns the element-wise maximum between two inputs.
+4 api_signature: torch.maximum(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to compare elementwise.
+- other: The second tensor to compare elementwise against `input`.
+7 api_usage_example:
+- ' a = torch.tensor((1, 2, -1))'
+- ' b = torch.tensor((3, 0, 4))'
+- ' torch.maximum(a, b)'
+8 api_shape: null

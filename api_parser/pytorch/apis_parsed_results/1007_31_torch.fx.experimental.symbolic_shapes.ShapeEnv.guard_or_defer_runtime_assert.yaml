@@ -1,0 +1,11 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.guard_or_defer_runtime_assert
+3 api_description: Adds a condition that is checked as a guard when possible, otherwise
+  deferred to a runtime assertion.
+4 api_signature: guard_or_defer_runtime_assert(orig_expr,msg,fx_node)
+5 api_details: ''
+6 api_parameters:
+- orig_expr: The boolean expression that should evaluate to true and is being checked.
+- msg: The error message shown if the assertion fails.
+- fx_node: The corresponding FX graph node for the expression, when one is available.
+7 api_usage_example: null
+8 api_shape: null

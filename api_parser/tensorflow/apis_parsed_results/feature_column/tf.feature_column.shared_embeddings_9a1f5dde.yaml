@@ -1,0 +1,15 @@
+2 api_name: tensorflow.feature_column.shared_embeddings
+3 api_description: Creates a list of dense embedding columns that share one set of
+  weights for same-type sparse categorical inputs, converting them into dense representations
+  for models like DNNs.
+4 api_signature: tf.feature_column.shared_embeddings(categorical_columns,dimension,combiner,trainable)
+5 api_details: ''
+6 api_parameters:
+- categorical_columns: Specifies the categorical columns whose sparse IDs are used
+    for the shared embedding lookup.
+- dimension: Sets the size of the embedding vector for the shared embeddings.
+- combiner: Determines how to aggregate multiple sparse IDs in a row, such as by mean,
+    sum, or square-root-normalized sum.
+- trainable: Controls whether the embedding weights are updated during training.
+7 api_usage_example: null
+8 api_shape: ''

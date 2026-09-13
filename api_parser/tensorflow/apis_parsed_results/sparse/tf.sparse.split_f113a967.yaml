@@ -1,0 +1,15 @@
+2 api_name: tensorflow.sparse.split
+3 api_description: Splits a SparseTensor into `num_split` SparseTensors along the
+  specified axis, distributing any remainder so earlier slices get one extra element
+  when the dimension is not evenly divisible.
+4 api_signature: tf.sparse.split(sp_input,num_split,axis)
+5 api_details: ''
+6 api_parameters:
+- sp_input: The sparse tensor that will be divided into multiple parts.
+- num_split: The number of splits to create.
+- axis: The dimension index along which the sparse tensor is split.
+7 api_usage_example:
+- output = tf.sparse.split(sp_input=t, num_split=2, axis=-1)
+- tf.sparse.to_dense(output[0])
+- tf.sparse.to_dense(output[1])
+8 api_shape: ''

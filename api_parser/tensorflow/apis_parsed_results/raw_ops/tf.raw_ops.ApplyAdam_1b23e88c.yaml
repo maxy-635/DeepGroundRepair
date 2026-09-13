@@ -1,0 +1,19 @@
+2 api_name: tensorflow.raw_ops.ApplyAdam
+3 api_description: Applies the Adam optimization update to `var` using the gradient
+  `grad`, first and second moment accumulators `m` and `v`, learning rate, beta coefficients,
+  epsilon, and optional Nesterov momentum.
+4 api_signature: tf.raw_ops.ApplyAdam(var,m,v,lr,beta1,beta2,epsilon,grad)
+5 api_details: ''
+6 api_parameters:
+- var: The variable tensor to be updated in place by the Adam optimizer.
+- m: The first-moment accumulator for the variable, updated with the gradient's moving
+    average.
+- v: The second-moment accumulator for the variable, updated with the gradient's squared
+    moving average.
+- lr: The learning rate that scales the size of the update step.
+- beta1: The decay rate used to compute the moving average of gradients.
+- beta2: The decay rate used to compute the moving average of squared gradients.
+- epsilon: A small constant added for numerical stability during the update.
+- grad: The gradient tensor used to compute the Adam update.
+7 api_usage_example: null
+8 api_shape: ''

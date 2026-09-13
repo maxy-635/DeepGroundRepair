@@ -1,0 +1,19 @@
+2 api_name: torch.nn.LPPool1d
+3 api_description: LPPool1d applies 1D power-average pooling to an input signal with
+  multiple channels, allowing for the extraction of features by computing the p-norm
+  of the input over specified segments.
+4 api_signature: torch.nn.LPPool1d(norm_type,kernel_size)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Specifies the size of the pooling window used to compute the Lp norm.
+7 api_usage_example:
+- ' # power-2 pool of window of length 3, with stride 2.'
+- ' m = nn.LPPool1d(2, 3, stride=2)'
+- ' input = torch.randn(20, 16, 50)'
+- ' output = m(input)'
+8 api_shape:
+  input tensor shape: (N, Channel_in, L_in)
+  output tensor shape: (N, Channel_out, L_out)
+  tensor shape transform formulas:
+    tensor channel: Channel_out = Channel_in
+    L_out: L_out = floor((L_in - kernel_size) / stride + 1)

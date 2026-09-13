@@ -1,0 +1,16 @@
+2 api_name: torch.distributions.kumaraswamy.Kumaraswamy
+3 api_description: A transformed distribution for modeling values on (0, 1) with shape
+  parameters concentration1 and concentration0, providing sampling, log probability,
+  and related distribution methods.
+4 api_signature: torch.distributions.kumaraswamy.Kumaraswamy(concentration1,concentration0)
+5 api_details: ''
+6 api_parameters:
+- concentration1: Controls the first shape parameter (alpha), influencing the distribution’s
+    skew and concentration.
+- concentration0: Controls the second shape parameter (beta), influencing the distribution’s
+    shape and tail behavior.
+7 api_usage_example:
+- ' m = Kumaraswamy(torch.tensor([1.0]), torch.tensor([1.0]))'
+- ' m.sample()  # sample from a Kumaraswamy distribution with concentration alpha=1
+  and beta=1'
+8 api_shape: null

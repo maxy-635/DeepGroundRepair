@@ -1,0 +1,14 @@
+2 api_name: tensorflow.strided_slice
+3 api_description: Returns a strided slice of a tensor using low-level Python-style
+  indexing controls, including support for strides, ellipsis, new axes, and shrinking
+  dimensions.
+4 api_signature: tf.strided_slice(input_,begin,end,strides,name)
+5 api_details: ''
+6 api_parameters:
+- input_: The tensor to slice.
+- begin: The start indices for each dimension of the slice.
+- end: The end indices for each dimension of the slice.
+- strides: The step size to use when slicing each dimension.
+- name: An optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

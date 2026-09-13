@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.max
+3 api_description: Returns the maximum value of a tensor, or the maximum along a specified
+  axis.
+4 api_signature: tf.keras.ops.max(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose maximum value is computed.
+- axis: The axis or axes along which to reduce when finding the maximum, or all axes
+    if omitted.
+7 api_usage_example: null
+8 api_shape: ''

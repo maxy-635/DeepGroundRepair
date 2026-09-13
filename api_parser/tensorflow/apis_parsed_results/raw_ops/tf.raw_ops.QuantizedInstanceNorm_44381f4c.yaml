@@ -1,0 +1,16 @@
+2 api_name: tensorflow.raw_ops.QuantizedInstanceNorm
+3 api_description: Applies instance normalization to a quantized input tensor, producing
+  a normalized quantized output with matching min/max range information.
+4 api_signature: tf.raw_ops.QuantizedInstanceNorm(x,x_min,x_max,output_range_given,given_y_min,given_y_max,variance_epsilon)
+5 api_details: ''
+6 api_parameters:
+- x: The 4D quantized input tensor to be normalized.
+- x_min: The float32 minimum real value represented by `x`.
+- x_max: The float32 maximum real value represented by `x`.
+- output_range_given: Indicates whether to use the provided output range instead of
+    computing it.
+- given_y_min: The lower bound of the output range when `output_range_given` is True.
+- given_y_max: The upper bound of the output range when `output_range_given` is True.
+- variance_epsilon: A small constant added to variance to prevent division by zero.
+7 api_usage_example: null
+8 api_shape: ''

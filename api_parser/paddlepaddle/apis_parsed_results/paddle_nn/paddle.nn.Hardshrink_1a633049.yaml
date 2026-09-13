@@ -1,0 +1,18 @@
+2 api_name: paddle.nn.Hardshrink
+3 api_description: The paddle.nn.Hardshrink API applies the Hardshrink activation
+  function, which thresholds elements to zero if they are within a specified range
+  around zero, otherwise retains their original value.
+4 api_signature: paddle.nn.Hardshrink(threshold)
+5 api_details: ''
+6 api_parameters:
+- threshold: Specifies the cutoff value below which elements are set to zero in the
+    Hardshrink activation function, with a default of 0.5.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-1, 0.3, 2.5])
+- m = paddle.nn.Hardshrink()
+- out = m(x)
+- print(out)
+- Tensor(shape=[3], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[-1.       ,  0.       , 2.50000000])'
+8 api_shape: null

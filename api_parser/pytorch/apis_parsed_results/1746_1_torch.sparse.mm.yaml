@@ -1,0 +1,25 @@
+2 api_name: torch.sparse.mm
+3 api_description: Multiplies a 2D sparse matrix by a compatible sparse or dense matrix,
+  producing a result with matching matrix multiplication dimensions.
+4 api_signature: torch.sparse.mm(mat1,mat2)
+5 api_details: ''
+6 api_parameters:
+- mat1: The sparse matrix used as the left-hand operand in the matrix multiplication.
+- mat2: The matrix used as the right-hand operand in the multiplication, which may
+    be sparse or dense.
+7 api_usage_example:
+- ' a = torch.tensor([[1., 0, 2], [0, 3, 0]]).to_sparse().requires_grad_()'
+- ' a'
+- ' b = torch.tensor([[0, 1.], [2, 0], [0, 0]], requires_grad=True)'
+- ' b'
+- ' y = torch.sparse.mm(a, b)'
+- ' y'
+- ' y.sum().backward()'
+- ' a.grad'
+- ' c = a.detach().to_sparse_csr()'
+- ' c'
+- ' y1 = torch.sparse.mm(c, b, ''sum'')'
+- ' y1'
+- ' y2 = torch.sparse.mm(c, b, ''max'')'
+- ' y2'
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.WholeFileReaderV2
+3 api_description: Reads whole files from a queue and returns each filename as the
+  key with the file’s full contents as the value.
+4 api_signature: tf.raw_ops.WholeFileReaderV2(container,shared_name)
+5 api_details: ''
+6 api_parameters:
+- container: Sets the container namespace for the reader resource, or uses the default
+    container if left empty.
+- shared_name: Assigns a shared resource name for reuse across nodes, or falls back
+    to the node name if empty.
+- name: Specifies an optional operation name for easier identification in the graph.
+7 api_usage_example: null
+8 api_shape: ''

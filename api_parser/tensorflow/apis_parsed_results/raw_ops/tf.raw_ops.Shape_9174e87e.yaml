@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.Shape
+3 api_description: Returns a 1-D integer tensor describing the shape of the input
+  tensor.
+4 api_signature: tf.raw_ops.Shape(input,out_type)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose shape you want to get.
+- out_type: The integer dtype to use for the returned shape values, either `tf.int32`
+    or `tf.int64`.
+7 api_usage_example: null
+8 api_shape: ''

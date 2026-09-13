@@ -1,0 +1,15 @@
+2 api_name: tensorflow.strings.unicode_split_with_offsets
+3 api_description: Splits each string into Unicode code points and returns both the
+  characters and their byte start offsets.
+4 api_signature: tf.strings.unicode_split_with_offsets(input,input_encoding)
+5 api_details: ''
+6 api_parameters:
+- input: A tensor of strings to split into Unicode characters, with a statically known
+    rank.
+- input_encoding: The Unicode encoding used to decode each input string.
+7 api_usage_example:
+- input = [s.encode('utf8') for s in (u'G\xf6\xf6dnight', u'\U0001f60a')]
+- result = tf.strings.unicode_split_with_offsets(input, 'UTF-8')
+- 'result[0].to_list()  # character substrings'
+- 'result[1].to_list()  # offsets'
+8 api_shape: ''

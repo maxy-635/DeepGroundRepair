@@ -1,0 +1,21 @@
+2 api_name: torch.sparse_csr_tensor
+3 api_description: Creates a sparse CSR tensor from crow_indices, col_indices, and
+  values, enabling efficient compressed sparse row storage for sparse matrices.
+4 api_signature: torch.sparse_csr_tensor(crow_indices,col_indices,values,size)
+5 api_details: ''
+6 api_parameters:
+- crow_indices: Encodes the row pointers for the CSR tensor, marking where each row's
+    non-zero entries begin and ending with the total number of non-zeros.
+- col_indices: Stores the column index of each non-zero element in the sparse tensor.
+- values: Provides the actual values for the non-zero elements, shaped to include
+    any dense dimensions.
+- size: Specifies the full sparse tensor shape, including batch, row, column, and
+    any dense dimensions, or is inferred if omitted.
+7 api_usage_example:
+- ' crow_indices = [0, 2, 4]'
+- ' col_indices = [0, 1, 0, 1]'
+- ' values = [1, 2, 3, 4]'
+- ' torch.sparse_csr_tensor(torch.tensor(crow_indices, dtype=torch.int64),'
+- '...                         torch.tensor(col_indices, dtype=torch.int64),'
+- '...                         torch.tensor(values), dtype=torch.double)'
+8 api_shape: null

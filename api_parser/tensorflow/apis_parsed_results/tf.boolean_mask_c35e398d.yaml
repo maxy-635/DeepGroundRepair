@@ -1,0 +1,15 @@
+2 api_name: tensorflow.boolean_mask
+3 api_description: Selects elements from a tensor using a boolean mask, returning
+  the values where the mask is True and flattening the masked dimensions; an optional
+  axis lets you apply the mask starting at a specific dimension.
+4 api_signature: tf.boolean_mask(tensor,mask)
+5 api_details: ''
+6 api_parameters:
+- tensor: The N-D tensor whose elements are selected or removed according to the mask.
+- mask: A K-D boolean tensor that marks which elements of `tensor` to keep, with `K
+    <= N` and `K` known statically.
+7 api_usage_example:
+- 'tensor = [[1, 2], [3, 4], [5, 6]] # 2-D example'
+- mask = np.array([True, False, True])
+- tf.boolean_mask(tensor, mask)
+8 api_shape: ''

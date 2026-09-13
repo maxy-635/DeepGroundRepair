@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.SeluGrad
+3 api_description: Computes the gradient of the SELU activation, producing backpropagated
+  values for inputs based on the SELU output and upstream gradient.
+4 api_signature: tf.raw_ops.SeluGrad(gradients,outputs)
+5 api_details: ''
+6 api_parameters:
+- gradients: Backpropagated gradients from the corresponding Selu operation.
+- outputs: The outputs produced by the corresponding Selu operation, used to compute
+    the gradient.
+7 api_usage_example: null
+8 api_shape: ''

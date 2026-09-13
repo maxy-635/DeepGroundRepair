@@ -1,0 +1,21 @@
+2 api_name: tensorflow.distribute.experimental.partitioners.MinSizePartitioner
+3 api_description: Partitions variables into as many shards as possible while ensuring
+  each shard meets a minimum size, up to a maximum shard count.
+4 api_signature: tf.distribute.experimental.partitioners.MinSizePartitioner(min_shard_bytes,max_shards)
+5 api_details: ''
+6 api_parameters:
+- min_shard_bytes: Sets the minimum size each shard should have, with a default of
+    256 KB.
+- max_shards: Limits the maximum number of shards that can be created, with a default
+    of 1.
+7 api_usage_example:
+- partitioner = MinSizePartitioner(min_shard_bytes=4, max_shards=2)
+- partitions = partitioner(tf.TensorShape([6, 1]), tf.float32)
+- '[2, 1]'
+- partitioner = MinSizePartitioner(min_shard_bytes=4, max_shards=10)
+- partitions = partitioner(tf.TensorShape([6, 1]), tf.float32)
+- '[6, 1]'
+- '# use in ParameterServerStrategy'
+- '# strategy = tf.distribute.experimental.ParameterServerStrategy('
+- '#   cluster_resolver=cluster_resolver, variable_partitioner=partitioner)'
+8 api_shape: ''

@@ -1,0 +1,21 @@
+2 api_name: tensorflow.raw_ops.QuantizedBatchNormWithGlobalNormalization
+3 api_description: Applies batch normalization to quantized inputs using global mean
+  and variance statistics, producing normalized quantized output; this deprecated
+  op is a quantized batch norm variant of `tf.nn.batch_normalization`.
+4 api_signature: tf.raw_ops.QuantizedBatchNormWithGlobalNormalization(t,m,v,beta,gamma,out_type,variance_epsilon,scale_after_normalization,name)
+5 api_details: ''
+6 api_parameters:
+- t: 4D quantized input tensor to be batch-normalized.
+- m: 1D tensor of per-channel means matching the last dimension of `t`.
+- v: 1D tensor of per-channel variances matching the last dimension of `t`.
+- beta: 1D offset tensor added after normalization, matching the last dimension of
+    `t`.
+- gamma: 1D scale tensor applied after normalization when scaling is enabled.
+- out_type: Desired quantized output data type for the normalized result.
+- variance_epsilon: Small constant added for numerical stability to avoid division
+    by zero.
+- scale_after_normalization: Flag that controls whether `gamma` is applied to the
+    normalized tensor.
+- name: Optional name for the operation.
+7 api_usage_example: null
+8 api_shape: ''

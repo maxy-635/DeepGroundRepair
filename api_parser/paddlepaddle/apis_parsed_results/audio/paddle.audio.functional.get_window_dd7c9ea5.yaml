@@ -1,0 +1,15 @@
+2 api_name: paddle.audio.functional.get_window
+3 api_description: Returns a window of the specified length and type for signal processing.
+4 api_signature: paddle.audio.functional.get_window(window,win_length)
+5 api_details: ''
+6 api_parameters:
+- window: Selects the type of window function to apply to the signal before the Fourier
+    transform.
+- win_length: Sets the number of samples used to generate the window.
+7 api_usage_example:
+- import paddle
+- n_fft = 512
+- cosine_window = paddle.audio.functional.get_window('cosine', n_fft)
+- std = 7
+- gaussian_window = paddle.audio.functional.get_window(('gaussian', std), n_fft)
+8 api_shape: {}

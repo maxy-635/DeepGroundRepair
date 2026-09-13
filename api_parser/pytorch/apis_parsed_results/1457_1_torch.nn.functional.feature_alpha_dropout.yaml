@@ -1,0 +1,12 @@
+2 api_name: torch.nn.functional.feature_alpha_dropout
+3 api_description: The torch.nn.functional.feature_alpha_dropout API randomly masks
+  out entire feature map channels to promote model robustness and prevent overfitting.
+4 api_signature: torch.nn.functional.feature_alpha_dropout(input,p)
+5 api_details: ''
+6 api_parameters:
+- p: The probability of setting a channel to zero during dropout.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (N, Channel_in, Depth, Height, Width)
+  output tensor shape: (N, Channel_out, Depth, Height, Width)
+  tensor shape transform formulas: {}

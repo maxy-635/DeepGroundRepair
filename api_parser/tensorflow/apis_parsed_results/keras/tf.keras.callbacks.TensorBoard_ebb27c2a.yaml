@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.callbacks.TensorBoard
+3 api_description: Logs training metrics and other events to a TensorBoard-compatible
+  directory for visualizing model progress, performance, and graphs during TensorFlow/Keras
+  training.
+4 api_signature: tf.keras.callbacks.TensorBoard(log_dir,update_freq,profile_batch)
+5 api_details: ''
+6 api_parameters:
+- log_dir: Specifies the directory where TensorBoard log files are written.
+- update_freq: Controls how often losses and metrics are written to TensorBoard, either
+    per batch, per epoch, or at a fixed batch interval.
+- profile_batch: Defines which batch or batch range to profile for performance analysis,
+    though this option is currently not supported.
+7 api_usage_example: null
+8 api_shape: ''

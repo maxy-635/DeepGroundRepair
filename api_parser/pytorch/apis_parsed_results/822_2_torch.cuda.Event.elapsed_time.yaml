@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.Event.elapsed_time
+3 api_description: Returns the elapsed time between two CUDA events in milliseconds.
+4 api_signature: elapsed_time(end_event)
+5 api_details: ''
+6 api_parameters:
+- end_event: The event marking the end point used to measure elapsed time from the
+    current event.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.preprocessing.image.apply_affine_transform
+3 api_description: Applies an affine transformation to an image, such as rotation,
+  translation, shear, or zoom, based on the provided parameters.
+4 api_signature: tf.keras.preprocessing.image.apply_affine_transform(x,theta,tx,ty,shear,zx,zy)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

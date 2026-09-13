@@ -1,0 +1,9 @@
+2 api_name: torch.cuda.nvtx.range_push
+3 api_description: Push a named NVTX range onto the current nested stack and return
+  its zero-based depth.
+4 api_signature: torch.cuda.nvtx.range_push(msg)
+5 api_details: ''
+6 api_parameters:
+- msg: The ASCII message to label and associate with the NVTX range.
+7 api_usage_example: null
+8 api_shape: null

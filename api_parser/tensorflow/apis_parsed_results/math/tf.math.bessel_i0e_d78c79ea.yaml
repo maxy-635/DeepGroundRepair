@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.bessel_i0e
+3 api_description: Computes the exponentially scaled modified Bessel function of the
+  first kind of order 0 element-wise for each value in x.
+4 api_signature: tf.math.bessel_i0e(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose exponentially scaled modified Bessel function of the first
+    kind, order 0, is computed.
+7 api_usage_example:
+- tf.math.special.bessel_i0e([-1., -0.5, 0.5, 1.]).numpy()
+8 api_shape: ''

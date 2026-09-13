@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.backend.rnn
+3 api_description: Runs a recurrent loop over time steps for a sequence tensor using
+  a step function, managing state updates, optional masking, and support for constants,
+  while returning the final output and states.
+4 api_signature: tf.keras.backend.rnn(step_function,inputs,initial_states,go_backwards,mask,constants,unroll,time_major,zero_output_for_mask)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

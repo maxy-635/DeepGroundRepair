@@ -1,0 +1,11 @@
+2 api_name: tensorflow.lite.experimental.Analyzer
+3 api_description: Analyzes a TFLite model by dumping its internal graph structure
+  and checking compatibility, including GPU delegate support.
+4 api_signature: analyze(model_path,gpu_compatibility)
+5 api_details: ''
+6 api_parameters:
+- model_path: Specifies the path to the TFLite flatbuffer model file to analyze.
+- gpu_compatibility: Enables checking whether the model is compatible with the GPU
+    delegate.
+7 api_usage_example: null
+8 api_shape: ''

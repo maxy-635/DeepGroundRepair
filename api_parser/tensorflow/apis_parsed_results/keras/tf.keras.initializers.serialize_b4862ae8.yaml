@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.initializers.serialize
+3 api_description: Converts a Keras initializer into a Python dict containing its
+  configuration.
+4 api_signature: tf.keras.initializers.serialize(initializer)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

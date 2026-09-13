@@ -1,0 +1,12 @@
+2 api_name: torch.autograd.function.InplaceFunction
+3 api_description: Backward-compatibility base class for defining custom autograd
+  functions that may operate in-place, with support for saving context for backward
+  computation; new code should use `Function` instead.
+4 api_signature: torch.autograd.function.InplaceFunction
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '@staticmethod'
+- 'def forward(ctx: Any, *args: Any, **kwargs: Any) -> Any:'
+- '    pass'
+8 api_shape: null

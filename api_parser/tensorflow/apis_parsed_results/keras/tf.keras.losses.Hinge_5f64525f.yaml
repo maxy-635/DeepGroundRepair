@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.losses.Hinge
+3 api_description: Computes hinge loss for binary classification by measuring margin
+  violations between true labels and predictions, converting 0/1 labels to -1/1 when
+  needed.
+4 api_signature: tf.keras.losses.Hinge()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

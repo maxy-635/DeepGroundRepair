@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.densenet.decode_predictions
+3 api_description: Converts ImageNet model predictions into human-readable class labels
+  and associated confidence scores.
+4 api_signature: tf.keras.applications.densenet.decode_predictions(preds)
+5 api_details: ''
+6 api_parameters:
+- preds: A NumPy array containing a batch of model prediction vectors to decode into
+    human-readable class labels.
+7 api_usage_example: null
+8 api_shape: ''

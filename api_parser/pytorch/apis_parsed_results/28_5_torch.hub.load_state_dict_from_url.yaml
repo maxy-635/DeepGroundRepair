@@ -1,0 +1,16 @@
+2 api_name: torch.hub.load_state_dict_from_url
+3 api_description: Downloads and loads a Torch-serialized object from a URL, typically
+  a model state dict or checkpoint.
+4 api_signature: torch.hub.load_state_dict_from_url(url,map_location,progress,check_hash)
+5 api_details: ''
+6 api_parameters:
+- url: Specifies the URL from which the file is downloaded.
+- map_location: Controls how loaded tensors are remapped to devices or storage locations.
+- progress: Toggles whether a download progress bar is shown on stderr.
+- check_hash: Verifies the downloaded file's contents against the SHA256 hash encoded
+    in the filename.
+7 api_usage_example:
+- ' state_dict = torch.hub.load_state_dict_from_url('
+- '...     "https://s3.amazonaws.com/pytorch/models/resnet18-5c106cde.pth"'
+- '... )'
+8 api_shape: null

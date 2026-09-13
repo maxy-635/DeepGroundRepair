@@ -1,0 +1,8 @@
+2 api_name: torch.distributed.checkpoint.state_dict_saver.save_state_dict
+3 api_description: Deprecated API that saves a model or training state dict for distributed
+  checkpointing.
+4 api_signature: torch.distributed.checkpoint.state_dict_saver.save_state_dict(state_dict,storage_writer,process_group)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: torch.special.shifted_chebyshev_polynomial_u
+3 api_description: Computes the shifted Chebyshev polynomial of the second kind U_n^*(input)
+  for a given input and polynomial order.
+4 api_signature: torch.special.shifted_chebyshev_polynomial_u(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor on which the shifted Chebyshev polynomial of the second
+    kind is evaluated.
+- n: The polynomial degree that determines which shifted Chebyshev U polynomial to
+    compute.
+7 api_usage_example: null
+8 api_shape: null

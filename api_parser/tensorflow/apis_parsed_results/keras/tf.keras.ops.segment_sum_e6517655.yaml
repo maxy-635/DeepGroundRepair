@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.ops.segment_sum
+3 api_description: Computes the sum of values grouped by segment ids along the first
+  dimension.
+4 api_signature: tf.keras.ops.segment_sum(data,segment_ids,num_segments)
+5 api_details: ''
+6 api_parameters:
+- data: The tensor whose values are grouped and summed by segment.
+- segment_ids: A 1-D tensor that assigns each element in `data` to a segment index.
+- num_segments: The total number of segments to produce, inferred from `segment_ids`
+    if omitted.
+7 api_usage_example:
+- data = keras.ops.convert_to_tensor([1, 2, 10, 20, 100, 200])
+- segment_ids = keras.ops.convert_to_tensor([0, 0, 1, 1, 2, 2])
+- num_segments = 3
+- keras.ops.segment_sum(data, segment_ids,num_segments)
+8 api_shape: ''

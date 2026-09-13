@@ -1,0 +1,8 @@
+2 api_name: torch.distributions.independent.Independent.enumerate_support
+3 api_description: Returns the support of the base distribution, reshaped to account
+  for the `reinterpreted_batch_ndims` event dimensions.
+4 api_signature: enumerate_support(expand)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

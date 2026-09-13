@@ -1,0 +1,10 @@
+2 api_name: tensorflow.io.gfile.exists
+3 api_description: Checks whether the specified path exists, optionally using a URI
+  scheme to target a different filesystem.
+4 api_signature: tf.io.gfile.exists(path)
+5 api_details: ''
+6 api_parameters:
+- path: Specifies the file or directory path to check for existence.
+7 api_usage_example:
+- tf.io.gfile.exists("/tmp")
+8 api_shape: ''

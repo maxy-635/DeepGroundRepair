@@ -1,0 +1,9 @@
+2 api_name: tensorflow.signal.vorbis_window
+3 api_description: Generates a Vorbis power-complementary window for signal processing.
+4 api_signature: tf.signal.vorbis_window(window_length,dtype)
+5 api_details: ''
+6 api_parameters:
+- window_length: Specifies the length of the window tensor to generate.
+- dtype: Specifies the floating-point data type of the returned window values.
+7 api_usage_example: null
+8 api_shape: ''

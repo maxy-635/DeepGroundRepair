@@ -1,0 +1,19 @@
+2 api_name: paddle.vision.transforms.ContrastTransform
+3 api_description: Adjusts an image’s contrast by scaling the difference between pixel
+  values and the image’s average brightness.
+4 api_signature: paddle.vision.transforms.ContrastTransform(value,keys)
+5 api_details: ''
+6 api_parameters:
+- value: Controls the amount of contrast adjustment applied to the image; must be
+    non-negative, and `0` leaves the image unchanged.
+- keys: Uses the same key behavior as `BaseTransform`.
+7 api_usage_example:
+- import numpy as np
+- from PIL import Image
+- from paddle.vision.transforms import ContrastTransform
+- transform = ContrastTransform(0.4)
+- fake_img = Image.fromarray((np.random.rand(224, 224, 3) * 255.).astype(np.uint8))
+- fake_img = transform(fake_img)
+- print(fake_img.size)
+- (224, 224)
+8 api_shape: {}

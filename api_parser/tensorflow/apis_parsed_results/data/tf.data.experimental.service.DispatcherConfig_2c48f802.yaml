@@ -1,0 +1,9 @@
+2 api_name: tensorflow.data.experimental.service.DispatcherConfig
+3 api_description: Configures a tf.data service dispatcher’s network, protocol, persistence,
+  fault tolerance, worker discovery, and job/worker timeout and garbage-collection
+  behavior.
+4 api_signature: tf.data.experimental.service.DispatcherConfig(port,protocol,work_dir,fault_tolerant_mode,worker_addresses)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: torch.package.PackageImporter.load_pickle
+3 api_description: Loads and unpickles a packaged resource, importing any required
+  modules from the package to reconstruct the objects.
+4 api_signature: load_pickle(package,resource)
+5 api_details: ''
+6 api_parameters:
+- package: Specifies the module package that contains the pickled resource.
+- resource: Identifies the unique resource name to load from that package.
+7 api_usage_example: null
+8 api_shape: null

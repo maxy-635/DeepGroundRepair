@@ -1,0 +1,14 @@
+2 api_name: paddle.distributed.get_group
+3 api_description: Returns the distributed group instance associated with a given
+  group ID.
+4 api_signature: paddle.distributed.get_group(id)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- gid = paddle.distributed.new_group([2,4,6])
+- paddle.distributed.get_group(gid.id)
+8 api_shape: {}

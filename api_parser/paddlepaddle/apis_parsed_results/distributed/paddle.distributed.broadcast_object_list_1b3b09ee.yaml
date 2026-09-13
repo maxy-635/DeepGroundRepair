@@ -1,0 +1,21 @@
+2 api_name: paddle.distributed.broadcast_object_list
+3 api_description: Broadcasts a list of picklable Python objects from one source rank
+  to all other ranks.
+4 api_signature: paddle.distributed.broadcast_object_list(object_list,src)
+5 api_details: ''
+6 api_parameters:
+- object_list: A list of objects to broadcast from the source rank or to receive into
+    on non-source ranks.
+- src: The global rank of the process that acts as the broadcast source.
+7 api_usage_example:
+- '>>>'
+- import paddle.distributed as dist
+- dist.init_parallel_env()
+- 'if dist.get_rank() == 0:'
+- '    object_list = [{"foo": [1, 2, 3]}]'
+- 'else:'
+- '    object_list = [{"bar": [4, 5, 6]}]'
+- dist.broadcast_object_list(object_list, src=1)
+- print(object_list)
+- '# [{"bar": [4, 5, 6]}] (2 GPUs)'
+8 api_shape: {}

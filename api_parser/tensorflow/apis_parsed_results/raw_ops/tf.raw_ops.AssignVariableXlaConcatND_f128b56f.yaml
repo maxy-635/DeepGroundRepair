@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.AssignVariableXlaConcatND
+3 api_description: Concatenates sliced input tensors across all dimensions, optionally
+  removes padding, and writes the merged result to a resource variable.
+4 api_signature: tf.raw_ops.AssignVariableXlaConcatND(resource,inputs,num_concats)
+5 api_details: ''
+6 api_parameters:
+- resource: Resource handle for the variable that will store the concatenated result.
+- inputs: One or more same-typed tensors whose values are concatenated into the resource
+    variable.
+- num_concats: Integers specifying how many inputs are merged along each dimension.
+7 api_usage_example: null
+8 api_shape: ''

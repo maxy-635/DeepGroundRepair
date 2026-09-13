@@ -1,0 +1,18 @@
+2 api_name: tensorflow.nn.atrous_conv2d_transpose
+3 api_description: tensorflow.nn.atrous_conv2d_transpose performs the transpose of
+  an atrous convolution, often referred to as 'deconvolution', which is used to upsample
+  feature maps by reversing the effects of atrous_conv2d.
+4 api_signature: tf.nn.atrous_conv2d_transpose(value,filters,output_shape,rate,padding)
+5 api_details: ''
+6 api_parameters:
+- value: A 4-D Tensor input in NHWC format, representing the input data for the operation.
+- filters: A 4-D Tensor defining the filter weights with specific dimensions, used
+    to perform the atrous convolution.
+- output_shape: A 1-D Tensor specifying the desired shape of the output after the
+    deconvolution operation.
+- rate: An integer that defines the dilation rate, controlling the spacing between
+    filter values during convolution.
+- padding: A string indicating the padding algorithm to use, either 'VALID' or 'SAME',
+    affecting the output dimensions.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,8 @@
+2 api_name: torch.layout
+3 api_description: Represents a tensor layout type in PyTorch, used to describe how
+  tensor elements are stored in memory.
+4 api_signature: class torch.layout#
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

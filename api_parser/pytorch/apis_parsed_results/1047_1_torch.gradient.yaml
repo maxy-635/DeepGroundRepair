@@ -1,0 +1,38 @@
+2 api_name: torch.gradient
+3 api_description: Estimates the gradient of a scalar function using second-order
+  central differences, with first- or second-order boundary handling.
+4 api_signature: torch.gradient(input,spacing,dim,edge_order)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor containing the function values to differentiate.
+7 api_usage_example:
+- ' # Estimates the gradient of f(x)=x^2 at points [-2, -1, 2, 4]'
+- ' coordinates = (torch.tensor([-2., -1., 1., 4.]),)'
+- ' values = torch.tensor([4., 1., 1., 16.], )'
+- ' torch.gradient(values, spacing = coordinates)'
+- ' # Estimates the gradient of the R^2 -> R function whose samples are'
+- ' # described by the tensor t. Implicit coordinates are [0, 1] for the outermost'
+- ' # dimension and [0, 1, 2, 3] for the innermost dimension, and function estimates'
+- ' # partial derivative for both dimensions.'
+- ' t = torch.tensor([[1, 2, 4, 8], [10, 20, 40, 80]])'
+- ' torch.gradient(t)'
+- ' # A scalar value for spacing modifies the relationship between tensor indices'
+- ' # and input coordinates by multiplying the indices to find the'
+- ' # coordinates. For example, below the indices of the innermost'
+- ' # 0, 1, 2, 3 translate to coordinates of [0, 2, 4, 6], and the indices of'
+- ' # the outermost dimension 0, 1 translate to coordinates of [0, 2].'
+- ' torch.gradient(t, spacing = 2.0) # dim = None (implicitly [0, 1])'
+- ' # doubling the spacing between samples halves the estimated partial gradients.'
+- ' # Estimates only the partial derivative for dimension 1'
+- ' torch.gradient(t, dim = 1) # spacing = None (implicitly 1.)'
+- ' # When spacing is a list of scalars, the relationship between the tensor'
+- ' # indices and input coordinates changes based on dimension.'
+- ' # For example, below, the indices of the innermost dimension 0, 1, 2, 3 translate'
+- ' # to coordinates of [0, 3, 6, 9], and the indices of the outermost dimension'
+- ' # 0, 1 translate to coordinates of [0, 2].'
+- ' torch.gradient(t, spacing = [3., 2.])'
+- ' # The following example is a replication of the previous one with explicit'
+- ' # coordinates.'
+- ' coords = (torch.tensor([0, 2]), torch.tensor([0, 3, 6, 9]))'
+- ' torch.gradient(t, spacing = coords)'
+8 api_shape: null

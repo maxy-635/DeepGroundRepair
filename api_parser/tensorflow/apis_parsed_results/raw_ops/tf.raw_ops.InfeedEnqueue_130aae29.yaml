@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.InfeedEnqueue
+3 api_description: Feeds a single tensor value into the computation pipeline via the
+  infeed mechanism.
+4 api_signature: tf.raw_ops.InfeedEnqueue(input,shape,layout)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to enqueue so it can be supplied later through the infeed mechanism.
+- shape: The expected shape of the input tensor, defaulting to an empty shape if not
+    specified.
+- layout: The requested minor-to-major layout for the tensor, or a computed layout
+    if all values are -1.
+7 api_usage_example: null
+8 api_shape: ''

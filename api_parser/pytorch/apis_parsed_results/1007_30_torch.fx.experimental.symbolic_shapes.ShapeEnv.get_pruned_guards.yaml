@@ -1,0 +1,8 @@
+2 api_name: torch.fx.experimental.symbolic_shapes.ShapeEnv.get_pruned_guards
+3 api_description: Returns the subset of shape guards that reference the provided
+  input symints, pruning away guards unrelated to those symbols.
+4 api_signature: get_pruned_guards(symints)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: torch.reciprocal
+3 api_description: Returns a new tensor containing the reciprocal (1/x) of each element
+  in the input.
+4 api_signature: torch.reciprocal(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose reciprocal is computed elementwise.
+7 api_usage_example:
+- ' a = torch.randn(4)'
+- ' a'
+- ' torch.reciprocal(a)'
+8 api_shape: null

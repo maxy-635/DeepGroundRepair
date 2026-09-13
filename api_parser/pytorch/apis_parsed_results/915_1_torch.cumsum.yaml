@@ -1,0 +1,13 @@
+2 api_name: torch.cumsum
+3 api_description: Computes the cumulative sum of tensor elements along a specified
+  dimension.
+4 api_signature: torch.cumsum(input,dim)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are cumulatively summed.
+- dim: The dimension along which the cumulative sum is computed.
+7 api_usage_example:
+- ' a = torch.randint(1, 20, (10,))'
+- ' a'
+- ' torch.cumsum(a, dim=0)'
+8 api_shape: null

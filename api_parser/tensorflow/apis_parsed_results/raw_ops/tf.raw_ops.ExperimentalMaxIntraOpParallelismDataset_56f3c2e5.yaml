@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.ExperimentalMaxIntraOpParallelismDataset
+3 api_description: Creates a dataset that sets a custom maximum intra-op parallelism
+  for downstream dataset processing.
+4 api_signature: tf.raw_ops.ExperimentalMaxIntraOpParallelismDataset(input_dataset,max_intra_op_parallelism)
+5 api_details: ''
+6 api_parameters:
+- input_dataset: The input dataset variant that the operation applies the intra-op
+    parallelism limit to.
+- max_intra_op_parallelism: The maximum intra-op parallelism level to use for processing
+    the dataset.
+7 api_usage_example: null
+8 api_shape: ''

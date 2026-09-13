@@ -1,0 +1,15 @@
+2 api_name: tensorflow.keras.metrics.MeanAbsoluteError
+3 api_description: Computes the average absolute difference between true labels and
+  predictions.
+4 api_signature: tf.keras.metrics.MeanAbsoluteError()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- m = keras.metrics.MeanAbsoluteError()
+- m.update_state([[0, 1], [0, 0]], [[1, 1], [0, 0]])
+- m.result()
+- m.reset_state()
+- m.update_state([[0, 1], [0, 0]], [[1, 1], [0, 0]],
+- '               sample_weight=[1, 0])'
+- m.result()
+8 api_shape: ''

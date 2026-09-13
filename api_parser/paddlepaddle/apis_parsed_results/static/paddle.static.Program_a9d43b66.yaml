@@ -1,0 +1,19 @@
+2 api_name: paddle.static.Program
+3 api_description: Represents a Paddle static model program, organizing computation
+  graphs and weights in a main block for defining and managing model structure.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- import paddle.static as static
+- paddle.enable_static()
+- main_program = static.Program()
+- startup_program = static.Program()
+- 'with static.program_guard(main_program=main_program, startup_program=startup_program):'
+- '   x = static.data(name="x", shape=[-1, 784], dtype=''float32'')'
+- '   y = static.data(name="y", shape=[-1, 1], dtype=''int32'')'
+- '   z = static.nn.fc(name="fc", x=x, size=10, activation="relu")'
+- 'print("main program is: {}".format(main_program))'
+- 'print("start up program is: {}".format(startup_program))'
+8 api_shape: {}

@@ -1,0 +1,17 @@
+2 api_name: tensorflow.linalg.LinearOperatorTridiag
+3 api_description: Represents a batch of square tridiagonal matrices as a linear operator,
+  enabling matrix-style operations without explicitly materializing the full matrices.
+4 api_signature: tf.linalg.LinearOperatorTridiag(diagonals,diagonals_format,name)
+5 api_details: ''
+6 api_parameters:
+- diagonals: Specifies the tridiagonal entries used to construct the operator, either
+    as a tensor or a list of tensors depending on the chosen format.
+- diagonals_format: Indicates how the tridiagonal values are laid out, using `matrix`,
+    `sequence`, or `compact` representation.
+- name: Assigns a name to the `LinearOperatorTridiag` instance for identification
+    and debugging.
+7 api_usage_example:
+- y = tf.random.normal(shape=[2, 1, 4, 2])
+- x = operator.solve(y)
+- x
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyAdagradV2
+3 api_description: Applies the Adagrad update to a resource variable by accumulating
+  squared gradients and adjusting the variable using the learning rate, gradient,
+  and epsilon-stabilized inverse root of the accumulator.
+4 api_signature: ResourceApplyAdagradV2(var,accum,lr,grad)
+5 api_details: ''
+6 api_parameters:
+- var: The model variable to be updated in place.
+- accum: The accumulator variable that stores the running sum of squared gradients.
+- lr: The scalar learning rate that scales the Adagrad update step.
+- grad: The gradient tensor used to update the variable and accumulator.
+7 api_usage_example: null
+8 api_shape: ''

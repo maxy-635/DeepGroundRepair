@@ -1,0 +1,18 @@
+2 api_name: torch.linalg.matrix_exp
+3 api_description: Computes the matrix exponential of a square matrix.
+4 api_signature: torch.linalg.matrix_exp(A)
+5 api_details: ''
+6 api_parameters:
+- A: The input square matrix or batch of square matrices whose matrix exponential
+    is computed.
+7 api_usage_example:
+- ' A = torch.empty(2, 2, 2)'
+- ' A[0, :, :] = torch.eye(2, 2)'
+- ' A[1, :, :] = 2 * torch.eye(2, 2)'
+- ' A'
+- ' torch.linalg.matrix_exp(A)'
+- ' import math'
+- ' A = torch.tensor([[0, math.pi/3], [-math.pi/3, 0]]) # A is skew-symmetric'
+- ' torch.linalg.matrix_exp(A) # matrix_exp(A) = [[cos(pi/3), sin(pi/3)], [-sin(pi/3),
+  cos(pi/3)]]'
+8 api_shape: null

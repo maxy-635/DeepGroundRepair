@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.applications.ResNet50
+3 api_description: Builds a pretrained or randomly initialized ResNet50 image classification
+  model for feature extraction, transfer learning, or fine-tuning.
+4 api_signature: tf.keras.applications.ResNet50(weights,input_shape,classes)
+5 api_details: ''
+6 api_parameters:
+- weights: Chooses whether to use random initialization, ImageNet-pretrained weights,
+    or a custom weights file.
+- input_shape: Sets the input tensor shape when `include_top` is False, with 3 channels
+    and minimum spatial size requirements.
+- classes: Specifies the number of output classes when using the top classification
+    layer and no pretrained weights.
+7 api_usage_example: null
+8 api_shape: ''

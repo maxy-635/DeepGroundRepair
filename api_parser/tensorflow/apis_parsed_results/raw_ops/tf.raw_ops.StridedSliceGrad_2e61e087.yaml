@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.StridedSliceGrad
+3 api_description: Computes the gradient of `StridedSlice` by scattering `dy` back
+  into a tensor with the original input shape, filling all unsliced positions with
+  zeros.
+4 api_signature: tf.raw_ops.StridedSliceGrad(shape,begin,end,strides,dy)
+5 api_details: ''
+6 api_parameters:
+- shape: Specifies the output tensor shape that the gradient will be reconstructed
+    into.
+- begin: Provides the starting indices used by the original strided slice operation.
+- end: Provides the ending indices used by the original strided slice operation.
+- strides: Provides the step sizes used by the original strided slice operation.
+- dy: Contains the gradient values flowing back from the sliced output.
+7 api_usage_example: null
+8 api_shape: ''

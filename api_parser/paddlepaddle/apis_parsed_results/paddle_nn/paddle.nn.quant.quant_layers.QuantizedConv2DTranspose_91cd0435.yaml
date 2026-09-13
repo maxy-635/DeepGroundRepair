@@ -1,0 +1,22 @@
+2 api_name: paddle.nn.quant.quant_layers.QuantizedConv2DTranspose
+3 api_description: QuantizedConv2DTranspose performs transposed convolution with inputs
+  that are fake quantized, maintaining the same computational logic as Conv2DTranspose.
+4 api_signature: paddle.nn.quant.quant_layers.QuantizedConv2DTranspose(layer,weight_bits,activation_bits,weight_quantize_type,activation_quantize_type)
+5 api_details: ''
+6 api_parameters:
+- in_channels: The number of input channels for the convolutional layer.
+- out_channels: The number of output channels for the convolutional layer.
+- kernel_size: The size of the convolutional kernel.
+- stride: The stride of the convolution.
+- padding: The padding added to both sides of the input.
+- output_padding: Additional size added to one side of each dimension in the output
+    shape.
+- groups: The number of blocked connections from input channels to output channels.
+- bias_attr: Specifies whether to include a bias term in the convolution.
+- dtype: The data type of the weights and bias.
+- weight_attr: The attribute for the learnable weights of the layer.
+- quant_bits: The number of bits used for quantization.
+- activation: The activation function applied to the output.
+- data_format: The data format of the input, either 'NCHW' or 'NHWC'.
+7 api_usage_example: []
+8 api_shape: null

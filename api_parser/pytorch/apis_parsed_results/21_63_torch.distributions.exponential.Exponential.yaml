@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.exponential.Exponential
+3 api_description: Exponential is a continuous distribution over nonnegative values,
+  parameterized by a positive rate or scale, used to sample and score waiting times
+  between events; it provides probability density, log probability, entropy, mean/variance,
+  CDF/ICDF, and sampling.
+4 api_signature: Exponential(rate)
+5 api_details: ''
+6 api_parameters:
+- rate: Controls the distribution’s rate, equal to 1 divided by the scale.
+7 api_usage_example:
+- ' m = Exponential(torch.tensor([1.0]))'
+- ' m.sample()  # Exponential distributed with rate=1'
+8 api_shape: null

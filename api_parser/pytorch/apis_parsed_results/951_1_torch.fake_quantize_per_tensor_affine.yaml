@@ -1,0 +1,16 @@
+2 api_name: torch.fake_quantize_per_tensor_affine
+3 api_description: Fake-quantizes a tensor per tensor using the given scale, zero
+  point, and quantization bounds.
+4 api_signature: torch.fake_quantize_per_tensor_affine(input,scale,zero_point)
+5 api_details: ''
+6 api_parameters:
+- input: The float32 tensor to be fake-quantized.
+- scale: The quantization step size used to map values to discrete levels.
+- zero_point: The quantized value that represents real zero in the affine scheme.
+7 api_usage_example:
+- ' x = torch.randn(4)'
+- ' x'
+- ' torch.fake_quantize_per_tensor_affine(x, 0.1, 0, 0, 255)'
+- ' torch.fake_quantize_per_tensor_affine(x, torch.tensor(0.1), torch.tensor(0), 0,
+  255)'
+8 api_shape: null

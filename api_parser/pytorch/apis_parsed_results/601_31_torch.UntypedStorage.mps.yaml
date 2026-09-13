@@ -1,0 +1,8 @@
+2 api_name: torch.UntypedStorage.mps
+3 api_description: Returns a copy of the storage on MPS, or the existing storage if
+  it is already on MPS.
+4 api_signature: '"mps()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

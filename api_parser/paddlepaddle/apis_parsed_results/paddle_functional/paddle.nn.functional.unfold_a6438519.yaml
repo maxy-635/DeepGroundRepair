@@ -1,0 +1,21 @@
+2 api_name: paddle.nn.functional.unfold
+3 api_description: paddle.nn.functional.unfold extracts sliding local blocks from
+  a batched 2D image tensor, rearranging each block's elements into columns, similar
+  to im2col, for convolution operations.
+4 api_signature: paddle.nn.functional.unfold(x,kernel_sizes,strides,paddings)
+5 api_details: ''
+6 api_parameters:
+- x: The 4-D input tensor with format [N, C, H, W] and data type float32 or float64.
+- kernel_sizes: Specifies the size of the convolution kernel, either as [k_h, k_w]
+    or an integer k treated as [k, k].
+- strides: Defines the strides for the convolution, either as [stride_h, stride_w]
+    or an integer stride treated as [stride, stride], defaulting to [1, 1].
+- paddings: Sets the padding for each dimension, either as [padding_top, padding_left,
+    padding_bottom, padding_right], [padding_h, padding_w], or an integer padding
+    for uniform padding, defaulting to [0, 0, 0, 0].
+7 api_usage_example:
+- import paddle
+- import paddle.nn.functional as F
+- x = paddle.randn((100,3,224,224))
+- y = F.unfold(x, [3, 3], 1, 1, 1)
+8 api_shape: null

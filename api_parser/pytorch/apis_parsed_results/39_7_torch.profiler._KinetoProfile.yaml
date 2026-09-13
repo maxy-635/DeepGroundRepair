@@ -1,0 +1,34 @@
+2 api_name: torch.profiler._KinetoProfile
+3 api_description: Low-level wrapper around autograd profiling that collects and manages
+  profiling data for PyTorch operations.
+4 api_signature: class torch.profiler._KinetoProfile(*,activities,record_shapes,profile_memory,with_stack,with_flops,with_modules,experimental_config)
+5 api_details: ''
+6 api_parameters:
+- activities: Selects which device activity types to profile, such as CPU, CUDA, or
+    XPU.
+- record_shapes: Records the input tensor shapes for each operator.
+- profile_memory: Tracks tensor memory allocations and deallocations.
+- with_stack: Captures source file and line number information for operations.
+- with_flops: Estimates FLOPs for supported operators like matrix multiplication and
+    2D convolution.
+- with_modules: Records the module hierarchy associated with each operation's call
+    stack.
+- experimental_config: Provides experimental profiler options for Kineto and related
+    libraries.
+7 api_usage_example:
+- with torch.profiler.profile(
+- '    activities=['
+- '        torch.profiler.ProfilerActivity.CPU,'
+- '        torch.profiler.ProfilerActivity.CUDA,'
+- '    ]'
+- ') as p:'
+- '    code_to_profile_0()'
+- '    // turn off collection of all CUDA activity'
+- '    p.toggle_collection_dynamic(False, [torch.profiler.ProfilerActivity.CUDA])'
+- '    code_to_profile_1()'
+- '    // turn on collection of all CUDA activity'
+- '    p.toggle_collection_dynamic(True, [torch.profiler.ProfilerActivity.CUDA])'
+- '    code_to_profile_2()'
+- print(p.key_averages().table(
+- '    sort_by="self_cuda_time_total", row_limit=-1))'
+8 api_shape: null

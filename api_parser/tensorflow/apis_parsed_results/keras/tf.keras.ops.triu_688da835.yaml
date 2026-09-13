@@ -1,0 +1,11 @@
+2 api_name: tensorflow.keras.ops.triu
+3 api_description: Returns the upper triangular part of a tensor, applying to the
+  last two axes for tensors with more than 2 dimensions.
+4 api_signature: tf.keras.ops.triu(x,k)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose upper triangular part is kept.
+- k: The diagonal offset that determines which elements are zeroed out below the specified
+    diagonal.
+7 api_usage_example: null
+8 api_shape: ''

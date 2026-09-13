@@ -1,0 +1,11 @@
+2 api_name: tensorflow.summary.graph
+3 api_description: Writes a TensorFlow graph summary in eager mode for a tf.Graph
+  or tf.compat.v1.GraphDef; for tf.function, prefer trace_on/trace_off/trace_export
+  to collect and record graphs automatically.
+4 api_signature: tf.summary.graph(graph_data)
+5 api_details: ''
+6 api_parameters:
+- graph_data: Specifies the TensorFlow graph to record, either as a `tf.Graph` or
+    a `tf.compat.v1.GraphDef`.
+7 api_usage_example: null
+8 api_shape: ''

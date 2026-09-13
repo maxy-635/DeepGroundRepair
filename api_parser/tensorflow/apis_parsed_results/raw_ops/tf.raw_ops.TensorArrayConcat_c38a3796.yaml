@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.TensorArrayConcat
+3 api_description: Concatenates all elements in a TensorArray into a single tensor,
+  stacking them along the specified axis.
+4 api_signature: tf.raw_ops.TensorArrayConcat(handle,dtype)
+5 api_details: ''
+6 api_parameters:
+- handle: Identifies the TensorArray resource to concatenate.
+- dtype: Specifies the data type of the concatenated output tensor.
+7 api_usage_example: null
+8 api_shape: ''

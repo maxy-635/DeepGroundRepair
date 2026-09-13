@@ -1,0 +1,18 @@
+2 api_name: torch.distributed.checkpoint.state_dict.get_state_dict
+3 api_description: Returns the model state dict and optimizer state dicts for checkpointing
+  in distributed training.
+4 api_signature: torch.distributed.checkpoint.state_dict.get_state_dict(model,optimizers,*,submodules,options)
+5 api_details: ''
+6 api_parameters:
+- model: The model `nn.Module` whose state dict is being collected.
+- optimizers: The optimizers whose state dicts are being collected for the model.
+- submodules: An optional set of submodules to limit the returned model parameters
+    to only those belonging to them.
+- options: Configuration options that control how the model and optimizer state dicts
+    are returned.
+7 api_usage_example:
+- ' import torch'
+- ' from torch.distributed.fsdp import FullyShardedDataParallel as FSDP'
+- ' from torch.nn.parallel import DistributedDataParallel as DDP'
+- ' from torch.distributed.checkpoint.state_dict import get_state_dict'
+8 api_shape: null

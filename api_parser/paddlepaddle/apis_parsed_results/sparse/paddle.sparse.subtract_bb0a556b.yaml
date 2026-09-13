@@ -1,0 +1,22 @@
+2 api_name: paddle.sparse.subtract
+3 api_description: Element-wise subtracts two identically shaped sparse tensors of
+  the same sparse type, returning the difference tensor.
+4 api_signature: paddle.sparse.subtract(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to subtract from.
+- y: The second input tensor to be subtracted from `x`.
+7 api_usage_example:
+- import paddle
+- paddle.device.set_device("cpu")
+- x = paddle.to_tensor([[0, -1, 0, 2], [0, 0, -3, 0], [4, 5, 0, 0]], 'float32')
+- y = paddle.to_tensor([[0, 0, 0, -2], [0, 2, -3, 0], [2, 3, 4, 8]], 'float32')
+- sparse_x = x.to_sparse_csr()
+- sparse_y = y.to_sparse_csr()
+- sparse_z = paddle.sparse.subtract(sparse_x, sparse_y)
+- print(sparse_z.to_dense())
+- Tensor(shape=[3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[ 0., -1.,  0.,  4.],'
+- '[ 0., -2.,  0.,  0.],'
+- '[ 2.,  2., -4., -8.]])'
+8 api_shape: {}

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.test.gpu_device_name
+3 api_description: Returns the name of an available GPU device, or an empty string
+  if none is found, for use in tf.test.TestCase tests.
+4 api_signature: tf.test.gpu_device_name()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- 'class MyTest(tf.test.TestCase):'
+- '  def test_add_on_gpu(self):'
+- '    if not tf.test.is_built_with_gpu_support():'
+- '      self.skipTest("test is only applicable on GPU")'
+- '    with tf.device(tf.test.gpu_device_name()):'
+- '      self.assertEqual(tf.math.add(1.0, 2.0), 3.0)'
+8 api_shape: ''

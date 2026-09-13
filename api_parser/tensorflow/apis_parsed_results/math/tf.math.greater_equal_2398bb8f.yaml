@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.greater_equal
+3 api_description: Element-wise compares two tensors or values and returns a boolean
+  result indicating where x is greater than or equal to y.
+4 api_signature: tf.math.greater_equal(x,y)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor whose elements are compared against `y`.
+- y: The second tensor providing the values to compare with `x`, with the same data
+    type as `x`.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: torch.special.multigammaln
+3 api_description: Computes the element-wise multivariate log-gamma function for a
+  given dimension p, returning the log of the multivariate gamma value.
+4 api_signature: torch.special.multigammaln(input,p)
+5 api_details: ''
+6 api_parameters:
+- input: Tensor containing the values for which to compute the multivariate log-gamma
+    function.
+- p: Integer specifying the number of dimensions in the multivariate log-gamma function.
+7 api_usage_example:
+- ' a = torch.empty(2, 3).uniform_(1, 2)'
+- ' a'
+- ' torch.special.multigammaln(a, 2)'
+8 api_shape: null

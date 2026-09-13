@@ -1,0 +1,16 @@
+2 api_name: tensorflow.image.random_hue
+3 api_description: Randomly shifts the hue of RGB images by a delta sampled from [-max_delta,
+  max_delta), with max_delta constrained to [0, 0.5].
+4 api_signature: tf.image.random_hue(image,max_delta)
+5 api_details: ''
+6 api_parameters:
+- image: The input RGB image or batch of images whose hue values will be randomly
+    adjusted.
+- max_delta: The maximum magnitude of the random hue shift applied to the image.
+7 api_usage_example:
+- x = [[[1.0, 2.0, 3.0],
+- '      [4.0, 5.0, 6.0]],'
+- '    [[7.0, 8.0, 9.0],'
+- '      [10.0, 11.0, 12.0]]]'
+- tf.image.random_hue(x, 0.2)
+8 api_shape: ''

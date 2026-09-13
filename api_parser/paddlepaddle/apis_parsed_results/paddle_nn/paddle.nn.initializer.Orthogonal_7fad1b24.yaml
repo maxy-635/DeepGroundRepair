@@ -1,0 +1,18 @@
+2 api_name: paddle.nn.initializer.Orthogonal
+3 api_description: The paddle.nn.initializer.Orthogonal API initializes a tensor with
+  (semi) orthogonal rows or columns, ensuring that the dot product of different rows
+  or columns equals zero, which can help maintain the stability of neural networks
+  during training.
+4 api_signature: paddle.nn.initializer.Orthogonal(gain)
+5 api_details: ''
+6 api_parameters:
+- gain: Specifies the scaling factor applied to the orthogonal matrix to adjust the
+    magnitude of the initialized tensor.
+7 api_usage_example:
+- import paddle
+- weight_attr = paddle.ParamAttr(initializer=paddle.nn.initializer.Orthogonal())
+- linear = paddle.nn.Linear(10, 15, weight_attr=weight_attr)
+- '# linear.weight: X * X'' = I'
+- linear = paddle.nn.Linear(15, 10, weight_attr=weight_attr)
+- '# linear.weight: X'' * X = I'
+8 api_shape: null

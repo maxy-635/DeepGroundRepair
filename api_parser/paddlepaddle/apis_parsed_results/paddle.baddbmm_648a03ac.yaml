@@ -1,0 +1,24 @@
+2 api_name: paddle.baddbmm
+3 api_description: Performs batched matrix multiplication on two 3D tensors and adds
+  the result to an input tensor, with optional scaling by alpha and beta.
+4 api_signature: paddle.baddbmm(input,x,y,beta,alpha)
+5 api_details: ''
+6 api_parameters:
+- input: Tensor added to the final batch matrix multiplication result.
+- x: First Tensor used in the batch matrix multiplication.
+- y: Second Tensor used in the batch matrix multiplication.
+- beta: Scales the input Tensor before it is added to the result; defaults to 1.
+- alpha: Scales the x*y product before it is added to the input; defaults to 1.
+7 api_usage_example:
+- import paddle
+- x = paddle.ones([2, 2, 2])
+- y = paddle.ones([2, 2, 2])
+- input = paddle.ones([2, 2, 2])
+- out = paddle.baddbmm(input=input, x=x, y=y, beta=0.5, alpha=5.0)
+- out
+- Tensor(shape=[2, 2, 2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[10.50000000, 10.50000000],'
+- '[10.50000000, 10.50000000]],'
+- '[[10.50000000, 10.50000000],'
+- '[10.50000000, 10.50000000]]])'
+8 api_shape: {}

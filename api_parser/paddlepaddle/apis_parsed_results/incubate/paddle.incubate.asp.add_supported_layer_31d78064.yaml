@@ -1,0 +1,10 @@
+2 api_name: paddle.incubate.asp.add_supported_layer
+3 api_description: Registers layers that support pruning and associates each one with
+  its corresponding pruning function.
+4 api_signature: paddle.incubate.asp.add_supported_layer(layer,pruning_func)
+5 api_details: ''
+6 api_parameters:
+- pruning_func: A function that takes a weight array and metadata arguments (`m`,
+    `n`, `func_name`, `param_name`) to determine how pruning should be applied.
+7 api_usage_example: []
+8 api_shape: {}

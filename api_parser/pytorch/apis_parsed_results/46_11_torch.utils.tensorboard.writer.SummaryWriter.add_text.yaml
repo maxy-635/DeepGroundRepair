@@ -1,0 +1,13 @@
+2 api_name: torch.utils.tensorboard.writer.SummaryWriter.add_text
+3 api_description: Logs text data to TensorBoard summaries for display and inspection.
+4 api_signature: add_text(tag,text_string,global_step)
+5 api_details: ''
+6 api_parameters:
+- tag: Names the text entry so it can be grouped and identified in TensorBoard.
+- text_string: Provides the text content that will be written and displayed.
+- global_step: Sets the step number used to place the text at a specific training
+    iteration.
+7 api_usage_example:
+- writer.add_text('lstm', 'This is an lstm', 0)
+- writer.add_text('rnn', 'This is an rnn', 10)
+8 api_shape: null

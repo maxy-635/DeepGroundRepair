@@ -1,0 +1,30 @@
+2 api_name: paddle.nn.BeamSearchDecoder
+3 api_description: BeamSearchDecoder executes beam search strategy for sequence decoding
+  by wrapping a cell to obtain probabilities, computing scores, and selecting candidate
+  token ids at each step.
+4 api_signature: paddle.nn.BeamSearchDecoder(cell,start_token,end_token,beam_size)
+5 api_details: ''
+6 api_parameters:
+- cell: Defines the RNN cell or compatible object used for generating predictions
+    in the decoder.
+- start_token: Specifies the token id that indicates the beginning of the sequence
+    to be decoded.
+- end_token: Specifies the token id that marks the end of the sequence to be decoded.
+- beam_size: Determines the number of beams or hypotheses maintained during the beam
+    search process.
+7 api_usage_example:
+- import numpy as np
+- import paddle
+- from paddle.nn import BeamSearchDecoder, dynamic_decode
+- from paddle.nn import GRUCell, Linear, Embedding
+- trg_embedder = Embedding(100, 32)
+- output_layer = Linear(32, 32)
+- decoder_cell = GRUCell(input_size=32, hidden_size=32)
+- decoder = BeamSearchDecoder(decoder_cell,
+- '                            start_token=0,'
+- '                            end_token=1,'
+- '                            beam_size=4,'
+- '                            embedding_fn=trg_embedder,'
+- '                            output_fn=output_layer)'
+- '...'
+8 api_shape: null

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.keras.Layer
+3 api_description: 'Base class for Keras layers: a callable module that transforms
+  one or more input tensors into output tensors, defines computation in `call()`,
+  and manages layer state through weight variables.'
+4 api_signature: tf.keras.Layer(*,trainable,dtype,name)
+5 api_details: ''
+6 api_parameters:
+- trainable: Controls whether the layer's variables are updated during training.
+- name: Sets the layer's string identifier.
+- dtype: Specifies the layer's computation and weight data type policy.
+- name: Sets the layer's string identifier.
+- dtype: Specifies the data type used for the layer's weights.
+7 api_usage_example: null
+8 api_shape: ''

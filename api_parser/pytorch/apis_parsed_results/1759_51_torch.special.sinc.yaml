@@ -1,0 +1,11 @@
+2 api_name: torch.special.sinc
+3 api_description: Computes the normalized sinc function of each input element.
+4 api_signature: torch.special.sinc(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values are passed through the sinc function.
+7 api_usage_example:
+- ' t = torch.randn(4)'
+- ' t'
+- ' torch.special.sinc(t)'
+8 api_shape: null

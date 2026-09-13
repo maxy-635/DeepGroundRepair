@@ -1,0 +1,12 @@
+2 api_name: tensorflow.experimental.numpy.float16
+3 api_description: 16-bit half-precision floating-point scalar type for TensorFlow
+  NumPy, representing numeric values with float16 precision and standard scalar array
+  attributes.
+4 api_signature: tf.experimental.numpy.float16()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- np.half(10.0).as_integer_ratio()
+- np.half(0.0).as_integer_ratio()
+- np.half(-.25).as_integer_ratio()
+8 api_shape: ''

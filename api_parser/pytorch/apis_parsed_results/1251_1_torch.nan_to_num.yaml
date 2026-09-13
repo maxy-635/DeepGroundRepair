@@ -1,0 +1,18 @@
+2 api_name: torch.nan_to_num
+3 api_description: Replaces NaN, positive infinity, and negative infinity in a tensor
+  with specified values, defaulting to 0 and the dtype’s finite limits.
+4 api_signature: torch.nan_to_num(input,nan,posinf,neginf,*,out)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose NaN and infinity values will be replaced.
+- nan: The value used to replace any NaN entries, defaulting to 0.
+- posinf: The value used to replace positive infinity entries, or the largest finite
+    value of the input dtype if set to None.
+- neginf: The value used to replace negative infinity entries, or the smallest finite
+    value of the input dtype if set to None.
+7 api_usage_example:
+- ' x = torch.tensor([float(''nan''), float(''inf''), -float(''inf''), 3.14])'
+- ' torch.nan_to_num(x)'
+- ' torch.nan_to_num(x, nan=2.0)'
+- ' torch.nan_to_num(x, nan=2.0, posinf=1.0)'
+8 api_shape: null

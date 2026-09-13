@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.DecodeAndCropJpeg
+3 api_description: Decodes a JPEG-encoded image and crops it to a specified region,
+  returning a uint8 tensor with the requested number of color channels.
+4 api_signature: tf.raw_ops.DecodeAndCropJpeg(contents,crop_window,channels,ratio,name)
+5 api_details: ''
+6 api_parameters:
+- contents: Holds the JPEG-encoded image data to decode and crop.
+- crop_window: Specifies the crop rectangle as [crop_y, crop_x, crop_height, crop_width].
+- channels: Sets the number of color channels in the decoded output image.
+- ratio: Controls the downscaling ratio applied during JPEG decoding.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

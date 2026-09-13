@@ -1,0 +1,47 @@
+2 api_name: torch.distributed.rpc.remote
+3 api_description: Runs a function on a remote worker and immediately returns an RRef
+  to the result, with the target worker owning the RRef and managing its lifetime
+  globally.
+4 api_signature: torch.distributed.rpc.remote(to,func,args,kwargs)
+5 api_details: ''
+6 api_parameters:
+- to: Identifies the destination worker that will receive and run the remote function
+    call.
+- func: Specifies the callable to execute remotely on the destination worker.
+- args: Provides the positional arguments to pass to the remote function.
+- kwargs: Provides the keyword arguments to pass to the remote function.
+7 api_usage_example:
+- Make sure that ``MASTER_ADDR`` and ``MASTER_PORT`` are set properly
+- on both workers. Refer to :meth:`~torch.distributed.init_process_group`
+- API for more details. For example,
+- export MASTER_ADDR=localhost
+- export MASTER_PORT=5678
+- 'Then run the following code in two different processes:'
+- ' # On worker 0:'
+- ' import torch'
+- ' import torch.distributed.rpc as rpc'
+- ' rpc.init_rpc("worker0", rank=0, world_size=2)'
+- ' rref1 = rpc.remote("worker1", torch.add, args=(torch.ones(2), 3))'
+- ' rref2 = rpc.remote("worker1", torch.add, args=(torch.ones(2), 1))'
+- ' x = rref1.to_here() + rref2.to_here()'
+- ' rpc.shutdown()'
+- ' # On worker 1:'
+- ' import torch.distributed.rpc as rpc'
+- ' rpc.init_rpc("worker1", rank=1, world_size=2)'
+- ' rpc.shutdown()'
+- Below is an example of running a TorchScript function using RPC.
+- ' # On both workers:'
+- ' @torch.jit.script'
+- ' def my_script_add(tensor: torch.Tensor, scalar: int):'
+- '    return torch.add(tensor, scalar)'
+- ' # On worker 0:'
+- ' import torch.distributed.rpc as rpc'
+- ' rpc.init_rpc("worker0", rank=0, world_size=2)'
+- ' rref = rpc.remote("worker1", my_script_add, args=(torch.ones(2), 3))'
+- ' rref.to_here()'
+- ' rpc.shutdown()'
+- ' # On worker 1:'
+- ' import torch.distributed.rpc as rpc'
+- ' rpc.init_rpc("worker1", rank=1, world_size=2)'
+- ' rpc.shutdown()'
+8 api_shape: null

@@ -1,0 +1,22 @@
+2 api_name: tensorflow.keras.ops.batch_normalization
+3 api_description: Normalizes an input tensor using the provided mean and variance
+  along a specified axis, as used in batch normalization.
+4 api_signature: tf.keras.ops.batch_normalization(x,mean,variance,epsilon)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to normalize.
+- mean: The mean values used to center the input along the specified axis.
+- variance: The variance values used to scale the input along the specified axis.
+- epsilon: A small constant added to the variance for numerical stability and to prevent
+    division by zero.
+7 api_usage_example:
+- x = keras.ops.convert_to_tensor(
+- '    [[0.1, 0.2, 0.3], [0.4, 0.5, 0.6], [0.7, 0.8, 0.9]]'
+- )
+- keras.ops.batch_normalization(
+- '    x,'
+- '    mean=[0.4, 0.5, 0.6],'
+- '    variance=[0.67, 0.67, 0.67],'
+- '    axis=-1'
+- )
+8 api_shape: ''

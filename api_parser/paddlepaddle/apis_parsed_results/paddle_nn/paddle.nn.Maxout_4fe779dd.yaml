@@ -1,0 +1,24 @@
+2 api_name: paddle.nn.Maxout
+3 api_description: The paddle.nn.Maxout API implements the Maxout activation function,
+  which creates a callable object to apply the Maxout transformation to input data,
+  enhancing model capacity by selecting the maximum value from multiple linear projections.
+4 api_signature: paddle.nn.Maxout(groups,axis)
+5 api_details: ''
+6 api_parameters:
+- groups: Specifies the number of groups for maxout, determining the index of the
+    channel dimension for performing maxout, and must be a factor of the number of
+    features.
+- axis: Defines the axis along which maxout calculations are performed, with specific
+    values depending on the data format (NCHW or NHWC).
+7 api_usage_example:
+- import paddle
+- paddle.seed(100)
+- x = paddle.rand([1, 2, 3, 4])
+- m = paddle.nn.Maxout(groups=2)
+- out = m(x)
+- print(out)
+- Tensor(shape=[1, 1, 3, 4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[[[0.85139430, 0.95717543, 0.43864486, 0.51577556],'
+- '[0.84765935, 0.45680618, 0.39412445, 0.72039396],'
+- '[0.59444654, 0.78120756, 0.78364515, 0.90572405]]]])'
+8 api_shape: null

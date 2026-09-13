@@ -1,0 +1,15 @@
+2 api_name: torch.utils.checkpoint.checkpoint_sequential
+3 api_description: Splits a sequential model into segments and recomputes them during
+  backpropagation to reduce memory usage.
+4 api_signature: torch.utils.checkpoint.checkpoint_sequential(functions,segments,input,use_reentrant)
+5 api_details: ''
+6 api_parameters:
+- functions: The sequential modules or functions to run in order.
+- segments: The number of chunks to split the model into for checkpointing.
+- input: The tensor passed as the input to the sequential functions.
+- use_reentrant: Whether to use the reentrant checkpointing implementation, and it
+    should be passed explicitly.
+7 api_usage_example:
+- ' model = nn.Sequential(...)'
+- ' input_var = checkpoint_sequential(model, chunks, input_var)'
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.tpu.experimental.embedding.QuantizationConfig
+3 api_description: Configures simulated quantization for TPU embedding tables by clipping
+  and quantizing lookup results before the combiner is applied.
+4 api_signature: tf.tpu.experimental.embedding.QuantizationConfig(num_buckets,lower,upper)
+5 api_details: ''
+6 api_parameters:
+- num_buckets: Sets how many quantization buckets to divide the range into, with a
+    minimum of 2.
+- lower: Sets the minimum value of the quantization range.
+- upper: Sets the maximum value of the quantization range.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,40 @@
+2 api_name: paddle.nn.initializer.XavierNormal
+3 api_description: The paddle.nn.initializer.XavierNormal initializes neural
+  network weights using a normal distribution with mean 0 and a standard deviation
+  based on the Xavier method, facilitating better training of deep feedforward networks.
+4 api_signature: paddle.nn.initializer.XavierNormal(fan_in,fan_out,gain)
+5 api_details: ''
+6 api_parameters:
+- fan_in: Determines the number of input units for the weight tensor, used to calculate
+    the scaling factor.
+- fan_out: Determines the number of output units for the weight tensor, used to calculate
+    the scaling factor.
+- gain: A multiplier applied to the standard deviation of the normal distribution
+    to adjust the scaling.
+7 api_usage_example:
+- import paddle
+- paddle.seed(1)
+- data = paddle.ones(shape=[3, 1, 2], dtype='float32')
+- weight_attr = paddle.framework.ParamAttr(
+- '    name="linear_weight",'
+- '    initializer=paddle.nn.initializer.XavierNormal())'
+- bias_attr = paddle.framework.ParamAttr(
+- '    name="linear_bias",'
+- '    initializer=paddle.nn.initializer.XavierNormal())'
+- linear = paddle.nn.Linear(2, 2, weight_attr=weight_attr, bias_attr=bias_attr)
+- print(linear.weight)
+- 'Parameter containing:'
+- Tensor(shape=[2, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[-0.21607460,  0.08382989],'
+- '[ 0.29147008, -0.07049121]])'
+- print(linear.bias)
+- 'Parameter containing:'
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[1.06076419, 0.87684733])'
+- res = linear(data)
+- print(res)
+- Tensor(shape=[3, 1, 2], dtype=float32, place=Place(cpu), stop_gradient=False,
+- '[[[1.13615966, 0.89018601]],'
+- '[[1.13615966, 0.89018601]],'
+- '[[1.13615966, 0.89018601]]])'
+8 api_shape: null

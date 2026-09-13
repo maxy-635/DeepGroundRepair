@@ -1,0 +1,10 @@
+2 api_name: paddle.vision.models.vgg16
+3 api_description: Builds the VGG16 convolutional neural network for image recognition,
+  providing a 16-layer feature extractor/classifier based on the VGG architecture.
+4 api_signature: paddle.vision.models.vgg16(pretrained,batch_norm)
+5 api_details: ''
+6 api_parameters:
+- pretrained: Controls whether the model loads ImageNet pre-trained weights.
+- batch_norm: Controls whether the model includes batch normalization layers.
+7 api_usage_example: []
+8 api_shape: {}

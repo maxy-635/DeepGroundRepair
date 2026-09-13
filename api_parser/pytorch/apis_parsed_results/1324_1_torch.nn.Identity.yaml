@@ -1,0 +1,15 @@
+2 api_name: torch.nn.Identity
+3 api_description: torch.nn.Identity is a no-op layer that returns its input unchanged,
+  serving as a placeholder in neural network architectures.
+4 api_signature: torch.nn.Identity()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- ' m = nn.Identity(54, unused_argument1=0.1, unused_argument2=False)'
+- ' input = torch.randn(128, 20)'
+- ' output = m(input)'
+- ' print(output.size())'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

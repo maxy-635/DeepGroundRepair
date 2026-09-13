@@ -1,0 +1,7 @@
+2 api_name: torch.optim.NAdam.zero_grad
+3 api_description: Clears the gradients of all parameters managed by the optimizer.
+4 api_signature: zero_grad
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

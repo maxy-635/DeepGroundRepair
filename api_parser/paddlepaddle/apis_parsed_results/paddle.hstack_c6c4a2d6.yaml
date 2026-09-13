@@ -1,0 +1,39 @@
+2 api_name: paddle.hstack
+3 api_description: Concatenates input tensors along the horizontal axis after ensuring
+  they share the same dtype.
+4 api_signature: paddle.hstack(x)
+5 api_details: ''
+6 api_parameters:
+- x: A list or tuple of tensors to stack horizontally; all tensors must have the same
+    shape and dtype.
+7 api_usage_example:
+- import paddle
+- '# hstack with 0-D tensors'
+- x1 = paddle.to_tensor(1.0)
+- x2 = paddle.to_tensor(2.0)
+- out = paddle.hstack((x1, x2))
+- print(out)
+- Tensor(shape=[2], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1., 2.])'
+- '# hstack with 1-D tensors'
+- x1 = paddle.to_tensor([1.0, 2.0])
+- x2 = paddle.to_tensor([3.0, 4.0, 5.0])
+- out = paddle.hstack((x1, x2))
+- print(out)
+- Tensor(shape=[5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1., 2., 3., 4., 5.])'
+- '# hstack mix with 0-D & 1-D tensors'
+- x1 = paddle.to_tensor(1.0)
+- x2 = paddle.to_tensor([3.0, 4.0, 5.0])
+- out = paddle.hstack((x1, x2))
+- print(out)
+- Tensor(shape=[4], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[1., 3., 4., 5.])'
+- '# hstack with 2-D tensors'
+- x1 = paddle.to_tensor([[1.0, 2.0]])
+- x2 = paddle.to_tensor([[3.0, 4.0, 5.0]])
+- out = paddle.hstack((x1, x2))
+- print(out)
+- Tensor(shape=[1, 5], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[[1., 2., 3., 4., 5.]])'
+8 api_shape: {}

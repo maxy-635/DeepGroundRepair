@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.CollectiveGather
+3 api_description: Collectively gathers tensors from multiple participants, combining
+  tensors of the same type and shape into a shared result.
+4 api_signature: tf.raw_ops.CollectiveGather(input,group_size,group_key,instance_key,shape)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor to be gathered across all participants in the collective operation.
+- group_size: The total number of members expected to participate in the group.
+- group_key: A shared identifier that names the collective group.
+- instance_key: A unique identifier for this specific gather instance within the group.
+- shape: The expected output tensor shape after the gather operation.
+7 api_usage_example: null
+8 api_shape: ''

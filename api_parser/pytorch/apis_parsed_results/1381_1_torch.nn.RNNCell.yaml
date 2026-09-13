@@ -1,0 +1,21 @@
+2 api_name: torch.nn.RNNCell
+3 api_description: The torch.nn.RNNCell implements an Elman RNN cell that processes
+  input sequences using either tanh or ReLU activation functions, enabling the model
+  to capture temporal dependencies in sequential data.
+4 api_signature: torch.nn.RNNCell(input_size,hidden_size,nonlinearity)
+5 api_details: ''
+6 api_parameters:
+- input_size: Specifies the dimensionality of the input features fed into the RNN
+    cell.
+- hidden_size: Defines the dimensionality of the hidden state output by the RNN cell.
+- nonlinearity: Determines the activation function used in the RNN cell, which can
+    be either 'tanh' or 'relu'.
+7 api_usage_example:
+- ' rnn = nn.RNNCell(10, 20)'
+- ' input = torch.randn(6, 3, 10)'
+- ' hx = torch.randn(3, 20)'
+- ' output = []'
+- ' for i in range(6):'
+- '...     hx = rnn(input[i], hx)'
+- '...     output.append(hx)'
+8 api_shape: null

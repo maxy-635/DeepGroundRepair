@@ -1,0 +1,8 @@
+2 api_name: torch.DoubleStorage
+3 api_description: A storage type for 64-bit floating-point values, providing a contiguous,
+  resizable numeric buffer for tensor data.
+4 api_signature: torch.DoubleStorage(*args,dtype,device)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

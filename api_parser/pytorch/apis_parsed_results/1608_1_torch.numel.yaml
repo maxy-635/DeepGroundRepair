@@ -1,0 +1,12 @@
+2 api_name: torch.numel
+3 api_description: Returns the total number of elements in a tensor.
+4 api_signature: torch.numel(input:Tensor)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose total number of elements is returned.
+7 api_usage_example:
+- ' a = torch.randn(1, 2, 3, 4, 5)'
+- ' torch.numel(a)'
+- ' a = torch.zeros(4,4)'
+- ' torch.numel(a)'
+8 api_shape: null

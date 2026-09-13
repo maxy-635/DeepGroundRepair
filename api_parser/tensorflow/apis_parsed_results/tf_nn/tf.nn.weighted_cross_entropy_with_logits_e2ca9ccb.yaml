@@ -1,0 +1,22 @@
+2 api_name: tensorflow.nn.weighted_cross_entropy_with_logits
+3 api_description: The tensorflow.nn.weighted_cross_entropy_with_logits function computes
+  weighted cross entropy for binary classification tasks, allowing adjustment of positive
+  error costs relative to negative errors using a pos_weight parameter to balance
+  recall and precision.
+4 api_signature: tf.nn.weighted_cross_entropy_with_logits(labels,logits,pos_weight)
+5 api_details: ''
+6 api_parameters:
+- labels: Represents the true binary classification outcomes as a tensor with values
+    between 0 and 1.
+- logits: Represents the predicted outputs as a tensor containing any real numbers,
+    which are used to compute probabilities.
+- pos_weight: Acts as a weighting factor for positive examples to adjust their impact
+    on the loss calculation, ensuring it is non-negative.
+7 api_usage_example:
+- labels = tf.constant([1., 0.5, 0.])
+- logits = tf.constant([1.5, -0.1, -10.])
+- tf.nn.weighted_cross_entropy_with_logits(
+- '    labels=labels, logits=logits, pos_weight=tf.constant(1.5)).numpy()'
+- tf.nn.weighted_cross_entropy_with_logits(
+- '    labels=labels, logits=logits, pos_weight=tf.constant(0.5)).numpy()'
+8 api_shape: ''

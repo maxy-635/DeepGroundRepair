@@ -1,0 +1,14 @@
+2 api_name: tensorflow.nn.normalize_moments
+3 api_description: tensorflow.nn.normalize_moments calculates the mean and variance
+  from sufficient statistics (counts, mean_ss, variance_ss) for a dataset.
+4 api_signature: tf.nn.normalize_moments(counts,mean_ss,variance_ss)
+5 api_details: ''
+6 api_parameters:
+- counts: Represents the total number of elements in the dataset as a single Tensor
+    value.
+- mean_ss: Holds the sum of elements used to compute the mean, possibly adjusted for
+    numerical stability.
+- variance_ss: Contains the squared sum of elements used to calculate the variance,
+    possibly adjusted for numerical stability.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,10 @@
+2 api_name: paddle.seed
+3 api_description: Sets the seed for Paddle’s global default random generator to make
+  random number generation reproducible.
+4 api_signature: paddle.seed(seed)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- gen = paddle.seed(102)
+8 api_shape: {}

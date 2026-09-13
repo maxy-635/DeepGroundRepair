@@ -1,0 +1,17 @@
+2 api_name: paddle.nn.TransformerEncoderLayer
+3 api_description: TransformerEncoderLayer consists of self-attention and feedforward
+  network sub-layers with optional pre-processing (layer normalization) and post-processing
+  (dropout, residual connection, layer normalization) based on the normalize_before
+  flag.
+4 api_signature: paddle.nn.TransformerEncoderLayer(d_model,nhead,dim_feedforward,dropout,activation)
+5 api_details: ''
+6 api_parameters:
+- d_model: Defines the size of the input and output feature vectors.
+- nhead: Specifies the number of attention heads in the multi-head attention mechanism.
+- dim_feedforward: Determines the size of the hidden layer in the feedforward network.
+- dropout: Sets the dropout probability for regularization in MHA and FFN layers,
+    defaulting to 0.1.
+- activation: Chooses the activation function used in the feedforward network, with
+    'relu' as the default.
+7 api_usage_example: []
+8 api_shape: null

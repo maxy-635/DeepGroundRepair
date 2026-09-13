@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.layers.serialize
+3 api_description: The tf.keras.layers.serialize API converts a Keras layer's configuration
+  into a Python dictionary for easy storage and retrieval.
+4 api_signature: tf.keras.layers.serialize(layer)
+5 api_details: ''
+6 api_parameters:
+- layer: A keras.layers.Layer instance to serialize, which allows for the conversion
+    of the layer's configuration into a JSON-serializable format.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ReadVariableOp
+3 api_description: Reads and returns an immutable tensor snapshot of a variable’s
+  current value, respecting TensorFlow write dependencies.
+4 api_signature: tf.raw_ops.ReadVariableOp(resource,dtype)
+5 api_details: ''
+6 api_parameters:
+- resource: Specifies the resource handle to read the variable from.
+- dtype: Specifies the data type of the variable value to return.
+7 api_usage_example: null
+8 api_shape: ''

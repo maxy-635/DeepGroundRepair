@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.cumsum
+3 api_description: Returns the cumulative sum of array elements along a given axis,
+  matching NumPy's cumsum behavior in TensorFlow.
+4 api_signature: tf.experimental.numpy.cumsum(a,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

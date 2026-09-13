@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.functional.adaptive_max_pool3d
+3 api_description: Applies 3D adaptive max pooling to an input tensor, adjusting the
+  pooling kernel size to achieve a specified output size.
+4 api_signature: paddle.nn.functional.adaptive_max_pool3d(x,output_size)
+5 api_details: ''
+6 api_parameters:
+- x: Represents the 5-D input tensor for the adaptive max pool3d operation, with data
+    types float32 or float64.
+- output_size: Specifies the desired output size as a tuple or list of three elements
+    (D, H, W), where each can be an int or None to match the input size.
+7 api_usage_example: []
+8 api_shape: null

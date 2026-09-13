@@ -1,0 +1,9 @@
+2 api_name: torch.cpu.amp.GradScaler
+3 api_description: Scales CPU mixed-precision losses to improve gradient stability,
+  unscales gradients before updates, and helps prevent underflow during training;
+  deprecated in favor of torch.amp.GradScaler(\"cpu\", ...).
+4 api_signature: torch.cpu.amp.GradScaler(init_scale,enabled)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

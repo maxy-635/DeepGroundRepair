@@ -1,0 +1,18 @@
+2 api_name: tensorflow.lookup.KeyValueTensorInitializer
+3 api_description: Creates a key-value table initializer from matching keys and values
+  tensors.
+4 api_signature: tf.lookup.KeyValueTensorInitializer(keys,values)
+5 api_details: ''
+6 api_parameters:
+- keys: Provides the tensor containing the lookup keys.
+- values: Provides the tensor containing the values associated with those keys.
+7 api_usage_example:
+- keys_tensor = tf.constant(['a', 'b', 'c'])
+- vals_tensor = tf.constant([7, 8, 9])
+- input_tensor = tf.constant(['a', 'f'])
+- init = tf.lookup.KeyValueTensorInitializer(keys_tensor, vals_tensor)
+- table = tf.lookup.StaticHashTable(
+- '    init,'
+- '    default_value=-1)'
+- table.lookup(input_tensor).numpy()
+8 api_shape: ''

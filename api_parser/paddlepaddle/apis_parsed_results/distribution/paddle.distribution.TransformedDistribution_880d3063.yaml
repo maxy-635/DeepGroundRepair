@@ -1,0 +1,26 @@
+2 api_name: paddle.distribution.TransformedDistribution
+3 api_description: Wraps a base distribution and applies a sequence of transforms
+  to produce a new transformed distribution.
+4 api_signature: paddle.distribution.TransformedDistribution(base,transforms)
+5 api_details: ''
+6 api_parameters:
+- base: The underlying distribution that is transformed to define the final distribution.
+- transforms: An ordered sequence of transforms applied to the base distribution.
+7 api_usage_example:
+- import paddle
+- paddle.seed(2023)
+- from paddle.distribution import transformed_distribution
+- d = transformed_distribution.TransformedDistribution(
+- '    paddle.distribution.Normal(0., 1.),'
+- '    [paddle.distribution.AffineTransform(paddle.to_tensor(1.), paddle.to_tensor(2.))]'
+- )
+- '>>>'
+- print(d.sample([10]))
+- Tensor(shape=[10], dtype=float32, place=Place(cpu), stop_gradient=True,
+- '[ 3.22699189,  1.12264419,  0.50283587,  1.83812487, -2.00740123,'
+- -2.70338631,  1.26663208,  4.47909021, -0.11529565,  4.32719326])
+- print(d.log_prob(paddle.to_tensor(0.5)))
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- -1.64333570)
+- '>>>'
+8 api_shape: {}

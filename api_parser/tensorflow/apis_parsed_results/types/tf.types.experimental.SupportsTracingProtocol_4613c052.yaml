@@ -1,0 +1,8 @@
+2 api_name: tensorflow.types.experimental.SupportsTracingProtocol
+3 api_description: Protocol for custom classes to define how tf.function traces and
+  retraces them.
+4 api_signature: tf.types.experimental.SupportsTracingProtocol(*args)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

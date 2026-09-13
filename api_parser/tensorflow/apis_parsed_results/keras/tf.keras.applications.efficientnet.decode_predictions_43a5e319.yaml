@@ -1,0 +1,10 @@
+2 api_name: tensorflow.keras.applications.efficientnet.decode_predictions
+3 api_description: Converts an ImageNet model’s prediction probabilities into human-readable
+  class labels with confidence scores.
+4 api_signature: tf.keras.applications.efficientnet.decode_predictions(preds)
+5 api_details: ''
+6 api_parameters:
+- preds: A NumPy array containing a batch of model prediction probabilities to decode
+    into human-readable labels.
+7 api_usage_example: null
+8 api_shape: ''

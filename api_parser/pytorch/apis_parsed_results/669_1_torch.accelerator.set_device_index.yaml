@@ -1,0 +1,9 @@
+2 api_name: torch.accelerator.set_device_index
+3 api_description: Sets the active device index to the specified device.
+4 api_signature: torch.accelerator.set_device_index(device)
+5 api_details: ''
+6 api_parameters:
+- device: Specifies the accelerator device to select, and it must match the current
+    accelerator device type.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.raw_ops.ImageSummary
+3 api_description: Creates a Summary proto containing up to max_images images from
+  a 4-D tensor [batch, height, width, channels], with supported channel formats.
+4 api_signature: tf.raw_ops.ImageSummary(tag,tensor,max_images,bad_color,name)
+5 api_details: ''
+6 api_parameters:
+- tag: Sets the summary tag name used to label the generated image summary.
+- tensor: Provides the 4-D image batch tensor to be summarized, with 1, 3, or 4 channels.
+- max_images: Limits how many images from the batch are included in the summary.
+- bad_color: Specifies the RGBA color used to mark pixels with non-finite values.
+- name: Optionally assigns a name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: torch.nn.attention.flex_attention.create_mask
+3 api_description: Creates a boolean attention mask by evaluating a user-provided
+  mod_fn over query-key positions.
+4 api_signature: torch.nn.attention.flex_attention.create_mask(mod_fn,B,H,Q_LEN,KV_LEN)
+5 api_details: ''
+6 api_parameters:
+- mod_fn: Defines the function used to modify attention scores.
+- B: Specifies the batch size.
+- H: Specifies the number of query heads.
+- Q_LEN: Specifies the query sequence length.
+- KV_LEN: Specifies the key/value sequence length.
+7 api_usage_example: null
+8 api_shape: null

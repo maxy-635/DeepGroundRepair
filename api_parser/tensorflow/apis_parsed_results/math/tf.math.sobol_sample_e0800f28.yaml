@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.sobol_sample
+3 api_description: Generates `num_results` points from a Sobol low-discrepancy sequence
+  in `dim` dimensions, skipping the first `skip` samples.
+4 api_signature: tf.math.sobol_sample(dim,num_results,dtype)
+5 api_details: ''
+6 api_parameters:
+- dim: Sets the dimensionality of each Sobol sample.
+- num_results: Specifies how many Sobol points to generate.
+- dtype: Chooses the floating-point type of the returned samples, defaulting to tf.float32.
+7 api_usage_example: null
+8 api_shape: ''

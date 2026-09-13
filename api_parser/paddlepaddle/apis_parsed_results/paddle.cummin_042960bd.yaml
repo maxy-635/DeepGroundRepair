@@ -1,0 +1,40 @@
+2 api_name: paddle.cummin
+3 api_description: Computes the running minimum of elements along a specified axis.
+4 api_signature: paddle.cummin(x,axis)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor to compute the cumulative minimum on.
+- axis: Axis along which to compute the cumulative minimum; if `None`, the tensor
+    is flattened, and `-1` selects the last dimension.
+7 api_usage_example:
+- import paddle
+- data = paddle.to_tensor([-1, 5, 0, -2, -3, 2])
+- data = paddle.reshape(data, (2, 3))
+- value, indices = paddle.cummin(data)
+- value
+- Tensor(shape=[6], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[-1, -1, -1, -2, -3, -3])'
+- indices
+- Tensor(shape=[6], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[0, 0, 0, 3, 4, 4])'
+- value, indices = paddle.cummin(data, axis=0)
+- value
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[-1,  5,  0],'
+- '[-2, -3,  0]])'
+- indices
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 0, 0],'
+- '[1, 1, 0]])'
+- value, indices = paddle.cummin(data, axis=-1)
+- value
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[-1, -1, -1],'
+- '[-2, -3, -3]])'
+- indices
+- Tensor(shape=[2, 3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[[0, 0, 0],'
+- '[0, 1, 1]])'
+- value, indices = paddle.cummin(data, dtype='int64')
+- assert indices.dtype == paddle.int64
+8 api_shape: {}

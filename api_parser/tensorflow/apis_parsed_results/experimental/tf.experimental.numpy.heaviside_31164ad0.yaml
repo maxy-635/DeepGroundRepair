@@ -1,0 +1,9 @@
+2 api_name: tensorflow.experimental.numpy.heaviside
+3 api_description: Computes the elementwise Heaviside step function for two inputs,
+  returning 0 for negative values, 1 for positive values, and a configurable value
+  at zero.
+4 api_signature: '"tf.experimental.numpy.heaviside(x1,x2)"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

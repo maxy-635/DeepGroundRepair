@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.Stack
+3 api_description: Stacks multiple tensors into a single stack and returns the result;
+  deprecated in favor of StackV2.
+4 api_signature: tf.raw_ops.Stack(elem_type,stack_name)
+5 api_details: ''
+6 api_parameters:
+- elem_type: Specifies the data type of elements stored in the stack.
+- stack_name: Optionally assigns a name to the stack operation, defaulting to an empty
+    string.
+- name: Optionally sets the operation name for graph construction and debugging.
+7 api_usage_example: null
+8 api_shape: ''

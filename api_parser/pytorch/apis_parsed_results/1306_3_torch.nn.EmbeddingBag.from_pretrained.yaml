@@ -1,0 +1,21 @@
+2 api_name: torch.nn.EmbeddingBag.from_pretrained
+3 api_description: Creates an EmbeddingBag instance using a pre-trained 2D FloatTensor
+  for efficient embedding lookups and aggregation.
+4 api_signature: from_pretrained(embeddings,freeze,padding_idx)
+5 api_details: ''
+6 api_parameters:
+- embeddings: A FloatTensor that provides the initial weights for the EmbeddingBag,
+    where the first dimension represents the number of embeddings and the second dimension
+    represents the size of each embedding.
+- freeze: A boolean that determines whether the embedding weights are updated during
+    training, with True indicating that the weights remain constant.
+- padding_idx: An index that specifies which embedding should be used for padding,
+    as described in the module's initialization documentation.
+7 api_usage_example:
+- ' # FloatTensor containing pretrained weights'
+- ' weight = torch.FloatTensor([[1, 2.3, 3], [4, 5.1, 6.3]])'
+- ' embeddingbag = nn.EmbeddingBag.from_pretrained(weight)'
+- ' # Get embeddings for index 1'
+- ' input = torch.LongTensor([[1, 0]])'
+- ' embeddingbag(input)'
+8 api_shape: null

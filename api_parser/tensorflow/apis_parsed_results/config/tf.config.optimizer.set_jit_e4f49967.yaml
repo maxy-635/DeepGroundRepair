@@ -1,0 +1,9 @@
+2 api_name: tensorflow.config.optimizer.set_jit
+3 api_description: Configures TensorFlow’s JIT compiler to enable or disable just-in-time
+  optimization for supported operations.
+4 api_signature: tf.config.optimizer.set_jit(enabled)
+5 api_details: ''
+6 api_parameters:
+- enabled: Turns TensorFlow JIT compilation on or off.
+7 api_usage_example: null
+8 api_shape: ''

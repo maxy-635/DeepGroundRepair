@@ -1,0 +1,41 @@
+2 api_name: paddle.sparse.mask_as
+3 api_description: Creates a sparse tensor by selecting values from a dense input
+  tensor at the nonzero index positions of a sparse mask, preserving the mask’s indices
+  and sparse format even if some selected values are zero.
+4 api_signature: paddle.sparse.mask_as(x,mask)
+5 api_details: ''
+6 api_parameters:
+- x: The dense input tensor whose values are selected or filtered by the sparse mask.
+- mask: The sparse tensor used to specify which elements or positions to keep, supporting
+    COO or CSR formats.
+7 api_usage_example:
+- import paddle
+- paddle.set_device('cpu')
+- '# csr sparse tensor'
+- crows = [0, 2, 3, 5]
+- cols = [1, 3, 2, 0, 1]
+- values = [1., 2., 3., 4., 5.]
+- dense_shape = [3, 4]
+- csr = paddle.sparse.sparse_csr_tensor(crows, cols, values, dense_shape)
+- paddle.seed(2024)
+- x = paddle.rand(dense_shape).astype(csr.dtype)
+- out = paddle.sparse.mask_as(x, csr)
+- print(out)
+- Tensor(shape=[3, 4], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- crows=[0, 2, 3, 5],
+- cols=[1, 3, 2, 0, 1],
+- values=[0.23659813, 0.08467803, 0.64152628, 0.66596609, 0.90394485])
+- '# coo sparse tensor'
+- indices = [[0, 1, 2], [1, 2, 0]]
+- values = [1.0, 2.0, 3.0]
+- dense_shape = [3, 3]
+- coo = paddle.sparse.sparse_coo_tensor(indices, values, dense_shape)
+- paddle.seed(2024)
+- x = paddle.rand(dense_shape).astype(coo.dtype)
+- out = paddle.sparse.mask_as(x, coo)
+- print(out)
+- Tensor(shape=[3, 3], dtype=paddle.float32, place=Place(cpu), stop_gradient=True,
+- indices=[[0, 1, 2],
+- '[1, 2, 0]],'
+- values=[0.23659813, 0.40340215, 0.64152628])
+8 api_shape: {}

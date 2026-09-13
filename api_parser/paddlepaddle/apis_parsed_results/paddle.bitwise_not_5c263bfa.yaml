@@ -1,0 +1,14 @@
+2 api_name: paddle.bitwise_not
+3 api_description: Computes the bitwise NOT of each element in Tensor X.
+4 api_signature: paddle.bitwise_not(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose bits are inverted elementwise.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([-5, -1, 1])
+- res = paddle.bitwise_not(x)
+- print(res)
+- Tensor(shape=[3], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[ 4,  0, -2])'
+8 api_shape: {}

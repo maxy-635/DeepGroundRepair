@@ -1,0 +1,25 @@
+2 api_name: paddle.nn.functional.margin_ranking_loss
+3 api_description: The paddle.nn.functional.margin_ranking_loss API computes the loss
+  between two inputs, 'input' and 'other', based on a margin and a label indicating
+  the desired order, encouraging the 'input' to be greater than 'other' by at least
+  the margin when the label is 1, and vice versa when the label is -1.
+4 api_signature: paddle.nn.functional.margin_ranking_loss(input,other,label,margin)
+5 api_details: ''
+6 api_parameters:
+- input: Represents the first input tensor, required to be of data type float32 or
+    float64.
+- other: Represents the second input tensor, required to be of data type float32 or
+    float64.
+- label: Denotes the label tensor corresponding to the input, required to be of data
+    type float32 or float64.
+- margin: Specifies the margin value to be added, with a default value of 0.
+7 api_usage_example:
+- import paddle
+- input = paddle.to_tensor([[1, 2], [3, 4]], dtype='float32')
+- other = paddle.to_tensor([[2, 1], [2, 4]], dtype='float32')
+- label = paddle.to_tensor([[1, -1], [-1, -1]], dtype='float32')
+- loss = paddle.nn.functional.margin_ranking_loss(input, other, label)
+- print(loss)
+- Tensor(shape=[], dtype=float32, place=Place(cpu), stop_gradient=True,
+- 0.75000000)
+8 api_shape: null

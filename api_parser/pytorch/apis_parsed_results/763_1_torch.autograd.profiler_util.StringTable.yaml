@@ -1,0 +1,8 @@
+2 api_name: torch.autograd.profiler_util.StringTable
+3 api_description: Returns a default value for missing keys when the string table
+  is accessed.
+4 api_signature: class torch.autograd.profiler_util.StringTable
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

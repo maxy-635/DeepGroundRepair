@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.activations.sigmoid
+3 api_description: Applies the sigmoid activation to map inputs into a value between
+  0 and 1, using 1 / (1 + exp(-x)).
+4 api_signature: '"tf.keras.activations.sigmoid(x)"'
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor to be transformed by the sigmoid activation.
+7 api_usage_example: null
+8 api_shape: ''

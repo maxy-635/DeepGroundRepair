@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SparseMatrixSoftmaxGrad
+3 api_description: Computes the gradient of a sparse matrix softmax by propagating
+  upstream gradients through the softmax output values.
+4 api_signature: tf.raw_ops.SparseMatrixSoftmaxGrad(softmax,grad_softmax)
+5 api_details: ''
+6 api_parameters:
+- softmax: The CSR sparse matrix containing the softmax output whose gradient is being
+    computed.
+- grad_softmax: The upstream gradient of the softmax output used to compute the softmax
+    gradient.
+7 api_usage_example: null
+8 api_shape: ''

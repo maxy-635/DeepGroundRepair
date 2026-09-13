@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.config.is_traceback_filtering_enabled
+3 api_description: Returns whether Keras traceback filtering is currently enabled,
+  which shortens exceptions by hiding internal frames.
+4 api_signature: '"tf.keras.config.is_traceback_filtering_enabled()"'
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

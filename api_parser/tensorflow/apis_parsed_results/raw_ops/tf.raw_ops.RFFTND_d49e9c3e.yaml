@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.RFFTND
+3 api_description: Computes an n-dimensional inverse real FFT over selected axes,
+  reconstructing real-valued output from the compact RFFTND frequency representation,
+  with optional zero-padding or default input lengths.
+4 api_signature: tf.raw_ops.RFFTND(input,fft_length,axes)
+5 api_details: ''
+6 api_parameters:
+- input: The real-valued tensor to be transformed by the n-dimensional real FFT.
+- fft_length: The FFT size to use along each transformed dimension.
+- axes: The dimensions of the input on which to compute the transform.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,11 @@
+2 api_name: paddle.matmul
+3 api_description: Performs matrix multiplication on two tensors with NumPy-compatible
+  broadcasting, matching the behavior of `np.matmul`.
+4 api_signature: paddle.matmul(x,y,*,out)
+5 api_details: ''
+6 api_parameters:
+- x: The first input tensor to be multiplied.
+- y: The second input tensor to be multiplied.
+- out: Optional tensor to store the output result instead of creating a new one.
+7 api_usage_example: []
+8 api_shape: {}

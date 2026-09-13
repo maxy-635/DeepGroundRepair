@@ -1,0 +1,8 @@
+2 api_name: tensorflow.raw_ops.FresnelSin
+3 api_description: Computes the Fresnel sine integral for each input element.
+4 api_signature: tf.raw_ops.FresnelSin(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor containing values at which to compute the Fresnel sine integral.
+7 api_usage_example: null
+8 api_shape: ''

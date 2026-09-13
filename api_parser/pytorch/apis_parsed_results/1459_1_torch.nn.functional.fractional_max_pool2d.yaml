@@ -1,0 +1,26 @@
+2 api_name: torch.nn.functional.fractional_max_pool2d
+3 api_description: torch.nn.functional.fractional_max_pool2d performs 2D fractional
+  max pooling on input data, allowing for non-integer downsampling ratios, which is
+  useful for reducing the spatial dimensions of input planes while preserving important
+  features.
+4 api_signature: torch.nn.functional.fractional_max_pool2d(input,kernel_size,output_size,output_ratio,return_indices)
+5 api_details: ''
+6 api_parameters:
+- kernel_size: Specifies the size of the window for max pooling, either as a single
+    number for a square kernel or as a tuple for different height and width.
+- output_size: Defines the desired output dimensions of the image, either as a single
+    number for a square output or as a tuple for specific height and width.
+- output_ratio: Allows setting the output size as a fraction of the input size, given
+    as a number or tuple within the range (0, 1).
+- return_indices: Indicates whether to return the indices of the max values along
+    with the output, useful for use with max_unpool2d().
+7 api_usage_example:
+- ' input = torch.randn(20, 16, 50, 32)'
+- ' # pool of square window of size=3, and target output size 13x12'
+- ' F.fractional_max_pool2d(input, 3, output_size=(13, 12))'
+- ' # pool of square window and target output size being half of input image size'
+- ' F.fractional_max_pool2d(input, 3, output_ratio=(0.5, 0.5))'
+8 api_shape:
+  input tensor shape: (N, Channel_in, Height_in, Width_in)
+  output tensor shape: (N, Channel_out, Height_out, Width_out)
+  tensor shape transform formulas: {}

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.shape_n
+3 api_description: Returns the shapes of a list of tensors efficiently, faster than
+  calling tf.shape on each tensor separately.
+4 api_signature: tf.shape_n(input,out_type)
+5 api_details: ''
+6 api_parameters:
+- input: A list of one or more tensors whose shapes are returned.
+- out_type: The integer dtype used for the returned shape values, either `int32` or
+    `int64`.
+7 api_usage_example: null
+8 api_shape: ''

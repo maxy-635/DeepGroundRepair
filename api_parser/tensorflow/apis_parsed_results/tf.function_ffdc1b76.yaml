@@ -1,0 +1,18 @@
+2 api_name: tensorflow.function
+3 api_description: Converts a Python function into a TensorFlow graph-backed callable
+  for faster execution.
+4 api_signature: tf.function(func,input_signature,autograph,jit_compile,reduce_retracing)
+5 api_details: ''
+6 api_parameters:
+- func: The Python function to compile, or a decorator target when omitted.
+- input_signature: Specifies the expected Tensor shapes and dtypes, fixing the input
+    contract and requiring Tensor-only positional inputs.
+- autograph: Controls whether AutoGraph converts Python control flow into graph-friendly
+    operations before tracing.
+- jit_compile: Enables or disables XLA compilation for the function to potentially
+    improve performance.
+- reduce_retracing: Reduces retracing by encouraging more generic traces for similar
+    inputs.
+7 api_usage_example:
+- f(2, tf.constant(2))
+8 api_shape: ''

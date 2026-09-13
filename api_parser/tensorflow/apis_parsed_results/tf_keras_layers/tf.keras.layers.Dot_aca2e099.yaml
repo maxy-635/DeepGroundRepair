@@ -1,0 +1,13 @@
+2 api_name: tensorflow.keras.layers.Dot
+3 api_description: Computes the element-wise dot product of two tensors along specified
+  axes, resulting in a tensor with combined dimensions.
+4 api_signature: tf.keras.layers.Dot(axes)
+5 api_details: ''
+6 api_parameters:
+- axes: Specifies the axis or axes along which the dot product is computed, ensuring
+    that the sizes of the selected axes from both inputs match.
+7 api_usage_example:
+- x1 = keras.layers.Dense(8)(np.arange(10).reshape(5, 2))
+- x2 = keras.layers.Dense(8)(np.arange(10, 20).reshape(5, 2))
+- y = keras.layers.Dot(axes=1)([x1, x2])
+8 api_shape: null

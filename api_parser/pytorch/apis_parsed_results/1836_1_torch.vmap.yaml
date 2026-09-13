@@ -1,0 +1,20 @@
+2 api_name: torch.vmap
+3 api_description: Vectorizes a function by mapping it over a chosen input dimension,
+  pushing the batching into underlying PyTorch ops for efficient parallel execution.
+4 api_signature: torch.vmap(func,in_dims,out_dims,randomness)
+5 api_details: ''
+6 api_parameters:
+- func: The function to vectorize across batches, taking one or more inputs and returning
+    one or more tensors.
+- in_dims: Specifies which input dimensions are mapped over for each argument, or
+    `None` for arguments that are not batched.
+- out_dims: Specifies where the mapped batch dimension should appear in each output
+    tensor.
+- randomness: Controls whether random operations inside `vmap` use different, same,
+    or disallowed randomness across batches.
+7 api_usage_example:
+- ' torch.dot  # [D], [D] -> []'
+- ' batched_dot = torch.func.vmap(torch.dot)  # [N, D], [N, D] -> [N]'
+- ' x, y = torch.randn(2, 5), torch.randn(2, 5)'
+- ' batched_dot(x, y)'
+8 api_shape: null

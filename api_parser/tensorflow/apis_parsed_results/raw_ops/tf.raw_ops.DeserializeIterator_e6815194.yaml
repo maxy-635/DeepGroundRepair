@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.DeserializeIterator
+3 api_description: Converts a variant tensor into an iterator and saves it to a resource
+  handle.
+4 api_signature: tf.raw_ops.DeserializeIterator(resource_handle,serialized)
+5 api_details: ''
+6 api_parameters:
+- resource_handle: Identifies the iterator resource whose state will be restored.
+- serialized: Contains the serialized iterator state to load into the resource.
+7 api_usage_example: null
+8 api_shape: ''

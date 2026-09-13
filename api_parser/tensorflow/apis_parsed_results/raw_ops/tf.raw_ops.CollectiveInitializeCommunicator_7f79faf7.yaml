@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.CollectiveInitializeCommunicator
+3 api_description: Initializes a collective communication group for distributed operations.
+4 api_signature: tf.raw_ops.CollectiveInitializeCommunicator(group_key,rank,group_size)
+5 api_details: ''
+6 api_parameters:
+- group_key: Identifies the communicator group this instance belongs to.
+- rank: Specifies this worker’s rank within the communicator group.
+- group_size: Sets the total number of participants in the communicator group.
+7 api_usage_example: null
+8 api_shape: ''

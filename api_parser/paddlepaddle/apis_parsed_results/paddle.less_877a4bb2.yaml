@@ -1,0 +1,18 @@
+2 api_name: paddle.less
+3 api_description: Returns an elementwise boolean result indicating whether x is less
+  than y, equivalent to the < operator.
+4 api_signature: paddle.less(x,y,out)
+5 api_details: ''
+6 api_parameters:
+- x: The first tensor input to compare for the less-than operation.
+- y: The second tensor input to compare against the first tensor.
+- out: An optional tensor where the comparison result is written.
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1, 2, 3])
+- y = paddle.to_tensor([1, 3, 2])
+- result1 = paddle.less_than(x, y)
+- print(result1)
+- Tensor(shape=[3], dtype=bool, place=Place(cpu), stop_gradient=True,
+- '[False, True , False])'
+8 api_shape: {}

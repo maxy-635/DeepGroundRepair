@@ -1,0 +1,13 @@
+2 api_name: tensorflow.debugging.Assert
+3 api_description: Checks that a condition is true and raises an assertion failure
+  with the provided tensor data if it is false, printing only a limited summary of
+  tensor entries.
+4 api_signature: tf.debugging.Assert(condition,data)
+5 api_details: ''
+6 api_parameters:
+- condition: Boolean tensor or value that must evaluate to true for the assertion
+    to pass.
+- data: Tensor values to output when the condition is false, helping diagnose the
+    failed assertion.
+7 api_usage_example: null
+8 api_shape: ''

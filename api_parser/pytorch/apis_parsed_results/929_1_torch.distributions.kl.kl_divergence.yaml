@@ -1,0 +1,12 @@
+2 api_name: torch.distributions.kl.kl_divergence
+3 api_description: Computes the Kullback-Leibler divergence KL(p || q) between two
+  probability distributions.
+4 api_signature: '"kl_divergence(p,q)"'
+5 api_details: ''
+6 api_parameters:
+- p: The first distribution, used as the reference distribution in the KL divergence
+    computation.
+- q: The second distribution, compared against `p` to measure how one distribution
+    diverges from the other.
+7 api_usage_example: null
+8 api_shape: null

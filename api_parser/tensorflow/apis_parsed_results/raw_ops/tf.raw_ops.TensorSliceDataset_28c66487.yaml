@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.TensorSliceDataset
+3 api_description: Creates a dataset that yields each input tensor’s first-dimension
+  slices one at a time.
+4 api_signature: tf.raw_ops.TensorSliceDataset(components,output_shapes,name)
+5 api_details: ''
+6 api_parameters:
+- components: Specifies the input tensors that make up the dataset elements.
+- output_shapes: Defines the shape of each output tensor produced by the dataset.
+- name: Assigns an optional name to the operation for easier identification.
+7 api_usage_example: null
+8 api_shape: ''

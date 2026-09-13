@@ -1,0 +1,10 @@
+2 api_name: torch.onnx.select_model_mode_for_export
+3 api_description: Temporarily sets a model’s training mode during ONNX export and
+  restores the original mode afterward.
+4 api_signature: torch.onnx.select_model_mode_for_export(model,mode)
+5 api_details: ''
+6 api_parameters:
+- model: The model to switch into the appropriate mode for ONNX export.
+- mode: The export-time training/evaluation mode to apply to the model.
+7 api_usage_example: null
+8 api_shape: null

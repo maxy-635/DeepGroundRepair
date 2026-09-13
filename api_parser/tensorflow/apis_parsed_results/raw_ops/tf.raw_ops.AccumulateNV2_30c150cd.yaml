@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.AccumulateNV2
+3 api_description: Computes the element-wise sum of a list of tensors, starting accumulation
+  as inputs become available to reduce temporary memory use; it matches `tf.add_n`
+  behavior and is differentiable.
+4 api_signature: tf.raw_ops.AccumulateNV2(inputs)
+5 api_details: ''
+6 api_parameters:
+- inputs: A non-empty list of tensors with identical shapes and dtypes whose values
+    are accumulated elementwise.
+7 api_usage_example: null
+8 api_shape: ''

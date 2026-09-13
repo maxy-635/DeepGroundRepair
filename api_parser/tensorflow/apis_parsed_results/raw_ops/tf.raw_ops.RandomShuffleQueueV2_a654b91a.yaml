@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.RandomShuffleQueueV2
+3 api_description: Creates a random-shuffle queue that stores elements and returns
+  them in randomized order when dequeued.
+4 api_signature: tf.raw_ops.RandomShuffleQueueV2(capacity,min_after_dequeue,seed,seed2,name)
+5 api_details: ''
+6 api_parameters:
+- capacity: Sets the maximum number of elements the queue can hold, or removes the
+    limit if negative.
+- min_after_dequeue: Sets the minimum number of elements that should remain in the
+    queue after a dequeue to keep sufficient mixing.
+- seed: Provides the primary random seed used to initialize the queue's shuffling
+    behavior.
+- seed2: Provides a secondary random seed to help avoid collisions with other seeded
+    operations.
+- name: Assigns an optional name to the operation.
+7 api_usage_example: null
+8 api_shape: ''

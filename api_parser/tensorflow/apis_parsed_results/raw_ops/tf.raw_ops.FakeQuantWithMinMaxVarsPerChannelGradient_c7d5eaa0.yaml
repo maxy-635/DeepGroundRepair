@@ -1,0 +1,15 @@
+2 api_name: tensorflow.raw_ops.FakeQuantWithMinMaxVarsPerChannelGradient
+3 api_description: Computes the backpropagated gradient for a per-channel fake quantization
+  op, using the provided min/max ranges to pass through or zero out gradients according
+  to quantization bounds.
+4 api_signature: tf.raw_ops.FakeQuantWithMinMaxVarsPerChannelGradient(gradients,inputs,min,max)
+5 api_details: ''
+6 api_parameters:
+- gradients: Backpropagated float32 gradients from above the fake-quant operation,
+    matching the input shape.
+- inputs: The float32 input values that were passed through `FakeQuantWithMinMaxVars`,
+    matching the gradients shape.
+- min: The float32 lower bound of the per-channel quantization interval.
+- max: The float32 upper bound of the per-channel quantization interval.
+7 api_usage_example: null
+8 api_shape: ''

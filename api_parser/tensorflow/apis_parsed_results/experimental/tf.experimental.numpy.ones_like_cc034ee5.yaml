@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.ones_like
+3 api_description: Returns an array of ones with the same shape and type as the input
+  tensor, using TensorFlow’s NumPy-compatible behavior.
+4 api_signature: tf.experimental.numpy.ones_like(a)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

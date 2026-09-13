@@ -1,0 +1,21 @@
+2 api_name: torch.nn.LSTM
+3 api_description: The torch.nn.LSTM API implements a multi-layer long short-term
+  memory (LSTM) recurrent neural network that processes input sequences, maintaining
+  hidden states across layers to capture temporal dependencies in the data.
+4 api_signature: torch.nn.LSTM(input_size,hidden_size,num_layers,batch_first,bidirectional)
+5 api_details: ''
+6 api_parameters:
+- input_size: Specifies the number of features in the input data.
+- hidden_size: Defines the number of features in the hidden state.
+- num_layers: Indicates the number of stacked LSTM layers.
+- batch_first: Determines if the input and output tensors are formatted with batch
+    size as the first dimension.
+- bidirectional: Enables the LSTM to be bidirectional, processing the input sequence
+    in both directions.
+7 api_usage_example:
+- ' rnn = nn.LSTM(10, 20, 2)'
+- ' input = torch.randn(5, 3, 10)'
+- ' h0 = torch.randn(2, 3, 20)'
+- ' c0 = torch.randn(2, 3, 20)'
+- ' output, (hn, cn) = rnn(input, (h0, c0))'
+8 api_shape: null

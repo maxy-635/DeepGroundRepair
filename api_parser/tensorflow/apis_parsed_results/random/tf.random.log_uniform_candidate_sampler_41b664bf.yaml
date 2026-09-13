@@ -1,0 +1,12 @@
+2 api_name: tensorflow.random.log_uniform_candidate_sampler
+3 api_description: Samples class IDs from a log-uniform distribution over [0, range_max),
+  returning sampled candidates plus expected counts for true and sampled classes to
+  support candidate-sampling algorithms.
+4 api_signature: tf.random.log_uniform_candidate_sampler(true_classes,num_sampled,range_max)
+5 api_details: ''
+6 api_parameters:
+- true_classes: Specifies the target classes for each example in the batch.
+- num_sampled: Sets how many candidate classes to randomly draw.
+- range_max: Defines the total number of possible classes to sample from.
+7 api_usage_example: null
+8 api_shape: ''

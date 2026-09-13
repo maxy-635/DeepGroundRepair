@@ -1,0 +1,10 @@
+2 api_name: tensorflow.raw_ops.ReciprocalGrad
+3 api_description: Computes the gradient of reciprocal by returning -dy * y * y, where
+  y = 1/x and dy is the upstream gradient.
+4 api_signature: tf.raw_ops.ReciprocalGrad(y,dy)
+5 api_details: ''
+6 api_parameters:
+- y: The input tensor whose reciprocal gradient is being computed.
+- dy: The upstream gradient tensor, which must match `y`'s type.
+7 api_usage_example: null
+8 api_shape: ''

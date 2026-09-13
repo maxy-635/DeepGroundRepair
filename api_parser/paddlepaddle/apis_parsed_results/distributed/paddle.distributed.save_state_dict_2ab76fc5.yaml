@@ -1,0 +1,22 @@
+2 api_name: paddle.distributed.save_state_dict
+3 api_description: Saves a model's state_dict to the specified path for distributed
+  training workflows.
+4 api_signature: paddle.distributed.save_state_dict(state_dict,path,process_group,async_save,safetensors)
+5 api_details: ''
+6 api_parameters:
+- state_dict: The state dictionary containing model or optimizer states to be saved.
+- path: The directory where the state dictionary will be written.
+- process_group: The process group used to coordinate saving across ranks.
+- async_save: Whether to save asynchronously instead of blocking until completion.
+- safetensors: Whether to save the state dictionary in safetensors format.
+7 api_usage_example:
+- '>>>'
+- import paddle
+- import paddle.distributed as dist
+- w1 = paddle.arange(32).reshape([4, 8])
+- mesh = dist.ProcessMesh([0, 1])
+- sharded_w1 = dist.shard_tensor(w1, mesh, [dist.Shard(0), dist.Replicate()])
+- 'state_dict = {"w1": sharded_w1}'
+- dist.save_state_dict(state_dict, "./checkpoint")
+- '>>>'
+8 api_shape: {}

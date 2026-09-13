@@ -1,0 +1,11 @@
+2 api_name: tensorflow.quantization.fake_quant_with_min_max_args
+3 api_description: Fake-quantizes a float input tensor by clamping and mapping values
+  into the specified [min, max] range, returning a same-shaped float output.
+4 api_signature: tf.quantization.fake_quant_with_min_max_args(inputs,min,max)
+5 api_details: ''
+6 api_parameters:
+- inputs: The float32 tensor to be fake-quantized.
+- min: The minimum clipping/quantization range, defaulting to -6.
+- max: The maximum clipping/quantization range, defaulting to 6.
+7 api_usage_example: null
+8 api_shape: ''

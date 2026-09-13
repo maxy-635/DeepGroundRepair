@@ -1,0 +1,14 @@
+2 api_name: torch.special.gammainc
+3 api_description: Computes the regularized lower incomplete gamma function for input
+  tensors.
+4 api_signature: torch.special.gammainc(input,other)
+5 api_details: ''
+6 api_parameters:
+- input: The first non-negative input tensor that specifies the shape parameter.
+- other: The second non-negative input tensor that specifies the upper limit of integration.
+7 api_usage_example:
+- ' a1 = torch.tensor([4.0])'
+- ' a2 = torch.tensor([3.0, 4.0, 5.0])'
+- ' a = torch.special.gammaincc(a1, a2)'
+- ' b = torch.special.gammainc(a1, a2) + torch.special.gammaincc(a1, a2)'
+8 api_shape: null

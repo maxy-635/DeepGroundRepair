@@ -1,0 +1,15 @@
+2 api_name: torch.hsplit
+3 api_description: Splits a tensor horizontally into multiple view tensors based on
+  the given sections or indices.
+4 api_signature: torch.hsplit(input,indices_or_sections)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor that will be split horizontally.
+- indices_or_sections: The number of equal sections or split indices to use, as defined
+    by `torch.tensor_split()`.
+7 api_usage_example:
+- ' t = torch.arange(16.0).reshape(4,4)'
+- ' t'
+- ' torch.hsplit(t, 2)'
+- ' torch.hsplit(t, [3, 6])'
+8 api_shape: null

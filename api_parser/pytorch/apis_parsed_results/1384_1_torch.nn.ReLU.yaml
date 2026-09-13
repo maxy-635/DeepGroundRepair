@@ -1,0 +1,20 @@
+2 api_name: torch.nn.ReLU
+3 api_description: Applies the ReLU activation function, outputting the input directly
+  if positive, otherwise outputting zero.
+4 api_signature: torch.nn.ReLU(inplace)
+5 api_details: ''
+6 api_parameters:
+- inplace: If set to True, the operation will modify the input directly instead of
+    creating a new output tensor.
+7 api_usage_example:
+- '   m = nn.ReLU()'
+- '   input = torch.randn(2)'
+- '   output = m(input)'
+- An implementation of CReLU - https://arxiv.org/abs/1603.05201
+- '   m = nn.ReLU()'
+- '   input = torch.randn(2).unsqueeze(0)'
+- '   output = torch.cat((m(input), m(-input)))'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: (*), same shape as the input.
+  tensor shape transform formulas: {}

@@ -1,0 +1,15 @@
+2 api_name: tensorflow.distribute.Server
+3 api_description: Runs an in-process TensorFlow server for distributed training,
+  exposing a session target and device set for a specific task in a cluster so it
+  can communicate with other servers.
+4 api_signature: tf.distribute.Server(cluster_def,job_name,task_index,protocol,config,start)
+5 api_details: ''
+6 api_parameters:
+- job_name: Sets the job name that identifies which job the server belongs to.
+- task_index: Sets the server’s task index within its job.
+- protocol: Chooses the communication protocol used by the server.
+- config: Provides default session configuration options for sessions running on the
+    server.
+- start: Controls whether the server starts immediately after it is created.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,18 @@
+2 api_name: tensorflow.raw_ops.ResourceApplyCenteredRMSProp
+3 api_description: Applies the centered RMSProp update to a variable using running
+  averages of the gradient and its square, then adjusts the variable with momentum-scaled,
+  variance-normalized gradients.
+4 api_signature: tf.raw_ops.ResourceApplyCenteredRMSProp(var,mg,ms,mom,lr,rho,momentum,epsilon,grad)
+5 api_details: ''
+6 api_parameters:
+- var: The variable to be updated by the centered RMSProp optimizer.
+- mg: The running average of gradients used to compute the centered variance estimate.
+- ms: The running average of squared gradients used in the optimizer update.
+- mom: The momentum accumulator that stores the update momentum state.
+- lr: The scalar learning rate that controls the step size of the update.
+- rho: The scalar decay rate for the moving averages.
+- momentum: The scalar momentum coefficient applied to the update.
+- epsilon: The small scalar constant added for numerical stability.
+- grad: The current gradient used to update the optimizer state and variable.
+7 api_usage_example: null
+8 api_shape: ''

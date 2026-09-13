@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.preprocessing.text.text_to_word_sequence
+3 api_description: Converts a text string into a list of lowercased word tokens by
+  splitting on whitespace and punctuation, with optional filtering and custom separators.
+4 api_signature: tf.keras.preprocessing.text.text_to_word_sequence(input_text)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

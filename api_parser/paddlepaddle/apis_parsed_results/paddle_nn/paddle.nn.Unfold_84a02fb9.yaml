@@ -1,0 +1,12 @@
+2 api_name: paddle.nn.Unfold
+3 api_description: paddle.nn.Unfold rearranges sliding local blocks of a batched 2D
+  image tensor into columns, facilitating operations like im2col for convolution.
+4 api_signature: paddle.nn.Unfold(kernel_sizes,strides)
+5 api_details: ''
+6 api_parameters:
+- kernel_sizes: Specifies the dimensions of the convolution kernel, allowing either
+    a list [k_h, k_w] or a single integer k which is treated as [k, k].
+- strides: Defines the step size for sliding the kernel, accepting either a list [stride_h,
+    stride_w] or a single integer stride which defaults to [1, 1] if not specified.
+7 api_usage_example: []
+8 api_shape: null

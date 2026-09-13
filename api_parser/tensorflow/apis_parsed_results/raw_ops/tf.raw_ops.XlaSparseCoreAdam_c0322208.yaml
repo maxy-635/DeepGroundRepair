@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.XlaSparseCoreAdam
+3 api_description: Applies the XLA SparseCore Adam optimization update to sparse parameters,
+  combining Adam’s momentum and variance tracking with sparse-core execution for efficient
+  training.
+4 api_signature: tf.raw_ops.XlaSparseCoreAdam(embedding_table,indices,gradient,learning_rate,beta_1,beta_2,epsilon,name)
+5 api_details: ''
+6 api_parameters:
+- embedding_table: The embedding table to be updated by the optimizer.
+- indices: The integer indices identifying which embedding rows receive updates.
+- gradient: The gradient values used to adjust the selected embeddings.
+- learning_rate: The step size controlling how large each parameter update is.
+- beta_1: The exponential decay rate for the first-moment estimate.
+- beta_2: The exponential decay rate for the second-moment estimate.
+- epsilon: A small constant added for numerical stability during division.
+- name: An optional operation name for graph construction and debugging.
+7 api_usage_example: null
+8 api_shape: ''

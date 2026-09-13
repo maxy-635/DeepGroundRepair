@@ -1,0 +1,26 @@
+2 api_name: paddle.io.IterableDataset
+3 api_description: An iterable dataset base class for data sources that are streamed
+  sequentially, providing an interface for custom iteration over records without random
+  access.
+4 api_signature: ''
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import numpy as np
+- from paddle.io import IterableDataset
+- '# define a random dataset'
+- 'class RandomDataset(IterableDataset): # type: ignore[type-arg]'
+- '    def __init__(self, num_samples):'
+- '        self.num_samples = num_samples'
+- '...'
+- '    def __iter__(self):'
+- '        for i in range(self.num_samples):'
+- '            image = np.random.random([784]).astype(''float32'')'
+- '            label = np.random.randint(0, 9, (1, )).astype(''int64'')'
+- '            yield image, label'
+- '...'
+- dataset = RandomDataset(10)
+- 'for img, label in dataset:'
+- '    # do something'
+- '    ...'
+8 api_shape: {}

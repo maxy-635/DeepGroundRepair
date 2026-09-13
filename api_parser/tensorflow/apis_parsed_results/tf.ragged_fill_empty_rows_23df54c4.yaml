@@ -1,0 +1,11 @@
+2 api_name: tensorflow.ragged_fill_empty_rows
+3 api_description: Fills empty rows in a ragged tensor with a default value and returns
+  the updated tensor along with indicators for which rows were originally empty.
+4 api_signature: tf.ragged_fill_empty_rows(values,nrows,default_value)
+5 api_details: ''
+6 api_parameters:
+- values: The ragged tensor values to process, containing rows that may be empty.
+- nrows: The number of rows expected in the output, specified as an int64 tensor.
+- default_value: The value used to fill any empty rows, matching the type of `values`.
+7 api_usage_example: null
+8 api_shape: ''

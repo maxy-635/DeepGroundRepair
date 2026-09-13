@@ -1,0 +1,17 @@
+2 api_name: torch.nn.functional.leaky_relu
+3 api_description: The torch.nn.functional.leaky_relu function applies the Leaky ReLU
+  activation, which outputs x if x > 0 and negative_slope * x if x <= 0, allowing
+  a small, non-zero gradient when the unit is not active.
+4 api_signature: torch.nn.functional.leaky_relu(input,negative_slope)
+5 api_details: ''
+6 api_parameters:
+- input: The input tensor to which the leaky ReLU function will be applied.
+- negative_slope: Controls the angle of the negative slope, allowing some gradient
+    to flow when the input is negative.
+- inplace: If set to True, will perform the operation in-place and modify the input
+    tensor, saving memory.
+7 api_usage_example: null
+8 api_shape:
+  input tensor shape: (*) where * means, any number of additional dimensions
+  output tensor shape: (*), same shape as the input
+  tensor shape transform formulas: {}

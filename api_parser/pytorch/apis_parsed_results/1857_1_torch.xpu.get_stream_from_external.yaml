@@ -1,0 +1,11 @@
+2 api_name: torch.xpu.get_stream_from_external
+3 api_description: Creates a torch XPU Stream from an external SYCL queue.
+4 api_signature: torch.xpu.get_stream_from_external(data_ptr,device)
+5 api_details: ''
+6 api_parameters:
+- data_ptr: Integer form of the externally provided `sycl::queue*` pointer used to
+    identify the queue.
+- device: The device on which the queue was originally created, which must be specified
+    correctly by the user.
+7 api_usage_example: null
+8 api_shape: null

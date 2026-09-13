@@ -1,0 +1,8 @@
+2 api_name: torch.UntypedStorage.copy_
+3 api_description: Copies data into an untyped storage object from another storage
+  or compatible source.
+4 api_signature: copy_()
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

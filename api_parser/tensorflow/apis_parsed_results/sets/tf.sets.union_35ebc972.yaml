@@ -1,0 +1,12 @@
+2 api_name: tensorflow.sets.union
+3 api_description: Returns the union of the elements in the last dimension of `a`
+  and `b`, requiring all earlier dimensions to match.
+4 api_signature: tf.sets.union(a,b)
+5 api_details: ''
+6 api_parameters:
+- a: First input set to union with `b`, provided as a Tensor or SparseTensor of the
+    same type.
+- b: Second input set to union with `a`, provided as a Tensor or SparseTensor of the
+    same type.
+7 api_usage_example: null
+8 api_shape: ''

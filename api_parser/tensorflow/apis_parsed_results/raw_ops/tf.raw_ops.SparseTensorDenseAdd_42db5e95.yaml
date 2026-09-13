@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.SparseTensorDenseAdd
+3 api_description: Adds a sparse tensor to a dense tensor and returns the summed dense
+  tensor, without requiring the sparse indices to be sorted.
+4 api_signature: tf.raw_ops.SparseTensorDenseAdd(a_indices,a_values,a_shape,b)
+5 api_details: ''
+6 api_parameters:
+- a_indices: Specifies the coordinates of the nonzero entries in the sparse tensor.
+- a_values: Provides the values corresponding to each sparse tensor index.
+- a_shape: Defines the overall dense shape of the sparse tensor.
+- b: Supplies the dense tensor to add to the sparse tensor.
+7 api_usage_example: null
+8 api_shape: ''

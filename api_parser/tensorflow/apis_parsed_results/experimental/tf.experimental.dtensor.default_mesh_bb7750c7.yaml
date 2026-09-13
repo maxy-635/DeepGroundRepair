@@ -1,0 +1,11 @@
+2 api_name: tensorflow.experimental.dtensor.default_mesh
+3 api_description: Sets a default DTensor mesh scope so enclosed ops and tf.functions
+  use that mesh when one can’t be inferred, while also replicating small constants
+  as DTensors.
+4 api_signature: tf.experimental.dtensor.default_mesh(mesh)
+5 api_details: ''
+6 api_parameters:
+- mesh: Specifies the Mesh instance used as the source for determining the default
+    mesh.
+7 api_usage_example: null
+8 api_shape: ''

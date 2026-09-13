@@ -1,0 +1,14 @@
+2 api_name: tensorflow.image.flip_left_right
+3 api_description: Flips an image horizontally by reversing it along the width dimension.
+4 api_signature: tf.image.flip_left_right(image)
+5 api_details: ''
+6 api_parameters:
+- image: The input 3-D or 4-D tensor containing one image or a batch of images to
+    flip left to right.
+7 api_usage_example:
+- x = [[[1.0, 2.0, 3.0],
+- '      [4.0, 5.0, 6.0]],'
+- '    [[7.0, 8.0, 9.0],'
+- '      [10.0, 11.0, 12.0]]]'
+- tf.image.flip_left_right(x)
+8 api_shape: ''

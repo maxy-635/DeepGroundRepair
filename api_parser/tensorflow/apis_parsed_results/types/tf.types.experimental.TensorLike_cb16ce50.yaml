@@ -1,0 +1,8 @@
+2 api_name: tensorflow.types.experimental.TensorLike
+3 api_description: A type alias for values that TensorFlow can accept as tensor-like
+  inputs, including types supported now and potentially more in the future.
+4 api_signature: TensorLike=Union[tensorflow.python.types.core.Tensor,tensorflow.python.types.core.TensorProtocol,int,float,bool,str,bytes,complex,tuple,list,numpy.ndarray,numpy.generic]
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

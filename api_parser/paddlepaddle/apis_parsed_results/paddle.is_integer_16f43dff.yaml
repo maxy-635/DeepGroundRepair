@@ -1,0 +1,18 @@
+2 api_name: paddle.is_integer
+3 api_description: Returns True if the input tensor has an integral data type, otherwise
+  False.
+4 api_signature: paddle.is_integer(x)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example:
+- import paddle
+- x = paddle.to_tensor([1 + 2j, 3 + 4j])
+- print(paddle.is_integer(x))
+- 'False'
+- x = paddle.to_tensor([1.1, 1.2])
+- print(paddle.is_integer(x))
+- 'False'
+- x = paddle.to_tensor([1, 2, 3])
+- print(paddle.is_integer(x))
+- 'True'
+8 api_shape: {}

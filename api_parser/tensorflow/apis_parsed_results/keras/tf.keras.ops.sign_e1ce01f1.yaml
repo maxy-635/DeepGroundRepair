@@ -1,0 +1,9 @@
+2 api_name: tensorflow.keras.ops.sign
+3 api_description: Returns a tensor where each element indicates the sign of the corresponding
+  input value.
+4 api_signature: tf.keras.ops.sign(x)
+5 api_details: ''
+6 api_parameters:
+- x: Input tensor whose values are used to compute the elementwise sign.
+7 api_usage_example: null
+8 api_shape: ''

@@ -1,0 +1,13 @@
+2 api_name: tensorflow.distribute.experimental.CommunicationOptions
+3 api_description: Provides optional hints to tune cross-device collective communication,
+  such as all-reduce packing and other performance optimizations, for distributed
+  training.
+4 api_signature: tf.distribute.experimental.CommunicationOptions(bytes_per_pack,timeout_seconds)
+5 api_details: ''
+6 api_parameters:
+- bytes_per_pack: Sets the collective pack size hint for breaking multi-replica operations
+    into smaller chunks, or lets TensorFlow choose automatically when set to 0.
+- timeout_seconds: Sets an optional collective timeout in seconds that raises `DeadlineExceededError`
+    if exceeded, or disables timeout when set to 0.
+7 api_usage_example: null
+8 api_shape: ''

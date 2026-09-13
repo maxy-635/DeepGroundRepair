@@ -1,0 +1,11 @@
+2 api_name: torch.matrix_power
+3 api_description: Raises a square matrix to an integer power, using matrix multiplication
+  for positive powers and the matrix inverse for negative powers.
+4 api_signature: torch.matrix_power(input,n)
+5 api_details: ''
+6 api_parameters:
+- input: The square matrix (or batched square matrices) whose power is to be computed.
+- n: The integer exponent indicating how many times to multiply the matrix by itself,
+    with negative values using the matrix inverse when possible.
+7 api_usage_example: null
+8 api_shape: null

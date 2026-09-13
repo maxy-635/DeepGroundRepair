@@ -1,0 +1,21 @@
+2 api_name: torch.nn.utils.fuse_conv_bn_weights
+3 api_description: Combines a convolution’s weights and bias with BatchNorm parameters
+  to produce equivalent fused convolution parameters for inference.
+4 api_signature: torch.nn.utils.fuse_conv_bn_weights(conv_w,bn_rm,bn_rv,bn_eps,transpose)
+5 api_details: ''
+6 api_parameters:
+- conv_w: The convolutional weight tensor to be fused with batch normalization parameters.
+- conv_b: The convolutional bias tensor to be fused, or `None` if the convolution
+    has no bias.
+- bn_rm: The batch normalization running mean used to adjust the fused convolution
+    weights and bias.
+- bn_rv: The batch normalization running variance used to compute the normalization
+    scaling factor.
+- bn_eps: A small epsilon added to the batch normalization variance for numerical
+    stability.
+- bn_w: The batch normalization weight (gamma) used to scale the fused convolution
+    output.
+- transpose: A flag indicating whether the convolution weight should be treated as
+    transposed before fusion.
+7 api_usage_example: null
+8 api_shape: null

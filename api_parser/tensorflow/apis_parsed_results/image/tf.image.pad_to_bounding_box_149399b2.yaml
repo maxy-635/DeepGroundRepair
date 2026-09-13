@@ -1,0 +1,19 @@
+2 api_name: tensorflow.image.pad_to_bounding_box
+3 api_description: Pads an image with zeros on the top and left by the given offsets,
+  then adds bottom and right zero padding until it reaches the specified target height
+  and width.
+4 api_signature: tf.image.pad_to_bounding_box(image,target_height,target_width)
+5 api_details: ''
+6 api_parameters:
+- image: The input image tensor to be padded, either 3-D `[height, width, channels]`
+    or 4-D `[batch, height, width, channels]`.
+- target_height: The desired height of the output image after padding.
+- target_width: The desired width of the output image after padding.
+7 api_usage_example:
+- x = [[[1., 2., 3.],
+- '      [4., 5., 6.]],'
+- '      [[7., 8., 9.],'
+- '      [10., 11., 12.]]]'
+- padded_image = tf.image.pad_to_bounding_box(x, 1, 1, 4, 4)
+- padded_image
+8 api_shape: ''

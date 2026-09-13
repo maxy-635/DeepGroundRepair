@@ -1,0 +1,17 @@
+2 api_name: tensorflow.raw_ops.CollectiveReduce
+3 api_description: Reduces matching tensors across multiple participants into a single
+  result using a collective operation, requiring identical type and shape.
+4 api_signature: tf.raw_ops.CollectiveReduce(input,group_size,group_key,instance_key,merge_op,final_op)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor whose values will be collectively reduced across the participating
+    devices.
+- group_size: The number of devices or replicas expected to participate in the reduction.
+- group_key: The identifier that groups related collective operations together.
+- instance_key: The unique identifier for this specific collective reduce instance.
+- merge_op: The reduction operation used to combine partial results, such as min,
+    max, multiplication, or addition.
+- final_op: The final post-merge operation to apply to the reduced result, either
+    leaving it unchanged or dividing it.
+7 api_usage_example: null
+8 api_shape: ''

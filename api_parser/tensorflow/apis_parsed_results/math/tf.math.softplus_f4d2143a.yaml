@@ -1,0 +1,11 @@
+2 api_name: tensorflow.math.softplus
+3 api_description: Computes the elementwise softplus function, a smooth, always-positive
+  approximation of ReLU.
+4 api_signature: tf.math.softplus(features)
+5 api_details: ''
+6 api_parameters:
+- features: The input tensor whose values are transformed by the softplus function.
+7 api_usage_example:
+- import tensorflow as tf
+- tf.math.softplus(tf.range(0, 2, dtype=tf.float32)).numpy()
+8 api_shape: ''

@@ -1,0 +1,14 @@
+2 api_name: tensorflow.constant
+3 api_description: Creates a constant tensor from a tensor-like value, inferring the
+  dtype when not specified.
+4 api_signature: tf.constant(value,dtype,shape)
+5 api_details: ''
+6 api_parameters:
+- value: Provides the constant data used to create the tensor.
+- dtype: Specifies the element type of the resulting tensor.
+- shape: Optionally sets the tensor’s dimensions.
+7 api_usage_example:
+- 'with tf.compat.v1.Graph().as_default():'
+- '  i = tf.compat.v1.placeholder(shape=[None, None], dtype=tf.float32)'
+- '  t = tf.convert_to_tensor(i)'
+8 api_shape: ''

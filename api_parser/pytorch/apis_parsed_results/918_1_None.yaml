@@ -1,0 +1,8 @@
+2 api_name: null
+3 api_description: No API description was provided, so its core functionality cannot
+  be determined.
+4 api_signature: dequantize(tensors)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,11 @@
+2 api_name: tensorflow.signal.kaiser_window
+3 api_description: Generates a Kaiser window tensor for signal processing, with configurable
+  length, beta shape parameter, and dtype.
+4 api_signature: tf.signal.kaiser_window(window_length,beta)
+5 api_details: ''
+6 api_parameters:
+- window_length: Specifies the number of samples in the generated Kaiser window.
+- beta: Controls the window’s shape, trading off sidelobe suppression against main-lobe
+    width.
+7 api_usage_example: null
+8 api_shape: ''

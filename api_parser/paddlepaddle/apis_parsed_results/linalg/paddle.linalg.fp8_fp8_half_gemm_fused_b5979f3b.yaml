@@ -1,0 +1,9 @@
+2 api_name: paddle.linalg.fp8_fp8_half_gemm_fused
+3 api_description: Performs a fused GEMM using FP8 inputs and produces a half-precision
+  output, optimizing low-precision matrix multiplication with reduced memory and compute
+  overhead.
+4 api_signature: paddle.linalg.fp8_fp8_half_gemm_fused(x,y,output_dtype,name)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: []
+8 api_shape: {}

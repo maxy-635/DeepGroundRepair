@@ -1,0 +1,11 @@
+2 api_name: paddle.sparse.reshape
+3 api_description: Reshapes a SparseCooTensor or SparseCsrTensor without changing
+  its values, currently only for the sparse dimensions, while requiring the full target
+  shape to be specified.
+4 api_signature: paddle.sparse.reshape(x,shape)
+5 api_details: ''
+6 api_parameters:
+- x: The sparse tensor to be reshaped.
+- shape: The desired target shape, with at most one dimension allowed to be -1.
+7 api_usage_example: []
+8 api_shape: {}

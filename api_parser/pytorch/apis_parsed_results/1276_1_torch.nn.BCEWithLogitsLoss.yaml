@@ -1,0 +1,22 @@
+2 api_name: torch.nn.BCEWithLogitsLoss
+3 api_description: BCEWithLogitsLoss combines a Sigmoid activation and binary cross-entropy
+  loss into a single, more numerically stable operation, leveraging the log-sum-exp
+  trick.
+4 api_signature: torch.nn.BCEWithLogitsLoss(weight,reduction,pos_weight)
+5 api_details: ''
+6 api_parameters:
+- weight: A tensor providing manual rescaling weights for each batch element's loss.
+- reduction: 'Specifies how to reduce the output loss: ''none'', ''mean'', or ''sum''.'
+- pos_weight: A tensor for weighting positive examples, which can be broadcasted according
+    to the target's dimensions.
+7 api_usage_example:
+- ' target = torch.ones([10, 64], dtype=torch.float32)  # 64 classes, batch size =
+  10'
+- ' output = torch.full([10, 64], 1.5)  # A prediction (logit)'
+- ' pos_weight = torch.ones([64])  # All weights are equal to 1'
+- ' criterion = torch.nn.BCEWithLogitsLoss(pos_weight=pos_weight)'
+- ' criterion(output, target)  # -log(sigmoid(1.5))'
+8 api_shape:
+  input tensor shape: (*), where * means any number of dimensions.
+  output tensor shape: scalar. If reduction is 'none', then (*), same shape as input.
+  tensor shape transform formulas: {}

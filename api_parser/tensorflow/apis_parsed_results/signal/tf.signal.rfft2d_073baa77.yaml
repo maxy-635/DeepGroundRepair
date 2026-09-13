@@ -1,0 +1,12 @@
+2 api_name: tensorflow.signal.rfft2d
+3 api_description: Computes the 2D FFT of a real-valued input over the last two dimensions,
+  returning only the unique Hermitian-symmetric frequency components; it crops or
+  zero-pads to match the requested FFT lengths.
+4 api_signature: tf.signal.rfft2d(input_tensor,fft_length)
+5 api_details: ''
+6 api_parameters:
+- input: The real-valued tensor to transform with a 2D real FFT.
+- fft_length: A 2-element int32 tensor specifying the FFT size for each of the two
+    dimensions.
+7 api_usage_example: null
+8 api_shape: ''

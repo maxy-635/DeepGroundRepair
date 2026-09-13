@@ -1,0 +1,12 @@
+2 api_name: tensorflow.raw_ops.IgammaGradA
+3 api_description: Computes the derivative of the regularized lower incomplete gamma
+  function `igamma(a, x)` with respect to `a`.
+4 api_signature: tf.raw_ops.IgammaGradA(a,x)
+5 api_details: ''
+6 api_parameters:
+- a: The shape parameter tensor that sets the gamma distribution’s `a` value and must
+    be float32 or float64.
+- x: The input tensor `x` at which to evaluate the gradient, with the same data type
+    as `a`.
+7 api_usage_example: null
+8 api_shape: ''

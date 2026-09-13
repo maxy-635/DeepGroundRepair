@@ -1,0 +1,10 @@
+2 api_name: torch.rand
+3 api_description: Returns a tensor of random values drawn uniformly from [0, 1).
+4 api_signature: torch.rand(*size,generator,device,dtype)
+5 api_details: ''
+6 api_parameters:
+- size: Specifies the shape of the output tensor.
+7 api_usage_example:
+- ' torch.rand(4)'
+- ' torch.rand(2, 3)'
+8 api_shape: null

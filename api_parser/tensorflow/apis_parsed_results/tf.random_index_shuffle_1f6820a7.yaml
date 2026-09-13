@@ -1,0 +1,13 @@
+2 api_name: tensorflow.random_index_shuffle
+3 api_description: Deterministically maps input index values to their positions in
+  a shuffled permutation of 0..max_index, with outputs forming a bijection and supporting
+  matching first-dimension vector inputs.
+4 api_signature: tf.random_index_shuffle(index,seed,max_index,rounds)
+5 api_details: ''
+6 api_parameters:
+- index: Specifies the index or indices to shuffle within the allowed range.
+- seed: Provides the random seed used to generate the shuffle.
+- max_index: Defines the inclusive upper bound for the index range being shuffled.
+- rounds: Sets the number of cipher rounds used for the shuffle operation.
+7 api_usage_example: null
+8 api_shape: ''

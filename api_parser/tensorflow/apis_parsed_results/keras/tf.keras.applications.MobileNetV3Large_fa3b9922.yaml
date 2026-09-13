@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.applications.MobileNetV3Large
+3 api_description: Instantiates the MobileNetV3Large model architecture for image
+  classification and feature extraction, with configurable weights, input shape, and
+  optional top classification layers; MACs refers to Multiply-Adds.
+4 api_signature: tf.keras.applications.MobileNetV3Large(input_shape,include_top,weights,classes)
+5 api_details: ''
+6 api_parameters:
+- input_shape: Sets the expected input image dimensions, allowing a custom 3-channel
+    resolution instead of the default.
+- include_top: Controls whether to keep the model's final classification head.
+- weights: Selects how to initialize the model weights, either randomly, from ImageNet,
+    or from a local weight file.
+- classes: Specifies the number of output categories when using a custom classification
+    head with no pretrained weights.
+7 api_usage_example: null
+8 api_shape: ''

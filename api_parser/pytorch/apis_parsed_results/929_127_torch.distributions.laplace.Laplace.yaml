@@ -1,0 +1,13 @@
+2 api_name: torch.distributions.laplace.Laplace
+3 api_description: A Laplace distribution with specified location and scale parameters,
+  supporting sampling and probability calculations such as log density, entropy, mean,
+  variance, and reparameterized sampling.
+4 api_signature: torch.distributions.laplace.Laplace(loc,scale)
+5 api_details: ''
+6 api_parameters:
+- loc: Specifies the distribution’s central location, i.e. its mean.
+- scale: Sets the distribution’s spread or dispersion around the mean.
+7 api_usage_example:
+- ' m = Laplace(torch.tensor([0.0]), torch.tensor([1.0]))'
+- ' m.sample()  # Laplace distributed with loc=0, scale=1'
+8 api_shape: null

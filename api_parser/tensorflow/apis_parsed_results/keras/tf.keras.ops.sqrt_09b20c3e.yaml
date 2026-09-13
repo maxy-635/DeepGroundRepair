@@ -1,0 +1,8 @@
+2 api_name: tensorflow.keras.ops.sqrt
+3 api_description: Computes the element-wise non-negative square root of a tensor.
+4 api_signature: tf.keras.ops.sqrt(x)
+5 api_details: ''
+6 api_parameters:
+- x: The input tensor whose element-wise square root is computed.
+7 api_usage_example: null
+8 api_shape: ''

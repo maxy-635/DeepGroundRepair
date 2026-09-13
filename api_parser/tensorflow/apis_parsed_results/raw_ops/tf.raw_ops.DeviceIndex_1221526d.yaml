@@ -1,0 +1,11 @@
+2 api_name: tensorflow.raw_ops.DeviceIndex
+3 api_description: Returns the index of the device where the op runs from a provided
+  list, or the list length if the device is not found or during XLA compilation.
+4 api_signature: tf.raw_ops.DeviceIndex(device_names)
+5 api_details: ''
+6 api_parameters:
+- device_names: Specifies the device names to look up and returns the index of the
+    first matching device.
+- name: Optionally assigns a name to the operation for easier graph identification.
+7 api_usage_example: null
+8 api_shape: ''

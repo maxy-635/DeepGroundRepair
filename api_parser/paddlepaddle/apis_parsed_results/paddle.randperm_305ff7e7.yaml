@@ -1,0 +1,26 @@
+2 api_name: paddle.randperm
+3 api_description: Returns a 1-D tensor containing a random permutation of integers
+  from 0 to n-1, with the specified dtype.
+4 api_signature: paddle.randperm(n,dtype,device)
+5 api_details: ''
+6 api_parameters:
+- n: Specifies the exclusive upper bound for the generated permutation and must be
+    greater than 0.
+- dtype: Sets the output tensor’s data type, chosen from int32, int64, float32, or
+    float64, with int64 as the default.
+- device: Selects the device on which the returned tensor is created.
+7 api_usage_example:
+- import paddle
+- out1 = paddle.randperm(5)
+- print(out1)
+- '>>>'
+- Tensor(shape=[5], dtype=int64, place=Place(cpu), stop_gradient=True,
+- '[3, 0, 1, 4, 2])'
+- '>>>'
+- out2 = paddle.randperm(7, 'int32')
+- print(out2)
+- '>>>'
+- Tensor(shape=[7], dtype=int32, place=Place(cpu), stop_gradient=True,
+- '[3, 2, 0, 6, 5, 4, 1])'
+- '>>>'
+8 api_shape: {}

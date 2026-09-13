@@ -1,0 +1,19 @@
+2 api_name: paddle.vision.models.GoogLeNet
+3 api_description: Implements the GoogLeNet (Inception v1) image classification architecture,
+  using multi-branch inception modules to efficiently extract features and predict
+  classes.
+4 api_signature: paddle.vision.models.GoogLeNet(num_class es,with_pool)
+5 api_details: ''
+6 api_parameters:
+- with_pool: Determines whether to apply a pooling layer before the final fully connected
+    layer.
+7 api_usage_example:
+- import paddle
+- from paddle.vision.models import GoogLeNet
+- '# Build model'
+- model = GoogLeNet()
+- x = paddle.rand([1, 3, 224, 224])
+- out, out1, out2 = model(x)
+- print(out.shape, out1.shape, out2.shape)
+- paddle.Size([1, 1000]) paddle.Size([1, 1000]) paddle.Size([1, 1000])
+8 api_shape: {}

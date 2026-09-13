@@ -1,0 +1,8 @@
+2 api_name: tensorflow.experimental.numpy.take_along_axis
+3 api_description: Returns elements from an array by taking values from specified
+  indices along a given axis, matching NumPy's take_along_axis behavior.
+4 api_signature: tf.experimental.numpy.take_along_axis(arr,indices,axis)
+5 api_details: ''
+6 api_parameters: []
+7 api_usage_example: null
+8 api_shape: ''

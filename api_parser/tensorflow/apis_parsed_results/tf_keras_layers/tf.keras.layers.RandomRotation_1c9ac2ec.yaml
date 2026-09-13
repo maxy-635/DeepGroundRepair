@@ -1,0 +1,16 @@
+2 api_name: tensorflow.keras.layers.RandomRotation
+3 api_description: tf.keras.layers.RandomRotation randomly rotates images during training,
+  filling empty space based on fill_mode. It does nothing during inference unless
+  training=True is specified. It accepts input pixel values in any range and outputs
+  floats by default.
+4 api_signature: tf.keras.layers.RandomRotation(factor, fill_mode, interpolation)
+5 api_details: ''
+6 api_parameters:
+- factor: Determines the range of rotation applied to the input, either as a single
+    float for symmetric rotation or as a tuple for asymmetric rotation.
+- fill_mode: Specifies how to fill points outside the boundaries of the input after
+    rotation, using one of the defined modes.
+- interpolation: Defines the method of interpolation used for resizing the image during
+    the rotation process.
+7 api_usage_example: null
+8 api_shape: null

@@ -1,0 +1,12 @@
+2 api_name: tensorflow.random.poisson
+3 api_description: Draws samples from one or more Poisson distributions using the
+  provided rate parameter `lam`.
+4 api_signature: tf.random.poisson(lam,dtype,seed)
+5 api_details: ''
+6 api_parameters:
+- lam: Specifies the Poisson rate parameter(s) that determine the distribution(s)
+    to sample from.
+- dtype: Sets the output data type, choosing one of the supported numeric types.
+- seed: Provides an integer seed to make the random sampling behavior reproducible.
+7 api_usage_example: null
+8 api_shape: ''

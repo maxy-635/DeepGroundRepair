@@ -1,0 +1,8 @@
+2 api_name: torch.special.airy_ai
+3 api_description: Computes the Airy Ai function elementwise for the given input tensor.
+4 api_signature: torch.special.airy_ai(input)
+5 api_details: ''
+6 api_parameters:
+- input: The tensor of values at which to evaluate the airy_ai function.
+7 api_usage_example: null
+8 api_shape: null
