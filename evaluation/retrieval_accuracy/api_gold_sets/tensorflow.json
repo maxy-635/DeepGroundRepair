@@ -1,0 +1,1135 @@
+[
+  {
+    "task_id": "easy_task_1",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_2",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Softmax"
+    ]
+  },
+  {
+    "task_id": "easy_task_3",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_4",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_5",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_6",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_7",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_8",
+    "gold_apis": [
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_9",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_10",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_11",
+    "gold_apis": [
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Activation"
+    ]
+  },
+  {
+    "task_id": "easy_task_12",
+    "gold_apis": [
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_13",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "easy_task_14",
+    "gold_apis": [
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Flatten"
+    ]
+  },
+  {
+    "task_id": "easy_task_15",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_1",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Activation"
+    ]
+  },
+  {
+    "task_id": "medium_task_2",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_3",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_4",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_5",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_6",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Softmax"
+    ]
+  },
+  {
+    "task_id": "medium_task_7",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_8",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.Concatenate"
+    ]
+  },
+  {
+    "task_id": "medium_task_9",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_10",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_11",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.GlobalMaxPooling2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Activation",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_12",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_13",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_14",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_15",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_16",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.Concatenate"
+    ]
+  },
+  {
+    "task_id": "medium_task_17",
+    "gold_apis": [
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Permute",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_18",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_19",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_20",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_21",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_22",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_23",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_24",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_25",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_26",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_27",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Softmax",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.expand_dims",
+      "tensorflow.keras.layers.Reshape"
+    ]
+  },
+  {
+    "task_id": "medium_task_28",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Softmax",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.LayerNormalization",
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_29",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_30",
+    "gold_apis": [
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_31",
+    "gold_apis": [
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "medium_task_32",
+    "gold_apis": [
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "medium_task_33",
+    "gold_apis": [
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "medium_task_34",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Conv2DTranspose",
+      "tensorflow.keras.layers.Concatenate"
+    ]
+  },
+  {
+    "task_id": "medium_task_35",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Activation",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.UpSampling2D",
+      "tensorflow.keras.layers.Add"
+    ]
+  },
+  {
+    "task_id": "hard_task_1",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.GlobalMaxPooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Activation",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_2",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "hard_task_3",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "hard_task_4",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_5",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Permute",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.Reshape"
+    ]
+  },
+  {
+    "task_id": "hard_task_6",
+    "gold_apis": [
+      "tensorflow.keras.layers.Layer",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Activation",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Permute",
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.models.Model",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_7",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Permute"
+    ]
+  },
+  {
+    "task_id": "hard_task_8",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Permute"
+    ]
+  },
+  {
+    "task_id": "hard_task_9",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Add"
+    ]
+  },
+  {
+    "task_id": "hard_task_10",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_11",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_12",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_13",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_14",
+    "gold_apis": [
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply"
+    ]
+  },
+  {
+    "task_id": "hard_task_15",
+    "gold_apis": [
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Softmax"
+    ]
+  },
+  {
+    "task_id": "hard_task_16",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.GlobalMaxPooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "hard_task_17",
+    "gold_apis": [
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_18",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Activation",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_19",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Add"
+    ]
+  },
+  {
+    "task_id": "hard_task_20",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_21",
+    "gold_apis": [
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "hard_task_22",
+    "gold_apis": [
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_23",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Conv2DTranspose",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_24",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.UpSampling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_25",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Conv2DTranspose",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_26",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.UpSampling2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Add"
+    ]
+  },
+  {
+    "task_id": "hard_task_27",
+    "gold_apis": [
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.LayerNormalization",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Add"
+    ]
+  },
+  {
+    "task_id": "hard_task_28",
+    "gold_apis": [
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.layers.LayerNormalization",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_29",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_30",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_31",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "hard_task_32",
+    "gold_apis": [
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_33",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_34",
+    "gold_apis": [
+      "tensorflow.keras.layers.Layer",
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.models.Model",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_35",
+    "gold_apis": [
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Multiply",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "hard_task_36",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_37",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Add",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_38",
+    "gold_apis": [
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.Activation",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_39",
+    "gold_apis": [
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Conv2D"
+    ]
+  },
+  {
+    "task_id": "hard_task_40",
+    "gold_apis": [
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Dropout"
+    ]
+  },
+  {
+    "task_id": "hard_task_41",
+    "gold_apis": [
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Conv2D"
+    ]
+  },
+  {
+    "task_id": "hard_task_42",
+    "gold_apis": [
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D"
+    ]
+  },
+  {
+    "task_id": "hard_task_43",
+    "gold_apis": [
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Conv2D"
+    ]
+  },
+  {
+    "task_id": "hard_task_44",
+    "gold_apis": [
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "hard_task_45",
+    "gold_apis": [
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.DepthwiseConv2D",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "hard_task_46",
+    "gold_apis": [
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.GlobalAveragePooling2D",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_47",
+    "gold_apis": [
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.ReLU",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_48",
+    "gold_apis": [
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Conv2D",
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dense"
+    ]
+  },
+  {
+    "task_id": "hard_task_49",
+    "gold_apis": [
+      "tensorflow.keras.layers.AveragePooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.Lambda"
+    ]
+  },
+  {
+    "task_id": "hard_task_50",
+    "gold_apis": [
+      "tensorflow.keras.layers.MaxPooling2D",
+      "tensorflow.keras.layers.Flatten",
+      "tensorflow.keras.layers.Dropout",
+      "tensorflow.keras.layers.Concatenate",
+      "tensorflow.keras.layers.Dense",
+      "tensorflow.keras.layers.Reshape",
+      "tensorflow.keras.layers.Lambda",
+      "tensorflow.keras.layers.SeparableConv2D",
+      "tensorflow.keras.layers.BatchNormalization",
+      "tensorflow.keras.layers.Activation"
+    ]
+  }
+]

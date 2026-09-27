@@ -4,10 +4,10 @@ Step Three consumes Step Two diagnoses and generates repaired programs. Repair h
 
 ## Run
 
-Configure `run_bashes/step_three/run_main_hf.sh`, then run:
+Configure `run_bashes/step_three/run_main.sh`, then run:
 
 ```bash
-bash run_bashes/step_three/run_main_hf.sh
+bash run_bashes/step_three/run_main.sh
 ```
 
 The entry point is `step_three/main.py`.

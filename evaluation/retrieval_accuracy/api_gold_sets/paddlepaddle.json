@@ -1,0 +1,1162 @@
+[
+  {
+    "task_id": "easy_task_1",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "easy_task_2",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.Dropout",
+      "paddle.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "easy_task_3",
+    "gold_apis": [
+      "paddle.nn.Sequential",
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_4",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_5",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "easy_task_6",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "easy_task_7",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "easy_task_8",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_9",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "easy_task_10",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_11",
+    "gold_apis": [
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.Dropout",
+      "paddle.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "easy_task_12",
+    "gold_apis": [
+      "paddle.nn.Sequential",
+      "paddle.nn.ReLU",
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "easy_task_13",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "easy_task_14",
+    "gold_apis": [
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Softmax",
+      "paddle.nn.Flatten",
+      "paddle.reshape",
+      "paddle.mean"
+    ]
+  },
+  {
+    "task_id": "easy_task_15",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "medium_task_1",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Linear",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_2",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.concat",
+      "paddle.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "medium_task_3",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Linear",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_4",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_5",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.Softmax",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "medium_task_6",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.Softmax",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "medium_task_7",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "medium_task_8",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "medium_task_9",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.add",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_10",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.add",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_11",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.AdaptiveMaxPool2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Sigmoid",
+      "paddle.nn.Flatten",
+      "paddle.add",
+      "paddle.reshape",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_12",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_13",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Linear",
+      "paddle.nn.Softmax",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_14",
+    "gold_apis": [
+      "paddle.nn.Sequential",
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Linear",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_15",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Flatten",
+      "paddle.reshape",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_16",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_17",
+    "gold_apis": [
+      "paddle.nn.Linear",
+      "paddle.reshape",
+      "paddle.transpose",
+      "paddle.nn.Flatten",
+      "paddle.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "medium_task_18",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_19",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_20",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "medium_task_21",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_22",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_23",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_24",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.nn.Softmax",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_25",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.nn.Upsample",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_26",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_27",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Softmax",
+      "paddle.add",
+      "paddle.reshape"
+    ]
+  },
+  {
+    "task_id": "medium_task_28",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Softmax",
+      "paddle.nn.LayerNorm",
+      "paddle.nn.ReLU",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "medium_task_29",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_30",
+    "gold_apis": [
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_31",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_32",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.nn.ReLU",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "medium_task_33",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Linear",
+      "paddle.nn.Softmax",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_34",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Conv2DTranspose"
+    ]
+  },
+  {
+    "task_id": "medium_task_35",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Upsample",
+      "paddle.nn.ReLU",
+      "paddle.concat",
+      "paddle.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "hard_task_1",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.AdaptiveMaxPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.nn.Sigmoid",
+      "paddle.add",
+      "paddle.multiply",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_2",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.split",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_3",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_4",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten",
+      "paddle.reshape",
+      "paddle.multiply",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_5",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Linear",
+      "paddle.reshape",
+      "paddle.transpose",
+      "paddle.concat",
+      "paddle.nn.ReLU",
+      "paddle.add",
+      "paddle.nn.AdaptiveAvgPool2D"
+    ]
+  },
+  {
+    "task_id": "hard_task_6",
+    "gold_apis": [
+      "paddle.nn.Sequential",
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Upsample",
+      "paddle.concat",
+      "paddle.nn.Flatten",
+      "paddle.reshape",
+      "paddle.transpose"
+    ]
+  },
+  {
+    "task_id": "hard_task_7",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Linear",
+      "paddle.reshape",
+      "paddle.transpose",
+      "paddle.split",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_8",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Sequential",
+      "paddle.nn.ReLU",
+      "paddle.concat",
+      "paddle.reshape",
+      "paddle.transpose",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "hard_task_9",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_10",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.concat",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_11",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_12",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_13",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.nn.Flatten",
+      "paddle.nn.ReLU",
+      "paddle.nn.Sigmoid",
+      "paddle.reshape"
+    ]
+  },
+  {
+    "task_id": "hard_task_14",
+    "gold_apis": [
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Dropout",
+      "paddle.nn.Softmax",
+      "paddle.reshape",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_15",
+    "gold_apis": [
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten",
+      "paddle.nn.Dropout",
+      "paddle.nn.ReLU",
+      "paddle.nn.Softmax",
+      "paddle.reshape",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_16",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AdaptiveMaxPool2D",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat",
+      "paddle.nn.Flatten",
+      "paddle.reshape",
+      "paddle.multiply",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_17",
+    "gold_apis": [
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Flatten",
+      "paddle.reshape",
+      "paddle.nn.Upsample",
+      "paddle.tile",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_18",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.mean",
+      "paddle.tile",
+      "paddle.add",
+      "paddle.nn.Flatten",
+      "paddle.reshape"
+    ]
+  },
+  {
+    "task_id": "hard_task_19",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.nn.Flatten",
+      "paddle.reshape",
+      "paddle.multiply",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_20",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_21",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_22",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_23",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Conv2DTranspose",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_24",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Upsample",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_25",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Conv2DTranspose",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_26",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Upsample",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.add",
+      "paddle.nn.Flatten",
+      "paddle.nn.ReLU"
+    ]
+  },
+  {
+    "task_id": "hard_task_27",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.LayerNorm",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_28",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.LayerNorm",
+      "paddle.nn.Linear",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_29",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Linear",
+      "paddle.add",
+      "paddle.nn.Flatten",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_30",
+    "gold_apis": [
+      "paddle.nn.Sequential",
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Identity",
+      "paddle.add",
+      "paddle.split",
+      "paddle.concat",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.Dropout"
+    ]
+  },
+  {
+    "task_id": "hard_task_31",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.add",
+      "paddle.split",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_32",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.ReLU",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_33",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_34",
+    "gold_apis": [
+      "paddle.nn.ReLU",
+      "paddle.nn.Conv2D",
+      "paddle.concat",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_35",
+    "gold_apis": [
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Sigmoid",
+      "paddle.reshape",
+      "paddle.nn.Flatten",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_36",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.add",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_37",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.add",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_38",
+    "gold_apis": [
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Conv2D",
+      "paddle.nn.Linear",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_39",
+    "gold_apis": [
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten",
+      "paddle.nn.Conv2D",
+      "paddle.concat",
+      "paddle.reshape"
+    ]
+  },
+  {
+    "task_id": "hard_task_40",
+    "gold_apis": [
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Conv2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Flatten",
+      "paddle.concat",
+      "paddle.nn.ReLU",
+      "paddle.reshape"
+    ]
+  },
+  {
+    "task_id": "hard_task_41",
+    "gold_apis": [
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Dropout",
+      "paddle.nn.Linear",
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.concat",
+      "paddle.reshape"
+    ]
+  },
+  {
+    "task_id": "hard_task_42",
+    "gold_apis": [
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Dropout",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.concat",
+      "paddle.reshape"
+    ]
+  },
+  {
+    "task_id": "hard_task_43",
+    "gold_apis": [
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.Sequential",
+      "paddle.nn.Conv2D",
+      "paddle.nn.ReLU",
+      "paddle.concat",
+      "paddle.reshape"
+    ]
+  },
+  {
+    "task_id": "hard_task_44",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_45",
+    "gold_apis": [
+      "paddle.nn.Sequential",
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_46",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.AdaptiveAvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_47",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.ReLU",
+      "paddle.nn.Sequential",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.split",
+      "paddle.concat",
+      "paddle.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_48",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.BatchNorm2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Flatten",
+      "paddle.nn.Linear",
+      "paddle.nn.ReLU",
+      "paddle.concat"
+    ]
+  },
+  {
+    "task_id": "hard_task_49",
+    "gold_apis": [
+      "paddle.nn.Conv2D",
+      "paddle.nn.AvgPool2D",
+      "paddle.nn.Linear",
+      "paddle.nn.Flatten",
+      "paddle.concat",
+      "paddle.reshape",
+      "paddle.split"
+    ]
+  },
+  {
+    "task_id": "hard_task_50",
+    "gold_apis": [
+      "paddle.nn.MaxPool2D",
+      "paddle.nn.Dropout",
+      "paddle.nn.Linear",
+      "paddle.nn.Conv2D",
+      "paddle.nn.Flatten",
+      "paddle.concat",
+      "paddle.nn.ReLU",
+      "paddle.reshape",
+      "paddle.split"
+    ]
+  }
+]

@@ -4,10 +4,10 @@ Step Two executes generated programs, traces tensor shapes, classifies runtime f
 
 ## Run
 
-Configure `run_bashes/step_two/run_main_hf.sh`, then run:
+Configure `run_bashes/step_two/run_main.sh`, then run:
 
 ```bash
-bash run_bashes/step_two/run_main_hf.sh
+bash run_bashes/step_two/run_main.sh
 ```
 
 The entry point is `step_two/tensor_shape_debug.py`. It reads Step One programs from `response/<model>/step_one/<framework>/`.

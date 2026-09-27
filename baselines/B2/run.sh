@@ -1,8 +1,7 @@
 #!/bin/bash
+export PYTHONPATH=$PYTHONPATH:".../DeepCodeRAG"
 
-export PYTHONPATH=$PYTHONPATH:".../DeepCodeRAG"      
 module load miniforge3/24.1
-
 source $(conda info --base)/etc/profile.d/conda.sh
 conda activate deepcoderag
 
@@ -11,12 +10,13 @@ module load cudnn/8.9.5.29_cuda12.x
 
 export LD_LIBRARY_PATH="$CONDA_PREFIX/lib:$LD_LIBRARY_PATH"
 
-PYTHON_FILE="./step_one/retriever4generation.py"
+PYTHON_FILE="./baselines/B2/main.py"
 
 python "$PYTHON_FILE" \
      --model_id "google/gemma-3-4b-it" \
+     --model_cache_path ".../huggingface/hub" \
+     --embedding_model_dir ".../huggingface/hub" \
      --benchmark "./benchmark/DeepEval/" \
-     --step_id "step_one" \
-     --dlls '["TensorFlow", "PyTorch", "PaddlePaddle"]' \
-     --repeats 1 \
-     --experiment_id "..." \
+     --dlls '["TensorFlow","PyTorch","PaddlePaddle"]'\
+     --experiment_id "****" \
+     --repeats 1

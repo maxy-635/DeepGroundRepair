@@ -4,10 +4,10 @@ Step One recommends APIs, retrieves API documentation, and generates draft progr
 
 ## Run
 
-Configure the model and environment values in `run_bashes/step_one/run_main_hf.sh`, then run:
+Configure the model and environment values in `run_bashes/step_one/run_main.sh`, then run:
 
 ```bash
-bash run_bashes/step_one/run_main_hf.sh
+bash run_bashes/step_one/run_main.sh
 ```
 
 The entry point is `step_one/retriever4generation.py`. The Whoosh and FAISS indexes under `database/` must be available.

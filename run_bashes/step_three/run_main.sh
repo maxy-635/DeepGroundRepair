@@ -1,6 +1,5 @@
 #!/bin/bash
-#SBATCH -x paraai-n32-h-01-agent-[1,4,8,16,17,25-31]
-export PYTHONPATH=$PYTHONPATH:"/home/bingxing2/home/scx8amp/DeepCodeRAG"
+export PYTHONPATH=$PYTHONPATH:".../DeepCodeRAG"
 
 module load miniforge3/24.1
 
@@ -23,8 +22,8 @@ REPAIR_CODE_SAVE_PATH="./response/${MODEL_SAVE_NAME}/step_three"
 
 python "$PYTHON_FILE" \
      --model_id "$MODEL_ID" \
-     --cache_dir "/home/bingxing2/home/scx8amp/huggingface/hub" \
+     --cache_dir ".../huggingface/hub" \
      --step2_result_path "$STEP2_RESULT_PATH" \
      --repair_code_save_path "$REPAIR_CODE_SAVE_PATH" \
      --dlls '["TensorFlow","PyTorch","PaddlePaddle"]' \
-     --experiment_id "models_0622"
+     --experiment_id "****"

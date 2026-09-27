@@ -1,0 +1,1175 @@
+[
+  {
+    "task_id": "easy_task_1",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_2",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.AvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.Dropout",
+      "torch.nn.Softmax",
+      "torch.nn.ReLU"
+    ]
+  },
+  {
+    "task_id": "easy_task_3",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_4",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_5",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_6",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Linear",
+      "torch.add",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "easy_task_7",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Dropout",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "easy_task_8",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Dropout",
+      "torch.nn.Flatten",
+      "torch.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_9",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "easy_task_10",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "easy_task_11",
+    "gold_apis": [
+      "torch.nn.AvgPool2d",
+      "torch.nn.Conv2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.Dropout",
+      "torch.nn.Softmax",
+      "torch.nn.ReLU"
+    ]
+  },
+  {
+    "task_id": "easy_task_12",
+    "gold_apis": [
+      "torch.nn.ReLU",
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "easy_task_13",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Dropout",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "easy_task_14",
+    "gold_apis": [
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.nn.Sigmoid"
+    ]
+  },
+  {
+    "task_id": "easy_task_15",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.AvgPool2d",
+      "torch.nn.Dropout",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "medium_task_1",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.add",
+      "torch.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "medium_task_2",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_3",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.add",
+      "torch.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "medium_task_4",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.AvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_5",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.ReLU",
+      "torch.nn.Linear",
+      "torch.nn.Softmax",
+      "torch.add",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_6",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.Linear",
+      "torch.nn.Softmax",
+      "torch.add",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_7",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "medium_task_8",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.add",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_9",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.add",
+      "torch.nn.AvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_10",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.add",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_11",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.AdaptiveMaxPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Sigmoid",
+      "torch.nn.Flatten",
+      "torch.add",
+      "torch.mul",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_12",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_13",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Dropout",
+      "torch.nn.Linear",
+      "torch.nn.Softmax",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_14",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.Linear",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "medium_task_15",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.AvgPool2d",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_16",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.AvgPool2d",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.nn.Flatten",
+      "torch.nn.ReLU"
+    ]
+  },
+  {
+    "task_id": "medium_task_17",
+    "gold_apis": [
+      "torch.nn.Linear",
+      "torch.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "medium_task_18",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_19",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_20",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.Softmax",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_21",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.Dropout",
+      "torch.nn.AvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_22",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_23",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.AvgPool2d",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_24",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.Dropout",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_25",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.AvgPool2d",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.mean",
+      "torch.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "medium_task_26",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "medium_task_27",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "medium_task_28",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Softmax",
+      "torch.nn.LayerNorm",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "medium_task_29",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_30",
+    "gold_apis": [
+      "torch.nn.AvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Flatten",
+      "torch.cat",
+      "torch.nn.ReLU"
+    ]
+  },
+  {
+    "task_id": "medium_task_31",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_32",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_33",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.Softmax",
+      "torch.chunk",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "medium_task_34",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Dropout",
+      "torch.nn.ConvTranspose2d",
+      "torch.nn.Softmax",
+      "torch.mean"
+    ]
+  },
+  {
+    "task_id": "medium_task_35",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Dropout",
+      "torch.nn.Upsample",
+      "torch.nn.Softmax",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_1",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Linear",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.AdaptiveMaxPool2d",
+      "torch.nn.ReLU",
+      "torch.add",
+      "torch.mean",
+      "torch.max",
+      "torch.cat",
+      "torch.nn.Sigmoid"
+    ]
+  },
+  {
+    "task_id": "hard_task_2",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.add",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_3",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Dropout",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_4",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Flatten",
+      "torch.nn.Sigmoid",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_5",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Identity",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_6",
+    "gold_apis": [
+      "torch.nn.ModuleList",
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.chunk",
+      "torch.cat",
+      "torch.nn.AvgPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Upsample",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_7",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.Identity",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_8",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_9",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.MaxPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_10",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.cat",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_11",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.Identity",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_12",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_13",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.cat",
+      "torch.nn.Sigmoid",
+      "torch.nn.Softmax"
+    ]
+  },
+  {
+    "task_id": "hard_task_14",
+    "gold_apis": [
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Conv2d",
+      "torch.nn.Flatten",
+      "torch.nn.ReLU",
+      "torch.nn.Softmax",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_15",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.Softmax",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_16",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveMaxPool2d",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.nn.Sigmoid",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_17",
+    "gold_apis": [
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_18",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.AvgPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Flatten",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_19",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten",
+      "torch.add",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_20",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.MaxPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_21",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.add",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_22",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.add",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_23",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.AvgPool2d",
+      "torch.nn.ConvTranspose2d",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_24",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.nn.Upsample",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_25",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.AvgPool2d",
+      "torch.nn.ConvTranspose2d",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_26",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Upsample",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_27",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.LayerNorm",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_28",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.LayerNorm",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_29",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_30",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.Identity",
+      "torch.add",
+      "torch.chunk",
+      "torch.cat",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear"
+    ]
+  },
+  {
+    "task_id": "hard_task_31",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.Dropout",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.add",
+      "torch.chunk",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_32",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.Dropout",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_33",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_34",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.add",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_35",
+    "gold_apis": [
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.Flatten",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_36",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Dropout",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.add"
+    ]
+  },
+  {
+    "task_id": "hard_task_37",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.add",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_38",
+    "gold_apis": [
+      "torch.nn.BatchNorm2d",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.nn.Linear",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_39",
+    "gold_apis": [
+      "torch.nn.MaxPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Conv2d",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_40",
+    "gold_apis": [
+      "torch.nn.AvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Conv2d",
+      "torch.nn.Dropout",
+      "torch.cat",
+      "torch.nn.ReLU"
+    ]
+  },
+  {
+    "task_id": "hard_task_41",
+    "gold_apis": [
+      "torch.nn.AvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Dropout",
+      "torch.nn.Linear",
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.ReLU",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_42",
+    "gold_apis": [
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Dropout",
+      "torch.nn.Linear",
+      "torch.nn.ReLU",
+      "torch.nn.Conv2d",
+      "torch.nn.AvgPool2d",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_43",
+    "gold_apis": [
+      "torch.nn.AvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.nn.Conv2d",
+      "torch.cat",
+      "torch.nn.ReLU"
+    ]
+  },
+  {
+    "task_id": "hard_task_44",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.Dropout",
+      "torch.nn.MaxPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_45",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.MaxPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_46",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.chunk",
+      "torch.cat",
+      "torch.nn.MaxPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_47",
+    "gold_apis": [
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.AvgPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Linear",
+      "torch.chunk",
+      "torch.cat",
+      "torch.nn.Flatten"
+    ]
+  },
+  {
+    "task_id": "hard_task_48",
+    "gold_apis": [
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.Sequential",
+      "torch.nn.AvgPool2d",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.nn.Linear",
+      "torch.cat"
+    ]
+  },
+  {
+    "task_id": "hard_task_49",
+    "gold_apis": [
+      "torch.nn.AvgPool2d",
+      "torch.nn.Linear",
+      "torch.nn.Sequential",
+      "torch.nn.Conv2d",
+      "torch.nn.BatchNorm2d",
+      "torch.nn.ReLU",
+      "torch.nn.AdaptiveAvgPool2d",
+      "torch.nn.Flatten",
+      "torch.cat",
+      "torch.chunk"
+    ]
+  },
+  {
+    "task_id": "hard_task_50",
+    "gold_apis": [
+      "torch.nn.MaxPool2d",
+      "torch.nn.Dropout",
+      "torch.nn.Linear",
+      "torch.nn.Conv2d",
+      "torch.nn.Flatten",
+      "torch.cat",
+      "torch.chunk"
+    ]
+  }
+]
