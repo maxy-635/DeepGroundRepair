@@ -5,10 +5,11 @@ from utils.match_and_save_code import MatchSaveCode
 class Chatlog2Code:
     """Extract generated code from chat logs."""
 
-    def __init__(self, log_file_path, save_code_path):
+    def __init__(self, log_file_path, save_code_path, code_filename="generated_code.py"):
 
         self.log_file_path = log_file_path
         self.save_code_path = save_code_path
+        self.code_filename = code_filename
 
     def read_yamldata_to_pycode(self):
 
@@ -26,14 +27,9 @@ class Chatlog2Code:
         )
         matched_code = match_saver.match_code()
 
-        task_name = self.log_file_path.split("/")[-2]
-        pyfile_name = (
-            self.log_file_path.split("/")[-1]
-            .replace("yaml", "py")
-            .replace("log", "code")
-        )
+        pyfile_name = self.code_filename
         match_saver.save_code(
-            matched_code=matched_code, task_name=task_name, pyfile_name=pyfile_name
+            matched_code=matched_code, pyfile_name=pyfile_name
         )
 
         return matched_code, pyfile_name

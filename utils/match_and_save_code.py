@@ -30,7 +30,7 @@ class MatchSaveCode:
 
         return matched
 
-    def save_code(self, matched_code, task_name, pyfile_name):
+    def save_code(self, matched_code, pyfile_name, task_name=None):
         """Save code."""
         if not os.path.exists(self.target_folder):
             os.makedirs(self.target_folder)

@@ -1,6 +1,6 @@
 import os
 from utils.chat_log import ChatLog
-from utils.chatlog2code import Chatlog2Code
+from utils.match_and_save_code import MatchSaveCode
 
 
 class DLcodeGeneration:
@@ -41,14 +41,13 @@ class DLcodeGeneration:
         if not os.path.exists(self.save_log_path):
             os.makedirs(self.save_log_path)
         chatloger = ChatLog(self.save_log_path, prompting, response)
-        _, log_file = chatloger.save_chat_log(self.count_num)
+        chatloger.save_chat_log(self.count_num)
 
         if not os.path.exists(self.save_code_path):
             os.makedirs(self.save_code_path)
 
-        chatlog2coder = Chatlog2Code(
-            log_file_path=log_file, save_code_path=self.save_code_path
-        )
-        matched_code = chatlog2coder.read_yamldata_to_pycode()
+        match_saver = MatchSaveCode(target_folder=self.save_code_path, response=response)
+        matched_code = match_saver.match_code()
+        match_saver.save_code(matched_code, "generated_code.py")
 
         return matched_code

@@ -49,7 +49,7 @@ class CodeRegenerationPipeline:
         step2_file = Path(step2_result_file)
 
         relative_file = step2_file.relative_to(self.step2_result_path)
-        repair_filename = f"{step2_file.stem.replace('_annotated', '')}_repaired.py"
+        repair_filename = "repaired_code.py"
 
         return self.repair_code_save_path / relative_file.with_name(repair_filename)
 

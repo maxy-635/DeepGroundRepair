@@ -288,7 +288,7 @@ def build_postprocess_output_path(
 ) -> Path:
     """Map a source program to a separate post-processing tree."""
     relative_path = Path(source_file).resolve().relative_to(Path(source_dir).resolve())
-    return Path(target_dir) / relative_path
+    return Path(target_dir) / relative_path.with_name("annotated_code.py")
 
 
 if __name__ == "__main__":
