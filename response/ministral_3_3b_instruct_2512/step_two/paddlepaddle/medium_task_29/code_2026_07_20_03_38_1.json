@@ -1,0 +1,21 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/ministral_3_3b_instruct_2512/step_one/paddlepaddle/models_0701/medium_task_29/code_2026_07_20_03_38_1.py\", line 27, in <module>\n    model = DL_Model()\n  File \"./response/ministral_3_3b_instruct_2512/step_one/paddlepaddle/models_0701/medium_task_29/code_2026_07_20_03_38_1.py\", line 3, in __init__\n    self.pool1 = paddle.nn.MaxPool2D(kernel_size=1, stride=1)\nNameError: name 'paddle' is not defined\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "init",
+      "line_no": 3,
+      "crash_code": "self.pool1 = paddle.nn.MaxPool2D(kernel_size=1, stride=1)"
+    },
+    "init_definition": {
+      "line_no": 3,
+      "end_line_no": 3,
+      "original_call": "self.pool1 = paddle.nn.MaxPool2D(kernel_size=1, stride=1)",
+      "masked_api_call": "self.pool1 = paddle.nn.MaxPool2D(kernel_size='mask', stride='mask')"
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "class DL_Model:\n    def __init__(self):\n        self.pool1 = paddle.nn.MaxPool2D(kernel_size=1, stride=1)\n        self.flatten1 = paddle.nn.Flatten()\n        self.pool2 = paddle.nn.MaxPool2D(kernel_size=2, stride=2)\n        self.flatten2 = paddle.nn.Flatten()\n        self.pool3 = paddle.nn.MaxPool2D(kernel_size=4, stride=4)\n        self.flatten3 = paddle.nn.Flatten()\n        self.concat = paddle.concat\n        self.linear1 = paddle.nn.Linear(1280, 512)\n        self.linear2 = paddle.nn.Linear(512, 10)\n\n    def __call__(self, x):\n        x1 = self.pool1(x)\n        x1 = self.flatten1(x1)\n        x2 = self.pool2(x)\n        x2 = self.flatten2(x2)\n        x3 = self.pool3(x)\n        x3 = self.flatten3(x3)\n        x = self.concat([x1, x2, x3], axis=1)\n        x = self.linear1(x)\n        x = paddle.nn.functional.relu(x)\n        x = self.linear2(x)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.zeros([1, 3, 32, 32])\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "class DL_Model:\n    def __init__(self):\n        self.pool1 = paddle.nn.MaxPool2D(kernel_size='mask', stride='mask')\n        self.flatten1 = paddle.nn.Flatten()\n        self.pool2 = paddle.nn.MaxPool2D(kernel_size=2, stride=2)\n        self.flatten2 = paddle.nn.Flatten()\n        self.pool3 = paddle.nn.MaxPool2D(kernel_size=4, stride=4)\n        self.flatten3 = paddle.nn.Flatten()\n        self.concat = paddle.concat\n        self.linear1 = paddle.nn.Linear(1280, 512)\n        self.linear2 = paddle.nn.Linear(512, 10)\n\n    def __call__(self, x):\n        x1 = self.pool1(x)\n        x1 = self.flatten1(x1)\n        x2 = self.pool2(x)\n        x2 = self.flatten2(x2)\n        x3 = self.pool3(x)\n        x3 = self.flatten3(x3)\n        x = self.concat([x1, x2, x3], axis=1)\n        x = self.linear1(x)\n        x = paddle.nn.functional.relu(x)\n        x = self.linear2(x)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.zeros([1, 3, 32, 32])\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

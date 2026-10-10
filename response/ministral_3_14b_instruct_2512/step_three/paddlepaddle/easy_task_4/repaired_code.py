@@ -1,0 +1,54 @@
+import paddle
+import paddle.nn as nn
+import paddle.nn.functional as F
+
+class DL_Model(nn.Layer):
+    def __init__(self):
+        super(DL_Model, self).__init__()
+
+        # First block: 3 convolutional layers followed by max pooling
+        self.conv_block1 = nn.Sequential(
+            nn.Conv2D(in_channels=1, out_channels=32, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.Conv2D(in_channels=32, out_channels=64, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.Conv2D(in_channels=64, out_channels=128, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2D(kernel_size=2, stride=2, padding=0)
+        )
+
+        # Second block: 4 convolutional layers followed by max pooling
+        self.conv_block2 = nn.Sequential(
+            nn.Conv2D(in_channels=128, out_channels=128, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.Conv2D(in_channels=128, out_channels=256, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.Conv2D(in_channels=256, out_channels=256, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.Conv2D(in_channels=256, out_channels=512, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2D(kernel_size=2, stride=2, padding=0)
+        )
+
+        # Fully connected layers
+        self.fc_layers = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(in_features=512*7*7, out_features=1024),
+            nn.ReLU(),
+            nn.Linear(in_features=1024, out_features=512),
+            nn.ReLU(),
+            nn.Linear(in_features=512, out_features=10)
+        )
+
+    def forward(self, x):
+        # the initial shape of x is: (1, 1, 28, 28)
+        x = self.conv_block1(x)  # output tensor shape: (1, 128, 14, 14)
+        x = self.conv_block2(x)  # output tensor shape: (1, 512, 7, 7)
+        x = self.fc_layers(x)
+        return x
+
+if __name__ == "__main__":
+    model = DL_Model()
+    input_tensor = paddle.randn([1, 1, 28, 28])  # Batch size 1, 1 channel, 28x28 image
+    output_tensor = model(input_tensor)
+    print("Output shape:", output_tensor.shape)

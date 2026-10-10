@@ -1,0 +1,1319 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_27b_it/step_one/paddlepaddle/models_0701/hard_task_44/code_2026_07_02_09_29_1.py\", line 59, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/paddle/nn/layer/layers.py\", line 1833, in __call__\n    return self.forward(*inputs, **kwargs)\n  File \"./response/gemma_3_27b_it/step_one/paddlepaddle/models_0701/hard_task_44/code_2026_07_02_09_29_1.py\", line 47, in forward\n    x2_concat = paddle.concat([x2_branch1, x2_branch2, x2_branch3, x2_branch4], axis=1)\n  File \"/python3.10/site-packages/paddle/utils/decorator_utils.py\", line 61, in wrapper\n    return func(*processed_args, **processed_kwargs)\n  File \"/python3.10/site-packages/paddle/tensor/manipulation.py\", line 1525, in concat\n    return _C_ops.concat(input, axis, out=out)\nValueError: (InvalidArgument) The 2-th dimension of input[0] and input[3] is expected to be equal.But received input[0]'s shape = [1, 32, 32, 32], input[3]'s shape = [1, 32, 16, 16].\n  [Hint: Expected inputs_dims[0][j] == inputs_dims[i][j], but received inputs_dims[0][j]:32 != inputs_dims[i][j]:16.] (at /paddle/paddle/phi/kernels/funcs/concat_funcs.h:83)\n\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 47,
+      "crash_code": "x2_concat = paddle.concat([x2_branch1, x2_branch2, x2_branch3, x2_branch4], axis=1)"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "spatial"
+    ],
+    "merge_context": {
+      "merge_lineno": 47,
+      "merge_code": "x2_concat = paddle.concat([x2_branch1, x2_branch2, x2_branch3, x2_branch4], axis=1)",
+      "merge_kind": "concat",
+      "concat_axis": 1,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "x"
+      ],
+      "forward_input_shapes": {
+        "x": [
+          1,
+          3,
+          32,
+          32
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "x2_branch1",
+          "shape": [
+            1,
+            32,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "x2_branch1",
+              "line_no": 47
+            },
+            {
+              "var_name": "x1_dropout",
+              "line_no": 36
+            },
+            {
+              "var_name": "self.branch1_conv",
+              "line_no": 36
+            },
+            {
+              "var_name": "x2_branch1",
+              "line_no": 36
+            },
+            {
+              "var_name": "x1_concat",
+              "line_no": 33
+            },
+            {
+              "var_name": "self.dropout1",
+              "line_no": 33
+            },
+            {
+              "var_name": "x1_dropout",
+              "line_no": 33
+            },
+            {
+              "var_name": "x1_5",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_3",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_1",
+              "line_no": 32
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_concat",
+              "line_no": 32
+            },
+            {
+              "var_name": "x",
+              "line_no": 30
+            },
+            {
+              "var_name": "self.conv1_5",
+              "line_no": 30
+            },
+            {
+              "var_name": "x1_5",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.conv1_3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x1_3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.conv1_1",
+              "line_no": 28
+            },
+            {
+              "var_name": "x1_1",
+              "line_no": 28
+            },
+            {
+              "var_name": "x",
+              "line_no": 26
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "branch1_conv",
+              "api_name": "Conv2D",
+              "call_line_no": 36,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.branch1_conv = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x1_dropout"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "x2_branch1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "dropout1",
+              "api_name": "Dropout",
+              "call_line_no": 33,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.dropout1 = nn.Dropout(p=0.5)",
+              "input_var_names": [
+                "x1_concat"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "x1_dropout",
+              "output_shape": [
+                1,
+                96,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_5",
+              "api_name": "Conv2D",
+              "call_line_no": 30,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_5",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 29,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 28,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 5,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "x2_branch2",
+          "shape": [
+            1,
+            32,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "x2_branch2",
+              "line_no": 47
+            },
+            {
+              "var_name": "x2_branch2",
+              "line_no": 39
+            },
+            {
+              "var_name": "self.branch2_conv2",
+              "line_no": 39
+            },
+            {
+              "var_name": "x2_branch2",
+              "line_no": 39
+            },
+            {
+              "var_name": "x1_dropout",
+              "line_no": 38
+            },
+            {
+              "var_name": "self.branch2_conv1",
+              "line_no": 38
+            },
+            {
+              "var_name": "x2_branch2",
+              "line_no": 38
+            },
+            {
+              "var_name": "x1_concat",
+              "line_no": 33
+            },
+            {
+              "var_name": "self.dropout1",
+              "line_no": 33
+            },
+            {
+              "var_name": "x1_dropout",
+              "line_no": 33
+            },
+            {
+              "var_name": "x1_5",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_3",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_1",
+              "line_no": 32
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_concat",
+              "line_no": 32
+            },
+            {
+              "var_name": "x",
+              "line_no": 30
+            },
+            {
+              "var_name": "self.conv1_5",
+              "line_no": 30
+            },
+            {
+              "var_name": "x1_5",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.conv1_3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x1_3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.conv1_1",
+              "line_no": 28
+            },
+            {
+              "var_name": "x1_1",
+              "line_no": 28
+            },
+            {
+              "var_name": "x",
+              "line_no": 26
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "branch2_conv2",
+              "api_name": "Conv2D",
+              "call_line_no": 39,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.branch2_conv2 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x2_branch2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                32
+              ],
+              "output_var_name": "x2_branch2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "branch2_conv1",
+              "api_name": "Conv2D",
+              "call_line_no": 38,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.branch2_conv1 = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x1_dropout"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "x2_branch2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "dropout1",
+              "api_name": "Dropout",
+              "call_line_no": 33,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.dropout1 = nn.Dropout(p=0.5)",
+              "input_var_names": [
+                "x1_concat"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "x1_dropout",
+              "output_shape": [
+                1,
+                96,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_5",
+              "api_name": "Conv2D",
+              "call_line_no": 30,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_5",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 29,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 28,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 6,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "x2_branch3",
+          "shape": [
+            1,
+            32,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "x2_branch3",
+              "line_no": 47
+            },
+            {
+              "var_name": "x2_branch3",
+              "line_no": 42
+            },
+            {
+              "var_name": "self.branch3_conv2",
+              "line_no": 42
+            },
+            {
+              "var_name": "x2_branch3",
+              "line_no": 42
+            },
+            {
+              "var_name": "x1_dropout",
+              "line_no": 41
+            },
+            {
+              "var_name": "self.branch3_conv1",
+              "line_no": 41
+            },
+            {
+              "var_name": "x2_branch3",
+              "line_no": 41
+            },
+            {
+              "var_name": "x1_concat",
+              "line_no": 33
+            },
+            {
+              "var_name": "self.dropout1",
+              "line_no": 33
+            },
+            {
+              "var_name": "x1_dropout",
+              "line_no": 33
+            },
+            {
+              "var_name": "x1_5",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_3",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_1",
+              "line_no": 32
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_concat",
+              "line_no": 32
+            },
+            {
+              "var_name": "x",
+              "line_no": 30
+            },
+            {
+              "var_name": "self.conv1_5",
+              "line_no": 30
+            },
+            {
+              "var_name": "x1_5",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.conv1_3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x1_3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.conv1_1",
+              "line_no": 28
+            },
+            {
+              "var_name": "x1_1",
+              "line_no": 28
+            },
+            {
+              "var_name": "x",
+              "line_no": 26
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "branch3_conv2",
+              "api_name": "Conv2D",
+              "call_line_no": 42,
+              "init_line_no": 19,
+              "end_line_no": 19,
+              "original_call": "self.branch3_conv2 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=5, stride=1, padding=2)",
+              "input_var_names": [
+                "x2_branch3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                32
+              ],
+              "output_var_name": "x2_branch3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "branch3_conv1",
+              "api_name": "Conv2D",
+              "call_line_no": 41,
+              "init_line_no": 18,
+              "end_line_no": 18,
+              "original_call": "self.branch3_conv1 = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x1_dropout"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "x2_branch3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "dropout1",
+              "api_name": "Dropout",
+              "call_line_no": 33,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.dropout1 = nn.Dropout(p=0.5)",
+              "input_var_names": [
+                "x1_concat"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "x1_dropout",
+              "output_shape": [
+                1,
+                96,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_5",
+              "api_name": "Conv2D",
+              "call_line_no": 30,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_5",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 29,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 28,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 6,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "x2_branch4",
+          "shape": [
+            1,
+            32,
+            16,
+            16
+          ],
+          "producer_path": [
+            {
+              "var_name": "x2_branch4",
+              "line_no": 47
+            },
+            {
+              "var_name": "x2_branch4",
+              "line_no": 45
+            },
+            {
+              "var_name": "self.branch4_conv",
+              "line_no": 45
+            },
+            {
+              "var_name": "x2_branch4",
+              "line_no": 45
+            },
+            {
+              "var_name": "x1_dropout",
+              "line_no": 44
+            },
+            {
+              "var_name": "self.branch4_pool",
+              "line_no": 44
+            },
+            {
+              "var_name": "x2_branch4",
+              "line_no": 44
+            },
+            {
+              "var_name": "x1_concat",
+              "line_no": 33
+            },
+            {
+              "var_name": "self.dropout1",
+              "line_no": 33
+            },
+            {
+              "var_name": "x1_dropout",
+              "line_no": 33
+            },
+            {
+              "var_name": "x1_5",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_3",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_1",
+              "line_no": 32
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 32
+            },
+            {
+              "var_name": "x1_concat",
+              "line_no": 32
+            },
+            {
+              "var_name": "x",
+              "line_no": 30
+            },
+            {
+              "var_name": "self.conv1_5",
+              "line_no": 30
+            },
+            {
+              "var_name": "x1_5",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.conv1_3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x1_3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.conv1_1",
+              "line_no": 28
+            },
+            {
+              "var_name": "x1_1",
+              "line_no": 28
+            },
+            {
+              "var_name": "x",
+              "line_no": 26
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "branch4_conv",
+              "api_name": "Conv2D",
+              "call_line_no": 45,
+              "init_line_no": 21,
+              "end_line_no": 21,
+              "original_call": "self.branch4_conv = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x2_branch4"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  16,
+                  16
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                16,
+                16
+              ],
+              "output_var_name": "x2_branch4",
+              "output_shape": [
+                1,
+                32,
+                16,
+                16
+              ]
+            },
+            {
+              "layer_name": "branch4_pool",
+              "api_name": "MaxPool2D",
+              "call_line_no": 44,
+              "init_line_no": 20,
+              "end_line_no": 20,
+              "original_call": "self.branch4_pool = nn.MaxPool2D(kernel_size=3, stride=2, padding=1)",
+              "input_var_names": [
+                "x1_dropout"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "x2_branch4",
+              "output_shape": [
+                1,
+                96,
+                16,
+                16
+              ]
+            },
+            {
+              "layer_name": "dropout1",
+              "api_name": "Dropout",
+              "call_line_no": 33,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.dropout1 = nn.Dropout(p=0.5)",
+              "input_var_names": [
+                "x1_concat"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "x1_dropout",
+              "output_shape": [
+                1,
+                96,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_5",
+              "api_name": "Conv2D",
+              "call_line_no": 30,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_5",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 29,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 28,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x1_1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 6,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 1
+        }
+      ],
+      "framework": "paddle",
+      "tensor_layout": "channels_first"
+    },
+    "target_branch_index": 3,
+    "target_layers": [
+      {
+        "layer_name": "branch4_pool",
+        "call_line_no": 44,
+        "line_no": 20,
+        "end_line_no": 20,
+        "api_name": "MaxPool2D",
+        "layer_semantic": "pool",
+        "original_call": "self.branch4_pool = nn.MaxPool2D(kernel_size=3, stride=2, padding=1)",
+        "normalized_call": "self.branch4_pool = nn.MaxPool2D(kernel_size=3, stride=2, padding=1)",
+        "masked_api_call": "self.branch4_pool = nn.MaxPool2D(kernel_size='mask', stride='mask', padding='mask')",
+        "mismatch_types": [
+          "spatial"
+        ],
+        "params_to_mask": [
+          "kernel_size",
+          "stride",
+          "padding"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 44,
+        "oracle_shape": [
+          1,
+          96,
+          32,
+          32
+        ],
+        "target_layer_index": 0,
+        "layer_name": "branch4_pool",
+        "target_layer_line_no": 20,
+        "call_line_no": 44,
+        "mismatch_types": [
+          "spatial"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "branch4_pool",
+        "modeled_input_shape": [
+          1,
+          96,
+          32,
+          32
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          96,
+          32,
+          32
+        ],
+        "oracle_output_shape": [
+          1,
+          96,
+          32,
+          32
+        ]
+      }
+    ]
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Block 1\n        self.conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)\n        self.dropout1 = nn.Dropout(p=0.5)\n\n        # Block 2\n        self.branch1_conv = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.branch2_conv1 = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.branch2_conv2 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.branch3_conv1 = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.branch3_conv2 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=5, stride=1, padding=2)\n        self.branch4_pool = nn.MaxPool2D(kernel_size=3, stride=2, padding=1)\n        self.branch4_conv = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)\n\n        self.flatten = nn.Flatten()\n        self.linear = nn.Linear(in_features=32 * 8 * 8, out_features=10) # Adjusted for CIFAR-10 and pooling\n\n    def forward(self, x):\n        # Block 1\n        x1_1 = self.conv1_1(x)\n        x1_3 = self.conv1_3(x)\n        x1_5 = self.conv1_5(x)\n\n        x1_concat = paddle.concat([x1_1, x1_3, x1_5], axis=1)\n        x1_dropout = self.dropout1(x1_concat)\n\n        # Block 2\n        x2_branch1 = self.branch1_conv(x1_dropout)\n\n        x2_branch2 = self.branch2_conv1(x1_dropout)\n        x2_branch2 = self.branch2_conv2(x2_branch2)\n\n        x2_branch3 = self.branch3_conv1(x1_dropout)\n        x2_branch3 = self.branch3_conv2(x2_branch3)\n\n        x2_branch4 = self.branch4_pool(x1_dropout)\n        x2_branch4 = self.branch4_conv(x2_branch4)\n\n        x2_concat = paddle.concat([x2_branch1, x2_branch2, x2_branch3, x2_branch4], axis=1)\n\n        # Flatten and Linear\n        x_flatten = self.flatten(x2_concat)\n        x_output = self.linear(x_flatten)\n\n        return x_output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn(shape=(1, 3, 32, 32))  # Example input tensor for CIFAR-10\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Block 1\n        self.conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)\n        self.dropout1 = nn.Dropout(p=0.5)\n\n        # Block 2\n        self.branch1_conv = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.branch2_conv1 = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.branch2_conv2 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.branch3_conv1 = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.branch3_conv2 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=5, stride=1, padding=2)\n        self.branch4_pool = nn.MaxPool2D(kernel_size='mask', stride='mask', padding='mask')\n        self.branch4_conv = nn.Conv2D(in_channels=96, out_channels=32, kernel_size=1, stride=1, padding=0)\n\n        self.flatten = nn.Flatten()\n        self.linear = nn.Linear(in_features=32 * 8 * 8, out_features=10) # Adjusted for CIFAR-10 and pooling\n\n    def forward(self, x):\n        # the initial shape of x is: (1, 3, 32, 32)\n        # Block 1\n        x1_1 = self.conv1_1(x)  # output tensor shape: (1, 32, 32, 32)\n        x1_3 = self.conv1_3(x)  # output tensor shape: (1, 32, 32, 32)\n        x1_5 = self.conv1_5(x)  # output tensor shape: (1, 32, 32, 32)\n\n        x1_concat = paddle.concat([x1_1, x1_3, x1_5], axis=1)  # output tensor shape: (1, 96, 32, 32)\n        x1_dropout = self.dropout1(x1_concat)  # output tensor shape: (1, 96, 32, 32)\n\n        # Block 2\n        x2_branch1 = self.branch1_conv(x1_dropout)  # output tensor shape: (1, 32, 32, 32)\n\n        x2_branch2 = self.branch2_conv1(x1_dropout)  # output tensor shape: (1, 32, 32, 32)\n        x2_branch2 = self.branch2_conv2(x2_branch2)  # output tensor shape: (1, 32, 32, 32)\n\n        x2_branch3 = self.branch3_conv1(x1_dropout)  # output tensor shape: (1, 32, 32, 32)\n        x2_branch3 = self.branch3_conv2(x2_branch3)  # output tensor shape: (1, 32, 32, 32)\n\n        x2_branch4 = self.branch4_pool(x1_dropout)  # output tensor shape of this layer should be (1, 96, 32, 32)\n        x2_branch4 = self.branch4_conv(x2_branch4)\n\n        x2_concat = paddle.concat([x2_branch1, x2_branch2, x2_branch3, x2_branch4], axis=1)\n\n        # Flatten and Linear\n        x_flatten = self.flatten(x2_concat)\n        x_output = self.linear(x_flatten)\n\n        return x_output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn(shape=(1, 3, 32, 32))  # Example input tensor for CIFAR-10\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

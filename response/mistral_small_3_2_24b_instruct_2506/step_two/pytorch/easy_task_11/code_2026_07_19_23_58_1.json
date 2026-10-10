@@ -1,0 +1,24 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/mistral_small_3_2_24b_instruct_2506/step_one/pytorch/models_0701/easy_task_11/code_2026_07_19_23_58_1.py\", line 26, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"./response/mistral_small_3_2_24b_instruct_2506/step_one/pytorch/models_0701/easy_task_11/code_2026_07_19_23_58_1.py\", line 18, in forward\n    x = self.fc1(x)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/linear.py\", line 134, in forward\n    return F.linear(input, self.weight, self.bias)\nRuntimeError: mat1 and mat2 shapes cannot be multiplied (1x2048 and 800x128)\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 18,
+      "crash_code": "x = self.fc1(x)"
+    },
+    "init_definition": {
+      "line_no": 10,
+      "end_line_no": 10,
+      "original_call": "self.fc1 = nn.Linear(in_features=32*5*5, out_features=128)",
+      "masked_api_call": "self.fc1 = nn.Linear(in_features='mask', out_features=128)",
+      "params_to_mask": [
+        "in_features"
+      ]
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.avg_pool = nn.AvgPool2d(kernel_size=5, stride=3, padding=0)\n        self.conv = nn.Conv2d(in_channels=1, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.flatten = nn.Flatten()\n        self.fc1 = nn.Linear(in_features=32*5*5, out_features=128)\n        self.dropout = nn.Dropout(p=0.5)\n        self.fc2 = nn.Linear(in_features=128, out_features=10)\n\n    def forward(self, x):\n        x = self.avg_pool(x)\n        x = self.conv(x)\n        x = self.flatten(x)\n        x = self.fc1(x)\n        x = self.dropout(x)\n        x = self.fc2(x)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 1, 28, 28)  # MNIST images are 28x28 grayscale\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)  # Expected output shape: torch.Size([1, 10])",
+  "final_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.avg_pool = nn.AvgPool2d(kernel_size=5, stride=3, padding=0)\n        self.conv = nn.Conv2d(in_channels=1, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.flatten = nn.Flatten()\n        self.fc1 = nn.Linear(in_features='mask', out_features=128)\n        self.dropout = nn.Dropout(p=0.5)\n        self.fc2 = nn.Linear(in_features=128, out_features=10)\n\n    def forward(self, x):\n        # the initial shape of x is: (1, 1, 28, 28)\n        x = self.avg_pool(x)  # output tensor shape: (1, 1, 8, 8)\n        x = self.conv(x)  # output tensor shape: (1, 32, 8, 8)\n        x = self.flatten(x)  # output tensor shape: (1, 2048)\n        x = self.fc1(x)\n        x = self.dropout(x)\n        x = self.fc2(x)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 1, 28, 28)  # MNIST images are 28x28 grayscale\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)  # Expected output shape: torch.Size([1, 10])"
+}

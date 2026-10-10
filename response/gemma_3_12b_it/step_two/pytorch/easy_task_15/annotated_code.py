@@ -1,0 +1,31 @@
+import torch
+import torch.nn as nn
+
+class DL_Model(nn.Module):
+    def __init__(self):
+        super(DL_Model, self).__init__()
+        self.block = nn.Sequential(
+            nn.Conv2d(in_channels='mask', out_channels='mask', kernel_size='mask', stride='mask', padding='mask'),
+            nn.Conv2d(in_channels=32, out_channels=64, kernel_size=1, stride=1, padding=0),
+            nn.Conv2d(in_channels=64, out_channels=32, kernel_size=1, stride=1, padding=0),
+            nn.AvgPool2d(kernel_size=2, stride=2, padding=0),
+            nn.Dropout(p=0.25)
+        )
+        self.classifier = nn.Sequential(
+            nn.AvgPool2d(kernel_size=2, stride=2, padding=0),
+            nn.Flatten(),
+            nn.Linear(in_features=32 * 7 * 7, out_features=10)
+        )
+
+    def forward(self, x):
+        # the initial shape of x is: (1, 1, 28, 28)
+        x = self.block(x)  # output tensor shape: (1, 32, 14, 14)
+        x = self.block(x)
+        x = self.classifier(x)
+        return x
+
+if __name__ == "__main__":
+    model = DL_Model()
+    input_tensor = torch.randn(1, 1, 28, 28)
+    output_tensor = model(input_tensor)
+    print(output_tensor.shape)

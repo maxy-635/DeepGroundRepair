@@ -1,0 +1,431 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/ministral_3_14b_instruct_2512/step_one/paddlepaddle/models_0701/hard_task_34/code_2026_07_20_03_52_1.py\", line 108, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/paddle/nn/layer/layers.py\", line 1833, in __call__\n    return self.forward(*inputs, **kwargs)\n  File \"./response/ministral_3_14b_instruct_2512/step_one/paddlepaddle/models_0701/hard_task_34/code_2026_07_20_03_52_1.py\", line 96, in forward\n    fused = paddle.add(concat3, branch_out)\n  File \"/python3.10/site-packages/paddle/utils/decorator_utils.py\", line 214, in wrapper\n    return func(*args, **kwargs)\n  File \"/python3.10/site-packages/paddle/tensor/math.py\", line 757, in add\n    return _C_ops.add(x, scaled_y, out=out)\nValueError: (InvalidArgument) Broadcast dimension mismatch. Operands could not be broadcast together with the shape of X = [1, 128, 28, 28] and the shape of Y = [1, 32, 28, 28]. Received [128] in X is not equal to [32] in Y at i:1.\n  [Hint: Expected x_dims_array[i] == y_dims_array[i] || (x_dims_array[i] <= 1 && x_dims_array[i] != 0) || (y_dims_array[i] <= 1 && y_dims_array[i] != 0) == true, but received x_dims_array[i] == y_dims_array[i] || (x_dims_array[i] <= 1 && x_dims_array[i] != 0) || (y_dims_array[i] <= 1 && y_dims_array[i] != 0):0 != true:1.] (at /paddle/paddle/phi/kernels/funcs/common_shape.h:86)\n\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 96,
+      "crash_code": "fused = paddle.add(concat3, branch_out)"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "channel"
+    ],
+    "merge_context": {
+      "merge_lineno": 96,
+      "merge_code": "fused = paddle.add(concat3, branch_out)",
+      "merge_kind": "add",
+      "concat_axis": null,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "x"
+      ],
+      "forward_input_shapes": {
+        "x": [
+          1,
+          1,
+          28,
+          28
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "concat3",
+          "shape": [
+            1,
+            128,
+            28,
+            28
+          ],
+          "producer_path": [
+            {
+              "var_name": "concat3",
+              "line_no": 96
+            },
+            {
+              "var_name": "block3_out",
+              "line_no": 90
+            },
+            {
+              "var_name": "concat2",
+              "line_no": 90
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 90
+            },
+            {
+              "var_name": "concat3",
+              "line_no": 90
+            },
+            {
+              "var_name": "concat2",
+              "line_no": 89
+            },
+            {
+              "var_name": "self.block3",
+              "line_no": 89
+            },
+            {
+              "var_name": "block3_out",
+              "line_no": 89
+            },
+            {
+              "var_name": "block2_out",
+              "line_no": 86
+            },
+            {
+              "var_name": "concat1",
+              "line_no": 86
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 86
+            },
+            {
+              "var_name": "concat2",
+              "line_no": 86
+            },
+            {
+              "var_name": "concat1",
+              "line_no": 85
+            },
+            {
+              "var_name": "self.block2",
+              "line_no": 85
+            },
+            {
+              "var_name": "block2_out",
+              "line_no": 85
+            },
+            {
+              "var_name": "block1_out",
+              "line_no": 82
+            },
+            {
+              "var_name": "main_out",
+              "line_no": 82
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 82
+            },
+            {
+              "var_name": "concat1",
+              "line_no": 82
+            },
+            {
+              "var_name": "main_out",
+              "line_no": 81
+            },
+            {
+              "var_name": "self.block1",
+              "line_no": 81
+            },
+            {
+              "var_name": "block1_out",
+              "line_no": 81
+            },
+            {
+              "var_name": "x",
+              "line_no": 78
+            },
+            {
+              "var_name": "self.main_path_conv",
+              "line_no": 78
+            },
+            {
+              "var_name": "main_out",
+              "line_no": 78
+            },
+            {
+              "var_name": "x",
+              "line_no": 76
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "block3",
+              "api_name": "Sequential",
+              "call_line_no": 89,
+              "init_line_no": 52,
+              "end_line_no": 62,
+              "original_call": "self.block3 = nn.Sequential(\n            nn.Conv2D(\n                in_channels=96,  # 64 + 32\n                out_channels=32,\n                kernel_size=3,\n                stride=1,\n                padding=1,\n                groups=32\n            ),\n            nn.ReLU()\n        )",
+              "input_var_names": [
+                "concat2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  28,
+                  28
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                28,
+                28
+              ],
+              "output_var_name": "block3_out",
+              "output_shape": [
+                1,
+                32,
+                28,
+                28
+              ]
+            },
+            {
+              "layer_name": "block2",
+              "api_name": "Sequential",
+              "call_line_no": 85,
+              "init_line_no": 40,
+              "end_line_no": 50,
+              "original_call": "self.block2 = nn.Sequential(\n            nn.Conv2D(\n                in_channels=64,  # 32 (original) + 32 (concatenated)\n                out_channels=32,\n                kernel_size=3,\n                stride=1,\n                padding=1,\n                groups=32\n            ),\n            nn.ReLU()\n        )",
+              "input_var_names": [
+                "concat1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64,
+                  28,
+                  28
+                ]
+              ],
+              "input_shape": [
+                1,
+                64,
+                28,
+                28
+              ],
+              "output_var_name": "block2_out",
+              "output_shape": [
+                1,
+                32,
+                28,
+                28
+              ]
+            },
+            {
+              "layer_name": "block1",
+              "api_name": "Sequential",
+              "call_line_no": 81,
+              "init_line_no": 28,
+              "end_line_no": 38,
+              "original_call": "self.block1 = nn.Sequential(\n            nn.Conv2D(\n                in_channels=32,\n                out_channels=32,\n                kernel_size=3,\n                stride=1,\n                padding=1,\n                groups=32  # Separable convolution\n            ),\n            nn.ReLU()\n        )",
+              "input_var_names": [
+                "main_out"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  28,
+                  28
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                28,
+                28
+              ],
+              "output_var_name": "block1_out",
+              "output_shape": [
+                1,
+                32,
+                28,
+                28
+              ]
+            },
+            {
+              "layer_name": "main_path_conv",
+              "api_name": "Conv2D",
+              "call_line_no": 78,
+              "init_line_no": 10,
+              "end_line_no": 16,
+              "original_call": "self.main_path_conv = nn.Conv2D(\n            in_channels=1,\n            out_channels=32,\n            kernel_size=3,\n            stride=1,\n            padding=1\n        )",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1,
+                  28,
+                  28
+                ]
+              ],
+              "input_shape": [
+                1,
+                1,
+                28,
+                28
+              ],
+              "output_var_name": "main_out",
+              "output_shape": [
+                1,
+                32,
+                28,
+                28
+              ]
+            }
+          ],
+          "path_length": 4,
+          "role": "main-path",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        },
+        {
+          "var_name": "branch_out",
+          "shape": [
+            1,
+            32,
+            28,
+            28
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch_out",
+              "line_no": 96
+            },
+            {
+              "var_name": "x",
+              "line_no": 93
+            },
+            {
+              "var_name": "self.branch_conv",
+              "line_no": 93
+            },
+            {
+              "var_name": "branch_out",
+              "line_no": 93
+            },
+            {
+              "var_name": "x",
+              "line_no": 76
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "branch_conv",
+              "api_name": "Conv2D",
+              "call_line_no": 93,
+              "init_line_no": 19,
+              "end_line_no": 25,
+              "original_call": "self.branch_conv = nn.Conv2D(\n            in_channels=1,\n            out_channels=32,\n            kernel_size=3,\n            stride=1,\n            padding=1\n        )",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1,
+                  28,
+                  28
+                ]
+              ],
+              "input_shape": [
+                1,
+                1,
+                28,
+                28
+              ],
+              "output_var_name": "branch_out",
+              "output_shape": [
+                1,
+                32,
+                28,
+                28
+              ]
+            }
+          ],
+          "path_length": 1,
+          "role": "branch-path",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        }
+      ],
+      "framework": "paddle",
+      "tensor_layout": "channels_first"
+    },
+    "target_branch_index": 1,
+    "target_layers": [
+      {
+        "layer_name": "branch_conv",
+        "call_line_no": 93,
+        "line_no": 19,
+        "end_line_no": 25,
+        "api_name": "Conv2D",
+        "layer_semantic": "conv",
+        "original_call": "self.branch_conv = nn.Conv2D(\n            in_channels=1,\n            out_channels=32,\n            kernel_size=3,\n            stride=1,\n            padding=1\n        )",
+        "normalized_call": "self.branch_conv = nn.Conv2D(in_channels=1, out_channels=32, kernel_size=3, stride=1, padding=1)",
+        "masked_api_call": "self.branch_conv = nn.Conv2D(in_channels=1, out_channels='mask', kernel_size=3, stride=1, padding=1)",
+        "mismatch_types": [
+          "channel"
+        ],
+        "params_to_mask": [
+          "out_channels"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 93,
+        "oracle_shape": [
+          1,
+          128,
+          28,
+          28
+        ],
+        "target_layer_index": 0,
+        "layer_name": "branch_conv",
+        "target_layer_line_no": 19,
+        "call_line_no": 93,
+        "mismatch_types": [
+          "channel"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "branch_conv",
+        "modeled_input_shape": [
+          1,
+          1,
+          28,
+          28
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          128,
+          28,
+          28
+        ],
+        "oracle_output_shape": [
+          1,
+          128,
+          28,
+          28
+        ]
+      }
+    ]
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\nimport paddle.nn.functional as F\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Main path block\n        self.main_path_conv = nn.Conv2D(\n            in_channels=1,\n            out_channels=32,\n            kernel_size=3,\n            stride=1,\n            padding=1\n        )\n\n        # Branch path\n        self.branch_conv = nn.Conv2D(\n            in_channels=1,\n            out_channels=32,\n            kernel_size=3,\n            stride=1,\n            padding=1\n        )\n\n        # Three blocks in main path\n        self.block1 = nn.Sequential(\n            nn.Conv2D(\n                in_channels=32,\n                out_channels=32,\n                kernel_size=3,\n                stride=1,\n                padding=1,\n                groups=32  # Separable convolution\n            ),\n            nn.ReLU()\n        )\n\n        self.block2 = nn.Sequential(\n            nn.Conv2D(\n                in_channels=64,  # 32 (original) + 32 (concatenated)\n                out_channels=32,\n                kernel_size=3,\n                stride=1,\n                padding=1,\n                groups=32\n            ),\n            nn.ReLU()\n        )\n\n        self.block3 = nn.Sequential(\n            nn.Conv2D(\n                in_channels=96,  # 64 + 32\n                out_channels=32,\n                kernel_size=3,\n                stride=1,\n                padding=1,\n                groups=32\n            ),\n            nn.ReLU()\n        )\n\n        # Final layers\n        self.final_conv = nn.Conv2D(\n            in_channels=128,  # 96 + 32\n            out_channels=32,\n            kernel_size=3,\n            stride=1,\n            padding=1\n        )\n\n        self.flatten = nn.Flatten()\n        self.fc = nn.Linear(in_features=32 * 28 * 28, out_features=10)\n\n    def forward(self, x):\n        # Main path\n        main_out = self.main_path_conv(x)\n\n        # First block\n        block1_out = self.block1(main_out)\n        concat1 = paddle.concat([main_out, block1_out], axis=1)\n\n        # Second block\n        block2_out = self.block2(concat1)\n        concat2 = paddle.concat([concat1, block2_out], axis=1)\n\n        # Third block\n        block3_out = self.block3(concat2)\n        concat3 = paddle.concat([concat2, block3_out], axis=1)\n\n        # Branch path\n        branch_out = self.branch_conv(x)\n\n        # Fusion\n        fused = paddle.add(concat3, branch_out)\n\n        # Final processing\n        final_out = self.final_conv(fused)\n        flattened = self.flatten(final_out)\n        output = self.fc(flattened)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn((1, 1, 28, 28))  # Batch of 1, 1 channel, 28x28 MNIST image\n    output_tensor = model(input_tensor)\n    print(\"Output shape:\", output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\nimport paddle.nn.functional as F\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Main path block\n        self.main_path_conv = nn.Conv2D(\n            in_channels=1,\n            out_channels=32,\n            kernel_size=3,\n            stride=1,\n            padding=1\n        )\n\n        # Branch path\n        self.branch_conv = nn.Conv2D(in_channels=1, out_channels='mask', kernel_size=3, stride=1, padding=1)\n\n\n\n\n\n\n\n        # Three blocks in main path\n        self.block1 = nn.Sequential(\n            nn.Conv2D(\n                in_channels=32,\n                out_channels=32,\n                kernel_size=3,\n                stride=1,\n                padding=1,\n                groups=32  # Separable convolution\n            ),\n            nn.ReLU()\n        )\n\n        self.block2 = nn.Sequential(\n            nn.Conv2D(\n                in_channels=64,  # 32 (original) + 32 (concatenated)\n                out_channels=32,\n                kernel_size=3,\n                stride=1,\n                padding=1,\n                groups=32\n            ),\n            nn.ReLU()\n        )\n\n        self.block3 = nn.Sequential(\n            nn.Conv2D(\n                in_channels=96,  # 64 + 32\n                out_channels=32,\n                kernel_size=3,\n                stride=1,\n                padding=1,\n                groups=32\n            ),\n            nn.ReLU()\n        )\n\n        # Final layers\n        self.final_conv = nn.Conv2D(\n            in_channels=128,  # 96 + 32\n            out_channels=32,\n            kernel_size=3,\n            stride=1,\n            padding=1\n        )\n\n        self.flatten = nn.Flatten()\n        self.fc = nn.Linear(in_features=32 * 28 * 28, out_features=10)\n\n    def forward(self, x):\n        # the initial shape of x is: (1, 1, 28, 28)\n        # Main path\n        main_out = self.main_path_conv(x)  # output tensor shape: (1, 32, 28, 28)\n\n        # First block\n        block1_out = self.block1(main_out)  # output tensor shape: (1, 32, 28, 28)\n        concat1 = paddle.concat([main_out, block1_out], axis=1)  # output tensor shape: (1, 64, 28, 28)\n\n        # Second block\n        block2_out = self.block2(concat1)  # output tensor shape: (1, 32, 28, 28)\n        concat2 = paddle.concat([concat1, block2_out], axis=1)  # output tensor shape: (1, 96, 28, 28)\n\n        # Third block\n        block3_out = self.block3(concat2)  # output tensor shape: (1, 32, 28, 28)\n        concat3 = paddle.concat([concat2, block3_out], axis=1)  # output tensor shape: (1, 128, 28, 28)\n\n        # Branch path\n        branch_out = self.branch_conv(x)  # output tensor shape of this layer should be (1, 128, 28, 28)\n\n        # Fusion\n        fused = paddle.add(concat3, branch_out)\n\n        # Final processing\n        final_out = self.final_conv(fused)\n        flattened = self.flatten(final_out)\n        output = self.fc(flattened)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn((1, 1, 28, 28))  # Batch of 1, 1 channel, 28x28 MNIST image\n    output_tensor = model(input_tensor)\n    print(\"Output shape:\", output_tensor.shape)"
+}

@@ -1,0 +1,21 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_27b_it/step_one/tensorflow/models_0701/medium_task_17/code_2026_07_02_01_26_1.py\", line 33, in <module>\n    model = DL_Model()\n  File \"./response/gemma_3_27b_it/step_one/tensorflow/models_0701/medium_task_17/code_2026_07_02_01_26_1.py\", line 6, in __init__\n    self.input_layer = tf.keras.layers.InputLayer(shape=(32, 32, 3))\n  File \"/python3.10/site-packages/keras/src/utils/traceback_utils.py\", line 70, in error_handler\n    raise e.with_traceback(filtered_tb) from None\n  File \"/python3.10/site-packages/keras/src/engine/input_layer.py\", line 153, in __init__\n    raise ValueError(\nValueError: Unrecognized keyword arguments: ['shape']\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "init",
+      "line_no": 6,
+      "crash_code": "self.input_layer = tf.keras.layers.InputLayer(shape=(32, 32, 3))"
+    },
+    "init_definition": {
+      "line_no": 6,
+      "end_line_no": 6,
+      "original_call": "self.input_layer = tf.keras.layers.InputLayer(shape=(32, 32, 3))",
+      "masked_api_call": "self.input_layer = tf.keras.layers.InputLayer(shape='mask')"
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import tensorflow as tf\n\nclass DL_Model(tf.keras.Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.input_layer = tf.keras.layers.InputLayer(shape=(32, 32, 3))\n        self.dense_layer = tf.keras.layers.Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # Get the shape of the input tensor\n        input_shape = tf.shape(inputs)\n        height = input_shape[1]\n        width = input_shape[2]\n        channels = input_shape[3]\n\n        # Reshape into three groups\n        groups = 3\n        channels_per_group = channels // groups\n        reshaped_tensor = tf.reshape(inputs, shape=(input_shape[0], height, width, groups, channels_per_group))\n\n        # Swap dimensions for channel shuffling\n        permuted_tensor = tf.transpose(reshaped_tensor, perm=[0, 1, 2, 4, 3])\n\n        # Reshape back to original input shape\n        reshaped_back_tensor = tf.reshape(permuted_tensor, shape=(input_shape[0], height, width, channels))\n\n        # Pass through a fully connected layer with softmax activation\n        output_tensor = self.dense_layer(reshaped_back_tensor)\n        return output_tensor\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import tensorflow as tf\n\nclass DL_Model(tf.keras.Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.input_layer = tf.keras.layers.InputLayer(shape='mask')\n        self.dense_layer = tf.keras.layers.Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # Get the shape of the input tensor\n        input_shape = tf.shape(inputs)\n        height = input_shape[1]\n        width = input_shape[2]\n        channels = input_shape[3]\n\n        # Reshape into three groups\n        groups = 3\n        channels_per_group = channels // groups\n        reshaped_tensor = tf.reshape(inputs, shape=(input_shape[0], height, width, groups, channels_per_group))\n\n        # Swap dimensions for channel shuffling\n        permuted_tensor = tf.transpose(reshaped_tensor, perm=[0, 1, 2, 4, 3])\n\n        # Reshape back to original input shape\n        reshaped_back_tensor = tf.reshape(permuted_tensor, shape=(input_shape[0], height, width, channels))\n\n        # Pass through a fully connected layer with softmax activation\n        output_tensor = self.dense_layer(reshaped_back_tensor)\n        return output_tensor\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

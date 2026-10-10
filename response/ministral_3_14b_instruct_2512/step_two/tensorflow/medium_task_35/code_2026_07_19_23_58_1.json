@@ -1,0 +1,934 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/ministral_3_14b_instruct_2512/step_one/tensorflow/models_0701/medium_task_35/code_2026_07_19_23_58_1.py\", line 63, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/keras/src/utils/traceback_utils.py\", line 70, in error_handler\n    raise e.with_traceback(filtered_tb) from None\n  File \"./response/ministral_3_14b_instruct_2512/step_one/tensorflow/models_0701/medium_task_35/code_2026_07_19_23_58_1.py\", line 49, in call\n    x = Concatenate(axis=-1)([x, skip2])\nValueError: Exception encountered when calling layer 'dl__model_98' (type DL_Model).\n\nA `Concatenate` layer requires inputs with matching shapes except for the concatenation axis. Received: input_shape=[(1, 16, 16, 256), (1, 8, 8, 256)]\n\nCall arguments received by layer 'dl__model_98' (type DL_Model):\n  • inputs=tf.Tensor(shape=(1, 32, 32, 3), dtype=float32)\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 49,
+      "crash_code": "x = Concatenate(axis=-1)([x, skip2])"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "spatial"
+    ],
+    "merge_context": {
+      "merge_lineno": 49,
+      "merge_code": "x = Concatenate(axis=-1)([x, skip2])",
+      "merge_kind": "Concatenate",
+      "concat_axis": -1,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "inputs"
+      ],
+      "forward_input_shapes": {
+        "inputs": [
+          1,
+          32,
+          32,
+          3
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "x",
+          "shape": [
+            1,
+            16,
+            16,
+            256
+          ],
+          "producer_path": [
+            {
+              "var_name": "skip2",
+              "line_no": 49
+            },
+            {
+              "var_name": "x",
+              "line_no": 49
+            },
+            {
+              "var_name": "Concatenate",
+              "line_no": 49
+            },
+            {
+              "var_name": "x",
+              "line_no": 49
+            },
+            {
+              "var_name": "x",
+              "line_no": 48
+            },
+            {
+              "var_name": "self.conv6",
+              "line_no": 48
+            },
+            {
+              "var_name": "x",
+              "line_no": 48
+            },
+            {
+              "var_name": "x",
+              "line_no": 47
+            },
+            {
+              "var_name": "self.up1",
+              "line_no": 47
+            },
+            {
+              "var_name": "x",
+              "line_no": 47
+            },
+            {
+              "var_name": "x",
+              "line_no": 44
+            },
+            {
+              "var_name": "self.dropout1",
+              "line_no": 44
+            },
+            {
+              "var_name": "x",
+              "line_no": 44
+            },
+            {
+              "var_name": "x",
+              "line_no": 43
+            },
+            {
+              "var_name": "self.conv5",
+              "line_no": 43
+            },
+            {
+              "var_name": "x",
+              "line_no": 43
+            },
+            {
+              "var_name": "x",
+              "line_no": 42
+            },
+            {
+              "var_name": "skip2",
+              "line_no": 42
+            },
+            {
+              "var_name": "x",
+              "line_no": 40
+            },
+            {
+              "var_name": "self.pool2",
+              "line_no": 40
+            },
+            {
+              "var_name": "x",
+              "line_no": 40
+            },
+            {
+              "var_name": "x",
+              "line_no": 39
+            },
+            {
+              "var_name": "self.conv4",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 38
+            },
+            {
+              "var_name": "self.conv3",
+              "line_no": 38
+            },
+            {
+              "var_name": "x",
+              "line_no": 38
+            },
+            {
+              "var_name": "x",
+              "line_no": 35
+            },
+            {
+              "var_name": "self.pool1",
+              "line_no": 35
+            },
+            {
+              "var_name": "x",
+              "line_no": 35
+            },
+            {
+              "var_name": "x",
+              "line_no": 34
+            },
+            {
+              "var_name": "self.conv2",
+              "line_no": 34
+            },
+            {
+              "var_name": "x",
+              "line_no": 34
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 33
+            },
+            {
+              "var_name": "self.conv1",
+              "line_no": 33
+            },
+            {
+              "var_name": "x",
+              "line_no": 33
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 31
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "x",
+              "api_name": "Concatenate",
+              "call_line_no": 49,
+              "init_line_no": 49,
+              "end_line_no": null,
+              "original_call": "x = Concatenate(axis=-1)([x, skip2])",
+              "input_var_names": [
+                "Concatenate",
+                "x",
+                "skip2"
+              ],
+              "input_shapes": [
+                null,
+                [
+                  1,
+                  16,
+                  16,
+                  256
+                ],
+                [
+                  1,
+                  8,
+                  8,
+                  256
+                ]
+              ],
+              "input_shape": null,
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                16,
+                16,
+                256
+              ]
+            },
+            {
+              "layer_name": "conv6",
+              "api_name": "Conv2D",
+              "call_line_no": 48,
+              "init_line_no": 23,
+              "end_line_no": 23,
+              "original_call": "self.conv6 = Conv2D(filters=256, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  16,
+                  16,
+                  512
+                ]
+              ],
+              "input_shape": [
+                1,
+                16,
+                16,
+                512
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                16,
+                16,
+                256
+              ]
+            },
+            {
+              "layer_name": "up1",
+              "api_name": "UpSampling2D",
+              "call_line_no": 47,
+              "init_line_no": 22,
+              "end_line_no": 22,
+              "original_call": "self.up1 = UpSampling2D(size=(2, 2))",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  8,
+                  8,
+                  512
+                ]
+              ],
+              "input_shape": [
+                1,
+                8,
+                8,
+                512
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                16,
+                16,
+                512
+              ]
+            },
+            {
+              "layer_name": "dropout1",
+              "api_name": "Dropout",
+              "call_line_no": 44,
+              "init_line_no": 19,
+              "end_line_no": 19,
+              "original_call": "self.dropout1 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  8,
+                  8,
+                  512
+                ]
+              ],
+              "input_shape": [
+                1,
+                8,
+                8,
+                512
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                8,
+                8,
+                512
+              ]
+            },
+            {
+              "layer_name": "conv5",
+              "api_name": "Conv2D",
+              "call_line_no": 43,
+              "init_line_no": 18,
+              "end_line_no": 18,
+              "original_call": "self.conv5 = Conv2D(filters=512, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  8,
+                  8,
+                  256
+                ]
+              ],
+              "input_shape": [
+                1,
+                8,
+                8,
+                256
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                8,
+                8,
+                512
+              ]
+            },
+            {
+              "layer_name": "pool2",
+              "api_name": "MaxPool2D",
+              "call_line_no": 40,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.pool2 = MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  16,
+                  16,
+                  256
+                ]
+              ],
+              "input_shape": [
+                1,
+                16,
+                16,
+                256
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                8,
+                8,
+                256
+              ]
+            },
+            {
+              "layer_name": "conv4",
+              "api_name": "Conv2D",
+              "call_line_no": 39,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.conv4 = Conv2D(filters=256, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  16,
+                  16,
+                  128
+                ]
+              ],
+              "input_shape": [
+                1,
+                16,
+                16,
+                128
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                16,
+                16,
+                256
+              ]
+            },
+            {
+              "layer_name": "conv3",
+              "api_name": "Conv2D",
+              "call_line_no": 38,
+              "init_line_no": 13,
+              "end_line_no": 13,
+              "original_call": "self.conv3 = Conv2D(filters=128, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  16,
+                  16,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                16,
+                16,
+                64
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                16,
+                16,
+                128
+              ]
+            },
+            {
+              "layer_name": "pool1",
+              "api_name": "MaxPool2D",
+              "call_line_no": 35,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.pool1 = MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                16,
+                16,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv2",
+              "api_name": "Conv2D",
+              "call_line_no": 34,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                32
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1",
+              "api_name": "Conv2D",
+              "call_line_no": 33,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.conv1 = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 11,
+          "role": "main-path",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        },
+        {
+          "var_name": "skip2",
+          "shape": [
+            1,
+            8,
+            8,
+            256
+          ],
+          "producer_path": [
+            {
+              "var_name": "skip2",
+              "line_no": 49
+            },
+            {
+              "var_name": "x",
+              "line_no": 42
+            },
+            {
+              "var_name": "skip2",
+              "line_no": 42
+            },
+            {
+              "var_name": "x",
+              "line_no": 40
+            },
+            {
+              "var_name": "self.pool2",
+              "line_no": 40
+            },
+            {
+              "var_name": "x",
+              "line_no": 40
+            },
+            {
+              "var_name": "x",
+              "line_no": 39
+            },
+            {
+              "var_name": "self.conv4",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 38
+            },
+            {
+              "var_name": "self.conv3",
+              "line_no": 38
+            },
+            {
+              "var_name": "x",
+              "line_no": 38
+            },
+            {
+              "var_name": "x",
+              "line_no": 35
+            },
+            {
+              "var_name": "self.pool1",
+              "line_no": 35
+            },
+            {
+              "var_name": "x",
+              "line_no": 35
+            },
+            {
+              "var_name": "x",
+              "line_no": 34
+            },
+            {
+              "var_name": "self.conv2",
+              "line_no": 34
+            },
+            {
+              "var_name": "x",
+              "line_no": 34
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 33
+            },
+            {
+              "var_name": "self.conv1",
+              "line_no": 33
+            },
+            {
+              "var_name": "x",
+              "line_no": 33
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 31
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "pool2",
+              "api_name": "MaxPool2D",
+              "call_line_no": 40,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.pool2 = MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  16,
+                  16,
+                  256
+                ]
+              ],
+              "input_shape": [
+                1,
+                16,
+                16,
+                256
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                8,
+                8,
+                256
+              ]
+            },
+            {
+              "layer_name": "conv4",
+              "api_name": "Conv2D",
+              "call_line_no": 39,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.conv4 = Conv2D(filters=256, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  16,
+                  16,
+                  128
+                ]
+              ],
+              "input_shape": [
+                1,
+                16,
+                16,
+                128
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                16,
+                16,
+                256
+              ]
+            },
+            {
+              "layer_name": "conv3",
+              "api_name": "Conv2D",
+              "call_line_no": 38,
+              "init_line_no": 13,
+              "end_line_no": 13,
+              "original_call": "self.conv3 = Conv2D(filters=128, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  16,
+                  16,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                16,
+                16,
+                64
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                16,
+                16,
+                128
+              ]
+            },
+            {
+              "layer_name": "pool1",
+              "api_name": "MaxPool2D",
+              "call_line_no": 35,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.pool1 = MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                16,
+                16,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv2",
+              "api_name": "Conv2D",
+              "call_line_no": 34,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                32
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1",
+              "api_name": "Conv2D",
+              "call_line_no": 33,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.conv1 = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 6,
+          "role": "branch-path",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        }
+      ],
+      "framework": "tensorflow",
+      "tensor_layout": "channels_last"
+    },
+    "target_branch_index": 1,
+    "target_layers": [
+      {
+        "layer_name": "pool2",
+        "call_line_no": 40,
+        "line_no": 15,
+        "end_line_no": 15,
+        "api_name": "MaxPool2D",
+        "layer_semantic": "pool",
+        "original_call": "self.pool2 = MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')",
+        "normalized_call": "self.pool2 = MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')",
+        "masked_api_call": "self.pool2 = MaxPool2D(pool_size='mask', strides='mask', padding='mask')",
+        "mismatch_types": [
+          "spatial"
+        ],
+        "params_to_mask": [
+          "pool_size",
+          "ksize",
+          "strides",
+          "padding"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 40,
+        "oracle_shape": [
+          1,
+          16,
+          16,
+          256
+        ],
+        "target_layer_index": 0,
+        "layer_name": "pool2",
+        "target_layer_line_no": 15,
+        "call_line_no": 40,
+        "mismatch_types": [
+          "spatial"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "pool2",
+        "modeled_input_shape": [
+          1,
+          16,
+          16,
+          256
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          16,
+          16,
+          256
+        ],
+        "oracle_output_shape": [
+          1,
+          16,
+          16,
+          256
+        ]
+      }
+    ]
+  },
+  "origin_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Conv2D, MaxPool2D, Dropout, Conv2DTranspose, UpSampling2D, Concatenate, Dense, Flatten, Activation, BatchNormalization\nfrom tensorflow.keras.models import Model\n\nclass DL_Model(Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Downsampling path\n        self.conv1 = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.pool1 = MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')\n\n        self.conv3 = Conv2D(filters=128, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv4 = Conv2D(filters=256, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.pool2 = MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')\n\n        # Bottleneck\n        self.conv5 = Conv2D(filters=512, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.dropout1 = Dropout(rate=0.5)\n\n        # Upsampling path with skip connections\n        self.up1 = UpSampling2D(size=(2, 2))\n        self.conv6 = Conv2D(filters=256, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        self.up2 = UpSampling2D(size=(2, 2))\n        self.conv7 = Conv2D(filters=128, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        # Final classification layers\n        self.conv8 = Conv2D(filters=10, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='softmax')\n\n    def call(self, inputs):\n        # Downsampling path\n        x = self.conv1(inputs)\n        x = self.conv2(x)\n        x = self.pool1(x)\n\n        skip1 = x\n        x = self.conv3(x)\n        x = self.conv4(x)\n        x = self.pool2(x)\n\n        skip2 = x\n        x = self.conv5(x)\n        x = self.dropout1(x)\n\n        # Upsampling path with skip connections\n        x = self.up1(x)\n        x = self.conv6(x)\n        x = Concatenate(axis=-1)([x, skip2])\n\n        x = self.up2(x)\n        x = self.conv7(x)\n        x = Concatenate(axis=-1)([x, skip1])\n\n        # Final classification\n        x = self.conv8(x)\n\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))  # CIFAR-10 image shape: 32x32x3\n    output_tensor = model(input_tensor)\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)",
+  "final_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Conv2D, MaxPool2D, Dropout, Conv2DTranspose, UpSampling2D, Concatenate, Dense, Flatten, Activation, BatchNormalization\nfrom tensorflow.keras.models import Model\n\nclass DL_Model(Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Downsampling path\n        self.conv1 = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.pool1 = MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')\n\n        self.conv3 = Conv2D(filters=128, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv4 = Conv2D(filters=256, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.pool2 = MaxPool2D(pool_size='mask', strides='mask', padding='mask')\n\n        # Bottleneck\n        self.conv5 = Conv2D(filters=512, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.dropout1 = Dropout(rate=0.5)\n\n        # Upsampling path with skip connections\n        self.up1 = UpSampling2D(size=(2, 2))\n        self.conv6 = Conv2D(filters=256, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        self.up2 = UpSampling2D(size=(2, 2))\n        self.conv7 = Conv2D(filters=128, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        # Final classification layers\n        self.conv8 = Conv2D(filters=10, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='softmax')\n\n    def call(self, inputs):\n        # the initial shape of inputs is: (1, 32, 32, 3)\n        # Downsampling path\n        x = self.conv1(inputs)  # output tensor shape: (1, 32, 32, 32)\n        x = self.conv2(x)  # output tensor shape: (1, 32, 32, 64)\n        x = self.pool1(x)  # output tensor shape: (1, 16, 16, 64)\n\n        skip1 = x  # output tensor shape: (1, 16, 16, 64)\n        x = self.conv3(x)  # output tensor shape: (1, 16, 16, 128)\n        x = self.conv4(x)  # output tensor shape: (1, 16, 16, 256)\n        x = self.pool2(x)  # output tensor shape of this layer should be (1, 16, 16, 256)\n\n        skip2 = x\n        x = self.conv5(x)  # output tensor shape: (1, 8, 8, 512)\n        x = self.dropout1(x)  # output tensor shape: (1, 8, 8, 512)\n\n        # Upsampling path with skip connections\n        x = self.up1(x)  # output tensor shape: (1, 16, 16, 512)\n        x = self.conv6(x)  # output tensor shape: (1, 16, 16, 256)\n        x = Concatenate(axis=-1)([x, skip2])\n\n        x = self.up2(x)\n        x = self.conv7(x)\n        x = Concatenate(axis=-1)([x, skip1])\n\n        # Final classification\n        x = self.conv8(x)\n\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))  # CIFAR-10 image shape: 32x32x3\n    output_tensor = model(input_tensor)\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)"
+}

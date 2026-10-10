@@ -1,0 +1,21 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/ministral_3_3b_instruct_2512/step_one/pytorch/models_0701/hard_task_34/code_2026_07_20_00_38_1.py\", line 33, in <module>\n    model = DL_Model()\n  File \"./response/ministral_3_3b_instruct_2512/step_one/pytorch/models_0701/hard_task_34/code_2026_07_20_00_38_1.py\", line 20, in __init__\n    self.fuse = nn.Add()\nAttributeError: module 'torch.nn' has no attribute 'Add'\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "init",
+      "line_no": 20,
+      "crash_code": "self.fuse = nn.Add()"
+    },
+    "init_definition": {
+      "line_no": 20,
+      "end_line_no": 20,
+      "original_call": "self.fuse = nn.Add()",
+      "masked_api_call": "self.fuse = nn.Add()"
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.main_path = nn.Sequential(\n            nn.ReLU(),\n            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(),\n            nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(),\n            nn.Conv2d(64, 128, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(),\n            nn.Conv2d(128, 128, kernel_size=3, stride=1, padding=1)\n        )\n        self.branch_path = nn.Sequential(\n            nn.Conv2d(128, 128, kernel_size=3, stride=1, padding=1)\n        )\n        self.fuse = nn.Add()\n        self.flatten = nn.Flatten()\n        self.fc = nn.Linear(128 * 7 * 7, 10)\n\n    def forward(self, x):\n        main_path_output = self.main_path(x)\n        branch_path_output = self.branch_path(main_path_output)\n        fused_output = self.fuse(main_path_output, branch_path_output)\n        flattened_output = self.flatten(fused_output)\n        output = self.fc(flattened_output)\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 1, 28, 28)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.main_path = nn.Sequential(\n            nn.ReLU(),\n            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(),\n            nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(),\n            nn.Conv2d(64, 128, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(),\n            nn.Conv2d(128, 128, kernel_size=3, stride=1, padding=1)\n        )\n        self.branch_path = nn.Sequential(\n            nn.Conv2d(128, 128, kernel_size=3, stride=1, padding=1)\n        )\n        self.fuse = nn.Add()\n        self.flatten = nn.Flatten()\n        self.fc = nn.Linear(128 * 7 * 7, 10)\n\n    def forward(self, x):\n        main_path_output = self.main_path(x)\n        branch_path_output = self.branch_path(main_path_output)\n        fused_output = self.fuse(main_path_output, branch_path_output)\n        flattened_output = self.flatten(fused_output)\n        output = self.fc(flattened_output)\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 1, 28, 28)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

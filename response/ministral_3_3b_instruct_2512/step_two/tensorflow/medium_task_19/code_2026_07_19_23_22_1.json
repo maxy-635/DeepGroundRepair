@@ -1,0 +1,8 @@
+{
+  "runtime_error_info": null,
+  "root_cause": {
+    "root_cause_type": "No_Runtime_Error"
+  },
+  "origin_code": "import tensorflow as tf\n\nclass DL_Model:\n    def __init__(self):\n        self.model = tf.keras.Sequential()\n\n    def __call__(self, input_tensor):\n        x = self.model(input_tensor)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal((1, 32, 32, 3))\n    output_tensor = model(input_tensor)",
+  "final_code": "import tensorflow as tf\n\nclass DL_Model:\n    def __init__(self):\n        self.model = tf.keras.Sequential()\n\n    def __call__(self, input_tensor):\n        x = self.model(input_tensor)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal((1, 32, 32, 3))\n    output_tensor = model(input_tensor)"
+}

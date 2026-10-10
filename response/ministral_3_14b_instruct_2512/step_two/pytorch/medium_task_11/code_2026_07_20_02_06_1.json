@@ -1,0 +1,1203 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/ministral_3_14b_instruct_2512/step_one/pytorch/models_0701/medium_task_11/code_2026_07_20_02_06_1.py\", line 80, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"./response/ministral_3_14b_instruct_2512/step_one/pytorch/models_0701/medium_task_11/code_2026_07_20_02_06_1.py\", line 69, in forward\n    x = x * spatial_attention\nRuntimeError: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 69,
+      "crash_code": "x = x * spatial_attention"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "channel"
+    ],
+    "merge_context": {
+      "merge_lineno": 69,
+      "merge_code": "x = x * spatial_attention",
+      "merge_kind": "multiply",
+      "concat_axis": null,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "x"
+      ],
+      "forward_input_shapes": {
+        "x": [
+          1,
+          3,
+          32,
+          32
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "x",
+          "shape": [
+            1,
+            64,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "spatial_attention",
+              "line_no": 69
+            },
+            {
+              "var_name": "x",
+              "line_no": 69
+            },
+            {
+              "var_name": "x",
+              "line_no": 69
+            },
+            {
+              "var_name": "max_spatial",
+              "line_no": 66
+            },
+            {
+              "var_name": "avg_spatial",
+              "line_no": 66
+            },
+            {
+              "var_name": "torch.cat",
+              "line_no": 66
+            },
+            {
+              "var_name": "spatial_attention",
+              "line_no": 66
+            },
+            {
+              "var_name": "x",
+              "line_no": 63
+            },
+            {
+              "var_name": "self.max_pool_spatial",
+              "line_no": 63
+            },
+            {
+              "var_name": "max_spatial",
+              "line_no": 63
+            },
+            {
+              "var_name": "x",
+              "line_no": 62
+            },
+            {
+              "var_name": "self.avg_pool_spatial",
+              "line_no": 62
+            },
+            {
+              "var_name": "avg_spatial",
+              "line_no": 62
+            },
+            {
+              "var_name": "channel_attention",
+              "line_no": 59
+            },
+            {
+              "var_name": "x",
+              "line_no": 59
+            },
+            {
+              "var_name": "x",
+              "line_no": 59
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 58
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 58
+            },
+            {
+              "var_name": "channel_attention",
+              "line_no": 58
+            },
+            {
+              "var_name": "max_out.size",
+              "line_no": 56
+            },
+            {
+              "var_name": "max_out.view",
+              "line_no": 56
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 56
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 55
+            },
+            {
+              "var_name": "torch.sigmoid",
+              "line_no": 55
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 55
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 54
+            },
+            {
+              "var_name": "self.fc2_max",
+              "line_no": 54
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 54
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 53
+            },
+            {
+              "var_name": "F.relu",
+              "line_no": 53
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 53
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 52
+            },
+            {
+              "var_name": "self.fc1_max",
+              "line_no": 52
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 52
+            },
+            {
+              "var_name": "max_out.size",
+              "line_no": 51
+            },
+            {
+              "var_name": "max_out.view",
+              "line_no": 51
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 51
+            },
+            {
+              "var_name": "x",
+              "line_no": 50
+            },
+            {
+              "var_name": "self.max_pool",
+              "line_no": 50
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 50
+            },
+            {
+              "var_name": "avg_out.size",
+              "line_no": 48
+            },
+            {
+              "var_name": "avg_out.view",
+              "line_no": 48
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 48
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 47
+            },
+            {
+              "var_name": "torch.sigmoid",
+              "line_no": 47
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 47
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 46
+            },
+            {
+              "var_name": "self.fc2_avg",
+              "line_no": 46
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 46
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 45
+            },
+            {
+              "var_name": "F.relu",
+              "line_no": 45
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 45
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 44
+            },
+            {
+              "var_name": "self.fc1_avg",
+              "line_no": 44
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 44
+            },
+            {
+              "var_name": "avg_out.size",
+              "line_no": 43
+            },
+            {
+              "var_name": "avg_out.view",
+              "line_no": 43
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 43
+            },
+            {
+              "var_name": "x",
+              "line_no": 42
+            },
+            {
+              "var_name": "self.avg_pool",
+              "line_no": 42
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 42
+            },
+            {
+              "var_name": "x",
+              "line_no": 39
+            },
+            {
+              "var_name": "F.relu",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 38
+            },
+            {
+              "var_name": "self.conv1",
+              "line_no": 38
+            },
+            {
+              "var_name": "x",
+              "line_no": 38
+            },
+            {
+              "var_name": "x",
+              "line_no": 36
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "max_pool_spatial",
+              "api_name": "Sequential",
+              "call_line_no": 63,
+              "init_line_no": 28,
+              "end_line_no": 31,
+              "original_call": "self.max_pool_spatial = nn.Sequential(\n            nn.MaxPool2d(kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                64,
+                32,
+                32
+              ],
+              "output_var_name": "max_spatial",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "avg_pool_spatial",
+              "api_name": "Sequential",
+              "call_line_no": 62,
+              "init_line_no": 23,
+              "end_line_no": 26,
+              "original_call": "self.avg_pool_spatial = nn.Sequential(\n            nn.AvgPool2d(kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                64,
+                32,
+                32
+              ],
+              "output_var_name": "avg_spatial",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "fc2_max",
+              "api_name": "Linear",
+              "call_line_no": 54,
+              "init_line_no": 20,
+              "end_line_no": 20,
+              "original_call": "self.fc2_max = nn.Linear(in_features=32, out_features=64)",
+              "input_var_names": [
+                "max_out"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32
+              ],
+              "output_var_name": "max_out",
+              "output_shape": [
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "fc1_max",
+              "api_name": "Linear",
+              "call_line_no": 52,
+              "init_line_no": 19,
+              "end_line_no": 19,
+              "original_call": "self.fc1_max = nn.Linear(in_features=64, out_features=32)",
+              "input_var_names": [
+                "max_out"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                64
+              ],
+              "output_var_name": "max_out",
+              "output_shape": [
+                1,
+                32
+              ]
+            },
+            {
+              "layer_name": "max_pool",
+              "api_name": "AdaptiveMaxPool2d",
+              "call_line_no": 50,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.max_pool = nn.AdaptiveMaxPool2d(1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                64,
+                32,
+                32
+              ],
+              "output_var_name": "max_out",
+              "output_shape": [
+                1,
+                64,
+                1,
+                1
+              ]
+            },
+            {
+              "layer_name": "fc2_avg",
+              "api_name": "Linear",
+              "call_line_no": 46,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.fc2_avg = nn.Linear(in_features=32, out_features=64)",
+              "input_var_names": [
+                "avg_out"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32
+              ],
+              "output_var_name": "avg_out",
+              "output_shape": [
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "fc1_avg",
+              "api_name": "Linear",
+              "call_line_no": 44,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.fc1_avg = nn.Linear(in_features=64, out_features=32)",
+              "input_var_names": [
+                "avg_out"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                64
+              ],
+              "output_var_name": "avg_out",
+              "output_shape": [
+                1,
+                32
+              ]
+            },
+            {
+              "layer_name": "avg_pool",
+              "api_name": "AdaptiveAvgPool2d",
+              "call_line_no": 42,
+              "init_line_no": 13,
+              "end_line_no": 13,
+              "original_call": "self.avg_pool = nn.AdaptiveAvgPool2d(1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                64,
+                32,
+                32
+              ],
+              "output_var_name": "avg_out",
+              "output_shape": [
+                1,
+                64,
+                1,
+                1
+              ]
+            },
+            {
+              "layer_name": "conv1",
+              "api_name": "Conv2d",
+              "call_line_no": 38,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv1 = nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 9,
+          "role": "inputs",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        },
+        {
+          "var_name": "spatial_attention",
+          "shape": [
+            1,
+            128,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "spatial_attention",
+              "line_no": 69
+            },
+            {
+              "var_name": "max_spatial",
+              "line_no": 66
+            },
+            {
+              "var_name": "avg_spatial",
+              "line_no": 66
+            },
+            {
+              "var_name": "torch.cat",
+              "line_no": 66
+            },
+            {
+              "var_name": "spatial_attention",
+              "line_no": 66
+            },
+            {
+              "var_name": "x",
+              "line_no": 63
+            },
+            {
+              "var_name": "self.max_pool_spatial",
+              "line_no": 63
+            },
+            {
+              "var_name": "max_spatial",
+              "line_no": 63
+            },
+            {
+              "var_name": "x",
+              "line_no": 62
+            },
+            {
+              "var_name": "self.avg_pool_spatial",
+              "line_no": 62
+            },
+            {
+              "var_name": "avg_spatial",
+              "line_no": 62
+            },
+            {
+              "var_name": "channel_attention",
+              "line_no": 59
+            },
+            {
+              "var_name": "x",
+              "line_no": 59
+            },
+            {
+              "var_name": "x",
+              "line_no": 59
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 58
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 58
+            },
+            {
+              "var_name": "channel_attention",
+              "line_no": 58
+            },
+            {
+              "var_name": "max_out.size",
+              "line_no": 56
+            },
+            {
+              "var_name": "max_out.view",
+              "line_no": 56
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 56
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 55
+            },
+            {
+              "var_name": "torch.sigmoid",
+              "line_no": 55
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 55
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 54
+            },
+            {
+              "var_name": "self.fc2_max",
+              "line_no": 54
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 54
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 53
+            },
+            {
+              "var_name": "F.relu",
+              "line_no": 53
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 53
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 52
+            },
+            {
+              "var_name": "self.fc1_max",
+              "line_no": 52
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 52
+            },
+            {
+              "var_name": "max_out.size",
+              "line_no": 51
+            },
+            {
+              "var_name": "max_out.view",
+              "line_no": 51
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 51
+            },
+            {
+              "var_name": "x",
+              "line_no": 50
+            },
+            {
+              "var_name": "self.max_pool",
+              "line_no": 50
+            },
+            {
+              "var_name": "max_out",
+              "line_no": 50
+            },
+            {
+              "var_name": "avg_out.size",
+              "line_no": 48
+            },
+            {
+              "var_name": "avg_out.view",
+              "line_no": 48
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 48
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 47
+            },
+            {
+              "var_name": "torch.sigmoid",
+              "line_no": 47
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 47
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 46
+            },
+            {
+              "var_name": "self.fc2_avg",
+              "line_no": 46
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 46
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 45
+            },
+            {
+              "var_name": "F.relu",
+              "line_no": 45
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 45
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 44
+            },
+            {
+              "var_name": "self.fc1_avg",
+              "line_no": 44
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 44
+            },
+            {
+              "var_name": "avg_out.size",
+              "line_no": 43
+            },
+            {
+              "var_name": "avg_out.view",
+              "line_no": 43
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 43
+            },
+            {
+              "var_name": "x",
+              "line_no": 42
+            },
+            {
+              "var_name": "self.avg_pool",
+              "line_no": 42
+            },
+            {
+              "var_name": "avg_out",
+              "line_no": 42
+            },
+            {
+              "var_name": "x",
+              "line_no": 39
+            },
+            {
+              "var_name": "F.relu",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 38
+            },
+            {
+              "var_name": "self.conv1",
+              "line_no": 38
+            },
+            {
+              "var_name": "x",
+              "line_no": 38
+            },
+            {
+              "var_name": "x",
+              "line_no": 36
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "max_pool_spatial",
+              "api_name": "Sequential",
+              "call_line_no": 63,
+              "init_line_no": 28,
+              "end_line_no": 31,
+              "original_call": "self.max_pool_spatial = nn.Sequential(\n            nn.MaxPool2d(kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                64,
+                32,
+                32
+              ],
+              "output_var_name": "max_spatial",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "avg_pool_spatial",
+              "api_name": "Sequential",
+              "call_line_no": 62,
+              "init_line_no": 23,
+              "end_line_no": 26,
+              "original_call": "self.avg_pool_spatial = nn.Sequential(\n            nn.AvgPool2d(kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                64,
+                32,
+                32
+              ],
+              "output_var_name": "avg_spatial",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "fc2_max",
+              "api_name": "Linear",
+              "call_line_no": 54,
+              "init_line_no": 20,
+              "end_line_no": 20,
+              "original_call": "self.fc2_max = nn.Linear(in_features=32, out_features=64)",
+              "input_var_names": [
+                "max_out"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32
+              ],
+              "output_var_name": "max_out",
+              "output_shape": [
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "fc1_max",
+              "api_name": "Linear",
+              "call_line_no": 52,
+              "init_line_no": 19,
+              "end_line_no": 19,
+              "original_call": "self.fc1_max = nn.Linear(in_features=64, out_features=32)",
+              "input_var_names": [
+                "max_out"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                64
+              ],
+              "output_var_name": "max_out",
+              "output_shape": [
+                1,
+                32
+              ]
+            },
+            {
+              "layer_name": "max_pool",
+              "api_name": "AdaptiveMaxPool2d",
+              "call_line_no": 50,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.max_pool = nn.AdaptiveMaxPool2d(1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                64,
+                32,
+                32
+              ],
+              "output_var_name": "max_out",
+              "output_shape": [
+                1,
+                64,
+                1,
+                1
+              ]
+            },
+            {
+              "layer_name": "fc2_avg",
+              "api_name": "Linear",
+              "call_line_no": 46,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.fc2_avg = nn.Linear(in_features=32, out_features=64)",
+              "input_var_names": [
+                "avg_out"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32
+              ],
+              "output_var_name": "avg_out",
+              "output_shape": [
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "fc1_avg",
+              "api_name": "Linear",
+              "call_line_no": 44,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.fc1_avg = nn.Linear(in_features=64, out_features=32)",
+              "input_var_names": [
+                "avg_out"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                64
+              ],
+              "output_var_name": "avg_out",
+              "output_shape": [
+                1,
+                32
+              ]
+            },
+            {
+              "layer_name": "avg_pool",
+              "api_name": "AdaptiveAvgPool2d",
+              "call_line_no": 42,
+              "init_line_no": 13,
+              "end_line_no": 13,
+              "original_call": "self.avg_pool = nn.AdaptiveAvgPool2d(1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                64,
+                32,
+                32
+              ],
+              "output_var_name": "avg_out",
+              "output_shape": [
+                1,
+                64,
+                1,
+                1
+              ]
+            },
+            {
+              "layer_name": "conv1",
+              "api_name": "Conv2d",
+              "call_line_no": 38,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv1 = nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 9,
+          "role": "main-path",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        }
+      ],
+      "framework": "pytorch",
+      "tensor_layout": "channels_first"
+    },
+    "target_branch_index": 1,
+    "target_layers": [
+      {
+        "layer_name": "fc2_max",
+        "call_line_no": 54,
+        "line_no": 20,
+        "end_line_no": 20,
+        "api_name": "Linear",
+        "layer_semantic": "dense",
+        "original_call": "self.fc2_max = nn.Linear(in_features=32, out_features=64)",
+        "normalized_call": "self.fc2_max = nn.Linear(in_features=32, out_features=64)",
+        "masked_api_call": "self.fc2_max = nn.Linear(in_features=32, out_features='mask')",
+        "mismatch_types": [
+          "channel"
+        ],
+        "params_to_mask": [
+          "out_features"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 54,
+        "oracle_shape": [
+          1,
+          64
+        ],
+        "target_layer_index": 0,
+        "layer_name": "fc2_max",
+        "target_layer_line_no": 20,
+        "call_line_no": 54,
+        "mismatch_types": [
+          "channel"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "fc2_max",
+        "modeled_input_shape": [
+          1,
+          32
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          64
+        ],
+        "oracle_output_shape": [
+          1,
+          64
+        ]
+      }
+    ]
+  },
+  "origin_code": "import torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Initial convolutional layer\n        self.conv1 = nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, stride=1, padding=1)\n\n        # Channel attention module\n        self.avg_pool = nn.AdaptiveAvgPool2d(1)\n        self.max_pool = nn.AdaptiveMaxPool2d(1)\n\n        self.fc1_avg = nn.Linear(in_features=64, out_features=32)\n        self.fc2_avg = nn.Linear(in_features=32, out_features=64)\n\n        self.fc1_max = nn.Linear(in_features=64, out_features=32)\n        self.fc2_max = nn.Linear(in_features=32, out_features=64)\n\n        # Spatial attention module\n        self.avg_pool_spatial = nn.Sequential(\n            nn.AvgPool2d(kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )\n\n        self.max_pool_spatial = nn.Sequential(\n            nn.MaxPool2d(kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )\n\n        # Final layers\n        self.fc_final = nn.Linear(in_features=128, out_features=10)  # 10 classes for CIFAR-10\n\n    def forward(self, x):\n        # Initial convolution\n        x = self.conv1(x)\n        x = F.relu(x)\n\n        # Channel attention\n        avg_out = self.avg_pool(x)\n        avg_out = avg_out.view(avg_out.size(0), -1)\n        avg_out = self.fc1_avg(avg_out)\n        avg_out = F.relu(avg_out)\n        avg_out = self.fc2_avg(avg_out)\n        avg_out = torch.sigmoid(avg_out)\n        avg_out = avg_out.view(avg_out.size(0), -1, 1, 1)\n\n        max_out = self.max_pool(x)\n        max_out = max_out.view(max_out.size(0), -1)\n        max_out = self.fc1_max(max_out)\n        max_out = F.relu(max_out)\n        max_out = self.fc2_max(max_out)\n        max_out = torch.sigmoid(max_out)\n        max_out = max_out.view(max_out.size(0), -1, 1, 1)\n\n        channel_attention = avg_out + max_out\n        x = x * channel_attention\n\n        # Spatial attention\n        avg_spatial = self.avg_pool_spatial(x)\n        max_spatial = self.max_pool_spatial(x)\n\n        # Concatenate along channel dimension\n        spatial_attention = torch.cat((avg_spatial, max_spatial), dim=1)\n\n        # Combine with channel features\n        x = x * spatial_attention\n\n        # Flatten and final classification\n        x = x.view(x.size(0), -1)\n        x = self.fc_final(x)\n\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 3, 32, 32)  # Batch size 1, 3 channels, 32x32 image\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Initial convolutional layer\n        self.conv1 = nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, stride=1, padding=1)\n\n        # Channel attention module\n        self.avg_pool = nn.AdaptiveAvgPool2d(1)\n        self.max_pool = nn.AdaptiveMaxPool2d(1)\n\n        self.fc1_avg = nn.Linear(in_features=64, out_features=32)\n        self.fc2_avg = nn.Linear(in_features=32, out_features=64)\n\n        self.fc1_max = nn.Linear(in_features=64, out_features=32)\n        self.fc2_max = nn.Linear(in_features=32, out_features='mask')\n\n        # Spatial attention module\n        self.avg_pool_spatial = nn.Sequential(\n            nn.AvgPool2d(kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )\n\n        self.max_pool_spatial = nn.Sequential(\n            nn.MaxPool2d(kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )\n\n        # Final layers\n        self.fc_final = nn.Linear(in_features=128, out_features=10)  # 10 classes for CIFAR-10\n\n    def forward(self, x):\n        # the initial shape of x is: (1, 3, 32, 32)\n        # Initial convolution\n        x = self.conv1(x)  # output tensor shape: (1, 64, 32, 32)\n        x = F.relu(x)  # output tensor shape: (1, 64, 32, 32)\n\n        # Channel attention\n        avg_out = self.avg_pool(x)  # output tensor shape: (1, 64, 1, 1)\n        avg_out = avg_out.view(avg_out.size(0), -1)  # output tensor shape: (1, 64)\n        avg_out = self.fc1_avg(avg_out)  # output tensor shape: (1, 32)\n        avg_out = F.relu(avg_out)  # output tensor shape: (1, 32)\n        avg_out = self.fc2_avg(avg_out)  # output tensor shape: (1, 64)\n        avg_out = torch.sigmoid(avg_out)  # output tensor shape: (1, 64)\n        avg_out = avg_out.view(avg_out.size(0), -1, 1, 1)  # output tensor shape: (1, 64, 1, 1)\n\n        max_out = self.max_pool(x)  # output tensor shape: (1, 64, 1, 1)\n        max_out = max_out.view(max_out.size(0), -1)  # output tensor shape: (1, 64)\n        max_out = self.fc1_max(max_out)  # output tensor shape: (1, 32)\n        max_out = F.relu(max_out)  # output tensor shape: (1, 32)\n        max_out = self.fc2_max(max_out)  # output tensor shape of this layer should be (1, 64)\n        max_out = torch.sigmoid(max_out)\n        max_out = max_out.view(max_out.size(0), -1, 1, 1)\n\n        channel_attention = avg_out + max_out\n        x = x * channel_attention\n\n        # Spatial attention\n        avg_spatial = self.avg_pool_spatial(x)\n        max_spatial = self.max_pool_spatial(x)\n\n        # Concatenate along channel dimension\n        spatial_attention = torch.cat((avg_spatial, max_spatial), dim=1)\n\n        # Combine with channel features\n        x = x * spatial_attention\n\n        # Flatten and final classification\n        x = x.view(x.size(0), -1)\n        x = self.fc_final(x)\n\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 3, 32, 32)  # Batch size 1, 3 channels, 32x32 image\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

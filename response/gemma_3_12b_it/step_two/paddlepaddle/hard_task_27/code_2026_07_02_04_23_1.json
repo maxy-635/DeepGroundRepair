@@ -1,0 +1,20 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_12b_it/step_one/paddlepaddle/models_0701/hard_task_27/code_2026_07_02_04_23_1.py\", line 50, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/paddle/nn/layer/layers.py\", line 1833, in __call__\n    return self.forward(*inputs, **kwargs)\n  File \"./response/gemma_3_12b_it/step_one/paddlepaddle/models_0701/hard_task_27/code_2026_07_02_04_23_1.py\", line 35, in forward\n    x = paddle.flatten(x, [1, 2])\n  File \"/python3.10/site-packages/paddle/utils/decorator_utils.py\", line 61, in wrapper\n    return func(*processed_args, **processed_kwargs)\n  File \"/python3.10/site-packages/paddle/tensor/manipulation.py\", line 2072, in flatten\n    raise ValueError(\nValueError: The start_axis should be a int, and in range [-rank(x), rank(x))\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 35,
+      "crash_code": "x = paddle.flatten(x, [1, 2])"
+    },
+    "forward_definition": {
+      "line_no": 35,
+      "original_call": "x = paddle.flatten(x, [1, 2])"
+    },
+    "init_definition": {},
+    "root_cause_type": "Forward_Local_Crash"
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\nimport paddle.nn.functional as F\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Define the layers\n        self.conv = nn.Conv2D(\n            in_channels=3,\n            out_channels=32,\n            kernel_size=7,\n            stride=1,\n            padding=3,\n            groups=1,\n            bias_attr=False\n        )\n        self.layer_norm = nn.LayerNorm(normalized_shape=[32])\n        self.fc1 = nn.Linear(\n            in_features=32 * 5 * 5,\n            out_features=32\n        )\n        self.fc2 = nn.Linear(\n            in_features=32,\n            out_features=10\n        )\n\n    def forward(self, x):\n        # Extract spatial features\n        x = self.conv(x)\n        x = self.layer_norm(x)\n        x = F.relu(x)\n\n        # Flatten the features\n        x = paddle.flatten(x, [1, 2])\n\n        # Fully connected layers\n        x = self.fc1(x)\n        x = F.relu(x)\n        x = self.fc2(x)\n\n        # Apply softmax activation\n        x = F.softmax(x, axis=-1)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    # Dummy input tensor\n    input_tensor = paddle.rand(shape=[1, 3, 32, 32])\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\nimport paddle.nn.functional as F\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Define the layers\n        self.conv = nn.Conv2D(\n            in_channels=3,\n            out_channels=32,\n            kernel_size=7,\n            stride=1,\n            padding=3,\n            groups=1,\n            bias_attr=False\n        )\n        self.layer_norm = nn.LayerNorm(normalized_shape=[32])\n        self.fc1 = nn.Linear(\n            in_features=32 * 5 * 5,\n            out_features=32\n        )\n        self.fc2 = nn.Linear(\n            in_features=32,\n            out_features=10\n        )\n\n    def forward(self, x):\n        # the initial shape of x is: (1, 3, 32, 32)\n        # Extract spatial features\n        x = self.conv(x)  # output tensor shape: (1, 32, 32, 32)\n        x = self.layer_norm(x)  # output tensor shape: (1, 32, 32, 32)\n        x = F.relu(x)  # output tensor shape: (1, 32, 32, 32)\n\n        # Flatten the features\n        x = paddle.flatten(x, [1, 2])\n\n        # Fully connected layers\n        x = self.fc1(x)\n        x = F.relu(x)\n        x = self.fc2(x)\n\n        # Apply softmax activation\n        x = F.softmax(x, axis=-1)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    # Dummy input tensor\n    input_tensor = paddle.rand(shape=[1, 3, 32, 32])\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

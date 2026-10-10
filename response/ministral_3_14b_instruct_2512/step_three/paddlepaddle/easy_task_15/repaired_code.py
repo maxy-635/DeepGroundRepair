@@ -1,0 +1,42 @@
+import paddle
+import paddle.nn as nn
+import paddle.nn.functional as F
+
+class DL_Model(nn.Layer):
+    def __init__(self):
+        super(DL_Model, self).__init__()
+        # Define the specialized block
+        self.block1 = nn.Sequential(
+            nn.Conv2D(in_channels=1, out_channels=32, kernel_size=3, stride=1, padding=1),
+            nn.Conv2D(in_channels=32, out_channels=32, kernel_size=1, stride=1, padding=0),
+            nn.Conv2D(in_channels=32, out_channels=32, kernel_size=1, stride=1, padding=0),
+            nn.AvgPool2D(kernel_size=2, stride=2, padding=0),
+            nn.Dropout(p=0.5)
+        )
+
+        self.block2 = nn.Sequential(
+            nn.Conv2D(in_channels=32, out_channels=64, kernel_size=3, stride=1, padding=1),
+            nn.Conv2D(in_channels=64, out_channels=64, kernel_size=1, stride=1, padding=0),
+            nn.Conv2D(in_channels=64, out_channels=64, kernel_size=1, stride=1, padding=0),
+            nn.AvgPool2D(kernel_size=2, stride=2, padding=0),
+            nn.Dropout(p=0.5)
+        )
+
+        # Global average pooling and fully connected layer
+        self.global_pool = nn.AdaptiveAvgPool2D(output_size=(1, 1))
+        self.flatten = nn.Flatten()
+        self.fc = nn.Linear(in_features=64, out_features=10)
+
+    def forward(self, x):
+        x = self.block1(x)
+        x = self.block2(x)
+        x = self.global_pool(x)
+        x = self.flatten(x)
+        x = self.fc(x)
+        return x
+
+if __name__ == "__main__":
+    model = DL_Model()
+    input_tensor = paddle.randn((1, 1, 28, 28))  # Batch size 1, 1 channel, 28x28 image
+    output_tensor = model(input_tensor)
+    print("Output shape:", output_tensor.shape)

@@ -1,0 +1,24 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_27b_it/step_one/pytorch/models_0701/easy_task_1/code_2026_07_02_02_18_1.py\", line 23, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"./response/gemma_3_27b_it/step_one/pytorch/models_0701/easy_task_1/code_2026_07_02_02_18_1.py\", line 17, in forward\n    return self.model(x)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"./step_two/tensor_shape_trace/sequential_runtime_failure_tracker.py\", line 132, in wrapped_forward\n    current_value = child_module(current_value)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/linear.py\", line 134, in forward\n    return F.linear(input, self.weight, self.bias)\nRuntimeError: mat1 and mat2 shapes cannot be multiplied (1x12544 and 3136x128)\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 17,
+      "crash_code": "return self.model(x)"
+    },
+    "init_definition": {
+      "line_no": 12,
+      "end_line_no": 12,
+      "original_call": "nn.Linear(in_features=64 * 7 * 7, out_features=128)",
+      "masked_api_call": "nn.Linear(in_features='mask', out_features=128)",
+      "params_to_mask": [
+        "in_features"
+      ]
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.model = nn.Sequential(\n            nn.Conv2d(in_channels=1, out_channels=32, kernel_size=3, stride=1, padding=1),\n            nn.MaxPool2d(kernel_size=2, stride=2, padding=0),\n            nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, stride=1, padding=1),\n            nn.Flatten(),\n            nn.Linear(in_features=64 * 7 * 7, out_features=128),\n            nn.Linear(in_features=128, out_features=10)\n        )\n\n    def forward(self, x):\n        return self.model(x)\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 1, 28, 28)  # Batch size of 1, 1 channel, 28x28 image\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.model = nn.Sequential(\n            nn.Conv2d(in_channels=1, out_channels=32, kernel_size=3, stride=1, padding=1),\n            nn.MaxPool2d(kernel_size=2, stride=2, padding=0),\n            nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, stride=1, padding=1),\n            nn.Flatten(),\n            nn.Linear(in_features='mask', out_features=128),\n            nn.Linear(in_features=128, out_features=10)\n        )\n\n    def forward(self, x):\n        # the initial shape of x is: (1, 1, 28, 28)\n        return self.model(x)\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 1, 28, 28)  # Batch size of 1, 1 channel, 28x28 image\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

@@ -1,0 +1,2592 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/ministral_3_14b_instruct_2512/step_one/tensorflow/models_0701/hard_task_41/code_2026_07_19_22_56_1.py\", line 114, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/keras/src/utils/traceback_utils.py\", line 70, in error_handler\n    raise e.with_traceback(filtered_tb) from None\n  File \"./response/ministral_3_14b_instruct_2512/step_one/tensorflow/models_0701/hard_task_41/code_2026_07_19_22_56_1.py\", line 94, in call\n    block2_output = self.concat2([branch1, branch2, branch3, branch4])\nValueError: Exception encountered when calling layer 'dl__model_55' (type DL_Model).\n\nA `Concatenate` layer requires inputs with matching shapes except for the concatenation axis. Received: input_shape=[(1, 4, 4, 64), (1, 4, 4, 64), (1, 4, 4, 64), (1, 2, 2, 64)]\n\nCall arguments received by layer 'dl__model_55' (type DL_Model):\n  • inputs=tf.Tensor(shape=(1, 28, 28, 1), dtype=float32)\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 94,
+      "crash_code": "block2_output = self.concat2([branch1, branch2, branch3, branch4])"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "spatial"
+    ],
+    "merge_context": {
+      "merge_lineno": 94,
+      "merge_code": "block2_output = self.concat2([branch1, branch2, branch3, branch4])",
+      "merge_kind": "Concatenate",
+      "concat_axis": -1,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "inputs"
+      ],
+      "forward_input_shapes": {
+        "inputs": [
+          1,
+          28,
+          28,
+          1
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "branch1",
+          "shape": [
+            1,
+            4,
+            4,
+            64
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch1",
+              "line_no": 94
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 78
+            },
+            {
+              "var_name": "self.conv1x1_1",
+              "line_no": 78
+            },
+            {
+              "var_name": "branch1",
+              "line_no": 78
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 74
+            },
+            {
+              "var_name": "self.reshape",
+              "line_no": 74
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 74
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 73
+            },
+            {
+              "var_name": "self.dense_transition",
+              "line_no": 73
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 73
+            },
+            {
+              "var_name": "x3",
+              "line_no": 70
+            },
+            {
+              "var_name": "x2",
+              "line_no": 70
+            },
+            {
+              "var_name": "x1",
+              "line_no": 70
+            },
+            {
+              "var_name": "self.concat1",
+              "line_no": 70
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 70
+            },
+            {
+              "var_name": "x3",
+              "line_no": 67
+            },
+            {
+              "var_name": "self.dropout3",
+              "line_no": 67
+            },
+            {
+              "var_name": "x3",
+              "line_no": 67
+            },
+            {
+              "var_name": "x3",
+              "line_no": 66
+            },
+            {
+              "var_name": "self.flatten3",
+              "line_no": 66
+            },
+            {
+              "var_name": "x3",
+              "line_no": 66
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 65
+            },
+            {
+              "var_name": "self.pool4x4",
+              "line_no": 65
+            },
+            {
+              "var_name": "x3",
+              "line_no": 65
+            },
+            {
+              "var_name": "x2",
+              "line_no": 62
+            },
+            {
+              "var_name": "self.dropout2",
+              "line_no": 62
+            },
+            {
+              "var_name": "x2",
+              "line_no": 62
+            },
+            {
+              "var_name": "x2",
+              "line_no": 61
+            },
+            {
+              "var_name": "self.flatten2",
+              "line_no": 61
+            },
+            {
+              "var_name": "x2",
+              "line_no": 61
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 60
+            },
+            {
+              "var_name": "self.pool2x2",
+              "line_no": 60
+            },
+            {
+              "var_name": "x2",
+              "line_no": 60
+            },
+            {
+              "var_name": "x1",
+              "line_no": 57
+            },
+            {
+              "var_name": "self.dropout1",
+              "line_no": 57
+            },
+            {
+              "var_name": "x1",
+              "line_no": 57
+            },
+            {
+              "var_name": "x1",
+              "line_no": 56
+            },
+            {
+              "var_name": "self.flatten1",
+              "line_no": 56
+            },
+            {
+              "var_name": "x1",
+              "line_no": 56
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 55
+            },
+            {
+              "var_name": "self.pool1x1",
+              "line_no": 55
+            },
+            {
+              "var_name": "x1",
+              "line_no": 55
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 52
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv1x1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 78,
+              "init_line_no": 30,
+              "end_line_no": 30,
+              "original_call": "self.conv1x1_1 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  4,
+                  4,
+                  8
+                ]
+              ],
+              "input_shape": [
+                1,
+                4,
+                4,
+                8
+              ],
+              "output_var_name": "branch1",
+              "output_shape": [
+                1,
+                4,
+                4,
+                64
+              ]
+            },
+            {
+              "layer_name": "reshape",
+              "api_name": "Reshape",
+              "call_line_no": 74,
+              "init_line_no": 26,
+              "end_line_no": 26,
+              "original_call": "self.reshape = Reshape(target_shape=(4, 4, 8))",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  128
+                ]
+              ],
+              "input_shape": [
+                1,
+                128
+              ],
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                4,
+                4,
+                8
+              ]
+            },
+            {
+              "layer_name": "dense_transition",
+              "api_name": "Dense",
+              "call_line_no": 73,
+              "init_line_no": 25,
+              "end_line_no": 25,
+              "original_call": "self.dense_transition = Dense(units=128, activation='relu')",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1029
+                ]
+              ],
+              "input_shape": [
+                1,
+                1029
+              ],
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                128
+              ]
+            },
+            {
+              "layer_name": "concat1",
+              "api_name": "Concatenate",
+              "call_line_no": 70,
+              "init_line_no": 22,
+              "end_line_no": 22,
+              "original_call": "self.concat1 = Concatenate(axis=-1)",
+              "input_var_names": [
+                "x1",
+                "x2",
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  784
+                ],
+                [
+                  1,
+                  196
+                ],
+                [
+                  1,
+                  49
+                ]
+              ],
+              "input_shape": null,
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                1029
+              ]
+            },
+            {
+              "layer_name": "dropout3",
+              "api_name": "Dropout",
+              "call_line_no": 67,
+              "init_line_no": 19,
+              "end_line_no": 19,
+              "original_call": "self.dropout3 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  49
+                ]
+              ],
+              "input_shape": [
+                1,
+                49
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                49
+              ]
+            },
+            {
+              "layer_name": "flatten3",
+              "api_name": "Flatten",
+              "call_line_no": 66,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.flatten3 = Flatten()",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  7,
+                  7,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                7,
+                7,
+                1
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                49
+              ]
+            },
+            {
+              "layer_name": "pool4x4",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 65,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.pool4x4 = AveragePooling2D(pool_size=(4, 4), strides=(4, 4), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                7,
+                7,
+                1
+              ]
+            },
+            {
+              "layer_name": "dropout2",
+              "api_name": "Dropout",
+              "call_line_no": 62,
+              "init_line_no": 18,
+              "end_line_no": 18,
+              "original_call": "self.dropout2 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  196
+                ]
+              ],
+              "input_shape": [
+                1,
+                196
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                196
+              ]
+            },
+            {
+              "layer_name": "flatten2",
+              "api_name": "Flatten",
+              "call_line_no": 61,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.flatten2 = Flatten()",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  14,
+                  14,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                14,
+                14,
+                1
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                196
+              ]
+            },
+            {
+              "layer_name": "pool2x2",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 60,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.pool2x2 = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                14,
+                14,
+                1
+              ]
+            },
+            {
+              "layer_name": "dropout1",
+              "api_name": "Dropout",
+              "call_line_no": 57,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.dropout1 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  784
+                ]
+              ],
+              "input_shape": [
+                1,
+                784
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                784
+              ]
+            },
+            {
+              "layer_name": "flatten1",
+              "api_name": "Flatten",
+              "call_line_no": 56,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.flatten1 = Flatten()",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                784
+              ]
+            },
+            {
+              "layer_name": "pool1x1",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 55,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.pool1x1 = AveragePooling2D(pool_size=(1, 1), strides=(1, 1), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                28,
+                28,
+                1
+              ]
+            }
+          ],
+          "path_length": 13,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "branch2",
+          "shape": [
+            1,
+            4,
+            4,
+            64
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch2",
+              "line_no": 94
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 82
+            },
+            {
+              "var_name": "self.conv3x3_2",
+              "line_no": 82
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 82
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 81
+            },
+            {
+              "var_name": "self.conv1x1_2",
+              "line_no": 81
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 81
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 74
+            },
+            {
+              "var_name": "self.reshape",
+              "line_no": 74
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 74
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 73
+            },
+            {
+              "var_name": "self.dense_transition",
+              "line_no": 73
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 73
+            },
+            {
+              "var_name": "x3",
+              "line_no": 70
+            },
+            {
+              "var_name": "x2",
+              "line_no": 70
+            },
+            {
+              "var_name": "x1",
+              "line_no": 70
+            },
+            {
+              "var_name": "self.concat1",
+              "line_no": 70
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 70
+            },
+            {
+              "var_name": "x3",
+              "line_no": 67
+            },
+            {
+              "var_name": "self.dropout3",
+              "line_no": 67
+            },
+            {
+              "var_name": "x3",
+              "line_no": 67
+            },
+            {
+              "var_name": "x3",
+              "line_no": 66
+            },
+            {
+              "var_name": "self.flatten3",
+              "line_no": 66
+            },
+            {
+              "var_name": "x3",
+              "line_no": 66
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 65
+            },
+            {
+              "var_name": "self.pool4x4",
+              "line_no": 65
+            },
+            {
+              "var_name": "x3",
+              "line_no": 65
+            },
+            {
+              "var_name": "x2",
+              "line_no": 62
+            },
+            {
+              "var_name": "self.dropout2",
+              "line_no": 62
+            },
+            {
+              "var_name": "x2",
+              "line_no": 62
+            },
+            {
+              "var_name": "x2",
+              "line_no": 61
+            },
+            {
+              "var_name": "self.flatten2",
+              "line_no": 61
+            },
+            {
+              "var_name": "x2",
+              "line_no": 61
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 60
+            },
+            {
+              "var_name": "self.pool2x2",
+              "line_no": 60
+            },
+            {
+              "var_name": "x2",
+              "line_no": 60
+            },
+            {
+              "var_name": "x1",
+              "line_no": 57
+            },
+            {
+              "var_name": "self.dropout1",
+              "line_no": 57
+            },
+            {
+              "var_name": "x1",
+              "line_no": 57
+            },
+            {
+              "var_name": "x1",
+              "line_no": 56
+            },
+            {
+              "var_name": "self.flatten1",
+              "line_no": 56
+            },
+            {
+              "var_name": "x1",
+              "line_no": 56
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 55
+            },
+            {
+              "var_name": "self.pool1x1",
+              "line_no": 55
+            },
+            {
+              "var_name": "x1",
+              "line_no": 55
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 52
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv3x3_2",
+              "api_name": "Conv2D",
+              "call_line_no": 82,
+              "init_line_no": 34,
+              "end_line_no": 34,
+              "original_call": "self.conv3x3_2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "branch2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  4,
+                  4,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                4,
+                4,
+                64
+              ],
+              "output_var_name": "branch2",
+              "output_shape": [
+                1,
+                4,
+                4,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_2",
+              "api_name": "Conv2D",
+              "call_line_no": 81,
+              "init_line_no": 33,
+              "end_line_no": 33,
+              "original_call": "self.conv1x1_2 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  4,
+                  4,
+                  8
+                ]
+              ],
+              "input_shape": [
+                1,
+                4,
+                4,
+                8
+              ],
+              "output_var_name": "branch2",
+              "output_shape": [
+                1,
+                4,
+                4,
+                64
+              ]
+            },
+            {
+              "layer_name": "reshape",
+              "api_name": "Reshape",
+              "call_line_no": 74,
+              "init_line_no": 26,
+              "end_line_no": 26,
+              "original_call": "self.reshape = Reshape(target_shape=(4, 4, 8))",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  128
+                ]
+              ],
+              "input_shape": [
+                1,
+                128
+              ],
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                4,
+                4,
+                8
+              ]
+            },
+            {
+              "layer_name": "dense_transition",
+              "api_name": "Dense",
+              "call_line_no": 73,
+              "init_line_no": 25,
+              "end_line_no": 25,
+              "original_call": "self.dense_transition = Dense(units=128, activation='relu')",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1029
+                ]
+              ],
+              "input_shape": [
+                1,
+                1029
+              ],
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                128
+              ]
+            },
+            {
+              "layer_name": "concat1",
+              "api_name": "Concatenate",
+              "call_line_no": 70,
+              "init_line_no": 22,
+              "end_line_no": 22,
+              "original_call": "self.concat1 = Concatenate(axis=-1)",
+              "input_var_names": [
+                "x1",
+                "x2",
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  784
+                ],
+                [
+                  1,
+                  196
+                ],
+                [
+                  1,
+                  49
+                ]
+              ],
+              "input_shape": null,
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                1029
+              ]
+            },
+            {
+              "layer_name": "dropout3",
+              "api_name": "Dropout",
+              "call_line_no": 67,
+              "init_line_no": 19,
+              "end_line_no": 19,
+              "original_call": "self.dropout3 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  49
+                ]
+              ],
+              "input_shape": [
+                1,
+                49
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                49
+              ]
+            },
+            {
+              "layer_name": "flatten3",
+              "api_name": "Flatten",
+              "call_line_no": 66,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.flatten3 = Flatten()",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  7,
+                  7,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                7,
+                7,
+                1
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                49
+              ]
+            },
+            {
+              "layer_name": "pool4x4",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 65,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.pool4x4 = AveragePooling2D(pool_size=(4, 4), strides=(4, 4), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                7,
+                7,
+                1
+              ]
+            },
+            {
+              "layer_name": "dropout2",
+              "api_name": "Dropout",
+              "call_line_no": 62,
+              "init_line_no": 18,
+              "end_line_no": 18,
+              "original_call": "self.dropout2 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  196
+                ]
+              ],
+              "input_shape": [
+                1,
+                196
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                196
+              ]
+            },
+            {
+              "layer_name": "flatten2",
+              "api_name": "Flatten",
+              "call_line_no": 61,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.flatten2 = Flatten()",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  14,
+                  14,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                14,
+                14,
+                1
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                196
+              ]
+            },
+            {
+              "layer_name": "pool2x2",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 60,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.pool2x2 = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                14,
+                14,
+                1
+              ]
+            },
+            {
+              "layer_name": "dropout1",
+              "api_name": "Dropout",
+              "call_line_no": 57,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.dropout1 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  784
+                ]
+              ],
+              "input_shape": [
+                1,
+                784
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                784
+              ]
+            },
+            {
+              "layer_name": "flatten1",
+              "api_name": "Flatten",
+              "call_line_no": 56,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.flatten1 = Flatten()",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                784
+              ]
+            },
+            {
+              "layer_name": "pool1x1",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 55,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.pool1x1 = AveragePooling2D(pool_size=(1, 1), strides=(1, 1), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                28,
+                28,
+                1
+              ]
+            }
+          ],
+          "path_length": 14,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "branch3",
+          "shape": [
+            1,
+            4,
+            4,
+            64
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch3",
+              "line_no": 94
+            },
+            {
+              "var_name": "branch3",
+              "line_no": 87
+            },
+            {
+              "var_name": "self.conv3x3_3b",
+              "line_no": 87
+            },
+            {
+              "var_name": "branch3",
+              "line_no": 87
+            },
+            {
+              "var_name": "branch3",
+              "line_no": 86
+            },
+            {
+              "var_name": "self.conv3x3_3a",
+              "line_no": 86
+            },
+            {
+              "var_name": "branch3",
+              "line_no": 86
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 85
+            },
+            {
+              "var_name": "self.conv1x1_3",
+              "line_no": 85
+            },
+            {
+              "var_name": "branch3",
+              "line_no": 85
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 74
+            },
+            {
+              "var_name": "self.reshape",
+              "line_no": 74
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 74
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 73
+            },
+            {
+              "var_name": "self.dense_transition",
+              "line_no": 73
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 73
+            },
+            {
+              "var_name": "x3",
+              "line_no": 70
+            },
+            {
+              "var_name": "x2",
+              "line_no": 70
+            },
+            {
+              "var_name": "x1",
+              "line_no": 70
+            },
+            {
+              "var_name": "self.concat1",
+              "line_no": 70
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 70
+            },
+            {
+              "var_name": "x3",
+              "line_no": 67
+            },
+            {
+              "var_name": "self.dropout3",
+              "line_no": 67
+            },
+            {
+              "var_name": "x3",
+              "line_no": 67
+            },
+            {
+              "var_name": "x3",
+              "line_no": 66
+            },
+            {
+              "var_name": "self.flatten3",
+              "line_no": 66
+            },
+            {
+              "var_name": "x3",
+              "line_no": 66
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 65
+            },
+            {
+              "var_name": "self.pool4x4",
+              "line_no": 65
+            },
+            {
+              "var_name": "x3",
+              "line_no": 65
+            },
+            {
+              "var_name": "x2",
+              "line_no": 62
+            },
+            {
+              "var_name": "self.dropout2",
+              "line_no": 62
+            },
+            {
+              "var_name": "x2",
+              "line_no": 62
+            },
+            {
+              "var_name": "x2",
+              "line_no": 61
+            },
+            {
+              "var_name": "self.flatten2",
+              "line_no": 61
+            },
+            {
+              "var_name": "x2",
+              "line_no": 61
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 60
+            },
+            {
+              "var_name": "self.pool2x2",
+              "line_no": 60
+            },
+            {
+              "var_name": "x2",
+              "line_no": 60
+            },
+            {
+              "var_name": "x1",
+              "line_no": 57
+            },
+            {
+              "var_name": "self.dropout1",
+              "line_no": 57
+            },
+            {
+              "var_name": "x1",
+              "line_no": 57
+            },
+            {
+              "var_name": "x1",
+              "line_no": 56
+            },
+            {
+              "var_name": "self.flatten1",
+              "line_no": 56
+            },
+            {
+              "var_name": "x1",
+              "line_no": 56
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 55
+            },
+            {
+              "var_name": "self.pool1x1",
+              "line_no": 55
+            },
+            {
+              "var_name": "x1",
+              "line_no": 55
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 52
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv3x3_3b",
+              "api_name": "Conv2D",
+              "call_line_no": 87,
+              "init_line_no": 39,
+              "end_line_no": 39,
+              "original_call": "self.conv3x3_3b = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "branch3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  4,
+                  4,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                4,
+                4,
+                64
+              ],
+              "output_var_name": "branch3",
+              "output_shape": [
+                1,
+                4,
+                4,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv3x3_3a",
+              "api_name": "Conv2D",
+              "call_line_no": 86,
+              "init_line_no": 38,
+              "end_line_no": 38,
+              "original_call": "self.conv3x3_3a = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "branch3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  4,
+                  4,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                4,
+                4,
+                64
+              ],
+              "output_var_name": "branch3",
+              "output_shape": [
+                1,
+                4,
+                4,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 85,
+              "init_line_no": 37,
+              "end_line_no": 37,
+              "original_call": "self.conv1x1_3 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  4,
+                  4,
+                  8
+                ]
+              ],
+              "input_shape": [
+                1,
+                4,
+                4,
+                8
+              ],
+              "output_var_name": "branch3",
+              "output_shape": [
+                1,
+                4,
+                4,
+                64
+              ]
+            },
+            {
+              "layer_name": "reshape",
+              "api_name": "Reshape",
+              "call_line_no": 74,
+              "init_line_no": 26,
+              "end_line_no": 26,
+              "original_call": "self.reshape = Reshape(target_shape=(4, 4, 8))",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  128
+                ]
+              ],
+              "input_shape": [
+                1,
+                128
+              ],
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                4,
+                4,
+                8
+              ]
+            },
+            {
+              "layer_name": "dense_transition",
+              "api_name": "Dense",
+              "call_line_no": 73,
+              "init_line_no": 25,
+              "end_line_no": 25,
+              "original_call": "self.dense_transition = Dense(units=128, activation='relu')",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1029
+                ]
+              ],
+              "input_shape": [
+                1,
+                1029
+              ],
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                128
+              ]
+            },
+            {
+              "layer_name": "concat1",
+              "api_name": "Concatenate",
+              "call_line_no": 70,
+              "init_line_no": 22,
+              "end_line_no": 22,
+              "original_call": "self.concat1 = Concatenate(axis=-1)",
+              "input_var_names": [
+                "x1",
+                "x2",
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  784
+                ],
+                [
+                  1,
+                  196
+                ],
+                [
+                  1,
+                  49
+                ]
+              ],
+              "input_shape": null,
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                1029
+              ]
+            },
+            {
+              "layer_name": "dropout3",
+              "api_name": "Dropout",
+              "call_line_no": 67,
+              "init_line_no": 19,
+              "end_line_no": 19,
+              "original_call": "self.dropout3 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  49
+                ]
+              ],
+              "input_shape": [
+                1,
+                49
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                49
+              ]
+            },
+            {
+              "layer_name": "flatten3",
+              "api_name": "Flatten",
+              "call_line_no": 66,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.flatten3 = Flatten()",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  7,
+                  7,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                7,
+                7,
+                1
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                49
+              ]
+            },
+            {
+              "layer_name": "pool4x4",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 65,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.pool4x4 = AveragePooling2D(pool_size=(4, 4), strides=(4, 4), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                7,
+                7,
+                1
+              ]
+            },
+            {
+              "layer_name": "dropout2",
+              "api_name": "Dropout",
+              "call_line_no": 62,
+              "init_line_no": 18,
+              "end_line_no": 18,
+              "original_call": "self.dropout2 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  196
+                ]
+              ],
+              "input_shape": [
+                1,
+                196
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                196
+              ]
+            },
+            {
+              "layer_name": "flatten2",
+              "api_name": "Flatten",
+              "call_line_no": 61,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.flatten2 = Flatten()",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  14,
+                  14,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                14,
+                14,
+                1
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                196
+              ]
+            },
+            {
+              "layer_name": "pool2x2",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 60,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.pool2x2 = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                14,
+                14,
+                1
+              ]
+            },
+            {
+              "layer_name": "dropout1",
+              "api_name": "Dropout",
+              "call_line_no": 57,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.dropout1 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  784
+                ]
+              ],
+              "input_shape": [
+                1,
+                784
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                784
+              ]
+            },
+            {
+              "layer_name": "flatten1",
+              "api_name": "Flatten",
+              "call_line_no": 56,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.flatten1 = Flatten()",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                784
+              ]
+            },
+            {
+              "layer_name": "pool1x1",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 55,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.pool1x1 = AveragePooling2D(pool_size=(1, 1), strides=(1, 1), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                28,
+                28,
+                1
+              ]
+            }
+          ],
+          "path_length": 15,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "branch4",
+          "shape": [
+            1,
+            2,
+            2,
+            64
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch4",
+              "line_no": 94
+            },
+            {
+              "var_name": "branch4",
+              "line_no": 91
+            },
+            {
+              "var_name": "self.conv1x1_4",
+              "line_no": 91
+            },
+            {
+              "var_name": "branch4",
+              "line_no": 91
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 90
+            },
+            {
+              "var_name": "self.pool_branch",
+              "line_no": 90
+            },
+            {
+              "var_name": "branch4",
+              "line_no": 90
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 74
+            },
+            {
+              "var_name": "self.reshape",
+              "line_no": 74
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 74
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 73
+            },
+            {
+              "var_name": "self.dense_transition",
+              "line_no": 73
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 73
+            },
+            {
+              "var_name": "x3",
+              "line_no": 70
+            },
+            {
+              "var_name": "x2",
+              "line_no": 70
+            },
+            {
+              "var_name": "x1",
+              "line_no": 70
+            },
+            {
+              "var_name": "self.concat1",
+              "line_no": 70
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 70
+            },
+            {
+              "var_name": "x3",
+              "line_no": 67
+            },
+            {
+              "var_name": "self.dropout3",
+              "line_no": 67
+            },
+            {
+              "var_name": "x3",
+              "line_no": 67
+            },
+            {
+              "var_name": "x3",
+              "line_no": 66
+            },
+            {
+              "var_name": "self.flatten3",
+              "line_no": 66
+            },
+            {
+              "var_name": "x3",
+              "line_no": 66
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 65
+            },
+            {
+              "var_name": "self.pool4x4",
+              "line_no": 65
+            },
+            {
+              "var_name": "x3",
+              "line_no": 65
+            },
+            {
+              "var_name": "x2",
+              "line_no": 62
+            },
+            {
+              "var_name": "self.dropout2",
+              "line_no": 62
+            },
+            {
+              "var_name": "x2",
+              "line_no": 62
+            },
+            {
+              "var_name": "x2",
+              "line_no": 61
+            },
+            {
+              "var_name": "self.flatten2",
+              "line_no": 61
+            },
+            {
+              "var_name": "x2",
+              "line_no": 61
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 60
+            },
+            {
+              "var_name": "self.pool2x2",
+              "line_no": 60
+            },
+            {
+              "var_name": "x2",
+              "line_no": 60
+            },
+            {
+              "var_name": "x1",
+              "line_no": 57
+            },
+            {
+              "var_name": "self.dropout1",
+              "line_no": 57
+            },
+            {
+              "var_name": "x1",
+              "line_no": 57
+            },
+            {
+              "var_name": "x1",
+              "line_no": 56
+            },
+            {
+              "var_name": "self.flatten1",
+              "line_no": 56
+            },
+            {
+              "var_name": "x1",
+              "line_no": 56
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 55
+            },
+            {
+              "var_name": "self.pool1x1",
+              "line_no": 55
+            },
+            {
+              "var_name": "x1",
+              "line_no": 55
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 52
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv1x1_4",
+              "api_name": "Conv2D",
+              "call_line_no": 91,
+              "init_line_no": 43,
+              "end_line_no": 43,
+              "original_call": "self.conv1x1_4 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "branch4"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  2,
+                  2,
+                  8
+                ]
+              ],
+              "input_shape": [
+                1,
+                2,
+                2,
+                8
+              ],
+              "output_var_name": "branch4",
+              "output_shape": [
+                1,
+                2,
+                2,
+                64
+              ]
+            },
+            {
+              "layer_name": "pool_branch",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 90,
+              "init_line_no": 42,
+              "end_line_no": 42,
+              "original_call": "self.pool_branch = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  4,
+                  4,
+                  8
+                ]
+              ],
+              "input_shape": [
+                1,
+                4,
+                4,
+                8
+              ],
+              "output_var_name": "branch4",
+              "output_shape": [
+                1,
+                2,
+                2,
+                8
+              ]
+            },
+            {
+              "layer_name": "reshape",
+              "api_name": "Reshape",
+              "call_line_no": 74,
+              "init_line_no": 26,
+              "end_line_no": 26,
+              "original_call": "self.reshape = Reshape(target_shape=(4, 4, 8))",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  128
+                ]
+              ],
+              "input_shape": [
+                1,
+                128
+              ],
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                4,
+                4,
+                8
+              ]
+            },
+            {
+              "layer_name": "dense_transition",
+              "api_name": "Dense",
+              "call_line_no": 73,
+              "init_line_no": 25,
+              "end_line_no": 25,
+              "original_call": "self.dense_transition = Dense(units=128, activation='relu')",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1029
+                ]
+              ],
+              "input_shape": [
+                1,
+                1029
+              ],
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                128
+              ]
+            },
+            {
+              "layer_name": "concat1",
+              "api_name": "Concatenate",
+              "call_line_no": 70,
+              "init_line_no": 22,
+              "end_line_no": 22,
+              "original_call": "self.concat1 = Concatenate(axis=-1)",
+              "input_var_names": [
+                "x1",
+                "x2",
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  784
+                ],
+                [
+                  1,
+                  196
+                ],
+                [
+                  1,
+                  49
+                ]
+              ],
+              "input_shape": null,
+              "output_var_name": "block1_output",
+              "output_shape": [
+                1,
+                1029
+              ]
+            },
+            {
+              "layer_name": "dropout3",
+              "api_name": "Dropout",
+              "call_line_no": 67,
+              "init_line_no": 19,
+              "end_line_no": 19,
+              "original_call": "self.dropout3 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  49
+                ]
+              ],
+              "input_shape": [
+                1,
+                49
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                49
+              ]
+            },
+            {
+              "layer_name": "flatten3",
+              "api_name": "Flatten",
+              "call_line_no": 66,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.flatten3 = Flatten()",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  7,
+                  7,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                7,
+                7,
+                1
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                49
+              ]
+            },
+            {
+              "layer_name": "pool4x4",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 65,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.pool4x4 = AveragePooling2D(pool_size=(4, 4), strides=(4, 4), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                7,
+                7,
+                1
+              ]
+            },
+            {
+              "layer_name": "dropout2",
+              "api_name": "Dropout",
+              "call_line_no": 62,
+              "init_line_no": 18,
+              "end_line_no": 18,
+              "original_call": "self.dropout2 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  196
+                ]
+              ],
+              "input_shape": [
+                1,
+                196
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                196
+              ]
+            },
+            {
+              "layer_name": "flatten2",
+              "api_name": "Flatten",
+              "call_line_no": 61,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.flatten2 = Flatten()",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  14,
+                  14,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                14,
+                14,
+                1
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                196
+              ]
+            },
+            {
+              "layer_name": "pool2x2",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 60,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.pool2x2 = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                14,
+                14,
+                1
+              ]
+            },
+            {
+              "layer_name": "dropout1",
+              "api_name": "Dropout",
+              "call_line_no": 57,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.dropout1 = Dropout(rate=0.5)",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  784
+                ]
+              ],
+              "input_shape": [
+                1,
+                784
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                784
+              ]
+            },
+            {
+              "layer_name": "flatten1",
+              "api_name": "Flatten",
+              "call_line_no": 56,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.flatten1 = Flatten()",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                784
+              ]
+            },
+            {
+              "layer_name": "pool1x1",
+              "api_name": "AveragePooling2D",
+              "call_line_no": 55,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.pool1x1 = AveragePooling2D(pool_size=(1, 1), strides=(1, 1), padding='valid')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  28,
+                  28,
+                  1
+                ]
+              ],
+              "input_shape": [
+                1,
+                28,
+                28,
+                1
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                28,
+                28,
+                1
+              ]
+            }
+          ],
+          "path_length": 14,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 1
+        }
+      ],
+      "framework": "tensorflow",
+      "tensor_layout": "channels_last"
+    },
+    "target_branch_index": 3,
+    "target_layers": [
+      {
+        "layer_name": "pool_branch",
+        "call_line_no": 90,
+        "line_no": 42,
+        "end_line_no": 42,
+        "api_name": "AveragePooling2D",
+        "layer_semantic": "pool",
+        "original_call": "self.pool_branch = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')",
+        "normalized_call": "self.pool_branch = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')",
+        "masked_api_call": "self.pool_branch = AveragePooling2D(pool_size='mask', strides='mask', padding='mask')",
+        "mismatch_types": [
+          "spatial"
+        ],
+        "params_to_mask": [
+          "pool_size",
+          "ksize",
+          "strides",
+          "padding"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 90,
+        "oracle_shape": [
+          1,
+          4,
+          4,
+          8
+        ],
+        "target_layer_index": 0,
+        "layer_name": "pool_branch",
+        "target_layer_line_no": 42,
+        "call_line_no": 90,
+        "mismatch_types": [
+          "spatial"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "pool_branch",
+        "modeled_input_shape": [
+          1,
+          4,
+          4,
+          8
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          4,
+          4,
+          8
+        ],
+        "oracle_output_shape": [
+          1,
+          4,
+          4,
+          8
+        ]
+      }
+    ]
+  },
+  "origin_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Layer, Input, AveragePooling2D, Flatten, Dropout, Concatenate, Dense, Reshape, Conv2D, Add, Multiply, Lambda\nfrom tensorflow.keras.models import Model\n\nclass DL_Model(Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Block 1: Three parallel average pooling paths\n        self.pool1x1 = AveragePooling2D(pool_size=(1, 1), strides=(1, 1), padding='valid')\n        self.pool2x2 = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')\n        self.pool4x4 = AveragePooling2D(pool_size=(4, 4), strides=(4, 4), padding='valid')\n\n        # Flatten and dropout layers for each path\n        self.flatten1 = Flatten()\n        self.flatten2 = Flatten()\n        self.flatten3 = Flatten()\n        self.dropout1 = Dropout(rate=0.5)\n        self.dropout2 = Dropout(rate=0.5)\n        self.dropout3 = Dropout(rate=0.5)\n\n        # Concatenate layer for block 1\n        self.concat1 = Concatenate(axis=-1)\n\n        # Fully connected layer and reshape for transition\n        self.dense_transition = Dense(units=128, activation='relu')\n        self.reshape = Reshape(target_shape=(4, 4, 8))  # Assuming input is 28x28 MNIST images\n\n        # Block 2: Four branch connections\n        # Branch 1: 1x1 convolution\n        self.conv1x1_1 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Branch 2: <1x1 convolution, 3x3 convolution>\n        self.conv1x1_2 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        # Branch 3: <1x1 convolution, 3x3 convolution, 3x3 convolution>\n        self.conv1x1_3 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_3a = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_3b = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        # Branch 4: <average pooling, 1x1 convolution>\n        self.pool_branch = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')\n        self.conv1x1_4 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Concatenate layer for block 2\n        self.concat2 = Concatenate(axis=-1)\n\n        # Final classification layers\n        self.dense1 = Dense(units=128, activation='relu')\n        self.dense2 = Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # Block 1 processing\n        # Path 1: 1x1 pooling\n        x1 = self.pool1x1(inputs)\n        x1 = self.flatten1(x1)\n        x1 = self.dropout1(x1)\n\n        # Path 2: 2x2 pooling\n        x2 = self.pool2x2(inputs)\n        x2 = self.flatten2(x2)\n        x2 = self.dropout2(x2)\n\n        # Path 3: 4x4 pooling\n        x3 = self.pool4x4(inputs)\n        x3 = self.flatten3(x3)\n        x3 = self.dropout3(x3)\n\n        # Concatenate all paths\n        block1_output = self.concat1([x1, x2, x3])\n\n        # Transition to block 2\n        block1_output = self.dense_transition(block1_output)\n        block1_output = self.reshape(block1_output)\n\n        # Block 2 processing\n        # Branch 1: 1x1 convolution\n        branch1 = self.conv1x1_1(block1_output)\n\n        # Branch 2: <1x1 convolution, 3x3 convolution>\n        branch2 = self.conv1x1_2(block1_output)\n        branch2 = self.conv3x3_2(branch2)\n\n        # Branch 3: <1x1 convolution, 3x3 convolution, 3x3 convolution>\n        branch3 = self.conv1x1_3(block1_output)\n        branch3 = self.conv3x3_3a(branch3)\n        branch3 = self.conv3x3_3b(branch3)\n\n        # Branch 4: <average pooling, 1x1 convolution>\n        branch4 = self.pool_branch(block1_output)\n        branch4 = self.conv1x1_4(branch4)\n\n        # Concatenate all branches\n        block2_output = self.concat2([branch1, branch2, branch3, branch4])\n\n        # Flatten for final classification\n        block2_output = tf.keras.layers.Flatten()(block2_output)\n\n        # Final classification layers\n        output = self.dense1(block2_output)\n        output = self.dense2(output)\n\n        return output\n\nif __name__ == \"__main__\":\n    # Create a dummy input tensor with shape (batch_size, height, width, channels)\n    # MNIST images are 28x28 grayscale, so channels=1\n    input_tensor = tf.random.normal(shape=(1, 28, 28, 1))\n\n    # Instantiate the model\n    model = DL_Model()\n\n    # Get the output tensor\n    output_tensor = model(input_tensor)\n\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)",
+  "final_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Layer, Input, AveragePooling2D, Flatten, Dropout, Concatenate, Dense, Reshape, Conv2D, Add, Multiply, Lambda\nfrom tensorflow.keras.models import Model\n\nclass DL_Model(Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Block 1: Three parallel average pooling paths\n        self.pool1x1 = AveragePooling2D(pool_size=(1, 1), strides=(1, 1), padding='valid')\n        self.pool2x2 = AveragePooling2D(pool_size=(2, 2), strides=(2, 2), padding='valid')\n        self.pool4x4 = AveragePooling2D(pool_size=(4, 4), strides=(4, 4), padding='valid')\n\n        # Flatten and dropout layers for each path\n        self.flatten1 = Flatten()\n        self.flatten2 = Flatten()\n        self.flatten3 = Flatten()\n        self.dropout1 = Dropout(rate=0.5)\n        self.dropout2 = Dropout(rate=0.5)\n        self.dropout3 = Dropout(rate=0.5)\n\n        # Concatenate layer for block 1\n        self.concat1 = Concatenate(axis=-1)\n\n        # Fully connected layer and reshape for transition\n        self.dense_transition = Dense(units=128, activation='relu')\n        self.reshape = Reshape(target_shape=(4, 4, 8))  # Assuming input is 28x28 MNIST images\n\n        # Block 2: Four branch connections\n        # Branch 1: 1x1 convolution\n        self.conv1x1_1 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Branch 2: <1x1 convolution, 3x3 convolution>\n        self.conv1x1_2 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        # Branch 3: <1x1 convolution, 3x3 convolution, 3x3 convolution>\n        self.conv1x1_3 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_3a = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_3b = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        # Branch 4: <average pooling, 1x1 convolution>\n        self.pool_branch = AveragePooling2D(pool_size='mask', strides='mask', padding='mask')\n        self.conv1x1_4 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Concatenate layer for block 2\n        self.concat2 = Concatenate(axis=-1)\n\n        # Final classification layers\n        self.dense1 = Dense(units=128, activation='relu')\n        self.dense2 = Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # the initial shape of inputs is: (1, 28, 28, 1)\n        # Block 1 processing\n        # Path 1: 1x1 pooling\n        x1 = self.pool1x1(inputs)  # output tensor shape: (1, 28, 28, 1)\n        x1 = self.flatten1(x1)  # output tensor shape: (1, 784)\n        x1 = self.dropout1(x1)  # output tensor shape: (1, 784)\n\n        # Path 2: 2x2 pooling\n        x2 = self.pool2x2(inputs)  # output tensor shape: (1, 14, 14, 1)\n        x2 = self.flatten2(x2)  # output tensor shape: (1, 196)\n        x2 = self.dropout2(x2)  # output tensor shape: (1, 196)\n\n        # Path 3: 4x4 pooling\n        x3 = self.pool4x4(inputs)  # output tensor shape: (1, 7, 7, 1)\n        x3 = self.flatten3(x3)  # output tensor shape: (1, 49)\n        x3 = self.dropout3(x3)  # output tensor shape: (1, 49)\n\n        # Concatenate all paths\n        block1_output = self.concat1([x1, x2, x3])  # output tensor shape: (1, 1029)\n\n        # Transition to block 2\n        block1_output = self.dense_transition(block1_output)  # output tensor shape: (1, 128)\n        block1_output = self.reshape(block1_output)  # output tensor shape: (1, 4, 4, 8)\n\n        # Block 2 processing\n        # Branch 1: 1x1 convolution\n        branch1 = self.conv1x1_1(block1_output)  # output tensor shape: (1, 4, 4, 64)\n\n        # Branch 2: <1x1 convolution, 3x3 convolution>\n        branch2 = self.conv1x1_2(block1_output)  # output tensor shape: (1, 4, 4, 64)\n        branch2 = self.conv3x3_2(branch2)  # output tensor shape: (1, 4, 4, 64)\n\n        # Branch 3: <1x1 convolution, 3x3 convolution, 3x3 convolution>\n        branch3 = self.conv1x1_3(block1_output)  # output tensor shape: (1, 4, 4, 64)\n        branch3 = self.conv3x3_3a(branch3)  # output tensor shape: (1, 4, 4, 64)\n        branch3 = self.conv3x3_3b(branch3)  # output tensor shape: (1, 4, 4, 64)\n\n        # Branch 4: <average pooling, 1x1 convolution>\n        branch4 = self.pool_branch(block1_output)  # output tensor shape of this layer should be (1, 4, 4, 8)\n        branch4 = self.conv1x1_4(branch4)\n\n        # Concatenate all branches\n        block2_output = self.concat2([branch1, branch2, branch3, branch4])\n\n        # Flatten for final classification\n        block2_output = tf.keras.layers.Flatten()(block2_output)\n\n        # Final classification layers\n        output = self.dense1(block2_output)\n        output = self.dense2(output)\n\n        return output\n\nif __name__ == \"__main__\":\n    # Create a dummy input tensor with shape (batch_size, height, width, channels)\n    # MNIST images are 28x28 grayscale, so channels=1\n    input_tensor = tf.random.normal(shape=(1, 28, 28, 1))\n\n    # Instantiate the model\n    model = DL_Model()\n\n    # Get the output tensor\n    output_tensor = model(input_tensor)\n\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)"
+}

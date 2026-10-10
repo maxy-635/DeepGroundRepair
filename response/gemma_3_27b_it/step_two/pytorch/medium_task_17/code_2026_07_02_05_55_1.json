@@ -1,0 +1,24 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_27b_it/step_one/pytorch/models_0701/medium_task_17/code_2026_07_02_05_55_1.py\", line 36, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"./response/gemma_3_27b_it/step_one/pytorch/models_0701/medium_task_17/code_2026_07_02_05_55_1.py\", line 26, in forward\n    x = self.linear(x.view(height * width, channels))\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/python3.10/site-packages/torch/nn/modules/linear.py\", line 134, in forward\n    return F.linear(input, self.weight, self.bias)\nRuntimeError: mat1 and mat2 shapes cannot be multiplied (1024x3 and 64x10)\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 26,
+      "crash_code": "x = self.linear(x.view(height * width, channels))"
+    },
+    "init_definition": {
+      "line_no": 8,
+      "end_line_no": 8,
+      "original_call": "self.linear = nn.Linear(in_features=64, out_features=10)",
+      "masked_api_call": "self.linear = nn.Linear(in_features='mask', out_features=10)",
+      "params_to_mask": [
+        "in_features"
+      ]
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.linear = nn.Linear(in_features=64, out_features=10)\n\n    def forward(self, x):\n        # Get the shape of the input tensor\n        height, width, channels = x.shape\n\n        # Reshape the input tensor into three groups\n        groups = 3\n        channels_per_group = channels // groups\n        x = torch.reshape(x, (height, width, groups, channels_per_group))\n\n        # Swap the third and fourth dimensions for channel shuffling\n        x = torch.permute(x, (0, 1, 3, 2))\n\n        # Reshape back to the original input shape\n        x = torch.reshape(x, (height, width, channels))\n\n        # Pass through a fully connected layer with softmax activation\n        x = self.linear(x.view(height * width, channels))\n        output = F.softmax(x, dim=1)\n\n        return output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    # Create a dummy input tensor with the expected shape (32, 32, 3)\n    input_tensor = torch.randn(32, 32, 3)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.linear = nn.Linear(in_features='mask', out_features=10)\n\n    def forward(self, x):\n        # the initial shape of x is: (32, 32, 3)\n        # Get the shape of the input tensor\n        height, width, channels = x.shape  # output tensor shape: (1); (1); (1)\n\n        # Reshape the input tensor into three groups\n        groups = 3  # output tensor shape: (1)\n        channels_per_group = channels // groups  # output tensor shape: (1)\n        x = torch.reshape(x, (height, width, groups, channels_per_group))  # output tensor shape: (32, 32, 3, 1)\n\n        # Swap the third and fourth dimensions for channel shuffling\n        x = torch.permute(x, (0, 1, 3, 2))  # output tensor shape: (32, 32, 1, 3)\n\n        # Reshape back to the original input shape\n        x = torch.reshape(x, (height, width, channels))  # output tensor shape: (32, 32, 3)\n\n        # Pass through a fully connected layer with softmax activation\n        x = self.linear(x.view(height * width, channels))\n        output = F.softmax(x, dim=1)\n\n        return output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    # Create a dummy input tensor with the expected shape (32, 32, 3)\n    input_tensor = torch.randn(32, 32, 3)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

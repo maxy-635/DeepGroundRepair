@@ -1,0 +1,997 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_27b_it/step_one/tensorflow/models_0701/hard_task_46/code_2026_07_02_00_30_1.py\", line 50, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/keras/src/utils/traceback_utils.py\", line 70, in error_handler\n    raise e.with_traceback(filtered_tb) from None\n  File \"./response/gemma_3_27b_it/step_one/tensorflow/models_0701/hard_task_46/code_2026_07_02_00_30_1.py\", line 39, in call\n    x = self.concat2([branch1, branch2, branch3])\nValueError: Exception encountered when calling layer 'dl__model_60' (type DL_Model).\n\nA `Concatenate` layer requires inputs with matching shapes except for the concatenation axis. Received: input_shape=[(1, 32, 32, 32), (1, 32, 32, 32), (1, 16, 16, 96)]\n\nCall arguments received by layer 'dl__model_60' (type DL_Model):\n  • inputs=tf.Tensor(shape=(1, 32, 32, 3), dtype=float32)\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 39,
+      "crash_code": "x = self.concat2([branch1, branch2, branch3])"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "spatial"
+    ],
+    "merge_context": {
+      "merge_lineno": 39,
+      "merge_code": "x = self.concat2([branch1, branch2, branch3])",
+      "merge_kind": "Concatenate",
+      "concat_axis": -1,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "inputs"
+      ],
+      "forward_input_shapes": {
+        "inputs": [
+          1,
+          32,
+          32,
+          3
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "branch1",
+          "shape": [
+            1,
+            32,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch1",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 33
+            },
+            {
+              "var_name": "self.conv_branch",
+              "line_no": 33
+            },
+            {
+              "var_name": "branch1",
+              "line_no": 33
+            },
+            {
+              "var_name": "x3",
+              "line_no": 30
+            },
+            {
+              "var_name": "x2",
+              "line_no": 30
+            },
+            {
+              "var_name": "x1",
+              "line_no": 30
+            },
+            {
+              "var_name": "self.concat1",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 30
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.sep_conv3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x3",
+              "line_no": 29
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.sep_conv2",
+              "line_no": 28
+            },
+            {
+              "var_name": "x2",
+              "line_no": 28
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 27
+            },
+            {
+              "var_name": "self.sep_conv1",
+              "line_no": 27
+            },
+            {
+              "var_name": "x1",
+              "line_no": 27
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 25
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv_branch",
+              "api_name": "Conv2D",
+              "call_line_no": 33,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.conv_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  96
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                96
+              ],
+              "output_var_name": "branch1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "concat1",
+              "api_name": "Concatenate",
+              "call_line_no": 30,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.concat1 = tf.keras.layers.Concatenate(axis=-1)",
+              "input_var_names": [
+                "x1",
+                "x2",
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ],
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ],
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": null,
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                32,
+                32,
+                96
+              ]
+            },
+            {
+              "layer_name": "sep_conv3",
+              "api_name": "SeparableConv2D",
+              "call_line_no": 29,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.sep_conv3 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(5, 5), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv2",
+              "api_name": "SeparableConv2D",
+              "call_line_no": 28,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.sep_conv2 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1",
+              "api_name": "SeparableConv2D",
+              "call_line_no": 27,
+              "init_line_no": 8,
+              "end_line_no": 8,
+              "original_call": "self.sep_conv1 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 5,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "branch2",
+          "shape": [
+            1,
+            32,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch2",
+              "line_no": 39
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 36
+            },
+            {
+              "var_name": "self.conv3_branch",
+              "line_no": 36
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 36
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 35
+            },
+            {
+              "var_name": "self.conv2_branch",
+              "line_no": 35
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 35
+            },
+            {
+              "var_name": "x",
+              "line_no": 34
+            },
+            {
+              "var_name": "self.conv1_branch",
+              "line_no": 34
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 34
+            },
+            {
+              "var_name": "x3",
+              "line_no": 30
+            },
+            {
+              "var_name": "x2",
+              "line_no": 30
+            },
+            {
+              "var_name": "x1",
+              "line_no": 30
+            },
+            {
+              "var_name": "self.concat1",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 30
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.sep_conv3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x3",
+              "line_no": 29
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.sep_conv2",
+              "line_no": 28
+            },
+            {
+              "var_name": "x2",
+              "line_no": 28
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 27
+            },
+            {
+              "var_name": "self.sep_conv1",
+              "line_no": 27
+            },
+            {
+              "var_name": "x1",
+              "line_no": 27
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 25
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv3_branch",
+              "api_name": "Conv2D",
+              "call_line_no": 36,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.conv3_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')",
+              "input_var_names": [
+                "branch2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                32
+              ],
+              "output_var_name": "branch2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv2_branch",
+              "api_name": "Conv2D",
+              "call_line_no": 35,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.conv2_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')",
+              "input_var_names": [
+                "branch2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                32
+              ],
+              "output_var_name": "branch2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv1_branch",
+              "api_name": "Conv2D",
+              "call_line_no": 34,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.conv1_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  96
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                96
+              ],
+              "output_var_name": "branch2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "concat1",
+              "api_name": "Concatenate",
+              "call_line_no": 30,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.concat1 = tf.keras.layers.Concatenate(axis=-1)",
+              "input_var_names": [
+                "x1",
+                "x2",
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ],
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ],
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": null,
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                32,
+                32,
+                96
+              ]
+            },
+            {
+              "layer_name": "sep_conv3",
+              "api_name": "SeparableConv2D",
+              "call_line_no": 29,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.sep_conv3 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(5, 5), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv2",
+              "api_name": "SeparableConv2D",
+              "call_line_no": 28,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.sep_conv2 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1",
+              "api_name": "SeparableConv2D",
+              "call_line_no": 27,
+              "init_line_no": 8,
+              "end_line_no": 8,
+              "original_call": "self.sep_conv1 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 7,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "branch3",
+          "shape": [
+            1,
+            16,
+            16,
+            96
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch3",
+              "line_no": 39
+            },
+            {
+              "var_name": "x",
+              "line_no": 37
+            },
+            {
+              "var_name": "self.maxpool_branch",
+              "line_no": 37
+            },
+            {
+              "var_name": "branch3",
+              "line_no": 37
+            },
+            {
+              "var_name": "x3",
+              "line_no": 30
+            },
+            {
+              "var_name": "x2",
+              "line_no": 30
+            },
+            {
+              "var_name": "x1",
+              "line_no": 30
+            },
+            {
+              "var_name": "self.concat1",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 30
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.sep_conv3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x3",
+              "line_no": 29
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.sep_conv2",
+              "line_no": 28
+            },
+            {
+              "var_name": "x2",
+              "line_no": 28
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 27
+            },
+            {
+              "var_name": "self.sep_conv1",
+              "line_no": 27
+            },
+            {
+              "var_name": "x1",
+              "line_no": 27
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 25
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "maxpool_branch",
+              "api_name": "MaxPool2D",
+              "call_line_no": 37,
+              "init_line_no": 18,
+              "end_line_no": 18,
+              "original_call": "self.maxpool_branch = tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  96
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                96
+              ],
+              "output_var_name": "branch3",
+              "output_shape": [
+                1,
+                16,
+                16,
+                96
+              ]
+            },
+            {
+              "layer_name": "concat1",
+              "api_name": "Concatenate",
+              "call_line_no": 30,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.concat1 = tf.keras.layers.Concatenate(axis=-1)",
+              "input_var_names": [
+                "x1",
+                "x2",
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ],
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ],
+                [
+                  1,
+                  32,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": null,
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                32,
+                32,
+                96
+              ]
+            },
+            {
+              "layer_name": "sep_conv3",
+              "api_name": "SeparableConv2D",
+              "call_line_no": 29,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.sep_conv3 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(5, 5), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv2",
+              "api_name": "SeparableConv2D",
+              "call_line_no": 28,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.sep_conv2 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1",
+              "api_name": "SeparableConv2D",
+              "call_line_no": 27,
+              "init_line_no": 8,
+              "end_line_no": 8,
+              "original_call": "self.sep_conv1 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 5,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 1
+        }
+      ],
+      "framework": "tensorflow",
+      "tensor_layout": "channels_last"
+    },
+    "target_branch_index": 2,
+    "target_layers": [
+      {
+        "layer_name": "maxpool_branch",
+        "call_line_no": 37,
+        "line_no": 18,
+        "end_line_no": 18,
+        "api_name": "MaxPool2D",
+        "layer_semantic": "pool",
+        "original_call": "self.maxpool_branch = tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')",
+        "normalized_call": "self.maxpool_branch = tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')",
+        "masked_api_call": "self.maxpool_branch = tf.keras.layers.MaxPool2D(pool_size='mask', strides='mask', padding='mask')",
+        "mismatch_types": [
+          "spatial"
+        ],
+        "params_to_mask": [
+          "pool_size",
+          "ksize",
+          "strides",
+          "padding"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 37,
+        "oracle_shape": [
+          1,
+          32,
+          32,
+          96
+        ],
+        "target_layer_index": 0,
+        "layer_name": "maxpool_branch",
+        "target_layer_line_no": 18,
+        "call_line_no": 37,
+        "mismatch_types": [
+          "spatial"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "maxpool_branch",
+        "modeled_input_shape": [
+          1,
+          32,
+          32,
+          96
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          32,
+          32,
+          96
+        ],
+        "oracle_output_shape": [
+          1,
+          32,
+          32,
+          96
+        ]
+      }
+    ]
+  },
+  "origin_code": "import tensorflow as tf\n\nclass DL_Model(tf.keras.Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Block 1: Separable Convolution with different kernel sizes\n        self.sep_conv1 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(1, 1), padding='same', activation='relu')\n        self.sep_conv2 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')\n        self.sep_conv3 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(5, 5), padding='same', activation='relu')\n        self.concat1 = tf.keras.layers.Concatenate(axis=-1)\n\n        # Block 2: Multiple Branches for Enhanced Feature Extraction\n        self.conv_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')\n        self.conv1_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(1, 1), padding='same', activation='relu')\n        self.conv2_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')\n        self.conv3_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')\n        self.maxpool_branch = tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='same')\n        self.concat2 = tf.keras.layers.Concatenate(axis=-1)\n\n        # Final Layers\n        self.global_avg_pool = tf.keras.layers.GlobalAveragePooling2D(keepdims=False)\n        self.dense = tf.keras.layers.Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # Block 1\n        x1 = self.sep_conv1(inputs)\n        x2 = self.sep_conv2(inputs)\n        x3 = self.sep_conv3(inputs)\n        x = self.concat1([x1, x2, x3])\n\n        # Block 2\n        branch1 = self.conv_branch(x)\n        branch2 = self.conv1_branch(x)\n        branch2 = self.conv2_branch(branch2)\n        branch2 = self.conv3_branch(branch2)\n        branch3 = self.maxpool_branch(x)\n\n        x = self.concat2([branch1, branch2, branch3])\n\n        # Final Layers\n        x = self.global_avg_pool(x)\n        x = self.dense(x)\n        return x\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))  # CIFAR-10 input shape\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import tensorflow as tf\n\nclass DL_Model(tf.keras.Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Block 1: Separable Convolution with different kernel sizes\n        self.sep_conv1 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(1, 1), padding='same', activation='relu')\n        self.sep_conv2 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')\n        self.sep_conv3 = tf.keras.layers.SeparableConv2D(filters=32, kernel_size=(5, 5), padding='same', activation='relu')\n        self.concat1 = tf.keras.layers.Concatenate(axis=-1)\n\n        # Block 2: Multiple Branches for Enhanced Feature Extraction\n        self.conv_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')\n        self.conv1_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(1, 1), padding='same', activation='relu')\n        self.conv2_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')\n        self.conv3_branch = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same', activation='relu')\n        self.maxpool_branch = tf.keras.layers.MaxPool2D(pool_size='mask', strides='mask', padding='mask')\n        self.concat2 = tf.keras.layers.Concatenate(axis=-1)\n\n        # Final Layers\n        self.global_avg_pool = tf.keras.layers.GlobalAveragePooling2D(keepdims=False)\n        self.dense = tf.keras.layers.Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # the initial shape of inputs is: (1, 32, 32, 3)\n        # Block 1\n        x1 = self.sep_conv1(inputs)  # output tensor shape: (1, 32, 32, 32)\n        x2 = self.sep_conv2(inputs)  # output tensor shape: (1, 32, 32, 32)\n        x3 = self.sep_conv3(inputs)  # output tensor shape: (1, 32, 32, 32)\n        x = self.concat1([x1, x2, x3])  # output tensor shape: (1, 32, 32, 96)\n\n        # Block 2\n        branch1 = self.conv_branch(x)  # output tensor shape: (1, 32, 32, 32)\n        branch2 = self.conv1_branch(x)  # output tensor shape: (1, 32, 32, 32)\n        branch2 = self.conv2_branch(branch2)  # output tensor shape: (1, 32, 32, 32)\n        branch2 = self.conv3_branch(branch2)  # output tensor shape: (1, 32, 32, 32)\n        branch3 = self.maxpool_branch(x)  # output tensor shape of this layer should be (1, 32, 32, 96)\n\n        x = self.concat2([branch1, branch2, branch3])\n\n        # Final Layers\n        x = self.global_avg_pool(x)\n        x = self.dense(x)\n        return x\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))  # CIFAR-10 input shape\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

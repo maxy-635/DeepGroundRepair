@@ -1,0 +1,861 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_27b_it/step_one/paddlepaddle/models_0701/hard_task_46/code_2026_07_02_09_36_1.py\", line 51, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/paddle/nn/layer/layers.py\", line 1833, in __call__\n    return self.forward(*inputs, **kwargs)\n  File \"./response/gemma_3_27b_it/step_one/paddlepaddle/models_0701/hard_task_46/code_2026_07_02_09_36_1.py\", line 39, in forward\n    block2_output = paddle.concat([branch1, branch2, branch3], axis=1)\n  File \"/python3.10/site-packages/paddle/utils/decorator_utils.py\", line 61, in wrapper\n    return func(*processed_args, **processed_kwargs)\n  File \"/python3.10/site-packages/paddle/tensor/manipulation.py\", line 1525, in concat\n    return _C_ops.concat(input, axis, out=out)\nValueError: (InvalidArgument) The 2-th dimension of input[0] and input[2] is expected to be equal.But received input[0]'s shape = [1, 64, 32, 32], input[2]'s shape = [1, 96, 16, 16].\n  [Hint: Expected inputs_dims[0][j] == inputs_dims[i][j], but received inputs_dims[0][j]:32 != inputs_dims[i][j]:16.] (at /paddle/paddle/phi/kernels/funcs/concat_funcs.h:83)\n\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 39,
+      "crash_code": "block2_output = paddle.concat([branch1, branch2, branch3], axis=1)"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "spatial"
+    ],
+    "merge_context": {
+      "merge_lineno": 39,
+      "merge_code": "block2_output = paddle.concat([branch1, branch2, branch3], axis=1)",
+      "merge_kind": "concat",
+      "concat_axis": 1,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "x"
+      ],
+      "forward_input_shapes": {
+        "x": [
+          1,
+          3,
+          32,
+          32
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "branch1",
+          "shape": [
+            1,
+            64,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch1",
+              "line_no": 39
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 33
+            },
+            {
+              "var_name": "self.conv2_3x3",
+              "line_no": 33
+            },
+            {
+              "var_name": "branch1",
+              "line_no": 33
+            },
+            {
+              "var_name": "group3",
+              "line_no": 30
+            },
+            {
+              "var_name": "group2",
+              "line_no": 30
+            },
+            {
+              "var_name": "group1",
+              "line_no": 30
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 30
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.sep_conv1_5",
+              "line_no": 29
+            },
+            {
+              "var_name": "group3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.sep_conv1_3",
+              "line_no": 28
+            },
+            {
+              "var_name": "group2",
+              "line_no": 28
+            },
+            {
+              "var_name": "x",
+              "line_no": 27
+            },
+            {
+              "var_name": "self.sep_conv1_1",
+              "line_no": 27
+            },
+            {
+              "var_name": "group1",
+              "line_no": 27
+            },
+            {
+              "var_name": "x",
+              "line_no": 25
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv2_3x3",
+              "api_name": "Conv2D",
+              "call_line_no": 33,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.conv2_3x3 = nn.Conv2D(in_channels=96, out_channels=64, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "branch1",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1_5",
+              "api_name": "Conv2D",
+              "call_line_no": 29,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.sep_conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "group3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 28,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.sep_conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "group2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 27,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.sep_conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "group1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 4,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "branch2",
+          "shape": [
+            1,
+            64,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch2",
+              "line_no": 39
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 36
+            },
+            {
+              "var_name": "F.relu",
+              "line_no": 36
+            },
+            {
+              "var_name": "self.conv2_3x3_2",
+              "line_no": 36
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 36
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 35
+            },
+            {
+              "var_name": "F.relu",
+              "line_no": 35
+            },
+            {
+              "var_name": "self.conv2_3x3_1",
+              "line_no": 35
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 35
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 34
+            },
+            {
+              "var_name": "self.conv2_1x1",
+              "line_no": 34
+            },
+            {
+              "var_name": "branch2",
+              "line_no": 34
+            },
+            {
+              "var_name": "group3",
+              "line_no": 30
+            },
+            {
+              "var_name": "group2",
+              "line_no": 30
+            },
+            {
+              "var_name": "group1",
+              "line_no": 30
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 30
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.sep_conv1_5",
+              "line_no": 29
+            },
+            {
+              "var_name": "group3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.sep_conv1_3",
+              "line_no": 28
+            },
+            {
+              "var_name": "group2",
+              "line_no": 28
+            },
+            {
+              "var_name": "x",
+              "line_no": 27
+            },
+            {
+              "var_name": "self.sep_conv1_1",
+              "line_no": 27
+            },
+            {
+              "var_name": "group1",
+              "line_no": 27
+            },
+            {
+              "var_name": "x",
+              "line_no": 25
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv2_3x3_2",
+              "api_name": "Conv2D",
+              "call_line_no": 36,
+              "init_line_no": 18,
+              "end_line_no": 18,
+              "original_call": "self.conv2_3x3_2 = nn.Conv2D(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "F.relu"
+              ],
+              "input_shapes": [
+                null
+              ],
+              "input_shape": null,
+              "output_var_name": "branch2",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv2_3x3_1",
+              "api_name": "Conv2D",
+              "call_line_no": 35,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.conv2_3x3_1 = nn.Conv2D(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "F.relu"
+              ],
+              "input_shapes": [
+                null
+              ],
+              "input_shape": null,
+              "output_var_name": "branch2",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "conv2_1x1",
+              "api_name": "Conv2D",
+              "call_line_no": 34,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.conv2_1x1 = nn.Conv2D(in_channels=96, out_channels=64, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "branch2",
+              "output_shape": [
+                1,
+                64,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1_5",
+              "api_name": "Conv2D",
+              "call_line_no": 29,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.sep_conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "group3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 28,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.sep_conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "group2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 27,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.sep_conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "group1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 6,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 0
+        },
+        {
+          "var_name": "branch3",
+          "shape": [
+            1,
+            96,
+            16,
+            16
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch3",
+              "line_no": 39
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 37
+            },
+            {
+              "var_name": "self.max_pool",
+              "line_no": 37
+            },
+            {
+              "var_name": "branch3",
+              "line_no": 37
+            },
+            {
+              "var_name": "group3",
+              "line_no": 30
+            },
+            {
+              "var_name": "group2",
+              "line_no": 30
+            },
+            {
+              "var_name": "group1",
+              "line_no": 30
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 30
+            },
+            {
+              "var_name": "block1_output",
+              "line_no": 30
+            },
+            {
+              "var_name": "x",
+              "line_no": 29
+            },
+            {
+              "var_name": "self.sep_conv1_5",
+              "line_no": 29
+            },
+            {
+              "var_name": "group3",
+              "line_no": 29
+            },
+            {
+              "var_name": "x",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.sep_conv1_3",
+              "line_no": 28
+            },
+            {
+              "var_name": "group2",
+              "line_no": 28
+            },
+            {
+              "var_name": "x",
+              "line_no": 27
+            },
+            {
+              "var_name": "self.sep_conv1_1",
+              "line_no": 27
+            },
+            {
+              "var_name": "group1",
+              "line_no": 27
+            },
+            {
+              "var_name": "x",
+              "line_no": 25
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "max_pool",
+              "api_name": "MaxPool2D",
+              "call_line_no": 37,
+              "init_line_no": 19,
+              "end_line_no": 19,
+              "original_call": "self.max_pool = nn.MaxPool2D(kernel_size=2, stride=2, padding=0)",
+              "input_var_names": [
+                "block1_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  96,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                96,
+                32,
+                32
+              ],
+              "output_var_name": "branch3",
+              "output_shape": [
+                1,
+                96,
+                16,
+                16
+              ]
+            },
+            {
+              "layer_name": "sep_conv1_5",
+              "api_name": "Conv2D",
+              "call_line_no": 29,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.sep_conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "group3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 28,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.sep_conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "group2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "sep_conv1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 27,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.sep_conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  3,
+                  32,
+                  32
+                ]
+              ],
+              "input_shape": [
+                1,
+                3,
+                32,
+                32
+              ],
+              "output_var_name": "group1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 4,
+          "role": "unknown",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false,
+          "deviation_score": 1
+        }
+      ],
+      "framework": "paddle",
+      "tensor_layout": "channels_first"
+    },
+    "target_branch_index": 2,
+    "target_layers": [
+      {
+        "layer_name": "max_pool",
+        "call_line_no": 37,
+        "line_no": 19,
+        "end_line_no": 19,
+        "api_name": "MaxPool2D",
+        "layer_semantic": "pool",
+        "original_call": "self.max_pool = nn.MaxPool2D(kernel_size=2, stride=2, padding=0)",
+        "normalized_call": "self.max_pool = nn.MaxPool2D(kernel_size=2, stride=2, padding=0)",
+        "masked_api_call": "self.max_pool = nn.MaxPool2D(kernel_size='mask', stride='mask', padding='mask')",
+        "mismatch_types": [
+          "spatial"
+        ],
+        "params_to_mask": [
+          "kernel_size",
+          "stride",
+          "padding"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 37,
+        "oracle_shape": [
+          1,
+          96,
+          32,
+          32
+        ],
+        "target_layer_index": 0,
+        "layer_name": "max_pool",
+        "target_layer_line_no": 19,
+        "call_line_no": 37,
+        "mismatch_types": [
+          "spatial"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "max_pool",
+        "modeled_input_shape": [
+          1,
+          96,
+          32,
+          32
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          96,
+          32,
+          32
+        ],
+        "oracle_output_shape": [
+          1,
+          96,
+          32,
+          32
+        ]
+      }
+    ]
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\nimport paddle.nn.functional as F\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Block 1: Separable Convolution Groups\n        self.sep_conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.sep_conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.sep_conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)\n\n        # Block 2: Enhanced Feature Extraction\n        self.conv2_3x3 = nn.Conv2D(in_channels=96, out_channels=64, kernel_size=3, stride=1, padding=1)\n        self.conv2_1x1 = nn.Conv2D(in_channels=96, out_channels=64, kernel_size=1, stride=1, padding=0)\n        self.conv2_3x3_1 = nn.Conv2D(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1)\n        self.conv2_3x3_2 = nn.Conv2D(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1)\n        self.max_pool = nn.MaxPool2D(kernel_size=2, stride=2, padding=0)\n\n        # Global Average Pooling and Fully Connected Layer\n        self.global_avg_pool = nn.AvgPool2D(kernel_size=8, stride=8, padding=0)\n        self.fc = nn.Linear(in_features=64, out_features=10)\n\n    def forward(self, x):\n        # Block 1\n        group1 = self.sep_conv1_1(x)\n        group2 = self.sep_conv1_3(x)\n        group3 = self.sep_conv1_5(x)\n        block1_output = paddle.concat([group1, group2, group3], axis=1)  # Concatenate along the channel dimension\n\n        # Block 2\n        branch1 = self.conv2_3x3(block1_output)\n        branch2 = self.conv2_1x1(block1_output)\n        branch2 = self.conv2_3x3_1(F.relu(branch2))\n        branch2 = self.conv2_3x3_2(F.relu(branch2))\n        branch3 = self.max_pool(block1_output)\n\n        block2_output = paddle.concat([branch1, branch2, branch3], axis=1)\n\n        # Global Average Pooling and Fully Connected Layer\n        gap = self.global_avg_pool(block2_output)\n        gap = paddle.reshape(gap, [gap.shape[0], -1])\n        output = self.fc(gap)\n        return output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn([1, 3, 32, 32])  # Example input tensor with shape (batch_size, channels, height, width)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\nimport paddle.nn.functional as F\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Block 1: Separable Convolution Groups\n        self.sep_conv1_1 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.sep_conv1_3 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.sep_conv1_5 = nn.Conv2D(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2)\n\n        # Block 2: Enhanced Feature Extraction\n        self.conv2_3x3 = nn.Conv2D(in_channels=96, out_channels=64, kernel_size=3, stride=1, padding=1)\n        self.conv2_1x1 = nn.Conv2D(in_channels=96, out_channels=64, kernel_size=1, stride=1, padding=0)\n        self.conv2_3x3_1 = nn.Conv2D(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1)\n        self.conv2_3x3_2 = nn.Conv2D(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1)\n        self.max_pool = nn.MaxPool2D(kernel_size='mask', stride='mask', padding='mask')\n\n        # Global Average Pooling and Fully Connected Layer\n        self.global_avg_pool = nn.AvgPool2D(kernel_size=8, stride=8, padding=0)\n        self.fc = nn.Linear(in_features=64, out_features=10)\n\n    def forward(self, x):\n        # the initial shape of x is: (1, 3, 32, 32)\n        # Block 1\n        group1 = self.sep_conv1_1(x)  # output tensor shape: (1, 32, 32, 32)\n        group2 = self.sep_conv1_3(x)  # output tensor shape: (1, 32, 32, 32)\n        group3 = self.sep_conv1_5(x)  # output tensor shape: (1, 32, 32, 32)\n        block1_output = paddle.concat([group1, group2, group3], axis=1)  # output tensor shape: (1, 96, 32, 32)\n\n        # Block 2\n        branch1 = self.conv2_3x3(block1_output)  # output tensor shape: (1, 64, 32, 32)\n        branch2 = self.conv2_1x1(block1_output)  # output tensor shape: (1, 64, 32, 32)\n        branch2 = self.conv2_3x3_1(F.relu(branch2))  # output tensor shape: (1, 64, 32, 32)\n        branch2 = self.conv2_3x3_2(F.relu(branch2))  # output tensor shape: (1, 64, 32, 32)\n        branch3 = self.max_pool(block1_output)  # output tensor shape of this layer should be (1, 96, 32, 32)\n\n        block2_output = paddle.concat([branch1, branch2, branch3], axis=1)\n\n        # Global Average Pooling and Fully Connected Layer\n        gap = self.global_avg_pool(block2_output)\n        gap = paddle.reshape(gap, [gap.shape[0], -1])\n        output = self.fc(gap)\n        return output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn([1, 3, 32, 32])  # Example input tensor with shape (batch_size, channels, height, width)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

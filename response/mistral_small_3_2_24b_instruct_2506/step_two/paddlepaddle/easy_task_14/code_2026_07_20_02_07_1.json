@@ -1,0 +1,25 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/mistral_small_3_2_24b_instruct_2506/step_one/paddlepaddle/models_0701/easy_task_14/code_2026_07_20_02_07_1.py\", line 33, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/paddle/nn/layer/layers.py\", line 1833, in __call__\n    return self.forward(*inputs, **kwargs)\n  File \"./response/mistral_small_3_2_24b_instruct_2506/step_one/paddlepaddle/models_0701/easy_task_14/code_2026_07_20_02_07_1.py\", line 18, in forward\n    x = self.fc1(x)\n  File \"/python3.10/site-packages/paddle/nn/layer/layers.py\", line 1833, in __call__\n    return self.forward(*inputs, **kwargs)\n  File \"/python3.10/site-packages/paddle/nn/layer/common.py\", line 234, in forward\n    out = F.linear(\n  File \"/python3.10/site-packages/paddle/nn/functional/common.py\", line 2534, in linear\n    return _C_ops.linear(x, weight, bias)\nValueError: (InvalidArgument) Input(Y) has error dim. Y'dims[0] must be equal to 21632, but received Y'dims[0] is 512.\n  [Hint: Expected y_dims[y_ndim - 2] == K, but received y_dims[y_ndim - 2]:512 != K:21632.] (at /paddle/paddle/phi/kernels/impl/matmul_kernel_impl.h:364)\n  [operator < linear > error]\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 18,
+      "crash_code": "x = self.fc1(x)"
+    },
+    "init_definition": {
+      "line_no": 8,
+      "end_line_no": 8,
+      "original_call": "self.fc1 = nn.Linear(in_features=512, out_features=512)",
+      "masked_api_call": "self.fc1 = nn.Linear(in_features='mask', out_features=512)",
+      "params_to_mask": [
+        "in_channels",
+        "in_features"
+      ]
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.avg_pool = nn.AvgPool2D(kernel_size=7, stride=1, padding=0)\n        self.fc1 = nn.Linear(in_features=512, out_features=512)\n        self.fc2 = nn.Linear(in_features=512, out_features=32)\n        self.fc3 = nn.Linear(in_features=32, out_features=10)\n\n    def forward(self, x):\n        # Global average pooling\n        x = self.avg_pool(x)\n        # Flatten the output\n        x = paddle.flatten(x, start_axis=1, stop_axis=-1)\n        # First fully connected layer\n        x = self.fc1(x)\n        # Second fully connected layer\n        weights = self.fc2(x)\n        # Reshape weights to match input channels\n        weights = paddle.reshape(weights, shape=[0, 32, 1, 1])\n        # Element-wise multiplication\n        x = paddle.multiply(x=x, y=weights)\n        # Flatten and final fully connected layer\n        x = paddle.flatten(x, start_axis=1, stop_axis=-1)\n        x = self.fc3(x)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn(shape=[1, 32, 32, 32])\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.avg_pool = nn.AvgPool2D(kernel_size=7, stride=1, padding=0)\n        self.fc1 = nn.Linear(in_features='mask', out_features=512)\n        self.fc2 = nn.Linear(in_features=512, out_features=32)\n        self.fc3 = nn.Linear(in_features=32, out_features=10)\n\n    def forward(self, x):\n        # the initial shape of x is: (1, 32, 32, 32)\n        # Global average pooling\n        x = self.avg_pool(x)  # output tensor shape: (1, 32, 26, 26)\n        # Flatten the output\n        x = paddle.flatten(x, start_axis=1, stop_axis=-1)  # output tensor shape: (1, 21632)\n        # First fully connected layer\n        x = self.fc1(x)\n        # Second fully connected layer\n        weights = self.fc2(x)\n        # Reshape weights to match input channels\n        weights = paddle.reshape(weights, shape=[0, 32, 1, 1])\n        # Element-wise multiplication\n        x = paddle.multiply(x=x, y=weights)\n        # Flatten and final fully connected layer\n        x = paddle.flatten(x, start_axis=1, stop_axis=-1)\n        x = self.fc3(x)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn(shape=[1, 32, 32, 32])\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

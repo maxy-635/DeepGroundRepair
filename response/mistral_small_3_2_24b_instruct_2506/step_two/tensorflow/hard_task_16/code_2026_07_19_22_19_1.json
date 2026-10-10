@@ -1,0 +1,768 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/mistral_small_3_2_24b_instruct_2506/step_one/tensorflow/models_0701/hard_task_16/code_2026_07_19_22_19_1.py\", line 71, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/keras/src/utils/traceback_utils.py\", line 70, in error_handler\n    raise e.with_traceback(filtered_tb) from None\n  File \"./response/mistral_small_3_2_24b_instruct_2506/step_one/tensorflow/models_0701/hard_task_16/code_2026_07_19_22_19_1.py\", line 61, in call\n    combined_output = tf.math.add(main_path_output, branch_output)\ntensorflow.python.framework.errors_impl.InvalidArgumentError: Exception encountered when calling layer 'dl__model_30' (type DL_Model).\n\n{{function_node __wrapped__AddV2_device_/job:localhost/replica:0/task:0/device:CPU:0}} Incompatible shapes: [1,32,32,64] vs. [1,32,32,3] [Op:AddV2] name: \n\nCall arguments received by layer 'dl__model_30' (type DL_Model):\n  • inputs=tf.Tensor(shape=(1, 32, 32, 3), dtype=float32)\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 61,
+      "crash_code": "combined_output = tf.math.add(main_path_output, branch_output)"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "channel"
+    ],
+    "merge_context": {
+      "merge_lineno": 61,
+      "merge_code": "combined_output = tf.math.add(main_path_output, branch_output)",
+      "merge_kind": "add",
+      "concat_axis": null,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "inputs"
+      ],
+      "forward_input_shapes": {
+        "inputs": [
+          1,
+          32,
+          32,
+          3
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "main_path_output",
+          "shape": [
+            1,
+            32,
+            32,
+            64
+          ],
+          "producer_path": [
+            {
+              "var_name": "main_path_output",
+              "line_no": 61
+            },
+            {
+              "var_name": "reshaped_weights",
+              "line_no": 57
+            },
+            {
+              "var_name": "adjusted_output",
+              "line_no": 57
+            },
+            {
+              "var_name": "tf.math.multiply",
+              "line_no": 57
+            },
+            {
+              "var_name": "main_path_output",
+              "line_no": 57
+            },
+            {
+              "var_name": "weights",
+              "line_no": 56
+            },
+            {
+              "var_name": "tf.raw_ops.Reshape",
+              "line_no": 56
+            },
+            {
+              "var_name": "reshaped_weights",
+              "line_no": 56
+            },
+            {
+              "var_name": "weights",
+              "line_no": 53
+            },
+            {
+              "var_name": "self.dense2",
+              "line_no": 53
+            },
+            {
+              "var_name": "weights",
+              "line_no": 53
+            },
+            {
+              "var_name": "pooled",
+              "line_no": 52
+            },
+            {
+              "var_name": "self.dense1",
+              "line_no": 52
+            },
+            {
+              "var_name": "weights",
+              "line_no": 52
+            },
+            {
+              "var_name": "adjusted_output",
+              "line_no": 51
+            },
+            {
+              "var_name": "self.global_max_pool",
+              "line_no": 51
+            },
+            {
+              "var_name": "pooled",
+              "line_no": 51
+            },
+            {
+              "var_name": "concatenated",
+              "line_no": 48
+            },
+            {
+              "var_name": "self.trans_conv",
+              "line_no": 48
+            },
+            {
+              "var_name": "adjusted_output",
+              "line_no": 48
+            },
+            {
+              "var_name": "split3",
+              "line_no": 45
+            },
+            {
+              "var_name": "split2",
+              "line_no": 45
+            },
+            {
+              "var_name": "split1",
+              "line_no": 45
+            },
+            {
+              "var_name": "tf.experimental.numpy.concatenate",
+              "line_no": 45
+            },
+            {
+              "var_name": "concatenated",
+              "line_no": 45
+            },
+            {
+              "var_name": "split3",
+              "line_no": 42
+            },
+            {
+              "var_name": "self.conv1x1_6",
+              "line_no": 42
+            },
+            {
+              "var_name": "split3",
+              "line_no": 42
+            },
+            {
+              "var_name": "split3",
+              "line_no": 41
+            },
+            {
+              "var_name": "self.conv3x3_3",
+              "line_no": 41
+            },
+            {
+              "var_name": "split3",
+              "line_no": 41
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 40
+            },
+            {
+              "var_name": "self.conv1x1_5",
+              "line_no": 40
+            },
+            {
+              "var_name": "split3",
+              "line_no": 40
+            },
+            {
+              "var_name": "split2",
+              "line_no": 38
+            },
+            {
+              "var_name": "self.conv1x1_4",
+              "line_no": 38
+            },
+            {
+              "var_name": "split2",
+              "line_no": 38
+            },
+            {
+              "var_name": "split2",
+              "line_no": 37
+            },
+            {
+              "var_name": "self.conv3x3_2",
+              "line_no": 37
+            },
+            {
+              "var_name": "split2",
+              "line_no": 37
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 36
+            },
+            {
+              "var_name": "self.conv1x1_3",
+              "line_no": 36
+            },
+            {
+              "var_name": "split2",
+              "line_no": 36
+            },
+            {
+              "var_name": "split1",
+              "line_no": 34
+            },
+            {
+              "var_name": "self.conv1x1_2",
+              "line_no": 34
+            },
+            {
+              "var_name": "split1",
+              "line_no": 34
+            },
+            {
+              "var_name": "split1",
+              "line_no": 33
+            },
+            {
+              "var_name": "self.conv3x3_1",
+              "line_no": 33
+            },
+            {
+              "var_name": "split1",
+              "line_no": 33
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 32
+            },
+            {
+              "var_name": "self.conv1x1_1",
+              "line_no": 32
+            },
+            {
+              "var_name": "split1",
+              "line_no": 32
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 30
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "dense2",
+              "api_name": "Dense",
+              "call_line_no": 53,
+              "init_line_no": 25,
+              "end_line_no": 25,
+              "original_call": "self.dense2 = Dense(units=64, activation='sigmoid')",
+              "input_var_names": [
+                "weights"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                64
+              ],
+              "output_var_name": "weights",
+              "output_shape": [
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "dense1",
+              "api_name": "Dense",
+              "call_line_no": 52,
+              "init_line_no": 24,
+              "end_line_no": 24,
+              "original_call": "self.dense1 = Dense(units=64, activation='relu')",
+              "input_var_names": [
+                "pooled"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                64
+              ],
+              "output_var_name": "weights",
+              "output_shape": [
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "global_max_pool",
+              "api_name": "GlobalMaxPool2D",
+              "call_line_no": 51,
+              "init_line_no": 23,
+              "end_line_no": 23,
+              "original_call": "self.global_max_pool = GlobalMaxPool2D(keepdims=False)",
+              "input_var_names": [
+                "adjusted_output"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "pooled",
+              "output_shape": [
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "trans_conv",
+              "api_name": "Conv2D",
+              "call_line_no": 48,
+              "init_line_no": 20,
+              "end_line_no": 20,
+              "original_call": "self.trans_conv = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')",
+              "input_var_names": [
+                "concatenated"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  192
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                192
+              ],
+              "output_var_name": "adjusted_output",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_6",
+              "api_name": "Conv2D",
+              "call_line_no": 42,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.conv1x1_6 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')",
+              "input_var_names": [
+                "split3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "split3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv3x3_3",
+              "api_name": "Conv2D",
+              "call_line_no": 41,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.conv3x3_3 = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same')",
+              "input_var_names": [
+                "split3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "split3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_5",
+              "api_name": "Conv2D",
+              "call_line_no": 40,
+              "init_line_no": 15,
+              "end_line_no": 15,
+              "original_call": "self.conv1x1_5 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "split3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_4",
+              "api_name": "Conv2D",
+              "call_line_no": 38,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.conv1x1_4 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')",
+              "input_var_names": [
+                "split2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "split2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv3x3_2",
+              "api_name": "Conv2D",
+              "call_line_no": 37,
+              "init_line_no": 13,
+              "end_line_no": 13,
+              "original_call": "self.conv3x3_2 = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same')",
+              "input_var_names": [
+                "split2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "split2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 36,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.conv1x1_3 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "split2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_2",
+              "api_name": "Conv2D",
+              "call_line_no": 34,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.conv1x1_2 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')",
+              "input_var_names": [
+                "split1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "split1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv3x3_1",
+              "api_name": "Conv2D",
+              "call_line_no": 33,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv3x3_1 = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same')",
+              "input_var_names": [
+                "split1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "split1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 32,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.conv1x1_1 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "split1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            }
+          ],
+          "path_length": 13,
+          "role": "main-path",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        },
+        {
+          "var_name": "branch_output",
+          "shape": [
+            1,
+            32,
+            32,
+            3
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch_output",
+              "line_no": 61
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 60
+            },
+            {
+              "var_name": "branch_output",
+              "line_no": 60
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 30
+            }
+          ],
+          "producer_calls": [],
+          "path_length": 0,
+          "role": "inputs",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "direct_alias",
+          "is_direct_input_alias": true,
+          "is_accumulator_branch": false
+        }
+      ],
+      "framework": "tensorflow",
+      "tensor_layout": "channels_last"
+    },
+    "target_branch_index": 0,
+    "target_layers": [
+      {
+        "layer_name": "dense2",
+        "call_line_no": 53,
+        "line_no": 25,
+        "end_line_no": 25,
+        "api_name": "Dense",
+        "layer_semantic": "dense",
+        "original_call": "self.dense2 = Dense(units=64, activation='sigmoid')",
+        "normalized_call": "self.dense2 = Dense(units=64, activation='sigmoid')",
+        "masked_api_call": "self.dense2 = Dense(units='mask', activation='sigmoid')",
+        "mismatch_types": [
+          "channel"
+        ],
+        "params_to_mask": [
+          "units"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 53,
+        "oracle_shape": [
+          1,
+          3
+        ],
+        "target_layer_index": 0,
+        "layer_name": "dense2",
+        "target_layer_line_no": 25,
+        "call_line_no": 53,
+        "mismatch_types": [
+          "channel"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "dense2",
+        "modeled_input_shape": [
+          1,
+          64
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          3
+        ],
+        "oracle_output_shape": [
+          1,
+          3
+        ]
+      }
+    ]
+  },
+  "origin_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Dense, GlobalMaxPool2D\nfrom tensorflow.keras.models import Model\n\nclass DL_Model(Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Block 1 components\n        self.conv1x1_1 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv3x3_1 = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same')\n        self.conv1x1_2 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv1x1_3 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv3x3_2 = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same')\n        self.conv1x1_4 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv1x1_5 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv3x3_3 = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same')\n        self.conv1x1_6 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n\n        # Transition convolution\n        self.trans_conv = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n\n        # Block 2 components\n        self.global_max_pool = GlobalMaxPool2D(keepdims=False)\n        self.dense1 = Dense(units=64, activation='relu')\n        self.dense2 = Dense(units=64, activation='sigmoid')\n\n        # Final classification layer\n        self.classification = Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # Block 1: Split into three groups and process\n        split1 = self.conv1x1_1(inputs)\n        split1 = self.conv3x3_1(split1)\n        split1 = self.conv1x1_2(split1)\n\n        split2 = self.conv1x1_3(inputs)\n        split2 = self.conv3x3_2(split2)\n        split2 = self.conv1x1_4(split2)\n\n        split3 = self.conv1x1_5(inputs)\n        split3 = self.conv3x3_3(split3)\n        split3 = self.conv1x1_6(split3)\n\n        # Concatenate the splits\n        concatenated = tf.experimental.numpy.concatenate([split1, split2, split3], axis=-1)\n\n        # Transition convolution\n        adjusted_output = self.trans_conv(concatenated)\n\n        # Block 2: Global max pooling and weight generation\n        pooled = self.global_max_pool(adjusted_output)\n        weights = self.dense1(pooled)\n        weights = self.dense2(weights)\n\n        # Reshape and multiply\n        reshaped_weights = tf.raw_ops.Reshape(tensor=weights, shape=[-1, 1, 1, 64])\n        main_path_output = tf.math.multiply(adjusted_output, reshaped_weights)\n\n        # Branch connection\n        branch_output = inputs\n        combined_output = tf.math.add(main_path_output, branch_output)\n\n        # Final classification\n        output = self.classification(combined_output)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))  # CIFAR-10 input shape\n    output_tensor = model(input_tensor)\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)",
+  "final_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Dense, GlobalMaxPool2D\nfrom tensorflow.keras.models import Model\n\nclass DL_Model(Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Block 1 components\n        self.conv1x1_1 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv3x3_1 = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same')\n        self.conv1x1_2 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv1x1_3 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv3x3_2 = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same')\n        self.conv1x1_4 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv1x1_5 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n        self.conv3x3_3 = tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same')\n        self.conv1x1_6 = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n\n        # Transition convolution\n        self.trans_conv = tf.keras.layers.Conv2D(filters=64, kernel_size=(1, 1), padding='same')\n\n        # Block 2 components\n        self.global_max_pool = GlobalMaxPool2D(keepdims=False)\n        self.dense1 = Dense(units=64, activation='relu')\n        self.dense2 = Dense(units='mask', activation='sigmoid')\n\n        # Final classification layer\n        self.classification = Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # the initial shape of inputs is: (1, 32, 32, 3)\n        # Block 1: Split into three groups and process\n        split1 = self.conv1x1_1(inputs)  # output tensor shape: (1, 32, 32, 64)\n        split1 = self.conv3x3_1(split1)  # output tensor shape: (1, 32, 32, 64)\n        split1 = self.conv1x1_2(split1)  # output tensor shape: (1, 32, 32, 64)\n\n        split2 = self.conv1x1_3(inputs)  # output tensor shape: (1, 32, 32, 64)\n        split2 = self.conv3x3_2(split2)  # output tensor shape: (1, 32, 32, 64)\n        split2 = self.conv1x1_4(split2)  # output tensor shape: (1, 32, 32, 64)\n\n        split3 = self.conv1x1_5(inputs)  # output tensor shape: (1, 32, 32, 64)\n        split3 = self.conv3x3_3(split3)  # output tensor shape: (1, 32, 32, 64)\n        split3 = self.conv1x1_6(split3)  # output tensor shape: (1, 32, 32, 64)\n\n        # Concatenate the splits\n        concatenated = tf.experimental.numpy.concatenate([split1, split2, split3], axis=-1)  # output tensor shape: (1, 32, 32, 192)\n\n        # Transition convolution\n        adjusted_output = self.trans_conv(concatenated)  # output tensor shape: (1, 32, 32, 64)\n\n        # Block 2: Global max pooling and weight generation\n        pooled = self.global_max_pool(adjusted_output)  # output tensor shape: (1, 64)\n        weights = self.dense1(pooled)  # output tensor shape: (1, 64)\n        weights = self.dense2(weights)  # output tensor shape of this layer should be (1, 3)\n\n        # Reshape and multiply\n        reshaped_weights = tf.raw_ops.Reshape(tensor=weights, shape=[-1, 1, 1, 64])\n        main_path_output = tf.math.multiply(adjusted_output, reshaped_weights)\n\n        # Branch connection\n        branch_output = inputs  # output tensor shape: (1, 32, 32, 3)\n        combined_output = tf.math.add(main_path_output, branch_output)\n\n        # Final classification\n        output = self.classification(combined_output)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))  # CIFAR-10 input shape\n    output_tensor = model(input_tensor)\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)"
+}

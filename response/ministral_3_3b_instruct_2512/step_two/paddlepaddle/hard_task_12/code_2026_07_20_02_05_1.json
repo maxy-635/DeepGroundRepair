@@ -1,0 +1,359 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/ministral_3_3b_instruct_2512/step_one/paddlepaddle/models_0701/hard_task_12/code_2026_07_20_02_05_1.py\", line 44, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/paddle/nn/layer/layers.py\", line 1833, in __call__\n    return self.forward(*inputs, **kwargs)\n  File \"./response/ministral_3_3b_instruct_2512/step_one/paddlepaddle/models_0701/hard_task_12/code_2026_07_20_02_05_1.py\", line 31, in forward\n    combined_output = paddle.add(main_path_output, branch_output)  # 32x32x96\n  File \"/python3.10/site-packages/paddle/utils/decorator_utils.py\", line 214, in wrapper\n    return func(*args, **kwargs)\n  File \"/python3.10/site-packages/paddle/tensor/math.py\", line 757, in add\n    return _C_ops.add(x, scaled_y, out=out)\nValueError: (InvalidArgument) Broadcast dimension mismatch. Operands could not be broadcast together with the shape of X = [1, 96, 32, 64] and the shape of Y = [1, 32, 32, 64]. Received [96] in X is not equal to [32] in Y at i:1.\n  [Hint: Expected x_dims_array[i] == y_dims_array[i] || (x_dims_array[i] <= 1 && x_dims_array[i] != 0) || (y_dims_array[i] <= 1 && y_dims_array[i] != 0) == true, but received x_dims_array[i] == y_dims_array[i] || (x_dims_array[i] <= 1 && x_dims_array[i] != 0) || (y_dims_array[i] <= 1 && y_dims_array[i] != 0):0 != true:1.] (at /paddle/paddle/phi/kernels/funcs/common_shape.h:86)\n\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 31,
+      "crash_code": "combined_output = paddle.add(main_path_output, branch_output)  # 32x32x96"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "channel"
+    ],
+    "merge_context": {
+      "merge_lineno": 31,
+      "merge_code": "combined_output = paddle.add(main_path_output, branch_output)  # 32x32x96",
+      "merge_kind": "add",
+      "concat_axis": null,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "x"
+      ],
+      "forward_input_shapes": {
+        "x": [
+          1,
+          32,
+          32,
+          64
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "main_path_output",
+          "shape": [
+            1,
+            96,
+            32,
+            64
+          ],
+          "producer_path": [
+            {
+              "var_name": "main_path_output",
+              "line_no": 31
+            },
+            {
+              "var_name": "x3",
+              "line_no": 25
+            },
+            {
+              "var_name": "x2",
+              "line_no": 25
+            },
+            {
+              "var_name": "x1",
+              "line_no": 25
+            },
+            {
+              "var_name": "paddle.concat",
+              "line_no": 25
+            },
+            {
+              "var_name": "main_path_output",
+              "line_no": 25
+            },
+            {
+              "var_name": "x",
+              "line_no": 24
+            },
+            {
+              "var_name": "self.conv3x3_2",
+              "line_no": 24
+            },
+            {
+              "var_name": "x3",
+              "line_no": 24
+            },
+            {
+              "var_name": "x",
+              "line_no": 23
+            },
+            {
+              "var_name": "self.conv3x3_1",
+              "line_no": 23
+            },
+            {
+              "var_name": "x2",
+              "line_no": 23
+            },
+            {
+              "var_name": "x",
+              "line_no": 22
+            },
+            {
+              "var_name": "self.conv1x1",
+              "line_no": 22
+            },
+            {
+              "var_name": "x1",
+              "line_no": 22
+            },
+            {
+              "var_name": "x",
+              "line_no": 20
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv3x3_2",
+              "api_name": "Conv2D",
+              "call_line_no": 24,
+              "init_line_no": 10,
+              "end_line_no": 10,
+              "original_call": "self.conv3x3_2 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv3x3_1",
+              "api_name": "Conv2D",
+              "call_line_no": 23,
+              "init_line_no": 9,
+              "end_line_no": 9,
+              "original_call": "self.conv3x3_1 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1",
+              "api_name": "Conv2D",
+              "call_line_no": 22,
+              "init_line_no": 8,
+              "end_line_no": 8,
+              "original_call": "self.conv1x1 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=1, stride=1, padding=0)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            }
+          ],
+          "path_length": 3,
+          "role": "main-path",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        },
+        {
+          "var_name": "branch_output",
+          "shape": [
+            1,
+            32,
+            32,
+            64
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch_output",
+              "line_no": 31
+            },
+            {
+              "var_name": "x",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.branch_conv",
+              "line_no": 28
+            },
+            {
+              "var_name": "branch_output",
+              "line_no": 28
+            },
+            {
+              "var_name": "x",
+              "line_no": 20
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "branch_conv",
+              "api_name": "Conv2D",
+              "call_line_no": 28,
+              "init_line_no": 13,
+              "end_line_no": 13,
+              "original_call": "self.branch_conv = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "branch_output",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            }
+          ],
+          "path_length": 1,
+          "role": "branch-path",
+          "connected_forward_inputs": [
+            "x"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        }
+      ],
+      "framework": "paddle",
+      "tensor_layout": "channels_first"
+    },
+    "target_branch_index": 1,
+    "target_layers": [
+      {
+        "layer_name": "branch_conv",
+        "call_line_no": 28,
+        "line_no": 13,
+        "end_line_no": 13,
+        "api_name": "Conv2D",
+        "layer_semantic": "conv",
+        "original_call": "self.branch_conv = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)",
+        "normalized_call": "self.branch_conv = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)",
+        "masked_api_call": "self.branch_conv = nn.Conv2D(in_channels=32, out_channels='mask', kernel_size=3, stride=1, padding=1)",
+        "mismatch_types": [
+          "channel"
+        ],
+        "params_to_mask": [
+          "out_channels"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 28,
+        "oracle_shape": [
+          1,
+          96,
+          32,
+          64
+        ],
+        "target_layer_index": 0,
+        "layer_name": "branch_conv",
+        "target_layer_line_no": 13,
+        "call_line_no": 28,
+        "mismatch_types": [
+          "channel"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "branch_conv",
+        "modeled_input_shape": [
+          1,
+          32,
+          32,
+          64
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          96,
+          32,
+          64
+        ],
+        "oracle_output_shape": [
+          1,
+          96,
+          32,
+          64
+        ]
+      }
+    ]
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Main path\n        self.conv1x1 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.conv3x3_1 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.conv3x3_2 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)\n\n        # Branch path - ensure output channels match main path\n        self.branch_conv = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)\n\n        # Flatten and FC layers\n        self.flatten = nn.Flatten()\n        self.fc1 = nn.Linear(in_features=32*32*96, out_features=128)  # 32x32x96 after concatenation\n        self.fc2 = nn.Linear(in_features=128, out_features=10)\n\n    def forward(self, x):\n        # Main path\n        x1 = self.conv1x1(x)  # 32x32x32\n        x2 = self.conv3x3_1(x)  # 32x32x32\n        x3 = self.conv3x3_2(x)  # 32x32x32\n        main_path_output = paddle.concat([x1, x2, x3], axis=1)  # 32x32x96\n\n        # Branch path\n        branch_output = self.branch_conv(x)  # 32x32x32\n\n        # Combine outputs\n        combined_output = paddle.add(main_path_output, branch_output)  # 32x32x96\n\n        # Flatten and FC layers\n        flattened_output = self.flatten(combined_output)  # 96*32*32\n        fc_output = self.fc1(flattened_output)\n        fc_output = paddle.nn.functional.relu(fc_output)\n        output = self.fc2(fc_output)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn((1, 32, 32, 64))\n    output_tensor = model(input_tensor)\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        # Main path\n        self.conv1x1 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=1, stride=1, padding=0)\n        self.conv3x3_1 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.conv3x3_2 = nn.Conv2D(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1)\n\n        # Branch path - ensure output channels match main path\n        self.branch_conv = nn.Conv2D(in_channels=32, out_channels='mask', kernel_size=3, stride=1, padding=1)\n\n        # Flatten and FC layers\n        self.flatten = nn.Flatten()\n        self.fc1 = nn.Linear(in_features=32*32*96, out_features=128)  # 32x32x96 after concatenation\n        self.fc2 = nn.Linear(in_features=128, out_features=10)\n\n    def forward(self, x):\n        # the initial shape of x is: (1, 32, 32, 64)\n        # Main path\n        x1 = self.conv1x1(x)  # output tensor shape: (1, 32, 32, 64)\n        x2 = self.conv3x3_1(x)  # output tensor shape: (1, 32, 32, 64)\n        x3 = self.conv3x3_2(x)  # output tensor shape: (1, 32, 32, 64)\n        main_path_output = paddle.concat([x1, x2, x3], axis=1)  # output tensor shape: (1, 96, 32, 64)\n\n        # Branch path\n        branch_output = self.branch_conv(x)  # output tensor shape of this layer should be (1, 96, 32, 64)\n\n        # Combine outputs\n        combined_output = paddle.add(main_path_output, branch_output)\n\n        # Flatten and FC layers\n        flattened_output = self.flatten(combined_output)\n        fc_output = self.fc1(flattened_output)\n        fc_output = paddle.nn.functional.relu(fc_output)\n        output = self.fc2(fc_output)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn((1, 32, 32, 64))\n    output_tensor = model(input_tensor)\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)"
+}

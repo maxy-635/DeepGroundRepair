@@ -1,0 +1,347 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_12b_it/step_one/tensorflow/models_0701/medium_task_8/code_2026_07_01_23_48_1.py\", line 48, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/keras/src/utils/traceback_utils.py\", line 70, in error_handler\n    raise e.with_traceback(filtered_tb) from None\n  File \"./response/gemma_3_12b_it/step_one/tensorflow/models_0701/medium_task_8/code_2026_07_01_23_48_1.py\", line 38, in call\n    fused_output = self.add([main_path_output, branch_path_output])\nValueError: Exception encountered when calling layer 'dl__model_71' (type DL_Model).\n\nInputs have incompatible shapes. Received shapes (32, 32, 64) and (32, 32, 32)\n\nCall arguments received by layer 'dl__model_71' (type DL_Model):\n  • inputs=tf.Tensor(shape=(1, 32, 32, 3), dtype=float32)\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 38,
+      "crash_code": "fused_output = self.add([main_path_output, branch_path_output])"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "channel"
+    ],
+    "merge_context": {
+      "merge_lineno": 38,
+      "merge_code": "fused_output = self.add([main_path_output, branch_path_output])",
+      "merge_kind": "Add",
+      "concat_axis": null,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "inputs"
+      ],
+      "forward_input_shapes": {
+        "inputs": [
+          1,
+          32,
+          32,
+          3
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "main_path_output",
+          "shape": [
+            null,
+            32,
+            32,
+            64
+          ],
+          "producer_path": [
+            {
+              "var_name": "main_path_output",
+              "line_no": 38
+            },
+            {
+              "var_name": "combined_group",
+              "line_no": 32
+            },
+            {
+              "var_name": "self.conv2d_2",
+              "line_no": 32
+            },
+            {
+              "var_name": "main_path_output",
+              "line_no": 32
+            },
+            {
+              "var_name": "processed_group2",
+              "line_no": 31
+            },
+            {
+              "var_name": "group3",
+              "line_no": 31
+            },
+            {
+              "var_name": "tf.concat",
+              "line_no": 31
+            },
+            {
+              "var_name": "combined_group",
+              "line_no": 31
+            },
+            {
+              "var_name": "group2",
+              "line_no": 30
+            },
+            {
+              "var_name": "self.conv2d_1",
+              "line_no": 30
+            },
+            {
+              "var_name": "processed_group2",
+              "line_no": 30
+            },
+            {
+              "var_name": "self.split",
+              "line_no": 28
+            },
+            {
+              "var_name": "group3",
+              "line_no": 28
+            },
+            {
+              "var_name": "self.split",
+              "line_no": 27
+            },
+            {
+              "var_name": "group2",
+              "line_no": 27
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv2d_2",
+              "api_name": "Conv2D",
+              "call_line_no": 32,
+              "init_line_no": 13,
+              "end_line_no": 13,
+              "original_call": "self.conv2d_2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "combined_group"
+              ],
+              "input_shapes": [
+                [
+                  null,
+                  32,
+                  32,
+                  33
+                ]
+              ],
+              "input_shape": [
+                null,
+                32,
+                32,
+                33
+              ],
+              "output_var_name": "main_path_output",
+              "output_shape": [
+                null,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv2d_1",
+              "api_name": "Conv2D",
+              "call_line_no": 30,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.conv2d_1 = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "group2"
+              ],
+              "input_shapes": [
+                [
+                  null,
+                  32,
+                  32,
+                  1
+                ]
+              ],
+              "input_shape": [
+                null,
+                32,
+                32,
+                1
+              ],
+              "output_var_name": "processed_group2",
+              "output_shape": [
+                null,
+                32,
+                32,
+                32
+              ]
+            },
+            {
+              "layer_name": "split",
+              "api_name": "split",
+              "call_line_no": 28,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.split = tf.split(self.input_tensor, num_or_size_splits=3, axis=-1)",
+              "input_var_names": [],
+              "input_shapes": [],
+              "input_shape": null,
+              "output_var_name": null,
+              "output_shape": null
+            },
+            {
+              "layer_name": "split",
+              "api_name": "split",
+              "call_line_no": 27,
+              "init_line_no": 11,
+              "end_line_no": 11,
+              "original_call": "self.split = tf.split(self.input_tensor, num_or_size_splits=3, axis=-1)",
+              "input_var_names": [],
+              "input_shapes": [],
+              "input_shape": null,
+              "output_var_name": null,
+              "output_shape": null
+            }
+          ],
+          "path_length": 4,
+          "role": "main-path",
+          "connected_forward_inputs": [],
+          "input_connection_type": "none",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        },
+        {
+          "var_name": "branch_path_output",
+          "shape": [
+            1,
+            32,
+            32,
+            32
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch_path_output",
+              "line_no": 38
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 35
+            },
+            {
+              "var_name": "self.conv2d_branch",
+              "line_no": 35
+            },
+            {
+              "var_name": "branch_path_output",
+              "line_no": 35
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 24
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "conv2d_branch",
+              "api_name": "Conv2D",
+              "call_line_no": 35,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.conv2d_branch = Conv2D(filters=32, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "branch_path_output",
+              "output_shape": [
+                1,
+                32,
+                32,
+                32
+              ]
+            }
+          ],
+          "path_length": 1,
+          "role": "branch-path",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        }
+      ],
+      "framework": "tensorflow",
+      "tensor_layout": "channels_last"
+    },
+    "target_branch_index": 1,
+    "target_layers": [
+      {
+        "layer_name": "conv2d_branch",
+        "call_line_no": 35,
+        "line_no": 16,
+        "end_line_no": 16,
+        "api_name": "Conv2D",
+        "layer_semantic": "conv",
+        "original_call": "self.conv2d_branch = Conv2D(filters=32, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+        "normalized_call": "self.conv2d_branch = Conv2D(filters=32, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+        "masked_api_call": "self.conv2d_branch = Conv2D(filters='mask', kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+        "mismatch_types": [
+          "channel"
+        ],
+        "params_to_mask": [
+          "filters"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 35,
+        "oracle_shape": [
+          1,
+          32,
+          32,
+          64
+        ],
+        "target_layer_index": 0,
+        "layer_name": "conv2d_branch",
+        "target_layer_line_no": 16,
+        "call_line_no": 35,
+        "mismatch_types": [
+          "channel"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "conv2d_branch",
+        "modeled_input_shape": [
+          1,
+          32,
+          32,
+          3
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          32,
+          32,
+          64
+        ],
+        "oracle_output_shape": [
+          1,
+          32,
+          32,
+          64
+        ]
+      }
+    ]
+  },
+  "origin_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Conv2D, Concatenate, Add, Flatten, Dense, Input\n\nclass DL_Model(tf.keras.Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        self.input_tensor = Input(shape=(32, 32, 3))\n\n        # Main Path\n        self.split = tf.split(self.input_tensor, num_or_size_splits=3, axis=-1)\n        self.conv2d_1 = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv2d_2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        # Branch Path\n        self.conv2d_branch = Conv2D(filters=32, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Fusion\n        self.concatenate = Concatenate(axis=-1)\n        self.add = Add()\n        self.flatten = Flatten()\n        self.dense = Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # Main Path\n        group1 = self.split[0]\n        group2 = self.split[1]\n        group3 = self.split[2]\n\n        processed_group2 = self.conv2d_1(group2)\n        combined_group = tf.concat([group3, processed_group2], axis=-1)\n        main_path_output = self.conv2d_2(combined_group)\n        \n        # Branch Path\n        branch_path_output = self.conv2d_branch(inputs)\n\n        # Fusion\n        fused_output = self.add([main_path_output, branch_path_output])\n        flattened_output = self.flatten(fused_output)\n        output = self.dense(flattened_output)\n\n        return output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal((1, 32, 32, 3))  # Dummy input tensor\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Conv2D, Concatenate, Add, Flatten, Dense, Input\n\nclass DL_Model(tf.keras.Model):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        self.input_tensor = Input(shape=(32, 32, 3))\n\n        # Main Path\n        self.split = tf.split(self.input_tensor, num_or_size_splits=3, axis=-1)\n        self.conv2d_1 = Conv2D(filters=32, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv2d_2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n\n        # Branch Path\n        self.conv2d_branch = Conv2D(filters='mask', kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Fusion\n        self.concatenate = Concatenate(axis=-1)\n        self.add = Add()\n        self.flatten = Flatten()\n        self.dense = Dense(units=10, activation='softmax')\n\n    def call(self, inputs):\n        # the initial shape of inputs is: (1, 32, 32, 3)\n        # Main Path\n        group1 = self.split[0]  # output tensor shape: (None, 32, 32, 1)\n        group2 = self.split[1]  # output tensor shape: (None, 32, 32, 1)\n        group3 = self.split[2]  # output tensor shape: (None, 32, 32, 1)\n\n        processed_group2 = self.conv2d_1(group2)  # output tensor shape: (None, 32, 32, 32)\n        combined_group = tf.concat([group3, processed_group2], axis=-1)  # output tensor shape: (None, 32, 32, 33)\n        main_path_output = self.conv2d_2(combined_group)  # output tensor shape: (None, 32, 32, 64)\n        \n        # Branch Path\n        branch_path_output = self.conv2d_branch(inputs)  # output tensor shape of this layer should be (1, 32, 32, 64)\n\n        # Fusion\n        fused_output = self.add([main_path_output, branch_path_output])\n        flattened_output = self.flatten(fused_output)\n        output = self.dense(flattened_output)\n\n        return output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal((1, 32, 32, 3))  # Dummy input tensor\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

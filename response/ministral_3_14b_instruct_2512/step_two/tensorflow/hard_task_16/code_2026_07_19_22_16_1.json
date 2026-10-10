@@ -1,0 +1,976 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/ministral_3_14b_instruct_2512/step_one/tensorflow/models_0701/hard_task_16/code_2026_07_19_22_16_1.py\", line 83, in <module>\n    output_tensor = model(input_tensor)\n  File \"/python3.10/site-packages/keras/src/utils/traceback_utils.py\", line 70, in error_handler\n    raise e.with_traceback(filtered_tb) from None\n  File \"./response/ministral_3_14b_instruct_2512/step_one/tensorflow/models_0701/hard_task_16/code_2026_07_19_22_16_1.py\", line 72, in call\n    x = Add()([x, branch])\nValueError: Exception encountered when calling layer 'dl__model_30' (type DL_Model).\n\nInputs have incompatible shapes. Received shapes (1, 1, 64) and (32, 32, 3)\n\nCall arguments received by layer 'dl__model_30' (type DL_Model):\n  • inputs=tf.Tensor(shape=(1, 32, 32, 3), dtype=float32)\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "forward",
+      "line_no": 72,
+      "crash_code": "x = Add()([x, branch])"
+    },
+    "root_cause_type": "Tensor_Merge_Mismatch",
+    "mismatch_types": [
+      "spatial",
+      "channel"
+    ],
+    "merge_context": {
+      "merge_lineno": 72,
+      "merge_code": "x = Add()([x, branch])",
+      "merge_kind": "Add",
+      "concat_axis": null,
+      "statement_kind": "assign",
+      "accumulator_var_name": null,
+      "forward_input_names": [
+        "inputs"
+      ],
+      "forward_input_shapes": {
+        "inputs": [
+          1,
+          32,
+          32,
+          3
+        ]
+      },
+      "branches": [
+        {
+          "var_name": "x",
+          "shape": [
+            1,
+            1,
+            1,
+            64
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch",
+              "line_no": 72
+            },
+            {
+              "var_name": "x",
+              "line_no": 72
+            },
+            {
+              "var_name": "Add",
+              "line_no": 72
+            },
+            {
+              "var_name": "x",
+              "line_no": 72
+            },
+            {
+              "var_name": "x",
+              "line_no": 69
+            },
+            {
+              "var_name": "x",
+              "line_no": 69
+            },
+            {
+              "var_name": "self.multiply",
+              "line_no": 69
+            },
+            {
+              "var_name": "x",
+              "line_no": 69
+            },
+            {
+              "var_name": "x",
+              "line_no": 68
+            },
+            {
+              "var_name": "self.reshape",
+              "line_no": 68
+            },
+            {
+              "var_name": "x",
+              "line_no": 68
+            },
+            {
+              "var_name": "x",
+              "line_no": 67
+            },
+            {
+              "var_name": "self.dense2",
+              "line_no": 67
+            },
+            {
+              "var_name": "x",
+              "line_no": 67
+            },
+            {
+              "var_name": "x",
+              "line_no": 66
+            },
+            {
+              "var_name": "self.dense1",
+              "line_no": 66
+            },
+            {
+              "var_name": "x",
+              "line_no": 66
+            },
+            {
+              "var_name": "x",
+              "line_no": 65
+            },
+            {
+              "var_name": "self.global_max_pool",
+              "line_no": 65
+            },
+            {
+              "var_name": "x",
+              "line_no": 65
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 62
+            },
+            {
+              "var_name": "branch",
+              "line_no": 62
+            },
+            {
+              "var_name": "x",
+              "line_no": 59
+            },
+            {
+              "var_name": "self.trans_conv",
+              "line_no": 59
+            },
+            {
+              "var_name": "x",
+              "line_no": 59
+            },
+            {
+              "var_name": "x3",
+              "line_no": 56
+            },
+            {
+              "var_name": "x2",
+              "line_no": 56
+            },
+            {
+              "var_name": "x1",
+              "line_no": 56
+            },
+            {
+              "var_name": "Concatenate",
+              "line_no": 56
+            },
+            {
+              "var_name": "x",
+              "line_no": 56
+            },
+            {
+              "var_name": "x3",
+              "line_no": 53
+            },
+            {
+              "var_name": "self.conv1x1_6",
+              "line_no": 53
+            },
+            {
+              "var_name": "x3",
+              "line_no": 53
+            },
+            {
+              "var_name": "x3",
+              "line_no": 52
+            },
+            {
+              "var_name": "self.conv3x3_3",
+              "line_no": 52
+            },
+            {
+              "var_name": "x3",
+              "line_no": 52
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 51
+            },
+            {
+              "var_name": "self.conv1x1_5",
+              "line_no": 51
+            },
+            {
+              "var_name": "x3",
+              "line_no": 51
+            },
+            {
+              "var_name": "x2",
+              "line_no": 48
+            },
+            {
+              "var_name": "self.conv1x1_4",
+              "line_no": 48
+            },
+            {
+              "var_name": "x2",
+              "line_no": 48
+            },
+            {
+              "var_name": "x2",
+              "line_no": 47
+            },
+            {
+              "var_name": "self.conv3x3_2",
+              "line_no": 47
+            },
+            {
+              "var_name": "x2",
+              "line_no": 47
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 46
+            },
+            {
+              "var_name": "self.conv1x1_3",
+              "line_no": 46
+            },
+            {
+              "var_name": "x2",
+              "line_no": 46
+            },
+            {
+              "var_name": "x1",
+              "line_no": 43
+            },
+            {
+              "var_name": "self.conv1x1_2",
+              "line_no": 43
+            },
+            {
+              "var_name": "x1",
+              "line_no": 43
+            },
+            {
+              "var_name": "x1",
+              "line_no": 42
+            },
+            {
+              "var_name": "self.conv3x3_1",
+              "line_no": 42
+            },
+            {
+              "var_name": "x1",
+              "line_no": 42
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 41
+            },
+            {
+              "var_name": "self.conv1x1_1",
+              "line_no": 41
+            },
+            {
+              "var_name": "x1",
+              "line_no": 41
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 38
+            }
+          ],
+          "producer_calls": [
+            {
+              "layer_name": "multiply",
+              "api_name": "Multiply",
+              "call_line_no": 69,
+              "init_line_no": 32,
+              "end_line_no": 32,
+              "original_call": "self.multiply = Multiply()",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1,
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                1,
+                1,
+                64
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                1,
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "reshape",
+              "api_name": "Reshape",
+              "call_line_no": 68,
+              "init_line_no": 31,
+              "end_line_no": 31,
+              "original_call": "self.reshape = Reshape(target_shape=(1, 1, 64))",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1,
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                1,
+                1,
+                64
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                1,
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "dense2",
+              "api_name": "Dense",
+              "call_line_no": 67,
+              "init_line_no": 30,
+              "end_line_no": 30,
+              "original_call": "self.dense2 = Dense(units=64, activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1,
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                1,
+                1,
+                64
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                1,
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "dense1",
+              "api_name": "Dense",
+              "call_line_no": 66,
+              "init_line_no": 29,
+              "end_line_no": 29,
+              "original_call": "self.dense1 = Dense(units=64, activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  1,
+                  1,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                1,
+                1,
+                64
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                1,
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "global_max_pool",
+              "api_name": "GlobalMaxPool2D",
+              "call_line_no": 65,
+              "init_line_no": 28,
+              "end_line_no": 28,
+              "original_call": "self.global_max_pool = GlobalMaxPool2D(keepdims=True)",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                1,
+                1,
+                64
+              ]
+            },
+            {
+              "layer_name": "trans_conv",
+              "api_name": "Conv2D",
+              "call_line_no": 59,
+              "init_line_no": 25,
+              "end_line_no": 25,
+              "original_call": "self.trans_conv = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  192
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                192
+              ],
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "x",
+              "api_name": "Concatenate",
+              "call_line_no": 56,
+              "init_line_no": 56,
+              "end_line_no": null,
+              "original_call": "x = Concatenate(axis=-1)([x1, x2, x3])",
+              "input_var_names": [
+                "Concatenate",
+                "x1",
+                "x2",
+                "x3"
+              ],
+              "input_shapes": [
+                null,
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ],
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ],
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": null,
+              "output_var_name": "x",
+              "output_shape": [
+                1,
+                32,
+                32,
+                192
+              ]
+            },
+            {
+              "layer_name": "conv1x1_6",
+              "api_name": "Conv2D",
+              "call_line_no": 53,
+              "init_line_no": 22,
+              "end_line_no": 22,
+              "original_call": "self.conv1x1_6 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv3x3_3",
+              "api_name": "Conv2D",
+              "call_line_no": 52,
+              "init_line_no": 21,
+              "end_line_no": 21,
+              "original_call": "self.conv3x3_3 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x3"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_5",
+              "api_name": "Conv2D",
+              "call_line_no": 51,
+              "init_line_no": 20,
+              "end_line_no": 20,
+              "original_call": "self.conv1x1_5 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x3",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_4",
+              "api_name": "Conv2D",
+              "call_line_no": 48,
+              "init_line_no": 18,
+              "end_line_no": 18,
+              "original_call": "self.conv1x1_4 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv3x3_2",
+              "api_name": "Conv2D",
+              "call_line_no": 47,
+              "init_line_no": 17,
+              "end_line_no": 17,
+              "original_call": "self.conv3x3_2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x2"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_3",
+              "api_name": "Conv2D",
+              "call_line_no": 46,
+              "init_line_no": 16,
+              "end_line_no": 16,
+              "original_call": "self.conv1x1_3 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x2",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_2",
+              "api_name": "Conv2D",
+              "call_line_no": 43,
+              "init_line_no": 14,
+              "end_line_no": 14,
+              "original_call": "self.conv1x1_2 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv3x3_1",
+              "api_name": "Conv2D",
+              "call_line_no": 42,
+              "init_line_no": 13,
+              "end_line_no": 13,
+              "original_call": "self.conv3x3_1 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "x1"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  64
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                64
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            },
+            {
+              "layer_name": "conv1x1_1",
+              "api_name": "Conv2D",
+              "call_line_no": 41,
+              "init_line_no": 12,
+              "end_line_no": 12,
+              "original_call": "self.conv1x1_1 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')",
+              "input_var_names": [
+                "inputs"
+              ],
+              "input_shapes": [
+                [
+                  1,
+                  32,
+                  32,
+                  3
+                ]
+              ],
+              "input_shape": [
+                1,
+                32,
+                32,
+                3
+              ],
+              "output_var_name": "x1",
+              "output_shape": [
+                1,
+                32,
+                32,
+                64
+              ]
+            }
+          ],
+          "path_length": 16,
+          "role": "main-path",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "transformed_input",
+          "is_direct_input_alias": false,
+          "is_accumulator_branch": false
+        },
+        {
+          "var_name": "branch",
+          "shape": [
+            1,
+            32,
+            32,
+            3
+          ],
+          "producer_path": [
+            {
+              "var_name": "branch",
+              "line_no": 72
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 62
+            },
+            {
+              "var_name": "branch",
+              "line_no": 62
+            },
+            {
+              "var_name": "inputs",
+              "line_no": 38
+            }
+          ],
+          "producer_calls": [],
+          "path_length": 0,
+          "role": "inputs",
+          "connected_forward_inputs": [
+            "inputs"
+          ],
+          "input_connection_type": "direct_alias",
+          "is_direct_input_alias": true,
+          "is_accumulator_branch": false
+        }
+      ],
+      "framework": "tensorflow",
+      "tensor_layout": "channels_last"
+    },
+    "target_branch_index": 0,
+    "target_layers": [
+      {
+        "layer_name": "global_max_pool",
+        "call_line_no": 65,
+        "line_no": 28,
+        "end_line_no": 28,
+        "api_name": "GlobalMaxPool2D",
+        "layer_semantic": "pool",
+        "original_call": "self.global_max_pool = GlobalMaxPool2D(keepdims=True)",
+        "normalized_call": "self.global_max_pool = GlobalMaxPool2D(keepdims=True)",
+        "masked_api_call": "self.global_max_pool = GlobalMaxPool2D(keepdims='mask')",
+        "mismatch_types": [
+          "spatial"
+        ],
+        "params_to_mask": [
+          "pool_size",
+          "ksize",
+          "strides",
+          "padding"
+        ]
+      },
+      {
+        "layer_name": "dense2",
+        "call_line_no": 67,
+        "line_no": 30,
+        "end_line_no": 30,
+        "api_name": "Dense",
+        "layer_semantic": "dense",
+        "original_call": "self.dense2 = Dense(units=64, activation='relu')",
+        "normalized_call": "self.dense2 = Dense(units=64, activation='relu')",
+        "masked_api_call": "self.dense2 = Dense(units='mask', activation='relu')",
+        "mismatch_types": [
+          "channel"
+        ],
+        "params_to_mask": [
+          "units"
+        ]
+      }
+    ],
+    "primary_target_layer_index": 0,
+    "merge_annotation_hints": [
+      {
+        "line_no": 65,
+        "oracle_shape": [
+          1,
+          32,
+          32,
+          64
+        ],
+        "target_layer_index": 0,
+        "layer_name": "global_max_pool",
+        "target_layer_line_no": 28,
+        "call_line_no": 65,
+        "mismatch_types": [
+          "spatial"
+        ]
+      },
+      {
+        "line_no": 67,
+        "oracle_shape": [
+          1,
+          1,
+          1,
+          64
+        ],
+        "target_layer_index": 1,
+        "layer_name": "dense2",
+        "target_layer_line_no": 30,
+        "call_line_no": 67,
+        "mismatch_types": [
+          "channel"
+        ]
+      }
+    ],
+    "primary_merge_annotation_hint_index": 0,
+    "target_layer_modeling_sequence": [
+      {
+        "target_layer_index": 0,
+        "layer_name": "global_max_pool",
+        "modeled_input_shape": [
+          1,
+          32,
+          32,
+          64
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          32,
+          32,
+          64
+        ],
+        "oracle_output_shape": [
+          1,
+          32,
+          32,
+          64
+        ]
+      },
+      {
+        "target_layer_index": 1,
+        "layer_name": "dense2",
+        "modeled_input_shape": [
+          1,
+          1,
+          1,
+          64
+        ],
+        "branch_level_oracle_shape": [
+          1,
+          1,
+          1,
+          64
+        ],
+        "oracle_output_shape": [
+          1,
+          1,
+          1,
+          64
+        ]
+      }
+    ]
+  },
+  "origin_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Conv2D, Dense, MaxPool2D, GlobalMaxPool2D, Concatenate, Add, Reshape, Lambda, Multiply, Flatten\nfrom tensorflow.keras.models import Model\n\nclass DL_Model(Model):\n    def __init__(self, input_shape=(32, 32, 3), num_classes=10):\n        super(DL_Model, self).__init__()\n        self.input_shapes = input_shape\n        self.num_classes = num_classes\n\n        # Block 1\n        self.conv1x1_1 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_1 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv1x1_2 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        self.conv1x1_3 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv1x1_4 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        self.conv1x1_5 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_3 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv1x1_6 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Transition Convolution\n        self.trans_conv = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Block 2\n        self.global_max_pool = GlobalMaxPool2D(keepdims=True)\n        self.dense1 = Dense(units=64, activation='relu')\n        self.dense2 = Dense(units=64, activation='relu')\n        self.reshape = Reshape(target_shape=(1, 1, 64))\n        self.multiply = Multiply()\n\n        # Final layers\n        self.flatten = Flatten()\n        self.fc = Dense(units=num_classes, activation='softmax')\n\n    def call(self, inputs):\n        # Block 1\n        # Group 1\n        x1 = self.conv1x1_1(inputs)\n        x1 = self.conv3x3_1(x1)\n        x1 = self.conv1x1_2(x1)\n\n        # Group 2\n        x2 = self.conv1x1_3(inputs)\n        x2 = self.conv3x3_2(x2)\n        x2 = self.conv1x1_4(x2)\n\n        # Group 3\n        x3 = self.conv1x1_5(inputs)\n        x3 = self.conv3x3_3(x3)\n        x3 = self.conv1x1_6(x3)\n\n        # Concatenate\n        x = Concatenate(axis=-1)([x1, x2, x3])\n\n        # Transition Convolution\n        x = self.trans_conv(x)\n\n        # Branch\n        branch = inputs\n\n        # Block 2\n        x = self.global_max_pool(x)\n        x = self.dense1(x)\n        x = self.dense2(x)\n        x = self.reshape(x)\n        x = self.multiply([x, x])  # Multiply by itself to get channel-matching weights\n\n        # Add main path and branch\n        x = Add()([x, branch])\n\n        # Final layers\n        x = self.flatten(x)\n        x = self.fc(x)\n\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))\n    output_tensor = model(input_tensor)\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)",
+  "final_code": "import tensorflow as tf\nfrom tensorflow.keras.layers import Conv2D, Dense, MaxPool2D, GlobalMaxPool2D, Concatenate, Add, Reshape, Lambda, Multiply, Flatten\nfrom tensorflow.keras.models import Model\n\nclass DL_Model(Model):\n    def __init__(self, input_shape=(32, 32, 3), num_classes=10):\n        super(DL_Model, self).__init__()\n        self.input_shapes = input_shape\n        self.num_classes = num_classes\n\n        # Block 1\n        self.conv1x1_1 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_1 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv1x1_2 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        self.conv1x1_3 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_2 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv1x1_4 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        self.conv1x1_5 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n        self.conv3x3_3 = Conv2D(filters=64, kernel_size=(3, 3), strides=(1, 1), padding='same', activation='relu')\n        self.conv1x1_6 = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Transition Convolution\n        self.trans_conv = Conv2D(filters=64, kernel_size=(1, 1), strides=(1, 1), padding='same', activation='relu')\n\n        # Block 2\n        self.global_max_pool = GlobalMaxPool2D(keepdims='mask')\n        self.dense1 = Dense(units=64, activation='relu')\n        self.dense2 = Dense(units='mask', activation='relu')\n        self.reshape = Reshape(target_shape=(1, 1, 64))\n        self.multiply = Multiply()\n\n        # Final layers\n        self.flatten = Flatten()\n        self.fc = Dense(units=num_classes, activation='softmax')\n\n    def call(self, inputs):\n        # the initial shape of inputs is: (1, 32, 32, 3)\n        # Block 1\n        # Group 1\n        x1 = self.conv1x1_1(inputs)  # output tensor shape: (1, 32, 32, 64)\n        x1 = self.conv3x3_1(x1)  # output tensor shape: (1, 32, 32, 64)\n        x1 = self.conv1x1_2(x1)  # output tensor shape: (1, 32, 32, 64)\n\n        # Group 2\n        x2 = self.conv1x1_3(inputs)  # output tensor shape: (1, 32, 32, 64)\n        x2 = self.conv3x3_2(x2)  # output tensor shape: (1, 32, 32, 64)\n        x2 = self.conv1x1_4(x2)  # output tensor shape: (1, 32, 32, 64)\n\n        # Group 3\n        x3 = self.conv1x1_5(inputs)  # output tensor shape: (1, 32, 32, 64)\n        x3 = self.conv3x3_3(x3)  # output tensor shape: (1, 32, 32, 64)\n        x3 = self.conv1x1_6(x3)  # output tensor shape: (1, 32, 32, 64)\n\n        # Concatenate\n        x = Concatenate(axis=-1)([x1, x2, x3])  # output tensor shape: (1, 32, 32, 192)\n\n        # Transition Convolution\n        x = self.trans_conv(x)  # output tensor shape: (1, 32, 32, 64)\n\n        # Branch\n        branch = inputs  # output tensor shape: (1, 32, 32, 3)\n\n        # Block 2\n        x = self.global_max_pool(x)  # output tensor shape of this layer should be (1, 32, 32, 64)\n        x = self.dense1(x)\n        x = self.dense2(x)  # output tensor shape of this layer should be (1, 1, 1, 64)\n        x = self.reshape(x)\n        x = self.multiply([x, x])\n\n        # Add main path and branch\n        x = Add()([x, branch])\n\n        # Final layers\n        x = self.flatten(x)\n        x = self.fc(x)\n\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = tf.random.normal(shape=(1, 32, 32, 3))\n    output_tensor = model(input_tensor)\n    print(\"Input shape:\", input_tensor.shape)\n    print(\"Output shape:\", output_tensor.shape)"
+}
