@@ -7,7 +7,7 @@ import subprocess
 from loguru import logger
 from pathlib import Path
 import pandas as pd
-from utils.df2excel import DataFrame2Excel
+from openpyxl import Workbook, load_workbook
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
@@ -82,12 +82,32 @@ class Validation:
 
         return verifications, pd.concat([df_data, pd.DataFrame([total])], ignore_index=True)
 
+    @staticmethod
+    def save_excel_sheet(data, excel_path, sheet_name):
+        """Update a report sheet without creating a numbered duplicate."""
+        workbook = load_workbook(excel_path) if excel_path.exists() else Workbook()
+        if excel_path.exists():
+            sheet = workbook[sheet_name] if sheet_name in workbook else workbook.create_sheet(sheet_name)
+        else:
+            sheet = workbook.active
+            sheet.title = sheet_name
+
+        if sheet.max_row:
+            sheet.delete_rows(1, sheet.max_row)
+
+        sheet.append(list(data.columns))
+        for row in data.itertuples(index=False, name=None):
+            sheet.append(row)
+
+        excel_path.parent.mkdir(parents=True, exist_ok=True)
+        workbook.save(excel_path)
+
     def save_step_report(self, verifications, df_data, report_dir, excel_path, step):
         """Save step report."""
         report_dir.mkdir(parents=True, exist_ok=True)
         with open(report_dir / f"{step}.json", "w", encoding="utf-8") as file:
             json.dump(verifications, file, ensure_ascii=False, indent=2)
-        DataFrame2Excel(df_data, str(excel_path)).df2excel(sheet_name=step)
+        self.save_excel_sheet(df_data, excel_path, step)
 
     def run(self, response_root, report_root, llms, steps, dlls, experiment_batch):
         """Run the operation."""
@@ -112,7 +132,7 @@ class Validation:
                 if summary_rows:
                     summary_df = pd.DataFrame(summary_rows).reset_index(drop=True)
                     logger.info(summary_df.to_string(index=False))
-                    DataFrame2Excel(summary_df, str(excel_path)).df2excel(sheet_name="summary")
+                    self.save_excel_sheet(summary_df, excel_path, "summary")
 
 
 
