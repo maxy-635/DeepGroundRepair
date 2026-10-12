@@ -1,0 +1,107 @@
+{
+  "source_file": "evaluation/static_checking/report/gemma_3_12b_it/step_three/gemma_3_12b_it_messages_statistics.json",
+  "summary": {
+    "categories": {
+      "API Hallucination": {
+        "total": 62,
+        "issues": {
+          "no-member": 58,
+          "import-error": 2,
+          "no-name-in-module": 2
+        }
+      },
+      "API Parameters Misuse": {
+        "total": 46,
+        "issues": {
+          "no-value-for-parameter": 30,
+          "unexpected-keyword-arg": 16
+        }
+      }
+    },
+    "uncategorized": {
+      "undefined-variable": 12,
+      "syntax-error": 1,
+      "not-callable": 1
+    },
+    "total_categorized_errors": 108,
+    "total_uncategorized_errors": 14,
+    "total_errors": 122
+  },
+  "tensorflow": {
+    "models_0701": {
+      "categories": {
+        "API Parameters Misuse": {
+          "total": 15,
+          "issues": {
+            "no-value-for-parameter": 9,
+            "unexpected-keyword-arg": 6
+          }
+        },
+        "API Hallucination": {
+          "total": 4,
+          "issues": {
+            "import-error": 2,
+            "no-name-in-module": 2
+          }
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 2,
+        "syntax-error": 1
+      },
+      "total_categorized_errors": 19,
+      "total_uncategorized_errors": 3,
+      "total_errors": 22
+    }
+  },
+  "pytorch": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 16,
+          "issues": {
+            "no-member": 16
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 3,
+          "issues": {
+            "no-value-for-parameter": 3
+          }
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 1
+      },
+      "total_categorized_errors": 19,
+      "total_uncategorized_errors": 1,
+      "total_errors": 20
+    }
+  },
+  "paddlepaddle": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 42,
+          "issues": {
+            "no-member": 42
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 28,
+          "issues": {
+            "no-value-for-parameter": 18,
+            "unexpected-keyword-arg": 10
+          }
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 9,
+        "not-callable": 1
+      },
+      "total_categorized_errors": 70,
+      "total_uncategorized_errors": 10,
+      "total_errors": 80
+    }
+  }
+}

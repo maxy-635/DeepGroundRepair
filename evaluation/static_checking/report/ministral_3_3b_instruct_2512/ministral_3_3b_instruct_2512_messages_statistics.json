@@ -1,0 +1,100 @@
+{
+  "source_file": "evaluation/static_checking/report/ministral_3_3b_instruct_2512/step_three/ministral_3_3b_instruct_2512_messages_statistics.json",
+  "summary": {
+    "categories": {
+      "API Hallucination": {
+        "total": 32,
+        "issues": {
+          "no-member": 32
+        }
+      },
+      "API Parameters Misuse": {
+        "total": 26,
+        "issues": {
+          "unexpected-keyword-arg": 14,
+          "no-value-for-parameter": 12
+        }
+      }
+    },
+    "uncategorized": {
+      "undefined-variable": 32,
+      "used-before-assignment": 2,
+      "function-redefined": 1
+    },
+    "total_categorized_errors": 58,
+    "total_uncategorized_errors": 35,
+    "total_errors": 93
+  },
+  "tensorflow": {
+    "models_0701": {
+      "categories": {
+        "API Parameters Misuse": {
+          "total": 15,
+          "issues": {
+            "no-value-for-parameter": 8,
+            "unexpected-keyword-arg": 7
+          }
+        },
+        "API Hallucination": {
+          "total": 0,
+          "issues": {}
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 12,
+        "function-redefined": 1
+      },
+      "total_categorized_errors": 15,
+      "total_uncategorized_errors": 13,
+      "total_errors": 28
+    }
+  },
+  "pytorch": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 8,
+          "issues": {
+            "no-member": 8
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 0,
+          "issues": {}
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 7,
+        "used-before-assignment": 2
+      },
+      "total_categorized_errors": 8,
+      "total_uncategorized_errors": 9,
+      "total_errors": 17
+    }
+  },
+  "paddlepaddle": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 24,
+          "issues": {
+            "no-member": 24
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 11,
+          "issues": {
+            "unexpected-keyword-arg": 7,
+            "no-value-for-parameter": 4
+          }
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 13
+      },
+      "total_categorized_errors": 35,
+      "total_uncategorized_errors": 13,
+      "total_errors": 48
+    }
+  }
+}

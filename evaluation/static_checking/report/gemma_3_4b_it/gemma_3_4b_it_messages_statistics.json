@@ -1,0 +1,104 @@
+{
+  "source_file": "evaluation/static_checking/report/gemma_3_4b_it/step_three/gemma_3_4b_it_messages_statistics.json",
+  "summary": {
+    "categories": {
+      "API Hallucination": {
+        "total": 153,
+        "issues": {
+          "no-member": 151,
+          "no-name-in-module": 1,
+          "import-error": 1
+        }
+      },
+      "API Parameters Misuse": {
+        "total": 115,
+        "issues": {
+          "no-value-for-parameter": 47,
+          "too-many-function-args": 41,
+          "unexpected-keyword-arg": 26,
+          "redundant-keyword-arg": 1
+        }
+      }
+    },
+    "uncategorized": {
+      "undefined-variable": 22
+    },
+    "total_categorized_errors": 268,
+    "total_uncategorized_errors": 22,
+    "total_errors": 290
+  },
+  "tensorflow": {
+    "models_0701": {
+      "categories": {
+        "API Parameters Misuse": {
+          "total": 4,
+          "issues": {
+            "unexpected-keyword-arg": 2,
+            "no-value-for-parameter": 2
+          }
+        },
+        "API Hallucination": {
+          "total": 0,
+          "issues": {}
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 11
+      },
+      "total_categorized_errors": 4,
+      "total_uncategorized_errors": 11,
+      "total_errors": 15
+    }
+  },
+  "pytorch": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 37,
+          "issues": {
+            "no-member": 37
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 0,
+          "issues": {}
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 4
+      },
+      "total_categorized_errors": 37,
+      "total_uncategorized_errors": 4,
+      "total_errors": 41
+    }
+  },
+  "paddlepaddle": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 116,
+          "issues": {
+            "no-member": 114,
+            "no-name-in-module": 1,
+            "import-error": 1
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 111,
+          "issues": {
+            "no-value-for-parameter": 45,
+            "too-many-function-args": 41,
+            "unexpected-keyword-arg": 24,
+            "redundant-keyword-arg": 1
+          }
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 7
+      },
+      "total_categorized_errors": 227,
+      "total_uncategorized_errors": 7,
+      "total_errors": 234
+    }
+  }
+}

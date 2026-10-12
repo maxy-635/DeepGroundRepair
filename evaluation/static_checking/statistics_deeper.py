@@ -78,8 +78,7 @@ class DeeperStatistics:
             save_path = os.path.join(
                 self.report_root,
                 model_id,
-                self.step_id,
-                f"{model_id}_deeper_statistics.json",
+                f"{model_id}_messages_statistics.json",
             )
 
             if not os.path.exists(summary_json_file):

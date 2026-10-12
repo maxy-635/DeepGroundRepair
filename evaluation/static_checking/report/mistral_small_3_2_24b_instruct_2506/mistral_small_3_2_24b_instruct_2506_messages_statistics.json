@@ -1,0 +1,103 @@
+{
+  "source_file": "evaluation/static_checking/report/mistral_small_3_2_24b_instruct_2506/step_three/mistral_small_3_2_24b_instruct_2506_messages_statistics.json",
+  "summary": {
+    "categories": {
+      "API Parameters Misuse": {
+        "total": 8,
+        "issues": {
+          "unexpected-keyword-arg": 4,
+          "no-value-for-parameter": 4
+        }
+      },
+      "API Hallucination": {
+        "total": 4,
+        "issues": {
+          "import-error": 2,
+          "no-member": 2
+        }
+      }
+    },
+    "uncategorized": {
+      "not-callable": 13,
+      "undefined-variable": 4,
+      "syntax-error": 2,
+      "used-before-assignment": 1
+    },
+    "total_categorized_errors": 12,
+    "total_uncategorized_errors": 20,
+    "total_errors": 32
+  },
+  "tensorflow": {
+    "models_0701": {
+      "categories": {
+        "API Parameters Misuse": {
+          "total": 6,
+          "issues": {
+            "unexpected-keyword-arg": 3,
+            "no-value-for-parameter": 3
+          }
+        },
+        "API Hallucination": {
+          "total": 2,
+          "issues": {
+            "import-error": 2
+          }
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 4
+      },
+      "total_categorized_errors": 8,
+      "total_uncategorized_errors": 4,
+      "total_errors": 12
+    }
+  },
+  "pytorch": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 1,
+          "issues": {
+            "no-member": 1
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 0,
+          "issues": {}
+        }
+      },
+      "uncategorized": {
+        "not-callable": 13
+      },
+      "total_categorized_errors": 1,
+      "total_uncategorized_errors": 13,
+      "total_errors": 14
+    }
+  },
+  "paddlepaddle": {
+    "models_0701": {
+      "categories": {
+        "API Parameters Misuse": {
+          "total": 2,
+          "issues": {
+            "unexpected-keyword-arg": 1,
+            "no-value-for-parameter": 1
+          }
+        },
+        "API Hallucination": {
+          "total": 1,
+          "issues": {
+            "no-member": 1
+          }
+        }
+      },
+      "uncategorized": {
+        "syntax-error": 2,
+        "used-before-assignment": 1
+      },
+      "total_categorized_errors": 3,
+      "total_uncategorized_errors": 3,
+      "total_errors": 6
+    }
+  }
+}

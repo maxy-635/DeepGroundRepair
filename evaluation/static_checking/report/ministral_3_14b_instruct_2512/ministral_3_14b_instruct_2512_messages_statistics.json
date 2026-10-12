@@ -1,0 +1,100 @@
+{
+  "source_file": "evaluation/static_checking/report/ministral_3_14b_instruct_2512/step_three/ministral_3_14b_instruct_2512_messages_statistics.json",
+  "summary": {
+    "categories": {
+      "API Parameters Misuse": {
+        "total": 11,
+        "issues": {
+          "no-value-for-parameter": 6,
+          "unexpected-keyword-arg": 3,
+          "too-many-function-args": 2
+        }
+      },
+      "API Hallucination": {
+        "total": 3,
+        "issues": {
+          "no-member": 3
+        }
+      }
+    },
+    "uncategorized": {
+      "undefined-variable": 8,
+      "not-callable": 2,
+      "syntax-error": 1
+    },
+    "total_categorized_errors": 14,
+    "total_uncategorized_errors": 11,
+    "total_errors": 25
+  },
+  "tensorflow": {
+    "models_0701": {
+      "categories": {
+        "API Parameters Misuse": {
+          "total": 7,
+          "issues": {
+            "unexpected-keyword-arg": 3,
+            "no-value-for-parameter": 3,
+            "too-many-function-args": 1
+          }
+        },
+        "API Hallucination": {
+          "total": 0,
+          "issues": {}
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 3
+      },
+      "total_categorized_errors": 7,
+      "total_uncategorized_errors": 3,
+      "total_errors": 10
+    }
+  },
+  "pytorch": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 3,
+          "issues": {
+            "no-member": 3
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 0,
+          "issues": {}
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 2,
+        "not-callable": 2,
+        "syntax-error": 1
+      },
+      "total_categorized_errors": 3,
+      "total_uncategorized_errors": 5,
+      "total_errors": 8
+    }
+  },
+  "paddlepaddle": {
+    "models_0701": {
+      "categories": {
+        "API Parameters Misuse": {
+          "total": 4,
+          "issues": {
+            "no-value-for-parameter": 3,
+            "too-many-function-args": 1
+          }
+        },
+        "API Hallucination": {
+          "total": 0,
+          "issues": {}
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 3
+      },
+      "total_categorized_errors": 4,
+      "total_uncategorized_errors": 3,
+      "total_errors": 7
+    }
+  }
+}

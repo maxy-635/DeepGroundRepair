@@ -1,0 +1,99 @@
+{
+  "source_file": "evaluation/static_checking/report/gemma_3_27b_it/step_three/gemma_3_27b_it_messages_statistics.json",
+  "summary": {
+    "categories": {
+      "API Hallucination": {
+        "total": 22,
+        "issues": {
+          "no-member": 21,
+          "import-error": 1
+        }
+      },
+      "API Parameters Misuse": {
+        "total": 10,
+        "issues": {
+          "no-value-for-parameter": 8,
+          "unexpected-keyword-arg": 2
+        }
+      }
+    },
+    "uncategorized": {
+      "undefined-variable": 7,
+      "used-before-assignment": 1
+    },
+    "total_categorized_errors": 32,
+    "total_uncategorized_errors": 8,
+    "total_errors": 40
+  },
+  "tensorflow": {
+    "models_0701": {
+      "categories": {
+        "API Parameters Misuse": {
+          "total": 2,
+          "issues": {
+            "unexpected-keyword-arg": 1,
+            "no-value-for-parameter": 1
+          }
+        },
+        "API Hallucination": {
+          "total": 0,
+          "issues": {}
+        }
+      },
+      "uncategorized": {
+        "used-before-assignment": 1
+      },
+      "total_categorized_errors": 2,
+      "total_uncategorized_errors": 1,
+      "total_errors": 3
+    }
+  },
+  "pytorch": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 8,
+          "issues": {
+            "no-member": 8
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 1,
+          "issues": {
+            "no-value-for-parameter": 1
+          }
+        }
+      },
+      "uncategorized": {
+        "undefined-variable": 7
+      },
+      "total_categorized_errors": 9,
+      "total_uncategorized_errors": 7,
+      "total_errors": 16
+    }
+  },
+  "paddlepaddle": {
+    "models_0701": {
+      "categories": {
+        "API Hallucination": {
+          "total": 14,
+          "issues": {
+            "no-member": 13,
+            "import-error": 1
+          }
+        },
+        "API Parameters Misuse": {
+          "total": 7,
+          "issues": {
+            "no-value-for-parameter": 6,
+            "unexpected-keyword-arg": 1
+          }
+        }
+      },
+      "uncategorized": {},
+      "total_categorized_errors": 21,
+      "total_uncategorized_errors": 0,
+      "total_errors": 21
+    }
+  }
+}
