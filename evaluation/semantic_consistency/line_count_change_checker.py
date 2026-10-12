@@ -147,11 +147,13 @@ if __name__ == "__main__":
                 )
 
                 summary = {
-                    "source_step": source_step,
-                    "repaired_step": repaired_step,
                     "llm": llm,
                     "dll": dll_dir,
-                    **result["summary"],
+                    "valid_files": result["summary"]["valid_files"],
+                    "line_unchanged_cases": result["summary"]["line_unchanged_cases"],
+                    "semantic_consistency_rate": result["summary"][
+                        "semantic_consistency_rate"
+                    ],
                 }
                 all_summaries.append(summary)
                 print(json.dumps(summary, ensure_ascii=False, indent=2))

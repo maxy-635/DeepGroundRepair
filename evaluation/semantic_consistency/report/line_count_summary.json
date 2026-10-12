@@ -1,0 +1,128 @@
+[
+  {
+    "llm": "gemma_3_4b_it",
+    "dll": "tensorflow",
+    "valid_files": 98,
+    "line_unchanged_cases": 94,
+    "semantic_consistency_rate": 0.9591836734693877
+  },
+  {
+    "llm": "gemma_3_4b_it",
+    "dll": "pytorch",
+    "valid_files": 99,
+    "line_unchanged_cases": 94,
+    "semantic_consistency_rate": 0.9494949494949495
+  },
+  {
+    "llm": "gemma_3_4b_it",
+    "dll": "paddlepaddle",
+    "valid_files": 99,
+    "line_unchanged_cases": 95,
+    "semantic_consistency_rate": 0.9595959595959596
+  },
+  {
+    "llm": "gemma_3_12b_it",
+    "dll": "tensorflow",
+    "valid_files": 99,
+    "line_unchanged_cases": 92,
+    "semantic_consistency_rate": 0.9292929292929293
+  },
+  {
+    "llm": "gemma_3_12b_it",
+    "dll": "pytorch",
+    "valid_files": 100,
+    "line_unchanged_cases": 99,
+    "semantic_consistency_rate": 0.99
+  },
+  {
+    "llm": "gemma_3_12b_it",
+    "dll": "paddlepaddle",
+    "valid_files": 98,
+    "line_unchanged_cases": 86,
+    "semantic_consistency_rate": 0.8775510204081632
+  },
+  {
+    "llm": "gemma_3_27b_it",
+    "dll": "tensorflow",
+    "valid_files": 100,
+    "line_unchanged_cases": 97,
+    "semantic_consistency_rate": 0.97
+  },
+  {
+    "llm": "gemma_3_27b_it",
+    "dll": "pytorch",
+    "valid_files": 100,
+    "line_unchanged_cases": 97,
+    "semantic_consistency_rate": 0.97
+  },
+  {
+    "llm": "gemma_3_27b_it",
+    "dll": "paddlepaddle",
+    "valid_files": 100,
+    "line_unchanged_cases": 100,
+    "semantic_consistency_rate": 1.0
+  },
+  {
+    "llm": "ministral_3_3b_instruct_2512",
+    "dll": "tensorflow",
+    "valid_files": 95,
+    "line_unchanged_cases": 84,
+    "semantic_consistency_rate": 0.8842105263157894
+  },
+  {
+    "llm": "ministral_3_3b_instruct_2512",
+    "dll": "pytorch",
+    "valid_files": 94,
+    "line_unchanged_cases": 91,
+    "semantic_consistency_rate": 0.9680851063829787
+  },
+  {
+    "llm": "ministral_3_3b_instruct_2512",
+    "dll": "paddlepaddle",
+    "valid_files": 96,
+    "line_unchanged_cases": 92,
+    "semantic_consistency_rate": 0.9583333333333334
+  },
+  {
+    "llm": "ministral_3_14b_instruct_2512",
+    "dll": "tensorflow",
+    "valid_files": 99,
+    "line_unchanged_cases": 97,
+    "semantic_consistency_rate": 0.9797979797979798
+  },
+  {
+    "llm": "ministral_3_14b_instruct_2512",
+    "dll": "pytorch",
+    "valid_files": 100,
+    "line_unchanged_cases": 94,
+    "semantic_consistency_rate": 0.94
+  },
+  {
+    "llm": "ministral_3_14b_instruct_2512",
+    "dll": "paddlepaddle",
+    "valid_files": 98,
+    "line_unchanged_cases": 90,
+    "semantic_consistency_rate": 0.9183673469387755
+  },
+  {
+    "llm": "mistral_small_3_2_24b_instruct_2506",
+    "dll": "tensorflow",
+    "valid_files": 99,
+    "line_unchanged_cases": 91,
+    "semantic_consistency_rate": 0.9191919191919192
+  },
+  {
+    "llm": "mistral_small_3_2_24b_instruct_2506",
+    "dll": "pytorch",
+    "valid_files": 99,
+    "line_unchanged_cases": 96,
+    "semantic_consistency_rate": 0.9696969696969697
+  },
+  {
+    "llm": "mistral_small_3_2_24b_instruct_2506",
+    "dll": "paddlepaddle",
+    "valid_files": 100,
+    "line_unchanged_cases": 91,
+    "semantic_consistency_rate": 0.91
+  }
+]
