@@ -1,0 +1,8 @@
+{
+  "runtime_error_info": null,
+  "root_cause": {
+    "root_cause_type": "No_Runtime_Error"
+  },
+  "origin_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.conv1 = nn.Conv2d(3, 32, 7, stride=1, padding=3)\n        self.layer_norm1 = nn.LayerNorm(32, eps=1e-06, elementwise_affine=True)\n        self.fc1 = nn.Linear(32 * 32 * 32, 128)\n        self.fc2 = nn.Linear(128, 10)\n\n    def forward(self, x):\n        x = self.conv1(x)\n        x = self.layer_norm1(x)\n        x = torch.relu(x)\n        x = x.view(x.size(0), -1)\n        x = self.fc1(x)\n        x = torch.relu(x)\n        x = self.fc2(x)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 3, 32, 32)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n        self.conv1 = nn.Conv2d(3, 32, 7, stride=1, padding=3)\n        self.layer_norm1 = nn.LayerNorm(32, eps=1e-06, elementwise_affine=True)\n        self.fc1 = nn.Linear(32 * 32 * 32, 128)\n        self.fc2 = nn.Linear(128, 10)\n\n    def forward(self, x):\n        x = self.conv1(x)\n        x = self.layer_norm1(x)\n        x = torch.relu(x)\n        x = x.view(x.size(0), -1)\n        x = self.fc1(x)\n        x = torch.relu(x)\n        x = self.fc2(x)\n        return x\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(1, 3, 32, 32)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

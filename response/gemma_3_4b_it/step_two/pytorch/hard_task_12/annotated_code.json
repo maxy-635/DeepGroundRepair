@@ -1,0 +1,16 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_4b_it/step_one/pytorch/models_0701/hard_task_12/code_2026_07_01_23_52_1.py\", line 41, in <module>\n    model = DL_Model()\n  File \"./response/gemma_3_4b_it/step_one/pytorch/models_0701/hard_task_12/code_2026_07_01_23_52_1.py\", line 26, in __init__\n    nn.Add(),\nAttributeError: module 'torch.nn' has no attribute 'Add'\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "init",
+      "line_no": 26,
+      "crash_code": "nn.Add(),"
+    },
+    "init_definition": {},
+    "root_cause_type": "Unresolved_Crash"
+  },
+  "origin_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Main path\n        self.main_path = nn.Sequential(\n            nn.Conv1d(64, 32, kernel_size=1, stride=1, padding=0),\n            nn.ReLU(inplace=True),\n            nn.Conv1d(32, 32, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True),\n            nn.Conv1d(32, 32, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )\n\n        # Branch path\n        self.branch_path = nn.Sequential(\n            nn.Conv2d(64, 32, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )\n\n        # Combine paths\n        self.combine = nn.Sequential(\n            nn.Add(),\n            nn.Flatten(),\n            nn.Linear(32, 10)  # Assuming 10 output classes\n        )\n\n    def forward(self, x):\n        main_output = self.main_path(x)\n        branch_output = self.branch_path(x)\n\n        combined_output = torch.cat((main_output, branch_output), dim=1)\n        output = self.combine(combined_output)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(32, 32, 64)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import torch\nimport torch.nn as nn\n\nclass DL_Model(nn.Module):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Main path\n        self.main_path = nn.Sequential(\n            nn.Conv1d(64, 32, kernel_size=1, stride=1, padding=0),\n            nn.ReLU(inplace=True),\n            nn.Conv1d(32, 32, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True),\n            nn.Conv1d(32, 32, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )\n\n        # Branch path\n        self.branch_path = nn.Sequential(\n            nn.Conv2d(64, 32, kernel_size=3, stride=1, padding=1),\n            nn.ReLU(inplace=True)\n        )\n\n        # Combine paths\n        self.combine = nn.Sequential(\n            nn.Add(),\n            nn.Flatten(),\n            nn.Linear(32, 10)  # Assuming 10 output classes\n        )\n\n    def forward(self, x):\n        main_output = self.main_path(x)\n        branch_output = self.branch_path(x)\n\n        combined_output = torch.cat((main_output, branch_output), dim=1)\n        output = self.combine(combined_output)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = torch.randn(32, 32, 64)\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

@@ -1,0 +1,21 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_4b_it/step_one/paddlepaddle/models_0701/hard_task_28/code_2026_07_02_02_00_1.py\", line 45, in <module>\n    model = DL_Model()\n  File \"./response/gemma_3_4b_it/step_one/paddlepaddle/models_0701/hard_task_28/code_2026_07_02_02_00_1.py\", line 26, in __init__\n    self.combine = nn.Add()\nAttributeError: module 'paddle.nn' has no attribute 'Add'\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "init",
+      "line_no": 26,
+      "crash_code": "self.combine = nn.Add()"
+    },
+    "init_definition": {
+      "line_no": 26,
+      "end_line_no": 26,
+      "original_call": "self.combine = nn.Add()",
+      "masked_api_call": "self.combine = nn.Add()"
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\nimport paddle.vision.datasets as datasets\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Main path\n        self.main_path = nn.Sequential(\n            nn.Conv2D(3, 16, kernel_size=7, stride=1, padding=3),\n            nn.BatchNorm2D(16),\n            nn.ReLU(),\n            nn.Conv2D(16, 32, kernel_size=1, stride=1, padding=0),\n            nn.BatchNorm2D(32),\n            nn.ReLU(),\n            nn.Conv2D(32, 32, kernel_size=1, stride=1, padding=0),\n            nn.BatchNorm2D(32),\n            nn.ReLU()\n        )\n\n        # Branch path\n        self.branch_path = nn.Conv2D(3, 32, kernel_size=3, stride=1, padding=1)\n\n        # Combine paths\n        self.combine = nn.Add()\n\n        # Flatten and linear layers\n        self.flatten = nn.Flatten()\n        self.linear1 = nn.Linear(32 * 32 * 32, 128)\n        self.linear2 = nn.Linear(128, 10)\n\n    def forward(self, x):\n        main_output = self.main_path(x)\n        branch_output = self.branch_path(x)\n        combined_output = self.combine(main_output, branch_output)\n        flattened_output = self.flatten(combined_output)\n        output = self.linear1(flattened_output)\n        output = self.linear2(output)\n        return output\n\n\nif __name__ == \"__main__\":\n    # Instantiate the model\n    model = DL_Model()\n\n    # Create a dummy input tensor\n    input_tensor = paddle.randn(batch_size=1, channels=3, height=32, width=32, dtype=paddle.float32)\n\n    # Pass the input tensor through the model\n    output_tensor = model(input_tensor)\n\n    # Print the output shape\n    print(\"Output shape:\", output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\nimport paddle.vision.datasets as datasets\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Main path\n        self.main_path = nn.Sequential(\n            nn.Conv2D(3, 16, kernel_size=7, stride=1, padding=3),\n            nn.BatchNorm2D(16),\n            nn.ReLU(),\n            nn.Conv2D(16, 32, kernel_size=1, stride=1, padding=0),\n            nn.BatchNorm2D(32),\n            nn.ReLU(),\n            nn.Conv2D(32, 32, kernel_size=1, stride=1, padding=0),\n            nn.BatchNorm2D(32),\n            nn.ReLU()\n        )\n\n        # Branch path\n        self.branch_path = nn.Conv2D(3, 32, kernel_size=3, stride=1, padding=1)\n\n        # Combine paths\n        self.combine = nn.Add()\n\n        # Flatten and linear layers\n        self.flatten = nn.Flatten()\n        self.linear1 = nn.Linear(32 * 32 * 32, 128)\n        self.linear2 = nn.Linear(128, 10)\n\n    def forward(self, x):\n        main_output = self.main_path(x)\n        branch_output = self.branch_path(x)\n        combined_output = self.combine(main_output, branch_output)\n        flattened_output = self.flatten(combined_output)\n        output = self.linear1(flattened_output)\n        output = self.linear2(output)\n        return output\n\n\nif __name__ == \"__main__\":\n    # Instantiate the model\n    model = DL_Model()\n\n    # Create a dummy input tensor\n    input_tensor = paddle.randn(batch_size=1, channels=3, height=32, width=32, dtype=paddle.float32)\n\n    # Pass the input tensor through the model\n    output_tensor = model(input_tensor)\n\n    # Print the output shape\n    print(\"Output shape:\", output_tensor.shape)"
+}

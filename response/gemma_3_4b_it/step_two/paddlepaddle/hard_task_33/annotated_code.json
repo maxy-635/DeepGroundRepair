@@ -1,0 +1,21 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_4b_it/step_one/paddlepaddle/models_0701/hard_task_33/code_2026_07_02_02_05_1.py\", line 49, in <module>\n    model = DL_Model()\n  File \"./response/gemma_3_4b_it/step_one/paddlepaddle/models_0701/hard_task_33/code_2026_07_02_02_05_1.py\", line 30, in __init__\n    self.concat = nn.Concat(dim=1)\nAttributeError: module 'paddle.nn' has no attribute 'Concat'\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "init",
+      "line_no": 30,
+      "crash_code": "self.concat = nn.Concat(dim=1)"
+    },
+    "init_definition": {
+      "line_no": 30,
+      "end_line_no": 30,
+      "original_call": "self.concat = nn.Concat(dim=1)",
+      "masked_api_call": "self.concat = nn.Concat(dim='mask')"
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        self.branch1 = nn.Sequential(\n            nn.Conv2D(1, 32, 1, 1, 0),\n            nn.ReLU(),\n            nn.Conv2D(32, 16, 3, 1, 1),\n            nn.ReLU(),\n            nn.Conv2D(16, 16, 1, 1, 0)\n        )\n        self.branch2 = nn.Sequential(\n            nn.Conv2D(1, 32, 1, 1, 0),\n            nn.ReLU(),\n            nn.Conv2D(32, 16, 3, 1, 1),\n            nn.ReLU(),\n            nn.Conv2D(16, 16, 1, 1, 0)\n        )\n        self.branch3 = nn.Sequential(\n            nn.Conv2D(1, 32, 1, 1, 0),\n            nn.ReLU(),\n            nn.Conv2D(32, 16, 3, 1, 1),\n            nn.ReLU(),\n            nn.Conv2D(16, 16, 1, 1, 0)\n        )\n\n        self.concat = nn.Concat(dim=1)\n        self.flatten = nn.Flatten()\n        self.fc = nn.Linear(16 * 3, 10)\n        self.softmax = nn.Softmax(axis=-1)\n\n    def forward(self, x):\n        output1 = self.branch1(x)\n        output2 = self.branch2(x)\n        output3 = self.branch3(x)\n\n        concatenated_output = self.concat([output1, output2, output3])\n        flattened_output = self.flatten(concatenated_output)\n        classification_output = self.fc(flattened_output)\n        probabilities = self.softmax(classification_output)\n\n        return probabilities\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn(1, 1, 28, 28)  # Example input shape: batch_size, channels, height, width\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        self.branch1 = nn.Sequential(\n            nn.Conv2D(1, 32, 1, 1, 0),\n            nn.ReLU(),\n            nn.Conv2D(32, 16, 3, 1, 1),\n            nn.ReLU(),\n            nn.Conv2D(16, 16, 1, 1, 0)\n        )\n        self.branch2 = nn.Sequential(\n            nn.Conv2D(1, 32, 1, 1, 0),\n            nn.ReLU(),\n            nn.Conv2D(32, 16, 3, 1, 1),\n            nn.ReLU(),\n            nn.Conv2D(16, 16, 1, 1, 0)\n        )\n        self.branch3 = nn.Sequential(\n            nn.Conv2D(1, 32, 1, 1, 0),\n            nn.ReLU(),\n            nn.Conv2D(32, 16, 3, 1, 1),\n            nn.ReLU(),\n            nn.Conv2D(16, 16, 1, 1, 0)\n        )\n\n        self.concat = nn.Concat(dim='mask')\n        self.flatten = nn.Flatten()\n        self.fc = nn.Linear(16 * 3, 10)\n        self.softmax = nn.Softmax(axis=-1)\n\n    def forward(self, x):\n        output1 = self.branch1(x)\n        output2 = self.branch2(x)\n        output3 = self.branch3(x)\n\n        concatenated_output = self.concat([output1, output2, output3])\n        flattened_output = self.flatten(concatenated_output)\n        classification_output = self.fc(flattened_output)\n        probabilities = self.softmax(classification_output)\n\n        return probabilities\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn(1, 1, 28, 28)  # Example input shape: batch_size, channels, height, width\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

@@ -1,0 +1,21 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_4b_it/step_one/paddlepaddle/models_0701/hard_task_12/code_2026_07_02_01_41_1.py\", line 44, in <module>\n    model = DL_Model()\n  File \"./response/gemma_3_4b_it/step_one/paddlepaddle/models_0701/hard_task_12/code_2026_07_02_01_41_1.py\", line 24, in __init__\n    self.concat = nn.Concat(dim=1)\nAttributeError: module 'paddle.nn' has no attribute 'Concat'\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "init",
+      "line_no": 24,
+      "crash_code": "self.concat = nn.Concat(dim=1)"
+    },
+    "init_definition": {
+      "line_no": 24,
+      "end_line_no": 24,
+      "original_call": "self.concat = nn.Concat(dim=1)",
+      "masked_api_call": "self.concat = nn.Concat(dim='mask')"
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super().__init__()\n\n        # Main path\n        self.main_path = nn.Sequential(\n            nn.Conv2D(64, 32, kernel_size=1, stride=1, padding=0),\n            nn.BatchNorm2D(32),\n            nn.ReLU(),\n            nn.Conv2D(32, 32, kernel_size=3, stride=1, padding=1),\n            nn.BatchNorm2D(32),\n            nn.ReLU()\n        )\n\n        # Branch path\n        self.branch_path = nn.Sequential(\n            nn.Conv2D(64, 32, kernel_size=3, stride=1, padding=1)\n        )\n\n        # Combination\n        self.concat = nn.Concat(dim=1)\n\n        # Flatten and FC layers\n        self.flatten = nn.Flatten()\n        self.fc1 = nn.Linear(32 * 32 * 32, 10)  # Assuming 10 classes\n        self.fc2 = nn.Linear(10, 10)  # Assuming 10 classes\n\n    def forward(self, x):\n        main_output = self.main_path(x)\n        branch_output = self.branch_path(x)\n\n        combined_output = self.concat([main_output, branch_output])\n\n        flattened_output = self.flatten(combined_output)\n        output = self.fc1(flattened_output)\n        output = self.fc2(output)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn(shape=(1, 32, 32, 64))\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super().__init__()\n\n        # Main path\n        self.main_path = nn.Sequential(\n            nn.Conv2D(64, 32, kernel_size=1, stride=1, padding=0),\n            nn.BatchNorm2D(32),\n            nn.ReLU(),\n            nn.Conv2D(32, 32, kernel_size=3, stride=1, padding=1),\n            nn.BatchNorm2D(32),\n            nn.ReLU()\n        )\n\n        # Branch path\n        self.branch_path = nn.Sequential(\n            nn.Conv2D(64, 32, kernel_size=3, stride=1, padding=1)\n        )\n\n        # Combination\n        self.concat = nn.Concat(dim='mask')\n\n        # Flatten and FC layers\n        self.flatten = nn.Flatten()\n        self.fc1 = nn.Linear(32 * 32 * 32, 10)  # Assuming 10 classes\n        self.fc2 = nn.Linear(10, 10)  # Assuming 10 classes\n\n    def forward(self, x):\n        main_output = self.main_path(x)\n        branch_output = self.branch_path(x)\n\n        combined_output = self.concat([main_output, branch_output])\n\n        flattened_output = self.flatten(combined_output)\n        output = self.fc1(flattened_output)\n        output = self.fc2(output)\n\n        return output\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    input_tensor = paddle.randn(shape=(1, 32, 32, 64))\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}

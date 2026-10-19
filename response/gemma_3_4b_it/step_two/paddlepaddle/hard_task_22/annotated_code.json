@@ -1,0 +1,21 @@
+{
+  "runtime_error_info": {
+    "traceback": "Traceback (most recent call last):\n  File \"./response/gemma_3_4b_it/step_one/paddlepaddle/models_0701/hard_task_22/code_2026_07_02_01_51_1.py\", line 43, in <module>\n    model = DL_Model()\n  File \"./response/gemma_3_4b_it/step_one/paddlepaddle/models_0701/hard_task_22/code_2026_07_02_01_51_1.py\", line 12, in __init__\n    self.concat1 = nn.Concat(dim=1)\nAttributeError: module 'paddle.nn' has no attribute 'Concat'\n"
+  },
+  "root_cause": {
+    "crash_location": {
+      "crash_stage": "init",
+      "line_no": 12,
+      "crash_code": "self.concat1 = nn.Concat(dim=1)"
+    },
+    "init_definition": {
+      "line_no": 12,
+      "end_line_no": 12,
+      "original_call": "self.concat1 = nn.Concat(dim=1)",
+      "masked_api_call": "self.concat1 = nn.Concat(dim='mask')"
+    },
+    "root_cause_type": "General_Crash"
+  },
+  "origin_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Main path\n        self.conv1 = nn.Conv2D(in_channels=3, out_channels=16, kernel_size=1, stride=1, padding=0)\n        self.conv2 = nn.Conv2D(in_channels=16, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.conv3 = nn.Conv2D(in_channels=32, out_channels=64, kernel_size=5, stride=1, padding=2)\n        self.concat1 = nn.Concat(dim=1)\n\n        # Branch path\n        self.conv_branch = nn.Conv2D(in_channels=3, out_channels=64, kernel_size=1, stride=1, padding=0)\n\n        # Fully connected layers\n        self.fc1 = nn.Linear(in_features=64 * 8 * 8, out_features=128)\n        self.fc2 = nn.Linear(in_features=128, out_features=10)\n\n    def forward(self, x):\n        # Main path\n        x1 = self.conv1(x)\n        x2 = self.conv2(x1)\n        x3 = self.conv3(x2)\n        main_path = self.concat1([x1, x2, x3])\n\n        # Branch path\n        branch_path = self.conv_branch(x)\n\n        # Fuse paths\n        fused_path = paddle.add(main_path, branch_path)\n\n        # Flatten and fully connected layers\n        flattened = nn.Flatten()(fused_path)\n        output = self.fc1(flattened)\n        output = self.fc2(output)\n\n        return output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    # Dummy input tensor\n    input_tensor = paddle.randn(shape=(1, 3, 32, 32))\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)",
+  "final_code": "import paddle\nimport paddle.nn as nn\n\nclass DL_Model(nn.Layer):\n    def __init__(self):\n        super(DL_Model, self).__init__()\n\n        # Main path\n        self.conv1 = nn.Conv2D(in_channels=3, out_channels=16, kernel_size=1, stride=1, padding=0)\n        self.conv2 = nn.Conv2D(in_channels=16, out_channels=32, kernel_size=3, stride=1, padding=1)\n        self.conv3 = nn.Conv2D(in_channels=32, out_channels=64, kernel_size=5, stride=1, padding=2)\n        self.concat1 = nn.Concat(dim='mask')\n\n        # Branch path\n        self.conv_branch = nn.Conv2D(in_channels=3, out_channels=64, kernel_size=1, stride=1, padding=0)\n\n        # Fully connected layers\n        self.fc1 = nn.Linear(in_features=64 * 8 * 8, out_features=128)\n        self.fc2 = nn.Linear(in_features=128, out_features=10)\n\n    def forward(self, x):\n        # Main path\n        x1 = self.conv1(x)\n        x2 = self.conv2(x1)\n        x3 = self.conv3(x2)\n        main_path = self.concat1([x1, x2, x3])\n\n        # Branch path\n        branch_path = self.conv_branch(x)\n\n        # Fuse paths\n        fused_path = paddle.add(main_path, branch_path)\n\n        # Flatten and fully connected layers\n        flattened = nn.Flatten()(fused_path)\n        output = self.fc1(flattened)\n        output = self.fc2(output)\n\n        return output\n\n\nif __name__ == \"__main__\":\n    model = DL_Model()\n    # Dummy input tensor\n    input_tensor = paddle.randn(shape=(1, 3, 32, 32))\n    output_tensor = model(input_tensor)\n    print(output_tensor.shape)"
+}
