@@ -23,7 +23,7 @@ conda activate deepcoderag
 ## 🚀 Run the Main Pipeline
 ### Stage 0: Configure a Run
 
-**LLM Deployment.** Before running, download the selected LLM checkpoint and tokenizer to a local Hugging Face cache. DeepGroundRepair loads the model from this local cache through the model interfaces in `utils/` (for example, `utils/chat2gemma.py`); model loading is local-only and does not download weights during execution. Configure the cache path used by Step 1 in `step_one/retriever4generation.py` and the path passed to Step 3 via `--cache_dir` in `run_bashes/step_three/run_main.sh`.
+**LLM Deployment.** Before running, download the selected LLM checkpoint and tokenizer to a local Hugging Face cache. DeepGroundRepair loads the model from this local cache through the model interfaces in `utils/` (for example, `utils/chat2gemma.py`); Configure the cache path used by Step 1 in `step_one/retriever4generation.py` and the path passed to Step 3 via `--cache_dir` in `run_bashes/step_three/run_main.sh`.
 
 **API Retrieval Configuration.** DeepGroundRepair combines **BM25-based sparse retrieval** (`step_one/whoosh_search.py`) and **dense retrieval** using `BAAI/bge-m3` (`step_one/vector_store_manager.py`). Preconstructed API knowledge bases for the three supported DL libraries are available under `database/`.
 
@@ -38,7 +38,7 @@ conda activate deepcoderag
 | Repeats | `1` | `--repeats` (Stage 1) |
 | Repository path | `/path/to/DeepGroundRepair` | `PYTHONPATH` |
 
-Use consistent model and experiment IDs across the three stages. Configure the local model and embedding cache paths in `step_one/retriever4generation.py` and the Stage 3 `--cache_dir` option in `run_bashes/step_three/run_main.sh`.
+Use consistent model and experiment IDs across the three stages.
 
 
 ### Stage 1: API-Grounded Generation
