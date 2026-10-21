@@ -117,7 +117,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model_id", type=str, required=True)
     parser.add_argument("--step2_result_path", type=str, required=True)
     parser.add_argument("--repair_code_save_path", type=str, required=True)
-    parser.add_argument("--experiment_id", type=str, required=True)
     parser.add_argument("--dlls", type=str, required=True)
     parser.add_argument("--cache_dir", type=str, default=None)
 
@@ -132,7 +131,7 @@ if __name__ == "__main__":
     sampling_config_sink_ids = []
     for dll in dlls_list:
         dll_key = dll.lower()
-        log_file = f"logs/{llm_name}/step_three/{dll_key}/{args.experiment_id}.log"
+        log_file = f"logs/{llm_name}/step_three/{dll_key}/run.log"
         sampling_config_sink_ids.append(
             logger.add(
                 log_file,
@@ -157,7 +156,7 @@ if __name__ == "__main__":
         if log_sink_id is not None:
             logger.remove(log_sink_id)
 
-        log_file = f"logs/{llm_name}/step_three/{dll_key}/{args.experiment_id}.log"
+        log_file = f"logs/{llm_name}/step_three/{dll_key}/run.log"
         log_sink_id = logger.add(log_file)
 
         if not step2_result_path.exists():
@@ -165,7 +164,7 @@ if __name__ == "__main__":
             continue
 
         logger.info(
-            f"Processing DLL: {dll}, Model ID: {llm_name}, Experiment ID: {args.experiment_id}, "
+            f"Processing DLL: {dll}, Model ID: {llm_name}, "
             f"Step Two path: {step2_result_path}, Repaired-code output path: {repair_code_save_path}"
         )
 

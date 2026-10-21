@@ -250,7 +250,6 @@ class TensorShapeDebugPipeline:
 def resolve_batch_paths(
     llm_name: str,
     dll: str,
-    experiment_id: str,
     input_root: str | None = None,
     output_root: str | None = None,
     log_root: str | None = None,
@@ -274,9 +273,9 @@ def resolve_batch_paths(
         target_dir = Path("response") / llm_name / "step_two" / dll_key
 
     if log_root:
-        log_path = Path(log_root) / llm_name / dll_key / f"{experiment_id}.log"
+        log_path = Path(log_root) / llm_name / dll_key / "run.log"
     else:
-        log_path = Path("logs") / llm_name / "step_two" / dll_key / f"{experiment_id}.log"
+        log_path = Path("logs") / llm_name / "step_two" / dll_key / "run.log"
 
     return source_dir, target_dir, log_path
 
@@ -295,7 +294,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_id", type = str, help="The Inference LLM id")
     parser.add_argument("--dlls", type=str, help="List of DLLs")
-    parser.add_argument("--experiment_id", type = str, help="The experiment id")
     parser.add_argument(
         "--input_root",
         type=str,
@@ -374,7 +372,6 @@ if __name__ == "__main__":
         draft_code_path, postprocess_code_path, log_path = resolve_batch_paths(
             llm_name=llm_name,
             dll=dll,
-            experiment_id=args.experiment_id,
             input_root=args.input_root,
             output_root=args.output_root,
             log_root=args.log_root,

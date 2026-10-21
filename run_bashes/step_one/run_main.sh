@@ -14,6 +14,5 @@ python "$PYTHON_FILE" \
      --model_id "google/gemma-3-4b-it" \
      --benchmark "./benchmark/DeepEval/" \
      --step_id "step_one" \
-     --dlls '["PyTorch"]' \
-     --repeats 1 \
-     --experiment_id "test" \
+     --dlls '["TensorFlow","PyTorch","PaddlePaddle"]' \
+     --repeats 1

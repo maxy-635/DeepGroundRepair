@@ -26,14 +26,13 @@ class Retrieval4Generation:
 
 
 
-    def __init__(self, whoosh_searcher, embedding_searcher, model_id, model, tokenizer, chat2llm, saver):
+    def __init__(self, whoosh_searcher, embedding_searcher, model_id, model, tokenizer, chat2llm):
         self.whoosh_searcher = whoosh_searcher
         self.embedding_searcher = embedding_searcher
         self.model_id = model_id
         self.model = model
         self.tokenizer = tokenizer
         self.chat2llm = chat2llm
-        self.saver = saver
 
     @classmethod
     def from_config(cls, config):
@@ -65,7 +64,6 @@ class Retrieval4Generation:
             model=cls._model,
             tokenizer=cls._tokenizer,
             chat2llm = chat2llm,
-            saver = config["saver"]
         )
 
     @staticmethod
@@ -243,11 +241,7 @@ class Retrieval4Generation:
 
     def generate_draft_code(self, task, api_docs, dll, save_code_full_path, count):
         prompt = SecondPromptDesigner().prompt(task, api_docs, dll)
-        save_log_full_path = (
-            save_code_full_path
-                .replace("response", "chat_logs", 1)
-                .replace(self.saver["save_code_last_path"], self.saver["save_log_last_path"], 1)
-        )
+        save_log_full_path = save_code_full_path.replace("response", "chat_logs", 1)
         dlcode_generator = DLcodeGeneration(
             count_num = count,
             save_code_path = save_code_full_path,
@@ -322,14 +316,13 @@ if __name__ == "__main__":
     parser.add_argument("--step_id", type = str, help="The step id")
     parser.add_argument("--dlls", type=str, help="List of DLLs")
     parser.add_argument("--repeats", type = int, help="The repeat times")
-    parser.add_argument("--experiment_id", type = str, help="The experiment id")
 
     args = parser.parse_args()
 
     dlls_list = json.loads(args.dlls) if args.dlls else []
     llm_name = get_llm_name(args.model_id)
     for dll in dlls_list:
-        file_sink_id = logger.add(f"logs/{llm_name}/{args.step_id}/{dll.lower()}/{args.experiment_id}.log")
+        file_sink_id = logger.add(f"logs/{llm_name}/{args.step_id}/{dll.lower()}/run.log")
         logger.info("Starting deep-learning code generation")
         logger.info(
             f"Sampling configuration: model_id={args.model_id}, temperature={get_sampling_temperature(args.model_id)}"
@@ -346,9 +339,7 @@ if __name__ == "__main__":
                             "doc_folder": f"./api_parser/{dll.lower()}/apis_parsed_results"},
                 "model_config": {"model_id": args.model_id,
                                 "cache_dir": "/home/bingxing2/home/scx8amp/huggingface/hub",
-                                "data_dtype": torch.bfloat16},
-                "saver": {"save_code_last_path": args.experiment_id,
-                         "save_log_last_path": "logs_" + args.experiment_id}
+                                "data_dtype": torch.bfloat16}
             }
 
             agent = Retrieval4Generation.from_config(config=config)

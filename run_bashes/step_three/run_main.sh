@@ -21,5 +21,4 @@ python "$PYTHON_FILE" \
      --cache_dir ".../huggingface/hub" \
      --step2_result_path "$STEP2_RESULT_PATH" \
      --repair_code_save_path "$REPAIR_CODE_SAVE_PATH" \
-     --dlls '["TensorFlow","PyTorch","PaddlePaddle"]' \
-     --experiment_id "****"
+     --dlls '["TensorFlow","PyTorch","PaddlePaddle"]'
