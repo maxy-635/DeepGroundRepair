@@ -1,11 +1,7 @@
 #!/bin/bash
 export PYTHONPATH=$PYTHONPATH:".../DeepCodeRAG"
 
-module load miniforge3/24.1
-
-source $(conda info --base)/etc/profile.d/conda.sh
-conda activate deepcoderag
-
+#load your CUDA and cuDNN modules here
 module load compilers/cuda/12.1 
 module load cudnn/8.9.5.29_cuda12.x 
 

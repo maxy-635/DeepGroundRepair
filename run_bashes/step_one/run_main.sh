@@ -1,11 +1,8 @@
 #!/bin/bash
 
 export PYTHONPATH=$PYTHONPATH:".../DeepCodeRAG"      
-module load miniforge3/24.1
 
-source $(conda info --base)/etc/profile.d/conda.sh
-conda activate deepcoderag
-
+#load your CUDA and cuDNN modules here
 module load compilers/cuda/12.1 
 module load cudnn/8.9.5.29_cuda12.x 
 
@@ -17,6 +14,6 @@ python "$PYTHON_FILE" \
      --model_id "google/gemma-3-4b-it" \
      --benchmark "./benchmark/DeepEval/" \
      --step_id "step_one" \
-     --dlls '["TensorFlow", "PyTorch", "PaddlePaddle"]' \
+     --dlls '["PyTorch"]' \
      --repeats 1 \
-     --experiment_id "..." \
+     --experiment_id "test" \
