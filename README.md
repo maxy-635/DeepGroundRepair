@@ -59,7 +59,7 @@ See [Stage 1 documentation](step_one/readme.md) for implementation-specific deta
 | --- | --- | --- |
 | `generated_code.py` | `response/<model>/step_one/<dl-library>/<task>/generated_code.py` | Generated DL program |
 | `retrieval_api_list.json` | `evaluation/retrieval_accuracy/retreived_results/`<br>`<model>/step_one/<dl-library>/retrieval_api_list.json` | Recorded API retrieval results |
-| Log file | `logs/<model>/step_one/<dl-library>/<experiment_id>.log` | Stage 1 execution details |
+| Log file | `logs/<model>/step_one/<dl-library>/run.log` | Stage 1 execution details |
 
 
 Example: [Stage 1 generated code](response/gemma_3_12b_it/step_one/pytorch/easy_task_2/generated_code.py). 
@@ -80,7 +80,7 @@ See [Stage 2 documentation](step_two/README.md) for implementation-specific deta
 | --- | --- | --- |
 | `annotated_code.py` | `response/<model>/step_two/<dl-library>/<task>/annotated_code.py` | Annotated code for downstream repair |
 | `annotated_code.json` | `response/<model>/step_two/<dl-library>/<task>/annotated_code.json` | Structured diagnostic information for downstream repair |
-| Log file | `logs/<model>/step_two/<dl-library>/<experiment_id>.log` | Execution and diagnosis details |
+| Log file | `logs/<model>/step_two/<dl-library>/run.log` | Execution and diagnosis details |
 
 Example: [Stage 2 annotated code](response/gemma_3_12b_it/step_two/pytorch/easy_task_2/annotated_code.py).
 
@@ -99,7 +99,7 @@ See [Stage 3 documentation](step_three/readme.md) for implementation-specific de
 | Output file | Path | Description |
 | --- | --- | --- |
 | `repaired_code.py` | `response/<model>/step_three/<dl-library>/<task>/repaired_code.py` | Candidate repaired program |
-| Log file | `logs/<model>/step_three/<dl-library>/<experiment_id>.log` | Repair and re-execution details |
+| Log file | `logs/<model>/step_three/<dl-library>/run.log` | Repair and re-execution details |
 
 Example: [Stage 3 repaired code](response/gemma_3_12b_it/step_three/pytorch/easy_task_2/repaired_code.py).
 
