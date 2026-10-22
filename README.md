@@ -126,7 +126,7 @@ Figure 2 of the tool paper illustrates a PyTorch tensor-shape failure and its re
 4. **Repaired code.** Shape-aware repair replaces the incorrect `in_features` value with `401408` and re-executes the program for validation.
 
 <p align="center">
-  <img src="example.png" alt="Example" width="600">
+  <img src="assets/example.png" alt="Example" width="600">
 </p>
 
 ## 📊 Evaluate Results
