@@ -1,13 +1,25 @@
+<p align="center">
+  <img src="assets/DeepGroundRepair.png" alt="Overview of DeepGroundRepair" width="600">
+</p>
+
 # DeepGroundRepair
+
 ## 📘 Introduction
 DeepGroundRepair is a tool for API-grounded generation, failure localization, and shape-aware repair of deep learning (DL) programs. It supports **TensorFlow, PyTorch, and PaddlePaddle**, along with **six open-weight LLMs from the Gemma-3 and Mistral families**, and provides configurable interfaces for integrating additional models. The tool exposes intermediate artifacts for inspecting generation, diagnosis, and repair. This repository provides the implementation and replication materials for the associated [research study](https://arxiv.org/abs/2610.16897).
 
 <p align="center">
-  <img src="overview.png" alt="Overview of DeepGroundRepair" width="500">
+  <img src="assets/overview.png" alt="Overview of DeepGroundRepair" width="700">
 </p>
 
 ## 🎥 Demo Video
-A demonstration video illustrating the Generate → Localize → Repair workflow with a representative PyTorch tensor-shape mismatch will be linked here when available.
+A demonstration video showcases the **Generate → Localize → Repair** workflow using a representative PyTorch tensor-shape mismatch.
+<p align="center">
+  <a href="https://youtu.be/pq7gUaa3C3s">
+    <img src="assets/DeepGroundRepair.png"
+         alt="DeepGroundRepair Demo Video"
+         width="600">
+  </a>
+</p>
 
 ## 🛠️ Environment Setup
 
