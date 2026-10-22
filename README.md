@@ -5,7 +5,7 @@
 # DeepGroundRepair
 
 ## 📘 Introduction
-DeepGroundRepair is a tool for API-grounded generation, failure localization, and shape-aware repair of deep learning (DL) programs. It supports **TensorFlow, PyTorch, and PaddlePaddle**, along with **six open-weight LLMs from the Gemma-3 and Mistral families**, and provides configurable interfaces for integrating additional models. The tool exposes intermediate artifacts for inspecting generation, diagnosis, and repair. This repository provides the implementation and replication materials for the associated [research study](https://arxiv.org/abs/2610.16897).
+DeepGroundRepair is a tool for API-grounded generation, failure localization, and shape-aware repair of deep learning (DL) programs. It supports **TensorFlow, PyTorch, and PaddlePaddle**, and six open-weight LLMs from the **Gemma-3 and Mistral families**. Additional models can be integrated through configurable interfaces. The tool provides intermediate artifacts for inspecting each stage of the Generate → Localize → Repair workflow. 
 
 <p align="center">
   <img src="assets/overview.png" alt="Overview of DeepGroundRepair" width="700">
@@ -35,7 +35,7 @@ conda activate deepcoderag
 ## 🚀 Run the Main Pipeline
 ### Stage 0: Configure a Run
 
-**LLM Deployment.** Before running, download the selected LLM checkpoint and tokenizer to a local Hugging Face cache. DeepGroundRepair loads the model from this local cache through the model interfaces in `utils/` (for example, `utils/chat2gemma.py`); Configure the cache path used by Step 1 in `step_one/retriever4generation.py` and the path passed to Step 3 via `--cache_dir` in `run_bashes/step_three/run_main.sh`.
+**LLM Deployment.** Before running the pipeline, download the selected LLM checkpoint and tokenizer to a local Hugging Face cache. DeepGroundRepair loads models through the interfaces in `utils/` (e.g., `utils/chat2gemma.py`). Configure the cache path for Stage 1 in `step_one/retriever4generation.py` and for Stage 3 using `--cache_dir` in `run_bashes/step_three/run_main.sh`.
 
 **API Retrieval Configuration.** DeepGroundRepair combines **BM25-based sparse retrieval** (`step_one/whoosh_search.py`) and **dense retrieval** using `BAAI/bge-m3` (`step_one/vector_store_manager.py`). Preconstructed API knowledge bases for the three supported DL libraries are available under `database/`.
 
@@ -63,7 +63,7 @@ Configure `run_bashes/step_one/run_main.sh`, then run:
 bash run_bashes/step_one/run_main.sh
 ```
 
-Stage 1 retrieves task-relevant API knowledge and uses it to generate draft code.
+Stage 1 retrieves and validates task-relevant APIs, then uses the verified API knowledge to generate draft code.
 
 See [Stage 1 documentation](step_one/readme.md) for implementation-specific details.
 
@@ -77,14 +77,14 @@ See [Stage 1 documentation](step_one/readme.md) for implementation-specific deta
 Example: [Stage 1 generated code](response/gemma_3_12b_it/step_one/pytorch/easy_task_2/generated_code.py). 
 
 
-### Stage 2: Failure Diagnosis
+### Stage 2: Failure Localization
 Stage 1 must have produced the expected input directory tree. Configure `run_bashes/step_two/run_main.sh`, then run:
 
 ```bash
 bash run_bashes/step_two/run_main.sh
 ```
 
-Stage 2 examines execution failures and, for tensor-shape mismatches, combines traceback information with static and dynamic analysis to identify upstream API configurations and suspicious parameters. These results provide the context for parameter masking and shape-aware repair.
+Stage 2 analyzes execution failures using traceback information. For tensor-shape mismatches, it combines static analysis and runtime tensor-shape information to identify root-cause API configurations and suspicious parameters. The resulting diagnostic artifacts guide parameter masking and subsequent repair.
 
 See [Stage 2 documentation](step_two/README.md) for implementation-specific details.
 
@@ -104,7 +104,7 @@ Stage 2 must have produced both `annotated_code.py` and `annotated_code.json`. E
 bash run_bashes/step_three/run_main.sh
 ```
 
-Stage 3 uses the localization artifacts, traced tensor shapes, and relevant API knowledge to guide a targeted repair. The resulting program is re-executed to check whether the failure has been resolved.
+Stage 3 uses the localized root cause, traced tensor shapes, and relevant API knowledge to repair the generated program. The repaired program is then re-executed to validate the fix.
 
 See [Stage 3 documentation](step_three/readme.md) for implementation-specific details.
 
@@ -118,7 +118,7 @@ Example: [Stage 3 repaired code](response/gemma_3_12b_it/step_three/pytorch/easy
 
 ## 🔍 Representative Demonstration
 
-Figure 2 of the tool paper illustrates a PyTorch tensor-shape failure and its repair through four artifacts:
+The following example illustrates a PyTorch tensor-shape mismatch and its repair through four intermediate artifacts:
 
 1. **Draft code with bug.** The generated program contains `nn.Linear(in_features=512*7*7, out_features=1024)`. However, the preceding operations produce a tensor of shape `[1, 512, 28, 28]`, flattened to `[1, 401408]`. The mismatch appears at `self.fc1(x)`.
 2. **Parameter-masked code.** Failure diagnosis traces the error back to the upstream `nn.Linear` constructor, identifies `in_features` as suspicious, and masks the original value.
@@ -131,7 +131,7 @@ Figure 2 of the tool paper illustrates a PyTorch tensor-shape failure and its re
 
 ## 📊 Evaluate Results
 
-After the pipeline finishes, set the model, dl-library, stage, and experiment ID in the relevant evaluation runner. The available checks are:
+After completing the pipeline, configure the model, target DL library, stage, and experiment ID in the corresponding evaluation scripts. The following evaluation metrics are supported:
 
 | Evaluation | Metric | Execution script |
 | --- | --- | --- |
